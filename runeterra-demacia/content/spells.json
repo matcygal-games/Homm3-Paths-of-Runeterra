@@ -1,0 +1,541 @@
+{
+  "blackShield": {
+    "animation": {
+      "affect": [
+        "C11SPE0"
+      ]
+    },
+    "defaultGainChance": 0,
+    "flags": {
+      "positive": true
+    },
+    "gainChance": {},
+    "graphics": {
+      "iconBook": "runeterra/demacia/spells/blackShield/book.png",
+      "iconEffect": "runeterra/demacia/spells/blackShield/effect.png",
+      "iconImmune": "runeterra/demacia/spells/blackShield/immune.png",
+      "iconScenarioBonus": "runeterra/demacia/spells/blackShield/scenario.png",
+      "iconScroll": "runeterra/demacia/spells/blackShield/scroll.png"
+    },
+    "level": 2,
+    "levels": {
+      "advanced": {
+        "battleEffects": {
+          "shelter": {
+            "bonus": {
+              "reduction": {
+                "duration": "N_TURNS",
+                "stacking": "runeterraDemaciaPetricite",
+                "subtype": "any",
+                "turns": 3,
+                "type": "SPELL_DAMAGE_REDUCTION",
+                "val": 30
+              }
+            },
+            "cumulative": false,
+            "type": "core:timed"
+          }
+        },
+        "cost": 8,
+        "description": "One allied stack receives 30% less magical spell damage for exactly 3 battle rounds (40% under Morgana). The strongest Demacian petricite protection applies, capped at 60% from this faction's sources. Dispel removes it. It grants no spell-failure chance, control immunity or stored damage.",
+        "power": 0,
+        "range": "0",
+        "targetModifier": {
+          "smart": true
+        }
+      },
+      "basic": {
+        "battleEffects": {
+          "shelter": {
+            "bonus": {
+              "reduction": {
+                "duration": "N_TURNS",
+                "stacking": "runeterraDemaciaPetricite",
+                "subtype": "any",
+                "turns": 3,
+                "type": "SPELL_DAMAGE_REDUCTION",
+                "val": 30
+              }
+            },
+            "cumulative": false,
+            "type": "core:timed"
+          }
+        },
+        "cost": 8,
+        "description": "One allied stack receives 30% less magical spell damage for exactly 3 battle rounds (40% under Morgana). The strongest Demacian petricite protection applies, capped at 60% from this faction's sources. Dispel removes it. It grants no spell-failure chance, control immunity or stored damage.",
+        "power": 0,
+        "range": "0",
+        "targetModifier": {
+          "smart": true
+        }
+      },
+      "expert": {
+        "battleEffects": {
+          "shelter": {
+            "bonus": {
+              "reduction": {
+                "duration": "N_TURNS",
+                "stacking": "runeterraDemaciaPetricite",
+                "subtype": "any",
+                "turns": 3,
+                "type": "SPELL_DAMAGE_REDUCTION",
+                "val": 30
+              }
+            },
+            "cumulative": false,
+            "type": "core:timed"
+          }
+        },
+        "cost": 8,
+        "description": "One allied stack receives 30% less magical spell damage for exactly 3 battle rounds (40% under Morgana). The strongest Demacian petricite protection applies, capped at 60% from this faction's sources. Dispel removes it. It grants no spell-failure chance, control immunity or stored damage.",
+        "power": 0,
+        "range": "0",
+        "targetModifier": {
+          "smart": true
+        }
+      },
+      "none": {
+        "battleEffects": {
+          "shelter": {
+            "bonus": {
+              "reduction": {
+                "duration": "N_TURNS",
+                "stacking": "runeterraDemaciaPetricite",
+                "subtype": "any",
+                "turns": 3,
+                "type": "SPELL_DAMAGE_REDUCTION",
+                "val": 30
+              }
+            },
+            "cumulative": false,
+            "type": "core:timed"
+          }
+        },
+        "cost": 9,
+        "description": "One allied stack receives 30% less magical spell damage for exactly 3 battle rounds (40% under Morgana). The strongest Demacian petricite protection applies, capped at 60% from this faction's sources. Dispel removes it. It grants no spell-failure chance, control immunity or stored damage.",
+        "power": 0,
+        "range": "0",
+        "targetModifier": {
+          "smart": true
+        }
+      }
+    },
+    "name": "Black Shield",
+    "power": 0,
+    "school": {
+      "water": true
+    },
+    "sounds": {
+      "cast": "PROTECTA"
+    },
+    "targetType": "CREATURE",
+    "type": "combat"
+  },
+  "dragonOath": {
+    "animation": {
+      "affect": [
+        "C05SPF0"
+      ]
+    },
+    "defaultGainChance": 0,
+    "flags": {
+      "positive": true
+    },
+    "gainChance": {},
+    "graphics": {
+      "iconBook": "runeterra/demacia/spells/dragonOath/book.png",
+      "iconEffect": "runeterra/demacia/spells/dragonOath/effect.png",
+      "iconImmune": "runeterra/demacia/spells/dragonOath/immune.png",
+      "iconScenarioBonus": "runeterra/demacia/spells/dragonOath/scenario.png",
+      "iconScroll": "runeterra/demacia/spells/dragonOath/scroll.png"
+    },
+    "level": 2,
+    "levels": {
+      "advanced": {
+        "battleEffects": {
+          "dragonGuard": {
+            "bonus": {
+              "attack": {
+                "duration": "N_TURNS",
+                "stacking": "runeterraDemaciaDragonOath",
+                "subtype": "attack",
+                "turns": 3,
+                "type": "PRIMARY_SKILL",
+                "val": 2
+              },
+              "defence": {
+                "duration": "N_TURNS",
+                "stacking": "runeterraDemaciaDragonOath",
+                "subtype": "defence",
+                "turns": 3,
+                "type": "PRIMARY_SKILL",
+                "val": 2
+              }
+            },
+            "cumulative": false,
+            "type": "core:timed"
+          }
+        },
+        "cost": 7,
+        "description": "One allied stack gains +2 attack and +2 defence for 3 battle rounds, counting the current round. Under Shyvana, it gains +3 attack instead. Recasting refreshes the effect without accumulating it; Dispel removes it. The commander does not become a targetable dragon.",
+        "power": 0,
+        "range": "0",
+        "targetModifier": {
+          "smart": true
+        }
+      },
+      "basic": {
+        "battleEffects": {
+          "dragonGuard": {
+            "bonus": {
+              "attack": {
+                "duration": "N_TURNS",
+                "stacking": "runeterraDemaciaDragonOath",
+                "subtype": "attack",
+                "turns": 3,
+                "type": "PRIMARY_SKILL",
+                "val": 2
+              },
+              "defence": {
+                "duration": "N_TURNS",
+                "stacking": "runeterraDemaciaDragonOath",
+                "subtype": "defence",
+                "turns": 3,
+                "type": "PRIMARY_SKILL",
+                "val": 2
+              }
+            },
+            "cumulative": false,
+            "type": "core:timed"
+          }
+        },
+        "cost": 7,
+        "description": "One allied stack gains +2 attack and +2 defence for 3 battle rounds, counting the current round. Under Shyvana, it gains +3 attack instead. Recasting refreshes the effect without accumulating it; Dispel removes it. The commander does not become a targetable dragon.",
+        "power": 0,
+        "range": "0",
+        "targetModifier": {
+          "smart": true
+        }
+      },
+      "expert": {
+        "battleEffects": {
+          "dragonGuard": {
+            "bonus": {
+              "attack": {
+                "duration": "N_TURNS",
+                "stacking": "runeterraDemaciaDragonOath",
+                "subtype": "attack",
+                "turns": 3,
+                "type": "PRIMARY_SKILL",
+                "val": 2
+              },
+              "defence": {
+                "duration": "N_TURNS",
+                "stacking": "runeterraDemaciaDragonOath",
+                "subtype": "defence",
+                "turns": 3,
+                "type": "PRIMARY_SKILL",
+                "val": 2
+              }
+            },
+            "cumulative": false,
+            "type": "core:timed"
+          }
+        },
+        "cost": 7,
+        "description": "One allied stack gains +2 attack and +2 defence for 3 battle rounds, counting the current round. Under Shyvana, it gains +3 attack instead. Recasting refreshes the effect without accumulating it; Dispel removes it. The commander does not become a targetable dragon.",
+        "power": 0,
+        "range": "0",
+        "targetModifier": {
+          "smart": true
+        }
+      },
+      "none": {
+        "battleEffects": {
+          "dragonGuard": {
+            "bonus": {
+              "attack": {
+                "duration": "N_TURNS",
+                "stacking": "runeterraDemaciaDragonOath",
+                "subtype": "attack",
+                "turns": 3,
+                "type": "PRIMARY_SKILL",
+                "val": 2
+              },
+              "defence": {
+                "duration": "N_TURNS",
+                "stacking": "runeterraDemaciaDragonOath",
+                "subtype": "defence",
+                "turns": 3,
+                "type": "PRIMARY_SKILL",
+                "val": 2
+              }
+            },
+            "cumulative": false,
+            "type": "core:timed"
+          }
+        },
+        "cost": 8,
+        "description": "One allied stack gains +2 attack and +2 defence for 3 battle rounds, counting the current round. Under Shyvana, it gains +3 attack instead. Recasting refreshes the effect without accumulating it; Dispel removes it. The commander does not become a targetable dragon.",
+        "power": 0,
+        "range": "0",
+        "targetModifier": {
+          "smart": true
+        }
+      }
+    },
+    "name": "Dragon's Oath",
+    "power": 0,
+    "school": {
+      "fire": true
+    },
+    "sounds": {
+      "cast": "FIRESHLD"
+    },
+    "targetType": "CREATURE",
+    "type": "combat"
+  },
+  "hymnOfValor": {
+    "animation": {
+      "affect": [
+        "C01SPW"
+      ]
+    },
+    "defaultGainChance": 0,
+    "flags": {
+      "positive": true
+    },
+    "gainChance": {},
+    "graphics": {
+      "iconBook": "runeterra/demacia/spells/hymnOfValor/book.png",
+      "iconEffect": "runeterra/demacia/spells/hymnOfValor/effect.png",
+      "iconImmune": "runeterra/demacia/spells/hymnOfValor/immune.png",
+      "iconScenarioBonus": "runeterra/demacia/spells/hymnOfValor/scenario.png",
+      "iconScroll": "runeterra/demacia/spells/hymnOfValor/scroll.png"
+    },
+    "level": 1,
+    "levels": {
+      "advanced": {
+        "battleEffects": {
+          "inspiration": {
+            "bonus": {
+              "attack": {
+                "duration": "N_TURNS",
+                "stacking": "runeterraDemaciaHymn",
+                "subtype": "attack",
+                "turns": 3,
+                "type": "PRIMARY_SKILL",
+                "val": 3
+              }
+            },
+            "cumulative": false,
+            "type": "core:timed"
+          }
+        },
+        "cost": 5,
+        "description": "One allied stack gains +3 attack for 3 battle rounds, counting the current round. Recasting refreshes the effect; it does not accumulate. Dispel removes it.",
+        "power": 0,
+        "range": "0",
+        "targetModifier": {
+          "smart": true
+        }
+      },
+      "basic": {
+        "battleEffects": {
+          "inspiration": {
+            "bonus": {
+              "attack": {
+                "duration": "N_TURNS",
+                "stacking": "runeterraDemaciaHymn",
+                "subtype": "attack",
+                "turns": 3,
+                "type": "PRIMARY_SKILL",
+                "val": 3
+              }
+            },
+            "cumulative": false,
+            "type": "core:timed"
+          }
+        },
+        "cost": 5,
+        "description": "One allied stack gains +3 attack for 3 battle rounds, counting the current round. Recasting refreshes the effect; it does not accumulate. Dispel removes it.",
+        "power": 0,
+        "range": "0",
+        "targetModifier": {
+          "smart": true
+        }
+      },
+      "expert": {
+        "battleEffects": {
+          "inspiration": {
+            "bonus": {
+              "attack": {
+                "duration": "N_TURNS",
+                "stacking": "runeterraDemaciaHymn",
+                "subtype": "attack",
+                "turns": 3,
+                "type": "PRIMARY_SKILL",
+                "val": 3
+              }
+            },
+            "cumulative": false,
+            "type": "core:timed"
+          }
+        },
+        "cost": 5,
+        "description": "One allied stack gains +3 attack for 3 battle rounds, counting the current round. Recasting refreshes the effect; it does not accumulate. Dispel removes it.",
+        "power": 0,
+        "range": "0",
+        "targetModifier": {
+          "smart": true
+        }
+      },
+      "none": {
+        "battleEffects": {
+          "inspiration": {
+            "bonus": {
+              "attack": {
+                "duration": "N_TURNS",
+                "stacking": "runeterraDemaciaHymn",
+                "subtype": "attack",
+                "turns": 3,
+                "type": "PRIMARY_SKILL",
+                "val": 3
+              }
+            },
+            "cumulative": false,
+            "type": "core:timed"
+          }
+        },
+        "cost": 6,
+        "description": "One allied stack gains +3 attack for 3 battle rounds, counting the current round. Recasting refreshes the effect; it does not accumulate. Dispel removes it.",
+        "power": 0,
+        "range": "0",
+        "targetModifier": {
+          "smart": true
+        }
+      }
+    },
+    "name": "Hymn of Valor",
+    "power": 0,
+    "school": {
+      "water": true
+    },
+    "sounds": {
+      "cast": "BLESS"
+    },
+    "targetType": "CREATURE",
+    "type": "combat"
+  },
+  "radiantBolt": {
+    "animation": {
+      "hit": [
+        "C20SPX"
+      ],
+      "projectile": [
+        {
+          "defName": "C20SPX4",
+          "minimumAngle": 0
+        },
+        {
+          "defName": "C20SPX3",
+          "minimumAngle": 0.6
+        },
+        {
+          "defName": "C20SPX2",
+          "minimumAngle": 0.9
+        },
+        {
+          "defName": "C20SPX1",
+          "minimumAngle": 1.2
+        },
+        {
+          "defName": "C20SPX0",
+          "minimumAngle": 1.5
+        }
+      ]
+    },
+    "defaultGainChance": 0,
+    "flags": {
+      "damage": true,
+      "negative": true
+    },
+    "gainChance": {},
+    "graphics": {
+      "iconBook": "runeterra/demacia/spells/radiantBolt/book.png",
+      "iconEffect": "runeterra/demacia/spells/radiantBolt/effect.png",
+      "iconImmune": "runeterra/demacia/spells/radiantBolt/immune.png",
+      "iconScenarioBonus": "runeterra/demacia/spells/radiantBolt/scenario.png",
+      "iconScroll": "runeterra/demacia/spells/radiantBolt/scroll.png"
+    },
+    "level": 1,
+    "levels": {
+      "advanced": {
+        "battleEffects": {
+          "lightDamage": {
+            "type": "core:damage"
+          }
+        },
+        "cost": 4,
+        "description": "Deals 8 x Spell Power + 10/10/15/20 magical damage (No/Basic/Advanced/Expert Air Magic) to one enemy stack. Resistance and protection apply.",
+        "power": 15,
+        "range": "0",
+        "targetModifier": {
+          "smart": true
+        }
+      },
+      "basic": {
+        "battleEffects": {
+          "lightDamage": {
+            "type": "core:damage"
+          }
+        },
+        "cost": 4,
+        "description": "Deals 8 x Spell Power + 10/10/15/20 magical damage (No/Basic/Advanced/Expert Air Magic) to one enemy stack. Resistance and protection apply.",
+        "power": 10,
+        "range": "0",
+        "targetModifier": {
+          "smart": true
+        }
+      },
+      "expert": {
+        "battleEffects": {
+          "lightDamage": {
+            "type": "core:damage"
+          }
+        },
+        "cost": 4,
+        "description": "Deals 8 x Spell Power + 10/10/15/20 magical damage (No/Basic/Advanced/Expert Air Magic) to one enemy stack. Resistance and protection apply.",
+        "power": 20,
+        "range": "0",
+        "targetModifier": {
+          "smart": true
+        }
+      },
+      "none": {
+        "battleEffects": {
+          "lightDamage": {
+            "type": "core:damage"
+          }
+        },
+        "cost": 5,
+        "description": "Deals 8 x Spell Power + 10/10/15/20 magical damage (No/Basic/Advanced/Expert Air Magic) to one enemy stack. Resistance and protection apply.",
+        "power": 10,
+        "range": "0",
+        "targetModifier": {
+          "smart": true
+        }
+      }
+    },
+    "name": "Radiant Bolt",
+    "power": 8,
+    "school": {
+      "air": true
+    },
+    "sounds": {
+      "cast": "MAGICBLT"
+    },
+    "targetType": "CREATURE",
+    "type": "combat"
+  }
+}

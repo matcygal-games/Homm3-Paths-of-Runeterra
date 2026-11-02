@@ -1,0 +1,142 @@
+{
+  "patrolCadet": {
+    "name": {"singular": "Patrol Cadet", "plural": "Patrol Cadets"},
+    "description": "Living civic trainee with baton and modest work shield. Low-cost walking screen; ordinary retaliation and Defend. These adult ranks are a project adaptation of Piltover's Wardens.",
+    "faction": "piltover", "level": 1, "hitPoints": 9, "attack": 4, "defense": 4, "damage": {"min": 1, "max": 2}, "speed": 4,
+    "cost": {"gold": 50}, "growth": 14, "horde": 0, "fightValue": 80, "aiValue": 75, "advMapAmount": {"min": 20, "max": 40},
+    "doubleWide": false, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false,
+    "abilities": {}, "upgrades": ["patrolWarden"],
+    "graphics": {"animation": "runeterra/piltover/creatures/patrolCadet/battle.json", "map": "runeterra/piltover/creatures/patrolCadet/map.json", "iconLarge": "runeterra/piltover/creatures/patrolCadet/large.png", "iconSmall": "runeterra/piltover/creatures/patrolCadet/small.png", "mapAttackFromLeft": "runeterra/piltover/creatures/patrolCadet/attackLeft.png", "mapAttackFromRight": "runeterra/piltover/creatures/patrolCadet/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 10.0}, "timeBetweenFidgets": 0.1},
+    "sound": {"attack": "PIKEATTK.wav", "defend": "PIKEDFND.wav", "killed": "PIKEKILL.wav", "move": "PIKEMOVE.wav", "wince": "PIKEWNCE.wav"}
+  },
+  "patrolWarden": {
+    "name": {"singular": "Patrol Warden", "plural": "Patrol Wardens"},
+    "description": "Living Warden with reinforced coat, broad faced shield and heavier baton. Native Defend gains an additional two Defense while the action lasts; no passive law aura or charge immunity.",
+    "faction": "piltover", "level": 1, "hitPoints": 11, "attack": 5, "defense": 6, "damage": {"min": 2, "max": 3}, "speed": 5,
+    "cost": {"gold": 75}, "growth": 14, "horde": 0, "fightValue": 115, "aiValue": 120, "advMapAmount": {"min": 16, "max": 30},
+    "doubleWide": false, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false,
+    "abilities": {"trainedGuard": {"type": "DEFENSIVE_STANCE", "val": 2}}, "upgrades": [],
+    "graphics": {"animation": "runeterra/piltover/creatures/patrolWarden/battle.json", "map": "runeterra/piltover/creatures/patrolWarden/map.json", "iconLarge": "runeterra/piltover/creatures/patrolWarden/large.png", "iconSmall": "runeterra/piltover/creatures/patrolWarden/small.png", "mapAttackFromLeft": "runeterra/piltover/creatures/patrolWarden/attackLeft.png", "mapAttackFromRight": "runeterra/piltover/creatures/patrolWarden/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 10.0}, "timeBetweenFidgets": 0.1},
+    "sound": {"attack": "PIKEATTK.wav", "defend": "PIKEDFND.wav", "killed": "PIKEKILL.wav", "move": "PIKEMOVE.wav", "wince": "PIKEWNCE.wav"}
+  },
+  "wardenRifleman": {
+    "name": {"singular": "Warden Rifleman", "plural": "Warden Riflemen"},
+    "description": "Living service-rifle officer. One physical bullet per action and twelve shots; normal distance, wall, melee and adjacency restrictions. No double shot, spell damage or champion rifle replication.",
+    "faction": "piltover", "level": 2, "hitPoints": 10, "attack": 6, "defense": 3, "damage": {"min": 2, "max": 3}, "speed": 4, "shots": 12,
+    "cost": {"gold": 110}, "growth": 9, "horde": 0, "fightValue": 115, "aiValue": 130, "advMapAmount": {"min": 16, "max": 30},
+    "doubleWide": false, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false,
+    "abilities": {"rifle": {"type": "SHOOTER"}}, "upgrades": ["wardenSharpshooter"],
+    "graphics": {"animation": "runeterra/piltover/creatures/wardenRifleman/battle.json", "map": "runeterra/piltover/creatures/wardenRifleman/map.json", "iconLarge": "runeterra/piltover/creatures/wardenRifleman/large.png", "iconSmall": "runeterra/piltover/creatures/wardenRifleman/small.png", "mapAttackFromLeft": "runeterra/piltover/creatures/wardenRifleman/attackLeft.png", "mapAttackFromRight": "runeterra/piltover/creatures/wardenRifleman/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 10.0}, "timeBetweenFidgets": 0.1, "missile": {"projectile": "runeterra/piltover/projectiles/wardenRifleman.json", "frameAngles": [90, 45, 0, -45, -90], "attackClimaxFrame": 4, "offset": {"upperX": 35, "upperY": -78, "middleX": 36, "middleY": -67, "lowerX": 36, "lowerY": -50}}},
+    "sound": {"attack": "LCRSATTK.wav", "defend": "LCRSDFND.wav", "killed": "LCRSKILL.wav", "move": "LCRSMOVE.wav", "shoot": "LCRSSHOT.wav", "wince": "LCRSWNCE.wav"}
+  },
+  "wardenSharpshooter": {
+    "name": {"singular": "Warden Sharpshooter", "plural": "Warden Sharpshooters"},
+    "description": "Living officer with braced, sighted rifle. Twenty-four shots and no distance penalty; walls, engagement, native melee penalty and one shot per action remain. Vulnerable thirteen-HP body and slow movement temper sustained long-range fire.",
+    "faction": "piltover", "level": 2, "hitPoints": 13, "attack": 7, "defense": 4, "damage": {"min": 2, "max": 4}, "speed": 5, "shots": 24,
+    "cost": {"gold": 160}, "growth": 9, "horde": 0, "fightValue": 155, "aiValue": 205, "advMapAmount": {"min": 12, "max": 25},
+    "doubleWide": false, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false,
+    "abilities": {"rifle": {"type": "SHOOTER"}, "sightedRifle": {"type": "NO_DISTANCE_PENALTY"}}, "upgrades": [],
+    "graphics": {"animation": "runeterra/piltover/creatures/wardenSharpshooter/battle.json", "map": "runeterra/piltover/creatures/wardenSharpshooter/map.json", "iconLarge": "runeterra/piltover/creatures/wardenSharpshooter/large.png", "iconSmall": "runeterra/piltover/creatures/wardenSharpshooter/small.png", "mapAttackFromLeft": "runeterra/piltover/creatures/wardenSharpshooter/attackLeft.png", "mapAttackFromRight": "runeterra/piltover/creatures/wardenSharpshooter/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 10.0}, "timeBetweenFidgets": 0.1, "missile": {"projectile": "runeterra/piltover/projectiles/wardenSharpshooter.json", "frameAngles": [90, 45, 0, -45, -90], "attackClimaxFrame": 4, "offset": {"upperX": 36, "upperY": -82, "middleX": 44, "middleY": -63, "lowerX": 36, "lowerY": -38}}},
+    "sound": {"attack": "LCRSATTK.wav", "defend": "LCRSDFND.wav", "killed": "LCRSKILL.wav", "move": "LCRSMOVE.wav", "shoot": "LCRSSHOT.wav", "wince": "LCRSWNCE.wav"}
+  },
+  "freightHandler": {
+    "name": {"singular": "Freight Handler", "plural": "Freight Handlers"},
+    "description": "Compact non-living wheeled freight machine. Native maintenance repairs at most three missing HP on the surviving top model on its first turn in a round; casualties never return. No morale, war-machine nature or golem magic reduction.",
+    "faction": "piltover", "level": 3, "hitPoints": 28, "attack": 7, "defense": 8, "damage": {"min": 3, "max": 5}, "speed": 4,
+    "cost": {"gold": 220}, "growth": 7, "horde": 0, "fightValue": 260, "aiValue": 280, "advMapAmount": {"min": 12, "max": 25},
+    "doubleWide": false, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false,
+    "abilities": {"freightMachine": {"type": "NON_LIVING"}, "maintenance": {"type": "HP_REGENERATION", "val": 3}}, "upgrades": ["armouredHandler"],
+    "graphics": {"animation": "runeterra/piltover/creatures/freightHandler/battle.json", "map": "runeterra/piltover/creatures/freightHandler/map.json", "iconLarge": "runeterra/piltover/creatures/freightHandler/large.png", "iconSmall": "runeterra/piltover/creatures/freightHandler/small.png", "mapAttackFromLeft": "runeterra/piltover/creatures/freightHandler/attackLeft.png", "mapAttackFromRight": "runeterra/piltover/creatures/freightHandler/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 10.0}, "timeBetweenFidgets": 0.1},
+    "sound": {"attack": "SGLMATTK.wav", "defend": "SGLMDFND.wav", "killed": "SGLMKILL.wav", "move": "SGLMMOVE.wav", "wince": "SGLMWNCE.wav"}
+  },
+  "armouredHandler": {
+    "name": {"singular": "Armoured Handler", "plural": "Armoured Handlers"},
+    "description": "Riveted cargo guards protect this compact non-living wheeled handler. Native maintenance repairs at most five missing HP on the top surviving model; whole destroyed models stay lost. No magic immunity or engineer repair aura.",
+    "faction": "piltover", "level": 3, "hitPoints": 35, "attack": 9, "defense": 10, "damage": {"min": 4, "max": 6}, "speed": 5,
+    "cost": {"gold": 300}, "growth": 7, "horde": 0, "fightValue": 355, "aiValue": 390, "advMapAmount": {"min": 10, "max": 20},
+    "doubleWide": false, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false,
+    "abilities": {"freightMachine": {"type": "NON_LIVING"}, "maintenance": {"type": "HP_REGENERATION", "val": 5}}, "upgrades": [],
+    "graphics": {"animation": "runeterra/piltover/creatures/armouredHandler/battle.json", "map": "runeterra/piltover/creatures/armouredHandler/map.json", "iconLarge": "runeterra/piltover/creatures/armouredHandler/large.png", "iconSmall": "runeterra/piltover/creatures/armouredHandler/small.png", "mapAttackFromLeft": "runeterra/piltover/creatures/armouredHandler/attackLeft.png", "mapAttackFromRight": "runeterra/piltover/creatures/armouredHandler/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 10.0}, "timeBetweenFidgets": 0.1},
+    "sound": {"attack": "IGLMATTK.wav", "defend": "IGLMDFND.wav", "killed": "IGLMKILL.wav", "move": "IGLMMOVE.wav", "wince": "IGLMWNCE.wav"}
+  },
+  "academyArtificer": {
+    "name": {"singular": "Academy Artificer", "plural": "Academy Artificers"},
+    "description": "Living adult craft specialist with physical hex-coil crossbow. One crafted bolt per action, eight bolts and normal distance, wall and melee penalties. This costly second shooter has no spell damage, splash or free extra attack.",
+    "faction": "piltover", "level": 4, "hitPoints": 25, "attack": 10, "defense": 6, "damage": {"min": 6, "max": 8}, "speed": 5, "shots": 8,
+    "cost": {"gold": 380}, "growth": 4, "horde": 0, "fightValue": 400, "aiValue": 450, "advMapAmount": {"min": 10, "max": 20},
+    "doubleWide": false, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false,
+    "abilities": {"craftedBolt": {"type": "SHOOTER"}}, "upgrades": ["academyArbalist"],
+    "graphics": {"animation": "runeterra/piltover/creatures/academyArtificer/battle.json", "map": "runeterra/piltover/creatures/academyArtificer/map.json", "iconLarge": "runeterra/piltover/creatures/academyArtificer/large.png", "iconSmall": "runeterra/piltover/creatures/academyArtificer/small.png", "mapAttackFromLeft": "runeterra/piltover/creatures/academyArtificer/attackLeft.png", "mapAttackFromRight": "runeterra/piltover/creatures/academyArtificer/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 10.0}, "timeBetweenFidgets": 0.1, "missile": {"projectile": "runeterra/piltover/projectiles/academyArtificer.json", "frameAngles": [90, 45, 0, -45, -90], "attackClimaxFrame": 4, "offset": {"upperX": 40, "upperY": -78, "middleX": 43, "middleY": -55, "lowerX": 42, "lowerY": -34}}},
+    "sound": {"attack": "LCRSATTK.wav", "defend": "LCRSDFND.wav", "killed": "LCRSKILL.wav", "move": "LCRSMOVE.wav", "shoot": "LCRSSHOT.wav", "wince": "LCRSWNCE.wav"}
+  },
+  "academyArbalist": {
+    "name": {"singular": "Academy Arbalist", "plural": "Academy Arbalists"},
+    "description": "Living crossbow specialist with protected coils, broad stock and substantial work armor. Ten physical bolts, one shot per action and every ordinary ranged penalty. No copied champion gauntlet or glowing spell-damage channel.",
+    "faction": "piltover", "level": 4, "hitPoints": 30, "attack": 12, "defense": 8, "damage": {"min": 7, "max": 10}, "speed": 6, "shots": 10,
+    "cost": {"gold": 500}, "growth": 4, "horde": 0, "fightValue": 530, "aiValue": 610, "advMapAmount": {"min": 8, "max": 16},
+    "doubleWide": false, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false,
+    "abilities": {"craftedBolt": {"type": "SHOOTER"}}, "upgrades": [],
+    "graphics": {"animation": "runeterra/piltover/creatures/academyArbalist/battle.json", "map": "runeterra/piltover/creatures/academyArbalist/map.json", "iconLarge": "runeterra/piltover/creatures/academyArbalist/large.png", "iconSmall": "runeterra/piltover/creatures/academyArbalist/small.png", "mapAttackFromLeft": "runeterra/piltover/creatures/academyArbalist/attackLeft.png", "mapAttackFromRight": "runeterra/piltover/creatures/academyArbalist/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 10.0}, "timeBetweenFidgets": 0.1, "missile": {"projectile": "runeterra/piltover/projectiles/academyArbalist.json", "frameAngles": [90, 45, 0, -45, -90], "attackClimaxFrame": 4, "offset": {"upperX": 44, "upperY": -73, "middleX": 47, "middleY": -60, "lowerX": 46, "lowerY": -38}}},
+    "sound": {"attack": "LCRSATTK.wav", "defend": "LCRSDFND.wav", "killed": "LCRSKILL.wav", "move": "LCRSMOVE.wav", "shoot": "LCRSSHOT.wav", "wince": "LCRSWNCE.wav"}
+  },
+  "armoredStomper": {
+    "name": {"singular": "Armored Stomper", "plural": "Armored Stompers"},
+    "description": "Compact non-living armored hextech machine inspired by the Mk7 Stomper. Physical melee; once per stack per battle spends its action casting Basic Shield on a legal friendly creature for three rounds. Shield reduces melee damage only. No Precision, shooting, repair aura or one-hit Barrier immunity.",
+    "faction": "piltover", "level": 5, "hitPoints": 40, "attack": 10, "defense": 10, "damage": {"min": 7, "max": 10}, "speed": 5,
+    "cost": {"gold": 650}, "growth": 3, "horde": 0, "fightValue": 600, "aiValue": 700, "advMapAmount": {"min": 6, "max": 12},
+    "doubleWide": false, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false,
+    "abilities": {"hextechMachine": {"type": "NON_LIVING"}, "shieldProjector": {"type": "SPELLCASTER", "subtype": "core:shield", "val": 1}, "oneShield": {"type": "CASTS", "val": 1}, "duration": {"type": "CREATURE_ENCHANT_POWER", "val": 3}}, "upgrades": ["prismaticStomper"],
+    "graphics": {"animation": "runeterra/piltover/creatures/armoredStomper/battle.json", "map": "runeterra/piltover/creatures/armoredStomper/map.json", "iconLarge": "runeterra/piltover/creatures/armoredStomper/large.png", "iconSmall": "runeterra/piltover/creatures/armoredStomper/small.png", "mapAttackFromLeft": "runeterra/piltover/creatures/armoredStomper/attackLeft.png", "mapAttackFromRight": "runeterra/piltover/creatures/armoredStomper/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 10.0}, "timeBetweenFidgets": 0.1},
+    "sound": {"attack": "runeterra/piltover/creatures/armoredStomper/attack.wav", "defend": "runeterra/piltover/creatures/armoredStomper/defend.wav", "killed": "runeterra/piltover/creatures/armoredStomper/killed.wav", "move": "runeterra/piltover/creatures/armoredStomper/move.wav", "wince": "runeterra/piltover/creatures/armoredStomper/wince.wav"}
+  },
+  "prismaticStomper": {
+    "name": {"singular": "Prismatic Stomper", "plural": "Prismatic Stompers"},
+    "description": "Reinforced non-living Stomper with layered prism protection. Once per stack per battle spends its action casting Advanced Shield on a legal friendly creature for three rounds. Ordinary melee, hostile control and spell damage remain. No Precision, repair, resurrection or unlimited Barrier.",
+    "faction": "piltover", "level": 5, "hitPoints": 50, "attack": 12, "defense": 12, "damage": {"min": 9, "max": 12}, "speed": 6,
+    "cost": {"gold": 850}, "growth": 3, "horde": 0, "fightValue": 780, "aiValue": 900, "advMapAmount": {"min": 5, "max": 10},
+    "doubleWide": false, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false,
+    "abilities": {"hextechMachine": {"type": "NON_LIVING"}, "shieldProjector": {"type": "SPELLCASTER", "subtype": "core:shield", "val": 2}, "oneShield": {"type": "CASTS", "val": 1}, "duration": {"type": "CREATURE_ENCHANT_POWER", "val": 3}}, "upgrades": [],
+    "graphics": {"animation": "runeterra/piltover/creatures/prismaticStomper/battle.json", "map": "runeterra/piltover/creatures/prismaticStomper/map.json", "iconLarge": "runeterra/piltover/creatures/prismaticStomper/large.png", "iconSmall": "runeterra/piltover/creatures/prismaticStomper/small.png", "mapAttackFromLeft": "runeterra/piltover/creatures/prismaticStomper/attackLeft.png", "mapAttackFromRight": "runeterra/piltover/creatures/prismaticStomper/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 10.0}, "timeBetweenFidgets": 0.1},
+    "sound": {"attack": "runeterra/piltover/creatures/prismaticStomper/attack.wav", "defend": "runeterra/piltover/creatures/prismaticStomper/defend.wav", "killed": "runeterra/piltover/creatures/prismaticStomper/killed.wav", "move": "runeterra/piltover/creatures/prismaticStomper/move.wav", "wince": "runeterra/piltover/creatures/prismaticStomper/wince.wav"}
+  },
+  "hextechRotorwing": {
+    "name": {"singular": "Hextech Rotorwing", "plural": "Hextech Rotorwings"},
+    "description": "Non-living flying rotor-and-drill machine, adapted from Piltover's airborne workshop drones. Native two-hex flight crosses obstacles and walls but needs a legal landing. Physical drill melee only; no pilot, shooting, bombing, teleportation or blanket spell immunity.",
+    "faction": "piltover", "level": 6, "hitPoints": 65, "attack": 14, "defense": 11, "damage": {"min": 12, "max": 18}, "speed": 8,
+    "cost": {"gold": 1200}, "growth": 2, "horde": 0, "fightValue": 1200, "aiValue": 1450, "advMapAmount": {"min": 4, "max": 10},
+    "doubleWide": true, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false,
+    "abilities": {"hextechMachine": {"type": "NON_LIVING"}, "rotorFlight": {"type": "FLYING"}}, "upgrades": ["hextechStormwing"],
+    "graphics": {"animation": "runeterra/piltover/creatures/hextechRotorwing/battle.json", "map": "runeterra/piltover/creatures/hextechRotorwing/map.json", "iconLarge": "runeterra/piltover/creatures/hextechRotorwing/large.png", "iconSmall": "runeterra/piltover/creatures/hextechRotorwing/small.png", "mapAttackFromLeft": "runeterra/piltover/creatures/hextechRotorwing/attackLeft.png", "mapAttackFromRight": "runeterra/piltover/creatures/hextechRotorwing/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 10.0}, "timeBetweenFidgets": 0.1},
+    "sound": {"attack": "runeterra/piltover/creatures/hextechRotorwing/attack.wav", "defend": "runeterra/piltover/creatures/hextechRotorwing/defend.wav", "killed": "runeterra/piltover/creatures/hextechRotorwing/killed.wav", "move": "runeterra/piltover/creatures/hextechRotorwing/move.wav", "wince": "runeterra/piltover/creatures/hextechRotorwing/wince.wav"}
+  },
+  "hextechStormwing": {
+    "name": {"singular": "Hextech Stormwing", "plural": "Hextech Stormwings"},
+    "description": "Reinforced non-living rotor-and-drill flyer with protected drive housing and stronger blades. Native two-hex flight and physical melee retain ordinary retaliation and legal landing requirements. No ranged attack, lightning spell, regeneration or universal immunity follows from its name.",
+    "faction": "piltover", "level": 6, "hitPoints": 80, "attack": 16, "defense": 13, "damage": {"min": 15, "max": 21}, "speed": 10,
+    "cost": {"gold": 1600}, "growth": 2, "horde": 0, "fightValue": 1550, "aiValue": 1850, "advMapAmount": {"min": 3, "max": 8},
+    "doubleWide": true, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false,
+    "abilities": {"hextechMachine": {"type": "NON_LIVING"}, "rotorFlight": {"type": "FLYING"}}, "upgrades": [],
+    "graphics": {"animation": "runeterra/piltover/creatures/hextechStormwing/battle.json", "map": "runeterra/piltover/creatures/hextechStormwing/map.json", "iconLarge": "runeterra/piltover/creatures/hextechStormwing/large.png", "iconSmall": "runeterra/piltover/creatures/hextechStormwing/small.png", "mapAttackFromLeft": "runeterra/piltover/creatures/hextechStormwing/attackLeft.png", "mapAttackFromRight": "runeterra/piltover/creatures/hextechStormwing/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 10.0}, "timeBetweenFidgets": 0.1},
+    "sound": {"attack": "runeterra/piltover/creatures/hextechStormwing/attack.wav", "defend": "runeterra/piltover/creatures/hextechStormwing/defend.wav", "killed": "runeterra/piltover/creatures/hextechStormwing/killed.wav", "move": "runeterra/piltover/creatures/hextechStormwing/move.wav", "wince": "runeterra/piltover/creatures/hextechStormwing/wince.wav"}
+  },
+  "hextechRampager": {
+    "name": {"singular": "Hextech Rampager", "plural": "Hextech Rampagers"},
+    "description": "Original four-legged non-living hextech war-beast with a short crested head, plated frontal ram and counterweight tail. Grounded two-hex ram and stomp melee; this base form does not shoot. No morale, normal living Resurrection, flight, repair or all-purpose spell immunity. Its design and recruitment are project fiction inspired by Piltovan engineering.",
+    "faction": "piltover", "level": 7, "hitPoints": 180, "attack": 18, "defense": 18, "damage": {"min": 28, "max": 40}, "speed": 5,
+    "cost": {"gold": 3300, "crystal": 1}, "growth": 1, "horde": 0, "fightValue": 2850, "aiValue": 3500, "advMapAmount": {"min": 2, "max": 5},
+    "doubleWide": true, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false,
+    "abilities": {"hextechMachine": {"type": "NON_LIVING"}}, "upgrades": ["hextechDreadnought"],
+    "graphics": {"animation": "runeterra/piltover/creatures/hextechRampager/battle.json", "map": "runeterra/piltover/creatures/hextechRampager/map.json", "iconLarge": "runeterra/piltover/creatures/hextechRampager/large.png", "iconSmall": "runeterra/piltover/creatures/hextechRampager/small.png", "mapAttackFromLeft": "runeterra/piltover/creatures/hextechRampager/attackLeft.png", "mapAttackFromRight": "runeterra/piltover/creatures/hextechRampager/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 10.0}, "timeBetweenFidgets": 0.1},
+    "sound": {"attack": "runeterra/piltover/creatures/hextechRampager/attack.wav", "defend": "runeterra/piltover/creatures/hextechRampager/defend.wav", "killed": "runeterra/piltover/creatures/hextechRampager/killed.wav", "move": "runeterra/piltover/creatures/hextechRampager/move.wav", "wince": "runeterra/piltover/creatures/hextechRampager/wince.wav"}
+  },
+  "hextechDreadnought": {
+    "name": {"singular": "Hextech Dreadnought", "plural": "Hextech Dreadnoughts"},
+    "description": "Reinforced four-legged non-living war-beast with a shoulder and breast crystal condenser. Six single-target physical hextech bolts per battle, one ordinary ranged attack per action. Native distance, wall, melee and adjacency penalties remain; exhausted ammunition leaves melee with its normal shooter penalty. No jaw breath, cone, extra attack, TFT power stacks, repair or blanket spell immunity.",
+    "faction": "piltover", "level": 7, "hitPoints": 220, "attack": 21, "defense": 22, "damage": {"min": 35, "max": 45}, "speed": 6,
+    "cost": {"gold": 4600, "crystal": 2}, "growth": 1, "horde": 0, "fightValue": 3800, "aiValue": 5400, "advMapAmount": {"min": 1, "max": 4}, "shots": 6,
+    "doubleWide": true, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false,
+    "abilities": {"hextechMachine": {"type": "NON_LIVING"}, "hextechBolt": {"type": "SHOOTER"}}, "upgrades": [],
+    "graphics": {"animation": "runeterra/piltover/creatures/hextechDreadnought/battle.json", "map": "runeterra/piltover/creatures/hextechDreadnought/map.json", "iconLarge": "runeterra/piltover/creatures/hextechDreadnought/large.png", "iconSmall": "runeterra/piltover/creatures/hextechDreadnought/small.png", "mapAttackFromLeft": "runeterra/piltover/creatures/hextechDreadnought/attackLeft.png", "mapAttackFromRight": "runeterra/piltover/creatures/hextechDreadnought/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 10.0}, "timeBetweenFidgets": 0.1, "missile": {"projectile": "runeterra/piltover/creatures/hextechDreadnought/projectile.json", "frameAngles": [-90, -45, 0, 45, 90], "attackClimaxFrame": 4, "offset": {"upperX": 35, "upperY": -71, "middleX": 52, "middleY": -42, "lowerX": 51, "lowerY": -20}}},
+    "sound": {"attack": "runeterra/piltover/creatures/hextechDreadnought/attack.wav", "defend": "runeterra/piltover/creatures/hextechDreadnought/defend.wav", "killed": "runeterra/piltover/creatures/hextechDreadnought/killed.wav", "move": "runeterra/piltover/creatures/hextechDreadnought/move.wav", "wince": "runeterra/piltover/creatures/hextechDreadnought/wince.wav", "shoot": "runeterra/piltover/creatures/hextechDreadnought/shoot.wav"}
+  }
+}

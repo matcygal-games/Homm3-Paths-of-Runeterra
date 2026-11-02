@@ -1,0 +1,189 @@
+{
+  "teemo": {
+    "class": "bandleMarshal", "female": false, "special": false,
+    "texts": {
+      "name": "Teemo",
+      "biography": "Teemo follows the Bandle Scout's Code with tireless enthusiasm. His curiosity and good intentions do not guarantee that he understands every consequence of his adventures. This skirmish treats scouting as army command, without a personal blowgun stack, hidden trap network or grim assassin doctrine. The Scout Academy and his experience teach the same bounded fieldcraft.",
+      "specialty": {"name": "Scout's Code", "description": "Hero sight radius +1, shared with Scout Academy training; these sources contribute at most +1 together.", "tooltip": "{Scout's Code}\n\nSight radius +1 through runeterraBandleScouting. Repeated training and other copies do not multiply it. Native Scouting remains independent; no hidden-army detection or autonomous companion vision."}
+    },
+    "images": {"large": "runeterra/bandlecity/heroes/teemo/large.png", "small": "runeterra/bandlecity/heroes/teemo/small.png", "specialtyLarge": "runeterra/bandlecity/heroes/teemo/specialtyLarge.png", "specialtySmall": "runeterra/bandlecity/heroes/teemo/specialtySmall.png"},
+    "army": [{"creature": "yordleScout", "min": 12, "max": 18}, {"creature": "papercraftDragon", "min": 2, "max": 3}, {"creature": "mechPilot", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:scouting", "level": "basic"}, {"skill": "core:tactics", "level": "basic"}],
+    "specialty": {"bonuses": {"fieldcraft": {"type": "SIGHT_RADIUS", "val": 1, "stacking": "runeterraBandleScouting"}}}
+  },
+  "tristana": {
+    "class": "bandleMarshal", "female": true, "special": false,
+    "texts": {
+      "name": "Tristana",
+      "biography": "Tristana defends Bandle gateways and trains the Bandle Gunners, whose cannon-like weapons are made with Rumble's help. Her example supports a corps of distinct recruits, rather than copies of her personal cannon or Rocket Jump. In this adaptation she teaches the whole army's shooters to place their finite shots. Command and tavern coavailability are skirmish abstractions.",
+      "specialty": {"name": "Gunnery Instruction", "description": "Native Archery specialty scales ranged recruits' Archery bonus by 5% per hero level; no starting troop shoots.", "tooltip": "{Gunnery Instruction}\n\nArchery specialty: +5%/level to the skill's ranged bonus, not +5 damage percentage points. Applies to Puffcaps, Gunners and other ranged recruits. Starting tiers 1-3 are melee. Normal shots and penalties remain; no extra attacks, splash or wall destruction."}
+    },
+    "images": {"large": "runeterra/bandlecity/heroes/tristana/large.png", "small": "runeterra/bandlecity/heroes/tristana/small.png", "specialtyLarge": "runeterra/bandlecity/heroes/tristana/specialtyLarge.png", "specialtySmall": "runeterra/bandlecity/heroes/tristana/specialtySmall.png"},
+    "army": [{"creature": "yordleScout", "min": 10, "max": 16}, {"creature": "papercraftDragon", "min": 2, "max": 3}, {"creature": "mechPilot", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:archery", "level": "basic"}, {"skill": "core:tactics", "level": "basic"}],
+    "specialty": {"secondary": "core:archery", "stepSize": 5}
+  },
+  "lulu": {
+    "class": "gladeKeeper", "female": true, "special": false,
+    "texts": {
+      "name": "Lulu",
+      "biography": "Lulu followed Pix into the Glade, where primordial magic gave her imagination unusual power. She returned uncertain how much time had passed and continues to wander. This support commander uses a bounded good-fortune enchantment, preserving Pix as part of her unique identity. Her ordinary skirmish availability does not make her a permanent officer or establish an invented family tragedy.",
+      "specialty": {"name": "Glade Whimsy", "description": "Fortune grants +1 additional Luck to eligible targets, subject to native Luck caps and removal.", "tooltip": "{Glade Whimsy}\n\nFortune's placed Luck bonus is increased by 1 at every eligible creature tier. Native target eligibility, cost, mastery, duration, dispel and Luck caps remain. No transformation, silence, extra turn or persistent size increase is granted."}
+    },
+    "images": {"large": "runeterra/bandlecity/heroes/lulu/large.png", "small": "runeterra/bandlecity/heroes/lulu/small.png", "specialtyLarge": "runeterra/bandlecity/heroes/lulu/specialtyLarge.png", "specialtySmall": "runeterra/bandlecity/heroes/lulu/specialtySmall.png"},
+    "army": [{"creature": "yordleScout", "min": 10, "max": 16}, {"creature": "papercraftDragon", "min": 2, "max": 4}, {"creature": "mechPilot", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:airMagic", "level": "basic"}],
+    "specialty": {"spellFixedAdditive": "core:fortune", "spellFixedValues": [1, 1, 1, 1, 1, 1, 1]},
+    "spellbook": ["core:fortune", "core:bless"]
+  },
+  "rumble": {
+    "class": "bandleMarshal", "female": false, "special": false,
+    "texts": {
+      "name": "Rumble",
+      "biography": "Rumble builds ambitious machines from scrap and takes fierce pride in yordle invention. His personal mech remains unique. The living repair walkers recruited here are original project troops, and his specialty represents training their crews rather than manufacturing copies of Rumble or granting limitless regeneration. Neither a complete absence of innate magic nor an imperial political doctrine is inferred from his engineering.",
+      "specialty": {"name": "Repair-Crew Foreman", "description": "Native upgrade-aware creature specialty for Mech Pilots and Advanced Mechs.", "tooltip": "{Repair-Crew Foreman}\n\nNative creature specialty for Mech Pilots and their Advanced Mech upgrade. The engine derives the normal tier-dependent Attack and Defense scaling and specialty Speed. Existing top-survivor repair remains 3/5; no lost model is revived and no named personal mech is duplicated."}
+    },
+    "images": {"large": "runeterra/bandlecity/heroes/rumble/large.png", "small": "runeterra/bandlecity/heroes/rumble/small.png", "specialtyLarge": "runeterra/bandlecity/heroes/rumble/specialtyLarge.png", "specialtySmall": "runeterra/bandlecity/heroes/rumble/specialtySmall.png"},
+    "army": [{"creature": "yordleScout", "min": 10, "max": 16}, {"creature": "papercraftDragon", "min": 2, "max": 3}, {"creature": "mechPilot", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:armorer", "level": "basic"}, {"skill": "core:ballistics", "level": "basic"}],
+    "specialty": {"creature": "mechPilot"}
+  },
+  "yuumi": {
+    "class": "gladeKeeper", "female": true, "special": false,
+    "texts": {
+      "name": "Yuumi",
+      "biography": "Yuumi searches for Norra with the sentient Book of Thresholds, offering companionship and protection along the way. Her magical travel belongs to one exceptional partnership. The army-command interface abstracts a support companion into one commander; it grants neither an attached second hero nor unrestricted map portals. Norra's separate regional listing does not resolve their search in this selected premise.",
+      "specialty": {"name": "Book of Thresholds", "description": "+1 to flat daily mana regeneration; actual recovery follows native regeneration, guild and mana-cap rules.", "tooltip": "{Book of Thresholds}\n\nFlat daily mana regeneration +1. Native max(flat, percentage), overnight guild refill and mana cap may mask the extra point. No immediate town-visit refill, extra combat cast, second commander or army teleport."}
+    },
+    "images": {"large": "runeterra/bandlecity/heroes/yuumi/large.png", "small": "runeterra/bandlecity/heroes/yuumi/small.png", "specialtyLarge": "runeterra/bandlecity/heroes/yuumi/specialtyLarge.png", "specialtySmall": "runeterra/bandlecity/heroes/yuumi/specialtySmall.png"},
+    "army": [{"creature": "yordleScout", "min": 10, "max": 16}, {"creature": "papercraftDragon", "min": 2, "max": 4}, {"creature": "mechPilot", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:mysticism", "level": "basic"}],
+    "specialty": {"bonuses": {"reading": {"type": "MANA_REGENERATION", "val": 1}}},
+    "spellbook": ["core:cure", "core:shield"]
+  },
+  "norra": {
+    "class": "gladeKeeper", "female": true, "special": false,
+    "texts": {
+      "name": "Norra",
+      "biography": "Norra shared a woodland cottage in Bandle City's outlands with Yuumi before becoming lost between realms. Her portalwork, patient experiments and determination to return to her cat bind her to that home. This skirmish lets her lead a separate expedition without declaring a canonical reunion. Her study becomes mana capacity under ordinary army-command rules; no portal network or summoned champion copies are granted.",
+      "specialty": {"name": "Threshold Studies", "description": "Native Intelligence specialty increases the skill's mana-capacity bonus by 5% per hero level.", "tooltip": "{Threshold Studies}\n\nIntelligence specialty: +5%/level to the skill's existing mana-capacity bonus. Changes maximum mana, not current mana, recovery or casting frequency. Native integer rounding remains. No unrestricted portals or instant refill."}
+    },
+    "images": {"large": "runeterra/bandlecity/heroes/norra/large.png", "small": "runeterra/bandlecity/heroes/norra/small.png", "specialtyLarge": "runeterra/bandlecity/heroes/norra/specialtyLarge.png", "specialtySmall": "runeterra/bandlecity/heroes/norra/specialtySmall.png"},
+    "army": [{"creature": "yordleScout", "min": 10, "max": 16}, {"creature": "papercraftDragon", "min": 2, "max": 4}, {"creature": "mechPilot", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:intelligence", "level": "basic"}],
+    "specialty": {"secondary": "core:intelligence", "stepSize": 5},
+    "spellbook": ["core:haste", "core:shield"]
+  },
+  "ava": {
+    "class": "bandleMarshal", "female": true, "special": false,
+    "texts": {
+      "name": "Ava Achiever",
+      "biography": "Ava is a named Bandle Scout whose proud recitation of the rules sits alongside admiration for Teemo and delight in Paparo's yearly visits. Her continuing place in the scout community makes her more than a traveler with a regional card border. Army command and the patrol-training specialty are project adaptations of this canonical supporting character, not a claim that she is a League champion. Her scouts use ordinary weapons and actions.",
+      "specialty": {"name": "Patrol Practice", "description": "Native upgrade-aware creature specialty for Yordle Scouts and Scout Patrols.", "tooltip": "{Patrol Practice}\n\nNative creature specialty for Yordle Scouts and their Scout Patrol upgrade. Normal tier-dependent Attack and Defense scaling and specialty Speed apply. No extra sight, poison traps or repeated attacks."}
+    },
+    "images": {"large": "runeterra/bandlecity/heroes/ava/large.png", "small": "runeterra/bandlecity/heroes/ava/small.png", "specialtyLarge": "runeterra/bandlecity/heroes/ava/specialtyLarge.png", "specialtySmall": "runeterra/bandlecity/heroes/ava/specialtySmall.png"},
+    "army": [{"creature": "yordleScout", "min": 12, "max": 18}, {"creature": "papercraftDragon", "min": 2, "max": 3}, {"creature": "mechPilot", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:scouting", "level": "basic"}, {"skill": "core:tactics", "level": "basic"}],
+    "specialty": {"creature": "yordleScout"}
+  },
+  "paparo": {
+    "class": "bandleMarshal", "female": false, "special": false,
+    "texts": {
+      "name": "Paparo the Great",
+      "biography": "Ava remembers Paparo returning every summer with curious gifts gathered around the world. This repeated exchange with Bandle's young adventurers, rather than a single visit or an exotic birthplace, anchors his regional role. The project casts this canonical yordle traveler as an expedition quartermaster. His Estates specialty represents organized supplies, not a canon noble estate, free recruits or an unlimited shop.",
+      "specialty": {"name": "Summer Provisions", "description": "Native Estates specialty increases the skill's daily gold income by 5% per hero level.", "tooltip": "{Summer Provisions}\n\nEstates specialty: +5%/level to the Estates skill's existing daily gold income. Native rounding and daily income timing apply. No immediate visit reward, free items, resource duplication or extra recruitment stock."}
+    },
+    "images": {"large": "runeterra/bandlecity/heroes/paparo/large.png", "small": "runeterra/bandlecity/heroes/paparo/small.png", "specialtyLarge": "runeterra/bandlecity/heroes/paparo/specialtyLarge.png", "specialtySmall": "runeterra/bandlecity/heroes/paparo/specialtySmall.png"},
+    "army": [{"creature": "yordleScout", "min": 10, "max": 16}, {"creature": "papercraftDragon", "min": 2, "max": 3}, {"creature": "mechPilot", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:estates", "level": "basic"}, {"skill": "core:tactics", "level": "basic"}],
+    "specialty": {"secondary": "core:estates", "stepSize": 5}
+  },
+  "nakotak": {
+    "class": "bandleMarshal", "female": false, "special": false,
+    "texts": {
+      "name": "Chief Nakotak",
+      "biography": "Nakotak leads the yordles of Nakotak Valley by a wonderfully debatable dinosaur-bone qualification. His people, their minitee neighbors and their recurring experiments with local creatures establish an enduring community. He represents that valley within this Bandle skirmish, not the frozen Freljord life of Gnar or a new sovereign over every yordle. His native melee-training specialty is a project command adaptation; transformation does not heal or empower his army.",
+      "specialty": {"name": "Valley Courage", "description": "Native Offence specialty increases the skill's melee-damage bonus by 5% per hero level.", "tooltip": "{Valley Courage}\n\nOffence specialty: +5%/level to the skill's existing melee-damage bonus. Applies to eligible melee attacks under normal damage rules. No transformation trigger, free healing, extra attack or bonus ranged damage."}
+    },
+    "images": {"large": "runeterra/bandlecity/heroes/nakotak/large.png", "small": "runeterra/bandlecity/heroes/nakotak/small.png", "specialtyLarge": "runeterra/bandlecity/heroes/nakotak/specialtyLarge.png", "specialtySmall": "runeterra/bandlecity/heroes/nakotak/specialtySmall.png"},
+    "army": [{"creature": "yordleScout", "min": 10, "max": 16}, {"creature": "papercraftDragon", "min": 2, "max": 3}, {"creature": "mechPilot", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:offence", "level": "basic"}, {"skill": "core:leadership", "level": "basic"}],
+    "specialty": {"secondary": "core:offence", "stepSize": 5}
+  },
+  "portia": {
+    "class": "gladeKeeper", "female": true, "special": false,
+    "texts": {
+      "name": "Portia the Peculiar",
+      "biography": "The Bandle-allocated Explorer's Guild expedition knows old Portia as a dependable, if peculiar, portal helper. This named dragon's ongoing service to the community of travelers grounds her inclusion. Representing her as an army commander, and ordinary Logistics as her route knowledge, are project adaptations. Her portrait retains her dragon identity; class appearances are a command-interface abstraction and never turn every soldier into a flying dragon.",
+      "specialty": {"name": "Well-Known Ways", "description": "Native Logistics specialty increases the skill's land-movement bonus by 5% per hero level.", "tooltip": "{Well-Known Ways}\n\nLogistics specialty: +5%/level to the skill's existing land-movement bonus. Native daily allowance, terrain and army-speed rules apply. No teleportation, flight, immediate movement refill or extra travel action."}
+    },
+    "images": {"large": "runeterra/bandlecity/heroes/portia/large.png", "small": "runeterra/bandlecity/heroes/portia/small.png", "specialtyLarge": "runeterra/bandlecity/heroes/portia/specialtyLarge.png", "specialtySmall": "runeterra/bandlecity/heroes/portia/specialtySmall.png"},
+    "army": [{"creature": "yordleScout", "min": 10, "max": 16}, {"creature": "papercraftDragon", "min": 2, "max": 4}, {"creature": "mechPilot", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:logistics", "level": "basic"}],
+    "specialty": {"secondary": "core:logistics", "stepSize": 5},
+    "spellbook": ["core:haste", "core:fortune"]
+  },
+  "milty": {
+    "class": "bandleMarshal", "female": false, "special": false,
+    "texts": {
+      "name": "Uncle Milty",
+      "biography": "Milty keeps trying to connect with his gloomy niece Vex, including through candlelit ghost stories. These continuing family bonds place this canonical supporting yordle within Bandle's community even though his niece pursues another path. The skirmish imagines him organizing a volunteer expedition; that command role and his encouraging presence are project fiction. He is not Vex in disguise, a regional ruler or proof that frightening stories are literal history.",
+      "specialty": {"name": "Stories by Candlelight", "description": "Army Morale +1, subject to native eligibility and caps.", "tooltip": "{Stories by Candlelight}\n\nAdds 1 Morale to eligible troops under this hero. Native Morale caps and exclusions remain; nonliving constructs do not gain positive Morale turns. No guaranteed extra action or compulsory enemy fear."}
+    },
+    "images": {"large": "runeterra/bandlecity/heroes/milty/large.png", "small": "runeterra/bandlecity/heroes/milty/small.png", "specialtyLarge": "runeterra/bandlecity/heroes/milty/specialtyLarge.png", "specialtySmall": "runeterra/bandlecity/heroes/milty/specialtySmall.png"},
+    "army": [{"creature": "yordleScout", "min": 10, "max": 16}, {"creature": "papercraftDragon", "min": 2, "max": 3}, {"creature": "mechPilot", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:leadership", "level": "basic"}, {"skill": "core:tactics", "level": "basic"}],
+    "specialty": {"bonuses": {"encouragement": {"type": "MORALE", "val": 1}}}
+  },
+  "allay": {
+    "class": "gladeKeeper", "female": true, "special": false,
+    "texts": {
+      "name": "Allay",
+      "biography": "Allay's exuberant invitations and carefully planned gifts keep reaching Vex despite her reluctance. Her place in that web of Bandle friendships makes her a local supporting character rather than an imported skin persona. The project gives her a volunteer command role and a bounded Luck specialty to express shared cheer. Her army gets neither LoR Spirit and Gloom counters nor a canon power to force anyone to attend a party.",
+      "specialty": {"name": "A Gift for Everyone", "description": "Army Luck +1, subject to native Luck caps.", "tooltip": "{A Gift for Everyone}\n\nAdds 1 Luck to troops under this hero. Native caps and battle rules remain; the result is probabilistic. Does not grant Spirit, Gloom, free spells, guaranteed critical hits or extra actions."}
+    },
+    "images": {"large": "runeterra/bandlecity/heroes/allay/large.png", "small": "runeterra/bandlecity/heroes/allay/small.png", "specialtyLarge": "runeterra/bandlecity/heroes/allay/specialtyLarge.png", "specialtySmall": "runeterra/bandlecity/heroes/allay/specialtySmall.png"},
+    "army": [{"creature": "yordleScout", "min": 10, "max": 16}, {"creature": "papercraftDragon", "min": 2, "max": 4}, {"creature": "mechPilot", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:luck", "level": "basic"}],
+    "specialty": {"bonuses": {"goodwill": {"type": "LUCK", "val": 1}}},
+    "spellbook": ["core:bless", "core:cure"]
+  },
+  "gaspar": {
+    "class": "gladeKeeper", "female": false, "special": false,
+    "texts": {
+      "name": "Gaspar",
+      "biography": "Known in the card title as Realm's Caretaker, Gaspar spent years alone in Realm's End before dedicating himself to helping other lost travelers home. He belongs through this continuing service to the same portal community as Norra, not merely through a Bandle card label. The project includes this integrated guide in the town's expedition coalition. His bounded rough-terrain discount is a command adaptation, not proof that every portal leads straight to Bandle City.",
+      "specialty": {"name": "No One Left Wandering", "description": "Reduces eligible rough-terrain step cost by 10 movement points, down to the native base-cost floor.", "tooltip": "{No One Left Wandering}\n\nAdds 10 to ROUGH_TERRAIN_DISCOUNT: subtracts 10 movement points from eligible terrain cost, combining with native Pathfinding and the base-cost floor. Roads, native-terrain eligibility and ordinary grass can mask the saving. No flight or automatic route home."}
+    },
+    "images": {"large": "runeterra/bandlecity/heroes/gaspar/large.png", "small": "runeterra/bandlecity/heroes/gaspar/small.png", "specialtyLarge": "runeterra/bandlecity/heroes/gaspar/specialtyLarge.png", "specialtySmall": "runeterra/bandlecity/heroes/gaspar/specialtySmall.png"},
+    "army": [{"creature": "yordleScout", "min": 10, "max": 16}, {"creature": "papercraftDragon", "min": 2, "max": 4}, {"creature": "mechPilot", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:pathfinding", "level": "basic"}],
+    "specialty": {"bonuses": {"wayfinding": {"type": "ROUGH_TERRAIN_DISCOUNT", "val": 10}}},
+    "spellbook": ["core:haste", "core:cure"]
+  },
+  "jelly": {
+    "class": "gladeKeeper", "female": false, "special": false,
+    "texts": {
+      "name": "Jelly",
+      "biography": "The Assistant Librarian's flavor text identifies Jelly through Yuumi's affectionate ranking of her closest friends, alongside Book and Norra. That ongoing household and library relationship anchors this named fae in Bandle's community. The project imagines the assistant organizing an expedition's records and learning from its journeys. A shared class appearance and the engine's gender flag are interface conventions, not new claims about this fae's anatomy, gender or canon military rank.",
+      "specialty": {"name": "Expedition Records", "description": "Native Learning specialty increases the skill's experience bonus by 5% per hero level.", "tooltip": "{Expedition Records}\n\nLearning specialty: +5%/level to the skill's existing experience-gain bonus. Native eligible experience awards and integer rounding apply. No spell drawing, free levels, extra skill slots or copied Book of Thresholds."}
+    },
+    "images": {"large": "runeterra/bandlecity/heroes/jelly/large.png", "small": "runeterra/bandlecity/heroes/jelly/small.png", "specialtyLarge": "runeterra/bandlecity/heroes/jelly/specialtyLarge.png", "specialtySmall": "runeterra/bandlecity/heroes/jelly/specialtySmall.png"},
+    "army": [{"creature": "yordleScout", "min": 10, "max": 16}, {"creature": "papercraftDragon", "min": 2, "max": 4}, {"creature": "mechPilot", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:learning", "level": "basic"}],
+    "specialty": {"secondary": "core:learning", "stepSize": 5},
+    "spellbook": ["core:bless", "core:shield"]
+  },
+  "marv": {
+    "class": "bandleMarshal", "female": false, "special": false,
+    "texts": {
+      "name": "Marv",
+      "biography": "Norra calls her newly animated assistant Marv, and Marv insists on being described as junk rather than trash. His continuing work for her gives the named Junk Construct a place in her Bandle household and expedition community. Turning that assistant into a commander and expressing careful preparation through Armorer are explicit project adaptations. His portrait remains a singular assembled creature; hero command does not create a recruitable Marv species or change the living status of his troops.",
+      "specialty": {"name": "Careful Assembly", "description": "Native Armorer specialty increases the skill's physical-damage reduction by 5% per hero level.", "tooltip": "{Careful Assembly}\n\nArmorer specialty: +5%/level to the skill's existing physical-damage reduction. Normal attack and damage rules apply. No spell immunity, repaired casualties, regeneration or duplication of Marv."}
+    },
+    "images": {"large": "runeterra/bandlecity/heroes/marv/large.png", "small": "runeterra/bandlecity/heroes/marv/small.png", "specialtyLarge": "runeterra/bandlecity/heroes/marv/specialtyLarge.png", "specialtySmall": "runeterra/bandlecity/heroes/marv/specialtySmall.png"},
+    "army": [{"creature": "yordleScout", "min": 10, "max": 16}, {"creature": "papercraftDragon", "min": 2, "max": 3}, {"creature": "mechPilot", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:armorer", "level": "basic"}, {"skill": "core:tactics", "level": "basic"}],
+    "specialty": {"secondary": "core:armorer", "stepSize": 5}
+  }
+}

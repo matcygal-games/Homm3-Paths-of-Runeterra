@@ -1,0 +1,1014 @@
+{
+  "zaunThug": {
+    "name": {
+      "singular": "Zaun Thug",
+      "plural": "Zaun Thugs"
+    },
+    "description": "Project-fiction adult street scrapper inspired by Zaun's chem-punk gangs and improvised equipment. A living ground melee unit with no innate special ability; it is not an official Zaun levy or a mechanical soldier.",
+    "faction": "zaun",
+    "level": 1,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": false,
+    "attack": 3,
+    "defense": 2,
+    "hitPoints": 6,
+    "damage": {
+      "min": 1,
+      "max": 3
+    },
+    "speed": 5,
+    "cost": {
+      "gold": 35
+    },
+    "growth": 14,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 10,
+      "max": 25
+    },
+    "fightValue": 45,
+    "aiValue": 50,
+    "abilities": {},
+    "graphics": {
+      "animation": "runeterra/zaun/creatures/zaunThug/battle.json",
+      "map": "runeterra/zaun/creatures/zaunThug/map.json",
+      "iconLarge": "runeterra/zaun/creatures/zaunThug/large.png",
+      "iconSmall": "runeterra/zaun/creatures/zaunThug/small.png",
+      "mapAttackFromLeft": "runeterra/zaun/creatures/zaunThug/attackLeft.png",
+      "mapAttackFromRight": "runeterra/zaun/creatures/zaunThug/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1
+    },
+    "sound": {
+      "attack": "PIKEATTK.wav",
+      "defend": "PIKEDFND.wav",
+      "killed": "PIKEKILL.wav",
+      "move": "PIKEMOVE.wav",
+      "wince": "PIKEWNCE.wav"
+    },
+    "upgrades": [
+      "chemPunk"
+    ]
+  },
+  "chemPunk": {
+    "name": {
+      "singular": "Chem-Punk",
+      "plural": "Chem-Punks"
+    },
+    "description": "Project-fiction veteran street scrapper in patched work clothes and scavenged protection. A living ground melee upgrade with improved listed statistics, ordinary retaliation and no automatic poison or mechanical immunity.",
+    "faction": "zaun",
+    "level": 1,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": false,
+    "attack": 4,
+    "defense": 3,
+    "hitPoints": 8,
+    "damage": {
+      "min": 2,
+      "max": 4
+    },
+    "speed": 6,
+    "cost": {
+      "gold": 50
+    },
+    "growth": 14,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 10,
+      "max": 25
+    },
+    "fightValue": 70,
+    "aiValue": 78,
+    "abilities": {},
+    "graphics": {
+      "animation": "runeterra/zaun/creatures/chemPunk/battle.json",
+      "map": "runeterra/zaun/creatures/chemPunk/map.json",
+      "iconLarge": "runeterra/zaun/creatures/chemPunk/large.png",
+      "iconSmall": "runeterra/zaun/creatures/chemPunk/small.png",
+      "mapAttackFromLeft": "runeterra/zaun/creatures/chemPunk/attackLeft.png",
+      "mapAttackFromRight": "runeterra/zaun/creatures/chemPunk/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1
+    },
+    "sound": {
+      "attack": "PIKEATTK.wav",
+      "defend": "PIKEDFND.wav",
+      "killed": "PIKEKILL.wav",
+      "move": "PIKEMOVE.wav",
+      "wince": "PIKEWNCE.wav"
+    }
+  },
+  "chemJack": {
+    "name": {
+      "singular": "Chem-Jack",
+      "plural": "Chem-Jacks"
+    },
+    "description": "Living Zaun industrial worker carrying a practical hand-operated demolition tool and chemical work gear. One ordinary walking melee strike with normal retaliation; no automatic regeneration, mutation, powered exoskeleton, ranged attack or free extra action. The recruitable rank is a project adaptation of industrial labour.",
+    "faction": "zaun",
+    "level": 2,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": false,
+    "attack": 6,
+    "defense": 3,
+    "hitPoints": 15,
+    "damage": {
+      "min": 2,
+      "max": 4
+    },
+    "speed": 5,
+    "cost": {
+      "gold": 100
+    },
+    "growth": 9,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 8,
+      "max": 20
+    },
+    "fightValue": 170,
+    "aiValue": 190,
+    "abilities": {},
+    "graphics": {
+      "animation": "runeterra/zaun/creatures/chemJack/battle.json",
+      "map": "runeterra/zaun/creatures/chemJack/map.json",
+      "iconLarge": "runeterra/zaun/creatures/chemJack/large.png",
+      "iconSmall": "runeterra/zaun/creatures/chemJack/small.png",
+      "mapAttackFromLeft": "runeterra/zaun/creatures/chemJack/attackLeft.png",
+      "mapAttackFromRight": "runeterra/zaun/creatures/chemJack/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1
+    },
+    "sound": {
+      "attack": "HALBATTK.wav",
+      "defend": "HALBDFND.wav",
+      "killed": "HALBKILL.wav",
+      "move": "HALBMOVE.wav",
+      "wince": "HALBWNCE.wav"
+    },
+    "upgrades": [
+      "reinforcedChemJack"
+    ]
+  },
+  "reinforcedChemJack": {
+    "name": {
+      "singular": "Reinforced Chem-Jack",
+      "plural": "Reinforced Chem-Jacks"
+    },
+    "description": "Living industrial worker with reinforced protective clothing, tool head and work harness. Improved native Attack, Defence and health support ordinary walking melee; normal retaliation and living eligibility remain. No regeneration, mutation, powered exoskeleton, ranged attack or free extra action.",
+    "faction": "zaun",
+    "level": 2,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": false,
+    "attack": 8,
+    "defense": 5,
+    "hitPoints": 20,
+    "damage": {
+      "min": 3,
+      "max": 5
+    },
+    "speed": 6,
+    "cost": {
+      "gold": 140
+    },
+    "growth": 9,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 8,
+      "max": 20
+    },
+    "fightValue": 240,
+    "aiValue": 270,
+    "abilities": {},
+    "graphics": {
+      "animation": "runeterra/zaun/creatures/reinforcedChemJack/battle.json",
+      "map": "runeterra/zaun/creatures/reinforcedChemJack/map.json",
+      "iconLarge": "runeterra/zaun/creatures/reinforcedChemJack/large.png",
+      "iconSmall": "runeterra/zaun/creatures/reinforcedChemJack/small.png",
+      "mapAttackFromLeft": "runeterra/zaun/creatures/reinforcedChemJack/attackLeft.png",
+      "mapAttackFromRight": "runeterra/zaun/creatures/reinforcedChemJack/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1
+    },
+    "sound": {
+      "attack": "HALBATTK.wav",
+      "defend": "HALBDFND.wav",
+      "killed": "HALBKILL.wav",
+      "move": "HALBMOVE.wav",
+      "wince": "HALBWNCE.wav"
+    }
+  },
+  "chemtechConstruct": {
+    "name": {
+      "singular": "Chemtech Construct",
+      "plural": "Chemtech Constructs"
+    },
+    "description": "Project-fiction pressure-driven ranged automaton inspired by Zaun's industrial golems and chemtech mechanisms. It has 8 shots and ordinary ranged penalties; its mechanical and non-living classifications are game rules, not a claim that all Zaun golems lack sentience. No poison cloud or Hexcore is implied.",
+    "faction": "zaun",
+    "level": 3,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": false,
+    "attack": 7,
+    "defense": 6,
+    "hitPoints": 28,
+    "damage": {
+      "min": 4,
+      "max": 8
+    },
+    "speed": 4,
+    "cost": {
+      "gold": 250
+    },
+    "growth": 7,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 6,
+      "max": 15
+    },
+    "fightValue": 330,
+    "aiValue": 430,
+    "abilities": {
+      "chemFrame": {
+        "type": "MECHANICAL",
+        "description": "A mechanical non-living frame: no morale in either direction, and core Resurrection excludes it. Other healing and spell eligibility is effect-specific; no blanket Cure or healing immunity."
+      },
+      "pressureNozzle": {
+        "type": "SHOOTER",
+        "description": "Fires a pressurised chemical shot; ordinary distance, wall and melee penalties apply."
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/zaun/creatures/chemtechConstruct/battle.json",
+      "map": "runeterra/zaun/creatures/chemtechConstruct/map.json",
+      "iconLarge": "runeterra/zaun/creatures/chemtechConstruct/large.png",
+      "iconSmall": "runeterra/zaun/creatures/chemtechConstruct/small.png",
+      "mapAttackFromLeft": "runeterra/zaun/creatures/chemtechConstruct/attackLeft.png",
+      "mapAttackFromRight": "runeterra/zaun/creatures/chemtechConstruct/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1,
+      "missile": {
+        "projectile": "runeterra/zaun/projectiles/pressureShot.json",
+        "frameAngles": [
+          90,
+          45,
+          0,
+          -45,
+          -90
+        ],
+        "attackClimaxFrame": 5,
+        "offset": {
+          "lowerX": 24,
+          "lowerY": -19,
+          "middleX": 27,
+          "middleY": -41,
+          "upperX": 23,
+          "upperY": -59
+        }
+      }
+    },
+    "sound": {
+      "attack": "IGLMATTK.wav",
+      "defend": "IGLMDFND.wav",
+      "killed": "IGLMKILL.wav",
+      "move": "IGLMMOVE.wav",
+      "shoot": "MGRMSHOT.wav",
+      "wince": "IGLMWNCE.wav"
+    },
+    "shots": 8,
+    "upgrades": [
+      "reinforcedConstruct"
+    ]
+  },
+  "reinforcedConstruct": {
+    "name": {
+      "singular": "Reinforced Chemtech Construct",
+      "plural": "Reinforced Chemtech Constructs"
+    },
+    "description": "Project-fiction braced pressure automaton with 12 shots and improved listed statistics. Its mechanical and non-living rules do not make it a mass-produced Blitzcrank, grant adaptive immunity or add a permanent chemical field.",
+    "faction": "zaun",
+    "level": 3,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": false,
+    "attack": 9,
+    "defense": 8,
+    "hitPoints": 38,
+    "damage": {
+      "min": 6,
+      "max": 11
+    },
+    "speed": 5,
+    "cost": {
+      "gold": 350
+    },
+    "growth": 7,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 6,
+      "max": 15
+    },
+    "fightValue": 520,
+    "aiValue": 700,
+    "abilities": {
+      "chemFrame": {
+        "type": "MECHANICAL",
+        "description": "A mechanical non-living frame: no morale in either direction, and core Resurrection excludes it. Other healing and spell eligibility is effect-specific; no blanket Cure or healing immunity."
+      },
+      "pressureNozzle": {
+        "type": "SHOOTER",
+        "description": "Fires a pressurised chemical shot; ordinary distance, wall and melee penalties apply."
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/zaun/creatures/reinforcedConstruct/battle.json",
+      "map": "runeterra/zaun/creatures/reinforcedConstruct/map.json",
+      "iconLarge": "runeterra/zaun/creatures/reinforcedConstruct/large.png",
+      "iconSmall": "runeterra/zaun/creatures/reinforcedConstruct/small.png",
+      "mapAttackFromLeft": "runeterra/zaun/creatures/reinforcedConstruct/attackLeft.png",
+      "mapAttackFromRight": "runeterra/zaun/creatures/reinforcedConstruct/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1,
+      "missile": {
+        "projectile": "runeterra/zaun/projectiles/pressureShot.json",
+        "frameAngles": [
+          90,
+          45,
+          0,
+          -45,
+          -90
+        ],
+        "attackClimaxFrame": 5,
+        "offset": {
+          "lowerX": 42,
+          "lowerY": -26,
+          "middleX": 45,
+          "middleY": -46,
+          "upperX": 44,
+          "upperY": -58
+        }
+      }
+    },
+    "sound": {
+      "attack": "IGLMATTK.wav",
+      "defend": "IGLMDFND.wav",
+      "killed": "IGLMKILL.wav",
+      "move": "IGLMMOVE.wav",
+      "shoot": "MGRMSHOT.wav",
+      "wince": "IGLMWNCE.wav"
+    },
+    "shots": 12
+  },
+  "chemBaronEnforcer": {
+    "name": {
+      "singular": "Chem-Baron Enforcer",
+      "plural": "Chem-Baron Enforcers"
+    },
+    "description": "Project-fiction living chem-baron hireling with industrial prosthetics, inspired by Zaun's chem-jacks and augmented thugs. Heavy braces, a powered cleaver and stained leather. The base variant strikes with ordinary contact damage: it has no percentage armour piercing, no non-living classification and no extra turn.",
+    "faction": "zaun",
+    "level": 4,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": false,
+    "attack": 11,
+    "defense": 10,
+    "hitPoints": 40,
+    "damage": {
+      "min": 6,
+      "max": 9
+    },
+    "speed": 5,
+    "cost": {
+      "gold": 350
+    },
+    "growth": 4,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 5,
+      "max": 12
+    },
+    "fightValue": 500,
+    "aiValue": 560,
+    "abilities": {},
+    "graphics": {
+      "animation": "runeterra/zaun/creatures/chemBaronEnforcer/battle.json",
+      "map": "runeterra/zaun/creatures/chemBaronEnforcer/map.json",
+      "iconLarge": "runeterra/zaun/creatures/chemBaronEnforcer/large.png",
+      "iconSmall": "runeterra/zaun/creatures/chemBaronEnforcer/small.png",
+      "mapAttackFromLeft": "runeterra/zaun/creatures/chemBaronEnforcer/attackLeft.png",
+      "mapAttackFromRight": "runeterra/zaun/creatures/chemBaronEnforcer/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1
+    },
+    "sound": {
+      "attack": "SWRDATTK.wav",
+      "defend": "SWRDDFND.wav",
+      "killed": "SWRDKILL.wav",
+      "move": "SWRDMOVE.wav",
+      "wince": "SWRDWNCE.wav"
+    },
+    "upgrades": [
+      "cyberneticGuard"
+    ]
+  },
+  "cyberneticGuard": {
+    "name": {
+      "singular": "Cybernetic Guard",
+      "plural": "Cybernetic Guards"
+    },
+    "description": "Project-fiction living augmented enforcer with a heavier braced frame and a wider cleaver arc. The upgraded swing also reaches the hexes immediately to the left and right of the target, so one strike can hit three enemies. Bespoke prosthetics do not remove human agency, confer mechanical classification or establish a standardized national guard.",
+    "faction": "zaun",
+    "level": 4,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": false,
+    "attack": 12,
+    "defense": 11,
+    "hitPoints": 50,
+    "damage": {
+      "min": 7,
+      "max": 11
+    },
+    "speed": 6,
+    "cost": {
+      "gold": 500
+    },
+    "growth": 4,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 5,
+      "max": 12
+    },
+    "fightValue": 700,
+    "aiValue": 780,
+    "abilities": {
+      "wideCleaver": {
+        "type": "THREE_HEADED_ATTACK",
+        "description": "The native bonus adds the hexes immediately to the left and right of the target to the strike, so one swing can hit three enemies. It adds no extra attack, no spell damage and no defence penetration."
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/zaun/creatures/cyberneticGuard/battle.json",
+      "map": "runeterra/zaun/creatures/cyberneticGuard/map.json",
+      "iconLarge": "runeterra/zaun/creatures/cyberneticGuard/large.png",
+      "iconSmall": "runeterra/zaun/creatures/cyberneticGuard/small.png",
+      "mapAttackFromLeft": "runeterra/zaun/creatures/cyberneticGuard/attackLeft.png",
+      "mapAttackFromRight": "runeterra/zaun/creatures/cyberneticGuard/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1
+    },
+    "sound": {
+      "attack": "SWRDATTK.wav",
+      "defend": "SWRDDFND.wav",
+      "killed": "SWRDKILL.wav",
+      "move": "SWRDMOVE.wav",
+      "wince": "SWRDWNCE.wav"
+    }
+  },
+  "chemBaronAgent": {
+    "name": {
+      "singular": "Chem-Baron",
+      "plural": "Chem-Barons"
+    },
+    "description": "Living Chem-Baron field commander with the existing chemical satchel, caged flasks and hooked staff. Six physical flask shots per stack per battle use ordinary ranged distance, wall and melee penalties. The existing one-charge Basic Weakness intervention still costs its own battle action and lasts three rounds; it is never an automatic rider on a shot. Recruitable Chem-Baron rank, thrown-flask damage and the paid spell are project adaptations, not copies of a unique named baron or a canonical standardized corps. No poison, splash, persistent gas field or free extra action.",
+    "faction": "zaun",
+    "level": 5,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": false,
+    "attack": 14,
+    "defense": 11,
+    "hitPoints": 65,
+    "damage": {
+      "min": 12,
+      "max": 18
+    },
+    "speed": 6,
+    "cost": {
+      "gold": 600
+    },
+    "growth": 3,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 4,
+      "max": 10
+    },
+    "fightValue": 900,
+    "aiValue": 1000,
+    "abilities": {
+      "satchelCaster": {
+        "type": "SPELLCASTER",
+        "subtype": "core:weakness",
+        "val": 1,
+        "description": "Separately spends the stack action to cast Basic Weakness on one eligible enemy; never triggered automatically by a physical flask shot."
+      },
+      "singleCharge": {
+        "type": "CASTS",
+        "val": 1,
+        "description": "One activated cast per stack per battle."
+      },
+      "weaknessDuration": {
+        "type": "CREATURE_ENCHANT_POWER",
+        "val": 3,
+        "description": "The cast effect lasts three rounds."
+      },
+      "chemBaronVolley": {
+        "type": "SHOOTER",
+        "description": "Throws one physical chemical flask per ranged attack, using one of six shots. Ordinary distance, wall and adjacent-melee penalties apply; no splash, poison, free cast or extra attack."
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/zaun/creatures/chemBaronAgent/battle.json",
+      "map": "runeterra/zaun/creatures/chemBaronAgent/map.json",
+      "iconLarge": "runeterra/zaun/creatures/chemBaronAgent/large.png",
+      "iconSmall": "runeterra/zaun/creatures/chemBaronAgent/small.png",
+      "mapAttackFromLeft": "runeterra/zaun/creatures/chemBaronAgent/attackLeft.png",
+      "mapAttackFromRight": "runeterra/zaun/creatures/chemBaronAgent/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1,
+      "missile": {
+        "projectile": "runeterra/zaun/projectiles/chemBaronShot.json",
+        "frameAngles": [90, 45, 0, -45, -90],
+        "attackClimaxFrame": 4,
+        "offset": {
+          "lowerX": 31,
+          "lowerY": -38,
+          "middleX": 40,
+          "middleY": -57,
+          "upperX": 37,
+          "upperY": -77
+        }
+      }
+    },
+    "sound": {
+      "attack": "MONKATTK.wav",
+      "defend": "MONKDFND.wav",
+      "killed": "MONKKILL.wav",
+      "move": "MONKMOVE.wav",
+      "shoot": "OORCSHOT.wav",
+      "wince": "MONKWNCE.wav"
+    },
+    "shots": 6,
+    "upgrades": [
+      "masterAlchemist"
+    ]
+  },
+  "masterAlchemist": {
+    "name": {
+      "singular": "Master Chem-Baron",
+      "plural": "Master Chem-Barons"
+    },
+    "description": "Experienced living Chem-Baron field commander retaining the existing filter mask, capped hoses, chemical satchel and painted appearance. Eight physical flask shots per stack per battle use ordinary ranged distance, wall and melee penalties. One separately paid Advanced Weakness cast per stack per battle lasts three rounds. Rank and combat are project adaptations; neither a shot nor its chemical appearance grants automatic poison, splash, mind control, a persistent gas field or an extra action.",
+    "faction": "zaun",
+    "level": 5,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": false,
+    "attack": 15,
+    "defense": 13,
+    "hitPoints": 70,
+    "damage": {
+      "min": 13,
+      "max": 20
+    },
+    "speed": 6,
+    "cost": {
+      "gold": 700
+    },
+    "growth": 3,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 4,
+      "max": 10
+    },
+    "fightValue": 1200,
+    "aiValue": 1350,
+    "abilities": {
+      "satchelCaster": {
+        "type": "SPELLCASTER",
+        "subtype": "core:weakness",
+        "val": 2,
+        "description": "Separately spends the stack action to cast Advanced Weakness on one eligible enemy; never triggered automatically by a physical flask shot."
+      },
+      "singleCharge": {
+        "type": "CASTS",
+        "val": 1,
+        "description": "One activated cast per stack per battle."
+      },
+      "weaknessDuration": {
+        "type": "CREATURE_ENCHANT_POWER",
+        "val": 3,
+        "description": "The cast effect lasts three rounds."
+      },
+      "chemBaronVolley": {
+        "type": "SHOOTER",
+        "description": "Throws one physical chemical flask per ranged attack, using one of eight shots. Ordinary distance, wall and adjacent-melee penalties apply; no splash, poison, free cast or extra attack."
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/zaun/creatures/masterAlchemist/battle.json",
+      "map": "runeterra/zaun/creatures/masterAlchemist/map.json",
+      "iconLarge": "runeterra/zaun/creatures/masterAlchemist/large.png",
+      "iconSmall": "runeterra/zaun/creatures/masterAlchemist/small.png",
+      "mapAttackFromLeft": "runeterra/zaun/creatures/masterAlchemist/attackLeft.png",
+      "mapAttackFromRight": "runeterra/zaun/creatures/masterAlchemist/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1,
+      "missile": {
+        "projectile": "runeterra/zaun/projectiles/chemBaronShot.json",
+        "frameAngles": [90, 45, 0, -45, -90],
+        "attackClimaxFrame": 4,
+        "offset": {
+          "lowerX": 28,
+          "lowerY": -36,
+          "middleX": 38,
+          "middleY": -57,
+          "upperX": 36,
+          "upperY": -75
+        }
+      }
+    },
+    "sound": {
+      "attack": "MONKATTK.wav",
+      "defend": "MONKDFND.wav",
+      "killed": "MONKKILL.wav",
+      "move": "MONKMOVE.wav",
+      "shoot": "OORCSHOT.wav",
+      "wince": "MONKWNCE.wav"
+    },
+    "shots": 8
+  },
+  "sumpReclaimer": {
+    "name": {
+      "singular": "Sump Reclaimer",
+      "plural": "Sump Reclaimers"
+    },
+    "description": "Living sump salvage worker with an exposed human face and a long mechanical clamp. Native LONG_WEAPON permits one melee strike along a straight line across exactly one clear intermediate hex; only that separated attack avoids retaliation. Adjacent contact uses ordinary melee retaliation. No shot, hook displacement, cleave, free extra action or mechanical-body immunity; the recruitable rank is project fiction.",
+    "faction": "zaun",
+    "level": 6,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": false,
+    "attack": 16,
+    "defense": 14,
+    "hitPoints": 95,
+    "damage": {
+      "min": 16,
+      "max": 24
+    },
+    "speed": 6,
+    "cost": {
+      "gold": 1150
+    },
+    "growth": 2,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 3,
+      "max": 8
+    },
+    "fightValue": 1900,
+    "aiValue": 2050,
+    "abilities": {
+      "hydraulicReach": {
+        "type": "LONG_WEAPON",
+        "description": "The native bonus lets the unit strike over exactly one empty hex. The long attack is not answered by retaliation, it is not a ranged shot and it cannot strike through another stack."
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/zaun/creatures/sumpReclaimer/battle.json",
+      "map": "runeterra/zaun/creatures/sumpReclaimer/map.json",
+      "iconLarge": "runeterra/zaun/creatures/sumpReclaimer/large.png",
+      "iconSmall": "runeterra/zaun/creatures/sumpReclaimer/small.png",
+      "mapAttackFromLeft": "runeterra/zaun/creatures/sumpReclaimer/attackLeft.png",
+      "mapAttackFromRight": "runeterra/zaun/creatures/sumpReclaimer/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1
+    },
+    "sound": {
+      "attack": "CRUSATTK.wav",
+      "defend": "CRUSDFND.wav",
+      "killed": "CRUSKILL.wav",
+      "move": "CRUSMOVE.wav",
+      "wince": "CRUSWNCE.wav"
+    },
+    "upgrades": [
+      "hydraulicReclaimer"
+    ]
+  },
+  "hydraulicReclaimer": {
+    "name": {
+      "singular": "Hydraulic Reclaimer",
+      "plural": "Hydraulic Reclaimers"
+    },
+    "description": "Living salvage specialist with a larger hydraulic two-jaw clamp and reinforced work protection. Native LONG_WEAPON reaches across exactly one clear intermediate hex along a straight line without retaliation; adjacent contact still draws ordinary retaliation. It is a single-target melee tool, not the Cybernetic Guard's close fan sweep, a shot, hook displacement or mechanical-body immunity.",
+    "faction": "zaun",
+    "level": 6,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": false,
+    "attack": 17,
+    "defense": 16,
+    "hitPoints": 105,
+    "damage": {
+      "min": 18,
+      "max": 26
+    },
+    "speed": 7,
+    "cost": {
+      "gold": 1500
+    },
+    "growth": 2,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 3,
+      "max": 8
+    },
+    "fightValue": 2300,
+    "aiValue": 2500,
+    "abilities": {
+      "hydraulicReach": {
+        "type": "LONG_WEAPON",
+        "description": "The native bonus lets the unit strike over exactly one empty hex. The long attack is not answered by retaliation, it is not a ranged shot and it cannot strike through another stack."
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/zaun/creatures/hydraulicReclaimer/battle.json",
+      "map": "runeterra/zaun/creatures/hydraulicReclaimer/map.json",
+      "iconLarge": "runeterra/zaun/creatures/hydraulicReclaimer/large.png",
+      "iconSmall": "runeterra/zaun/creatures/hydraulicReclaimer/small.png",
+      "mapAttackFromLeft": "runeterra/zaun/creatures/hydraulicReclaimer/attackLeft.png",
+      "mapAttackFromRight": "runeterra/zaun/creatures/hydraulicReclaimer/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1
+    },
+    "sound": {
+      "attack": "CRUSATTK.wav",
+      "defend": "CRUSDFND.wav",
+      "killed": "CRUSKILL.wav",
+      "move": "CRUSMOVE.wav",
+      "wince": "CRUSWNCE.wav"
+    }
+  },
+  "chemGolem": {
+    "name": {
+      "singular": "Chem-Golem",
+      "plural": "Chem-Golems"
+    },
+    "description": "A massive living Zaun human enhanced by chemtech, with visible face and flesh, practical pressure braces and heavy striking arms. Chem-Golem is a project troop nickname, not an unmanned metal body or a champion copy. Grounded two-hex walking ordinary single-target melee with normal retaliation and native living morale and spell eligibility. No automatic regeneration, repair, immunity, artillery or extra action. Native KING 2 requires at least Advanced Slayer mastery.",
+    "faction": "zaun",
+    "level": 7,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": true,
+    "attack": 27,
+    "defense": 24,
+    "hitPoints": 240,
+    "damage": {
+      "min": 40,
+      "max": 60
+    },
+    "speed": 7,
+    "cost": {
+      "gold": 3200,
+      "sulfur": 1
+    },
+    "growth": 1,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 2,
+      "max": 6
+    },
+    "fightValue": 4500,
+    "aiValue": 4800,
+    "abilities": {
+      "slayerTarget": {
+        "type": "KING",
+        "val": 2,
+        "description": "The native marker requires a slayer effect of at least this mastery before it can affect the stack; a basic slayer spell does not grant its additional Attack against this stack, and the stack still takes ordinary damage."
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/zaun/creatures/chemGolem/battle.json",
+      "map": "runeterra/zaun/creatures/chemGolem/map.json",
+      "iconLarge": "runeterra/zaun/creatures/chemGolem/large.png",
+      "iconSmall": "runeterra/zaun/creatures/chemGolem/small.png",
+      "mapAttackFromLeft": "runeterra/zaun/creatures/chemGolem/attackLeft.png",
+      "mapAttackFromRight": "runeterra/zaun/creatures/chemGolem/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1
+    },
+    "sound": {
+      "attack": "OGREATTK.wav",
+      "defend": "OGREDFND.wav",
+      "killed": "OGREKILL.wav",
+      "move": "OGREMOVE.wav",
+      "wince": "OGREWNCE.wav"
+    },
+    "upgrades": [
+      "pressureColossus"
+    ]
+  },
+  "pressureColossus": {
+    "name": {
+      "singular": "Pressure Colossus",
+      "plural": "Pressure Colossi"
+    },
+    "description": "A more powerful living chemtech-augmented human with visible face and flesh, reinforced pressure braces, larger chemical reservoirs and heavier striking arms. Leaps across intervening obstacles using native FLYING as a battlefield movement adaptation; lands on a legal two-hex footprint within speed 8. This is no teleport, sustained hovering or adventure flight. Ordinary single-target melee and retaliation, living morale and native spell eligibility remain. No regeneration, repair, blanket immunity, cleave, artillery or extra action. Native KING 2 requires at least Advanced Slayer mastery.",
+    "faction": "zaun",
+    "level": 7,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": true,
+    "attack": 29,
+    "defense": 26,
+    "hitPoints": 290,
+    "damage": {
+      "min": 45,
+      "max": 60
+    },
+    "speed": 8,
+    "cost": {
+      "gold": 4320,
+      "sulfur": 2
+    },
+    "growth": 1,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 2,
+      "max": 6
+    },
+    "fightValue": 6000,
+    "aiValue": 6600,
+    "abilities": {
+      "pressureLeap": {
+        "type": "FLYING",
+        "description": "Native battlefield flight represents a powerful pressure-assisted leap over intervening units and obstacles, followed by a legal two-hex landing within the normal movement range. No teleport, extra action, attack bonus, adventure flight or retaliation immunity."
+      },
+      "slayerTarget": {
+        "type": "KING",
+        "val": 2,
+        "description": "The native marker requires a slayer effect of at least this mastery before it can affect the stack; a basic slayer spell does not grant its additional Attack against this stack, and the stack still takes ordinary damage."
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/zaun/creatures/pressureColossus/battle.json",
+      "map": "runeterra/zaun/creatures/pressureColossus/map.json",
+      "iconLarge": "runeterra/zaun/creatures/pressureColossus/large.png",
+      "iconSmall": "runeterra/zaun/creatures/pressureColossus/small.png",
+      "mapAttackFromLeft": "runeterra/zaun/creatures/pressureColossus/attackLeft.png",
+      "mapAttackFromRight": "runeterra/zaun/creatures/pressureColossus/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1
+    },
+    "sound": {
+      "attack": "OGREATTK.wav",
+      "defend": "OGREDFND.wav",
+      "killed": "OGREKILL.wav",
+      "move": "OGREMOVE.wav",
+      "wince": "OGREWNCE.wav"
+    }
+  }
+}

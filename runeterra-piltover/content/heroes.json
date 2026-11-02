@@ -1,0 +1,122 @@
+{
+  "heimerdinger": {
+    "class": "guildInventor", "female": false, "special": false,
+    "texts": {"name": "Heimerdinger", "biography": "Heimerdinger is a yordle inventor and teacher embedded in Piltover's scholarly community. This legacy professor belongs through continuing work and adopted community, not an assumed Council founding date. His practical command specialty supports local freight apparatus; it creates neither free turrets nor copies of his unique inventions.", "specialty": {"name": "Freight Mechanics", "description": "Native Freight Handler specialty: +1 speed and level-scaled Attack and Defense for the handler pair.", "tooltip": "{Freight Mechanics}\n\nFreight Handlers and Armoured Handlers gain +1 speed and native 5% Attack/Defense scaling per hero-level step of three. No free machines, resurrection or field repair action."}},
+    "images": {"large": "runeterra/piltover/heroes/heimerdinger/large.png", "small": "runeterra/piltover/heroes/heimerdinger/small.png", "specialtyLarge": "runeterra/piltover/heroes/heimerdinger/specialtyLarge.png", "specialtySmall": "runeterra/piltover/heroes/heimerdinger/specialtySmall.png"},
+    "army": [{"creature": "patrolCadet", "min": 10, "max": 16}, {"creature": "wardenRifleman", "min": 3, "max": 5}, {"creature": "freightHandler", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:scholar", "level": "basic"}],
+    "specialty": {"creature": "freightHandler", "creatureLevel": 3, "stepSize": 5}, "spellbook": ["core:precision"]
+  },
+  "jayce": {
+    "class": "piltoverMarshal", "female": false, "special": false,
+    "texts": {"name": "Jayce", "biography": "Jayce is a Piltovan artificer whose selected legacy story links Clan Giopara patronage, working tools and defense of his home. Giopara is his patron, not an authenticated surname. His command specialty supporting this project's original hextech war-beasts is a gameplay adaptation, not a canonical invention claim. No Talis co-discovery chronology, Council office or repeatable personal hammer is implied.", "specialty": {"name": "Hextech Fieldcraft", "description": "Native Hextech Rampager specialty: +1 speed and level-scaled Attack and Defense for the Rampager and Dreadnought pair.", "tooltip": "{Hextech Fieldcraft}\n\nHextech Rampagers and Hextech Dreadnoughts gain +1 speed and native 5% Attack/Defense scaling per hero-level step of seven. Ammunition, Shield, nature and attack count do not scale. No starting tier-seven units, personal hammer mode or free troops."}},
+    "images": {"large": "runeterra/piltover/heroes/jayce/large.png", "small": "runeterra/piltover/heroes/jayce/small.png", "specialtyLarge": "runeterra/piltover/heroes/jayce/specialtyLarge.png", "specialtySmall": "runeterra/piltover/heroes/jayce/specialtySmall.png"},
+    "army": [{"creature": "patrolCadet", "min": 12, "max": 18}, {"creature": "wardenRifleman", "min": 3, "max": 5}, {"creature": "freightHandler", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:leadership", "level": "basic"}, {"skill": "core:tactics", "level": "basic"}],
+    "specialty": {"creature": "hextechRampager", "creatureLevel": 7, "stepSize": 5}
+  },
+  "caitlyn": {
+    "class": "piltoverMarshal", "female": true, "special": false,
+    "texts": {"name": "Caitlyn", "biography": "Caitlyn is a sheriff in Piltover's Wardens, shaped by her Kiramman upbringing and continuing investigations. The selected full biography credits her parents with her bespoke rifle. Her command specialty trains recruited shooters rather than giving a targetable hero an unavoidable personal shot. Vi remains one separate Zaun-owned identity.", "specialty": {"name": "Warden Marksmanship", "description": "Native Archery effectiveness increases by 5% per hero level.", "tooltip": "{Warden Marksmanship}\n\nImproves existing Archery by 5% per hero level. Normal ammunition, walls, melee and range rules still apply to each troop. No extra shot or unavoidable headshot."}},
+    "images": {"large": "runeterra/piltover/heroes/caitlyn/large.png", "small": "runeterra/piltover/heroes/caitlyn/small.png", "specialtyLarge": "runeterra/piltover/heroes/caitlyn/specialtyLarge.png", "specialtySmall": "runeterra/piltover/heroes/caitlyn/specialtySmall.png"},
+    "army": [{"creature": "patrolCadet", "min": 10, "max": 16}, {"creature": "wardenRifleman", "min": 5, "max": 7}, {"creature": "freightHandler", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:archery", "level": "basic"}, {"skill": "core:scouting", "level": "basic"}],
+    "specialty": {"secondary": "core:archery", "stepSize": 5}
+  },
+  "ezreal": {
+    "class": "piltoverMarshal", "female": false, "special": false,
+    "texts": {"name": "Ezreal", "biography": "Ezreal's Piltovan family, Professor Lymere's guardianship and a university-linked exploration tradition connect the wandering explorer to home. His return after discovering the Shuriman gauntlet sustains that tie without making him a civic officer. Ordinary recruitment adapts one voluntary expedition leader; travel grants no ownership of every visited culture.", "specialty": {"name": "Explorer's Eye", "description": "Permanent +1 sight radius; Piltover explorer sources share a strongest-only group.", "tooltip": "{Explorer's Eye}\n\n+1 native sight radius. Sources in the Piltover exploration group do not add together; normal Scouting adds separately. No unrestricted reveal, teleport or free artifact."}},
+    "images": {"large": "runeterra/piltover/heroes/ezreal/large.png", "small": "runeterra/piltover/heroes/ezreal/small.png", "specialtyLarge": "runeterra/piltover/heroes/ezreal/specialtyLarge.png", "specialtySmall": "runeterra/piltover/heroes/ezreal/specialtySmall.png"},
+    "army": [{"creature": "patrolCadet", "min": 10, "max": 16}, {"creature": "wardenRifleman", "min": 3, "max": 5}, {"creature": "freightHandler", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:scouting", "level": "basic"}, {"skill": "core:pathfinding", "level": "basic"}],
+    "specialty": {"bonuses": {"explorersEye": {"type": "SIGHT_RADIUS", "val": 1, "valueType": "ADDITIVE_VALUE", "stacking": "runeterraPiltoverExploration"}}}
+  },
+  "seraphine": {
+    "class": "guildInventor", "female": true, "special": false,
+    "texts": {"name": "Seraphine", "biography": "Seraphine belongs to Piltover's musical and craft community while her family and work connect both cities. This selected legacy characterization keeps her stagecraft and listening themes without declaring a universal crystal-soul origin. Her ordinary command role adapts encouragement into native Mirth; it does not compel agreement among rival civic and clan leaders.", "specialty": {"name": "Shared Refrain", "description": "Mirth gains one additional morale on eligible targets, respecting native morale caps.", "tooltip": "{Shared Refrain}\n\nMirth places +1 additional morale on its normal eligible targets. Living eligibility, mana, action cost, duration, Dispel and native caps remain. No permanent aura or crystal-soul subsystem."}},
+    "images": {"large": "runeterra/piltover/heroes/seraphine/large.png", "small": "runeterra/piltover/heroes/seraphine/small.png", "specialtyLarge": "runeterra/piltover/heroes/seraphine/specialtyLarge.png", "specialtySmall": "runeterra/piltover/heroes/seraphine/specialtySmall.png"},
+    "army": [{"creature": "patrolCadet", "min": 12, "max": 18}, {"creature": "wardenRifleman", "min": 3, "max": 5}, {"creature": "freightHandler", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:waterMagic", "level": "basic"}],
+    "specialty": {"spellFixedAdditive": "core:mirth", "spellFixedValues": [1, 1, 1, 1, 1, 1, 1]}, "spellbook": ["core:mirth"]
+  },
+  "camille": {
+    "class": "piltoverMarshal", "female": true, "special": false,
+    "texts": {"name": "Camille", "biography": "Camille is Clan Ferros's principal intelligencer, embedded in Piltover's private commercial power. She is not a neutral Warden or a generic augmented troop. Ordinary skirmish availability is the requested gameplay abstraction for one unique commander; story scenarios must retain her obligations and a credible motive for cooperation. Her exceptional body is never a recruitable production line.", "specialty": {"name": "Calculated Breach", "description": "Commanded troop attacks ignore ten percent of the defender's Defense.", "tooltip": "{Calculated Breach}\n\nNative army Defense penetration is fixed at 10%. Normal damage, retaliation, reach and damage caps remain. No true damage, targetable hero duels or personal blade-leg troops."}},
+    "images": {"large": "runeterra/piltover/heroes/camille/large.png", "small": "runeterra/piltover/heroes/camille/small.png", "specialtyLarge": "runeterra/piltover/heroes/camille/specialtyLarge.png", "specialtySmall": "runeterra/piltover/heroes/camille/specialtySmall.png"},
+    "army": [{"creature": "patrolCadet", "min": 10, "max": 16}, {"creature": "wardenRifleman", "min": 4, "max": 6}, {"creature": "freightHandler", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:offence", "level": "basic"}, {"skill": "core:tactics", "level": "basic"}],
+    "specialty": {"bonuses": {"calculatedBreach": {"type": "ENEMY_DEFENCE_REDUCTION", "val": 10}}}
+  },
+  "orianna": {
+    "class": "guildInventor", "female": true, "special": false,
+    "texts": {"name": "Orianna", "biography": "Orianna trained in Corin Reveck's Piltover prosthetics workshop before the family's move to Zaun and her eventual departure. Her present residence is unresolved. Her continuing craft identity supplies the project's Piltover interpretation; ordinary availability is an explicit skirmish adaptation requested for this unique person. She built the Ball herself, and it does not become a second army commander.", "specialty": {"name": "Clockwork Shelter", "description": "Shield gains two percentage points of native melee damage reduction.", "tooltip": "{Clockwork Shelter}\n\nShield gains +2 percentage points on each eligible target. Normal mana, duration, Dispel and melee-only reduction remain. No second Ball unit, spell immunity or permanent field."}},
+    "images": {"large": "runeterra/piltover/heroes/orianna/large.png", "small": "runeterra/piltover/heroes/orianna/small.png", "specialtyLarge": "runeterra/piltover/heroes/orianna/specialtyLarge.png", "specialtySmall": "runeterra/piltover/heroes/orianna/specialtySmall.png"},
+    "army": [{"creature": "patrolCadet", "min": 10, "max": 16}, {"creature": "wardenRifleman", "min": 3, "max": 5}, {"creature": "freightHandler", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:earthMagic", "level": "basic"}],
+    "specialty": {"spellFixedAdditive": "core:shield", "spellFixedValues": [2, 2, 2, 2, 2, 2, 2]}, "spellbook": ["core:shield"]
+  },
+  "zevi": {
+    "class": "guildInventor", "female": true, "special": false,
+    "texts": {"name": "Zevi", "biography": "Chief Mechanist Zevi works in Piltover's Warden armaments institution in the selected Legends of Runeterra source. Adapting that local professional into a unique army commander is project fiction, not a claim that every named card is a League champion. Her specialty represents field instruction for local crafted-bolt crews, not unlimited invention or stolen rare armaments.", "specialty": {"name": "Armaments Instruction", "description": "Native Academy Artificer specialty: +1 speed and level-scaled Attack and Defense for the crafted-bolt pair.", "tooltip": "{Armaments Instruction}\n\nAcademy Artificers and Academy Arbalists gain +1 speed and native 5% Attack/Defense scaling per hero-level step of four. No free equipment, bolts, extra shot or prototype duplication."}},
+    "images": {"large": "runeterra/piltover/heroes/zevi/large.png", "small": "runeterra/piltover/heroes/zevi/small.png", "specialtyLarge": "runeterra/piltover/heroes/zevi/specialtyLarge.png", "specialtySmall": "runeterra/piltover/heroes/zevi/specialtySmall.png"},
+    "army": [{"creature": "patrolCadet", "min": 10, "max": 16}, {"creature": "wardenRifleman", "min": 3, "max": 5}, {"creature": "freightHandler", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:scholar", "level": "basic"}, {"skill": "core:wisdom", "level": "basic"}],
+    "specialty": {"creature": "academyArtificer", "creatureLevel": 4, "stepSize": 5}, "spellbook": ["core:stoneSkin"]
+  },
+  "mir": {
+    "class": "piltoverMarshal", "female": false, "special": false,
+    "texts": {"name": "Mir", "biography": "Mir is one of the named Patrol Wardens in the selected Legends of Runeterra material. This unique command adaptation keeps the local civic connection without inventing a canonical surname, age, senior rank or biography. The native male presentation is a project art choice because the reviewed dialogue does not authenticate gender. Luck training is game design rather than an asserted canonical power.", "specialty": {"name": "Patrol Fortune", "description": "Commanded troops gain a fixed +1 native Luck, respecting normal caps.", "tooltip": "{Patrol Fortune}\n\n+1 native Luck for commanded troops. Native caps and eligibility remain. No guaranteed lucky strike, bonus loot or free shot; hero level does not increase the bonus."}},
+    "images": {"large": "runeterra/piltover/heroes/mir/large.png", "small": "runeterra/piltover/heroes/mir/small.png", "specialtyLarge": "runeterra/piltover/heroes/mir/specialtyLarge.png", "specialtySmall": "runeterra/piltover/heroes/mir/specialtySmall.png"},
+    "army": [{"creature": "patrolCadet", "min": 12, "max": 18}, {"creature": "wardenRifleman", "min": 3, "max": 5}, {"creature": "freightHandler", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:luck", "level": "basic"}, {"skill": "core:tactics", "level": "basic"}],
+    "specialty": {"bonuses": {"patrolFortune": {"type": "LUCK", "val": 1}}}
+  },
+  "kepple": {
+    "class": "piltoverMarshal", "female": true, "special": false,
+    "texts": {"name": "Kepple", "biography": "Kepple is the other named Patrol Warden in the selected Legends of Runeterra dialogue. Army leadership and the native female presentation are explicit project choices, not authenticated canon rank or gender. Kepple remains one named person distinct from the ordinary recruitable Patrol Warden line.", "specialty": {"name": "Patrol Cohesion", "description": "Eligible commanded living troops gain a fixed +1 native morale, respecting normal caps.", "tooltip": "{Patrol Cohesion}\n\n+1 native morale for eligible commanded living troops. Native morale caps remain; non-living handlers receive no morale. Hero level does not increase the bonus; no forced alliance or guaranteed extra turn."}},
+    "images": {"large": "runeterra/piltover/heroes/kepple/large.png", "small": "runeterra/piltover/heroes/kepple/small.png", "specialtyLarge": "runeterra/piltover/heroes/kepple/specialtyLarge.png", "specialtySmall": "runeterra/piltover/heroes/kepple/specialtySmall.png"},
+    "army": [{"creature": "patrolCadet", "min": 12, "max": 18}, {"creature": "wardenRifleman", "min": 3, "max": 5}, {"creature": "freightHandler", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:leadership", "level": "basic"}, {"skill": "core:armorer", "level": "basic"}],
+    "specialty": {"bonuses": {"patrolCohesion": {"type": "MORALE", "val": 1}}}
+  },
+  "lymere": {
+    "class": "guildInventor", "female": false, "special": false,
+    "texts": {"name": "Professor Lymere", "biography": "Professor Lymere is Ezreal's uncle and guardian in the selected full biography, providing a direct Piltover academic and family connection. He is not renamed Cristobal, another account's narrator. Leading an expedition and learning from its experience are this project's bounded adaptation of an established scholarly role.", "specialty": {"name": "Field Scholarship", "description": "Native Learning effectiveness increases by 5% per hero level.", "tooltip": "{Field Scholarship}\n\nImproves existing Learning by 5% per hero level. Native experience awards and rounding remain; no daily level, manufactured experience or army multiplication."}},
+    "images": {"large": "runeterra/piltover/heroes/lymere/large.png", "small": "runeterra/piltover/heroes/lymere/small.png", "specialtyLarge": "runeterra/piltover/heroes/lymere/specialtyLarge.png", "specialtySmall": "runeterra/piltover/heroes/lymere/specialtySmall.png"},
+    "army": [{"creature": "patrolCadet", "min": 10, "max": 16}, {"creature": "wardenRifleman", "min": 3, "max": 5}, {"creature": "freightHandler", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:learning", "level": "basic"}, {"skill": "core:wisdom", "level": "basic"}],
+    "specialty": {"secondary": "core:learning", "stepSize": 5}, "spellbook": ["core:dispel"]
+  },
+  "reggie": {
+    "class": "piltoverMarshal", "female": false, "special": false,
+    "texts": {"name": "Reggie", "biography": "Reggie is the competent Ferros financier and workshop collaborator in the selected Jayce journal. This source does not authorize merging the later Albus Hexgate chronology. Command of practical siege equipment is a project adaptation, not a canonical military title or a claim that finance creates free machines.", "specialty": {"name": "Workshop Artillery", "description": "Native Ballista creature specialty with a fixed level-five scaling step.", "tooltip": "{Workshop Artillery}\n\nNative Ballista specialty grants +1 speed and 5% Attack/Defense scaling per hero-level step of five to an acquired Ballista. Speed does not grant a movable war machine. No starting machine, extra shot or autonomous turret."}},
+    "images": {"large": "runeterra/piltover/heroes/reggie/large.png", "small": "runeterra/piltover/heroes/reggie/small.png", "specialtyLarge": "runeterra/piltover/heroes/reggie/specialtyLarge.png", "specialtySmall": "runeterra/piltover/heroes/reggie/specialtySmall.png"},
+    "army": [{"creature": "patrolCadet", "min": 10, "max": 16}, {"creature": "wardenRifleman", "min": 3, "max": 5}, {"creature": "freightHandler", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:artillery", "level": "basic"}, {"skill": "core:estates", "level": "basic"}],
+    "specialty": {"creature": "core:ballista", "creatureLevel": 5, "stepSize": 5}
+  },
+  "jago": {
+    "class": "piltoverMarshal", "female": false, "special": false,
+    "texts": {"name": "Jago", "biography": "Jago is a Piltover maritime clanmaster linked to patent funding and the Sun Gates in the selected region account. He is not a wandering outsider added to fill a roster slot. Maritime command is a deliberately abstract game specialty; no portable Hexgate, free ships or invented genealogical connection follows from it.", "specialty": {"name": "Maritime Logistics", "description": "Native Navigation effectiveness increases by 5% per hero level.", "tooltip": "{Maritime Logistics}\n\nImproves existing Navigation by 5% per hero level. Benefits normal sea movement only; no land speed, free boat, extra embark action or portable Hexgate."}},
+    "images": {"large": "runeterra/piltover/heroes/jago/large.png", "small": "runeterra/piltover/heroes/jago/small.png", "specialtyLarge": "runeterra/piltover/heroes/jago/specialtyLarge.png", "specialtySmall": "runeterra/piltover/heroes/jago/specialtySmall.png"},
+    "army": [{"creature": "patrolCadet", "min": 12, "max": 18}, {"creature": "wardenRifleman", "min": 3, "max": 5}, {"creature": "freightHandler", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:ballistics", "level": "basic"}, {"skill": "core:navigation", "level": "basic"}],
+    "specialty": {"secondary": "core:navigation", "stepSize": 5}
+  },
+  "uberti": {
+    "class": "guildInventor", "female": true, "special": false,
+    "texts": {"name": "Uberti", "biography": "Uberti is Clan Cadwalder's head artisan and a self-locomotor designer in the selected Piltover region source. Rumors about Torek and theft remain rumors. This command adaptation expresses workshop administration through ordinary Estates; it does not authenticate an invented family history or create free vehicles.", "specialty": {"name": "Workshop Accounts", "description": "Native Estates effectiveness increases by 5% per hero level.", "tooltip": "{Workshop Accounts}\n\nImproves existing Estates income by 5% per hero level. Native daily timing and rounding remain. No global construction discount, fractional resource crafting or per-stack treasury."}},
+    "images": {"large": "runeterra/piltover/heroes/uberti/large.png", "small": "runeterra/piltover/heroes/uberti/small.png", "specialtyLarge": "runeterra/piltover/heroes/uberti/specialtyLarge.png", "specialtySmall": "runeterra/piltover/heroes/uberti/specialtySmall.png"},
+    "army": [{"creature": "patrolCadet", "min": 10, "max": 16}, {"creature": "wardenRifleman", "min": 3, "max": 5}, {"creature": "freightHandler", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:estates", "level": "basic"}, {"skill": "core:wisdom", "level": "basic"}],
+    "specialty": {"secondary": "core:estates", "stepSize": 5}, "spellbook": ["core:shield"]
+  },
+  "jae": {
+    "class": "piltoverMarshal", "female": false, "special": false,
+    "texts": {"name": "Jae Medarda", "biography": "Jae Medarda is a Piltovan Medarda heir and artifact hunter in the selected Legends of Runeterra material. His regional family and exploration ties support this unique game commander. No Mel or Ambessa genealogy is merged into the selected branch, and no discovered relic is supplied as a starting legendary artifact.", "specialty": {"name": "Artifact Survey", "description": "Native Scouting effectiveness increases by 5% per hero level.", "tooltip": "{Artifact Survey}\n\nImproves existing Scouting by 5% per hero level under native rounding. No full-map reveal, automatic artifact finding, free relic or second Ezreal gauntlet."}},
+    "images": {"large": "runeterra/piltover/heroes/jae/large.png", "small": "runeterra/piltover/heroes/jae/small.png", "specialtyLarge": "runeterra/piltover/heroes/jae/specialtyLarge.png", "specialtySmall": "runeterra/piltover/heroes/jae/specialtySmall.png"},
+    "army": [{"creature": "patrolCadet", "min": 10, "max": 16}, {"creature": "wardenRifleman", "min": 4, "max": 6}, {"creature": "freightHandler", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:scouting", "level": "basic"}, {"skill": "core:logistics", "level": "basic"}],
+    "specialty": {"secondary": "core:scouting", "stepSize": 5}
+  }
+}

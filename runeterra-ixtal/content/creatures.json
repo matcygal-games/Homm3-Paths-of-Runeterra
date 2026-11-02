@@ -1,0 +1,130 @@
+{
+  "canopyGuide": {
+    "name": {"singular": "Canopy Guide", "plural": "Canopy Guides"},
+    "description": "Adult local trail guide with working spear, woven travel kit and small shield. Cheap living walking screen with ordinary melee, retaliation and Defend. The organized expedition cohort is project fiction.",
+    "faction": "ixtal", "level": 1, "hitPoints": 7, "attack": 4, "defense": 3, "damage": {"min": 1, "max": 2}, "speed": 5,
+    "cost": {"gold": 45}, "growth": 16, "horde": 0, "fightValue": 65, "aiValue": 60, "advMapAmount": {"min": 20, "max": 50},
+    "doubleWide": false, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false, "abilities": {}, "upgrades": ["canopyTracker"],
+    "graphics": {"animation": "runeterra/ixtal/creatures/canopyGuide/battle.json", "map": "runeterra/ixtal/creatures/canopyGuide/map.json", "iconLarge": "runeterra/ixtal/creatures/canopyGuide/large.png", "iconSmall": "runeterra/ixtal/creatures/canopyGuide/small.png", "mapAttackFromLeft": "runeterra/ixtal/creatures/canopyGuide/attackLeft.png", "mapAttackFromRight": "runeterra/ixtal/creatures/canopyGuide/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 3.0}, "timeBetweenFidgets": 0.1},
+    "sound": {"attack": "PIKEATTK.wav", "defend": "PIKEDFND.wav", "killed": "PIKEKILL.wav", "move": "PIKEMOVE.wav", "wince": "PIKEWNCE.wav"}
+  },
+  "canopyTracker": {
+    "name": {"singular": "Canopy Tracker", "plural": "Canopy Trackers"},
+    "description": "Adult guide with layered shoulder protection, faced shield, stronger spear and reinforced travel kit. More durable walking escort; ordinary retaliation and native terrain restrictions remain. No hidden sight or jungle movement aura.",
+    "faction": "ixtal", "level": 1, "hitPoints": 9, "attack": 5, "defense": 4, "damage": {"min": 2, "max": 3}, "speed": 6,
+    "cost": {"gold": 65}, "growth": 16, "horde": 0, "fightValue": 100, "aiValue": 100, "advMapAmount": {"min": 20, "max": 35},
+    "doubleWide": false, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false, "abilities": {}, "upgrades": [],
+    "graphics": {"animation": "runeterra/ixtal/creatures/canopyTracker/battle.json", "map": "runeterra/ixtal/creatures/canopyTracker/map.json", "iconLarge": "runeterra/ixtal/creatures/canopyTracker/large.png", "iconSmall": "runeterra/ixtal/creatures/canopyTracker/small.png", "mapAttackFromLeft": "runeterra/ixtal/creatures/canopyTracker/attackLeft.png", "mapAttackFromRight": "runeterra/ixtal/creatures/canopyTracker/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 3.0}, "timeBetweenFidgets": 0.1},
+    "sound": {"attack": "PIKEATTK.wav", "defend": "PIKEDFND.wav", "killed": "PIKEKILL.wav", "move": "PIKEMOVE.wav", "wince": "PIKEWNCE.wav"}
+  },
+  "bristlehog": {
+    "name": {"singular": "Bristlehog", "plural": "Bristlehogs"},
+    "description": "Living low-bodied quilled mammal with barbed tail. Eight physical defensive quill volleys, one shot per action. Normal distance, wall and melee penalties and adjacency blocking apply. Cooperation and replenishment between battles are game adaptations.",
+    "faction": "ixtal", "level": 2, "hitPoints": 13, "attack": 6, "defense": 5, "damage": {"min": 2, "max": 3}, "speed": 4, "shots": 8,
+    "cost": {"gold": 130}, "growth": 8, "horde": 0, "fightValue": 145, "aiValue": 155, "advMapAmount": {"min": 16, "max": 30},
+    "doubleWide": false, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false, "abilities": {"quillVolley": {"type": "SHOOTER"}}, "upgrades": ["thornbackBristlehog"],
+    "graphics": {"animation": "runeterra/ixtal/creatures/bristlehog/battle.json", "map": "runeterra/ixtal/creatures/bristlehog/map.json", "iconLarge": "runeterra/ixtal/creatures/bristlehog/large.png", "iconSmall": "runeterra/ixtal/creatures/bristlehog/small.png", "mapAttackFromLeft": "runeterra/ixtal/creatures/bristlehog/attackLeft.png", "mapAttackFromRight": "runeterra/ixtal/creatures/bristlehog/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 3.0}, "timeBetweenFidgets": 0.1, "missile": {"projectile": "runeterra/ixtal/projectiles/bristlehog.json", "frameAngles": [90, 45, 0, -45, -90], "attackClimaxFrame": 4, "offset": {"upperX": 21, "upperY": -69, "middleX": 31, "middleY": -27, "lowerX": 31, "lowerY": -3}}},
+    "sound": {"attack": "PLIZATTK.wav", "defend": "PLIZDFND.wav", "killed": "PLIZKILL.wav", "move": "PLIZMOVE.wav", "shoot": "PLIZSHOT.wav", "wince": "PLIZWNCE.wav"}
+  },
+  "thornbackBristlehog": {
+    "name": {"singular": "Thornback Bristlehog", "plural": "Thornback Bristlehogs"},
+    "description": "Mature living Bristlehog with developed shoulders, fuller layered guard quills and stronger tail barbs. Ten physical quill volleys and one shot per action. Ordinary range, wall, melee and engagement limits remain; no poison, reflection or free ammunition.",
+    "faction": "ixtal", "level": 2, "hitPoints": 17, "attack": 8, "defense": 6, "damage": {"min": 2, "max": 4}, "speed": 5, "shots": 10,
+    "cost": {"gold": 175}, "growth": 8, "horde": 0, "fightValue": 205, "aiValue": 220, "advMapAmount": {"min": 12, "max": 25},
+    "doubleWide": false, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false, "abilities": {"quillVolley": {"type": "SHOOTER"}}, "upgrades": [],
+    "graphics": {"animation": "runeterra/ixtal/creatures/thornbackBristlehog/battle.json", "map": "runeterra/ixtal/creatures/thornbackBristlehog/map.json", "iconLarge": "runeterra/ixtal/creatures/thornbackBristlehog/large.png", "iconSmall": "runeterra/ixtal/creatures/thornbackBristlehog/small.png", "mapAttackFromLeft": "runeterra/ixtal/creatures/thornbackBristlehog/attackLeft.png", "mapAttackFromRight": "runeterra/ixtal/creatures/thornbackBristlehog/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 3.0}, "timeBetweenFidgets": 0.1, "missile": {"projectile": "runeterra/ixtal/projectiles/thornbackBristlehog.json", "frameAngles": [90, 45, 0, -45, -90], "attackClimaxFrame": 4, "offset": {"upperX": 22, "upperY": -76, "middleX": 34, "middleY": -37, "lowerX": 33, "lowerY": -4}}},
+    "sound": {"attack": "PLIZATTK.wav", "defend": "PLIZDFND.wav", "killed": "PLIZKILL.wav", "move": "PLIZMOVE.wav", "shoot": "PLIZSHOT.wav", "wince": "PLIZWNCE.wav"}
+  },
+  "pakaaProwler": {
+    "name": {"singular": "Pakaa Prowler", "plural": "Pakaa Prowlers"},
+    "description": "Adult living pack feline, long-bodied with planted paws, rough neck mane and continuous tail. Fast two-hex ground melee with ordinary retaliation. Ground obstacles and narrow approaches remain; no shapeshift, leap, rider or invisibility.",
+    "faction": "ixtal", "level": 3, "hitPoints": 28, "attack": 9, "defense": 6, "damage": {"min": 4, "max": 7}, "speed": 7,
+    "cost": {"gold": 240}, "growth": 6, "horde": 0, "fightValue": 300, "aiValue": 330, "advMapAmount": {"min": 12, "max": 25},
+    "doubleWide": true, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false, "abilities": {}, "upgrades": ["pakaaGuardian"],
+    "graphics": {"animation": "runeterra/ixtal/creatures/pakaaProwler/battle.json", "map": "runeterra/ixtal/creatures/pakaaProwler/map.json", "iconLarge": "runeterra/ixtal/creatures/pakaaProwler/large.png", "iconSmall": "runeterra/ixtal/creatures/pakaaProwler/small.png", "mapAttackFromLeft": "runeterra/ixtal/creatures/pakaaProwler/attackLeft.png", "mapAttackFromRight": "runeterra/ixtal/creatures/pakaaProwler/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 3.0}, "timeBetweenFidgets": 0.1},
+    "sound": {"attack": "HHNDATTK.wav", "defend": "HHNDDFND.wav", "killed": "HHNDKILL.wav", "move": "HHNDMOVE.wav", "wince": "HHNDWNCE.wav"}
+  },
+  "pakaaGuardian": {
+    "name": {"singular": "Pakaa Guardian", "plural": "Pakaa Guardians"},
+    "description": "Mature adult pakaa with deeper chest, broad neck mane and heavier paws and jaws. Stronger fast ground flanker; normal retaliation, two-hex blocking, living control and direct magic remain. No cubs, champion copies or leap across walls.",
+    "faction": "ixtal", "level": 3, "hitPoints": 36, "attack": 11, "defense": 8, "damage": {"min": 5, "max": 8}, "speed": 8,
+    "cost": {"gold": 320}, "growth": 6, "horde": 0, "fightValue": 420, "aiValue": 470, "advMapAmount": {"min": 10, "max": 20},
+    "doubleWide": true, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false, "abilities": {}, "upgrades": [],
+    "graphics": {"animation": "runeterra/ixtal/creatures/pakaaGuardian/battle.json", "map": "runeterra/ixtal/creatures/pakaaGuardian/map.json", "iconLarge": "runeterra/ixtal/creatures/pakaaGuardian/large.png", "iconSmall": "runeterra/ixtal/creatures/pakaaGuardian/small.png", "mapAttackFromLeft": "runeterra/ixtal/creatures/pakaaGuardian/attackLeft.png", "mapAttackFromRight": "runeterra/ixtal/creatures/pakaaGuardian/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 3.0}, "timeBetweenFidgets": 0.1},
+    "sound": {"attack": "HHNDATTK.wav", "defend": "HHNDDFND.wav", "killed": "HHNDKILL.wav", "move": "HHNDMOVE.wav", "wince": "HHNDWNCE.wav"}
+  },
+  "stoneshaper": {
+    "name": {"singular": "Stoneshaper", "plural": "Stoneshapers"},
+    "description": "Living adult Ixtali material artisan with stone focus and mineral-chip case. Eight physical stone shots with ordinary penalties. Alternatively spend one stack action and its only cast on Basic Stone Skin: +3 Defense to one native-eligible friendly stack for three rounds.",
+    "faction": "ixtal", "level": 4, "hitPoints": 28, "attack": 10, "defense": 8, "damage": {"min": 6, "max": 8}, "speed": 5, "shots": 8,
+    "cost": {"gold": 420}, "growth": 4, "horde": 0, "fightValue": 430, "aiValue": 520, "advMapAmount": {"min": 10, "max": 20},
+    "doubleWide": false, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false,
+    "abilities": {"stoneMissile": {"type": "SHOOTER"}, "stoneSkin": {"type": "SPELLCASTER", "subtype": "core:stoneSkin", "val": 1}, "onePreparation": {"type": "CASTS", "val": 1}, "duration": {"type": "CREATURE_ENCHANT_POWER", "val": 3}}, "upgrades": ["axiomStoneshaper"],
+    "graphics": {"animation": "runeterra/ixtal/creatures/stoneshaper/battle.json", "map": "runeterra/ixtal/creatures/stoneshaper/map.json", "iconLarge": "runeterra/ixtal/creatures/stoneshaper/large.png", "iconSmall": "runeterra/ixtal/creatures/stoneshaper/small.png", "mapAttackFromLeft": "runeterra/ixtal/creatures/stoneshaper/attackLeft.png", "mapAttackFromRight": "runeterra/ixtal/creatures/stoneshaper/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 10.0}, "timeBetweenFidgets": 0.1, "missile": {"projectile": "runeterra/ixtal/projectiles/stoneshaper.json", "frameAngles": [90, 45, 0, -45, -90], "attackClimaxFrame": 4, "offset": {"upperX": 30, "upperY": -80, "middleX": 36, "middleY": -60, "lowerX": 28, "lowerY": -34}}},
+    "sound": {"attack": "MAGEATTK.wav", "defend": "MAGEDFND.wav", "killed": "MAGEKILL.wav", "move": "MAGEMOVE.wav", "shoot": "MAGESHOT.wav", "wince": "MAGEWNCE.wav"}
+  },
+  "axiomStoneshaper": {
+    "name": {"singular": "Axiom Stoneshaper", "plural": "Axiom Stoneshapers"},
+    "description": "Living senior artisan with structured mantle, substantial forearm guards, larger focus and reinforced chip case. Ten physical stone shots. One action-cost Advanced Stone Skin cast grants +6 Defense to one native-eligible friendly stack for three rounds. No free shot, healing, spell immunity or terrain rewriting.",
+    "faction": "ixtal", "level": 4, "hitPoints": 34, "attack": 12, "defense": 10, "damage": {"min": 7, "max": 10}, "speed": 6, "shots": 10,
+    "cost": {"gold": 560}, "growth": 4, "horde": 0, "fightValue": 570, "aiValue": 700, "advMapAmount": {"min": 8, "max": 16},
+    "doubleWide": false, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false,
+    "abilities": {"stoneMissile": {"type": "SHOOTER"}, "stoneSkin": {"type": "SPELLCASTER", "subtype": "core:stoneSkin", "val": 2}, "onePreparation": {"type": "CASTS", "val": 1}, "duration": {"type": "CREATURE_ENCHANT_POWER", "val": 3}}, "upgrades": [],
+    "graphics": {"animation": "runeterra/ixtal/creatures/axiomStoneshaper/battle.json", "map": "runeterra/ixtal/creatures/axiomStoneshaper/map.json", "iconLarge": "runeterra/ixtal/creatures/axiomStoneshaper/large.png", "iconSmall": "runeterra/ixtal/creatures/axiomStoneshaper/small.png", "mapAttackFromLeft": "runeterra/ixtal/creatures/axiomStoneshaper/attackLeft.png", "mapAttackFromRight": "runeterra/ixtal/creatures/axiomStoneshaper/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 10.0}, "timeBetweenFidgets": 0.1, "missile": {"projectile": "runeterra/ixtal/projectiles/axiomStoneshaper.json", "frameAngles": [90, 45, 0, -45, -90], "attackClimaxFrame": 4, "offset": {"upperX": 36, "upperY": -82, "middleX": 30, "middleY": -66, "lowerX": 32, "lowerY": -40}}},
+    "sound": {"attack": "MAGEATTK.wav", "defend": "MAGEDFND.wav", "killed": "MAGEKILL.wav", "move": "MAGEMOVE.wav", "shoot": "MAGESHOT.wav", "wince": "MAGEWNCE.wav"}
+  },
+  "pathWarden": {
+    "name": {"singular": "Path Warden", "plural": "Path Wardens"},
+    "description": "Adult guardian of power lines between arcologies, with layered work armor, segmented shield and polearm. Native Defend adds two extra Defense alongside its ordinary bonus until the next turn. Holding position spends the action; no passive ward or elemental-school switch.",
+    "faction": "ixtal", "level": 5, "hitPoints": 65, "attack": 13, "defense": 13, "damage": {"min": 10, "max": 14}, "speed": 5,
+    "cost": {"gold": 700}, "growth": 3, "horde": 0, "fightValue": 920, "aiValue": 1030, "advMapAmount": {"min": 6, "max": 12},
+    "doubleWide": false, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false, "abilities": {"holdingStance": {"type": "DEFENSIVE_STANCE", "val": 2}}, "upgrades": ["veteranPathWarden"],
+    "graphics": {"animation": "runeterra/ixtal/creatures/pathWarden/battle.json", "map": "runeterra/ixtal/creatures/pathWarden/map.json", "iconLarge": "runeterra/ixtal/creatures/pathWarden/large.png", "iconSmall": "runeterra/ixtal/creatures/pathWarden/small.png", "mapAttackFromLeft": "runeterra/ixtal/creatures/pathWarden/attackLeft.png", "mapAttackFromRight": "runeterra/ixtal/creatures/pathWarden/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 10.0}, "timeBetweenFidgets": 0.1},
+    "sound": {"attack": "SWRDATTK.wav", "defend": "SWRDDFND.wav", "killed": "SWRDKILL.wav", "move": "SWRDMOVE.wav", "wince": "SWRDWNCE.wav"}
+  },
+  "veteranPathWarden": {
+    "name": {"singular": "Veteran Path Warden", "plural": "Veteran Path Wardens"},
+    "description": "Experienced Path Warden with broader reinforced shield, heavier torso and leg protection and improved polearm. Native Defend adds four extra Defense until the next turn, at the cost of attacking. A fictional service distinction, not admission to the Yun Tal ruling caste.",
+    "faction": "ixtal", "level": 5, "hitPoints": 80, "attack": 15, "defense": 16, "damage": {"min": 12, "max": 18}, "speed": 6,
+    "cost": {"gold": 950}, "growth": 3, "horde": 0, "fightValue": 1250, "aiValue": 1430, "advMapAmount": {"min": 5, "max": 10},
+    "doubleWide": false, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false, "abilities": {"holdingStance": {"type": "DEFENSIVE_STANCE", "val": 4}}, "upgrades": [],
+    "graphics": {"animation": "runeterra/ixtal/creatures/veteranPathWarden/battle.json", "map": "runeterra/ixtal/creatures/veteranPathWarden/map.json", "iconLarge": "runeterra/ixtal/creatures/veteranPathWarden/large.png", "iconSmall": "runeterra/ixtal/creatures/veteranPathWarden/small.png", "mapAttackFromLeft": "runeterra/ixtal/creatures/veteranPathWarden/attackLeft.png", "mapAttackFromRight": "runeterra/ixtal/creatures/veteranPathWarden/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 10.0}, "timeBetweenFidgets": 0.1},
+    "sound": {"attack": "SWRDATTK.wav", "defend": "SWRDDFND.wav", "killed": "SWRDKILL.wav", "move": "SWRDMOVE.wav", "wince": "SWRDWNCE.wav"}
+  },
+  "auroraHallunatis": {
+    "name": {"singular": "Aurora Hallunatis", "plural": "Aurora Hallunatis"},
+    "description": "Living feathered jungle predator with real wings, crest and talons. Native two-hex flyer, ordinary beak and talon melee and retaliation. Must find a legal landing; no lightning, summoned copy, spirit immunity or adventure Fly spell.",
+    "faction": "ixtal", "level": 6, "hitPoints": 85, "attack": 16, "defense": 12, "damage": {"min": 15, "max": 22}, "speed": 9,
+    "cost": {"gold": 1250}, "growth": 2, "horde": 0, "fightValue": 1530, "aiValue": 1900, "advMapAmount": {"min": 4, "max": 10},
+    "doubleWide": true, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false, "abilities": {"naturalFlight": {"type": "FLYING"}}, "upgrades": ["crownedHallunatis"],
+    "graphics": {"animation": "runeterra/ixtal/creatures/auroraHallunatis/battle.json", "map": "runeterra/ixtal/creatures/auroraHallunatis/map.json", "iconLarge": "runeterra/ixtal/creatures/auroraHallunatis/large.png", "iconSmall": "runeterra/ixtal/creatures/auroraHallunatis/small.png", "mapAttackFromLeft": "runeterra/ixtal/creatures/auroraHallunatis/attackLeft.png", "mapAttackFromRight": "runeterra/ixtal/creatures/auroraHallunatis/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 10.0}, "timeBetweenFidgets": 0.1},
+    "sound": {"attack": "ROCCATTK.wav", "defend": "ROCCDFND.wav", "killed": "ROCCKILL.wav", "move": "ROCCMOVE.wav", "wince": "ROCCWNCE.wav"}
+  },
+  "crownedHallunatis": {
+    "name": {"singular": "Crowned Hallunatis", "plural": "Crowned Hallunatis"},
+    "description": "Mature living Hallunatis with taller layered crest, developed wing coverts, stronger talons and differentiated tail fan. Faster two-hex native flight with ordinary retaliation and legal landing limits. Crowned describes plumage, not a royal spirit or a new species.",
+    "faction": "ixtal", "level": 6, "hitPoints": 100, "attack": 18, "defense": 14, "damage": {"min": 18, "max": 25}, "speed": 11,
+    "cost": {"gold": 1700}, "growth": 2, "horde": 0, "fightValue": 1950, "aiValue": 2500, "advMapAmount": {"min": 3, "max": 8},
+    "doubleWide": true, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false, "abilities": {"naturalFlight": {"type": "FLYING"}}, "upgrades": [],
+    "graphics": {"animation": "runeterra/ixtal/creatures/crownedHallunatis/battle.json", "map": "runeterra/ixtal/creatures/crownedHallunatis/map.json", "iconLarge": "runeterra/ixtal/creatures/crownedHallunatis/large.png", "iconSmall": "runeterra/ixtal/creatures/crownedHallunatis/small.png", "mapAttackFromLeft": "runeterra/ixtal/creatures/crownedHallunatis/attackLeft.png", "mapAttackFromRight": "runeterra/ixtal/creatures/crownedHallunatis/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 10.0}, "timeBetweenFidgets": 0.1},
+    "sound": {"attack": "ROCCATTK.wav", "defend": "ROCCDFND.wav", "killed": "ROCCKILL.wav", "move": "ROCCMOVE.wav", "wince": "ROCCWNCE.wav"}
+  },
+  "pairofant": {
+    "name": {"singular": "Pairofant", "plural": "Pairofants"},
+    "description": "Living tusked jungle giant with substantial mane and facial tendrils, defending its home. Slow two-hex ground melee anchor with ordinary attack, retaliation and Defend. No stone body, sweep, damage ward, spell immunity or copied unique champion.",
+    "faction": "ixtal", "level": 7, "hitPoints": 240, "attack": 20, "defense": 20, "damage": {"min": 35, "max": 50}, "speed": 5,
+    "cost": {"gold": 3000, "gems": 1}, "growth": 1, "horde": 0, "fightValue": 3450, "aiValue": 4200, "advMapAmount": {"min": 2, "max": 5},
+    "doubleWide": true, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false, "abilities": {}, "upgrades": ["elderPairofant"],
+    "graphics": {"animation": "runeterra/ixtal/creatures/pairofant/battle.json", "map": "runeterra/ixtal/creatures/pairofant/map.json", "iconLarge": "runeterra/ixtal/creatures/pairofant/large.png", "iconSmall": "runeterra/ixtal/creatures/pairofant/small.png", "mapAttackFromLeft": "runeterra/ixtal/creatures/pairofant/attackLeft.png", "mapAttackFromRight": "runeterra/ixtal/creatures/pairofant/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 10.0}, "timeBetweenFidgets": 0.1},
+    "sound": {"attack": "YBMHATTK.wav", "defend": "YBMHDFND.wav", "killed": "YBMHKILL.wav", "move": "YBMHMOVE.wav", "wince": "YBMHWNCE.wav"}
+  },
+  "elderPairofant": {
+    "name": {"singular": "Elder Pairofant", "plural": "Elder Pairofants"},
+    "description": "Mature living Pairofant with heavier neck and shoulders, longer differentiated tusks and tendrils, developed head protection and mane. Durable grounded two-hex anchor; kiting, blocking, hostile spells and negative morale remain. No transformation into basalt, hidden ward or extra attack.",
+    "faction": "ixtal", "level": 7, "hitPoints": 290, "attack": 23, "defense": 23, "damage": {"min": 40, "max": 55}, "speed": 6,
+    "cost": {"gold": 4100, "gems": 2}, "growth": 1, "horde": 0, "fightValue": 4550, "aiValue": 5600, "advMapAmount": {"min": 1, "max": 4},
+    "doubleWide": true, "hasDoubleWeek": true, "special": false, "disabled": false, "excludeFromRandomization": false, "abilities": {}, "upgrades": [],
+    "graphics": {"animation": "runeterra/ixtal/creatures/elderPairofant/battle.json", "map": "runeterra/ixtal/creatures/elderPairofant/map.json", "iconLarge": "runeterra/ixtal/creatures/elderPairofant/large.png", "iconSmall": "runeterra/ixtal/creatures/elderPairofant/small.png", "mapAttackFromLeft": "runeterra/ixtal/creatures/elderPairofant/attackLeft.png", "mapAttackFromRight": "runeterra/ixtal/creatures/elderPairofant/attackRight.png", "mapMask": ["VV", "VA"], "animationTime": {"attack": 1.0, "walk": 1.0, "idle": 10.0}, "timeBetweenFidgets": 0.1},
+    "sound": {"attack": "YBMHATTK.wav", "defend": "YBMHDFND.wav", "killed": "YBMHKILL.wav", "move": "YBMHMOVE.wav", "wince": "YBMHWNCE.wav"}
+  }
+}

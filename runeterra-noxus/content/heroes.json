@@ -1,0 +1,225 @@
+{
+  "darius": {
+    "class": "noxianMarshal", "female": false, "special": false,
+    "texts": {
+      "name": "Darius",
+      "biography": "Raised from poverty in Basilich, Darius became the Hand of Noxus and commander of the Trifarian Legion. He accepted Swain's vision after Darkwill's fall, not as a participant in the coup. His Freljord campaigns reveal shared hardship and ruthless triage as well as courage; he grants no miraculous healing.",
+      "specialty": {"name": "Trifarian Offense", "description": "Offense receives the native 5% per hero level specialty increase to skill effectiveness. It improves melee damage, not healing or executions.", "tooltip": "{Trifarian Offense}\n\nNative Offense skill specialty: 5% per hero level to skill effectiveness, not five percentage points of damage per level."}
+    },
+    "images": {"large": "runeterra/noxus/heroes/darius/large.png", "small": "runeterra/noxus/heroes/darius/small.png", "specialtyLarge": "runeterra/noxus/heroes/darius/specialtyLarge.png", "specialtySmall": "runeterra/noxus/heroes/darius/specialtySmall.png"},
+    "army": [{"creature": "legionRecruit", "min": 12, "max": 18}, {"creature": "drakeHound", "min": 2, "max": 4}, {"creature": "guildKnifeThrower", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:offence", "level": "basic"}, {"skill": "core:tactics", "level": "basic"}],
+    "specialty": {"secondary": "core:offence", "stepSize": 5}
+  },
+  "draven": {
+    "class": "noxianMarshal", "female": false, "special": false,
+    "texts": {
+      "name": "Draven",
+      "biography": "Darius's younger brother left ordinary soldiering for the Reckoning pits and helped Swain seize power. His flamboyant execution spectacles made him famous; later contests could favour entertainment over death. The army-command adaptation inspires generic knife-throwing skirmishers without making them copies of his face, weapons or personal catch routine.",
+      "specialty": {"name": "Arena Marksmanship", "description": "Archery receives the native 5% per hero level specialty increase to skill effectiveness. It grants no extra shots or ammunition.", "tooltip": "{Arena Marksmanship}\n\nNative Archery skill specialty: 5% per hero level to skill effectiveness. Ordinary ammunition, blocking and range penalties remain."}
+    },
+    "images": {"large": "runeterra/noxus/heroes/draven/large.png", "small": "runeterra/noxus/heroes/draven/small.png", "specialtyLarge": "runeterra/noxus/heroes/draven/specialtyLarge.png", "specialtySmall": "runeterra/noxus/heroes/draven/specialtySmall.png"},
+    "army": [{"creature": "legionRecruit", "min": 12, "max": 18}, {"creature": "drakeHound", "min": 2, "max": 4}, {"creature": "guildKnifeThrower", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:archery", "level": "basic"}, {"skill": "core:leadership", "level": "basic"}],
+    "specialty": {"secondary": "core:archery", "stepSize": 5}
+  },
+  "swain": {
+    "class": "noxianOccultist", "female": false, "special": false,
+    "texts": {
+      "name": "Swain",
+      "biography": "Jericho Swain lost his left arm during the Ionian defeat and returned with a demonic replacement. After overthrowing Darkwill he became Grand General and the Trifarix's Vision. He had exposed a noble conspiracy before his military career; the surviving Black Rose remains a rival, not his obedient ministry. His ravens do not grant unlimited knowledge.",
+      "specialty": {"name": "Raven Intelligence", "description": "Adventure sight radius +1, sharing a strongest-only key with Noxian reconnaissance training. Native Scouting remains separate.", "tooltip": "{Raven Intelligence}\n\nAdventure sight +1. Noxian reconnaissance sources share runeterraNoxusScouting and do not multiply. No hidden-unit detection or global reveal."}
+    },
+    "images": {"large": "runeterra/noxus/heroes/swain/large.png", "small": "runeterra/noxus/heroes/swain/small.png", "specialtyLarge": "runeterra/noxus/heroes/swain/specialtyLarge.png", "specialtySmall": "runeterra/noxus/heroes/swain/specialtySmall.png"},
+    "army": [{"creature": "legionRecruit", "min": 12, "max": 18}, {"creature": "drakeHound", "min": 2, "max": 4}, {"creature": "guildKnifeThrower", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:scouting", "level": "basic"}],
+    "specialty": {"bonuses": {"ravens": {"type": "SIGHT_RADIUS", "val": 1, "stacking": "runeterraNoxusScouting"}}},
+    "spellbook": ["core:magicArrow", "core:weakness"]
+  },
+  "leblanc": {
+    "class": "noxianOccultist", "female": true, "special": false,
+    "texts": {
+      "name": "LeBlanc",
+      "biography": "The Black Rose's elusive matron guides a cabal older than modern Noxus. Swain's unexpected rise made him a worthy adversary, not her approved puppet; her precise identity and the council's Guile seat are not resolved here. Ordinary skirmish availability abstracts a conditional bargain; it never makes her an imperial subordinate or implies Swain controls the Rose.",
+      "specialty": {"name": "Eroding Certainty", "description": "Weakness applies one additional point of Attack reduction to every eligible target tier. Normal cost, mastery, duration and removal apply.", "tooltip": "{Eroding Certainty}\n\nWeakness's native Attack modifier is one point more negative at every target tier. No Shield effect, cloning, mind control or extra cast."}
+    },
+    "images": {"large": "runeterra/noxus/heroes/leblanc/large.png", "small": "runeterra/noxus/heroes/leblanc/small.png", "specialtyLarge": "runeterra/noxus/heroes/leblanc/specialtyLarge.png", "specialtySmall": "runeterra/noxus/heroes/leblanc/specialtySmall.png"},
+    "army": [{"creature": "legionRecruit", "min": 12, "max": 18}, {"creature": "drakeHound", "min": 2, "max": 4}, {"creature": "guildKnifeThrower", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:airMagic", "level": "basic"}],
+    "specialty": {"spellFixedAdditive": "core:weakness", "spellFixedValues": [-1, -1, -1, -1, -1, -1, -1]},
+    "spellbook": ["core:weakness", "core:disguise"]
+  },
+  "vladimir": {
+    "class": "noxianOccultist", "female": false, "special": false,
+    "texts": {
+      "name": "Vladimir",
+      "biography": "Legends describe Vladimir as a prince given to a darkin, from whom he learned hemomancy before killing his master. His contentious pact with LeBlanc helped form the Black Rose; he also cultivates the Crimson Circle. A vocal opponent of the Trifarix, he pursues his own influence. Ordinary skirmish availability abstracts a conditional pact, never proof of loyal council service.",
+      "specialty": {"name": "Blood Studies", "description": "Regenerate two additional mana per adventure day under native mana limits. No troop life drain, resurrection or blood resource.", "tooltip": "{Blood Studies}\n\nNative mana regeneration +2 per adventure day. This does not heal an army or convert casualties."}
+    },
+    "images": {"large": "runeterra/noxus/heroes/vladimir/large.png", "small": "runeterra/noxus/heroes/vladimir/small.png", "specialtyLarge": "runeterra/noxus/heroes/vladimir/specialtyLarge.png", "specialtySmall": "runeterra/noxus/heroes/vladimir/specialtySmall.png"},
+    "army": [{"creature": "legionRecruit", "min": 12, "max": 18}, {"creature": "drakeHound", "min": 2, "max": 4}, {"creature": "guildKnifeThrower", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:mysticism", "level": "basic"}],
+    "specialty": {"bonuses": {"studies": {"type": "MANA_REGENERATION", "val": 2}}},
+    "spellbook": ["core:curse", "core:weakness"]
+  },
+  "katarina": {
+    "class": "noxianMarshal", "female": true, "special": false,
+    "texts": {
+      "name": "Katarina",
+      "biography": "General Du Couteau's eldest daughter disobeyed her assigned target, enabling Demetrius's devastating counterattack. She survived her father's punishment, killed Demetrius and recommitted herself to Noxus. This portrayal does not assign her the campaign's deliberately unresolved Demacian royal killing, nor invent an office for her missing father.",
+      "specialty": {"name": "Assault Discipline", "description": "Offense receives the native 5% per hero level specialty increase to skill effectiveness. No personal multi-kill reset or free attack.", "tooltip": "{Assault Discipline}\n\nNative Offense skill specialty: 5% per hero level to skill effectiveness. Commanders do not become targetable assassin stacks."}
+    },
+    "images": {"large": "runeterra/noxus/heroes/katarina/large.png", "small": "runeterra/noxus/heroes/katarina/small.png", "specialtyLarge": "runeterra/noxus/heroes/katarina/specialtyLarge.png", "specialtySmall": "runeterra/noxus/heroes/katarina/specialtySmall.png"},
+    "army": [{"creature": "legionRecruit", "min": 12, "max": 18}, {"creature": "drakeHound", "min": 2, "max": 4}, {"creature": "guildKnifeThrower", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:offence", "level": "basic"}, {"skill": "core:logistics", "level": "basic"}],
+    "specialty": {"secondary": "core:offence", "stepSize": 5}
+  },
+  "talon": {
+    "class": "noxianMarshal", "female": false, "special": false,
+    "texts": {
+      "name": "Talon",
+      "biography": "A Noxian street survivor who resisted coercive assassins, Talon was personally defeated by Du Couteau and accepted service to him alone. He searches for his vanished patron; the disappearance's location and legal family ties remain unspecified. Ordinary skirmish availability abstracts a Noxian agreement; his personal loyalty remains to Du Couteau, not an assumed oath to the Trifarix.",
+      "specialty": {"name": "Silent Advance", "description": "Commanded creatures gain +2 Attack for melee combat only. Ranged attacks receive no specialty increase.", "tooltip": "{Silent Advance}\n\nTroop melee Attack +2 through the native ONLY_MELEE_FIGHT range. No teleport, extra action or retaliation suppression."}
+    },
+    "images": {"large": "runeterra/noxus/heroes/talon/large.png", "small": "runeterra/noxus/heroes/talon/small.png", "specialtyLarge": "runeterra/noxus/heroes/talon/specialtyLarge.png", "specialtySmall": "runeterra/noxus/heroes/talon/specialtySmall.png"},
+    "army": [{"creature": "legionRecruit", "min": 12, "max": 18}, {"creature": "drakeHound", "min": 2, "max": 4}, {"creature": "guildKnifeThrower", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:offence", "level": "basic"}, {"skill": "core:tactics", "level": "basic"}],
+    "specialty": {"bonuses": {"advance": {"type": "PRIMARY_SKILL", "subtype": "attack", "val": 2, "effectRange": "ONLY_MELEE_FIGHT", "limiters": "CREATURES_ONLY"}}}
+  },
+  "cassiopeia": {
+    "class": "noxianOccultist", "female": true, "special": false,
+    "texts": {
+      "name": "Cassiopeia",
+      "biography": "Sent by her mother Soreana to seek ancient power for the Black Rose, Cassiopeia betrayed Sivir and was bitten by a tomb guardian. Soldiers returned her to Urzeris, where she transformed. She is learning to accept her changing form and intends to turn its power to the Rose's schemes. No unconditional council allegiance, skin-healing rule or impossible-cure claim is made.",
+      "specialty": {"name": "Serpentine Menace", "description": "Weakness applies one additional point of Attack reduction at every eligible target tier. It does not petrify an army.", "tooltip": "{Serpentine Menace}\n\nWeakness's native Attack modifier is one point more negative at every target tier. Ordinary targeting, duration, dispelling and cost remain."}
+    },
+    "images": {"large": "runeterra/noxus/heroes/cassiopeia/large.png", "small": "runeterra/noxus/heroes/cassiopeia/small.png", "specialtyLarge": "runeterra/noxus/heroes/cassiopeia/specialtyLarge.png", "specialtySmall": "runeterra/noxus/heroes/cassiopeia/specialtySmall.png"},
+    "army": [{"creature": "legionRecruit", "min": 12, "max": 18}, {"creature": "drakeHound", "min": 2, "max": 4}, {"creature": "guildKnifeThrower", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:earthMagic", "level": "basic"}],
+    "specialty": {"spellFixedAdditive": "core:weakness", "spellFixedValues": [-1, -1, -1, -1, -1, -1, -1]},
+    "spellbook": ["core:weakness", "core:slow"]
+  },
+  "samira": {
+    "class": "noxianMarshal", "female": true, "special": false,
+    "texts": {
+      "name": "Samira",
+      "biography": "Samira fled Amakra with her surviving parents and enlisted in Noxus, serving Captain Indari's warband. After the unit disbanded, she reunited with Indari as a mercenary partner who arranged dangerous contracts. Tavern availability represents hired command, not compulsory ideological service or orphanhood.",
+      "specialty": {"name": "Desert Rose Volley", "description": "Archery receives the native 5% per hero level specialty increase to skill effectiveness. No style meter or extra action.", "tooltip": "{Desert Rose Volley}\n\nNative Archery skill specialty: 5% per hero level to skill effectiveness. Normal ranged attack count, ammunition and penalties remain."}
+    },
+    "images": {"large": "runeterra/noxus/heroes/samira/large.png", "small": "runeterra/noxus/heroes/samira/small.png", "specialtyLarge": "runeterra/noxus/heroes/samira/specialtyLarge.png", "specialtySmall": "runeterra/noxus/heroes/samira/specialtySmall.png"},
+    "army": [{"creature": "legionRecruit", "min": 12, "max": 18}, {"creature": "drakeHound", "min": 2, "max": 4}, {"creature": "guildKnifeThrower", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:archery", "level": "basic"}, {"skill": "core:offence", "level": "basic"}],
+    "specialty": {"secondary": "core:archery", "stepSize": 5}
+  },
+  "kled": {
+    "class": "noxianMarshal", "female": false, "special": false,
+    "texts": {
+      "name": "Kled",
+      "biography": "The Bandle City yordle Kled settled among the Noxii and became a contradictory soldier's folk hero. He rides the singular drakalops Skaarl and guards his claimed territory on his own terms. His appearances can inspire soldiers; they do not establish routine obedience, guaranteed immortality or a regiment of copied mounts.",
+      "specialty": {"name": "Soldiers' Tall Tale", "description": "Legion Recruits and Legion Veterans gain native creature-specialty +1 speed and tier-one Attack/Defense growth. No cavalry is added.", "tooltip": "{Soldiers' Tall Tale}\n\nNative upgrade-aware Legion Recruit specialty: +1 speed and standard tier-one Attack/Defense growth. Skaarl remains unique; no dismount or respawn loop."}
+    },
+    "images": {"large": "runeterra/noxus/heroes/kled/large.png", "small": "runeterra/noxus/heroes/kled/small.png", "specialtyLarge": "runeterra/noxus/heroes/kled/specialtyLarge.png", "specialtySmall": "runeterra/noxus/heroes/kled/specialtySmall.png"},
+    "army": [{"creature": "legionRecruit", "min": 12, "max": 18}, {"creature": "drakeHound", "min": 2, "max": 4}, {"creature": "guildKnifeThrower", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:leadership", "level": "basic"}, {"skill": "core:tactics", "level": "basic"}],
+    "specialty": {"creature": "legionRecruit", "stepSize": 5}
+  },
+  "riven": {
+    "class": "noxianMarshal", "female": true, "special": false,
+    "texts": {
+      "name": "Riven",
+      "biography": "Riven survived chemical-fire betrayal in Ionia and abandoned the empire she had served. This profile selects her Ionian exile chapter, where she faced guilt but also forgiveness and acceptance; ordinary skirmish availability is a tactical abstraction, and it does not silently import her later surrender and Noxian captivity. Her command represents independent allies, not compulsory imperial loyalty.",
+      "specialty": {"name": "Exile's Discipline", "description": "All commanded creatures gain +1 Attack. This is a fixed command bonus, not a personal sword transformation.", "tooltip": "{Exile's Discipline}\n\nTroop Attack +1. No additional attack, execute, shield or hero combat stack."}
+    },
+    "images": {"large": "runeterra/noxus/heroes/riven/large.png", "small": "runeterra/noxus/heroes/riven/small.png", "specialtyLarge": "runeterra/noxus/heroes/riven/specialtyLarge.png", "specialtySmall": "runeterra/noxus/heroes/riven/specialtySmall.png"},
+    "army": [{"creature": "legionRecruit", "min": 12, "max": 18}, {"creature": "drakeHound", "min": 2, "max": 4}, {"creature": "guildKnifeThrower", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:offence", "level": "basic"}, {"skill": "core:armorer", "level": "basic"}],
+    "specialty": {"bonuses": {"discipline": {"type": "PRIMARY_SKILL", "subtype": "attack", "val": 1, "limiters": "CREATURES_ONLY"}}}
+  },
+  "rell": {
+    "class": "noxianMarshal", "female": true, "special": false,
+    "texts": {
+      "name": "Rell",
+      "biography": "Rell's parents accepted a bargain that placed her in the Black Rose's abusive academy; her mother was its headmistress. Other children were Nullified to empower her, not universally killed. This portrayal follows her escape and rescue mission against the Rose and the government that tolerated it. Ordinary skirmish availability abstracts a Noxian-origin rebel; she is never a loyal officer or weekly academy graduate.",
+      "specialty": {"name": "Ironbreaker Command", "description": "Commanded troops ignore 10% of enemy Defense when attacking. This does not grant magic immunity or remove armour items.", "tooltip": "{Ironbreaker Command}\n\nNative enemy Defense reduction 10% for troop attacks. Disrupting Ray remains a separate ordinary hero spell with normal cost and targeting."}
+    },
+    "images": {"large": "runeterra/noxus/heroes/rell/large.png", "small": "runeterra/noxus/heroes/rell/small.png", "specialtyLarge": "runeterra/noxus/heroes/rell/specialtyLarge.png", "specialtySmall": "runeterra/noxus/heroes/rell/specialtySmall.png"},
+    "army": [{"creature": "legionRecruit", "min": 12, "max": 18}, {"creature": "drakeHound", "min": 2, "max": 4}, {"creature": "guildKnifeThrower", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:armorer", "level": "basic"}, {"skill": "core:earthMagic", "level": "basic"}],
+    "specialty": {"bonuses": {"ironbreaker": {"type": "ENEMY_DEFENCE_REDUCTION", "val": 10, "limiters": "CREATURES_ONLY"}}},
+    "spellbook": ["core:disruptingRay"]
+  },
+  "briar": {
+    "class": "noxianMarshal", "female": true, "special": false,
+    "texts": {
+      "name": "Briar",
+      "biography": "Created as a Black Rose blood-weapon under Darkwill, Briar defied her handlers during the coup, was captured by Swain's guards and spent years imprisoned. This portrayal follows her escape and deliberate choices about restraint. She is not currently leashed to the Rose or automatically loyal to Swain; her nature does not turn the Noxian roster into undead.",
+      "specialty": {"name": "Chosen Release", "description": "Offense receives the native 5% per hero level specialty increase to skill effectiveness. Briar starts with Basic Armorer instead of Logistics: physical resilience, not Katarina's travel advantage. No life-drain economy or loss of player control.", "tooltip": "{Chosen Release}\n\nNative Offense skill specialty: 5% per hero level to skill effectiveness. Basic Armorer is an ordinary starting skill, not an additional specialty. No frenzy meter, forced target selection or troop resurrection."}
+    },
+    "images": {"large": "runeterra/noxus/heroes/briar/large.png", "small": "runeterra/noxus/heroes/briar/small.png", "specialtyLarge": "runeterra/noxus/heroes/briar/specialtyLarge.png", "specialtySmall": "runeterra/noxus/heroes/briar/specialtySmall.png"},
+    "army": [{"creature": "legionRecruit", "min": 12, "max": 18}, {"creature": "drakeHound", "min": 2, "max": 4}, {"creature": "guildKnifeThrower", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:offence", "level": "basic"}, {"skill": "core:armorer", "level": "basic"}],
+    "specialty": {"secondary": "core:offence", "stepSize": 5}
+  },
+  "ambessa": {
+    "class": "noxianMarshal", "female": true, "special": false,
+    "texts": {
+      "name": "Ambessa",
+      "biography": "General Ambessa Medarda pursues her family's survival and political legacy with formidable military experience. This profile selects a living Noxian-career portrayal, before the later aftermath recalled by Mel; ordinary skirmish availability is a chronology abstraction. Motherhood and ambition do not synchronize every Piltover event with Demacia's early rebellion or prove an already achieved global dynasty.",
+      "specialty": {"name": "Veteran Command", "description": "All commanded creatures gain +1 Defense. This fixed training bonus grants no broad spell protection.", "tooltip": "{Veteran Command}\n\nTroop Defense +1. No personal dash chain, magic immunity, extra action or troop production."}
+    },
+    "images": {"large": "runeterra/noxus/heroes/ambessa/large.png", "small": "runeterra/noxus/heroes/ambessa/small.png", "specialtyLarge": "runeterra/noxus/heroes/ambessa/specialtyLarge.png", "specialtySmall": "runeterra/noxus/heroes/ambessa/specialtySmall.png"},
+    "army": [{"creature": "legionRecruit", "min": 12, "max": 18}, {"creature": "drakeHound", "min": 2, "max": 4}, {"creature": "guildKnifeThrower", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:tactics", "level": "basic"}, {"skill": "core:armorer", "level": "basic"}],
+    "specialty": {"bonuses": {"training": {"type": "PRIMARY_SKILL", "subtype": "defence", "val": 1, "limiters": "CREATURES_ONLY"}}}
+  },
+  "annie": {
+    "class": "noxianOccultist", "female": true, "special": true,
+    "texts": {
+      "name": "Annie",
+      "biography": "Annie is an unaffiliated child of Noxian frontier settlers, living among forests beyond Ironspike. Her frightening gift and fiery toy protector do not make her an imperial soldier, and she can recognize death despite her emotional immaturity. Only an explicitly protective or independent scenario may present her as a commander; no routine tavern conscription or repeatable Tibbers army is implied.",
+      "specialty": {"name": "Unquiet Embers", "description": "Fireball receives the native 5% spell-specialty increase per hero-level step relative to target tier. Native area and friendly fire remain.", "tooltip": "{Unquiet Embers}\n\nNative Fireball scaling specialty, 5% per completed hero-level/target-tier step. Ordinary mana, area targeting, immunity and friendly fire remain; no summoned Tibbers stack."}
+    },
+    "images": {"large": "runeterra/noxus/heroes/annie/large.png", "small": "runeterra/noxus/heroes/annie/small.png", "specialtyLarge": "runeterra/noxus/heroes/annie/specialtyLarge.png", "specialtySmall": "runeterra/noxus/heroes/annie/specialtySmall.png"},
+    "army": [{"creature": "legionRecruit", "min": 12, "max": 18}, {"creature": "drakeHound", "min": 2, "max": 4}, {"creature": "guildKnifeThrower", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:fireMagic", "level": "basic"}],
+    "specialty": {"spellScalingPercentage": "core:fireball", "spellScalingVal": 5},
+    "spellbook": ["core:fireball"]
+  },
+  "sion": {
+    "class": "noxianMarshal", "female": false, "special": false,
+    "texts": {
+      "name": "Sion",
+      "biography": "The singular warlord Sion killed Jarvan I as he died and was later reanimated by the Black Rose under Darkwill. Swain subsequently deployed him as a terrible weapon. Fragments of memory survive amid his damaged identity and rage. Ordinary skirmish eligibility is an explicit command-interface abstraction despite his damaged cognition and uncontrollability; he is not an ordinary officer or a mass-produced troop line.",
+      "specialty": {"name": "Brutal Advance", "description": "Commanded creatures gain +2 Attack for melee combat only. No rebirth, charge-through or post-death extra turn.", "tooltip": "{Brutal Advance}\n\nTroop melee Attack +2. Ordinary skirmish availability is an explicit command-interface abstraction; his singular undead history does not change troop nature or add a recruitable Sion."}
+    },
+    "images": {"large": "runeterra/noxus/heroes/sion/large.png", "small": "runeterra/noxus/heroes/sion/small.png", "specialtyLarge": "runeterra/noxus/heroes/sion/specialtyLarge.png", "specialtySmall": "runeterra/noxus/heroes/sion/specialtySmall.png"},
+    "army": [{"creature": "legionRecruit", "min": 12, "max": 18}, {"creature": "drakeHound", "min": 2, "max": 4}, {"creature": "guildKnifeThrower", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:offence", "level": "basic"}, {"skill": "core:armorer", "level": "basic"}],
+    "specialty": {"bonuses": {"advance": {"type": "PRIMARY_SKILL", "subtype": "attack", "val": 2, "effectRange": "ONLY_MELEE_FIGHT", "limiters": "CREATURES_ONLY"}}}
+  },
+  "mordekaiser": {
+    "class": "noxianOccultist", "female": false, "special": true,
+    "texts": {
+      "name": "Mordekaiser",
+      "biography": "Sahn-Uzal's predecessor empire and Immortal Bastion predate modern Noxus. In a pre-existing afterlife he forged the soul-built Afterworld; his expulsion by the cabal secretly served his own preparations. This scenario-only antagonist is neither a Shadow Isles citizen by assumption nor a loyal modern Noxian commander. No ordinary dwelling, death gate or unlimited invulnerability is implemented.",
+      "specialty": {"name": "Afterworld Studies", "description": "Necromancy receives the native 5% per hero level specialty increase to skill effectiveness. Original eligible-casualty and native result limits remain.", "tooltip": "{Afterworld Studies}\n\nNative Necromancy skill specialty, 5% per hero level to skill effectiveness. Scenario antagonist only; no Ruin Bringer production, new soul currency or death-realm combat instance."}
+    },
+    "images": {"large": "runeterra/noxus/heroes/mordekaiser/large.png", "small": "runeterra/noxus/heroes/mordekaiser/small.png", "specialtyLarge": "runeterra/noxus/heroes/mordekaiser/specialtyLarge.png", "specialtySmall": "runeterra/noxus/heroes/mordekaiser/specialtySmall.png"},
+    "army": [{"creature": "legionRecruit", "min": 12, "max": 18}, {"creature": "drakeHound", "min": 2, "max": 4}, {"creature": "guildKnifeThrower", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:necromancy", "level": "basic"}],
+    "specialty": {"secondary": "core:necromancy", "stepSize": 5},
+    "spellbook": ["core:weakness", "core:animateDead"]
+  },
+  "alistar": {
+    "class": "noxianMarshal", "female": false, "special": true,
+    "texts": {
+      "name": "Alistar",
+      "biography": "Alistar rejected Noxian annexation at a parley, was betrayed under truce and enslaved, and survived the arena destruction of his clan. After escaping with Ayelia's help he resists oppression and searches without knowing her fate. He is an unaffiliated liberation ally in scenarios, not a loyal imperial minotaur; individual minotaur service elsewhere changes none of this.",
+      "specialty": {"name": "Unbroken Command", "description": "Commanded troops receive five additional percentage points of native physical damage reduction. No spell protection or invulnerability.", "tooltip": "{Unbroken Command}\n\nNative Armorer-style physical damage reduction +5 percentage points. Scenario-only liberation role; no army-wide knock-up, regeneration or universal minotaur allegiance."}
+    },
+    "images": {"large": "runeterra/noxus/heroes/alistar/large.png", "small": "runeterra/noxus/heroes/alistar/small.png", "specialtyLarge": "runeterra/noxus/heroes/alistar/specialtyLarge.png", "specialtySmall": "runeterra/noxus/heroes/alistar/specialtySmall.png"},
+    "army": [{"creature": "legionRecruit", "min": 12, "max": 18}, {"creature": "drakeHound", "min": 2, "max": 4}, {"creature": "guildKnifeThrower", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:armorer", "level": "basic"}, {"skill": "core:tactics", "level": "basic"}],
+    "specialty": {"bonuses": {"unbroken": {"type": "GENERAL_DAMAGE_REDUCTION", "subtype": "damageTypeAll", "val": 5}}}
+  }
+}

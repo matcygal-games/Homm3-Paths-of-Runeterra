@@ -1,0 +1,392 @@
+{
+  "runeterraRegionalField": {
+    "name": "Runeterra Regional Field",
+    "handler": "terrain",
+    "types": {
+      "wildMagicLines": {
+        "name": "Wild Magic Lines: full daily mana recovery; all creature Attack -2",
+        "battleground": "runeterra-world-systems:wildMagicLines",
+        "templates": {
+          "normal": {
+            "animation": "runeterra/world/scenery/ixtaliAxiomMarker/map.json",
+            "mask": [
+              "VVV",
+              "VBV",
+              "VBV"
+            ],
+            "allowedTerrains": [
+              "grass"
+            ]
+          }
+        }
+      },
+      "blackMistHollow": {
+        "name": "Black Mist Hollow: living creature Morale -1",
+        "battleground": "runeterra-world-systems:blackMistHollow",
+        "templates": {
+          "normal": {
+            "animation": "runeterra/world/scenery/mistboundDeadwood/map.json",
+            "mask": [
+              "VVV",
+              "VBV",
+              "VBV"
+            ],
+            "allowedTerrains": [
+              "swamp",
+              "dirt"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "runeterra-world:ionianSpiritWillow": {
+    "name": "Ionian Spirit Willow",
+    "handler": "configurable",
+    "types": {
+      "ionianSpiritWillow": {
+        "name": "Ionian Spirit Willow",
+        "description": "The grove preserves one humble magical teaching. Each eligible hero may learn its fixed random first-level spell, selected from the map's allowed spell pool. A spellbook is required; this grove grants no mana or weekly payment.",
+        "visitMode": "limiter",
+        "selectMode": "selectFirst",
+        "canRefuse": false,
+        "showScoutedPreview": true,
+        "resetParameters": {
+          "weeks": 0,
+          "visitors": false,
+          "rewards": false
+        },
+        "variables": {
+          "spell": {
+            "gainedSpell": {
+              "level": 1
+            }
+          }
+        },
+        "visitLimiter": {
+          "spells": [
+            "@gainedSpell"
+          ]
+        },
+        "rewards": [
+          {
+            "limiter": {
+              "canLearnSpells": [
+                "@gainedSpell"
+              ]
+            },
+            "spells": [
+              "@gainedSpell"
+            ],
+            "message": "Beneath the spirit willow, the grove's custodian teaches you {%s}."
+          }
+        ],
+        "onVisitedMessage": "You already know this grove's teaching.",
+        "onEmptyMessage": "You cannot learn this grove's spell. Bring a spellbook and a hero able to learn it.",
+        "rmg": {
+          "value": 500,
+          "rarity": 70,
+          "zoneLimit": 1
+        }
+      }
+    }
+  },
+  "runeterra-world:piltoverHexPressRefinery": {
+    "name": "Piltover Hex-Press Refinery",
+    "handler": "configurable",
+    "types": {
+      "piltoverHexPressRefinery": {
+        "description": "The first visitor each week collects two units of one rare material: Shimmer, Hextech Shards or Starstones. The workshop prepares a new random cache each native week. One global payment per site per week.",
+        "resetParameters": {
+          "weeks": 1,
+          "visitors": true,
+          "rewards": true
+        },
+        "onVisitedMessage": "This week's refined-material cache has already been collected.",
+        "rewards": [
+          {
+            "resources": [
+              {
+                "anyOf": [
+                  "mercury",
+                  "crystal",
+                  "gems"
+                ],
+                "amount": 2
+              }
+            ],
+            "message": "You collect this week's cache: two units of one rare material, shown in the reward. The next cache will be prepared next week."
+          }
+        ],
+        "rmg": {
+          "value": 1000,
+          "rarity": 55,
+          "zoneLimit": 1
+        }
+      }
+    }
+  },
+  "runeterra-world:elderDragonPit": {
+    "name": "Elder Dragon Pit",
+    "handler": "configurable",
+    "types": {
+      "elderDragonPit": {
+        "description": "One Elder Dragon and three pairs of elemental drakes guard a finite treasury. Victory grants the winning hero's owner +3 Attack for all creature stacks for seven adventure-day advances. Equal Elder triumphs do not increase the magnitude. No artifact, dragon soul or permanent effect is granted.",
+        "onGuardedMessage": "One Elder Dragon and six elemental guardians defend a treasury. Victory grants resources and +3 Attack to your creature stacks for seven adventure-day advances. Challenge them or leave.",
+        "rewards": [
+          {
+            "guards": [
+              {
+                "type": "runeterra-world:elderDragon",
+                "amount": 1
+              },
+              {
+                "type": "runeterra-world:mountainDrake",
+                "amount": 2
+              },
+              {
+                "type": "runeterra-world:oceanDrake",
+                "amount": 2
+              },
+              {
+                "type": "runeterra-world:cloudDrake",
+                "amount": 2
+              }
+            ],
+            "resources": {
+              "gold": 70000,
+              "crystal": 10,
+              "gems": 10
+            },
+            "bonuses": [],
+            "playerBonuses": [
+              {
+                "type": "PRIMARY_SKILL",
+                "subtype": "attack",
+                "val": 3,
+                "valueType": "BASE_NUMBER",
+                "duration": "N_DAYS",
+                "turns": 7,
+                "stacking": "runeterraElderTriumph",
+                "limiters": [
+                  "CREATURES_ONLY"
+                ],
+                "description": "Elder triumph: +3 Attack to the owning player's creature stacks for seven adventure-day advances"
+              }
+            ],
+            "message": "You recover 70,000 gold, 10 Hextech Shards and 10 Starstones. Your creature stacks gain +3 Attack for seven adventure-day advances. No artifact or permanent bonus is granted."
+          }
+        ]
+      }
+    }
+  },
+  "runeterra-world:petricitePillar": {
+    "types": {
+      "petricitePillar": {
+        "rmg": {
+          "value": 1000,
+          "rarity": 90,
+          "zoneLimit": 1
+        }
+      }
+    }
+  },
+  "runeterra-world:targonianFoothills": {
+    "types": {
+      "targonianFoothills": {
+        "rmg": {
+          "value": 1500,
+          "rarity": 80,
+          "zoneLimit": 1
+        }
+      }
+    }
+  },
+  "runeterra-world:voidBurrow": {
+    "types": {
+      "voidBurrow": {
+        "rmg": {
+          "value": 3000,
+          "rarity": 80,
+          "zoneLimit": 1
+        }
+      }
+    }
+  },
+  "runeterra-world:freljordRimefangHollow": {
+    "types": {
+      "freljordRimefangHollow": {
+        "rmg": {
+          "value": 3600,
+          "rarity": 65,
+          "zoneLimit": 1
+        }
+      }
+    }
+  },
+  "runeterra-world:shurimanRockbearDen": {
+    "types": {
+      "shurimanRockbearDen": {
+        "rmg": {
+          "value": 5000,
+          "rarity": 60,
+          "zoneLimit": 1
+        }
+      }
+    }
+  },
+  "runeterra-world:noxianBasiliskRavine": {
+    "types": {
+      "noxianBasiliskRavine": {
+        "rmg": {
+          "value": 6500,
+          "rarity": 55,
+          "zoneLimit": 1
+        }
+      }
+    }
+  },
+  "runeterra-world:bandlePortalGrove": {
+    "types": {
+      "bandlePortalGrove": {
+        "rmg": {
+          "value": 500,
+          "rarity": 70,
+          "zoneLimit": 1
+        }
+      }
+    }
+  },
+  "runeterra-world:shurimanCaravanserai": {
+    "types": {
+      "shurimanCaravanserai": {
+        "rmg": {
+          "value": 750,
+          "rarity": 60,
+          "zoneLimit": 1
+        }
+      }
+    }
+  },
+  "runeterra-world:bilgewaterSmugglersCove": {
+    "types": {
+      "bilgewaterSmugglersCove": {
+        "rmg": {
+          "value": 1000,
+          "rarity": 55,
+          "zoneLimit": 1
+        }
+      }
+    }
+  },
+  "runeterra-world:demacianBannerCourt": {
+    "types": {
+      "demacianBannerCourt": {
+        "rmg": {
+          "value": 1500,
+          "rarity": 60,
+          "zoneLimit": 1
+        }
+      }
+    }
+  },
+  "runeterra-world:piltoverFieldLecture": {
+    "types": {
+      "piltoverFieldLecture": {
+        "rmg": {
+          "value": 1500,
+          "rarity": 60,
+          "zoneLimit": 1
+        }
+      }
+    }
+  },
+  "runeterra-world:freljordReturnedShipHall": {
+    "types": {
+      "freljordReturnedShipHall": {
+        "rmg": {
+          "value": 750,
+          "rarity": 60,
+          "zoneLimit": 1
+        }
+      }
+    }
+  },
+  "runeterra-world:targonianAscentCamp": {
+    "types": {
+      "targonianAscentCamp": {
+        "rmg": {
+          "value": 500,
+          "rarity": 60,
+          "zoneLimit": 1
+        }
+      }
+    }
+  },
+  "runeterra-world:ixtaliStoneStudyStation": {
+    "types": {
+      "ixtaliStoneStudyStation": {
+        "rmg": {
+          "value": 1500,
+          "rarity": 60,
+          "zoneLimit": 1
+        }
+      }
+    }
+  },
+  "runeterra-world:cloudDrakeRoost": {
+    "types": {
+      "cloudDrakeRoost": {
+        "rmg": {
+          "value": 15000,
+          "rarity": 20,
+          "zoneLimit": 1
+        }
+      }
+    }
+  },
+  "runeterra-world:oceanDrakeRoost": {
+    "types": {
+      "oceanDrakeRoost": {
+        "rmg": {
+          "value": 17000,
+          "rarity": 20,
+          "zoneLimit": 1
+        }
+      }
+    }
+  },
+  "runeterra-world:hextechDrakeRoost": {
+    "types": {
+      "hextechDrakeRoost": {
+        "rmg": {
+          "value": 19000,
+          "rarity": 15,
+          "zoneLimit": 1
+        }
+      }
+    }
+  },
+  "runeterra-world:chemtechDrakeRoost": {
+    "types": {
+      "chemtechDrakeRoost": {
+        "rmg": {
+          "value": 20000,
+          "rarity": 15,
+          "zoneLimit": 1
+        }
+      }
+    }
+  },
+  "runeterra-world:mountainDrakeRoost": {
+    "types": {
+      "mountainDrakeRoost": {
+        "rmg": {
+          "value": 20000,
+          "rarity": 15,
+          "zoneLimit": 1
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "zaunMachinist": {
+    "name": "Zaun Machinist",
+    "faction": "zaun",
+    "affinity": "might",
+    "commander": "chemtechConstruct",
+    "animation": {
+      "battle": {
+        "male": "runeterra/zaun/heroes/classes/zaunMachinist/battleMale.json",
+        "female": "runeterra/zaun/heroes/classes/zaunMachinist/battleFemale.json"
+      }
+    },
+    "mapObject": {
+      "templates": {
+        "normal": {
+          "animation": "runeterra/zaun/heroes/classes/zaunMachinist/map.json",
+          "editorAnimation": "runeterra/zaun/heroes/classes/zaunMachinist/mapEditor.json"
+        }
+      }
+    },
+    "primarySkills": {
+      "attack": 2,
+      "defence": 2,
+      "spellpower": 1,
+      "knowledge": 1
+    },
+    "lowLevelChance": {
+      "attack": 30,
+      "defence": 50,
+      "spellpower": 10,
+      "knowledge": 10
+    },
+    "highLevelChance": {
+      "attack": 30,
+      "defence": 40,
+      "spellpower": 15,
+      "knowledge": 15
+    },
+    "secondarySkills": {
+      "core:armorer": 10,
+      "core:offence": 9,
+      "core:archery": 7,
+      "core:tactics": 6,
+      "core:firstAid": 5,
+      "core:logistics": 4,
+      "core:scouting": 4,
+      "core:ballistics": 3
+    },
+    "defaultTavern": 2,
+    "tavern": {
+      "zaun": 10
+    }
+  },
+  "zaunChemist": {
+    "name": "Zaun Chemist",
+    "faction": "zaun",
+    "affinity": "magic",
+    "commander": "chemtechConstruct",
+    "animation": {
+      "battle": {
+        "male": "runeterra/zaun/heroes/classes/zaunChemist/battleMale.json",
+        "female": "runeterra/zaun/heroes/classes/zaunChemist/battleFemale.json"
+      }
+    },
+    "mapObject": {
+      "templates": {
+        "normal": {
+          "animation": "runeterra/zaun/heroes/classes/zaunChemist/map.json",
+          "editorAnimation": "runeterra/zaun/heroes/classes/zaunChemist/mapEditor.json"
+        }
+      }
+    },
+    "primarySkills": {
+      "attack": 1,
+      "defence": 1,
+      "spellpower": 2,
+      "knowledge": 2
+    },
+    "lowLevelChance": {
+      "attack": 10,
+      "defence": 15,
+      "spellpower": 35,
+      "knowledge": 40
+    },
+    "highLevelChance": {
+      "attack": 20,
+      "defence": 20,
+      "spellpower": 30,
+      "knowledge": 30
+    },
+    "secondarySkills": {
+      "core:mysticism": 10,
+      "core:wisdom": 9,
+      "core:intelligence": 7,
+      "core:earthMagic": 7,
+      "core:airMagic": 6,
+      "core:diplomacy": 4,
+      "core:ballistics": 4,
+      "core:artillery": 4
+    },
+    "defaultTavern": 1,
+    "tavern": {
+      "zaun": 8
+    }
+  }
+}

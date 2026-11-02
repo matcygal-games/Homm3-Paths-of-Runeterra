@@ -1,0 +1,941 @@
+{
+  "garen": {
+    "class": "demacianMarshal",
+    "female": false,
+    "special": false,
+    "texts": {
+      "name": "Garen",
+      "biography": "Sword-Captain Garen Crownguard leads the Dauntless Vanguard with discipline and personal courage. His duty to Demacia sits uneasily beside his love for his magically gifted sister Lux.",
+      "specialty": {
+        "name": "Demacian Discipline",
+        "description": "All commanded troops gain +1 defence. This fixed discipline bonus does not increase with hero level or grant speed.",
+        "tooltip": "{Demacian Discipline}\n\nAll commanded troops gain +1 defence. This fixed discipline bonus does not increase with hero level or grant speed."
+      }
+    },
+    "images": {
+      "large": "runeterra/demacia/heroes/garen/large.png",
+      "small": "runeterra/demacia/heroes/garen/small.png",
+      "specialtyLarge": "runeterra/demacia/heroes/garen/specialtyLarge.png",
+      "specialtySmall": "runeterra/demacia/heroes/garen/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "loyalBadgerbear",
+        "min": 14,
+        "max": 20
+      },
+      {
+        "creature": "demacianRanger",
+        "min": 4,
+        "max": 7
+      },
+      {
+        "creature": "mageseekerInciter",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:offence",
+        "level": "basic"
+      },
+      {
+        "skill": "core:armorer",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "disciplinedDefence": {
+          "type": "PRIMARY_SKILL",
+          "subtype": "defence",
+          "val": 1,
+          "limiters": "CREATURES_ONLY"
+        }
+      }
+    }
+  },
+  "jarvanIV": {
+    "class": "demacianMarshal",
+    "female": false,
+    "special": false,
+    "texts": {
+      "name": "Jarvan IV",
+      "biography": "With Demacia unsettled after his father's death, Jarvan must earn the trust of soldiers and nobles while deciding what justice should mean for his people. This campaign follows him before the succession is settled.",
+      "specialty": {
+        "name": "Royal Standard",
+        "description": "All commanded troops gain +1 attack and +1 defence. This fixed bonus does not depend on army size or require another hero in the army.",
+        "tooltip": "{Royal Standard}\n\nAll commanded troops gain +1 attack and +1 defence. This fixed bonus does not depend on army size or require another hero in the army."
+      }
+    },
+    "images": {
+      "large": "runeterra/demacia/heroes/jarvanIV/large.png",
+      "small": "runeterra/demacia/heroes/jarvanIV/small.png",
+      "specialtyLarge": "runeterra/demacia/heroes/jarvanIV/specialtyLarge.png",
+      "specialtySmall": "runeterra/demacia/heroes/jarvanIV/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "loyalBadgerbear",
+        "min": 14,
+        "max": 20
+      },
+      {
+        "creature": "demacianRanger",
+        "min": 4,
+        "max": 7
+      },
+      {
+        "creature": "mageseekerInciter",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:leadership",
+        "level": "basic"
+      },
+      {
+        "skill": "core:tactics",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "royalStandardAttack": {
+          "type": "PRIMARY_SKILL",
+          "subtype": "attack",
+          "val": 1,
+          "limiters": "CREATURES_ONLY"
+        },
+        "royalStandardDefence": {
+          "type": "PRIMARY_SKILL",
+          "subtype": "defence",
+          "val": 1,
+          "limiters": "CREATURES_ONLY"
+        }
+      }
+    }
+  },
+  "quinn": {
+    "class": "demacianMarshal",
+    "female": true,
+    "special": false,
+    "texts": {
+      "name": "Quinn",
+      "biography": "Quinn and the azurite eagle Valor patrol Demacia's distant borders as trusted partners. Their singular bond inspires reconnaissance training without turning Valor into a recruitable flock or cavalry mount.",
+      "specialty": {
+        "name": "Valor's Reconnaissance",
+        "description": "Adventure sight radius +1. This bonus shares a cap of +1 with Silverwing Aviary training. Scouting contributes its normal separate bonus.",
+        "tooltip": "{Valor's Reconnaissance}\n\nAdventure sight radius +1. This bonus shares a cap of +1 with Silverwing Aviary training. Scouting contributes its normal separate bonus."
+      }
+    },
+    "images": {
+      "large": "runeterra/demacia/heroes/quinn/large.png",
+      "small": "runeterra/demacia/heroes/quinn/small.png",
+      "specialtyLarge": "runeterra/demacia/heroes/quinn/specialtyLarge.png",
+      "specialtySmall": "runeterra/demacia/heroes/quinn/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "loyalBadgerbear",
+        "min": 10,
+        "max": 16
+      },
+      {
+        "creature": "demacianRanger",
+        "min": 6,
+        "max": 9
+      },
+      {
+        "creature": "mageseekerInciter",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:archery",
+        "level": "basic"
+      },
+      {
+        "skill": "core:scouting",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "valor": {
+          "type": "SIGHT_RADIUS",
+          "val": 1,
+          "stacking": "runeterraDemaciaScouting"
+        }
+      }
+    }
+  },
+  "vayne": {
+    "class": "demacianMarshal",
+    "female": true,
+    "special": false,
+    "texts": {
+      "name": "Vayne",
+      "biography": "Shauna Vayne hunts the monstrous threats that prey upon the vulnerable. Her exacting marksmanship is formidable, though her hatred of magic can turn conviction into cruelty.",
+      "specialty": {
+        "name": "Silver Bolts",
+        "description": "Demacian Rangers and Veteran Rangers ignore 20% of their target's defence. This grants no extra shots and does not ignore damage reduction.",
+        "tooltip": "{Silver Bolts}\n\nDemacian Rangers and Veteran Rangers ignore 20% of their target's defence. This grants no extra shots and does not ignore damage reduction."
+      }
+    },
+    "images": {
+      "large": "runeterra/demacia/heroes/vayne/large.png",
+      "small": "runeterra/demacia/heroes/vayne/small.png",
+      "specialtyLarge": "runeterra/demacia/heroes/vayne/specialtyLarge.png",
+      "specialtySmall": "runeterra/demacia/heroes/vayne/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "loyalBadgerbear",
+        "min": 10,
+        "max": 16
+      },
+      {
+        "creature": "demacianRanger",
+        "min": 6,
+        "max": 9
+      },
+      {
+        "creature": "mageseekerInciter",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:archery",
+        "level": "basic"
+      },
+      {
+        "skill": "core:ballistics",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "silverBolts": {
+          "type": "ENEMY_DEFENCE_REDUCTION",
+          "val": 20,
+          "limiters": {
+            "type": "CREATURE_TYPE_LIMITER",
+            "creature": "demacianRanger",
+            "includeUpgrades": true
+          }
+        }
+      }
+    }
+  },
+  "fiora": {
+    "class": "demacianMarshal",
+    "female": true,
+    "special": false,
+    "texts": {
+      "name": "Fiora",
+      "biography": "Fiora Laurent measures herself against the finest opponents she can find. As a commander she drills her duelists in precision and riposte, pursuing mastery while carrying her house's expectations.",
+      "specialty": {
+        "name": "Laurent Bladework",
+        "description": "Duelists and Grand Duelists gain +1 speed and the standard creature-specialty attack and defence growth.",
+        "tooltip": "{Laurent Bladework}\n\nDuelists and Grand Duelists gain +1 speed and the standard creature-specialty attack and defence growth."
+      }
+    },
+    "images": {
+      "large": "runeterra/demacia/heroes/fiora/large.png",
+      "small": "runeterra/demacia/heroes/fiora/small.png",
+      "specialtyLarge": "runeterra/demacia/heroes/fiora/specialtyLarge.png",
+      "specialtySmall": "runeterra/demacia/heroes/fiora/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "loyalBadgerbear",
+        "min": 12,
+        "max": 18
+      },
+      {
+        "creature": "demacianRanger",
+        "min": 4,
+        "max": 6
+      },
+      {
+        "creature": "duelist",
+        "min": 1,
+        "max": 1
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:offence",
+        "level": "basic"
+      },
+      {
+        "skill": "core:tactics",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "creature": "duelist"
+    }
+  },
+  "xinZhao": {
+    "class": "demacianMarshal",
+    "female": false,
+    "special": false,
+    "texts": {
+      "name": "Xin Zhao",
+      "biography": "Freed from Noxian captivity, Xin Zhao chose service to Demacia and became a trusted protector of its royal household. His resolve now guides disciplined guards through the kingdom's uncertain succession.",
+      "specialty": {
+        "name": "Seneschal's Guard",
+        "description": "Dragonguard and Veteran Dragonguards gain +1 speed and the standard creature-specialty attack and defence growth. Charge immunity and the Veteran's Fire-spell protection do not scale.",
+        "tooltip": "{Seneschal's Guard}\n\nDragonguard and Veteran Dragonguards gain +1 speed and the standard creature-specialty attack and defence growth. Charge immunity and the Veteran's Fire-spell protection do not scale."
+      }
+    },
+    "images": {
+      "large": "runeterra/demacia/heroes/xinZhao/large.png",
+      "small": "runeterra/demacia/heroes/xinZhao/small.png",
+      "specialtyLarge": "runeterra/demacia/heroes/xinZhao/specialtyLarge.png",
+      "specialtySmall": "runeterra/demacia/heroes/xinZhao/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "loyalBadgerbear",
+        "min": 14,
+        "max": 20
+      },
+      {
+        "creature": "demacianRanger",
+        "min": 4,
+        "max": 7
+      },
+      {
+        "creature": "mageseekerInciter",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:offence",
+        "level": "basic"
+      },
+      {
+        "skill": "core:armorer",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "creature": "dragonguard"
+    }
+  },
+  "poppy": {
+    "class": "demacianMarshal",
+    "female": true,
+    "special": false,
+    "texts": {
+      "name": "Poppy",
+      "biography": "The yordle Poppy still searches for the hero worthy of Orlon's hammer. Her humility conceals the steadfast courage with which she has protected Demacians for generations.",
+      "specialty": {
+        "name": "Steadfast Presence",
+        "description": "All troops gain five additional percentage points of physical damage reduction through the normal Armorer calculation. This does not reduce spell damage.",
+        "tooltip": "{Steadfast Presence}\n\nAll troops gain five additional percentage points of physical damage reduction through the normal Armorer calculation. This does not reduce spell damage."
+      }
+    },
+    "images": {
+      "large": "runeterra/demacia/heroes/poppy/large.png",
+      "small": "runeterra/demacia/heroes/poppy/small.png",
+      "specialtyLarge": "runeterra/demacia/heroes/poppy/specialtyLarge.png",
+      "specialtySmall": "runeterra/demacia/heroes/poppy/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "loyalBadgerbear",
+        "min": 14,
+        "max": 20
+      },
+      {
+        "creature": "demacianRanger",
+        "min": 4,
+        "max": 7
+      },
+      {
+        "creature": "mageseekerInciter",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:armorer",
+        "level": "basic"
+      },
+      {
+        "skill": "core:resistance",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "steadfast": {
+          "type": "GENERAL_DAMAGE_REDUCTION",
+          "val": 5,
+          "subtype": "damageTypeAll"
+        }
+      }
+    }
+  },
+  "shyvana": {
+    "class": "demacianMarshal",
+    "female": true,
+    "special": false,
+    "texts": {
+      "name": "Shyvana",
+      "biography": "Shyvana earned Jarvan's trust through courage and shared danger. Her draconic nature challenges the kingdom's fear of magic; in this adaptation she commands armies and channels that power through a brief protective battle oath.",
+      "specialty": {
+        "name": "Dragon's Oath",
+        "description": "Dragon's Oath grants its target an additional +1 attack under Shyvana: +3 attack and +2 defence for exactly 3 battle rounds.",
+        "tooltip": "{Dragon's Oath}\n\nDragon's Oath grants its target an additional +1 attack under Shyvana: +3 attack and +2 defence for exactly 3 battle rounds."
+      }
+    },
+    "images": {
+      "large": "runeterra/demacia/heroes/shyvana/large.png",
+      "small": "runeterra/demacia/heroes/shyvana/small.png",
+      "specialtyLarge": "runeterra/demacia/heroes/shyvana/specialtyLarge.png",
+      "specialtySmall": "runeterra/demacia/heroes/shyvana/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "loyalBadgerbear",
+        "min": 14,
+        "max": 20
+      },
+      {
+        "creature": "demacianRanger",
+        "min": 4,
+        "max": 7
+      },
+      {
+        "creature": "mageseekerInciter",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:offence",
+        "level": "basic"
+      },
+      {
+        "skill": "core:fireMagic",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "dragonOathTraining": {
+          "type": "PRIMARY_SKILL",
+          "val": 1,
+          "subtype": "attack",
+          "limiters": {
+            "type": "HAS_ANOTHER_BONUS_LIMITER",
+            "bonusSourceType": "SPELL_EFFECT",
+            "bonusSourceID": "dragonOath"
+          }
+        }
+      }
+    },
+    "spellbook": [
+      "dragonOath",
+      "core:protectFire"
+    ]
+  },
+  "lucian": {
+    "class": "demacianMarshal",
+    "female": false,
+    "special": false,
+    "texts": {
+      "name": "Lucian",
+      "biography": "Lucian is a Sentinel of Light whose struggle against the Black Mist reaches beyond any royal allegiance. He remembers the people Demacia exiles and fights to protect lives rather than defend persecution.",
+      "specialty": {
+        "name": "Sentinel of Light",
+        "description": "All troops deal 25% more physical damage against the fourteen original Necropolis creatures. Destroy Undead uses its normal spell rules.",
+        "tooltip": "{Sentinel of Light}\n\nAll troops deal 25% more physical damage against the fourteen original Necropolis creatures. Destroy Undead uses its normal spell rules."
+      }
+    },
+    "images": {
+      "large": "runeterra/demacia/heroes/lucian/large.png",
+      "small": "runeterra/demacia/heroes/lucian/small.png",
+      "specialtyLarge": "runeterra/demacia/heroes/lucian/specialtyLarge.png",
+      "specialtySmall": "runeterra/demacia/heroes/lucian/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "loyalBadgerbear",
+        "min": 10,
+        "max": 16
+      },
+      {
+        "creature": "demacianRanger",
+        "min": 6,
+        "max": 9
+      },
+      {
+        "creature": "mageseekerInciter",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:archery",
+        "level": "basic"
+      },
+      {
+        "skill": "core:offence",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "sentinel_skeleton": {
+          "type": "HATE",
+          "val": 25,
+          "subtype": "core:skeleton"
+        },
+        "sentinel_skeletonWarrior": {
+          "type": "HATE",
+          "val": 25,
+          "subtype": "core:skeletonWarrior"
+        },
+        "sentinel_walkingDead": {
+          "type": "HATE",
+          "val": 25,
+          "subtype": "core:walkingDead"
+        },
+        "sentinel_wight": {
+          "type": "HATE",
+          "val": 25,
+          "subtype": "core:wight"
+        },
+        "sentinel_wraith": {
+          "type": "HATE",
+          "val": 25,
+          "subtype": "core:wraith"
+        },
+        "sentinel_vampire": {
+          "type": "HATE",
+          "val": 25,
+          "subtype": "core:vampire"
+        },
+        "sentinel_vampireLord": {
+          "type": "HATE",
+          "val": 25,
+          "subtype": "core:vampireLord"
+        },
+        "sentinel_lich": {
+          "type": "HATE",
+          "val": 25,
+          "subtype": "core:lich"
+        },
+        "sentinel_powerLich": {
+          "type": "HATE",
+          "val": 25,
+          "subtype": "core:powerLich"
+        },
+        "sentinel_blackKnight": {
+          "type": "HATE",
+          "val": 25,
+          "subtype": "core:blackKnight"
+        },
+        "sentinel_dreadKnight": {
+          "type": "HATE",
+          "val": 25,
+          "subtype": "core:dreadKnight"
+        },
+        "sentinel_boneDragon": {
+          "type": "HATE",
+          "val": 25,
+          "subtype": "core:boneDragon"
+        },
+        "sentinel_ghostDragon": {
+          "type": "HATE",
+          "val": 25,
+          "subtype": "core:ghostDragon"
+        },
+        "sentinel_zombieLord": {
+          "type": "HATE",
+          "val": 25,
+          "subtype": "core:zombieLord"
+        }
+      }
+    },
+    "spellbook": [
+      "core:destroyUndead"
+    ]
+  },
+  "sona": {
+    "class": "illuminator",
+    "female": true,
+    "special": false,
+    "texts": {
+      "name": "Sona",
+      "biography": "Sona speaks through the music of her etwahl. Her performances offer comfort in Demacia, while her hidden gift helps the people whom fear and prejudice leave without care.",
+      "specialty": {
+        "name": "Aria of Perseverance",
+        "description": "Cure receives the standard spell-specialty increase: 5% per hero-level step relative to the target's creature tier. Cure cannot resurrect casualties.",
+        "tooltip": "{Aria of Perseverance}\n\nCure receives the standard spell-specialty increase: 5% per hero-level step relative to the target's creature tier. Cure cannot resurrect casualties."
+      }
+    },
+    "images": {
+      "large": "runeterra/demacia/heroes/sona/large.png",
+      "small": "runeterra/demacia/heroes/sona/small.png",
+      "specialtyLarge": "runeterra/demacia/heroes/sona/specialtyLarge.png",
+      "specialtySmall": "runeterra/demacia/heroes/sona/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "loyalBadgerbear",
+        "min": 10,
+        "max": 16
+      },
+      {
+        "creature": "demacianRanger",
+        "min": 4,
+        "max": 7
+      },
+      {
+        "creature": "mageseekerInciter",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:wisdom",
+        "level": "basic"
+      },
+      {
+        "skill": "core:leadership",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "spellScalingPercentage": "core:cure",
+      "spellScalingVal": 5
+    },
+    "spellbook": [
+      "hymnOfValor",
+      "core:cure"
+    ]
+  },
+  "lux": {
+    "class": "illuminator",
+    "female": true,
+    "special": false,
+    "texts": {
+      "name": "Lux",
+      "biography": "Luxanna Crownguard uses her light to protect others while hiding the gift her homeland condemns. Compassion for persecuted mages draws her toward a better Demacia without making her blind to the harm rebellion can cause.",
+      "specialty": {
+        "name": "Illumination",
+        "description": "Radiant Bolt receives the standard spell-specialty increase: 5% per hero-level step relative to the target's creature tier.",
+        "tooltip": "{Illumination}\n\nRadiant Bolt receives the standard spell-specialty increase: 5% per hero-level step relative to the target's creature tier."
+      }
+    },
+    "images": {
+      "large": "runeterra/demacia/heroes/lux/large.png",
+      "small": "runeterra/demacia/heroes/lux/small.png",
+      "specialtyLarge": "runeterra/demacia/heroes/lux/specialtyLarge.png",
+      "specialtySmall": "runeterra/demacia/heroes/lux/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "loyalBadgerbear",
+        "min": 10,
+        "max": 16
+      },
+      {
+        "creature": "demacianRanger",
+        "min": 4,
+        "max": 7
+      },
+      {
+        "creature": "mageseekerInciter",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:wisdom",
+        "level": "basic"
+      },
+      {
+        "skill": "core:scholar",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "spellScalingPercentage": "radiantBolt",
+      "spellScalingVal": 5
+    },
+    "spellbook": [
+      "radiantBolt",
+      "core:shield",
+      "core:bless"
+    ]
+  },
+  "kayle": {
+    "class": "illuminator",
+    "female": true,
+    "special": true,
+    "texts": {
+      "name": "Kayle",
+      "biography": "Kayle's legend shapes Demacian ideas of justice, though her celestial certainty can neglect mortal frailty. Her appearance as an allied commander is a scenario event in this adaptation, not a routine royal appointment.",
+      "specialty": {
+        "name": "Winged Protector",
+        "description": "Prayer grants an additional +1 attack, defence and speed to tier 1-3 troops. Normal spell cost, mastery, duration and target rules apply.",
+        "tooltip": "{Winged Protector}\n\nPrayer grants an additional +1 attack, defence and speed to tier 1-3 troops. Normal spell cost, mastery, duration and target rules apply."
+      }
+    },
+    "images": {
+      "large": "runeterra/demacia/heroes/kayle/large.png",
+      "small": "runeterra/demacia/heroes/kayle/small.png",
+      "specialtyLarge": "runeterra/demacia/heroes/kayle/specialtyLarge.png",
+      "specialtySmall": "runeterra/demacia/heroes/kayle/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "loyalBadgerbear",
+        "min": 10,
+        "max": 16
+      },
+      {
+        "creature": "demacianRanger",
+        "min": 4,
+        "max": 7
+      },
+      {
+        "creature": "mageseekerInciter",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:wisdom",
+        "level": "basic"
+      },
+      {
+        "skill": "core:offence",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "spellFixedAdditive": "core:prayer",
+      "spellFixedValues": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "spellbook": [
+      "core:prayer",
+      "core:shield",
+      "core:bless"
+    ]
+  },
+  "galio": {
+    "class": "demacianMarshal",
+    "female": false,
+    "special": true,
+    "texts": {
+      "name": "Galio",
+      "biography": "Galio is the unique petricite colossus who wakes in the presence of powerful magic and delights in defending people. A scenario awakening lets him guide an army; he is not an ordinary recruitable troop.",
+      "specialty": {
+        "name": "Shield of Durand",
+        "description": "The army takes 40% less magical spell damage. Demacian petricite sources share one stacking group: the strongest applies, at most 60%. Friendly support spells remain available.",
+        "tooltip": "{Shield of Durand}\n\nThe army takes 40% less magical spell damage. Demacian petricite sources share one stacking group: the strongest applies, at most 60%. Friendly support spells remain available."
+      }
+    },
+    "images": {
+      "large": "runeterra/demacia/heroes/galio/large.png",
+      "small": "runeterra/demacia/heroes/galio/small.png",
+      "specialtyLarge": "runeterra/demacia/heroes/galio/specialtyLarge.png",
+      "specialtySmall": "runeterra/demacia/heroes/galio/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "loyalBadgerbear",
+        "min": 14,
+        "max": 20
+      },
+      {
+        "creature": "demacianRanger",
+        "min": 4,
+        "max": 7
+      },
+      {
+        "creature": "mageseekerInciter",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:armorer",
+        "level": "basic"
+      },
+      {
+        "skill": "core:resistance",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "shieldOfDurand": {
+          "type": "SPELL_DAMAGE_REDUCTION",
+          "val": 40,
+          "subtype": "any",
+          "stacking": "runeterraDemaciaPetricite"
+        }
+      }
+    },
+    "spellbook": [
+      "core:shield"
+    ]
+  },
+  "sylas": {
+    "class": "illuminator",
+    "female": false,
+    "special": true,
+    "texts": {
+      "name": "Sylas",
+      "biography": "Sylas of Dregbourne escaped the Mageseekers and rallies mages against the system that used and imprisoned him. His revolution exposes real injustice, while vengeance can endanger the people he claims to liberate.",
+      "specialty": {
+        "name": "Hijack",
+        "description": "Eagle Eye has +20 percentage points to its normal post-battle learning chance: 60% at Basic, 70% at Advanced and 80% at Expert. Normal spell-level and Wisdom limits apply.",
+        "tooltip": "{Hijack}\n\nEagle Eye has +20 percentage points to its normal post-battle learning chance: 60% at Basic, 70% at Advanced and 80% at Expert. Normal spell-level and Wisdom limits apply."
+      }
+    },
+    "images": {
+      "large": "runeterra/demacia/heroes/sylas/large.png",
+      "small": "runeterra/demacia/heroes/sylas/small.png",
+      "specialtyLarge": "runeterra/demacia/heroes/sylas/specialtyLarge.png",
+      "specialtySmall": "runeterra/demacia/heroes/sylas/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "loyalBadgerbear",
+        "min": 12,
+        "max": 18
+      },
+      {
+        "creature": "demacianRanger",
+        "min": 4,
+        "max": 7
+      },
+      {
+        "creature": "duelist",
+        "min": 1,
+        "max": 1
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:wisdom",
+        "level": "basic"
+      },
+      {
+        "skill": "core:eagleEye",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "hijack": {
+          "type": "LEARN_BATTLE_SPELL_CHANCE",
+          "val": 20
+        }
+      }
+    },
+    "spellbook": [
+      "core:magicArrow",
+      "core:slow"
+    ]
+  },
+  "morgana": {
+    "class": "illuminator",
+    "female": true,
+    "special": true,
+    "texts": {
+      "name": "Morgana",
+      "biography": "Morgana bound her wings to remain close to humanity. She shields outcasts and challenges unjust authority, believing that flawed people can change. Her shadow magic expresses compassion and hard-won resolve, not an allegiance to evil.",
+      "specialty": {
+        "name": "Merciful Shadow",
+        "description": "Black Shield reduces magical spell damage by 40% under Morgana, for exactly 3 battle rounds. It shares the Demacian petricite stacking group and does not grant control immunity.",
+        "tooltip": "{Merciful Shadow}\n\nBlack Shield reduces magical spell damage by 40% under Morgana, for exactly 3 battle rounds. It shares the Demacian petricite stacking group and does not grant control immunity."
+      }
+    },
+    "images": {
+      "large": "runeterra/demacia/heroes/morgana/large.png",
+      "small": "runeterra/demacia/heroes/morgana/small.png",
+      "specialtyLarge": "runeterra/demacia/heroes/morgana/specialtyLarge.png",
+      "specialtySmall": "runeterra/demacia/heroes/morgana/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "loyalBadgerbear",
+        "min": 10,
+        "max": 16
+      },
+      {
+        "creature": "demacianRanger",
+        "min": 4,
+        "max": 7
+      },
+      {
+        "creature": "mageseekerInciter",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:wisdom",
+        "level": "basic"
+      },
+      {
+        "skill": "core:waterMagic",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "spellFixedAdditive": "blackShield",
+      "spellFixedValues": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    "spellbook": [
+      "blackShield",
+      "core:slow",
+      "core:cure"
+    ]
+  }
+}

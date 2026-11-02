@@ -1,0 +1,122 @@
+{
+  "qiyana": {
+    "class": "elementalScholar", "female": true, "special": false,
+    "texts": {"name": "Qiyana", "biography": "Qiyana is Ixaocan's tenth royal daughter and an ambitious claimant to the high seat, not an already crowned empress. Her elemental training, court rivalry, manipulation of Tikras and alliance with Aliay remain distinct from benevolent national leadership. Ordinary skirmish command is a nonchronological gameplay adaptation; it does not make the other commanders her loyal subjects.", "specialty": {"name": "Disciplined Axiom", "description": "Magic Arrow gains native 5% scaling per hero-level step divided by target tier.", "tooltip": "{Disciplined Axiom}\n\nMagic Arrow gains 5% per floor(hero level / target creature tier), with tier zero treated as one. Normal mana, casting action, resistance, immunity and damage rounding remain. No elemental mode switch or terrain rewriting."}},
+    "images": {"large": "runeterra/ixtal/heroes/qiyana/large.png", "small": "runeterra/ixtal/heroes/qiyana/small.png", "specialtyLarge": "runeterra/ixtal/heroes/qiyana/specialtyLarge.png", "specialtySmall": "runeterra/ixtal/heroes/qiyana/specialtySmall.png"},
+    "army": [{"creature": "canopyGuide", "min": 12, "max": 18}, {"creature": "bristlehog", "min": 3, "max": 5}, {"creature": "pakaaProwler", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:earthMagic", "level": "basic"}],
+    "specialty": {"spellScalingPercentage": "core:magicArrow", "spellScalingVal": 5}, "spellbook": ["core:magicArrow"]
+  },
+  "nidalee": {
+    "class": "axiomMarshal", "female": true, "special": false,
+    "texts": {"name": "Nidalee", "biography": "Raised by the pakaa in the border jungle, Nidalee leads and protects her adopted pack and territory. She was found as a cub with another heritage; ambient magic did not simply turn an ordinary human into a cat. Her sustained bond with Neeko and their forest defense support local command without making the pakaa a royal domesticated army. The hero avatar represents a commander, never a second targetable shapeshifting troop.", "specialty": {"name": "Pack Tracking", "description": "Fixed +1 native sight radius.", "tooltip": "{Pack Tracking}\n\n+1 sight radius, independent of hero level. Sources in the Ixtal tracking group use the strongest value; normal Scouting adds separately. No full-map reveal, stealth, free cats or personal transformation."}},
+    "images": {"large": "runeterra/ixtal/heroes/nidalee/large.png", "small": "runeterra/ixtal/heroes/nidalee/small.png", "specialtyLarge": "runeterra/ixtal/heroes/nidalee/specialtyLarge.png", "specialtySmall": "runeterra/ixtal/heroes/nidalee/specialtySmall.png"},
+    "army": [{"creature": "canopyGuide", "min": 10, "max": 16}, {"creature": "bristlehog", "min": 3, "max": 5}, {"creature": "pakaaProwler", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:scouting", "level": "basic"}, {"skill": "core:pathfinding", "level": "basic"}],
+    "specialty": {"bonuses": {"packTracking": {"type": "SIGHT_RADIUS", "val": 1, "valueType": "ADDITIVE_VALUE", "stacking": "runeterraIxtalTracking"}}}
+  },
+  "neeko": {
+    "class": "elementalScholar", "female": true, "special": false,
+    "texts": {"name": "Neeko", "biography": "Neeko comes from the Oovi-Kat of a remote eastern island. Months of reciprocal life with Nidalee's jungle family and a separate forest-defense episode establish enduring ties, while her biographical departure remains part of her history. Ordinary recruitment is nonchronological skirmish coavailability, not permanent Ixaocan residence or an invented local dynasty. Her perception is adapted to normal Scouting rather than copied enemies, disguises or unrestricted hidden information.", "specialty": {"name": "Curious Perception", "description": "Existing Scouting effectiveness increases by 5% per hero level.", "tooltip": "{Curious Perception}\n\nImproves existing Scouting by 5% per hero level using native sight rounding. Small increases may not reveal another tile until a threshold. No impersonation, enemy identity theft or unrestricted map reveal."}},
+    "images": {"large": "runeterra/ixtal/heroes/neeko/large.png", "small": "runeterra/ixtal/heroes/neeko/small.png", "specialtyLarge": "runeterra/ixtal/heroes/neeko/specialtyLarge.png", "specialtySmall": "runeterra/ixtal/heroes/neeko/specialtySmall.png"},
+    "army": [{"creature": "canopyGuide", "min": 12, "max": 18}, {"creature": "bristlehog", "min": 3, "max": 5}, {"creature": "pakaaProwler", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:scouting", "level": "basic"}, {"skill": "core:wisdom", "level": "basic"}],
+    "specialty": {"secondary": "core:scouting", "stepSize": 5}, "spellbook": ["core:dispel"]
+  },
+  "milio": {
+    "class": "elementalScholar", "female": false, "special": false,
+    "texts": {"name": "Milio", "biography": "Milio is a twelve-year-old Ixtali healer taught by his grandmother Lupe, now studying in Ixaocan toward an uncompleted Vidalion trial. His family's exile followed Lune's political plot, not punishment for his healing fire. A voluntary helping and training expedition is project fiction, not conscription, completed Yun Tal admission or restored family status. Cure adapts soothing fire without creating companion stacks or resurrection.", "specialty": {"name": "Soothing Fire", "description": "Cure healing gains native 5% scaling per hero-level step divided by target tier.", "tooltip": "{Soothing Fire}\n\nCure healing gains 5% per floor(hero level / target creature tier), with tier zero treated as one. Healing remains capped by current injuries and cannot resurrect casualties. Normal mana, one hero cast, legal targets and negative-effect removal remain; no free fuemigos or automatic healing aura."}},
+    "images": {"large": "runeterra/ixtal/heroes/milio/large.png", "small": "runeterra/ixtal/heroes/milio/small.png", "specialtyLarge": "runeterra/ixtal/heroes/milio/specialtyLarge.png", "specialtySmall": "runeterra/ixtal/heroes/milio/specialtySmall.png"},
+    "army": [{"creature": "canopyGuide", "min": 12, "max": 18}, {"creature": "bristlehog", "min": 3, "max": 5}, {"creature": "pakaaProwler", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:waterMagic", "level": "basic"}],
+    "specialty": {"spellScalingPercentage": "core:cure", "spellScalingVal": 5}, "spellbook": ["core:cure"]
+  },
+  "skarner": {
+    "class": "axiomMarshal", "female": false, "special": false,
+    "texts": {"name": "Skarner", "biography": "The Primordial Sovereign helped build Ixaocan and found the Yun Tal in his adopted Ixtali home. His continuing protection, seclusion and isolationist paranoia remain; ordinary skirmish coavailability does not canonically send him on a friendly expedition. This is one unique command identity, without brackern recruits, a targetable giant body, old crystalline Shuriman soul harvesting or an imported hextech origin.", "specialty": {"name": "Founder's Shelter", "description": "Commanded creatures gain a fixed +1 Defense.", "tooltip": "{Founder's Shelter}\n\nCommanded creatures gain +1 Defense through a creatures-only native bonus. Hero primary Defense does not increase, and hero level does not scale this bonus. Normal damage, retaliation and spells remain; no immunity or personal impalement action."}},
+    "images": {"large": "runeterra/ixtal/heroes/skarner/large.png", "small": "runeterra/ixtal/heroes/skarner/small.png", "specialtyLarge": "runeterra/ixtal/heroes/skarner/specialtyLarge.png", "specialtySmall": "runeterra/ixtal/heroes/skarner/specialtySmall.png"},
+    "army": [{"creature": "canopyGuide", "min": 12, "max": 18}, {"creature": "bristlehog", "min": 3, "max": 5}, {"creature": "pakaaProwler", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:armorer", "level": "basic"}, {"skill": "core:tactics", "level": "basic"}],
+    "specialty": {"bonuses": {"foundersShelter": {"type": "PRIMARY_SKILL", "subtype": "defence", "val": 1, "limiters": "CREATURES_ONLY"}}}
+  },
+  "malphite": {
+    "class": "axiomMarshal", "female": false, "special": false,
+    "texts": {"name": "Malphite", "biography": "Malphite is the unique surviving living-stone shard of the Ixtali Monolith project, still carrying its anti-Void purpose while wandering widely. Continuing heritage and purpose ground this regional command adaptation; current Ixaocan residence and royal service are not established. The hero represents strategic command rather than targetable giant infantry, a restored Monolith or weekly copies of himself.", "specialty": {"name": "Stone Resolve", "description": "Shield gains two percentage points of melee damage reduction.", "tooltip": "{Stone Resolve}\n\nShield gains +2 percentage points of native melee damage reduction on eligible targets. Ranged attacks and direct spell damage receive no Shield reduction. Normal mana, duration, casting action and Dispel remain; no permanent armor shell or universal immunity."}},
+    "images": {"large": "runeterra/ixtal/heroes/malphite/large.png", "small": "runeterra/ixtal/heroes/malphite/small.png", "specialtyLarge": "runeterra/ixtal/heroes/malphite/specialtyLarge.png", "specialtySmall": "runeterra/ixtal/heroes/malphite/specialtySmall.png"},
+    "army": [{"creature": "canopyGuide", "min": 12, "max": 18}, {"creature": "bristlehog", "min": 3, "max": 5}, {"creature": "pakaaProwler", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:armorer", "level": "basic"}, {"skill": "core:earthMagic", "level": "basic"}],
+    "specialty": {"spellFixedAdditive": "core:shield", "spellFixedValues": [2, 2, 2, 2, 2, 2, 2]}, "spellbook": ["core:shield"]
+  },
+  "zyra": {
+    "class": "elementalScholar", "female": true, "special": false,
+    "texts": {"name": "Zyra", "biography": "Zyra's predatory propagation endures in the wider Ixtali jungle and threatens local settlements. The Gardens of Zyr, Rune Wars destruction, dormancy and conflicting memories remain more complex than a confirmed swallowed-sorceress identity. Ordinary selectable command adapts an ecological antagonist, not a loyal Yun Tal officer or a universal conservation pact. Dangerous growth is represented by a paid Weakness cast rather than summoned copies or unlimited spreading plants.", "specialty": {"name": "Strangling Growth", "description": "Weakness removes one additional Attack on each eligible target.", "tooltip": "{Strangling Growth}\n\nWeakness places one additional point of Attack reduction on each eligible target. Explicit -1 native specialty values strengthen its negative bonus. Normal mana, hero action, duration, spell eligibility, resistance and Dispel remain. No terrain growth or free plant army."}},
+    "images": {"large": "runeterra/ixtal/heroes/zyra/large.png", "small": "runeterra/ixtal/heroes/zyra/small.png", "specialtyLarge": "runeterra/ixtal/heroes/zyra/specialtyLarge.png", "specialtySmall": "runeterra/ixtal/heroes/zyra/specialtySmall.png"},
+    "army": [{"creature": "canopyGuide", "min": 10, "max": 16}, {"creature": "bristlehog", "min": 4, "max": 6}, {"creature": "pakaaProwler", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:earthMagic", "level": "basic"}],
+    "specialty": {"spellFixedAdditive": "core:weakness", "spellFixedValues": [-1, -1, -1, -1, -1, -1, -1]}, "spellbook": ["core:weakness"]
+  },
+  "inessa": {
+    "class": "axiomMarshal", "female": true, "special": false,
+    "texts": {"name": "Inessa", "biography": "Inessa is Qiyana's eldest sister and the immediate dynastic successor described in the reviewed biography. Qiyana defeats her in ritual combat; the source states that she will never walk again. Her death or recovery is not supplied. Strategic command and a representational commander avatar do not cure her disability or assert personal riding, walking or fighting. Her exact face, mobility equipment and army authority are project interpretations.", "specialty": {"name": "Steadfast Counsel", "description": "Eligible commanded troops gain fixed +1 native morale.", "tooltip": "{Steadfast Counsel}\n\nEligible commanded troops gain +1 morale, respecting native eligibility and the normal cap. Hero level does not increase it. No guaranteed extra turn, forced political loyalty or change to Inessa's mobility."}},
+    "images": {"large": "runeterra/ixtal/heroes/inessa/large.png", "small": "runeterra/ixtal/heroes/inessa/small.png", "specialtyLarge": "runeterra/ixtal/heroes/inessa/specialtyLarge.png", "specialtySmall": "runeterra/ixtal/heroes/inessa/specialtySmall.png"},
+    "army": [{"creature": "canopyGuide", "min": 12, "max": 18}, {"creature": "bristlehog", "min": 3, "max": 5}, {"creature": "pakaaProwler", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:leadership", "level": "basic"}, {"skill": "core:tactics", "level": "basic"}],
+    "specialty": {"bonuses": {"steadfastCounsel": {"type": "MORALE", "val": 1}}}
+  },
+  "mara": {
+    "class": "elementalScholar", "female": true, "special": false,
+    "texts": {"name": "Mara", "biography": "Mara is Qiyana's older sister, appointed prefect of Tikras in Fit to Rule. Qiyana exposes its hidden path; miners attack and Mara survives. Mara's final endorsement of Qiyana is not a shown legal transfer of office, and Qiyana did not simply save the village. Her source water-garden surroundings establish no exact combat repertoire. Spell training, ranged coordination and command in this skirmish are explicit game adaptations of a local governor.", "specialty": {"name": "Measured Coordination", "description": "Precision gains one additional ranged Attack on eligible shooters.", "tooltip": "{Measured Coordination}\n\nPrecision places +1 additional Attack for ranged attacks on its normal eligible targets. It grants no extra shots, ammunition or melee Attack. Normal mana, casting action, duration, range penalties and Dispel remain."}},
+    "images": {"large": "runeterra/ixtal/heroes/mara/large.png", "small": "runeterra/ixtal/heroes/mara/small.png", "specialtyLarge": "runeterra/ixtal/heroes/mara/specialtyLarge.png", "specialtySmall": "runeterra/ixtal/heroes/mara/specialtySmall.png"},
+    "army": [{"creature": "canopyGuide", "min": 10, "max": 16}, {"creature": "bristlehog", "min": 4, "max": 6}, {"creature": "pakaaProwler", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:waterMagic", "level": "basic"}],
+    "specialty": {"spellFixedAdditive": "core:precision", "spellFixedValues": [1, 1, 1, 1, 1, 1, 1]}, "spellbook": ["core:precision"]
+  },
+  "lupe": {
+    "class": "elementalScholar", "female": true, "special": false,
+    "texts": {"name": "Lupé", "biography": "Lupé is Milio's grandmother and teacher, a former Yun Tal earth master exiled within Ixtal after her twin Luné's plot brought collective punishment. She continues to shape Milio's family and training mission. Neither restored office nor Milio's completed trial is claimed. Ordinary command adapts village teaching and protection; her exact portrait face is an original interpretation of an older woman, not an official likeness.", "specialty": {"name": "Patient Earthcraft", "description": "Stone Skin gains one additional Defense.", "tooltip": "{Patient Earthcraft}\n\nLupé's hero-cast Stone Skin places +1 additional Defense on each eligible target. Normal mana, hero action, duration and Dispel remain. Stoneshaper creature casts do not acquire the hero specialty; no permanent terrain or immunity."}},
+    "images": {"large": "runeterra/ixtal/heroes/lupe/large.png", "small": "runeterra/ixtal/heroes/lupe/small.png", "specialtyLarge": "runeterra/ixtal/heroes/lupe/specialtyLarge.png", "specialtySmall": "runeterra/ixtal/heroes/lupe/specialtySmall.png"},
+    "army": [{"creature": "canopyGuide", "min": 12, "max": 18}, {"creature": "bristlehog", "min": 3, "max": 5}, {"creature": "pakaaProwler", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:earthMagic", "level": "basic"}],
+    "specialty": {"spellFixedAdditive": "core:stoneSkin", "spellFixedValues": [1, 1, 1, 1, 1, 1, 1]}, "spellbook": ["core:stoneSkin"]
+  },
+  "lune": {
+    "class": "elementalScholar", "female": true, "special": false,
+    "texts": {"name": "Luné", "biography": "Luné is Lupé's twin, an Ixtali fire master and former Yun Tal convicted of plotting against the ruling caste. She remains imprisoned beneath Ixaocan in Milio's reviewed biography. Selectable ordinary command is deliberately nonchronological skirmish coavailability, not a canonical escape, pardon, proof of innocence or present-day free movement. Her exact older-woman portrait is project-authored and distinct from her twin.", "specialty": {"name": "Contained Flame", "description": "Fireball gains native 5% scaling per hero-level step divided by each target's tier.", "tooltip": "{Contained Flame}\n\nFireball gains 5% per floor(hero level / target creature tier), with tier zero treated as one. Each target keeps ordinary immunity, resistance, damage and rounding rules. Normal area, friendly-fire eligibility, mana and hero casting action remain. No global firestorm, free cast or invented release from prison."}},
+    "images": {"large": "runeterra/ixtal/heroes/lune/large.png", "small": "runeterra/ixtal/heroes/lune/small.png", "specialtyLarge": "runeterra/ixtal/heroes/lune/specialtyLarge.png", "specialtySmall": "runeterra/ixtal/heroes/lune/specialtySmall.png"},
+    "army": [{"creature": "canopyGuide", "min": 10, "max": 16}, {"creature": "bristlehog", "min": 3, "max": 5}, {"creature": "pakaaProwler", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:fireMagic", "level": "basic"}],
+    "specialty": {"spellScalingPercentage": "core:fireball", "spellScalingVal": 5}, "spellbook": ["core:fireball"]
+  },
+  "aliayQunlan": {
+    "class": "elementalScholar", "female": false, "special": false,
+    "texts": {"name": "Aliay Qunlan", "biography": "Semchul-born Aliay Qunlan studies the axioms for twenty-three years under Mivasim and becomes Yun Tal after the trial. The closing scene one year later places him in a reform-minded alliance with Qiyana. Aya is her nickname for the same man, not a second identity. Air and water interactions inform this command adaptation without granting astral travel, global revelation or unrestricted weather and terrain control.", "specialty": {"name": "Moving Air", "description": "Haste gains one additional speed on eligible targets.", "tooltip": "{Moving Air}\n\nHaste places +1 additional speed on each eligible target. Normal spell mana, casting action, duration, Dispel, movement footprints and obstacles remain. No adventure Fly, teleport, extra attack or free weather change."}},
+    "images": {"large": "runeterra/ixtal/heroes/aliayQunlan/large.png", "small": "runeterra/ixtal/heroes/aliayQunlan/small.png", "specialtyLarge": "runeterra/ixtal/heroes/aliayQunlan/specialtyLarge.png", "specialtySmall": "runeterra/ixtal/heroes/aliayQunlan/specialtySmall.png"},
+    "army": [{"creature": "canopyGuide", "min": 12, "max": 18}, {"creature": "bristlehog", "min": 3, "max": 5}, {"creature": "pakaaProwler", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:airMagic", "level": "basic"}],
+    "specialty": {"spellFixedAdditive": "core:haste", "spellFixedValues": [1, 1, 1, 1, 1, 1, 1]}, "spellbook": ["core:haste"]
+  },
+  "mivasim": {
+    "class": "elementalScholar", "female": true, "special": false,
+    "texts": {"name": "Mivasim", "biography": "Mivasim is an experienced Yun Tal scholar and teacher serving Semchul, mentoring Aliay and participating in the Vidalion examination. The source depicts an older but unbent woman with jade-like eyes, black boots and dark black-purple robes. Her air-water knowledge and rhetorical teaching do not establish a prefect title or prove her deception benevolent. Ordinary expedition command and Learning effectiveness are bounded adaptations of that actual institutional role.", "specialty": {"name": "Axiomatic Study", "description": "Existing Learning effectiveness increases by 5% per hero level.", "tooltip": "{Axiomatic Study}\n\nImproves existing Learning by 5% per hero level, using native experience awards and rounding. No daily experience, free level, manufactured battle reward or automatic teaching of every spell. Scholar remains an ordinary Basic starting skill."}},
+    "images": {"large": "runeterra/ixtal/heroes/mivasim/large.png", "small": "runeterra/ixtal/heroes/mivasim/small.png", "specialtyLarge": "runeterra/ixtal/heroes/mivasim/specialtyLarge.png", "specialtySmall": "runeterra/ixtal/heroes/mivasim/specialtySmall.png"},
+    "army": [{"creature": "canopyGuide", "min": 10, "max": 16}, {"creature": "bristlehog", "min": 3, "max": 5}, {"creature": "pakaaProwler", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:learning", "level": "basic"}, {"skill": "core:scholar", "level": "basic"}],
+    "specialty": {"secondary": "core:learning", "stepSize": 5}, "spellbook": ["core:dispel"]
+  },
+  "chiuqeslan": {
+    "class": "elementalScholar", "female": false, "special": false,
+    "texts": {"name": "Chiuqeslan", "biography": "Chiuqeslan is a Yun Tal teacher arriving from Taarqen with aspirants for the Vidalion, known to Mivasim. Chiuq is a nickname for this same burly older bald man with green eyes and black robes. The story establishes neither his personal elemental discipline nor a prefect title; a pupil's fire accident does not make him a confirmed fire master. Command, modest spell study and daily mana discipline are declared game adaptations.", "specialty": {"name": "Measured Practice", "description": "Fixed +1 daily flat mana regeneration, capped by normal maximum mana.", "tooltip": "{Measured Practice}\n\nAdds +1 to native flat daily mana regeneration. Native regeneration takes the stronger of its flat and percentage totals; percentage regeneration may therefore mask this benefit. Normal mana maximum and guild overnight refill remain. No immediate refill, per-stack reward or free cast."}},
+    "images": {"large": "runeterra/ixtal/heroes/chiuqeslan/large.png", "small": "runeterra/ixtal/heroes/chiuqeslan/small.png", "specialtyLarge": "runeterra/ixtal/heroes/chiuqeslan/specialtyLarge.png", "specialtySmall": "runeterra/ixtal/heroes/chiuqeslan/specialtySmall.png"},
+    "army": [{"creature": "canopyGuide", "min": 12, "max": 18}, {"creature": "bristlehog", "min": 3, "max": 5}, {"creature": "pakaaProwler", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:scholar", "level": "basic"}],
+    "specialty": {"bonuses": {"measuredPractice": {"type": "MANA_REGENERATION", "val": 1}}}, "spellbook": ["core:dispel"]
+  },
+  "bayal": {
+    "class": "axiomMarshal", "female": false, "special": false,
+    "texts": {"name": "Bayal", "biography": "Bayal is Qiyana's continuing Ixtali court attendant, accompanying her journey between Ixaocan and Tikras. His limited elemental control sustains cooling mist; he notices the exposed path and worries for the village. The source makes him neither a Yun Tal master nor a professional soldier. A logistical command role, Estates skill and exact portrait are project fiction; the class title conveys game affinity rather than a canonical military promotion.", "specialty": {"name": "Household Provision", "description": "Existing Estates effectiveness increases by 5% per hero level.", "tooltip": "{Household Provision}\n\nImproves existing Estates daily income by 5% per hero level using native rounding. No new resource, building discount, free army or per-stack multiplier. Bayal's modest cooling mist grants no epic weather control."}},
+    "images": {"large": "runeterra/ixtal/heroes/bayal/large.png", "small": "runeterra/ixtal/heroes/bayal/small.png", "specialtyLarge": "runeterra/ixtal/heroes/bayal/specialtyLarge.png", "specialtySmall": "runeterra/ixtal/heroes/bayal/specialtySmall.png"},
+    "army": [{"creature": "canopyGuide", "min": 12, "max": 18}, {"creature": "bristlehog", "min": 3, "max": 5}, {"creature": "pakaaProwler", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:estates", "level": "basic"}, {"skill": "core:scouting", "level": "basic"}],
+    "specialty": {"secondary": "core:estates", "stepSize": 5}
+  }
+}

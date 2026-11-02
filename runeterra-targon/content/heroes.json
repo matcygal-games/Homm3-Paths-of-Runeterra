@@ -1,0 +1,193 @@
+{
+  "pantheon": {
+    "class": "rakkorMarshal", "female": false, "special": false,
+    "texts": {
+      "name": "Pantheon",
+      "biography": "Atreus and Pylas climbed Targon seeking power to defend their people. Pylas died, and the Aspect of War seized Atreus's body. After Aatrox killed the Aspect, the wounded mortal survived. He now carries the name Pantheon through resolve of his own, defending vulnerable people while challenging the gods' claim to rule them.",
+      "specialty": {"name": "Mortal Resolve", "description": "Commanded creatures gain +2 Attack in melee combat. Ranged attacks and the hero's own primary statistics are unchanged.", "tooltip": "{Mortal Resolve}\n\nCommanded creatures gain +2 Attack in melee combat. This fixed army bonus applies once, including when a shooter fights in melee. It grants no immunity or extra action."}
+    },
+    "images": {"large": "runeterra/targon/heroes/pantheon/large.png", "small": "runeterra/targon/heroes/pantheon/small.png", "specialtyLarge": "runeterra/targon/heroes/pantheon/specialtyLarge.png", "specialtySmall": "runeterra/targon/heroes/pantheon/specialtySmall.png"},
+    "army": [{"creature": "rakkorTrailguard", "min": 14, "max": 20}, {"creature": "mountainArcher", "min": 4, "max": 6}, {"creature": "crystalIbex", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:offence", "level": "basic"}, {"skill": "core:leadership", "level": "basic"}],
+    "specialty": {"bonuses": {"mortalResolve": {"type": "PRIMARY_SKILL", "subtype": "attack", "val": 2, "effectRange": "ONLY_MELEE_FIGHT", "limiters": "CREATURES_ONLY"}}}
+  },
+  "leona": {
+    "class": "astralScholar", "female": true, "special": false,
+    "texts": {
+      "name": "Leona",
+      "biography": "Raised among the Rakkor, Leona became a Solari warrior and the mortal bearer of the sun's power. She has defended mountain settlements, yet remains committed to a faith that suppresses the Lunari. Her love for Diana has not resolved their religious conflict. Any common command in this campaign serves a limited defense, not a settled reconciliation.",
+      "specialty": {"name": "Dawnward", "description": "Shield grants five additional percentage points of melee physical damage reduction at every creature tier. Normal casting costs and duration apply.", "tooltip": "{Dawnward}\n\nLeona's Shield adds five percentage points of melee physical protection at every tier. It does not protect against ranged attacks or spell damage. Recasting does not accumulate the bonus; Dispel remains effective."}
+    },
+    "images": {"large": "runeterra/targon/heroes/leona/large.png", "small": "runeterra/targon/heroes/leona/small.png", "specialtyLarge": "runeterra/targon/heroes/leona/specialtyLarge.png", "specialtySmall": "runeterra/targon/heroes/leona/specialtySmall.png"},
+    "army": [{"creature": "rakkorTrailguard", "min": 12, "max": 18}, {"creature": "mountainArcher", "min": 3, "max": 5}, {"creature": "crystalIbex", "min": 2, "max": 3}],
+    "skills": [{"skill": "core:armorer", "level": "basic"}, {"skill": "core:waterMagic", "level": "basic"}],
+    "spellbook": ["core:shield", "core:bless"],
+    "specialty": {"spellFixedAdditive": "core:shield", "spellFixedValues": [5, 5, 5, 5, 5, 5, 5]}
+  },
+  "diana": {
+    "class": "rakkorMarshal", "female": true, "special": false,
+    "texts": {
+      "name": "Diana",
+      "biography": "Found beside her dead traveling parents and adopted by the Solari, Diana grew up questioning the mountain's forbidden lunar history. Her ascent bound her to the moon's Aspect, and her confrontation with Leona ended in catastrophe. She seeks the surviving Lunari and a truth her teachers denied, without having ended the persecution or her bond with Leona.",
+      "specialty": {"name": "Lunar Conviction", "description": "Bloodlust grants +1 additional melee Attack at every creature tier. Normal mana, mastery, duration and dispelling apply.", "tooltip": "{Lunar Conviction}\n\nDiana's Bloodlust adds one melee Attack beyond the normal spell at every tier. Ranged attacks receive no benefit. Recasting does not accumulate the specialty and grants no personal attack or dash."}
+    },
+    "images": {"large": "runeterra/targon/heroes/diana/large.png", "small": "runeterra/targon/heroes/diana/small.png", "specialtyLarge": "runeterra/targon/heroes/diana/specialtyLarge.png", "specialtySmall": "runeterra/targon/heroes/diana/specialtySmall.png"},
+    "army": [{"creature": "rakkorTrailguard", "min": 13, "max": 19}, {"creature": "mountainArcher", "min": 5, "max": 7}, {"creature": "crystalIbex", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:offence", "level": "basic"}, {"skill": "core:wisdom", "level": "basic"}],
+    "spellbook": ["core:bloodlust"],
+    "specialty": {"spellFixedAdditive": "core:bloodlust", "spellFixedValues": [1, 1, 1, 1, 1, 1, 1]}
+  },
+  "taric": {
+    "class": "astralScholar", "female": false, "special": false,
+    "texts": {
+      "name": "Taric",
+      "biography": "Taric's dereliction in Demacia cost his comrades their lives and brought exile to Targon. The ascent transformed him into the Protector's mortal bearer. His calling reaches beyond borders, while Rakkor mystics teach his story and pilgrims invoke him before the climb. Their devotion is a continuing regional bond, not proof that every prayer receives a miracle.",
+      "specialty": {"name": "Bastion", "description": "Armorer's existing physical damage reduction gains 5% relative effectiveness per hero level. Taric must possess Armorer; this is not five percentage points per level.", "tooltip": "{Bastion}\n\nThe native Armorer specialty improves Armorer's existing effect by 5% per hero level, with normal rounding. It grants no spell immunity, invulnerability, resurrection or linked second hero."}
+    },
+    "images": {"large": "runeterra/targon/heroes/taric/large.png", "small": "runeterra/targon/heroes/taric/small.png", "specialtyLarge": "runeterra/targon/heroes/taric/specialtyLarge.png", "specialtySmall": "runeterra/targon/heroes/taric/specialtySmall.png"},
+    "army": [{"creature": "rakkorTrailguard", "min": 12, "max": 17}, {"creature": "mountainArcher", "min": 4, "max": 6}, {"creature": "crystalIbex", "min": 2, "max": 3}],
+    "skills": [{"skill": "core:armorer", "level": "basic"}, {"skill": "core:firstAid", "level": "basic"}],
+    "spellbook": ["core:shield", "core:cure"],
+    "specialty": {"secondary": "core:armorer", "stepSize": 5}
+  },
+  "aphelios": {
+    "class": "rakkorMarshal", "female": false, "special": false,
+    "texts": {
+      "name": "Aphelios",
+      "biography": "Aphelios grew up in a hidden Lunari community with his twin Alune. After a Solari assault separated them across the spirit temple's threshold, he continued their struggle through her guidance. Painful noctum silences him and sustains their link. He remains one commander: Alune's aid is part of his identity, not a second recruitable hero or a factory for lunar weapons.",
+      "specialty": {"name": "Moonlit Precision", "description": "Archery's existing ranged damage bonus gains 5% relative effectiveness per hero level. Normal range, wall and melee penalties remain.", "tooltip": "{Moonlit Precision}\n\nThe native Archery specialty improves Archery's existing effect by 5% per hero level, with normal rounding. Shooter melee receives no Archery bonus. There are no extra shots, rotating weapons or additional commander."}
+    },
+    "images": {"large": "runeterra/targon/heroes/aphelios/large.png", "small": "runeterra/targon/heroes/aphelios/small.png", "specialtyLarge": "runeterra/targon/heroes/aphelios/specialtyLarge.png", "specialtySmall": "runeterra/targon/heroes/aphelios/specialtySmall.png"},
+    "army": [{"creature": "rakkorTrailguard", "min": 10, "max": 15}, {"creature": "mountainArcher", "min": 7, "max": 9}, {"creature": "crystalIbex", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:archery", "level": "basic"}, {"skill": "core:tactics", "level": "basic"}],
+    "specialty": {"secondary": "core:archery", "stepSize": 5}
+  },
+  "zoe": {
+    "class": "astralScholar", "female": true, "special": true,
+    "texts": {
+      "name": "Zoe",
+      "biography": "Once a mischievous Rakkor child, Zoe merged with the Aspect of Twilight and returned to her mountain home after centuries had passed outside her own experience. Her messages can announce upheaval rather than safety. This unique encounter lends a finite army and ordinary spellbook to a temporary task; her portals do not give a player unrestricted travel or stolen magic.",
+      "specialty": {"name": "Paddle Star", "description": "Magic Arrow gains 5% per completed hero-level/target-tier step. Mana, normal targeting, resistance and spell protection remain.", "tooltip": "{Paddle Star}\n\nMagic Arrow's effect gains 5 x floor(hero level / max(target tier, 1)) percent through the native specialty. Normal rounding and protection apply. It grants no free casts, portals or spell theft."}
+    },
+    "images": {"large": "runeterra/targon/heroes/zoe/large.png", "small": "runeterra/targon/heroes/zoe/small.png", "specialtyLarge": "runeterra/targon/heroes/zoe/specialtyLarge.png", "specialtySmall": "runeterra/targon/heroes/zoe/specialtySmall.png"},
+    "army": [{"creature": "rakkorTrailguard", "min": 10, "max": 14}, {"creature": "mountainArcher", "min": 5, "max": 7}, {"creature": "crystalIbex", "min": 2, "max": 2}],
+    "skills": [{"skill": "core:airMagic", "level": "basic"}, {"skill": "core:wisdom", "level": "basic"}],
+    "spellbook": ["core:magicArrow", "core:fortune"],
+    "specialty": {"spellScalingPercentage": "core:magicArrow", "spellScalingVal": 5}
+  },
+  "soraka": {
+    "class": "astralScholar", "female": true, "special": false,
+    "texts": {
+      "name": "Soraka",
+      "biography": "Soraka took a painful mortal form to guide people toward the futures they choose. She has made a home in western Targon among an isolated vastaya tribe, teaching and protecting rather than commanding their destiny. Her continuing local life supports ordinary regional skirmish availability as an explicit army-command adaptation, not a standing celestial army. Finite healing magic represents her mercy without sacrificing targetable hero health.",
+      "specialty": {"name": "Starlight Care", "description": "Cure's healing gains 5% per completed hero-level/target-tier step. Cure cannot restore dead creatures; normal mana and dispel rules apply.", "tooltip": "{Starlight Care}\n\nCure's healing gains 5 x floor(hero level / max(target tier, 1)) percent through the native specialty, limited by the surviving top creature's injuries. Its eligible negative-effect removal remains native. No dead creatures or lost stacks return."}
+    },
+    "images": {"large": "runeterra/targon/heroes/soraka/large.png", "small": "runeterra/targon/heroes/soraka/small.png", "specialtyLarge": "runeterra/targon/heroes/soraka/specialtyLarge.png", "specialtySmall": "runeterra/targon/heroes/soraka/specialtySmall.png"},
+    "army": [{"creature": "rakkorTrailguard", "min": 11, "max": 16}, {"creature": "mountainArcher", "min": 3, "max": 5}, {"creature": "crystalIbex", "min": 2, "max": 3}],
+    "skills": [{"skill": "core:waterMagic", "level": "basic"}, {"skill": "core:wisdom", "level": "basic"}],
+    "spellbook": ["core:cure", "core:bless"],
+    "specialty": {"spellScalingPercentage": "core:cure", "spellScalingVal": 5}
+  },
+  "aurelionSol": {
+    "class": "astralScholar", "female": false, "special": true,
+    "texts": {
+      "name": "Aurelion Sol",
+      "biography": "The star forger was deceived into wearing a crown through which Targon's powers enslaved him. As their hold weakens, he seeks freedom and vengeance. In this scenario he directs a finite expedition against a crown-linked binding site to advance his own release. This negotiated convergence of aims makes him neither a hired defender nor a willing servant of the mountain.",
+      "specialty": {"name": "Starfall Reckoning", "description": "Meteor Shower gains 5% per completed hero-level/target-tier step. Its finite mana cost, area, friendly fire and spell protections remain.", "tooltip": "{Starfall Reckoning}\n\nMeteor Shower's effect gains 5 x floor(hero level / max(target tier, 1)) percent through the native specialty. Normal rounding, friendly fire and protection apply. No stars, creatures, resources or permanent power are created."}
+    },
+    "images": {"large": "runeterra/targon/heroes/aurelionSol/large.png", "small": "runeterra/targon/heroes/aurelionSol/small.png", "specialtyLarge": "runeterra/targon/heroes/aurelionSol/specialtyLarge.png", "specialtySmall": "runeterra/targon/heroes/aurelionSol/specialtySmall.png"},
+    "army": [{"creature": "rakkorTrailguard", "min": 10, "max": 14}, {"creature": "mountainArcher", "min": 4, "max": 6}, {"creature": "crystalIbex", "min": 3, "max": 3}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:intelligence", "level": "basic"}],
+    "spellbook": ["core:meteorShower"],
+    "specialty": {"spellScalingPercentage": "core:meteorShower", "spellScalingVal": 5}
+  },
+  "nami": {
+    "class": "astralScholar", "female": true, "special": true,
+    "texts": {
+      "name": "Nami",
+      "biography": "Nami is Tidecaller of the Marai beneath the seas west of Targon. Their long pearl-and-moonstone accord connects them to the mountain, but its missing lunar counterpart has left her searching the shore. She aids a limited coastal expedition to recover that connection for her own people. She has not joined the Solari, founded a surface navy or abandoned the Marai.",
+      "specialty": {"name": "Tidecaller's Blessing", "description": "Bless adds +1 damage beyond its normal maximum-damage effect at every creature tier. Normal mana, eligibility, mastery and duration apply.", "tooltip": "{Tidecaller's Blessing}\n\nNami's Bless shifts the normal blessed damage by one additional point per attacking creature at every tier, before normal combat modifiers. The spell remains noncumulative and dispellable; Cure in her book receives no specialty."}
+    },
+    "images": {"large": "runeterra/targon/heroes/nami/large.png", "small": "runeterra/targon/heroes/nami/small.png", "specialtyLarge": "runeterra/targon/heroes/nami/specialtyLarge.png", "specialtySmall": "runeterra/targon/heroes/nami/specialtySmall.png"},
+    "army": [{"creature": "rakkorTrailguard", "min": 9, "max": 14}, {"creature": "mountainArcher", "min": 6, "max": 8}, {"creature": "crystalIbex", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:waterMagic", "level": "basic"}, {"skill": "core:wisdom", "level": "basic"}],
+    "spellbook": ["core:cure", "core:bless"],
+    "specialty": {"spellFixedAdditive": "core:bless", "spellFixedValues": [1, 1, 1, 1, 1, 1, 1]}
+  },
+  "rahvun": {
+    "class": "rakkorMarshal", "female": false, "special": false,
+    "texts": {"name": "Rahvun", "biography": "Rahvun, Daylight's Spear, leads the sun-worshipping Ra-Horak. His command belongs deeply to Targon's Solari institutions. Ordinary skirmish availability is a game adaptation and establishes neither reconciliation with the Lunari nor perpetual daylight. The shared seven-day celestial alignment remains unchanged.", "specialty": {"name": "Ra-Horak Standard", "description": "Commanded creatures gain +1 Morale within the normal native cap. Creatures unable to receive morale remain unaffected.", "tooltip": "{Ra-Horak Standard}\n\n+1 army Morale, with normal caps and eligibility. No free action, permanent Daybreak or calendar override."}},
+    "images": {"large": "runeterra/targon/heroes/rahvun/large.png", "small": "runeterra/targon/heroes/rahvun/small.png", "specialtyLarge": "runeterra/targon/heroes/rahvun/specialtyLarge.png", "specialtySmall": "runeterra/targon/heroes/rahvun/specialtySmall.png"},
+    "army": [{"creature": "rakkorTrailguard", "min": 12, "max": 18}, {"creature": "mountainArcher", "min": 3, "max": 5}, {"creature": "crystalIbex", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:leadership", "level": "basic"}, {"skill": "core:armorer", "level": "basic"}],
+    "specialty": {"bonuses": {"raHorakStandard": {"type": "MORALE", "val": 1, "limiters": "CREATURES_ONLY"}}}
+  },
+  "cygnus": {
+    "class": "rakkorMarshal", "female": false, "special": false,
+    "texts": {"name": "Cygnus", "biography": "Cygnus the Moonstalker guides Lunari companions through mountain paths under cover of night. His continuing defense of their community grounds this regional command. Skirmish hireability does not make the Lunari publicly safe or translate Elusive into invisibility, teleportation or a free battle attack.", "specialty": {"name": "Sheltered Paths", "description": "Hero scouting radius increases by one tile. Movement costs and battlefield visibility are unchanged.", "tooltip": "{Sheltered Paths}\n\n+1 native adventure scouting radius. No obstacle crossing, hidden-enemy revelation or movement exemption."}},
+    "images": {"large": "runeterra/targon/heroes/cygnus/large.png", "small": "runeterra/targon/heroes/cygnus/small.png", "specialtyLarge": "runeterra/targon/heroes/cygnus/specialtyLarge.png", "specialtySmall": "runeterra/targon/heroes/cygnus/specialtySmall.png"},
+    "army": [{"creature": "rakkorTrailguard", "min": 11, "max": 16}, {"creature": "mountainArcher", "min": 4, "max": 6}, {"creature": "crystalIbex", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:scouting", "level": "basic"}, {"skill": "core:pathfinding", "level": "basic"}],
+    "specialty": {"bonuses": {"shelteredPaths": {"type": "SIGHT_RADIUS", "val": 1}}}
+  },
+  "iula": {
+    "class": "rakkorMarshal", "female": true, "special": false,
+    "texts": {"name": "Iula", "biography": "Iula's life and grief are rooted on Targon's slopes. Pylas's death and her continuing mountain home remain part of her story; her answer to Pantheon's request to face a grief-feeding creature supplies a source-backed local role. Strategic skirmish command does not restore her youth, resurrect her husband or copy card-game Spellshield and Overwhelm.", "specialty": {"name": "Homestead Resolve", "description": "Commanded creatures gain +1 Defense. This is ordinary Defense, not spell immunity or physical invulnerability.", "tooltip": "{Homestead Resolve}\n\n+1 creature Defense. Normal damage, spell effects, morale eligibility and retaliation remain."}},
+    "images": {"large": "runeterra/targon/heroes/iula/large.png", "small": "runeterra/targon/heroes/iula/small.png", "specialtyLarge": "runeterra/targon/heroes/iula/specialtyLarge.png", "specialtySmall": "runeterra/targon/heroes/iula/specialtySmall.png"},
+    "army": [{"creature": "rakkorTrailguard", "min": 13, "max": 18}, {"creature": "mountainArcher", "min": 3, "max": 5}, {"creature": "crystalIbex", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:armorer", "level": "basic"}, {"skill": "core:firstAid", "level": "basic"}],
+    "specialty": {"bonuses": {"homesteadResolve": {"type": "PRIMARY_SKILL", "subtype": "defence", "val": 1, "limiters": "CREATURES_ONLY"}}}
+  },
+  "tyari": {
+    "class": "astralScholar", "female": false, "special": false,
+    "texts": {"name": "Tyari", "biography": "This skirmish representation follows Tyari before the ascent: a Rakkor acolyte with protective magic, family ties and a calling beyond expected military service. Tyari and the later Traveler remain one person, never two hired identities. The shared commander token is an interface abstraction and the army role is project fiction, not a rewritten personal journey.", "specialty": {"name": "Helping Hand", "description": "Shield gains two additional percentage points of melee physical protection at every creature tier. Ordinary mana, casting action and duration remain.", "tooltip": "{Helping Hand}\n\nShield adds two percentage points of melee physical protection. No ranged or spell immunity, free cast or permanent barrier."}},
+    "images": {"large": "runeterra/targon/heroes/tyari/large.png", "small": "runeterra/targon/heroes/tyari/small.png", "specialtyLarge": "runeterra/targon/heroes/tyari/specialtyLarge.png", "specialtySmall": "runeterra/targon/heroes/tyari/specialtySmall.png"},
+    "army": [{"creature": "rakkorTrailguard", "min": 11, "max": 16}, {"creature": "mountainArcher", "min": 3, "max": 5}, {"creature": "crystalIbex", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:waterMagic", "level": "basic"}],
+    "spellbook": ["core:shield"],
+    "specialty": {"spellFixedAdditive": "core:shield", "spellFixedValues": [2, 2, 2, 2, 2, 2, 2]}
+  },
+  "anua": {
+    "class": "astralScholar", "female": true, "special": false,
+    "texts": {"name": "Anua", "biography": "Anua is Tyari's blind cousin and a devotee of the Protector within the Rakkor community. Her initial doubts and later blessing preserve the personal weight of Tyari's decision. A strategic skirmish command does not cure her blindness or certify every prayer as an observed miracle. Her face beyond stated story traits is an original project interpretation.", "specialty": {"name": "Steadfast Counsel", "description": "The hero gains +1 Knowledge, increasing native maximum mana normally. No instant mana refill is granted.", "tooltip": "{Steadfast Counsel}\n\n+1 hero Knowledge. Normal maximum-mana calculation and recovery apply; no free refill or vision cure."}},
+    "images": {"large": "runeterra/targon/heroes/anua/large.png", "small": "runeterra/targon/heroes/anua/small.png", "specialtyLarge": "runeterra/targon/heroes/anua/specialtyLarge.png", "specialtySmall": "runeterra/targon/heroes/anua/specialtySmall.png"},
+    "army": [{"creature": "rakkorTrailguard", "min": 11, "max": 16}, {"creature": "mountainArcher", "min": 3, "max": 5}, {"creature": "crystalIbex", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:scholar", "level": "basic"}],
+    "spellbook": ["core:bless"],
+    "specialty": {"bonuses": {"steadfastCounsel": {"type": "PRIMARY_SKILL", "subtype": "knowledge", "val": 1}}}
+  },
+  "raduak": {
+    "class": "astralScholar", "female": false, "special": false,
+    "texts": {"name": "Raduak", "biography": "Raduak is a respected Rakkor mystic who advises local people, teaches the Protector's story and counsels his relative Tyari. His home, scholarship and community role tie him to the mountain. Strategic command and a small mana-recovery benefit are game adaptations, not infallible prophecy or the power to reveal unseen armies.", "specialty": {"name": "Quiet Contemplation", "description": "Restore one additional mana point at the ordinary native daily recovery boundary, subject to native limits.", "tooltip": "{Quiet Contemplation}\n\n+1 mana per native daily recovery. No full refill, battle cast or per-stack split exploit."}},
+    "images": {"large": "runeterra/targon/heroes/raduak/large.png", "small": "runeterra/targon/heroes/raduak/small.png", "specialtyLarge": "runeterra/targon/heroes/raduak/specialtyLarge.png", "specialtySmall": "runeterra/targon/heroes/raduak/specialtySmall.png"},
+    "army": [{"creature": "rakkorTrailguard", "min": 10, "max": 15}, {"creature": "mountainArcher", "min": 4, "max": 6}, {"creature": "crystalIbex", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:mysticism", "level": "basic"}, {"skill": "core:wisdom", "level": "basic"}],
+    "spellbook": ["core:stoneSkin"],
+    "specialty": {"bonuses": {"quietContemplation": {"type": "MANA_REGENERATION", "val": 1}}}
+  },
+  "shorin": {
+    "class": "rakkorMarshal", "female": false, "special": false,
+    "texts": {"name": "Shorin", "biography": "Shorin trained beside Tyari among Solari acolytes and supported their friend's search for a different path. Their injury and later cane use remain; this strategic commander representation does not grant a cure or replace them with an uninjured personal battle unit. Shorin's they/them identity is not fully represented by the engine's shared-avatar boolean.", "specialty": {"name": "Practiced Guard", "description": "Commanded creatures gain +1 Attack in melee. Ranged damage and hero primary skills are unchanged.", "tooltip": "{Practiced Guard}\n\n+1 creature melee Attack. No second strike, personal charge, restored mobility or ranged bonus."}},
+    "images": {"large": "runeterra/targon/heroes/shorin/large.png", "small": "runeterra/targon/heroes/shorin/small.png", "specialtyLarge": "runeterra/targon/heroes/shorin/specialtyLarge.png", "specialtySmall": "runeterra/targon/heroes/shorin/specialtySmall.png"},
+    "army": [{"creature": "rakkorTrailguard", "min": 12, "max": 18}, {"creature": "mountainArcher", "min": 3, "max": 5}, {"creature": "crystalIbex", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:offence", "level": "basic"}, {"skill": "core:armorer", "level": "basic"}],
+    "specialty": {"bonuses": {"practicedGuard": {"type": "PRIMARY_SKILL", "subtype": "attack", "val": 1, "effectRange": "ONLY_MELEE_FIGHT", "limiters": "CREATURES_ONLY"}}}
+  },
+  "iasur": {
+    "class": "rakkorMarshal", "female": false, "special": false,
+    "texts": {"name": "Iasur", "biography": "Sunforger Iasur supplies sacred lanternglass to the Solari temple and appears as Leona's father in its historical correspondence. His craft and family ground this Targonian identity. Nonchronological skirmish command does not establish present survival, a canonical military career or access to Aurelion Sol's star-forging power.", "specialty": {"name": "Lanternglass Workshop", "description": "Generates 100 Gold per native day for the owning player while employed, through ordinary hero resource generation.", "tooltip": "{Lanternglass Workshop}\n\n+100 Gold per native day. No altered Gold slot, rare-resource generation, free artifact or instant recruitment refund."}},
+    "images": {"large": "runeterra/targon/heroes/iasur/large.png", "small": "runeterra/targon/heroes/iasur/small.png", "specialtyLarge": "runeterra/targon/heroes/iasur/specialtyLarge.png", "specialtySmall": "runeterra/targon/heroes/iasur/specialtySmall.png"},
+    "army": [{"creature": "rakkorTrailguard", "min": 11, "max": 16}, {"creature": "mountainArcher", "min": 3, "max": 5}, {"creature": "crystalIbex", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:estates", "level": "basic"}, {"skill": "core:artillery", "level": "basic"}],
+    "specialty": {"bonuses": {"lanternglassWorkshop": {"type": "GENERATE_RESOURCE", "subtype": "gold", "val": 100}}}
+  },
+  "thalaia": {
+    "class": "astralScholar", "female": true, "special": false,
+    "texts": {"name": "Thalaia", "biography": "Candescent Priestess Thalaia holds temple authority in Leona and Diana's youthful correspondence, including its coercive punishments and festival rules. Historical skirmish selection does not establish present survival, absolve persecution or imply that the Solari and Lunari have reconciled. The portrait's unspecified facial traits are project interpretation.", "specialty": {"name": "Candescent Study", "description": "The hero gains +1 Spell Power. Normal spell knowledge, mana, action costs and target restrictions remain.", "tooltip": "{Candescent Study}\n\n+1 hero Spell Power. No free spell, school replacement, permanent daylight or native immunity."}},
+    "images": {"large": "runeterra/targon/heroes/thalaia/large.png", "small": "runeterra/targon/heroes/thalaia/small.png", "specialtyLarge": "runeterra/targon/heroes/thalaia/specialtyLarge.png", "specialtySmall": "runeterra/targon/heroes/thalaia/specialtySmall.png"},
+    "army": [{"creature": "rakkorTrailguard", "min": 10, "max": 15}, {"creature": "mountainArcher", "min": 4, "max": 6}, {"creature": "crystalIbex", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:fireMagic", "level": "basic"}],
+    "spellbook": ["core:bloodlust"],
+    "specialty": {"bonuses": {"candescentStudy": {"type": "PRIMARY_SKILL", "subtype": "spellpower", "val": 1}}}
+  }
+}

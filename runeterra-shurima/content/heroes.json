@@ -1,0 +1,190 @@
+{
+  "sivir": {
+    "class": "shurimanWarden", "female": true, "special": false,
+    "texts": {
+      "name": "Sivir",
+      "biography": "Sivir is a Shuriman mercenary captain whose desert contracts and ancient bloodline entangle her with the returning empire. Her independent loyalties are not an oath to Azir. Command here adapts her practical marksmanship into training for finite recruited shooters; her unique crossblade is no ordinary troop weapon.",
+      "specialty": {"name": "Mercenary Volley", "description": "Native Archery specialty increases the existing skill's effectiveness by 5% per hero level.", "tooltip": "{Mercenary Volley}\n\nImproves native Archery effectiveness by 5% per hero level. No ricochets, extra shots, free spell shield or income from splitting stacks."}
+    },
+    "images": {"large": "runeterra/shurima/heroes/sivir/large.png", "small": "runeterra/shurima/heroes/sivir/small.png", "specialtyLarge": "runeterra/shurima/heroes/sivir/specialtyLarge.png", "specialtySmall": "runeterra/shurima/heroes/sivir/specialtySmall.png"},
+    "army": [{"creature": "desertNomad", "min": 12, "max": 18}, {"creature": "shurimanArcher", "min": 5, "max": 7}, {"creature": "rockbear", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:archery", "level": "basic"}, {"skill": "core:logistics", "level": "basic"}],
+    "specialty": {"secondary": "core:archery", "stepSize": 5}
+  },
+  "taliyah": {
+    "class": "sunKeeper", "female": true, "special": false,
+    "texts": {
+      "name": "Taliyah",
+      "biography": "Taliyah is a Shuriman nomad and stoneweaver who returned from travel to protect her family and other desert communities. She questions the returning empire rather than serving it by default. Sun Keeper is this project's shared magic-command class, not an assertion that she belongs to an imperial priesthood.",
+      "specialty": {"name": "Stoneweaver", "description": "After normal acquisition, Meteor Shower gains the native 5% per hero-level/target-tier specialty.", "tooltip": "{Stoneweaver}\n\nMeteor Shower receives 5% times floor(hero level / target creature tier), treating tier zero as one. It must first be learned normally. No free spell, adventure passage or permanent terrain change."}
+    },
+    "images": {"large": "runeterra/shurima/heroes/taliyah/large.png", "small": "runeterra/shurima/heroes/taliyah/small.png", "specialtyLarge": "runeterra/shurima/heroes/taliyah/specialtyLarge.png", "specialtySmall": "runeterra/shurima/heroes/taliyah/specialtySmall.png"},
+    "army": [{"creature": "desertNomad", "min": 12, "max": 18}, {"creature": "shurimanArcher", "min": 3, "max": 5}, {"creature": "rockbear", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:earthMagic", "level": "basic"}, {"skill": "core:wisdom", "level": "basic"}],
+    "specialty": {"spellScalingPercentage": "core:meteorShower", "spellScalingVal": 5},
+    "spellbook": ["core:stoneSkin", "core:slow"]
+  },
+  "akshan": {
+    "class": "shurimanWarden", "female": false, "special": false,
+    "texts": {
+      "name": "Akshan",
+      "biography": "Akshan is a Shuriman Sentinel of Light who acts against local warlords and carries the memory of his mentor Shadya. His regional work continues independently of the restored empire. His exceptional weapon remains a personal narrative possession; this commander has no kill-triggered resurrection or bounty system.",
+      "specialty": {"name": "Sentinel Marksmanship", "description": "Native Archery specialty increases the existing skill's effectiveness by 5% per hero level.", "tooltip": "{Sentinel Marksmanship}\n\nImproves native Archery effectiveness by 5% per hero level. No automatic resurrection, bounty income, camouflage or personal grappling movement."}
+    },
+    "images": {"large": "runeterra/shurima/heroes/akshan/large.png", "small": "runeterra/shurima/heroes/akshan/small.png", "specialtyLarge": "runeterra/shurima/heroes/akshan/specialtyLarge.png", "specialtySmall": "runeterra/shurima/heroes/akshan/specialtySmall.png"},
+    "army": [{"creature": "desertNomad", "min": 10, "max": 16}, {"creature": "shurimanArcher", "min": 5, "max": 8}, {"creature": "rockbear", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:archery", "level": "basic"}, {"skill": "core:scouting", "level": "basic"}],
+    "specialty": {"secondary": "core:archery", "stepSize": 5}
+  },
+  "ksante": {
+    "class": "shurimanWarden", "female": false, "special": false,
+    "texts": {
+      "name": "K'Sante",
+      "biography": "K'Sante protects Nazumah, an independent Shuriman city whose people endure desert monsters without submitting to Ascended rule. His defensive command expresses that community's resolve. Skirmish cooperation with other Shuriman leaders is a gameplay abstraction, not proof of imperial allegiance or a canonical expedition.",
+      "specialty": {"name": "Pride of Nazumah", "description": "Native Armorer specialty increases the existing skill's effectiveness by 5% per hero level.", "tooltip": "{Pride of Nazumah}\n\nImproves native Armorer effectiveness by 5% per hero level. No All Out transformation, personal defensive stacks, spell immunity or automatic monster-loot multiplier."}
+    },
+    "images": {"large": "runeterra/shurima/heroes/ksante/large.png", "small": "runeterra/shurima/heroes/ksante/small.png", "specialtyLarge": "runeterra/shurima/heroes/ksante/specialtyLarge.png", "specialtySmall": "runeterra/shurima/heroes/ksante/specialtySmall.png"},
+    "army": [{"creature": "desertNomad", "min": 14, "max": 20}, {"creature": "shurimanArcher", "min": 3, "max": 5}, {"creature": "rockbear", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:armorer", "level": "basic"}, {"skill": "core:leadership", "level": "basic"}],
+    "specialty": {"secondary": "core:armorer", "stepSize": 5}
+  },
+  "azir": {
+    "class": "sunKeeper", "female": false, "special": false,
+    "texts": {
+      "name": "Azir",
+      "biography": "Azir is the returned Ascended emperor whose restoration offers hope to some Shurimans and threatens the independence of others. Ordinary skirmish availability is a game abstraction for this one unique commander; story scenarios retain his political commitments and post-return era. This command adaptation gathers a modest daily treasury; it does not create weekly recruitable Ascended or free sand soldiers.",
+      "specialty": {"name": "Restoration Treasury", "description": "Generates 250 gold each adventure day while in service.", "tooltip": "{Restoration Treasury}\n\nNative daily income +250 gold. Stack splitting, battles, visits and captured towns do not multiply this specialty. No free summons or global recruitment discount."}
+    },
+    "images": {"large": "runeterra/shurima/heroes/azir/large.png", "small": "runeterra/shurima/heroes/azir/small.png", "specialtyLarge": "runeterra/shurima/heroes/azir/specialtyLarge.png", "specialtySmall": "runeterra/shurima/heroes/azir/specialtySmall.png"},
+    "army": [{"creature": "desertNomad", "min": 12, "max": 18}, {"creature": "shurimanArcher", "min": 3, "max": 5}, {"creature": "rockbear", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:leadership", "level": "basic"}, {"skill": "core:wisdom", "level": "basic"}],
+    "specialty": {"bonuses": {"restorationTreasury": {"type": "GENERATE_RESOURCE", "subtype": "gold", "val": 250}}},
+    "spellbook": ["core:shield"]
+  },
+  "nasus": {
+    "class": "shurimanWarden", "female": false, "special": false,
+    "texts": {
+      "name": "Nasus",
+      "biography": "Nasus is an ancient Ascended scholar and warrior of Shurima, burdened by the empire's fall and his brother's fate. His enduring responsibility is expressed through patient army protection. Ordinary skirmish command is a game abstraction for one living returned scholar-warrior; story scenarios retain his search for Renekton and restoration-era commitments. His presence creates no necromantic class or permanent damage growth from casualties.",
+      "specialty": {"name": "Patient Guardian", "description": "All commanded creatures gain +2 Defense.", "tooltip": "{Patient Guardian}\n\nCommanded creatures gain a fixed +2 Defense. Hero primary statistics remain unchanged. No kill counter, personal Siphoning Strike or automatic resurrection."}
+    },
+    "images": {"large": "runeterra/shurima/heroes/nasus/large.png", "small": "runeterra/shurima/heroes/nasus/small.png", "specialtyLarge": "runeterra/shurima/heroes/nasus/specialtyLarge.png", "specialtySmall": "runeterra/shurima/heroes/nasus/specialtySmall.png"},
+    "army": [{"creature": "desertNomad", "min": 14, "max": 20}, {"creature": "shurimanArcher", "min": 3, "max": 5}, {"creature": "rockbear", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:armorer", "level": "basic"}, {"skill": "core:tactics", "level": "basic"}],
+    "specialty": {"bonuses": {"patientGuardian": {"type": "PRIMARY_SKILL", "subtype": "defence", "val": 2, "limiters": "CREATURES_ONLY"}}},
+    "spellbook": ["core:slow"]
+  },
+  "renekton": {
+    "class": "shurimanWarden", "female": false, "special": false,
+    "texts": {
+      "name": "Renekton",
+      "biography": "Renekton was an Ascended defender of ancient Shurima before imprisonment with Xerath twisted his sacrifice into rage against Nasus. His continuing Shuriman story qualifies this unique commander for ordinary skirmish abstraction. Story scenarios retain him as a dangerous rival or antagonist and do not cure his condition or make him a reliable imperial servant. No personal Fury meter or transformation body is granted.",
+      "specialty": {"name": "Relentless Assault", "description": "Commanded creatures gain +2 Attack in melee combat only.", "tooltip": "{Relentless Assault}\n\nFixed +2 creature Attack during melee. Ranged attacks receive no bonus. No extra attack, Fury resource, hero healing or persistent growth from kills."}
+    },
+    "images": {"large": "runeterra/shurima/heroes/renekton/large.png", "small": "runeterra/shurima/heroes/renekton/small.png", "specialtyLarge": "runeterra/shurima/heroes/renekton/specialtyLarge.png", "specialtySmall": "runeterra/shurima/heroes/renekton/specialtySmall.png"},
+    "army": [{"creature": "desertNomad", "min": 14, "max": 20}, {"creature": "shurimanArcher", "min": 3, "max": 5}, {"creature": "rockbear", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:offence", "level": "basic"}, {"skill": "core:tactics", "level": "basic"}],
+    "specialty": {"bonuses": {"relentlessAssault": {"type": "PRIMARY_SKILL", "subtype": "attack", "val": 2, "effectRange": "ONLY_MELEE_FIGHT", "limiters": "CREATURES_ONLY"}}}
+  },
+  "xerath": {
+    "class": "sunKeeper", "female": false, "special": false,
+    "texts": {
+      "name": "Xerath",
+      "biography": "Xerath's betrayal of Azir and disastrous claim to Ascension are central to Shurima's fall. Freed from long imprisonment, the arcane being pursues his own power against the restored empire. Ordinary skirmish availability is a game abstraction; story scenarios retain his antagonism and post-release era. The shared magic class supplies progression without making him an imperial priest.",
+      "specialty": {"name": "Unbound Artillery", "description": "Adds 10 percentage points to the native any-school offensive spell-damage modifier.", "tooltip": "{Unbound Artillery}\n\nNative SPELL_DAMAGE any +10, additive with the normal Sorcery modifier. Mana, protections and one normal hero spell action apply. No limitless power or extra cast."}
+    },
+    "images": {"large": "runeterra/shurima/heroes/xerath/large.png", "small": "runeterra/shurima/heroes/xerath/small.png", "specialtyLarge": "runeterra/shurima/heroes/xerath/specialtyLarge.png", "specialtySmall": "runeterra/shurima/heroes/xerath/specialtySmall.png"},
+    "army": [{"creature": "desertNomad", "min": 12, "max": 18}, {"creature": "shurimanArcher", "min": 3, "max": 5}, {"creature": "rockbear", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:sorcery", "level": "basic"}, {"skill": "core:intelligence", "level": "basic"}],
+    "specialty": {"bonuses": {"unboundArtillery": {"type": "SPELL_DAMAGE", "subtype": "any", "val": 10}}},
+    "spellbook": ["core:magicArrow", "core:lightningBolt"]
+  },
+  "rammus": {
+    "class": "shurimanWarden", "female": false, "special": false,
+    "texts": {
+      "name": "Rammus",
+      "biography": "Rammus is an enigmatic wanderer deeply rooted in Shuriman encounters and folklore. Accounts of his nature remain uncertain; neither divinity nor Ascension is established here as fact. Ordinary skirmish command is an explicit game abstraction, while story scenarios preserve his inscrutable motives. An Armorer specialty stands for a guarded escort rather than personal rolling attacks.",
+      "specialty": {"name": "Spiked Escort", "description": "Native Armorer specialty increases the existing skill's effectiveness by 5% per hero level.", "tooltip": "{Spiked Escort}\n\nImproves native Armorer effectiveness by 5% per hero level. Fire Shield is a separate paid spell. No rolling damage path, forced taunt or unconditional reflection."}
+    },
+    "images": {"large": "runeterra/shurima/heroes/rammus/large.png", "small": "runeterra/shurima/heroes/rammus/small.png", "specialtyLarge": "runeterra/shurima/heroes/rammus/specialtyLarge.png", "specialtySmall": "runeterra/shurima/heroes/rammus/specialtySmall.png"},
+    "army": [{"creature": "desertNomad", "min": 14, "max": 20}, {"creature": "shurimanArcher", "min": 3, "max": 5}, {"creature": "rockbear", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:armorer", "level": "basic"}, {"skill": "core:tactics", "level": "basic"}],
+    "specialty": {"secondary": "core:armorer", "stepSize": 5},
+    "spellbook": ["core:fireShield"]
+  },
+  "amumu": {
+    "class": "sunKeeper", "female": false, "special": false,
+    "texts": {
+      "name": "Amumu",
+      "biography": "Amumu wanders Shurima in stories of a lonely cursed mummy. Conflicting accounts of his origin remain unresolved, including his identity and ancestry. Ordinary skirmish command adapts this one continuing legendary wanderer into a paid Weakness spell specialist; it neither resurrects a definitely dead ancient ruler nor establishes an ordinary undead population. Story scenarios retain the uncertainty and consequences of his curse.",
+      "specialty": {"name": "Sorrowful Curse", "description": "Weakness reduces target Attack by one additional point at every creature tier.", "tooltip": "{Sorrowful Curse}\n\nNative Weakness specialty adds -1 Attack at all seven tiers. Normal mana, targets, mastery, duration, recasting and dispelling apply. No automatic stun or free curse aura."}
+    },
+    "images": {"large": "runeterra/shurima/heroes/amumu/large.png", "small": "runeterra/shurima/heroes/amumu/small.png", "specialtyLarge": "runeterra/shurima/heroes/amumu/specialtyLarge.png", "specialtySmall": "runeterra/shurima/heroes/amumu/specialtySmall.png"},
+    "army": [{"creature": "desertNomad", "min": 12, "max": 18}, {"creature": "shurimanArcher", "min": 3, "max": 5}, {"creature": "rockbear", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:earthMagic", "level": "basic"}],
+    "specialty": {"spellFixedAdditive": "core:weakness", "spellFixedValues": [-1, -1, -1, -1, -1, -1, -1]},
+    "spellbook": ["core:weakness"]
+  },
+  "naafiri": {
+    "class": "shurimanWarden", "female": true, "special": false,
+    "texts": {
+      "name": "Naafiri",
+      "biography": "Naafiri is a Darkin whose imprisoned identity persists through a Shuriman dune-hound pack. She seeks her Darkin kin, carrying ancient purpose beyond the pack's hunt. Ordinary skirmish command is a game abstraction; story scenarios retain her antagonism and require a post-incarnation branch. She is no benevolent retainer or source of weekly cloned Darkin. One hero represents her collective identity; finite starting troops are no copies of her body.",
+      "specialty": {"name": "Pack Discipline", "description": "Commanded creatures gain +2 Attack in melee combat only.", "tooltip": "{Pack Discipline}\n\nFixed +2 creature Attack during melee. Splitting stacks grants no additional bonus and ranged attacks remain unchanged. No pack spawning, Darkin troop copies or permanent kill growth."}
+    },
+    "images": {"large": "runeterra/shurima/heroes/naafiri/large.png", "small": "runeterra/shurima/heroes/naafiri/small.png", "specialtyLarge": "runeterra/shurima/heroes/naafiri/specialtyLarge.png", "specialtySmall": "runeterra/shurima/heroes/naafiri/specialtySmall.png"},
+    "army": [{"creature": "desertNomad", "min": 14, "max": 20}, {"creature": "shurimanArcher", "min": 3, "max": 5}, {"creature": "rockbear", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:offence", "level": "basic"}, {"skill": "core:tactics", "level": "basic"}],
+    "specialty": {"bonuses": {"packDiscipline": {"type": "PRIMARY_SKILL", "subtype": "attack", "val": 2, "effectRange": "ONLY_MELEE_FIGHT", "limiters": "CREATURES_ONLY"}}}
+  },
+  "kassadin": {
+    "class": "sunKeeper", "female": false, "special": false,
+    "texts": {
+      "name": "Kassadin",
+      "biography": "Kassadin is a Shuriman desert guide turned hunter of the Void after the destruction of his home. His enduring struggle protects the region from the threat that took his family. Shurima is his primary home. Ordinary skirmish command is a game abstraction; story scenarios retain his anti-Void purpose and unresolved family story rather than making him an imperial loyalist or a member of a Void faction.",
+      "specialty": {"name": "Null Vigil", "description": "Commanded creatures take 15% less magical spell damage from any school.", "tooltip": "{Null Vigil}\n\nAny-school magical spell-damage reduction 15%, strongest-only within runeterraShurimaNullProtection. Other school-specific protections retain native rules. Hostile control and friendly support remain possible; no immunity or personal teleport."}
+    },
+    "images": {"large": "runeterra/shurima/heroes/kassadin/large.png", "small": "runeterra/shurima/heroes/kassadin/small.png", "specialtyLarge": "runeterra/shurima/heroes/kassadin/specialtyLarge.png", "specialtySmall": "runeterra/shurima/heroes/kassadin/specialtySmall.png"},
+    "army": [{"creature": "desertNomad", "min": 12, "max": 18}, {"creature": "shurimanArcher", "min": 3, "max": 5}, {"creature": "rockbear", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:mysticism", "level": "basic"}],
+    "specialty": {"bonuses": {"nullVigil": {"type": "SPELL_DAMAGE_REDUCTION", "subtype": "any", "val": 15, "stacking": "runeterraShurimaNullProtection", "limiters": "CREATURES_ONLY"}}},
+    "spellbook": ["core:magicArrow", "core:shield"]
+  },
+  "kaisa": {
+    "class": "shurimanWarden", "female": true, "special": false,
+    "texts": {
+      "name": "Kai'Sa",
+      "biography": "Kai'Sa is a Shuriman survivor who hunts Void incursions while struggling against the fear her symbiotic appearance inspires. Her continuing protection of desert communities makes Shurima her primary home. Ordinary skirmish command is a game abstraction; story scenarios preserve her anti-Void purpose and unresolved relationships. Her unique second skin is no recruitable creature line or reason to place her in a Void tavern.",
+      "specialty": {"name": "Hunter's Precision", "description": "Commanded shooter creatures ignore 10% of their target's Defense.", "tooltip": "{Hunter's Precision}\n\nShooter creatures ignore 10% of target Defense through native rules, including their melee attacks. Other creatures receive no bonus. Physical damage reduction, retaliation and attack count remain unchanged; no true damage or evolution resource."}
+    },
+    "images": {"large": "runeterra/shurima/heroes/kaisa/large.png", "small": "runeterra/shurima/heroes/kaisa/small.png", "specialtyLarge": "runeterra/shurima/heroes/kaisa/specialtyLarge.png", "specialtySmall": "runeterra/shurima/heroes/kaisa/specialtySmall.png"},
+    "army": [{"creature": "desertNomad", "min": 10, "max": 16}, {"creature": "shurimanArcher", "min": 5, "max": 8}, {"creature": "rockbear", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:archery", "level": "basic"}, {"skill": "core:offence", "level": "basic"}],
+    "specialty": {"bonuses": {"huntersPrecision": {"type": "ENEMY_DEFENCE_REDUCTION", "val": 10, "limiters": "SHOOTER_ONLY"}}}
+  },
+  "razBloodmane": {
+    "class": "shurimanWarden", "female": false, "special": false,
+    "texts": {
+      "name": "Raz Bloodmane",
+      "biography": "Raz Bloodmane is a named desert raider shown by the Legends of Runeterra card with his formidable crocodilian companion. His raiding-band context belongs to Shurima's continuing desert society, not a passing foreign expedition. Command of finite town troops is a skirmish abstraction; story scenarios preserve predatory rivalries rather than inventing civic loyalty. Neither his unique companion nor the defeated beast beneath it becomes a weekly creature pool.",
+      "specialty": {"name": "Raider Assault", "description": "Native Offense specialty increases the existing skill's effectiveness by 5% per hero level.", "tooltip": "{Raider Assault}\n\nImproves native Offense effectiveness by 5% per hero level. Ordinary melee damage rules apply. No free crocodiles, captive conversion, kill income, extra attacks or guaranteed fear effect."}
+    },
+    "images": {"large": "runeterra/shurima/heroes/razBloodmane/large.png", "small": "runeterra/shurima/heroes/razBloodmane/small.png", "specialtyLarge": "runeterra/shurima/heroes/razBloodmane/specialtyLarge.png", "specialtySmall": "runeterra/shurima/heroes/razBloodmane/specialtySmall.png"},
+    "army": [{"creature": "desertNomad", "min": 14, "max": 20}, {"creature": "shurimanArcher", "min": 3, "max": 5}, {"creature": "rockbear", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:offence", "level": "basic"}, {"skill": "core:pathfinding", "level": "basic"}],
+    "specialty": {"secondary": "core:offence", "stepSize": 5}
+  },
+  "padjuman": {
+    "class": "sunKeeper", "female": false, "special": false,
+    "texts": {
+      "name": "Padjuman",
+      "biography": "Padjuman is the named elder of Nashramae identified in the Legends of Runeterra Esteemed Hierophant card. His enduring civic and ceremonial standing gives him a Shuriman home beyond a gameplay region label. This project adapts his counsel to ordinary army morale and a paid support spell; the shared Sun Keeper class does not establish canonical magical powers or an oath to Azir. His command is one unique elder, never a cloned priest population or an Ascension shortcut.",
+      "specialty": {"name": "Civic Counsel", "description": "Eligible commanded creatures gain +1 morale under native caps and exclusions.", "tooltip": "{Civic Counsel}\n\nNative army morale +1. Normal morale caps, mixed-army penalties and non-living exclusions remain. Bless costs its normal mana and hero spell action. No automatic Ascension, free troops, permanent morale from repeated visits or special Sun Disc."}
+    },
+    "images": {"large": "runeterra/shurima/heroes/padjuman/large.png", "small": "runeterra/shurima/heroes/padjuman/small.png", "specialtyLarge": "runeterra/shurima/heroes/padjuman/specialtyLarge.png", "specialtySmall": "runeterra/shurima/heroes/padjuman/specialtySmall.png"},
+    "army": [{"creature": "desertNomad", "min": 12, "max": 18}, {"creature": "shurimanArcher", "min": 3, "max": 5}, {"creature": "rockbear", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:wisdom", "level": "basic"}, {"skill": "core:diplomacy", "level": "basic"}],
+    "specialty": {"bonuses": {"civicCounsel": {"type": "MORALE", "val": 1}}},
+    "spellbook": ["core:bless"]
+  }
+}

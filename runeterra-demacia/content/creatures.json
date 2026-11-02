@@ -1,0 +1,1037 @@
+{
+  "demacianRanger": {
+    "abilities": {
+      "aimedRange": {
+        "addInfo": 8,
+        "description": "Single shot with maximum and full-damage range of 8 battle hexes. Enemies beyond that range cannot be shot. Ordinary melee blocking and wall penalties remain.",
+        "type": "LIMITED_SHOOTING_RANGE",
+        "val": 8
+      },
+      "shooter": {
+        "type": "SHOOTER"
+      }
+    },
+    "advMapAmount": {
+      "max": 25,
+      "min": 12
+    },
+    "aiValue": 140,
+    "attack": 5,
+    "compatibilityIdentifiers": [
+      "silverwingRanger"
+    ],
+    "cost": {
+      "gold": 115
+    },
+    "damage": {
+      "max": 4,
+      "min": 2
+    },
+    "defense": 4,
+    "description": "Crossbow scouts fire one bolt per ranged action, with twelve shots. Maximum and full-damage range are 8 battle hexes, so they advance under infantry cover. Melee blocking, melee damage penalty and wall penalties remain.",
+    "disabled": false,
+    "doubleWide": false,
+    "excludeFromRandomization": false,
+    "faction": "demacia",
+    "fightValue": 140,
+    "graphics": {
+      "animation": "runeterra/demacia/creatures/demacianRanger/battle.json",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "iconLarge": "runeterra/demacia/creatures/demacianRanger/large.png",
+      "iconSmall": "runeterra/demacia/creatures/demacianRanger/small.png",
+      "map": "runeterra/demacia/creatures/demacianRanger/map.json",
+      "mapAttackFromLeft": "runeterra/demacia/creatures/demacianRanger/attackLeft.png",
+      "mapAttackFromRight": "runeterra/demacia/creatures/demacianRanger/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "missile": {
+        "attackClimaxFrame": 5,
+        "frameAngles": [
+          90,
+          45,
+          0,
+          -45,
+          -90
+        ],
+        "offset": {
+          "lowerX": 37,
+          "lowerY": -45,
+          "middleX": 33,
+          "middleY": -64,
+          "upperX": 30,
+          "upperY": -70
+        },
+        "projectile": "runeterra/demacia/projectiles/crossbow.json"
+      },
+      "timeBetweenFidgets": 0.1
+    },
+    "growth": 9,
+    "hasDoubleWeek": true,
+    "hitPoints": 10,
+    "horde": 0,
+    "level": 2,
+    "name": {
+      "plural": "Demacian Rangers",
+      "singular": "Demacian Ranger"
+    },
+    "shots": 12,
+    "sound": {
+      "attack": "LCRSATTK.wav",
+      "defend": "LCRSDFND.wav",
+      "killed": "LCRSKILL.wav",
+      "move": "LCRSMOVE.wav",
+      "shoot": "LCRSSHOT.wav",
+      "wince": "LCRSWNCE.wav"
+    },
+    "special": false,
+    "speed": 5,
+    "upgrades": [
+      "veteranRanger"
+    ]
+  },
+  "dragonguard": {
+    "abilities": {
+      "bracedPolearm": {
+        "description": "The braced polearm negates cavalry jousting damage bonus. Ordinary attack damage still applies; no extra damage against dragons.",
+        "type": "CHARGE_IMMUNITY"
+      }
+    },
+    "advMapAmount": {
+      "max": 8,
+      "min": 4
+    },
+    "aiValue": 1150,
+    "attack": 12,
+    "cost": {
+      "gold": 550
+    },
+    "damage": {
+      "max": 11,
+      "min": 8
+    },
+    "defense": 12,
+    "description": "Grounded heavy polearm infantry negate native cavalry jousting bonuses. Their halberds do not grant bonus damage against dragons, extra reach, first strike or immunity to normal attacks.",
+    "disabled": false,
+    "doubleWide": false,
+    "excludeFromRandomization": false,
+    "faction": "demacia",
+    "fightValue": 1100,
+    "graphics": {
+      "animation": "runeterra/demacia/creatures/dragonguard/battle.json",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "iconLarge": "runeterra/demacia/creatures/dragonguard/large.png",
+      "iconSmall": "runeterra/demacia/creatures/dragonguard/small.png",
+      "map": "runeterra/demacia/creatures/dragonguard/map.json",
+      "mapAttackFromLeft": "runeterra/demacia/creatures/dragonguard/attackLeft.png",
+      "mapAttackFromRight": "runeterra/demacia/creatures/dragonguard/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "timeBetweenFidgets": 0.1
+    },
+    "growth": 3,
+    "hasDoubleWeek": true,
+    "hitPoints": 55,
+    "horde": 0,
+    "level": 5,
+    "name": {
+      "plural": "Dragonguards",
+      "singular": "Dragonguard"
+    },
+    "sound": {
+      "attack": "HALBATTK.wav",
+      "defend": "HALBDFND.wav",
+      "killed": "HALBKILL.wav",
+      "move": "HALBMOVE.wav",
+      "wince": "HALBWNCE.wav"
+    },
+    "special": false,
+    "speed": 5,
+    "upgrades": [
+      "veteranDragonguard"
+    ]
+  },
+  "duelist": {
+    "abilities": {
+      "precision": {
+        "description": "Ignore 20% of the attacked enemy's Defense.",
+        "type": "ENEMY_DEFENCE_REDUCTION",
+        "val": 20
+      }
+    },
+    "advMapAmount": {
+      "max": 12,
+      "min": 6
+    },
+    "aiValue": 430,
+    "attack": 10,
+    "cost": {
+      "gold": 375
+    },
+    "damage": {
+      "max": 9,
+      "min": 5
+    },
+    "defense": 8,
+    "description": "Fencers ignore 20% of an attacked enemy's Defense. They use the normal one retaliation per round.",
+    "disabled": false,
+    "doubleWide": false,
+    "excludeFromRandomization": false,
+    "faction": "demacia",
+    "fightValue": 430,
+    "graphics": {
+      "animation": "runeterra/demacia/creatures/duelist/battle.json",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "iconLarge": "runeterra/demacia/creatures/duelist/large.png",
+      "iconSmall": "runeterra/demacia/creatures/duelist/small.png",
+      "map": "runeterra/demacia/creatures/duelist/map.json",
+      "mapAttackFromLeft": "runeterra/demacia/creatures/duelist/attackLeft.png",
+      "mapAttackFromRight": "runeterra/demacia/creatures/duelist/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "timeBetweenFidgets": 0.1
+    },
+    "growth": 4,
+    "hasDoubleWeek": true,
+    "hitPoints": 30,
+    "horde": 0,
+    "level": 4,
+    "name": {
+      "plural": "Duelists",
+      "singular": "Duelist"
+    },
+    "sound": {
+      "attack": "SWRDATTK.wav",
+      "defend": "SWRDDFND.wav",
+      "killed": "SWRDKILL.wav",
+      "move": "SWRDMOVE.wav",
+      "wince": "SWRDWNCE.wav"
+    },
+    "special": false,
+    "speed": 6,
+    "upgrades": [
+      "grandDuelist"
+    ]
+  },
+  "elderSilverwingLancer": {
+    "abilities": {
+      "flight": {
+        "type": "FLYING"
+      },
+      "slayerTarget": {
+        "type": "KING",
+        "val": 2
+      }
+    },
+    "advMapAmount": {
+      "max": 3,
+      "min": 1
+    },
+    "aiValue": 8500,
+    "attack": 27,
+    "cost": {
+      "gems": 2,
+      "gold": 4500
+    },
+    "damage": {
+      "max": 55,
+      "min": 40
+    },
+    "defense": 25,
+    "description": "Experienced riders and mature silverwings form swift, heavily equipped lancer pairs. These living two-hex melee cavalry fly over obstacles and need room for both hexes when landing.",
+    "disabled": false,
+    "doubleWide": true,
+    "excludeFromRandomization": false,
+    "faction": "demacia",
+    "fightValue": 8500,
+    "graphics": {
+      "animation": "runeterra/demacia/creatures/elderSilverwingLancer/battle.json",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "iconLarge": "runeterra/demacia/creatures/elderSilverwingLancer/large.png",
+      "iconSmall": "runeterra/demacia/creatures/elderSilverwingLancer/small.png",
+      "map": "runeterra/demacia/creatures/elderSilverwingLancer/map.json",
+      "mapAttackFromLeft": "runeterra/demacia/creatures/elderSilverwingLancer/attackLeft.png",
+      "mapAttackFromRight": "runeterra/demacia/creatures/elderSilverwingLancer/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "timeBetweenFidgets": 0.1
+    },
+    "growth": 1,
+    "hasDoubleWeek": true,
+    "hitPoints": 240,
+    "horde": 0,
+    "level": 7,
+    "name": {
+      "plural": "Elder Silverwing Lancers",
+      "singular": "Elder Silverwing Lancer"
+    },
+    "sound": {
+      "attack": "GRIFATTK.wav",
+      "defend": "GRIFDFND.wav",
+      "killed": "GRIFKILL.wav",
+      "move": "GRIFMOVE.wav",
+      "wince": "GRIFWNCE.wav"
+    },
+    "special": false,
+    "speed": 10
+  },
+  "grandDuelist": {
+    "abilities": {
+      "precision": {
+        "description": "Ignore 30% of the attacked enemy's Defense.",
+        "type": "ENEMY_DEFENCE_REDUCTION",
+        "val": 30
+      },
+      "riposte": {
+        "description": "One additional retaliation per round; attacks that prevent retaliation remain effective.",
+        "type": "ADDITIONAL_RETALIATION",
+        "val": 1
+      }
+    },
+    "advMapAmount": {
+      "max": 12,
+      "min": 6
+    },
+    "aiValue": 580,
+    "attack": 12,
+    "cost": {
+      "gold": 500
+    },
+    "damage": {
+      "max": 11,
+      "min": 7
+    },
+    "defense": 10,
+    "description": "Master fencers ignore 30% of enemy Defense and can retaliate twice per round. Attacks that prevent retaliation still do so.",
+    "disabled": false,
+    "doubleWide": false,
+    "excludeFromRandomization": false,
+    "faction": "demacia",
+    "fightValue": 580,
+    "graphics": {
+      "animation": "runeterra/demacia/creatures/grandDuelist/battle.json",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "iconLarge": "runeterra/demacia/creatures/grandDuelist/large.png",
+      "iconSmall": "runeterra/demacia/creatures/grandDuelist/small.png",
+      "map": "runeterra/demacia/creatures/grandDuelist/map.json",
+      "mapAttackFromLeft": "runeterra/demacia/creatures/grandDuelist/attackLeft.png",
+      "mapAttackFromRight": "runeterra/demacia/creatures/grandDuelist/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "timeBetweenFidgets": 0.1
+    },
+    "growth": 4,
+    "hasDoubleWeek": true,
+    "hitPoints": 35,
+    "horde": 0,
+    "level": 4,
+    "name": {
+      "plural": "Grand Duelists",
+      "singular": "Grand Duelist"
+    },
+    "sound": {
+      "attack": "CRUSATTK.wav",
+      "defend": "CRUSDFND.wav",
+      "killed": "CRUSKILL.wav",
+      "move": "CRUSMOVE.wav",
+      "wince": "CRUSWNCE.wav"
+    },
+    "special": false,
+    "speed": 7
+  },
+  "loyalBadgerbear": {
+    "abilities": {},
+    "advMapAmount": {
+      "max": 50,
+      "min": 20
+    },
+    "aiValue": 85,
+    "attack": 4,
+    "cost": {
+      "gold": 60
+    },
+    "damage": {
+      "max": 2,
+      "min": 1
+    },
+    "defense": 3,
+    "description": "Loyal badgerbears accompany Demacian rangers into battle, meeting enemies on the ground with powerful claws and jaws.",
+    "disabled": false,
+    "doubleWide": false,
+    "excludeFromRandomization": false,
+    "faction": "demacia",
+    "fightValue": 85,
+    "graphics": {
+      "animation": "runeterra/demacia/creatures/loyalBadgerbear/battle.json",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "iconLarge": "runeterra/demacia/creatures/loyalBadgerbear/large.png",
+      "iconSmall": "runeterra/demacia/creatures/loyalBadgerbear/small.png",
+      "map": "runeterra/demacia/creatures/loyalBadgerbear/map.json",
+      "mapAttackFromLeft": "runeterra/demacia/creatures/loyalBadgerbear/attackLeft.png",
+      "mapAttackFromRight": "runeterra/demacia/creatures/loyalBadgerbear/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "timeBetweenFidgets": 0.1
+    },
+    "growth": 14,
+    "hasDoubleWeek": true,
+    "hitPoints": 12,
+    "horde": 0,
+    "level": 1,
+    "name": {
+      "plural": "Loyal Badgerbears",
+      "singular": "Loyal Badgerbear"
+    },
+    "sound": {
+      "attack": "GWRDATTK.wav",
+      "defend": "GWRDDFND.wav",
+      "killed": "GWRDKILL.wav",
+      "move": "GWRDMOVE.wav",
+      "wince": "GWRDWNCE.wav"
+    },
+    "special": false,
+    "speed": 4,
+    "upgrades": [
+      "veteranBadgerbear"
+    ]
+  },
+  "mageseeker": {
+    "abilities": {
+      "disruption": {
+        "description": "Increase enemy hero battle spell cost by 1 mana while alive; only the highest disrupting stack applies.",
+        "type": "CHANGES_SPELL_COST_FOR_ENEMY",
+        "val": 1
+      }
+    },
+    "advMapAmount": {
+      "max": 5,
+      "min": 2
+    },
+    "aiValue": 1850,
+    "attack": 14,
+    "cost": {
+      "gold": 900
+    },
+    "damage": {
+      "max": 18,
+      "min": 12
+    },
+    "defense": 12,
+    "description": "Grounded tier-six petricite-staff melee disruptors increase enemy hero battle spell costs by 1 mana while alive. Only the strongest living disrupting stack applies. Physical attacks, ranged fire and control remain effective; no shooting, creature-caster silence, friendly-spell block or petricite immunity.",
+    "disabled": false,
+    "doubleWide": false,
+    "excludeFromRandomization": false,
+    "faction": "demacia",
+    "fightValue": 1850,
+    "graphics": {
+      "animation": "runeterra/demacia/creatures/mageseeker/battle.json",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "iconLarge": "runeterra/demacia/creatures/mageseeker/large.png",
+      "iconSmall": "runeterra/demacia/creatures/mageseeker/small.png",
+      "map": "runeterra/demacia/creatures/mageseeker/map.json",
+      "mapAttackFromLeft": "runeterra/demacia/creatures/mageseeker/attackLeft.png",
+      "mapAttackFromRight": "runeterra/demacia/creatures/mageseeker/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "timeBetweenFidgets": 0.1
+    },
+    "growth": 2,
+    "hasDoubleWeek": true,
+    "hitPoints": 70,
+    "horde": 0,
+    "level": 6,
+    "name": {
+      "plural": "Mageseekers",
+      "singular": "Mageseeker"
+    },
+    "sound": {
+      "attack": "MONKATTK.wav",
+      "defend": "MONKDFND.wav",
+      "killed": "MONKKILL.wav",
+      "move": "MONKMOVE.wav",
+      "wince": "MONKWNCE.wav"
+    },
+    "special": false,
+    "speed": 5,
+    "upgrades": [
+      "mageseekerInquisitor"
+    ]
+  },
+  "mageseekerInciter": {
+    "abilities": {
+      "staffShot": {
+        "description": "One staff projectile per ranged action. Finite ammunition; ordinary melee, distance and wall penalties apply.",
+        "type": "SHOOTER"
+      }
+    },
+    "advMapAmount": {
+      "max": 16,
+      "min": 8
+    },
+    "aiValue": 300,
+    "attack": 7,
+    "cost": {
+      "gold": 200
+    },
+    "damage": {
+      "max": 5,
+      "min": 3
+    },
+    "defense": 7,
+    "description": "Masked Inciters advance with their order's staffs, releasing one bolt per ranged action from eight charges. Enemies nearby block their shooting; normal melee, distance and wall penalties apply.",
+    "disabled": false,
+    "doubleWide": false,
+    "excludeFromRandomization": false,
+    "faction": "demacia",
+    "fightValue": 300,
+    "graphics": {
+      "animation": "runeterra/demacia/creatures/mageseekerInciter/battle.json",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "iconLarge": "runeterra/demacia/creatures/mageseekerInciter/large.png",
+      "iconSmall": "runeterra/demacia/creatures/mageseekerInciter/small.png",
+      "map": "runeterra/demacia/creatures/mageseekerInciter/map.json",
+      "mapAttackFromLeft": "runeterra/demacia/creatures/mageseekerInciter/attackLeft.png",
+      "mapAttackFromRight": "runeterra/demacia/creatures/mageseekerInciter/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "missile": {
+        "attackClimaxFrame": 4,
+        "frameAngles": [
+          90,
+          45,
+          0,
+          -45,
+          -90
+        ],
+        "offset": {
+          "lowerX": 38,
+          "lowerY": -18,
+          "middleX": 32,
+          "middleY": -50,
+          "upperX": 35,
+          "upperY": -71
+        },
+        "projectile": "runeterra/demacia/projectiles/inciterBolt.json"
+      },
+      "timeBetweenFidgets": 0.1
+    },
+    "growth": 7,
+    "hasDoubleWeek": true,
+    "hitPoints": 22,
+    "horde": 0,
+    "level": 3,
+    "name": {
+      "plural": "Mageseeker Inciters",
+      "singular": "Mageseeker Inciter"
+    },
+    "shots": 8,
+    "sound": {
+      "attack": "MONKATTK.wav",
+      "defend": "MONKDFND.wav",
+      "killed": "MONKKILL.wav",
+      "move": "MONKMOVE.wav",
+      "shoot": "MAGICBLT.wav",
+      "wince": "MONKWNCE.wav"
+    },
+    "special": false,
+    "speed": 5,
+    "upgrades": [
+      "seniorInciter"
+    ]
+  },
+  "mageseekerInquisitor": {
+    "abilities": {
+      "disruption": {
+        "description": "Increase enemy hero battle spell cost by 2 mana while alive; only the highest disrupting stack applies.",
+        "type": "CHANGES_SPELL_COST_FOR_ENEMY",
+        "val": 2
+      }
+    },
+    "advMapAmount": {
+      "max": 5,
+      "min": 2
+    },
+    "aiValue": 2350,
+    "attack": 16,
+    "compatibilityIdentifiers": [
+      "illuminator"
+    ],
+    "cost": {
+      "gold": 1200
+    },
+    "damage": {
+      "max": 22,
+      "min": 16
+    },
+    "defense": 14,
+    "description": "Grounded tier-six petricite-staff melee disruptors increase enemy hero battle spell costs by 2 mana while alive. Only the strongest living disrupting stack applies. Physical attacks, ranged fire and control remain effective; no shooting, creature-caster silence, friendly-spell block or petricite immunity.",
+    "disabled": false,
+    "doubleWide": false,
+    "excludeFromRandomization": false,
+    "faction": "demacia",
+    "fightValue": 2350,
+    "graphics": {
+      "animation": "runeterra/demacia/creatures/mageseekerInquisitor/battle.json",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "iconLarge": "runeterra/demacia/creatures/mageseekerInquisitor/large.png",
+      "iconSmall": "runeterra/demacia/creatures/mageseekerInquisitor/small.png",
+      "map": "runeterra/demacia/creatures/mageseekerInquisitor/map.json",
+      "mapAttackFromLeft": "runeterra/demacia/creatures/mageseekerInquisitor/attackLeft.png",
+      "mapAttackFromRight": "runeterra/demacia/creatures/mageseekerInquisitor/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "timeBetweenFidgets": 0.1
+    },
+    "growth": 2,
+    "hasDoubleWeek": true,
+    "hitPoints": 85,
+    "horde": 0,
+    "level": 6,
+    "name": {
+      "plural": "Mageseeker Inquisitors",
+      "singular": "Mageseeker Inquisitor"
+    },
+    "sound": {
+      "attack": "ZELTATTK.wav",
+      "defend": "ZELTDFND.wav",
+      "killed": "ZELTKILL.wav",
+      "move": "ZELTMOVE.wav",
+      "wince": "ZELTWNCE.wav"
+    },
+    "special": false,
+    "speed": 6
+  },
+  "seniorInciter": {
+    "abilities": {
+      "staffShot": {
+        "description": "One staff projectile per ranged action. Finite ammunition; ordinary melee, distance and wall penalties apply.",
+        "type": "SHOOTER"
+      }
+    },
+    "advMapAmount": {
+      "max": 16,
+      "min": 8
+    },
+    "aiValue": 420,
+    "attack": 9,
+    "cost": {
+      "gold": 275
+    },
+    "damage": {
+      "max": 6,
+      "min": 4
+    },
+    "defense": 9,
+    "description": "Senior Inciters wear stronger protection and carry reinforced staffs with ten charges. Each ranged action fires one bolt; nearby enemies, distance and walls still constrain their fire.",
+    "disabled": false,
+    "doubleWide": false,
+    "excludeFromRandomization": false,
+    "faction": "demacia",
+    "fightValue": 420,
+    "graphics": {
+      "animation": "runeterra/demacia/creatures/seniorInciter/battle.json",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "iconLarge": "runeterra/demacia/creatures/seniorInciter/large.png",
+      "iconSmall": "runeterra/demacia/creatures/seniorInciter/small.png",
+      "map": "runeterra/demacia/creatures/seniorInciter/map.json",
+      "mapAttackFromLeft": "runeterra/demacia/creatures/seniorInciter/attackLeft.png",
+      "mapAttackFromRight": "runeterra/demacia/creatures/seniorInciter/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "missile": {
+        "attackClimaxFrame": 4,
+        "frameAngles": [
+          90,
+          45,
+          0,
+          -45,
+          -90
+        ],
+        "offset": {
+          "lowerX": 28,
+          "lowerY": -22,
+          "middleX": 35,
+          "middleY": -47,
+          "upperX": 35,
+          "upperY": -64
+        },
+        "projectile": "runeterra/demacia/projectiles/inciterBolt.json"
+      },
+      "timeBetweenFidgets": 0.1
+    },
+    "growth": 7,
+    "hasDoubleWeek": true,
+    "hitPoints": 28,
+    "horde": 0,
+    "level": 3,
+    "name": {
+      "plural": "Senior Inciters",
+      "singular": "Senior Inciter"
+    },
+    "shots": 10,
+    "sound": {
+      "attack": "MONKATTK.wav",
+      "defend": "MONKDFND.wav",
+      "killed": "MONKKILL.wav",
+      "move": "MONKMOVE.wav",
+      "shoot": "MAGICBLT.wav",
+      "wince": "MONKWNCE.wav"
+    },
+    "special": false,
+    "speed": 6
+  },
+  "silverwingLancer": {
+    "abilities": {
+      "flight": {
+        "type": "FLYING"
+      },
+      "slayerTarget": {
+        "type": "KING",
+        "val": 2
+      }
+    },
+    "advMapAmount": {
+      "max": 3,
+      "min": 1
+    },
+    "aiValue": 6200,
+    "attack": 24,
+    "cost": {
+      "gems": 1,
+      "gold": 3500
+    },
+    "damage": {
+      "max": 50,
+      "min": 35
+    },
+    "defense": 23,
+    "description": "Bonded silverwings carry Demacian lancers over battlefield obstacles. Rider and mount fight as one living two-hex melee creature and need room for both hexes when landing.",
+    "disabled": false,
+    "doubleWide": true,
+    "excludeFromRandomization": false,
+    "faction": "demacia",
+    "fightValue": 6200,
+    "graphics": {
+      "animation": "runeterra/demacia/creatures/silverwingLancer/battle.json",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "iconLarge": "runeterra/demacia/creatures/silverwingLancer/large.png",
+      "iconSmall": "runeterra/demacia/creatures/silverwingLancer/small.png",
+      "map": "runeterra/demacia/creatures/silverwingLancer/map.json",
+      "mapAttackFromLeft": "runeterra/demacia/creatures/silverwingLancer/attackLeft.png",
+      "mapAttackFromRight": "runeterra/demacia/creatures/silverwingLancer/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "timeBetweenFidgets": 0.1
+    },
+    "growth": 1,
+    "hasDoubleWeek": true,
+    "hitPoints": 200,
+    "horde": 0,
+    "level": 7,
+    "name": {
+      "plural": "Silverwing Lancers",
+      "singular": "Silverwing Lancer"
+    },
+    "sound": {
+      "attack": "GRIFATTK.wav",
+      "defend": "GRIFDFND.wav",
+      "killed": "GRIFKILL.wav",
+      "move": "GRIFMOVE.wav",
+      "wince": "GRIFWNCE.wav"
+    },
+    "special": false,
+    "speed": 8,
+    "upgrades": [
+      "elderSilverwingLancer"
+    ]
+  },
+  "veteranBadgerbear": {
+    "abilities": {},
+    "advMapAmount": {
+      "max": 50,
+      "min": 20
+    },
+    "aiValue": 125,
+    "attack": 5,
+    "cost": {
+      "gold": 85
+    },
+    "damage": {
+      "max": 3,
+      "min": 2
+    },
+    "defense": 4,
+    "description": "Experienced badgerbears wear reinforced ranger-made harnesses. Their sturdier protection and practiced attacks help them hold the front line.",
+    "disabled": false,
+    "doubleWide": false,
+    "excludeFromRandomization": false,
+    "faction": "demacia",
+    "fightValue": 125,
+    "graphics": {
+      "animation": "runeterra/demacia/creatures/veteranBadgerbear/battle.json",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "iconLarge": "runeterra/demacia/creatures/veteranBadgerbear/large.png",
+      "iconSmall": "runeterra/demacia/creatures/veteranBadgerbear/small.png",
+      "map": "runeterra/demacia/creatures/veteranBadgerbear/map.json",
+      "mapAttackFromLeft": "runeterra/demacia/creatures/veteranBadgerbear/attackLeft.png",
+      "mapAttackFromRight": "runeterra/demacia/creatures/veteranBadgerbear/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "timeBetweenFidgets": 0.1
+    },
+    "growth": 14,
+    "hasDoubleWeek": true,
+    "hitPoints": 16,
+    "horde": 0,
+    "level": 1,
+    "name": {
+      "plural": "Veteran Badgerbears",
+      "singular": "Veteran Badgerbear"
+    },
+    "sound": {
+      "attack": "GWRDATTK.wav",
+      "defend": "GWRDDFND.wav",
+      "killed": "GWRDKILL.wav",
+      "move": "GWRDMOVE.wav",
+      "wince": "GWRDWNCE.wav"
+    },
+    "special": false,
+    "speed": 5
+  },
+  "veteranDragonguard": {
+    "abilities": {
+      "bracedPolearm": {
+        "description": "The braced polearm negates cavalry jousting damage bonus. Ordinary attack damage still applies; no extra damage against dragons.",
+        "type": "CHARGE_IMMUNITY"
+      },
+      "drakeMantle": {
+        "description": "At least30%fire-school spell damage protection. Stronger ordinary fire-school protection replaces this floor instead of adding it. Physical dragon breath, ordinary attacks and control spells remain effective.",
+        "stacking": "runeterraDemaciaFireWard",
+        "subtype": "fire",
+        "type": "SPELL_DAMAGE_REDUCTION",
+        "val": 30,
+        "valueType": "INDEPENDENT_MAX"
+      }
+    },
+    "advMapAmount": {
+      "max": 8,
+      "min": 4
+    },
+    "aiValue": 1550,
+    "attack": 14,
+    "cost": {
+      "gold": 750
+    },
+    "damage": {
+      "max": 14,
+      "min": 10
+    },
+    "defense": 15,
+    "description": "Grounded heavy polearm infantry negate native cavalry jousting bonuses. Their halberds do not grant bonus damage against dragons, extra reach, first strike or immunity to normal attacks. The veteran mantle gives30%fire-school spell damage protection, replaced by stronger native fire protection. It does not reduce physical dragon breath or reject control.",
+    "disabled": false,
+    "doubleWide": false,
+    "excludeFromRandomization": false,
+    "faction": "demacia",
+    "fightValue": 1500,
+    "graphics": {
+      "animation": "runeterra/demacia/creatures/veteranDragonguard/battle.json",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "iconLarge": "runeterra/demacia/creatures/veteranDragonguard/large.png",
+      "iconSmall": "runeterra/demacia/creatures/veteranDragonguard/small.png",
+      "map": "runeterra/demacia/creatures/veteranDragonguard/map.json",
+      "mapAttackFromLeft": "runeterra/demacia/creatures/veteranDragonguard/attackLeft.png",
+      "mapAttackFromRight": "runeterra/demacia/creatures/veteranDragonguard/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "timeBetweenFidgets": 0.1
+    },
+    "growth": 3,
+    "hasDoubleWeek": true,
+    "hitPoints": 75,
+    "horde": 0,
+    "level": 5,
+    "name": {
+      "plural": "Veteran Dragonguards",
+      "singular": "Veteran Dragonguard"
+    },
+    "sound": {
+      "attack": "HALBATTK.wav",
+      "defend": "HALBDFND.wav",
+      "killed": "HALBKILL.wav",
+      "move": "HALBMOVE.wav",
+      "wince": "HALBWNCE.wav"
+    },
+    "special": false,
+    "speed": 6
+  },
+  "veteranRanger": {
+    "abilities": {
+      "aimedRange": {
+        "addInfo": 10,
+        "description": "Single shot with maximum and full-damage range of 10 battle hexes. Enemies beyond that range cannot be shot. Ordinary melee blocking and wall penalties remain.",
+        "type": "LIMITED_SHOOTING_RANGE",
+        "val": 10
+      },
+      "shooter": {
+        "type": "SHOOTER"
+      }
+    },
+    "advMapAmount": {
+      "max": 25,
+      "min": 12
+    },
+    "aiValue": 190,
+    "attack": 6,
+    "compatibilityIdentifiers": [
+      "masterRanger"
+    ],
+    "cost": {
+      "gold": 160
+    },
+    "damage": {
+      "max": 5,
+      "min": 3
+    },
+    "defense": 5,
+    "description": "Crossbow scouts fire one bolt per ranged action, with twelve shots. Maximum and full-damage range are 10 battle hexes, so they advance under infantry cover. Melee blocking, melee damage penalty and wall penalties remain.",
+    "disabled": false,
+    "doubleWide": false,
+    "excludeFromRandomization": false,
+    "faction": "demacia",
+    "fightValue": 190,
+    "graphics": {
+      "animation": "runeterra/demacia/creatures/veteranRanger/battle.json",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "iconLarge": "runeterra/demacia/creatures/veteranRanger/large.png",
+      "iconSmall": "runeterra/demacia/creatures/veteranRanger/small.png",
+      "map": "runeterra/demacia/creatures/veteranRanger/map.json",
+      "mapAttackFromLeft": "runeterra/demacia/creatures/veteranRanger/attackLeft.png",
+      "mapAttackFromRight": "runeterra/demacia/creatures/veteranRanger/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "missile": {
+        "attackClimaxFrame": 5,
+        "frameAngles": [
+          90,
+          45,
+          0,
+          -45,
+          -90
+        ],
+        "offset": {
+          "lowerX": 37,
+          "lowerY": -50,
+          "middleX": 39,
+          "middleY": -59,
+          "upperX": 29,
+          "upperY": -73
+        },
+        "projectile": "runeterra/demacia/projectiles/crossbow.json"
+      },
+      "timeBetweenFidgets": 0.1
+    },
+    "growth": 9,
+    "hasDoubleWeek": true,
+    "hitPoints": 12,
+    "horde": 0,
+    "level": 2,
+    "name": {
+      "plural": "Veteran Rangers",
+      "singular": "Veteran Ranger"
+    },
+    "shots": 12,
+    "sound": {
+      "attack": "HCRSATTK.wav",
+      "defend": "HCRSDFND.wav",
+      "killed": "HCRSKILL.wav",
+      "move": "HCRSMOVE.wav",
+      "shoot": "HCRSSHOT.wav",
+      "wince": "HCRSWNCE.wav"
+    },
+    "special": false,
+    "speed": 6
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "celestialAlignment": {
+    "implements": "combatEvent",
+    "script": "runeterra/targon/celestialAlignment",
+    "patches": [],
+    "priority": 0,
+    "schema": {
+      "type": "object",
+      "required": ["affiliation"],
+      "properties": {
+        "affiliation": {"type": "string", "enum": ["solari", "lunari"]},
+        "solarStatus": {"type": "string"},
+        "solarEclipseStatus": {"type": "string"},
+        "lunarStatus": {"type": "string"},
+        "lunarEclipseStatus": {"type": "string"},
+        "convergenceStatus": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "stringRegistrations": ["solarStatus", "solarEclipseStatus", "lunarStatus", "lunarEclipseStatus", "convergenceStatus"],
+    "description": "Celestial alignment uses the game calendar, frozen at battle setup. Days 1-2: Solar, Solari +1 Attack and Defense. Day 3: Solar Eclipse, Lunari +2 Attack and Defense. Days 4-5: Lunar, Lunari +1 Attack and Defense. Day 6: Lunar Eclipse, Solari +2 Attack and Defense. Day 7: Convergence, both +1 Defense. Only the bearer benefits. This repeating seven-day cycle is project game fiction, not astronomy."
+  }
+}

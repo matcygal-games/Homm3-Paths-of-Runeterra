@@ -1,0 +1,830 @@
+{
+  "ashe": {
+    "class": "freljordWarleader",
+    "female": true,
+    "special": false,
+    "texts": {
+      "name": "Ashe",
+      "biography": "Iceborn Warmother Ashe gathers divided tribes through protection, adoption and difficult alliances. Her True Ice bow strengthens the legend surrounding her, but she knows belief alone cannot feed a people or hold a coalition together. She leads an established Avarosan coalition, not every tribe in the north.",
+      "specialty": {
+        "name": "Avarosan Aim",
+        "description": "Archery gains the native 5% per hero level increase to skill effectiveness.",
+        "tooltip": "{Avarosan Aim}\n\nNative Archery specialty: 5% per hero level to the Archery skill effect. Ordinary arrows remain physical; no extra shot or freezing attack."
+      }
+    },
+    "images": {
+      "large": "runeterra/freljord/heroes/ashe/large.png",
+      "small": "runeterra/freljord/heroes/ashe/small.png",
+      "specialtyLarge": "runeterra/freljord/heroes/ashe/specialtyLarge.png",
+      "specialtySmall": "runeterra/freljord/heroes/ashe/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "overgrownPoro",
+        "min": 8,
+        "max": 12
+      },
+      {
+        "creature": "iceHunter",
+        "min": 6,
+        "max": 8
+      },
+      {
+        "creature": "frostTroll",
+        "min": 1,
+        "max": 1
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:archery",
+        "level": "basic"
+      },
+      {
+        "skill": "core:leadership",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "secondary": "core:archery",
+      "stepSize": 5
+    }
+  },
+  "tryndamere": {
+    "class": "freljordWarleader",
+    "female": false,
+    "special": false,
+    "texts": {
+      "name": "Tryndamere",
+      "biography": "Tryndamere brought the survivors of his ruined clan to Ashe seeking shelter. Their political marriage deepened into affection, giving his fury a wider purpose even while the memory of his attacker pulls him toward revenge.",
+      "specialty": {
+        "name": "Unbroken Assault",
+        "description": "Offense gains the native 5% per hero level increase to skill effectiveness.",
+        "tooltip": "{Unbroken Assault}\n\nNative Offense specialty: 5% per hero level to the Offense skill effect. No troop immortality, personal combat stack or rage meter."
+      }
+    },
+    "images": {
+      "large": "runeterra/freljord/heroes/tryndamere/large.png",
+      "small": "runeterra/freljord/heroes/tryndamere/small.png",
+      "specialtyLarge": "runeterra/freljord/heroes/tryndamere/specialtyLarge.png",
+      "specialtySmall": "runeterra/freljord/heroes/tryndamere/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "overgrownPoro",
+        "min": 10,
+        "max": 18
+      },
+      {
+        "creature": "iceHunter",
+        "min": 3,
+        "max": 6
+      },
+      {
+        "creature": "frostTroll",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:offence",
+        "level": "basic"
+      },
+      {
+        "skill": "core:tactics",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "secondary": "core:offence",
+      "stepSize": 5
+    }
+  },
+  "braum": {
+    "class": "freljordWarleader",
+    "female": false,
+    "special": false,
+    "texts": {
+      "name": "Braum",
+      "biography": "Braum believes strength exists to protect others. An Iceborn traveler beloved across tribal borders, he welcomes the folk stories told about his shield when they inspire generosity, and sees hope for a kinder Freljord in Ashe.",
+      "specialty": {
+        "name": "Heart of the Freljord",
+        "description": "Armorer gains the native 5% per hero level increase to skill effectiveness.",
+        "tooltip": "{Heart of the Freljord}\n\nNative Armorer specialty: 5% per hero level to the Armorer skill effect. No interception, spell immunity or personal shield stack."
+      }
+    },
+    "images": {
+      "large": "runeterra/freljord/heroes/braum/large.png",
+      "small": "runeterra/freljord/heroes/braum/small.png",
+      "specialtyLarge": "runeterra/freljord/heroes/braum/specialtyLarge.png",
+      "specialtySmall": "runeterra/freljord/heroes/braum/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "overgrownPoro",
+        "min": 10,
+        "max": 18
+      },
+      {
+        "creature": "iceHunter",
+        "min": 3,
+        "max": 6
+      },
+      {
+        "creature": "frostTroll",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:armorer",
+        "level": "basic"
+      },
+      {
+        "skill": "core:leadership",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "secondary": "core:armorer",
+      "stepSize": 5
+    }
+  },
+  "olaf": {
+    "class": "freljordWarleader",
+    "female": false,
+    "special": false,
+    "texts": {
+      "name": "Olaf",
+      "biography": "Olaf hunts the glorious death denied him by an ominous prediction. His battles brought him to Sejuani, whose promise of a worthy end won his axe for the Winter's Claw. Regional skirmish hiring abstracts an alliance; it does not make him a loyal Avarosan campaign recruit.",
+      "specialty": {
+        "name": "Glorious Company",
+        "description": "Eligible living troops gain one additional morale under native caps.",
+        "tooltip": "{Glorious Company}\n\nMorale +1 under ordinary caps and eligibility rules. No Berserk spell, control immunity or invulnerability."
+      }
+    },
+    "images": {
+      "large": "runeterra/freljord/heroes/olaf/large.png",
+      "small": "runeterra/freljord/heroes/olaf/small.png",
+      "specialtyLarge": "runeterra/freljord/heroes/olaf/specialtyLarge.png",
+      "specialtySmall": "runeterra/freljord/heroes/olaf/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "overgrownPoro",
+        "min": 10,
+        "max": 18
+      },
+      {
+        "creature": "iceHunter",
+        "min": 3,
+        "max": 6
+      },
+      {
+        "creature": "frostTroll",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:offence",
+        "level": "basic"
+      },
+      {
+        "skill": "core:leadership",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "gloriousCompany": {
+          "type": "MORALE",
+          "val": 1
+        }
+      }
+    }
+  },
+  "gragas": {
+    "class": "freljordWarleader",
+    "female": false,
+    "special": false,
+    "texts": {
+      "name": "Gragas",
+      "biography": "Gragas came north searching for the perfect ale. His unusual ingredients and unruly hospitality can end a negotiation in a brawl, yet shared drink once helped Ashe turn tribal hostility toward agreement. His birthplace is not established here.",
+      "specialty": {
+        "name": "Shared Brew",
+        "description": "Generates 350 gold each native adventure day while contributing owned-hero income.",
+        "tooltip": "{Shared Brew}\n\nNative income +350 gold per day, separate from Estates. Ordinary ownership and day rollover apply; visits do not pay again."
+      }
+    },
+    "images": {
+      "large": "runeterra/freljord/heroes/gragas/large.png",
+      "small": "runeterra/freljord/heroes/gragas/small.png",
+      "specialtyLarge": "runeterra/freljord/heroes/gragas/specialtyLarge.png",
+      "specialtySmall": "runeterra/freljord/heroes/gragas/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "overgrownPoro",
+        "min": 10,
+        "max": 18
+      },
+      {
+        "creature": "iceHunter",
+        "min": 3,
+        "max": 6
+      },
+      {
+        "creature": "frostTroll",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:estates",
+        "level": "basic"
+      },
+      {
+        "skill": "core:leadership",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "sharedBrew": {
+          "type": "GENERATE_RESOURCE",
+          "subtype": "gold",
+          "val": 350
+        }
+      }
+    }
+  },
+  "sejuani": {
+    "class": "freljordWarleader",
+    "female": true,
+    "special": false,
+    "texts": {
+      "name": "Sejuani",
+      "biography": "Sejuani remade the Winter's Claw through conquest and defiance of Frostguard control. Riding the druvask Bristle, rescued as a juvenile from a Noxian ship, she challenges the coalition built by her childhood friend Ashe. She commands only through a scenario's explicit alliance or rival branch.",
+      "specialty": {
+        "name": "Winter Advance",
+        "description": "Druvask Riders and Winter Outriders gain native creature-specialty speed and tier-six Attack/Defense growth.",
+        "tooltip": "{Winter Advance}\n\nDruvask Rider line: +1 speed and standard tier-six Attack/Defense specialty growth at 5% per step. Includes Winter Outriders. No global speed or extra Bristle stack."
+      }
+    },
+    "images": {
+      "large": "runeterra/freljord/heroes/sejuani/large.png",
+      "small": "runeterra/freljord/heroes/sejuani/small.png",
+      "specialtyLarge": "runeterra/freljord/heroes/sejuani/specialtyLarge.png",
+      "specialtySmall": "runeterra/freljord/heroes/sejuani/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "overgrownPoro",
+        "min": 10,
+        "max": 18
+      },
+      {
+        "creature": "iceHunter",
+        "min": 3,
+        "max": 6
+      },
+      {
+        "creature": "frostTroll",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:tactics",
+        "level": "basic"
+      },
+      {
+        "skill": "core:leadership",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "creature": "druvaskRider",
+      "stepSize": 5
+    }
+  },
+  "trundle": {
+    "class": "freljordWarleader",
+    "female": false,
+    "special": false,
+    "texts": {
+      "name": "Trundle",
+      "biography": "Exiled for thinking beyond the next raid, Trundle found a new path to power through Lissandra. The Iceborn troll returned with Boneshiver, claimed kingship and offered his people an alliance whose cost remains uneasy. His scenario allegiance follows that bargain.",
+      "specialty": {
+        "name": "Troll Dominion",
+        "description": "Frost Trolls and Rime Trolls gain native creature-specialty speed and tier-three Attack/Defense growth.",
+        "tooltip": "{Troll Dominion}\n\nFrost Troll line: +1 speed and standard tier-three Attack/Defense specialty growth at 5% per step. Includes Rime Trolls. No life drain or disease-eating economy."
+      }
+    },
+    "images": {
+      "large": "runeterra/freljord/heroes/trundle/large.png",
+      "small": "runeterra/freljord/heroes/trundle/small.png",
+      "specialtyLarge": "runeterra/freljord/heroes/trundle/specialtyLarge.png",
+      "specialtySmall": "runeterra/freljord/heroes/trundle/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "overgrownPoro",
+        "min": 10,
+        "max": 18
+      },
+      {
+        "creature": "iceHunter",
+        "min": 3,
+        "max": 6
+      },
+      {
+        "creature": "frostTroll",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:offence",
+        "level": "basic"
+      },
+      {
+        "skill": "core:armorer",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "creature": "frostTroll",
+      "stepSize": 5
+    }
+  },
+  "nunuAndWillump": {
+    "class": "freljordSeer",
+    "female": false,
+    "special": false,
+    "texts": {
+      "name": "Nunu & Willump",
+      "biography": "Separated from his mother Layka during a raid, Nunu found friendship with Willump, the last magical yeti. Layka remains missing, and other feral yetis survive. Together the friends follow songs and hope across the snow, guarding a power shaped by imagination rather than conquest. They form one commander identity.",
+      "specialty": {
+        "name": "Snowbound Friendship",
+        "description": "Logistics gains the native 5% per hero level increase to skill effectiveness.",
+        "tooltip": "{Snowbound Friendship}\n\nNative Logistics specialty: 5% per hero level to the Logistics skill effect. Nunu and Willump are one hero. Native terrain/road rules remain; no extra companion or free snow immunity."
+      }
+    },
+    "images": {
+      "large": "runeterra/freljord/heroes/nunuAndWillump/large.png",
+      "small": "runeterra/freljord/heroes/nunuAndWillump/small.png",
+      "specialtyLarge": "runeterra/freljord/heroes/nunuAndWillump/specialtyLarge.png",
+      "specialtySmall": "runeterra/freljord/heroes/nunuAndWillump/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "overgrownPoro",
+        "min": 10,
+        "max": 18
+      },
+      {
+        "creature": "iceHunter",
+        "min": 3,
+        "max": 6
+      },
+      {
+        "creature": "frostTroll",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:logistics",
+        "level": "basic"
+      },
+      {
+        "skill": "core:wisdom",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "secondary": "core:logistics",
+      "stepSize": 5
+    },
+    "spellbook": [
+      "core:haste",
+      "core:iceBolt"
+    ]
+  },
+  "aurora": {
+    "class": "freljordSeer",
+    "female": true,
+    "special": false,
+    "texts": {
+      "name": "Aurora",
+      "biography": "Aurora grew up among the Bryni of Aamu seeing a world others could not. Her care for wayward spirits led her to Udyr and Ornn, and to the search for the forgotten identity of Haestryr. Her independently placed quest does not grant knowledge of Lissandra's secret or the Watchers.",
+      "specialty": {
+        "name": "Between Worlds",
+        "description": "Adventure sight radius +1 from one strongest-only Freljord Aurora source. Native Scouting remains separate.",
+        "tooltip": "{Between Worlds}\n\nAdventure sight +1. Own sources share runeterraFreljordAuroraSight and do not multiply. Native Scouting remains independent. No hidden-entity detection, spirit teleport or unrestricted reveal."
+      }
+    },
+    "images": {
+      "large": "runeterra/freljord/heroes/aurora/large.png",
+      "small": "runeterra/freljord/heroes/aurora/small.png",
+      "specialtyLarge": "runeterra/freljord/heroes/aurora/specialtyLarge.png",
+      "specialtySmall": "runeterra/freljord/heroes/aurora/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "overgrownPoro",
+        "min": 10,
+        "max": 18
+      },
+      {
+        "creature": "iceHunter",
+        "min": 3,
+        "max": 6
+      },
+      {
+        "creature": "frostTroll",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:scouting",
+        "level": "basic"
+      },
+      {
+        "skill": "core:wisdom",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "betweenWorlds": {
+          "type": "SIGHT_RADIUS",
+          "val": 1,
+          "stacking": "runeterraFreljordAuroraSight"
+        }
+      }
+    },
+    "spellbook": [
+      "core:haste",
+      "core:dispel"
+    ]
+  },
+  "gnar": {
+    "class": "freljordWarleader",
+    "female": false,
+    "special": false,
+    "texts": {
+      "name": "Gnar",
+      "biography": "Gnar woke from an ancient magical freeze to a world without his old companions. He explores its wonders with his beloved boomerang, understanding little of its politics but remembering the urge to protect a friend. His guest command is a scenario adaptation, not a second giant hero body.",
+      "specialty": {
+        "name": "Ancient Curiosity",
+        "description": "Commanded troops gain one additional Luck under native caps.",
+        "tooltip": "{Ancient Curiosity}\n\nLuck +1 under ordinary native caps. No rage resource, permanent kill growth or Mega Gnar creature transformation."
+      }
+    },
+    "images": {
+      "large": "runeterra/freljord/heroes/gnar/large.png",
+      "small": "runeterra/freljord/heroes/gnar/small.png",
+      "specialtyLarge": "runeterra/freljord/heroes/gnar/specialtyLarge.png",
+      "specialtySmall": "runeterra/freljord/heroes/gnar/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "overgrownPoro",
+        "min": 10,
+        "max": 18
+      },
+      {
+        "creature": "iceHunter",
+        "min": 3,
+        "max": 6
+      },
+      {
+        "creature": "frostTroll",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:offence",
+        "level": "basic"
+      },
+      {
+        "skill": "core:luck",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "ancientCuriosity": {
+          "type": "LUCK",
+          "val": 1
+        }
+      }
+    }
+  },
+  "udyr": {
+    "class": "freljordSeer",
+    "female": false,
+    "special": false,
+    "texts": {
+      "name": "Udyr",
+      "biography": "Udyr hears the spirits of the living world with exceptional intensity. Training with Lee Sin taught him self-mastery; on returning north, he offered Sejuani counsel and fought for the struggle he believes keeps his homeland alive. His loyalties do not automatically follow Ashe or Volibear.",
+      "specialty": {
+        "name": "Spirit Balance",
+        "description": "Hero gains one fixed additional primary Defense point.",
+        "tooltip": "{Spirit Balance}\n\nPrimary Defense +1, inherited through ordinary hero command. The class baseline stays 0/1/2/2; the specialty adds one Defense once. No real-time stance meter."
+      }
+    },
+    "images": {
+      "large": "runeterra/freljord/heroes/udyr/large.png",
+      "small": "runeterra/freljord/heroes/udyr/small.png",
+      "specialtyLarge": "runeterra/freljord/heroes/udyr/specialtyLarge.png",
+      "specialtySmall": "runeterra/freljord/heroes/udyr/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "overgrownPoro",
+        "min": 10,
+        "max": 18
+      },
+      {
+        "creature": "iceHunter",
+        "min": 3,
+        "max": 6
+      },
+      {
+        "creature": "frostTroll",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:waterMagic",
+        "level": "basic"
+      },
+      {
+        "skill": "core:wisdom",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "spiritBalance": {
+          "type": "PRIMARY_SKILL",
+          "subtype": "defence",
+          "val": 1
+        }
+      }
+    },
+    "spellbook": [
+      "core:stoneSkin",
+      "core:protectWater"
+    ]
+  },
+  "lissandra": {
+    "class": "freljordSeer",
+    "female": true,
+    "special": false,
+    "texts": {
+      "name": "Lissandra",
+      "biography": "Lissandra survives beneath the weight of an ancient bargain. Her Frostguard suppress inconvenient histories while she gathers Iceborn power to preserve the prison of the Watchers, whose awakening would expose the terrible price of her rule. Her containment does not erase her culpability, and any alliance is scenario-bound.",
+      "specialty": {
+        "name": "Keeper of Secrets",
+        "description": "Intelligence gains the native 5% per hero level increase to skill effectiveness.",
+        "tooltip": "{Keeper of Secrets}\n\nNative Intelligence specialty: 5% per hero level to the Intelligence skill effect. Mana remains finite, with ordinary recovery. No free refill, frozen thralls or army-wide mind control."
+      }
+    },
+    "images": {
+      "large": "runeterra/freljord/heroes/lissandra/large.png",
+      "small": "runeterra/freljord/heroes/lissandra/small.png",
+      "specialtyLarge": "runeterra/freljord/heroes/lissandra/specialtyLarge.png",
+      "specialtySmall": "runeterra/freljord/heroes/lissandra/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "overgrownPoro",
+        "min": 10,
+        "max": 18
+      },
+      {
+        "creature": "iceHunter",
+        "min": 3,
+        "max": 6
+      },
+      {
+        "creature": "frostTroll",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:intelligence",
+        "level": "basic"
+      },
+      {
+        "skill": "core:wisdom",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "secondary": "core:intelligence",
+      "stepSize": 5
+    },
+    "spellbook": [
+      "core:slow",
+      "core:iceBolt"
+    ]
+  },
+  "anivia": {
+    "class": "freljordSeer",
+    "female": true,
+    "special": false,
+    "texts": {
+      "name": "Anivia",
+      "biography": "Anivia embodies the cycle of death and renewal in the Freljord traditions. Her rare appearance brings hope to those who honor the land, and questions about the danger that called the Cryophoenix back. A scenario may grant her command; the town never recruits copies of this unique guardian.",
+      "specialty": {
+        "name": "Renewing Winter",
+        "description": "Hero gains one fixed additional Spell Power point and knows paid native Frost Ring.",
+        "tooltip": "{Renewing Winter}\n\nPrimary Spell Power +1. Frost Ring uses ordinary mana, action, ring geometry and friendly-fire rules. No resurrection, rebirth or free spell."
+      }
+    },
+    "images": {
+      "large": "runeterra/freljord/heroes/anivia/large.png",
+      "small": "runeterra/freljord/heroes/anivia/small.png",
+      "specialtyLarge": "runeterra/freljord/heroes/anivia/specialtyLarge.png",
+      "specialtySmall": "runeterra/freljord/heroes/anivia/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "overgrownPoro",
+        "min": 10,
+        "max": 18
+      },
+      {
+        "creature": "iceHunter",
+        "min": 3,
+        "max": 6
+      },
+      {
+        "creature": "frostTroll",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:waterMagic",
+        "level": "basic"
+      },
+      {
+        "skill": "core:wisdom",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "renewingWinter": {
+          "type": "PRIMARY_SKILL",
+          "subtype": "spellpower",
+          "val": 1
+        }
+      }
+    },
+    "spellbook": [
+      "core:frostRing"
+    ]
+  },
+  "ornn": {
+    "class": "freljordSeer",
+    "female": false,
+    "special": false,
+    "texts": {
+      "name": "Ornn",
+      "biography": "Ornn works in solitude beneath Hearth-Home. The destruction of the Hearthblood left him withdrawn, but the land he helped shape may yet need the craft of its ancient forge god. His rare scenario patronage does not create a free artifact workshop or a recruitable divine troop.",
+      "specialty": {
+        "name": "Quiet Craft",
+        "description": "Generates one ore each native adventure day while contributing owned-hero income.",
+        "tooltip": "{Quiet Craft}\n\nNative income +1 ore per day. Ordinary ownership and day rollover apply. No payment on repeated visits and no free artifact generation."
+      }
+    },
+    "images": {
+      "large": "runeterra/freljord/heroes/ornn/large.png",
+      "small": "runeterra/freljord/heroes/ornn/small.png",
+      "specialtyLarge": "runeterra/freljord/heroes/ornn/specialtyLarge.png",
+      "specialtySmall": "runeterra/freljord/heroes/ornn/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "overgrownPoro",
+        "min": 10,
+        "max": 18
+      },
+      {
+        "creature": "iceHunter",
+        "min": 3,
+        "max": 6
+      },
+      {
+        "creature": "frostTroll",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:earthMagic",
+        "level": "basic"
+      },
+      {
+        "skill": "core:wisdom",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "quietCraft": {
+          "type": "GENERATE_RESOURCE",
+          "subtype": "ore",
+          "val": 1
+        }
+      }
+    },
+    "spellbook": [
+      "core:stoneSkin"
+    ]
+  },
+  "volibear": {
+    "class": "freljordSeer",
+    "female": false,
+    "special": false,
+    "texts": {
+      "name": "Volibear",
+      "biography": "Volibear calls the tribes back to tooth, storm and the unrestrained wilderness. The growth of settlement affronts him, and his Ursine followers answer a strength that tolerates neither walls nor easy submission to the Three Sisters. This old-god rival commands only in an exceptional scenario branch.",
+      "specialty": {
+        "name": "Old Thunder",
+        "description": "Hero gains one fixed additional primary Attack point and knows paid native Lightning Bolt.",
+        "tooltip": "{Old Thunder}\n\nPrimary Attack +1. Lightning Bolt uses ordinary mana, hero action and targeting. No chain lightning, free storm, extra attack or recruitable avatar."
+      }
+    },
+    "images": {
+      "large": "runeterra/freljord/heroes/volibear/large.png",
+      "small": "runeterra/freljord/heroes/volibear/small.png",
+      "specialtyLarge": "runeterra/freljord/heroes/volibear/specialtyLarge.png",
+      "specialtySmall": "runeterra/freljord/heroes/volibear/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "overgrownPoro",
+        "min": 10,
+        "max": 18
+      },
+      {
+        "creature": "iceHunter",
+        "min": 3,
+        "max": 6
+      },
+      {
+        "creature": "frostTroll",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:airMagic",
+        "level": "basic"
+      },
+      {
+        "skill": "core:wisdom",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "oldThunder": {
+          "type": "PRIMARY_SKILL",
+          "subtype": "attack",
+          "val": 1
+        }
+      }
+    },
+    "spellbook": [
+      "core:lightningBolt"
+    ]
+  }
+}

@@ -1,0 +1,1104 @@
+{
+  "yordleScout": {
+    "sound": {
+      "attack": "AGRMATTK.wav",
+      "defend": "AGRMDFND.wav",
+      "killed": "AGRMKILL.wav",
+      "move": "AGRMMOVE.wav",
+      "wince": "AGRMWNCE.wav"
+    },
+    "name": {
+      "singular": "Yordle Scout",
+      "plural": "Yordle Scouts"
+    },
+    "description": "Ground melee with ordinary retaliation. Upgrade has +1 own-stack Luck under native cap.",
+    "faction": "bandlecity",
+    "level": 1,
+    "hitPoints": 5,
+    "attack": 3,
+    "defense": 4,
+    "damage": {
+      "min": 1,
+      "max": 2
+    },
+    "speed": 6,
+    "cost": {
+      "gold": 35
+    },
+    "growth": 14,
+    "horde": 0,
+    "fightValue": 59,
+    "aiValue": 62,
+    "advMapAmount": {
+      "min": 14,
+      "max": 28
+    },
+    "doubleWide": false,
+    "hasDoubleWeek": true,
+    "special": false,
+    "disabled": false,
+    "excludeFromRandomization": false,
+    "abilities": {},
+    "graphics": {
+      "animation": "runeterra/bandlecity/creatures/yordleScout/battle.json",
+      "map": "runeterra/bandlecity/creatures/yordleScout/map.json",
+      "iconLarge": "runeterra/bandlecity/creatures/yordleScout/large.png",
+      "iconSmall": "runeterra/bandlecity/creatures/yordleScout/small.png",
+      "mapAttackFromLeft": "runeterra/bandlecity/creatures/yordleScout/attackLeft.png",
+      "mapAttackFromRight": "runeterra/bandlecity/creatures/yordleScout/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1,
+      "animationPreview": "runeterra/bandlecity/creatures/yordleScout/preview.json"
+    },
+    "upgrades": [
+      "scoutPatrol"
+    ]
+  },
+  "scoutPatrol": {
+    "sound": {
+      "attack": "MGRMATTK.wav",
+      "defend": "MGRMDFND.wav",
+      "killed": "MGRMKILL.wav",
+      "move": "MGRMMOVE.wav",
+      "wince": "MGRMWNCE.wav"
+    },
+    "name": {
+      "singular": "Scout Patrol",
+      "plural": "Scout Patrols"
+    },
+    "description": "Ground melee with ordinary retaliation. Upgrade has +1 own-stack Luck under native cap.",
+    "faction": "bandlecity",
+    "level": 1,
+    "hitPoints": 7,
+    "attack": 4,
+    "defense": 5,
+    "damage": {
+      "min": 1,
+      "max": 3
+    },
+    "speed": 7,
+    "cost": {
+      "gold": 50
+    },
+    "growth": 14,
+    "horde": 0,
+    "fightValue": 84,
+    "aiValue": 93,
+    "advMapAmount": {
+      "min": 14,
+      "max": 28
+    },
+    "doubleWide": false,
+    "hasDoubleWeek": true,
+    "special": false,
+    "disabled": false,
+    "excludeFromRandomization": false,
+    "abilities": {
+      "ownLuck": {
+        "type": "LUCK",
+        "val": 1
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/bandlecity/creatures/scoutPatrol/battle.json",
+      "map": "runeterra/bandlecity/creatures/scoutPatrol/map.json",
+      "iconLarge": "runeterra/bandlecity/creatures/scoutPatrol/large.png",
+      "iconSmall": "runeterra/bandlecity/creatures/scoutPatrol/small.png",
+      "mapAttackFromLeft": "runeterra/bandlecity/creatures/scoutPatrol/attackLeft.png",
+      "mapAttackFromRight": "runeterra/bandlecity/creatures/scoutPatrol/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1,
+      "animationPreview": "runeterra/bandlecity/creatures/scoutPatrol/preview.json"
+    }
+  },
+  "papercraftDragon": {
+    "sound": {
+      "attack": "PIXIATTK.wav",
+      "defend": "PIXIDFND.wav",
+      "killed": "PIXIKILL.wav",
+      "move": "PIXIMOVE.wav",
+      "wince": "PIXIWNCE.wav"
+    },
+    "name": {
+      "singular": "Papercraft Dragon",
+      "plural": "Papercraft Dragons"
+    },
+    "description": "One-hex flying animated paper construct. Non-living; ordinary melee retaliation applies. No breath, extra attack, attack-and-return or dragon immunity.",
+    "faction": "bandlecity",
+    "level": 2,
+    "hitPoints": 12,
+    "attack": 6,
+    "defense": 4,
+    "damage": {
+      "min": 2,
+      "max": 5
+    },
+    "speed": 7,
+    "cost": {
+      "gold": 120
+    },
+    "growth": 9,
+    "horde": 0,
+    "fightValue": 140,
+    "aiValue": 160,
+    "advMapAmount": {
+      "min": 7,
+      "max": 14
+    },
+    "doubleWide": false,
+    "hasDoubleWeek": true,
+    "special": false,
+    "disabled": false,
+    "excludeFromRandomization": false,
+    "abilities": {
+      "flight": {
+        "type": "FLYING"
+      },
+      "animatedPaper": {
+        "type": "NON_LIVING"
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/bandlecity/creatures/papercraftDragon/battle.json",
+      "map": "runeterra/bandlecity/creatures/papercraftDragon/map.json",
+      "iconLarge": "runeterra/bandlecity/creatures/papercraftDragon/large.png",
+      "iconSmall": "runeterra/bandlecity/creatures/papercraftDragon/small.png",
+      "mapAttackFromLeft": "runeterra/bandlecity/creatures/papercraftDragon/attackLeft.png",
+      "mapAttackFromRight": "runeterra/bandlecity/creatures/papercraftDragon/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1,
+      "animationPreview": "runeterra/bandlecity/creatures/papercraftDragon/preview.json"
+    },
+    "upgrades": [
+      "spellfoldDragon"
+    ]
+  },
+  "spellfoldDragon": {
+    "sound": {
+      "attack": "SPRTATTK.wav",
+      "defend": "SPRTDFND.wav",
+      "killed": "SPRTKILL.wav",
+      "move": "SPRTMOVE.wav",
+      "wince": "SPRTWNCE.wav"
+    },
+    "name": {
+      "singular": "Spellfold Dragon",
+      "plural": "Spellfold Dragons"
+    },
+    "description": "One-hex flying animated paper construct with stronger folds. Non-living; ordinary melee retaliation applies. No breath, extra attack, attack-and-return or dragon immunity.",
+    "faction": "bandlecity",
+    "level": 2,
+    "hitPoints": 15,
+    "attack": 8,
+    "defense": 6,
+    "damage": {
+      "min": 3,
+      "max": 7
+    },
+    "speed": 8,
+    "cost": {
+      "gold": 170
+    },
+    "growth": 9,
+    "horde": 0,
+    "fightValue": 210,
+    "aiValue": 245,
+    "advMapAmount": {
+      "min": 7,
+      "max": 14
+    },
+    "doubleWide": false,
+    "hasDoubleWeek": true,
+    "special": false,
+    "disabled": false,
+    "excludeFromRandomization": false,
+    "abilities": {
+      "flight": {
+        "type": "FLYING"
+      },
+      "animatedPaper": {
+        "type": "NON_LIVING"
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/bandlecity/creatures/spellfoldDragon/battle.json",
+      "map": "runeterra/bandlecity/creatures/spellfoldDragon/map.json",
+      "iconLarge": "runeterra/bandlecity/creatures/spellfoldDragon/large.png",
+      "iconSmall": "runeterra/bandlecity/creatures/spellfoldDragon/small.png",
+      "mapAttackFromLeft": "runeterra/bandlecity/creatures/spellfoldDragon/attackLeft.png",
+      "mapAttackFromRight": "runeterra/bandlecity/creatures/spellfoldDragon/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1,
+      "animationPreview": "runeterra/bandlecity/creatures/spellfoldDragon/preview.json"
+    }
+  },
+  "mechPilot": {
+    "sound": {
+      "attack": "AGRMATTK.wav",
+      "defend": "AGRMDFND.wav",
+      "killed": "AGRMKILL.wav",
+      "move": "AGRMMOVE.wav",
+      "wince": "AGRMWNCE.wav"
+    },
+    "name": {
+      "singular": "Mech Pilot",
+      "plural": "Mech Pilots"
+    },
+    "description": "Living two-hex walker restores 3/5 top-survivor HP on native first turn attempt per round, not wait return. Cannot restore dead models. Native morale and living spell eligibility apply.",
+    "faction": "bandlecity",
+    "level": 3,
+    "hitPoints": 28,
+    "attack": 7,
+    "defense": 8,
+    "damage": {
+      "min": 4,
+      "max": 7
+    },
+    "speed": 5,
+    "cost": {
+      "gold": 270
+    },
+    "growth": 7,
+    "horde": 0,
+    "fightValue": 306,
+    "aiValue": 294,
+    "advMapAmount": {
+      "min": 4,
+      "max": 9
+    },
+    "doubleWide": true,
+    "hasDoubleWeek": true,
+    "special": false,
+    "disabled": false,
+    "excludeFromRandomization": false,
+    "abilities": {
+      "crewRepair": {
+        "type": "HP_REGENERATION",
+        "val": 3
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/bandlecity/creatures/mechPilot/battle.json",
+      "map": "runeterra/bandlecity/creatures/mechPilot/map.json",
+      "iconLarge": "runeterra/bandlecity/creatures/mechPilot/large.png",
+      "iconSmall": "runeterra/bandlecity/creatures/mechPilot/small.png",
+      "mapAttackFromLeft": "runeterra/bandlecity/creatures/mechPilot/attackLeft.png",
+      "mapAttackFromRight": "runeterra/bandlecity/creatures/mechPilot/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1,
+      "animationPreview": "runeterra/bandlecity/creatures/mechPilot/preview.json"
+    },
+    "upgrades": [
+      "advancedMech"
+    ]
+  },
+  "advancedMech": {
+    "sound": {
+      "attack": "MGRMATTK.wav",
+      "defend": "MGRMDFND.wav",
+      "killed": "MGRMKILL.wav",
+      "move": "MGRMMOVE.wav",
+      "wince": "MGRMWNCE.wav"
+    },
+    "name": {
+      "singular": "Advanced Mech",
+      "plural": "Advanced Mechs"
+    },
+    "description": "Living two-hex walker restores 3/5 top-survivor HP on native first turn attempt per round, not wait return. Cannot restore dead models. Native morale and living spell eligibility apply.",
+    "faction": "bandlecity",
+    "level": 3,
+    "hitPoints": 38,
+    "attack": 9,
+    "defense": 10,
+    "damage": {
+      "min": 6,
+      "max": 10
+    },
+    "speed": 6,
+    "cost": {
+      "gold": 365
+    },
+    "growth": 7,
+    "horde": 0,
+    "fightValue": 468,
+    "aiValue": 494,
+    "advMapAmount": {
+      "min": 4,
+      "max": 9
+    },
+    "doubleWide": true,
+    "hasDoubleWeek": true,
+    "special": false,
+    "disabled": false,
+    "excludeFromRandomization": false,
+    "abilities": {
+      "crewRepair": {
+        "type": "HP_REGENERATION",
+        "val": 5
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/bandlecity/creatures/advancedMech/battle.json",
+      "map": "runeterra/bandlecity/creatures/advancedMech/map.json",
+      "iconLarge": "runeterra/bandlecity/creatures/advancedMech/large.png",
+      "iconSmall": "runeterra/bandlecity/creatures/advancedMech/small.png",
+      "mapAttackFromLeft": "runeterra/bandlecity/creatures/advancedMech/attackLeft.png",
+      "mapAttackFromRight": "runeterra/bandlecity/creatures/advancedMech/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1,
+      "animationPreview": "runeterra/bandlecity/creatures/advancedMech/preview.json"
+    }
+  },
+  "puffcapTrapper": {
+    "sound": {
+      "attack": "AGRMATTK.wav",
+      "defend": "AGRMDFND.wav",
+      "killed": "AGRMKILL.wav",
+      "move": "AGRMMOVE.wav",
+      "wince": "AGRMWNCE.wav",
+      "shoot": "AGRMSHOT.wav"
+    },
+    "name": {
+      "singular": "Puffcap Trapper",
+      "plural": "Puffcap Trappers"
+    },
+    "description": "Finite ordinary physical ranged ammunition 8/12; native melee blocking and distance/wall penalties apply. Puffcaps are projectiles, not persistent traps.",
+    "faction": "bandlecity",
+    "level": 4,
+    "hitPoints": 40,
+    "attack": 10,
+    "defense": 8,
+    "damage": {
+      "min": 6,
+      "max": 12
+    },
+    "speed": 5,
+    "cost": {
+      "gold": 450
+    },
+    "growth": 4,
+    "horde": 0,
+    "fightValue": 515,
+    "aiValue": 619,
+    "advMapAmount": {
+      "min": 3,
+      "max": 7
+    },
+    "doubleWide": false,
+    "hasDoubleWeek": true,
+    "special": false,
+    "disabled": false,
+    "excludeFromRandomization": false,
+    "abilities": {
+      "shooter": {
+        "type": "SHOOTER"
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/bandlecity/creatures/puffcapTrapper/battle.json",
+      "map": "runeterra/bandlecity/creatures/puffcapTrapper/map.json",
+      "iconLarge": "runeterra/bandlecity/creatures/puffcapTrapper/large.png",
+      "iconSmall": "runeterra/bandlecity/creatures/puffcapTrapper/small.png",
+      "mapAttackFromLeft": "runeterra/bandlecity/creatures/puffcapTrapper/attackLeft.png",
+      "mapAttackFromRight": "runeterra/bandlecity/creatures/puffcapTrapper/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1,
+      "missile": {
+        "projectile": "runeterra/bandlecity/projectiles/puffcapTrapper.json",
+        "frameAngles": [
+          90,
+          45,
+          0,
+          -45,
+          -90
+        ],
+        "attackClimaxFrame": 4,
+        "offset": {
+          "lowerX": 5,
+          "lowerY": -11,
+          "middleX": 7,
+          "middleY": -26,
+          "upperX": 8,
+          "upperY": -40
+        }
+      },
+      "animationPreview": "runeterra/bandlecity/creatures/puffcapTrapper/preview.json"
+    },
+    "shots": 8,
+    "upgrades": [
+      "masterTrapper"
+    ]
+  },
+  "masterTrapper": {
+    "sound": {
+      "attack": "MGRMATTK.wav",
+      "defend": "MGRMDFND.wav",
+      "killed": "MGRMKILL.wav",
+      "move": "MGRMMOVE.wav",
+      "wince": "MGRMWNCE.wav",
+      "shoot": "MGRMSHOT.wav"
+    },
+    "name": {
+      "singular": "Master Trapper",
+      "plural": "Master Trappers"
+    },
+    "description": "Finite ordinary physical ranged ammunition 8/12; native melee blocking and distance/wall penalties apply. Puffcaps are projectiles, not persistent traps.",
+    "faction": "bandlecity",
+    "level": 4,
+    "hitPoints": 50,
+    "attack": 12,
+    "defense": 10,
+    "damage": {
+      "min": 8,
+      "max": 16
+    },
+    "speed": 6,
+    "cost": {
+      "gold": 610
+    },
+    "growth": 4,
+    "horde": 0,
+    "fightValue": 714,
+    "aiValue": 944,
+    "advMapAmount": {
+      "min": 3,
+      "max": 7
+    },
+    "doubleWide": false,
+    "hasDoubleWeek": true,
+    "special": false,
+    "disabled": false,
+    "excludeFromRandomization": false,
+    "abilities": {
+      "shooter": {
+        "type": "SHOOTER"
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/bandlecity/creatures/masterTrapper/battle.json",
+      "map": "runeterra/bandlecity/creatures/masterTrapper/map.json",
+      "iconLarge": "runeterra/bandlecity/creatures/masterTrapper/large.png",
+      "iconSmall": "runeterra/bandlecity/creatures/masterTrapper/small.png",
+      "mapAttackFromLeft": "runeterra/bandlecity/creatures/masterTrapper/attackLeft.png",
+      "mapAttackFromRight": "runeterra/bandlecity/creatures/masterTrapper/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1,
+      "missile": {
+        "projectile": "runeterra/bandlecity/projectiles/masterTrapper.json",
+        "frameAngles": [
+          90,
+          45,
+          0,
+          -45,
+          -90
+        ],
+        "attackClimaxFrame": 4,
+        "offset": {
+          "lowerX": 9,
+          "lowerY": -12,
+          "middleX": 7,
+          "middleY": -23,
+          "upperX": 11,
+          "upperY": -35
+        }
+      },
+      "animationPreview": "runeterra/bandlecity/creatures/masterTrapper/preview.json"
+    },
+    "shots": 12
+  },
+  "lopingTelescope": {
+    "sound": {
+      "attack": "AGRMATTK.wav",
+      "defend": "AGRMDFND.wav",
+      "killed": "AGRMKILL.wav",
+      "move": "AGRMMOVE.wav",
+      "wince": "AGRMWNCE.wav"
+    },
+    "name": {
+      "singular": "Loping Telescope",
+      "plural": "Loping Telescopes"
+    },
+    "description": "Grounded non-shooting animated instrument; non-living stack, tiny living handler cosmetic. One Basic Precision cast per stack per battle spends its action: +3 ranged Attack to an eligible friendly shooter for three rounds. Native mastery, immunity and dispel apply; no teleport.",
+    "faction": "bandlecity",
+    "level": 5,
+    "hitPoints": 55,
+    "attack": 13,
+    "defense": 10,
+    "damage": {
+      "min": 10,
+      "max": 18
+    },
+    "speed": 6,
+    "cost": {
+      "gold": 800
+    },
+    "growth": 3,
+    "horde": 0,
+    "fightValue": 650,
+    "aiValue": 750,
+    "advMapAmount": {
+      "min": 2,
+      "max": 5
+    },
+    "doubleWide": false,
+    "hasDoubleWeek": true,
+    "special": false,
+    "disabled": false,
+    "excludeFromRandomization": false,
+    "abilities": {
+      "spell": {
+        "type": "SPELLCASTER",
+        "subtype": "core:precision",
+        "val": 1
+      },
+      "animatedInstrument": {
+        "type": "NON_LIVING"
+      },
+      "duration": {
+        "type": "CREATURE_ENCHANT_POWER",
+        "val": 3
+      },
+      "casts": {
+        "type": "CASTS",
+        "val": 1
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/bandlecity/creatures/lopingTelescope/battle.json",
+      "map": "runeterra/bandlecity/creatures/lopingTelescope/map.json",
+      "iconLarge": "runeterra/bandlecity/creatures/lopingTelescope/large.png",
+      "iconSmall": "runeterra/bandlecity/creatures/lopingTelescope/small.png",
+      "mapAttackFromLeft": "runeterra/bandlecity/creatures/lopingTelescope/attackLeft.png",
+      "mapAttackFromRight": "runeterra/bandlecity/creatures/lopingTelescope/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1,
+      "animationPreview": "runeterra/bandlecity/creatures/lopingTelescope/preview.json"
+    },
+    "upgrades": [
+      "wayfindingTelescope"
+    ]
+  },
+  "wayfindingTelescope": {
+    "sound": {
+      "attack": "MGRMATTK.wav",
+      "defend": "MGRMDFND.wav",
+      "killed": "MGRMKILL.wav",
+      "move": "MGRMMOVE.wav",
+      "wince": "MGRMWNCE.wav"
+    },
+    "name": {
+      "singular": "Wayfinding Telescope",
+      "plural": "Wayfinding Telescopes"
+    },
+    "description": "Grounded non-shooting animated instrument; non-living stack, tiny living handler cosmetic. One Advanced Precision cast per stack per battle spends its action: +6 ranged Attack to an eligible friendly shooter for three rounds. Magic Plains can raise mastery to Expert mass Precision; no teleport.",
+    "faction": "bandlecity",
+    "level": 5,
+    "hitPoints": 65,
+    "attack": 15,
+    "defense": 12,
+    "damage": {
+      "min": 12,
+      "max": 22
+    },
+    "speed": 6,
+    "cost": {
+      "gold": 1080
+    },
+    "growth": 3,
+    "horde": 0,
+    "fightValue": 900,
+    "aiValue": 1050,
+    "advMapAmount": {
+      "min": 2,
+      "max": 5
+    },
+    "doubleWide": false,
+    "hasDoubleWeek": true,
+    "special": false,
+    "disabled": false,
+    "excludeFromRandomization": false,
+    "abilities": {
+      "spell": {
+        "type": "SPELLCASTER",
+        "subtype": "core:precision",
+        "val": 2
+      },
+      "animatedInstrument": {
+        "type": "NON_LIVING"
+      },
+      "duration": {
+        "type": "CREATURE_ENCHANT_POWER",
+        "val": 3
+      },
+      "casts": {
+        "type": "CASTS",
+        "val": 1
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/bandlecity/creatures/wayfindingTelescope/battle.json",
+      "map": "runeterra/bandlecity/creatures/wayfindingTelescope/map.json",
+      "iconLarge": "runeterra/bandlecity/creatures/wayfindingTelescope/large.png",
+      "iconSmall": "runeterra/bandlecity/creatures/wayfindingTelescope/small.png",
+      "mapAttackFromLeft": "runeterra/bandlecity/creatures/wayfindingTelescope/attackLeft.png",
+      "mapAttackFromRight": "runeterra/bandlecity/creatures/wayfindingTelescope/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1,
+      "animationPreview": "runeterra/bandlecity/creatures/wayfindingTelescope/preview.json"
+    }
+  },
+  "bandleGunner": {
+    "sound": {
+      "attack": "AGRMATTK.wav",
+      "defend": "AGRMDFND.wav",
+      "killed": "AGRMKILL.wav",
+      "move": "AGRMMOVE.wav",
+      "wince": "AGRMWNCE.wav",
+      "shoot": "AGRMSHOT.wav"
+    },
+    "name": {
+      "singular": "Bandle Gunner",
+      "plural": "Bandle Gunners"
+    },
+    "description": "Grounded finite ordinary physical cannon shooter with 6/8 shots and normal blocking, distance, wall and melee penalties.",
+    "faction": "bandlecity",
+    "level": 6,
+    "hitPoints": 70,
+    "attack": 14,
+    "defense": 14,
+    "damage": {
+      "min": 12,
+      "max": 18
+    },
+    "speed": 4,
+    "cost": {
+      "gold": 1400
+    },
+    "growth": 2,
+    "horde": 0,
+    "fightValue": 966,
+    "aiValue": 1045,
+    "advMapAmount": {
+      "min": 2,
+      "max": 4
+    },
+    "doubleWide": false,
+    "hasDoubleWeek": true,
+    "special": false,
+    "disabled": false,
+    "excludeFromRandomization": false,
+    "abilities": {
+      "shooter": {
+        "type": "SHOOTER"
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/bandlecity/creatures/bandleGunner/battle.json",
+      "map": "runeterra/bandlecity/creatures/bandleGunner/map.json",
+      "iconLarge": "runeterra/bandlecity/creatures/bandleGunner/large.png",
+      "iconSmall": "runeterra/bandlecity/creatures/bandleGunner/small.png",
+      "mapAttackFromLeft": "runeterra/bandlecity/creatures/bandleGunner/attackLeft.png",
+      "mapAttackFromRight": "runeterra/bandlecity/creatures/bandleGunner/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1,
+      "missile": {
+        "projectile": "runeterra/bandlecity/projectiles/bandleGunner.json",
+        "frameAngles": [
+          90,
+          45,
+          0,
+          -45,
+          -90
+        ],
+        "attackClimaxFrame": 4,
+        "offset": {
+          "lowerX": 34,
+          "lowerY": -18,
+          "middleX": 29,
+          "middleY": -32,
+          "upperX": 23,
+          "upperY": -46
+        }
+      },
+      "animationPreview": "runeterra/bandlecity/creatures/bandleGunner/preview.json"
+    },
+    "shots": 6,
+    "upgrades": [
+      "bandleBombardier"
+    ]
+  },
+  "bandleBombardier": {
+    "sound": {
+      "attack": "MGRMATTK.wav",
+      "defend": "MGRMDFND.wav",
+      "killed": "MGRMKILL.wav",
+      "move": "MGRMMOVE.wav",
+      "wince": "MGRMWNCE.wav",
+      "shoot": "MGRMSHOT.wav"
+    },
+    "name": {
+      "singular": "Bandle Bombardier",
+      "plural": "Bandle Bombardiers"
+    },
+    "description": "Grounded finite ordinary physical cannon shooter with 6/8 shots and normal blocking, distance, wall and melee penalties.",
+    "faction": "bandlecity",
+    "level": 6,
+    "hitPoints": 85,
+    "attack": 16,
+    "defense": 15,
+    "damage": {
+      "min": 16,
+      "max": 24
+    },
+    "speed": 5,
+    "cost": {
+      "gold": 1895
+    },
+    "growth": 2,
+    "horde": 0,
+    "fightValue": 1406,
+    "aiValue": 1689,
+    "advMapAmount": {
+      "min": 2,
+      "max": 4
+    },
+    "doubleWide": false,
+    "hasDoubleWeek": true,
+    "special": false,
+    "disabled": false,
+    "excludeFromRandomization": false,
+    "abilities": {
+      "shooter": {
+        "type": "SHOOTER"
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/bandlecity/creatures/bandleBombardier/battle.json",
+      "map": "runeterra/bandlecity/creatures/bandleBombardier/map.json",
+      "iconLarge": "runeterra/bandlecity/creatures/bandleBombardier/large.png",
+      "iconSmall": "runeterra/bandlecity/creatures/bandleBombardier/small.png",
+      "mapAttackFromLeft": "runeterra/bandlecity/creatures/bandleBombardier/attackLeft.png",
+      "mapAttackFromRight": "runeterra/bandlecity/creatures/bandleBombardier/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1,
+      "missile": {
+        "projectile": "runeterra/bandlecity/projectiles/bandleBombardier.json",
+        "frameAngles": [
+          90,
+          45,
+          0,
+          -45,
+          -90
+        ],
+        "attackClimaxFrame": 4,
+        "offset": {
+          "lowerX": 29,
+          "lowerY": -28,
+          "middleX": 24,
+          "middleY": -40,
+          "upperX": 21,
+          "upperY": -49
+        }
+      },
+      "animationPreview": "runeterra/bandlecity/creatures/bandleBombardier/preview.json"
+    },
+    "shots": 8
+  },
+  "mirrorMage": {
+    "sound": {
+      "attack": "AGRMATTK.wav",
+      "defend": "AGRMDFND.wav",
+      "killed": "AGRMKILL.wav",
+      "move": "AGRMMOVE.wav",
+      "wince": "AGRMWNCE.wav",
+      "shoot": "AGRMSHOT.wav"
+    },
+    "name": {
+      "singular": "Mirror Mage",
+      "plural": "Mirror Mages"
+    },
+    "description": "Living grounded female yordle with a two-hex mirror apparatus. Eight ordinary physical mirror-bolt shots; normal blocking, distance, wall and half-damage melee penalties. One Basic Clone cast per stack per battle spends its action: eligible friendly tier 1-5 stack, temporary three-round clone. Native mastery can raise the tier limit. No flight or permanent recruits.",
+    "faction": "bandlecity",
+    "level": 7,
+    "hitPoints": 180,
+    "attack": 20,
+    "defense": 18,
+    "damage": {
+      "min": 20,
+      "max": 28
+    },
+    "speed": 5,
+    "cost": {
+      "gold": 3300,
+      "mercury": 1
+    },
+    "growth": 1,
+    "horde": 0,
+    "fightValue": 3600,
+    "aiValue": 4500,
+    "advMapAmount": {
+      "min": 2,
+      "max": 4
+    },
+    "doubleWide": true,
+    "hasDoubleWeek": true,
+    "special": false,
+    "disabled": false,
+    "excludeFromRandomization": false,
+    "abilities": {
+      "shooter": {
+        "type": "SHOOTER"
+      },
+      "spell": {
+        "type": "SPELLCASTER",
+        "subtype": "core:clone",
+        "val": 1
+      },
+      "casts": {
+        "type": "CASTS",
+        "val": 1
+      },
+      "duration": {
+        "type": "CREATURE_ENCHANT_POWER",
+        "val": 3
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/bandlecity/creatures/mirrorMage/battle.json",
+      "map": "runeterra/bandlecity/creatures/mirrorMage/map.json",
+      "iconLarge": "runeterra/bandlecity/creatures/mirrorMage/large.png",
+      "iconSmall": "runeterra/bandlecity/creatures/mirrorMage/small.png",
+      "mapAttackFromLeft": "runeterra/bandlecity/creatures/mirrorMage/attackLeft.png",
+      "mapAttackFromRight": "runeterra/bandlecity/creatures/mirrorMage/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1,
+      "animationPreview": "runeterra/bandlecity/creatures/mirrorMage/preview.json",
+      "missile": {
+        "projectile": "runeterra/bandlecity/projectiles/mirrorMage.json",
+        "frameAngles": [
+          90,
+          45,
+          0,
+          -45,
+          -90
+        ],
+        "attackClimaxFrame": 3,
+        "offset": {
+          "lowerX": 41,
+          "lowerY": -30,
+          "middleX": 37,
+          "middleY": -43,
+          "upperX": 30,
+          "upperY": -60
+        }
+      }
+    },
+    "shots": 8,
+    "upgrades": [
+      "mirrorArchmage"
+    ]
+  },
+  "mirrorArchmage": {
+    "sound": {
+      "attack": "MGRMATTK.wav",
+      "defend": "MGRMDFND.wav",
+      "killed": "MGRMKILL.wav",
+      "move": "MGRMMOVE.wav",
+      "wince": "MGRMWNCE.wav",
+      "shoot": "MGRMSHOT.wav"
+    },
+    "name": {
+      "singular": "Mirror Archmage",
+      "plural": "Mirror Archmages"
+    },
+    "description": "Living grounded female yordle with a two-hex mirror apparatus. Ten ordinary physical mirror-bolt shots; normal blocking, distance, wall and half-damage melee penalties. One Advanced Clone cast per stack per battle spends its action: eligible friendly tier 1-6 stack, temporary three-round clone. Magic Plains can raise mastery to Expert and allow tier 7. No flight or permanent recruits.",
+    "faction": "bandlecity",
+    "level": 7,
+    "hitPoints": 220,
+    "attack": 23,
+    "defense": 20,
+    "damage": {
+      "min": 24,
+      "max": 34
+    },
+    "speed": 6,
+    "cost": {
+      "gold": 4455,
+      "mercury": 2
+    },
+    "growth": 1,
+    "horde": 0,
+    "fightValue": 4500,
+    "aiValue": 6000,
+    "advMapAmount": {
+      "min": 2,
+      "max": 4
+    },
+    "doubleWide": true,
+    "hasDoubleWeek": true,
+    "special": false,
+    "disabled": false,
+    "excludeFromRandomization": false,
+    "abilities": {
+      "shooter": {
+        "type": "SHOOTER"
+      },
+      "spell": {
+        "type": "SPELLCASTER",
+        "subtype": "core:clone",
+        "val": 2
+      },
+      "casts": {
+        "type": "CASTS",
+        "val": 1
+      },
+      "duration": {
+        "type": "CREATURE_ENCHANT_POWER",
+        "val": 3
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/bandlecity/creatures/mirrorArchmage/battle.json",
+      "map": "runeterra/bandlecity/creatures/mirrorArchmage/map.json",
+      "iconLarge": "runeterra/bandlecity/creatures/mirrorArchmage/large.png",
+      "iconSmall": "runeterra/bandlecity/creatures/mirrorArchmage/small.png",
+      "mapAttackFromLeft": "runeterra/bandlecity/creatures/mirrorArchmage/attackLeft.png",
+      "mapAttackFromRight": "runeterra/bandlecity/creatures/mirrorArchmage/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1,
+      "animationPreview": "runeterra/bandlecity/creatures/mirrorArchmage/preview.json",
+      "missile": {
+        "projectile": "runeterra/bandlecity/projectiles/mirrorArchmage.json",
+        "frameAngles": [
+          90,
+          45,
+          0,
+          -45,
+          -90
+        ],
+        "attackClimaxFrame": 3,
+        "offset": {
+          "lowerX": 43,
+          "lowerY": -36,
+          "middleX": 40,
+          "middleY": -50,
+          "upperX": 31,
+          "upperY": -64
+        }
+      }
+    },
+    "shots": 10
+  }
+}

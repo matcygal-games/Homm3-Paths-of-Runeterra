@@ -1,0 +1,910 @@
+{
+  "riftPit": {
+    "name": "Rift Pit", "handler": "configurable",
+    "types": {"riftPit": {
+      "name": "Rift Pit", "aiValue": 45000,
+      "description": "One Rift Herald and three groups of eight Voidgrubs guard a finite expedition cache. Victory awards 32,000 gold, 8 crystal and 5 ore. No artifact, deployable Herald, siege item, wall-damage power or global effect is awarded.",
+      "templates": {"normal": {"animation": "runeterra/world/sites/riftPit/map.json", "mask": ["VVV", "BBB", "BAB"], "visitableFrom": ["---", "---", "-+-"], "allowedTerrains": ["dirt", "rough"]}},
+      "visitMode": "once", "selectMode": "selectFirst", "canRefuse": true, "showScoutedPreview": true, "guardsLayout": "creatureBankWide",
+      "onGuardedMessage": "A Rift Herald and twenty-four Voidgrubs defend the expedition cache. Challenge them or withdraw.",
+      "onVisitedMessage": "The Rift expedition cache has already been recovered.",
+      "rewards": [{"guards": [{"type": "riftHerald", "amount": 1}, {"type": "voidgrub", "amount": 8}, {"type": "voidgrub", "amount": 8}, {"type": "voidgrub", "amount": 8}], "resources": {"gold": 32000, "crystal": 8, "ore": 5}, "message": "You recover 32,000 gold, 8 crystal and 5 ore. No deployable Herald, artifact or global siege effect is granted."}]
+    }}
+  },
+  "nashorPit": {
+    "name": "Nashor Pit", "handler": "configurable",
+    "types": {"nashorPit": {
+      "name": "Nashor Pit", "aiValue": 120000,
+      "description": "One Baron Nashor and three groups of ten Voidgrubs guard a late expedition treasury. Victory awards 100,000 gold, 15 crystal and 12 gems once. No mythic artifact, artifact set, minion empowerment or global Baron buff is awarded.",
+      "templates": {"normal": {"animation": "runeterra/world/sites/nashorPit/map.json", "mask": ["VVV", "BBB", "BAB"], "visitableFrom": ["---", "---", "-+-"], "allowedTerrains": ["rough", "dirt"]}},
+      "visitMode": "once", "selectMode": "selectFirst", "canRefuse": true, "showScoutedPreview": true, "guardsLayout": "creatureBankWide",
+      "onGuardedMessage": "Baron Nashor and thirty Voidgrubs guard the deep treasury. Challenge them or leave the pit alone.",
+      "onVisitedMessage": "The Nashor treasury has already been claimed.",
+      "rewards": [{"guards": [{"type": "baronNashor", "amount": 1}, {"type": "voidgrub", "amount": 10}, {"type": "voidgrub", "amount": 10}, {"type": "voidgrub", "amount": 10}], "resources": {"gold": 100000, "crystal": 15, "gems": 12}, "message": "You recover 100,000 gold, 15 crystal and 12 gems. No mythic item, artifact set or global Baron effect is granted."}]
+    }}
+  },
+  "chemtechDrakeRoost": {
+    "name": "Chemtech Drake Roost", "handler": "configurable",
+    "types": {"chemtechDrakeRoost": {
+      "name": "Chemtech Drake Roost", "aiValue": 20000,
+      "description": "Four Chemtech Drakes guard a lost industrial expedition cache. Defeat two stacks of two for one claim of 19,000 gold, 5 mercury and 5 sulfur. No poison cloud, regeneration or global soul is granted.",
+      "templates": {"normal": {"animation": "runeterra/world/sites/chemtechDrakeRoost/map.json", "mask": ["VVV", "BBB", "BAB"], "visitableFrom": ["---", "---", "-+-"], "allowedTerrains": ["dirt", "swamp"]}},
+      "visitMode": "once", "selectMode": "selectFirst", "canRefuse": true, "showScoutedPreview": true, "guardsLayout": "creatureBankWide",
+      "onGuardedMessage": "Chemtech Drakes defend an expedition cache. Challenge them or leave.",
+      "onVisitedMessage": "The industrial expedition cache has already been recovered.",
+      "rewards": [{"guards": [{"type": "chemtechDrake", "amount": 2}, {"type": "chemtechDrake", "amount": 2}], "resources": {"gold": 19000, "mercury": 5, "sulfur": 5}, "message": "You recover 19,000 gold, 5 mercury and 5 sulfur. No global blessing is granted."}]
+    }}
+  },
+  "hextechDrakeRoost": {
+    "name": "Hextech Drake Roost", "handler": "configurable",
+    "types": {"hextechDrakeRoost": {
+      "name": "Hextech Drake Roost", "aiValue": 19000,
+      "description": "Four Hextech Drakes guard a fallen research expedition's treasury. Defeat two stacks of two for one claim of 18,000 gold and 6 crystal. No lightning, transport power or global soul is granted.",
+      "templates": {"normal": {"animation": "runeterra/world/sites/hextechDrakeRoost/map.json", "mask": ["VVV", "BBB", "BAB"], "visitableFrom": ["---", "---", "-+-"], "allowedTerrains": ["grass", "dirt"]}},
+      "visitMode": "once", "selectMode": "selectFirst", "canRefuse": true, "showScoutedPreview": true, "guardsLayout": "creatureBankWide",
+      "onGuardedMessage": "Hextech Drakes circle the research treasury. Challenge them or withdraw.",
+      "onVisitedMessage": "The research treasury has already been recovered.",
+      "rewards": [{"guards": [{"type": "hextechDrake", "amount": 2}, {"type": "hextechDrake", "amount": 2}], "resources": {"gold": 18000, "crystal": 6}, "message": "You recover 18,000 gold and 6 crystal. No global blessing is granted."}]
+    }}
+  },
+  "elderDragonPit": {
+    "name": "Elder Dragon Pit", "handler": "configurable",
+    "types": {"elderDragonPit": {
+      "name": "Elder Dragon Pit", "aiValue": 100000,
+      "description": "A finite boss expedition guarded by one Elder Dragon and six elemental drakes. Victory awards 70,000 gold, 10 crystal, 10 gems and +3 Attack for the visiting hero's next battle. This hero-only triumph is a project adaptation. No artifact, mythic item, artifact set, global Elder buff or dragon soul is awarded.",
+      "templates": {"normal": {"animation": "runeterra/world/sites/elderDragonPit/map.json", "mask": ["VVV", "BBB", "BAB"], "visitableFrom": ["---", "---", "-+-"], "allowedTerrains": ["rough"]}},
+      "visitMode": "once", "selectMode": "selectFirst", "canRefuse": true, "showScoutedPreview": true, "guardsLayout": "creatureBankWide",
+      "onGuardedMessage": "One Elder Dragon and six elemental guardians defend a treasury. Challenge them or leave. The finite reward includes resources and a next-battle Attack bonus for this hero; no artifact or global buff is offered.",
+      "onVisitedMessage": "This Elder treasury and triumph have already been claimed.",
+      "rewards": [{"guards": [{"type": "elderDragon", "amount": 1}, {"type": "mountainDrake", "amount": 2}, {"type": "oceanDrake", "amount": 2}, {"type": "cloudDrake", "amount": 2}], "resources": {"gold": 70000, "crystal": 10, "gems": 10}, "bonuses": [{"type": "PRIMARY_SKILL", "subtype": "attack", "val": 3, "valueType": "BASE_NUMBER", "duration": "ONE_BATTLE", "stacking": "elderPitTriumph", "description": "Elder Pit triumph: +3 Attack for the next battle"}], "message": "You recover 70,000 gold, 10 crystal and 10 gems. This hero gains +3 Attack for the next battle. No artifact, global buff or dragon soul is granted."}]
+    }}
+  },
+  "oceanDrakeRoost": {
+    "name": "Ocean Drake Roost", "handler": "configurable",
+    "types": {"oceanDrakeRoost": {
+      "name": "Ocean Drake Roost", "aiValue": 17000,
+      "description": "Four Ocean Drakes guard a lost coastal expedition treasury. Defeat two stacks of two for one claim of 16,000 gold, 4 gems and 4 crystal. This land-accessible roost grants no soul, healing or global regeneration.",
+      "templates": {"normal": {"animation": "runeterra/world/sites/oceanDrakeRoost/map.json", "mask": ["VVV", "BBB", "BAB"], "visitableFrom": ["---", "---", "-+-"], "allowedTerrains": ["grass", "dirt"]}},
+      "visitMode": "once", "selectMode": "selectFirst", "canRefuse": true, "showScoutedPreview": true, "guardsLayout": "creatureBankWide",
+      "onGuardedMessage": "Ocean Drakes guard the rocky expedition cache. Challenge them or leave the roost alone.",
+      "onVisitedMessage": "The coastal expedition treasury has already been recovered.",
+      "rewards": [{"guards": [{"type": "oceanDrake", "amount": 2}, {"type": "oceanDrake", "amount": 2}], "resources": {"gold": 16000, "gems": 4, "crystal": 4}, "message": "You recover 16,000 gold, 4 gems and 4 crystal from the roost's lost treasury. No healing or global blessing is granted."}]
+    }}
+  },
+  "cloudDrakeRoost": {
+    "name": "Cloud Drake Roost", "handler": "configurable",
+    "types": {"cloudDrakeRoost": {
+      "name": "Cloud Drake Roost", "aiValue": 15000,
+      "description": "Four swift Cloud Drakes defend a fallen ridge expedition's supplies. Defeat two stacks of two for one claim of 14,000 gold, 4 wood and 4 gems. No haste aura, weather change, travel power or global soul is granted.",
+      "templates": {"normal": {"animation": "runeterra/world/sites/cloudDrakeRoost/map.json", "mask": ["VVV", "BBB", "BAB"], "visitableFrom": ["---", "---", "-+-"], "allowedTerrains": ["grass", "rough"]}},
+      "visitMode": "once", "selectMode": "selectFirst", "canRefuse": true, "showScoutedPreview": true, "guardsLayout": "creatureBankWide",
+      "onGuardedMessage": "Cloud Drakes wheel above the ridge treasury. Challenge them or withdraw.",
+      "onVisitedMessage": "The ridge expedition supplies have already been recovered.",
+      "rewards": [{"guards": [{"type": "cloudDrake", "amount": 2}, {"type": "cloudDrake", "amount": 2}], "resources": {"gold": 14000, "wood": 4, "gems": 4}, "message": "The abandoned supplies yield 14,000 gold, 4 wood and 4 gems. No haste or global blessing is granted."}]
+    }}
+  },
+  "mountainDrakeRoost": {
+    "name": "Mountain Drake Roost",
+    "handler": "configurable",
+    "types": {
+      "mountainDrakeRoost": {
+        "name": "Mountain Drake Roost",
+        "description": "Four Mountain Drakes guard a fallen expedition's treasury. Defeat two stacks of two to recover 18,000 gold, 6 ore and 5 crystal. A finite local encounter, with no elemental soul or global combat buff.",
+        "aiValue": 20000,
+        "templates": {"normal": {"animation": "runeterra/world/sites/mountainDrakeRoost/map.json", "mask": ["VVV", "BBB", "BAB"], "visitableFrom": ["---", "---", "-+-"], "allowedTerrains": ["rough"]}},
+        "visitMode": "once",
+        "selectMode": "selectFirst",
+        "canRefuse": true,
+        "showScoutedPreview": true,
+        "guardsLayout": "creatureBankWide",
+        "onGuardedMessage": "Mountain Drakes circle a rocky roost above an expedition treasury. Challenge them or leave.",
+        "onVisitedMessage": "The fallen expedition's treasury has already been recovered.",
+        "rewards": [{"guards": [{"type": "mountainDrake", "amount": 2}, {"type": "mountainDrake", "amount": 2}], "resources": {"gold": 18000, "ore": 6, "crystal": 5}, "message": "The roost yields 18,000 gold, 6 ore and 5 crystal. No global drake blessing is granted."}]
+      }
+    }
+  },
+  "petricitePillar": {
+    "name": "Petricite Pillar",
+    "handler": "configurable",
+    "types": {
+      "petricitePillar": {
+        "name": "Petricite Pillar",
+        "aiValue": 1000,
+        "description": "A local Demacian waystone records practical lessons from an old expedition. Study it once per hero to gain 1,000 experience. The carved petricite grants no magic immunity or hidden spell resistance.",
+        "templates": {"normal": {"animation": "runeterra/world/sites/petricitePillar/map.json", "mask": ["VVV", "VBV", "BAB"], "visitableFrom": ["---", "---", "-+-"], "allowedTerrains": ["grass", "dirt"]}},
+        "visitMode": "hero",
+        "selectMode": "selectFirst",
+        "canRefuse": false,
+        "onVisitedMessage": "This hero has already studied the waystone's expedition lessons.",
+        "rewards": [{"heroExperience": 1000, "message": "The expedition inscriptions teach this hero useful fieldcraft: 1,000 experience."}]
+      }
+    }
+  },
+  "targonianFoothills": {
+    "name": "Targon Mount Foothills",
+    "handler": "configurable",
+    "types": {
+      "targonianFoothills": {
+        "name": "Targon Mount Foothills",
+        "aiValue": 1500,
+        "description": "A local foothill practice post teaches careful footing and defensive discipline. Each hero gains one permanent Defense point here once; it is no ascent to Targon's summit or divine transformation.",
+        "templates": {"normal": {"animation": "runeterra/world/sites/targonianFoothills/map.json", "mask": ["VVV", "VBV", "BAB"], "visitableFrom": ["---", "---", "-+-"], "allowedTerrains": ["rough", "snow"]}},
+        "visitMode": "hero",
+        "selectMode": "selectFirst",
+        "canRefuse": false,
+        "onVisitedMessage": "This hero has already completed this foothill practice.",
+        "rewards": [{"primary": {"defence": 1}, "message": "Foothill practice strengthens this hero's defensive discipline: +1 Defense."}]
+      }
+    }
+  },
+  "voidBurrow": {
+    "name": "Void Burrow",
+    "handler": "configurable",
+    "types": {
+      "voidBurrow": {
+        "name": "Void Burrow",
+        "description": "Eighteen Voidgrubs shelter around a buried expedition cache. Defeat three stacks of six to recover 2,500 gold and 2 crystal. This is a finite local encounter; it grants no global siege effect or summons.",
+        "aiValue": 3000,
+        "templates": {
+          "normal": {
+            "animation": "runeterra/world/sites/voidBurrow/map.json",
+            "mask": ["VVV", "BBB", "BAB"],
+            "visitableFrom": ["---", "---", "-+-"],
+            "allowedTerrains": ["rough", "dirt"]
+          }
+        },
+        "visitMode": "once",
+        "selectMode": "selectFirst",
+        "canRefuse": true,
+        "showScoutedPreview": true,
+        "guardsLayout": "creatureBankWide",
+        "onGuardedMessage": "Voidgrubs emerge around a buried cache. Challenge them or leave the burrow undisturbed.",
+        "onVisitedMessage": "The expedition cache has already been recovered.",
+        "rewards": [
+          {
+            "guards": [
+              {"type": "voidgrub", "amount": 6},
+              {"type": "voidgrub", "amount": 6},
+              {"type": "voidgrub", "amount": 6}
+            ],
+            "resources": {"gold": 2500, "crystal": 2},
+            "message": "With the burrow cleared, you recover 2,500 gold and 2 crystal from the expedition cache."
+          }
+        ]
+      }
+    }
+  },
+  "runeterraScenery": {
+    "name": "Runeterra regional terrain dressing",
+    "handler": "static",
+    "types": {
+      "frostpineTrail": {
+        "name": "Frostpine Trail",
+        "templates": {
+          "normal": {
+            "animation": "runeterra/world/scenery/frostpineTrail/map.json",
+            "mask": [
+              "VVV",
+              "VBV",
+              "VBV"
+            ],
+            "allowedTerrains": [
+              "snow"
+            ]
+          }
+        }
+      },
+      "zaunSumpVent": {
+        "name": "Zaun Sump Vent",
+        "templates": {
+          "normal": {
+            "animation": "runeterra/world/scenery/zaunSumpVent/map.json",
+            "mask": [
+              "VVV",
+              "VBV",
+              "VBV"
+            ],
+            "allowedTerrains": [
+              "dirt"
+            ]
+          }
+        }
+      },
+      "ixtaliAxiomMarker": {
+        "name": "Ixtali Axiom Marker",
+        "templates": {
+          "normal": {
+            "animation": "runeterra/world/scenery/ixtaliAxiomMarker/map.json",
+            "mask": [
+              "VVV",
+              "VBV",
+              "VBV"
+            ],
+            "allowedTerrains": [
+              "grass"
+            ]
+          }
+        }
+      },
+      "mistboundDeadwood": {
+        "name": "Mistbound Deadwood",
+        "templates": {
+          "normal": {
+            "animation": "runeterra/world/scenery/mistboundDeadwood/map.json",
+            "mask": [
+              "VVV",
+              "VBV",
+              "VBV"
+            ],
+            "allowedTerrains": [
+              "swamp",
+              "dirt"
+            ]
+          }
+        }
+      },
+      "targonianStarwayCairn": {
+        "name": "Targonian Starway Cairn",
+        "description": "A local pilgrim trail marker below Targon, carved from mountain stone and marked with a regional emblem. Static scenery; it grants no movement, reward or celestial power.",
+        "templates": {
+          "normal": {
+            "animation": "runeterra/world/scenery/targonianStarwayCairn/map.json",
+            "mask": [
+              "VVV",
+              "VBV",
+              "VBV"
+            ],
+            "allowedTerrains": [
+              "rough",
+              "snow"
+            ]
+          }
+        }
+      },
+      "voidscarOutcrop": {
+        "name": "Voidscar Outcrop",
+        "description": "A small dormant Void-touched outcrop, its narrow scar clogged with dark organic crust. Static scenery; it has no visit, damage, teleport, growth or spawning effect.",
+        "templates": {
+          "normal": {
+            "animation": "runeterra/world/scenery/voidscarOutcrop/map.json",
+            "mask": [
+              "VVV",
+              "VBV",
+              "VBV"
+            ],
+            "allowedTerrains": [
+              "rough",
+              "dirt"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "freljordRimefangHollow": {
+    "name": "Rimefang Hollow",
+    "handler": "configurable",
+    "types": {
+      "freljordRimefangHollow": {
+        "name": "Rimefang Hollow",
+        "aiValue": 3600,
+        "templates": {
+          "normal": {
+            "animation": "runeterra/world/sites/freljordRimefangHollow/map.json",
+            "mask": [
+              "VVV",
+              "BBV",
+              "BAV"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ],
+            "allowedTerrains": [
+              "snow"
+            ]
+          }
+        },
+        "description": "A northern wolf den shelters a lost supply cache. Defeat 24 Rimefang Wolves in three stacks to recover 3,000 gold and 8 wood. The cache can be claimed once.",
+        "visitMode": "once",
+        "selectMode": "selectFirst",
+        "canRefuse": true,
+        "showScoutedPreview": true,
+        "guardsLayout": "creatureBankWide",
+        "onGuardedMessage": "Rimefang wolves shelter around a lost supply cache. Choose whether to challenge them.",
+        "onVisitedMessage": "The lost supplies have already been recovered.",
+        "rewards": [
+          {
+            "guards": [
+              {
+                "type": "rimefangWolf",
+                "amount": 8
+              },
+              {
+                "type": "rimefangWolf",
+                "amount": 8
+              },
+              {
+                "type": "rimefangWolf",
+                "amount": 8
+              }
+            ],
+            "resources": {
+              "gold": 3000,
+              "wood": 8
+            },
+            "message": "The hollow falls quiet. Among the abandoned supplies you recover 3,000 gold and 8 wood."
+          }
+        ]
+      }
+    }
+  },
+  "shurimanRockbearDen": {
+    "name": "Rockbear Refuge",
+    "handler": "configurable",
+    "types": {
+      "shurimanRockbearDen": {
+        "name": "Rockbear Refuge",
+        "aiValue": 5000,
+        "templates": {
+          "normal": {
+            "animation": "runeterra/world/sites/shurimanRockbearDen/map.json",
+            "mask": [
+              "VVV",
+              "BBV",
+              "BAV"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ],
+            "allowedTerrains": [
+              "sand",
+              "rough"
+            ]
+          }
+        },
+        "description": "Seven Rockbears shelter around a buried caravan load. Defeat their three stacks to recover 3,500 gold, 5 ore and 2 gems. The load can be claimed once.",
+        "visitMode": "once",
+        "selectMode": "selectFirst",
+        "canRefuse": true,
+        "showScoutedPreview": true,
+        "guardsLayout": "creatureBankWide",
+        "onGuardedMessage": "Large rockbears rest in the shade around a buried caravan load. A frontal challenge may be costly. Will you fight?",
+        "onVisitedMessage": "The caravan load is gone; the refuge offers no second reward.",
+        "rewards": [
+          {
+            "guards": [
+              {
+                "type": "rockbear",
+                "amount": 3
+              },
+              {
+                "type": "rockbear",
+                "amount": 2
+              },
+              {
+                "type": "rockbear",
+                "amount": 2
+              }
+            ],
+            "resources": {
+              "gold": 3500,
+              "ore": 5,
+              "gems": 2
+            },
+            "message": "Beneath the drifting sand, the caravan's broken chests hold 3,500 gold, 5 ore and 2 gems."
+          }
+        ]
+      }
+    }
+  },
+  "noxianBasiliskRavine": {
+    "name": "Basilisk Ravine",
+    "handler": "configurable",
+    "types": {
+      "noxianBasiliskRavine": {
+        "name": "Basilisk Ravine",
+        "aiValue": 6500,
+        "templates": {
+          "normal": {
+            "animation": "runeterra/world/sites/noxianBasiliskRavine/map.json",
+            "mask": [
+              "VVV",
+              "BBV",
+              "BAV"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ],
+            "allowedTerrains": [
+              "rough",
+              "dirt"
+            ]
+          }
+        },
+        "description": "Four riderless basilisks prowl a ruined military depot in two stacks. Defeat them to recover 4,500 gold, 8 ore and 2 crystal. Its stores can be claimed once.",
+        "visitMode": "once",
+        "selectMode": "selectFirst",
+        "canRefuse": true,
+        "showScoutedPreview": true,
+        "guardsLayout": "creatureBankWide",
+        "onGuardedMessage": "Four powerful basilisks prowl the ravine. Will you attempt to recover the depot's supplies?",
+        "onVisitedMessage": "The ruined depot has already been cleared.",
+        "rewards": [
+          {
+            "guards": [
+              {
+                "type": "wildBasilisk",
+                "amount": 2
+              },
+              {
+                "type": "wildBasilisk",
+                "amount": 2
+              }
+            ],
+            "resources": {
+              "gold": 4500,
+              "ore": 8,
+              "crystal": 2
+            },
+            "message": "Beyond the scattered claws and broken banners, the depot yields 4,500 gold, 8 ore and 2 crystal. Its stores are now exhausted."
+          }
+        ]
+      }
+    }
+  },
+  "ionianSpiritWillow": {
+    "name": "Ionian Spirit Willow",
+    "handler": "configurable",
+    "types": {
+      "ionianSpiritWillow": {
+        "name": "Ionian Spirit Willow",
+        "aiValue": 400,
+        "templates": {
+          "normal": {
+            "animation": "runeterra/world/sites/ionianSpiritWillow/map.json",
+            "mask": [
+              "VVV",
+              "BBV",
+              "BAV"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ],
+            "allowedTerrains": [
+              "grass",
+              "dirt"
+            ]
+          }
+        },
+        "description": "A quiet Ionian remembrance grove. Its first eligible visitor each week restores up to 20 missing mana. A hero with full mana leaves the week's guidance available to another traveler.",
+        "visitMode": "once",
+        "selectMode": "selectFirst",
+        "canRefuse": false,
+        "resetParameters": {
+          "weeks": 1,
+          "visitors": true
+        },
+        "onEmptyMessage": "Your spirit is already rested. Leave the grove's weekly guidance for another traveler.",
+        "onVisitedMessage": "The grove's custodians have completed their guidance for this week.",
+        "rewards": [
+          {
+            "limiter": {
+              "noneOf": [
+                {
+                  "manaPercentage": 100
+                }
+              ]
+            },
+            "manaPoints": 20,
+            "manaOverflowFactor": 0,
+            "message": "Lanterns sway beneath the willow. In quiet remembrance, you restore up to 20 missing mana. The ancestors' stories linger as you depart."
+          }
+        ]
+      }
+    }
+  },
+  "bandlePortalGrove": {
+    "name": "Bandle Portal Grove",
+    "handler": "configurable",
+    "types": {
+      "bandlePortalGrove": {
+        "name": "Bandle Portal Grove",
+        "aiValue": 500,
+        "templates": {
+          "normal": {
+            "animation": "runeterra/world/sites/bandlePortalGrove/map.json",
+            "mask": [
+              "VVV",
+              "BBV",
+              "BAV"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ],
+            "allowedTerrains": [
+              "grass"
+            ]
+          }
+        },
+        "description": "A glade beside Bandle's hidden paths. Its winding trail grants +1 Luck for the next battle. You may return for another favor after that battle. This wayside grove does not transport your army.",
+        "visitMode": "bonus",
+        "selectMode": "selectFirst",
+        "canRefuse": false,
+        "onVisitedMessage": "The glade's small favor still accompanies you until your next battle.",
+        "rewards": [
+          {
+            "bonuses": [
+              {
+                "type": "LUCK",
+                "val": 1,
+                "duration": "ONE_BATTLE",
+                "description": "Bandle glade favor"
+              }
+            ],
+            "message": "You return from a winding path with an unlikely sense of good fortune: +1 Luck for your next battle."
+          }
+        ]
+      }
+    }
+  },
+  "shurimanCaravanserai": {
+    "name": "Shuriman Caravanserai",
+    "handler": "configurable",
+    "types": {
+      "shurimanCaravanserai": {
+        "name": "Shuriman Caravanserai",
+        "aiValue": 750,
+        "templates": {
+          "normal": {
+            "animation": "runeterra/world/sites/shurimanCaravanserai/map.json",
+            "mask": [
+              "VVV",
+              "BBV",
+              "BAV"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ],
+            "allowedTerrains": [
+              "sand",
+              "dirt",
+              "rough"
+            ]
+          }
+        },
+        "description": "A merchant rest stop on a Shuriman caravan road. The first visitor each week receives 750 gold from a local escort contract. One payment is available per site each week.",
+        "visitMode": "once",
+        "selectMode": "selectFirst",
+        "canRefuse": false,
+        "resetParameters": {
+          "weeks": 1,
+          "visitors": true
+        },
+        "onVisitedMessage": "This week's caravan escort contract has already been paid.",
+        "rewards": [
+          {
+            "resources": {
+              "gold": 750
+            },
+            "message": "The caravan completes a short protected leg of its journey. The merchants pay 750 gold; their next contract will be available next week."
+          }
+        ]
+      }
+    }
+  },
+  "bilgewaterSmugglersCove": {
+    "name": "Bilgewater Smuggler's Cove",
+    "handler": "configurable",
+    "types": {
+      "bilgewaterSmugglersCove": {
+        "name": "Bilgewater Smuggler's Cove",
+        "aiValue": 1000,
+        "templates": {
+          "normal": {
+            "animation": "runeterra/world/sites/bilgewaterSmugglersCove/map.json",
+            "mask": [
+              "VVV",
+              "BBV",
+              "BAV"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ],
+            "allowedTerrains": [
+              "sand",
+              "dirt",
+              "grass"
+            ]
+          }
+        },
+        "description": "A land-accessible Bilgewater waterfront depot. The first visitor each week receives 1,000 gold from a cargo deal. One payment is available per site each week; approach along the shore path.",
+        "visitMode": "once",
+        "selectMode": "selectFirst",
+        "canRefuse": false,
+        "resetParameters": {
+          "weeks": 1,
+          "visitors": true
+        },
+        "onVisitedMessage": "The cargo has been sold. Another shipment is expected next week.",
+        "rewards": [
+          {
+            "resources": {
+              "gold": 1000
+            },
+            "message": "A discreet cargo delivery closes at the shore depot. Your share is 1,000 gold. No further cargo is available this week."
+          }
+        ]
+      }
+    }
+  },
+  "demacianBannerCourt": {
+    "name": "Demacian Banner Court",
+    "handler": "configurable",
+    "types": {
+      "demacianBannerCourt": {
+        "name": "Demacian Banner Court",
+        "aiValue": 1500,
+        "templates": {
+          "normal": {
+            "animation": "runeterra/world/sites/demacianBannerCourt/map.json",
+            "mask": [
+              "VVV",
+              "VBV",
+              "BAB"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "-+-"
+            ],
+            "allowedTerrains": [
+              "grass",
+              "dirt"
+            ]
+          }
+        },
+        "description": "The first visit by each hero grants +1 Morale for the next battle. One muster per hero at this court; returning after battle grants nothing.",
+        "visitMode": "hero",
+        "selectMode": "selectFirst",
+        "canRefuse": false,
+        "onVisitedMessage": "This hero has already completed the site's one permitted visit.",
+        "rewards": [
+          {
+            "bonuses": [
+              {
+                "type": "MORALE",
+                "val": 1,
+                "duration": "ONE_BATTLE",
+                "description": "Demacian court muster"
+              }
+            ],
+            "message": "The first visit by each hero grants +1 Morale for the next battle. One muster per hero at this court; returning after battle grants nothing."
+          }
+        ]
+      }
+    }
+  },
+  "piltoverFieldLecture": {
+    "name": "Piltover Field Lecture",
+    "handler": "configurable",
+    "types": {
+      "piltoverFieldLecture": {
+        "name": "Piltover Field Lecture",
+        "aiValue": 1500,
+        "templates": {
+          "normal": {
+            "animation": "runeterra/world/sites/piltoverFieldLecture/map.json",
+            "mask": [
+              "VVV",
+              "BBV",
+              "BAB"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "-+-"
+            ],
+            "allowedTerrains": [
+              "grass",
+              "dirt"
+            ]
+          }
+        },
+        "description": "The first visit by each hero grants +1 Knowledge. The normal mana limit increases; current mana is not refilled. One lesson per hero at this site.",
+        "visitMode": "hero",
+        "selectMode": "selectFirst",
+        "canRefuse": false,
+        "onVisitedMessage": "This hero has already completed the site's one permitted visit.",
+        "rewards": [
+          {
+            "primary": {
+              "knowledge": 1
+            },
+            "message": "The first visit by each hero grants +1 Knowledge. The normal mana limit increases; current mana is not refilled. One lesson per hero at this site."
+          }
+        ]
+      }
+    }
+  },
+  "freljordReturnedShipHall": {
+    "name": "Returned Ship Hall",
+    "handler": "configurable",
+    "types": {
+      "freljordReturnedShipHall": {
+        "name": "Returned Ship Hall",
+        "aiValue": 750,
+        "templates": {
+          "normal": {
+            "animation": "runeterra/world/sites/freljordReturnedShipHall/map.json",
+            "mask": [
+              "VVV",
+              "VVV",
+              "BAB"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "-+-"
+            ],
+            "allowedTerrains": [
+              "snow"
+            ]
+          }
+        },
+        "description": "The first visit by each hero grants 750 base experience from local training and stories. Native experience modifiers apply. One gathering per hero at this hall.",
+        "visitMode": "hero",
+        "selectMode": "selectFirst",
+        "canRefuse": false,
+        "onVisitedMessage": "This hero has already completed the site's one permitted visit.",
+        "rewards": [
+          {
+            "heroExperience": 750,
+            "message": "The first visit by each hero grants 750 base experience from local training and stories. Native experience modifiers apply. One gathering per hero at this hall."
+          }
+        ]
+      }
+    }
+  },
+  "targonianAscentCamp": {
+    "name": "Targonian Ascent Camp",
+    "handler": "configurable",
+    "types": {
+      "targonianAscentCamp": {
+        "name": "Targonian Ascent Camp",
+        "aiValue": 500,
+        "templates": {
+          "normal": {
+            "animation": "runeterra/world/sites/targonianAscentCamp/map.json",
+            "mask": [
+              "VVV",
+              "BBB",
+              "BAB"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "-+-"
+            ],
+            "allowedTerrains": [
+              "rough",
+              "snow"
+            ]
+          }
+        },
+        "description": "The first visit by each hero grants 500 base experience preparing for an ascent. Native experience modifiers apply. This local camp grants no flight, Ascension or summit access.",
+        "visitMode": "hero",
+        "selectMode": "selectFirst",
+        "canRefuse": false,
+        "onVisitedMessage": "This hero has already completed the site's one permitted visit.",
+        "rewards": [
+          {
+            "heroExperience": 500,
+            "message": "The first visit by each hero grants 500 base experience preparing for an ascent. Native experience modifiers apply. This local camp grants no flight, Ascension or summit access."
+          }
+        ]
+      }
+    }
+  },
+  "ixtaliStoneStudyStation": {
+    "name": "Ixtali Stone Study Station",
+    "handler": "configurable",
+    "types": {
+      "ixtaliStoneStudyStation": {
+        "name": "Ixtali Stone Study Station",
+        "aiValue": 1500,
+        "templates": {
+          "normal": {
+            "animation": "runeterra/world/sites/ixtaliStoneStudyStation/map.json",
+            "mask": [
+              "VVV",
+              "VBV",
+              "BAB"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "-+-"
+            ],
+            "allowedTerrains": [
+              "grass",
+              "dirt"
+            ]
+          }
+        },
+        "description": "The first visit by each hero grants +1 Defense through practical field study. One lesson per hero at this station. It grants no spell immunity or terrain shaping.",
+        "visitMode": "hero",
+        "selectMode": "selectFirst",
+        "canRefuse": false,
+        "onVisitedMessage": "This hero has already completed the site's one permitted visit.",
+        "rewards": [
+          {
+            "primary": {
+              "defence": 1
+            },
+            "message": "The first visit by each hero grants +1 Defense through practical field study. One lesson per hero at this station. It grants no spell immunity or terrain shaping."
+          }
+        ]
+      }
+    }
+  },
+  "piltoverHexPressRefinery": {
+    "name": "Piltover Hex-Press Refinery",
+    "handler": "configurable",
+    "types": {
+      "piltoverHexPressRefinery": {
+        "name": "Piltover Hex-Press Refinery",
+        "aiValue": 1000,
+        "templates": {
+          "normal": {
+            "animation": "runeterra/world/sites/piltoverHexPressRefinery/map.json",
+            "mask": [
+              "VVV",
+              "VBB",
+              "BAB"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "-+-"
+            ],
+            "allowedTerrains": [
+              "dirt",
+              "grass"
+            ]
+          }
+        },
+        "description": "The first visitor each week collects 2 crystal from a local Piltover precision workshop. One global payment per site per native week. Gold and native resource names are unchanged.",
+        "visitMode": "once",
+        "selectMode": "selectFirst",
+        "canRefuse": false,
+        "onVisitedMessage": "This week's crystal shipment has already been collected.",
+        "rewards": [
+          {
+            "resources": {
+              "crystal": 2
+            },
+            "message": "The first visitor each week collects 2 crystal from a local Piltover precision workshop. One global payment per site per native week. Gold and native resource names are unchanged."
+          }
+        ],
+        "resetParameters": {
+          "weeks": 1,
+          "visitors": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "wildMagicLines": {
+    "name": "Wild Magic Lines: full daily mana recovery; all creature Attack -2",
+    "graphics": "CMBKMAG.BMP",
+    "bonuses": [
+      {"type": "MANA_PERCENTAGE_REGENERATION", "val": 100},
+      {"type": "PRIMARY_SKILL", "subtype": "attack", "val": -2, "limiters": ["CREATURES_ONLY"]}
+    ]
+  },
+  "blackMistHollow": {
+    "name": "Black Mist Hollow: living creature Morale -1",
+    "graphics": "CMBKSWMP.BMP",
+    "bonuses": [
+      {"type": "MORALE", "val": -1, "limiters": ["noneOf", "IS_UNDEAD"]}
+    ]
+  }
+}
