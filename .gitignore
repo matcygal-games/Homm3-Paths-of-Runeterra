@@ -1,0 +1,63 @@
+# Local tools, authoring materials, build output and user settings.
+# Public component data lives in content/ and assets/source/.
+
+# Local tool installations and engine checkouts
+.tools/
+runeterra-*/.tools/
+/tools/
+/vcmi-develop/
+/homm3-runterra-main/
+
+# Python environment and caches
+runeterra-*/.venv/
+__pycache__/
+*.pyc
+
+# Compiled assets and build output
+runeterra-*/build/
+runeterra-*/dist/
+runeterra-*/assets/compiled/
+runeterra-*/engine-patches/**/b/
+# Reconstructed engine checkouts; publish the pinned patch sources instead.
+/runeterra-bandlecity/engine-patches/*/src/
+/runeterra-bandlecity/engine-patches/*/src-reproduced-*/
+**/CMakeFiles/
+*.obj
+*.pdb
+*.lib
+
+# Original/external references and captures are private read-only inputs.
+# Redistributable research summaries belong in the owning design/docs tree.
+runeterra-*/references/
+
+# Machine-local configuration
+runeterra-*/local-paths.json
+
+# Local development records and generated workspace output.
+/matt_dev/
+/reports/
+/towns_finished/
+/runeterra-expansion/
+/build/
+/dist/
+/runeterra-bandlecity/engine-patches/creature-previews/*/
+/PLAY_*.cmd
+/paths-of-runeterra/scenario-receipt.json
+
+# Machine-specific paths, user data and private game files
+.env
+.env.*
+!.env.example
+**/local-paths.json
+**/saves/
+**/logs/
+**/config/dirs.json
+*.lod
+*.snd
+*.vid
+
+# Local IDE and operating system state
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini

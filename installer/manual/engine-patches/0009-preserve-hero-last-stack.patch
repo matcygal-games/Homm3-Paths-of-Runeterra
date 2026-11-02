@@ -1,0 +1,84 @@
+--- a/AI/Nullkiller2/AIGateway.cpp
++++ b/AI/Nullkiller2/AIGateway.cpp
+@@ -40,6 +40,7 @@
+ #include "../../lib/CPlayerState.h"
+ 
+ #include "AIGateway.h"
++#include "ArmyTransfer.h"
+ #include "Goals/Goals.h"
+ 
+ namespace NK2AI
+@@ -968,7 +969,7 @@
+ 		// move first stack at first slot if empty to avoid can not take away last creature
+ 		if(!army->hasStackAtSlot(SlotID(0)) && army->stacksCount() > 0)
+ 		{
+-			cc->mergeOrSwapStacks(
++			detail::mergeOrSwapPreservingLast(*cc,
+ 				army,
+ 				army,
+ 				SlotID(0),
+@@ -989,7 +990,7 @@
+ 				if(targetSlot.validSlot())
+ 				{
+ 					// remove unwanted creatures
+-					cc->mergeOrSwapStacks(destinationArmy, source, i, targetSlot);
++					detail::mergeOrSwapPreservingLast(*cc,destinationArmy, source, i, targetSlot);
+ 				}
+ 				else if(destinationArmy->getStack(i).estimateCombatValue() < destinationArmy->estimateCombatValue() / 100)
+ 				{
+@@ -1035,16 +1036,15 @@
+ 						else
+ 						{
+ 							// Source last stack is not weakest. Move 1 of weakest creature from destination to source
+-							cc->splitStack(
++							detail::giveOnePreservingLast(*cc,
+ 								destinationArmy,
+ 								source,
+ 								destinationArmy->getSlotFor(weakest->creature),
+-								source->getFreeSlot(),
+-								1);
++								source->getFreeSlot());
+ 						}
+ 					}
+ 
+-					cc->mergeOrSwapStacks(armyPtr, destinationArmy, j, i);
++					detail::mergeOrSwapPreservingLast(*cc,armyPtr, destinationArmy, j, i);
+ 				}
+ 			}
+ 		}
+--- /dev/null
++++ b/AI/Nullkiller2/ArmyTransfer.h
+@@ -0,0 +1,33 @@
++/* Preserve the native nonempty-hero rule when the AI rearranges armies.
++ * GPL-2.0-or-later. This has no saved/network state and uses normal callbacks. */
++#pragma once
++
++namespace NK2AI::detail
++{
++template<class Callback, class Army, class Slot>
++bool mergeOrSwapPreservingLast(Callback & callback, const Army * from, const Army * to, Slot fromSlot, Slot toSlot)
++{
++	if(from != to && from->needsLastStack() && from->stacksCount() == 1
++		&& (!to->hasStackAtSlot(toSlot) || to->getCreature(toSlot) == from->getCreature(fromSlot)))
++	{
++		const auto quantity = from->getStackCount(fromSlot);
++		if(quantity <= 1)
++			return false;
++		callback.splitStack(from, to, fromSlot, toSlot, to->getStackCount(toSlot) + quantity - 1);
++		return true;
++	}
++	callback.mergeOrSwapStacks(from, to, fromSlot, toSlot);
++	return true;
++}
++
++template<class Callback, class Army, class Slot>
++bool giveOnePreservingLast(Callback & callback, const Army * from, const Army * to, Slot fromSlot, Slot toSlot)
++{
++	if(!fromSlot.validSlot() || !toSlot.validSlot() || !from->hasStackAtSlot(fromSlot))
++		return false;
++	if(from != to && from->needsLastStack() && from->stacksCount() == 1 && from->getStackCount(fromSlot) <= 1)
++		return false;
++	callback.splitStack(from, to, fromSlot, toSlot, to->getStackCount(toSlot) + 1);
++	return true;
++}
++}

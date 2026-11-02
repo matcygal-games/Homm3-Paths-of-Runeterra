@@ -2,6 +2,8 @@
 
 Paths of Runeterra brings Runeterra-inspired towns, armies, heroes and adventures to Heroes III, using [VCMI](https://vcmi.eu/). The art direction follows the painted 2D style of the original game.
 
+**Source migration is in progress.** The project files are being reviewed before they are added to this fresh repository. Until migration is complete, this checkout does not contain all faction content or the full build inputs.
+
 **You need your own compatible copy of Heroes of Might and Magic III: Complete.** Game data is not included. The mod is in development, and most available scenarios are playtest maps.
 
 ## Start here

@@ -1,0 +1,860 @@
+--- a/AI/Nullkiller2/Engine/Nullkiller.cpp
++++ b/AI/Nullkiller2/Engine/Nullkiller.cpp
+@@ -27,6 +27,9 @@
+ #include "../Behaviors/RecruitHeroBehavior.h"
+ #include "../Behaviors/StayAtTownBehavior.h"
+ #include "../Goals/Invalid.h"
++#include "../Goals/Composition.h"
++#include "../Goals/ExecuteHeroChain.h"
++#include "../Goals/ExploreNeighbourTile.h"
+ #include "Goals/RecruitHero.h"
+ #include "ResourceTrader.h"
+ 
+@@ -55,6 +58,83 @@
+ }
+ 
+ constexpr size_t MAX_FAILED_PATHS_PER_HERO = 2;
++
++// Only ordinary single-hero land movement may reuse a globally invalidated
++// task snapshot. Exchanges, spells and other semantic actions require a replan.
++bool hasReusableMovementPath(
++	const Nullkiller & ai,
++	const Goals::ITask * task,
++	const CGHeroInstance * & movementHero,
++	bool & foundChain,
++	unsigned depth = 0)
++{
++	if(depth > 8)
++		return false;
++
++	if(const auto * chain = dynamic_cast<const ExecuteHeroChain *>(task))
++	{
++		if(foundChain)
++			return false; // A second cached route would start with different MP/position.
++		const auto & path = chain->getPath();
++		const auto * hero = path.targetHero;
++		if(!hero || path.nodes.empty() || path.exchangeCount != 1
++			|| !HeroPtr(hero, ai.cc.get()).isVerified(false)
++			|| hero->getOwner() != ai.playerID
++			|| (movementHero && movementHero != hero))
++			return false;
++
++		movementHero = hero;
++		const auto livePaths = ai.getPathsInfo(hero);
++		size_t movementTargets = 0;
++		for(const auto & node : path.nodes)
++		{
++			if(node.targetHero != hero || node.layer != EPathfindingLayer::LAND
++				|| node.specialAction || node.actionIsBlocked)
++				return false;
++			if(node.coord == hero->visitablePos())
++				continue;
++			if(++movementTargets > 1)
++				return false; // Multiple legs require sequential position/MP accounting.
++			const auto * live = livePaths->getPathInfo(node.coord);
++			if(!live->reachable() || live->turns > node.turns)
++				return false;
++
++			// A currently reachable target is insufficient if the route now
++			// crosses combat, teleportation, boarding or another blocking visit.
++			for(const auto * step = live; step->theNodeBefore; step = step->theNodeBefore)
++			{
++				if(step->layer != EPathfindingLayer::LAND
++					|| (step->action != EPathNodeAction::NORMAL && step->action != EPathNodeAction::VISIT)
++					|| (step->accessible != EPathAccessibility::ACCESSIBLE
++						&& step->accessible != EPathAccessibility::VISITABLE))
++					return false;
++			}
++		}
++		if(movementTargets != 1)
++			return false;
++		foundChain = true;
++		return true;
++	}
++
++	if(const auto * composition = dynamic_cast<const Composition *>(task))
++	{
++		for(const auto & part : composition->decompose(&ai))
++		{
++			if(part->isElementar()
++				&& !hasReusableMovementPath(ai, part->asTask(), movementHero, foundChain, depth + 1))
++				return false;
++		}
++		return foundChain;
++	}
++
++	// This tail chooses its own immediate target from fresh native paths in
++	// accept(); it does not consume another cached route from the old plan.
++	if(dynamic_cast<const ExploreNeighbourTile *>(task))
++		return foundChain && task->getHero() == movementHero;
++
++	return false;
++}
++
+ }
+ 
+ // while we play vcmieagles graph can be shared
+@@ -615,8 +695,10 @@
+ 	Goals::TGoalVec tasks;
+ 	tracePlayerStatus(true);
+ 	bool resourcesTradedThisTurn = false;
+-
+-	for(int pass = 1; pass <= settings->getMaxPass() && cc->getPlayerStatus(playerID) == EPlayerStatus::INGAME; pass++)
++	int budgetPass = 0;
++	std::optional<PlanningPassBudget> passBudget;
++
++	for(int pass = 1; pass <= settings->getMaxPass() && cc->getPlayerStatus(playerID) == EPlayerStatus::INGAME;)
+ 	{
+ 		if (pathfinderTurnStorageMisses.load() != 0)
+ 		{
+@@ -624,7 +706,9 @@
+ 			pathfinderTurnStorageMisses.store(0);
+ 		}
+ 
+-		if (!updateStateAndExecutePriorityPass(tasks, pass))
++		if(budgetPass == pass)
++			updateState(); // A movement-only refresh must not repeat town priority actions.
++		else if(!updateStateAndExecutePriorityPass(tasks, pass))
+ 			return;
+ 
+ 		reserveRequiredTownDefenders();
+@@ -668,6 +752,12 @@
+ 			return a->priority > b->priority;
+ 		});
+ 
++		if(budgetPass != pass)
++		{
++			passBudget.emplace(selectedTasks.size());
++			budgetPass = pass;
++		}
++		bool repeatCurrentPass = false;
+ 		bool hasAnySuccess = false;
+ 		if(selectedTasks.empty())
+ 		{
+@@ -686,7 +776,7 @@
+ 			}
+ 		}
+ 
+-		for(size_t selectedTaskIndex = 0; selectedTaskIndex < selectedTasks.size(); ++selectedTaskIndex)
++		for(size_t selectedTaskIndex = 0; selectedTaskIndex < selectedTasks.size() && passBudget->canExecuteTask(); ++selectedTaskIndex)
+ 		{
+ 			const auto & selectedTask = selectedTasks[selectedTaskIndex];
+ 
+@@ -747,7 +837,15 @@
+ 			}
+ 			else
+ 			{
+-				if(!executeTask(selectedTask))
++				const auto result = executePlannedTask(selectedTask);
++				if(result == PlannedTaskResult::REPLAN)
++				{
++					repeatCurrentPass = true;
++					hasAnySuccess = true;
++					break;
++				}
++
++				if(result == PlannedTaskResult::FAILED)
+ 				{
+ 					if(!lastTaskFailureHadPath)
+ 						lockTaskHeroes(selectedTask, HeroLockedReason::HERO_CHAIN);
+@@ -770,13 +868,16 @@
+ 
+ 					return;
+ 				}
++				passBudget->noteSuccessfulTask();
+ 				hasAnySuccess = true;
+ 			}
+ 		}
+ 
++		bool resourcesTradedNow = false;
+ 		if(!resourcesTradedThisTurn)
+ 		{
+ 			resourcesTradedThisTurn = ResourceTrader::trade(*buildAnalyzer, *cc, getFreeResources());
++			resourcesTradedNow = resourcesTradedThisTurn;
+ 			hasAnySuccess |= resourcesTradedThisTurn;
+ 		}
+ 
+@@ -794,8 +895,22 @@
+ 		for(const auto * heroInfo : cc->getHeroesInfo())
+ 			AIGateway::pickBestArtifacts(cc, heroInfo);
+ 
++		if(!hasUnspentHeroMovement() && !resourcesTradedNow)
++		{
++			logAi->debug("All wandering heroes are exhausted or deliberately locked. AI turn is complete.");
++			tracePlayerStatus(false);
++			return;
++		}
++
++		if(repeatCurrentPass && passBudget->consumeRefresh(resourcesTradedNow))
++		{
++			logAi->debug("Refreshing stale movement plan inside pass %d with bounded batch credit.", pass);
++			continue;
++		}
++
+ 		if(pass == settings->getMaxPass())
+ 			logAi->warn("MaxPass reached. Terminating AI turn.");
++		++pass;
+ 	}
+ }
+ 
+@@ -910,6 +1025,15 @@
+ 		});
+ }
+ 
++bool Nullkiller::hasUnspentHeroMovement() const
++{
++	return vstd::contains_if(cc->getHeroesInfo(), [this](const CGHeroInstance * hero)
++	{
++		return !hero->isGarrisoned() && !isHeroLocked(hero)
++			&& hero->movementPointsRemaining() > 0;
++	});
++}
++
+ void Nullkiller::resetTaskExecutionContext()
+ {
+ 	activePathHero = nullptr;
+@@ -996,6 +1120,29 @@
+ 		});
+ }
+ 
++PlannedTaskResult Nullkiller::executePlannedTask(const Goals::TTask & task)
++{
++	// TaskPlan only compares affected object IDs. Moving an unrelated hero can
++	// still block this task's route, so the remainder of this snapshot must not
++	// execute after the existing path invalidation callback has fired.
++	if(pathfinderInvalidated)
++	{
++		// Other heroes moving can leave this simple route unaffected. Validate
++		// it against fresh native paths before spending another planning pass.
++		invalidatePaths();
++		const CGHeroInstance * movementHero = nullptr;
++		bool foundChain = false;
++		if(!hasReusableMovementPath(*this, task.get(), movementHero, foundChain))
++		{
++			logAi->debug("Discarding remaining cached task batch after path-changing event. Replanning.");
++			return PlannedTaskResult::REPLAN;
++		}
++		logAi->debug("Revalidated unaffected single-hero land task after path-changing event.");
++	}
++
++	return executeTask(task) ? PlannedTaskResult::SUCCESS : PlannedTaskResult::FAILED;
++}
++
+ bool Nullkiller::executeTask(const Goals::TTask & task)
+ {
+ 	auto start = std::chrono::high_resolution_clock::now();
+--- a/AI/Nullkiller2/Engine/Nullkiller.h
++++ b/AI/Nullkiller2/Engine/Nullkiller.h
+@@ -77,6 +77,38 @@
+ };
+ 
+ TaskFailureAction chooseTaskFailureAction(bool hasAnySuccess, bool hasRemainingTasks, bool canReplan);
++
++/// A cached task batch is invalid after hero movement or another path-changing event.
++enum class PlannedTaskResult
++{
++	SUCCESS,
++	FAILED,
++	REPLAN
++};
++
++/// Refreshing a stale snapshot must not consume the original batch's action allowance.
++/// Both successful tasks and refresh attempts remain bounded by that batch size.
++class PlanningPassBudget
++{
++	size_t tasksRemaining;
++	size_t refreshesRemaining;
++public:
++	explicit PlanningPassBudget(size_t initialTasks)
++		: tasksRemaining(initialTasks), refreshesRemaining(initialTasks) {}
++	bool canExecuteTask() const { return tasksRemaining != 0; }
++	void noteSuccessfulTask()
++	{
++		assert(tasksRemaining != 0);
++		--tasksRemaining;
++	}
++	bool consumeRefresh(bool resourcesTradedNow = false)
++	{
++		if(resourcesTradedNow || !tasksRemaining || !refreshesRemaining)
++			return false;
++		--refreshesRemaining;
++		return true;
++	}
++};
+ 
+ // Captured before the request: a prison can become a hero with the same instance ID.
+ struct IdleInteraction
+@@ -200,6 +232,7 @@
+ 		Goals::TGoalVec & tasks,
+ 		const EvaluationContextMap & evaluationContexts,
+ 		int priorityTier) const;
++	PlannedTaskResult executePlannedTask(const Goals::TTask & task);
+ 	bool executeTask(const Goals::TTask & task);
+ 	bool areAffectedObjectsPresent(const Goals::TTask & task) const;
+ 	HeroRole getTaskRole(const Goals::TTask & task) const;
+@@ -209,6 +242,7 @@
+ 	bool rememberActivePathFailure();
+ 	bool isPathKnownToFail(const AIPathNodeInfo & node) const;
+ 	bool hasUnlockedHeroWithMovement() const;
++	bool hasUnspentHeroMovement() const;
+ 	void tracePlayerStatus(bool beginning) const;
+ };
+ 
+--- a/test/nullkiller2/Engine/ResourceTradingTurnTest.cpp
++++ b/test/nullkiller2/Engine/ResourceTradingTurnTest.cpp
+@@ -165,6 +165,7 @@
+ 	TradingPhaseClient client(gameState(), PLAYER);
+ 	auto gateway = makeGateway(PLAYER, &client);
+ 
++	std::shared_lock gameStateLock(CGameState::mutex);
+ 	gateway->nullkiller->makeTurn();
+ 
+ 	EXPECT_GT(client.recruitmentRequests, 0)
+@@ -182,6 +183,7 @@
+ 	TradeRejectingClient client(gameState(), PLAYER);
+ 	auto gateway = makeGateway(PLAYER, &client);
+ 
++	std::shared_lock gameStateLock(CGameState::mutex);
+ 	gateway->nullkiller->makeTurn();
+ 
+ 	EXPECT_EQ(client.rejectedTrades, 1)
+--- a/test/nullkiller2/Engine/TaskFailureTest.cpp
++++ b/test/nullkiller2/Engine/TaskFailureTest.cpp
+@@ -13,9 +13,13 @@
+ #include "AI/Nullkiller2/Engine/Nullkiller.h"
+ #include "AI/Nullkiller2/Goals/CGoal.h"
+ #include "AI/Nullkiller2/Goals/ExecuteHeroChain.h"
++#include "AI/Nullkiller2/Goals/Composition.h"
++#include "AI/Nullkiller2/Goals/ExploreNeighbourTile.h"
++#include "AI/Nullkiller2/Pathfinding/Actions/BattleAction.h"
+ 
+ #include "mock/TinyH3MBuilder.h"
+ #include "nullkiller2/NullkillerTest.h"
++#include "nullkiller2/ScriptedMovementClient.h"
+ 
+ #include "lib/callback/CCallback.h"
+ #include "lib/mapObjects/CGHeroInstance.h"
+@@ -28,6 +32,78 @@
+ {
+ const PlayerColor PLAYER(0);
+ const PlayerColor ENEMY(1);
++
++class CountedPlanGoal : public NK2AI::Goals::ElementarGoal<CountedPlanGoal>
++{
++	int * executions;
++	bool fail;
++public:
++	CountedPlanGoal(int & counter, bool shouldFail = false)
++		: ElementarGoal(NK2AI::Goals::EXECUTE_HERO_CHAIN), executions(&counter), fail(shouldFail)
++	{
++	}
++	bool operator==(const CountedPlanGoal & other) const override
++	{
++		return executions == other.executions && fail == other.fail;
++	}
++	void accept(NK2AI::AIGateway *) override
++	{
++		++*executions;
++		if(fail)
++			throw NK2AI::cannotFulfillGoalException("expected task dispatch failure");
++	}
++	std::string toString() const override { return "CountedPlanGoal"; }
++};
++
++class CachedTaskBatchTest : public NullkillerTest
++{
++protected:
++	std::unique_ptr<ScriptedMovementClient> client;
++	std::unique_ptr<NK2AI::AIGateway> gateway;
++	CGHeroInstance * hero = nullptr;
++
++	void startGame()
++	{
++		TinyH3M::TinyH3MBuilder builder(EMapFormat::SOD);
++		builder.size(36, false).playerActive(PLAYER)
++			.hero({6, 10, 0}, HeroTypeID(0), PLAYER)
++			.heroGarrison({{CreatureID(0), 1}})
++			.hero({10, 10, 0}, HeroTypeID(2), PLAYER)
++			.heroGarrison({{CreatureID(0), 1}})
++			.playerActive(ENEMY).hero({30, 30, 0}, HeroTypeID(1), ENEMY);
++		startWithMap(std::move(builder));
++		revealMap(PLAYER);
++		hero = findHeroAt(int3(6, 10, 0));
++		ASSERT_NE(hero, nullptr);
++		hero->setMovementPoints(2000);
++		client = std::make_unique<ScriptedMovementClient>(gameState());
++		gateway = makeGateway(PLAYER, client.get());
++		client->notify(*gateway);
++		NK2AI::NullkillerTestAccess::prepareState(*gateway->nullkiller);
++	}
++
++	void moveHero()
++	{
++		std::shared_lock gameStateLock(CGameState::mutex);
++		ASSERT_EQ(gateway->moveHeroToTile(
++			hero->visitablePos() + int3(1, 0, 0),
++			NK2AI::HeroPtr(hero, gateway->cc.get())), NK2AI::HeroMovementResult::COMPLETE);
++		ASSERT_EQ(client->movementRequests, 1);
++	}
++
++	NK2AI::AIPath simplePath(const CGHeroInstance & actor, const int3 & destination)
++	{
++		const auto paths = gateway->nullkiller->pathfinder->getPathInfo(destination);
++		for(const auto & path : paths)
++		{
++			if(path.targetHero == &actor && path.turn() == 0 && path.exchangeCount == 1
++				&& std::none_of(path.nodes.begin(), path.nodes.end(), [](const auto & node)
++					{ return node.specialAction != nullptr; }))
++				return path;
++		}
++		throw std::runtime_error("fixture requires an actual generated one-hero, same-day native AI path");
++	}
++};
+ 
+ class FailingMultiNodePathGoal : public NK2AI::Goals::ElementarGoal<FailingMultiNodePathGoal>
+ {
+@@ -123,6 +199,278 @@
+ 	EXPECT_EQ(
+ 		NK2AI::chooseTaskFailureAction(false, true, false),
+ 		NK2AI::TaskFailureAction::TRY_NEXT_TASK);
++}
++
++TEST_F(CachedTaskBatchTest, cleanBatchExecutesIndependentTasks)
++{
++	startGame();
++	std::shared_lock gameStateLock(CGameState::mutex);
++	int first = 0;
++	int second = 0;
++	auto & ai = *gateway->nullkiller;
++	EXPECT_EQ(NK2AI::NullkillerTestAccess::executePlannedTask(ai,
++		NK2AI::Goals::taskptr(CountedPlanGoal(first))), NK2AI::PlannedTaskResult::SUCCESS);
++	EXPECT_EQ(NK2AI::NullkillerTestAccess::executePlannedTask(ai,
++		NK2AI::Goals::taskptr(CountedPlanGoal(second))), NK2AI::PlannedTaskResult::SUCCESS);
++	EXPECT_EQ(first, 1);
++	EXPECT_EQ(second, 1);
++}
++
++TEST_F(CachedTaskBatchTest, heroMovementDefersRemainingCachedTaskBeforeExecution)
++{
++	startGame();
++	int staleTaskExecutions = 0;
++	const auto cachedTask = NK2AI::Goals::taskptr(CountedPlanGoal(staleTaskExecutions));
++	moveHero();
++	std::shared_lock gameStateLock(CGameState::mutex);
++	EXPECT_EQ(NK2AI::NullkillerTestAccess::executePlannedTask(*gateway->nullkiller, cachedTask),
++		NK2AI::PlannedTaskResult::REPLAN);
++	EXPECT_EQ(staleTaskExecutions, 0)
++		<< "a cached task must not consume an outdated route after another hero moved";
++	EXPECT_EQ(client->movementRequests, 1);
++}
++
++TEST_F(CachedTaskBatchTest, refreshedPlanCanExecuteAfterHeroMovement)
++{
++	startGame();
++	moveHero();
++	std::shared_lock gameStateLock(CGameState::mutex);
++	NK2AI::NullkillerTestAccess::refreshState(*gateway->nullkiller);
++	int freshTaskExecutions = 0;
++	EXPECT_EQ(NK2AI::NullkillerTestAccess::executePlannedTask(*gateway->nullkiller,
++		NK2AI::Goals::taskptr(CountedPlanGoal(freshTaskExecutions))), NK2AI::PlannedTaskResult::SUCCESS);
++	EXPECT_EQ(freshTaskExecutions, 1)
++		<< "replanning must permit work to continue instead of locking the hero for the turn";
++}
++
++TEST_F(CachedTaskBatchTest, actualTaskFailureRemainsFailure)
++{
++	startGame();
++	std::shared_lock gameStateLock(CGameState::mutex);
++	int taskExecutions = 0;
++	EXPECT_EQ(NK2AI::NullkillerTestAccess::executePlannedTask(*gateway->nullkiller,
++		NK2AI::Goals::taskptr(CountedPlanGoal(taskExecutions, true))), NK2AI::PlannedTaskResult::FAILED);
++	EXPECT_EQ(taskExecutions, 1);
++}
++
++TEST_F(CachedTaskBatchTest, unaffectedHeroRouteContinuesInSameBatchAfterMovement)
++{
++	startGame();
++	auto * partner = findHeroAt(int3(10, 10, 0));
++	ASSERT_NE(partner, nullptr);
++	partner->setMovementPoints(2000);
++	const auto destination = partner->visitablePos() + int3(1, 0, 0);
++	const auto cachedTask = NK2AI::Goals::taskptr(NK2AI::Goals::ExecuteHeroChain(simplePath(*partner, destination)));
++	moveHero();
++	std::shared_lock gameStateLock(CGameState::mutex);
++	EXPECT_EQ(NK2AI::NullkillerTestAccess::executePlannedTask(*gateway->nullkiller, cachedTask),
++		NK2AI::PlannedTaskResult::SUCCESS);
++	EXPECT_EQ(partner->visitablePos(), destination);
++	EXPECT_EQ(client->movementRequests, 2)
++		<< "an unrelated hero's valid movement must not consume an additional outer planning pass";
++}
++
++TEST_F(CachedTaskBatchTest, newlyOccupiedFriendlyTargetDefersCachedRouteWithoutMove)
++{
++	startGame();
++	auto * partner = findHeroAt(int3(10, 10, 0));
++	ASSERT_NE(partner, nullptr);
++	partner->setMovementPoints(2000);
++	const auto destination = hero->visitablePos() + int3(1, 0, 0);
++	const auto cachedTask = NK2AI::Goals::taskptr(NK2AI::Goals::ExecuteHeroChain(simplePath(*partner, destination)));
++	ASSERT_EQ(gateway->nullkiller->getPathsInfo(partner)->getPathInfo(destination)->turns, 0);
++	moveHero();
++	std::shared_lock gameStateLock(CGameState::mutex);
++	const auto before = partner->visitablePos();
++	EXPECT_EQ(NK2AI::NullkillerTestAccess::executePlannedTask(*gateway->nullkiller, cachedTask),
++		NK2AI::PlannedTaskResult::REPLAN);
++	EXPECT_EQ(partner->visitablePos(), before);
++	EXPECT_EQ(client->movementRequests, 1);
++}
++
++TEST_F(CachedTaskBatchTest, delayedLivePathStillRequiresReplan)
++{
++	startGame();
++	auto * partner = findHeroAt(int3(10, 10, 0));
++	ASSERT_NE(partner, nullptr);
++	partner->setMovementPoints(2000);
++	const auto destination = partner->visitablePos() + int3(2, 0, 0);
++	const auto cachedTask = NK2AI::Goals::taskptr(NK2AI::Goals::ExecuteHeroChain(simplePath(*partner, destination)));
++	moveHero();
++	partner->setMovementPoints(50);
++	std::shared_lock gameStateLock(CGameState::mutex);
++	EXPECT_EQ(NK2AI::NullkillerTestAccess::executePlannedTask(*gateway->nullkiller, cachedTask),
++		NK2AI::PlannedTaskResult::REPLAN);
++	EXPECT_EQ(client->movementRequests, 1);
++}
++
++TEST_F(CachedTaskBatchTest, unaffectedExplorationCompositionContinuesInSameBatch)
++{
++	startGame();
++	auto * partner = findHeroAt(int3(10, 10, 0));
++	ASSERT_NE(partner, nullptr);
++	partner->setMovementPoints(2000);
++	const auto destination = partner->visitablePos() + int3(1, 0, 0);
++	NK2AI::Goals::Composition composition;
++	composition.addNextSequence({
++		NK2AI::Goals::sptr(NK2AI::Goals::ExecuteHeroChain(simplePath(*partner, destination))),
++		NK2AI::Goals::sptr(NK2AI::Goals::ExploreNeighbourTile(partner, 1))});
++	const auto cachedTask = NK2AI::Goals::taskptr(composition);
++	moveHero();
++	std::shared_lock gameStateLock(CGameState::mutex);
++	EXPECT_EQ(NK2AI::NullkillerTestAccess::executePlannedTask(*gateway->nullkiller, cachedTask),
++		NK2AI::PlannedTaskResult::SUCCESS);
++	EXPECT_EQ(partner->visitablePos(), destination);
++	EXPECT_EQ(client->movementRequests, 2);
++}
++
++TEST_F(CachedTaskBatchTest, specialActionsRemainExcludedFromStaleBatchReuse)
++{
++	startGame();
++	auto * partner = findHeroAt(int3(10, 10, 0));
++	ASSERT_NE(partner, nullptr);
++	const auto destination = partner->visitablePos() + int3(1, 0, 0);
++	auto path = simplePath(*partner, destination);
++	path.nodes.front().specialAction = std::make_shared<NK2AI::AIPathfinding::BattleAction>(destination);
++	const auto cachedTask = NK2AI::Goals::taskptr(NK2AI::Goals::ExecuteHeroChain(path));
++	moveHero();
++	std::shared_lock gameStateLock(CGameState::mutex);
++	EXPECT_EQ(NK2AI::NullkillerTestAccess::executePlannedTask(*gateway->nullkiller, cachedTask),
++		NK2AI::PlannedTaskResult::REPLAN);
++	EXPECT_EQ(client->movementRequests, 1);
++}
++
++TEST_F(CachedTaskBatchTest, multipleCachedChainsRequireReplan)
++{
++	startGame();
++	auto * partner = findHeroAt(int3(10, 10, 0));
++	ASSERT_NE(partner, nullptr);
++	partner->setMovementPoints(2000);
++	const auto first = partner->visitablePos() + int3(1, 0, 0);
++	const auto second = partner->visitablePos() + int3(2, 0, 0);
++	NK2AI::Goals::Composition composition;
++	composition.addNextSequence({
++		NK2AI::Goals::sptr(NK2AI::Goals::ExecuteHeroChain(simplePath(*partner, first))),
++		NK2AI::Goals::sptr(NK2AI::Goals::ExecuteHeroChain(simplePath(*partner, second)))});
++	const auto cachedTask = NK2AI::Goals::taskptr(composition);
++	moveHero();
++	std::shared_lock gameStateLock(CGameState::mutex);
++	const auto before = partner->visitablePos();
++	EXPECT_EQ(NK2AI::NullkillerTestAccess::executePlannedTask(*gateway->nullkiller, cachedTask),
++		NK2AI::PlannedTaskResult::REPLAN);
++	EXPECT_EQ(partner->visitablePos(), before);
++	EXPECT_EQ(client->movementRequests, 1);
++}
++
++TEST_F(CachedTaskBatchTest, multipleCachedWaypointsRequireReplan)
++{
++	startGame();
++	auto * partner = findHeroAt(int3(10, 10, 0));
++	ASSERT_NE(partner, nullptr);
++	partner->setMovementPoints(2000);
++	const auto first = partner->visitablePos() + int3(1, 0, 0);
++	const auto second = partner->visitablePos() + int3(2, 0, 0);
++	auto path = simplePath(*partner, second);
++	path.nodes.push_back(pathNode(*partner, first));
++	const auto cachedTask = NK2AI::Goals::taskptr(NK2AI::Goals::ExecuteHeroChain(path));
++	moveHero();
++	std::shared_lock gameStateLock(CGameState::mutex);
++	const auto before = partner->visitablePos();
++	EXPECT_EQ(NK2AI::NullkillerTestAccess::executePlannedTask(*gateway->nullkiller, cachedTask),
++		NK2AI::PlannedTaskResult::REPLAN);
++	EXPECT_EQ(partner->visitablePos(), before);
++	EXPECT_EQ(client->movementRequests, 1);
++}
++
++TEST(CachedTaskBatchBudgetTest, staleRefreshPreservesUnfinishedOriginalBatchWork)
++{
++	NK2AI::PlanningPassBudget budget(3);
++	budget.noteSuccessfulTask();
++	ASSERT_TRUE(budget.consumeRefresh());
++	ASSERT_TRUE(budget.canExecuteTask());
++	budget.noteSuccessfulTask();
++	ASSERT_TRUE(budget.consumeRefresh());
++	ASSERT_TRUE(budget.canExecuteTask());
++	budget.noteSuccessfulTask();
++	EXPECT_FALSE(budget.canExecuteTask());
++	EXPECT_FALSE(budget.consumeRefresh());
++}
++
++TEST(CachedTaskBatchBudgetTest, repeatedRefreshWithoutProgressIsBounded)
++{
++	NK2AI::PlanningPassBudget budget(2);
++	EXPECT_TRUE(budget.consumeRefresh());
++	EXPECT_TRUE(budget.consumeRefresh());
++	EXPECT_FALSE(budget.consumeRefresh())
++		<< "a stream of invalidations must eventually return to the bounded outer pass";
++	EXPECT_TRUE(budget.canExecuteTask());
++}
++
++TEST(CachedTaskBatchBudgetTest, refreshedPlansCannotExpandOriginalTaskAllowance)
++{
++	NK2AI::PlanningPassBudget budget(2);
++	int completed = 0;
++	for(int candidate = 0; candidate < 20 && budget.canExecuteTask(); ++candidate)
++	{
++		budget.noteSuccessfulTask();
++		++completed;
++		budget.consumeRefresh();
++	}
++	EXPECT_EQ(completed, 2)
++		<< "replanning must not multiply the original per-pass action allowance";
++}
++
++TEST(CachedTaskBatchBudgetTest, emptyBatchCannotExecuteOrRefresh)
++{
++	NK2AI::PlanningPassBudget budget(0);
++	EXPECT_FALSE(budget.canExecuteTask());
++	EXPECT_FALSE(budget.consumeRefresh());
++}
++
++TEST(CachedTaskBatchBudgetTest, resourceTradeRequiresNewPriorityPassBeforeRefresh)
++{
++	NK2AI::PlanningPassBudget budget(2);
++	budget.noteSuccessfulTask();
++	EXPECT_FALSE(budget.consumeRefresh(true))
++		<< "newly funded town purchases require priority planning before another movement-only refresh";
++	EXPECT_TRUE(budget.consumeRefresh(false))
++		<< "declining a movement refresh for real economic progress must not silently spend refresh credit";
++}
++
++TEST(CachedTaskBatchBudgetTest, completedBatchCannotSpendUnusedRefreshCredit)
++{
++	NK2AI::PlanningPassBudget budget(1);
++	budget.noteSuccessfulTask();
++	EXPECT_FALSE(budget.consumeRefresh());
++	EXPECT_FALSE(budget.canExecuteTask());
++}
++
++TEST_F(CachedTaskBatchTest, exhaustedAndLockedHeroesDoNotKeepTurnOpen)
++{
++	startGame();
++	auto * partner = findHeroAt(int3(10, 10, 0));
++	ASSERT_NE(partner, nullptr);
++	hero->setMovementPoints(0);
++	partner->setMovementPoints(0);
++	auto & ai = *gateway->nullkiller;
++	EXPECT_FALSE(NK2AI::NullkillerTestAccess::hasUnspentHeroMovement(ai));
++	partner->setMovementPoints(1630);
++	ai.lockHero(partner, NK2AI::HeroLockedReason::HERO_CHAIN);
++	EXPECT_FALSE(NK2AI::NullkillerTestAccess::hasUnspentHeroMovement(ai));
++	ai.unlockHero(partner);
++	EXPECT_TRUE(NK2AI::NullkillerTestAccess::hasUnspentHeroMovement(ai))
++		<< "an unlocked hero with the observed remaining movement must keep planning open";
++}
++
++TEST_F(CachedTaskBatchTest, smallPositiveRoadMovementIsNotPrematurelyComplete)
++{
++	startGame();
++	auto * partner = findHeroAt(int3(10, 10, 0));
++	ASSERT_NE(partner, nullptr);
++	hero->setMovementPoints(0);
++	partner->setMovementPoints(75);
++	EXPECT_TRUE(NK2AI::NullkillerTestAccess::hasUnspentHeroMovement(*gateway->nullkiller))
++		<< "completion detection must not reuse the old greater-than-100 worthwhile-task threshold";
+ }
+ 
+ TEST(Nullkiller2_Engine_TaskFailure, replansAfterPreviousProgressEvenWithRemainingTasks)
+--- a/test/nullkiller2/NullkillerTest.h
++++ b/test/nullkiller2/NullkillerTest.h
+@@ -1,74 +1,89 @@
+-/*
+- * NullkillerTest.h, part of VCMI engine
+- *
+- * Authors: listed in file AUTHORS in main folder
+- *
+- * License: GNU General Public License v2.0 or later
+- * Full text of license available in license.txt file, in main folder
+- */
+-#pragma once
+-
+-#include "../mock/TinyMapGameTest.h"
+-
+-#include "../../AI/Nullkiller2/AIGateway.h"
+-#include "../../AI/Nullkiller2/Engine/Nullkiller.h"
+-
+-namespace NK2AI
+-{
+-/// Exposes private Nullkiller steps of makeTurn to tests
+-class NullkillerTestAccess
+-{
+-public:
+-	static bool executeTask(Nullkiller & ai, const Goals::TTask & task)
+-	{
+-		return ai.executeTask(task);
+-	}
+-
+-	static void prepareState(Nullkiller & ai)
+-	{
+-		ai.resetState();
+-		ai.updateState();
+-	}
+-};
+-}
+-
+-class NullkillerTest : public TinyMapGameTest
+-{
+-protected:
+-	static NK2AI::AIPathNodeInfo pathNode(const CGHeroInstance & hero, const int3 & coordinate)
+-	{
+-		NK2AI::AIPathNodeInfo node{};
+-		node.coord = coordinate;
+-		node.layer = EPathfindingLayer::LAND;
+-		node.targetHero = &hero;
+-		node.parentIndex = -1;
+-		node.chainMask = 1;
+-		node.turns = 0;
+-		return node;
+-	}
+-
+-	/// Refreshes hero roles and single-hero paths, as a planning pass does before decomposing behaviors
+-	void preparePlanning(NK2AI::AIGateway & gateway)
+-	{
+-		auto & ai = *gateway.nullkiller;
+-		ai.heroManager->update();
+-
+-		NK2AI::PathfinderSettings settings;
+-		settings.useHeroChain = false;
+-		settings.useDimensionDoor = false;
+-		ai.pathfinder->updatePaths(ai.getHeroesForPathfinding(), settings);
+-		ai.decomposer->reset();
+-	}
+-
+-	std::unique_ptr<NK2AI::AIGateway> makeGateway(const std::shared_ptr<CCallback> & callback)
+-	{
+-		auto gateway = std::make_unique<NK2AI::AIGateway>();
+-		gateway->initGameInterface(std::shared_ptr<Environment>(), callback);
+-		return gateway;
+-	}
+-
+-	std::unique_ptr<NK2AI::AIGateway> makeGateway(PlayerColor player, IClient * client = nullptr)
+-	{
+-		return makeGateway(makeCallback(player, client));
+-	}
+-};
++/*
++ * NullkillerTest.h, part of VCMI engine
++ *
++ * Authors: listed in file AUTHORS in main folder
++ *
++ * License: GNU General Public License v2.0 or later
++ * Full text of license available in license.txt file, in main folder
++ */
++#pragma once
++
++#include "../mock/TinyMapGameTest.h"
++
++#include "../../AI/Nullkiller2/AIGateway.h"
++#include "../../AI/Nullkiller2/Engine/Nullkiller.h"
++
++namespace NK2AI
++{
++/// Exposes private Nullkiller steps of makeTurn to tests
++class NullkillerTestAccess
++{
++public:
++	static bool hasUnspentHeroMovement(const Nullkiller & ai)
++	{
++		return ai.hasUnspentHeroMovement();
++	}
++
++	static PlannedTaskResult executePlannedTask(Nullkiller & ai, const Goals::TTask & task)
++	{
++		return ai.executePlannedTask(task);
++	}
++
++	static void refreshState(Nullkiller & ai)
++	{
++		ai.updateState();
++	}
++
++	static bool executeTask(Nullkiller & ai, const Goals::TTask & task)
++	{
++		return ai.executeTask(task);
++	}
++
++	static void prepareState(Nullkiller & ai)
++	{
++		ai.resetState();
++		ai.updateState();
++	}
++};
++}
++
++class NullkillerTest : public TinyMapGameTest
++{
++protected:
++	static NK2AI::AIPathNodeInfo pathNode(const CGHeroInstance & hero, const int3 & coordinate)
++	{
++		NK2AI::AIPathNodeInfo node{};
++		node.coord = coordinate;
++		node.layer = EPathfindingLayer::LAND;
++		node.targetHero = &hero;
++		node.parentIndex = -1;
++		node.chainMask = 1;
++		node.turns = 0;
++		return node;
++	}
++
++	/// Refreshes hero roles and single-hero paths, as a planning pass does before decomposing behaviors
++	void preparePlanning(NK2AI::AIGateway & gateway)
++	{
++		auto & ai = *gateway.nullkiller;
++		ai.heroManager->update();
++
++		NK2AI::PathfinderSettings settings;
++		settings.useHeroChain = false;
++		settings.useDimensionDoor = false;
++		ai.pathfinder->updatePaths(ai.getHeroesForPathfinding(), settings);
++		ai.decomposer->reset();
++	}
++
++	std::unique_ptr<NK2AI::AIGateway> makeGateway(const std::shared_ptr<CCallback> & callback)
++	{
++		auto gateway = std::make_unique<NK2AI::AIGateway>();
++		gateway->initGameInterface(std::shared_ptr<Environment>(), callback);
++		return gateway;
++	}
++
++	std::unique_ptr<NK2AI::AIGateway> makeGateway(PlayerColor player, IClient * client = nullptr)
++	{
++		return makeGateway(makeCallback(player, client));
++	}
++};

@@ -1,0 +1,19 @@
+name: Developer checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  entry-points:
+    runs-on: windows-latest
+    steps:
+      - name: Allow long asset paths on the temporary runner
+        run: git config --global core.longpaths true
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test portable developer entry points
+        run: python -m dev check
