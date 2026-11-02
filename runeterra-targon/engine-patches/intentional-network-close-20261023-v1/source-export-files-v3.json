@@ -1,0 +1,146 @@
+{
+  "schema": 2,
+  "scope": "Synchronized official66fa intentional-close registry candidate-v2, authored source/copiedconsumer tests only; supersedes unsynchronized candidate without deleting history",
+  "files": [
+    {
+      "path": "candidate-v2/0001-track-explicit-server-connection-close-ownership.patch",
+      "sha256": "66e7418229980dbd2f49516c12eeeb319f414859447f30c4173b309dd4549d31"
+    },
+    {
+      "path": "candidate-v2/README.md",
+      "sha256": "b787941d2382eac0e490c33ce1339ef8f02b62579a5aeb4c903c82fb5eba900c"
+    },
+    {
+      "path": "candidate-v2/check_patch.py",
+      "sha256": "5c928c8e33e64eac0542a4f5706bb37d244ceb4992fb877278192e703ae247a8"
+    },
+    {
+      "path": "candidate-v2/consumer_fixture.cpp.in",
+      "sha256": "a63ea51c8da232864f992c48d52953a167132103978154681c51e7a9d767380e"
+    },
+    {
+      "path": "candidate-v2/extracted-consumers-v3.json",
+      "sha256": "891321eeac7e916bd9b1ec41c4f9398ac6cf530a2f4d8a0e3985da4d27ac6f1f"
+    },
+    {
+      "path": "candidate-v2/mutation-tests/lock-across-reentrant-close/consumer_regression.cpp",
+      "sha256": "459674afb9ef562e3dc247d8918bd47ecc04b10a9ecbcda98143ccd5f03338c3"
+    },
+    {
+      "path": "candidate-v2/mutation-tests/missing-reader-lock/consumer_regression.cpp",
+      "sha256": "e45533a4aafb91fb63da0803fc1b7f935ec67ba6beaa6e34ae6a220a0b8f2dbe"
+    },
+    {
+      "path": "candidate-v2/mutation-tests/missing-writer-lock/consumer_regression.cpp",
+      "sha256": "c53644a7e80d708fe3a7da6aabc4a356fbaea49235d263b0b3fffb4dd627f518"
+    },
+    {
+      "path": "candidate-v2/patch-inputs.json",
+      "sha256": "41a98954391ae6c20fea1dfe84fe063e5f9629fb18c0838ac48ebbe2db244275"
+    },
+    {
+      "path": "candidate-v2/patched/server/CVCMIServer.cpp",
+      "sha256": "4ea6f205ad10ca0717f0823d27e0264abf5907b3d21f29ec10038940634d853a"
+    },
+    {
+      "path": "candidate-v2/patched/server/CVCMIServer.h",
+      "sha256": "dc864a6eb0c149ff48486feac2a6f339913a696aae9fc52dd98ae59375f586d9"
+    },
+    {
+      "path": "candidate-v2/patched/server/NetPacksLobbyServer.cpp",
+      "sha256": "71f629d1ece254d7dc086868c22d4a6e422e150b5f92aeaa52dd80bd6939b7ab"
+    },
+    {
+      "path": "candidate-v2/prepare_regression.py",
+      "sha256": "d74328212a1a9018780d803ab3f2b24081e52691210cd943b7dae5f362c68beb"
+    },
+    {
+      "path": "candidate-v2/public-provenance.json",
+      "sha256": "245ab6040c074ef2dad83d540b22a99ad73a7d38b55808d2763bdc6b6093f35b"
+    },
+    {
+      "path": "candidate-v2/public-test-summary.json",
+      "sha256": "a72aca57c2b8f641cf607991c44dca0a9530f2743f5dc4be04ebf845c2b2db71"
+    },
+    {
+      "path": "candidate-v2/run_mutations.py",
+      "sha256": "04de6dde8381f4bf2d3d7dbdbf94d453834d4eadf691e7d52fe277e17ebe429d"
+    },
+    {
+      "path": "candidate-v2/run_regression.py",
+      "sha256": "037999c8c740b6f17396f402ff414cc5f99a8fc4b84ba65d10f2c95b5f920bce"
+    },
+    {
+      "path": "candidate-v2/tests-v3/patched/consumer_regression.cpp",
+      "sha256": "7097180b06a46c9a00ef6d72878e3b426b4aeb42ec54dbeecc4fcdf4773a39c4"
+    },
+    {
+      "path": "candidate-v2/tests-v3/upstream/consumer_regression.cpp",
+      "sha256": "dddc93690813d53ac3f8f4dc88cda0780da1de42c47c864c3a1d46d69a0a6726"
+    },
+    {
+      "path": "candidate-v2/upstream/client/CServerHandler.cpp",
+      "sha256": "973ddc90f8992454203e5ca58266e1d907aca0669e94f0ffbdddbf8265deb879"
+    },
+    {
+      "path": "candidate-v2/upstream/client/ServerRunner.cpp",
+      "sha256": "f9a7236d740cf26fa460ce934083d3083dba7c9d35a7cae3ba9ec2357244bf1c"
+    },
+    {
+      "path": "candidate-v2/upstream/lib/network/NetworkConnection.cpp",
+      "sha256": "404153fe58df31e9609cfc51bc55240c53de3c5c0d9dd70d2d26dc088a7618ee"
+    },
+    {
+      "path": "candidate-v2/upstream/lib/network/NetworkConnection.h",
+      "sha256": "833de1772747672108304f9d24e74837f5ffe553f781f93e6f048f144371f15c"
+    },
+    {
+      "path": "candidate-v2/upstream/lib/network/NetworkHandler.cpp",
+      "sha256": "606ad9688e50e1301ff13c27536abd79acf1bdc264ebcbddf3c02feb5c4f99c4"
+    },
+    {
+      "path": "candidate-v2/upstream/lib/network/NetworkInterface.h",
+      "sha256": "4d47866e4dcf794e8a74c355a5f8a4b3d7cb5fa5b9e63c3cdaf5461dc7394ac9"
+    },
+    {
+      "path": "candidate-v2/upstream/lib/network/NetworkServer.cpp",
+      "sha256": "751bc4c611440d7274b2fd8fc5b980207005916cb2dea2f271bceb0c86cd22b8"
+    },
+    {
+      "path": "candidate-v2/upstream/lib/networkPacks/PacksForLobby.h",
+      "sha256": "e1f925e8b69fe9b9ca5b30fd663c7ba4e39bf52089d0648520149748fdbbe6cd"
+    },
+    {
+      "path": "candidate-v2/upstream/lib/serializer/GameConnection.cpp",
+      "sha256": "62e36e804d667d154f32a2b0520b0df0385677baf33a5d3fe9dd8e63601fe535"
+    },
+    {
+      "path": "candidate-v2/upstream/lib/serializer/GameConnection.h",
+      "sha256": "c2215e5d2da3ec1299c11573fe0106482ad071d2c3247d50cb3274c715f18d9f"
+    },
+    {
+      "path": "candidate-v2/upstream/license.txt",
+      "sha256": "2d5ffb759ac6444583842abd4a25745f5d172f63318dc49966f8c9859b4ca849"
+    },
+    {
+      "path": "candidate-v2/upstream/server/CMakeLists.txt",
+      "sha256": "1805991ab8b0992582a3ae2bf76a01a466ab73781b3a73e241831870a198e8d5"
+    },
+    {
+      "path": "candidate-v2/upstream/server/CVCMIServer.cpp",
+      "sha256": "1ebb8f1c50d85ebb786c9008e8444440ce7f0eb68ca53663b27042f781ca2719"
+    },
+    {
+      "path": "candidate-v2/upstream/server/CVCMIServer.h",
+      "sha256": "cbe14b2084109ca348367a75fae2b174a039867e98d9091a906a576343aa2bb7"
+    },
+    {
+      "path": "candidate-v2/upstream/server/LobbyNetPackVisitors.h",
+      "sha256": "bfc3353b857aef98843dd832bfaf0a2508d6a0a80a14acc8c3d3b6929ec9e935"
+    },
+    {
+      "path": "candidate-v2/upstream/server/NetPacksLobbyServer.cpp",
+      "sha256": "1b865cd8c9aa255de008d6d8bab4458a9fdb96ca19655f612fb3a17b44941cc9"
+    }
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "status": "authored configuration",
+  "scope": "Private local Paths of Runeterra playtest; not a release or a claim that unfinished towns are complete.",
+  "preservation_rules": [
+    "The licensed installation, checked-out vcmi-develop/, existing extracted original references, audited baselines and historical evidence are read-only.",
+    "Do not silently drop the feature, substitute a placeholder or remove its acceptance check to obtain a green build.",
+    "Original HoMM3 is the visual authority; League/LoR supplies regional subjects and motifs."
+  ],
+  "requirements": [
+    {
+      "id": "SSD",
+      "requested": "please do ssd cleanup",
+      "implementation": [
+        "scripts/cleanup_playtest_archives_20261027.ps1",
+        "scripts/cleanup_superseded_music_20261027.ps1"
+      ],
+      "evidence": "reports/paths-of-runeterra-playtest-20261027-v1/cleanup-result.json",
+      "observed": "112 exact duplicate game archives and 142 duplicate MP3 files removed from superseded private test copies. Original archives and music checked unchanged. Historical logs, source artwork and staged mod content preserved.",
+      "remaining": "None for this cleanup. Final net free-space gain, after test provisioning, is 9.52 GiB across C: and D:."
+    },
+    {
+      "id": "TOWNS",
+      "requested": "compile all the castles with all the changes to prepare to runable game so I can test it myself",
+      "implementation": [
+        "scripts/paths_of_runeterra_prepare.py"
+      ],
+      "evidence": "reports/paths-of-runeterra-playtest-20261027-v1/compilation/",
+      "observed": "Seven current compiled towns admitted and frozen: demacia, noxus, freljord, zaun, bandlecity, piltover, ixtal. All eleven implementation CLIs were attempted; Demacia build passes despite its separate final-art assets command returning the expected release block.",
+      "remaining": "Four towns remain unbuildable for the recorded production/art reasons. Shadow Isles and Void are not registered native implementations. Do not claim all thirteen regions are delivered."
+    },
+    {
+      "id": "MAP",
+      "requested": "single test scennario with all towns, and a champion with all units upgraded and a garnison nearby to attack with slightly lower army",
+      "interpretation": "One ordinary regional champion per admitted town, all seven upgraded tiers. Nearby neutral garrison has 85 percent of each stack rounded down with a minimum of one. One human player; no AI turns. Optional distant neutral town is the explicit completion objective.",
+      "implementation": [
+        "scripts/paths_of_runeterra_scenario.py",
+        "tests/test_paths_of_runeterra.py"
+      ],
+      "observed": "Seventeen source/map/launcher controls pass; executed log: reports/paths-home-launch-fix-20261027-v1/launcher-tests.log. Exact final map initializes natively; all seven own champions and upgraded rosters are registered. No new book/name diagnostics. The separate AI-only run retains two post-victory build-request diagnostics.",
+      "native_action": "Load the exact sealed map, verify initialization, then let the user launch through the ordinary human menu and inspect towns/armies/fights.",
+      "remaining": "Manual combat, visuals, audio and full gameplay acceptance; independent review and final release acceptance are not claimed."
+    },
+    {
+      "id": "RUNETERRA_ONLY",
+      "requested": "remove all old towns and creatures, leave only stuff that might be immersive with Runterra",
+      "interpretation": "Exclude original factions, heroes and troop armies from this isolated game selection and authored scenario; preserve the licensed original installation and its engine dependencies.",
+      "implementation": [
+        "paths-of-runeterra/Content/config/factions.json",
+        "paths-of-runeterra/Content/config/creatures.json",
+        "paths-of-runeterra/Content/config/heroes.json"
+      ],
+      "observed": "Native-supported faction special:true excludes nine original factions from ordinary selection. 150 core creatures and 156 core heroes are marked special. Only own armies/towns/champions are placed in this test. Full merged loader passes; original archives are unchanged.",
+      "remaining": "A complete Runeterra-only random-map campaign is outside this field-test snapshot."
+    },
+    {
+      "id": "TITLE",
+      "requested": "HEROES OF MIGHT AND MAGIC III PATHS OF RUNETERRA, styled like official HoMM3 main menus.",
+      "implementation": [
+        "paths-of-runeterra/assets/source/title/prompt-v2.txt",
+        "paths-of-runeterra/assets/source/title/production-v2.json",
+        "paths-of-runeterra/Content/Sprites/runeterra/paths/title.png",
+        "paths-of-runeterra/Content/config/mainmenu.json"
+      ],
+      "observed": "Painted 2D Garen/Darius title revised with built-in image_gen and original HoMM3 typography/layout reference. Exact 800x600 native title installed. Both actual CMD entry points opened a visible ordinary VCMI main menu; owned-window screenshots show the title beside real native menu controls. No keys or clicks sent.",
+      "remaining": "Final human art and full gameplay/release acceptance remain separate.",
+      "evidence": "reports/paths-home-launch-fix-20261027-v1/"
+    },
+    {
+      "id": "LAUNCHER_FIX",
+      "requested": "PLAY_PATHS_OF_RUNETERRA file not working and not starting the game",
+      "implementation": [
+        "PLAY_PATHS_OF_RUNETERRA.cmd",
+        "scripts/paths_of_runeterra_launch.py",
+        "build/playtests/paths-of-runeterra-20261027-v2/PLAY_PATHS_OF_RUNETERRA.cmd",
+        "tests/test_paths_of_runeterra.py"
+      ],
+      "evidence": "reports/paths-home-launch-fix-20261027-v1/REPORT.json",
+      "observed": "Reproduced trailing-quote corruption in the folder CMD root argument and corrected it with %~dp0. . Both CMD entry points now show integrity progress, retain visible errors and write owned-profile launch logs. Seventeen source checks pass. Each real CMD opened the visible normal menu from an unrelated working directory; no testmap or input used.",
+      "status": "runtime verified",
+      "remaining": "No remaining launcher/home-screen startup defect observed in these two executions; this is not full gameplay acceptance."
+    },
+    {
+      "id": "CURRENT_UNITS_VISIBLE",
+      "requested": "I asked you to redesign and change some units and its still not in game; fix it.",
+      "status": "authored configuration",
+      "implementation": [
+        "scripts/paths_of_runeterra_scenario.py",
+        "scripts/paths_of_runeterra_prepare.py"
+      ],
+      "observed": "Audited all seven source/installed creature dictionaries and holding PNGs for 32 requested replacement variants. Their revised identities and subjects are installed in the old frozen game; clean revised map and visible base/upgrade comparison access are being added to eliminate old-save/selection ambiguity.",
+      "evidence": "reports/requested-content-repair-20261027-v1/initial-unit-identity-audit.json",
+      "remaining": "New frozen game, source-to-game full frame comparison and native observations."
+    },
+    {
+      "id": "VISIBLE_WORLD_NEIGHBORHOODS",
+      "requested": "I asked to implement more immersion to the game but its as well not in the game, fix it.",
+      "status": "authored configuration",
+      "implementation": [
+        "scripts/paths_of_runeterra_scenario.py",
+        "runeterra-world/scripts/field_test_visibility.py"
+      ],
+      "observed": "Source map places seven nearby reward sites, thirteen scenery instances covering six types, and three Runeterra neutral species. Native-pattern normalization now resolves all 52 formerly unmatched boundary cells with 42 unprotected land changes; all 600 object cells remain protected. Integrated map/terrain tests passed, source evidence in paths-integrated-terrain-tests-v1.json.",
+      "remaining": "Freeze corrected game after four current town integrations; inspect reachable world neighborhoods and rewards natively. No further world authoring is added by the current four-town scope."
+    },
+    {
+      "id": "FIVE_TOWN_REBUILD",
+      "requested": "Redesign Zaun, Piltover, Noxus, Bandle City, Freljord from scratch in 2D HoMM3 aesthetics, plan actual building outlines before backgrounds and make coherent supported towns.",
+      "status": "authored configuration",
+      "implementation": [
+        "runeterra-zaun",
+        "runeterra-piltover",
+        "runeterra-noxus",
+        "runeterra-bandlecity",
+        "runeterra-freljord"
+      ],
+      "observed": "Piltover and Zaun complete-town V2 sources were independently reviewed, integrated through guarded exact-source payloads, compiled and validated. All212 Piltover and182 Zaun affected outputs match reviewed candidates. Freljord and Noxus remaining source physical/evidence repairs are in progress. Accepted Bandle V2 and Ixtal art remain unchanged.",
+      "remaining": "Finish Freljord and Noxus physical/source review and compilation; freeze the four corrected towns in a new private game and verify available native behavior. Two isolated Piltover normal-menu attempts sent no input because owned foreground was unavailable; loader and exact map initialization passed separately.",
+      "evidence": "reports/requested-content-repair-20261027-v1/whole-master-checkpoints.json"
+    },
+    {
+      "id": "COMPLETE_TOWN_FIRST",
+      "requested": "when rebilding town start with complete town design and then slice it into buildings and stuff. Bandle City placment is still off. the back row building are on the stairts Latest: Zaun, piltover, noxus and frejord placment is still off. take a few step backs and start with design full towns first with all the buildings and later implement it into the game.",
+      "status": "authored configuration",
+      "implementation": [
+        "RUNETERRA_DEMACIA_PROJECT_PROMPT.txt section 4",
+        "runeterra-bandlecity/assets/source/town/complete-town-20261027-v2/"
+      ],
+      "observed": "All four complete2D V2 designs reviewed before slicing. Piltover and Zaun matched full-source cohorts compiled after independent physical-contact reviews. Freljord whole Poro/Druvask-family scale corrections and Noxus bounded placement/terrain support corrections preserve complete-scene coherence and source history; final source checks continue.",
+      "remaining": "Selected corrected full composition, matching slices, technical and actual-game verification.",
+      "evidence": "reports/requested-content-repair-20261027-v1/whole-town-designs/index.html"
+    }
+  ],
+  "active_scope": {
+    "requested": "Zaun, piltover, noxus and frejord towns only if there is something to do.",
+    "towns": [
+      "zaun",
+      "piltover",
+      "noxus",
+      "freljord"
+    ],
+    "interpretation": "Resume only unfinished source-layer, physical-layout, compilation and native integration work for these four towns. Preserve accepted other towns and all previous evidence.",
+    "evidence": "reports/requested-content-repair-20261027-v1/whole-master-checkpoints.json"
+  },
+  "cleanup_followup": {
+    "requested": "you can delete any video older than 48h",
+    "observed": "Verified one 628963904-byte old historical runtime VIDEO.VID duplicate against the retained protected original. Automatic approval rejected exact deletion again; no file was removed.",
+    "evidence": "reports/requested-content-repair-20261027-v1/reserve-cleanup/authorized-cleanup-rejection-v2.json",
+    "remaining": "Automatic policy rejection; no alternative deletion route attempted."
+  },
+  "current_four_town_compilation": {
+    "piltover": {
+      "stage_hash": "ca43e415971e0d534aa92d22af6526c69e3b9614200f92036ab4a6fb449969a8",
+      "commands_passed": [
+        "assets",
+        "build",
+        "validate"
+      ],
+      "reviewed_outputs_matched": 212,
+      "evidence": "reports/requested-content-repair-20261027-v1/coordinator-piltover-v2-integration/"
+    },
+    "zaun": {
+      "stage_hash": "b2847e80b850d030cdba64534f921793fc2e880f4a68b03608688b2b0c216302",
+      "commands_passed": [
+        "assets",
+        "build",
+        "validate"
+      ],
+      "reviewed_outputs_matched": 182,
+      "evidence": "reports/requested-content-repair-20261027-v1/coordinator-zaun-v2-integration/"
+    },
+    "freljord": {
+      "status": "authored configuration",
+      "canonical_integrated": true,
+      "stage_hash": "2ecb06ba2ac29b48dfa93b9f949db1bde2041ed61861c84a6c908cf23b9a84c7",
+      "commands_passed": [
+        "assets",
+        "build",
+        "validate"
+      ],
+      "reviewed_outputs_matched": 182,
+      "canonical_affected_tests": 77,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "evidence": "reports/requested-content-repair-20261027-v1/coordinator-freljord-v2-integration/production-followup-v1/"
+    },
+    "noxus": {
+      "status": "authored configuration",
+      "canonical_integrated": true,
+      "stage_hash": "4b0263e65087ec9c791697aa94dd57c2fb26ea6f469709f534008b8c9b5dbde3",
+      "commands_passed": [
+        "assets",
+        "build",
+        "validate"
+      ],
+      "reviewed_outputs_matched": 182,
+      "evidence": "reports/requested-content-repair-20261027-v1/coordinator-noxus-v2-integration/"
+    }
+  },
+  "current_storage_delivery": {
+    "status": "authored configuration",
+    "written_utc": "2026-10-28T00:07:43.552605+00:00",
+    "method": "Immutable Data and flat Mp3 hardlinks from exact owned obsolete private V3 only; never from licensed original files. Existing Windows both-name read sharing locks retained through owned process-tree cleanup.",
+    "actual_read_only_reuse_plan_files": 79,
+    "actual_read_only_reused_payload_bytes": 1013930526,
+    "data_bytes": 902697497,
+    "music_bytes": 111233029,
+    "owner_tests": 65,
+    "independent_tests": 65,
+    "reserve_bytes": 9663676416,
+    "growth_bytes": 536870912,
+    "deletions_executed": 0,
+    "originals_modified_or_linked": false,
+    "actual_links_created": false,
+    "evidence": "reports/requested-content-repair-20261027-v1/private-archive-reuse-v2/coordinator-integration.json",
+    "independent_evidence": "reports/requested-content-repair-20261027-v1/independent/final-delivery-v1/MP3-REUSE-INDEPENDENT-TESTS-v1.json",
+    "remaining": "No storage prerequisite remains for delivered V5; historical deletion rejections preserved.",
+    "lossless_log_compression": {
+      "files": 17,
+      "allocated_bytes_recovered": 873685698,
+      "free_after": 10642915328,
+      "sha256_lengths_and_mtimes_unchanged": true,
+      "reparse_or_wof_used": false,
+      "evidence": [
+        "reports/requested-content-repair-20261027-v1/reserve-cleanup/lossless-log-compression-v1.json",
+        "reports/requested-content-repair-20261027-v1/reserve-cleanup/lossless-log-compression-v2.json"
+      ]
+    },
+    "delivery_method": "Independent full copy; optional tested hardlink reuse not used.",
+    "delivered_copy_bytes": 1247944035,
+    "delivered_reused_payload_bytes": 0
+  },
+  "noxus_coherent_paving_revision": {
+    "status": "authored configuration",
+    "written_utc": "2026-10-28T00:07:43.552605+00:00",
+    "requested": "Repaint Noxus background paving and stairs coherently; keep everything else the same.",
+    "previous_visual_result": "user-rejected",
+    "scope": "Whole-scene surface material/light/edge repaint only; preserve all architecture, placements, functional streets/stairs, terrace heights, skyline and coast.",
+    "method": "One genuine painted2D full-scene imagegen edit with immutable structure/protected-surface guide; no more independently resized floor patches.",
+    "acceptance": "New native-size empty/full/base/coast visual review, then fresh physical consumer/negatives, guarded integration, actual CLI and native game evidence.",
+    "remaining": "Native town visual observation and wider gameplay/art/rights acceptance.",
+    "source_background": "runeterra-noxus/assets/source/town/complete-town-20261027-v2/coherent-paving-repaint-v1/surface-painted-native-v1.png",
+    "source_sha256": "3e049c20df7009209ba424c46a450581d0097b35d1daa216f59e2df4600f0a5b",
+    "source_review": "Root inspected empty/full/base/coast at800x374; bounded source composition passes. Not external human art, native or release acceptance.",
+    "immutable_pixels_violated": 0,
+    "all36_building_layers_and_placements_unchanged": true,
+    "canonical_integrated": true,
+    "stage_hash": "4b0263e65087ec9c791697aa94dd57c2fb26ea6f469709f534008b8c9b5dbde3",
+    "production_evidence": "reports/requested-content-repair-20261027-v1/coordinator-noxus-v2-integration/",
+    "meaningful_negative_controls_passed": 7,
+    "private_game": "build/playtests/paths-of-runeterra-20261027-v5",
+    "native_loader_and_map_initialized": true,
+    "human_route": "No input: owned client did not acquire foreground; owned job closed.",
+    "native_gameplay_accepted": false,
+    "release_accepted": false
+  },
+  "current_private_game": {
+    "sole_operator": "root",
+    "owned_game_processes_left": false,
+    "isolated_game": "build/playtests/paths-of-runeterra-20261027-v5",
+    "loader_and_exact_map_initialized": true,
+    "ui_attempts": [
+      "build/playtests/paths-of-runeterra-20261027-v5/proofs/native-human-v5/receipt.json"
+    ],
+    "ui_result": "Owned client never acquired foreground; no input sent, no focus forced; owned job closed.",
+    "current_workspace_launcher_target": "build/playtests/paths-of-runeterra-20261027-v5",
+    "next_final_game": null,
+    "runtime": "runeterra-bandlecity/.tools/bc6-20261022-1792684306611236500/app",
+    "admitted_from": "build/playtests/paths-of-runeterra-20261027-v4",
+    "final_towns": [
+      "demacia",
+      "noxus",
+      "freljord",
+      "zaun",
+      "bandlecity",
+      "piltover",
+      "ixtal"
+    ],
+    "next": "User can open the published launcher and review the revised scenario. Native town appearance/full gameplay are not accepted.",
+    "storage_precondition": "Independent full copy completed; immutable archive/music reuse was not used. No V3 dependency.",
+    "free_c_bytes_at_checkpoint": 16471916544,
+    "copy_preference": "Independent full copy used; 1247944035 copied bytes; no hardlinks.",
+    "loader_map_receipt": "build/playtests/paths-of-runeterra-20261027-v5/proofs/initial-check-v5/receipt.json",
+    "native_gameplay_accepted": false,
+    "release_accepted": false
+  }
+}

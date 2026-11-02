@@ -1,0 +1,66 @@
+{
+  "acceptance": "Production requirements only. No rig/guide/primitive/reference may substitute for painted final art; this recipe must fail while its real master/hash is absent.",
+  "art_direction": "Independent Noxian iron/crimson/black subjects in Heroes III native painted language. Never recolour Castle or Demacia art, import original pixels or invent an official crest.",
+  "canvas": [
+    800,
+    374
+  ],
+  "composition_contract": "Independent Noxian town terrain/layout; no buildings baked into terrain. Ground planes,19-site/36-state composition,occlusion and all clicks need actual source/native review.",
+  "credits": {
+    "author": "Project-directed OpenAI built-in imagegen; deterministic project conversion",
+    "license": null,
+    "redistribution": "unresolved; no release or redistribution approval"
+  },
+  "dimensions_basis": {
+    "canvas": [
+      800,
+      374
+    ],
+    "mode": "RGB",
+    "reference_only": "runeterra-demacia/references/images/tbcsback.pcx.png",
+    "reference_sha256": "949012ea68999207934bc482f1552858474fe50cefddef17eaac00d4b98c2be9",
+    "use": "Dimensions/format only. No reference pixels, palette, source recipe, layout silhouette or licensed art copied."
+  },
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in imagegen",
+    "model": "Not exposed by the built-in tool",
+    "prompt": "Use case: precise-object-edit. Make ONLY TWO SMALL LOCAL CORRECTIONS to this painted2D panoramic town backdrop. Image1 is edit target. Image2 marks TWO rectangles as technical guide; image3 is their black/white region mask. Preserve EVERY OTHER PART of image1: originalHeroesIII paintedgrain, darkcrimsonsky, Noxianneighborhood, windingroads, foreground details and lighting. Do not repaint/reimagine the whole scene. Output cleanpaintedBACKGROUND only, no guide/text.\n\n1. Upperleft-center marked rectangle (native800x374 coordinates x236..327,y54..124): REMOVE the red-and-white MARKETTENT/CANOPY and all of its posts/stallgoods from this small area. It was accidentally copiedinto an EMPTYbackingplate. Restore a small plain dryGROUNDLEVEL cobbledstreetcourt that blends naturally into surroundingurbanpaving. Do not replace it with another tent, house, roof, stall, raisedplatform or functionalbuilding. This plot MUST BE EMPTY because the actualmarket is a separatebuildable layer. Retain neighboring houses outside that small markedregion.\n\n2. UpperRIGHT markedrectangle native x650..800,y95..152: The existing elevatedstonewall and water/house-roofs below it are WRONG. A later separatecastle's towerbases will end on the CYAN horizontalguide line atnativey129. They need to stand on a broad LEVEL DRY PAVED GROUND SURFACE here, NOT water, roofs, a cliff or the VERTICAL SIDE OF A WALL. REMOVE the present highstonequay wallface plus water/roofs within thisrectangle. EXTEND the existing pavedstreet atnative(x650,y142) horizontally all the way to the RIGHT EDGE(x800), so the ENTIRE rectangle fromnativey110 THROUGH y151 is a supportedLEVEL basalt/cobblestone stonequay FLOOR. Its real walkable top should be visibly below the laterbases aty118..129 and continue in front to151. Do NOT put a newwallface/balustrade/plinth edge anywhere insidey110..151. The shore/quay's verticaledge must be FURTHER DOWN AT OR BELOWnativey153. WATER canremainBELOWnativey153 towardrightedge, supporting the existing tiny separateoptional dock atx754..798,y145..165. Do not add a castle or tower to thisemptyground. No floating patch: connectthisdryland toexistingstreet onleft and its actualsupportedouterbank below152.\n\nNo other scenechanges, no hugeclearedplaza, no 3terracebands, no buildingredesign. Both two tiny regions should blend as genuine painted roughworncharcoal/warmgraycobbles with restrainedamberlight; no rectangularpatchseams, guidecolors, cyanline, labels, frame or UI. Genuine2Dpaint only, no Blender/3D/vector/photosplash. Keep panoramic800x374 aspectratio.",
+    "painted_master": "assets/source/town/urban-community-20261024-v6/background-master-v5.png",
+    "painted_master_sha256": "ca193d3c9bb75ed51873323b285e93d6c0e05519d1e4337f157cc758890b2aac",
+    "generation_record": "assets/source/town/urban-community-20261024-v6/background-generation-v5.json",
+    "generation_record_sha256": "e99ab776fda2cbedb171190aaa2831a8f97ba79a7a5f1c1d8e038e72fef29764",
+    "conversion": "Uniform cover-fit to native800x374; no artistic raster changes."
+  },
+  "inventory": {
+    "asset_id": "noxus.Sprites.runeterra.noxus.town.background.png",
+    "manifest": "assets/manifest.json",
+    "recipe_path": "assets/recipes/town/background.json"
+  },
+  "output_path": "Content/Sprites/runeterra/noxus/town/background.png",
+  "production_status": "painted-master-complete",
+  "recipe_type": "raster",
+  "require_alpha": false,
+  "required_before_conversion": [
+    "Real independent Noxus painted master and truthful provenance",
+    "Non-null SHA256 source pins",
+    "Official Noxus emblem provenance where used",
+    "Native-size silhouette/composition/alpha and role review",
+    "Explicit coordinator selection; no automatic acceptance"
+  ],
+  "role": "town-background",
+  "sha256": "14e00a87bcaa1eab9b46ce0a1c2943422cdfee51ac326646e773fcb68e504312",
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/urban-community-20261024-v6/background-native-v5.png",
+  "source_sha256": "14e00a87bcaa1eab9b46ce0a1c2943422cdfee51ac326646e773fcb68e504312",
+  "status": "built-unreviewed",
+  "visual_approval_granted": false,
+  "source_canvas": [
+    800,
+    374
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "status": "authored configuration",
+  "selected_for_build": false,
+  "visual_approval_granted": false,
+  "canvas": [
+    450,
+    400
+  ],
+  "pivot": [
+    193,
+    266
+  ],
+  "source_root": [
+    640,
+    1070
+  ],
+  "uniform_source_scale": 0.064,
+  "per_frame_fit": false,
+  "groups": {
+    "0": [
+      "walk-contact-a-v1",
+      "walk-down-a-v1",
+      "walk-passing-a-v1",
+      "walk-contact-b-v1",
+      "walk-down-b-v3",
+      "walk-passing-b-v2"
+    ],
+    "1": [
+      "holding-v2",
+      "holding-v2",
+      "fidget-look-v1",
+      "fidget-look-v1",
+      "holding-v2",
+      "holding-v2"
+    ],
+    "2": [
+      "holding-v2"
+    ],
+    "3": [
+      "holding-v2",
+      "hit-recoil-v1",
+      "hit-recoil-v1",
+      "holding-v2"
+    ],
+    "4": [
+      "holding-v2",
+      "defend-brace-v1",
+      "defend-brace-v1",
+      "holding-v2"
+    ],
+    "5": [
+      "holding-v2",
+      "death-buckle-v1",
+      "death-knees-v1",
+      "death-fall-v1",
+      "death-settle-v1",
+      "death-corpse-v1"
+    ],
+    "7": [
+      "holding-v2",
+      "turn-quarter-v1",
+      "turn-front-v1"
+    ],
+    "8": [
+      "turn-front-v1-left",
+      "turn-quarter-v1",
+      "holding-v2"
+    ],
+    "11": [
+      "holding-v2",
+      "attack-preparation-v1",
+      "attack-preparation-v1",
+      "attack-up-contact-v1",
+      "attack-recovery-v1",
+      "holding-v2"
+    ],
+    "12": [
+      "holding-v2",
+      "attack-preparation-v1",
+      "attack-preparation-v1",
+      "attack-front-contact-v1",
+      "attack-recovery-v1",
+      "holding-v2"
+    ],
+    "13": [
+      "holding-v2",
+      "attack-preparation-v1",
+      "attack-preparation-v1",
+      "attack-down-contact-v1",
+      "attack-recovery-v1",
+      "holding-v2"
+    ]
+  },
+  "candidates_to_preserve_not_consume": [
+    "holding-v1",
+    "walk-down-b-v1",
+    "walk-down-b-v2",
+    "walk-passing-b-v1"
+  ],
+  "boundary_reuse": "Repeated holding/preparation/contact frames are explicit temporal holds; no duplicate still counted as a distinct walk pose. Group2 exactlyone staticgrounded master. Genuinefidget onlygroup1.",
+  "turn_join": "g7 endsfrontal; engineflipsfacing beforeg8; g8 startswithpivotmirroredfrontalkey to preserve exactjoinafterflip.",
+  "open_visual_limits": [
+    "Sparse painted keys and paw-support continuity require independent native1x motion review; no engineplayback observed.",
+    "Generated fur/tongue microdetail and pose proportions vary; fixedtransform forbids hiddenbodyfitting but does not byitself prove perfect anatomical continuity.",
+    "Source shadows and groundcontact remain visually unapproved."
+  ]
+}

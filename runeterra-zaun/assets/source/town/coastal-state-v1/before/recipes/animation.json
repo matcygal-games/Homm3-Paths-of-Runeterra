@@ -1,0 +1,92 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "Independent Zaun architecture in Heroes III native painted language: corroded iron, wet concrete, industrial ruins. Never recolour Castle or Demacia art, import original pixels or invent an official crest.",
+  "building": "ship",
+  "building_contract": {
+    "full_canvas_placement": {
+      "x": 0,
+      "y": 0,
+      "z": 46
+    },
+    "name": "Moored Barge",
+    "native_ground_contact": [
+      738,
+      292,
+      60,
+      70
+    ],
+    "upgrades": "shipyard"
+  },
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; prompted and technically assembled by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/port-master.png",
+      "sha256": "bd0674cf0338491b7a070601d82f5d2ce401b9e3a295e38751812e1f49828704"
+    },
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/port-provenance.json",
+      "sha256": "28fb7bdaa304ee3159397c943b43ee3ed884c1eb9af5bae84ee0b11bae94a804"
+    },
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/selection.json",
+      "sha256": "7f5f6168779eae0bef917194c0713758ac5459a83b1bb44e3b3218c57e0b5f8d"
+    },
+    {
+      "path": "scripts/zaun_chemtech_town_v4.py",
+      "sha256": "7acfd01d1507ecd26cf9de53de7d3f1202c589c779929c1c711bc4958688b6a1"
+    },
+    {
+      "path": "scripts/zaun_painted_town.py",
+      "sha256": "db7df36af68804059582b99c6cec06d2d29dbaf7db57a74936050442a9f6bc68"
+    }
+  ],
+  "fit": "contain",
+  "generateOverlay": 0,
+  "generateShadow": 0,
+  "generation": {
+    "image_generation_used": true,
+    "model": null,
+    "painted_master": "assets/source/town/chemtech-v4-buildings/port-master.png",
+    "prompt": "Usecase: precise-object-edit. OwnZaunportassets. Input1LEFTemptydock isdocktarget; ignoreitsrightdockedshipassembly. Input2isstandalonebarge. ProduceTWO fullySEPARATEcutoutsSIDE BY SIDE withlargegutter: LEFTemptyindustrialdockwith2cranes/hoistssmallstoreshed, RIGHTstandalonecargoBARGe onlywithNOdockunderit. Keep existingbrownwetwood/rustiron/rope/crate shapes andlowfrontthreequartercamera. CHEMTECHrevision: greenpressureglasslampsandshortcopperfeedpipeonthedock; bargehasvisiblegreenreagentcargo barrels/flasks/cratesandonegreenenginepressurecell, patchedPURPLEcargotarpandpurpleflag, greenlocalglasslightnotgreeneverywhere. Preserveboatwholehull/bow/sternandflagpole withgeneroustransparentpadding, allcraneapicesanddockrampsinsidecanvas. OriginalHeroesIIItexturedpainted/prerenderedtownstyle,broadupperleftlight, locallyreflectedchemicalgreen. Genuinealphaoutside2independentcutouts,nobackdrop/waterbackground/text/neonoutlines/people.",
+    "provenance": "assets/source/town/chemtech-v4-buildings/port-provenance.json",
+    "provenance_sha256": "28fb7bdaa304ee3159397c943b43ee3ed884c1eb9af5bae84ee0b11bae94a804",
+    "provider": "OpenAI built-in image_gen.imagegen",
+    "route": "Genuine image-generation edit of own Zaun buildings; technical crop/uniform scale/placement only"
+  },
+  "groups": [
+    {
+      "action": "own town building state, not a troop idle/action",
+      "frames": [
+        {
+          "sha256": "b09bd1f113cf1b18e70e5a9cd55462e7d6d9be444a9aecb821fb3da4ab94df7b",
+          "source": "assets/source/town/chemtech-v4-buildings/native/ship/layer.png"
+        }
+      ],
+      "group": 0
+    }
+  ],
+  "id": "zaun.town.structure.ship.animation",
+  "identity_review": "assets/reviews/town/chemtech-v5-organic/review.json",
+  "native_visual_review": "pending",
+  "output_path": "Content/Sprites/runeterra/zaun/town/structures/ship.json",
+  "production_status": "delivered",
+  "recipe_type": "vcmi_animation",
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "source_sha256": "b09bd1f113cf1b18e70e5a9cd55462e7d6d9be444a9aecb821fb3da4ab94df7b",
+  "status": "built-unreviewed",
+  "title": "Moored Barge town layer",
+  "visual_approval_granted": false
+}

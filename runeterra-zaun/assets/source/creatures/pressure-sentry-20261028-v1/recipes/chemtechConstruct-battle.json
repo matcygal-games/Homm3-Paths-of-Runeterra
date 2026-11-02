@@ -1,0 +1,795 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "attack_semantics": "One ordinary single-target melee strike with ordinary retaliation. No shot, spell, teleport, extra action or breath unless the declared action groups say so.",
+  "canvas": [
+    450,
+    400
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; Codex measured 2D technical extraction",
+    "license": "unresolved",
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/source-selection.json",
+      "sha256": "07b8f8d617da4a94dad4536c843426598af9f44e12871b9e5e4f700aeb0bef64"
+    },
+    {
+      "path": "scripts/assemble_pressure_sentry_20261028.py",
+      "sha256": "07cc92c4932c07a4c00f0c78864b0da00717f7ce96fc88e3144e7858c94659b9"
+    },
+    {
+      "path": "scripts/art_recipes.py",
+      "sha256": "c46dee8a902a674a2aa9e53a2f5c363a052318685597ae48cf862f5a8b79282d"
+    },
+    {
+      "kind": "own-painted-creative-input",
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/general-v1/master.png",
+      "sha256": "929e4d37f4671c1248eaf2f2a75aee352351f62335a945647fcac01ed3c7d117"
+    },
+    {
+      "kind": "own-painted-creative-input",
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/general-v1/prompt.txt",
+      "sha256": "30da802c4d984507092bad1194e413b5f10b304099c999a7492a602ecf0e3c41"
+    },
+    {
+      "kind": "own-painted-creative-input",
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/shoot-v1/master.png",
+      "sha256": "7f4737d4d9d22bffd5bb7490dc4b9663803540ee30a0a6a79f3eb846dd03bcfa"
+    },
+    {
+      "kind": "own-painted-creative-input",
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/shoot-v1/prompt.txt",
+      "sha256": "5cd20e40aa529654567e3e87e6c22cd13fe5651069bde553ddabff21159c4234"
+    },
+    {
+      "kind": "own-painted-creative-input",
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/encounter-v1/master.png",
+      "sha256": "34730802f782d46e05308f341af5ff9e298aae6e064cfd2de1bb49e13b4ec41e"
+    },
+    {
+      "kind": "own-painted-creative-input",
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/encounter-v1/prompt.txt",
+      "sha256": "a66eb50575b3cbb87ef55bb07082dd23e79486404eba2308434432cafc322441"
+    },
+    {
+      "kind": "own-painted-creative-input",
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/melee-v1/master.png",
+      "sha256": "c9d0474230ffb2f7154815d073a3e7710a2f2d2695bbb9b4ae3b2a5ccbd6079f"
+    },
+    {
+      "kind": "own-painted-creative-input",
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/melee-v1/prompt.txt",
+      "sha256": "cfa2ae84d50092f6d6ec1d3f40e288bd1c1ff28263e362cd0247cac408301de0"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/general-v2/master.png",
+      "sha256": "6a8784c804711e254b8b76ad3377eed37bafcec91b238f407926d1a111470df2"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/general-v2/prompt.txt",
+      "sha256": "260f7e152d68116ad7827bdb8ed78cce4328b728fcc14f0d7e7cc48703e19cfe"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/general-v2/generation.json",
+      "sha256": "3dc5ab328c3517ebfcf0e218772a75c28129d072f6f81281729e7fc221f257a8"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/general-v2/registration.json",
+      "sha256": "6e093466b6863d97509ae164f4e7d7ef45f65263a04db58f89f837a11d7e7726"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/melee-v2/master.png",
+      "sha256": "a856ca6371af2e6105212aa3b81f80e19aad665e87d374733fd19a1ab24b2bcf"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/melee-v2/prompt.txt",
+      "sha256": "6c3af1812c1a441aa1c6f8dcc5d245d54f21ff685114ea7f7ecb81d51a7729b3"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/melee-v2/generation.json",
+      "sha256": "36c13cf5c10f51aad535cadf1d32aaddbfb9330641e0c30f8670a47149dee361"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/melee-v2/registration.json",
+      "sha256": "229aef3f35aade0510ed2206fc680966ddda44d82180a20e89492d284a7a5a84"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/shoot-v2/master.png",
+      "sha256": "ce155ee909db5ca69d8d0db4a0c2209e1c6b5d35aee1172095467e46405c556d"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/shoot-v2/prompt.txt",
+      "sha256": "27f7cc1ab6a17c752c6c551755f47d4f1e965a288c1c81b34d1a4b3c7ee00999"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/shoot-v2/generation.json",
+      "sha256": "5219bd0c8e8a1b609a301075a867eb33d543acbfd8cfaf131d1111441c29090c"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/shoot-v2/registration.json",
+      "sha256": "35afa021518724f96e21ad624a4e33488c3699d03d89b39113f8bb543ef3799f"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/encounter-v2/master.png",
+      "sha256": "eba5962ea2ee2684898cfc4d2d4a6bc4bd3044dfabad6632a70d0741c2ad01dc"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/encounter-v2/prompt.txt",
+      "sha256": "f52cdea73ba0b19e0acb6d0d9c886efa161315fdb9724ad299d60e4a00e68947"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/encounter-v2/generation.json",
+      "sha256": "ed13b0025b44b4ac83f374489b52124c46a09b677677bf77596fca01f67a44e5"
+    },
+    {
+      "kind": "own-painted-creative-input",
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/reinforcedConstruct/general-v1/master.png",
+      "sha256": "1dad1d59a326be70a2c1f7ed61d44fa8c288f8da1243e181345a3661111d57f8"
+    },
+    {
+      "kind": "own-painted-creative-input",
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/reinforcedConstruct/general-v1/prompt.txt",
+      "sha256": "634120def0f3988cb1623fec0eeeba6d8fd2a3437960e73a660f0b2fd16136a3"
+    },
+    {
+      "kind": "own-painted-creative-input",
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/reinforcedConstruct/shoot-v1/master.png",
+      "sha256": "cd888f2a3ddb8b5f024395482c5a03a231bccde2a2aa66ddd388c6039eb82445"
+    },
+    {
+      "kind": "own-painted-creative-input",
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/reinforcedConstruct/shoot-v1/prompt.txt",
+      "sha256": "b11c8bc8a202545115c477ea6655244f725cc4ad8376531913efbddfea775fc8"
+    },
+    {
+      "kind": "own-painted-creative-input",
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/reinforcedConstruct/encounter-v1/master.png",
+      "sha256": "5e8ee876217550bab15e51bd1ad6771319631a13799b6c0f1b02059b2fe352f7"
+    },
+    {
+      "kind": "own-painted-creative-input",
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/reinforcedConstruct/encounter-v1/prompt.txt",
+      "sha256": "58fc00840682acff89672564f1e0b55926e30b9b03e07f5f164695b041470f0a"
+    },
+    {
+      "kind": "own-painted-creative-input",
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/reinforcedConstruct/identity-v1/master.png",
+      "sha256": "15403dfaca15ad2820dfb0c28b5a217331cf057c605c89dfb1c1baf8fc8253b4"
+    },
+    {
+      "kind": "own-painted-creative-input",
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/reinforcedConstruct/identity-v1/prompt.txt",
+      "sha256": "b3986d061a8bd0696a1ff4f1ca4d0a03cf9c7eefc5f259832ba3fda298973778"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/reinforcedConstruct/general-v2/master.png",
+      "sha256": "2ebe59bdfd798dc16c53b8da4086b14fb5fc1610e27f93bcbe53b891bb9cdccf"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/reinforcedConstruct/general-v2/prompt.txt",
+      "sha256": "d51d3c9359105f6bc514ba4f1fb0e4c743c8d266d98fde0c918246750c1102e4"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/reinforcedConstruct/general-v2/generation.json",
+      "sha256": "b4f4bb5f65ab9861562564f0b7a0e26768e271feb4a8086ab012285725750fca"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/reinforcedConstruct/general-v2/registration.json",
+      "sha256": "fe8b5476f2bc7b5eb34df9d2f0b5bc2367b9a34d551512be4f07d0dbd7d23d00"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/reinforcedConstruct/melee-v3/master.png",
+      "sha256": "a04281ae04fc009e63a47cb7b63f2010e5f987d540406406fa425263fc649ca9"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/reinforcedConstruct/melee-v3/prompt.txt",
+      "sha256": "000dc08770ec872745f91eb34a8c43c46c9adfafa6e5cc8a7cc8696e36bc04ca"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/reinforcedConstruct/melee-v3/generation.json",
+      "sha256": "ce5b6d4bc566f64757e1ee7c5a29c068fda427e66585351af2baf4e974399557"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/reinforcedConstruct/melee-v3/registration.json",
+      "sha256": "9b3baf6626aee56fdd288dcf7baabeb76ecd4546ab277b9a8f95c2ef5b273329"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/reinforcedConstruct/shoot-v2/master.png",
+      "sha256": "acd2a9a198877a52a0695066b7be6da26cddd95d3a4910475de7359007ada6f9"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/reinforcedConstruct/shoot-v2/prompt.txt",
+      "sha256": "5c8b3e04de27b845c900617987e340ff854192f67621ff0aa6bc6751393bd2bb"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/reinforcedConstruct/shoot-v2/generation.json",
+      "sha256": "4aea20fc3ace7f212d1558a628f483a2816d7b6063630662d1f8919166f861fa"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/reinforcedConstruct/shoot-v2/registration.json",
+      "sha256": "1d018aeb2df2f57ab10c27d8661a5b2a0c693fd6bcbaa04a6a9bd51593cac604"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/reinforcedConstruct/encounter-v2/master.png",
+      "sha256": "2217156607267240bd91925a6dec1e88e9bbe8766b74b6080174366629d088c8"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/reinforcedConstruct/encounter-v2/prompt.txt",
+      "sha256": "ed536b7bbce7b764e9cf826300e71d9d3a9f605370b60a8b973812696cb15a43"
+    },
+    {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/reinforcedConstruct/encounter-v2/generation.json",
+      "sha256": "71d6c741bb8661de6566b7ad7228f3bbdb32a2084dfb937dd65d62d3bc52686c"
+    }
+  ],
+  "footprint": {
+    "battle": {
+      "body_center": [
+        175,
+        266
+      ],
+      "doubleWide": false,
+      "front_center": [
+        197,
+        266
+      ],
+      "hex_height": 42,
+      "hex_width": 44,
+      "rear_center": [
+        153,
+        266
+      ],
+      "semantics": "Two adjacent battle hexes derived from doubleWide, not from the adventure mapMask. The mask PNG is a technical source guide only, not a game asset."
+    },
+    "doubleWide": false,
+    "mapMask": [
+      "VV",
+      "VA"
+    ]
+  },
+  "generateOverlay": 1,
+  "generateShadow": 1,
+  "generation": {
+    "alpha_preserved": true,
+    "image_generation_used": true,
+    "model": null,
+    "native_execution": false,
+    "painted_master": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/general-v2/master.png",
+    "painted_master_sha256": "6a8784c804711e254b8b76ad3377eed37bafcec91b238f407926d1a111470df2",
+    "provider": "OpenAI built-in imagegen",
+    "supplemental_masters": [
+      {
+        "path": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/melee-v2/master.png",
+        "sha256": "a856ca6371af2e6105212aa3b81f80e19aad665e87d374733fd19a1ab24b2bcf"
+      },
+      {
+        "path": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/shoot-v2/master.png",
+        "sha256": "ce155ee909db5ca69d8d0db4a0c2209e1c6b5d35aee1172095467e46405c556d"
+      },
+      {
+        "path": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/encounter-v2/master.png",
+        "sha256": "eba5962ea2ee2684898cfc4d2d4a6bc4bd3044dfabad6632a70d0741c2ad01dc"
+      }
+    ]
+  },
+  "groups": [
+    {
+      "action": "MOVING",
+      "frames": [
+        {
+          "sha256": "8a2e42b691f31176442400cc2c3e22b79178af4d5f1323f6ee378a4db9236349",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r00-c00.png",
+          "source_sha256": "8a2e42b691f31176442400cc2c3e22b79178af4d5f1323f6ee378a4db9236349"
+        },
+        {
+          "sha256": "2df7451606f0977b4416013790ba74fbdc068bbb35440b7630456201a7497a1f",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r00-c01.png",
+          "source_sha256": "2df7451606f0977b4416013790ba74fbdc068bbb35440b7630456201a7497a1f"
+        },
+        {
+          "sha256": "215dd2166185b1e27be1eaa43f83e67743263f04673457c7d94af0b6111df1b5",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r00-c02.png",
+          "source_sha256": "215dd2166185b1e27be1eaa43f83e67743263f04673457c7d94af0b6111df1b5"
+        },
+        {
+          "sha256": "34102dcb2fdfc7cbb96ac69eaa98649f0ae51a3d7eb633ae43df9459b066100e",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r00-c03.png",
+          "source_sha256": "34102dcb2fdfc7cbb96ac69eaa98649f0ae51a3d7eb633ae43df9459b066100e"
+        },
+        {
+          "sha256": "8211a116dbf4cb9be58d266ce24a5bace72e8c39faf7455c66c9f1a50db0ac9e",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r00-c04.png",
+          "source_sha256": "8211a116dbf4cb9be58d266ce24a5bace72e8c39faf7455c66c9f1a50db0ac9e"
+        },
+        {
+          "sha256": "e28d8134ba6e6111d939d340fb87e094d01077d98488c596e2c241ec83ec2135",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r00-c05.png",
+          "source_sha256": "e28d8134ba6e6111d939d340fb87e094d01077d98488c596e2c241ec83ec2135"
+        }
+      ],
+      "group": 0
+    },
+    {
+      "action": "MOUSEON",
+      "frames": [
+        {
+          "sha256": "e4438a26602e383136d444df6d60ff70dd246b2cb4d1239e384f36b721948624",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r01-c00.png",
+          "source_sha256": "e4438a26602e383136d444df6d60ff70dd246b2cb4d1239e384f36b721948624"
+        },
+        {
+          "sha256": "c4bb549c74c6926abd485140b9846591d7863f9b3bb64e968d064c3f79139b32",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r01-c01.png",
+          "source_sha256": "c4bb549c74c6926abd485140b9846591d7863f9b3bb64e968d064c3f79139b32"
+        },
+        {
+          "sha256": "ceee60410b59e66ecfb791c434d5bee85c2f748e8ed57b578462fa048a6a4e38",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r01-c02.png",
+          "source_sha256": "ceee60410b59e66ecfb791c434d5bee85c2f748e8ed57b578462fa048a6a4e38"
+        },
+        {
+          "sha256": "4377cea75c450ae6be181cb51f0a34e0dda6a4e92cbfe72688d3578649910eb7",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r01-c03.png",
+          "source_sha256": "4377cea75c450ae6be181cb51f0a34e0dda6a4e92cbfe72688d3578649910eb7"
+        }
+      ],
+      "group": 1
+    },
+    {
+      "action": "HOLDING",
+      "frames": [
+        {
+          "sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r01-c04.png",
+          "source_sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa"
+        }
+      ],
+      "group": 2
+    },
+    {
+      "action": "HITTED",
+      "frames": [
+        {
+          "sha256": "aabf0a672caac03f2f22976dcdb6b9413c23b3025962ffda712628b9a88b70a8",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r02-c00.png",
+          "source_sha256": "aabf0a672caac03f2f22976dcdb6b9413c23b3025962ffda712628b9a88b70a8"
+        },
+        {
+          "sha256": "1f55142390f82db80fe70de6cca4ecbfd1dbc8273902e5402d363d93b957c11e",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r02-c01.png",
+          "source_sha256": "1f55142390f82db80fe70de6cca4ecbfd1dbc8273902e5402d363d93b957c11e"
+        },
+        {
+          "sha256": "f7b73c5c1ad5c2a41d3bdb8f1307675fc117a0b93007cede36aa2ae513c17fc5",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r02-c02.png",
+          "source_sha256": "f7b73c5c1ad5c2a41d3bdb8f1307675fc117a0b93007cede36aa2ae513c17fc5"
+        },
+        {
+          "sha256": "b01320283540778a9fd98d0ce70521fb25f1dde8f58e08242f5815372916abb2",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r02-c03.png",
+          "source_sha256": "b01320283540778a9fd98d0ce70521fb25f1dde8f58e08242f5815372916abb2"
+        }
+      ],
+      "group": 3
+    },
+    {
+      "action": "DEFENCE",
+      "frames": [
+        {
+          "sha256": "1d25bdedf46e0ac36f20bd32a01976fce6aff2e493cf7c881bdb6e63f0755bca",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r04-c00.png",
+          "source_sha256": "1d25bdedf46e0ac36f20bd32a01976fce6aff2e493cf7c881bdb6e63f0755bca"
+        },
+        {
+          "sha256": "0b68dd2579ab1469f2332f9e23ee2811782c1d85fa38361c2c5487bd0f01cc3f",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r04-c01.png",
+          "source_sha256": "0b68dd2579ab1469f2332f9e23ee2811782c1d85fa38361c2c5487bd0f01cc3f"
+        },
+        {
+          "sha256": "7ad0b690d7c693284ad4e7753a80ce331d15c2fd2c2c105e9276431f92fbe74e",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r04-c02.png",
+          "source_sha256": "7ad0b690d7c693284ad4e7753a80ce331d15c2fd2c2c105e9276431f92fbe74e"
+        },
+        {
+          "sha256": "77fddc4f1777322fe0e2ed6cd2bb04f689663afc2b78d7d67985bf99c4e632ee",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r04-c03.png",
+          "source_sha256": "77fddc4f1777322fe0e2ed6cd2bb04f689663afc2b78d7d67985bf99c4e632ee"
+        }
+      ],
+      "group": 4
+    },
+    {
+      "action": "DEATH",
+      "frames": [
+        {
+          "sha256": "407a02f100db2da24010260d6fba526eb8b608dd131020a90a63414cff47881d",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r05-c00.png",
+          "source_sha256": "407a02f100db2da24010260d6fba526eb8b608dd131020a90a63414cff47881d"
+        },
+        {
+          "sha256": "12248546dec3d10af811eea48e1a36eda1651d96dc944f605a3ce91b6f1c9007",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r05-c01.png",
+          "source_sha256": "12248546dec3d10af811eea48e1a36eda1651d96dc944f605a3ce91b6f1c9007"
+        },
+        {
+          "sha256": "7583f5a52fae4d8668e3517d060292a057fe9cfabaea31a4ee22163d353b0623",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r05-c02.png",
+          "source_sha256": "7583f5a52fae4d8668e3517d060292a057fe9cfabaea31a4ee22163d353b0623"
+        },
+        {
+          "sha256": "1085c65123aeeed84535a423f87bdd98f541e2cd7102f69c6d8d55ca8507c3b0",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r05-c03.png",
+          "source_sha256": "1085c65123aeeed84535a423f87bdd98f541e2cd7102f69c6d8d55ca8507c3b0"
+        },
+        {
+          "sha256": "34f85d694ebabf129a167d2169d7b8060c140f5ab19542a7d91de17d093f91aa",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r05-c04.png",
+          "source_sha256": "34f85d694ebabf129a167d2169d7b8060c140f5ab19542a7d91de17d093f91aa"
+        },
+        {
+          "sha256": "63dbf90e752af999c7358e001a673f5f6e809662dde963e1dcee713cd0b28be5",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r05-c05.png",
+          "source_sha256": "63dbf90e752af999c7358e001a673f5f6e809662dde963e1dcee713cd0b28be5"
+        }
+      ],
+      "group": 5
+    },
+    {
+      "action": "TURN_L",
+      "frames": [
+        {
+          "sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r01-c04.png",
+          "source_sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa"
+        },
+        {
+          "sha256": "f9fe43547bc1560c238eb31237083c10d165e66008559ae57fda2637e292dbc7",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r03-c01.png",
+          "source_sha256": "f9fe43547bc1560c238eb31237083c10d165e66008559ae57fda2637e292dbc7"
+        },
+        {
+          "sha256": "2d4a01a8d3358c933efb75b41d1a1e01e009a3765568e373a4715f172a898647",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r03-c02.png",
+          "source_sha256": "2d4a01a8d3358c933efb75b41d1a1e01e009a3765568e373a4715f172a898647"
+        },
+        {
+          "sha256": "6ef5c944b65979271b853bb089c80c2bf76451213edb89bc3e60a496b5d1754d",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r03-c03.png",
+          "source_sha256": "6ef5c944b65979271b853bb089c80c2bf76451213edb89bc3e60a496b5d1754d"
+        }
+      ],
+      "group": 7
+    },
+    {
+      "action": "TURN_R",
+      "frames": [
+        {
+          "sha256": "6ef5c944b65979271b853bb089c80c2bf76451213edb89bc3e60a496b5d1754d",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r03-c03.png",
+          "source_sha256": "6ef5c944b65979271b853bb089c80c2bf76451213edb89bc3e60a496b5d1754d"
+        },
+        {
+          "sha256": "2d4a01a8d3358c933efb75b41d1a1e01e009a3765568e373a4715f172a898647",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r03-c02.png",
+          "source_sha256": "2d4a01a8d3358c933efb75b41d1a1e01e009a3765568e373a4715f172a898647"
+        },
+        {
+          "sha256": "f9fe43547bc1560c238eb31237083c10d165e66008559ae57fda2637e292dbc7",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r03-c01.png",
+          "source_sha256": "f9fe43547bc1560c238eb31237083c10d165e66008559ae57fda2637e292dbc7"
+        },
+        {
+          "sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r01-c04.png",
+          "source_sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa"
+        }
+      ],
+      "group": 8
+    },
+    {
+      "action": "ATTACK_UP",
+      "frames": [
+        {
+          "sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r01-c04.png",
+          "source_sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa"
+        },
+        {
+          "sha256": "31cd6b8051646ae39c452dbc4b8ffa48a249887ac67de9e6a8d55b676c2e6ff6",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/melee-v2/r00-c01.png",
+          "source_sha256": "31cd6b8051646ae39c452dbc4b8ffa48a249887ac67de9e6a8d55b676c2e6ff6"
+        },
+        {
+          "sha256": "5237f618936902c9b7ef603ef23244ba5442f8b0c1c1cad41bb2594c1d042004",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/melee-v2/r00-c02.png",
+          "source_sha256": "5237f618936902c9b7ef603ef23244ba5442f8b0c1c1cad41bb2594c1d042004"
+        },
+        {
+          "sha256": "326c294d11247a505422b6f636a771491c140d9c47f0a39dc1dbbd0e2276ceba",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/melee-v2/r00-c03.png",
+          "source_sha256": "326c294d11247a505422b6f636a771491c140d9c47f0a39dc1dbbd0e2276ceba"
+        },
+        {
+          "sha256": "08f0c883ad684b240a032e647cc6bc5a00d4b778baad59ffb68b480d232fa461",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/melee-v2/r00-c04.png",
+          "source_sha256": "08f0c883ad684b240a032e647cc6bc5a00d4b778baad59ffb68b480d232fa461"
+        },
+        {
+          "sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r01-c04.png",
+          "source_sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa"
+        }
+      ],
+      "group": 11
+    },
+    {
+      "action": "ATTACK_FRONT",
+      "frames": [
+        {
+          "sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r01-c04.png",
+          "source_sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa"
+        },
+        {
+          "sha256": "6dfd8701a6f0c23062b19331391646ce6c3864f01477b7bf9600f430a436ca07",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/melee-v2/r01-c01.png",
+          "source_sha256": "6dfd8701a6f0c23062b19331391646ce6c3864f01477b7bf9600f430a436ca07"
+        },
+        {
+          "sha256": "93d70a4a57fb88e62c8708639d83b61c1302c473b33ca17fc8b002adca5252db",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/melee-v2/r01-c02.png",
+          "source_sha256": "93d70a4a57fb88e62c8708639d83b61c1302c473b33ca17fc8b002adca5252db"
+        },
+        {
+          "sha256": "2203c2d7bfe4d96af651202074d096b1f2b797ee118efd3a383039d7f1914f9e",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/melee-v2/r01-c03.png",
+          "source_sha256": "2203c2d7bfe4d96af651202074d096b1f2b797ee118efd3a383039d7f1914f9e"
+        },
+        {
+          "sha256": "02a09179bb52ad219ad3486ffa8d32674ad5bb3fa8df0d5b45699475ae081d71",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/melee-v2/r01-c04.png",
+          "source_sha256": "02a09179bb52ad219ad3486ffa8d32674ad5bb3fa8df0d5b45699475ae081d71"
+        },
+        {
+          "sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r01-c04.png",
+          "source_sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa"
+        }
+      ],
+      "group": 12
+    },
+    {
+      "action": "ATTACK_DOWN",
+      "frames": [
+        {
+          "sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r01-c04.png",
+          "source_sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa"
+        },
+        {
+          "sha256": "c9a30762f632e4b36ad946c41fc716f7cde5b211e107c9d266bf7ecc12bbd1e6",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/melee-v2/r02-c01.png",
+          "source_sha256": "c9a30762f632e4b36ad946c41fc716f7cde5b211e107c9d266bf7ecc12bbd1e6"
+        },
+        {
+          "sha256": "f8a7fcbcf3f96742e51ca981414753c87e6c81ff0284282ab084765478b92cb2",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/melee-v2/r02-c02.png",
+          "source_sha256": "f8a7fcbcf3f96742e51ca981414753c87e6c81ff0284282ab084765478b92cb2"
+        },
+        {
+          "sha256": "447c74a367394ddfb9c07ff1c3e185ecf6b83f42ac60fbb784a286cee301e832",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/melee-v2/r02-c03.png",
+          "source_sha256": "447c74a367394ddfb9c07ff1c3e185ecf6b83f42ac60fbb784a286cee301e832"
+        },
+        {
+          "sha256": "33be78961e97b9908aa0726724aa357ec5b276d5f246c602297475bc7aa89e4c",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/melee-v2/r02-c04.png",
+          "source_sha256": "33be78961e97b9908aa0726724aa357ec5b276d5f246c602297475bc7aa89e4c"
+        },
+        {
+          "sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r01-c04.png",
+          "source_sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa"
+        }
+      ],
+      "group": 13
+    },
+    {
+      "action": "DEAD",
+      "frames": [
+        {
+          "sha256": "63dbf90e752af999c7358e001a673f5f6e809662dde963e1dcee713cd0b28be5",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r05-c05.png",
+          "source_sha256": "63dbf90e752af999c7358e001a673f5f6e809662dde963e1dcee713cd0b28be5"
+        }
+      ],
+      "group": 22
+    },
+    {
+      "action": "SHOOT_UP",
+      "frames": [
+        {
+          "sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r01-c04.png",
+          "source_sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa"
+        },
+        {
+          "sha256": "c3db181c98404ec7025a5344673d21dadb6238121466d2a931528c95b72bf862",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/shoot-v2/r00-c01.png",
+          "source_sha256": "c3db181c98404ec7025a5344673d21dadb6238121466d2a931528c95b72bf862"
+        },
+        {
+          "sha256": "24cfe62bebe5091406e20ca1c21e58cf165d22ec9c2a4a8f4df06f949100e632",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/shoot-v2/r00-c02.png",
+          "source_sha256": "24cfe62bebe5091406e20ca1c21e58cf165d22ec9c2a4a8f4df06f949100e632"
+        },
+        {
+          "sha256": "f274cf7fe25936b7da15ece99887d02ec357b95cbc64ded0cd8660873d9aa2b6",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/shoot-v2/r00-c03.png",
+          "source_sha256": "f274cf7fe25936b7da15ece99887d02ec357b95cbc64ded0cd8660873d9aa2b6"
+        },
+        {
+          "sha256": "1fbf05ffc908cfee3520eec5bbe62b737cf28a64b489f7aeb97d0fde5ccef423",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/shoot-v2/r00-c04.png",
+          "source_sha256": "1fbf05ffc908cfee3520eec5bbe62b737cf28a64b489f7aeb97d0fde5ccef423"
+        },
+        {
+          "sha256": "1871ff47cec031867f960bf4db478c719187615a18c9dba2aedbc24297fa074e",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/shoot-v2/r00-c05.png",
+          "source_sha256": "1871ff47cec031867f960bf4db478c719187615a18c9dba2aedbc24297fa074e"
+        },
+        {
+          "sha256": "3379f87c6800bac4d17606b1d9649c5afd2d1eab3b5ca0938657646e74a25366",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/shoot-v2/r00-c06.png",
+          "source_sha256": "3379f87c6800bac4d17606b1d9649c5afd2d1eab3b5ca0938657646e74a25366"
+        },
+        {
+          "sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r01-c04.png",
+          "source_sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa"
+        }
+      ],
+      "group": 14
+    },
+    {
+      "action": "SHOOT_FRONT",
+      "frames": [
+        {
+          "sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r01-c04.png",
+          "source_sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa"
+        },
+        {
+          "sha256": "410fab9d4b10e364510e9dd2f15d9539c01455f222f11095000f6bb6e77be1db",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/shoot-v2/r01-c01.png",
+          "source_sha256": "410fab9d4b10e364510e9dd2f15d9539c01455f222f11095000f6bb6e77be1db"
+        },
+        {
+          "sha256": "15cb875deec48d00ea3ae4bc5e4aaefa5b00c18bd488d2a071e57657f1aeb369",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/shoot-v2/r01-c02.png",
+          "source_sha256": "15cb875deec48d00ea3ae4bc5e4aaefa5b00c18bd488d2a071e57657f1aeb369"
+        },
+        {
+          "sha256": "859cc213810da5896e7f5f4f39538856c1e3d89d819e7d5c54139fd060e8ffb2",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/shoot-v2/r01-c03.png",
+          "source_sha256": "859cc213810da5896e7f5f4f39538856c1e3d89d819e7d5c54139fd060e8ffb2"
+        },
+        {
+          "sha256": "4cfa20ed7fe4d0e2cca39a80f2ead170cb335ff6d342c3147ea9d126f44b267d",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/shoot-v2/r01-c04.png",
+          "source_sha256": "4cfa20ed7fe4d0e2cca39a80f2ead170cb335ff6d342c3147ea9d126f44b267d"
+        },
+        {
+          "sha256": "a4256f40e21672776384b0928e1d5fad1ba6a472404cf32df07fc0a61c717c6f",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/shoot-v2/r01-c05.png",
+          "source_sha256": "a4256f40e21672776384b0928e1d5fad1ba6a472404cf32df07fc0a61c717c6f"
+        },
+        {
+          "sha256": "ae50c7c561455c541cd8bbb7729feaedb554309cd25e5e4024acfc0bf694f464",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/shoot-v2/r01-c06.png",
+          "source_sha256": "ae50c7c561455c541cd8bbb7729feaedb554309cd25e5e4024acfc0bf694f464"
+        },
+        {
+          "sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r01-c04.png",
+          "source_sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa"
+        }
+      ],
+      "group": 15
+    },
+    {
+      "action": "SHOOT_DOWN",
+      "frames": [
+        {
+          "sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r01-c04.png",
+          "source_sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa"
+        },
+        {
+          "sha256": "5a8d1f19078932c2d1750717d07c30a8f0520ef3a2c16cdbf19c87b5245d1fbf",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/shoot-v2/r02-c01.png",
+          "source_sha256": "5a8d1f19078932c2d1750717d07c30a8f0520ef3a2c16cdbf19c87b5245d1fbf"
+        },
+        {
+          "sha256": "3e871620a4e2ccd43f3b17fce4a5d9db754365414418cfde09553301aec15365",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/shoot-v2/r02-c02.png",
+          "source_sha256": "3e871620a4e2ccd43f3b17fce4a5d9db754365414418cfde09553301aec15365"
+        },
+        {
+          "sha256": "974030d90a1edc15dc1abb38bc2fff30c4870f3e7d58b0b00c3e7d45cd0d2ce6",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/shoot-v2/r02-c03.png",
+          "source_sha256": "974030d90a1edc15dc1abb38bc2fff30c4870f3e7d58b0b00c3e7d45cd0d2ce6"
+        },
+        {
+          "sha256": "f39ecfd3261bb46714ecf3b58e085993c65a3da7a4fb940da12d8f8c854bf618",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/shoot-v2/r02-c04.png",
+          "source_sha256": "f39ecfd3261bb46714ecf3b58e085993c65a3da7a4fb940da12d8f8c854bf618"
+        },
+        {
+          "sha256": "17ea2d6f79d02875d68488c285929a9be6c7adfc8bc94e6c7eb32beff432b54e",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/shoot-v2/r02-c05.png",
+          "source_sha256": "17ea2d6f79d02875d68488c285929a9be6c7adfc8bc94e6c7eb32beff432b54e"
+        },
+        {
+          "sha256": "da1162ef7fe27172f708bf5b98cae1e83f37dc57efdc514f33c8bbd3096a20e7",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/shoot-v2/r02-c06.png",
+          "source_sha256": "da1162ef7fe27172f708bf5b98cae1e83f37dc57efdc514f33c8bbd3096a20e7"
+        },
+        {
+          "sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa",
+          "source": "assets/source/creatures/pressure-sentry-20261028-v1/chemtechConstruct/native-v1/general-v2/r01-c04.png",
+          "source_sha256": "72ceef1d9b72fff520f1ab34c76c71e36fc9465fbab40974b5a1c3e04bee90fa"
+        }
+      ],
+      "group": 16
+    }
+  ],
+  "id": "zaun.creature.chemtechConstruct.battle",
+  "output_path": "Content/Sprites/runeterra/zaun/creatures/chemtechConstruct/battle.json",
+  "pivot": {
+    "x": 197,
+    "y": 266
+  },
+  "production_status": "delivered",
+  "recipe_type": "vcmi_animation",
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "required_groups": {
+    "0": 6,
+    "1": 4,
+    "11": 6,
+    "12": 6,
+    "13": 6,
+    "14": 8,
+    "15": 8,
+    "16": 8,
+    "2": 1,
+    "22": 1,
+    "3": 4,
+    "4": 4,
+    "5": 6,
+    "7": 4,
+    "8": 4
+  },
+  "source_registration": {
+    "fixed_scale_per_source_cohort": true,
+    "logical_battle_pivot": [
+      197,
+      266
+    ],
+    "per_frame_scaling": false,
+    "selection": {
+      "path": "assets/source/creatures/pressure-sentry-20261028-v1/source-selection.json",
+      "sha256": "07b8f8d617da4a94dad4536c843426598af9f44e12871b9e5e4f700aeb0bef64"
+    }
+  },
+  "status": "built-unreviewed",
+  "unit": "chemtechConstruct",
+  "visual_approval_granted": false
+}

@@ -1,0 +1,124 @@
+{
+  "status": "design proposal",
+  "base": {
+    "path": "assets/source/town/complete-town-20261027-v2/terrain/final-native-v12-proposal.png",
+    "sha256": "d594523cc2d00e0fc4f372e8de5e349496bf675f831d6bc9fd47ef7ee2cfee3f"
+  },
+  "terrain": {
+    "path": "assets/source/town/complete-town-20261027-v2/terrain/final-native-v13b-proposal.png",
+    "sha256": "88fb5fb7ad234a28266898564db4253488929e140e5cdb30509abede466e8ee0"
+  },
+  "patches": [
+    {
+      "name": "silo-right",
+      "existing_genuine_master": {
+        "path": "assets/source/town/complete-town-20261027-v2/terrain-repairs-v9/landing-connectors/silo-master-v1.png",
+        "sha256": "c4436a2474d287a807b65d36a353686f78fa7745bb80e9fdab89bcce9e6d6a46"
+      },
+      "generation_record": {
+        "path": "assets/source/town/complete-town-20261027-v2/terrain-repairs-v9/landing-connectors/generation-record-v1.json",
+        "sha256": "dc65a9c8241fd01b0343f54bccca8b6b9dd8dab618d0e87a1e80c7ea8ae049a6"
+      },
+      "source_crop": [
+        850,
+        450,
+        1200,
+        750
+      ],
+      "native": {
+        "path": "assets/source/town/complete-town-20261027-v2/terrain-repairs-v13/three-caps-v2/silo-right-native-v1.png",
+        "sha256": "b43ecd14d67e48f812a8058428724c73d40cd51097c3f6a7c4ee1e1c9425c02c"
+      },
+      "position": [
+        746,
+        238
+      ],
+      "native_size": [
+        33,
+        25
+      ],
+      "method": "Uniform crop/fit of existing genuine horizontal paving; no code-drawn floor/filter, body or root omission."
+    },
+    {
+      "name": "arena-right",
+      "existing_genuine_master": {
+        "path": "assets/source/town/complete-town-20261027-v2/terrain-repairs-v10/arena-caps/front-master-v1.png",
+        "sha256": "906b3476a9a8233988eb6e8d15d58a1544c7a8b8ed423a1de59667e3d344f80e"
+      },
+      "generation_record": {
+        "path": "assets/source/town/complete-town-20261027-v2/terrain-repairs-v10/arena-caps/generation-record-v1.json",
+        "sha256": "98d655a297bbc60a66e63684e8b94c226240de35ad16aa9bfc13e163318552b2"
+      },
+      "source_crop": [
+        1000,
+        180,
+        1600,
+        400
+      ],
+      "native": {
+        "path": "assets/source/town/complete-town-20261027-v2/terrain-repairs-v13/three-caps-v2/arena-right-native-v1.png",
+        "sha256": "f531d26de67c9694bc24dae217561eb813b4b3a8d24f550ed5c5dfbaaac6f85a"
+      },
+      "position": [
+        320,
+        220
+      ],
+      "native_size": [
+        14,
+        9
+      ],
+      "method": "Uniform crop/fit of existing genuine horizontal paving; no code-drawn floor/filter, body or root omission."
+    },
+    {
+      "name": "rift-obsolete-brazier",
+      "existing_genuine_master": {
+        "path": "assets/source/town/complete-town-20261027-v2/terrain/minotaur-apron-master-v5.png",
+        "sha256": "ae8354a49d6349bd91308c681a9704190f8b5d192d2a43c6fc09d0f68ff74b34"
+      },
+      "generation_record": {
+        "path": "assets/source/town/complete-town-20261027-v2/terrain/minotaur-apron-generation-v5.json",
+        "sha256": "32ea8cdd7eaf76d11a1d77a0edfad1b196d40713480917a0c5d5e1eca7610097"
+      },
+      "source_crop": [
+        650,
+        170,
+        1750,
+        470
+      ],
+      "native": {
+        "path": "assets/source/town/complete-town-20261027-v2/terrain-repairs-v13/three-caps-v2/rift-obsolete-brazier-native-v1.png",
+        "sha256": "399effd64c282944d35b8a432807edf97fc5e8dcd1bbf586e9f28bde67774d58"
+      },
+      "position": [
+        420,
+        268
+      ],
+      "native_size": [
+        21,
+        30
+      ],
+      "method": "Uniform crop/fit of existing genuine horizontal paving; no code-drawn floor/filter, body or root omission."
+    }
+  ],
+  "script": {
+    "path": "assets/source/town/complete-town-20261027-v2/compose_three_caps_v13b.py",
+    "sha256": "35f64bda63c65a24554030ef924132db5a7b60c64a2589016811ca384564dd5f"
+  },
+  "state_index": {
+    "path": "assets/source/town/complete-town-20261027-v2/native-transforms-v13/states.json",
+    "sha256": "c8ea791aeab8ba7db5c4d4e8acca28337576235e85c51cede426f5fdc818dbe1"
+  },
+  "outside_three_patches_unchanged": true,
+  "coast_x779_and_beyond_unchanged": true,
+  "arena_public_flight_rectangle_unchanged": [
+    299,
+    188,
+    335,
+    220
+  ],
+  "rift_left_flight_x_below420_unchanged": true,
+  "structural_contacts_not_trimmed": true,
+  "physical_support_admitted": false,
+  "native_verified": false,
+  "release_accepted": false
+}

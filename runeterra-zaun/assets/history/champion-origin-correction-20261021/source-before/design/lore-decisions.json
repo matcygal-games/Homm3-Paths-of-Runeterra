@@ -1,0 +1,924 @@
+{
+  "schemaVersion": 1,
+  "status": "authored configuration",
+  "reviewDate": "2026-10-20",
+  "scope": "Zaun lore-to-configuration decisions, not a complete canon certification or native gameplay acceptance. The playable town, coalition, recruitment ranks and numerical effects are project adaptations.",
+  "review": "runeterra-zaun/review/zaun-lore-review-20261020.md; runeterra-zaun/review/zaun-lore-deep-review-20261020.md; runeterra-zaun/review/zaun-roster-distinctiveness-20261020.md",
+  "evidencePolicy": {
+    "primaryCoverage": "The first pass read four complete official story bodies plus the embedded full biographies of Warwick, Vi and Camille. The 2026-10-20 deep review widened this to twenty complete official story bodies, the full and short biography field pairs of all eighteen champions, the eighteen live champion profile paragraphs and both region bodies, each with a raw-response SHA-256 hash. Viktor's embedded later biography was read for continuity exclusion, not adopted.",
+    "urlRule": "The first pass cited only URLs already present in the curated library or audited source. The deep review additionally cites the official universe story and champion endpoints it read, with their hashes; unlinked champion dossiers remain project interpretation, not newly primary-verified canon.",
+    "hashRule": "Story hashes below are raw HTTP response SHA-256 measured afresh on 2026-10-20; they match the library's 2026-10-19 hashes. They cover mixed ancillary metadata as well as story text. Equal response hashes do not make incompatible embedded portrayals one continuity.",
+    "publicationRule": "Publication dates and champion release dates are NOT in-world chronology. No numbered year or cross-region synchronization is inferred.",
+    "interpretationRule": "Separate narrated events, character beliefs, project fiction and numerical adaptations. A frightened witness, rumor, self-description or retrospective in-world treatise is not an omniscient source.",
+    "acceptanceRule": "Authored configuration only. No build, native loader, battle, AI, save, scenario-access, visual or release acceptance was performed by this review. Unexecuted checks are recorded as executed:false, not promoted statuses."
+  },
+  "campaignSnapshot": {
+    "zaun": "Selected legacy Piltover/Zaun prose branch: mechanical-workshop Viktor, independent reworked Warwick and Warden-period Vi. Later Arcane/Hexcore events are not imported. Renata and Zeri are selected project candidates without inferring dates from their later publication.",
+    "demaciaPreservedReadOnly": "Sylas escaped, Jarvan III deceased, succession unsettled, Mageseekers still active. No royal killer asserted, no later dissolution imported.",
+    "coavailability": "Ordinary skirmish hiring and a town containing opposed local interests are explicit army-command gameplay abstractions. A scenario needs a separately authored coalition, rival, rescue or historical bridge. No universal Zaun state army or shared allegiance follows.",
+    "historicalScenes": "Childhood, ancient Janna traditions, earlier Piltovan study and Noxian service are separately framed memories/prologues, not simultaneous present-day versions."
+  },
+  "sources": [
+    {
+      "id": "P-viktor-story",
+      "kind": "primary Riot story",
+      "url": "https://universe.leagueoflegends.com/en_US/story/viktor-color-story/",
+      "apiUrl": "https://universe-meeps.leagueoflegends.com/v1/en_us/story/viktor-color-story/index.json",
+      "title": "House on Emberflit Alley",
+      "author": "Rayla Heide",
+      "publisher": "Riot Games",
+      "published": "2016-12-02T16:00:00.000Z",
+      "accessed": "2026-10-20T15:18:41.795443+00:00",
+      "responseSha256": "e1f1138f4b7904463f17e09bb9a7f7310cb2ee55909b227dfc9dadd6c3343711",
+      "responseBytes": 19086,
+      "libraryEvidence": "homm3-runterra-main/homm3-runterra-main/mod_design/12_Lore_Library/sources.json#/sources/id=viktor-color-story; review/lore-eastern.json",
+      "coverage": "Complete story body (one section; declared 1429 words), plus embedded later biography read only to identify incompatibility. Adopt the story body, not the later title/biography.",
+      "originalSummary": "Viktor repairs his mechanical arm, questions neighborhood rumors, and offers Naph a temporary fear-suppressing intervention. The boy considers and accepts it before confronting his bullies. Viktor combines practical kindness with an unsettling experimental outlook.",
+      "limits": "The child's assent is depicted, not a universal judgment of adequate clinical consent. One scene proves neither universal voluntary practice nor compulsory emotionless conversion."
+    },
+    {
+      "id": "P-warwick-story",
+      "kind": "primary Riot story and embedded biography",
+      "url": "https://universe.leagueoflegends.com/en_US/story/warwick-color-story/",
+      "apiUrl": "https://universe-meeps.leagueoflegends.com/v1/en_us/story/warwick-color-story/index.json",
+      "title": "If They Run",
+      "author": null,
+      "publisher": "Riot Games",
+      "published": "2016-12-02T16:00:00.000Z",
+      "accessed": "2026-10-20T15:18:41.840110+00:00",
+      "responseSha256": "3fdd0bc1584f60f393a06a15cbfd1c6045117481e5ad63763e7481ed31bf6405",
+      "responseBytes": 15880,
+      "libraryEvidence": "homm3-runterra-main/homm3-runterra-main/mod_design/12_Lore_Library/sources.json#/sources/id=warwick-color-story; review/lore-eastern.json",
+      "coverage": "Complete story body (one section; declared 957 words) and embedded full legacy Warwick biography read.",
+      "originalSummary": "Warwick drives a runner toward predatory gangers, but his rescue intent collapses into chemically amplified blood hunger. His account cannot settle whether she survived. The embedded biography describes Singed's coercive experimentation and residual memories.",
+      "limits": "No named former identity, ongoing Singed control, guaranteed rescue or infallible guilt detection is established. The story's shimmerwine is not evidence of the Shimmer drug."
+    },
+    {
+      "id": "P-vi-story",
+      "kind": "primary Riot story and embedded biography",
+      "url": "https://universe.leagueoflegends.com/en_US/story/vi-color-story/",
+      "apiUrl": "https://universe-meeps.leagueoflegends.com/v1/en_us/story/vi-color-story/index.json",
+      "title": "Interrogation 101",
+      "author": null,
+      "publisher": "Riot Games",
+      "published": "2016-12-02T16:00:00.000Z",
+      "accessed": "2026-10-20T15:18:41.887414+00:00",
+      "responseSha256": "220f9460f6cf449031d7774ae8210fcda9accf0297103e710064ea5646370a02",
+      "responseBytes": 15374,
+      "libraryEvidence": "homm3-runterra-main/homm3-runterra-main/mod_design/12_Lore_Library/sources.json#/sources/id=vi-color-story; review/lore-eastern.json",
+      "coverage": "Complete story body (one section; declared 1121 words), embedded full legacy biography and differing short description read.",
+      "originalSummary": "Caitlyn calls on Vi to question an undercity acquaintance about stolen hextech. Vi uses violence and threats to extract a buyer's identity. The embedded legacy biography distinguishes her Zaun upbringing and early chem-powered gauntlets from later Piltover service and hextech Atlas prototypes.",
+      "limits": "Do not turn the dossier's empathetic idealization into proof of consistently humane conduct; do not merge later short-description imprisonment details into the selected legacy full biography."
+    },
+    {
+      "id": "P-camille-story",
+      "kind": "primary Riot story and embedded biography",
+      "url": "https://universe.leagueoflegends.com/en_US/story/camille-color-story/",
+      "apiUrl": "https://universe-meeps.leagueoflegends.com/v1/en_us/story/camille-color-story/index.json",
+      "title": "Tea with the Gray Lady",
+      "author": null,
+      "publisher": "Riot Games",
+      "published": "2016-12-02T16:00:00.000Z",
+      "accessed": "2026-10-20T15:18:41.961638+00:00",
+      "responseSha256": "e4ed9fe9449c0e78e79f59b4473e834d81dc6bb2e8623fa953ec754014878684",
+      "responseBytes": 13682,
+      "libraryEvidence": "homm3-runterra-main/homm3-runterra-main/mod_design/12_Lore_Library/sources.json#/sources/id=camille-color-story; review/lore-eastern.json",
+      "coverage": "Complete story body (one section; declared 708 words) and embedded full legacy Camille biography read. Camille is contextual evidence, not a nineteenth hero.",
+      "originalSummary": "A captive in Zaun witnesses an augmented woman's lethal interrogation beneath the ritual of tea. The embedded biography describes Piltovan Clan Ferros interests, synthetic hex-crystal manufacture in Zaun and coercive monopoly protection.",
+      "limits": "Synthetic manufacture's contribution to the Gray is explicitly rumored in the biography. Its old brackern-crystal origin is not adopted as a universal current hextech origin, and its events are not merged with later Viktor portrayals."
+    },
+    {
+      "id": "P-renata-profile",
+      "kind": "primary Riot short champion profile",
+      "url": "https://www.leagueoflegends.com/en-us/champions/renata/",
+      "title": "Renata Glasc",
+      "author": null,
+      "publisher": "Riot Games",
+      "published": null,
+      "accessed": "2026-10-20T15:18:42.312466+00:00",
+      "responseSha256": "6cba2f911c592040d25cbfc4162f9204cf1a156ef37a3515e36b27b541464975",
+      "responseBytes": 164004,
+      "urlProvenance": "homm3-runterra-main/homm3-runterra-main/mod_design/06_Hero_Biographies/RENATA_GLASC.md:18",
+      "coverage": "Entire short lore paragraph read; abilities and skin list inspected only as game-page context, not canon history. Full biography not verified.",
+      "originalSummary": "Renata builds chem-baron wealth through her parents' alchemical research and other people's obligations. Rewards and threats underpin her commercial power.",
+      "limits": "No Shimmer invention credit, product identity with Shimmer, canonical daily income amount or universal political authority follows."
+    },
+    {
+      "id": "L-library",
+      "kind": "curated evidence catalog",
+      "path": "homm3-runterra-main/homm3-runterra-main/mod_design/12_Lore_Library/sources.json",
+      "sha256": "e186cc7dceb3d76b882119fcbbb6f8db0d87ca8af96b66be397bd15fcd00a9fb",
+      "accessed": "2026-10-20",
+      "coverage": "Relevant four Piltover/Zaun records and catalog policy; README and EASTERN_STORIES read. Other regional stories not independently reviewed here."
+    },
+    {
+      "id": "L-access",
+      "kind": "historical access evidence",
+      "path": "homm3-runterra-main/homm3-runterra-main/review/lore-eastern.json",
+      "sha256": "e9f5e0499af1eb4f3c59215e413927dd948fbf00953096d091aa6d373de3d644",
+      "accessed": "2026-10-20",
+      "coverage": "Relevant four records, dates, hashes, full-reading declarations and limitations."
+    },
+    {
+      "id": "D-ranking",
+      "kind": "audited project design",
+      "path": "homm3-runterra-main/homm3-runterra-main/mod_design/01_Power_Rankings/10_POWER_RANKINGS_ZAUN.md",
+      "sha256": "fc8309581fc0f358d190eb64be7f4e5c4467feb951a2200fc3e1119b6135adbd",
+      "accessed": "2026-10-20",
+      "coverage": "Complete document; fourteen regional candidates, roster and agency/era boundaries."
+    },
+    {
+      "id": "D-units",
+      "kind": "audited project design",
+      "path": "homm3-runterra-main/homm3-runterra-main/mod_design/07_Creature_Descriptions/ZAUN_UNITS.md",
+      "sha256": "39d26da7db234a8f61acb239ffbec34849bc68c5eeb0c58582e50a0402b44261",
+      "accessed": "2026-10-20",
+      "coverage": "Complete fourteen-variant specification; fictional institutions, living augmentation and bounded numerical rules."
+    },
+    {
+      "id": "D-buildings",
+      "kind": "audited project design",
+      "path": "homm3-runterra-main/homm3-runterra-main/mod_design/08_Building_Descriptions/ZAUN_BUILDINGS.md",
+      "sha256": "be77dd95f8dedb67d76675d64d0cd0db6dd6fd2e7ca825b65e2f87a3dc14bca4",
+      "accessed": "2026-10-20",
+      "coverage": "Complete document; five concepts and dwelling graph, not canonical municipal institutions."
+    },
+    {
+      "id": "D-identity",
+      "kind": "audited project comparison",
+      "path": "homm3-runterra-main/homm3-runterra-main/mod_design/03_Systems/13_FACTION_IDENTITIES.md",
+      "sha256": "f31431b765572d0b9255945eadf8ac13703cd4b526d3c3eaf3c7655c1a02622f",
+      "accessed": "2026-10-20",
+      "coverage": "Zaun section and explicit cross-faction comparisons, not all thirteen factions' lore."
+    },
+    {
+      "id": "D-registry",
+      "kind": "audited project comparison",
+      "path": "homm3-runterra-main/homm3-runterra-main/review/roster-distinctiveness.json",
+      "sha256": "9e0c5a30693c4a761df79162fe493456a190cea9dcf1838576155e9f9a5d24a3",
+      "accessed": "2026-10-20",
+      "coverage": "Zaun record, relevant overlap records and shared-seed cautions; no new source audit run."
+    },
+    {
+      "id": "B-blitzcrank",
+      "kind": "project biography",
+      "path": "homm3-runterra-main/homm3-runterra-main/mod_design/06_Hero_Biographies/BLITZCRANK.md",
+      "accessed": "2026-10-20",
+      "coverage": "Complete; the deep review read the full and short official biography and the live profile (B01/P01) and the legacy-dated story S05, so the project dossier is not primary evidence and the current origin revision stays undated."
+    },
+    {
+      "id": "B-singed",
+      "kind": "project biography",
+      "path": "homm3-runterra-main/homm3-runterra-main/mod_design/06_Hero_Biographies/SINGED.md",
+      "accessed": "2026-10-20",
+      "coverage": "Complete; the deep review read the full and short official biography and the live profile (B03/P03), the Warwick relationship is independently corroborated, and the newer Shimmer attribution is a layer this project excludes."
+    },
+    {
+      "id": "B-drmundo",
+      "kind": "project biography",
+      "path": "homm3-runterra-main/homm3-runterra-main/mod_design/06_Hero_Biographies/DR_MUNDO.md",
+      "accessed": "2026-10-20",
+      "coverage": "Complete; the deep review read the full and short official biography and the live profile (B04/P04), so the project dossier is not primary evidence."
+    },
+    {
+      "id": "B-ekko",
+      "kind": "project biography",
+      "path": "homm3-runterra-main/homm3-runterra-main/mod_design/06_Hero_Biographies/EKKO.md",
+      "accessed": "2026-10-20",
+      "coverage": "Complete; the deep review read the full and short official biography and the live profile (B05/P05) and the story S07, so the project dossier is not primary evidence."
+    },
+    {
+      "id": "B-jinx",
+      "kind": "project biography",
+      "path": "homm3-runterra-main/homm3-runterra-main/mod_design/06_Hero_Biographies/JINX.md",
+      "accessed": "2026-10-20",
+      "coverage": "Complete; the deep review read the full and short official biography and the live profile (B02/P02) and the story S06; the precise childhood and relationship scenes stay unresolved."
+    },
+    {
+      "id": "B-urgot",
+      "kind": "project biography",
+      "path": "homm3-runterra-main/homm3-runterra-main/mod_design/06_Hero_Biographies/URGOT.md",
+      "accessed": "2026-10-20",
+      "coverage": "Complete; the deep review read the full and short official biography and the live profile (B06/P06), which ends in the Warden prison; the project dossier is not primary evidence."
+    },
+    {
+      "id": "B-viktor",
+      "kind": "project biography",
+      "path": "homm3-runterra-main/homm3-runterra-main/mod_design/06_Hero_Biographies/VIKTOR.md",
+      "sha256": "ac7d255da999c0bfb91976437a0e7430b85cae8f9962ad164a6ccaf31d77b712",
+      "accessed": "2026-10-20",
+      "coverage": "Complete; the deep review read the current full and short biography for exclusion only (B07/P07); the conflicting collective and forced-conversion prose is not adopted."
+    },
+    {
+      "id": "B-warwick",
+      "kind": "project biography",
+      "path": "homm3-runterra-main/homm3-runterra-main/mod_design/06_Hero_Biographies/WARWICK.md",
+      "accessed": "2026-10-20",
+      "coverage": "Complete; the deep review read the full and short official biography and the live profile (B08/P08); ongoing Singed monitoring and specific relationships are not established by the selected primary text."
+    },
+    {
+      "id": "B-twitch",
+      "kind": "project biography",
+      "path": "homm3-runterra-main/homm3-runterra-main/mod_design/06_Hero_Biographies/TWITCH.md",
+      "accessed": "2026-10-20",
+      "coverage": "Complete; the deep review read the full and short official biography and the live profile (B09/P09); the precise mutation and chemical source stay unverified."
+    },
+    {
+      "id": "B-zac",
+      "kind": "project biography",
+      "path": "homm3-runterra-main/homm3-runterra-main/mod_design/06_Hero_Biographies/ZAC.md",
+      "accessed": "2026-10-20",
+      "coverage": "Complete; the deep review read the full and short official biography and the live profile (B10/P10) and the story S10, where the failed replication of him is verified."
+    },
+    {
+      "id": "B-ziggs",
+      "kind": "project biography",
+      "path": "homm3-runterra-main/homm3-runterra-main/mod_design/06_Hero_Biographies/ZIGGS.md",
+      "accessed": "2026-10-20",
+      "coverage": "Complete; the deep review read the full and short official biography and the live profile (B11/P11); the exact college expulsion chronology and harmlessness stay unverified."
+    },
+    {
+      "id": "B-zeri",
+      "kind": "project biography",
+      "path": "homm3-runterra-main/homm3-runterra-main/mod_design/06_Hero_Biographies/ZERI.md",
+      "accessed": "2026-10-20",
+      "coverage": "Complete; the deep review read the full and short official biography and the live profile (B12/P12); the lethal medical-condition premise stays unverified."
+    },
+    {
+      "id": "B-renata",
+      "kind": "project biography",
+      "path": "homm3-runterra-main/homm3-runterra-main/mod_design/06_Hero_Biographies/RENATA_GLASC.md",
+      "sha256": "59fcd339f288631c657549a09c4b0c5c75d69d88b05aefd6012edc9600b92379",
+      "accessed": "2026-10-20",
+      "coverage": "Complete; the deep review read the full and short official biography and the live profile (B18/P18) and the official short profile; the disputed Shimmer invention attribution is not carried over."
+    },
+    {
+      "id": "B-janna",
+      "kind": "project biography",
+      "path": "homm3-runterra-main/homm3-runterra-main/mod_design/06_Hero_Biographies/JANNA.md",
+      "accessed": "2026-10-20",
+      "coverage": "Complete; the deep review read the full and short official biography and the live profile (B13/P13) and the story S12; her full origin and ontology stay open."
+    },
+    {
+      "id": "B-caitlyn",
+      "kind": "project biography",
+      "path": "homm3-runterra-main/homm3-runterra-main/mod_design/06_Hero_Biographies/CAITLYN.md",
+      "accessed": "2026-10-20",
+      "coverage": "Complete; the deep review read the full and short official biography and the live profile (B14/P14) and the story Interrogation101; the self-designed rifle and exact feats stay unverified."
+    },
+    {
+      "id": "B-vi",
+      "kind": "project biography",
+      "path": "homm3-runterra-main/homm3-runterra-main/mod_design/06_Hero_Biographies/VI.md",
+      "accessed": "2026-10-20",
+      "coverage": "Complete; the deep review read the full and short official biography and the live profile (B15/P15) and the story S03; the universal humane-enforcer gloss is contradicted by the selected story's coercion."
+    },
+    {
+      "id": "B-corki",
+      "kind": "project biography",
+      "path": "homm3-runterra-main/homm3-runterra-main/mod_design/06_Hero_Biographies/CORKI.md",
+      "accessed": "2026-10-20",
+      "coverage": "Complete; the deep review read the full and short official biography and the live profile (B16/P16); the exact squadron feats and records stay unverified."
+    },
+    {
+      "id": "B-heimerdinger",
+      "kind": "project biography",
+      "path": "homm3-runterra-main/homm3-runterra-main/mod_design/06_Hero_Biographies/HEIMERDINGER.md",
+      "accessed": "2026-10-20",
+      "coverage": "Complete; the deep review read the full and short official biography and the live profile (B17/P17); the Council and mentor chronology is not adopted from the newer short body."
+    },
+    {
+      "id": "R-lore-review",
+      "kind": "review receipt",
+      "path": "runeterra-zaun/review/zaun-lore-review-20261020.md",
+      "responseSha256": "fe804edf66424559c616efba9bcd494f4538bf7af867b371921230fcc08403c1",
+      "responseBytes": 23104,
+      "accessed": "2026-10-20",
+      "coverage": "The preserved initial review: four complete legacy stories and the Renata short profile, with the first statement of the shimmer, regeneration, penetration and drift limits.",
+      "originalSummary": "First lore-to-configuration pass for the Zaun project.",
+      "limits": "Historical receipt. It is not rewritten and it is not the current coverage: the deep review above supersedes its source-coverage conclusion, and its earlier source gaps are recorded as resolved configuration drift rather than as present defects."
+    },
+    {
+      "id": "R-lore-deep",
+      "kind": "review receipt",
+      "path": "runeterra-zaun/review/zaun-lore-deep-review-20261020.md",
+      "responseSha256": "f23b8cfc6d1349c46c5f5511ae6209087b38529773bf52c2b375c00102784973",
+      "responseBytes": 122490,
+      "accessed": "2026-10-20",
+      "coverage": "Twenty complete official story bodies, eighteen champion biography field pairs, eighteen live champion profile paragraphs and both region bodies, with forty raw-response SHA-256 hashes. Section 8 supplies the exact replacement biography and creature description strings; section 8.3 supplies the proposed ledger entries.",
+      "originalSummary": "Verified primary dossiers for eighteen champions and two regions, with per-champion field selection, era exclusions and explicit limits.",
+      "limits": "The receipt is research evidence with proposed wording. It is not an implementation change, a balance result or an acceptance receipt."
+    },
+    {
+      "id": "R-distinctiveness",
+      "kind": "review receipt",
+      "path": "runeterra-zaun/review/zaun-roster-distinctiveness-20261020.md",
+      "responseSha256": "50d0e844f9d8f250c0c2313c6b3b94fa55214738f1e5ba634131879a9bd14fa2",
+      "responseBytes": 78793,
+      "accessed": "2026-10-20",
+      "coverage": "Overlap map of the authored Zaun roster against the authored Demacia and Noxus rosters, the measured original-town envelopes, the weekly recruitment arithmetic and the native consumer citations for every mechanic it names.",
+      "originalSummary": "Three same-tier or same-mechanic duplicates were found: the tier-four armour cutter, the tier-six defensive stance and the upgraded tier-seven rear-hex breath.",
+      "limits": "The behaviour is source-inspected, not executed. The section 1 packet table in that receipt was re-read against the current dictionaries before use, because the table does not match the current Zaun files; only the overlap findings and the option sketches are used here."
+    }
+  ],
+  "technologyReadings": {
+    "institutionBoundary": "Chem-barons and independent alchemical workshops supply Zaun's selected industrial theme; no canonical unified Chemtech Ministry or state academy is asserted. Piltover Academy and Clan Ferros are separate Piltovan contexts. Glasc Industries is Renata's private interest, not Zaun's government. The Factory, Workshop, Clinic and troop Quarters in D-buildings are project institutions. A champion need not belong to either technology camp.",
+    "champions": [
+      {
+        "id": "blitzcrank",
+        "reading": "Steam/industrial construct protector; the salvaged-golem and Shuriman-crystal origin in the current full biography has been read, but its revision date is unverified, so no exact old origin, first-sentient-machine claim or power source is asserted; steam and sentience are not by themselves evidence of Arcane contamination, and he is not a default hextech trooper.",
+        "source": [
+          "B-blitzcrank",
+          "R-lore-deep"
+        ]
+      },
+      {
+        "id": "singed",
+        "reading": "Independent alchemical experimentation; Warwick provides a primary chemtech-style augmentation anchor, not Academy office or universal Shimmer authorship. The current Singed short-profile text attributes Shimmer to him, and that newer attribution is excluded from this selected legacy scenario.",
+        "source": [
+          "P-warwick-story",
+          "B-singed",
+          "R-lore-deep"
+        ]
+      },
+      {
+        "id": "drmundo",
+        "reading": "Chemical experiment-survivor theme in project dossier; no proven inventor affiliation or verified formula.",
+        "source": [
+          "B-drmundo"
+        ]
+      },
+      {
+        "id": "ekko",
+        "reading": "Individual salvaged Z-Drive engineering theme; exact hextech component history unverified here, never a citywide hextech default or innate time-mage claim.",
+        "source": [
+          "B-ekko"
+        ]
+      },
+      {
+        "id": "jinx",
+        "reading": "Independent improvised firearms/explosives theme; fuel/crystal sourcing and later hextech weapon events not certified.",
+        "source": [
+          "B-jinx",
+          "P-vi-story"
+        ]
+      },
+      {
+        "id": "urgot",
+        "reading": "Augmented heavy-weapon/chemtech theme from the project dossier; not a current Noxian or chem-baron engineering institution.",
+        "source": [
+          "B-urgot"
+        ]
+      },
+      {
+        "id": "viktor",
+        "reading": "Primary-backed mechanical/organic augmentation workshop; precise power source not established by the story. No Hexcore/Arcane commune machinery imported.",
+        "source": [
+          "P-viktor-story",
+          "B-viktor"
+        ]
+      },
+      {
+        "id": "warwick",
+        "reading": "Primary-backed Singed alchemy, chambers, pumps and pneumatic augmentation; independent survivor, not an institutional adherent.",
+        "source": [
+          "P-warwick-story"
+        ]
+      },
+      {
+        "id": "twitch",
+        "reading": "Mutated-rat/sewer equipment theme, not a verified chemtech engineer or known Singed product; precise origin open.",
+        "source": [
+          "B-twitch"
+        ]
+      },
+      {
+        "id": "zac",
+        "reading": "Unique sentient elastic-being theme, not a hextech machine or certified laboratory production line; exact origin open.",
+        "source": [
+          "B-zac"
+        ]
+      },
+      {
+        "id": "ziggs",
+        "reading": "Yordle explosives/hexplosives theme; title alone does not verify every explosive's chemistry/crystal source or universal hextech access.",
+        "source": [
+          "B-ziggs"
+        ]
+      },
+      {
+        "id": "zeri",
+        "reading": "Innate electric magic, channelled and regulated by a jacket she built and a rifle made with her family and neighbours; not automatically chemtech, hextech or chemical dependence. The Unexpected Spark is explicitly post-Mist and is not treated as synchronous with the early mage-rebellion campaign.",
+        "source": [
+          "B-zeri",
+          "R-lore-deep"
+        ]
+      },
+      {
+        "id": "renata",
+        "reading": "A business strategist who exploits her parents' alchemical research and employs devisers; her own biography states that she has no aptitude for alchemy. Her advertised healing is deceptive and her patronage is coercive, so the reading is commercial and coercive rather than medical canon. Not proof of Shimmer ownership or Academy hextech membership, and the Sun Gate takeover she wants is a goal, not a completed event.",
+        "source": [
+          "P-renata-profile",
+          "B-renata",
+          "R-lore-deep"
+        ]
+      },
+      {
+        "id": "janna",
+        "reading": "Wind-spirit/devotional role, neither chemtech nor hextech. The Chemist class is rules only.",
+        "source": [
+          "B-janna",
+          "P-warwick-story"
+        ]
+      },
+      {
+        "id": "caitlyn",
+        "reading": "Piltover law enforcement; dossier's hextech-rifle details and self-authorship are not verified by the selected story.",
+        "source": [
+          "B-caitlyn",
+          "P-vi-story"
+        ]
+      },
+      {
+        "id": "vi",
+        "reading": "Primary legacy biography distinguishes early chem-powered pulverizer gauntlets from current hextech Atlas prototypes in Piltover service.",
+        "source": [
+          "P-vi-story"
+        ]
+      },
+      {
+        "id": "corki",
+        "reading": "Piltover-linked aircraft engineering theme; exact aircraft power and hextech mechanisms remain dossier-level, not a Zaun default.",
+        "source": [
+          "B-corki"
+        ]
+      },
+      {
+        "id": "heimerdinger",
+        "reading": "Piltover-linked invention/engineering theme. No blanket claim that all his work is hextech, no imported later Council chronology, no canon authorship of project chemtech constructs.",
+        "source": [
+          "B-heimerdinger",
+          "P-viktor-story"
+        ]
+      }
+    ]
+  },
+  "decisions": [
+    {
+      "id": "ZL01",
+      "status": "authored configuration",
+      "question": "Does playable Zaun represent a canonical unified state or imperial host?",
+      "chosenReading": "Piltover and Zaun have distinct social and institutional identities but interdependent industry, trade and coercive power. Selected prose shows Piltovan policing and elite economic interests reaching the undercity, and plural chem-barons rather than one Zaun government.",
+      "source": [
+        "P-vi-story",
+        "P-camille-story",
+        "P-viktor-story",
+        "D-ranking"
+      ],
+      "primarySourceBasis": "Piltover Hall of Law versus Zaun Lanes; Ferros production/monopoly interests in Zaun; fear of multiple chem-barons. These are local political-economic examples, not a complete constitution or independence treaty.",
+      "projectFictionBoundary": "The capturable town, treasury, seven pools, mayor-equivalent command and local coalition are invented Heroes III institutions. No formal sovereignty date, canonical conquest sequence or particular imperial army is claimed."
+    },
+    {
+      "id": "ZL02",
+      "status": "authored configuration",
+      "question": "Are chemtech and hextech interchangeable Zaun defaults?",
+      "chosenReading": "No. Local chem-baron industry, alchemical laboratories, pressure machinery and augmentation motivate the Zaun visual doctrine. Piltover Academy/Clan Ferros and elite hextech are distinct contexts. Cross-city access exists; technology is not citizenship.",
+      "source": [
+        "P-vi-story",
+        "P-camille-story",
+        "P-warwick-story",
+        "D-units",
+        "B-viktor",
+        "B-ekko",
+        "B-blitzcrank",
+        "B-ziggs",
+        "B-zeri"
+      ],
+      "primarySourceBasis": "Vi's legacy biography explicitly contrasts early chem-powered gauntlets with later hextech Atlas prototypes; Warwick has alchemical chambers/pumps; Ferros is a Piltovan hextech interest with production in Zaun.",
+      "projectFictionBoundary": "Chemtech Construct and both augmentation ranks are project equipment, not a canon national service. Viktor's machinery is frozen at the mechanical-story reading, without declaring every component chemtech. Blitzcrank's precise power/crystal origin, Ekko's Z-Drive components and Ziggs's hexplosives are not verified here. Zeri's selected electrical-gift premise is not automatically chemtech or hextech. No hexcore-powered default troops or universal technology membership is assigned."
+    },
+    {
+      "id": "ZL03",
+      "status": "authored configuration",
+      "question": "What does Shimmer Factory establish about the Shimmer substance economy?",
+      "chosenReading": "Treat the named factory as an explicit project-fiction label for hazardous chemical production; the audited design proposes a sulfur silo, not a literal canonical resource conversion or a verified citywide Shimmer economy.",
+      "source": [
+        "D-buildings",
+        "D-units",
+        "P-warwick-story",
+        "P-renata-profile",
+        "B-renata",
+        "R-lore-deep"
+      ],
+      "primarySourceBasis": "Legacy prose and the region captions verify shimmer trafficking and dealing independently of shimmerwine: Deep Breath, Son of Ur and the Zaun Shimmer Trafficker caption. They do not establish a universal formula, an Arcane production history, an inventor in the frozen era or a Bilgewater supply route. The current Singed short-profile text attributes Shimmer to him, and that newer attribution is excluded from this selected legacy scenario. 'Shimmerwine' is a different textual reference and is not used as drug evidence. Renata's profile supports alchemy and commercial leverage, not Shimmer invention.",
+      "projectFictionBoundary": "One sulfur/day, price, prerequisites and any lab supply chain are balance fiction. No Renata-invented Shimmer, mandatory addiction, universal combat stimulant or imported Silco/Singed Arcane economy is asserted. The trading of shimmer itself is primary-verified; the formula, the inventor, the network and the route remain open."
+    },
+    {
+      "id": "ZL04",
+      "status": "authored configuration",
+      "question": "Does augmentation imply consent, loss of agency or moral corruption?",
+      "chosenReading": "Consent is contextual: Naph considers a temporary offer; Warwick suffers coercive experiments. Neither experience describes every augmented resident. The project never treats an augmentation upgrade as erasing personhood, agency or emotion, nor as corruption by default.",
+      "source": [
+        "P-viktor-story",
+        "P-warwick-story",
+        "D-units",
+        "D-buildings"
+      ],
+      "primarySourceBasis": "The two primary examples show different relationships to bodily intervention. Warwick also depicts impaired control, so preserving personhood does not mean denying trauma or claiming all augmentation leaves cognition unaffected.",
+      "projectFictionBoundary": "Living tier-four/six recruits retain normal living rules. Paid upgrades are equipment/training abstractions, not forced surgery, magical obedience or moral alignment. No laboratory coercion is excused by a game reward."
+    },
+    {
+      "id": "ZL05",
+      "status": "authored configuration",
+      "question": "Are the Sump, pollution and swamp alignment judgments on Zaun's residents?",
+      "chosenReading": "No. Toxic runoff, hazardous air and exploitative conditions harm inhabitants; residents' ingenuity and care coexist with perpetrators' choices. The Sump is treated as a hazardous lower-city environment, not the entirety of Zaun or proof of universal toxin immunity.",
+      "source": [
+        "P-warwick-story",
+        "P-camille-story",
+        "D-buildings",
+        "D-ranking"
+      ],
+      "primarySourceBasis": "Warwick's biography places a charnel pit in the Sump; both stories describe dangerous air/chemical surroundings. Ferros's specific pollution contribution is qualified as rumored. The audited assertion that ALL runoff reaches ONE lowest cesspool is not independently established.",
+      "projectFictionBoundary": "Swamp terrain, sulfur and a Sump siege Defense bonus are game adaptations. They do not make Zaunites evil, poison-immune, uniformly diseased or responsible for industrial harm done to them."
+    },
+    {
+      "id": "ZL06",
+      "status": "authored configuration",
+      "question": "Which Viktor continuity is frozen?",
+      "chosenReading": "The mechanical-workshop Viktor in House on Emberflit Alley, with selective practical care and a contentious philosophy. His later embedded Herald of the Arcane/Hexcore biography is not the same selected narrative state.",
+      "source": [
+        "P-viktor-story",
+        "L-library",
+        "B-viktor",
+        "D-ranking"
+      ],
+      "primarySourceBasis": "The story's arm repair, sweetmilk and temporary implant remain alongside a now-mixed response containing later title, commune/puppet, Noxian garrison and death material. The response hash matches the historical catalog; this is a reading-boundary issue, not evidence of a fresh change since yesterday.",
+      "projectFictionBoundary": "No automatic merge of Jayce's Arcane invention partnership, Hexcore healing/ascension, emotionless collective, forced world conversion or death. The audited biography's universal emotionless-followers claims are not certified by the selected story. Stone Skin is a native command proxy, not conversion."
+    },
+    {
+      "id": "ZL07",
+      "status": "authored configuration",
+      "question": "Does Blitzcrank prove a canon construct army or obedience to Viktor?",
+      "chosenReading": "Selected project role: unique Zaun-associated sentient protector, independently motivated rather than a chem-baron tool. The deep review verified the steam-powered, autonomous and compassionate portrayal, so the body and his agency stand; creator and origin details stay conservative because no allowed source settles them.",
+      "source": [
+        "B-blitzcrank",
+        "D-units",
+        "D-ranking",
+        "R-lore-deep"
+      ],
+      "primarySourceBasis": "Ensemble depicts an autonomous steam golem who rescues and feels. Sentience and steam are not by themselves evidence of Arcane contamination. The current full biography's salvaged-golem and Shuriman-crystal origin has been read, but its revision date is unverified, so it cannot be used to assert an exact old origin, a first sentient machine, or Viktor rejecting Blitzcrank's personhood. No allowed primary source read here settles Blitzcrank's creator sequence, first-sentient-machine claim, power source or Viktor's attitude to their emotions. Those dossier details remain unverified.",
+      "projectFictionBoundary": "Ordinary skirmish command and physical army protection are project choices. Tier-three constructs are not mass-produced Blitzcranks, and mechanical troop morale rules do not deny a unique person's emotions."
+    },
+    {
+      "id": "ZL08",
+      "status": "authored configuration",
+      "question": "What binds Singed and Warwick, and does it establish allegiance?",
+      "chosenReading": "Singed's coercive experimentation on Warwick is primary-backed. Warwick remains an independent, traumatized Zaun hunter with fragmented identity, not an obedient laboratory soldier. Singed is a scientist/antagonistic contractor, not Zaun's minister or every mutant's creator.",
+      "source": [
+        "P-warwick-story",
+        "B-singed",
+        "B-warwick"
+      ],
+      "primarySourceBasis": "Warwick's embedded legacy biography supplies Singed's laboratory and transformation; the complete story leaves the runner's fate unresolved. Exact former identity and continuing laboratory supervision are not settled.",
+      "projectFictionBoundary": "Singed's ordinary hiring is a detached skirmish lab-command option, not moral approval. Warwick is scenario-only; no Vander identity, universal criminal-detection power, champion cloning, infinite healing or canon invasion chronology is imported."
+    },
+    {
+      "id": "ZL09",
+      "status": "authored configuration",
+      "question": "Does Dr. Mundo's regional label imply medical authority or reliable army command?",
+      "chosenReading": "Selected project role: Zaun-associated independent experiment survivor with severely unreliable medical beliefs. The command interface is an especially strong abstraction, not proof of clinical credentials or military discipline.",
+      "source": [
+        "B-drmundo",
+        "D-ranking"
+      ],
+      "primarySourceBasis": "Full primary biography was not verified. The dossier's precise asylum origin, chemicals, Singed speculation and functionally-unkillable claim are not certified.",
+      "projectFictionBoundary": "Ordinary hiring and Armorer specialty are game rules, not consent to his treatment, personal regeneration, inability to die or removal of the survivor's personhood. A literal scenario needs explicit containment/protective framing."
+    },
+    {
+      "id": "ZL10",
+      "status": "authored configuration",
+      "question": "How is Ekko's Zaun identity separated from time-control mechanics and later mentorship?",
+      "chosenReading": "Selected project role: local inventor and community defender, unaffiliated with chem-baron rule. Use the legacy Z-Drive theme without importing a synchronized Heimerdinger/Firelight/Arcane history.",
+      "source": [
+        "B-ekko",
+        "D-ranking"
+      ],
+      "primarySourceBasis": "Complete primary biography not verified; the dossier does not prove unlimited reversibility, innate time magic, alternative timelines or each named relationship.",
+      "projectFictionBoundary": "Haste plus one Speed at every target tier is a paid spell proxy. No save rewind, resurrected past army, undo of enemy actions or guaranteed victory is implemented or canonically inferred."
+    },
+    {
+      "id": "ZL11",
+      "status": "authored configuration",
+      "question": "Does Jinx's Zaun association imply political leadership or one imported family timeline?",
+      "chosenReading": "Independent Zaun-associated destructive inventor, not an obedient community champion or chem-baron officer. Keep exact childhood, familial and patron events outside the frozen project biography unless separately sourced.",
+      "source": [
+        "B-jinx",
+        "P-vi-story"
+      ],
+      "primarySourceBasis": "Vi's legacy embedded biography alludes to a blue-haired troublemaker, not a complete verified sibling history. The Jinx dossier's sister/Silco/childhood/medical interpretations are not authenticated here.",
+      "projectFictionBoundary": "Ordinary skirmish command and four extra shooter shots do not assert civic trust, common loyalty, mania for all Zaunites, kill resets or extra attacks."
+    },
+    {
+      "id": "ZL12",
+      "status": "authored configuration",
+      "question": "Is Urgot Noxian, Zaunite or a loyal chem-baron commander?",
+      "chosenReading": "Distinguish Noxian-origin executioner from the selected Zaun-based independent coercive survivor/cult-leader chapter. Regional residence is not imperial or chem-baron loyalty.",
+      "source": [
+        "B-urgot",
+        "D-ranking"
+      ],
+      "primarySourceBasis": "These are audited project readings, not a newly verified full primary biography. The exact political betrayal, limb-loss accidents, years imprisoned and later territorial authority remain unverified.",
+      "projectFictionBoundary": "Ordinary skirmish hiring represents an alternate independent command option. A coalition with protectors requires a bridge; fixed ranged troop Attack is not a personal execution threshold or move-and-fire privilege."
+    },
+    {
+      "id": "ZL13",
+      "status": "authored configuration",
+      "question": "Do Twitch and Zac become state troops because both are associated with Zaun's chemicals?",
+      "chosenReading": "No. Selected roles distinguish an independent sewer-dwelling rat from a unique community-protecting living being. Neither region tag entails citizenship, baron allegiance or moral worth based on altered biology.",
+      "source": [
+        "B-twitch",
+        "B-zac",
+        "D-units"
+      ],
+      "primarySourceBasis": "The deep review verified both bodies. Zac formed from a toxic spill pooled in a chemtech seam and was raised by researchers who treated him as their son, and attempts to replicate him failed. Twitch's exact mutation event and any Singed attribution are still not established.",
+      "projectFictionBoundary": "Both are scenario-only. The native ranged Defense reduction and the morale specialty do not add plague simulation, all-sewer omniscience, bloblet recruitment or a repeatable Zac species, and the morale bonus represents an inspiring protective presence rather than a healing aura."
+    },
+    {
+      "id": "ZL14",
+      "status": "authored configuration",
+      "question": "How are Ziggs and Zeri associated with Zaun without making them generic chemtech troops?",
+      "chosenReading": "Selected project roles: Ziggs is a yordle inventor whose earlier Piltover association is distinct from a Zaun guest chapter; Zeri is a Zaun community defender whose electrical gift is not declared chemical corruption or default hextech.",
+      "source": [
+        "B-ziggs",
+        "B-zeri",
+        "D-ranking"
+      ],
+      "primarySourceBasis": "The deep review verified both bodies. Zeri's electricity is innate magic channelled by a jacket she built and a rifle made with her family and neighbors, and the post-Mist story cannot silently date the early mage-rebellion snapshot. Ziggs's precise expulsion and harmlessness remain uncertified.",
+      "projectFictionBoundary": "Both scenario-only by authored selection, not a judgment against their Zaun associations. The no-wall-penalty specialty and the one-hex sight specialty are proxies; no indiscriminate demolition authority, extra flight, automatic lightning chains, Haste improvement or perpetual speed growth."
+    },
+    {
+      "id": "ZL15",
+      "status": "authored configuration",
+      "question": "What does Renata's chem-baron status authorize?",
+      "chosenReading": "Commercial and coercive Zaun influence derived from family alchemy and obligations; not universal sovereignty, mandatory cooperation with Ekko/Zeri or ownership of all chemical inventions.",
+      "source": [
+        "P-renata-profile",
+        "B-renata",
+        "R-lore-deep"
+      ],
+      "primarySourceBasis": "The official short profile supports the chem-baroness, the parents' alchemical research and her commercial leverage, and it states that she has no aptitude for alchemy herself; she exploits her parents' work and employs devisers. Right On Time exposes her advertised healing as deceptive and her patronage as coercive. The profile does not name her as Shimmer's inventor or make all Zaun residents her subjects, and the Sun Gate takeover she wants is a goal, not a completed event.",
+      "projectFictionBoundary": "Scenario-only patron/rival or negotiated bargain. The native 125 gold/day is balance, not a measured canon dividend. No automatic allegiance change, free resurrection or gas mind-control subsystem."
+    },
+    {
+      "id": "ZL16",
+      "status": "authored configuration",
+      "question": "Is Janna a citizen or recruitable officer of Zaun?",
+      "chosenReading": "Selected role: an ancient coastal wind spirit whose worship reaches into Shuriman tradition and who now protects vulnerable people in Zaun. She is not a human citizen, chem-baron servant or industrial mascot, and her protection is not a cast she performs in combat.",
+      "source": [
+        "P-warwick-story",
+        "B-janna"
+      ],
+      "primarySourceBasis": "Deep Breath supplies the coastal Shuriman wind tradition, the Zaun petitioners and the protection she gives them. The runner's earlier prayer to a wind goddess remains an independent reference that does not by itself verify every ancient detail.",
+      "projectFictionBoundary": "Scenario-only intervention requires explicit protection/appeal framing. The Luck specialty is a passive game metaphor for fortunate protection, not bottled divine power, automatic purification, a cast, army flight or unconditional rescue."
+    },
+    {
+      "id": "ZL17",
+      "status": "authored configuration",
+      "question": "Do Caitlyn, Vi, Corki and Heimerdinger become Zaun citizens when defined in this mod?",
+      "chosenReading": "No. Caitlyn is Piltover law enforcement; Vi has Zaun upbringing but selected current Piltover Warden affiliation. Corki and Heimerdinger retain Piltover-linked/Bandle-yordle guest readings from the audited dossiers.",
+      "source": [
+        "P-vi-story",
+        "B-caitlyn",
+        "B-vi",
+        "B-corki",
+        "B-heimerdinger"
+      ],
+      "primarySourceBasis": "Vi/Caitlyn's selected service is corroborated by the story and legacy embedded biography. The other two full primary biographies are not verified; later Viktor's embedded Heimerdinger chronology is deliberately excluded.",
+      "projectFictionBoundary": "All four actual special:true definitions are scenario guests, rivals, investigators or technical visitors only. Native Zaun classes/starting armies are command-interface defaults, not naturalization, political defection, or an already-authored scenario alliance."
+    },
+    {
+      "id": "ZL18",
+      "status": "authored configuration",
+      "question": "Does ordinary tavern eligibility certify common loyalty or realistic employability?",
+      "chosenReading": "No. The authored six ordinary options are Blitzcrank, Jinx, Singed, Dr. Mundo, Ekko and Urgot. This intentionally heterogeneous selection is a skirmish-command abstraction, with especially strong caveats for Mundo, Jinx, Singed and Urgot.",
+      "source": [
+        "D-ranking",
+        "B-blitzcrank",
+        "B-jinx",
+        "B-singed",
+        "B-drmundo",
+        "B-ekko",
+        "B-urgot"
+      ],
+      "primarySourceBasis": "No primary source read establishes these six meeting in a tavern or sharing an employer. Availability is a project decision, not a canon conclusion.",
+      "projectFictionBoundary": "Other twelve are scenario-only by configuration, not automatically enemies or less authentically Zaun-associated. Map access, armies, max-eight-active management and mutual political consent need separate authored scenarios and execution."
+    },
+    {
+      "id": "ZL19",
+      "status": "authored configuration",
+      "question": "What lore is claimed for seven recruit lines and their distinctiveness?",
+      "chosenReading": "Street labor/gang equipment, local chemistry, augmentation and industrial hazards supply regional subjects. Every named base/upgrade rank, generic construct and laboratory predator is project fiction rather than a Riot military establishment.",
+      "source": [
+        "D-units",
+        "D-identity",
+        "D-registry",
+        "P-viktor-story",
+        "P-warwick-story"
+      ],
+      "primarySourceBasis": "Chem-punks, baron power and augmentation appear in primary text, but not the precise seven-tier roster, named quarters, trained species or imperial order of battle.",
+      "projectFictionBoundary": "One tier-three shooter, finite melee alchemy, living augmented infantry and grounded beasts are composition choices. Shared native mechanics/seed stats do not prove art originality or balance. The content id is reinforcedConstruct; a reviewed registry once named the tier-three upgrade reinforcedChemtechConstruct, and that mapping drift is reported in the lore review, never silently registered as an alias."
+    },
+    {
+      "id": "ZL20",
+      "status": "authored configuration",
+      "question": "Can biological lore establish regeneration, nature, spell eligibility or armor-piercing percentages?",
+      "chosenReading": "No. Living augmentation, mechanical frames and regeneration themes motivate rules but do not determine VCMI semantics. Top-survivor repairs, finite Weakness, Defend bonuses and rear-hex friendly fire are bounded adaptations.",
+      "source": [
+        "D-units",
+        "D-identity",
+        "D-registry"
+      ],
+      "primarySourceBasis": "No primary story gives game rounds, HP quantities, morale classification, immunity lists or Defense percentages.",
+      "projectFictionBoundary": "Runtime nature/repair/casting checks remain unexecuted. Descriptions must not advertise each-model healing, blanket immunity or unavailable mechanics merely from lore. Source discrepancies and subsequent coordinator corrections are recorded in the dated review; this reviewer does not change gameplay."
+    },
+    {
+      "id": "ZL21",
+      "status": "authored configuration",
+      "question": "Are narrator beliefs and propaganda objective regional lore?",
+      "chosenReading": "No. Warwick's judgments of guilt, Viktor's claims about fear and control, a captive's interpretation of Camille and a later in-world treatise each have perspective limits. Clinical/political claims require attribution.",
+      "source": [
+        "P-warwick-story",
+        "P-viktor-story",
+        "P-camille-story",
+        "P-vi-story"
+      ],
+      "primarySourceBasis": "Warwick admits uncertainty about the runner; Naph repeats hearsay; Camille's captive has limited knowledge; later Viktor's biography is framed as a researcher's reconstruction.",
+      "projectFictionBoundary": "No scent-of-guilt mechanic, guaranteed truthful interrogation, universally evil augmentation or narrator-confirmed clinical doctrine. Original project dialogue and descriptive vignettes are never authenticated Riot quotations."
+    },
+    {
+      "id": "ZL22",
+      "status": "authored configuration",
+      "question": "What conclusions are expressly outside this review?",
+      "chosenReading": "No win rates, canonical power rankings, conquest timeline, fixed cross-region year, canonical Zaun imperial host, complete champion verification or present-day legal sovereignty determination is claimed.",
+      "source": [
+        "L-library",
+        "D-ranking",
+        "D-units",
+        "D-buildings"
+      ],
+      "primarySourceBasis": "The read sources are bounded scenes and one short profile, not military statistics, an empire chronicle, constitutional history or complete regional reference.",
+      "projectFictionBoundary": "Prices, sulfur yields, troop ranks, specialties, game alignment, terrain, growth, AI estimates, alternate endings and town ownership are game design. Source checks never certify native behavior or release readiness."
+    }
+,
+    {
+      "id": "ZL23",
+      "status": "authored configuration",
+      "question": "Does the source set behave as one canon, and how are the incompatible layers handled?",
+      "chosenReading": "The canon is not a monolith. Each champion's published body and each field of it are selected individually for the chosen project era, and a field that belongs to another era is excluded instead of being rewritten.",
+      "source": ["R-lore-deep", "R-lore-review"],
+      "primarySourceBasis": "The deep review read the full and short biography of every champion and found mixed publication layers: current Viktor is explicitly Hexcore material and was read only for exclusion, while the legacy House on Emberflit Alley body is the adopted anchor; Vi, Ekko, Singed, Heimerdinger, Ziggs and Corki carry differing full and short layers.",
+      "projectFictionBoundary": "Publication dates and champion release dates are not in-world chronology. The selected era, not the newest payload, is the reference."
+    },
+    {
+      "id": "ZL24",
+      "status": "authored configuration",
+      "question": "What is the approved primary reading set for the Zaun project?",
+      "chosenReading": "The approved set is the twenty complete official story bodies, the eighteen champion biography field pairs, the eighteen live profile paragraphs and the two region bodies listed in the deep review, each with its raw-response hash.",
+      "source": ["R-lore-deep"],
+      "primarySourceBasis": "The deep review records the exact URLs, published bylines and dates where supplied, the reading limits and forty raw-response SHA-256 hashes. Four endpoints that were guessed returned 403 and are recorded as failed probes, not as absence.",
+      "projectFictionBoundary": "A hash binds a response body, not an in-world truth. The set does not certify completeness of a champion's appearances, skins or abilities."
+    },
+    {
+      "id": "ZL25",
+      "status": "authored configuration",
+      "question": "Is Blitzcrank a canonical construct army, an Arcane contamination, or a person?",
+      "chosenReading": "Blitzcrank is an autonomous, steam-powered, sentient protector of Zaun. The selected legacy account already shows rescue, emotion and a steam engine, so his steam-golem body and agency stand as written and are not corrected into a human or stripped of choice.",
+      "source": ["R-lore-deep", "B-blitzcrank"],
+      "primarySourceBasis": "The Ensemble story depicts autonomous rescue and a steam engine. Sentience and steam are not by themselves evidence of Arcane contamination. The current full biography's salvaged-golem and Shuriman-crystal origin has been read, but its revision date is unverified, so it is not used to assert an exact old origin, a first sentient machine, or Viktor rejecting Blitzcrank's personhood. No allowed source establishes a creator sequence, a first-sentient-machine claim or a power source, so those details stay conservative.",
+      "projectFictionBoundary": "Tavern command is a skirmish abstraction, not ownership. Tier-three constructs are not mass-produced Blitzcranks, and the mechanical troop rules do not deny a unique person's emotions."
+    },
+    {
+      "id": "ZL26",
+      "status": "authored configuration",
+      "question": "How is Shimmer availability described without inventing a supply chain?",
+      "chosenReading": "Shimmer is an available Zaun substance with a verified presence in stories and in the region captions. No universal formula, Arcane supply-chain inference, inventor in the frozen era or Bilgewater route is claimed.",
+      "source": ["R-lore-deep"],
+      "primarySourceBasis": "Deep Breath includes shimmer dealing, Son of Ur names shimmer and shimmerwine separately, and the region captions include a Shimmer Trafficker, so shimmer trafficking and dealing are verified independently of shimmerwine. These do not establish a universal formula, an Arcane production history, an inventor in the frozen era or a Bilgewater supply route. The current Singed short-profile text attributes Shimmer to him, and that newer attribution is excluded from this selected legacy scenario.",
+      "projectFictionBoundary": "The Shimmer Factory remains a declared project abstraction. Publication metadata is not proof that every current word is unchanged from its original release."
+    },
+    {
+      "id": "ZL27",
+      "status": "authored configuration",
+      "question": "Do the construct troop lines make a life-proof claim about Zaun golems?",
+      "chosenReading": "The mechanical classification of the tier-three line is a game rule about that project troop. It is not a claim that Zaun golems are soulless, and Blitzcrank keeps his personhood.",
+      "source": ["R-lore-deep", "R-distinctiveness"],
+      "primarySourceBasis": "The deep review's per-tier table grounds the construct line in the industrial golem research of the selected stories and marks the shooting chassis as original extrapolation, not a mass-produced Blitzcrank or a Hexcore regiment. The same review records that Warwick, Mundo, Zac, Blitzcrank and Viktor are exceptional bodies and not generic recruitable populations: Zac's full biography says that attempts to replicate him failed.",
+      "projectFictionBoundary": "Mechanical morale and no-healing rules describe a troop type. They do not establish a canonical absence of sentience in Zaun machinery. No troop may claim an exceptional champion's exact physiology, sentience, creator or canonical allegiance by association."
+    },
+    {
+      "id": "ZL28",
+      "status": "authored configuration",
+      "question": "Does a Zaun affiliation follow from a champion's technology, and does a scenario presence imply citizenship?",
+      "chosenReading": "Technology is not citizenship. A champion associated with Piltover may appear in a Zaun scenario, and a champion associated with Zaun may be a guest elsewhere, without a nationality conclusion.",
+      "source": ["R-lore-deep"],
+      "primarySourceBasis": "Corki left Bandle City, settled in Piltover and leads the Screaming Yipsnakes; Renata's business expands into Piltover from a Zaun base; Vi is Zaun-raised and a Piltover Warden; Caitlyn is a Piltover peacekeeper; Heimerdinger and Ziggs are yordles with Piltover associations.",
+      "projectFictionBoundary": "Scenario coavailability is an explicit gameplay abstraction. It asserts neither a shared political program nor a national transfer of loyalty."
+    },
+    {
+      "id": "ZL29",
+      "status": "authored configuration",
+      "question": "Are the seven Zaun troop lines canonical institutions or species?",
+      "chosenReading": "All seven lines are project fiction. The canonical anchors justify themes, materials and silhouettes only, never a recruitable institution, a species, a growth rate or a combat power.",
+      "source": ["R-lore-deep", "D-units"],
+      "primarySourceBasis": "The deep review's tier table lists the primary anchor for every line and states the boundary for each: no official levy, no canonical mutant species, no canonical chemist guild, no mass-produced chimera, no official follower caste.",
+      "projectFictionBoundary": "Prices, growth, statistics, abilities and buildings are game design. The art briefs may use the anchors as visual direction without presenting them as regiments."
+    },
+    {
+      "id": "ZL30",
+      "status": "authored configuration",
+      "question": "How is the augmentation line framed when the source world contains a founder figure?",
+      "chosenReading": "Augmentation in Zaun is an agency practice with mixed consent, not a single ruler's collective program. The augmented lines are salvaged augmentation, not a numbered organization under one inventor.",
+      "source": ["R-lore-deep"],
+      "primarySourceBasis": "The selected stories show varied prosthetic augmentation and research contexts rather than a single service; the tier table records the augmentation line's anchor as industrial augmentation and varied prostheses, not a controlled collective.",
+      "projectFictionBoundary": "No player character commands the tier-six line as a follower of a specific inventor, and no emotion loss, Hexcore power or permanent conversion is implied."
+    },
+    {
+      "id": "ZL31",
+      "status": "authored configuration",
+      "question": "Does a stronger tier number make a line stronger in every respect?",
+      "chosenReading": "No. Tier order is a recruitment and value order. A higher line may trade raw damage for reach, sustain, area or a charge, and a lower line may be the better answer against a particular enemy.",
+      "source": ["R-distinctiveness"],
+      "primarySourceBasis": "The distinctiveness review's original-town envelopes show several original lines whose higher tier trades damage for a special rule. The coordinator's own source inspection of the native combat valuation code treats a reach tool, a fan strike and an all-adjacent grab as different kinds of advantage; that inspection is source-read only and is not an executed result.",
+      "projectFictionBoundary": "This is a design stance, not a measured balance result. Every line still needs an equal-budget comparison before any balance claim."
+    },
+    {
+      "id": "ZL32",
+      "status": "authored configuration",
+      "question": "Do a region role, a residence and a citizenship follow from each other?",
+      "chosenReading": "They are separate. A champion can act for one region, live in another and owe allegiance to neither.",
+      "source": ["R-lore-deep"],
+      "primarySourceBasis": "The deep review records the separate region roles and the residence of each candidate, including the yordle origin of Ziggs, the Bandle City origin of Corki and the coastal Shuriman worship behind Janna's wind tradition.",
+      "projectFictionBoundary": "No immigration history, citizenship law or border regime is asserted for the project. The scenario framing is authored and must be explicit."
+    },
+    {
+      "id": "ZL33",
+      "status": "authored configuration",
+      "question": "Which world institutions are established by the selected primary bodies?",
+      "chosenReading": "Chem-barons, chem-jacks, industrial golems, augmented workers and thugs, researchers, the Zaun Academy of Sciences and a Church of the Glorious Evolved are supported by the identified primary bodies. A centralized Alchemists' Guild, a sannister economy, a standardized Zaun army and a Viktor-controlled collective are not established here, and none of them is asserted.",
+      "source": ["R-lore-deep"],
+      "primarySourceBasis": "The deep review's institutions section states exactly that list of supported bodies and the same list of unsupported ones. Named Heroes III dwellings and troop lines remain original project institutions.",
+      "projectFictionBoundary": "Use researchers, devisers, chem-barons or an explicitly fictional institution instead. The absence of a canonical institution is not a claim that the institution is impossible."
+    },
+    {
+      "id": "ZL34",
+      "status": "authored configuration",
+      "question": "What may the town's named institutions claim?",
+      "chosenReading": "The Shimmer Factory, the Shimmer Institute, the Hexworks Bastion and The Sump are project institutions with project functions. None of them claims a canonical global formula, an exclusive national technology monopoly, a canonical map location or a cult state.",
+      "source": ["R-lore-deep", "D-buildings"],
+      "primarySourceBasis": "The deep review's building-boundary section states the limit for each name, and the source reading does not establish a single global Shimmer formula, an exclusive Piltover hextech monopoly, a canonical Sump location or a Grail cult state. The four names are the ones the authored town content actually uses.",
+      "projectFictionBoundary": "The town names and their functions are game design. The absence of a canonical claim is not a claim that the institution is impossible."
+    },
+    {
+      "id": "ZL35",
+      "status": "authored configuration",
+      "question": "Which mechanic collisions were corrected, and what was left open?",
+      "chosenReading": "The tier-four armour cutter, the tier-six defensive stance and the upgraded tier-seven rear-hex breath were replaced with native bonuses that neither peer faction uses. The tier-five one-charge caster shell remains a recorded near-duplicate rather than a solved problem.",
+      "source": ["R-distinctiveness", "R-lore-deep"],
+      "primarySourceBasis": "The distinctiveness review compared the authored dictionaries directly: the tier-four ENEMY_DEFENCE_REDUCTION, the tier-six DEFENSIVE_STANCE and the upgraded tier-seven TWO_HEX_ATTACK_BREATH were the same native bonuses that Demacia and Noxus use. The deep review separately found the Noxus rear-hex geometry to be an exact match and the tier-five comparison to be close but not identical.",
+      "projectFictionBoundary": "The replacement bonuses are source-inspected native behaviour, not executed gameplay. The replaced values are uncalibrated design numbers and no balance acceptance follows from the change."
+    },
+    {
+      "id": "ZL36",
+      "status": "authored configuration",
+      "question": "How is Zeri's electricity dated against the selected era?",
+      "chosenReading": "Zeri's electricity is innate magic; her jacket and community-made rifle regulate and channel it. The Unexpected Spark is explicitly post-Mist and is not automatically synchronous with the early mage-rebellion campaign: its characterization may be used, or the scene must be placed in a separately dated memory.",
+      "source": ["R-lore-deep", "B-zeri"],
+      "primarySourceBasis": "The deep review verified the innate-magic reading and the community-made rifle, and it recorded that the post-Mist story cannot date the selected snapshot.",
+      "projectFictionBoundary": "The sight specialty is a native game proxy, not a claim about a champion's perception. No dating of the campaign scene is asserted beyond the selected era."
+    },
+    {
+      "id": "ZL37",
+      "status": "authored configuration",
+      "question": "How is Urgot available to the player when his biography ends in imprisonment?",
+      "chosenReading": "Urgot is an independent ex-Noxian threat, not a loyal national officer. His legacy full biography ends in his imprisonment as the Warden, so ordinary skirmish command is an abstraction and a campaign deployment needs either a clearly dated pre-capture appearance or an explicitly original release or escape bridge.",
+      "source": ["R-lore-deep", "B-urgot"],
+      "primarySourceBasis": "The selected Urgot biography ends with the Warden imprisonment, and the deep review records that the biography's release endpoint is the point of conflict with a present-tense free commander.",
+      "projectFictionBoundary": "The ordinary tavern roster entry is a skirmish hiring abstraction. A present-tense free commander without a qualifier would erase the selected biography endpoint, so the release or escape must be authored and dated by the scenario."
+    }
+  ],
+  "unresolvedQuestions": [
+    "The exact synchronization between Zaun appearances and Demacia's early rebellion is not established, and no synchronized era exists for Renata/Zeri, the legacy Viktor body, the Piltover guests and the early rebellion; the project era is a chosen snapshot, not a dated canon, and publication and champion release dates do not supply one.",
+    "Blitzcrank's biography revision history and a fully coherent Ziggs and Corki version freeze remain open, because both champions keep an older full text beside a different short profile.",
+    "A specific legacy Shimmer formula, inventor, production network or Bilgewater route is not established. The trading of shimmer itself is primary-verified, but its market role and its relationship to any other alchemical product are not, so the Shimmer Factory stays a project institution.",
+    "The intended sense of the 'sannister' term and any canonical centralized Alchemists' Guild remain unverified, so the tier-five line stays a project institution.",
+    "The exact modern river geography, legal boundaries and sovereignty of the two cities are not established, and no immigration or citizenship regime is asserted.",
+    "The campaign motivations that would join protectors, criminals, experimenters, chem-barons and Piltovan officers in one operation are not established; six ordinary skirmish heroes do not supply a credible shared political command by themselves, so a scenario must author that bridge itself, with purpose, consent or containment and army replacements.",
+    "Native gameplay, final art, AI, save and reload behaviour and balance acceptance are all still unproven for every correction in this revision; every specialty, availability exclusion, native troop rule, asset, AI choice and save/reload behaviour requires matching execution evidence, and this source review supplies none.",
+    "The official region pages for Zaun and Piltover were read through the universe API by the deep review and the descriptive captions were captured, but no dedicated primary political or constitutional history of either city was read. No formal independence treaty, sovereignty date or unified government is asserted.",
+    "The full and short biography fields of all eighteen champions were read by the deep review, so the earlier gap is closed. What remains open is the era freeze: the current Viktor body is explicitly Hexcore material and was read only for exclusion, and several champions carry a legacy full body beside a newer short profile. No single current payload may be adopted wholesale.",
+    "Mundo's exact experimenter, Twitch's mutation event, Ziggs's academic departure and the detailed champion relationships remain unresolved; do not promote dossier scenes into facts. Zac's origin and the failed replication of him, and Zeri's community-made rifle and innate electric magic, are primary-verified and are recorded as such.",
+    "Warwick's former name and the runner's fate remain unspecified in the selected prose; later Arcane identities are not imported.",
+    "Janna's ancient coastal Shuriman worship and her protection of Zaun petitioners are primary-verified in the selected story, but her complete origin, ontology and historical geography still require a separate primary reading. A prayer alone is not an observed divine intervention.",
+    "The preserved initial review is historical and is not rewritten. Its source-coverage conclusion is superseded by the deep review, and its earlier regeneration, penetration and drift findings are recorded as resolved configuration drift rather than as present defects. One naming reconciliation remains open: the reviewed registry uses reinforcedChemtechConstruct while the current native upgrade is reinforcedConstruct. No audited source was rewritten."
+  ]
+}

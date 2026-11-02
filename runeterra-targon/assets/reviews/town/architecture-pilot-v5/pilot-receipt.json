@@ -1,0 +1,207 @@
+{
+  "status": "design proposal",
+  "visual_approval_granted": false,
+  "phase": "architecture pilot",
+  "producer": "scripts/targon_town_art.py",
+  "producer_sha256": "12f21a8b85abd080e5756363383dedf0eb1d2a95735ea1af4006189d3421db4b",
+  "scene": "assets/source/town/buildings/targon-architecture-pilot-v5.blend",
+  "scene_sha256": "b84d2ffd970a5ad809e25e86038c2c3d1370b1fc7d284b66c1812192ab56c710",
+  "canvas": [
+    800,
+    374
+  ],
+  "camera": {
+    "type": "PERSP",
+    "lens_mm": 43,
+    "location": [
+      0,
+      -26,
+      17
+    ],
+    "target": [
+      0,
+      0,
+      1
+    ]
+  },
+  "terrain": "assets/source/town/terrain-v1.png",
+  "terrain_sha256": "a1329b82cd020c792caf9f3a9996212756520a8dd939a5e30b29cea258a6b137",
+  "image_generation_used": true,
+  "external_texture_dependencies": [
+    {
+      "source": "assets/source/town/buildings/materials-v1/generation.json",
+      "sha256": "c7d6d12c2cff10e886ca661acf6d805b3ba412a789103a681b7e9f51d1e4a38a"
+    }
+  ],
+  "threads": 4,
+  "states": {
+    "civic": "capitol",
+    "fortifications": "castle",
+    "guild": "mageGuild4",
+    "trailguard": "dwellingUpLvl1",
+    "archers": "dwellingUpLvl2",
+    "ibex": "dwellingUpLvl3",
+    "lunari": "dwellingUpLvl4",
+    "sunhawks": "dwellingUpLvl5",
+    "sunforgers": "dwellingUpLvl6",
+    "stellacorns": "dwellingUpLvl7",
+    "tavern": "tavern",
+    "marketplace": "marketplace",
+    "blacksmith": "blacksmith",
+    "silo": "resourceSilo",
+    "monastery": "special4",
+    "starforge": "extraTownHall",
+    "reliquary": "special3",
+    "solariTemple": "special1",
+    "lunariShrine": "special2",
+    "grail": "grail"
+  },
+  "ordinary_parcels": 16,
+  "independent_annexes": 3,
+  "grail": 1,
+  "geometry_projection_bounds": {
+    "civic": [
+      327.41,
+      56.66,
+      423.47,
+      169.42
+    ],
+    "fortifications": [
+      563.07,
+      63.15,
+      781.64,
+      199.42
+    ],
+    "guild": [
+      443.03,
+      58.73,
+      534.21,
+      183.39
+    ],
+    "trailguard": [
+      20.44,
+      193.59,
+      187.09,
+      318.46
+    ],
+    "archers": [
+      196.38,
+      93.07,
+      305.58,
+      172.0
+    ],
+    "ibex": [
+      131.45,
+      167.22,
+      301.68,
+      275.82
+    ],
+    "lunari": [
+      630.79,
+      197.71,
+      735.19,
+      299.58
+    ],
+    "sunhawks": [
+      23.05,
+      50.87,
+      188.9,
+      154.01
+    ],
+    "sunforgers": [
+      294.22,
+      185.04,
+      445.99,
+      305.78
+    ],
+    "stellacorns": [
+      217.08,
+      54.7,
+      388.32,
+      140.22
+    ],
+    "tavern": [
+      543.6,
+      255.87,
+      727.49,
+      370.89
+    ],
+    "marketplace": [
+      187.36,
+      256.07,
+      394.59,
+      361.41
+    ],
+    "blacksmith": [
+      20.6,
+      266.68,
+      172.66,
+      369.36
+    ],
+    "silo": [
+      463.58,
+      267.75,
+      540.61,
+      339.25
+    ],
+    "monastery": [
+      79.98,
+      104.38,
+      205.3,
+      234.32
+    ],
+    "starforge": [
+      387.29,
+      264.84,
+      529.66,
+      368.52
+    ],
+    "reliquary": [
+      376.87,
+      120.82,
+      437.71,
+      169.58
+    ],
+    "solariTemple": [
+      542.59,
+      137.29,
+      597.42,
+      186.66
+    ],
+    "lunariShrine": [
+      735.68,
+      277.52,
+      791.92,
+      319.37
+    ],
+    "grail": [
+      442.88,
+      209.3,
+      465.98,
+      227.63
+    ]
+  },
+  "portability": {
+    "image_paths": "relative or none",
+    "file_browser_directories": "//",
+    "render_path": "//pilot-review.png"
+  },
+  "outputs": [
+    {
+      "source": "assets/reviews/town/architecture-pilot-v5/full-town-layer.png",
+      "sha256": "e7f5e67ba3c654fc04c8ea5b0fb947c3d7c7129d1788c39ebdcdab25ac466e8d"
+    },
+    {
+      "source": "assets/reviews/town/architecture-pilot-v5/partial-town-layer.png",
+      "sha256": "e10071222a7b9c497d9e6ffb4b60e7a4b9988def1f3250c6d2a2bc30dbe8c564"
+    }
+  ],
+  "incomplete": [
+    "all 35 individually rendered states",
+    "selected production recipes",
+    "native exposed masks and clicks",
+    "construction and map/UI views",
+    "siege art",
+    "native visual review"
+  ]
+}

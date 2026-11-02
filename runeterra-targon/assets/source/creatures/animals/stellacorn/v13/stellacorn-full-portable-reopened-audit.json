@@ -1,0 +1,248 @@
+{
+  "image_paths": {
+    "painted-atlas-v1.png": "//..\\..\\materials\\painted-atlas-v1.png"
+  },
+  "integrity": {
+    "mesh_count": 371,
+    "mesh_sha256": "5e917f93a2803af1f201ee6e3b0151c8d607ac853538e0b054a410c31f0789ba",
+    "packed_image_sha256": {
+      "painted-atlas-v1.png": "a02f751298410c58c03b43bf753fb8845dc3c6e5d1ad173c34a415cde8a9068f"
+    }
+  },
+  "integrity_matches": true,
+  "opposing_facing_geometry_check": {
+    "passed": true,
+    "samples": [
+      {
+        "frame": 0,
+        "group": 2,
+        "left": {
+          "projected_head": [
+            191.29086,
+            193.26332
+          ],
+          "world_head": [
+            -0.85,
+            -0.0,
+            2.03
+          ]
+        },
+        "right": {
+          "projected_head": [
+            244.70914,
+            205.52546
+          ],
+          "world_head": [
+            0.85,
+            0.0,
+            2.03
+          ]
+        }
+      },
+      {
+        "frame": 2,
+        "group": 0,
+        "left": {
+          "projected_head": [
+            191.29086,
+            175.94562
+          ],
+          "world_head": [
+            -0.85,
+            -0.0,
+            2.55
+          ]
+        },
+        "right": {
+          "projected_head": [
+            244.70914,
+            188.20777
+          ],
+          "world_head": [
+            0.85,
+            0.0,
+            2.55
+          ]
+        }
+      },
+      {
+        "frame": 3,
+        "group": 12,
+        "left": {
+          "projected_head": [
+            171.92902,
+            192.3238
+          ],
+          "world_head": [
+            -1.46618,
+            -0.0,
+            1.92475
+          ]
+        },
+        "right": {
+          "projected_head": [
+            264.07099,
+            213.47498
+          ],
+          "world_head": [
+            1.46618,
+            0.0,
+            1.92475
+          ]
+        }
+      },
+      {
+        "frame": 7,
+        "group": 5,
+        "left": {
+          "projected_head": [
+            181.77278,
+            248.66034
+          ],
+          "world_head": [
+            -0.87338,
+            -0.48379,
+            0.54288
+          ]
+        },
+        "right": {
+          "projected_head": [
+            254.22723,
+            249.18058
+          ],
+          "world_head": [
+            0.87338,
+            0.48379,
+            0.54288
+          ]
+        }
+      }
+    ],
+    "unanimated_parent": true
+  },
+  "reopened_in_blender": true,
+  "resting_wing_ground_clearance": {
+    "ground_world_z": 0,
+    "lowest_world_z": 0.7674049735069275,
+    "passed": true
+  },
+  "scene": "assets/source/creatures/animals/stellacorn/v13/stellacorn-full-portable.blend",
+  "scene_sha256": "9e15b3085cc0288dcb57fdf78d96668017487e257ed9ed6722e9915129a40276",
+  "status": "authored configuration",
+  "transition_endpoint_geometry_check": {
+    "comparisons": {
+      "landing_airborne": {
+        "body_location": [
+          0.0,
+          0.0,
+          0.52
+        ],
+        "projected_feet": [
+          [
+            222.3433,
+            250.41288
+          ],
+          [
+            232.51024,
+            243.42178
+          ],
+          [
+            184.14049,
+            241.80995
+          ],
+          [
+            194.67052,
+            234.56917
+          ]
+        ]
+      },
+      "landing_landed": {
+        "body_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "projected_feet": [
+          [
+            229.25626,
+            271.91509
+          ],
+          [
+            239.42318,
+            264.92399
+          ],
+          [
+            191.05344,
+            263.31216
+          ],
+          [
+            201.58348,
+            256.07138
+          ]
+        ]
+      },
+      "takeoff_airborne": {
+        "body_location": [
+          0.0,
+          0.0,
+          0.52
+        ],
+        "projected_feet": [
+          [
+            222.3433,
+            250.41288
+          ],
+          [
+            232.51024,
+            243.42178
+          ],
+          [
+            184.14049,
+            241.80995
+          ],
+          [
+            194.67052,
+            234.56917
+          ]
+        ]
+      },
+      "takeoff_landed": {
+        "body_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "projected_feet": [
+          [
+            229.25626,
+            271.91509
+          ],
+          [
+            239.42318,
+            264.92399
+          ],
+          [
+            191.05344,
+            263.31216
+          ],
+          [
+            201.58348,
+            256.07138
+          ]
+        ]
+      }
+    },
+    "method": "Reopened saved scene; evaluated all animal mesh world vertex coordinates, projected articulated feet and body location against actual holding0/moving0 poses.",
+    "passed": true
+  },
+  "turn_consumer_endpoint_check": {
+    "all_mesh_endpoint_coordinates_match": true,
+    "consumer": "vcmi-develop/vcmi-develop/client/battle/BattleAnimationClasses.cpp",
+    "limits": "Saved-scene geometry and native mirror arithmetic executed; native playback remains pending.",
+    "native_mirror_foot_delta_pixels": 0.0,
+    "native_mirror_head_delta_pixels": 4.5299530029296875e-06,
+    "passed": true,
+    "route": "ReverseAnimation::init group7; setupSecondPart rotateStack then group8"
+  },
+  "visual_approval_granted": false
+}

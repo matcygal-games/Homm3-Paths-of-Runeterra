@@ -1,0 +1,140 @@
+{
+  "definition": {
+    "category": "walking-melee",
+    "comparison": [
+      "core:behemoth",
+      "runeterra-demacia:sentinelColossus"
+    ],
+    "equipment": [
+      "waist-binding",
+      "shoulder-binding",
+      "torn-shadow-mantle"
+    ],
+    "family": "ruin",
+    "height": 2.45,
+    "lore": "Atakhan-inspired recruitable bound-demon contingent is project fiction, not canonical species, copied unique Atakhan, breeding programme or soul economy",
+    "native_height": 112,
+    "nature": "NON_LIVING",
+    "silhouette": "Predatory hunched shadow demon, small low forward skull, extremely long clawed forelimbs, bent planted hind legs, ragged black mantle and sparse crimson fissures; iron binding straps, no stone or robot armour",
+    "tier": 7,
+    "two_hex": true,
+    "upgrade": false,
+    "weakness": "Grounded twohex walking routes, restricted mobility and ordinary retaliation; no inherited Colossus protection",
+    "weapon": "long-claws",
+    "width": 0.48
+  },
+  "emblem": {
+    "policy": "Leave emblem fields blank in guides. Obtain a genuine official Riot Noxus emblem, preserve exact source URL/bytes/hash and permissions before final painted art. Never invent a crest or reuse Demacia heraldry.",
+    "sha256": null,
+    "source_url": null,
+    "status": "blocked-official-source-provenance-required"
+  },
+  "generation": {
+    "image_generation_used": false,
+    "model": null,
+    "prompt": null,
+    "provider": null
+  },
+  "model_sheet_type": "editable volumetric rig + transparent pose guides, NOT painted art",
+  "native_groups": {
+    "0": {
+      "action": "walk-contact",
+      "minimum_guide_poses": 6
+    },
+    "1": {
+      "action": "fidget-equipment-check",
+      "minimum_guide_poses": 4
+    },
+    "11": {
+      "action": "melee-up",
+      "minimum_guide_poses": 6
+    },
+    "12": {
+      "action": "melee-front",
+      "minimum_guide_poses": 6
+    },
+    "13": {
+      "action": "melee-down",
+      "minimum_guide_poses": 6
+    },
+    "2": {
+      "action": "idle",
+      "minimum_guide_poses": 1
+    },
+    "3": {
+      "action": "hit-recoil",
+      "minimum_guide_poses": 4
+    },
+    "4": {
+      "action": "defend-brace",
+      "minimum_guide_poses": 4
+    },
+    "5": {
+      "action": "death-collapse",
+      "minimum_guide_poses": 6
+    },
+    "7": {
+      "action": "turn-toward-viewer",
+      "minimum_guide_poses": 4
+    },
+    "8": {
+      "action": "turn-back",
+      "minimum_guide_poses": 4
+    }
+  },
+  "painting_contract": {
+    "acceptance": false,
+    "camera": "One measured uniform camera/placement correction per action atlas, preserve every source and rejected revision; no per-frame stretch, warping, auto-fit or idle-as-action",
+    "continuity": "Use each unit's own model/upgrade definition and all actual pose guides; preserve joint contacts and independent silhouettes",
+    "required_capability": "ChatGPT image-generation skill / built-in image_gen.imagegen or human painted masters",
+    "review": [
+      "transparent background and no baked floor",
+      "ground contact at native pivot",
+      "no cross-cell contamination",
+      "whole action semantics and projectile release",
+      "base/upgrade silhouette and equipment distinction",
+      "genuine Noxus emblem legibility and provenance",
+      "native original/Demacia comparison",
+      "real native runtime review"
+    ],
+    "status": "blocked-missing-painted-masters",
+    "style": "Original Heroes III native painted/prerendered treatment, restrained highlights, matte iron/crimson/black, upper-left lighting; not glossy modern 3D, flat vector or splash art"
+  },
+  "pipeline": [
+    "art_creature_rigs.py actual Blender assembly",
+    "all groups keyed as genuine skeletal poses",
+    "art_creature_sources.py --review fixed whole-cohort uniform native conversion",
+    "painted master production BLOCKED",
+    "source pins and native action review BLOCKED",
+    "coordinator-only manifest selection, assembly and runtime acceptance NOT PERFORMED"
+  ],
+  "production_recipes": [
+    {
+      "path": "assets/recipes/creatures/ruinBringer-battle.json",
+      "sha256": "b61e60b321281fb7f5f3adb1e2481a36829cdb80d5a95a0db4c0c57500c34203"
+    },
+    {
+      "path": "assets/recipes/creatures/ruinBringer-map.json",
+      "sha256": "bce54fe4c1bc8807dac87c5f61f9867aa604cb3e598f95e1376ad64ee9a60ae2"
+    },
+    {
+      "path": "assets/recipes/creatures/ruinBringer-large.json",
+      "sha256": "2680677d4971ded4a8188157f6a046915e1be4b329041e7e9e08a2fa8591f2a5"
+    },
+    {
+      "path": "assets/recipes/creatures/ruinBringer-small.json",
+      "sha256": "7d56b9f96b7a9d559ee63bdaf3d5fa3ad6499498666adc34d8090f30de0bd8e2"
+    },
+    {
+      "path": "assets/recipes/creatures/ruinBringer-attackLeft.json",
+      "sha256": "2ca67c0f8e3d2d919eab842507fec81b0ded584675708af4a2e5506ca5c35ad1"
+    },
+    {
+      "path": "assets/recipes/creatures/ruinBringer-attackRight.json",
+      "sha256": "3ef64318cce9ee1607b6002f7253208a897084277cafc45e8f92f474ab44423a"
+    }
+  ],
+  "status": "authored configuration",
+  "unit": "ruinBringer",
+  "visual_approval_granted": false
+}

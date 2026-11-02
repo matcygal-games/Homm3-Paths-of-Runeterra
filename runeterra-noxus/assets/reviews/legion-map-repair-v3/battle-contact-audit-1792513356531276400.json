@@ -1,0 +1,2101 @@
+{
+  "limitations": [
+    "No source skeleton or exact labeled foot landmarks survive image generation.",
+    "A contact-band center displacement is not alone proof of unwanted motion.",
+    "Different painted foot widths cannot both be corrected by one rigid translation.",
+    "Engine animation timing, transitions, mirroring, stack counts and battlefield grounding remain untested."
+  ],
+  "method": "For each non-death native frame, find the lowest alpha>=64 painted row below y235, and the projection of the last four painted rows. These were visually inspected as boots in the native sheets. The horizontal band center includes intended stride/lean; it is not a measured skeleton-root trajectory. The reference ground line is y266, reference x pivot197. No frames are moved, fitted or warped.",
+  "native_runtime_executed": false,
+  "scope": "Native painted-pixel contact measurement only",
+  "status": "authored configuration",
+  "units": {
+    "legionRecruit": {
+      "battle_json_sha256": "1c2adc179ae660ebf8c2018e92537306296b760435c72d77cb9f8bf61b997727",
+      "contact_sheet": "assets/reviews/legion-map-repair-v3/legionRecruit-fixed-native-contact-lines-1792513356531276400.png",
+      "contact_sheet_sha256": "9acf70ff339a7bd67325eb508bae38835896ab0e9857b5260b43f42e8d47323c",
+      "groups": {
+        "0": {
+          "band_center_x_range": [
+            180.0,
+            192.5
+          ],
+          "band_center_x_span": 12.5,
+          "band_width_range": [
+            40,
+            47
+          ],
+          "contact_y_range": [
+            264,
+            266
+          ],
+          "contact_y_span": 2,
+          "frames": [
+            {
+              "alpha_bounds": [
+                172,
+                193,
+                217,
+                267
+              ],
+              "contact_band_center_x": 192.5,
+              "contact_band_width": 40,
+              "contact_band_x": [
+                173,
+                212
+              ],
+              "frame": 0,
+              "ground_delta_y": -2,
+              "painted_contact_y": 264,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g00-f000.png",
+              "sha256": "544171a15ee3f646cc9eb9921e72e589eaeb56daa5e9bc52e326f548e4664d5e"
+            },
+            {
+              "alpha_bounds": [
+                165,
+                193,
+                209,
+                267
+              ],
+              "contact_band_center_x": 186.5,
+              "contact_band_width": 40,
+              "contact_band_x": [
+                167,
+                206
+              ],
+              "frame": 1,
+              "ground_delta_y": -2,
+              "painted_contact_y": 264,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g00-f001.png",
+              "sha256": "de9acee74751bc5f1e885bd3c46da059b7ab7da3f6adb6f5bfff3a9f80cf7968"
+            },
+            {
+              "alpha_bounds": [
+                156,
+                193,
+                210,
+                267
+              ],
+              "contact_band_center_x": 182.0,
+              "contact_band_width": 45,
+              "contact_band_x": [
+                160,
+                204
+              ],
+              "frame": 2,
+              "ground_delta_y": 0,
+              "painted_contact_y": 266,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g00-f002.png",
+              "sha256": "67495fac07730f716b0a6af97c196c0e02e6eb444a5f0070a44692fbd643d8d5"
+            },
+            {
+              "alpha_bounds": [
+                155,
+                193,
+                207,
+                267
+              ],
+              "contact_band_center_x": 180.0,
+              "contact_band_width": 47,
+              "contact_band_x": [
+                157,
+                203
+              ],
+              "frame": 3,
+              "ground_delta_y": 0,
+              "painted_contact_y": 266,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g00-f003.png",
+              "sha256": "ec8c766e95279243203938ffae1aebfe17a538bd0c6a79d18a93fad41917fa12"
+            },
+            {
+              "alpha_bounds": [
+                163,
+                193,
+                216,
+                267
+              ],
+              "contact_band_center_x": 189.0,
+              "contact_band_width": 47,
+              "contact_band_x": [
+                166,
+                212
+              ],
+              "frame": 4,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g00-f004.png",
+              "sha256": "3fb080a22b369f8e8f8e655ccfb52de39e94cdb092d9444e6b68501c45dd4119"
+            },
+            {
+              "alpha_bounds": [
+                162,
+                193,
+                217,
+                267
+              ],
+              "contact_band_center_x": 188.0,
+              "contact_band_width": 43,
+              "contact_band_x": [
+                167,
+                209
+              ],
+              "frame": 5,
+              "ground_delta_y": 0,
+              "painted_contact_y": 266,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g00-f005.png",
+              "sha256": "7c646ea6b4ea33e78bbfa3b7a91b8ce59e711d688bad7535bcab52e055bdf8d7"
+            }
+          ]
+        },
+        "1": {
+          "band_center_x_range": [
+            191.5,
+            196.0
+          ],
+          "band_center_x_span": 4.5,
+          "band_width_range": [
+            33,
+            38
+          ],
+          "contact_y_range": [
+            264,
+            265
+          ],
+          "contact_y_span": 1,
+          "frames": [
+            {
+              "alpha_bounds": [
+                177,
+                191,
+                218,
+                266
+              ],
+              "contact_band_center_x": 196.0,
+              "contact_band_width": 33,
+              "contact_band_x": [
+                180,
+                212
+              ],
+              "frame": 0,
+              "ground_delta_y": -2,
+              "painted_contact_y": 264,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g01-f000.png",
+              "sha256": "f0f8939bda856674e5697560d7f06577fdc8412f3291d27c19bb3ee0028f1dbf"
+            },
+            {
+              "alpha_bounds": [
+                176,
+                191,
+                220,
+                266
+              ],
+              "contact_band_center_x": 194.5,
+              "contact_band_width": 34,
+              "contact_band_x": [
+                178,
+                211
+              ],
+              "frame": 1,
+              "ground_delta_y": -2,
+              "painted_contact_y": 264,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g01-f001.png",
+              "sha256": "b6bc7d15cf2b087b4fd2d45d37a516b1446b5c6d235df169dcaaf67ebe00bb8e"
+            },
+            {
+              "alpha_bounds": [
+                174,
+                191,
+                217,
+                266
+              ],
+              "contact_band_center_x": 193.5,
+              "contact_band_width": 36,
+              "contact_band_x": [
+                176,
+                211
+              ],
+              "frame": 2,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g01-f002.png",
+              "sha256": "29b91b9bb28d656234f4bfbd8d61af0723590fc8fb2703ebc7e1fb5be212f500"
+            },
+            {
+              "alpha_bounds": [
+                171,
+                191,
+                219,
+                266
+              ],
+              "contact_band_center_x": 191.5,
+              "contact_band_width": 38,
+              "contact_band_x": [
+                173,
+                210
+              ],
+              "frame": 3,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g01-f003.png",
+              "sha256": "34a9629a2f9ddf467474fd5e67b70c3373822e72bbf4553185cc8507e0d39899"
+            }
+          ]
+        },
+        "11": {
+          "band_center_x_range": [
+            185.0,
+            197.0
+          ],
+          "band_center_x_span": 12.0,
+          "band_width_range": [
+            43,
+            54
+          ],
+          "contact_y_range": [
+            264,
+            266
+          ],
+          "contact_y_span": 2,
+          "frames": [
+            {
+              "alpha_bounds": [
+                172,
+                180,
+                226,
+                267
+              ],
+              "contact_band_center_x": 196.5,
+              "contact_band_width": 46,
+              "contact_band_x": [
+                174,
+                219
+              ],
+              "frame": 0,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g11-f000.png",
+              "sha256": "61ee13d3802529c79c71c10f499d5933995f57f43246f1a4e477550f77ffdc20"
+            },
+            {
+              "alpha_bounds": [
+                163,
+                177,
+                226,
+                266
+              ],
+              "contact_band_center_x": 191.5,
+              "contact_band_width": 54,
+              "contact_band_x": [
+                165,
+                218
+              ],
+              "frame": 1,
+              "ground_delta_y": -2,
+              "painted_contact_y": 264,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g11-f001.png",
+              "sha256": "4279c04bc8cdf55324e22799650c2719bfd1804f02578bcaf56b4f7724350766"
+            },
+            {
+              "alpha_bounds": [
+                158,
+                177,
+                232,
+                266
+              ],
+              "contact_band_center_x": 186.5,
+              "contact_band_width": 52,
+              "contact_band_x": [
+                161,
+                212
+              ],
+              "frame": 2,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g11-f002.png",
+              "sha256": "d5da2750678581ec3315c8bbeae24db1a9e3a35fe6eaa5982fa1d70d0e0b584f"
+            },
+            {
+              "alpha_bounds": [
+                156,
+                186,
+                257,
+                266
+              ],
+              "contact_band_center_x": 185.0,
+              "contact_band_width": 51,
+              "contact_band_x": [
+                160,
+                210
+              ],
+              "frame": 3,
+              "ground_delta_y": -2,
+              "painted_contact_y": 264,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g11-f003.png",
+              "sha256": "b04404337af0a44b8e7fdc0fb3bb77184d42f8a9206fb71e1d7648c1367a6f19"
+            },
+            {
+              "alpha_bounds": [
+                160,
+                187,
+                233,
+                267
+              ],
+              "contact_band_center_x": 188.5,
+              "contact_band_width": 54,
+              "contact_band_x": [
+                162,
+                215
+              ],
+              "frame": 4,
+              "ground_delta_y": 0,
+              "painted_contact_y": 266,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g11-f004.png",
+              "sha256": "9e691a20f6ee99c3de9196fb47defcad0062adca6303cff5cc80faac62d54768"
+            },
+            {
+              "alpha_bounds": [
+                174,
+                184,
+                229,
+                267
+              ],
+              "contact_band_center_x": 197.0,
+              "contact_band_width": 43,
+              "contact_band_x": [
+                176,
+                218
+              ],
+              "frame": 5,
+              "ground_delta_y": 0,
+              "painted_contact_y": 266,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g11-f005.png",
+              "sha256": "b644ef0c110e2f5f415e94bfb04f87eac4b263357ea3ea62148594149a73b1b4"
+            }
+          ]
+        },
+        "12": {
+          "band_center_x_range": [
+            183.0,
+            197.0
+          ],
+          "band_center_x_span": 14.0,
+          "band_width_range": [
+            45,
+            53
+          ],
+          "contact_y_range": [
+            264,
+            265
+          ],
+          "contact_y_span": 1,
+          "frames": [
+            {
+              "alpha_bounds": [
+                172,
+                188,
+                232,
+                267
+              ],
+              "contact_band_center_x": 197.0,
+              "contact_band_width": 47,
+              "contact_band_x": [
+                174,
+                220
+              ],
+              "frame": 0,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g12-f000.png",
+              "sha256": "96732b8506ea4c15ac2e7a178eca75af642cc8aefed480d9f956e42d48f40dca"
+            },
+            {
+              "alpha_bounds": [
+                161,
+                188,
+                254,
+                267
+              ],
+              "contact_band_center_x": 189.0,
+              "contact_band_width": 53,
+              "contact_band_x": [
+                163,
+                215
+              ],
+              "frame": 1,
+              "ground_delta_y": -2,
+              "painted_contact_y": 264,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g12-f001.png",
+              "sha256": "d7fd7729189a7290c3c0648ab7a18ad792223a6f2a8fab645b273c372e69a2a0"
+            },
+            {
+              "alpha_bounds": [
+                158,
+                188,
+                251,
+                267
+              ],
+              "contact_band_center_x": 186.0,
+              "contact_band_width": 53,
+              "contact_band_x": [
+                160,
+                212
+              ],
+              "frame": 2,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g12-f002.png",
+              "sha256": "9021c164929557b58a993e1b98bca170a1959a5ea3fca5f7d12bdd94836341d9"
+            },
+            {
+              "alpha_bounds": [
+                156,
+                190,
+                248,
+                267
+              ],
+              "contact_band_center_x": 183.0,
+              "contact_band_width": 51,
+              "contact_band_x": [
+                158,
+                208
+              ],
+              "frame": 3,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g12-f003.png",
+              "sha256": "e3127cfa01178b7afc86e81ac1da20008373494a92091c2e6e8ec173b8e7f3a1"
+            },
+            {
+              "alpha_bounds": [
+                158,
+                189,
+                239,
+                267
+              ],
+              "contact_band_center_x": 183.5,
+              "contact_band_width": 48,
+              "contact_band_x": [
+                160,
+                207
+              ],
+              "frame": 4,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g12-f004.png",
+              "sha256": "4e8f853713634274f9c554fc58128bd657108c9f9f25d7380a32c28a5fbebc53"
+            },
+            {
+              "alpha_bounds": [
+                169,
+                188,
+                224,
+                267
+              ],
+              "contact_band_center_x": 193.0,
+              "contact_band_width": 45,
+              "contact_band_x": [
+                171,
+                215
+              ],
+              "frame": 5,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g12-f005.png",
+              "sha256": "275bedc457ee502acd9a0ed9128e4bd02c20bd278c17a15e4bf54b39acf9e857"
+            }
+          ]
+        },
+        "13": {
+          "band_center_x_range": [
+            181.0,
+            199.5
+          ],
+          "band_center_x_span": 18.5,
+          "band_width_range": [
+            45,
+            53
+          ],
+          "contact_y_range": [
+            264,
+            265
+          ],
+          "contact_y_span": 1,
+          "frames": [
+            {
+              "alpha_bounds": [
+                174,
+                164,
+                229,
+                267
+              ],
+              "contact_band_center_x": 199.5,
+              "contact_band_width": 48,
+              "contact_band_x": [
+                176,
+                223
+              ],
+              "frame": 0,
+              "ground_delta_y": -2,
+              "painted_contact_y": 264,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g13-f000.png",
+              "sha256": "e613de2a834918c08bd32b235f6c70ab17988ffaed3953a5e326105fd4c35377"
+            },
+            {
+              "alpha_bounds": [
+                162,
+                190,
+                246,
+                267
+              ],
+              "contact_band_center_x": 190.0,
+              "contact_band_width": 51,
+              "contact_band_x": [
+                165,
+                215
+              ],
+              "frame": 1,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g13-f001.png",
+              "sha256": "e87d4f0b1b981adbb7b69a2d18796e52ab3ee91907c4cd0573db050aa5565ba1"
+            },
+            {
+              "alpha_bounds": [
+                156,
+                191,
+                225,
+                267
+              ],
+              "contact_band_center_x": 184.0,
+              "contact_band_width": 51,
+              "contact_band_x": [
+                159,
+                209
+              ],
+              "frame": 2,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g13-f002.png",
+              "sha256": "5b1d6dc4187c201605368c0cf10394b9c464f94f95fc879444bd5194f3831f3a"
+            },
+            {
+              "alpha_bounds": [
+                153,
+                185,
+                212,
+                267
+              ],
+              "contact_band_center_x": 181.0,
+              "contact_band_width": 53,
+              "contact_band_x": [
+                155,
+                207
+              ],
+              "frame": 3,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g13-f003.png",
+              "sha256": "2e88d619c494920bc25ccd11b9be629f28e893387bbfc97521ad5b3f9192040c"
+            },
+            {
+              "alpha_bounds": [
+                157,
+                187,
+                241,
+                267
+              ],
+              "contact_band_center_x": 184.5,
+              "contact_band_width": 52,
+              "contact_band_x": [
+                159,
+                210
+              ],
+              "frame": 4,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g13-f004.png",
+              "sha256": "6f76dd9fcb7443f9f6aa01fd77374e1db5942e994e9bd20fcac4a7ef12cd0f34"
+            },
+            {
+              "alpha_bounds": [
+                161,
+                186,
+                222,
+                267
+              ],
+              "contact_band_center_x": 187.0,
+              "contact_band_width": 45,
+              "contact_band_x": [
+                165,
+                209
+              ],
+              "frame": 5,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g13-f005.png",
+              "sha256": "c937e37aadf7fe19e2625c8fc4985bb396746feb55c2c85663b01dd1e20794f3"
+            }
+          ]
+        },
+        "2": {
+          "band_center_x_range": [
+            197.0,
+            197.0
+          ],
+          "band_center_x_span": 0.0,
+          "band_width_range": [
+            33,
+            33
+          ],
+          "contact_y_range": [
+            266,
+            266
+          ],
+          "contact_y_span": 0,
+          "frames": [
+            {
+              "alpha_bounds": [
+                176,
+                191,
+                221,
+                267
+              ],
+              "contact_band_center_x": 197.0,
+              "contact_band_width": 33,
+              "contact_band_x": [
+                181,
+                213
+              ],
+              "frame": 0,
+              "ground_delta_y": 0,
+              "painted_contact_y": 266,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g02-f000.png",
+              "sha256": "d9044ec617d031950c8b61bb223745aac25d63ea5298ef30b52fdec0eb30eaf0"
+            }
+          ]
+        },
+        "3": {
+          "band_center_x_range": [
+            195.5,
+            211.0
+          ],
+          "band_center_x_span": 15.5,
+          "band_width_range": [
+            40,
+            43
+          ],
+          "contact_y_range": [
+            264,
+            266
+          ],
+          "contact_y_span": 2,
+          "frames": [
+            {
+              "alpha_bounds": [
+                174,
+                193,
+                235,
+                267
+              ],
+              "contact_band_center_x": 211.0,
+              "contact_band_width": 43,
+              "contact_band_x": [
+                190,
+                232
+              ],
+              "frame": 0,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g03-f000.png",
+              "sha256": "360845856f7dcd0f826658ecc597ed38e9b99931bb3d8e9351d9206967b91f86"
+            },
+            {
+              "alpha_bounds": [
+                177,
+                193,
+                230,
+                267
+              ],
+              "contact_band_center_x": 204.5,
+              "contact_band_width": 42,
+              "contact_band_x": [
+                184,
+                225
+              ],
+              "frame": 1,
+              "ground_delta_y": 0,
+              "painted_contact_y": 266,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g03-f001.png",
+              "sha256": "ce836db5af489cd0aba9c63d3ff080e6f0b0e22542973833b8ca6e70692a3ef6"
+            },
+            {
+              "alpha_bounds": [
+                177,
+                191,
+                229,
+                266
+              ],
+              "contact_band_center_x": 201.0,
+              "contact_band_width": 43,
+              "contact_band_x": [
+                180,
+                222
+              ],
+              "frame": 2,
+              "ground_delta_y": -2,
+              "painted_contact_y": 264,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g03-f002.png",
+              "sha256": "541c0c4e148259e1ab20e4770e430e7902336bb43c9d84839811a8fb169f98ad"
+            },
+            {
+              "alpha_bounds": [
+                173,
+                189,
+                221,
+                267
+              ],
+              "contact_band_center_x": 195.5,
+              "contact_band_width": 40,
+              "contact_band_x": [
+                176,
+                215
+              ],
+              "frame": 3,
+              "ground_delta_y": 0,
+              "painted_contact_y": 266,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g03-f003.png",
+              "sha256": "0f0bd6eab6778f8027b8dd0d95407f82c45b90ed2226cb1030ad9e9c8ffd2675"
+            }
+          ]
+        },
+        "4": {
+          "band_center_x_range": [
+            181.0,
+            203.0
+          ],
+          "band_center_x_span": 22.0,
+          "band_width_range": [
+            48,
+            51
+          ],
+          "contact_y_range": [
+            264,
+            265
+          ],
+          "contact_y_span": 1,
+          "frames": [
+            {
+              "alpha_bounds": [
+                177,
+                195,
+                236,
+                266
+              ],
+              "contact_band_center_x": 203.0,
+              "contact_band_width": 49,
+              "contact_band_x": [
+                179,
+                227
+              ],
+              "frame": 0,
+              "ground_delta_y": -2,
+              "painted_contact_y": 264,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g04-f000.png",
+              "sha256": "4cc0d19deffd074d4f0e1bb5bcf075d876500c366974ada8dc81b67205f1499f"
+            },
+            {
+              "alpha_bounds": [
+                171,
+                195,
+                232,
+                267
+              ],
+              "contact_band_center_x": 198.0,
+              "contact_band_width": 51,
+              "contact_band_x": [
+                173,
+                223
+              ],
+              "frame": 1,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g04-f001.png",
+              "sha256": "7ab5d6ca39a6cd39506e970fb2dfb775318ff2f1617e095dd5f691c62dc02fbd"
+            },
+            {
+              "alpha_bounds": [
+                163,
+                198,
+                227,
+                267
+              ],
+              "contact_band_center_x": 188.5,
+              "contact_band_width": 48,
+              "contact_band_x": [
+                165,
+                212
+              ],
+              "frame": 2,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g04-f002.png",
+              "sha256": "fc966a2502769f0ce8e7d1cefb2fe450c68a9a5132cb4060a89d52ad5e07af68"
+            },
+            {
+              "alpha_bounds": [
+                153,
+                201,
+                226,
+                267
+              ],
+              "contact_band_center_x": 181.0,
+              "contact_band_width": 49,
+              "contact_band_x": [
+                157,
+                205
+              ],
+              "frame": 3,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g04-f003.png",
+              "sha256": "e8a95eeacbb6e0cea5e3dfd651a32d4868b6b32e7a731bc6ff51d034662dd2b6"
+            }
+          ]
+        },
+        "7": {
+          "band_center_x_range": [
+            190.5,
+            198.0
+          ],
+          "band_center_x_span": 7.5,
+          "band_width_range": [
+            32,
+            37
+          ],
+          "contact_y_range": [
+            265,
+            266
+          ],
+          "contact_y_span": 1,
+          "frames": [
+            {
+              "alpha_bounds": [
+                175,
+                187,
+                223,
+                267
+              ],
+              "contact_band_center_x": 198.0,
+              "contact_band_width": 37,
+              "contact_band_x": [
+                180,
+                216
+              ],
+              "frame": 0,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g07-f000.png",
+              "sha256": "2bac42acd43fadc3dae6d52183dbac63867ee575b26e5bf70ec39cc773822943"
+            },
+            {
+              "alpha_bounds": [
+                168,
+                187,
+                230,
+                267
+              ],
+              "contact_band_center_x": 192.5,
+              "contact_band_width": 32,
+              "contact_band_x": [
+                177,
+                208
+              ],
+              "frame": 1,
+              "ground_delta_y": 0,
+              "painted_contact_y": 266,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g07-f001.png",
+              "sha256": "9f1a80ac610cb14483c995d29eed73eba720529f75f0e6c42047d01552cde84f"
+            },
+            {
+              "alpha_bounds": [
+                167,
+                187,
+                226,
+                267
+              ],
+              "contact_band_center_x": 192.5,
+              "contact_band_width": 32,
+              "contact_band_x": [
+                177,
+                208
+              ],
+              "frame": 2,
+              "ground_delta_y": 0,
+              "painted_contact_y": 266,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g07-f002.png",
+              "sha256": "40f7db75b8d3040aaacd6793f7ba139b4a3851436e7943e0e9c8779f49aceff3"
+            },
+            {
+              "alpha_bounds": [
+                167,
+                187,
+                217,
+                267
+              ],
+              "contact_band_center_x": 190.5,
+              "contact_band_width": 34,
+              "contact_band_x": [
+                174,
+                207
+              ],
+              "frame": 3,
+              "ground_delta_y": 0,
+              "painted_contact_y": 266,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g07-f003.png",
+              "sha256": "bfc29d291142cd3eb6a91a1abe1fb403a41ae4ba4476e38c9bf647abb576e3f6"
+            }
+          ]
+        },
+        "8": {
+          "band_center_x_range": [
+            190.0,
+            200.0
+          ],
+          "band_center_x_span": 10.0,
+          "band_width_range": [
+            35,
+            41
+          ],
+          "contact_y_range": [
+            265,
+            265
+          ],
+          "contact_y_span": 0,
+          "frames": [
+            {
+              "alpha_bounds": [
+                176,
+                187,
+                224,
+                267
+              ],
+              "contact_band_center_x": 200.0,
+              "contact_band_width": 41,
+              "contact_band_x": [
+                180,
+                220
+              ],
+              "frame": 0,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g08-f000.png",
+              "sha256": "96c24b5950e94689c6d15e16839c9cf61923ad94dd96f7766ae180f8f8e8ade5"
+            },
+            {
+              "alpha_bounds": [
+                169,
+                187,
+                226,
+                267
+              ],
+              "contact_band_center_x": 197.0,
+              "contact_band_width": 35,
+              "contact_band_x": [
+                180,
+                214
+              ],
+              "frame": 1,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g08-f001.png",
+              "sha256": "11551f49fcc729a356c03a85b345fdc7510037c7b63a63725bb52006f2a3c755"
+            },
+            {
+              "alpha_bounds": [
+                170,
+                187,
+                219,
+                267
+              ],
+              "contact_band_center_x": 194.0,
+              "contact_band_width": 37,
+              "contact_band_x": [
+                176,
+                212
+              ],
+              "frame": 2,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g08-f002.png",
+              "sha256": "d76f40086022a7d9953213a3bdfde6933dd062d5eb95cf8d0872ebd95653d277"
+            },
+            {
+              "alpha_bounds": [
+                171,
+                187,
+                227,
+                267
+              ],
+              "contact_band_center_x": 190.0,
+              "contact_band_width": 35,
+              "contact_band_x": [
+                173,
+                207
+              ],
+              "frame": 3,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionRecruit/battle-frames/g08-f003.png",
+              "sha256": "ffa937552d65a7e8c89f298c69bdf9c0c03f48284ab708e99ce7b6cc5c0ff506"
+            }
+          ]
+        }
+      },
+      "stationary_fidget_limitation": "Contact-band center spans 4.5 native pixels; painted boot-band widths range [33, 38]. One constant family translation cannot remove these changing frame-relative positions, and aligning one toe cannot align both differently painted foot extents. Repair would require a newly constrained painted cohort or separately reviewed rigid pose translations; no per-pose warp is applied."
+    },
+    "legionVeteran": {
+      "battle_json_sha256": "6bb37aa6a5cae42cbd46fef7620b0c3c5d467e6b4d476d750685dda0a2005030",
+      "contact_sheet": "assets/reviews/legion-map-repair-v3/legionVeteran-fixed-native-contact-lines-1792513356531276400.png",
+      "contact_sheet_sha256": "a370c4ed998f39245f0f70ec9151f5ed63d28716eaac4b1abfa4650349997984",
+      "groups": {
+        "0": {
+          "band_center_x_range": [
+            189.0,
+            208.0
+          ],
+          "band_center_x_span": 19.0,
+          "band_width_range": [
+            46,
+            60
+          ],
+          "contact_y_range": [
+            265,
+            266
+          ],
+          "contact_y_span": 1,
+          "frames": [
+            {
+              "alpha_bounds": [
+                166,
+                185,
+                222,
+                267
+              ],
+              "contact_band_center_x": 193.5,
+              "contact_band_width": 46,
+              "contact_band_x": [
+                171,
+                216
+              ],
+              "frame": 0,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g00-f000.png",
+              "sha256": "0d1e4aa943eb2a61c613b123f2478a11ed922428baeb752c2fb3a9608f326e12"
+            },
+            {
+              "alpha_bounds": [
+                162,
+                185,
+                222,
+                267
+              ],
+              "contact_band_center_x": 189.0,
+              "contact_band_width": 51,
+              "contact_band_x": [
+                164,
+                214
+              ],
+              "frame": 1,
+              "ground_delta_y": 0,
+              "painted_contact_y": 266,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g00-f001.png",
+              "sha256": "46a1447ab4fb220c742b31e1f2a7450a33446f7a980c2a58d5d998903a9fa336"
+            },
+            {
+              "alpha_bounds": [
+                156,
+                185,
+                230,
+                267
+              ],
+              "contact_band_center_x": 189.5,
+              "contact_band_width": 60,
+              "contact_band_x": [
+                160,
+                219
+              ],
+              "frame": 2,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g00-f002.png",
+              "sha256": "978fc5e4a4c6b1ccf5d622db94fe191fbc9b899ccd62da4181142af14dbb1504"
+            },
+            {
+              "alpha_bounds": [
+                168,
+                185,
+                234,
+                267
+              ],
+              "contact_band_center_x": 197.0,
+              "contact_band_width": 57,
+              "contact_band_x": [
+                169,
+                225
+              ],
+              "frame": 3,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g00-f003.png",
+              "sha256": "cc9b02fd728659eb5bf3529dad1d9a5b3c8ac757b95b6b266d6d119c0a05c36e"
+            },
+            {
+              "alpha_bounds": [
+                170,
+                185,
+                240,
+                267
+              ],
+              "contact_band_center_x": 201.0,
+              "contact_band_width": 53,
+              "contact_band_x": [
+                175,
+                227
+              ],
+              "frame": 4,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g00-f004.png",
+              "sha256": "962bafb4d44a573f6168fed0a6bd858f43ea0262dc41f3487c6de5473c21460b"
+            },
+            {
+              "alpha_bounds": [
+                178,
+                185,
+                240,
+                267
+              ],
+              "contact_band_center_x": 208.0,
+              "contact_band_width": 51,
+              "contact_band_x": [
+                183,
+                233
+              ],
+              "frame": 5,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g00-f005.png",
+              "sha256": "f25ecf87c025ed579a95f617fc6eb691e274cf91e51167902a24ab02a5aacda3"
+            }
+          ]
+        },
+        "1": {
+          "band_center_x_range": [
+            190.0,
+            197.5
+          ],
+          "band_center_x_span": 7.5,
+          "band_width_range": [
+            47,
+            50
+          ],
+          "contact_y_range": [
+            265,
+            266
+          ],
+          "contact_y_span": 1,
+          "frames": [
+            {
+              "alpha_bounds": [
+                166,
+                186,
+                222,
+                267
+              ],
+              "contact_band_center_x": 190.0,
+              "contact_band_width": 47,
+              "contact_band_x": [
+                167,
+                213
+              ],
+              "frame": 0,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g01-f000.png",
+              "sha256": "95ad02914a4f766512f0cac98ec660a51359cd9b109726a774c68d85a4abf169"
+            },
+            {
+              "alpha_bounds": [
+                168,
+                186,
+                230,
+                267
+              ],
+              "contact_band_center_x": 193.0,
+              "contact_band_width": 47,
+              "contact_band_x": [
+                170,
+                216
+              ],
+              "frame": 1,
+              "ground_delta_y": 0,
+              "painted_contact_y": 266,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g01-f001.png",
+              "sha256": "09a3d7036685c2380a9ae9674e8a0ec53c1fd0d80474a9c9fd7f569b0a17602f"
+            },
+            {
+              "alpha_bounds": [
+                170,
+                186,
+                224,
+                267
+              ],
+              "contact_band_center_x": 195.5,
+              "contact_band_width": 48,
+              "contact_band_x": [
+                172,
+                219
+              ],
+              "frame": 2,
+              "ground_delta_y": 0,
+              "painted_contact_y": 266,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g01-f002.png",
+              "sha256": "ae40de8f39b5b8e007b6e230e8af798b170c0a46ce6656946dfa5c87b5664360"
+            },
+            {
+              "alpha_bounds": [
+                171,
+                186,
+                231,
+                267
+              ],
+              "contact_band_center_x": 197.5,
+              "contact_band_width": 50,
+              "contact_band_x": [
+                173,
+                222
+              ],
+              "frame": 3,
+              "ground_delta_y": 0,
+              "painted_contact_y": 266,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g01-f003.png",
+              "sha256": "7b2bf7ae2983560d14d272df92cbcae1ae7dd368caf200505b8949c5d6f3e6da"
+            }
+          ]
+        },
+        "11": {
+          "band_center_x_range": [
+            186.5,
+            211.0
+          ],
+          "band_center_x_span": 24.5,
+          "band_width_range": [
+            49,
+            60
+          ],
+          "contact_y_range": [
+            264,
+            266
+          ],
+          "contact_y_span": 2,
+          "frames": [
+            {
+              "alpha_bounds": [
+                160,
+                182,
+                221,
+                267
+              ],
+              "contact_band_center_x": 186.5,
+              "contact_band_width": 52,
+              "contact_band_x": [
+                161,
+                212
+              ],
+              "frame": 0,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g11-f000.png",
+              "sha256": "bddb4efa6a106bffa7c4f67c083da3806a3ac883df28542451f075603f8566a4"
+            },
+            {
+              "alpha_bounds": [
+                160,
+                177,
+                228,
+                267
+              ],
+              "contact_band_center_x": 190.5,
+              "contact_band_width": 60,
+              "contact_band_x": [
+                161,
+                220
+              ],
+              "frame": 1,
+              "ground_delta_y": 0,
+              "painted_contact_y": 266,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g11-f001.png",
+              "sha256": "1aef1a20be5f8633e6ca5d851e6e7a600c84b98d091d4fdd0cf5b338e941421d"
+            },
+            {
+              "alpha_bounds": [
+                160,
+                174,
+                242,
+                266
+              ],
+              "contact_band_center_x": 191.5,
+              "contact_band_width": 60,
+              "contact_band_x": [
+                162,
+                221
+              ],
+              "frame": 2,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g11-f002.png",
+              "sha256": "add201fa1648ca755101b75dcd37f6edf3890a65b06fce95bd0ed554cf3be7a4"
+            },
+            {
+              "alpha_bounds": [
+                158,
+                185,
+                261,
+                267
+              ],
+              "contact_band_center_x": 188.0,
+              "contact_band_width": 57,
+              "contact_band_x": [
+                160,
+                216
+              ],
+              "frame": 3,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g11-f003.png",
+              "sha256": "01a5339c5fefecdbb0ae40d555ed26267a37d04f009d9eab7c7467ba84e7e82c"
+            },
+            {
+              "alpha_bounds": [
+                162,
+                180,
+                254,
+                266
+              ],
+              "contact_band_center_x": 193.5,
+              "contact_band_width": 60,
+              "contact_band_x": [
+                164,
+                223
+              ],
+              "frame": 4,
+              "ground_delta_y": -2,
+              "painted_contact_y": 264,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g11-f004.png",
+              "sha256": "60b132f1cd138ce4aa13d0b8273755dbca5ec23af0ab8adb65c8fd8e5a6207a3"
+            },
+            {
+              "alpha_bounds": [
+                185,
+                181,
+                247,
+                267
+              ],
+              "contact_band_center_x": 211.0,
+              "contact_band_width": 49,
+              "contact_band_x": [
+                187,
+                235
+              ],
+              "frame": 5,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g11-f005.png",
+              "sha256": "27bf731f7daccab3dea67d5395e6c395fd73161ca10d764aa63dfe7dea2d038e"
+            }
+          ]
+        },
+        "12": {
+          "band_center_x_range": [
+            185.0,
+            208.0
+          ],
+          "band_center_x_span": 23.0,
+          "band_width_range": [
+            50,
+            60
+          ],
+          "contact_y_range": [
+            265,
+            266
+          ],
+          "contact_y_span": 1,
+          "frames": [
+            {
+              "alpha_bounds": [
+                159,
+                189,
+                231,
+                267
+              ],
+              "contact_band_center_x": 185.5,
+              "contact_band_width": 50,
+              "contact_band_x": [
+                161,
+                210
+              ],
+              "frame": 0,
+              "ground_delta_y": 0,
+              "painted_contact_y": 266,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g12-f000.png",
+              "sha256": "c75c3de6b61dab2c391559bbac5f63160d4fdf29d1ea273c95c11643cf7ccbdc"
+            },
+            {
+              "alpha_bounds": [
+                154,
+                190,
+                261,
+                267
+              ],
+              "contact_band_center_x": 185.0,
+              "contact_band_width": 59,
+              "contact_band_x": [
+                156,
+                214
+              ],
+              "frame": 1,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g12-f001.png",
+              "sha256": "c9726a165d59eb5b7eeb545efad4d969cc912c1adc5e9fb2b32d1fb00113bf0f"
+            },
+            {
+              "alpha_bounds": [
+                160,
+                190,
+                261,
+                267
+              ],
+              "contact_band_center_x": 190.5,
+              "contact_band_width": 58,
+              "contact_band_x": [
+                162,
+                219
+              ],
+              "frame": 2,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g12-f002.png",
+              "sha256": "902d7f9ea0cddd5c03d2a5a3b8462a74ef6abf2a7cf19226d46c3b61aa419b6f"
+            },
+            {
+              "alpha_bounds": [
+                163,
+                190,
+                262,
+                267
+              ],
+              "contact_band_center_x": 191.5,
+              "contact_band_width": 54,
+              "contact_band_x": [
+                165,
+                218
+              ],
+              "frame": 3,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g12-f003.png",
+              "sha256": "65bed030805f34d01a6881913fa2e6880031afbae0e7128142b796f3e7049267"
+            },
+            {
+              "alpha_bounds": [
+                162,
+                190,
+                262,
+                267
+              ],
+              "contact_band_center_x": 193.5,
+              "contact_band_width": 60,
+              "contact_band_x": [
+                164,
+                223
+              ],
+              "frame": 4,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g12-f004.png",
+              "sha256": "a9e5e42100bab06cca21b88e03aad45e925d6fb1af4a50d21081cf691d088b9c"
+            },
+            {
+              "alpha_bounds": [
+                181,
+                189,
+                240,
+                267
+              ],
+              "contact_band_center_x": 208.0,
+              "contact_band_width": 51,
+              "contact_band_x": [
+                183,
+                233
+              ],
+              "frame": 5,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g12-f005.png",
+              "sha256": "68885e7354ce8f6ca0e367063dfb08441bafc88461763019c79724924d5451da"
+            }
+          ]
+        },
+        "13": {
+          "band_center_x_range": [
+            188.0,
+            201.0
+          ],
+          "band_center_x_span": 13.0,
+          "band_width_range": [
+            50,
+            57
+          ],
+          "contact_y_range": [
+            264,
+            266
+          ],
+          "contact_y_span": 2,
+          "frames": [
+            {
+              "alpha_bounds": [
+                166,
+                175,
+                223,
+                267
+              ],
+              "contact_band_center_x": 195.5,
+              "contact_band_width": 50,
+              "contact_band_x": [
+                171,
+                220
+              ],
+              "frame": 0,
+              "ground_delta_y": 0,
+              "painted_contact_y": 266,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g13-f000.png",
+              "sha256": "8d054122ef48d50505b29b108dbca98f03be81a9abfdc52269a97fe6ebf36019"
+            },
+            {
+              "alpha_bounds": [
+                157,
+                191,
+                247,
+                267
+              ],
+              "contact_band_center_x": 188.0,
+              "contact_band_width": 55,
+              "contact_band_x": [
+                161,
+                215
+              ],
+              "frame": 1,
+              "ground_delta_y": 0,
+              "painted_contact_y": 266,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g13-f001.png",
+              "sha256": "55628c81d951de43cfbcff4052292e350634c2e8b647180a13097f059886c3c2"
+            },
+            {
+              "alpha_bounds": [
+                160,
+                191,
+                235,
+                267
+              ],
+              "contact_band_center_x": 190.0,
+              "contact_band_width": 57,
+              "contact_band_x": [
+                162,
+                218
+              ],
+              "frame": 2,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g13-f002.png",
+              "sha256": "b0dffa01a18f9023b96b1e8c28f80f58f045f00f6c3e9a763d0e5cd0971a1952"
+            },
+            {
+              "alpha_bounds": [
+                161,
+                185,
+                227,
+                267
+              ],
+              "contact_band_center_x": 192.5,
+              "contact_band_width": 54,
+              "contact_band_x": [
+                166,
+                219
+              ],
+              "frame": 3,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g13-f003.png",
+              "sha256": "d209ad29c1d93d062942b1f09dcddf47f6e94490083b7a4e0a251149d427403b"
+            },
+            {
+              "alpha_bounds": [
+                161,
+                188,
+                253,
+                267
+              ],
+              "contact_band_center_x": 193.0,
+              "contact_band_width": 57,
+              "contact_band_x": [
+                165,
+                221
+              ],
+              "frame": 4,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g13-f004.png",
+              "sha256": "a92d26bfb28cf6c690420b4f8ea0f74abe907426ff68f8d91c35d665167b1e99"
+            },
+            {
+              "alpha_bounds": [
+                173,
+                186,
+                245,
+                266
+              ],
+              "contact_band_center_x": 201.0,
+              "contact_band_width": 53,
+              "contact_band_x": [
+                175,
+                227
+              ],
+              "frame": 5,
+              "ground_delta_y": -2,
+              "painted_contact_y": 264,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g13-f005.png",
+              "sha256": "f3d3d6a7507e998ac9ba21918275d31b80bcac7e222128555db0995f17fe2067"
+            }
+          ]
+        },
+        "2": {
+          "band_center_x_range": [
+            192.0,
+            192.0
+          ],
+          "band_center_x_span": 0.0,
+          "band_width_range": [
+            45,
+            45
+          ],
+          "contact_y_range": [
+            265,
+            265
+          ],
+          "contact_y_span": 0,
+          "frames": [
+            {
+              "alpha_bounds": [
+                168,
+                186,
+                224,
+                266
+              ],
+              "contact_band_center_x": 192.0,
+              "contact_band_width": 45,
+              "contact_band_x": [
+                170,
+                214
+              ],
+              "frame": 0,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g02-f000.png",
+              "sha256": "f11354ad98eacfb6a0940e8984a7fff4a1ef16eb0b618f390212622054850ff0"
+            }
+          ]
+        },
+        "3": {
+          "band_center_x_range": [
+            197.5,
+            213.0
+          ],
+          "band_center_x_span": 15.5,
+          "band_width_range": [
+            49,
+            54
+          ],
+          "contact_y_range": [
+            265,
+            266
+          ],
+          "contact_y_span": 1,
+          "frames": [
+            {
+              "alpha_bounds": [
+                159,
+                186,
+                233,
+                266
+              ],
+              "contact_band_center_x": 200.0,
+              "contact_band_width": 49,
+              "contact_band_x": [
+                176,
+                224
+              ],
+              "frame": 0,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g03-f000.png",
+              "sha256": "a3ddd1012c56a4c4b2ed85e0c71a6de8486fb19b53b56be72d6e0cf9612635b9"
+            },
+            {
+              "alpha_bounds": [
+                168,
+                186,
+                232,
+                266
+              ],
+              "contact_band_center_x": 197.5,
+              "contact_band_width": 54,
+              "contact_band_x": [
+                171,
+                224
+              ],
+              "frame": 1,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g03-f001.png",
+              "sha256": "a48f778fd9ce38cdf9dae42ba7a0916e8edc0403584ed54957aad2c3362de8e8"
+            },
+            {
+              "alpha_bounds": [
+                180,
+                185,
+                237,
+                267
+              ],
+              "contact_band_center_x": 206.0,
+              "contact_band_width": 49,
+              "contact_band_x": [
+                182,
+                230
+              ],
+              "frame": 2,
+              "ground_delta_y": 0,
+              "painted_contact_y": 266,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g03-f002.png",
+              "sha256": "644d5d74645621e15bd381a4caa7a9d78967639317a4722240b082d0116a2ac4"
+            },
+            {
+              "alpha_bounds": [
+                182,
+                185,
+                241,
+                267
+              ],
+              "contact_band_center_x": 213.0,
+              "contact_band_width": 51,
+              "contact_band_x": [
+                188,
+                238
+              ],
+              "frame": 3,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g03-f003.png",
+              "sha256": "e1331f8c3de76bb65c76670e8b1cbca886543a90f6902e282fb657b44e4f0c82"
+            }
+          ]
+        },
+        "4": {
+          "band_center_x_range": [
+            189.0,
+            193.0
+          ],
+          "band_center_x_span": 4.0,
+          "band_width_range": [
+            51,
+            55
+          ],
+          "contact_y_range": [
+            264,
+            266
+          ],
+          "contact_y_span": 2,
+          "frames": [
+            {
+              "alpha_bounds": [
+                160,
+                191,
+                228,
+                267
+              ],
+              "contact_band_center_x": 189.0,
+              "contact_band_width": 55,
+              "contact_band_x": [
+                162,
+                216
+              ],
+              "frame": 0,
+              "ground_delta_y": 0,
+              "painted_contact_y": 266,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g04-f000.png",
+              "sha256": "2d0e4db181399e4eb25c55bb380e8ae56cbff3f2586b4da0785c3781a2a963b3"
+            },
+            {
+              "alpha_bounds": [
+                161,
+                191,
+                231,
+                267
+              ],
+              "contact_band_center_x": 190.0,
+              "contact_band_width": 55,
+              "contact_band_x": [
+                163,
+                217
+              ],
+              "frame": 1,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g04-f001.png",
+              "sha256": "88dfbe6b549ea6f1c966f9c7640bfb81ced742898573ee4fc903283c30a66cfe"
+            },
+            {
+              "alpha_bounds": [
+                166,
+                192,
+                238,
+                267
+              ],
+              "contact_band_center_x": 193.0,
+              "contact_band_width": 51,
+              "contact_band_x": [
+                168,
+                218
+              ],
+              "frame": 2,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g04-f002.png",
+              "sha256": "a2cd44a8571c83f64d078113cb7b735f1c42b5401ed1dd6191bf2e44182af32e"
+            },
+            {
+              "alpha_bounds": [
+                164,
+                192,
+                244,
+                266
+              ],
+              "contact_band_center_x": 193.0,
+              "contact_band_width": 55,
+              "contact_band_x": [
+                166,
+                220
+              ],
+              "frame": 3,
+              "ground_delta_y": -2,
+              "painted_contact_y": 264,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g04-f003.png",
+              "sha256": "43203347b4874626e59ad94b6ac14ae78bd9c59c193875b877e877389412f22f"
+            }
+          ]
+        },
+        "7": {
+          "band_center_x_range": [
+            189.5,
+            196.5
+          ],
+          "band_center_x_span": 7.0,
+          "band_width_range": [
+            38,
+            40
+          ],
+          "contact_y_range": [
+            263,
+            265
+          ],
+          "contact_y_span": 2,
+          "frames": [
+            {
+              "alpha_bounds": [
+                165,
+                184,
+                217,
+                266
+              ],
+              "contact_band_center_x": 189.5,
+              "contact_band_width": 40,
+              "contact_band_x": [
+                170,
+                209
+              ],
+              "frame": 0,
+              "ground_delta_y": -2,
+              "painted_contact_y": 264,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g07-f000.png",
+              "sha256": "e3ea9f782360047a1e667a463c6e3207f63b87fe10773d4cda6f132ae0f39b93"
+            },
+            {
+              "alpha_bounds": [
+                161,
+                184,
+                235,
+                266
+              ],
+              "contact_band_center_x": 192.5,
+              "contact_band_width": 38,
+              "contact_band_x": [
+                174,
+                211
+              ],
+              "frame": 1,
+              "ground_delta_y": -3,
+              "painted_contact_y": 263,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g07-f001.png",
+              "sha256": "a7d29dcc29f602260121eb7ba90d899744535dab42d084c475cde3b9cd4be6d9"
+            },
+            {
+              "alpha_bounds": [
+                170,
+                184,
+                229,
+                266
+              ],
+              "contact_band_center_x": 195.0,
+              "contact_band_width": 39,
+              "contact_band_x": [
+                176,
+                214
+              ],
+              "frame": 2,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g07-f002.png",
+              "sha256": "390f31cf2d042059bcba40d33f795e5e3586858298dba42c4d3b7aa314b86e86"
+            },
+            {
+              "alpha_bounds": [
+                174,
+                184,
+                230,
+                266
+              ],
+              "contact_band_center_x": 196.5,
+              "contact_band_width": 38,
+              "contact_band_x": [
+                178,
+                215
+              ],
+              "frame": 3,
+              "ground_delta_y": -3,
+              "painted_contact_y": 263,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g07-f003.png",
+              "sha256": "925a3837ab576e46e71c75478a1fc524a1e148f43e75061882bc8993e7488a07"
+            }
+          ]
+        },
+        "8": {
+          "band_center_x_range": [
+            191.5,
+            200.0
+          ],
+          "band_center_x_span": 8.5,
+          "band_width_range": [
+            41,
+            43
+          ],
+          "contact_y_range": [
+            265,
+            265
+          ],
+          "contact_y_span": 0,
+          "frames": [
+            {
+              "alpha_bounds": [
+                164,
+                188,
+                217,
+                267
+              ],
+              "contact_band_center_x": 193.0,
+              "contact_band_width": 43,
+              "contact_band_x": [
+                172,
+                214
+              ],
+              "frame": 0,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g08-f000.png",
+              "sha256": "b8fb01e2e7c1be2715023aa3daafd32fccc9b7285f8ef6a95a775bc97f011f41"
+            },
+            {
+              "alpha_bounds": [
+                163,
+                188,
+                221,
+                267
+              ],
+              "contact_band_center_x": 191.5,
+              "contact_band_width": 42,
+              "contact_band_x": [
+                171,
+                212
+              ],
+              "frame": 1,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g08-f001.png",
+              "sha256": "9c5b304a16bebddc8e25767760c068b5a42b44165010afecaa8c1e3d82b0bd18"
+            },
+            {
+              "alpha_bounds": [
+                172,
+                188,
+                228,
+                267
+              ],
+              "contact_band_center_x": 199.0,
+              "contact_band_width": 41,
+              "contact_band_x": [
+                179,
+                219
+              ],
+              "frame": 2,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g08-f002.png",
+              "sha256": "87e878687971edabe59154366d8c5e2b2d5aea2c56730c35f37ba85886f8463d"
+            },
+            {
+              "alpha_bounds": [
+                174,
+                188,
+                244,
+                267
+              ],
+              "contact_band_center_x": 200.0,
+              "contact_band_width": 41,
+              "contact_band_x": [
+                180,
+                220
+              ],
+              "frame": 3,
+              "ground_delta_y": -1,
+              "painted_contact_y": 265,
+              "png": "assets/generated/Content/Sprites/runeterra/noxus/creatures/legionVeteran/battle-frames/g08-f003.png",
+              "sha256": "43b99ee26aea5a31a273e134073906f12163587ef8d31379ea1ba59e0f2bde84"
+            }
+          ]
+        }
+      },
+      "stationary_fidget_limitation": "Contact-band center spans 7.5 native pixels; painted boot-band widths range [47, 50]. One constant family translation cannot remove these changing frame-relative positions, and aligning one toe cannot align both differently painted foot extents. Repair would require a newly constrained painted cohort or separately reviewed rigid pose translations; no per-pose warp is applied."
+    }
+  },
+  "visual_approval_granted": false
+}

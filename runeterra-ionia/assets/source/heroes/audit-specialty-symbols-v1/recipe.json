@@ -1,0 +1,41 @@
+{
+  "status": "authored configuration",
+  "selection": "unselected audit candidates only",
+  "production_quality": false,
+  "release_accepted": false,
+  "blocked": "Procedural relief studies are not finished painted HoMM3 art. The required built-in image_gen.imagegen tool is unavailable in this session; no alternate API or image generation was used.",
+  "source": "render.py contains original editable paths, relief shading and material recipes; this file contains the mechanic mapping and fixed presentation contract.",
+  "generation": {"image_generation_used": false, "method": "original authored geometry and deterministic Pillow/numpy raster shading", "external_pixels_used": false},
+  "presentation": {
+    "camera": "fixed orthographic frontal material relief for every icon and size",
+    "light": "upper left, direction (-0.55,-0.65,0.75), no bloom",
+    "master_size": [352,352],
+    "large_size": [44,44],
+    "small_size": [32,32],
+    "crop": [0,0,352,352],
+    "fit": "whole canvas; LANCZOS reduction; never per-hero auto-fit",
+    "palette": "aged bronze, ivory linen, dark teal lacquer, blue mana, restrained rose and violet",
+    "alpha": "transparent external margin; same inset dark material plaque for all contexts; clear reduction-only alpha <=4/255 and clear RGB under alpha zero to remove LANCZOS ringing",
+    "native_background_tests": ["dark brown", "mid gray", "parchment"],
+    "seed": 221026
+  },
+  "heroes": [
+    {"id":"karma","mechanic":{"bonuses":{"resolve":{"type":"MANA_REGENERATION","val":1}}},"motif":"A blue droplet falls into a bronze bowl, with a small rising sun and fixed +1 seal.","reading":"Daily spell-point recovery, not maximum-mana capacity or a Mysticism skill specialty.","limitation":"Bowl and droplet are legible; daily timing still needs tooltip. Could be misread as healing without the blue mana convention."},
+    {"id":"irelia","mechanic":{"creature":"resistanceBlade"},"motif":"Generic red-sashed resistance troop torso with an ordinary held blade; bronze/steel paired rank fittings.","reading":"Resistance Blade and Resistance Veteran creature specialty, not Irelia's floating weapons.","limitation":"Abstract troop equipment token is not a faithful finished troop miniature; no numeric tier formula is encoded."},
+    {"id":"shen","mechanic":{"secondary":"core:armorer","stepSize":5},"motif":"Riveted ivory-metal breastplate with three overlapping armor lames.","reading":"Physical-damage mitigation through Armorer, not global shielding or spell immunity.","limitation":"Armor subject is clear, but skill-level scaling remains tooltip information."},
+    {"id":"akali","mechanic":{"secondary":"core:scouting","stepSize":5},"motif":"Open ivory eye above layered distant ridges.","reading":"Scouting sight radius, not stealth, smoke or assassination.","limitation":"Eye convention can imply detection; tooltip must retain no hidden-target detection."},
+    {"id":"leeSin","mechanic":{"creature":"ionianDisciple"},"motif":"Generic teal-and-ivory disciple torso beside an ordinary bound wooden staff; paired rank fittings.","reading":"Ionian Disciple and Enlightened Warrior creature specialty, not a dragon or Lee Sin clone.","limitation":"Abstract recruit token needs finished troop-specific miniature before production selection."},
+    {"id":"masterYi","mechanic":{"secondary":"core:offence","stepSize":5},"motif":"One diagonal steel sword with one warm slash arc, no extra blades or numeric seal.","reading":"Offense melee-damage skill effectiveness, not primary Attack or extra strikes.","limitation":"Shares the truthful melee/sword family with Sett; arc versus fixed seal does not replace tooltip semantics."},
+    {"id":"wukong","mechanic":{"bonuses":{"resourcefulness":{"type":"LUCK","val":1}}},"motif":"Four-leaf jade luck token and fixed +1 ivory seal, with no leveling marks.","reading":"Fixed hero Luck +1 under ordinary caps; Basic Luck is a separate starting skill.","limitation":"A conventional luck symbol, not canonical champion equipment. Cap and independence from hero level remain in tooltip."},
+    {"id":"ahri","mechanic":{"secondary":"core:intelligence","stepSize":5},"motif":"Closed bronze-and-blue mana vessel with visible upper and lower capacity bands.","reading":"Maximum-mana capacity from Intelligence, not daily recovery or soul harvesting.","limitation":"Finite vessel contrasts with Karma's incoming droplet; can still resemble a potion until captioned."},
+    {"id":"yasuo","mechanic":{"spellFixedAdditive":"core:haste","spellFixedValues":[1,1,1,1,1,1,1]},"motif":"Ordinary wrapped walking boot with three trailing wind strokes and a fixed +1 seal.","reading":"Haste spell's additional Speed, not flight or Logistics.","limitation":"No wings used. Spell targeting, cost and duration still require tooltip."},
+    {"id":"yone","mechanic":{"secondary":"core:resistance","stepSize":5},"motif":"A violet spell bolt glances away from a curved bronze ward; no closed immunity shield.","reading":"Resistance effectiveness, not unconditional immunity or a second spirit body.","limitation":"Deflection is a convention for resistance; cannot encode the selected skill rule quantitatively."},
+    {"id":"syndra","mechanic":{"secondary":"core:sorcery","stepSize":5},"motif":"One violet spell bolt ending in a warm ivory impact flare.","reading":"Damaging-spell Sorcery effectiveness, not summoned dark spheres or unlimited mana.","limitation":"A generic magic-damage token, deliberately no personal champion prop or kill scaling."},
+    {"id":"hwei","mechanic":{"spellFixedAdditive":"core:precision","spellFixedValues":[2,2,2,2,2,2,2]},"motif":"One straight arrow centered through concentric bronze target rings and a fixed +2 seal.","reading":"Precision spell's ranged Attack bonus, not Archery specialty or Hwei's brush.","limitation":"Shares the truthful ranged family with Xayah, but target rings versus troop torso distinguish spell from creature; tooltip remains necessary."},
+    {"id":"xayah","mechanic":{"creature":"vastayanScout"},"motif":"Generic dark-teal archer torso beside a strung wood bow; paired rank fittings.","reading":"Vastayan Scout and Vastayan Warrior creature specialty, not Xayah's feather blades.","limitation":"Abstract bow-recruit token lacks a finished native troop likeness; no extra ammunition indicated."},
+    {"id":"rakan","mechanic":{"bonuses":{"performance":{"type":"MORALE","val":1}}},"motif":"Raised dusty-rose command standard with bronze finial and a fixed +1 seal.","reading":"Fixed army Morale, not Leadership scaling, healing or charm.","limitation":"Morale uses command-banner convention, not a claimed canonical item. Non-living exclusions and caps remain tooltip information."},
+    {"id":"sett","mechanic":{"bonuses":{"pitDiscipline":{"type":"PRIMARY_SKILL","subtype":"attack","val":1}}},"motif":"One upright ordinary steel sword on a bronze mounting, with fixed +1 seal and no slash arc.","reading":"Fixed hero primary Attack +1, not Offense skill scaling or a personal brawler mechanic.","limitation":"Melee-family overlap with Master Yi is truthful. Static sword plus numeral versus diagonal slash is not sufficient to teach all native arithmetic."}
+  ],
+  "repeated_mechanics_policy": "No exact specialty is duplicated among these fifteen. Related families intentionally share cues: Karma/Ahri blue mana; Master Yi/Sett steel swords; Xayah/Hwei bow/arrow; the three creature specialties share torso and paired rank fittings. Do not invent distinct effects to make icons unique. Fixed +1/+2 seals indicate configured flat additions, never level-scaling skill specialties. Secondary skill scaling is deliberately not represented by upgrade chevrons.",
+  "acceptance_boundary": "Native-size offline readability review only. No native UI observation, final painterly art approval, rights clearance or release acceptance. No portrait, hero statistic, mechanic, lore, recipe selection, manifest or stage changes."
+}

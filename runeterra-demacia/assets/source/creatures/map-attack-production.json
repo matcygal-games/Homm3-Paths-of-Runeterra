@@ -1,0 +1,884 @@
+{
+  "category": "static-adventure-attack-pictures-only",
+  "limitations": "Native action/identity/crest/scale review and actual adventure rendering remain required. These pictures do not populate any battlefield movement/attack/hit/death group.",
+  "missing": [],
+  "native_authority": [
+    "client/mapView/MapRenderer.cpp::MapRendererObjects::getImageToRender",
+    "client/mapView/MapRendererContext.cpp::MapRendererBaseContext::attackedMonsterDirection",
+    "config/creatures/castle.json mapAttackFromRight/Left"
+  ],
+  "native_images": 28,
+  "ok": true,
+  "poses": 14,
+  "release_ready": false,
+  "units": [
+    {
+      "conversion": "Crop alpha margins, preserve aspect, downsample once to full-silhouette native bounds and ground bottom64; record actual contactX rather than impose idle foot-center. Opposite static direction mirrored. No pose synthesis or battle-action substitution.",
+      "ground_exclusive_bottom": 64,
+      "id": "demacianRecruit",
+      "measured_contact_x": 19.764705882352942,
+      "native_size": [
+        64,
+        64
+      ],
+      "outputs": [
+        {
+          "alpha_bbox": [
+            3,
+            16,
+            60,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/demacianRecruit/attackLeft.png",
+          "recipe": "assets/recipes/map-attacks/demacianRecruit-attackLeft.json",
+          "sha256": "383d4d1598e8c02234c7858bd0cdd59e4b0d75b306a3273993049e3d0e179005",
+          "source": "assets/source/creatures/demacianRecruit/adventure-attack/attackLeft-native-v1.png"
+        },
+        {
+          "alpha_bbox": [
+            4,
+            16,
+            61,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/demacianRecruit/attackRight.png",
+          "recipe": "assets/recipes/map-attacks/demacianRecruit-attackRight.json",
+          "sha256": "6659f8e9253d32856a42697a7052f91c404f071c9d28afb62e686dfb4d5f8948",
+          "source": "assets/source/creatures/demacianRecruit/adventure-attack/attackRight-native-v1.png"
+        }
+      ],
+      "placed_content_size": [
+        57,
+        48
+      ],
+      "position": [
+        3,
+        16
+      ],
+      "reference_master": "assets/source/creatures/demacianRecruit/master-v3.png",
+      "reference_master_sha256": "3fb2746415f547647abc35dc662bd0a16ca274aa70db2218192a79c9f52f7c85",
+      "release_approved": false,
+      "source": "assets/source/creatures/demacianRecruit/adventure-attack/pose-v1.png",
+      "source_contact_bbox": [
+        0,
+        0,
+        670,
+        115
+      ],
+      "source_sha256": "8238a198fc64ef878845cf66c5d44683165330b2a89eb4e855817943e70593de",
+      "source_visible_bbox": [
+        137,
+        126,
+        1276,
+        1087
+      ],
+      "status": "exported-static-pose-candidate; action-identity-native-render-review-pending"
+    },
+    {
+      "conversion": "Crop alpha margins, preserve aspect, downsample once to full-silhouette native bounds and ground bottom64; record actual contactX rather than impose idle foot-center. Opposite static direction mirrored. No pose synthesis or battle-action substitution.",
+      "ground_exclusive_bottom": 64,
+      "id": "dauntlessVanguard",
+      "measured_contact_x": 26.13660245183888,
+      "native_size": [
+        64,
+        64
+      ],
+      "outputs": [
+        {
+          "alpha_bbox": [
+            7,
+            16,
+            56,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/dauntlessVanguard/attackLeft.png",
+          "recipe": "assets/recipes/map-attacks/dauntlessVanguard-attackLeft.json",
+          "sha256": "2a6fe10bb00cf23ea338c0d007417d1ac71f604943004e84add7d496ac6cd33b",
+          "source": "assets/source/creatures/dauntlessVanguard/adventure-attack/attackLeft-native-v1.png"
+        },
+        {
+          "alpha_bbox": [
+            8,
+            16,
+            57,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/dauntlessVanguard/attackRight.png",
+          "recipe": "assets/recipes/map-attacks/dauntlessVanguard-attackRight.json",
+          "sha256": "91c81659ebb23eee41017e48ba375e14140fe89fdc36a426310b07df1fd1911c",
+          "source": "assets/source/creatures/dauntlessVanguard/adventure-attack/attackRight-native-v1.png"
+        }
+      ],
+      "placed_content_size": [
+        49,
+        48
+      ],
+      "position": [
+        7,
+        16
+      ],
+      "reference_master": "assets/source/creatures/dauntlessVanguard/master-v3.png",
+      "reference_master_sha256": "66f7e20781a4b570a468dba31c56eb8f24cd64f862be4175a596dd69cc97a479",
+      "release_approved": false,
+      "source": "assets/source/creatures/dauntlessVanguard/adventure-attack/pose-v1.png",
+      "source_contact_bbox": [
+        1,
+        0,
+        891,
+        134
+      ],
+      "source_sha256": "b4bdb45b2f01a6ea24cc702ed56f42e34cd9d3fd1ca48b74adf5ae8c666868a4",
+      "source_visible_bbox": [
+        177,
+        21,
+        1319,
+        1137
+      ],
+      "status": "exported-static-pose-candidate; action-identity-native-render-review-pending"
+    },
+    {
+      "conversion": "Crop alpha margins, preserve aspect, downsample once to full-silhouette native bounds and ground bottom64; record actual contactX rather than impose idle foot-center. Opposite static direction mirrored. No pose synthesis or battle-action substitution.",
+      "ground_exclusive_bottom": 64,
+      "id": "demacianRanger",
+      "measured_contact_x": 23.48768472906404,
+      "native_size": [
+        64,
+        64
+      ],
+      "outputs": [
+        {
+          "alpha_bbox": [
+            5,
+            16,
+            59,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/demacianRanger/attackLeft.png",
+          "recipe": "assets/recipes/map-attacks/demacianRanger-attackLeft.json",
+          "sha256": "6a6f272cb7982b5e07ce345f7dcf5d90a81fe554f2b14594402c1de4d6e4f737",
+          "source": "assets/source/creatures/demacianRanger/adventure-attack/attackLeft-native-v1.png"
+        },
+        {
+          "alpha_bbox": [
+            5,
+            16,
+            59,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/demacianRanger/attackRight.png",
+          "recipe": "assets/recipes/map-attacks/demacianRanger-attackRight.json",
+          "sha256": "26572464aeea6d3bda8015fdab6ac3c679e76b7b2e9d95b2078866afadbc83d3",
+          "source": "assets/source/creatures/demacianRanger/adventure-attack/attackRight-native-v1.png"
+        }
+      ],
+      "placed_content_size": [
+        54,
+        48
+      ],
+      "position": [
+        5,
+        16
+      ],
+      "reference_master": "assets/source/creatures/demacianRanger/master-v5.png",
+      "reference_master_sha256": "973438446b63329a1f2cc2c749682609682e455d44ee9d93d2504d4df9b29d0f",
+      "release_approved": false,
+      "source": "assets/source/creatures/demacianRanger/adventure-attack/pose-v1.png",
+      "source_contact_bbox": [
+        0,
+        0,
+        834,
+        129
+      ],
+      "source_sha256": "a6ee5b3e940992b34352f737d7f0cf88b405d8fd8fa960204007dd7a03d090d2",
+      "source_visible_bbox": [
+        93,
+        63,
+        1311,
+        1145
+      ],
+      "status": "exported-static-pose-candidate; action-identity-native-render-review-pending"
+    },
+    {
+      "conversion": "Crop alpha margins, preserve aspect, downsample once to full-silhouette native bounds and ground bottom64; record actual contactX rather than impose idle foot-center. Opposite static direction mirrored. No pose synthesis or battle-action substitution.",
+      "ground_exclusive_bottom": 64,
+      "id": "veteranRanger",
+      "measured_contact_x": 23.338111298482293,
+      "native_size": [
+        64,
+        64
+      ],
+      "outputs": [
+        {
+          "alpha_bbox": [
+            4,
+            16,
+            59,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/veteranRanger/attackLeft.png",
+          "recipe": "assets/recipes/map-attacks/veteranRanger-attackLeft.json",
+          "sha256": "08bc7575c1b2c6a594711940401a840776cfacf8c37fab935c78496a54b5254e",
+          "source": "assets/source/creatures/veteranRanger/adventure-attack/attackLeft-native-v1.png"
+        },
+        {
+          "alpha_bbox": [
+            5,
+            16,
+            60,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/veteranRanger/attackRight.png",
+          "recipe": "assets/recipes/map-attacks/veteranRanger-attackRight.json",
+          "sha256": "15765816054f3ec17f7696901fe646538f169dd830382d085b57bc99026042aa",
+          "source": "assets/source/creatures/veteranRanger/adventure-attack/attackRight-native-v1.png"
+        }
+      ],
+      "placed_content_size": [
+        55,
+        48
+      ],
+      "position": [
+        4,
+        16
+      ],
+      "reference_master": "assets/source/creatures/veteranRanger/master-v5.png",
+      "reference_master_sha256": "36bc04a9e0ff7e1d05581472a232e83ca7a9530b7d33597f848009eb2338396e",
+      "release_approved": false,
+      "source": "assets/source/creatures/veteranRanger/adventure-attack/pose-v1.png",
+      "source_contact_bbox": [
+        1,
+        0,
+        833,
+        125
+      ],
+      "source_sha256": "3c7532945d14df03b86462b0fc8fbfac3100e906ec901734f4601acd37f2f40b",
+      "source_visible_bbox": [
+        125,
+        90,
+        1311,
+        1129
+      ],
+      "status": "exported-static-pose-candidate; action-identity-native-render-review-pending"
+    },
+    {
+      "conversion": "Crop alpha margins, preserve aspect, downsample once to full-silhouette native bounds and ground bottom64; record actual contactX rather than impose idle foot-center. Opposite static direction mirrored. No pose synthesis or battle-action substitution.",
+      "ground_exclusive_bottom": 64,
+      "id": "dragonguard",
+      "measured_contact_x": 21.80097481722177,
+      "native_size": [
+        64,
+        64
+      ],
+      "outputs": [
+        {
+          "alpha_bbox": [
+            1,
+            18,
+            63,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/dragonguard/attackLeft.png",
+          "recipe": "assets/recipes/map-attacks/dragonguard-attackLeft.json",
+          "sha256": "176897ceb2b7d54fab4e9c48875186f7544faac6c2589353f7d4a60fbc9cd64a",
+          "source": "assets/source/creatures/dragonguard/adventure-attack/attackLeft-native-v1.png"
+        },
+        {
+          "alpha_bbox": [
+            1,
+            18,
+            63,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/dragonguard/attackRight.png",
+          "recipe": "assets/recipes/map-attacks/dragonguard-attackRight.json",
+          "sha256": "45d615beb53aab660fe0e3fa04ab8504118f79a95a705be9df6fe98a30d02332",
+          "source": "assets/source/creatures/dragonguard/adventure-attack/attackRight-native-v1.png"
+        }
+      ],
+      "placed_content_size": [
+        62,
+        46
+      ],
+      "position": [
+        1,
+        18
+      ],
+      "reference_master": "assets/source/creatures/dragonguard/master-v1.png",
+      "reference_master_sha256": "91d874899733bfc2723f64c8e3b9edb4b1a0d3b1f80ca5a4c8a0612db7aa06a9",
+      "release_approved": false,
+      "source": "assets/source/creatures/dragonguard/adventure-attack/pose-v1.png",
+      "source_contact_bbox": [
+        0,
+        0,
+        826,
+        110
+      ],
+      "source_sha256": "655b82cf0f7c8815aabd94842d0c50e5761122287d72a47a9513cbeaa43584a9",
+      "source_visible_bbox": [
+        15,
+        173,
+        1246,
+        1088
+      ],
+      "status": "exported-static-pose-candidate; action-identity-native-render-review-pending"
+    },
+    {
+      "conversion": "Crop alpha margins, preserve aspect, downsample once to full-silhouette native bounds and ground bottom64; record actual contactX rather than impose idle foot-center. Opposite static direction mirrored. No pose synthesis or battle-action substitution.",
+      "ground_exclusive_bottom": 64,
+      "id": "veteranDragonguard",
+      "measured_contact_x": 23.62547966231773,
+      "native_size": [
+        64,
+        64
+      ],
+      "outputs": [
+        {
+          "alpha_bbox": [
+            1,
+            21,
+            63,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/veteranDragonguard/attackLeft.png",
+          "recipe": "assets/recipes/map-attacks/veteranDragonguard-attackLeft.json",
+          "sha256": "eff5a7c5f1a0294878d457ccbeaad767093169461896ca11a804363a54478c08",
+          "source": "assets/source/creatures/veteranDragonguard/adventure-attack/attackLeft-native-v1.png"
+        },
+        {
+          "alpha_bbox": [
+            1,
+            21,
+            63,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/veteranDragonguard/attackRight.png",
+          "recipe": "assets/recipes/map-attacks/veteranDragonguard-attackRight.json",
+          "sha256": "ddd323094aaa1553853ee2d334bbb133604d949154a0f05752db9befd945d42f",
+          "source": "assets/source/creatures/veteranDragonguard/adventure-attack/attackRight-native-v1.png"
+        }
+      ],
+      "placed_content_size": [
+        62,
+        43
+      ],
+      "position": [
+        1,
+        21
+      ],
+      "reference_master": "assets/source/creatures/veteranDragonguard/master-v1.png",
+      "reference_master_sha256": "2debbbf823a5407692ff367af75c5eba7242c9504e1e0a1c299cd0039ceaa379",
+      "release_approved": false,
+      "source": "assets/source/creatures/veteranDragonguard/adventure-attack/pose-v1.png",
+      "source_contact_bbox": [
+        0,
+        0,
+        951,
+        105
+      ],
+      "source_sha256": "ef54f94b932d0ec3b4827e268c8d6e008bf036187aae4b5234538d30a142b35a",
+      "source_visible_bbox": [
+        0,
+        188,
+        1303,
+        1083
+      ],
+      "status": "exported-static-pose-candidate; action-identity-native-render-review-pending"
+    },
+    {
+      "conversion": "Crop alpha margins, preserve aspect, downsample once to full-silhouette native bounds and ground bottom64; record actual contactX rather than impose idle foot-center. Opposite static direction mirrored. No pose synthesis or battle-action substitution.",
+      "ground_exclusive_bottom": 64,
+      "id": "duelist",
+      "measured_contact_x": 21.316114109483422,
+      "native_size": [
+        64,
+        64
+      ],
+      "outputs": [
+        {
+          "alpha_bbox": [
+            1,
+            27,
+            63,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/duelist/attackLeft.png",
+          "recipe": "assets/recipes/map-attacks/duelist-attackLeft.json",
+          "sha256": "c5ded9c639dbc4a33165f35f5cf4e8ecf8fe1f576cb714c79fa0cbeec8f81b5f",
+          "source": "assets/source/creatures/duelist/adventure-attack/attackLeft-native-v1.png"
+        },
+        {
+          "alpha_bbox": [
+            1,
+            27,
+            63,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/duelist/attackRight.png",
+          "recipe": "assets/recipes/map-attacks/duelist-attackRight.json",
+          "sha256": "614de4d858b7f7a9d708ca2d7a26c2abd867e0afb0577b7bec574cd7770cf774",
+          "source": "assets/source/creatures/duelist/adventure-attack/attackRight-native-v1.png"
+        }
+      ],
+      "placed_content_size": [
+        62,
+        37
+      ],
+      "position": [
+        1,
+        27
+      ],
+      "reference_master": "assets/source/creatures/duelist/master-v4.png",
+      "reference_master_sha256": "885af8adbcc03e521c2fd8dc45a2e25cdfc91b2baf7fd68b6d7d2004c0e22406",
+      "release_approved": false,
+      "source": "assets/source/creatures/duelist/adventure-attack/pose-v1.png",
+      "source_contact_bbox": [
+        1,
+        0,
+        849,
+        93
+      ],
+      "source_sha256": "52a5cfc4c0e9d76c59a1a3c25869dfe904f756a6896da7b70921cc99152883bb",
+      "source_visible_bbox": [
+        21,
+        210,
+        1318,
+        987
+      ],
+      "status": "exported-static-pose-candidate; action-identity-native-render-review-pending"
+    },
+    {
+      "conversion": "Crop alpha margins, preserve aspect, downsample once to full-silhouette native bounds and ground bottom64; record actual contactX rather than impose idle foot-center. Opposite static direction mirrored. No pose synthesis or battle-action substitution.",
+      "ground_exclusive_bottom": 64,
+      "id": "grandDuelist",
+      "measured_contact_x": 23.86220169361047,
+      "native_size": [
+        64,
+        64
+      ],
+      "outputs": [
+        {
+          "alpha_bbox": [
+            1,
+            20,
+            63,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/grandDuelist/attackLeft.png",
+          "recipe": "assets/recipes/map-attacks/grandDuelist-attackLeft.json",
+          "sha256": "c4578113e178377cef7b49ccac809e5d55469a93a8a6c0f8b0298345f3ce12d7",
+          "source": "assets/source/creatures/grandDuelist/adventure-attack/attackLeft-native-v1.png"
+        },
+        {
+          "alpha_bbox": [
+            1,
+            20,
+            63,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/grandDuelist/attackRight.png",
+          "recipe": "assets/recipes/map-attacks/grandDuelist-attackRight.json",
+          "sha256": "49bec5527a96a0040fc31cd876a765e3e5420f5e01b3f0e32e6e7012aa053a38",
+          "source": "assets/source/creatures/grandDuelist/adventure-attack/attackRight-native-v1.png"
+        }
+      ],
+      "placed_content_size": [
+        62,
+        44
+      ],
+      "position": [
+        1,
+        20
+      ],
+      "reference_master": "assets/source/creatures/grandDuelist/master-v4.png",
+      "reference_master_sha256": "96752edde7c8294e42f7b16406a967800d124a906a23f479ef5b18bec865767e",
+      "release_approved": false,
+      "source": "assets/source/creatures/grandDuelist/adventure-attack/pose-v1.png",
+      "source_contact_bbox": [
+        0,
+        0,
+        958,
+        111
+      ],
+      "source_sha256": "3bcfca1ec220f863edb7603d6488fc08e46dd02ebb1d5aecc8973c93deef54a1",
+      "source_visible_bbox": [
+        22,
+        104,
+        1321,
+        1035
+      ],
+      "status": "exported-static-pose-candidate; action-identity-native-render-review-pending"
+    },
+    {
+      "conversion": "Crop alpha margins, preserve aspect, downsample once to full-silhouette native bounds and ground bottom64; record actual contactX rather than impose idle foot-center. Opposite static direction mirrored. No pose synthesis or battle-action substitution.",
+      "ground_exclusive_bottom": 64,
+      "id": "resonanceAdept",
+      "measured_contact_x": 24.6626213592233,
+      "native_size": [
+        64,
+        64
+      ],
+      "outputs": [
+        {
+          "alpha_bbox": [
+            9,
+            16,
+            54,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/resonanceAdept/attackLeft.png",
+          "recipe": "assets/recipes/map-attacks/resonanceAdept-attackLeft.json",
+          "sha256": "bea9d9b069f20464e409f5a4dcc93ea880230c5c75892b2ef9c24ba0e714eaf0",
+          "source": "assets/source/creatures/resonanceAdept/adventure-attack/attackLeft-native-v1.png"
+        },
+        {
+          "alpha_bbox": [
+            10,
+            16,
+            55,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/resonanceAdept/attackRight.png",
+          "recipe": "assets/recipes/map-attacks/resonanceAdept-attackRight.json",
+          "sha256": "0838f636dba72d6504a23f69cfeeadee65c2a389b60a79cf35554ae582020f89",
+          "source": "assets/source/creatures/resonanceAdept/adventure-attack/attackRight-native-v1.png"
+        }
+      ],
+      "placed_content_size": [
+        45,
+        48
+      ],
+      "position": [
+        9,
+        16
+      ],
+      "reference_master": "assets/source/creatures/resonanceAdept/master-v2.png",
+      "reference_master_sha256": "9b49f3600b36a1746ba9f7680e342ea520fa76fe6065887bad6ae2293dd3286e",
+      "release_approved": false,
+      "source": "assets/source/creatures/resonanceAdept/adventure-attack/pose-v1.png",
+      "source_contact_bbox": [
+        1,
+        0,
+        716,
+        130
+      ],
+      "source_sha256": "160cc21d954166646e4285346d648df68ab9a05874712c47cd49cb2b008d6b42",
+      "source_visible_bbox": [
+        155,
+        91,
+        1185,
+        1178
+      ],
+      "status": "exported-static-pose-candidate; action-identity-native-render-review-pending"
+    },
+    {
+      "conversion": "Crop alpha margins, preserve aspect, downsample once to full-silhouette native bounds and ground bottom64; record actual contactX rather than impose idle foot-center. Opposite static direction mirrored. No pose synthesis or battle-action substitution.",
+      "ground_exclusive_bottom": 64,
+      "id": "harmonicWarden",
+      "measured_contact_x": 29.311475409836067,
+      "native_size": [
+        64,
+        64
+      ],
+      "outputs": [
+        {
+          "alpha_bbox": [
+            8,
+            16,
+            56,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/harmonicWarden/attackLeft.png",
+          "recipe": "assets/recipes/map-attacks/harmonicWarden-attackLeft.json",
+          "sha256": "fb9d814b97f4170f76db40e042d806d2f69033d7abde44d0ce911b82b294eaa0",
+          "source": "assets/source/creatures/harmonicWarden/adventure-attack/attackLeft-native-v1.png"
+        },
+        {
+          "alpha_bbox": [
+            8,
+            16,
+            56,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/harmonicWarden/attackRight.png",
+          "recipe": "assets/recipes/map-attacks/harmonicWarden-attackRight.json",
+          "sha256": "1bcd6b7ee3767d53e41bbc7de4bbce46acf22ec3a0d41d369f6123428b3b5760",
+          "source": "assets/source/creatures/harmonicWarden/adventure-attack/attackRight-native-v1.png"
+        }
+      ],
+      "placed_content_size": [
+        48,
+        48
+      ],
+      "position": [
+        8,
+        16
+      ],
+      "reference_master": "assets/source/creatures/harmonicWarden/master-v2.png",
+      "reference_master_sha256": "653e42d63b6440e256efe889deb71ce211f73ffe49d53ab40968a65430bac8c2",
+      "release_approved": false,
+      "source": "assets/source/creatures/harmonicWarden/adventure-attack/pose-v1.png",
+      "source_contact_bbox": [
+        81,
+        0,
+        894,
+        132
+      ],
+      "source_sha256": "28425e97706ff49ab0ba1718f4405e104d61469d8f33826d53efc6e9a26426ef",
+      "source_visible_bbox": [
+        142,
+        72,
+        1240,
+        1179
+      ],
+      "status": "exported-static-pose-candidate; action-identity-native-render-review-pending"
+    },
+    {
+      "conversion": "Crop alpha margins, preserve aspect, downsample once to full-silhouette native bounds and ground bottom64; record actual contactX rather than impose idle foot-center. Opposite static direction mirrored. No pose synthesis or battle-action substitution.",
+      "ground_exclusive_bottom": 64,
+      "id": "mageseeker",
+      "measured_contact_x": 22.05021645021645,
+      "native_size": [
+        64,
+        64
+      ],
+      "outputs": [
+        {
+          "alpha_bbox": [
+            6,
+            16,
+            58,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/mageseeker/attackLeft.png",
+          "recipe": "assets/recipes/map-attacks/mageseeker-attackLeft.json",
+          "sha256": "cd5413e607ac351637c6cff4af57739038f1d0b68c0b0a7e4767c837a124efe2",
+          "source": "assets/source/creatures/mageseeker/adventure-attack/attackLeft-native-v1.png"
+        },
+        {
+          "alpha_bbox": [
+            6,
+            16,
+            58,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/mageseeker/attackRight.png",
+          "recipe": "assets/recipes/map-attacks/mageseeker-attackRight.json",
+          "sha256": "1e9a0718d200f39d3fd13171641fc04bd55f1d26cc363349c4e546e992a8ad39",
+          "source": "assets/source/creatures/mageseeker/adventure-attack/attackRight-native-v1.png"
+        }
+      ],
+      "placed_content_size": [
+        52,
+        48
+      ],
+      "position": [
+        6,
+        16
+      ],
+      "reference_master": "assets/source/creatures/mageseeker/master-v4.png",
+      "reference_master_sha256": "f174cfc45e6102266ff4d8c7960c30b29a4bc0423671e2909fae109817c698c4",
+      "release_approved": false,
+      "source": "assets/source/creatures/mageseeker/adventure-attack/pose-v1.png",
+      "source_contact_bbox": [
+        0,
+        0,
+        713,
+        129
+      ],
+      "source_sha256": "abdde35e0bea809c5ac3be2777f40fef4b48d38236fd30acc5022bf8aebfd8f9",
+      "source_visible_bbox": [
+        92,
+        93,
+        1247,
+        1168
+      ],
+      "status": "exported-static-pose-candidate; action-identity-native-render-review-pending"
+    },
+    {
+      "conversion": "Crop alpha margins, preserve aspect, downsample once to full-silhouette native bounds and ground bottom64; record actual contactX rather than impose idle foot-center. Opposite static direction mirrored. No pose synthesis or battle-action substitution.",
+      "ground_exclusive_bottom": 64,
+      "id": "mageseekerInquisitor",
+      "measured_contact_x": 24.84053417124902,
+      "native_size": [
+        64,
+        64
+      ],
+      "outputs": [
+        {
+          "alpha_bbox": [
+            1,
+            22,
+            63,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/mageseekerInquisitor/attackLeft.png",
+          "recipe": "assets/recipes/map-attacks/mageseekerInquisitor-attackLeft.json",
+          "sha256": "42c24b2a72eb5a4e405173cb915313575029488c2673f2c9ab4773274b0f0602",
+          "source": "assets/source/creatures/mageseekerInquisitor/adventure-attack/attackLeft-native-v1.png"
+        },
+        {
+          "alpha_bbox": [
+            1,
+            22,
+            63,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/mageseekerInquisitor/attackRight.png",
+          "recipe": "assets/recipes/map-attacks/mageseekerInquisitor-attackRight.json",
+          "sha256": "5a4e12ba316f63046d12d6f63cacde291d09dfa5e62c63df202134dd55154813",
+          "source": "assets/source/creatures/mageseekerInquisitor/adventure-attack/attackRight-native-v1.png"
+        }
+      ],
+      "placed_content_size": [
+        62,
+        42
+      ],
+      "position": [
+        1,
+        22
+      ],
+      "reference_master": "assets/source/creatures/mageseekerInquisitor/master-v4.png",
+      "reference_master_sha256": "3f9536720426228f59636f202f5842c49f9d1fd4daf6d735f77f235c272ff532",
+      "release_approved": false,
+      "source": "assets/source/creatures/mageseekerInquisitor/adventure-attack/pose-v1.png",
+      "source_contact_bbox": [
+        59,
+        0,
+        920,
+        104
+      ],
+      "source_sha256": "b099da1cf8230d7e8d9577e79a2f00a9d63f83d8fb18cd3a8fc6dd02bffe38d2",
+      "source_visible_bbox": [
+        38,
+        162,
+        1311,
+        1032
+      ],
+      "status": "exported-static-pose-candidate; action-identity-native-render-review-pending"
+    },
+    {
+      "conversion": "Crop alpha margins, preserve aspect, downsample once to full-silhouette native bounds and ground bottom64; record actual contactX rather than impose idle foot-center. Opposite static direction mirrored. No pose synthesis or battle-action substitution.",
+      "ground_exclusive_bottom": 64,
+      "id": "sentinelColossus",
+      "measured_contact_x": 23.14667817083693,
+      "native_size": [
+        64,
+        64
+      ],
+      "outputs": [
+        {
+          "alpha_bbox": [
+            1,
+            9,
+            63,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/sentinelColossus/attackLeft.png",
+          "recipe": "assets/recipes/map-attacks/sentinelColossus-attackLeft.json",
+          "sha256": "33a49968451ca1219d436d5d222d2810d1f96ab988c0f2ec0f42a50b9ae5865d",
+          "source": "assets/source/creatures/sentinelColossus/adventure-attack/attackLeft-native-v1.png"
+        },
+        {
+          "alpha_bbox": [
+            1,
+            9,
+            63,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/sentinelColossus/attackRight.png",
+          "recipe": "assets/recipes/map-attacks/sentinelColossus-attackRight.json",
+          "sha256": "d0d09b096309a8e2d54e0edcb7c5fce64eb8820eddcde866e6d1a89fe9ee3279",
+          "source": "assets/source/creatures/sentinelColossus/adventure-attack/attackRight-native-v1.png"
+        }
+      ],
+      "placed_content_size": [
+        62,
+        55
+      ],
+      "position": [
+        1,
+        9
+      ],
+      "reference_master": "assets/source/creatures/sentinelColossus/master-v3.png",
+      "reference_master_sha256": "7ca70c33d6e419a1cf45e589159900abaa40c20cb30dadc53a04a14cae4a970d",
+      "release_approved": false,
+      "source": "assets/source/creatures/sentinelColossus/adventure-attack/pose-v1.png",
+      "source_contact_bbox": [
+        155,
+        0,
+        673,
+        122
+      ],
+      "source_sha256": "7888da34b11b528c634550bef5eb918df4ca887e91fc11e9161bc98e22689d69",
+      "source_visible_bbox": [
+        123,
+        97,
+        1282,
+        1121
+      ],
+      "status": "exported-static-pose-candidate; action-identity-native-render-review-pending"
+    },
+    {
+      "conversion": "Crop alpha margins, preserve aspect, downsample once to full-silhouette native bounds and ground bottom64; record actual contactX rather than impose idle foot-center. Opposite static direction mirrored. No pose synthesis or battle-action substitution.",
+      "ground_exclusive_bottom": 64,
+      "id": "awakenedColossus",
+      "measured_contact_x": 23.27332242225859,
+      "native_size": [
+        64,
+        64
+      ],
+      "outputs": [
+        {
+          "alpha_bbox": [
+            1,
+            12,
+            63,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/awakenedColossus/attackLeft.png",
+          "recipe": "assets/recipes/map-attacks/awakenedColossus-attackLeft.json",
+          "sha256": "324bd8ddf767d820f07ddb7b06b8d81627731425bf3e93fa892782293527bb44",
+          "source": "assets/source/creatures/awakenedColossus/adventure-attack/attackLeft-native-v1.png"
+        },
+        {
+          "alpha_bbox": [
+            1,
+            12,
+            63,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/demacia/creatures/awakenedColossus/attackRight.png",
+          "recipe": "assets/recipes/map-attacks/awakenedColossus-attackRight.json",
+          "sha256": "8a190095e5280dfd7441894c6c254f88dfdb628d5a4e18103cebad5640cf27ca",
+          "source": "assets/source/creatures/awakenedColossus/adventure-attack/attackRight-native-v1.png"
+        }
+      ],
+      "placed_content_size": [
+        62,
+        52
+      ],
+      "position": [
+        1,
+        12
+      ],
+      "reference_master": "assets/source/creatures/awakenedColossus/master-v3.png",
+      "reference_master_sha256": "0d66fa2f0fc4afb5171cd1eaf06da6e37491c7b5ea24c5884c03d8e671d8f0da",
+      "release_approved": false,
+      "source": "assets/source/creatures/awakenedColossus/adventure-attack/pose-v1.png",
+      "source_contact_bbox": [
+        22,
+        0,
+        856,
+        123
+      ],
+      "source_sha256": "1393685e516f637c030f80b05ebe6c1dc8f387486e11fd4b5fab23934d1aafea",
+      "source_visible_bbox": [
+        81,
+        91,
+        1303,
+        1123
+      ],
+      "status": "exported-static-pose-candidate; action-identity-native-render-review-pending"
+    }
+  ]
+}

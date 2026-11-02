@@ -1,0 +1,44 @@
+{
+  "utc": "2026-10-23T12:00:57.660877+00:00",
+  "compiler": "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe",
+  "compiler_sha256": "e6d57100c82ae0310c18b16abfe52bc0df8fbb272ca6c5fb287d485807cfce91",
+  "scope": "Extracted actual pinned consumer methods compiled against minimal dependency fixtures. Not a complete engine build or native gameplay test.",
+  "variants": {
+    "upstream": {
+      "compile_command": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe",
+        "/nologo",
+        "/std:c++17",
+        "/EHsc",
+        "/W4",
+        "/Od",
+        "C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\upstream\\consumer_regression.cpp",
+        "/Fe:C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\upstream\\consumer_regression.exe",
+        "/Fo:C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\upstream\\consumer_regression.obj"
+      ],
+      "compile_exit_code": 0,
+      "source_sha256": "8a58bed2e25dab77ec16ac996cd85559483bfc052969b2fc5b92d17176e99817",
+      "run_exit_code": 1,
+      "output": "PASS accepted current request ends current turn\nPASS rejected request preserves turn\nFAIL old accepted ACK cannot clear new turn\nFAIL duplicate ACK cannot clear new turn\nFAIL unknown EndTurn ACK cannot clear active turn\nPASS old rejected ACK leaves new turn active\nPASS spell rejection retains its separate result and turn\nPASS rejected EndTurn retries until same generation accepted\nPASS defeated player waits for battle cleanup without requesting turn end\nFAIL same-player new turn before ACK neither retries old task nor clears new task\nFAIL ACK then new turn must not loop\nPASS immediate transport ACK sees registered request before waiting caller resumes\nFAIL immediate new-turn transport reentry preserves new generation\nPASS observer path drops request without registering ownership\nRESULT 14 cases 6 failures\n",
+      "binary_sha256": "ab81679c464838cd51c5ffbf013014892be2aed7d3233716575f89e23ab7671a"
+    },
+    "patched": {
+      "compile_command": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe",
+        "/nologo",
+        "/std:c++17",
+        "/EHsc",
+        "/W4",
+        "/Od",
+        "C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\patched\\consumer_regression.cpp",
+        "/Fe:C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\patched\\consumer_regression.exe",
+        "/Fo:C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\patched\\consumer_regression.obj"
+      ],
+      "compile_exit_code": 0,
+      "source_sha256": "ab8f21b569dccdf061dd9d0c8bea381d4a623554ce6299e733d830f45ed30bfe",
+      "run_exit_code": 0,
+      "output": "PASS accepted current request ends current turn\nPASS rejected request preserves turn\nPASS old accepted ACK cannot clear new turn\nPASS duplicate ACK cannot clear new turn\nPASS unknown EndTurn ACK cannot clear active turn\nPASS old rejected ACK leaves new turn active\nPASS spell rejection retains its separate result and turn\nPASS rejected EndTurn retries until same generation accepted\nPASS defeated player waits for battle cleanup without requesting turn end\nPASS same-player new turn before ACK neither retries old task nor clears new task\nPASS ACK followed by new turn before callback returns cannot trigger old retry\nPASS immediate transport ACK sees registered request before waiting caller resumes\nPASS immediate new-turn transport reentry preserves new generation\nPASS observer path drops request without registering ownership\nRESULT 14 cases 0 failures\n",
+      "binary_sha256": "f093f14a52b940c2eff8fe31679529be1dfb8cbc0cc8fec880d531f93978dbe4"
+    }
+  }
+}

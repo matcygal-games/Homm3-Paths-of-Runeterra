@@ -1,0 +1,174 @@
+{
+  "scope": "Compiled extracted actual official66fa consumer bodies with minimal dependency fixtures and actual InternalConnection methods; not full engine/native gameplay",
+  "utc": "2026-10-23T12:36:00.615046+00:00",
+  "compiler": "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe",
+  "compiler_sha256": "e6d57100c82ae0310c18b16abfe52bc0df8fbb272ca6c5fb287d485807cfce91",
+  "variants": {
+    "upstream": {
+      "compile_command": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe",
+        "/nologo",
+        "/std:c++17",
+        "/EHsc",
+        "/W4",
+        "/Od",
+        "C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\intentional-network-close-20261023-v1\\candidate-v2\\tests-v2\\upstream\\consumer_regression.cpp",
+        "/Fe:C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\intentional-network-close-20261023-v1\\candidate-v2\\tests-v2\\upstream\\consumer_regression.exe",
+        "/Fo:C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\intentional-network-close-20261023-v1\\candidate-v2\\tests-v2\\upstream\\consumer_regression.obj"
+      ],
+      "compile_exit_code": 0,
+      "cases": {
+        "authorized-request-late-and-duplicate": {
+          "exit_code": 1,
+          "output": "FAIL authorized-request-late-and-duplicate: intentional callback ERROR\nRESULT 0 passed 1 failed\n"
+        },
+        "synchronous-close-before-removal": {
+          "exit_code": 1,
+          "output": "FAIL synchronous-close-before-removal: consumer assertion: vstd::contains(activeConnections, connection)\nRESULT 0 passed 1 failed\n"
+        },
+        "unexpected-active-loss-cleanup-once": {
+          "exit_code": 1,
+          "output": "FAIL unexpected-active-loss-cleanup-once: duplicate local-close error\nRESULT 0 passed 1 failed\n"
+        },
+        "unknown-loss-after-shutdown-remains-error": {
+          "exit_code": 0,
+          "output": "PASS unknown-loss-after-shutdown-remains-error\nRESULT 1 passed 0 failed\n"
+        },
+        "rejected-wrong-client-cannot-mark": {
+          "exit_code": 0,
+          "output": "PASS rejected-wrong-client-cannot-mark\nRESULT 1 passed 0 failed\n"
+        },
+        "rejected-nonhost-shutdown-cannot-mark": {
+          "exit_code": 0,
+          "output": "PASS rejected-nonhost-shutdown-cannot-mark\nRESULT 1 passed 0 failed\n"
+        },
+        "rejected-dedicated-shutdown-cannot-mark": {
+          "exit_code": 0,
+          "output": "PASS rejected-dedicated-shutdown-cannot-mark\nRESULT 1 passed 0 failed\n"
+        },
+        "one-peer-close-other-peer-failure": {
+          "exit_code": 1,
+          "output": "FAIL one-peer-close-other-peer-failure: first intentional peer ERROR\nRESULT 0 passed 1 failed\n"
+        },
+        "other-peer-failure-before-local-completion": {
+          "exit_code": 1,
+          "output": "FAIL other-peer-failure-before-local-completion: completion ordering lost failure\nRESULT 0 passed 1 failed\n"
+        },
+        "rejected-new-connection-owned-close": {
+          "exit_code": 1,
+          "output": "FAIL rejected-new-connection-owned-close: known rejected transport ERROR\nRESULT 0 passed 1 failed\n"
+        },
+        "weak-lifetime-and-address-reuse": {
+          "exit_code": 0,
+          "output": "PASS weak-lifetime-and-address-reuse\nRESULT 1 passed 0 failed\n"
+        },
+        "same-address-different-shared-ownership-remains-error": {
+          "exit_code": 0,
+          "output": "PASS same-address-different-shared-ownership-remains-error\nRESULT 1 passed 0 failed\n"
+        },
+        "valid-host-shutdown-cleanup": {
+          "exit_code": 1,
+          "output": "FAIL valid-host-shutdown-cleanup: valid host shutdown lifecycle changed\nRESULT 0 passed 1 failed\n"
+        },
+        "actual-internal-queued-requested-completion": {
+          "exit_code": 1,
+          "output": "FAIL actual-internal-queued-requested-completion: actual queued intentional close ERROR\nRESULT 0 passed 1 failed\n"
+        },
+        "concurrent-registry-prune-find-and-close": {
+          "exit_code": 0,
+          "output": "RESULT 0 passed 0 failed\n"
+        },
+        "registry-lock-blocks-writer-and-reader": {
+          "exit_code": 0,
+          "output": "RESULT 0 passed 0 failed\n"
+        }
+      },
+      "passed": 8,
+      "failed": 8,
+      "binary_sha256": "a04f6d511386af6ceff0c4afb04d704f46cdbf5ca6bc564cd0bec6288221c467"
+    },
+    "patched": {
+      "compile_command": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe",
+        "/nologo",
+        "/std:c++17",
+        "/EHsc",
+        "/W4",
+        "/Od",
+        "C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\intentional-network-close-20261023-v1\\candidate-v2\\tests-v2\\patched\\consumer_regression.cpp",
+        "/Fe:C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\intentional-network-close-20261023-v1\\candidate-v2\\tests-v2\\patched\\consumer_regression.exe",
+        "/Fo:C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\intentional-network-close-20261023-v1\\candidate-v2\\tests-v2\\patched\\consumer_regression.obj"
+      ],
+      "compile_exit_code": 0,
+      "cases": {
+        "authorized-request-late-and-duplicate": {
+          "exit_code": 0,
+          "output": "PASS authorized-request-late-and-duplicate\nRESULT 1 passed 0 failed\n"
+        },
+        "synchronous-close-before-removal": {
+          "exit_code": 0,
+          "output": "PASS synchronous-close-before-removal\nRESULT 1 passed 0 failed\n"
+        },
+        "unexpected-active-loss-cleanup-once": {
+          "exit_code": 0,
+          "output": "PASS unexpected-active-loss-cleanup-once\nRESULT 1 passed 0 failed\n"
+        },
+        "unknown-loss-after-shutdown-remains-error": {
+          "exit_code": 0,
+          "output": "PASS unknown-loss-after-shutdown-remains-error\nRESULT 1 passed 0 failed\n"
+        },
+        "rejected-wrong-client-cannot-mark": {
+          "exit_code": 0,
+          "output": "PASS rejected-wrong-client-cannot-mark\nRESULT 1 passed 0 failed\n"
+        },
+        "rejected-nonhost-shutdown-cannot-mark": {
+          "exit_code": 0,
+          "output": "PASS rejected-nonhost-shutdown-cannot-mark\nRESULT 1 passed 0 failed\n"
+        },
+        "rejected-dedicated-shutdown-cannot-mark": {
+          "exit_code": 0,
+          "output": "PASS rejected-dedicated-shutdown-cannot-mark\nRESULT 1 passed 0 failed\n"
+        },
+        "one-peer-close-other-peer-failure": {
+          "exit_code": 0,
+          "output": "PASS one-peer-close-other-peer-failure\nRESULT 1 passed 0 failed\n"
+        },
+        "other-peer-failure-before-local-completion": {
+          "exit_code": 0,
+          "output": "PASS other-peer-failure-before-local-completion\nRESULT 1 passed 0 failed\n"
+        },
+        "rejected-new-connection-owned-close": {
+          "exit_code": 0,
+          "output": "PASS rejected-new-connection-owned-close\nRESULT 1 passed 0 failed\n"
+        },
+        "weak-lifetime-and-address-reuse": {
+          "exit_code": 0,
+          "output": "PASS weak-lifetime-and-address-reuse\nRESULT 1 passed 0 failed\n"
+        },
+        "same-address-different-shared-ownership-remains-error": {
+          "exit_code": 0,
+          "output": "PASS same-address-different-shared-ownership-remains-error\nRESULT 1 passed 0 failed\n"
+        },
+        "valid-host-shutdown-cleanup": {
+          "exit_code": 0,
+          "output": "PASS valid-host-shutdown-cleanup\nRESULT 1 passed 0 failed\n"
+        },
+        "actual-internal-queued-requested-completion": {
+          "exit_code": 0,
+          "output": "PASS actual-internal-queued-requested-completion\nRESULT 1 passed 0 failed\n"
+        },
+        "concurrent-registry-prune-find-and-close": {
+          "exit_code": 0,
+          "output": "PASS concurrent-registry-prune-find-and-close\nRESULT 1 passed 0 failed\n"
+        },
+        "registry-lock-blocks-writer-and-reader": {
+          "exit_code": 0,
+          "output": "PASS registry-lock-blocks-writer-and-reader\nRESULT 1 passed 0 failed\n"
+        }
+      },
+      "passed": 16,
+      "failed": 0,
+      "binary_sha256": "b0fe013249f0c57d6dcd2cd1fb36f431775e44df3add283cf72adfee2e4f2a1c"
+    }
+  }
+}

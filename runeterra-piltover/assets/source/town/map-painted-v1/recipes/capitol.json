@@ -1,0 +1,69 @@
+{
+  "animation_scope": "One painted static adventure-map pose, not creature motion",
+  "canvas": [
+    192,
+    160
+  ],
+  "generateOverlay": 0,
+  "generateShadow": 1,
+  "generation": {
+    "image_generation_used": true,
+    "model": "Exact model identifier not exposed by tool",
+    "painted_master": "assets/source/town/map-painted-v1/native/portable/capitol-clean.png",
+    "painted_master_sha256": "3cf5d58000f21551054936a9fddaacdfe42d44c597b72164dfd1b4d1c67d89e1",
+    "prompt": "Edit the supplied original painted2D Piltover adventure-map settlement into ONE CAPITOL within CASTLE state: Full strong ivory defensive enclosure with two side towers, fortified rear keep and a visibly richer grand civic clock-spire above the familiar central glass guildhouse. Modest brass/glass scholarly observatory crown and navy city pennants. Wealthy trade-city silhouette, not Demacian temple, no excessive crystals. Preserve exact camera, every shared building's source scale, central front door/stair-root position near(850,1100) and square1280canvas. Do NOT zoom to fit newly tall walls; grow only upward/backward into transparent margin. Front entry remains completely visible and clear, grass footprint compact. Exact Piltovan gold stem/orb/gear-flank civic crest remains engraved over front door, with separate plain navy ownership pennant. No modern3D, anime, photo, flatvector, text/watermark. Original HeroesIII compact richly textured painted realism, upper-left lighting, warm grey/ivory stone, dark navy slate, aged brass and timber, restrained turquoise glass. Complete uncropped architecture/shadow, TRANSPARENT background; NO red fringe, no surrounding scene or water.\n",
+    "provider": "OpenAI built-in imagegen"
+  },
+  "groups": [
+    {
+      "frames": [
+        {
+          "frame": 0,
+          "overlay_sha256": "3c7271c8b03ad8a5056322877bf44e4be0becbf8bb8e26e8ebf3224fc51de1c6",
+          "overlay_source": "assets/source/town/map-painted-v1/native/masks/capitol-OVERLAY.png",
+          "source": "assets/source/town/map-painted-v1/native/frames/capitol.png",
+          "source_canvas": [
+            192,
+            160
+          ],
+          "source_sha256": "1f5ec509ecf7c3f091ff82c4f8ce2ae89192bfc3959fdb762e6368f37c581bdf"
+        }
+      ],
+      "group": 0
+    }
+  ],
+  "output_path": "Content/Sprites/runeterra/piltover/town/map/capitol.json",
+  "pivot": {
+    "x": 112,
+    "y": 139
+  },
+  "production_inputs": [
+    {
+      "path": "assets/source/town/map-painted-v1/root-plan-v1.json",
+      "sha256": "e88a11d2e6142ee0d4425f538b53eae3a7cf0f4a2aa452f593b183d08e0249e1"
+    },
+    {
+      "path": "assets/source/town/map-painted-v1/produce-native.py",
+      "sha256": "dc6d4f03b905b0945b01d4393bb6752ef4f606873e386f77d49c7eed199dd4a0"
+    },
+    {
+      "path": "assets/source/town/map-painted-v1/capitol_v1.png",
+      "sha256": "ca3f3bc80f5cf64ace7696d8541fe844e6fd6f98ac983941031fdf913a8aa1df"
+    },
+    {
+      "path": "assets/source/town/map-painted-v1/native/portable/capitol-clean.png",
+      "sha256": "3cf5d58000f21551054936a9fddaacdfe42d44c597b72164dfd1b4d1c67d89e1"
+    },
+    {
+      "path": "assets/source/town/map-painted-v1/piltover_map_capitol_v1-actual-prompt.txt",
+      "sha256": "4a25e1a2e1eddc325e3cd70f60382c4fa52ae9dc03eddfb769a7eaebe5725a77"
+    },
+    {
+      "path": "assets/source/town/map-painted-v1/native/masks/capitol-flag-source.png",
+      "sha256": "c3eee06dfd5cbd268f6ef4de3e4c10ebd048ea32878555fb138436fe6a528f3e"
+    }
+  ],
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "vcmi_animation",
+  "visual_approval_granted": false
+}

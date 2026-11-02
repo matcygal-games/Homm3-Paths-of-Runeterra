@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "status": "authored configuration",
+  "subject": "Zaun unit identity contract for art: what every line must look like, what must differ, and what may never appear.",
+  "armyIdentity": {
+    "theme": "An industrial undercity that fights with patched bodies, pressurised chemistry and brute strength: cheap street muscle, self-repairing ravagers, chemical constructs, industrial enforcers, charged alchemists, long-tool veterans and a two-hex laboratory predator.",
+    "categoriesBothVariants": {
+      "shooters": 1,
+      "walkingMelee": 6,
+      "flyingMelee": 0,
+      "teleportingMelee": 0
+    },
+    "strengths": [
+      "Self-repairing ravagers and a two-hex regenerating apex that outlasts attritional exchanges.",
+      "An industrial long-tool line that strikes over an empty hex and is not answered by retaliation.",
+      "A charged alchemist that softens one target per battle.",
+      "A mechanical construct line with no morale dependency."
+    ],
+    "weaknesses": [
+      "No flying or teleporting line: every stack walks the same native movement routes.",
+      "Only one ranged line, and it sits at tier three with finite ammunition.",
+      "Most troops have no damage reduction, no retaliation suppression and no sustain besides tier two and tier seven.",
+      "The tier-one line is fragile, and the tier-five line spends a whole action on a single debuff."
+    ]
+  },
+  "lines": [
+    {
+      "ids": ["zaunThug", "chemPunk"],
+      "lore": "Undercity street labour and improvised street fighting; the ranks are project fiction and are not any champion.",
+      "silhouette": "Compact human in a patched work coat, wrapped fists and a short iron pipe; the upgrade adds a scrap shoulder plate and a corroded pipe head.",
+      "equipment": "Pipe, wrapped hands, satchel and patched coat. No shields, no plate, no banners.",
+      "palette": "Dull brown work cloth, rust, one dull accent. The upgrade adds a brighter scrap accent but keeps the same body language.",
+      "distinctness": "Must not read as a Demacian foot soldier, a Noxian legionary or a Pit Lord."
+    },
+    {
+      "ids": ["chemRavager", "mutantBerserker"],
+      "lore": "Alchemically altered scavengers; the alteration is a livelihood under coercion, not a moral verdict.",
+      "silhouette": "Hunched, heavy-shouldered brawler with a leather restraint harness and an oversized hook; the upgrade adds bolted arm braces and a broader stance.",
+      "equipment": "Hook, restraint belts, padded vest, dosing vials at the belt.",
+      "palette": "Sickly green-grey skin tones, brown harness, dull brass fittings. Never green-glowing heroic.",
+      "distinctness": "Must not read as an orc, a goblin or a Demacian infantryman; the harness and hook are the read."
+    },
+    {
+      "ids": ["chemtechConstruct", "reinforcedConstruct"],
+      "lore": "A chemtech pressure frame built to haul and fire; the machine is a tool, not a person.",
+      "silhouette": "Riveted pumping frame with a visible pressure tank, splayed mechanical legs and a physical nozzle arm; the upgrade is the same frame with strapped tanks and heavier plating.",
+      "equipment": "Pressure tank, valve wheel, nozzle, rivets, exhaust pipe. No faces, no eyes, no humanoid head.",
+      "palette": "Rust, iron grey, oxidised copper and one warning stripe colour. No purple hextech glow: Zaun works with chemtech, not Piltover hextech.",
+      "distinctness": "Must not read as a golem of another faction, a robot or a Wizard tower construct; the nozzle and tank are the read."
+    },
+    {
+      "ids": ["chemBaronEnforcer", "cyberneticGuard"],
+      "lore": "Chemical-baron enforcement crews in industrial braces; the augmentation is prosthetic, never a loss of self.",
+      "silhouette": "Human-sized figure in bulky industrial braces with a heavy cleaver; the upgrade adds a ribbed shield plate, a wider cleaver arc and a braced stance.",
+      "equipment": "Heavy cleaver, brace frames, stained leather apron, a chem-baron brand on the harness. The upgrade needs a group attack animation for its wide sweep.",
+      "palette": "Oiled leather, dark iron, brass buckles, one crimson brand accent.",
+      "distinctness": "Must not read as a Noxian axe Reckoner, a Demacian duelist or a knight; the industrial braces are the read. The upgrade sweeps sideways into the neighbours, it does not ignore armour and it does not attack behind the target."
+    },
+    {
+      "ids": ["chemBaronAgent", "masterAlchemist"],
+      "lore": "Field chemists serving a chemical baron; they fight with reagents, not with blades.",
+      "silhouette": "Lean figure with a chemical satchel, caged flasks on the back and a hooked staff; the upgrade adds a filter mask and capped hoses.",
+      "equipment": "Satchel, caged flasks, hooked staff, filter mask on the upgrade. The cast is a thrown or blown reagent, not a spell gesture.",
+      "palette": "Stained canvas, copper tubing, amber glass, one deep crimson reagent.",
+      "distinctness": "Must not read as a Necropolis alchemist or a Noxian hemomancer; the caged flasks and the mask are the read. The agent fights in melee and has no gun, and it never leaves a gas field behind."
+    },
+    {
+      "ids": ["augmentationVeteran", "chemtechVanguard"],
+      "lore": "Volunteers and coerced workers in braced augmentation frames; the human face stays visible.",
+      "silhouette": "Heavy infantry in a scrap cuirass with hydraulic braces over wool and leather, head uncovered, carrying a telescopic clamp tool; the upgrade is a heavier braced frame with a longer clamp head and the same exposed face.",
+      "equipment": "Scrap cuirass, hydraulic braces, a long industrial clamp or salvage shear, patched cloth. Never a full helmet: the face must remain visible. The tool extends in the attack animation; the footprint stays one hex.",
+      "palette": "Wool brown, oiled steel, one worn crimson strap.",
+      "distinctness": "Must not read as a Dwarf, a Legionnaire or an undead; the exposed human face and the hydraulic clamp are the read. The reach is a tool attack over one empty hex, not a hook, not a shield wall and not a defensive stance."
+    },
+    {
+      "ids": ["apexPredator", "perfectMutation"],
+      "lore": "A laboratory beast grown past its intended shape; the animal is a subject of Zaun's industry, not a demon.",
+      "silhouette": "Low, muscular, four-legged predator with stitched hide, matte chemical scars, grasping forelimbs and a heavy head; the upgrade adds horn ridges, a heavier frame and longer grasping limbs.",
+      "equipment": "Stitching, chemical scarring, no armour and no rider. The body reads as two hexes wide. The upgrade's grab needs a group attack animation for the all-around reach.",
+      "palette": "Raw hide brown, grey scarring, dull crimson seams. No wings, no stone, no metal plating.",
+      "distinctness": "Must not read as a dragon, a behemoth, a demon or a unicorn; it is a stitched animal. Its multi-target strike grabs everything around it, it does not breathe chemicals and it does not use the rear-hex breath geometry of a two-hex attacker."
+    }
+  ],
+  "presentation": {
+    "renderingLanguage": "Heroes III native painted, low three-quarter view, flat readable silhouette, strong outline, limited painted shading, alpha background. This is the original game's visual grammar, not its content.",
+    "nativeSizes": "Battle frame 450x400 with pivot (197, 266); adventure map sprite 96x64; large portrait 58x64; small portrait 32x32; attack side 64x64.",
+    "forbidden": [
+      "No original Heroes III sprite, recolour, trace or partial reuse.",
+      "No Demacia or Noxus art, rig, guide or compiled output as a base layer.",
+      "No placeholder blocks, primitive renders or silhouette-only stand-ins.",
+      "No hextech blue-green glow, no Piltover heraldry and no official emblem.",
+      "No text, logo or watermark inside any image."
+    ]
+  },
+  "gameplayVerification": "Not started. Every line is an authored configuration; identity acceptance requires the checksum-bound native-size review recorded in assets/reviews.",
+  "balanceClaim": "None. See design/creature-balance.json for the estimates and the open findings."
+}

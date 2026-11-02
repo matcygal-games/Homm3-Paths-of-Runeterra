@@ -1,0 +1,19 @@
+{
+  "unit": "briarTrickster",
+  "selected": false,
+  "method": "One uniform scale and translation for both rows of the same supplementary master, derived from crown-to-root-attachment body axis; no wing bounds fitted",
+  "coordinate_space": "selected native-registration-v3 450x400 pixel centers, manual reading from before-body grid; approximately one pixel landmark uncertainty",
+  "landmarks": {
+    "holding": {"group": 2, "frame": 0, "crown": [204, 238], "root_attachment": [202, 259], "eye": [210.5, 247.5]},
+    "takeoff_start": {"group": 20, "frame": 0, "crown": [204, 226], "root_attachment": [201, 258], "eye": [211.5, 241.5]},
+    "landing_end": {"group": 21, "frame": 5, "crown": [207, 227], "root_attachment": [204, 258], "eye": [215, 243.5]},
+    "takeoff_end": {"group": 20, "frame": 5, "crown": [205, 226], "root_attachment": [202, 256], "eye": [212.5, 241]},
+    "landing_start": {"group": 21, "frame": 0, "crown": [210, 217], "root_attachment": [204, 249], "eye": [216.5, 231]},
+    "moving_reference": {"group": 0, "frame": 0, "crown": [205, 238], "root_attachment": [203, 258.5], "eye": [211, 247.5]}
+  },
+  "fit_landmarks": ["crown", "root_attachment"],
+  "scale_rule": "holding body-axis length divided by average takeoff_start and landing_end body-axis lengths",
+  "translation_rule": "align average resting-boundary body-axis midpoint to holding body-axis midpoint using the same translation for all twelve frames",
+  "preview_policy": "Preserve selected preview-v4 whole-action camera for diagnostic candidate; also compute and report genuine recomputed whole-cohort camera without selecting it",
+  "acceptance": "unselected authored registration candidate; native playback, human visual approval and rights pending"
+}

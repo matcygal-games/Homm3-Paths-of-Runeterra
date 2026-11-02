@@ -1,0 +1,70 @@
+{
+  "status": "authored configuration",
+  "scope": "Corrected T7 flight construction sources and blocked painting requirements, not artwork acceptance",
+  "authority": ".kilo/plans/1792492773980-noxus-roster-and-production.md:9-42 and direct corrected task received2026-10-20",
+  "authoritative_guide_runs": ["flight-c", "flight-d"],
+  "units": ["ruinBringer", "greaterRuinBringer"],
+  "rig_paths": [
+    "assets/source/creatures/ruinBringer/flight-rig-v2/flight-c/ruinBringer-guide.blend",
+    "assets/source/creatures/greaterRuinBringer/flight-rig-v2/flight-c/greaterRuinBringer-guide.blend",
+    "assets/source/creatures/ruinBringer/flight-rig-v2/flight-d/ruinBringer-guide.blend",
+    "assets/source/creatures/greaterRuinBringer/flight-rig-v2/flight-d/greaterRuinBringer-guide.blend"
+  ],
+  "native_group_frame_contract": {"0": 8, "1": 4, "2": 6, "3": 4, "4": 4, "5": 8, "7": 4, "8": 4, "11": 8, "12": 8, "13": 8, "20": 6, "21": 6, "22": 1},
+  "action_semantics": {"0": "Primary bound-magic physical flight loop, no alternating walk gait", "2": "Low-hover HOLDING loop, actual suspended mesh and tucked legs", "20": "MOVE_START rise: declared0.22->0.46 times body scale, actual world mesh altitude checked", "21": "MOVE_END descent:0.46->0.22 times body scale, actual world mesh altitude checked", "11-13": "Directional single-target claw strike; no GROUP_ATTACK/cleave/breath/shot", "5": "Physical demonic collapse into a prone corpse with vine frame/binding fold; no painted dissipation VFX claimed", "22": "Actual last frame of collapse, never idle"},
+  "keyed_poses_per_unit": 78,
+  "battle_export_frames_per_unit": 79,
+  "map_export_frames_per_unit": 8,
+  "compared_pngs_per_run": 332,
+  "determinism": {"ok": true, "receipt": "determinism-and-hashes.json", "sha256": "a48fc3c855854e78f1d99a9c1d5aa0da36821083dea3f46fb82a940e7c30eb72", "scope": "Exact metadata-normalized raw/canonical256x256, native450x400 and map96x64 guide PNG bytes. Original raw containers and .blend hashes preserved; .blend byte determinism not claimed."},
+  "two_hex_source_contract": {"doubleWide": true, "battle_hex_centers": [[153,266],[197,266]], "battle_body_center": [175,266], "source_mask": "<unit>/flight-rig-v2/<run>/battle-footprint-guide-mask.png", "mapMask": ["VV","VA"], "map_source_mask": "<unit>/flight-rig-v2/<run>/map-footprint-VV-VA-guide-mask.png", "map_frames": "<unit>/flight-rig-v2/<run>/map-guide-v2/map-f000.png through map-f007.png", "map_canvas": [96,64], "map_body_center_x": 64, "map_visible_image_columns": [[32,63],[64,95]], "native_pitch_source": "BattleFieldController.cpp:924-930 uses44 horizontal and42 row pitch; directions at277 include+-44 and+-22,+-42", "mask_limit": "Source guide polygon is technical two-cell occupancy evidence, not native collision pixel art or an executed engine overlay. Actual battle occupied set derives from doubleWide; adventure VV/VA visibility/activation is distinct."},
+  "inspected": [
+    "Both flight-c native-flight-contact.png sheets at native frame size",
+    "ruinBringer flight-c transparent-flight-atlas-guide.png",
+    "Both flight-c corrected map-guide-v2 first frames and VV/VA technical mask",
+    "Two-cell battle source mask",
+    "Saved .blend geometry reopened and measured over158 exported battle poses per run, independently in C and D"
+  ],
+  "observations": [
+    "The body is suspended above the review ground line. Rise/descent show actual changing altitude; both legs remain tucked without an alternating planted-foot walk cycle.",
+    "Chains are individually editable torus-link meshes; thorn/vine structures are new articulated meshes, with ragged shadow ribbons rather than natural bat/drake/feather membranes.",
+    "Greater has a larger body/wider vine span, thicker vines, longer/more numerous thorns, heavier and denser chain links, additional hanging chain loops and a materially brighter crimson fissure guide material.",
+    "Single-target claws, directional turns, hit recoil, guard and collapse are real keyed skeletal poses, not copies of an idle image.",
+    "Transparent frames have no baked floor or guide line. Ground lines and labels exist only in the contact review sheet.",
+    "No observed cross-cell neighbour imagery: every frame is independently rendered and contact/alpha sheets use a single whole-cohort union crop plus8px margin.",
+    "The one native scale/placement is unchanged across every frame in a cohort; no per-frame image stretching or camera fitting was used.",
+    "An additional evaluated .blend altitude check caught the first flight-a/b hierarchy problem that metadata/alpha checks did not. C/D mesh parenting and world-space altitude assertions fixed it; the failed A report remains preserved."
+  ],
+  "history": {"grounded_v1": "Retired;93 exact recipe/generator/source files in history-grounded-v1/preserved-bytes.json plus all prior rig-v1 runs kept in place. Never aliases or replacements for this flight revision.", "flight_a_b": "Rejected source-guide trials: measured saved-mesh hover did not match declared altitude. Not flight-ready and not final art.", "failed_altitude_receipt": "assets/source/creatures/flight-review-flight-a/evaluated-flight-geometry.json", "flight_c_geometry_sha256": "f7655332d75ca3c85bfb91e549c58dfc874aecf65a6375e723093df1773d01cd", "flight_d_geometry_sha256": "4d746f2ca47cfe75d1a5d3310ac05d11b81d8708f901f47ead54ca10d9f6077a"},
+  "executed_checks": [
+    "Blender4.5.9 real independent assembly/export flight-c and flight-d, two units each",
+    "Fixed-length limb IK and evaluated bone endpoints during assembly",
+    "All saved/evaluated mesh world-space minimum altitude matches expected hover/death support within0.0001,158 samples/run; both external reopen checks PASS",
+    "RGBA, canvas, nonempty alpha and edge-clipping checks; required group/frame sets and forbidden group absence; actual distinct motion hashes: PASS",
+    "Exact332 canonical/native/map PNG SHA256 comparisons per run: PASS,0mismatches",
+    "12 blocked recipes match manifest output/recipe paths; missing painted source descriptors retain sha256null; actual content is twohex FLYING+NON_LIVING+VV/VA: PASS",
+    "93 history files verified and74 other creature/projectile recipes unchanged; hounds remain grounded onehex wingless: PASS",
+    "5 art scripts AST-parsed: PASS",
+    "python scripts/noxus_asset_manifest.py --check executed twice: exit0, manifest matches366 required outputs; no manifest writes"
+  ],
+  "remaining_visual_limitations": [
+    "These are deliberately unpainted rigid-part construction guides, conspicuously below final Heroes III art quality. No guide is placeholder game art or may substitute for a painted master.",
+    "Organic predatory anatomy and hunched neck/skull, cloth and mantle edges, claw detail, vine curvature, native silhouette readability and binding/grip intersections need sculpt/pose/paint refinement. Rigid segments can still read mechanically.",
+    "Binding links and ribbons follow skeletal controls, not chain/cloth simulation. Wing-base attachment and collapse folding need artistic refinement; no finished demonic dissipation effects exist.",
+    "Final material/light/pixel treatment, native portraits and attack-side artwork remain absent. Official Noxus emblem source/provenance is still missing; no invented crest is used.",
+    "Map anchor, battle footprint/shadow relationship, native landing/occupied-set checks and siege-wall crossing remain unexecuted runtime scenarios. Technical mask/pose/metadata checks do not establish those behaviours.",
+    "No official Riot source establishes flight for Atakhan. This is explicitly invented bound-magic flight for a project-fiction contingent, never a canonical Atakhan ability or species."
+  ],
+  "image_generation_calls": 0,
+  "image_gateway_calls": 0,
+  "image_api_installs": 0,
+  "painted_masters": 0,
+  "placeholder_game_art": 0,
+  "art_accepted": 0,
+  "visual_approval_granted": false,
+  "runtime_verified": false,
+  "active_manifest_modified": false,
+  "staging_performed": false,
+  "content_dictionary_modified": false,
+  "desktop_driven": false
+}

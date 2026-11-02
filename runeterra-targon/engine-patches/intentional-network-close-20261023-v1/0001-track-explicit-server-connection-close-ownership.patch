@@ -1,0 +1,83 @@
+diff --git a/server/CVCMIServer.h b/server/CVCMIServer.h
+--- a/server/CVCMIServer.h
++++ b/server/CVCMIServer.h
+@@ -10,6 +10,9 @@
+ #pragma once
+ 
+ #include "IGameServer.h"
++
++#include <memory>
++#include <set>
+ 
+ #include "../lib/network/NetworkInterface.h"
+ #include "../lib/StartInfo.h"
+@@ -38,6 +41,7 @@
+ 	std::unique_ptr<INetworkHandler> networkHandler;
+ 	/// Network server instance that receives and processes incoming connections on active socket
+ 	std::unique_ptr<INetworkServer> networkServer;
++	std::set<std::weak_ptr<INetworkConnection>, std::owner_less<>> requestedConnectionClosures;
+ 
+ 	/// Handles connection with global lobby. Must be constructed and destroyed after network handler
+ 	std::unique_ptr<GlobalLobbyProcessor> lobbyProcessor;
+@@ -77,6 +81,7 @@
+ 	uint16_t prepare(bool connectToLobby, bool listenForConnections);
+ 
+ 	// INetworkListener impl
++	void closeConnection(const std::shared_ptr<INetworkConnection> & connection);
+ 	void onDisconnected(const std::shared_ptr<INetworkConnection> & connection, const std::string & errorMessage) override;
+ 	void onPacketReceived(const std::shared_ptr<INetworkConnection> & connection, const std::vector<std::byte> & message) override;
+ 	void onNewConnection(const std::shared_ptr<INetworkConnection> &) override;
+diff --git a/server/CVCMIServer.cpp b/server/CVCMIServer.cpp
+--- a/server/CVCMIServer.cpp
++++ b/server/CVCMIServer.cpp
+@@ -134,7 +134,7 @@
+ 	else
+ 	{
+ 		// TODO: reconnection support
+-		connection->close();
++		closeConnection(connection);
+ 	}
+ }
+ 
+@@ -404,9 +404,28 @@
+ 	multiplayerWelcomeMessage();
+ }
+ 
++void CVCMIServer::closeConnection(const std::shared_ptr<INetworkConnection> & connection)
++{
++	for(auto it = requestedConnectionClosures.begin(); it != requestedConnectionClosures.end();)
++	{
++		if(it->expired())
++			it = requestedConnectionClosures.erase(it);
++		else
++			++it;
++	}
++	requestedConnectionClosures.insert(connection);
++	connection->close();
++}
++
+ void CVCMIServer::onDisconnected(const std::shared_ptr<INetworkConnection> & connection, const std::string & errorMessage)
+ {
+-	logNetwork->error("Network error receiving a pack. Connection has been closed");
++	if(requestedConnectionClosures.find(connection) != requestedConnectionClosures.end())
++	{
++		logNetwork->debug("Connection closed after explicit local close request: %s", errorMessage);
++		return;
++	}
++
++	logNetwork->error("Network error receiving a pack. Connection has been closed: %s", errorMessage);
+ 
+ 	std::shared_ptr<GameConnection> c = findConnection(connection);
+ 
+diff --git a/server/NetPacksLobbyServer.cpp b/server/NetPacksLobbyServer.cpp
+--- a/server/NetPacksLobbyServer.cpp
++++ b/server/NetPacksLobbyServer.cpp
+@@ -134,7 +134,7 @@
+ 
+ void ApplyOnServerNetPackVisitor::visitLobbyClientDisconnected(LobbyClientDisconnected & pack)
+ {
+-	connection->getConnection()->close();
++	srv.closeConnection(connection->getConnection());
+ 	srv.clientDisconnected(connection);
+ 	result = true;
+ }

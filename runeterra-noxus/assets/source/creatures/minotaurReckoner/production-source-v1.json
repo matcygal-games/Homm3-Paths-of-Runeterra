@@ -1,0 +1,140 @@
+{
+  "definition": {
+    "category": "walking-melee",
+    "comparison": [
+      "core:minotaur",
+      "core:ogre"
+    ],
+    "equipment": [
+      "arena-girdle",
+      "wrist-wraps",
+      "maul"
+    ],
+    "family": "minotaur",
+    "height": 2.23,
+    "lore": "Individual Noxian arena/service adaptation, not Alistar or universal imperial minotaur loyalty",
+    "native_height": 99,
+    "nature": "living",
+    "silhouette": "Living massive bovine arena bruiser, low heavy muzzle, outward curved horns, broad bare neck/chest, short cloven hooves, leather arena girdle and long two-grip iron maul",
+    "tier": 6,
+    "two_hex": true,
+    "upgrade": false,
+    "weakness": "Ordinary retaliation, no defense penetration or execution",
+    "weapon": "arena-maul",
+    "width": 0.46
+  },
+  "emblem": {
+    "policy": "Leave emblem fields blank in guides. Obtain a genuine official Riot Noxus emblem, preserve exact source URL/bytes/hash and permissions before final painted art. Never invent a crest or reuse Demacia heraldry.",
+    "sha256": null,
+    "source_url": null,
+    "status": "blocked-official-source-provenance-required"
+  },
+  "generation": {
+    "image_generation_used": false,
+    "model": null,
+    "prompt": null,
+    "provider": null
+  },
+  "model_sheet_type": "editable volumetric rig + transparent pose guides, NOT painted art",
+  "native_groups": {
+    "0": {
+      "action": "walk-contact",
+      "minimum_guide_poses": 6
+    },
+    "1": {
+      "action": "fidget-equipment-check",
+      "minimum_guide_poses": 4
+    },
+    "11": {
+      "action": "melee-up",
+      "minimum_guide_poses": 6
+    },
+    "12": {
+      "action": "melee-front",
+      "minimum_guide_poses": 6
+    },
+    "13": {
+      "action": "melee-down",
+      "minimum_guide_poses": 6
+    },
+    "2": {
+      "action": "idle",
+      "minimum_guide_poses": 1
+    },
+    "3": {
+      "action": "hit-recoil",
+      "minimum_guide_poses": 4
+    },
+    "4": {
+      "action": "defend-brace",
+      "minimum_guide_poses": 4
+    },
+    "5": {
+      "action": "death-collapse",
+      "minimum_guide_poses": 6
+    },
+    "7": {
+      "action": "turn-toward-viewer",
+      "minimum_guide_poses": 4
+    },
+    "8": {
+      "action": "turn-back",
+      "minimum_guide_poses": 4
+    }
+  },
+  "painting_contract": {
+    "acceptance": false,
+    "camera": "One measured uniform camera/placement correction per action atlas, preserve every source and rejected revision; no per-frame stretch, warping, auto-fit or idle-as-action",
+    "continuity": "Use each unit's own model/upgrade definition and all actual pose guides; preserve joint contacts and independent silhouettes",
+    "required_capability": "ChatGPT image-generation skill / built-in image_gen.imagegen or human painted masters",
+    "review": [
+      "transparent background and no baked floor",
+      "ground contact at native pivot",
+      "no cross-cell contamination",
+      "whole action semantics and projectile release",
+      "base/upgrade silhouette and equipment distinction",
+      "genuine Noxus emblem legibility and provenance",
+      "native original/Demacia comparison",
+      "real native runtime review"
+    ],
+    "status": "blocked-missing-painted-masters",
+    "style": "Original Heroes III native painted/prerendered treatment, restrained highlights, matte iron/crimson/black, upper-left lighting; not glossy modern 3D, flat vector or splash art"
+  },
+  "pipeline": [
+    "art_creature_rigs.py actual Blender assembly",
+    "all groups keyed as genuine skeletal poses",
+    "art_creature_sources.py --review fixed whole-cohort uniform native conversion",
+    "painted master production BLOCKED",
+    "source pins and native action review BLOCKED",
+    "coordinator-only manifest selection, assembly and runtime acceptance NOT PERFORMED"
+  ],
+  "production_recipes": [
+    {
+      "path": "assets/recipes/creatures/minotaurReckoner-battle.json",
+      "sha256": "34dbb33b12f66b3d4e7b9b3f9922f0c2b53f28af905c577fee21547df5bde58f"
+    },
+    {
+      "path": "assets/recipes/creatures/minotaurReckoner-map.json",
+      "sha256": "15282ba1ef99b573e23f3622d3f9b6b81c2818c5a6a3b5f779fc00f17e6e4f4e"
+    },
+    {
+      "path": "assets/recipes/creatures/minotaurReckoner-large.json",
+      "sha256": "0d6e98e005df15a3d7c9cf88c73f83954013f51f9abee43d86b604e44adf04c6"
+    },
+    {
+      "path": "assets/recipes/creatures/minotaurReckoner-small.json",
+      "sha256": "c1d43e36a8306767c5c15a5a7d92b9c97335a4b07ced02ab51bf8d4f7ffa5ec0"
+    },
+    {
+      "path": "assets/recipes/creatures/minotaurReckoner-attackLeft.json",
+      "sha256": "9ade9851d1a778beac554458f2c114d5f085911b6f8bb5d32b258dd2a74efad1"
+    },
+    {
+      "path": "assets/recipes/creatures/minotaurReckoner-attackRight.json",
+      "sha256": "51e9e93cfc919ecc04fa094677dc5fd8eb626fdf9cd1f3a9497729113c76bf10"
+    }
+  ],
+  "status": "authored configuration",
+  "unit": "minotaurReckoner",
+  "visual_approval_granted": false
+}

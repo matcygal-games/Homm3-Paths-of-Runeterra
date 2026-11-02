@@ -1,0 +1,571 @@
+{
+  "artifactMerchant": {
+    "marketModes": [
+      "resource-artifact",
+      "artifact-resource"
+    ],
+    "requires": [
+      "marketplace"
+    ]
+  },
+  "attackGarrisonBonus": {
+    "bonuses": [
+      {
+        "subtype": "primarySkill.attack",
+        "type": "PRIMARY_SKILL",
+        "val": 2
+      }
+    ]
+  },
+  "attackVisitingBonus": {
+    "configuration": {
+      "rewards": [
+        {
+          "message": "@core.genrltxt.584",
+          "primary": {
+            "attack": 1
+          }
+        }
+      ],
+      "visitMode": "hero"
+    }
+  },
+  "ballistaYard": {
+    "warMachine": "ballista"
+  },
+  "blacksmith": {
+    "id": 16
+  },
+  "brotherhoodOfSword": {
+    "bonuses": [
+      {
+        "type": "MORALE",
+        "val": 2
+      }
+    ]
+  },
+  "capitol": {
+    "id": 13,
+    "produce": {
+      "gold": 4000
+    },
+    "requires": [
+      "castle"
+    ],
+    "upgrades": "cityHall"
+  },
+  "castle": {
+    "fortifications": {
+      "lowerTowerHealth": 2,
+      "upperTowerHealth": 2,
+      "wallsHealth": 3
+    },
+    "id": 9,
+    "upgrades": "citadel"
+  },
+  "citadel": {
+    "fortifications": {
+      "citadelHealth": 2,
+      "hasMoat": true
+    },
+    "id": 8,
+    "upgrades": "fort"
+  },
+  "cityHall": {
+    "id": 12,
+    "produce": {
+      "gold": 2000
+    },
+    "requires": [
+      "allOf",
+      [
+        "mageGuild1"
+      ],
+      [
+        "marketplace"
+      ],
+      [
+        "blacksmith"
+      ]
+    ],
+    "upgrades": "townHall"
+  },
+  "creatureTransformer": {
+    "marketModes": [
+      "creature-undead"
+    ]
+  },
+  "defenceVisitingBonus": {
+    "configuration": {
+      "rewards": [
+        {
+          "message": "@core.genrltxt.585",
+          "primary": {
+            "defence": 1
+          }
+        }
+      ],
+      "visitMode": "hero"
+    }
+  },
+  "defenseGarrisonBonus": {
+    "bonuses": [
+      {
+        "subtype": "primarySkill.defence",
+        "type": "PRIMARY_SKILL",
+        "val": 2
+      }
+    ]
+  },
+  "dwellingLvl1": {
+    "id": 30
+  },
+  "dwellingLvl2": {
+    "id": 31
+  },
+  "dwellingLvl3": {
+    "id": 32
+  },
+  "dwellingLvl4": {
+    "id": 33
+  },
+  "dwellingLvl5": {
+    "id": 34
+  },
+  "dwellingLvl6": {
+    "id": 35
+  },
+  "dwellingLvl7": {
+    "id": 36
+  },
+  "dwellingLvl8": {
+    "id": 150
+  },
+  "dwellingUp2Lvl1": {
+    "id": 44
+  },
+  "dwellingUp2Lvl2": {
+    "id": 45
+  },
+  "dwellingUp2Lvl3": {
+    "id": 46
+  },
+  "dwellingUp2Lvl4": {
+    "id": 47
+  },
+  "dwellingUp2Lvl5": {
+    "id": 48
+  },
+  "dwellingUp2Lvl6": {
+    "id": 49
+  },
+  "dwellingUp2Lvl7": {
+    "id": 50
+  },
+  "dwellingUp2Lvl8": {
+    "id": 152
+  },
+  "dwellingUp3Lvl1": {
+    "id": 51
+  },
+  "dwellingUp3Lvl2": {
+    "id": 52
+  },
+  "dwellingUp3Lvl3": {
+    "id": 53
+  },
+  "dwellingUp3Lvl4": {
+    "id": 54
+  },
+  "dwellingUp3Lvl5": {
+    "id": 55
+  },
+  "dwellingUp3Lvl6": {
+    "id": 56
+  },
+  "dwellingUp3Lvl7": {
+    "id": 57
+  },
+  "dwellingUp3Lvl8": {
+    "id": 153
+  },
+  "dwellingUp4Lvl1": {
+    "id": 58
+  },
+  "dwellingUp4Lvl2": {
+    "id": 59
+  },
+  "dwellingUp4Lvl3": {
+    "id": 60
+  },
+  "dwellingUp4Lvl4": {
+    "id": 61
+  },
+  "dwellingUp4Lvl5": {
+    "id": 62
+  },
+  "dwellingUp4Lvl6": {
+    "id": 63
+  },
+  "dwellingUp4Lvl7": {
+    "id": 64
+  },
+  "dwellingUp4Lvl8": {
+    "id": 154
+  },
+  "dwellingUp5Lvl1": {
+    "id": 65
+  },
+  "dwellingUp5Lvl2": {
+    "id": 66
+  },
+  "dwellingUp5Lvl3": {
+    "id": 67
+  },
+  "dwellingUp5Lvl4": {
+    "id": 68
+  },
+  "dwellingUp5Lvl5": {
+    "id": 69
+  },
+  "dwellingUp5Lvl6": {
+    "id": 70
+  },
+  "dwellingUp5Lvl7": {
+    "id": 71
+  },
+  "dwellingUp5Lvl8": {
+    "id": 155
+  },
+  "dwellingUpLvl1": {
+    "id": 37
+  },
+  "dwellingUpLvl2": {
+    "id": 38
+  },
+  "dwellingUpLvl3": {
+    "id": 39
+  },
+  "dwellingUpLvl4": {
+    "id": 40
+  },
+  "dwellingUpLvl5": {
+    "id": 41
+  },
+  "dwellingUpLvl6": {
+    "id": 42
+  },
+  "dwellingUpLvl7": {
+    "id": 43
+  },
+  "dwellingUpLvl8": {
+    "id": 151
+  },
+  "experienceVisitingBonus": {
+    "configuration": {
+      "rewards": [
+        {
+          "heroExperience": 1000,
+          "message": "@core.genrltxt.583"
+        }
+      ],
+      "visitMode": "hero"
+    }
+  },
+  "extraCapitol": {
+    "id": 29,
+    "mode": "auto",
+    "requires": [
+      "capitol"
+    ]
+  },
+  "extraCityHall": {
+    "id": 28,
+    "mode": "auto",
+    "requires": [
+      "cityHall"
+    ]
+  },
+  "extraTownHall": {
+    "id": 27,
+    "mode": "auto",
+    "requires": [
+      "townHall"
+    ]
+  },
+  "fort": {
+    "fortifications": {
+      "wallsHealth": 2
+    },
+    "id": 7
+  },
+  "fountainOfFortune": {
+    "bonuses": [
+      {
+        "type": "LUCK",
+        "val": 2
+      }
+    ]
+  },
+  "freelancersGuild": {
+    "marketModes": [
+      "creature-resource"
+    ],
+    "requires": [
+      "marketplace"
+    ]
+  },
+  "grail": {
+    "id": 26,
+    "mode": "grail",
+    "produce": {
+      "gold": 5000
+    }
+  },
+  "horde1": {
+    "id": 18
+  },
+  "horde1Upgr": {
+    "id": 19,
+    "mode": "auto"
+  },
+  "horde1Upgr2": {
+    "id": 100,
+    "mode": "auto"
+  },
+  "horde1Upgr3": {
+    "id": 101,
+    "mode": "auto"
+  },
+  "horde1Upgr4": {
+    "id": 102,
+    "mode": "auto"
+  },
+  "horde1Upgr5": {
+    "id": 103,
+    "mode": "auto"
+  },
+  "horde2": {
+    "id": 24
+  },
+  "horde2Upgr": {
+    "id": 25,
+    "mode": "auto"
+  },
+  "horde2Upgr2": {
+    "id": 110,
+    "mode": "auto"
+  },
+  "horde2Upgr3": {
+    "id": 111,
+    "mode": "auto"
+  },
+  "horde2Upgr4": {
+    "id": 112,
+    "mode": "auto"
+  },
+  "horde2Upgr5": {
+    "id": 113,
+    "mode": "auto"
+  },
+  "knowledgeVisitingBonus": {
+    "configuration": {
+      "rewards": [
+        {
+          "message": "@core.genrltxt.581",
+          "primary": {
+            "knowledge": 1
+          }
+        }
+      ],
+      "visitMode": "hero"
+    }
+  },
+  "lighthouse": {
+    "bonuses": [
+      {
+        "propagator": "PLAYER",
+        "subtype": "heroMovementSea",
+        "type": "MOVEMENT",
+        "val": 500
+      }
+    ]
+  },
+  "mageGuild1": {
+    "id": 0
+  },
+  "mageGuild2": {
+    "id": 1,
+    "upgrades": "mageGuild1"
+  },
+  "mageGuild3": {
+    "id": 2,
+    "upgrades": "mageGuild2"
+  },
+  "mageGuild4": {
+    "id": 3,
+    "upgrades": "mageGuild3"
+  },
+  "mageGuild5": {
+    "id": 4,
+    "upgrades": "mageGuild4"
+  },
+  "magicUniversity": {
+    "marketModes": [
+      "resource-skill"
+    ]
+  },
+  "manaVortex": {
+    "configuration": {
+      "resetParameters": {
+        "visitors": true,
+        "weeks": 1
+      },
+      "rewards": [
+        {
+          "limiter": {
+            "noneOf": [
+              {
+                "manaPercentage": 200
+              }
+            ]
+          },
+          "manaPercentage": 200,
+          "message": "@core.genrltxt.579"
+        }
+      ],
+      "visitMode": "hero"
+    }
+  },
+  "marketplace": {
+    "bonuses": [
+      {
+        "propagator": "PLAYER",
+        "type": "MARKETPLACE_ACCESS",
+        "val": 1
+      }
+    ],
+    "id": 14,
+    "marketModes": [
+      "resource-resource",
+      "resource-player"
+    ]
+  },
+  "resourceSilo": {
+    "id": 15,
+    "requires": [
+      "marketplace"
+    ]
+  },
+  "ship": {
+    "id": 20,
+    "upgrades": "shipyard"
+  },
+  "shipyard": {
+    "id": 6
+  },
+  "special1": {
+    "id": 17
+  },
+  "special2": {
+    "id": 21
+  },
+  "special3": {
+    "id": 22
+  },
+  "special4": {
+    "id": 23
+  },
+  "spellPowerGarrisonBonus": {
+    "bonuses": [
+      {
+        "subtype": "primarySkill.spellpower",
+        "type": "PRIMARY_SKILL",
+        "val": 2
+      }
+    ]
+  },
+  "spellPowerVisitingBonus": {
+    "configuration": {
+      "rewards": [
+        {
+          "message": "@core.genrltxt.582",
+          "primary": {
+            "spellpower": 1
+          }
+        }
+      ],
+      "visitMode": "hero"
+    }
+  },
+  "stables": {
+    "configuration": {
+      "rewards": [
+        {
+          "bonuses": [
+            {
+              "duration": "ONE_WEEK",
+              "subtype": "heroMovementLand",
+              "type": "MOVEMENT",
+              "val": 400,
+              "valueType": "ADDITIVE_VALUE"
+            }
+          ],
+          "message": "@core.genrltxt.580",
+          "movePoints": 400
+        }
+      ],
+      "visitMode": "bonus"
+    }
+  },
+  "tavern": {
+    "bonuses": [
+      {
+        "type": "MORALE",
+        "val": 1
+      },
+      {
+        "propagator": "PLAYER",
+        "type": "THIEVES_GUILD_ACCESS",
+        "val": 1
+      }
+    ],
+    "id": 5
+  },
+  "thievesGuild": {
+    "bonuses": [
+      {
+        "propagator": "PLAYER",
+        "type": "THIEVES_GUILD_ACCESS",
+        "val": 2
+      }
+    ]
+  },
+  "townHall": {
+    "id": 11,
+    "produce": {
+      "gold": 1000
+    },
+    "requires": [
+      "tavern"
+    ],
+    "upgrades": "villageHall"
+  },
+  "villageHall": {
+    "bonuses": [
+      {
+        "type": "BATTLE_CAN_FLEE",
+        "val": -10
+      },
+      {
+        "type": "BATTLE_CAN_SURRENDER",
+        "val": -10
+      }
+    ],
+    "id": 10,
+    "mode": "auto",
+    "produce": {
+      "gold": 500
+    }
+  }
+}

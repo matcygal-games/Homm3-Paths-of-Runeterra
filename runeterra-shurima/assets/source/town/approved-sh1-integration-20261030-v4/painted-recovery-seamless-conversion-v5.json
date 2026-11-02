@@ -1,0 +1,134 @@
+{
+  "method": "Standard Poisson/gradient-domain composition of genuinely painted imagegen sources; four-neighbour native Laplacian, fixed original/background values outside architecture-owned masks; RGB8 round-and-clip.",
+  "new_skyline_recoveries": {
+    "guild-crown": {
+      "mask": {
+        "path": "assets/source/town/approved-sh1-integration-20261030-v4/geometry/guild-crown-recovery-budget.png",
+        "sha256": "82b7331a77e29a6324f6c6c6f27488d6f5eb3bde32357f6401f0adac6663a1cb"
+      },
+      "solve": [
+        {
+          "channel": 0,
+          "iterations": 33,
+          "maximum_equation_residual": 6.5653879262885005e-09
+        },
+        {
+          "channel": 1,
+          "iterations": 33,
+          "maximum_equation_residual": 4.99016328797061e-09
+        },
+        {
+          "channel": 2,
+          "iterations": 33,
+          "maximum_equation_residual": 7.638547852660033e-09
+        }
+      ],
+      "source": {
+        "path": "assets/source/town/approved-sh1-integration-20261030-v4/empty-recovery-native.png",
+        "sha256": "298e559d50b3e767623cf4e33847679bf0acfbfa2fae2d3111d386be016254c2"
+      }
+    },
+    "solar-spire": {
+      "mask": {
+        "path": "assets/source/town/approved-sh1-integration-20261030-v4/geometry/solar-spire-recovery-budget.png",
+        "sha256": "16e406e5a9da6cc56870f3ae40a5308b0ce96d27684b865745eb3d380db7a23f"
+      },
+      "solve": [
+        {
+          "channel": 0,
+          "iterations": 59,
+          "maximum_equation_residual": 5.560193525135143e-09
+        },
+        {
+          "channel": 1,
+          "iterations": 59,
+          "maximum_equation_residual": 9.401167918001058e-09
+        },
+        {
+          "channel": 2,
+          "iterations": 56,
+          "maximum_equation_residual": 9.171739467061538e-09
+        }
+      ],
+      "source": {
+        "path": "assets/source/town/approved-sh1-integration-20261030-v4/empty-recovery-native.png",
+        "sha256": "298e559d50b3e767623cf4e33847679bf0acfbfa2fae2d3111d386be016254c2"
+      }
+    }
+  },
+  "numpy_version": "2.5.4",
+  "output": {
+    "path": "assets/source/town/approved-sh1-integration-20261030-v4/painted-recovery-seamless-native-v5.png",
+    "sha256": "39ef504809ee0ac535ac06beed762b6105142af6e6c99e3d04fd89546d5ef945"
+  },
+  "outside_recovery_mask_changes": null,
+  "painted_sources": [
+    {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/sky-inpaint-native-crop-v2.png",
+      "sha256": "ed777956dd3f64bb9bc1d41a89d3d4dcfb51f7c4dd0f518bc2635cf299d74231"
+    },
+    {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/sky-repair-raw-v4.png",
+      "sha256": "bfaa58863202ef4c291c8e88cd1a975853ca9f7cd3d77ee1e1e23ee95f4d8d88"
+    },
+    {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/civic-finial-removal-raw-v1.png",
+      "sha256": "f4ff9649033ca9911f93af18d21656849704bc07bd7f76ddd5993a223ebc2fe7"
+    }
+  ],
+  "pole_mask": {
+    "path": "assets/source/town/approved-sh1-integration-20261030-v4/geometry/civic-finial-recovery-budget.png",
+    "sha256": "22e1a4598a9196a1e452bea8ba1a94cfffa4b6680f1fd7a9f9e0da4698935c51"
+  },
+  "producer": {
+    "path": "assets/source/town/approved-sh1-integration-20261030-v4/blend_painted_recovery.py",
+    "sha256": "424be7eac435cbfa94560677f37bfb2812a428f7c8feee8743a467b1b5c6df68"
+  },
+  "sky_mask": {
+    "path": "assets/source/town/approved-sh1-integration-20261030-v4/geometry/sky-recovery-budget.png",
+    "sha256": "7deac59ee1b46fba897a287cc94a0fee15eb1d4a48e2cb59621850c237645bdb"
+  },
+  "solves": {
+    "pole": [
+      {
+        "channel": 0,
+        "iterations": 136,
+        "maximum_equation_residual": 8.116115901478685e-09
+      },
+      {
+        "channel": 1,
+        "iterations": 138,
+        "maximum_equation_residual": 9.087362260241647e-09
+      },
+      {
+        "channel": 2,
+        "iterations": 137,
+        "maximum_equation_residual": 7.518526406564762e-09
+      }
+    ],
+    "sky": [
+      {
+        "channel": 0,
+        "iterations": 212,
+        "maximum_equation_residual": 8.22751188626041e-09
+      },
+      {
+        "channel": 1,
+        "iterations": 207,
+        "maximum_equation_residual": 7.975136152239403e-09
+      },
+      {
+        "channel": 2,
+        "iterations": 210,
+        "maximum_equation_residual": 7.848003076103213e-09
+      }
+    ]
+  },
+  "source_transforms": {
+    "pole": "Crop generator black margin (27,0,width,height), whole remaining image Lanczos25x81, paste443,36",
+    "sky_v2": "Preserve painted ridge: paste126x56at70,0",
+    "sky_v4": "Whole clean generated cloud painting Lanczos127x34, paste70,0 above the painted ridge"
+  },
+  "status": "authored configuration",
+  "visual_approval_granted": false
+}

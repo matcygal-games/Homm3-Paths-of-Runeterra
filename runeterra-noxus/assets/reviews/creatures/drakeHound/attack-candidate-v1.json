@@ -1,0 +1,100 @@
+{
+  "art_accepted": false,
+  "checks": {
+    "distinct_equipment": true,
+    "full_alpha_ownership_accepted": false,
+    "independently_painted_opposing_attack_poses": true,
+    "native_approach_orientation_executed": false,
+    "native_scale": true,
+    "not_mirrored_idle": true,
+    "not_recolored_original": true,
+    "official_equipment_heraldry_applied": false,
+    "original_game_native_comparison": false,
+    "redistribution_cleared": false,
+    "upgrade_readability": true
+  },
+  "findings": [
+    "Actual native64x64 alpha-composited contact sheet inspected; poses face opposing directions and show attacks.",
+    "Every kept source RGBA pixel is preserved exactly; nearest-principal ownership masks remove only the other independently painted pose. Soft alpha ownership remains a candidate, not acceptance.",
+    "Original and selected Demacia material/lighting style was referenced read-only in art direction; no original or Demacia pixels/rigs were copied.",
+    "Official heraldry is verified separately but has not been painted onto these creature body/action sources. Plain harnesses remain.",
+    "No game, AI, battle, siege, animation, balance or release acceptance is supplied by static icon compilation."
+  ],
+  "native_contact_sheet": {
+    "path": "build/reports/art-start-20261020/creatures/beasts/attack-candidates-v1/native-directional-contact.png",
+    "sha256": "768af5ef3e009cb68e470d7408fbad9ed4744f121747a77aaac7f5b1a76d099d"
+  },
+  "outputs": [
+    {
+      "atlas_extraction": {
+        "atlas_sha256": "c6da78646fb540d4aa202aa8d380f8c1da8a0960b261ed6a778fc7e017d0110b",
+        "atlas_source": "assets/source/creatures/drakeHound/painted-imagegen-v1/directional-attacks-v1.png",
+        "component": {
+          "box": [
+            20,
+            221,
+            813,
+            840
+          ],
+          "id": 3,
+          "pixels": 185951
+        },
+        "distance": "Manhattan; equal distance assigned to left pose",
+        "full_alpha_ownership_review": "pending",
+        "kept_pixels_equal_original": true,
+        "mask": "assets/source/creatures/drakeHound/painted-imagegen-v1/attack-ownership-v1/attack-left-ownership.png",
+        "mask_sha256": "75ac2e187f1b59334300dd42470ae76c928451bb6d02da47d497005819f8e15b",
+        "method": "nearest-principal-opaque-component ownership; exact kept RGBA pixels",
+        "mirroring_used": false,
+        "opaque_seed_threshold": 64
+      },
+      "id": "drakeHound-attackLeft",
+      "path": "Content/Sprites/runeterra/noxus/creatures/drakeHound/attackLeft.png",
+      "recipe": "assets/recipes/creatures/drakeHound-attackLeft.json",
+      "recipe_sha256": "d9cd052e6dd6be80ba0f6acd9a16ce9fe4821804941f197eb110036eb8c7d7a7",
+      "role": "attackLeft",
+      "sha256": "834824bd6e4849456179f58dd9f3b0f936d49adda898139c241f27dc1a3d9291",
+      "source": "assets/source/creatures/drakeHound/painted-imagegen-v1/attack-ownership-v1/attack-left-source.png",
+      "source_sha256": "377349a36ed1621195a9b96bfea54bdd3281f0b4b013cf0531c78898e1555bbf"
+    },
+    {
+      "atlas_extraction": {
+        "atlas_sha256": "c6da78646fb540d4aa202aa8d380f8c1da8a0960b261ed6a778fc7e017d0110b",
+        "atlas_source": "assets/source/creatures/drakeHound/painted-imagegen-v1/directional-attacks-v1.png",
+        "component": {
+          "box": [
+            821,
+            208,
+            1519,
+            778
+          ],
+          "id": 1,
+          "pixels": 183202
+        },
+        "distance": "Manhattan; equal distance assigned to left pose",
+        "full_alpha_ownership_review": "pending",
+        "kept_pixels_equal_original": true,
+        "mask": "assets/source/creatures/drakeHound/painted-imagegen-v1/attack-ownership-v1/attack-right-ownership.png",
+        "mask_sha256": "3ac9d8484fe2016bcf9b457f26c07b3b207b6716414e7210327c89917e773b21",
+        "method": "nearest-principal-opaque-component ownership; exact kept RGBA pixels",
+        "mirroring_used": false,
+        "opaque_seed_threshold": 64
+      },
+      "id": "drakeHound-attackRight",
+      "path": "Content/Sprites/runeterra/noxus/creatures/drakeHound/attackRight.png",
+      "recipe": "assets/recipes/creatures/drakeHound-attackRight.json",
+      "recipe_sha256": "2b6d69b36b3f2fe8ece2bc1902199466e521dff991a542427b3ddaa3bd5023b6",
+      "role": "attackRight",
+      "sha256": "90da72fc362cc61b2ed86f1c4a98d7edf5b22557f00fc1d75b35108469e8b6bb",
+      "source": "assets/source/creatures/drakeHound/painted-imagegen-v1/attack-ownership-v1/attack-right-source.png",
+      "source_sha256": "5b7311a2190219d0e6ce343e3d4dd9b3b29a009e503cd90bc51338b65baa0c28"
+    }
+  ],
+  "review_status": "pending",
+  "reviewer": "Codex /root/noxus_beast_art",
+  "runtime_verified": false,
+  "schemaVersion": 1,
+  "status": "authored configuration",
+  "unit": "drakeHound",
+  "visual_approval_granted": false
+}

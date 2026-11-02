@@ -1,0 +1,15 @@
+<!doctype html><meta charset="utf-8"><title>Noxus demon candidate action review</title>
+<style>body{background:#ddd6c4;color:#222;font:16px system-ui;margin:24px}img{max-width:100%;image-rendering:auto}article{padding:16px;border:1px solid #aaa;margin-bottom:20px}figure{margin:16px 0}figcaption{font-size:14px}h1,h2{font-weight:600}p{max-width:90ch}</style>
+<h1>Noxus demon candidate action review</h1>
+<p>Authored configuration. Native pixel contact sheets and actual sequence previews; these are offline assets, not game screenshots or release acceptance.</p>
+<figure><img src="base-upgrade-native-hover.png"><figcaption>Native base/upgrade low hover.</figcaption></figure>
+<main id="review"></main>
+<script>
+for(const unit of ['ruinBringer','greaterRuinBringer']){
+ const article=document.createElement('article');article.innerHTML='<h2>'+unit+'</h2><img src="'+unit+'/native-portraits-and-attack-icons.png"><p>Eight actual map flight phases</p><img src="'+unit+'/map-native.png">';
+ for(const [group,label] of [[0,'Flight'],[1,'Fidget'],[2,'Low hover'],[3,'Hit'],[4,'Defend'],[5,'Collapse'],[7,'Right to front'],[8,'Front to canonical right'],[11,'Upward strike'],[12,'Forward strike'],[13,'Downward strike'],[20,'Rise'],[21,'Descend'],[22,'Corpse']]){
+  const stem='g'+String(group).padStart(2,'0')+'-native';const figure=document.createElement('figure');figure.innerHTML='<figcaption>'+label+' · g'+group+'</figcaption><img src="'+unit+'/'+stem+'.webp"><details><summary>All poses at native size</summary><img src="'+unit+'/'+stem+'.png"></details>';article.appendChild(figure);
+ }
+ const turn=document.createElement('figure');turn.innerHTML='<figcaption>Engine facing mirror between half turns</figcaption><img src="'+unit+'/engine-half-turn-order.webp">';article.appendChild(turn);document.querySelector('#review').appendChild(article);
+}
+</script>

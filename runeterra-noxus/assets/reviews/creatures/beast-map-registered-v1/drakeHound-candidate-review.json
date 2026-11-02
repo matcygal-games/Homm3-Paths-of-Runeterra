@@ -1,0 +1,52 @@
+{
+  "asset_sha256": "a59406ca9be7f9a61b0d1442017f7ec425fbdfdd1a571fe65db2ad3dae1b0ab3",
+  "checks": {
+    "distinct_equipment": true,
+    "distinct_silhouette": true,
+    "native_scale": true,
+    "not_recolored_original": true,
+    "upgrade_readability": true
+  },
+  "comparison_sha256": "c283a76f125843e3ce8a234ac110ebfd5b4cf1d61c53369164678ee025ce3741",
+  "comparison_sheet": "assets/reviews/creatures/beast-map-registered-v1/native-comparison.png",
+  "credits": {
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "findings": [
+    "Viewed six actual alpha-composited map atlases, explicit registration references and all40native frames at1:1.",
+    "Actual walking phases or thorn-wing flight poses, not copied idle silhouettes; all native RGBA frame hashes are distinct within their own unit.",
+    "Exactly one fixed global scale per unit and integer translation from explicit common row/column ground-plane or sternum landmarks.",
+    "No per-pose bbox normalization, body warping or world-foot snap; source foot bob and wing arcs remain in the native images.",
+    "Separate strong-alpha connected figures permit complete flying poses despite overlapping rectangular row bands; detached near-transparent atlas noise is not imported.",
+    "No strong-alpha pixel touches a native canvas edge; no whole figure is clipped by an atlas rectangle."
+  ],
+  "frame_sha256": {
+    "Content/Sprites/runeterra/noxus/creatures/drakeHound/map-frames/g00-f000.png": "a679e86647ce4b82d124c44e0417811f11a5d5c67d88839758b3a718138075c2",
+    "Content/Sprites/runeterra/noxus/creatures/drakeHound/map-frames/g00-f001.png": "bfeaeb866936fb0c351b0ec0edf71a90c0768a3b72350187d379c001e3b4151b",
+    "Content/Sprites/runeterra/noxus/creatures/drakeHound/map-frames/g00-f002.png": "99b8e81ab8e20301b601075794a40187b48689027508f1aedd28a2824c18d16e",
+    "Content/Sprites/runeterra/noxus/creatures/drakeHound/map-frames/g00-f003.png": "33c66b3edfcbbb187a514a17159fccaeb9ba43a8aa3085ea170081c7e189863f",
+    "Content/Sprites/runeterra/noxus/creatures/drakeHound/map-frames/g00-f004.png": "a3dacdeb4da35cfcb7642fb68c0db37dc68461ef767c2b99b3d3865c5edb4929",
+    "Content/Sprites/runeterra/noxus/creatures/drakeHound/map-frames/g00-f005.png": "2909bc9d6af8d13bd46938b7ceb43036ee2e5c3e68e481977a9bdeb05b3aa518"
+  },
+  "output_path": "Content/Sprites/runeterra/noxus/creatures/drakeHound/map.json",
+  "pending": [
+    "Native VCMI adventure footprint, facing, player ownership tint/shadow, scale, timing and positional stability review.",
+    "Source pose/anatomy/camera continuity, including relative demon body size across base/upgrade cohorts.",
+    "The demon upgrade is not yet distinct enough at small map scale to affirm upgrade readability.",
+    "Official regional crest evidence and redistribution licence clearance remain unresolved."
+  ],
+  "recipe_sha256": "011870d94f2da93ed48b47cc62d2bb7639a22b249e71bf828c3629cfebbd54a1",
+  "registration_evidence": "build/reports/art-start-20261020/beast-maps/drakeHound-registration.json",
+  "registration_sha256": "f7e3fca56a93bed699446650abe869f6ee901353d78245e69c2e5bd0c31bcc81",
+  "release_accepted": false,
+  "review_status": "candidate native-sheet review; not accepted",
+  "reviewer": "Codex /root/noxus_portraits",
+  "runtime_verified": false,
+  "source_atlas": "assets/source/creatures/drakeHound/painted-imagegen-v1/map-atlas-v1.png",
+  "source_atlas_sha256": "c15cbabf6d7e83545f50b7aa4a955023b874abe7222c08e75ab16cd2762aca07",
+  "status": "authored configuration",
+  "uniform_scale": 0.125,
+  "unit_id": "drakeHound",
+  "visual_approval_granted": false
+}

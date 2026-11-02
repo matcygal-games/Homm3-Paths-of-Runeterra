@@ -1,0 +1,125 @@
+--- a/AI/Nullkiller2/AIGateway.cpp
++++ b/AI/Nullkiller2/AIGateway.cpp
+@@ -418,14 +418,8 @@
+ void AIGateway::requestRealized(PackageApplied * pa)
+ {
+ 	LOG_TRACE(logAi);
+-	if(status.haveTurn())
+-	{
+-		if(pa->packType == CTypeList::getInstance().getTypeID<EndTurn>(nullptr))
+-		{
+-			if(pa->result)
+-				status.madeTurn();
+-		}
+-	}
++	if(pa->packType == CTypeList::getInstance().getTypeID<EndTurn>(nullptr))
++		status.receivedEndTurnConfirmation(pa->requestID, pa->result);
+ 
+ 	if(pa->packType == CTypeList::getInstance().getTypeID<CastAdvSpell>(nullptr))
+ 		lastAdventureCastSucceeded = pa->result;
+@@ -1495,6 +1489,7 @@
+ 
+ void AIGateway::endTurn()
+ {
++	const auto generation = status.getTurnGeneration();
+ 	logAi->info("Player %d (%s) ends turn", playerID, playerID.toString());
+ 	if(!status.haveTurn())
+ 	{
+@@ -1516,7 +1511,7 @@
+ 	{
+ 		cc->endTurn();
+ 	}
+-	while(status.haveTurn()); //for some reasons, our request may fail -> stop requesting end of turn only after we've received a confirmation that it's over
++	while(status.haveTurn(generation)); // A rejected request may be retried, but a newer turn belongs to its own task.
+ 
+ 	logGlobal->info("Player %d (%s) ended turn", playerID, playerID.toString());
+ }
+@@ -1582,7 +1577,8 @@
+ 
+ void AIGateway::requestSent(const CPackForServer * pack, int requestID)
+ {
+-	//BNLOG("I have sent request of type %s", typeid(*pack).name());
++	if(dynamic_cast<const EndTurn *>(pack))
++		status.attemptedEndingTurn(requestID);
+ 	if(auto reply = dynamic_cast<const QuestionAnswer *>(pack))
+ 	{
+ 		status.attemptedAnsweringQuestion(reply->questionID, requestID);
+@@ -1677,14 +1673,39 @@
+ void AIStatus::startedTurn()
+ {
+ 	std::unique_lock<std::mutex> lock(mx);
++	++turnGeneration;
+ 	havingTurn = true;
+ 	cv.notify_all();
+ }
+ 
+-void AIStatus::madeTurn()
++uint64_t AIStatus::getTurnGeneration()
+ {
+ 	std::unique_lock<std::mutex> lock(mx);
+-	havingTurn = false;
++	return turnGeneration;
++}
++
++bool AIStatus::haveTurn(uint64_t generation)
++{
++	std::unique_lock<std::mutex> lock(mx);
++	return havingTurn && turnGeneration == generation;
++}
++
++void AIStatus::attemptedEndingTurn(int requestID)
++{
++	std::unique_lock<std::mutex> lock(mx);
++	endTurnRequests.emplace(requestID, turnGeneration);
++}
++
++void AIStatus::receivedEndTurnConfirmation(int requestID, bool accepted)
++{
++	std::unique_lock<std::mutex> lock(mx);
++	auto request = endTurnRequests.find(requestID);
++	if(request == endTurnRequests.end())
++		return;
++
++	if(accepted && request->second == turnGeneration)
++		havingTurn = false;
++	endTurnRequests.erase(request);
+ 	cv.notify_all();
+ }
+ 
+--- a/AI/Nullkiller2/AIGateway.h
++++ b/AI/Nullkiller2/AIGateway.h
+@@ -48,6 +48,8 @@
+ 	bool ongoingChannelProbing; // true if AI currently explore bidirectional teleport channel exits
+ 
+ 	bool havingTurn;
++	uint64_t turnGeneration = 0;
++	std::map<int, uint64_t> endTurnRequests;
+ 
+ public:
+ 	AIStatus(AIGateway * aiGw);
+@@ -61,7 +63,10 @@
+ 	void removeQuestion(QuestionID ID);
+ 	int getQuestionsCount();
+ 	void startedTurn();
+-	void madeTurn();
++	uint64_t getTurnGeneration();
++	bool haveTurn(uint64_t generation);
++	void attemptedEndingTurn(int requestID);
++	void receivedEndTurnConfirmation(int requestID, bool accepted);
+ 	void waitTillFree();
+ 	bool haveTurn();
+ 	void attemptedAnsweringQuestion(QuestionID questionID, int answerRequestID);
+--- a/client/Client.cpp
++++ b/client/Client.cpp
+@@ -514,9 +514,10 @@
+ 	waitingRequest.pushBack(requestID);
+ 	request.requestID = requestID;
+ 	request.player = player;
+-	GAME->server().sendGamePack(request);
++	// Register request ownership before transport can deliver a reply or the next turn.
+ 	if(vstd::contains(playerint, player))
+ 		playerint[player]->requestSent(&request, requestID);
++	GAME->server().sendGamePack(request);
+ 
+ 	if(waitTillRealize)
+ 	{

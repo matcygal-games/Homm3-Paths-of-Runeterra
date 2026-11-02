@@ -1,0 +1,259 @@
+{
+  "config_field_changes": [
+    {
+      "after": 80,
+      "before": 97,
+      "path": [
+        "bandlecity",
+        "town",
+        "structures",
+        "fort",
+        "z"
+      ]
+    },
+    {
+      "after": 80,
+      "before": 97,
+      "path": [
+        "bandlecity",
+        "town",
+        "structures",
+        "citadel",
+        "z"
+      ]
+    },
+    {
+      "after": 80,
+      "before": 97,
+      "path": [
+        "bandlecity",
+        "town",
+        "structures",
+        "castle",
+        "z"
+      ]
+    }
+  ],
+  "config_source_before_sha256": "7d798f1a54dbe4ec65c881f9a2e5839795e8ee35af22c4944d3d55963433a92b",
+  "design_site_replacement_fields": {
+    "center": [
+      268,
+      44
+    ],
+    "common_door": [
+      270,
+      75
+    ],
+    "composition_rectangle": [
+      239,
+      11,
+      58,
+      67
+    ],
+    "native_z": 80,
+    "selected_state_art": {
+      "castle": {
+        "click_bbox": [
+          239,
+          12,
+          297,
+          77
+        ],
+        "click_pixels": 2589,
+        "common_door": [
+          270,
+          75
+        ],
+        "composition_rectangle": [
+          239,
+          11,
+          58,
+          67
+        ],
+        "fit_size": [
+          58,
+          66
+        ],
+        "master": "assets/source/town/bulwark-library-site-repair-20261030-v1/castle-provider-v1.png",
+        "master_sha256": "19477ff0e17b0803745ad8c347fcfbe1e2fe2b1243b65ee3558ed7ba230c0c69",
+        "native_layer": "assets/source/town/bulwark-library-site-repair-20261030-v1/states-v3/castle/layer.png",
+        "native_layer_sha256": "50d09c8ab813339d940f2c4d790c57b9a57fd4c3344c11de2e1cf8b830297deb",
+        "native_z": 80,
+        "site": "fortification",
+        "source_crop_xyxy": [
+          0,
+          0,
+          1144,
+          1375
+        ],
+        "state": "castle",
+        "visual_approval_granted": false
+      },
+      "citadel": {
+        "click_bbox": [
+          243,
+          21,
+          297,
+          77
+        ],
+        "click_pixels": 1999,
+        "common_door": [
+          270,
+          75
+        ],
+        "composition_rectangle": [
+          239,
+          11,
+          58,
+          67
+        ],
+        "fit_size": [
+          54,
+          57
+        ],
+        "master": "assets/source/town/approved-BC1-completion-20261030-v1/civic-states-v1.png",
+        "master_sha256": "f8f08728ada0e1a7649a8da75e6dc2ab33f8e8ac291f6e91ba8a9870d13e3f17",
+        "native_layer": "assets/source/town/bulwark-library-site-repair-20261030-v1/states-v3/citadel/layer.png",
+        "native_layer_sha256": "8834dbcd0cbd2770df83602cdafc61b2b71d97f7827c2229ac0ff9465291e347",
+        "native_z": 80,
+        "site": "fortification",
+        "source_crop_xyxy": [
+          0,
+          500,
+          455,
+          1024
+        ],
+        "state": "citadel",
+        "visual_approval_granted": false
+      },
+      "fort": {
+        "click_bbox": [
+          249,
+          19,
+          295,
+          78
+        ],
+        "click_pixels": 1438,
+        "common_door": [
+          270,
+          75
+        ],
+        "composition_rectangle": [
+          239,
+          11,
+          58,
+          67
+        ],
+        "fit_size": [
+          46,
+          60
+        ],
+        "master": "assets/source/town/approved-BC1-completion-20261030-v1/civic-states-v1.png",
+        "master_sha256": "f8f08728ada0e1a7649a8da75e6dc2ab33f8e8ac291f6e91ba8a9870d13e3f17",
+        "native_layer": "assets/source/town/bulwark-library-site-repair-20261030-v1/states-v3/fort/layer.png",
+        "native_layer_sha256": "3e396f4cdb495460e40f93e180cfdb3ba2cda48365972564009de72f7a14b114",
+        "native_z": 80,
+        "site": "fortification",
+        "source_crop_xyxy": [
+          1180,
+          0,
+          1536,
+          500
+        ],
+        "state": "fort",
+        "visual_approval_granted": false
+      }
+    },
+    "site_id": "fortification"
+  },
+  "design_source_before_sha256": "1c231ea4caae3fb94d56272a0c5d7d5d820115b396030a38881ace175b745276",
+  "instructions": "Coordinator must merge only these fields, update its sealed recipe selections/manifest, regenerate outputs with existing pipeline, and run fresh source checks. No direct profile patch. Keep prior BC1 selected source intact as history.",
+  "recipes": [
+    {
+      "before_sha256": "712b57ec82d9db4856290315c8e89a904610d459af0aa7bb2880375150a3fb13",
+      "candidate": "assets/source/town/bulwark-library-site-repair-20261030-v1/candidate-v3/recipes/background.json",
+      "candidate_sha256": "bd47d1d959aec9d4b4814af35b35b4e04074bebec06b682654df32da1897bd7d",
+      "canonical": "assets/recipes/town/background.json"
+    },
+    {
+      "before_sha256": "616cc04a500903a896905e45ccc150bab1caa1f2269a24aef54349641a575bd1",
+      "candidate": "assets/source/town/bulwark-library-site-repair-20261030-v1/candidate-v3/recipes/buildingIcons.json",
+      "candidate_sha256": "b69035ace07cfa0069a324bd4a3f594c908fd830b56e405a307efddddc98b6f7",
+      "canonical": "assets/recipes/town/buildingIcons.json"
+    },
+    {
+      "before_sha256": "1c76c4de80e3c1f08601098a3ceaebbdacd0a23798c0420234985c4282f30087",
+      "candidate": "assets/source/town/bulwark-library-site-repair-20261030-v1/candidate-v3/recipes/structures/fort-animation.json",
+      "candidate_sha256": "639e20c896e01b5e3d469e95639076e494ecbe5b1ef4fa1f0077c12dfc3bfdb9",
+      "canonical": "assets/recipes/town/structures/fort-animation.json"
+    },
+    {
+      "before_sha256": "5f05b04a5daaa28937e5f14d81558043726f7058e1c00e49cf26f39e09fc33b2",
+      "candidate": "assets/source/town/bulwark-library-site-repair-20261030-v1/candidate-v3/recipes/structures/fort-area.json",
+      "candidate_sha256": "f217ab1695c49f6de5aad12effbea0bfaa9a0df90a4b673a977051508db27f4d",
+      "canonical": "assets/recipes/town/structures/fort-area.json"
+    },
+    {
+      "before_sha256": "069326a31e792e317b9259d2e69ace168e95c584a9d6275d3992eb639c005330",
+      "candidate": "assets/source/town/bulwark-library-site-repair-20261030-v1/candidate-v3/recipes/structures/fort-border.json",
+      "candidate_sha256": "4f117d55f50bf507ae89b3221ce16797d0516bac9e39e92957cfc91f64b8c10c",
+      "canonical": "assets/recipes/town/structures/fort-border.json"
+    },
+    {
+      "before_sha256": "c5264e93ae5ffee91380df3d81eb9fa60a13acaaa040c8d057f0ce4f991bed15",
+      "candidate": "assets/source/town/bulwark-library-site-repair-20261030-v1/candidate-v3/recipes/structures/fort-campaign.json",
+      "candidate_sha256": "8ee6e556cf256778be78efec975bce65d456849a02153c51f4bcda85026ef808",
+      "canonical": "assets/recipes/town/structures/fort-campaign.json"
+    },
+    {
+      "before_sha256": "439eb8f2162f32f75c9f7e3c4bc2b3e3165f706a52ea5ddac4c10d2ec142ec7d",
+      "candidate": "assets/source/town/bulwark-library-site-repair-20261030-v1/candidate-v3/recipes/structures/citadel-animation.json",
+      "candidate_sha256": "01a74ea4af7c2c96fdeec3847547fbc2c035075ce642e3bbec6348d7215ac91a",
+      "canonical": "assets/recipes/town/structures/citadel-animation.json"
+    },
+    {
+      "before_sha256": "5ffb0d0027484a274e08cdf4805b50732215e41ecc12e22ba22aef37ea069037",
+      "candidate": "assets/source/town/bulwark-library-site-repair-20261030-v1/candidate-v3/recipes/structures/citadel-area.json",
+      "candidate_sha256": "3b05044bc910ce34fad93e0199a8d152835e018f88c83c0c99561429e0109fdb",
+      "canonical": "assets/recipes/town/structures/citadel-area.json"
+    },
+    {
+      "before_sha256": "78999bc2c3f23c0f69ff2600218886c82a6caf2e68ba4659cebfbb52a2eec6c7",
+      "candidate": "assets/source/town/bulwark-library-site-repair-20261030-v1/candidate-v3/recipes/structures/citadel-border.json",
+      "candidate_sha256": "50d0ecf620ad2ea04b3faee2b45984d2216772d7bfde90d514e21e1789dddbc1",
+      "canonical": "assets/recipes/town/structures/citadel-border.json"
+    },
+    {
+      "before_sha256": "dfc0f41ec09e79906d0a3b5f485862f5c30a3dcf223c1ddc9a72948d79f9c669",
+      "candidate": "assets/source/town/bulwark-library-site-repair-20261030-v1/candidate-v3/recipes/structures/citadel-campaign.json",
+      "candidate_sha256": "1e8e25a5dfd8359a5727617f3d54577fcaf3614d9af0aaf57004bcf0e8d83124",
+      "canonical": "assets/recipes/town/structures/citadel-campaign.json"
+    },
+    {
+      "before_sha256": "1aef52882742bc8c58dc17248008385628a476b5936fb467497c078d00c80729",
+      "candidate": "assets/source/town/bulwark-library-site-repair-20261030-v1/candidate-v3/recipes/structures/castle-animation.json",
+      "candidate_sha256": "558806c0aae545f76eb54c334087e5aa05b48bba85fb694f97b15e023933d749",
+      "canonical": "assets/recipes/town/structures/castle-animation.json"
+    },
+    {
+      "before_sha256": "db83704499321814043083fbecb5fc2c41d6b2852aab311e6fd0d711fa34140b",
+      "candidate": "assets/source/town/bulwark-library-site-repair-20261030-v1/candidate-v3/recipes/structures/castle-area.json",
+      "candidate_sha256": "c4547a9f120b50f8d4ff2ce09ecb3929cc1eed428d8740351be20e23e1a3470b",
+      "canonical": "assets/recipes/town/structures/castle-area.json"
+    },
+    {
+      "before_sha256": "3bbca2148f66987ea1490114ee9dad151fac2960676f5e85ab74fe2a134276bf",
+      "candidate": "assets/source/town/bulwark-library-site-repair-20261030-v1/candidate-v3/recipes/structures/castle-border.json",
+      "candidate_sha256": "2f9701f1de6a092b22fc36f2ebb0116303756650ae4e08c8c84d3c84cd49d9c3",
+      "canonical": "assets/recipes/town/structures/castle-border.json"
+    },
+    {
+      "before_sha256": "df7f861bf48c051a81b308c8e0995e034474e4261b65592f90ca119baed2b9ba",
+      "candidate": "assets/source/town/bulwark-library-site-repair-20261030-v1/candidate-v3/recipes/structures/castle-campaign.json",
+      "candidate_sha256": "ee729d4b1a1ef8e25e1909afb7998c2a6fd73936533a7269c9d047bb0906c0a3",
+      "canonical": "assets/recipes/town/structures/castle-campaign.json"
+    }
+  ],
+  "selected": false,
+  "status": "authored configuration"
+}

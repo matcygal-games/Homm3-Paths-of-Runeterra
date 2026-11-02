@@ -1,0 +1,650 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "Follow design/chemtech-art-direction.json: strong luminous chemical green from visible reagents and chemtech, purple accents, and brown leather, cloth, hide and industrial materials. Preserve each unit's authored anatomy, role, silhouette, equipment and individual identity, including cheap ordinary workers and organic beasts. Use original Heroes III native painted/prerendered language, tactile materials and readable scale; local chemical emission must not become a uniform green filter or make ordinary skin/metal glow. Never recolour Castle, Demacia or Noxus art, import original pixels or invent an official crest.",
+  "attack_semantics": "Massive living chemtech-augmented human with visible organic anatomy and partial industrial braces. Two-hex ordinary single-target melee11/12/13; no regeneration, repair aura, all-adjacent grab, breath, artillery or free extra action. Upgrade uses native non-teleport FLYING as a heavy leap: crouch/launch20, airborne travel0, landing21 and grounded holding2. Legal two-hex landing and normal range/action costs remain.",
+  "canvas": [
+    450,
+    400
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; Codex measured technical extraction",
+    "license": "unresolved",
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/source-selection.json",
+      "sha256": "ea879c6bcd3cf4935315509c10581e7000294971ca0e0222208fae250adfbdd5"
+    },
+    {
+      "path": "scripts/assemble_green_t7_20261030.py",
+      "sha256": "ee70d78c6e3a4117c2ffe2b61718b01e00ba6d17c55399a83c7527b4f92a84a9"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/chemGolem/general-green-v1/master.png",
+      "sha256": "c87f8561b9da83858a429d2c3e809d1ede4a42743f6eb84778a056ae31f8abef"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/chemGolem/general-green-v1/prompt.txt",
+      "sha256": "61fb510147c4d7068ce982d880a99268354577ea731744dbb06f669936b6b02f"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/chemGolem/general-green-v1/generation.json",
+      "sha256": "2d3f694df25f274b47bcca20ee859a9355c68b38f56cc042616a34133052f2d5"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/chemGolem/general-green-v1/registration.json",
+      "sha256": "f41928aadaf6a88184fd3391703aedf28a78c8d8c5fd060184368c5601bb12bc"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/chemGolem/melee-green-v1/master.png",
+      "sha256": "7740df867356359aad643ef33125833442d519b482d8fa18da6537781d91bf35"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/chemGolem/melee-green-v1/prompt.txt",
+      "sha256": "6b032433df9cc733b404a5b6963c4b30553450b2b3ba96920f26fa01645fc88c"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/chemGolem/melee-green-v1/generation.json",
+      "sha256": "a14806e163a7631ec4740f924479b83aac1d015469f82c31737a2fe1b30b4e6d"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/chemGolem/melee-green-v1/registration.json",
+      "sha256": "cfafb332bc7ed921166008ceb281a8dc126c6f6a2d7896fe8df9c74db4291e23"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/general-green-v2/master.png",
+      "sha256": "6ccb953df62410d9f09d2ef1b742ae5af1bc25e31d0581942e1a9ea8cc2ae62b"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/general-green-v2/prompt.txt",
+      "sha256": "3e47bf5effdd0380d3cb2c3b47698ff40457d8e7aa451b62e8a3f50dcda36907"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/general-green-v2/generation.json",
+      "sha256": "3d479e5587abc222c8b6f16b3ddc1623701700abbc90d628be8271b3b285f98a"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/general-green-v2/registration.json",
+      "sha256": "3b1aea3c054aab9a86aef60d1bcdb9ca44c09c5035737ab0d8a7c387c82d5a3b"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/melee-green-v1/master.png",
+      "sha256": "cb780d7654f872bb1c888b6b2080250feb04fc0d8333c85df8f5aae35c5946e8"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/melee-green-v1/prompt.txt",
+      "sha256": "3e47bf5effdd0380d3cb2c3b47698ff40457d8e7aa451b62e8a3f50dcda36907"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/melee-green-v1/generation.json",
+      "sha256": "422fd9a651da311ba058f084821add2a5d61cbbe1e9a2e42eafc01da25a40c3b"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/melee-green-v1/registration.json",
+      "sha256": "b619b1f7b1e9caf880a4e464b1159789e9b0feac758ef31b7eb0c7f3a7ffdd6c"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/leap-green-v1/master.png",
+      "sha256": "64cf1762ba86ee30da3b7477e918645357933bf10997fba217e52af8cc5197f1"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/leap-green-v1/prompt.txt",
+      "sha256": "4002ed479cd61d77a95379811ac6aaba3b99e28d903dc12f206453eac16d7d4f"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/leap-green-v1/generation.json",
+      "sha256": "8230cf3c9e9aaa6d2a82848b61c256bf6971b9c11858a0cf853072548c666cb6"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/leap-green-v1/registration.json",
+      "sha256": "f5e2869ab480464c1039587a8fcf03825554178a9852a6907f2b1810add97402"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/travel-green-v1/master.png",
+      "sha256": "567588a61ee7975f7a7fb914efc9bf22e01f5ed6e9e4eed7964f956fa86b15a4"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/travel-green-v1/prompt.txt",
+      "sha256": "0a545a6ebc6326283bf0c237ab30988166773bbd1b512d5509f8997df123a2d8"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/travel-green-v1/generation.json",
+      "sha256": "0fe16588cd54fa1feeba2569fa3919465393e1f95ed6359246e225f26a40b245"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/travel-green-v1/registration.json",
+      "sha256": "204590ed1b6b4fcfb2e0d2aa96b6bbd4bb9681a8904ad3734ccbf1a7c87f9311"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/history/chemGolem-attackLeft.json",
+      "sha256": "d6181cbb65e21cee12c9caba8e415dc96dc2845a84037f6f5408526083a5ac4f"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/history/chemGolem-attackRight.json",
+      "sha256": "d407f26d5718718196bc3a17fea8e270e8b332f2ab7b3c25dc3d1db236a35e64"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/history/chemGolem-battle.json",
+      "sha256": "93091635d9c7a450a4e9baa85aa3e85a8f3f80436ed0a8dd61c2172b59012110"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/history/chemGolem-large.json",
+      "sha256": "95d6976f0099b2f1f06bb0477fac23865abb6a630b23ef5b11be0c67c7870451"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/history/chemGolem-map.json",
+      "sha256": "f426bdc426846831d461db53deb3063e537be33ca99577aa79205d5bff7f56b1"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/history/chemGolem-small.json",
+      "sha256": "cfdda8e811c0ef2358f8e5a58b30c60b06bb14cce8462b0b383706be5e93c50a"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/history/pressureColossus-attackLeft.json",
+      "sha256": "6ae8958a1e57f796f9093fe716d2cd66b473eb49969458fd2751eec28378df87"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/history/pressureColossus-attackRight.json",
+      "sha256": "c260cee28fd646f4a6aed3218b44e647544f4904be87845c43c3b77fc1f582dd"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/history/pressureColossus-battle.json",
+      "sha256": "5f8e30884178d431708618e2691ae566e8a35753ff6c485bdc91c5e529236102"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/history/pressureColossus-large.json",
+      "sha256": "bc47357d463da2c1e8d839469b0e848ef0cdb3bf05561c5d6d80b05e74e33cb1"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/history/pressureColossus-map.json",
+      "sha256": "9b1b6da420d70ad4796f5882be5b449e8f312f3e7ff0d74cfe14546f1868cce0"
+    },
+    {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/history/pressureColossus-small.json",
+      "sha256": "4b4f5e476f1d7b26b580817f69333a69c30844019df40343e4171d98428d7811"
+    }
+  ],
+  "footprint": {
+    "battle": {
+      "body_center": [
+        218,
+        266
+      ],
+      "doubleWide": true,
+      "front_center": [
+        240,
+        266
+      ],
+      "hex_height": 42,
+      "hex_width": 44,
+      "rear_center": [
+        196,
+        266
+      ],
+      "semantics": "Two adjacent battle hexes derived from doubleWide, not from the adventure mapMask. The mask PNG is a technical source guide only, not a game asset."
+    },
+    "doubleWide": true,
+    "mapMask": [
+      "VV",
+      "VA"
+    ]
+  },
+  "generateOverlay": 1,
+  "generateShadow": 1,
+  "generation": {
+    "alpha_preserved": true,
+    "image_generation_used": true,
+    "model": null,
+    "native_execution": false,
+    "painted_master": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/general-green-v2/master.png",
+    "painted_master_sha256": "6ccb953df62410d9f09d2ef1b742ae5af1bc25e31d0581942e1a9ea8cc2ae62b",
+    "prompt": "Use case: precise-object-edit. Edit target: existing painted 2D Heroes of Might and Magic III style Chem-Golem/Pressure Colossus animation sprite atlas. Change ONLY purple/violet flexible hoses, purple reagent sections of the backpack tanks, and connected purple face/gauntlet chemtech fittings into vivid neon chemtech green, lime-green highlights and deep emerald shadows matching existing green tank liquid. Preserve every original sprite, complete body, pose, action, frame order, cell location, dimensions, anatomy, face, cloth, bronze armour, shadows and transparent alpha exactly. Keep the loincloth PURPLE and skin/armour natural. All three ribbed hoses to hands and respirator must glow green, all tank reagent portions green. Do not add/remove/move/resize poses or redesign. Preserve exactly 6 by 4 figures layout and 1536x1024 canvas. Genuine transparent background; no painted backdrop, no floor.\n",
+    "provider": "OpenAI built-in imagegen",
+    "supplemental_masters": [
+      {
+        "path": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/melee-green-v1/master.png",
+        "sha256": "cb780d7654f872bb1c888b6b2080250feb04fc0d8333c85df8f5aae35c5946e8"
+      },
+      {
+        "path": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/leap-green-v1/master.png",
+        "sha256": "64cf1762ba86ee30da3b7477e918645357933bf10997fba217e52af8cc5197f1"
+      },
+      {
+        "path": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/travel-green-v1/master.png",
+        "sha256": "567588a61ee7975f7a7fb914efc9bf22e01f5ed6e9e4eed7964f956fa86b15a4"
+      }
+    ]
+  },
+  "groups": [
+    {
+      "action": "MOVING",
+      "frames": [
+        {
+          "sha256": "1d98db28708b576bfc4e79d3b9910b43e512c8999cfb876c466b198fc8aee773",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/travel-green-v1/r00-c00.png",
+          "source_sha256": "1d98db28708b576bfc4e79d3b9910b43e512c8999cfb876c466b198fc8aee773"
+        },
+        {
+          "sha256": "b8be63525bcb3795a6c8f7835963fabcb425a7efc7f80adbe22b9f17ad1fb197",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/travel-green-v1/r00-c01.png",
+          "source_sha256": "b8be63525bcb3795a6c8f7835963fabcb425a7efc7f80adbe22b9f17ad1fb197"
+        },
+        {
+          "sha256": "e9e2e732ad735414a90a897ee8be7304289aee0779e3b96494397011267ea239",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/travel-green-v1/r00-c02.png",
+          "source_sha256": "e9e2e732ad735414a90a897ee8be7304289aee0779e3b96494397011267ea239"
+        },
+        {
+          "sha256": "26af2edd2a275e5fd7bb918fbc1018da836830027dbf2878bff5404b69e1df45",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/travel-green-v1/r00-c03.png",
+          "source_sha256": "26af2edd2a275e5fd7bb918fbc1018da836830027dbf2878bff5404b69e1df45"
+        },
+        {
+          "sha256": "8a37eaad2c05c62257b6f281886af33f7ffac9a6f4fb15fa3c19e10b4b6c9cf5",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/travel-green-v1/r00-c04.png",
+          "source_sha256": "8a37eaad2c05c62257b6f281886af33f7ffac9a6f4fb15fa3c19e10b4b6c9cf5"
+        },
+        {
+          "sha256": "82688e235d3e973cb3d659db1d4176b5fbad4228f0367cda3e878ffdd33ca7f2",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/travel-green-v1/r00-c05.png",
+          "source_sha256": "82688e235d3e973cb3d659db1d4176b5fbad4228f0367cda3e878ffdd33ca7f2"
+        }
+      ],
+      "group": 0
+    },
+    {
+      "action": "MOUSEON",
+      "frames": [
+        {
+          "sha256": "8bae9a5ee2879146e7d390f968a5ed52e8b56113af5b6d1786f3175f91030145",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/general-green-v2/r00-c00.png",
+          "source_sha256": "8bae9a5ee2879146e7d390f968a5ed52e8b56113af5b6d1786f3175f91030145"
+        },
+        {
+          "sha256": "f006addc7882f53dd9864d1bc8c23b6def62f70587c19585669c7bb7ed30c15b",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/general-green-v2/r00-c01.png",
+          "source_sha256": "f006addc7882f53dd9864d1bc8c23b6def62f70587c19585669c7bb7ed30c15b"
+        },
+        {
+          "sha256": "dac6dc86a105cea0797802f8bcc81dc9312b69edb7ececff64beed7e6895b749",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/general-green-v2/r00-c02.png",
+          "source_sha256": "dac6dc86a105cea0797802f8bcc81dc9312b69edb7ececff64beed7e6895b749"
+        },
+        {
+          "sha256": "c43fbdc89f221f3df93be86a841e896a18e9c960c0b374ab7415f6082cf6bceb",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/general-green-v2/r00-c03.png",
+          "source_sha256": "c43fbdc89f221f3df93be86a841e896a18e9c960c0b374ab7415f6082cf6bceb"
+        }
+      ],
+      "group": 1
+    },
+    {
+      "action": "HOLDING",
+      "frames": [
+        {
+          "sha256": "4d436836607dcfe68093d64d9feb54d3df6dd857d1925145d8192edb93b2a904",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/general-green-v2/r00-c04.png",
+          "source_sha256": "4d436836607dcfe68093d64d9feb54d3df6dd857d1925145d8192edb93b2a904"
+        }
+      ],
+      "group": 2
+    },
+    {
+      "action": "HITTED",
+      "frames": [
+        {
+          "sha256": "3bd2c8e47091aa4132866225910e5e520afe00a5ae9c3ecf9fc88c2171aa6879",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/general-green-v2/r01-c00.png",
+          "source_sha256": "3bd2c8e47091aa4132866225910e5e520afe00a5ae9c3ecf9fc88c2171aa6879"
+        },
+        {
+          "sha256": "2266528d3249d2b17ffdf0a8b5637140fc596f9cbec883783016f13d6a6b2fe3",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/general-green-v2/r01-c01.png",
+          "source_sha256": "2266528d3249d2b17ffdf0a8b5637140fc596f9cbec883783016f13d6a6b2fe3"
+        },
+        {
+          "sha256": "c06c61bd2083d3518d8056068dd48ae23ee40472b8e1c61ae81cea833131840e",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/general-green-v2/r01-c02.png",
+          "source_sha256": "c06c61bd2083d3518d8056068dd48ae23ee40472b8e1c61ae81cea833131840e"
+        },
+        {
+          "sha256": "6a39aee30ad4f9061ee9ccdc95326fbb7ef673ebf871cc2202ed15f9c92d4d59",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/general-green-v2/r01-c03.png",
+          "source_sha256": "6a39aee30ad4f9061ee9ccdc95326fbb7ef673ebf871cc2202ed15f9c92d4d59"
+        }
+      ],
+      "group": 3
+    },
+    {
+      "action": "DEFENCE",
+      "frames": [
+        {
+          "sha256": "5dfb4f2000a96cdc2ce3655cd28607686ff7475b6f87416f04fc7c3bebb2e23a",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/general-green-v2/r03-c00.png",
+          "source_sha256": "5dfb4f2000a96cdc2ce3655cd28607686ff7475b6f87416f04fc7c3bebb2e23a"
+        },
+        {
+          "sha256": "5134a0bc7da32ab90bfcf63cfa29ed7037a1b45b1f0f207ada36db43c293c92a",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/general-green-v2/r03-c01.png",
+          "source_sha256": "5134a0bc7da32ab90bfcf63cfa29ed7037a1b45b1f0f207ada36db43c293c92a"
+        },
+        {
+          "sha256": "bea22171cab3a465d569296c254235c4da9810275f6795e7407696a888bff8c2",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/general-green-v2/r03-c02.png",
+          "source_sha256": "bea22171cab3a465d569296c254235c4da9810275f6795e7407696a888bff8c2"
+        },
+        {
+          "sha256": "0d1d4cfb62cd48bdae7d1c351f75e6d97a256978a38cd18e97e63bd4102e46c7",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/general-green-v2/r03-c03.png",
+          "source_sha256": "0d1d4cfb62cd48bdae7d1c351f75e6d97a256978a38cd18e97e63bd4102e46c7"
+        }
+      ],
+      "group": 4
+    },
+    {
+      "action": "DEATH",
+      "frames": [
+        {
+          "sha256": "96bb0734805291aa32a25b12636426ef92fe0f5bedfb4636691d03b65b842049",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/melee-green-v1/r00-c00.png",
+          "source_sha256": "96bb0734805291aa32a25b12636426ef92fe0f5bedfb4636691d03b65b842049"
+        },
+        {
+          "sha256": "ad297531a3bf066f4ecfc0928eeed6e62dec58445835c5b8c5ecdeae02c8545c",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/melee-green-v1/r00-c01.png",
+          "source_sha256": "ad297531a3bf066f4ecfc0928eeed6e62dec58445835c5b8c5ecdeae02c8545c"
+        },
+        {
+          "sha256": "5c63722170f6a69cd205b0b725d55d7b83ea93e9a26a32d2eaf5ae86bb2bb342",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/melee-green-v1/r00-c02.png",
+          "source_sha256": "5c63722170f6a69cd205b0b725d55d7b83ea93e9a26a32d2eaf5ae86bb2bb342"
+        },
+        {
+          "sha256": "90593e3f1db3f05c4e72c99fb27954805a2eaefde88b5ebaf17cc9c1927f90ae",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/melee-green-v1/r00-c03.png",
+          "source_sha256": "90593e3f1db3f05c4e72c99fb27954805a2eaefde88b5ebaf17cc9c1927f90ae"
+        },
+        {
+          "sha256": "df34714ae86cf817135b067953914d869032d179a7b0ee5872662ce85aa4c009",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/melee-green-v1/r00-c04.png",
+          "source_sha256": "df34714ae86cf817135b067953914d869032d179a7b0ee5872662ce85aa4c009"
+        },
+        {
+          "sha256": "53808861972488d3c2d47a12f13d4344fcb84e4e595584d9423f387e431cf916",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/melee-green-v1/r00-c05.png",
+          "source_sha256": "53808861972488d3c2d47a12f13d4344fcb84e4e595584d9423f387e431cf916"
+        }
+      ],
+      "group": 5
+    },
+    {
+      "action": "TURN_L",
+      "frames": [
+        {
+          "sha256": "4d436836607dcfe68093d64d9feb54d3df6dd857d1925145d8192edb93b2a904",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/general-green-v2/r00-c04.png",
+          "source_sha256": "4d436836607dcfe68093d64d9feb54d3df6dd857d1925145d8192edb93b2a904"
+        },
+        {
+          "sha256": "69b477b4fc578dce02a6a3c73659ae71160eb9a54f018b377a9e48e022c3c37d",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/general-green-v2/r02-c01.png",
+          "source_sha256": "69b477b4fc578dce02a6a3c73659ae71160eb9a54f018b377a9e48e022c3c37d"
+        },
+        {
+          "sha256": "780db17f6a2bb523d5e81d3793192cd4956fdce45afa4e0c99ea516c9ef7e09f",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/general-green-v2/r02-c02.png",
+          "source_sha256": "780db17f6a2bb523d5e81d3793192cd4956fdce45afa4e0c99ea516c9ef7e09f"
+        },
+        {
+          "sha256": "c20569cfea93bd856f8c19257797d7db09639000d232fb42c099efe95e7334f1",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/general-green-v2/r02-c03.png",
+          "source_sha256": "c20569cfea93bd856f8c19257797d7db09639000d232fb42c099efe95e7334f1"
+        }
+      ],
+      "group": 7
+    },
+    {
+      "action": "TURN_R",
+      "frames": [
+        {
+          "sha256": "c20569cfea93bd856f8c19257797d7db09639000d232fb42c099efe95e7334f1",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/general-green-v2/r02-c03.png",
+          "source_sha256": "c20569cfea93bd856f8c19257797d7db09639000d232fb42c099efe95e7334f1"
+        },
+        {
+          "sha256": "780db17f6a2bb523d5e81d3793192cd4956fdce45afa4e0c99ea516c9ef7e09f",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/general-green-v2/r02-c02.png",
+          "source_sha256": "780db17f6a2bb523d5e81d3793192cd4956fdce45afa4e0c99ea516c9ef7e09f"
+        },
+        {
+          "sha256": "69b477b4fc578dce02a6a3c73659ae71160eb9a54f018b377a9e48e022c3c37d",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/general-green-v2/r02-c01.png",
+          "source_sha256": "69b477b4fc578dce02a6a3c73659ae71160eb9a54f018b377a9e48e022c3c37d"
+        },
+        {
+          "sha256": "4d436836607dcfe68093d64d9feb54d3df6dd857d1925145d8192edb93b2a904",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/general-green-v2/r00-c04.png",
+          "source_sha256": "4d436836607dcfe68093d64d9feb54d3df6dd857d1925145d8192edb93b2a904"
+        }
+      ],
+      "group": 8
+    },
+    {
+      "action": "ATTACK_UP",
+      "frames": [
+        {
+          "sha256": "bfb6e7958b9c1ae6a7873fc47396a3e0eb1646acc5edde9a1440235101b22458",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/melee-green-v1/r01-c00.png",
+          "source_sha256": "bfb6e7958b9c1ae6a7873fc47396a3e0eb1646acc5edde9a1440235101b22458"
+        },
+        {
+          "sha256": "e14c6dc1c34e3cfc9a14a906450c7305e16a3ebedb839b18a812c1f9f759d160",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/melee-green-v1/r01-c01.png",
+          "source_sha256": "e14c6dc1c34e3cfc9a14a906450c7305e16a3ebedb839b18a812c1f9f759d160"
+        },
+        {
+          "sha256": "a53a8a6204d38eb4e64b8e9cc18b87fb8ad5493a9f79f74296f87251a7ccd85c",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/melee-green-v1/r01-c02.png",
+          "source_sha256": "a53a8a6204d38eb4e64b8e9cc18b87fb8ad5493a9f79f74296f87251a7ccd85c"
+        },
+        {
+          "sha256": "d4a622e19181542cf2444339886e25fd748895e6d250fab34b1410f2d855b923",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/melee-green-v1/r01-c03.png",
+          "source_sha256": "d4a622e19181542cf2444339886e25fd748895e6d250fab34b1410f2d855b923"
+        },
+        {
+          "sha256": "114a7ab77a22f8f5aa2802ee4e7e776a416834541376f331048e65dbe39fb9dc",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/melee-green-v1/r01-c04.png",
+          "source_sha256": "114a7ab77a22f8f5aa2802ee4e7e776a416834541376f331048e65dbe39fb9dc"
+        },
+        {
+          "sha256": "e1a1608834a63f6b59aa3a7dcde0c4f6ca75fbab4f709f2437476bbfd2951324",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/melee-green-v1/r01-c05.png",
+          "source_sha256": "e1a1608834a63f6b59aa3a7dcde0c4f6ca75fbab4f709f2437476bbfd2951324"
+        }
+      ],
+      "group": 11
+    },
+    {
+      "action": "ATTACK_FRONT",
+      "frames": [
+        {
+          "sha256": "ac69bbd900cfbbc5e3d8a13f0b59312f023f912a72dc95e78ca0fe14d2773fae",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/melee-green-v1/r02-c00.png",
+          "source_sha256": "ac69bbd900cfbbc5e3d8a13f0b59312f023f912a72dc95e78ca0fe14d2773fae"
+        },
+        {
+          "sha256": "3da41fb548b896f7e47cddc0cc047dc18fda368f91a8f19afc6a17f57ba815a5",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/melee-green-v1/r02-c01.png",
+          "source_sha256": "3da41fb548b896f7e47cddc0cc047dc18fda368f91a8f19afc6a17f57ba815a5"
+        },
+        {
+          "sha256": "886468dc9e0209a35a2c41edc6a7f20901c6c23f85ceb0ce99b241426a0aecca",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/melee-green-v1/r02-c02.png",
+          "source_sha256": "886468dc9e0209a35a2c41edc6a7f20901c6c23f85ceb0ce99b241426a0aecca"
+        },
+        {
+          "sha256": "82014aa391c211da366793db3584cf440050667c190ccc5f2aac912ef58eb7a4",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/melee-green-v1/r02-c03.png",
+          "source_sha256": "82014aa391c211da366793db3584cf440050667c190ccc5f2aac912ef58eb7a4"
+        },
+        {
+          "sha256": "ba3f266b53c9dcd4ee8931139984b5099521102c3c2804b1ee274d12242a9f77",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/melee-green-v1/r02-c04.png",
+          "source_sha256": "ba3f266b53c9dcd4ee8931139984b5099521102c3c2804b1ee274d12242a9f77"
+        },
+        {
+          "sha256": "1f62b626c439fe13bc9e023f0bf422e00dc7e0c876615abe14dda1c3fe73bb71",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/melee-green-v1/r02-c05.png",
+          "source_sha256": "1f62b626c439fe13bc9e023f0bf422e00dc7e0c876615abe14dda1c3fe73bb71"
+        }
+      ],
+      "group": 12
+    },
+    {
+      "action": "ATTACK_DOWN",
+      "frames": [
+        {
+          "sha256": "ee2c10aacf65305e2481166c07a052316b43e65796f615cbcc4675b3f3fb1b6a",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/melee-green-v1/r03-c00.png",
+          "source_sha256": "ee2c10aacf65305e2481166c07a052316b43e65796f615cbcc4675b3f3fb1b6a"
+        },
+        {
+          "sha256": "c3197bf1abe9866662750d220b8eb956ca4179613aa1807d05e28612ffb8f57e",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/melee-green-v1/r03-c01.png",
+          "source_sha256": "c3197bf1abe9866662750d220b8eb956ca4179613aa1807d05e28612ffb8f57e"
+        },
+        {
+          "sha256": "ee40b5a4bb7164e527ca8cc1b76567ae7c680de5eca0e5f3fba926bcc31a5290",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/melee-green-v1/r03-c02.png",
+          "source_sha256": "ee40b5a4bb7164e527ca8cc1b76567ae7c680de5eca0e5f3fba926bcc31a5290"
+        },
+        {
+          "sha256": "77d7a0b0aa9a3f9368e6305ac60fd0674ebb68f122a98ef2f6806a1d5fb86b54",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/melee-green-v1/r03-c03.png",
+          "source_sha256": "77d7a0b0aa9a3f9368e6305ac60fd0674ebb68f122a98ef2f6806a1d5fb86b54"
+        },
+        {
+          "sha256": "e131115a218812bbaf4bb0a2ee5aa67030a3969ed223b907625034649e2a219c",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/melee-green-v1/r03-c04.png",
+          "source_sha256": "e131115a218812bbaf4bb0a2ee5aa67030a3969ed223b907625034649e2a219c"
+        },
+        {
+          "sha256": "3b15ae93cb5ef71c003cfc17e2d84accb7116330184453080ea60c75ac5279e8",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/melee-green-v1/r03-c05.png",
+          "source_sha256": "3b15ae93cb5ef71c003cfc17e2d84accb7116330184453080ea60c75ac5279e8"
+        }
+      ],
+      "group": 13
+    },
+    {
+      "action": "DEAD",
+      "frames": [
+        {
+          "sha256": "53808861972488d3c2d47a12f13d4344fcb84e4e595584d9423f387e431cf916",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/melee-green-v1/r00-c05.png",
+          "source_sha256": "53808861972488d3c2d47a12f13d4344fcb84e4e595584d9423f387e431cf916"
+        }
+      ],
+      "group": 22
+    },
+    {
+      "action": "MOVE_START",
+      "frames": [
+        {
+          "sha256": "e20c969f3b106aacd074168cff8fe2737fec2fb48902d5ba198353fdbc8c73c0",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/leap-green-v1/r01-c00.png",
+          "source_sha256": "e20c969f3b106aacd074168cff8fe2737fec2fb48902d5ba198353fdbc8c73c0"
+        },
+        {
+          "sha256": "d0503a86597f0da12e077a8e78f6141f63fe0d7888789a8772165c3801fcbd2b",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/leap-green-v1/r01-c01.png",
+          "source_sha256": "d0503a86597f0da12e077a8e78f6141f63fe0d7888789a8772165c3801fcbd2b"
+        },
+        {
+          "sha256": "2029ec70b964b7b122f4cc1162f138537061c4ae98fb53578e47592184a29e2f",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/leap-green-v1/r01-c02.png",
+          "source_sha256": "2029ec70b964b7b122f4cc1162f138537061c4ae98fb53578e47592184a29e2f"
+        },
+        {
+          "sha256": "14ebf91ba30f806f36f56ae4600281ba14c453b10be8fccec3bd90fecd9621e8",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/leap-green-v1/r01-c03.png",
+          "source_sha256": "14ebf91ba30f806f36f56ae4600281ba14c453b10be8fccec3bd90fecd9621e8"
+        }
+      ],
+      "group": 20
+    },
+    {
+      "action": "MOVE_END",
+      "frames": [
+        {
+          "sha256": "7ee8f4491aaa5fbf996c9b5489ac2bd9e7397a8fd3a91fea9f5cf21440ffb625",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/leap-green-v1/r02-c00.png",
+          "source_sha256": "7ee8f4491aaa5fbf996c9b5489ac2bd9e7397a8fd3a91fea9f5cf21440ffb625"
+        },
+        {
+          "sha256": "00b04b373e325eefe68e60deadd051fc992b9e5cd4a384e87e30f3c9c0f70428",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/leap-green-v1/r02-c01.png",
+          "source_sha256": "00b04b373e325eefe68e60deadd051fc992b9e5cd4a384e87e30f3c9c0f70428"
+        },
+        {
+          "sha256": "a6f20f51e027e697ff2eac4e5bdb46bb9081e8ca9f258e18de3c89d20ad801e8",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/leap-green-v1/r02-c02.png",
+          "source_sha256": "a6f20f51e027e697ff2eac4e5bdb46bb9081e8ca9f258e18de3c89d20ad801e8"
+        },
+        {
+          "sha256": "bd631e4aeabdff0e75951619df27d302c7af6de270b9b006d2fee9636ba93d33",
+          "source": "assets/source/creatures/chemtech-green-20261030-v1/pressureColossus/native-v1/leap-green-v1/r02-c03.png",
+          "source_sha256": "bd631e4aeabdff0e75951619df27d302c7af6de270b9b006d2fee9636ba93d33"
+        }
+      ],
+      "group": 21
+    }
+  ],
+  "id": "zaun.creature.pressureColossus.battle",
+  "output_path": "Content/Sprites/runeterra/zaun/creatures/pressureColossus/battle.json",
+  "pivot": {
+    "x": 218,
+    "y": 266
+  },
+  "production_status": "delivered",
+  "recipe_type": "vcmi_animation",
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "required_groups": {
+    "0": 6,
+    "1": 4,
+    "11": 6,
+    "12": 6,
+    "13": 6,
+    "2": 1,
+    "20": 4,
+    "21": 4,
+    "22": 1,
+    "3": 4,
+    "4": 4,
+    "5": 6,
+    "7": 4,
+    "8": 4
+  },
+  "source_registration": {
+    "fixed_scale_per_source_cohort": true,
+    "logical_battle_pivot": [
+      218,
+      266
+    ],
+    "per_frame_scaling": false,
+    "selection": {
+      "path": "assets/source/creatures/chemtech-green-20261030-v1/source-selection.json",
+      "sha256": "ea879c6bcd3cf4935315509c10581e7000294971ca0e0222208fae250adfbdd5"
+    }
+  },
+  "status": "built-unreviewed",
+  "unit": "pressureColossus",
+  "visual_approval_granted": false
+}

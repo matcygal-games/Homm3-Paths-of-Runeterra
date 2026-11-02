@@ -1,0 +1,557 @@
+--- a/AI/Nullkiller2/AIGateway.cpp
++++ b/AI/Nullkiller2/AIGateway.cpp
+@@ -379,6 +379,7 @@
+ 
+ 	if(obj->ID == Obj::HERO && obj->tempOwner == playerID)
+ 	{
++		status.recordHeroRemoval(obj->id);
+ 		lostHero(HeroPtr(cc->getHero(obj->id), cc.get())); //we can promote, since objectRemoved is called just before actual deletion
+ 	}
+ 
+@@ -1114,7 +1115,16 @@
+ {
+ 	assert(status.getBattle() == ONGOING_BATTLE);
+ 	status.setBattle(ENDING_BATTLE);
+-	bool won = br->winner == cc->getBattle(battleID)->battleGetMySide();
++	const auto battle = cc->getBattle(battleID);
++	bool won = br->winner == battle->battleGetMySide();
++	const auto * hero = battle->battleGetMyHero();
++	const auto ourSide = battle->battleGetMySide();
++	const bool lost = (ourSide == BattleSide::ATTACKER && br->winner == BattleSide::DEFENDER)
++		|| (ourSide == BattleSide::DEFENDER && br->winner == BattleSide::ATTACKER);
++	const bool knownResult = br->result == EBattleResult::NORMAL
++		|| br->result == EBattleResult::ESCAPE || br->result == EBattleResult::SURRENDER;
++	if(lost && knownResult && hero && hero->getOwner() == playerID)
++		status.recordBattleLoss(hero->id);
+ 	logAi->debug("Player %d (%s): I %s the %s!", playerID, playerID.toString(), (won ? "won" : "lost"), battlename);
+ 	battlename.clear();
+ 
+@@ -1164,6 +1174,10 @@
+ 
+ 	if(!heroPtr.isVerified())
+ 		throw cannotFulfillGoalException("Hero was lost!");
++
++	const auto movingHeroID = heroPtr->id;
++	const bool ownedAtStart = heroPtr->getOwner() == playerID;
++	const auto battleLossOrigin = status.battleLossSequence(movingHeroID);
+ 
+ 	if(heroPtr->isGarrisoned() && heroPtr->getVisitedTown())
+ 	{
+@@ -1185,6 +1199,8 @@
+ 			teleportChannelProbingList.clear();
+ 			if(status.channelProbing()) // if hero lost during channel probing we need to switch this mode off
+ 				status.setChannelProbing(false);
++			if(ownedAtStart && status.wasRemovedAfterBattleLoss(movingHeroID, battleLossOrigin))
++				throw heroLostInBattleException(movingHeroID);
+ 			throw cannotFulfillGoalException("Hero was lost!");
+ 		}
+ 	};
+@@ -1826,6 +1842,36 @@
+ {
+ 	std::unique_lock<std::mutex> lock(mx);
+ 	return objectsBeingVisited.empty() ? ObjectInstanceID::NONE : objectsBeingVisited.back();
++}
++
++void AIStatus::recordBattleLoss(ObjectInstanceID heroID)
++{
++	std::unique_lock<std::mutex> lock(mx);
++	auto & loss = battleLosses[heroID];
++	++loss.first;
++	loss.second = false;
++}
++
++void AIStatus::recordHeroRemoval(ObjectInstanceID heroID)
++{
++	std::unique_lock<std::mutex> lock(mx);
++	auto loss = battleLosses.find(heroID);
++	if(loss != battleLosses.end())
++		loss->second.second = true;
++}
++
++uint64_t AIStatus::battleLossSequence(ObjectInstanceID heroID)
++{
++	std::unique_lock<std::mutex> lock(mx);
++	auto loss = battleLosses.find(heroID);
++	return loss == battleLosses.end() ? 0 : loss->second.first;
++}
++
++bool AIStatus::wasRemovedAfterBattleLoss(ObjectInstanceID heroID, uint64_t origin)
++{
++	std::unique_lock<std::mutex> lock(mx);
++	auto loss = battleLosses.find(heroID);
++	return loss != battleLosses.end() && loss->second.first > origin && loss->second.second;
+ }
+ 
+ void AIStatus::clearLastMovementResult(ObjectInstanceID heroID)
+--- a/AI/Nullkiller2/AIGateway.h
++++ b/AI/Nullkiller2/AIGateway.h
+@@ -44,6 +44,7 @@
+ 	std::map<int, QuestionID> requestToQuestionID; //IDs of answer-requests sent to server => question ids (so we can match answer confirmation from server to the question)
+ 	std::vector<ObjectInstanceID> objectsBeingVisited;
+ 	std::map<ObjectInstanceID, TryMoveHero> lastMovementResults;
++	std::map<ObjectInstanceID, std::pair<uint64_t, bool>> battleLosses;
+ 	bool ongoingHeroMovement;
+ 	bool ongoingChannelProbing; // true if AI currently explore bidirectional teleport channel exits
+ 
+@@ -73,6 +74,10 @@
+ 	void receivedAnswerConfirmation(int answerRequestID, int result);
+ 	void heroVisit(const CGObjectInstance * obj, bool started);
+ 	ObjectInstanceID getCurrentVisitedObject();
++	void recordBattleLoss(ObjectInstanceID heroID);
++	void recordHeroRemoval(ObjectInstanceID heroID);
++	uint64_t battleLossSequence(ObjectInstanceID heroID);
++	bool wasRemovedAfterBattleLoss(ObjectInstanceID heroID, uint64_t origin);
+ 	void clearLastMovementResult(ObjectInstanceID heroID);
+ 	void recordMovementResult(const TryMoveHero & details);
+ 	std::optional<TryMoveHero> getLastMovementResult(ObjectInstanceID heroID);
+--- a/AI/Nullkiller2/Engine/Nullkiller.cpp
++++ b/AI/Nullkiller2/Engine/Nullkiller.cpp
+@@ -1018,6 +1018,13 @@
+ 	{
+ 		logAi->trace("Task %s completed in %lld", taskDescr, timeElapsed(start));
+ 	}
++	catch(const heroLostInBattleException & e)
++	{
++		lastTaskFailureHadPath = rememberActivePathFailure();
++		invalidatePathfinderData();
++		logAi->info("Hero %d removed after a lost battle; cancelling its task and replanning.", e.heroID.getNum());
++		return false;
++	}
+ 	catch(cannotFulfillGoalException & e)
+ 	{
+ 		lastTaskFailureHadPath = rememberActivePathFailure();
+--- a/AI/Nullkiller2/Goals/AbstractGoal.h
++++ b/AI/Nullkiller2/Goals/AbstractGoal.h
+@@ -193,6 +193,14 @@
+ 	};
+ }
+ 
++class heroLostInBattleException : public std::exception
++{
++public:
++	const ObjectInstanceID heroID;
++	explicit heroLostInBattleException(ObjectInstanceID heroID) : heroID(heroID) {}
++	const char * what() const noexcept override { return "Moving hero removed after a lost battle."; }
++};
++
+ class cannotFulfillGoalException : public std::exception
+ {
+ 	std::string msg;
+--- a/test/CMakeLists.txt
++++ b/test/CMakeLists.txt
+@@ -206,6 +206,7 @@
+ if(ENABLE_NULLKILLER2_AI)
+ 	list(APPEND test_SRCS
+ 		nullkiller2/AIGatewayDialogTest.cpp
++		nullkiller2/HeroLossReplanningTest.cpp
+ 		nullkiller2/AIGatewayTurnLifecycleTest.cpp
+ 		server/TerminalMoveCancellationTest.cpp
+ 		nullkiller2/AIGatewayMovementTest.cpp
+--- /dev/null
++++ b/test/nullkiller2/HeroLossReplanningTest.cpp
+@@ -0,0 +1,405 @@
++/*
++	* HeroLossReplanningTest.cpp, part of VCMI engine
++	* License: GNU General Public License v2.0 or later
++	*/
++#include "StdInc.h"
++#include "mock/TinyH3MBuilder.h"
++#include "mock/GameHandlerTestServer.h"
++#include "nullkiller2/NullkillerTest.h"
++#include "AI/Nullkiller2/Goals/ExecuteHeroChain.h"
++#include "lib/CPlayerState.h"
++#include "lib/callback/GameRandomizer.h"
++#include "lib/networkPacks/SaveLocalState.h"
++#include "lib/callback/CBattleGameInterface.h"
++#include "lib/callback/IClient.h"
++#include "lib/battle/CPlayerBattleCallback.h"
++#include "lib/networkPacks/PacksForClientBattle.h"
++#include "lib/networkPacks/PacksForServer.h"
++#include "lib/serializer/CMemorySerializer.h"
++#include "server/CGameHandler.h"
++#include "server/battles/BattleResultProcessor.h"
++#include "server/battles/BattleProcessor.h"
++#include "lib/CStack.h"
++
++namespace
++{
++const PlayerColor PLAYER(0), ENEMY(1);
++
++class PassiveBattleInterface : public CBattleGameInterface
++{
++public:
++	void activeStack(const BattleID &, const CStack *) override {}
++	void yourTacticPhase(const BattleID &, int) override {}
++};
++
++class RecordingLogger : public vstd::CLoggerBase
++{
++	vstd::CLoggerBase * previous = logAi;
++public:
++	RecordingLogger() { logAi = this; }
++	~RecordingLogger() override { logAi = previous; }
++	mutable std::vector<std::string> errors, information;
++	void log(ELogLevel::ELogLevel level, const std::string & text) const override
++	{
++		if(level == ELogLevel::ERROR) errors.push_back(text);
++		if(level == ELogLevel::INFO) information.push_back(text);
++	}
++	void log(ELogLevel::ELogLevel level, const boost::format & text) const override { log(level, text.str()); }
++	bool isDebugEnabled() const override { return true; }
++	bool isTraceEnabled() const override { return true; }
++	ELogLevel::ELogLevel getEffectiveLevel() const override { return ELogLevel::TRACE; }
++};
++
++class LossServer : public GameHandlerTestServer
++{
++	std::shared_ptr<CGameState> state;
++public:
++	explicit LossServer(const std::shared_ptr<CGameState> & state) : GameHandlerTestServer(state, PLAYER), state(state) {}
++	NK2AI::AIGateway * gateway = nullptr;
++	bool omitRemovalCallback = false;
++	bool invalidObservedResult = false, invalidObservedWinner = false;
++	std::vector<EBattleResult> resultTypes;
++	int normalResults = 0, removedOwnHeroes = 0;
++	void applyPack(CPackForClient & pack) override
++	{
++		if(auto * result = dynamic_cast<BattleResult *>(&pack))
++		{
++			if(result->result == EBattleResult::NORMAL) ++normalResults;
++			resultTypes.push_back(result->result);
++			auto observed = *result;
++			if(invalidObservedResult) observed.result = static_cast<EBattleResult>(99);
++			if(invalidObservedWinner) observed.winner = static_cast<BattleSide>(99);
++			gateway->battleEnd(result->battleID, &observed, QuestionID::NONE);
++			gateway->cc->onBattleEnded(result->battleID);
++		}
++		if(auto * removal = dynamic_cast<RemoveObject *>(&pack))
++		{
++			auto * object = state->getObjInstance(removal->objectID);
++			if(object && object->ID == Obj::HERO && object->getOwner() == PLAYER) ++removedOwnHeroes;
++			if(object && !omitRemovalCallback) gateway->objectRemoved(object, removal->initiator);
++		}
++		GameHandlerTestServer::applyPack(pack);
++		if(auto * start = dynamic_cast<BattleStart *>(&pack))
++		{
++			gateway->cc->onBattleStarted(state->getBattle(start->battleID));
++			// Tactical decisions are deliberately outside this adventure-task regression.
++			gateway->battleAI = std::make_shared<PassiveBattleInterface>();
++			gateway->status.setBattle(NK2AI::ONGOING_BATTLE);
++		}
++		if(auto * movement = dynamic_cast<TryMoveHero *>(&pack)) gateway->heroMoved(*movement, false);
++		if(dynamic_cast<BattleEnded *>(&pack)) gateway->battleEnded();
++	}
++};
++
++class LossClient : public IClient
++{
++	std::shared_ptr<CGameState> state;
++	int requestID = 0;
++public:
++	LossServer server;
++	CGameHandler handler;
++	int movementRequests = 0;
++	bool removeWithoutBattle = false;
++	bool removeWinner = false;
++	bool attackerWins = false;
++	EBattleResult outcome = EBattleResult::NORMAL;
++	ObjectInstanceID otherAttacker = ObjectInstanceID::NONE, otherDefender = ObjectInstanceID::NONE;
++	bool battleEndActionAccepted = false;
++	explicit LossClient(const std::shared_ptr<CGameState> & state) : state(state), server(state), handler(server, state)
++	{
++		state->actingPlayers.insert(PLAYER);
++		handler.randomizer->setSeed(1337);
++	}
++	std::optional<BattleAction> makeSurrenderRetreatDecision(PlayerColor, const BattleID &, const BattleStateInfoForRetreat &) override { return std::nullopt; }
++	int sendRequest(const CPackForServer & request, PlayerColor player, bool) override
++	{
++		if(const auto * settings = dynamic_cast<const SaveLocalState *>(&request))
++		{
++			*state->getPlayerState(settings->player)->playerLocalSettings = settings->data;
++			return ++requestID;
++		}
++		request.player = player;
++		request.requestID = ++requestID;
++		const auto * movement = dynamic_cast<const MoveHero *>(&request);
++		if(movement) ++movementRequests;
++		auto copy = CMemorySerializer::deepCopy(request);
++		handler.handleReceivedPack(GameConnectionID::FIRST_CONNECTION, *copy);
++		if(movement && state->currentBattles.empty() && otherAttacker.hasValue() && otherDefender.hasValue())
++			handler.battles->startBattle(state->getHero(otherAttacker), state->getHero(otherDefender));
++		if(movement && !state->currentBattles.empty())
++		{
++			const auto battleID = state->currentBattles.front()->getBattleID();
++			const auto * battle = state->getBattle(battleID);
++			if(outcome == EBattleResult::ESCAPE || outcome == EBattleResult::SURRENDER)
++			{
++				auto * info = state->currentBattles.front().get();
++				info->tacticDistance = 0;
++				for(const auto & stack : info->stacks)
++					if(stack->unitSide() == BattleSide::ATTACKER && !stack->isTurret()) { info->activeStack = stack->unitId(); break; }
++				MakeAction action(outcome == EBattleResult::ESCAPE ? BattleAction::makeRetreat(BattleSide::ATTACKER) : BattleAction::makeSurrender(BattleSide::ATTACKER));
++				action.battleID = battleID;
++				action.player = player;
++				action.requestID = ++requestID;
++				const auto before = server.resultTypes.size();
++				handler.handleReceivedPack(GameConnectionID::FIRST_CONNECTION, action);
++				battleEndActionAccepted = server.resultTypes.size() == before + 1;
++				if(!battleEndActionAccepted)
++				{
++					// Complete the fixture instead of leaving the movement waiter blocked;
++					// explicit action/result assertions still fail the rejected-action case.
++					BattleResultProcessor rejected(&handler);
++					rejected.setBattleResult(*battle, EBattleResult::NORMAL, BattleSide::DEFENDER);
++					rejected.endBattle(*battle);
++				}
++			}
++			else
++			{
++				// Exercise real normal-result finalization/removal with a fixed outcome.
++				BattleResultProcessor result(&handler);
++				result.setBattleResult(*battle, EBattleResult::NORMAL, attackerWins ? BattleSide::ATTACKER : BattleSide::DEFENDER);
++				result.endBattle(*battle);
++			}
++		}
++		if(movement && (removeWithoutBattle || removeWinner) && state->getHero(movement->hid))
++		{
++			RemoveObject removal(movement->hid, PLAYER);
++			server.applyPack(removal);
++		}
++		return requestID;
++	}
++};
++
++class HeroLossReplanning : public NullkillerTest
++{
++protected:
++	Services * gameServices() override { return LIBRARY; }
++	void start(bool battleTarget = true)
++	{
++		TinyH3M::TinyH3MBuilder builder(EMapFormat::SOD);
++		builder.size(36, false).playerActive(PLAYER)
++			.hero({6,5,0}, HeroTypeID(0), PLAYER).heroGarrison({{CreatureID(0),1}})
++			.hero({12,12,0}, HeroTypeID(1), PLAYER).heroGarrison({{CreatureID(0),1}})
++			.playerActive(ENEMY)
++			.hero(battleTarget ? int3(7,5,0) : int3(30,30,0), HeroTypeID(2), ENEMY).heroGarrison({{CreatureID(0),10}});
++		startWithMap(std::move(builder));
++		revealMap(PLAYER);
++		hero = findHeroAt({6,5,0});
++		ASSERT_NE(hero, nullptr);
++		heroID = hero->id;
++		hero->setMovementPoints(2000);
++		gameState()->getPlayerState(PLAYER)->resources[EGameResID::GOLD] = 10000;
++		client = std::make_unique<LossClient>(gameState());
++		callback = makeCallback(PLAYER, client.get());
++		gateway = makeGateway(callback);
++		client->server.gateway = gateway.get();
++	}
++	NK2AI::Goals::TTask task() const
++	{
++		NK2AI::AIPath path;
++		path.targetHero = hero;
++		path.heroArmy = hero;
++		path.chainMask = 1;
++		path.nodes.push_back(pathNode(*hero, hero->visitablePos() + int3(1,0,0)));
++		path.nodes.push_back(pathNode(*hero, hero->visitablePos()));
++		return std::make_shared<NK2AI::Goals::ExecuteHeroChain>(path);
++	}
++	std::unique_ptr<LossClient> client;
++	std::shared_ptr<CCallback> callback;
++	std::unique_ptr<NK2AI::AIGateway> gateway;
++	CGHeroInstance * hero = nullptr;
++	ObjectInstanceID heroID;
++};
++}
++
++TEST_F(HeroLossReplanning, realNormalDefeatCancelsMovingHeroTaskAndReplansWithoutErrors)
++{
++	ASSERT_NO_FATAL_FAILURE(start());
++	auto movementTask = task();
++	RecordingLogger logger;
++	std::shared_lock lock(CGameState::mutex);
++	EXPECT_FALSE(NK2AI::NullkillerTestAccess::executeTask(*gateway->nullkiller, movementTask));
++	EXPECT_EQ(client->server.normalResults, 1);
++	EXPECT_EQ(client->server.removedOwnHeroes, 1);
++	EXPECT_EQ(gameState()->getHero(heroID), nullptr);
++	EXPECT_EQ(client->movementRequests, 1);
++	EXPECT_TRUE(logger.errors.empty());
++	EXPECT_TRUE(vstd::contains_if(logger.information, [](const std::string & text) { return text.find("removed after a lost battle; cancelling its task and replanning") != std::string::npos; }));
++	preparePlanning(*gateway);
++	const auto heroes = gateway->nullkiller->getHeroesForPathfinding();
++	EXPECT_EQ(heroes.size(), 1);
++	EXPECT_NE(heroes.begin()->first->id, heroID);
++}
++
++TEST_F(HeroLossReplanning, realNormalDefeatProducesTypedCancellationAtMovementBoundary)
++{
++	ASSERT_NO_FATAL_FAILURE(start());
++	std::shared_lock lock(CGameState::mutex);
++	EXPECT_THROW(gateway->moveHeroToTile({6,5,0}, NK2AI::HeroPtr(hero, callback.get())), NK2AI::heroLostInBattleException);
++	EXPECT_EQ(client->server.normalResults, 1);
++	EXPECT_EQ(client->server.removedOwnHeroes, 1);
++}
++
++TEST_F(HeroLossReplanning, disappearanceWithoutBattleRetainsTaskErrors)
++{
++	ASSERT_NO_FATAL_FAILURE(start(false));
++	client->removeWithoutBattle = true;
++	auto movementTask = task();
++	RecordingLogger logger;
++	std::shared_lock lock(CGameState::mutex);
++	EXPECT_FALSE(NK2AI::NullkillerTestAccess::executeTask(*gateway->nullkiller, movementTask));
++	EXPECT_GE(logger.errors.size(), 2);
++	EXPECT_EQ(client->server.normalResults, 0);
++}
++
++TEST_F(HeroLossReplanning, winningBattleThenUnrelatedRemovalRetainsTaskErrors)
++{
++	ASSERT_NO_FATAL_FAILURE(start());
++	client->attackerWins = true;
++	client->removeWinner = true;
++	auto movementTask = task();
++	RecordingLogger logger;
++	std::shared_lock lock(CGameState::mutex);
++	EXPECT_FALSE(NK2AI::NullkillerTestAccess::executeTask(*gateway->nullkiller, movementTask));
++	EXPECT_GE(logger.errors.size(), 2);
++	EXPECT_EQ(client->server.normalResults, 1);
++}
++
++TEST_F(HeroLossReplanning, missingAuthoritativeRemovalCallbackRetainsTaskErrors)
++{
++	ASSERT_NO_FATAL_FAILURE(start());
++	client->server.omitRemovalCallback = true;
++	auto movementTask = task();
++	RecordingLogger logger;
++	std::shared_lock lock(CGameState::mutex);
++	EXPECT_FALSE(NK2AI::NullkillerTestAccess::executeTask(*gateway->nullkiller, movementTask));
++	EXPECT_GE(logger.errors.size(), 2);
++	EXPECT_EQ(client->server.normalResults, 1);
++}
++
++TEST_F(HeroLossReplanning, staleInitialHeroRetainsErrorsAndSendsNoMovement)
++{
++	ASSERT_NO_FATAL_FAILURE(start(false));
++	auto movementTask = task();
++	RemoveObject removal(heroID, PLAYER);
++	client->server.applyPack(removal);
++	RecordingLogger logger;
++	std::shared_lock lock(CGameState::mutex);
++	EXPECT_FALSE(NK2AI::NullkillerTestAccess::executeTask(*gateway->nullkiller, movementTask));
++	EXPECT_GE(logger.errors.size(), 2);
++	EXPECT_EQ(client->movementRequests, 0);
++}
++
++TEST_F(HeroLossReplanning, earlierLossAndOtherHeroLossCannotAuthorizeCurrentDisappearance)
++{
++	ASSERT_NO_FATAL_FAILURE(start(false));
++	gateway->status.recordBattleLoss(heroID);
++	gateway->status.recordHeroRemoval(heroID);
++	gateway->status.recordBattleLoss(ObjectInstanceID(900));
++	gateway->status.recordHeroRemoval(ObjectInstanceID(900));
++	client->removeWithoutBattle = true;
++	auto movementTask = task();
++	RecordingLogger logger;
++	std::shared_lock lock(CGameState::mutex);
++	EXPECT_FALSE(NK2AI::NullkillerTestAccess::executeTask(*gateway->nullkiller, movementTask));
++	EXPECT_GE(logger.errors.size(), 2);
++}
++
++TEST_F(HeroLossReplanning, foreignHeroRemovalCannotCompleteLossAuthorization)
++{
++	ASSERT_NO_FATAL_FAILURE(start(false));
++	auto * foreign = findHeroByOwner(ENEMY);
++	ASSERT_NE(foreign, nullptr);
++	const auto foreignID = foreign->id;
++	gateway->status.recordBattleLoss(foreignID);
++	gateway->objectRemoved(foreign, ENEMY);
++	EXPECT_FALSE(gateway->status.wasRemovedAfterBattleLoss(foreignID, 0));
++	EXPECT_NE(gameState()->getHero(foreignID), nullptr);
++}
++
++TEST_F(HeroLossReplanning, realRetreatActionProducesEscapeAndCancelsTaskWithoutErrors)
++{
++	ASSERT_NO_FATAL_FAILURE(start());
++	client->outcome = EBattleResult::ESCAPE;
++	auto movementTask = task();
++	RecordingLogger logger;
++	std::shared_lock lock(CGameState::mutex);
++	EXPECT_FALSE(NK2AI::NullkillerTestAccess::executeTask(*gateway->nullkiller, movementTask));
++	ASSERT_EQ(client->server.resultTypes.size(), 1);
++	EXPECT_EQ(client->server.resultTypes.front(), EBattleResult::ESCAPE);
++	EXPECT_TRUE(client->battleEndActionAccepted);
++	EXPECT_EQ(client->server.removedOwnHeroes, 1);
++	EXPECT_EQ(gameState()->getHero(heroID), nullptr);
++	EXPECT_EQ(client->movementRequests, 1);
++	EXPECT_TRUE(logger.errors.empty());
++	EXPECT_FALSE(logger.information.empty());
++}
++
++TEST_F(HeroLossReplanning, realSurrenderActionCancelsTaskWithoutErrors)
++{
++	ASSERT_NO_FATAL_FAILURE(start());
++	client->outcome = EBattleResult::SURRENDER;
++	auto movementTask = task();
++	RecordingLogger logger;
++	std::shared_lock lock(CGameState::mutex);
++	EXPECT_FALSE(NK2AI::NullkillerTestAccess::executeTask(*gateway->nullkiller, movementTask));
++	ASSERT_EQ(client->server.resultTypes.size(), 1);
++	EXPECT_EQ(client->server.resultTypes.front(), EBattleResult::SURRENDER);
++	EXPECT_TRUE(client->battleEndActionAccepted);
++	EXPECT_EQ(client->server.removedOwnHeroes, 1);
++	EXPECT_TRUE(logger.errors.empty());
++}
++
++TEST_F(HeroLossReplanning, unknownObservedResultRetainsTaskErrors)
++{
++	ASSERT_NO_FATAL_FAILURE(start());
++	client->server.invalidObservedResult = true;
++	auto movementTask = task();
++	RecordingLogger logger;
++	std::shared_lock lock(CGameState::mutex);
++	EXPECT_FALSE(NK2AI::NullkillerTestAccess::executeTask(*gateway->nullkiller, movementTask));
++	EXPECT_GE(logger.errors.size(), 2);
++}
++
++TEST_F(HeroLossReplanning, invalidObservedWinnerRetainsTaskErrors)
++{
++	ASSERT_NO_FATAL_FAILURE(start());
++	client->server.invalidObservedWinner = true;
++	auto movementTask = task();
++	RecordingLogger logger;
++	std::shared_lock lock(CGameState::mutex);
++	EXPECT_FALSE(NK2AI::NullkillerTestAccess::executeTask(*gateway->nullkiller, movementTask));
++	EXPECT_GE(logger.errors.size(), 2);
++}
++
++TEST_F(HeroLossReplanning, otherHeroRealLossAfterMovementCaptureDoesNotAuthorizeMovingHeroRemoval)
++{
++	ASSERT_NO_FATAL_FAILURE(start(false));
++	client->otherAttacker = findHeroAt({12,12,0})->id;
++	client->otherDefender = findHeroByOwner(ENEMY)->id;
++	client->removeWithoutBattle = true;
++	auto movementTask = task();
++	RecordingLogger logger;
++	std::shared_lock lock(CGameState::mutex);
++	EXPECT_FALSE(NK2AI::NullkillerTestAccess::executeTask(*gateway->nullkiller, movementTask));
++	EXPECT_EQ(client->server.normalResults, 1);
++	EXPECT_EQ(client->server.removedOwnHeroes, 2);
++	EXPECT_GE(logger.errors.size(), 2);
++}
++
++TEST_F(HeroLossReplanning, foreignHeroMovementRetainsRejectionAndTaskErrors)
++{
++	ASSERT_NO_FATAL_FAILURE(start(false));
++	hero = findHeroByOwner(ENEMY);
++	ASSERT_NE(hero, nullptr);
++	heroID = hero->id;
++	hero->setMovementPoints(2000);
++	const auto initialPosition = hero->visitablePos();
++	client->removeWithoutBattle = true;
++	auto movementTask = task();
++	RecordingLogger logger;
++	std::shared_lock lock(CGameState::mutex);
++	EXPECT_FALSE(NK2AI::NullkillerTestAccess::executeTask(*gateway->nullkiller, movementTask));
++	EXPECT_GE(logger.errors.size(), 2);
++	EXPECT_EQ(client->server.removedOwnHeroes, 0);
++	EXPECT_EQ(hero->visitablePos(), initialPosition);
++}

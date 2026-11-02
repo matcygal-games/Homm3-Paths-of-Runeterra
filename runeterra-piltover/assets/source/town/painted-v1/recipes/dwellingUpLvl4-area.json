@@ -1,0 +1,66 @@
+{
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI builtin imagegen; deterministic technical 2D conversion",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/painted-v1/assemble.py",
+      "sha256": "69586f88b723643690c2867b1c50f24ca3443e92120c0b43e4cf5597b8fdab66"
+    },
+    {
+      "path": "assets/source/town/painted-v1/layout-plan-v3.json",
+      "sha256": "3b9498f7cfb179c67742f073454facc95144f357158aa99c1fa80a457abd9b38"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl4/master-v1.png",
+      "sha256": "0e4c2ba0db9435cc89a6f62995c17788279cf3c1ed1b7bb741eac18994da41f5"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl4/source-generation.json",
+      "sha256": "a6a11b30d393a1c0d32a8629b7ba450ebb2a28adec813271f68d84e7f635af36"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl4/prompt-v1.txt",
+      "sha256": "e7fa50bfaecf832de58ccc9e97e9338895de83635a350584b54f163806667a99"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl4/padded-edit-reference.png",
+      "sha256": "d006eac8ba29317fa1d2baf50b4aff8e15f521dc232db153df22dfd48dcdab1f"
+    }
+  ],
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": true,
+    "model": "not exposed by tool",
+    "painted_master": "assets/source/town/painted-v1/buildings/dwellingUpLvl4/master-v1.png",
+    "painted_master_sha256": "0e4c2ba0db9435cc89a6f62995c17788279cf3c1ed1b7bb741eac18994da41f5",
+    "producer": "assets/source/town/painted-v1/assemble.py",
+    "producer_sha256": "69586f88b723643690c2867b1c50f24ca3443e92120c0b43e4cf5597b8fdab66",
+    "prompt": "Standalone transparent painted2D town-building cutout for original Heroes of Might and Magic III/VCMI. Native target800x374 town, not a poster or modern game render.\nImage1 is EDIT TARGET: our own existing dwellingLvl4 building; preserve its canvas/camera/root/lower core. Image2 is the ORIGINAL Heroes III Castle building: rendering-language reference only, no copied Castle pixels/silhouette. Image3 is the actual PILTOVER crest shape reference: central vertical pillar, split-ring/orb upper end, broad curved gear-flanked lower arcs; never wings or generic cog. Follow the same institutional/material family; additions/removals must be genuinely painted. The reference has technical transparent padding [0, 180, 0, 0] (left,top,right,bottom), whole-image translation only, not resized architecture. Use that spare headroom for new upper construction without moving or shrinking the existing lower door/foundation.\nOutput genuinely transparent RGBA with EXACT reference Image1 canvas dimensions and existing core scale/position; do not recenter, zoom or shrink the lower building to fill the frame. Full building, roof, stairs, foundation, cloth and subtle own rightward contact shadow entirely visible with >=35pixels transparent margins. No solid backdrop/white matte/checkerboard/grass or floor rectangle, no red/yellow/chroma edge outline. Walls and windows remain opaque painted material, not translucent see-through buildings.\nSame soft upper-left daylight and LOW FRONTAL THREE-QUARTER camera as the new town. Front facade/door dominates; modest right-side wall, limited roof planes, not strict isometric/bird's-eye. Richly textured original-H3 small-scale painted masonry, timber, slate, aged bronze/brass and dull steel. Warm ivory/hewn stone, muted dark timber, navy/teal cloth, restrained cool-blue instruments. No shiny modern3D/plastic, anime, splash-art, bloom/neon or photographic lens finish. Working Piltovan trade/science/community architecture, not16generic temples or Demacian keeps. A physical navy/teal banner or engraved plaque carries the CORRECT Piltover region crest visibly at native downsampling, with natural perspective and occlusion.\nPlanned native envelope [528, 190, 97, 83]; compact readable architectural silhouette. For a new base, leave headroom for later extensions above the same frontal ground-root nearx627,y1130. For an edit, KEEP EXACT reference canvas, lower foundation and entrance source position/scale; never zoom the smaller state to fill the canvas. Only whole real painted architecture; no people, soldiers, animals, text, labels, UI, border or watermark.\nSTATE: Arbalist Atelier. Upgrade the SAME Academy Bolt Atelier into Arbalist Atelier. Preserve the base workshop, door/steps, root/camera/light. Add a better enclosed brass-and-glass upper testing gallery, stronger roof braces, larger practical crafted-bolt workbenches and a precise compact mechanical sighting array. More substantial academic equipment and richer Piltover navy/bronze heraldry, distinct from the ordinary rifle range and mage archive. No giant energy cannon, splash effects or people.\n",
+    "prompt_file": "assets/source/town/painted-v1/buildings/dwellingUpLvl4/prompt-v1.txt",
+    "provider": "OpenAI builtin imagegen",
+    "source_generation_ledger": "assets/source/town/painted-v1/buildings/dwellingUpLvl4/source-generation.json"
+  },
+  "output_path": "Content/Sprites/runeterra/piltover/town/structures/dwellingUpLvl4_area.png",
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/painted-v1/buildings/dwellingUpLvl4/area.png",
+  "source_canvas": [
+    800,
+    374
+  ],
+  "source_sha256": "73751aa9dd9ba855e874cd098540c63697389ad3ff8f7db1930a2c891c6ce7a6",
+  "status": "painted-candidate",
+  "visual_approval_granted": false
+}

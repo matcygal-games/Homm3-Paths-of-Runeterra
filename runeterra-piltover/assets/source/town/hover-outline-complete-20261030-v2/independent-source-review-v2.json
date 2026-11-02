@@ -1,0 +1,33 @@
+{
+  "reviewer": "/root/runtime_review",
+  "status": "authored configuration",
+  "verdict": "GO for finite source-composition integration of the reviewed hover borders",
+  "manifest": {
+    "path": "reports/town-hover-outline-20261030-v1/continuation-v1/all-candidates-v2/manifest.json",
+    "sha256": "ad6a920d63294a5fff10a9f6c5596b420f915bba61b8a16fe072adae0298b4fc"
+  },
+  "reviewed_state_count": 71,
+  "reviewed_regions": {"noxus": 36, "piltover": 35},
+  "review_method": [
+    "Inspected all 71 before/after native-scale states in the v1 Noxus and Piltover comparison sheets.",
+    "Inspected enlarged exact candidate images for Noxus mageGuild4 and shipyard, and Piltover castle, cityHall and mageGuild3.",
+    "Independently compared v1 and v2 manifest border hashes: only Noxus mageGuild4, ship and shipyard changed.",
+    "Inspected each of those three exact v2 after.png images enlarged five times in memory."
+  ],
+  "resolved_findings": [
+    "Noxus mageGuild4 no longer follows the rectangular sky crop above the tower.",
+    "Noxus ship and shipyard now follow their dock, piers and vessel instead of the rectangular water image.",
+    "Piltover castle and cityHall retain visible painted sky outside the gold contour; that retained painting is not itself an outline defect."
+  ],
+  "visual_assessment": "The reviewed borders have consistent moderate gold edges and dark support; no additional concrete architectural-contour defect was observed in this finite review.",
+  "limitations": [
+    "This approves only source-composition use of the exact reviewed hover-border candidates.",
+    "Existing paintings retain their scenery and crop boundaries; this review does not accept or repaint those paintings.",
+    "Native hover occlusion, input selection, construction transitions and scaling were not executed or observed by this reviewer.",
+    "No general artwork, gameplay, package, rights or release acceptance is granted."
+  ],
+  "runtime_observed": false,
+  "painting_approval_granted": false,
+  "gameplay_accepted": false,
+  "release_accepted": false
+}

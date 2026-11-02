@@ -1,0 +1,1 @@
+After revising v1 with the new prechecked loop, default Windows decoding re-encoded a UTF-8 BOM as literal prefix characters in run_mutations.py; Python rejected line1 before executing controls. The prefix was removed; no engine candidate source changed. Original command output retained in conversation tool record.

@@ -1,0 +1,68 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "Own Zaun adventure map icons: a scaffolded fort and a shanty settlement.",
+  "canvas": [
+    58,
+    64
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; prompted and technically assembled by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/chemtech-v5-map-and-icons/icons/master.png",
+      "sha256": "7315849655e5c6bdfe5bd07f6b758bc0751a31f4cca079e94b8a1a9c0eea6669"
+    },
+    {
+      "path": "assets/source/town/chemtech-v5-map-and-icons/icons/generation.json",
+      "sha256": "c582d790a8c5714752974d49649c2fbffd04744aabc439dbddfb4526551236f5"
+    },
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/selection.json",
+      "sha256": "7f5f6168779eae0bef917194c0713758ac5459a83b1bb44e3b3218c57e0b5f8d"
+    },
+    {
+      "path": "scripts/zaun_chemtech_town_v4.py",
+      "sha256": "7acfd01d1507ecd26cf9de53de7d3f1202c589c779929c1c711bc4958688b6a1"
+    },
+    {
+      "path": "scripts/zaun_painted_town.py",
+      "sha256": "db7df36af68804059582b99c6cec06d2d29dbaf7db57a74936050442a9f6bc68"
+    }
+  ],
+  "fit": "contain",
+  "generation": {
+    "image_generation_used": true,
+    "model": null,
+    "painted_master": "assets/source/town/chemtech-v5-map-and-icons/icons/master.png",
+    "prompt": "Use case: precise-object-edit. Asset: one coherent four-state Zaun town-icon painting atlas, used to derive8native UI icons for original Heroes of Might and Magic III. INPUT1 is our OWN existing atlas. Preserve1536x1024, SAME2x2 composition, SAME four town subjects and their exact positions, margins, camera, footprints and background alpha. Top-left village normal; top-right village BUILT with its RED X marker at lower-right; bottom-left fortified town normal; bottom-right fortified town BUILT with its RED X marker. Preserve the SAME two bright RED X symbols in exactpositions and shape, unchanged UI meaning. Keep unfortified/fortified silhouette difference. No extra symbols/text/frames.\nChange brown/amber steampunk building treatment into strongly readable ZAUN CHEMTECH/CHEMPUNK: green luminous reagent cylinders/inspectionglass on existing pipe machinery; green chemical workshop windows; exposed dark pressure pipes; deep PURPLE cloth flags/awnings. Retain brown/rusted metal, brick and dark timber as solids. Green is clearly visible at58x64 and48x32 without becoming an outline or uniformfilter; amber secondary furnace only. Green fluid/green local reflections, not glowing ordinary metal. Rich textured original1999HeroesIII painted/prerendered game icon style, upper-leftlighting, compact readable shapes. No Piltover blue, glossy mobile3D/vector, neon outlines, modernLED billboard, holograms. Truly transparent negative space outside the existing object+groundpads+redcrosses; no opaque brown/gray canvas or haze. All four objects whole, no clipping or overlap. Exact original source registration.",
+    "provenance": "assets/source/town/chemtech-v5-map-and-icons/icons/generation.json",
+    "provenance_sha256": "c582d790a8c5714752974d49649c2fbffd04744aabc439dbddfb4526551236f5",
+    "provider": "OpenAI built-in image_gen.imagegen",
+    "route": "Genuine built-in image edit of own town-state art; native technical assembly only."
+  },
+  "id": "zaun.town.icon.village_built_large",
+  "identity_review": "assets/reviews/town/chemtech-v5-organic/review.json",
+  "native_visual_review": "pending",
+  "output_path": "Content/Sprites/runeterra/zaun/town/icons/village_built_large.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    58,
+    64
+  ],
+  "source": "assets/source/town/chemtech-v4-buildings/native/icons/village_built_large.png",
+  "source_sha256": "53c80c0d05d354fe557f9825b99963744f629909436bc6128c96b0c5e0e8dfa5",
+  "status": "built-unreviewed",
+  "title": "adventure map icon village_built_large",
+  "visual_approval_granted": false
+}

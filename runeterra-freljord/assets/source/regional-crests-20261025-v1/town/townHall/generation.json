@@ -1,0 +1,70 @@
+{
+  "edit_source": {
+    "path": "assets/source/town/buildings-v6/townHall/master.png",
+    "sha256": "a7862a03d09ff7f0bc9c56d2aba9c346377ed354c370c6216c073431794d0433"
+  },
+  "existing_gable_box": [
+    474,
+    230,
+    582,
+    374
+  ],
+  "image_generation_used": true,
+  "mask_source": {
+    "path": "assets/source/regional-crests-20261025-v1/town/townHall/crest-mask.png",
+    "sha256": "5fdf48bef3719aa0e7224b2785adb15441d649bbd032474fe91843a576f86395"
+  },
+  "model": "not exposed by built-in tool",
+  "model_id_exposed": false,
+  "native_execution": false,
+  "preparation_helper": {
+    "path": "scripts/prepare_town_art.py",
+    "sha256": "71476dbf913919f5cc07bab81b87236c4601ef3fe0b38d627fff88c7fe91fa46"
+  },
+  "preparation_source": {
+    "path": "assets/source/town/northern-village-20261024-v3/prepared/townHall/preparation.json",
+    "sha256": "5a4b72b23670bd2b04dbd9f6810b32443efdf41317b1aa757dd96153c6b53515"
+  },
+  "preservation": "Genuine local imagegen paint only; original alpha and all external RGBA preserved. Every source and runtime pixel identical to version1.",
+  "products": {
+    "hall_icon": {
+      "path": "assets/source/regional-crests-20261025-v1/town/townHall/icon.png",
+      "sha256": "cfc8940cf6d7d3603cf36e7ada8b3957e536910202db9be703a5a8684ffa5e72"
+    },
+    "master": {
+      "path": "assets/source/regional-crests-20261025-v1/town/townHall/master.png",
+      "sha256": "fb0fc7a16da316398686123dc1a75f3bb35628570d69cb8184a86af2413fc10b"
+    },
+    "native_layer": {
+      "path": "assets/source/regional-crests-20261025-v1/town/townHall/layer.png",
+      "sha256": "201ef8098bbcd880f82f1f00dfde7b6fb06850e118bef11411fce68026e17352"
+    }
+  },
+  "prompt": "Use case: precise-object-edit. Asset: FRELJORD townHall civic hall painted 2D town layer, original Heroes of Might and Magic III, final town scene800x374. Image1 is EDIT TARGET, current own1536x1024 painted master. Image2 is correct official FRELJORD REGIONAL CREST DESIGN reference only. Image3 is original HoMM3 native material/contrast reference only; copy no game pixels. Change ONLY the ALREADY EXISTING small carved crest in the triangular FRONT GABLE plaque immediately above main entrance, approximately x477..580,y234..371 in image1. This is a visibility repair of an already correct intended crest, not new heraldry or architecture. Repaint that same regional angular interlocked upper-arm silhouette and long descending central point as aged pale IVORY/very light weathered carved wood inlay, with sparse dark recessed separations. Fewer bolder painted facets should remain recognizable after native downsampling. Retain same crest position and entire existing footprint; fit existing wood gable, never enlarge panel or add a floating shield/banner. Material must be hand-painted muted ivory wood against existing dark brown timber, matte and subtly worn, not glowing gold or flat vector sticker. Preserve all other pixels conceptually: architecture, full silhouette, snowy roof, knot posts, frontdoor, stairs, all windows, timber grain, camera, upperleft light, alpha/background, and canvas exactly1536x1024. Preserve any existing institution marks and Capitol blue cloth banners; change only ONE front-gable crest, no secondary edits. Painted2D original1999HoMM3 native texture/scale, NOT Blender/3D/render, glossyCGI, neon, splash art or geometric placeholder. No text. Output one exact-canvas edited master with existing transparency preserved. A later strict technical mask will retain only this local crest paint.",
+  "prompt_source": {
+    "path": "assets/source/regional-crests-20261025-v1/town/townHall/prompt.txt",
+    "sha256": "f135dc47d2cbb8b491ff6ae2228a4aa49bdb190292c1773af96af2f5e78f751a"
+  },
+  "provider": "OpenAI built-in imagegen",
+  "raw_source": {
+    "path": "assets/source/regional-crests-20261025-v1/town/townHall/raw-imagegen.png",
+    "sha256": "47e06dcc92eaba549341730a608bf35125cadc153a16b16d36c4ef4e04aecfcb"
+  },
+  "reference_design": {
+    "native_style_reference_sha256": "d70d303d3b162dddcc44562c8d75b163f9632d1496900396d2c44082d17d2078",
+    "official_shape_reference_sha256": "c7a39c79c7c2e9ecd2bc0cc5204ccb66f5154d8756a05018bd1c8c478999416e",
+    "reference_policy": "Private nonbundled references viewed for design/material guidance; no private pixels or paths needed by replay",
+    "region": "Freljord"
+  },
+  "release_accepted": false,
+  "schema_version": 2,
+  "state": "townHall",
+  "status": "design proposal",
+  "supersedes_private_record_sha256": "2947990f9b19031f8ca977b46f65e7046686ef1b1504bef3664ea019f279bde8",
+  "technical_producer": {
+    "path": "assets/source/regional-crests-20261025-v1/town/portable-v2/compose.py",
+    "sha256": "d5fef35c5529f9121ef62a4bdeb4ade739ab4beb3ccf7309a63fe11bd744272c"
+  },
+  "tool": "image_gen.imagegen",
+  "visual_approval_granted": false
+}

@@ -1,0 +1,112 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "prompt": {
+    "path": "assets/source/creatures/sentinelColossus/material-review-v1/prompt-v2.txt",
+    "sha256": "a7bab13d117e4df0a894c5c8eea70c26422473a70b994047ab22f3030d2d5e94"
+  },
+  "output": {
+    "path": "assets/source/creatures/sentinelColossus/material-review-v1/material-pilot-v2.png",
+    "sha256": "f828261762fd975dd3d85fdb73faed279d7c9fd1d62ca93c0df427beef64d5cd"
+  },
+  "inputs": [
+    {
+      "path": "assets/source/creatures/sentinelColossus/colossus-rig-v2/paint-action-g02-atlas-v1.png",
+      "sha256": "d2c3bd1cd5c507d6d25e94e7c5f21410c7cfe6dfbb254ff314709d5a5401cb60"
+    },
+    {
+      "path": "references/frames/csgole/g02-f000.png",
+      "sha256": "54230f0ba8eea126f4c33afe4d0f99bbe835cabb3803189fa57071e4d1bd7955"
+    },
+    {
+      "path": "references/frames/cigole/g02-f000.png",
+      "sha256": "ebd9ddb1c7f265d383f32d52b9bc0393c7f4b3607617256e97fb15bc3889a58d"
+    }
+  ],
+  "camera": {
+    "path": "assets/source/creatures/sentinelColossus/colossus-rig-v2/paint-action-g02-camera-v1.json",
+    "sha256": "80f9dc3771b40b6f4fa69157528a2649a758e6c88534b13a720270fbdea1edf6"
+  },
+  "native_comparison": {
+    "path": "build/reports/art-review/current-20261020/upper/sentinel-material-pilot-v2-native-comparison.png",
+    "sha256": "a76d40376573726dc3b3fc214c53e10b6caab027c7347511c7d07b3dc21d2e22"
+  },
+  "comparison_conversion": "Use identical selected atlas camera scale/offset and recorded first-cell native Y correction-1. No candidate fitting/recentering or creative pixel edits.",
+  "geometry_bounds": [
+    {
+      "cell": 0,
+      "old_alpha8": [
+        163,
+        78,
+        528,
+        586
+      ],
+      "new_alpha8": [
+        162,
+        78,
+        529,
+        586
+      ],
+      "maximum_bound_difference_pixels": 1,
+      "maximum_bound_difference_native_pixels": 0.22090729783037474
+    },
+    {
+      "cell": 1,
+      "old_alpha8": [
+        140,
+        81,
+        505,
+        590
+      ],
+      "new_alpha8": [
+        138,
+        80,
+        505,
+        591
+      ],
+      "maximum_bound_difference_pixels": 2,
+      "maximum_bound_difference_native_pixels": 0.4418145956607495
+    },
+    {
+      "cell": 2,
+      "old_alpha8": [
+        166,
+        56,
+        536,
+        571
+      ],
+      "new_alpha8": [
+        164,
+        58,
+        538,
+        570
+      ],
+      "maximum_bound_difference_pixels": 2,
+      "maximum_bound_difference_native_pixels": 0.4418145956607495
+    },
+    {
+      "cell": 3,
+      "old_alpha8": [
+        145,
+        58,
+        520,
+        569
+      ],
+      "new_alpha8": [
+        143,
+        59,
+        521,
+        569
+      ],
+      "maximum_bound_difference_pixels": 2,
+      "maximum_bound_difference_native_pixels": 0.4418145956607495
+    }
+  ],
+  "decision": "coordinator-review-pending; not selected",
+  "findings": [
+    "Returned layout and outer geometry are very close to selected source; maximum measured alpha8 boundary drift0.442native pixels. This does not establish exact internal landmark invariance.",
+    "Stone mottling is stronger and darker brown occlusion softens some outlines, but clean chunky block planes remain.",
+    "Every other action/map/portrait remains unchanged; pilot is not a complete replacement family."
+  ],
+  "active_recipes_changed": false,
+  "visual_approval_granted": false
+}

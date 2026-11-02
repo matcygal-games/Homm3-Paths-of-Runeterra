@@ -1,0 +1,121 @@
+{
+  "acceptance": "Built-unreviewed development candidate; technical conversion grants no human visual, rights or release acceptance",
+  "assembly_method": "Original articulated renders plus explicitly pinned holding reuse/root-reflection native turn endpoints; derived frames are individually declared",
+  "canvas": [
+    32,
+    32
+  ],
+  "derivation_producer": {
+    "sha256": "d163bf1d9e202ea4d4fe4af69be8adfc1cb0b91c796defe480bf0029f51d8f0f",
+    "source": "scripts/targon_humanoid_art.py"
+  },
+  "editable_scene": {
+    "sha256": "a64d233322ff2a6fd2c6286ce44ec47e5d5d54dc482eb70fabc5f46802b2d957",
+    "source": "assets/source/creatures/humanoids/mountainArcher/mountainArcher-portable-2ca354fc0ebb.blend",
+    "source_pose_frame_formula": "1+group*12+frame; supplemental map/UI keys only in full-render scenes",
+    "timeline": [
+      1,
+      620
+    ]
+  },
+  "generation": {
+    "image_generation_used": true,
+    "method": "Original articulated Blender meshes and procedural surfaces; original generated painted face and wool materials",
+    "model": "not exposed by built-in image generation",
+    "painted_master": "assets/source/creatures/humanoids/materials/archer-face-v1.png",
+    "prompt": "ONE original front-view diffuse face texture for an articulated hand-painted late-1990s fantasy strategy game human hunter model. A practical adult woman about 28, warm medium olive-tan skin, dark brown almond-shaped human eyes, strong readable cheek and brow planes, compact straight nose, relaxed closed mouth, dark brown hair simply pulled back, no makeup, no elf ears, no headwear, no earrings. EXACTLY straight forward neutral expression, vertical head without tilt, head top at y5%, chin y95%, eyes near y43%, mouth near y72%, face centered with maximum head width about75% of square image. No shoulders or clothing; transparent background. Painted skin midtones, distinct small warm highlights on brow/cheek/nose, clearly readable eyes with tiny lights, short irregular oil-brush marks and earthy pigments. Diffuse surface painting, no dramatic directional lighting or gloss, no scenery, no text, not plastic, not a 3D render. This single face albedo will be projected onto an original volumetric mortal hunter head, not used as a sprite, guest champion or portrait copy.",
+    "provider": "built-in image_gen"
+  },
+  "groups": [
+    {
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/humanoids/mountainArcher/projectile/angle-0.png",
+          "source_canvas": [
+            32,
+            32
+          ],
+          "source_sha256": "5d7314acb3de0b5168a55eeac05a73075d3d37630243a547c1be24ca9a81cb93"
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/humanoids/mountainArcher/projectile/angle-1.png",
+          "source_canvas": [
+            32,
+            32
+          ],
+          "source_sha256": "f5374e627a0b0940671093dc659dd14299d9b49fe2cb2c96e85c95df76eb2ef8"
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/humanoids/mountainArcher/projectile/angle-2.png",
+          "source_canvas": [
+            32,
+            32
+          ],
+          "source_sha256": "4c6e0036ab237e25468604e6bf541206fc9234fd706d0a688e6bfbf1b5783198"
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/humanoids/mountainArcher/projectile/angle-3.png",
+          "source_canvas": [
+            32,
+            32
+          ],
+          "source_sha256": "9ca231812511de0632098b1267efe3f9155b2900b9a92141ef7bf20a9858f160"
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/humanoids/mountainArcher/projectile/angle-4.png",
+          "source_canvas": [
+            32,
+            32
+          ],
+          "source_sha256": "ac4b8461f89193634ac6b305bc2d7b91e1c7cb6fbb8c36066fbc5443d664a28e"
+        }
+      ],
+      "group": 0
+    }
+  ],
+  "native_missile": {
+    "attackClimaxFrame": 4,
+    "consumer": "BattleAnimationClasses.cpp initializeProjectile: right origin(222,265)+(-25+offsetX,offsetY); left uses multiplier-1, native PNG xmirror449-x; both must be observed in runtime",
+    "frameAngles": [
+      90,
+      45,
+      0,
+      -45,
+      -90
+    ],
+    "measured_right_offsets": {
+      "14": {
+        "x": 19,
+        "y": -64
+      },
+      "15": {
+        "x": 19,
+        "y": -53
+      },
+      "16": {
+        "x": 17,
+        "y": -43
+      }
+    },
+    "source_release": "groups14/15/16 source frame3 (one-based native climax4); frame2 full draw, frame3 arrow absent"
+  },
+  "output_path": "Content/Sprites/runeterra/targon/projectiles/mountainArcher.json",
+  "pivot": {
+    "x": 16,
+    "y": 16
+  },
+  "producer": {
+    "replay": "In an isolated project copy, restore this exact snapshot to scripts/targon_humanoid_art.py and run the recorded Blender unit command",
+    "sha256": "e2dbd56af3e976ff4ef91e1ac35ced858a089c5755a740c130e4ebf17ef0a40e",
+    "source": "assets/source/creatures/humanoids/producer-history/e2dbd56af3e976ff4ef91e1ac35ced858a089c5755a740c130e4ebf17ef0a40e.py"
+  },
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "vcmi_animation",
+  "status": "authored configuration",
+  "visual_approval": false
+}

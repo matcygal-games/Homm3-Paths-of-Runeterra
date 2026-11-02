@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "tool": "built-in image_gen",
+  "output": "master-v3.png",
+  "prompt_file": "prompt-v3.txt",
+  "original_generation_path": "C:\\Users\\matcy\\.codex\\generated_images\\01a15556-579f-7041-8958-a88e131375be\\exec-71e4f249-3c86-4df3-988a-0f90a9990a04.png",
+  "reference_roles": [
+    {
+      "path": "assets/source/town/layout-v3/site-reference-crops/defenses.png",
+      "role": "Own site crop: edit target",
+      "sha256": "4a933ee04e22894b296b603d3cb04c2bbc6de28fc45d10551fb93e178a507e65"
+    },
+    {
+      "path": "assets/source/town/layout-v3/built-study-v2.png",
+      "role": "Own complete lower-frontal composition: camera/light/material reference only",
+      "sha256": "3d24669ffadcdee6678459ca9bb3e23903f037c4babd2cf85a34a8a1d17cfcb4"
+    },
+    {
+      "path": "references/riot/heraldry/demacia-official-region-icon.png",
+      "role": "Private official crest shape: no copied original pixels",
+      "sha256": "d71bb021a49b704420f43c74f9dbfedb2bd89779bdafec1ea4be7bb8a172e734"
+    }
+  ],
+  "state": "fort",
+  "name": "Fort",
+  "site": "defenses",
+  "native_box_xywh": [
+    556,
+    42,
+    224,
+    111
+  ],
+  "status": "generated-source; native-size and replacement-chain visual review pending; no release acceptance",
+  "rights": "Project-generated building. Private licensed/official subject references are separate inputs; no original image bundled.",
+  "production_mutations": "None: no active recipes, manifest or stage changed; earlier source versions preserved.",
+  "source_sha256": "a9d1dfe73a5e628da395dda3c83d0b810a5ab0cc7edebc2a73f1e4735beb1716",
+  "dimensions": [
+    1857,
+    847
+  ],
+  "prompt_sha256": "4666b55471fb18d4e7a6321e0cd46f1bc35d4ba70bab83206b4189cafb1291e9",
+  "prompt": "Use-case: background-extraction plus explicitly requested construction-stage editing.\nReference1 is the EDIT TARGET crop of our project-owned lower-frontal town study. Reference2 is the complete OWN composition guide: only camera, depth, light and material authority, NOT a scene to reproduce. Reference3 is the PRIVATE official Demacia crest shape: redraw on existing small blue cloth where requested, no imported original pixels.\nMake ONE complete connected town-building construction object only. Preserve the target architectural family's lower frontal perspective and scene depth, upper-left light, richly textured painted/prerendered original-Heroes-III material language, weathered pale petricite, muted blue-gray slate/blue cloth, dark openings, steel and restrained old gold. Follow the exact specified state geometry, simpler foundations for early states and real structural improvements for upgrades. One visible state replaces its predecessor at SAME site. No high isometric dollhouse camera, glossy contemporary3D, anime, vector art, mobile proportions or League splash composition.\nTRUE transparent RGBA background, entire silhouette with modest transparent margins, only thin integral threshold/plinth and short soft alpha contact shadow. Remove ALL unrelated buildings, roads, terraces, cliff/grass rectangles, sky, water, landscape, shrubs and trees. Reconstruct obscured/cropped edges consistently. No people/crowds, labels/text/UI/frame, fake checkerboard or opaque background. Broad forms must read at actual native size; do not add tiny pointless clutter. Exact crest is upright central pointed blade/leaf, paired mirrored feather wings and tapered lower stem, NOT trident or fleur-de-lis. Do not add duplicate independent functional lots.\n\nTarget state: Fort (fort).\nAssigned native site box: [556, 42, 224, 111] on800x374canvas.\nEARLIEST DEFENSE STATE. Target only the rear-right curtain/gate complex in reference1, never the armillary-topped institution in front or the right cliff aviary. Make a low pale stone crenellated curtain with a simple dark central portcullis arch, two low square gate piers, modest blue pennants. Remove the tall keep, high flanking towers and huge civic statues. This occupies the SAME wide gate foundation as the later Citadel/Castle, but only45percent of Castle height. No separate disconnected wall towers scattered across the canvas; one coherent gate complex. No background cliff or road bridge.\n",
+  "native_candidate_export": {
+    "source": "assets/source/town/buildings/fort/master-v3.png",
+    "source_sha256": "a9d1dfe73a5e628da395dda3c83d0b810a5ab0cc7edebc2a73f1e4735beb1716",
+    "source_size": [
+      1857,
+      847
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 758351,
+    "near_opaque_pixels": 701534,
+    "nonzero_pixels": 814528,
+    "crop_alpha_threshold": 8,
+    "crop_xyxy": [
+      34,
+      143,
+      1842,
+      786
+    ],
+    "native_box_xywh": [
+      556,
+      42,
+      224,
+      111
+    ],
+    "native_preview": "references/town-comparisons/source-v3/fort-native.png",
+    "native_sha256": "5826ef74a85d527d2c744c7084fb3fcae2a9aa40326e4a9fa233927a2b5704f7",
+    "approval": "not granted"
+  },
+  "alpha_treatment": "Generated RGBA preserved; technical alpha>=8 bounds crop only, no color-keying, opacity synthesis or background substitution."
+}

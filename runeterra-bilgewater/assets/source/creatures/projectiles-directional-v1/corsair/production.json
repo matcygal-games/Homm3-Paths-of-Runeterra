@@ -1,0 +1,95 @@
+{
+  "camera": {
+    "location": [
+      0,
+      0,
+      5
+    ],
+    "orthographic_scale": 2.2,
+    "view": "positive X goes screen right; positive Y goes screen up"
+  },
+  "elite": false,
+  "family": "lead",
+  "fixed_projection_scale": 0.25,
+  "frames": [
+    {
+      "angle_degrees": 90,
+      "axis_world": [
+        6.123233995736766e-17,
+        1.0,
+        0
+      ],
+      "index": 0,
+      "source": "assets/source/creatures/projectiles-directional-v1/corsair/angle-0.png",
+      "source_sha256": "78af0709da0b46f554cfa3b77519cf255c94f6cc858878440ec9d9514c783aa3"
+    },
+    {
+      "angle_degrees": 45,
+      "axis_world": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0
+      ],
+      "index": 1,
+      "source": "assets/source/creatures/projectiles-directional-v1/corsair/angle-1.png",
+      "source_sha256": "74a61d9edb0aab2e77c29b9ff85fdcd5d0fbb2d04380af25ee7854d5ac39c2e7"
+    },
+    {
+      "angle_degrees": 0,
+      "axis_world": [
+        1.0,
+        0.0,
+        0
+      ],
+      "index": 2,
+      "source": "assets/source/creatures/projectiles-directional-v1/corsair/angle-2.png",
+      "source_sha256": "2d68aa8b06f2038831a19354cdbc1038e702c5c26c1f998dd5caaa39d2a2cea2"
+    },
+    {
+      "angle_degrees": -45,
+      "axis_world": [
+        0.7071067811865476,
+        -0.7071067811865476,
+        0
+      ],
+      "index": 3,
+      "source": "assets/source/creatures/projectiles-directional-v1/corsair/angle-3.png",
+      "source_sha256": "29adc8d61074f7f4706e325bf1be0a9ce7c6114ea4ef66a6d8c50a5e8541369e"
+    },
+    {
+      "angle_degrees": -90,
+      "axis_world": [
+        6.123233995736766e-17,
+        -1.0,
+        0
+      ],
+      "index": 4,
+      "source": "assets/source/creatures/projectiles-directional-v1/corsair/angle-4.png",
+      "source_sha256": "e568455b07593250c8aef393b7867d446418e49fd2cd352cac31185c6fd73cbb"
+    }
+  ],
+  "native_canvas": [
+    40,
+    40
+  ],
+  "native_consumer": "BattleProjectileController.cpp computeProjectileFrameID chooses nearest declared frameAngles; createProjectile fixes frameNum and reverses horizontally for left shooters",
+  "native_pivot": [
+    20,
+    20
+  ],
+  "native_playback": "not_run",
+  "per_frame_bbox_refit": false,
+  "physical_solid_shot": true,
+  "producer": "scripts/bilgewater_creature_art_projectiles.py",
+  "producer_sha256": "3744a33e2677638492db1ddc25d50a727636a38fad17301973d555ea39973a9c",
+  "source": "assets/source/creatures/projectiles-directional-v1/corsair/corsair-directional-solid-shot.blend",
+  "source_canvas": [
+    160,
+    160
+  ],
+  "source_sha256": "e4032d559bac83b3c3dc04d706153366454222d4bf5937833c89642f83d44ce0",
+  "status": "authored configuration",
+  "technical_state": "built-unreviewed",
+  "unit": "corsair",
+  "visual_approval_granted": false
+}

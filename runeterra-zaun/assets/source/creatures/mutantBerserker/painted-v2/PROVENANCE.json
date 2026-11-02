@@ -1,0 +1,151 @@
+{
+  "credits": {
+    "author": "OpenAI image generation directed by Runeterra project",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "generation": {
+    "image_generation_used": true,
+    "model": null,
+    "model_disclosure": "The callable tool did not disclose a model identifier.",
+    "painted_master": "assets/source/creatures/mutantBerserker/painted-v2/auxiliary-master.png",
+    "painted_master_sha256": "6f39b8cfd72aa999111680267c986f6bd65a073d68d1b07bcf86e1237d5ceaaf",
+    "prompt": "Use case: stylized-concept. Paint exactly SIX independently framed illustrations in 3 columns by2 rows with generous transparent gutters, true ALPHA transparency, no text or decorative frames. Original 1999 Heroes III painted/prerendered miniature creature language: rich muted leather/iron textures, compact realistic human proportions, soft upper-left light, dark restrained highlights, no outlines or glossy modern toy rendering. Zaun MUTANT BERSERKER, upgrade of Chem Ravager: SAME weathered black-haired working man, padded dark brown vest, olive trousers, restraint belt harness, large short hooked iron clamp in right hand, copper buckle straps and amber dosing vial at left hip. Upgrade visibly much stronger equipment: broad bolted iron forearm braces, large ribbed shoulder salvage plates, three harness belts, reinforced workboots, heavily padded vest; human face remains fully visible and intelligent. NO monster flesh, tumors, rotting, naked body, glowing regeneration, helmet, guns or spell. Row1col1 fullbody right-facing 3/4 side battle stance; row1col2 separately painted fullbody right-facing adventure miniature with slightly more overhead angle; row1col3 separately painted LEFT-facing reverse side standing view, actual other side NOT mirror. Row2col1 tight large head-and-shoulders portrait; row2col2 separate horizontal head-and-shoulders portrait; row2col3 another fullbody right-facing standing adventure view. Keep same body, upgraded harness equipment and skin throughout, steel braces clearly distinguish from base cloth vest.",
+    "provider": "OpenAI built-in image_gen tool",
+    "returned_provenance": {
+      "generated_file": "C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-da23-7872-b9d7-26cd44e2d4c0\\exec-41671580-acf4-4144-afb1-d915d702f131.png",
+      "output_hint": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-da23-7872-b9d7-26cd44e2d4c0 as C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-da23-7872-b9d7-26cd44e2d4c0\\exec-41671580-acf4-4144-afb1-d915d702f131.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "route": "genuine built-in image generation; technical alpha-preserving crops and uniform resampling only"
+  },
+  "recipes": [
+    {
+      "recipe": "assets/recipes/creatures/mutantBerserker-map.json",
+      "recipe_sha256": "94fd7261067d4ce5dc74f3a78a737f1c8359b27f9e67a3d5547d0ac0fa414321",
+      "source": "assets/source/creatures/mutantBerserker/painted-v2/native-map/g00/g00-f000.png",
+      "source_sha256": "7cea8f533d3438fb3bdf5ccf81a7a46c7aa00c6772b5945d11710fcebb43bb5b"
+    },
+    {
+      "recipe": "assets/recipes/creatures/mutantBerserker-large.json",
+      "recipe_sha256": "15f1da4a36b63bbe6dc1b69a6f06f3acea7be1574d6144e30f78b0fb04bdd95a",
+      "source": "assets/source/creatures/mutantBerserker/painted-v2/large-master.png",
+      "source_sha256": "509f67ad4e04abf1bbcb267aa86d520f814d9ee353106a94fd861f41e1e42a18"
+    },
+    {
+      "recipe": "assets/recipes/creatures/mutantBerserker-small.json",
+      "recipe_sha256": "1bb765737fb48051d5d4a716d6f7df002472e30231603a10fa9a5c822f04d651",
+      "source": "assets/source/creatures/mutantBerserker/painted-v2/small-master.png",
+      "source_sha256": "369d6c4ddb10047c482538aef2aaeb3cb7d9238d181122e302db85e20eee0b21"
+    },
+    {
+      "recipe": "assets/recipes/creatures/mutantBerserker-attackLeft.json",
+      "recipe_sha256": "d174185220062e9ccb774902a87e3347ac4bf658d89dd0641e1025e2d1955efc",
+      "source": "assets/source/creatures/mutantBerserker/painted-v2/attackLeft-master.png",
+      "source_sha256": "65256c633952eadb849d2d5e74ada98c2f4ba94522476cdd9567167ba2aa5742"
+    },
+    {
+      "recipe": "assets/recipes/creatures/mutantBerserker-attackRight.json",
+      "recipe_sha256": "7c71e430581b449df82468c1d2d5ef8756c1bd80098ad53b5f984000249b94a6",
+      "source": "assets/source/creatures/mutantBerserker/painted-v2/attackRight-master.png",
+      "source_sha256": "b250791a1b346d6f0e1f0d11b2794679b4939c5f83b51d0cd3d6e438bbd5debd"
+    }
+  ],
+  "status": "authored configuration; final approval pending",
+  "technical_transforms": {
+    "attackLeft": {
+      "offset": [
+        10,
+        0
+      ],
+      "panel": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "scale": 0.12673267326732673,
+      "source_alpha_box": [
+        64,
+        7,
+        407,
+        512
+      ]
+    },
+    "attackRight": {
+      "offset": [
+        5,
+        0
+      ],
+      "panel": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "scale": 0.12698412698412698,
+      "source_alpha_box": [
+        67,
+        8,
+        495,
+        512
+      ]
+    },
+    "large": {
+      "offset": [
+        0,
+        3
+      ],
+      "panel": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "scale": 0.11372549019607843,
+      "source_alpha_box": [
+        0,
+        0,
+        510,
+        512
+      ]
+    },
+    "map": {
+      "offset": [
+        50,
+        16
+      ],
+      "panel": [
+        540,
+        0,
+        1024,
+        512
+      ],
+      "scale": 0.09523809523809523,
+      "source_alpha_box": [
+        66,
+        8,
+        358,
+        512
+      ]
+    },
+    "small": {
+      "offset": [
+        0,
+        1
+      ],
+      "panel": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "scale": 0.06584362139917696,
+      "source_alpha_box": [
+        26,
+        0,
+        512,
+        437
+      ]
+    }
+  }
+}

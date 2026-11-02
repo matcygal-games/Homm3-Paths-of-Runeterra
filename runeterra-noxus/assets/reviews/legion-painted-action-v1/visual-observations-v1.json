@@ -1,0 +1,52 @@
+{
+  "compiled_manifest_outputs": 12,
+  "compiled_physical_outputs": 128,
+  "identity_reviews_accepted": 0,
+  "native_runtime_executed": false,
+  "native_visual_review": "pending",
+  "observed_findings": [
+    "All 52 required painted battle poses per unit exist and have unique hashes, including articulated strikes, falls and turns.",
+    "Upgraded Veteran visibly adds lower-face armor, torso and limb plates, with the same blade and buckler family.",
+    "Generated action atlases had approximate row positions. Alpha-island extraction avoids neighboring blade contamination, using one fixed battle/map scale per unit.",
+    "The final corpse is an actual prone pose; no idle frame is used as death.",
+    "Large portraits have bright fortress scenery. Small icons are own transparent cropped heads.",
+    "attackLeft and attackRight use distinct generated poses, without mirroring."
+  ],
+  "pending_findings": [
+    "Map gait still looks similarly right-foot-leading in multiple frames; it may read as a skip and needs further cycle/native visual review.",
+    "Fixed family transforms retain within-group generated foot and weapon variation. Native ground contact, turning transitions, action timing, fidget frequency and combat readability remain pending.",
+    "No original/Demacia side-by-side native visual comparison was performed by this worker.",
+    "No art license or redistribution clearance was granted.",
+    "No manifest entry was promoted to accepted."
+  ],
+  "release_accepted": false,
+  "scope": "Legion Recruit and Legion Veteran generated painted-art candidates and technical native conversion",
+  "status": "authored configuration",
+  "units": {
+    "legionRecruit": {
+      "battle_frames": 52,
+      "distinct_battle_frame_sha256": 52,
+      "map_frames": 6,
+      "native_animation_jsons": 2,
+      "portrait_and_attack_rasters": 4,
+      "sheets": {
+        "assets/reviews/legion-painted-action-v1/legionRecruit-all-native-poses-v1.png": "6b63b4208540073f53c59a730d57cf2bdcc6a754f62a600f528c86701d102b18",
+        "assets/reviews/legion-painted-action-v1/native-action-contact-v1.png": "2c52bfe38a9d4e28df49e6d5aaa44043f31394d2a68a8fa8c94852d778d0bb29",
+        "assets/reviews/legion-painted-action-v1/native-portraits-icons-map-v1.png": "97f0198b7045b9f20ce17246c5bfc3da43792e7a4df92103017e566301324868"
+      }
+    },
+    "legionVeteran": {
+      "battle_frames": 52,
+      "distinct_battle_frame_sha256": 52,
+      "map_frames": 6,
+      "native_animation_jsons": 2,
+      "portrait_and_attack_rasters": 4,
+      "sheets": {
+        "assets/reviews/legion-painted-action-v1/legionVeteran-all-native-poses-v1.png": "473e797129f4022e9ef143c2b12fec1fdfb95be0b8f1dfde7afa74f063448380",
+        "assets/reviews/legion-painted-action-v1/native-action-contact-v1.png": "2c52bfe38a9d4e28df49e6d5aaa44043f31394d2a68a8fa8c94852d778d0bb29",
+        "assets/reviews/legion-painted-action-v1/native-portraits-icons-map-v1.png": "97f0198b7045b9f20ce17246c5bfc3da43792e7a4df92103017e566301324868"
+      }
+    }
+  },
+  "visual_approval_granted": false
+}

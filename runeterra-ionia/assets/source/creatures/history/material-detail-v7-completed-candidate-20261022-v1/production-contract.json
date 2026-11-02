@@ -1,0 +1,65 @@
+{
+  "status": "authored configuration",
+  "visual_approval_granted": false,
+  "native_playback": "not_run",
+  "release_accepted": false,
+  "source_method": "Original editable volumetric Blender meshes, articulated rigid joints and keyed physical poses; original built-in imagegen painted material atlas. Rendered bitmap poses are not painted pose-atlas generation, idle-image warps, or borrowed original creature frames.",
+  "native_canvas": [450, 400],
+  "native_ground_anchor": {"single_hex": [197, 266], "two_hex": [218, 266]},
+  "stock_preview_rect": {"single_hex": [150, 155, 100, 120], "two_hex": [170, 155, 100, 120]},
+  "calibration": "Measure exactly one holding-frame alpha8 bounding box per variant. Use its fixed uniform scale and projected world origin across every action; never re-fit each frame.",
+  "fidget": {"actual_pose_addresses": [0, 1, 1, 2, 2, 3, 3], "native_tick_rate": 10, "seconds": 0.7, "probability_multiplier": 0.1},
+  "action_groups": {"walk_or_fly": 0, "fidget": 1, "holding": 2, "hit": 3, "defend": 4, "death": 5, "turns": [7, 8], "melee": [11, 12, 13], "shoot": [14, 15, 16], "flight_transition": [20, 21], "corpse": 22, "cast": [30, 31, 32]},
+  "projectile": {"physical": true, "angles_degrees": [90, 45, 0, -45, -90], "one_based_attack_climax": 4},
+  "adventure_map": {
+    "object_kind": "ordinary MONSTER",
+    "native_consumed_groups": [0],
+    "authored_group0_frames": 6,
+    "directional_groups_required": false,
+    "native_consumer_basis": "Source inspection: CCreatureHandler lines651-670 registers Obj::MONSTER; MapRendererContext lines95-114 sets non-Hero/Boat rotation0; objectGroupIndex lines194-197 returns idleGroups[0]=0; MapRenderer lines536-554 consumes the selected frame group. Original AVWPIKE, AVWMONK and AVWARCH DEFs expose group0 only.",
+    "attack_images": "Independent mapAttackFromLeft and mapAttackFromRight resources remain configured.",
+    "acceptance": "Authored configuration supported by native consumer inspection; actual map rendering and artistic acceptance remain pending."
+  },
+  "identity_limits": [
+    "All seven generic lines are project adaptation; no unique champion is reproduced as an ordinary stack.",
+    "Windborne/Galecrest are a fictional local living winged vastayan community, not Rakan copies and not a claim that all Lhotlan possess this anatomy.",
+    "Spirit Wardens are opaque carved bark and jade fictional spirits, not translucent neon ghosts or Demacian petricite constructs."
+  ],
+  "spirit_blossom_direction": {
+    "status": "authored configuration",
+    "interpretation": "Original generic troop ceremonial accents inspired by Ionia festival folklore; no canonical champion skin identity, moral classification, ghost transformation or combat statistic change.",
+    "changed_variants": ["ionianDisciple", "enlightenedWarrior", "kinkouAdept", "spiritMonk", "masterMonk", "windborneKin", "galecrestKin", "spiritWarden", "elderSpiritWarden"],
+    "selected_revision": "mesh-v7",
+    "original_ceremonial_revision": "mesh-v6",
+    "preserved_variants_in_ceremonial_pass": ["kinkouInitiate", "vastayanScout", "vastayanWarrior", "resistanceBlade", "resistanceVeteran"],
+    "palette": "Matte faded sky blue, warm ivory and dusty petal pink ties, small carved remembrance charms and branch blossoms; existing indigo, purple, bark, jade and practical red equipment identities remain.",
+    "lore_review": "docs/SPIRIT_BLOSSOM.md",
+    "verification": "New cohort source hashes, exact stock preview crop, action frame differences and configured compiler plan are reviewed separately from native gameplay or artistic approval."
+  },
+  "material_detail_revision": {
+    "status": "authored configuration",
+    "selected_revision": "mesh-v7",
+    "scope": "All fourteen existing subjects and keyed action families; earlier source revisions and pre-pass recipe selections preserved.",
+    "native_rendering": {"raw_canvas": [384, 384], "cycles_samples": 16, "native_canvas": [450, 400], "prior_calibration_locked": true},
+    "changes": [
+      "Original painted material atlas combined with broad procedural value wear and cloth bump folds that remain visible after native reduction.",
+      "Real stitched limb seams, robe-fold ridges, grip fingers, brow/eye/mouth planes, armor rims, weapon bevel lines and carved bark/face recess geometry.",
+      "Living Kin use curved tapered feather meshes with raised vanes, narrow quills, barb lines and overlapping shorter coverts; original wing bones and flight action semantics retained."
+    ],
+    "projectile_release": "Saved old/new Blender joint matrices, cameras and actual native projections compared at all twelve g14/15/16 frame003 cases; measured ledger points and content offsets remain unchanged.",
+    "framing": "Use exactly the prior native-to-world scale and ground pivot. Raw resolution changes sampling, so individual alpha-edge differences are measured rather than described as unchanged pixels.",
+    "quality_limit": "The underlying rigid segmented anatomy and generic head/hand volumes remain simple. This bounded material/detail pass does not supply final sculpted anatomy or a bespoke painted finish for every pose. Further native artistic review and refinement remain required.",
+    "evidence": "build/reports/creature-art/20261022-v4-material-detail/",
+    "native_playback": "not_run",
+    "visual_approval_granted": false,
+    "release_accepted": false
+  },
+  "known_review_work": [
+    "Low polygon candidate geometry and shader material detail still require final native Heroes III artistic review.",
+    "Ordinary monster adventure animations require only native group0; actual map rendering and artistic acceptance remain pending.",
+    "Native all-action elapsed playback, missile launch synchronization, death position, flying landing, casting and upgrade comparison remain pending.",
+    "Generated bitmap completeness does not establish artistic, gameplay, rights or release acceptance."
+  ],
+  "commands": {"render": ".tools/blender45/blender-4.5.9-windows-x64/blender.exe --background --python runeterra-ionia/scripts/ionia_creature_art.py -- --render --unit <id>", "register": "runeterra-demacia/.venv/Scripts/python.exe runeterra-ionia/scripts/ionia_creature_art.py --register", "review": "runeterra-demacia/.venv/Scripts/python.exe runeterra-ionia/scripts/ionia_creature_art.py --review"},
+  "compiler_status_explanation": "painted-master-complete-unapproved is the existing compiler's technical bitmap-cohort enum. It means available rendered PNG sources in this workflow, not a claim that poses were hand-painted or artistically approved."
+}

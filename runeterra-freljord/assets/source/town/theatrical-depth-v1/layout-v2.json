@@ -1,0 +1,548 @@
+{
+  "asset_paths": {
+    "animation": "runeterra/freljord/town/structures/<building>.json",
+    "area": "runeterra/freljord/town/structures/<building>_area.png",
+    "border": "runeterra/freljord/town/structures/<building>_border.png",
+    "icon": "runeterra/freljord/town/icons/buildings/<building>.png"
+  },
+  "background": "Existing painted inhabited fjord terrain; fixed shore and roads. Theatrical low frontal depth: close services frame the bottom corners; distant monuments recede in apparent scale.",
+  "camera": "Low frontal three-quarter painted oblique view, elevated horizon, visible doors and roof tiers; forced apparent scaling rather than physical camera distortion.",
+  "canvas": [
+    800,
+    374
+  ],
+  "faction": "runeterra-freljord:freljord",
+  "layer_rule": "Same native replacement relationships and state keys preserved; proposed z follows ground depth. No invented functionality or stats.",
+  "native_click_review": "not_run",
+  "planned_before_painting": true,
+  "roster_revision": "Latest24October2026 user: Poro/Hunter/Troll/Draklorn/Seer/Druvask/Harbinger; current36native building keys preserved.",
+  "scope": "Candidate complete36state theatrical depth successor. No gameplay, site-count, shoreline or master changes.",
+  "sites": [
+    {
+      "ground_contact_rect": [
+        20,
+        139,
+        90,
+        9
+      ],
+      "id": "dwelling-tier-7",
+      "land": true,
+      "physical_role": "regional community/dwelling institution",
+      "rect": [
+        15,
+        70,
+        100,
+        78
+      ],
+      "state_geometry_note": "Uniform whole-master contain. Large close framing versus smaller distant monuments; unchanged painting, no per-part warp.",
+      "state_rects": {
+        "dwellingLvl7": [
+          24,
+          84,
+          82,
+          64
+        ],
+        "dwellingUpLvl7": [
+          15,
+          70,
+          100,
+          78
+        ]
+      },
+      "states": [
+        "dwellingLvl7",
+        "dwellingUpLvl7"
+      ],
+      "subject": "Harbinger cliff roost to ice-ridge eyrie: broad natural cold basalt landing ledge integrated into the far-left ridge, wind-cut shelter and practical stone perches with restrained ice spines. Upgrade adds a higher sheltered ridge perch and greater landing breadth. No Yeti cave, serpent, Anivia statue, ice palace, neon or embodied bird.",
+      "z": 10
+    },
+    {
+      "ground_contact_rect": [
+        588,
+        237,
+        97,
+        9
+      ],
+      "id": "true-ice-quarry",
+      "land": true,
+      "physical_role": "regional community/dwelling institution",
+      "rect": [
+        583,
+        182,
+        107,
+        64
+      ],
+      "states": [
+        "resourceSilo"
+      ],
+      "subject": "Controlled crystal-loading yard, timber winch, stone retaining face; not a glowing crystal palace.",
+      "z": 22
+    },
+    {
+      "ground_contact_rect": [
+        265,
+        159,
+        124,
+        9
+      ],
+      "id": "civic-hall",
+      "land": true,
+      "physical_role": "monumental back institution",
+      "rect": [
+        260,
+        72,
+        134,
+        96
+      ],
+      "state_geometry_note": "Uniform whole-master contain. Large close framing versus smaller distant monuments; unchanged painting, no per-part warp.",
+      "state_rects": {
+        "grail": [
+          369,
+          78,
+          22,
+          40
+        ],
+        "townHall": [
+          299,
+          127,
+          57,
+          41
+        ],
+        "villageHall": [
+          300,
+          130,
+          54,
+          38
+        ]
+      },
+      "states": [
+        "villageHall",
+        "townHall",
+        "cityHall",
+        "capitol",
+        "grail"
+      ],
+      "subject": "Progressively broader timber council hall on stone footings; Grail hearth-banner ornament occupies the same plot.",
+      "z": 14
+    },
+    {
+      "ground_contact_rect": [
+        137,
+        179,
+        82,
+        9
+      ],
+      "id": "thunder-temple",
+      "land": true,
+      "physical_role": "regional community/dwelling institution",
+      "rect": [
+        132,
+        118,
+        92,
+        70
+      ],
+      "states": [
+        "special3"
+      ],
+      "subject": "Frostguard Vigil: low angular purple-black cold stone watch pavilion, weathered sentinel posts and a practical brazier; no bear imagery, Thralls or embodied gods. Legacy site ID retained only to match existing town-plan contract; native special3 unchanged.",
+      "z": 16
+    },
+    {
+      "ground_contact_rect": [
+        597,
+        154,
+        146,
+        9
+      ],
+      "id": "fortifications",
+      "land": true,
+      "physical_role": "monumental back institution",
+      "rect": [
+        592,
+        77,
+        156,
+        86
+      ],
+      "state_geometry_note": "Uniform whole-master contain. Large close framing versus smaller distant monuments; unchanged painting, no per-part warp.",
+      "states": [
+        "fort",
+        "citadel",
+        "castle"
+      ],
+      "subject": "Broad receding gate stockade; upgraded stone footings, watch platforms, roofed winter keep. No Castle or Demacia skyline.",
+      "z": 12
+    },
+    {
+      "ground_contact_rect": [
+        692,
+        195,
+        12,
+        10
+      ],
+      "id": "optional-coast",
+      "land": false,
+      "physical_role": "regional community/dwelling institution",
+      "rect": [
+        692,
+        174,
+        102,
+        51
+      ],
+      "shore_rule": "Dock approach on land to left; only pilings/boat extend over water. Ship state includes entire dock and boat.",
+      "states": [
+        "shipyard",
+        "ship"
+      ],
+      "subject": "Small fjord dock at the ravine waterline, with the left approach against the cliff shore; ship state includes the same dock plus a moored vessel afloat in the fjord.",
+      "z": 20
+    },
+    {
+      "ground_contact_rect": [
+        13,
+        252,
+        109,
+        9
+      ],
+      "id": "dwelling-tier-3",
+      "land": true,
+      "physical_role": "regional community/dwelling institution",
+      "rect": [
+        8,
+        180,
+        119,
+        81
+      ],
+      "states": [
+        "dwellingLvl3",
+        "dwellingUpLvl3"
+      ],
+      "subject": "Low troll cave with rough timber shelter; upgrade has larger dry stone entrance and tougher practical enclosure.",
+      "z": 24
+    },
+    {
+      "ground_contact_rect": [
+        147,
+        255,
+        70,
+        9
+      ],
+      "id": "anivia-shrine",
+      "land": true,
+      "physical_role": "regional community/dwelling institution",
+      "rect": [
+        142,
+        199,
+        80,
+        65
+      ],
+      "state_geometry_note": "Uniform whole-master contain. Large close framing versus smaller distant monuments; unchanged painting, no per-part warp.",
+      "states": [
+        "special2"
+      ],
+      "subject": "Bird-carved memorial and quiet wind-worn stone shelter, restrained frost; no embodied deity.",
+      "z": 26
+    },
+    {
+      "ground_contact_rect": [
+        248,
+        257,
+        106,
+        9
+      ],
+      "id": "dwelling-tier-5",
+      "land": true,
+      "physical_role": "regional community/dwelling institution",
+      "rect": [
+        243,
+        181,
+        116,
+        85
+      ],
+      "state_geometry_note": "Uniform whole-master contain. Large close framing versus smaller distant monuments; unchanged painting, no per-part warp.",
+      "state_rects": {
+        "dwellingLvl5": [
+          252,
+          197,
+          98,
+          69
+        ],
+        "dwellingUpLvl5": [
+          243,
+          181,
+          116,
+          85
+        ]
+      },
+      "states": [
+        "dwellingLvl5",
+        "dwellingUpLvl5"
+      ],
+      "subject": "Starlit diviner's timber-and-bone lodge, open roof stargazing aperture and simple owl-carved posts; Winter-Veil upgrade adds a sheltered observation gallery, layered woven veils and stronger owl lintel. No giant actual owl, telescope, Udyr animal repertoire or neon magical tower.",
+      "z": 28
+    },
+    {
+      "ground_contact_rect": [
+        454,
+        196,
+        87,
+        9
+      ],
+      "id": "mage-guild",
+      "land": true,
+      "physical_role": "monumental back institution",
+      "rect": [
+        449,
+        114,
+        97,
+        91
+      ],
+      "state_geometry_note": "Uniform whole-master contain. Large close framing versus smaller distant monuments; unchanged painting, no per-part warp.",
+      "state_rects": {
+        "mageGuild1": [
+          471,
+          155,
+          54,
+          50
+        ]
+      },
+      "states": [
+        "mageGuild1",
+        "mageGuild2",
+        "mageGuild3",
+        "mageGuild4"
+      ],
+      "subject": "Four readable stages of a Lorekeeper lodge, accumulating roof tiers and carved archive wings, no magical tower transplant.",
+      "z": 18
+    },
+    {
+      "ground_contact_rect": [
+        388,
+        253,
+        117,
+        9
+      ],
+      "id": "dwelling-tier-4",
+      "land": true,
+      "physical_role": "regional community/dwelling institution",
+      "rect": [
+        383,
+        196,
+        127,
+        66
+      ],
+      "state_geometry_note": "Uniform whole-master contain. Large close framing versus smaller distant monuments; unchanged painting, no per-part warp.",
+      "state_rects": {
+        "dwellingLvl4": [
+          393,
+          204,
+          107,
+          58
+        ],
+        "dwellingUpLvl4": [
+          383,
+          196,
+          127,
+          66
+        ]
+      },
+      "states": [
+        "dwellingLvl4",
+        "dwellingUpLvl4"
+      ],
+      "subject": "Frostguard lodge to Draklorn sanctum: low angular violet-black cold stone and timber institution with fur wind curtains, bifurcated lintel motif and restrained violet cloth. Upgrade gains an enclosed angular ritual wing and stronger roof silhouette. No bear effigies, embodied Lissandra, new thralls or Tower palace.",
+      "z": 30
+    },
+    {
+      "ground_contact_rect": [
+        521,
+        246,
+        56,
+        9
+      ],
+      "id": "forge",
+      "land": true,
+      "physical_role": "modest foreground service",
+      "rect": [
+        516,
+        205,
+        66,
+        50
+      ],
+      "state_geometry_note": "Uniform whole-master contain. Large close framing versus smaller distant monuments; unchanged painting, no per-part warp.",
+      "states": [
+        "blacksmith",
+        "special1"
+      ],
+      "subject": "Working open smithy upgraded into a broad regional Ornn-honoring furnace; not Hearth-Home itself.",
+      "z": 32
+    },
+    {
+      "ground_contact_rect": [
+        5,
+        361,
+        129,
+        9
+      ],
+      "id": "dwelling-tier-1",
+      "land": true,
+      "physical_role": "regional community/dwelling institution",
+      "rect": [
+        0,
+        266,
+        139,
+        104
+      ],
+      "state_geometry_note": "Uniform whole-master contain. Large close framing versus smaller distant monuments; unchanged painting, no per-part warp.",
+      "state_rects": {
+        "dwellingLvl1": [
+          10,
+          287,
+          119,
+          83
+        ],
+        "dwellingUpLvl1": [
+          0,
+          266,
+          139,
+          104
+        ]
+      },
+      "states": [
+        "dwellingLvl1",
+        "dwellingUpLvl1"
+      ],
+      "subject": "Poro herder's low timber hutch and sheltered yard with woven windbreaks, hay baskets and rounded low doors; upgrade adds a substantial attached sheltered herding yard and wider warm communal shelter for a Fluft. No hawk crag, icy palace, cannon or oversized porch pet.",
+      "z": 36
+    },
+    {
+      "ground_contact_rect": [
+        150,
+        361,
+        147,
+        9
+      ],
+      "id": "tavern-hall",
+      "land": true,
+      "physical_role": "modest foreground service",
+      "rect": [
+        145,
+        266,
+        157,
+        104
+      ],
+      "state_geometry_note": "Uniform whole-master contain. Large close framing versus smaller distant monuments; unchanged painting, no per-part warp.",
+      "states": [
+        "tavern",
+        "special4"
+      ],
+      "subject": "Warm ordinary wayfarer longhouse; upgrade into larger communal Warmother hall retaining welcoming service entrance.",
+      "z": 38
+    },
+    {
+      "ground_contact_rect": [
+        316,
+        356,
+        95,
+        9
+      ],
+      "id": "market",
+      "land": true,
+      "physical_role": "modest foreground service",
+      "rect": [
+        311,
+        285,
+        105,
+        80
+      ],
+      "state_geometry_note": "Uniform whole-master contain. Large close framing versus smaller distant monuments; unchanged painting, no per-part warp.",
+      "states": [
+        "marketplace"
+      ],
+      "subject": "Broad foreground market, food stores and hide awnings; warm colors, legible grounded stalls.",
+      "z": 34
+    },
+    {
+      "ground_contact_rect": [
+        435,
+        362,
+        145,
+        9
+      ],
+      "id": "dwelling-tier-6",
+      "land": true,
+      "physical_role": "regional community/dwelling institution",
+      "rect": [
+        430,
+        271,
+        155,
+        100
+      ],
+      "state_geometry_note": "Uniform whole-master contain. Large close framing versus smaller distant monuments; unchanged painting, no per-part warp.",
+      "states": [
+        "dwellingLvl6",
+        "dwellingUpLvl6"
+      ],
+      "subject": "Low heavy druvask stockade with tusk-height rails; upgrade gains deep stone base, roofed stalls and outfitting racks.",
+      "z": 40
+    },
+    {
+      "ground_contact_rect": [
+        618,
+        362,
+        170,
+        9
+      ],
+      "id": "dwelling-tier-2",
+      "land": true,
+      "physical_role": "modest foreground service",
+      "rect": [
+        613,
+        270,
+        180,
+        101
+      ],
+      "state_geometry_note": "Uniform whole-master contain. Large close framing versus smaller distant monuments; unchanged painting, no per-part warp.",
+      "states": [
+        "dwellingLvl2",
+        "dwellingUpLvl2"
+      ],
+      "subject": "Hunters' lodge with bow racks and drying hides; upgrade has finer weatherproofed equipment shed and deliberate patrol markings.",
+      "z": 42
+    }
+  ],
+  "status": "authored configuration",
+  "structure_canvas": [
+    800,
+    374
+  ],
+  "structure_origin": [
+    0,
+    0
+  ],
+  "water_polygon": [
+    [
+      704,
+      169
+    ],
+    [
+      799,
+      169
+    ],
+    [
+      799,
+      242
+    ],
+    [
+      760,
+      237
+    ],
+    [
+      731,
+      222
+    ],
+    [
+      707,
+      208
+    ]
+  ]
+}

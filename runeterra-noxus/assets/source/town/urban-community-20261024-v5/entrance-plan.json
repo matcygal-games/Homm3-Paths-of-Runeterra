@@ -1,0 +1,680 @@
+{
+  "status": "design proposal",
+  "scope": "Manually identified entry/stair and supported street approach on structural V5 paving; independent pixel review pending. Not native navigation.",
+  "coordinate_basis": "Door/stair/exit fractions in unmirrored alpha-cropped painted master, projected by selected native crop/fit; fixed street points are native800x374.",
+  "sites": {
+    "throneHall": {
+      "door": [
+        0.57,
+        0.84
+      ],
+      "stair": [
+        0.57,
+        0.96
+      ],
+      "exit": [
+        0.57,
+        0.99
+      ],
+      "facing": [
+        -0.3,
+        1
+      ],
+      "approach": [
+        [
+          396,
+          136
+        ],
+        [
+          408,
+          137
+        ]
+      ],
+      "kind": "civic doorway and public stairs"
+    },
+    "crownBastion": {
+      "door": [
+        0.53,
+        0.83
+      ],
+      "stair": [
+        0.53,
+        0.96
+      ],
+      "exit": [
+        0.53,
+        0.99
+      ],
+      "facing": [
+        -0.3,
+        1
+      ],
+      "approach": [
+        [
+          720,
+          140
+        ],
+        [
+          709,
+          143
+        ]
+      ],
+      "kind": "military gate and paved bridgehead"
+    },
+    "arcaneAthenaeum": {
+      "door": [
+        0.61,
+        0.83
+      ],
+      "stair": [
+        0.61,
+        0.95
+      ],
+      "exit": [
+        0.61,
+        0.99
+      ],
+      "facing": [
+        -0.3,
+        1
+      ],
+      "approach": [
+        [
+          170,
+          181
+        ],
+        [
+          193,
+          184
+        ]
+      ],
+      "kind": "war-college doorway and porch steps"
+    },
+    "dwellingLegion": {
+      "door": [
+        0.5,
+        0.75
+      ],
+      "stair": [
+        0.5,
+        0.84
+      ],
+      "exit": [
+        0.5,
+        0.99
+      ],
+      "facing": [
+        -0.5,
+        1
+      ],
+      "approach": [
+        [
+          83,
+          364
+        ],
+        [
+          122,
+          364
+        ],
+        [
+          147,
+          344
+        ],
+        [
+          163,
+          335
+        ]
+      ],
+      "kind": "barracks door, internal stair, gated forecourt and lateral urban ramp"
+    },
+    "dwellingHound": {
+      "door": [
+        0.52,
+        0.84
+      ],
+      "stair": [
+        0.52,
+        0.95
+      ],
+      "exit": [
+        0.52,
+        0.99
+      ],
+      "facing": [
+        -0.5,
+        1
+      ],
+      "approach": [
+        [
+          211,
+          339
+        ],
+        [
+          234,
+          342
+        ],
+        [
+          263,
+          333
+        ]
+      ],
+      "kind": "keeper gate and street-side kennel forecourt"
+    },
+    "dwellingAxe": {
+      "door": [
+        0.44,
+        0.85
+      ],
+      "stair": [
+        0.44,
+        0.94
+      ],
+      "exit": [
+        0.44,
+        0.99
+      ],
+      "facing": [
+        -0.4,
+        1
+      ],
+      "approach": [
+        [
+          505,
+          366
+        ],
+        [
+          474,
+          367
+        ],
+        [
+          441,
+          350
+        ]
+      ],
+      "kind": "knife guild gate, front stairs and lateral paved apron"
+    },
+    "dwellingRose": {
+      "door": [
+        0.51,
+        0.84
+      ],
+      "stair": [
+        0.51,
+        0.95
+      ],
+      "exit": [
+        0.51,
+        0.99
+      ],
+      "facing": [
+        -0.3,
+        1
+      ],
+      "approach": [
+        [
+          57,
+          206
+        ],
+        [
+          83,
+          207
+        ],
+        [
+          112,
+          202
+        ]
+      ],
+      "kind": "spider keeper gated enclosure, ground access only"
+    },
+    "dwellingCrimson": {
+      "door": [
+        0.6,
+        0.84
+      ],
+      "stair": [
+        0.6,
+        0.95
+      ],
+      "exit": [
+        0.6,
+        0.99
+      ],
+      "facing": [
+        -0.3,
+        1
+      ],
+      "approach": [
+        [
+          274,
+          207
+        ],
+        [
+          299,
+          207
+        ],
+        [
+          324,
+          201
+        ]
+      ],
+      "kind": "Crimson practice door and paved landing"
+    },
+    "dwellingMinotaur": {
+      "door": [
+        0.55,
+        0.83
+      ],
+      "stair": [
+        0.55,
+        0.94
+      ],
+      "exit": [
+        0.55,
+        0.99
+      ],
+      "facing": [
+        -0.3,
+        1
+      ],
+      "approach": [
+        [
+          700,
+          207
+        ],
+        [
+          678,
+          207
+        ],
+        [
+          644,
+          203
+        ]
+      ],
+      "kind": "broad sentient-minotaur hall doorway and street landing"
+    },
+    "bindingRift": {
+      "door": [
+        0.5,
+        0.83
+      ],
+      "stair": [
+        0.5,
+        0.95
+      ],
+      "exit": [
+        0.5,
+        0.99
+      ],
+      "facing": [
+        0,
+        1
+      ],
+      "approach": [
+        [
+          555,
+          143
+        ],
+        [
+          574,
+          140
+        ],
+        [
+          590,
+          139
+        ]
+      ],
+      "kind": "warded vault gate or pre-vault ritual court stair"
+    },
+    "gildedCup": {
+      "door": [
+        0.51,
+        0.82
+      ],
+      "stair": [
+        0.51,
+        0.94
+      ],
+      "exit": [
+        0.51,
+        0.99
+      ],
+      "facing": [
+        -0.4,
+        1
+      ],
+      "approach": [
+        [
+          350,
+          367
+        ],
+        [
+          390,
+          369
+        ],
+        [
+          432,
+          349
+        ]
+      ],
+      "kind": "inn entrance, public front landing and winding main street"
+    },
+    "grandMarket": {
+      "door": [
+        0.5,
+        0.84
+      ],
+      "stair": [
+        0.5,
+        0.97
+      ],
+      "exit": [
+        0.5,
+        0.99
+      ],
+      "facing": [
+        0,
+        1
+      ],
+      "approach": [
+        [
+          266,
+          128
+        ],
+        [
+          301,
+          130
+        ],
+        [
+          325,
+          132
+        ]
+      ],
+      "kind": "open market awning entrance; upper crossroad keeps old lower stair free"
+    },
+    "foundry": {
+      "door": [
+        0.6,
+        0.8
+      ],
+      "stair": [
+        0.6,
+        0.93
+      ],
+      "exit": [
+        0.6,
+        0.99
+      ],
+      "facing": [
+        -0.5,
+        1
+      ],
+      "approach": [
+        [
+          692,
+          360
+        ],
+        [
+          651,
+          360
+        ],
+        [
+          624,
+          342
+        ],
+        [
+          610,
+          329
+        ]
+      ],
+      "kind": "open forge threshold, front apron and lateral industrial lane"
+    },
+    "crimsonCitadel": {
+      "door": [
+        0.5,
+        0.83
+      ],
+      "stair": [
+        0.5,
+        0.95
+      ],
+      "exit": [
+        0.5,
+        0.99
+      ],
+      "facing": [
+        -0.3,
+        1
+      ],
+      "approach": [
+        [
+          599,
+          206
+        ],
+        [
+          616,
+          204
+        ]
+      ],
+      "kind": "resource depot service entrance"
+    },
+    "shipyard": {
+      "door": [
+        0.32,
+        0.71
+      ],
+      "stair": [
+        0.35,
+        0.9
+      ],
+      "exit": [
+        0.35,
+        0.99
+      ],
+      "facing": [
+        -1,
+        0.2
+      ],
+      "approach": [
+        [
+          758,
+          244
+        ],
+        [
+          757,
+          257
+        ],
+        [
+          744,
+          264
+        ]
+      ],
+      "kind": "dock building/pier access; boat intentionally intersects harbor water"
+    },
+    "grail": {
+      "door": [
+        0.5,
+        0.85
+      ],
+      "stair": [
+        0.5,
+        0.95
+      ],
+      "exit": [
+        0.5,
+        0.99
+      ],
+      "facing": [
+        0,
+        1
+      ],
+      "approach": [
+        [
+          639,
+          140
+        ],
+        [
+          650,
+          140
+        ]
+      ],
+      "kind": "public monument steps, no fabricated building door"
+    },
+    "blackRoseAcademy": {
+      "door": [
+        0.55,
+        0.84
+      ],
+      "stair": [
+        0.55,
+        0.96
+      ],
+      "exit": [
+        0.55,
+        0.99
+      ],
+      "facing": [
+        -0.3,
+        1
+      ],
+      "approach": [
+        [
+          56,
+          126
+        ],
+        [
+          75,
+          129
+        ],
+        [
+          96,
+          132
+        ]
+      ],
+      "kind": "academy door, supported terrace landing and connecting stair"
+    },
+    "trifarianHall": {
+      "door": [
+        0.6,
+        0.77
+      ],
+      "stair": [
+        0.6,
+        0.96
+      ],
+      "exit": [
+        0.6,
+        0.99
+      ],
+      "facing": [
+        -0.3,
+        1
+      ],
+      "approach": [
+        [
+          408,
+          207
+        ],
+        [
+          432,
+          207
+        ],
+        [
+          451,
+          202
+        ]
+      ],
+      "kind": "assembly door and new paved front landing; no route through lower red-roof hut"
+    },
+    "arenaOfValor": {
+      "door": [
+        0.5,
+        0.82
+      ],
+      "stair": [
+        0.5,
+        0.95
+      ],
+      "exit": [
+        0.5,
+        0.99
+      ],
+      "facing": [
+        0,
+        1
+      ],
+      "approach": [
+        [
+          517,
+          208
+        ],
+        [
+          541,
+          207
+        ],
+        [
+          558,
+          204
+        ]
+      ],
+      "kind": "arena gate and lateral public terrace approach above the knife-yard roof"
+    }
+  },
+  "state_overrides": {
+    "villageHall": {
+      "door": [
+        0.7,
+        0.83
+      ],
+      "stair": [
+        0.7,
+        0.96
+      ],
+      "exit": [
+        0.7,
+        0.99
+      ]
+    },
+    "townHall": {
+      "door": [
+        0.61,
+        0.84
+      ],
+      "stair": [
+        0.61,
+        0.96
+      ],
+      "exit": [
+        0.61,
+        0.99
+      ]
+    },
+    "cityHall": {
+      "door": [
+        0.58,
+        0.84
+      ],
+      "stair": [
+        0.58,
+        0.96
+      ],
+      "exit": [
+        0.58,
+        0.99
+      ]
+    },
+    "capitol": {
+      "door": [
+        0.55,
+        0.84
+      ],
+      "stair": [
+        0.55,
+        0.96
+      ],
+      "exit": [
+        0.55,
+        0.99
+      ]
+    }
+  }
+}

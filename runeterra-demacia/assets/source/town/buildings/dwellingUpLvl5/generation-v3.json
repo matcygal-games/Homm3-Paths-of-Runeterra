@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "tool": "built-in image_gen",
+  "mode": "local image edit; genuine transparent background requested",
+  "output": "master-v3.png",
+  "prompt_file": "prompt-v3.txt",
+  "original_generation_path": "C:\\Users\\matcy\\.codex\\generated_images\\01a15556-579f-7041-8958-a88e131375be\\exec-fb0c209f-fba1-4168-9dc3-72ac2fc2b43f.png",
+  "reference_roles": [
+    {
+      "path": "assets/source/town/layout-v3/pilot-reference-crops/dwellingUpLvl5.png",
+      "role": "edit target: padded technical crop from own composition guide",
+      "sha256": "e3e1d5fd41a2d05d683dc9110489201685912b86ea21dfc2cfa0160ea5ce353a"
+    },
+    {
+      "path": "assets/source/town/layout-v3/built-study-v2.png",
+      "role": "own complete camera/depth/material reference, no neighboring architecture to carry into output",
+      "sha256": "3d24669ffadcdee6678459ca9bb3e23903f037c4babd2cf85a34a8a1d17cfcb4"
+    },
+    {
+      "path": "references/riot/heraldry/demacia-official-region-icon.png",
+      "role": "private official emblem shape reference only",
+      "sha256": "d71bb021a49b704420f43c74f9dbfedb2bd89779bdafec1ea4be7bb8a172e734"
+    }
+  ],
+  "rights": "Project-generated construction master. No original-game or official Riot pixels copied into output; references remain private.",
+  "status": "three-pilot production candidate; native preview inspected; parent review and in-game construction acceptance pending",
+  "preserved_history": "Earlier master versions and metadata remain unchanged; v3 does not update production recipe or manifest.",
+  "validation_scope": "Source alpha/dimension/hash and native-size visual review only; no functional building, click/highlight, runtime or release acceptance.",
+  "source_sha256": "0f2665aa5844da32e2dae902541c82faa5ba46598973c74e693d3fd16bdb02b4",
+  "dimensions": [
+    1547,
+    1016
+  ],
+  "prompt_sha256": "e5cb938b8a628fd09abfc2fea5836185b94a7b00cc11ffcaf2ee5b920b7a5d14",
+  "prompt": "Use-case: background-extraction with careful hidden-edge reconstruction for a game construction layer.\nReference image 1 is the EDIT TARGET: a crop from our project-owned new Demacian town composition. Reference image 2 is the complete project-owned composition, used ONLY to keep the exact LOWER FRONTAL camera, depth, lighting and painted material family. Reference image 3 is the official Demacia emblem, used ONLY to redraw the correct winged-blade shape on existing small blue cloth when cloth is present; no imported original pixels.\nOutput ONE complete, isolated construction object with a genuinely transparent RGBA background, soft short alpha ground contact shadow, comfortable transparent margins, no background rectangle. Keep the exact architectural complex from the crop, NOT a redesigned replacement. Preserve its asymmetry, volumes, roof angles, weathered pale stone, muted blue-gray slate, restrained old gold, dark openings, upper-left light and richly textured original-Heroes-III painted/prerendered treatment. Low frontal perspective with natural depth, NOT a high isometric dollhouse, orthographic icon, glossy modern 3D or League splash illustration. Architectural shape must read compactly at the specified native size. Remove all sky, mountains, river, trees, shrubs, roads, cliffs, neighboring structures and urban scenery. Keep only the building's own very shallow base/threshold and indispensable attached architectural elements. Reconstruct any cropped/occluded roof or wall edges naturally. No people, captions, labels, text, UI, frame, checkerboard or baked opaque background. Do not turn a functional building into part of a larger town painting. Do not add new structures.\n\nTarget: Veteran Dragonguard Hall, the ONE upper-left main two-story military hall in reference1: long dark-blue slate wing with pale arcaded ground floor and open upper balcony, tall central-front blue heraldic banner, a higher blue-roofed right gable/entrance block, restrained gold roof trim, stone stairs attached at its right. This is the elite polearm training institution on the middle terrace. The small one-story open shed with its own blue roof at BOTTOM RIGHT is a separate recruit barracks: remove that neighboring building completely. Remove the thin neighboring tower on the far RIGHT, foreground roof at BOTTOM LEFT, cliffs, retaining-city walls, vegetation and background paths. Reconstruct the main hall's obscured lower-right wall/entrance at the same lower frontal perspective. Only a few understated polearm racks belong to this military building, no concert instruments, resonator, altar, giant dragon or training crowds. Preserve the existing main blue roof volumes and open balcony. Draw the exact small Demacian winged-blade emblem on its blue cloth from reference3. Mid-depth native footprint134x88pixels, substantial upgraded masonry/arcades, legible dark colonnade and blue central heraldry. Preserve the military hall from the crop exactly.\n",
+  "alpha_evidence": {
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixel_count": 597342,
+    "opaque_pixel_count": 230,
+    "intermediate_alpha_pixel_count": 974180,
+    "alpha_at_least_250_pixel_count": 888445,
+    "treatment": "Generated RGBA preserved unchanged; no alpha was synthesized or color-keyed. Intermediate alpha includes antialiasing/shadows and near-opaque painted body pixels."
+  },
+  "native_review": {
+    "native_readability": "Blue roof, long upper balcony, dark lower arcades, polearm racks and right entrance stair read at134x88. Separate recruit shed removed.",
+    "camera": "Lower frontal building keeps long terrace-facing hall form from study.",
+    "open_issues": [
+      "Very small cloth emblems are gold/blue military marks at native size; exact feather detail cannot be claimed.",
+      "Base Dragonguard Barracks must still use matching footprint with simpler geometry.",
+      "No final edge/overlap evaluation over terrain or adjacent constructed layers yet."
+    ],
+    "preview": "references/town-comparisons/pilot-v3/dwellingUpLvl5-native.png",
+    "preview_sha256": "41eb6efcd2b769c71d193f24f19f4496a7e4909d5cce05e10b6da627522c630b",
+    "comparison_sheet": "references/town-comparisons/pilot-v3/native-comparison.png",
+    "comparison_sheet_sha256": "b13b0737804fbb68068b80f4e016dc67bac84cad1794675d6f5245509ea8f9be",
+    "approval": "not granted"
+  },
+  "native_candidate_export": {
+    "source": "assets/source/town/buildings/dwellingUpLvl5/master-v3.png",
+    "source_sha256": "0f2665aa5844da32e2dae902541c82faa5ba46598973c74e693d3fd16bdb02b4",
+    "source_size": [
+      1547,
+      1016
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 597342,
+    "near_opaque_pixels": 888445,
+    "nonzero_pixels": 974410,
+    "crop_alpha_threshold": 8,
+    "crop_xyxy": [
+      19,
+      34,
+      1523,
+      979
+    ],
+    "native_box_xywh": [
+      177,
+      140,
+      134,
+      88
+    ],
+    "native_preview": "references/town-comparisons/source-v3/dwellingUpLvl5-native.png",
+    "native_sha256": "6858a5a0c27e490b7ec90930e5b792ecc9a01de38f9ef3fba9e848a40fb3716f",
+    "approval": "not granted"
+  },
+  "alpha_treatment": "Generated RGBA preserved; technical alpha>=8 bounds crop only, no color-keying, opacity synthesis or background substitution."
+}

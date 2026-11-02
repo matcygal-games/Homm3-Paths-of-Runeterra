@@ -1,0 +1,152 @@
+{
+  "definition": {
+    "category": "ranged",
+    "comparison": [
+      "core:orc",
+      "core:masterGremlin"
+    ],
+    "equipment": [
+      "leather-harness",
+      "hip-axe-rack",
+      "single-pauldron"
+    ],
+    "family": "axe",
+    "height": 1.9,
+    "lore": "Project adaptation of Reckoning arena fighters, not Draven, paired spinning axes or a canonical imperial regiment",
+    "native_height": 81,
+    "nature": "living",
+    "silhouette": "Broad human arena fighter, exposed throwing arm, leather chest straps, small off-shoulder plate, one simple single-bit throwing axe held at a time and spare axes in hip rack",
+    "tier": 3,
+    "two_hex": false,
+    "upgrade": false,
+    "weakness": "Finite ammunition, one throw, ordinary distance/wall penalties and separate close chop",
+    "weapon": "throwing-axe",
+    "width": 0.3
+  },
+  "emblem": {
+    "policy": "Leave emblem fields blank in guides. Obtain a genuine official Riot Noxus emblem, preserve exact source URL/bytes/hash and permissions before final painted art. Never invent a crest or reuse Demacia heraldry.",
+    "sha256": null,
+    "source_url": null,
+    "status": "blocked-official-source-provenance-required"
+  },
+  "generation": {
+    "image_generation_used": false,
+    "model": null,
+    "prompt": null,
+    "provider": null
+  },
+  "model_sheet_type": "editable volumetric rig + transparent pose guides, NOT painted art",
+  "native_groups": {
+    "0": {
+      "action": "walk-contact",
+      "minimum_guide_poses": 6
+    },
+    "1": {
+      "action": "fidget-equipment-check",
+      "minimum_guide_poses": 4
+    },
+    "11": {
+      "action": "melee-up",
+      "minimum_guide_poses": 6
+    },
+    "12": {
+      "action": "melee-front",
+      "minimum_guide_poses": 6
+    },
+    "13": {
+      "action": "melee-down",
+      "minimum_guide_poses": 6
+    },
+    "14": {
+      "action": "throw-reload",
+      "minimum_guide_poses": 8
+    },
+    "15": {
+      "action": "throw-reload",
+      "minimum_guide_poses": 8
+    },
+    "16": {
+      "action": "throw-reload",
+      "minimum_guide_poses": 8
+    },
+    "2": {
+      "action": "idle",
+      "minimum_guide_poses": 1
+    },
+    "3": {
+      "action": "hit-recoil",
+      "minimum_guide_poses": 4
+    },
+    "4": {
+      "action": "defend-brace",
+      "minimum_guide_poses": 4
+    },
+    "5": {
+      "action": "death-collapse",
+      "minimum_guide_poses": 6
+    },
+    "7": {
+      "action": "turn-toward-viewer",
+      "minimum_guide_poses": 4
+    },
+    "8": {
+      "action": "turn-back",
+      "minimum_guide_poses": 4
+    }
+  },
+  "painting_contract": {
+    "acceptance": false,
+    "camera": "One measured uniform camera/placement correction per action atlas, preserve every source and rejected revision; no per-frame stretch, warping, auto-fit or idle-as-action",
+    "continuity": "Use each unit's own model/upgrade definition and all actual pose guides; preserve joint contacts and independent silhouettes",
+    "required_capability": "ChatGPT image-generation skill / built-in image_gen.imagegen or human painted masters",
+    "review": [
+      "transparent background and no baked floor",
+      "ground contact at native pivot",
+      "no cross-cell contamination",
+      "whole action semantics and projectile release",
+      "base/upgrade silhouette and equipment distinction",
+      "genuine Noxus emblem legibility and provenance",
+      "native original/Demacia comparison",
+      "real native runtime review"
+    ],
+    "status": "blocked-missing-painted-masters",
+    "style": "Original Heroes III native painted/prerendered treatment, restrained highlights, matte iron/crimson/black, upper-left lighting; not glossy modern 3D, flat vector or splash art"
+  },
+  "pipeline": [
+    "art_creature_rigs.py actual Blender assembly",
+    "all groups keyed as genuine skeletal poses",
+    "art_creature_sources.py --review fixed whole-cohort uniform native conversion",
+    "painted master production BLOCKED",
+    "source pins and native action review BLOCKED",
+    "coordinator-only manifest selection, assembly and runtime acceptance NOT PERFORMED"
+  ],
+  "production_recipes": [
+    {
+      "path": "assets/recipes/creatures/axeReckoner-battle.json",
+      "sha256": "f37bfe59f28d51182f2ff2d64ff817226db28ce40ddc09804d31dc500c93755d"
+    },
+    {
+      "path": "assets/recipes/creatures/axeReckoner-map.json",
+      "sha256": "75b1a08df0e8498de417ca3e4257e1bc52c6048b99fa0f5c5bec98fe7c5e0177"
+    },
+    {
+      "path": "assets/recipes/creatures/axeReckoner-large.json",
+      "sha256": "5975eb36f7582cfd1fa44ffd30cf5d2df98944dd28d5d8ab350fb226198be3f6"
+    },
+    {
+      "path": "assets/recipes/creatures/axeReckoner-small.json",
+      "sha256": "9a5dd051556e8168a02cb4dfd6d53d1e2864f3f37463c059f938247ea58d5294"
+    },
+    {
+      "path": "assets/recipes/creatures/axeReckoner-attackLeft.json",
+      "sha256": "4c790a79ae89be0895285a1ce433c6e41fce08fec3b7913c336b8ecd7a321cb1"
+    },
+    {
+      "path": "assets/recipes/creatures/axeReckoner-attackRight.json",
+      "sha256": "d27d9d2e244805adfee82cb6b7bb5b2c619499c14ba799f4c75eb27706609d2a"
+    }
+  ],
+  "status": "authored configuration",
+  "unit": "axeReckoner",
+  "visual_approval_granted": false
+}

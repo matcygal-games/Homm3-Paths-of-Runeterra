@@ -1,0 +1,58 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "Native portrait language of the same subject: readable silhouette at native size, visible equipment, no details below one pixel. attackLeft and attackRight must be two real directional attacks, not mirrored copies of one image.",
+  "canvas": [
+    64,
+    64
+  ],
+  "credits": {
+    "author": "OpenAI built-in image_gen; project-directed prompts and technical extraction",
+    "license": "unresolved; no redistribution grant inferred",
+    "redistribution": "unresolved; release prohibited"
+  },
+  "delivery": {
+    "cohort": "assets/source/creatures/chemtechVanguard/painted-imagegen-v3/cohort.json",
+    "cohort_sha256": "ce9bfe44289ec0e0e2f8e6edba776309336966f5c8a832dc13562783832ab988",
+    "sources": [
+      {
+        "path": "assets/source/creatures/chemtechVanguard/painted-imagegen-v3/native/attackRight.png",
+        "sha256": "96adcd8e1f2e910be0b35654cb85ce947342de9b9885ebb0ecfccc19df6cb092"
+      }
+    ],
+    "status": "built-unreviewed; native visual review pending",
+    "visual_approval_granted": false
+  },
+  "dependencies": [],
+  "fit": "contain",
+  "generation": {
+    "image_generation_used": true,
+    "model": "not exposed by tool",
+    "painted_master": "assets/source/creatures/chemtechVanguard/painted-imagegen-v3/auxiliary-master.png",
+    "painted_master_sha256": "c14cffa18b8d6e1e29f33dbe2e3533f9d1dc8c6f01a6046dac4def28301b38a2",
+    "prompt": "undefined\nSubject: CHEMTECH VANGUARD upgrade of reference's Augmentation Veteran. SAME older healthy tan-skinned human man with short grey beard, exposed weathered face, cropped greying hair. Heavier braced frame, large layered scrap shoulder pauldrons, segmented riveted scrap cuirass over wool/leather sleeves, stronger visible hydraulic arm/leg braces and stout brass pressure pistons. Longer massive DOUBLE-JAW clamp head on a visibly TELESCOPIC straight nested rigid shaft, heavy two-handed salvage tool, not hook, chain, gun or lance. Broad planted stance, patched brown wool/leather, grey iron, one worn crimson strap, restrained amber pressure gauge. Ordinary human face no helmet/respirator. New equipment creates much broader shoulder outline and visibly longer clamp, no recolor. In standing the clamp is retracted; encounter poses extend it in the direction the figure is facing. Column3 fully faces LEFT with tool pointing LEFT, column4 facesRIGHT toolpointingRIGHT. Keep every image recognizably same independent upgraded human.\n",
+    "provenance": "assets/source/creatures/chemtechVanguard/painted-imagegen-v3/auxiliary-provenance.json",
+    "provider": "OpenAI built-in image_gen",
+    "route": "genuine painted auxiliary cohort; technical alpha isolation, crop, uniform resampling and placement"
+  },
+  "id": "zaun.creature.chemtechVanguard.attackRight",
+  "output_path": "Content/Sprites/runeterra/zaun/creatures/chemtechVanguard/attackRight.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    64,
+    64
+  ],
+  "source": "assets/source/creatures/chemtechVanguard/painted-imagegen-v3/native/attackRight.png",
+  "source_sha256": "96adcd8e1f2e910be0b35654cb85ce947342de9b9885ebb0ecfccc19df6cb092",
+  "status": "built-unreviewed",
+  "title": "Chemtech Vanguard attackRight",
+  "unit": "chemtechVanguard",
+  "visual_approval_granted": false
+}

@@ -1,0 +1,219 @@
+{
+  "status": "authored configuration",
+  "units": {
+    "ionianDisciple": {
+      "battle_body_height": 87,
+      "cohorts": [
+        "general-v2",
+        "defend-death-v1",
+        "melee-v1",
+        "auxiliary-v2"
+      ]
+    },
+    "enlightenedWarrior": {
+      "battle_body_height": 89,
+      "cohorts": [
+        "general-v4",
+        "defend-death-v1",
+        "melee-v3",
+        "auxiliary-v2"
+      ]
+    }
+  },
+  "battle": {
+    "canvas": [
+      450,
+      400
+    ],
+    "root": [
+      197,
+      266
+    ]
+  },
+  "adventure": {
+    "canvas": [
+      96,
+      64
+    ],
+    "root": [
+      80,
+      60
+    ],
+    "whole_figure_height": 45,
+    "scope": "Explicit compact fresh-painted camera proposal; preserves native96x64/root80,60. Whole vertical staff fits without shifting actorroot."
+  },
+  "cohort_layouts": {
+    "general": [
+      6,
+      4
+    ],
+    "defend": [
+      4,
+      3
+    ],
+    "melee": [
+      6,
+      3
+    ],
+    "auxiliary": [
+      4,
+      2
+    ]
+  },
+  "calibration_index": {
+    "general": 10,
+    "defend": 5,
+    "melee": 0,
+    "auxiliary": 0
+  },
+  "melee_body_calibration_source_height": {
+    "ionianDisciple": 283,
+    "enlightenedWarrior": 284
+  },
+  "group_source_map": {
+    "0": {
+      "cohort": "general",
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "1": {
+      "cohort": "general",
+      "indices": [
+        6,
+        7,
+        7,
+        8,
+        8,
+        9,
+        9
+      ]
+    },
+    "2": {
+      "cohort": "general",
+      "indices": [
+        10,
+        11
+      ]
+    },
+    "3": {
+      "cohort": "general",
+      "indices": [
+        12,
+        13,
+        14
+      ]
+    },
+    "4": {
+      "cohort": "defend",
+      "indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    "5": {
+      "cohort": "defend",
+      "indices": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "7": {
+      "cohort": "general",
+      "indices": [
+        18,
+        19,
+        20
+      ]
+    },
+    "8": {
+      "cohort": "general",
+      "indices": [
+        20,
+        19,
+        18
+      ]
+    },
+    "11": {
+      "cohort": "melee",
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "12": {
+      "cohort": "melee",
+      "indices": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "13": {
+      "cohort": "melee",
+      "indices": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "22": {
+      "cohort": "defend",
+      "indices": [
+        11
+      ]
+    }
+  },
+  "portrait_crops": {
+    "ionianDisciple": {
+      "large": [
+        320,
+        40,
+        1030,
+        720
+      ],
+      "small": [
+        380,
+        45,
+        970,
+        590
+      ]
+    },
+    "enlightenedWarrior": {
+      "large": [
+        290,
+        15,
+        1020,
+        730
+      ],
+      "small": [
+        350,
+        20,
+        1000,
+        590
+      ]
+    }
+  },
+  "root_policy": "One fixed source-cell horizontal camera/scale per complete cohort, source support calibration; actual foot/corpse baseline per genuine pose. No per-framebbox fitting, mirror synthesis, stretch or repaint.",
+  "acceptance": "authored configuration; source/native crop/motion/rights review separate"
+}

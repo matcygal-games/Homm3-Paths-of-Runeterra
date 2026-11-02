@@ -1,0 +1,31 @@
+{
+  "status": "authored configuration",
+  "scope": "finite independent source-image border composition review only",
+  "reviewer": "/root/profile_output",
+  "candidate_manifest": "candidate-v2/manifest.json",
+  "candidate_manifest_sha256": "5d6c6a9bb1068b85285e50c5dc66b886699a96001cc2748d910e69ce792422d7",
+  "states_viewed": 35,
+  "reviewed_native_sheets": ["candidate-v1/review-1.png", "candidate-v1/review-2.png", "candidate-v1/review-3.png"],
+  "additional_enlarged_v1_crops": ["townHall", "cityHall", "mageGuild3", "dwellingLvl7", "dwellingUpLvl7", "special1", "shipyard", "ship"],
+  "corrected_enlarged_v2_crop": "candidate-v2/dwellingUpLvl7-4x.png",
+  "independent_manifest_comparison": {
+    "state_count_v1": 35,
+    "state_count_v2": 35,
+    "changed_border_sha256_states": ["dwellingUpLvl7"],
+    "unchanged_border_states": 34
+  },
+  "verdict": "GO for source integration of these exact 35 v2 border candidates",
+  "observations": [
+    "The shared gold edge and dark outer support are consistent and moderate at native size.",
+    "Manual hall contours exclude the large painted sky regions above their parapets; dock and ship contours distinguish structures from water.",
+    "The upgraded T7 v1 inner arch traced an opaque blue-sky strip; v2 removes that mask strip and now follows the stone arch and solar ornament.",
+    "Retained yards, fences, quarry and rocky pens are integral facilities in these current building masters; no additional concrete contour defect was observed in the reviewed comparison."
+  ],
+  "integration_conditions": [
+    "Preserve painted layers, click masks, structure geometry and non-border outputs.",
+    "Pin exact reviewed masks and retain reproducible own-source producers and prior border recipe history."
+  ],
+  "native_hover_observed": false,
+  "gameplay_acceptance": false,
+  "release_acceptance": false
+}

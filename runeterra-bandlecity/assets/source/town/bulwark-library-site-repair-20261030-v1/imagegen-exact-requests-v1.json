@@ -1,0 +1,65 @@
+{
+  "status": "authored configuration",
+  "requests_recovered_verbatim": true,
+  "retrieval": "Actual own imagegen invocation JSON string literals recovered from preserved session calls, not reconstructed from summaries.",
+  "records": [
+    {
+      "exec_call_id": "call_80b71c136ac9432885ff909ae77d4eff",
+      "request_timestamp": "2026-10-30T18:00:30.829Z",
+      "tool": "image_gen.imagegen",
+      "request": {
+        "prompt": "Edit target is IMAGE 1, the empty 800x374 Bandle City town terrain painting. IMAGE 2 is a contextual style/architecture reference only. Make one extremely local painted2D repair at the upper-left ridge, native x218..300,y64..110, between the library plot and the small right guard-wing plot. Replace the jagged ambiguous cliff/bridgehead fragments there with a coherent solid mossy stone bridgehead courtyard: a gently curving level cobbled walkway crossing at approximately native y82, a dry solid foundation terrace under the right-hand fort plot x240..292,y80..96, restrained low retaining stonework, and a natural connection into the existing arched bridge rising toward the right. Ground must genuinely support a small front-facing gatehouse at x240..292. Keep a clear passage from library door near x207,y82 to bridge entry, with no water or unsupported raised pillar between. No new buildings, no gate, no tower, no parked objects on these two empty construction plots. Keep every other part of IMAGE 1 unchanged in layout and design, including all other terraces, paths, bridge beyond this local repair, tree, sky, mountains, lighting and golden-green Bandle palette. Original Heroes of Might and Magic III painted2D matte-painting texture and forced town perspective, native-size readability, no 3D render style, no text. Do not redesign the whole town.",
+        "referenced_image_paths": [
+          "C:/Users/matcy/Documents/code/Homm3/runeterra-bandlecity/assets/generated/Content/Sprites/runeterra/bandlecity/town/background.png",
+          "C:/Users/matcy/Documents/code/Homm3/reports/bandle-BC1-completion-20261030-v7/fully-built.png"
+        ],
+        "transparent_background": false
+      },
+      "returned_metadata": {
+        "output_filename": "exec-5b73170c-536a-4252-9fc9-51aeb8543754.png",
+        "model": null,
+        "seed": null,
+        "provider_job_id": null,
+        "note": "Tool returned image_url and output_hint only; model, seed and provider job ID were not exposed. exec_call_id is orchestration metadata, not a provider job ID."
+      },
+      "preserved_raw": {
+        "path": "runeterra-bandlecity/assets/source/town/bulwark-library-site-repair-20261030-v1/background-provider-v1.png",
+        "sha256": "a51bb4d4846ece606daa45b8e1f169c1447de4ea182f7df58d5e3ae5067f9073",
+        "dimensions": [
+          1836,
+          857
+        ],
+        "png_info_keys": []
+      }
+    },
+    {
+      "exec_call_id": "call_b977ac02719040f8876e6deee72d1c21",
+      "request_timestamp": "2026-10-30T18:02:01.306Z",
+      "tool": "image_gen.imagegen",
+      "request": {
+        "prompt": "Create one isolated final-upgrade Bandle Bulwark gatehouse sprite, a complete independent building on genuinely transparent background. IMAGE1 is the own painted Thorn Citadel predecessor: preserve its two round stone-and-timber gate towers, front-facing arched entrance, teal conical shingle roofs, golden lamps, warm tiny windows and teal banners with golden spiral-leaf regional motifs. IMAGE2 supplies the exact painted2D Bandle town atmosphere/forced perspective, not objects to copy. Make a clearly stronger final upgrade: slightly taller stout twin stone towers, protective wooden crenellated walkway spanning a centered open-front gate arch, thicker mossy stone buttresses, richer golden trim but same coherent gatehouse family. The front doorway threshold must be centered at the front foundation, with a wide solid dry mossy stone plinth below it. Build one compact self-contained symmetrical-front three-quarter gatehouse, rather tall narrow building suitable for a distant native sprite about54pixels wide and80pixels high. Complete left and right edges and whole roofs fully inside the image with ample transparent padding. No scenery, no bridge, no sky, no ground terrain square, no detached wall pieces, no text, no extra buildings or creatures. Entire visible roof and foundation, no clipping. Heroes of Might and Magic III original-era hand-painted textured2D sprite language, restrained detail that remains readable when reduced; not a 3D model or polished render. Match predecessor architectural identity.",
+        "referenced_image_paths": [
+          "C:/Users/matcy/Documents/code/Homm3/runeterra-bandlecity/assets/source/town/bulwark-library-site-repair-20261030-v1/citadel-guide.png",
+          "C:/Users/matcy/Documents/code/Homm3/reports/bandle-BC1-completion-20261030-v7/fully-built.png"
+        ],
+        "transparent_background": true
+      },
+      "returned_metadata": {
+        "output_filename": "exec-b16b5c2f-c8c4-4c04-9cb9-edb03188ff4f.png",
+        "model": null,
+        "seed": null,
+        "provider_job_id": null,
+        "note": "Tool returned image_url and output_hint only; model, seed and provider job ID were not exposed. exec_call_id is orchestration metadata, not a provider job ID."
+      },
+      "preserved_raw": {
+        "path": "runeterra-bandlecity/assets/source/town/bulwark-library-site-repair-20261030-v1/castle-provider-v1.png",
+        "sha256": "19477ff0e17b0803745ad8c347fcfbe1e2fe2b1243b65ee3558ed7ba230c0c69",
+        "dimensions": [
+          1144,
+          1375
+        ],
+        "png_info_keys": []
+      }
+    }
+  ]
+}

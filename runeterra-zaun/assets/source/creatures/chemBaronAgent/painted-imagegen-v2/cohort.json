@@ -1,0 +1,110 @@
+{
+  "assembly": "Source alpha-component isolation, crop, uniform Lanczos resampling and placement only. No painting, mirroring, rig, copied original pixels, body deformation or reused battle frame.",
+  "blocked_outputs": [
+    "battle"
+  ],
+  "findings": [
+    "Imagegen painted four distinct views. No final asset approval or native gameplay claimed."
+  ],
+  "master_sha256": "226887cc372c1b7e0b5bf7d3531f99903df6e18a6407312559a3e112f7eff97b",
+  "native_camera": {
+    "attack_pivot": [
+      32,
+      63
+    ],
+    "map_pivot": [
+      64,
+      63
+    ],
+    "source_contact_anchors": [
+      [
+        812,
+        663
+      ],
+      [
+        1320,
+        663
+      ],
+      [
+        1785,
+        654
+      ]
+    ],
+    "uniform_scale": 0.08
+  },
+  "outputs": {
+    "attackLeft": {
+      "alpha_bbox": [
+        16,
+        13,
+        54,
+        63
+      ],
+      "path": "assets/source/creatures/chemBaronAgent/painted-imagegen-v2/native/attackLeft.png",
+      "sha256": "15eaf9d65433f2888d3c95dd3de48c482ab4e5c47f59bba7e874e8ae4007af92",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "attackRight": {
+      "alpha_bbox": [
+        19,
+        22,
+        62,
+        64
+      ],
+      "path": "assets/source/creatures/chemBaronAgent/painted-imagegen-v2/native/attackRight.png",
+      "sha256": "cddfeb6230b00d6fab53c63f92b58183df844508645781c4f063967a107a4ee5",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "large": {
+      "alpha_bbox": [
+        1,
+        0,
+        56,
+        64
+      ],
+      "path": "assets/source/creatures/chemBaronAgent/painted-imagegen-v2/native/large.png",
+      "sha256": "416f7550910e1393d227bb9bd829ec791e73c6b818dbb69a4644ac23c10968bc",
+      "size": [
+        58,
+        64
+      ]
+    },
+    "map": {
+      "alpha_bbox": [
+        52,
+        16,
+        79,
+        63
+      ],
+      "path": "assets/source/creatures/chemBaronAgent/painted-imagegen-v2/native/map.png",
+      "sha256": "623bdfd9de846a42fc18794015af22965e8290addf6453ff95985e8e6a1af47a",
+      "size": [
+        96,
+        64
+      ]
+    },
+    "small": {
+      "alpha_bbox": [
+        2,
+        0,
+        29,
+        32
+      ],
+      "path": "assets/source/creatures/chemBaronAgent/painted-imagegen-v2/native/small.png",
+      "sha256": "46bcc55468ccf1966fb77d94cdf17a918fc5a01dc2082ae101831352270e3edc",
+      "size": [
+        32,
+        32
+      ]
+    }
+  },
+  "status": "authored configuration",
+  "unit": "chemBaronAgent",
+  "visual_approval_granted": false
+}

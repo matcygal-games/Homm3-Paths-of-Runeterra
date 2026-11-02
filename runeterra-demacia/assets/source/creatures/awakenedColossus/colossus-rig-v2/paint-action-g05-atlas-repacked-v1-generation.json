@@ -1,0 +1,185 @@
+{
+  "active_assets_modified": false,
+  "actual_atlas_metadata": {
+    "path": "assets/source/creatures/awakenedColossus/colossus-rig-v2/raw-action-g05-padded-atlas-v1.json",
+    "sha256": "1b9a6642523206c882bb191373b0f3b1b21bc3052a0da273aaa107448b60b368"
+  },
+  "actual_pose_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "actual_source_metadata": {
+    "path": "assets/source/creatures/awakenedColossus/colossus-rig-v2/colossus-production-v2.json",
+    "sha256": "8f946a891ad3ed9920513780ceaae2a07a1f3c89751736f93f10d3e1e17e8edb"
+  },
+  "alpha_diagnostics": {
+    "alpha8_bbox": [
+      28,
+      76,
+      1521,
+      950
+    ],
+    "faint_alpha1_to7_pixels": 86680,
+    "fully_transparent_pixels": 1011470,
+    "note": "Colored RGB in alpha0pixels is invisible to a correct compositor; extrema do not establish clean interior/gutters or art acceptance.",
+    "requires_opaque_background_composite_visual_review": true
+  },
+  "alpha_extrema": [
+    0,
+    254
+  ],
+  "derivation": {
+    "basis": "Opaque full-source review confirms first-row boots below nominal512boundary on upgrade and second-row figures start below580. Preserve complete first-row boots and shared64padding, no resize or pose edits.",
+    "frames": [
+      {
+        "destination": [
+          64,
+          64
+        ],
+        "index": 0,
+        "rgba_pixels_identical": true,
+        "source_rectangle": [
+          0,
+          0,
+          512,
+          580
+        ]
+      },
+      {
+        "destination": [
+          832,
+          64
+        ],
+        "index": 1,
+        "rgba_pixels_identical": true,
+        "source_rectangle": [
+          512,
+          0,
+          1024,
+          580
+        ]
+      },
+      {
+        "destination": [
+          1600,
+          64
+        ],
+        "index": 2,
+        "rgba_pixels_identical": true,
+        "source_rectangle": [
+          1024,
+          0,
+          1536,
+          580
+        ]
+      },
+      {
+        "destination": [
+          64,
+          900
+        ],
+        "index": 3,
+        "rgba_pixels_identical": true,
+        "source_rectangle": [
+          0,
+          580,
+          512,
+          1024
+        ]
+      },
+      {
+        "destination": [
+          832,
+          900
+        ],
+        "index": 4,
+        "rgba_pixels_identical": true,
+        "source_rectangle": [
+          512,
+          580,
+          1024,
+          1024
+        ]
+      },
+      {
+        "destination": [
+          1600,
+          900
+        ],
+        "index": 5,
+        "rgba_pixels_identical": true,
+        "source_rectangle": [
+          1024,
+          580,
+          1536,
+          1024
+        ]
+      }
+    ],
+    "source": {
+      "path": "assets/source/creatures/awakenedColossus/colossus-rig-v2/paint-action-g05-atlas-v1.png",
+      "sha256": "70da98dd2a0d255f7d19b0e5e2d76a82bd0b47a3e176279ec1ea28c3999052b2"
+    }
+  },
+  "generated_original": "C:\\Users\\matcy\\.codex\\generated_images\\01a15555-c0fe-70e3-bea2-afc52c9cdb71\\exec-e159bc46-c1d7-4582-941a-72fe7043d47b.png",
+  "generated_original_sha256": "70da98dd2a0d255f7d19b0e5e2d76a82bd0b47a3e176279ec1ea28c3999052b2",
+  "grid_integer_aligned": true,
+  "grid_note": "Logical equal-cell extents may fall on half-pixels; export uses one fixed continuous source-box scale, without per-cell fitting.",
+  "group": 5,
+  "intentional_source_pose_holds": [],
+  "layout": [
+    3,
+    2
+  ],
+  "mode": "RGBA",
+  "output": "assets/source/creatures/awakenedColossus/colossus-rig-v2/paint-action-g05-atlas-repacked-v1.png",
+  "output_sha256": "13b62a30f3e3642b13dc414d0d2553e2600dd72da73125d3523febe7e6b10a65",
+  "prompt": {
+    "path": "assets/source/creatures/awakenedColossus/colossus-rig-v2/paint-action-g05-executed-prompt-v1.txt",
+    "sha256": "6679b5b81218291d041133dc1c2d81e0e2b5e47abdd3f93e52f0365afab9fa56"
+  },
+  "references": [
+    {
+      "path": "assets/source/creatures/awakenedColossus/colossus-rig-v2/raw-action-g05-padded-atlas-v1.png",
+      "sha256": "81ac8042baf39a8ae1edb0e65b43d5ec0ff75a991ff932617bef62fbab250cce"
+    },
+    {
+      "path": "assets/source/creatures/awakenedColossus/master-v3.png",
+      "sha256": "0d66fa2f0fc4afb5171cd1eaf06da6e37491c7b5ea24c5884c03d8e671d8f0da"
+    },
+    {
+      "path": "references/prototypes/colossus-family-v2/original-and-raw-construct-native.png",
+      "sha256": "dc7795379a2d9ecd974072371ce671646f2cbb1d90567eac8efb2242e354d5ac"
+    },
+    {
+      "path": "references/riot/heraldry/demacia-official-region-icon.png",
+      "sha256": "d71bb021a49b704420f43c74f9dbfedb2bd89779bdafec1ea4be7bb8a172e734"
+    }
+  ],
+  "returned_cell": [
+    768,
+    768
+  ],
+  "returned_dimensions": [
+    2304,
+    1536
+  ],
+  "source_input_transform": {
+    "basis": "Same whole-cell downsample and transparent padding for every actual raw source pose; no per-frame fit.",
+    "offset": [
+      46,
+      46
+    ],
+    "scale": 0.8203125
+  },
+  "status": "generated source candidate; actual grid/camera/native motion review required",
+  "tool": "Pillow exact integer death ROI repack",
+  "unit": "awakenedColossus",
+  "validation_errors": [],
+  "version": 1,
+  "visual_approval_granted": false
+}

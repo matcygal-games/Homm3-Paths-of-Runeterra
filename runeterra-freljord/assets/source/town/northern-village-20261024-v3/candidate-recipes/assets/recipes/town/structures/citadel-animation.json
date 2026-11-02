@@ -1,0 +1,115 @@
+{
+  "acceptance": "Technical candidate only; current native/art/rights acceptance remains separate.",
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed built-in OpenAI imagegen painted sources and deterministic technical assembly",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "generation": {
+    "conversion": {
+      "alpha_bbox": [
+        0,
+        67,
+        1560,
+        952
+      ],
+      "alpha_treatment": "Preserved painted RGBA, including any soft halo; no threshold erasure/background removal",
+      "canvas": [
+        800,
+        374
+      ],
+      "mirror_x": false,
+      "placed_origin": [
+        578,
+        51
+      ],
+      "placed_size": [
+        215,
+        122
+      ],
+      "rect": [
+        578,
+        43,
+        215,
+        130
+      ],
+      "source_canvas": [
+        1560,
+        1008
+      ],
+      "source_coordinate_basis": "original master",
+      "uniform_scale": 0.13782051282051283,
+      "upscaled": false
+    },
+    "generation_record": "assets/source/town/northern-village-20261024-v3/provenance/citadel/generation.json",
+    "image_generation_used": true,
+    "model": "not exposed by built-in tool",
+    "model_id_exposed": false,
+    "painted_master": "assets/source/town/buildings-v1/citadel/master.png",
+    "painted_master_sha256": "4a3f2dc5cc70cfbe8ab201bcd929fb11dc6b76f1970a149c7fb53621ab5dfa84",
+    "prompt": "Use case: precise-object-edit. Asset type: one transparent ORIGINAL HeroesIII Freljord town building upgrade. Input image1 is the exact OWN previous building state, edit target. Upgrade this exact palisade Fort into an intermediate Winter Citadel: retain low spreading palisade wings and left/right open-platform positions, add a taller STONE central gatehouse directly behind the SAME central timber gate, with one OPEN roofless centre watch platform. Add substantial stone foundations and better iron gate bands. Centre rises higher, but NO roofed greatkeep yet and NO tall closed side towers; preserve intermediate progression and wide northern stockade identity. Preserve original painted/prerendered1999 miniature rendering, rough warmdarktimber/stone/ironsnow materials, upper-leftdaylight, camera and wholebuildingposition; improve gear/architecture visibly, not recolor. One complete isolated upgradedbuilding with10%margin. GENUINE clearalpha outside physicalbuilding, NO foghalo or backdrop; tiny irregular footings only, no rectangular groundtile, scenery, sky, other buildings, people, letters, UI, Demaciancrest, glossyphotorealmodern3D, neonblueicepalace. Return ONE upgraded state only, not before/after or sheet.",
+    "provider": "OpenAI built-in imagegen",
+    "references": [
+      {
+        "path": "assets/source/town/buildings-v1/citadel/master.png",
+        "sha256": "4a3f2dc5cc70cfbe8ab201bcd929fb11dc6b76f1970a149c7fb53621ab5dfa84"
+      },
+      {
+        "path": "assets/source/town/northern-village-20261024-v3/provenance/citadel/generation.json",
+        "sha256": "56dfcf4535620b0fe4c73c79bfab5c47e4129f25e0c26da5299978fb84d66633"
+      }
+    ],
+    "technical_producer": {
+      "path": "assets/source/town/northern-village-20261024-v3/prepare_candidate.py",
+      "sha256": "5c79a631c542104c95ba473b355557f65e2f8b214faf07f66a5024e3b0c21a85"
+    },
+    "tool": "image_gen.imagegen",
+    "visual_approval_granted": false
+  },
+  "groups": [
+    {
+      "frames": [
+        {
+          "sha256": "5986bd3a97a2798a2fc9616cf229f8b25bf28cf464abffd94c63d48f7b909bab",
+          "source": "assets/source/town/northern-village-20261024-v3/prepared/citadel/layer.png",
+          "source_canvas": [
+            800,
+            374
+          ],
+          "source_sha256": "5986bd3a97a2798a2fc9616cf229f8b25bf28cf464abffd94c63d48f7b909bab"
+        }
+      ],
+      "generateOverlay": 0,
+      "generateShadow": 0,
+      "group": 0
+    }
+  ],
+  "inputs": [
+    {
+      "path": "assets/source/town/northern-village-20261024-v3/layout-v3.json",
+      "sha256": "5760fa4c000093b10b50e8fcaaddec4a23897dd03f56b5ac9e2258db4c88a153"
+    },
+    {
+      "path": "scripts/prepare_town_art.py",
+      "sha256": "71476dbf913919f5cc07bab81b87236c4601ef3fe0b38d627fff88c7fe91fa46"
+    },
+    {
+      "path": "assets/source/town/northern-village-20261024-v3/prepare_candidate.py",
+      "sha256": "5c79a631c542104c95ba473b355557f65e2f8b214faf07f66a5024e3b0c21a85"
+    }
+  ],
+  "output_path": "Content/Sprites/runeterra/freljord/town/structures/citadel.json",
+  "pivot": {
+    "x": 0,
+    "y": 0
+  },
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "vcmi_animation",
+  "require_alpha": true,
+  "status": "authored configuration",
+  "visual_approval_granted": false
+}

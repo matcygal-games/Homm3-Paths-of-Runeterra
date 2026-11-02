@@ -1,0 +1,36 @@
+{
+  "status": "authored configuration",
+  "canvas": [192, 160],
+  "common_uniform_scale": 0.1225,
+  "native_walkup_anchor": [112, 139],
+  "root_interpretation": "A is the usable paving immediately in front of the main entrance stair, not the door's hinge or the master bounding-box center. The physical lowest stair point is annotated separately. All states use one density/camera, individual root translations only.",
+  "native_mask": ["VVVVVV", "VVVVVV", "VVVVVV", "VVBBBV", "VBBABB"],
+  "native_visitable_from": ["---", "---", "+++"],
+  "mask_authority": "Current hand-authored content/factions.json. This conversion neither inflates the image nor weakens the mask. The final bottom-right blocked cell may contain little artwork; actual native footprint/pathfinding is unobserved.",
+  "states": {
+    "village": {"master": "village_v2.png", "sha256": "e2b1293283f55cdffc5ea70d3f670cb67e8c9ae693940049ac725715310b9450", "prompt": "piltover_map_village_v2-actual-prompt.txt", "walkup_root_source": [865, 1100], "lowest_stair_source": [865, 1057], "primary_owner_flag_region": [1110, 510, 1185, 680]},
+    "fort": {"master": "fort_v1.png", "sha256": "e7f97a98e1fa02feb3177e996ceb90d2c54665f1f1987963267c32cfc628ab43", "prompt": "piltover_map_fort_v1-actual-prompt.txt", "walkup_root_source": [850, 1090], "lowest_stair_source": [850, 1025], "primary_owner_flag_region": [1095, 500, 1170, 665]},
+    "citadel": {"master": "citadel_v1.png", "sha256": "f1c5572c1f3145bd8de2f2f89f772056c4ab126cea9a6906b7662aab46103d61", "prompt": "piltover_map_citadel_v1-actual-prompt.txt", "walkup_root_source": [860, 1100], "lowest_stair_source": [860, 1042], "primary_owner_flag_region": [1180, 725, 1230, 890]},
+    "castle": {"master": "castle_v1.png", "sha256": "454159910e071e03a7a3e2ce69da470e6f52abf930fc323b79866152df0b9291", "prompt": "piltover_map_castle_v1-actual-prompt.txt", "walkup_root_source": [855, 1090], "lowest_stair_source": [855, 1025], "primary_owner_flag_region": [68, 445, 125, 645]},
+    "capitol": {"master": "capitol_v1.png", "sha256": "ca3f3bc80f5cf64ace7696d8541fe844e6fd6f98ac983941031fdf913a8aa1df", "prompt": "piltover_map_capitol_v1-actual-prompt.txt", "walkup_root_source": [860, 1105], "lowest_stair_source": [860, 1050], "primary_owner_flag_region": [1120, 355, 1235, 450]}
+  },
+  "owner_overlay": {
+    "selection": "One manually bounded primary cloth region per state; other blue architecture and decorative regional banners stay untouched.",
+    "blue_cloth_rule": "Within the annotated region only: alpha>16, blue>=35, blue>1.25*red, blue>1.08*green, red<130 and green<155. Gold marks and poles are excluded by hue.",
+    "neutral_material": "RGBA grayscale with gray=min(245,max(64,round(1.5*original_blue+32))); original selected alpha retained. This is palette processing of actual painted cloth, not newly drawn flag art.",
+    "native_api": "Explicit -OVERLAY sidecar, generateOverlay=0; clientsdl3/render/RenderHandler.cpp loads the sidecar for ONLY_FLAG_COLOR and MapRenderer.cpp applies owner color. Towns receive no automatic AF hero flag.",
+    "native_verified": false
+  },
+  "shadow": {"generateShadow": 1, "reason": "The native map renderer requests a shadow layer. Normal native shadow generation is explicitly selected; painted contact shade remains in the master. Actual native projection and possible shade overlap require inspection."},
+  "edge_cleanup": {"method": "At most four passes clearing alpha only on bright red pixels directly neighboring alpha-zero pixels. RGB remains byte-identical, interior colors remain untouched; raw masters and exact decoded portable copies retained.", "red_rule": "red>=180, green<=60, blue<=60, red>2*green, red>2*blue"},
+  "icons": {
+    "large_canvas": [58, 64], "small_canvas": [48, 32],
+    "source_states": {"village": "village", "fort": "fort"},
+    "background": "assets/source/ui/recruit-painted-v1/master-v1.png",
+    "built_status_source": "status-x-master-v1.png", "built_status_prompt": "status-x-actual-prompt-v1.txt", "built_status_source_sha256": "ec9f73e4cf4bc0fb0db677343d16a26bf0562a34a4f2c573954205a8fa419eaa",
+    "status_fixed_crop": [220, 130, 1160, 1070], "large_marker": [12, 12], "small_marker": [8, 8],
+    "semantics": "Only the own painted red X distinguishes normal versus built. It denotes native per-turn construction capacity consumed, not a different town, troop or fortification stage. Both retain otherwise identical decoded pixels.",
+    "native_evidence": "CFaction.cpp registers ITPT/ITPA; CCastleInterface.cpp:recreateIcons selects [hasFort][built>=TOWNS_BUILDINGS_PER_TURN_CAP]."
+  },
+  "acceptance": "Technical native-size candidates only. No native pathfinding, ownership tint, shadow playback, final art or redistribution acceptance is granted."
+}

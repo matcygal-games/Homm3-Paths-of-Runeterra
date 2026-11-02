@@ -1,0 +1,117 @@
+{
+  "acceptance": "Production requirements only. No rig/guide/primitive/reference may substitute for painted final art; this recipe must fail while its real master/hash is absent.",
+  "art_direction": "Independent Noxian iron/crimson/black subjects in Heroes III native painted language. Never recolour Castle or Demacia art, import original pixels or invent an official crest.",
+  "building": "tavern",
+  "building_contract": {
+    "full_canvas_placement": {
+      "x": 0,
+      "y": 0,
+      "z": 364
+    },
+    "name": "Legion Tavern",
+    "native_ground_contact": [
+      272,
+      218,
+      155,
+      146
+    ],
+    "upgrades": null
+  },
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI built-in imagegen; deterministic project conversion",
+    "license": null,
+    "redistribution": "unresolved; no release or redistribution approval"
+  },
+  "dimensions_basis": {
+    "canvas": [
+      800,
+      374
+    ],
+    "mode": "RGB",
+    "reference_only": "runeterra-demacia/references/images/tbcsback.pcx.png",
+    "reference_sha256": "949012ea68999207934bc482f1552858474fe50cefddef17eaac00d4b98c2be9",
+    "use": "Dimensions/format only. No reference pixels, palette, source recipe, layout silhouette or licensed art copied."
+  },
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": false,
+    "provider": "OpenAI built-in imagegen",
+    "model": "Not exposed by the built-in tool",
+    "model_disclosure": "Not exposed by the builtin tool.",
+    "prompt": "EDIT TARGET is the first supplied image, an original painted Noxian street inn. SECOND supplied image is the OFFICIAL NOXUS REGIONAL CREST SHAPE REFERENCE ONLY (Riot Legends of Runeterra icon), not a UI element to paste. Make one precise painted heraldry correction: paint a LARGE readable weathered IVORY/SILVER Noxus crest on the central deep-crimson hanging banner and a smaller matching crest on the left crimson cloth. Match the reference silhouette faithfully: bilateral broad hooked axe-like outer lobes enclosing the two rounded upper negative spaces, narrow central upright point/spine and long tapered lower portions with deep open channels. NOT a generic trident, rose, Demacian wing, corporate fist or three straight swords. Preserve the reference geometry while painting it into the cloth perspective/folds/light/wear. It must remain recognizable on the final 155x146px game building. Preserve ALL other target architecture, silhouette, low three-quarter camera, source framing, wood/iron/stone texture, warm lamps, door positions, foundation and props. No new structures, no characters, no text, no scenery or background. Genuine painted 2D original Heroes III appearance; no vector decal/flat pasted original PNG, no 3D remodelling or glossy material. Keep TRUE TRANSPARENCY and complete unclipped building with margins.",
+    "painted_master": "assets/source/town/urban-community-20261024-v4/tavern/master.png",
+    "painted_master_sha256": "06b685b4900a9fb6678c8d603d33ebb37f8096cb1bd42f199947c8a4d5ecda41",
+    "generation_record": "assets/source/town/urban-community-20261024-v4/tavern/generation.json",
+    "generation_record_sha256": "e46b02d3ba59c0760540906a1740042bda5acf427bc076c0ba8d6eaee474fe71",
+    "conversion": {
+      "method": "Uniform alpha-crop/contain of genuine painted 2D source; forced-depth site placement, no perspective warping or artificial art.",
+      "source_crop": [
+        31,
+        88,
+        1272,
+        1100
+      ],
+      "placement_box": [
+        272,
+        218,
+        155,
+        146
+      ],
+      "native_position": [
+        274,
+        239
+      ],
+      "native_size": [
+        151,
+        123
+      ],
+      "site": "gildedCup",
+      "assembly_script": "assets/source/town/urban-community-20261024-v4/prepare.py",
+      "assembly_script_sha256": "b8c70f29e50d9036f76d86d3dea27235f85ed2d37b71b10a054208bdd121d42c",
+      "mirror_x": false,
+      "crop_coordinate_basis": "after complete master mirror when mirror_x=true",
+      "mask_method": "Exact alpha128 silhouette; area is binary silhouette, border is two-pixel outward MaxFilter5 minus silhouette."
+    },
+    "method": "Alpha128 area mask or two-pixel outward MaxFilter5 border of exact painted native layer."
+  },
+  "inventory": {
+    "asset_id": "noxus.Sprites.runeterra.noxus.town.structures.tavern_area.png",
+    "manifest": "assets/manifest.json",
+    "recipe_path": "assets/recipes/town/structures/tavern-area.json"
+  },
+  "mask_contract": "Same800x374 silhouette/camera as own building. Area must isolate actual clickable painted shape; border must follow it. No rectangular/opaque placeholder mask or masks copied from native/Demacia structures.",
+  "output_path": "Content/Sprites/runeterra/noxus/town/structures/tavern_area.png",
+  "pivot": {
+    "basis": "Full town canvas; content declares x0/y0; no Castle/Demacia building placement copied",
+    "x": 0,
+    "y": 0
+  },
+  "production_status": "derived-technical-mask-complete",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "Real independent Noxus painted master and truthful provenance",
+    "Non-null SHA256 source pins",
+    "Official Noxus emblem provenance where used",
+    "Native-size silhouette/composition/alpha and role review",
+    "Explicit coordinator selection; no automatic acceptance"
+  ],
+  "role": "town-structure-area",
+  "sha256": "62fabdbe853d7115b8d63e774a8513877139d805fdc6cf1f8a83ee4c284c3a64",
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/urban-community-20261024-v4/structures/tavern/area.png",
+  "source_sha256": "62fabdbe853d7115b8d63e774a8513877139d805fdc6cf1f8a83ee4c284c3a64",
+  "status": "built-unreviewed",
+  "visual_approval_granted": false,
+  "source_canvas": [
+    800,
+    374
+  ]
+}

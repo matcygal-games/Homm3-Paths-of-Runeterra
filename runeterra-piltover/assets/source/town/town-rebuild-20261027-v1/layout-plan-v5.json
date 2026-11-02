@@ -1,0 +1,1720 @@
+{
+  "schema_version": 1,
+  "status": "authored configuration",
+  "canvas": [
+    800,
+    374
+  ],
+  "ordinary_land_sites": 16,
+  "optional_coastal_sites": 1,
+  "camera": "Theatrical low three-quarter matte-painting composition, elevated horizon, readable frontal doors. Architecture uses forced depth rather than a strict isometric grid.",
+  "palette": "Warm ivory and weathered hewn stone, aged bronze/brass, muted timber brown, navy/teal cloth, restrained cool-blue hextech. No acid-green Zaun smog or royal Demacian wing heraldry.",
+  "lighting": "Soft upper-left daylight; warm southwest-facing stone, coherent rightward contact shadows, cool harbor distance.",
+  "region": "Piltover cliffside trade-and-workshop quarter; compressed playable community is project fiction, not a canonical street map.",
+  "envelope_rule": "Each box includes the largest state, full roof, stairs, foundations and contact shadow, plus four pixels of internal padding. Complete structural silhouettes must stay inside; masks derive from painted alpha, not these planning boxes.",
+  "topology": "Irregular Piltovan civic headland above a winding innovation high street. Staggered workshops descend toward a broad busy foreground market street; no three stacked terrace shelves, uniform benches, equal rows, rows of identical building pads or cliff walls through doors.",
+  "water_polygons": [
+    [
+      [
+        0,
+        140
+      ],
+      [
+        72,
+        166
+      ],
+      [
+        80,
+        236
+      ],
+      [
+        0,
+        239
+      ]
+    ]
+  ],
+  "coastal_site": {
+    "id": "coast",
+    "keys": [
+      "shipyard",
+      "ship"
+    ],
+    "box": [
+      4,
+      175,
+      118,
+      74
+    ],
+    "door": [
+      114,
+      245
+    ],
+    "approach": [
+      127,
+      250
+    ],
+    "water_contact": "Intentional quay and moored-ship family only; landward door is on the dry front quay.",
+    "building_anchor": [
+      101,
+      233
+    ],
+    "door_basis": "Landward gangway exit on existing dry city promenade; original pier contact remains101,179.",
+    "depth": 247,
+    "previous_box": [
+      0,
+      110,
+      121,
+      85
+    ],
+    "previous_door": [
+      114,
+      191
+    ],
+    "family_enlargement": 1.0,
+    "projected_material_union": [
+      6,
+      123,
+      120,
+      193
+    ]
+  },
+  "optional_grail": {
+    "key": "grail",
+    "id": "beacon",
+    "box": [
+      470,
+      188,
+      30,
+      47
+    ],
+    "depth": 233,
+    "subject": "Small tall Progress Beacon with bronze Piltover crest/orbit sculpture, on its own dry civic landing beside the narrow eastern stair. Explicit optional seventeenth site; no hall-state dependency.",
+    "water_contact": false,
+    "keys": [
+      "grail"
+    ],
+    "door": [
+      480,
+      231
+    ],
+    "previous_box": [
+      493,
+      179,
+      30,
+      88
+    ],
+    "previous_door": [
+      508,
+      260
+    ],
+    "family_enlargement": 1.7,
+    "projected_material_union": [
+      516,
+      217,
+      542,
+      260
+    ],
+    "approach": [
+      480,
+      242
+    ]
+  },
+  "sites": [
+    {
+      "id": "aerial",
+      "keys": [
+        "dwellingLvl6",
+        "dwellingUpLvl6"
+      ],
+      "box": [
+        100,
+        90,
+        63,
+        79
+      ],
+      "door": [
+        121,
+        166
+      ],
+      "approach": [
+        121,
+        176
+      ],
+      "depth": 167,
+      "subject": "Personal-flight workshop, landing platform and narrow survey mast; modest skywatch upgrade, not a Corki hangar or mass airship fleet.",
+      "previous_box": [
+        122,
+        71,
+        116,
+        119
+      ],
+      "previous_door": [
+        197,
+        183
+      ],
+      "family_enlargement": 1.1,
+      "projected_material_union": [
+        175,
+        107,
+        234,
+        182
+      ]
+    },
+    {
+      "id": "guild",
+      "keys": [
+        "mageGuild1",
+        "mageGuild2",
+        "mageGuild3"
+      ],
+      "box": [
+        210,
+        20,
+        83,
+        119
+      ],
+      "door": [
+        247,
+        137
+      ],
+      "approach": [
+        247,
+        147
+      ],
+      "depth": 138,
+      "subject": "Civic academy lecture observatory; one low teaching hall develops into a glass-and-brass instrument tower.",
+      "previous_box": [
+        250,
+        26,
+        133,
+        124
+      ],
+      "previous_door": [
+        321,
+        143
+      ],
+      "family_enlargement": 1.03,
+      "projected_material_union": [
+        286,
+        28,
+        365,
+        143
+      ]
+    },
+    {
+      "id": "hall",
+      "keys": [
+        "villageHall",
+        "townHall",
+        "cityHall",
+        "capitol"
+      ],
+      "box": [
+        360,
+        26,
+        151,
+        136
+      ],
+      "door": [
+        432,
+        159
+      ],
+      "approach": [
+        432,
+        170
+      ],
+      "depth": 160,
+      "subject": "Trade council lodge developing into a grand mercantile assembly hall and civic clock tower; strong physical size at distance.",
+      "previous_box": [
+        397,
+        29,
+        188,
+        145
+      ],
+      "previous_door": [
+        490,
+        166
+      ],
+      "family_enlargement": 1.0,
+      "projected_material_union": [
+        420,
+        35,
+        567,
+        167
+      ],
+      "review_correction": "After native-size full composition review, move the whole hall family10px east16px down onto open paved civic forecourt, covering the incidental planter behind opaque masonry and leaving clear public approach."
+    },
+    {
+      "id": "fort",
+      "keys": [
+        "fort",
+        "citadel",
+        "castle"
+      ],
+      "box": [
+        620,
+        26,
+        116,
+        136
+      ],
+      "door": [
+        677,
+        159
+      ],
+      "approach": [
+        677,
+        169
+      ],
+      "depth": 160,
+      "subject": "Terraced city gate and Warden walls with bronze-trimmed watch towers; fortified civic architecture rather than a Noxian war keep.",
+      "previous_box": [
+        601,
+        41,
+        199,
+        145
+      ],
+      "previous_door": [
+        693,
+        178
+      ],
+      "family_enlargement": 1.0,
+      "projected_material_union": [
+        638,
+        47,
+        750,
+        179
+      ]
+    },
+    {
+      "id": "museum",
+      "keys": [
+        "special4"
+      ],
+      "box": [
+        22,
+        251,
+        78,
+        53
+      ],
+      "door": [
+        53,
+        300
+      ],
+      "approach": [
+        53,
+        310
+      ],
+      "depth": 301,
+      "subject": "Small public museum portico at the quayside stair; civic banners and public display windows.",
+      "previous_box": [
+        2,
+        197,
+        98,
+        58
+      ],
+      "previous_door": [
+        56,
+        248
+      ],
+      "family_enlargement": 1.12,
+      "projected_material_union": [
+        26,
+        200,
+        102,
+        249
+      ],
+      "calibration_box": [
+        22,
+        251,
+        80,
+        53
+      ],
+      "envelope_correction": "Remove2px empty right planning margin. Current actual full alpha bbox[25,252,100,301] remains intact; shared whole-envelope validator now sees zero overlap with smithx100. Original calibration_box retains identical native pixels."
+    },
+    {
+      "id": "handlers",
+      "keys": [
+        "dwellingLvl3",
+        "special2",
+        "dwellingUpLvl3"
+      ],
+      "box": [
+        135,
+        193,
+        82,
+        62
+      ],
+      "door": [
+        182,
+        251
+      ],
+      "approach": [
+        182,
+        261
+      ],
+      "depth": 252,
+      "subject": "Compact freight-machine dispatch yard; Inventor Guild office and reinforced handler service bay develop the same site.",
+      "previous_box": [
+        112,
+        211,
+        88,
+        59
+      ],
+      "previous_door": [
+        169,
+        263
+      ],
+      "family_enlargement": 1.12,
+      "projected_material_union": [
+        126,
+        195,
+        204,
+        253
+      ]
+    },
+    {
+      "id": "wardens",
+      "keys": [
+        "dwellingLvl1",
+        "special1",
+        "dwellingUpLvl1"
+      ],
+      "box": [
+        241,
+        170,
+        82,
+        80
+      ],
+      "door": [
+        274,
+        246
+      ],
+      "approach": [
+        274,
+        256
+      ],
+      "depth": 247,
+      "subject": "Cadet civic patrol lodge; Academy drill gallery and senior Warden barracks extend the same building.",
+      "previous_box": [
+        212,
+        190,
+        98,
+        76
+      ],
+      "previous_door": [
+        263,
+        258
+      ],
+      "family_enlargement": 1.12,
+      "projected_material_union": [
+        238,
+        175,
+        316,
+        251
+      ]
+    },
+    {
+      "id": "rifles",
+      "keys": [
+        "dwellingLvl2",
+        "dwellingUpLvl2"
+      ],
+      "box": [
+        343,
+        184,
+        93,
+        70
+      ],
+      "door": [
+        383,
+        250
+      ],
+      "approach": [
+        383,
+        260
+      ],
+      "depth": 251,
+      "subject": "Warden rifle depot and enclosed training gallery; upgraded arsenal adds a readable upper gallery.",
+      "previous_box": [
+        322,
+        176,
+        98,
+        80
+      ],
+      "previous_door": [
+        372,
+        248
+      ],
+      "family_enlargement": 1.1,
+      "projected_material_union": [
+        337,
+        178,
+        426,
+        244
+      ]
+    },
+    {
+      "id": "silo",
+      "keys": [
+        "resourceSilo"
+      ],
+      "box": [
+        510,
+        172,
+        46,
+        57
+      ],
+      "door": [
+        525,
+        226
+      ],
+      "approach": [
+        525,
+        236
+      ],
+      "depth": 227,
+      "subject": "Narrow hextech materials workshop with an opaque stone base and a small protected blue-crystal reservoir.",
+      "previous_box": [
+        432,
+        183,
+        60,
+        76
+      ],
+      "previous_door": [
+        464,
+        251
+      ],
+      "family_enlargement": 1.15,
+      "projected_material_union": [
+        461,
+        192,
+        503,
+        245
+      ]
+    },
+    {
+      "id": "artificers",
+      "keys": [
+        "dwellingLvl4",
+        "dwellingUpLvl4"
+      ],
+      "box": [
+        562,
+        188,
+        78,
+        78
+      ],
+      "door": [
+        587,
+        264
+      ],
+      "approach": [
+        587,
+        274
+      ],
+      "depth": 265,
+      "subject": "Academy craft hall and engineered crossbow testing gallery; scholarly tools and brass lattice windows.",
+      "previous_box": [
+        528,
+        190,
+        97,
+        83
+      ],
+      "previous_door": [
+        577,
+        265
+      ],
+      "family_enlargement": 1.12,
+      "projected_material_union": [
+        552,
+        177,
+        626,
+        251
+      ]
+    },
+    {
+      "id": "lifters",
+      "keys": [
+        "dwellingLvl7",
+        "dwellingUpLvl7"
+      ],
+      "box": [
+        650,
+        177,
+        138,
+        81
+      ],
+      "door": [
+        721,
+        255
+      ],
+      "approach": [
+        721,
+        265
+      ],
+      "depth": 256,
+      "subject": "Heavy living-operated dockyard work-suit fitting hall, gantry and reinforced industrial assembly bay; no autonomous Hexcore Titan.",
+      "previous_box": [
+        637,
+        198,
+        163,
+        79
+      ],
+      "previous_door": [
+        717,
+        269
+      ],
+      "family_enlargement": 1.1,
+      "projected_material_union": [
+        646,
+        183,
+        780,
+        260
+      ]
+    },
+    {
+      "id": "smith",
+      "keys": [
+        "blacksmith"
+      ],
+      "box": [
+        100,
+        268,
+        144,
+        98
+      ],
+      "door": [
+        161,
+        362
+      ],
+      "approach": [
+        161,
+        372
+      ],
+      "depth": 363,
+      "subject": "Large foreground framing street forge, weathered timber work roof and restrained orange furnace light.",
+      "previous_box": [
+        0,
+        278,
+        172,
+        96
+      ],
+      "previous_door": [
+        100,
+        360
+      ],
+      "family_enlargement": 1.22,
+      "projected_material_union": [
+        36,
+        269,
+        176,
+        363
+      ]
+    },
+    {
+      "id": "engineers",
+      "keys": [
+        "dwellingLvl5",
+        "dwellingUpLvl5"
+      ],
+      "box": [
+        260,
+        280,
+        121,
+        89
+      ],
+      "door": [
+        314,
+        365
+      ],
+      "approach": [
+        314,
+        373
+      ],
+      "depth": 366,
+      "subject": "Practical forge-engineer cooperative and master instrument works; visible tools and blue precision device, no extra turret army.",
+      "previous_box": [
+        187,
+        287,
+        144,
+        87
+      ],
+      "previous_door": [
+        269,
+        360
+      ],
+      "family_enlargement": 1.22,
+      "projected_material_union": [
+        217,
+        279,
+        334,
+        364
+      ]
+    },
+    {
+      "id": "tavern",
+      "keys": [
+        "tavern"
+      ],
+      "box": [
+        399,
+        264,
+        136,
+        106
+      ],
+      "door": [
+        462,
+        367
+      ],
+      "approach": [
+        462,
+        373
+      ],
+      "depth": 368,
+      "subject": "Large welcoming timber-and-stone craftworkers' inn, hanging sign and teal awning; part of the same street.",
+      "previous_box": [
+        349,
+        269,
+        170,
+        105
+      ],
+      "previous_door": [
+        437,
+        358
+      ],
+      "family_enlargement": 1.2,
+      "projected_material_union": [
+        375,
+        260,
+        507,
+        362
+      ]
+    },
+    {
+      "id": "market",
+      "keys": [
+        "marketplace"
+      ],
+      "box": [
+        554,
+        290,
+        69,
+        78
+      ],
+      "door": [
+        579,
+        365
+      ],
+      "approach": [
+        579,
+        373
+      ],
+      "depth": 366,
+      "subject": "Narrow foreground guild shop with varied cloth awnings, trade goods and a small civic seal; not a duplicate house.",
+      "previous_box": [
+        531,
+        294,
+        78,
+        80
+      ],
+      "previous_door": [
+        571,
+        362
+      ],
+      "family_enlargement": 1.25,
+      "projected_material_union": [
+        547,
+        289,
+        612,
+        363
+      ]
+    },
+    {
+      "id": "exchange",
+      "keys": [
+        "special3"
+      ],
+      "box": [
+        640,
+        278,
+        160,
+        85
+      ],
+      "door": [
+        693,
+        360
+      ],
+      "approach": [
+        693,
+        370
+      ],
+      "depth": 361,
+      "subject": "Large foreground cargo exchange and coach-service warehouse, painted shipping marks and side loading porch.",
+      "previous_box": [
+        619,
+        285,
+        181,
+        89
+      ],
+      "previous_door": [
+        704,
+        360
+      ],
+      "family_enlargement": 1.15,
+      "projected_material_union": [
+        642,
+        280,
+        798,
+        361
+      ]
+    }
+  ],
+  "roads": [
+    {
+      "id": "main-quarter-street",
+      "points": [
+        [
+          123,
+          250
+        ],
+        [
+          213,
+          265
+        ],
+        [
+          329,
+          265
+        ],
+        [
+          455,
+          259
+        ],
+        [
+          535,
+          277
+        ],
+        [
+          628,
+          271
+        ],
+        [
+          788,
+          268
+        ]
+      ],
+      "width": 16
+    },
+    {
+      "id": "front-market-street",
+      "points": [
+        [
+          78,
+          370
+        ],
+        [
+          220,
+          371
+        ],
+        [
+          398,
+          373
+        ],
+        [
+          577,
+          372
+        ],
+        [
+          799,
+          370
+        ]
+      ],
+      "width": 12
+    },
+    {
+      "id": "civic-approach",
+      "points": [
+        [
+          432,
+          159
+        ],
+        [
+          432,
+          174
+        ],
+        [
+          461,
+          186
+        ],
+        [
+          455,
+          259
+        ]
+      ],
+      "width": 14
+    },
+    {
+      "id": "guild-approach",
+      "points": [
+        [
+          247,
+          137
+        ],
+        [
+          247,
+          153
+        ],
+        [
+          221,
+          176
+        ],
+        [
+          213,
+          265
+        ]
+      ],
+      "width": 12
+    },
+    {
+      "id": "warden-gate-approach",
+      "points": [
+        [
+          677,
+          159
+        ],
+        [
+          676,
+          173
+        ],
+        [
+          640,
+          180
+        ],
+        [
+          628,
+          271
+        ]
+      ],
+      "width": 12
+    }
+  ],
+  "state_review": [
+    "empty",
+    "early",
+    "partial",
+    "all-base",
+    "all-upgraded",
+    "coastal",
+    "grail"
+  ],
+  "native_observed": false,
+  "final_art_accepted": false,
+  "revision": "V4 finite user-directed foreground/middle enlargement;35current compiled material envelopes measured before painting. New own background supplies grounded hextech streets and rerouted approaches; functional states remain independent.",
+  "state_envelope_measurements": {
+    "dwellingLvl6": {
+      "old_bbox": [
+        180,
+        125,
+        232,
+        184
+      ],
+      "projected_bbox": [
+        175,
+        118,
+        233,
+        182
+      ],
+      "uniform_factor": 1.1,
+      "old_anchor": [
+        197,
+        183
+      ],
+      "new_anchor": [
+        194,
+        181
+      ]
+    },
+    "dwellingUpLvl6": {
+      "old_bbox": [
+        180,
+        116,
+        234,
+        183
+      ],
+      "projected_bbox": [
+        175,
+        107,
+        234,
+        181
+      ],
+      "uniform_factor": 1.1,
+      "old_anchor": [
+        197,
+        183
+      ],
+      "new_anchor": [
+        194,
+        181
+      ]
+    },
+    "mageGuild1": {
+      "old_bbox": [
+        295,
+        76,
+        361,
+        143
+      ],
+      "projected_bbox": [
+        294,
+        74,
+        362,
+        143
+      ],
+      "uniform_factor": 1.03,
+      "old_anchor": [
+        321,
+        143
+      ],
+      "new_anchor": [
+        321,
+        143
+      ]
+    },
+    "mageGuild2": {
+      "old_bbox": [
+        288,
+        54,
+        363,
+        143
+      ],
+      "projected_bbox": [
+        287,
+        51,
+        365,
+        143
+      ],
+      "uniform_factor": 1.03,
+      "old_anchor": [
+        321,
+        143
+      ],
+      "new_anchor": [
+        321,
+        143
+      ]
+    },
+    "mageGuild3": {
+      "old_bbox": [
+        287,
+        31,
+        363,
+        143
+      ],
+      "projected_bbox": [
+        286,
+        28,
+        365,
+        143
+      ],
+      "uniform_factor": 1.03,
+      "old_anchor": [
+        321,
+        143
+      ],
+      "new_anchor": [
+        321,
+        143
+      ]
+    },
+    "villageHall": {
+      "old_bbox": [
+        431,
+        94,
+        565,
+        167
+      ],
+      "projected_bbox": [
+        431,
+        94,
+        565,
+        167
+      ],
+      "uniform_factor": 1.0,
+      "old_anchor": [
+        490,
+        166
+      ],
+      "new_anchor": [
+        490,
+        166
+      ]
+    },
+    "townHall": {
+      "old_bbox": [
+        421,
+        77,
+        566,
+        167
+      ],
+      "projected_bbox": [
+        421,
+        77,
+        566,
+        167
+      ],
+      "uniform_factor": 1.0,
+      "old_anchor": [
+        490,
+        166
+      ],
+      "new_anchor": [
+        490,
+        166
+      ]
+    },
+    "cityHall": {
+      "old_bbox": [
+        420,
+        62,
+        567,
+        167
+      ],
+      "projected_bbox": [
+        420,
+        62,
+        567,
+        167
+      ],
+      "uniform_factor": 1.0,
+      "old_anchor": [
+        490,
+        166
+      ],
+      "new_anchor": [
+        490,
+        166
+      ]
+    },
+    "capitol": {
+      "old_bbox": [
+        420,
+        35,
+        566,
+        167
+      ],
+      "projected_bbox": [
+        420,
+        35,
+        566,
+        167
+      ],
+      "uniform_factor": 1.0,
+      "old_anchor": [
+        490,
+        166
+      ],
+      "new_anchor": [
+        490,
+        166
+      ]
+    },
+    "fort": {
+      "old_bbox": [
+        638,
+        98,
+        749,
+        178
+      ],
+      "projected_bbox": [
+        638,
+        98,
+        749,
+        178
+      ],
+      "uniform_factor": 1.0,
+      "old_anchor": [
+        693,
+        178
+      ],
+      "new_anchor": [
+        693,
+        178
+      ]
+    },
+    "citadel": {
+      "old_bbox": [
+        638,
+        89,
+        750,
+        179
+      ],
+      "projected_bbox": [
+        638,
+        89,
+        750,
+        179
+      ],
+      "uniform_factor": 1.0,
+      "old_anchor": [
+        693,
+        178
+      ],
+      "new_anchor": [
+        693,
+        178
+      ]
+    },
+    "castle": {
+      "old_bbox": [
+        638,
+        47,
+        750,
+        178
+      ],
+      "projected_bbox": [
+        638,
+        47,
+        750,
+        178
+      ],
+      "uniform_factor": 1.0,
+      "old_anchor": [
+        693,
+        178
+      ],
+      "new_anchor": [
+        693,
+        178
+      ]
+    },
+    "special4": {
+      "old_bbox": [
+        31,
+        206,
+        98,
+        249
+      ],
+      "projected_bbox": [
+        26,
+        200,
+        102,
+        249
+      ],
+      "uniform_factor": 1.12,
+      "old_anchor": [
+        56,
+        248
+      ],
+      "new_anchor": [
+        55,
+        247
+      ]
+    },
+    "dwellingLvl3": {
+      "old_bbox": [
+        130,
+        225,
+        196,
+        264
+      ],
+      "projected_bbox": [
+        128,
+        208,
+        202,
+        252
+      ],
+      "uniform_factor": 1.12,
+      "old_anchor": [
+        169,
+        263
+      ],
+      "new_anchor": [
+        171,
+        251
+      ]
+    },
+    "special2": {
+      "old_bbox": [
+        129,
+        216,
+        197,
+        264
+      ],
+      "projected_bbox": [
+        126,
+        199,
+        202,
+        253
+      ],
+      "uniform_factor": 1.12,
+      "old_anchor": [
+        169,
+        263
+      ],
+      "new_anchor": [
+        171,
+        251
+      ]
+    },
+    "dwellingUpLvl3": {
+      "old_bbox": [
+        129,
+        213,
+        198,
+        264
+      ],
+      "projected_bbox": [
+        127,
+        195,
+        204,
+        253
+      ],
+      "uniform_factor": 1.12,
+      "old_anchor": [
+        169,
+        263
+      ],
+      "new_anchor": [
+        171,
+        251
+      ]
+    },
+    "dwellingLvl1": {
+      "old_bbox": [
+        237,
+        204,
+        304,
+        259
+      ],
+      "projected_bbox": [
+        239,
+        189,
+        315,
+        251
+      ],
+      "uniform_factor": 1.12,
+      "old_anchor": [
+        263,
+        258
+      ],
+      "new_anchor": [
+        269,
+        249
+      ]
+    },
+    "special1": {
+      "old_bbox": [
+        236,
+        195,
+        304,
+        259
+      ],
+      "projected_bbox": [
+        238,
+        179,
+        315,
+        251
+      ],
+      "uniform_factor": 1.12,
+      "old_anchor": [
+        263,
+        258
+      ],
+      "new_anchor": [
+        269,
+        249
+      ]
+    },
+    "dwellingUpLvl1": {
+      "old_bbox": [
+        236,
+        192,
+        305,
+        258
+      ],
+      "projected_bbox": [
+        238,
+        175,
+        316,
+        250
+      ],
+      "uniform_factor": 1.12,
+      "old_anchor": [
+        263,
+        258
+      ],
+      "new_anchor": [
+        269,
+        249
+      ]
+    },
+    "dwellingLvl2": {
+      "old_bbox": [
+        338,
+        197,
+        418,
+        249
+      ],
+      "projected_bbox": [
+        337,
+        185,
+        426,
+        243
+      ],
+      "uniform_factor": 1.1,
+      "old_anchor": [
+        372,
+        248
+      ],
+      "new_anchor": [
+        375,
+        242
+      ]
+    },
+    "dwellingUpLvl2": {
+      "old_bbox": [
+        338,
+        189,
+        419,
+        250
+      ],
+      "projected_bbox": [
+        337,
+        178,
+        426,
+        244
+      ],
+      "uniform_factor": 1.1,
+      "old_anchor": [
+        372,
+        248
+      ],
+      "new_anchor": [
+        375,
+        242
+      ]
+    },
+    "resourceSilo": {
+      "old_bbox": [
+        453,
+        206,
+        490,
+        251
+      ],
+      "projected_bbox": [
+        461,
+        192,
+        503,
+        245
+      ],
+      "uniform_factor": 1.15,
+      "old_anchor": [
+        464,
+        251
+      ],
+      "new_anchor": [
+        474,
+        244
+      ]
+    },
+    "dwellingLvl4": {
+      "old_bbox": [
+        557,
+        212,
+        623,
+        265
+      ],
+      "projected_bbox": [
+        552,
+        191,
+        626,
+        251
+      ],
+      "uniform_factor": 1.12,
+      "old_anchor": [
+        577,
+        265
+      ],
+      "new_anchor": [
+        575,
+        251
+      ]
+    },
+    "dwellingUpLvl4": {
+      "old_bbox": [
+        557,
+        199,
+        622,
+        265
+      ],
+      "projected_bbox": [
+        552,
+        177,
+        625,
+        251
+      ],
+      "uniform_factor": 1.12,
+      "old_anchor": [
+        577,
+        265
+      ],
+      "new_anchor": [
+        575,
+        251
+      ]
+    },
+    "dwellingLvl7": {
+      "old_bbox": [
+        654,
+        200,
+        776,
+        269
+      ],
+      "projected_bbox": [
+        646,
+        183,
+        780,
+        259
+      ],
+      "uniform_factor": 1.1,
+      "old_anchor": [
+        717,
+        269
+      ],
+      "new_anchor": [
+        715,
+        259
+      ]
+    },
+    "dwellingUpLvl7": {
+      "old_bbox": [
+        654,
+        200,
+        776,
+        270
+      ],
+      "projected_bbox": [
+        646,
+        183,
+        780,
+        260
+      ],
+      "uniform_factor": 1.1,
+      "old_anchor": [
+        717,
+        269
+      ],
+      "new_anchor": [
+        715,
+        259
+      ]
+    },
+    "blacksmith": {
+      "old_bbox": [
+        52,
+        285,
+        166,
+        361
+      ],
+      "projected_bbox": [
+        36,
+        269,
+        176,
+        363
+      ],
+      "uniform_factor": 1.22,
+      "old_anchor": [
+        100,
+        360
+      ],
+      "new_anchor": [
+        95,
+        361
+      ]
+    },
+    "dwellingLvl5": {
+      "old_bbox": [
+        227,
+        294,
+        322,
+        361
+      ],
+      "projected_bbox": [
+        217,
+        281,
+        334,
+        364
+      ],
+      "uniform_factor": 1.22,
+      "old_anchor": [
+        269,
+        360
+      ],
+      "new_anchor": [
+        269,
+        362
+      ]
+    },
+    "dwellingUpLvl5": {
+      "old_bbox": [
+        226,
+        292,
+        322,
+        361
+      ],
+      "projected_bbox": [
+        217,
+        279,
+        333,
+        364
+      ],
+      "uniform_factor": 1.22,
+      "old_anchor": [
+        269,
+        360
+      ],
+      "new_anchor": [
+        269,
+        362
+      ]
+    },
+    "tavern": {
+      "old_bbox": [
+        386,
+        274,
+        496,
+        358
+      ],
+      "projected_bbox": [
+        375,
+        260,
+        507,
+        362
+      ],
+      "uniform_factor": 1.2,
+      "old_anchor": [
+        437,
+        358
+      ],
+      "new_anchor": [
+        436,
+        361
+      ]
+    },
+    "marketplace": {
+      "old_bbox": [
+        553,
+        304,
+        604,
+        362
+      ],
+      "projected_bbox": [
+        547,
+        289,
+        612,
+        363
+      ],
+      "uniform_factor": 1.25,
+      "old_anchor": [
+        571,
+        362
+      ],
+      "new_anchor": [
+        570,
+        362
+      ]
+    },
+    "special3": {
+      "old_bbox": [
+        660,
+        290,
+        795,
+        361
+      ],
+      "projected_bbox": [
+        642,
+        280,
+        798,
+        361
+      ],
+      "uniform_factor": 1.15,
+      "old_anchor": [
+        704,
+        360
+      ],
+      "new_anchor": [
+        693,
+        360
+      ]
+    },
+    "shipyard": {
+      "old_bbox": [
+        22,
+        123,
+        120,
+        193
+      ],
+      "projected_bbox": [
+        22,
+        123,
+        120,
+        193
+      ],
+      "uniform_factor": 1.0,
+      "old_anchor": [
+        114,
+        191
+      ],
+      "new_anchor": [
+        114,
+        191
+      ]
+    },
+    "ship": {
+      "old_bbox": [
+        6,
+        126,
+        120,
+        193
+      ],
+      "projected_bbox": [
+        6,
+        126,
+        120,
+        193
+      ],
+      "uniform_factor": 1.0,
+      "old_anchor": [
+        114,
+        191
+      ],
+      "new_anchor": [
+        114,
+        191
+      ]
+    },
+    "grail": {
+      "old_bbox": [
+        503,
+        236,
+        519,
+        261
+      ],
+      "projected_bbox": [
+        516,
+        217,
+        542,
+        260
+      ],
+      "uniform_factor": 1.7,
+      "old_anchor": [
+        508,
+        260
+      ],
+      "new_anchor": [
+        524,
+        258
+      ]
+    }
+  },
+  "previous_plan": "assets/source/town/hextech-revision-v1/layout-plan-v4.json"
+}

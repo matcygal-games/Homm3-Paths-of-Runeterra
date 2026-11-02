@@ -1,0 +1,455 @@
+{
+  "status": "authored configuration",
+  "scope": "Numbers, resource consumers and role counts only. Historical recipe text inspected; no old creature image/mesh/render pixels opened or used as input. New source production only.",
+  "units": {
+    "resistanceBlade": {
+      "content_packet": {
+        "name": {
+          "singular": "Resistance Blade",
+          "plural": "Resistance Blades"
+        },
+        "description": "Ground resistance fighter may return to its starting hex after a melee strike through the native return option. Retaliation, movement limits and walls still matter; no floating champion blades or flight.",
+        "faction": "ionia",
+        "level": 6,
+        "hitPoints": 90,
+        "attack": 19,
+        "defense": 15,
+        "damage": {
+          "min": 17,
+          "max": 27
+        },
+        "speed": 6,
+        "cost": {
+          "gold": 1300
+        },
+        "growth": 2,
+        "horde": 0,
+        "fightValue": 2400,
+        "aiValue": 2650,
+        "advMapAmount": {
+          "min": 2,
+          "max": 4
+        },
+        "doubleWide": false,
+        "hasDoubleWeek": true,
+        "special": false,
+        "disabled": false,
+        "excludeFromRandomization": false,
+        "abilities": {
+          "withdrawal": {
+            "type": "RETURN_AFTER_STRIKE"
+          }
+        },
+        "upgrades": [
+          "resistanceVeteran"
+        ],
+        "graphics": {
+          "animation": "runeterra/ionia/creatures/resistanceBlade/battle.json",
+          "map": "runeterra/ionia/creatures/resistanceBlade/map.json",
+          "iconLarge": "runeterra/ionia/creatures/resistanceBlade/large.png",
+          "iconSmall": "runeterra/ionia/creatures/resistanceBlade/small.png",
+          "mapAttackFromLeft": "runeterra/ionia/creatures/resistanceBlade/attackLeft.png",
+          "mapAttackFromRight": "runeterra/ionia/creatures/resistanceBlade/attackRight.png",
+          "mapMask": [
+            "VV",
+            "VA"
+          ],
+          "animationTime": {
+            "attack": 1,
+            "walk": 1,
+            "idle": 10
+          },
+          "timeBetweenFidgets": 0.1
+        },
+        "sound": {
+          "attack": "SWRDATTK.wav",
+          "defend": "SWRDDFND.wav",
+          "killed": "SWRDKILL.wav",
+          "move": "SWRDMOVE.wav",
+          "wince": "SWRDWNCE.wav"
+        }
+      },
+      "roles": {
+        "battle": {
+          "canvas": [
+            450,
+            400
+          ],
+          "pivot": {
+            "x": 197,
+            "y": 266
+          },
+          "generateOverlay": 1,
+          "generateShadow": 1,
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/resistanceBlade/battle.json",
+          "recipe_type": "vcmi_animation",
+          "groups": [
+            {
+              "group": 0,
+              "frames": 6
+            },
+            {
+              "group": 1,
+              "frames": 7
+            },
+            {
+              "group": 2,
+              "frames": 2
+            },
+            {
+              "group": 3,
+              "frames": 3
+            },
+            {
+              "group": 4,
+              "frames": 3
+            },
+            {
+              "group": 5,
+              "frames": 6
+            },
+            {
+              "group": 7,
+              "frames": 3
+            },
+            {
+              "group": 8,
+              "frames": 3
+            },
+            {
+              "group": 11,
+              "frames": 6
+            },
+            {
+              "group": 12,
+              "frames": 6
+            },
+            {
+              "group": 13,
+              "frames": 6
+            },
+            {
+              "group": 22,
+              "frames": 1
+            }
+          ],
+          "historical_numeric_recipe": {
+            "path": "runeterra-ionia/assets/recipes/creatures/resistanceBlade-battle.json",
+            "sha256": "529450a1827696929b9bd59ba01c940f75789c6ee4bfc7140d482d61e2ca7111",
+            "visual_pixels_read_or_reused": false
+          }
+        },
+        "map": {
+          "canvas": [
+            96,
+            64
+          ],
+          "pivot": {
+            "x": 80,
+            "y": 60
+          },
+          "generateOverlay": 1,
+          "generateShadow": 2,
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/resistanceBlade/map.json",
+          "recipe_type": "vcmi_animation",
+          "groups": [
+            {
+              "group": 0,
+              "frames": 6
+            }
+          ],
+          "historical_numeric_recipe": {
+            "path": "runeterra-ionia/assets/recipes/creatures/resistanceBlade-map.json",
+            "sha256": "26b8d80aa3e77635a45ae3b5d2525950212e9f25136eb2ca8887266bee22b172",
+            "visual_pixels_read_or_reused": false
+          }
+        },
+        "large": {
+          "size": [
+            58,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/resistanceBlade/large.png",
+          "recipe_type": "raster",
+          "historical_numeric_recipe": {
+            "path": "runeterra-ionia/assets/recipes/creatures/resistanceBlade-large.json",
+            "sha256": "00743dfd19d25d337a53a14457ebc8e64623fc10b564400bfa45d73635a63f60",
+            "visual_pixels_read_or_reused": false
+          }
+        },
+        "small": {
+          "size": [
+            32,
+            32
+          ],
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/resistanceBlade/small.png",
+          "recipe_type": "raster",
+          "historical_numeric_recipe": {
+            "path": "runeterra-ionia/assets/recipes/creatures/resistanceBlade-small.json",
+            "sha256": "99688dd203a60d9203947f21a542be9571dbbc1eeae5fb774c6e4b2adeab3169",
+            "visual_pixels_read_or_reused": false
+          }
+        },
+        "attackLeft": {
+          "size": [
+            96,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/resistanceBlade/attackLeft.png",
+          "recipe_type": "raster",
+          "historical_numeric_recipe": {
+            "path": "runeterra-ionia/assets/recipes/creatures/resistanceBlade-attackLeft.json",
+            "sha256": "178c67b1467ce72234f027758f8f5b32eb28c265e5e4811a0eefe683aa92a966",
+            "visual_pixels_read_or_reused": false
+          }
+        },
+        "attackRight": {
+          "size": [
+            96,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/resistanceBlade/attackRight.png",
+          "recipe_type": "raster",
+          "historical_numeric_recipe": {
+            "path": "runeterra-ionia/assets/recipes/creatures/resistanceBlade-attackRight.json",
+            "sha256": "9a40f84b57ac5045acf7df2f1e7cc9c3d5c82fe8aad4dab3b2e91baec942fa12",
+            "visual_pixels_read_or_reused": false
+          }
+        }
+      }
+    },
+    "resistanceVeteran": {
+      "content_packet": {
+        "name": {
+          "singular": "Resistance Veteran",
+          "plural": "Resistance Veterans"
+        },
+        "description": "Armored ground resistance fighter retains native optional attack and return. Strong retaliation can punish the strike before withdrawal; no retaliation immunity or movement over walls.",
+        "faction": "ionia",
+        "level": 6,
+        "hitPoints": 115,
+        "attack": 23,
+        "defense": 18,
+        "damage": {
+          "min": 24,
+          "max": 38
+        },
+        "speed": 7,
+        "cost": {
+          "gold": 1760
+        },
+        "growth": 2,
+        "horde": 0,
+        "fightValue": 3300,
+        "aiValue": 3650,
+        "advMapAmount": {
+          "min": 2,
+          "max": 4
+        },
+        "doubleWide": false,
+        "hasDoubleWeek": true,
+        "special": false,
+        "disabled": false,
+        "excludeFromRandomization": false,
+        "abilities": {
+          "withdrawal": {
+            "type": "RETURN_AFTER_STRIKE"
+          }
+        },
+        "graphics": {
+          "animation": "runeterra/ionia/creatures/resistanceVeteran/battle.json",
+          "map": "runeterra/ionia/creatures/resistanceVeteran/map.json",
+          "iconLarge": "runeterra/ionia/creatures/resistanceVeteran/large.png",
+          "iconSmall": "runeterra/ionia/creatures/resistanceVeteran/small.png",
+          "mapAttackFromLeft": "runeterra/ionia/creatures/resistanceVeteran/attackLeft.png",
+          "mapAttackFromRight": "runeterra/ionia/creatures/resistanceVeteran/attackRight.png",
+          "mapMask": [
+            "VV",
+            "VA"
+          ],
+          "animationTime": {
+            "attack": 1,
+            "walk": 1,
+            "idle": 10
+          },
+          "timeBetweenFidgets": 0.1
+        },
+        "sound": {
+          "attack": "CRUSATTK.wav",
+          "defend": "CRUSDFND.wav",
+          "killed": "CRUSKILL.wav",
+          "move": "CRUSMOVE.wav",
+          "wince": "CRUSWNCE.wav"
+        }
+      },
+      "roles": {
+        "battle": {
+          "canvas": [
+            450,
+            400
+          ],
+          "pivot": {
+            "x": 197,
+            "y": 266
+          },
+          "generateOverlay": 1,
+          "generateShadow": 1,
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/resistanceVeteran/battle.json",
+          "recipe_type": "vcmi_animation",
+          "groups": [
+            {
+              "group": 0,
+              "frames": 6
+            },
+            {
+              "group": 1,
+              "frames": 7
+            },
+            {
+              "group": 2,
+              "frames": 2
+            },
+            {
+              "group": 3,
+              "frames": 3
+            },
+            {
+              "group": 4,
+              "frames": 3
+            },
+            {
+              "group": 5,
+              "frames": 6
+            },
+            {
+              "group": 7,
+              "frames": 3
+            },
+            {
+              "group": 8,
+              "frames": 3
+            },
+            {
+              "group": 11,
+              "frames": 6
+            },
+            {
+              "group": 12,
+              "frames": 6
+            },
+            {
+              "group": 13,
+              "frames": 6
+            },
+            {
+              "group": 22,
+              "frames": 1
+            }
+          ],
+          "historical_numeric_recipe": {
+            "path": "runeterra-ionia/assets/recipes/creatures/resistanceVeteran-battle.json",
+            "sha256": "9994b34a00cb081f5a3ffcf480bf04320ff611dc18bb614f19b3a4575a225123",
+            "visual_pixels_read_or_reused": false
+          }
+        },
+        "map": {
+          "canvas": [
+            96,
+            64
+          ],
+          "pivot": {
+            "x": 80,
+            "y": 60
+          },
+          "generateOverlay": 1,
+          "generateShadow": 2,
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/resistanceVeteran/map.json",
+          "recipe_type": "vcmi_animation",
+          "groups": [
+            {
+              "group": 0,
+              "frames": 6
+            }
+          ],
+          "historical_numeric_recipe": {
+            "path": "runeterra-ionia/assets/recipes/creatures/resistanceVeteran-map.json",
+            "sha256": "89a8371fbdd585b49acf436e4ffb6826d3de08412a71c3ae92481b1e6bf9a532",
+            "visual_pixels_read_or_reused": false
+          }
+        },
+        "large": {
+          "size": [
+            58,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/resistanceVeteran/large.png",
+          "recipe_type": "raster",
+          "historical_numeric_recipe": {
+            "path": "runeterra-ionia/assets/recipes/creatures/resistanceVeteran-large.json",
+            "sha256": "814de2bc1977098de978e548422b7bf9219551e7c52c23225b2ad8cd5fa2f783",
+            "visual_pixels_read_or_reused": false
+          }
+        },
+        "small": {
+          "size": [
+            32,
+            32
+          ],
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/resistanceVeteran/small.png",
+          "recipe_type": "raster",
+          "historical_numeric_recipe": {
+            "path": "runeterra-ionia/assets/recipes/creatures/resistanceVeteran-small.json",
+            "sha256": "1b8bd880f8546be497be6af7a2823ba6469e7af7eb2394d0195594734a464bfe",
+            "visual_pixels_read_or_reused": false
+          }
+        },
+        "attackLeft": {
+          "size": [
+            96,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/resistanceVeteran/attackLeft.png",
+          "recipe_type": "raster",
+          "historical_numeric_recipe": {
+            "path": "runeterra-ionia/assets/recipes/creatures/resistanceVeteran-attackLeft.json",
+            "sha256": "82b958aa13399af987420a17b2f4291d16a05e21169fa6f211f4079b9f1cca16",
+            "visual_pixels_read_or_reused": false
+          }
+        },
+        "attackRight": {
+          "size": [
+            96,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/resistanceVeteran/attackRight.png",
+          "recipe_type": "raster",
+          "historical_numeric_recipe": {
+            "path": "runeterra-ionia/assets/recipes/creatures/resistanceVeteran-attackRight.json",
+            "sha256": "cc946baffadaf0e6a5b98178235c9d072ca520045b18ca7fda1b0aedda708c39",
+            "visual_pixels_read_or_reused": false
+          }
+        }
+      }
+    }
+  },
+  "source_battle_canvas": [
+    450,
+    400
+  ],
+  "source_root": [
+    197,
+    266
+  ],
+  "adventure_canvas": [
+    96,
+    64
+  ],
+  "adventure_anchor": [
+    80,
+    60
+  ],
+  "map_semantics": "Neutral object idle group0 six; battle group0 supplies genuine walking gait separately.",
+  "source_projection_contract": "Full 450x400 source path/SHA, pivot197266, uniform per-unit scale, mirrored boolean, anchor80,60, canvas96,64. Encounters additionally source_facing. Actual ionia_adventure_projection.project only; no old mesh registration.",
+  "native_execution": false,
+  "release_accepted": false
+}

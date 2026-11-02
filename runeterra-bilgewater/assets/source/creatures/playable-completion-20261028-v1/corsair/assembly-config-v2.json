@@ -1,0 +1,882 @@
+{
+  "battle_canvas": [
+    450,
+    400
+  ],
+  "battle_root": [
+    197,
+    266
+  ],
+  "companions": {
+    "encounter_root": [
+      44,
+      60
+    ],
+    "map_root": [
+      76,
+      60
+    ],
+    "portrait_crop": [
+      94,
+      89,
+      264,
+      268
+    ],
+    "pose": "ready",
+    "scale": 0.12
+  },
+  "generation_reference_inputs": [
+    {
+      "path": "assets/source/creatures/playable-completion-20261028-v1/corsair/assembly-config-v1.json",
+      "sha256": "d78492fc189fb8407636a8652d4fb48a1733b9e0740f2011bccb2ef811d5b249",
+      "use": "Preserved source key selection before timeline expansion"
+    },
+    {
+      "path": "assets/source/creatures/playable-completion-20261028-v1/author_native_cadence_v1.py",
+      "sha256": "38a8dc7b72ac88d8b1288873f2c45982a76bb8d5e17d954b21637d9703158f31",
+      "use": "Explicit deterministic whole-painted-key timeline authoring"
+    }
+  ],
+  "groups": {
+    "0": [
+      "walk0",
+      "walk0",
+      "walk1",
+      "walk2",
+      "walk3",
+      "walk3",
+      "walk4",
+      "walk5"
+    ],
+    "1": [
+      "ready",
+      "shootFrontDraw",
+      "shootFrontDraw",
+      "shootFrontDraw",
+      "ready"
+    ],
+    "11": [
+      "up0",
+      "up0",
+      "up1",
+      "up1",
+      "up2",
+      "up2",
+      "up3",
+      "up3"
+    ],
+    "12": [
+      "front0",
+      "front0",
+      "front1",
+      "front1",
+      "front2",
+      "front2",
+      "front3",
+      "front3"
+    ],
+    "13": [
+      "down0",
+      "down0",
+      "down1",
+      "down1",
+      "down2",
+      "down2",
+      "down3",
+      "down3"
+    ],
+    "14": [
+      "ready",
+      "shootUpDraw",
+      "shootUpAim",
+      "shootUpRelease",
+      "shootUpRecoil",
+      "shootUpRecoil",
+      "ready",
+      "ready"
+    ],
+    "15": [
+      "ready",
+      "shootFrontDraw",
+      "shootFrontAim",
+      "shootFrontRelease",
+      "shootFrontRecoil",
+      "shootFrontRecoil",
+      "ready",
+      "ready"
+    ],
+    "16": [
+      "ready",
+      "shootDownDraw",
+      "shootDownAim",
+      "shootDownRelease",
+      "shootDownRecoil",
+      "shootDownRecoil",
+      "ready",
+      "ready"
+    ],
+    "2": [
+      "ready"
+    ],
+    "20": [
+      "ready",
+      "walk1"
+    ],
+    "21": [
+      "walk4",
+      "ready"
+    ],
+    "22": [
+      "death3"
+    ],
+    "3": [
+      "hurt0",
+      "hurt0",
+      "hurt1",
+      "hurt1",
+      "ready"
+    ],
+    "4": [
+      "defend",
+      "defend",
+      "defend",
+      "ready",
+      "ready"
+    ],
+    "5": [
+      "death0",
+      "death0",
+      "death1",
+      "death1",
+      "death2",
+      "death2",
+      "death3",
+      "death3"
+    ],
+    "7": [
+      "turn0",
+      "turn1",
+      "turn2",
+      "turn3",
+      "turn3"
+    ],
+    "8": [
+      "turn3",
+      "turn3",
+      "turn2",
+      "turn1",
+      "turn0"
+    ]
+  },
+  "muzzle_measurements": {
+    "lower": {
+      "fixed_scale": 0.23,
+      "native_offset": [
+        34,
+        -30
+      ],
+      "pose": "shootDownRelease",
+      "source_barrel_end": [
+        972,
+        1015
+      ],
+      "source_root": [
+        825,
+        1145
+      ]
+    },
+    "middle": {
+      "fixed_scale": 0.23,
+      "native_offset": [
+        39,
+        -60
+      ],
+      "pose": "shootFrontRelease",
+      "source_barrel_end": [
+        995,
+        514
+      ],
+      "source_root": [
+        825,
+        776
+      ]
+    },
+    "native_alignment": "not_run",
+    "native_attackClimaxFrame": 4,
+    "source_release_index": 3,
+    "status": "design proposal",
+    "upper": {
+      "fixed_scale": 0.23,
+      "native_offset": [
+        25,
+        -73
+      ],
+      "pose": "shootUpRelease",
+      "source_barrel_end": [
+        934,
+        75
+      ],
+      "source_root": [
+        825,
+        393
+      ]
+    }
+  },
+  "plates": {
+    "melee": {
+      "expected_islands": 12,
+      "poses": {
+        "down0": {
+          "island": 8,
+          "root": [
+            170,
+            1151
+          ]
+        },
+        "down1": {
+          "island": 11,
+          "root": [
+            510,
+            1152
+          ]
+        },
+        "down2": {
+          "island": 10,
+          "root": [
+            840,
+            1152
+          ]
+        },
+        "down3": {
+          "island": 9,
+          "root": [
+            1180,
+            1152
+          ]
+        },
+        "front0": {
+          "island": 4,
+          "root": [
+            180,
+            784
+          ]
+        },
+        "front1": {
+          "island": 7,
+          "root": [
+            510,
+            784
+          ]
+        },
+        "front2": {
+          "island": 5,
+          "root": [
+            840,
+            783
+          ]
+        },
+        "front3": {
+          "island": 6,
+          "root": [
+            1180,
+            784
+          ]
+        },
+        "up0": {
+          "island": 0,
+          "root": [
+            170,
+            403
+          ]
+        },
+        "up1": {
+          "island": 1,
+          "root": [
+            510,
+            403
+          ]
+        },
+        "up2": {
+          "island": 2,
+          "root": [
+            840,
+            404
+          ]
+        },
+        "up3": {
+          "island": 3,
+          "root": [
+            1180,
+            403
+          ]
+        }
+      },
+      "scale": 0.23,
+      "source": "corsair/melee-v1-raw.png",
+      "source_sha256": "e9c086e76df76ec8ddb395aeb8f1ba36d47a12dddfeffece97daf4077304e052"
+    },
+    "reactions": {
+      "expected_islands": 12,
+      "poses": {
+        "death0": {
+          "island": 8,
+          "root": [
+            175,
+            1132
+          ]
+        },
+        "death1": {
+          "island": 9,
+          "root": [
+            500,
+            1132
+          ]
+        },
+        "death2": {
+          "island": 10,
+          "root": [
+            825,
+            1131
+          ]
+        },
+        "death3": {
+          "island": 11,
+          "root": [
+            1140,
+            1129
+          ]
+        },
+        "defend": {
+          "island": 2,
+          "root": [
+            510,
+            446
+          ]
+        },
+        "hurt0": {
+          "island": 1,
+          "root": [
+            825,
+            446
+          ]
+        },
+        "hurt1": {
+          "island": 3,
+          "root": [
+            1175,
+            448
+          ]
+        },
+        "ready": {
+          "island": 0,
+          "root": [
+            165,
+            449
+          ]
+        },
+        "turn0": {
+          "island": 5,
+          "root": [
+            180,
+            851
+          ]
+        },
+        "turn1": {
+          "island": 6,
+          "root": [
+            510,
+            851
+          ]
+        },
+        "turn2": {
+          "island": 7,
+          "root": [
+            840,
+            849
+          ]
+        },
+        "turn3": {
+          "island": 4,
+          "root": [
+            1170,
+            850
+          ]
+        }
+      },
+      "scale": 0.23,
+      "source": "corsair/reactions-v1-raw.png",
+      "source_sha256": "e96417e4c7fca73775d68ff8653021c73834687ac1ce78cec2f322a84aed9dbe"
+    },
+    "shots": {
+      "expected_islands": 12,
+      "poses": {
+        "shootDownAim": {
+          "island": 10,
+          "root": [
+            500,
+            1141
+          ]
+        },
+        "shootDownDraw": {
+          "island": 8,
+          "root": [
+            165,
+            1141
+          ]
+        },
+        "shootDownRecoil": {
+          "island": 9,
+          "root": [
+            1175,
+            1147
+          ]
+        },
+        "shootDownRelease": {
+          "island": 11,
+          "root": [
+            825,
+            1145
+          ]
+        },
+        "shootFrontAim": {
+          "island": 5,
+          "root": [
+            500,
+            776
+          ]
+        },
+        "shootFrontDraw": {
+          "island": 4,
+          "root": [
+            165,
+            774
+          ]
+        },
+        "shootFrontRecoil": {
+          "island": 7,
+          "root": [
+            1175,
+            776
+          ]
+        },
+        "shootFrontRelease": {
+          "island": 6,
+          "root": [
+            825,
+            776
+          ]
+        },
+        "shootUpAim": {
+          "island": 2,
+          "root": [
+            500,
+            387
+          ]
+        },
+        "shootUpDraw": {
+          "island": 1,
+          "root": [
+            165,
+            379
+          ]
+        },
+        "shootUpRecoil": {
+          "island": 3,
+          "root": [
+            1175,
+            390
+          ]
+        },
+        "shootUpRelease": {
+          "island": 0,
+          "root": [
+            825,
+            393
+          ]
+        }
+      },
+      "scale": 0.23,
+      "source": "corsair/shots-v1-raw.png",
+      "source_sha256": "829e1b3f276d9f8f1f4959ef42763476c06ed51ec7cd36d3a97892c38b8502ab"
+    },
+    "walk": {
+      "expected_islands": 6,
+      "poses": {
+        "walk0": {
+          "island": 0,
+          "root": [
+            290,
+            485
+          ]
+        },
+        "walk1": {
+          "island": 1,
+          "root": [
+            770,
+            488
+          ]
+        },
+        "walk2": {
+          "island": 2,
+          "root": [
+            1290,
+            486
+          ]
+        },
+        "walk3": {
+          "island": 3,
+          "root": [
+            300,
+            977
+          ]
+        },
+        "walk4": {
+          "island": 5,
+          "root": [
+            785,
+            988
+          ]
+        },
+        "walk5": {
+          "island": 4,
+          "root": [
+            1300,
+            981
+          ]
+        }
+      },
+      "scale": 0.185,
+      "source": "corsair/walk-v1-raw.png",
+      "source_sha256": "bb594836db9d85b875373be1745dc5dabeda2d4a030af4788f986ca615157c91"
+    }
+  },
+  "projectile": {
+    "expected_islands": 5,
+    "frames": [
+      {
+        "island": 0,
+        "root": [
+          198,
+          386
+        ]
+      },
+      {
+        "island": 2,
+        "root": [
+          598,
+          405
+        ]
+      },
+      {
+        "island": 4,
+        "root": [
+          964,
+          453
+        ]
+      },
+      {
+        "island": 3,
+        "root": [
+          1283,
+          506
+        ]
+      },
+      {
+        "island": 1,
+        "root": [
+          1576,
+          527
+        ]
+      }
+    ],
+    "scale": 0.07,
+    "source": "pistol-projectile-v1-raw.png",
+    "source_sha256": "56498e5c0ad6cfcdcc147033de50cd2b40dcd00cc5d8e45f0e91ec4790599722"
+  },
+  "timeline_contract": {
+    "battle_speed_factor": "Selected native engine setting; actual quantization and visual rhythm need runtime observation",
+    "climax_consumer": "vcmi-develop/vcmi-develop/client/battle/BattleAnimationClasses.cpp",
+    "climax_consumer_sha256": "32e58068ee148c3c56afd0c6755144eda0a819dbcb201747d5abf4edeee9a4b9",
+    "description": "Existing native8-tick melee/walk/death/shoot/cast and5-tick response/turn cadence, with explicit holds of genuine painted keys. Repeated timeline images are deliberate holds, never claimed as extra painted poses.",
+    "eight_tick_cast_release_source_index": 4,
+    "groups": [
+      {
+        "group": 0,
+        "native_ticks": 8,
+        "original_genuine_key_sequence": [
+          "walk0",
+          "walk1",
+          "walk2",
+          "walk3",
+          "walk4",
+          "walk5"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          0,
+          1,
+          2,
+          3,
+          3,
+          4,
+          5
+        ],
+        "unique_painted_keys": 6
+      },
+      {
+        "group": 1,
+        "native_ticks": 5,
+        "original_genuine_key_sequence": [
+          "ready",
+          "shootFrontDraw"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "unique_painted_keys": 2
+      },
+      {
+        "group": 3,
+        "native_ticks": 5,
+        "original_genuine_key_sequence": [
+          "hurt0",
+          "hurt1",
+          "ready"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          0,
+          1,
+          1,
+          2
+        ],
+        "unique_painted_keys": 3
+      },
+      {
+        "group": 4,
+        "native_ticks": 5,
+        "original_genuine_key_sequence": [
+          "defend",
+          "ready"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "unique_painted_keys": 2
+      },
+      {
+        "group": 5,
+        "native_ticks": 8,
+        "original_genuine_key_sequence": [
+          "death0",
+          "death1",
+          "death2",
+          "death3"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3
+        ],
+        "unique_painted_keys": 4
+      },
+      {
+        "group": 7,
+        "native_ticks": 5,
+        "original_genuine_key_sequence": [
+          "turn0",
+          "turn1",
+          "turn2",
+          "turn3"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          1,
+          2,
+          3,
+          3
+        ],
+        "unique_painted_keys": 4
+      },
+      {
+        "group": 8,
+        "native_ticks": 5,
+        "original_genuine_key_sequence": [
+          "turn3",
+          "turn2",
+          "turn1",
+          "turn0"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          0,
+          1,
+          2,
+          3
+        ],
+        "unique_painted_keys": 4
+      },
+      {
+        "group": 11,
+        "native_ticks": 8,
+        "original_genuine_key_sequence": [
+          "up0",
+          "up1",
+          "up2",
+          "up3"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3
+        ],
+        "unique_painted_keys": 4
+      },
+      {
+        "group": 12,
+        "native_ticks": 8,
+        "original_genuine_key_sequence": [
+          "front0",
+          "front1",
+          "front2",
+          "front3"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3
+        ],
+        "unique_painted_keys": 4
+      },
+      {
+        "group": 13,
+        "native_ticks": 8,
+        "original_genuine_key_sequence": [
+          "down0",
+          "down1",
+          "down2",
+          "down3"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3
+        ],
+        "unique_painted_keys": 4
+      },
+      {
+        "group": 14,
+        "native_ticks": 8,
+        "original_genuine_key_sequence": [
+          "ready",
+          "shootUpDraw",
+          "shootUpAim",
+          "shootUpRelease",
+          "shootUpRecoil",
+          "ready"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          4,
+          5,
+          5
+        ],
+        "unique_painted_keys": 5
+      },
+      {
+        "group": 15,
+        "native_ticks": 8,
+        "original_genuine_key_sequence": [
+          "ready",
+          "shootFrontDraw",
+          "shootFrontAim",
+          "shootFrontRelease",
+          "shootFrontRecoil",
+          "ready"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          4,
+          5,
+          5
+        ],
+        "unique_painted_keys": 5
+      },
+      {
+        "group": 16,
+        "native_ticks": 8,
+        "original_genuine_key_sequence": [
+          "ready",
+          "shootDownDraw",
+          "shootDownAim",
+          "shootDownRelease",
+          "shootDownRecoil",
+          "ready"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          4,
+          5,
+          5
+        ],
+        "unique_painted_keys": 5
+      }
+    ],
+    "native_base_fps": 10,
+    "native_execution": false,
+    "native_shooter_attackClimaxFrame": 4,
+    "shooter_release_source_index": 3,
+    "source_consumer": "vcmi-develop/vcmi-develop/client/battle/CreatureAnimation.cpp",
+    "source_consumer_sha256": "ab43c236c791c6c7ecb6f60029b2026bc6dc5ff18c34cf1a0e7659fadc6e98ef",
+    "status": "authored configuration"
+  },
+  "unit": "corsair",
+  "unresolved": [
+    "Opposite support and gait continuity require complete motion review",
+    "First half-turn begins in a more rearward three-quarter pose than HOLDING; repair/review the boundary before selection",
+    "Native same-hex muzzle origins and both facings have not been observed",
+    "Exact crest legibility and face/head continuity require independent native-size review",
+    "Canonical integration and source-policy admission have not run"
+  ],
+  "version": 2
+}

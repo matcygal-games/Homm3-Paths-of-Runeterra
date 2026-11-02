@@ -1,0 +1,110 @@
+{
+  "acceptance": "Production requirements only. No rig/guide/primitive/reference may substitute for painted final art; this recipe must fail while its real master/hash is absent.",
+  "art_direction": "Independent Noxian iron/crimson/black subjects in Heroes III native painted language. Never recolour Castle or Demacia art, import original pixels or invent an official crest.",
+  "canvas": [
+    192,
+    192
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI built-in imagegen; deterministic project conversion",
+    "license": null,
+    "redistribution": "unresolved; no release or redistribution approval"
+  },
+  "dimensions_basis": {
+    "canvas": [
+      192,
+      192
+    ],
+    "mode": "RGBA",
+    "reference_only": "runeterra-demacia/references/frames/avccast0/g00-f000.png",
+    "reference_sha256": "ba7d994c6a9b153701082adf4892eec159d2652115b85ffc060ba33ced970aaf",
+    "use": "Dimensions/format only. No reference pixels, palette, source recipe, layout silhouette or licensed art copied."
+  },
+  "fit": "contain",
+  "generateOverlay": 0,
+  "generateShadow": 0,
+  "generation": {
+    "image_generation_used": true,
+    "model": "not exposed by built-in image_gen.imagegen",
+    "model_disclosure": "The built-in tool did not expose its model identifier.",
+    "provider": "OpenAI built-in imagegen",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use case: stylized-concept. Asset: ONE Noxus adventure-map town miniature sprite for original Heroes III, transparent background realalpha, final192x192. Rich painted/prerendered miniature matching original Heroes III / selected Demacia rendering quality but independently designed Noxian subjects. Unlike town-screen layers this ADVENTURE sprite uses original adventure-map three-quarter elevated orthographic camera, complete structure cluster as one compact joined settlement silhouette, no separate floating ground tile or square board-game base. Severe weathered charcoal-grey stone and black iron, plain crimson cloth accents, warm upper-left daylight, readable broad tonal planes. Full silhouette unclipped with transparent margin and ground contact centered nearbottom. No white/blue Demacia architecture, no copied Castle, no glossy modern3D, neon, illustration outline, text, logo or canonicalemblem. IMPORTANT exactly ONE small plain vivid BLUE CLOTH ownership standard on an iron pole at upperright of town silhouette. No other blue anywhere. This flag is painted art to later derive a real owner-colour overlay, not fixedfaction heraldry. Fort state: low Noxian administrative hall and two compact service roofs behind LOW enclosing dark-stone rampart with plain broad iron gate, very short square cornerposts, no tall defensive towers. First fortified stage.",
+    "painted_master": "assets/source/town/map/fort/painted-v1/master.png",
+    "painted_master_sha256": "d02c091684c4a65feb074610a33bbcb8cbd8909e822f07afc61d1c4aa6baa453",
+    "generation_record": "assets/source/town/map/fort/painted-v1/generation.json",
+    "conversion": {
+      "alpha_crop": [
+        0,
+        49,
+        1238,
+        1228
+      ],
+      "fit": "uniform contain180x176",
+      "native_bottom": 176,
+      "ownership_overlay": "Actual painted blue-flag shape selected by RGB saturation, converted to neutral shade=max(R,G,B) for native player-colour multiplication. No invented silhouette. Native tint/entry alignment still unverified.",
+      "native_consumer": "client/mapView/MapRenderer.cpp:455,571-574 and clientsdl2/render/ScalableImage.cpp:329; -OVERLAY is tinted, not a fixed blue bitmap.",
+      "flag_pixels": 113
+    }
+  },
+  "groups": [
+    {
+      "frames": [
+        {
+          "overlay_sha256": "fa57d9f9f2cee6109cc0a99ade376424be8914aab636e19acc7a7d4a389c11ea",
+          "overlay_source": "assets/source/town/map/fort/painted-v1/ownership-overlay.png",
+          "sha256": "611c8b3fe339753310a977199d598baa936cb27dd12c96c5830c6fe0cacfdd2c",
+          "source": "assets/source/town/map/fort/painted-v1/g00-f000.png",
+          "source_sha256": "611c8b3fe339753310a977199d598baa936cb27dd12c96c5830c6fe0cacfdd2c"
+        }
+      ],
+      "group": 0
+    }
+  ],
+  "inventory": {
+    "asset_id": "noxus.Sprites.runeterra.noxus.town.map.fort.json",
+    "manifest": "assets/manifest.json",
+    "recipe_path": "assets/recipes/town/map/fort.json"
+  },
+  "map_object_template": {
+    "animation": "runeterra/noxus/town/map/fort.json",
+    "mask": [
+      "VVVVVV",
+      "VVVVVV",
+      "VVVVVV",
+      "VVBBBV",
+      "VBBABB"
+    ],
+    "visitableFrom": [
+      "---",
+      "---",
+      "+++"
+    ]
+  },
+  "output_path": "Content/Sprites/runeterra/noxus/town/map/fort.json",
+  "pivot": {
+    "basis": "192px bottom-right native anchor; actual Noxian gate placement still unverified",
+    "x": 176,
+    "y": 176
+  },
+  "production_status": "painted-master-complete",
+  "recipe_type": "vcmi_animation",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "Real independent Noxus painted master and truthful provenance",
+    "Non-null SHA256 source pins",
+    "Official Noxus emblem provenance where used",
+    "Native-size silhouette/composition/alpha and role review",
+    "Explicit coordinator selection; no automatic acceptance"
+  ],
+  "role": "town-adventure-animation",
+  "sha256": "611c8b3fe339753310a977199d598baa936cb27dd12c96c5830c6fe0cacfdd2c",
+  "source_sha256": "611c8b3fe339753310a977199d598baa936cb27dd12c96c5830c6fe0cacfdd2c",
+  "state_contract": "Own village/fort/citadel/castle/capitol silhouette and actual owner-colour flag/overlay; masks/entry/shore routes need native validation",
+  "status": "painted-candidate",
+  "visual_approval_granted": false,
+  "source_canvas": [
+    192,
+    192
+  ]
+}

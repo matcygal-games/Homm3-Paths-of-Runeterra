@@ -1,0 +1,398 @@
+{
+  "active_recipe_modified": false,
+  "atlas_cell_normalization": 1.0,
+  "calibration": {
+    "basis": "One finished painted standing identity measured once; same global scale/origin across every group. Generator framing preservation is not assumed.",
+    "calibration_version": 2,
+    "native_canvas": [
+      450,
+      400
+    ],
+    "original_rig_world_origin": [
+      255.99998474121094,
+      440.7154083251953
+    ],
+    "per_frame_fit": false,
+    "per_group_fit": false,
+    "raw_origin": [
+      256.0,
+      483.4622313359156
+    ],
+    "raw_pixels_to_native": 0.18926537555197012,
+    "reference": "assets/source/creatures/demacianRecruit/rig-pilot-v4/paint-action-g02-atlas-v1.png",
+    "reference_bounds": [
+      248,
+      128,
+      456,
+      542
+    ],
+    "reference_cell_size": [
+      627,
+      627
+    ],
+    "reference_frame": 0,
+    "reference_group": 2,
+    "reference_sha256": "1e15631ed0e9fcc1d32b3e59f8c1d8111dd45782f4979b538c49cbc0d95ed1e4",
+    "reference_standing_version": 1,
+    "revision": 4,
+    "source_padding": {
+      "basis": "Actual input whole-cell technical padding; generator position preservation not assumed",
+      "offset": [
+        46,
+        46
+      ],
+      "scale": 0.8203125
+    },
+    "source_return_scale": 1.224609375,
+    "standing_anchor": [
+      313.5,
+      542.0
+    ],
+    "standing_anchor_basis": "Grid horizontal center and first standing figure alpha-bottom; support placement requires visual review.",
+    "target_origin": [
+      197.0,
+      267.0
+    ],
+    "target_standing_height": 78,
+    "unit": "demacianRecruit",
+    "visual_approval_granted": false
+  },
+  "calibration_version": 2,
+  "camera_normalization": {
+    "basis": "One measured source camera zoom/origin for the entire separately generated action atlas; no frame fits or limb warps.",
+    "calibration": "assets/source/creatures/demacianRecruit/rig-pilot-v4/action-calibration-v2.json",
+    "calibration_sha256": "40e697ff5754e8dbbbaa81e6d8137ac7862c217c08a9555249f260a7c86ece3e",
+    "calibration_version": 2,
+    "camera_version": 1,
+    "camera_zoom_correction": 1.0027244621174702,
+    "group": 5,
+    "landmarks": {
+      "basis": "Manually inspected genuine ready/recovered pose g05 f0: helmet is highest body point, lowest visible boot is grounded; alpha>=8 bounds supply exact vertical coordinates. One grid-center horizontal anchor and one uniform camera correction apply to the entire atlas; later temporal/native review remains required.",
+      "comparable_upright_ready": true,
+      "frame": 0,
+      "ground_anchor": [
+        256.0,
+        490
+      ],
+      "helmet_top": [
+        256.0,
+        79
+      ],
+      "reviewed": true
+    },
+    "per_frame_fit": false,
+    "per_frame_stretch": false,
+    "raw_camera_preservation_claimed": false,
+    "source": "assets/source/creatures/demacianRecruit/rig-pilot-v4/paint-action-g05-atlas-v2.png",
+    "source_camera_zoom_relative_to_standing": 0.9972829404084579,
+    "source_cell_size": [
+      512,
+      512
+    ],
+    "source_origin": [
+      256.0,
+      490
+    ],
+    "source_pixels_to_native": 0.1897810218978102,
+    "source_sha256": "07b59ed12029dc2a6daebdca510c4408fca6a46f708c64fd7984b986a4f967c3",
+    "source_version": 2,
+    "target_origin": [
+      197.0,
+      267.0
+    ],
+    "target_standing_height": 78,
+    "unit": "demacianRecruit",
+    "visual_approval_granted": false
+  },
+  "common_scale_within_action": true,
+  "contact": "assets/source/creatures/demacianRecruit/rig-pilot-v4/paint-action-g05-native-contact-v2-calibration-v2-camera-v1-placement-v1.png",
+  "contact_sha256": "68899d4388cdc71c1beb278c9f88a62ce48f09b529819f49db9e170c5f09212c",
+  "frames": [
+    {
+      "frame": 0,
+      "group": 5,
+      "native_bounds": [
+        178,
+        186,
+        223,
+        269
+      ],
+      "output": "assets/source/creatures/demacianRecruit/rig-pilot-v4/native-actions/g05-v2-calibration-v2-camera-v1-placement-v1/g05-f000.png",
+      "packing_inverse_native_translation": [
+        0,
+        0
+      ],
+      "sha256": "01666101b688e4e0dde90b49a2410b13552fb6f2d9731a90be849fff6dc0e8df",
+      "source_atlas": "assets/source/creatures/demacianRecruit/rig-pilot-v4/paint-action-g05-atlas-v2.png",
+      "source_bounds": [
+        171,
+        79,
+        384,
+        490
+      ],
+      "source_cell": [
+        0,
+        0
+      ],
+      "source_cell_sha256": "d1cda13d298ce544fa80276153192cd94c12ab9ac095c5c439ed5edc39129bf8",
+      "source_return_scale": 1.0,
+      "translation": {
+        "basis": "Whole-frame source-layout correction after explicit native contact-sheet inspection. Lowest foot/knee/torso contact compared with the actual articulated rig projection; its legitimate projected displacement is preserved. No figure or limb scaling.",
+        "native_translation": [
+          0,
+          0
+        ],
+        "observed_native_alpha8_bottom": 267,
+        "raw_alpha8_bottom": 450,
+        "raw_contact_sha256": "7ec4a20a5832ab78fcb16b5fa7da3e29bac35c5b079ec0895f0b17560ab11874",
+        "raw_contact_source": "assets/source/creatures/demacianRecruit/rig-pilot-v4/raw-actions/g05/g05-f000.png",
+        "raw_reference_contact_bottom": 450,
+        "reviewed": true,
+        "target_native_alpha8_bottom": 267
+      }
+    },
+    {
+      "frame": 1,
+      "group": 5,
+      "native_bounds": [
+        179,
+        194,
+        227,
+        269
+      ],
+      "output": "assets/source/creatures/demacianRecruit/rig-pilot-v4/native-actions/g05-v2-calibration-v2-camera-v1-placement-v1/g05-f001.png",
+      "packing_inverse_native_translation": [
+        0,
+        0
+      ],
+      "sha256": "93cdf81512ed5d80cec45453f3132749747b77668ef4a956670f4fa67aee3975",
+      "source_atlas": "assets/source/creatures/demacianRecruit/rig-pilot-v4/paint-action-g05-atlas-v2.png",
+      "source_bounds": [
+        178,
+        116,
+        403,
+        488
+      ],
+      "source_cell": [
+        1,
+        0
+      ],
+      "source_cell_sha256": "2c8b923be42049ebca659264b63f9f98c46f0fc141cc46075fbf31c3308f60cc",
+      "source_return_scale": 1.0,
+      "translation": {
+        "basis": "Whole-frame source-layout correction after explicit native contact-sheet inspection. Lowest foot/knee/torso contact compared with the actual articulated rig projection; its legitimate projected displacement is preserved. No figure or limb scaling.",
+        "native_translation": [
+          0,
+          0
+        ],
+        "observed_native_alpha8_bottom": 267,
+        "raw_alpha8_bottom": 448,
+        "raw_contact_sha256": "8fc4dd714a76032f0d885fa62e9775747a632a3cb3d3c7c56d03520f179ca425",
+        "raw_contact_source": "assets/source/creatures/demacianRecruit/rig-pilot-v4/raw-actions/g05/g05-f001.png",
+        "raw_reference_contact_bottom": 450,
+        "reviewed": true,
+        "target_native_alpha8_bottom": 267
+      }
+    },
+    {
+      "frame": 2,
+      "group": 5,
+      "native_bounds": [
+        182,
+        205,
+        230,
+        271
+      ],
+      "output": "assets/source/creatures/demacianRecruit/rig-pilot-v4/native-actions/g05-v2-calibration-v2-camera-v1-placement-v1/g05-f002.png",
+      "packing_inverse_native_translation": [
+        0,
+        0
+      ],
+      "sha256": "f6d8d33eeb81368515760d1f89a5e34101ab76f34058b55d7ce37636b7d6a991",
+      "source_atlas": "assets/source/creatures/demacianRecruit/rig-pilot-v4/paint-action-g05-atlas-v2.png",
+      "source_bounds": [
+        192,
+        178,
+        418,
+        499
+      ],
+      "source_cell": [
+        2,
+        0
+      ],
+      "source_cell_sha256": "5043bdef622162ec33621365fb7879ba63a544e80006d61d7773131ff448b265",
+      "source_return_scale": 1.0,
+      "translation": {
+        "basis": "Whole-frame source-layout correction after explicit native contact-sheet inspection. Lowest foot/knee/torso contact compared with the actual articulated rig projection; its legitimate projected displacement is preserved. No figure or limb scaling.",
+        "native_translation": [
+          0,
+          0
+        ],
+        "observed_native_alpha8_bottom": 269,
+        "raw_alpha8_bottom": 459,
+        "raw_contact_sha256": "7ea2b38e3383155576d630dcd1ca05364ed76bbf1eba6bf11ecbffccedd36c28",
+        "raw_contact_source": "assets/source/creatures/demacianRecruit/rig-pilot-v4/raw-actions/g05/g05-f002.png",
+        "raw_reference_contact_bottom": 450,
+        "reviewed": true,
+        "target_native_alpha8_bottom": 269
+      }
+    },
+    {
+      "frame": 3,
+      "group": 5,
+      "native_bounds": [
+        166,
+        216,
+        230,
+        274
+      ],
+      "output": "assets/source/creatures/demacianRecruit/rig-pilot-v4/native-actions/g05-v2-calibration-v2-camera-v1-placement-v1/g05-f003.png",
+      "packing_inverse_native_translation": [
+        0,
+        0
+      ],
+      "sha256": "79b25ed47106fd81c85c9f37ccf250a2a4d3369b2e086f5dc611e9d641ec5a17",
+      "source_atlas": "assets/source/creatures/demacianRecruit/rig-pilot-v4/paint-action-g05-atlas-v2.png",
+      "source_bounds": [
+        110,
+        138,
+        419,
+        408
+      ],
+      "source_cell": [
+        0,
+        1
+      ],
+      "source_cell_sha256": "24726608de11d1bd7450dcccabd80b07380a7a4a9c22be348ede9f4759b69f44",
+      "source_return_scale": 1.0,
+      "translation": {
+        "basis": "Whole-frame source-layout correction after explicit native contact-sheet inspection. Lowest foot/knee/torso contact compared with the actual articulated rig projection; its legitimate projected displacement is preserved. No figure or limb scaling.",
+        "native_translation": [
+          0,
+          20
+        ],
+        "observed_native_alpha8_bottom": 252,
+        "raw_alpha8_bottom": 474,
+        "raw_contact_sha256": "615b3af652485d6399260d239a1fe1de75b9be3a0f9a0fa33d7faa50e5482e87",
+        "raw_contact_source": "assets/source/creatures/demacianRecruit/rig-pilot-v4/raw-actions/g05/g05-f003.png",
+        "raw_reference_contact_bottom": 450,
+        "reviewed": true,
+        "target_native_alpha8_bottom": 272
+      }
+    },
+    {
+      "frame": 4,
+      "group": 5,
+      "native_bounds": [
+        148,
+        226,
+        241,
+        277
+      ],
+      "output": "assets/source/creatures/demacianRecruit/rig-pilot-v4/native-actions/g05-v2-calibration-v2-camera-v1-placement-v1/g05-f004.png",
+      "packing_inverse_native_translation": [
+        0,
+        0
+      ],
+      "sha256": "87bab7e69ef747c30e0d38ca2679e9ee9c076aa2b5cc4de3a654565c891523d5",
+      "source_atlas": "assets/source/creatures/demacianRecruit/rig-pilot-v4/paint-action-g05-atlas-v2.png",
+      "source_bounds": [
+        110,
+        211,
+        477,
+        403
+      ],
+      "source_cell": [
+        1,
+        1
+      ],
+      "source_cell_sha256": "0b588d8650c70b71be4f64658023fd527bd6b903caa1a5a776fdf41c43e130c3",
+      "source_return_scale": 1.0,
+      "translation": {
+        "basis": "Whole-frame source-layout correction after explicit native contact-sheet inspection. Lowest foot/knee/torso contact compared with the actual articulated rig projection; its legitimate projected displacement is preserved. No figure or limb scaling.",
+        "native_translation": [
+          0,
+          24
+        ],
+        "observed_native_alpha8_bottom": 251,
+        "raw_alpha8_bottom": 487,
+        "raw_contact_sha256": "8be5259215adb0101e2be349cedc080563da2c47ebfa3b931cdc551b28364439",
+        "raw_contact_source": "assets/source/creatures/demacianRecruit/rig-pilot-v4/raw-actions/g05/g05-f004.png",
+        "raw_reference_contact_bottom": 450,
+        "reviewed": true,
+        "target_native_alpha8_bottom": 275
+      }
+    },
+    {
+      "frame": 5,
+      "group": 5,
+      "native_bounds": [
+        163,
+        247,
+        240,
+        278
+      ],
+      "output": "assets/source/creatures/demacianRecruit/rig-pilot-v4/native-actions/g05-v2-calibration-v2-camera-v1-placement-v1/g05-f005.png",
+      "packing_inverse_native_translation": [
+        0,
+        0
+      ],
+      "sha256": "d5805bd2e26c767e368b35bbed3c882f2c557aead005390f587251bb92650ecb",
+      "source_atlas": "assets/source/creatures/demacianRecruit/rig-pilot-v4/paint-action-g05-atlas-v2.png",
+      "source_bounds": [
+        92,
+        266,
+        474,
+        401
+      ],
+      "source_cell": [
+        2,
+        1
+      ],
+      "source_cell_sha256": "a27b6b7cd74fbddeb507fa665196a4d07f26e5f4bfa7e17d4728ee0ad4d13144",
+      "source_return_scale": 1.0,
+      "translation": {
+        "basis": "Whole-frame source-layout correction after explicit native contact-sheet inspection. Lowest foot/knee/torso contact compared with the actual articulated rig projection; its legitimate projected displacement is preserved. No figure or limb scaling.",
+        "native_translation": [
+          0,
+          25
+        ],
+        "observed_native_alpha8_bottom": 250,
+        "raw_alpha8_bottom": 490,
+        "raw_contact_sha256": "3058c755c9a3770995666d1217380003b09f3a63c96070aede8ac1559f5bbdb4",
+        "raw_contact_source": "assets/source/creatures/demacianRecruit/rig-pilot-v4/raw-actions/g05/g05-f005.png",
+        "raw_reference_contact_bottom": 450,
+        "reviewed": true,
+        "target_native_alpha8_bottom": 275
+      }
+    }
+  ],
+  "generateShadow": 1,
+  "gif": "assets/source/creatures/demacianRecruit/rig-pilot-v4/paint-action-g05-native-review-v2-calibration-v2-camera-v1-placement-v1.gif",
+  "gif_sha256": "bf7e2530160386a9990dd0b10bfcb89538dcf4d8913b64474bc4308b86892ad4",
+  "group": 5,
+  "kind": "death",
+  "native_canvas": [
+    450,
+    400
+  ],
+  "padding_inverted": {
+    "basis": "Unpadded source guide. No unexecuted generator shrink is assumed.",
+    "offset": [
+      0.0,
+      0.0
+    ],
+    "scale": 1.0
+  },
+  "per_frame_stretch": false,
+  "placement_version": 1,
+  "same_target_native_camera": true,
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "status": "calibrated technical export; generator framing/identity/motion/native review still required",
+  "unit": "demacianRecruit",
+  "version": 2,
+  "visual_approval_granted": false
+}

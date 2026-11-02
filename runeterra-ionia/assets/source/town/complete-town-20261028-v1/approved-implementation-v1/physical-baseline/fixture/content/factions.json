@@ -1,0 +1,1476 @@
+{
+  "ionia": {
+    "alignment": "neutral",
+    "boat": "core:boatCastle",
+    "creatureBackground": {
+      "120px": "runeterra/ionia/ui/creatureBackground120.png",
+      "130px": "runeterra/ionia/ui/creatureBackground130.png"
+    },
+    "description": "An additional Ionian town of local communities, Kashuri-equipped firearm defenders, voluntary Protector guardians and Empyrean cloud dragons. Three ground melee, two finite ranged and two living flying lines reward approach, positioning and withdrawal. This skirmish coalition and recruitment are project adaptations, not one canonical Ionian regiment. Neutral alignment is a game compatibility choice. A fictional local Spirit Blossom celebration brings flowering paths, remembrance offerings and lantern light.",
+    "name": "Ionia",
+    "nativeTerrain": [
+      "grass"
+    ],
+    "puzzleMap": {
+      "pieces": [
+        {
+          "index": 1,
+          "x": 7,
+          "y": 8
+        },
+        {
+          "index": 18,
+          "x": 81,
+          "y": 8
+        },
+        {
+          "index": 35,
+          "x": 155,
+          "y": 8
+        },
+        {
+          "index": 4,
+          "x": 229,
+          "y": 8
+        },
+        {
+          "index": 21,
+          "x": 303,
+          "y": 8
+        },
+        {
+          "index": 38,
+          "x": 377,
+          "y": 8
+        },
+        {
+          "index": 7,
+          "x": 451,
+          "y": 8
+        },
+        {
+          "index": 24,
+          "x": 525,
+          "y": 8
+        },
+        {
+          "index": 41,
+          "x": 7,
+          "y": 99
+        },
+        {
+          "index": 10,
+          "x": 81,
+          "y": 99
+        },
+        {
+          "index": 27,
+          "x": 155,
+          "y": 99
+        },
+        {
+          "index": 44,
+          "x": 229,
+          "y": 99
+        },
+        {
+          "index": 13,
+          "x": 303,
+          "y": 99
+        },
+        {
+          "index": 30,
+          "x": 377,
+          "y": 99
+        },
+        {
+          "index": 47,
+          "x": 451,
+          "y": 99
+        },
+        {
+          "index": 16,
+          "x": 525,
+          "y": 99
+        },
+        {
+          "index": 33,
+          "x": 7,
+          "y": 190
+        },
+        {
+          "index": 2,
+          "x": 81,
+          "y": 190
+        },
+        {
+          "index": 19,
+          "x": 155,
+          "y": 190
+        },
+        {
+          "index": 36,
+          "x": 229,
+          "y": 190
+        },
+        {
+          "index": 5,
+          "x": 303,
+          "y": 190
+        },
+        {
+          "index": 22,
+          "x": 377,
+          "y": 190
+        },
+        {
+          "index": 39,
+          "x": 451,
+          "y": 190
+        },
+        {
+          "index": 8,
+          "x": 525,
+          "y": 190
+        },
+        {
+          "index": 25,
+          "x": 7,
+          "y": 281
+        },
+        {
+          "index": 42,
+          "x": 81,
+          "y": 281
+        },
+        {
+          "index": 11,
+          "x": 155,
+          "y": 281
+        },
+        {
+          "index": 28,
+          "x": 229,
+          "y": 281
+        },
+        {
+          "index": 45,
+          "x": 303,
+          "y": 281
+        },
+        {
+          "index": 14,
+          "x": 377,
+          "y": 281
+        },
+        {
+          "index": 31,
+          "x": 451,
+          "y": 281
+        },
+        {
+          "index": 48,
+          "x": 525,
+          "y": 281
+        },
+        {
+          "index": 17,
+          "x": 7,
+          "y": 372
+        },
+        {
+          "index": 34,
+          "x": 81,
+          "y": 372
+        },
+        {
+          "index": 3,
+          "x": 155,
+          "y": 372
+        },
+        {
+          "index": 20,
+          "x": 229,
+          "y": 372
+        },
+        {
+          "index": 37,
+          "x": 303,
+          "y": 372
+        },
+        {
+          "index": 6,
+          "x": 377,
+          "y": 372
+        },
+        {
+          "index": 23,
+          "x": 451,
+          "y": 372
+        },
+        {
+          "index": 40,
+          "x": 525,
+          "y": 372
+        },
+        {
+          "index": 9,
+          "x": 7,
+          "y": 463
+        },
+        {
+          "index": 26,
+          "x": 81,
+          "y": 463
+        },
+        {
+          "index": 43,
+          "x": 155,
+          "y": 463
+        },
+        {
+          "index": 12,
+          "x": 229,
+          "y": 463
+        },
+        {
+          "index": 29,
+          "x": 303,
+          "y": 463
+        },
+        {
+          "index": 46,
+          "x": 377,
+          "y": 463
+        },
+        {
+          "index": 15,
+          "x": 451,
+          "y": 463
+        },
+        {
+          "index": 32,
+          "x": 525,
+          "y": 463
+        }
+      ],
+      "prefix": "runeterra/ionia/puzzle/piece"
+    },
+    "town": {
+      "buildings": {
+        "blacksmith": {
+          "cost": {
+            "gold": 1000,
+            "wood": 5
+          },
+          "description": "Produces native Ballistae.",
+          "name": "Artisan Workshop",
+          "warMachine": "core:ballista"
+        },
+        "capitol": {
+          "cost": {
+            "gold": 10000
+          },
+          "description": "Produces 4000 gold daily. Native one-capitol restrictions apply.",
+          "name": "Grand Assembly",
+          "produce": {
+            "gold": 4000
+          },
+          "requires": [
+            "castle"
+          ],
+          "upgrades": "cityHall"
+        },
+        "castle": {
+          "cost": {
+            "gold": 5000,
+            "ore": 10,
+            "wood": 10
+          },
+          "description": "Native castle walls, towers and double base growth.",
+          "name": "Sanctuary Bastion",
+          "upgrades": "citadel"
+        },
+        "citadel": {
+          "cost": {
+            "gold": 2500,
+            "ore": 5
+          },
+          "description": "Adds a native moat, keep and fifty percent base growth.",
+          "name": "Jade Citadel",
+          "upgrades": "fort"
+        },
+        "cityHall": {
+          "cost": {
+            "gold": 5000
+          },
+          "description": "Produces 2000 gold daily.",
+          "name": "Council of Communities",
+          "produce": {
+            "gold": 2000
+          },
+          "requires": [
+            "allOf",
+            [
+              "marketplace"
+            ],
+            [
+              "blacksmith"
+            ],
+            [
+              "mageGuild1"
+            ]
+          ],
+          "upgrades": "townHall"
+        },
+        "dwellingLvl1": {
+          "cost": {
+            "gold": 500,
+            "wood": 5
+          },
+          "description": "Recruits Ionian Disciples; shared base growth 14.",
+          "name": "Disciple Courtyard",
+          "requires": [
+            "fort"
+          ]
+        },
+        "dwellingLvl2": {
+          "cost": {
+            "gold": 1000,
+            "ore": 5,
+            "wood": 5
+          },
+          "description": "Recruits Kinkou Initiates; shared base growth 9. Retains the Monastery's +1 defending Defense.",
+          "name": "Kinkou Training Hall",
+          "upgrades": "special1"
+        },
+        "dwellingLvl3": {
+          "cost": {
+            "gold": 1500,
+            "ore": 10
+          },
+          "description": "Recruits Vastayan Scouts; shared base growth 7 before modifiers.",
+          "name": "Vastayan Bow Lodge",
+          "requires": [
+            "allOf",
+            [
+              "dwellingLvl1"
+            ],
+            [
+              "blacksmith"
+            ]
+          ]
+        },
+        "dwellingLvl4": {
+          "cost": {
+            "gold": 2500,
+            "ore": 5,
+            "wood": 5
+          },
+          "description": "Recruits Kashuri Armsbearers; shared base growth 4. Local armorer-defender organization is project fiction, not Jhin's personal entourage.",
+          "name": "Kashuri Armory",
+          "requires": [
+            "dwellingLvl3"
+          ]
+        },
+        "dwellingLvl5": {
+          "cost": {
+            "gold": 3500,
+            "ore": 10,
+            "wood": 5
+          },
+          "description": "Recruits voluntary Jeweled Protectors as a skirmish adaptation; shared base growth 3. Retains the Roost's +1 defending Attack.",
+          "name": "Protector Refuge",
+          "upgrades": "special2"
+        },
+        "dwellingLvl6": {
+          "cost": {
+            "gold": 6000,
+            "ore": 10,
+            "wood": 10
+          },
+          "description": "Recruits Resistance Blades; shared base growth 2.",
+          "name": "Resistance Assembly",
+          "requires": [
+            "allOf",
+            [
+              "dwellingLvl4"
+            ],
+            [
+              "blacksmith"
+            ]
+          ]
+        },
+        "dwellingLvl7": {
+          "cost": {
+            "gold": 12000,
+            "mercury": 8,
+            "ore": 15,
+            "wood": 10
+          },
+          "description": "Recruits living Empyreans through an explicit voluntary skirmish adaptation; shared base growth 1. No summoned ancestor or unique champion spirit.",
+          "name": "Cloud Dragon Sanctum",
+          "requires": [
+            "allOf",
+            [
+              "dwellingLvl5"
+            ],
+            [
+              "mageGuild3"
+            ]
+          ]
+        },
+        "dwellingUpLvl1": {
+          "cost": {
+            "gold": 1000,
+            "wood": 5
+          },
+          "description": "Recruits Enlightened Warriors from the same pool; each upgrade costs 20 gold.",
+          "name": "Enlightened Courtyard",
+          "upgrades": "dwellingLvl1"
+        },
+        "dwellingUpLvl2": {
+          "cost": {
+            "gold": 1500,
+            "ore": 5,
+            "wood": 5
+          },
+          "description": "Recruits Kinkou Adepts from the same pool; each upgrade costs 40 gold.",
+          "name": "Kinkou Balance Hall",
+          "upgrades": "dwellingLvl2"
+        },
+        "dwellingUpLvl3": {
+          "cost": {
+            "gold": 2000,
+            "ore": 10
+          },
+          "description": "Recruits Vastayan Warriors from the same pool; each upgrade costs 65 gold.",
+          "name": "Vastayan War Lodge",
+          "upgrades": "dwellingLvl3"
+        },
+        "dwellingUpLvl4": {
+          "cost": {
+            "gold": 3000,
+            "ore": 5,
+            "wood": 5
+          },
+          "description": "Recruits Kashuri Marksmen from the same pool; each upgrade costs 125 gold.",
+          "name": "Kashuri Marksmen's Hall",
+          "upgrades": "dwellingLvl4"
+        },
+        "dwellingUpLvl5": {
+          "cost": {
+            "gold": 4500,
+            "mercury": 2,
+            "ore": 10,
+            "wood": 5
+          },
+          "description": "Recruits Crestbound Protectors from the same pool; each upgrade costs 200 gold. The upgraded guardian rank is project fiction.",
+          "name": "Crestbound Sanctuary",
+          "upgrades": "dwellingLvl5"
+        },
+        "dwellingUpLvl6": {
+          "cost": {
+            "gold": 7500,
+            "mercury": 3,
+            "ore": 10,
+            "wood": 10
+          },
+          "description": "Recruits Resistance Veterans from the same pool; each upgrade costs 460 gold.",
+          "name": "Veterans' Assembly",
+          "upgrades": "dwellingLvl6"
+        },
+        "dwellingUpLvl7": {
+          "cost": {
+            "gold": 15000,
+            "mercury": 10,
+            "ore": 15,
+            "wood": 10
+          },
+          "description": "Recruits Elder Empyreans from the same pool; each upgrade costs 1155 gold and one mercury. Elder rank is project fiction.",
+          "name": "Elder Dragon Sanctum",
+          "requires": [
+            "castle"
+          ],
+          "upgrades": "dwellingLvl7"
+        },
+        "fort": {
+          "cost": {
+            "gold": 5000,
+            "ore": 20,
+            "wood": 20
+          },
+          "description": "Native fortified walls protect the town.",
+          "name": "Cedar Rampart"
+        },
+        "grail": {
+          "cost": {},
+          "description": "Native Grail income and growth; a small civic ornament. Its warm light watches over this settlement's Spirit Blossom offerings and flowers of remembrance.",
+          "mode": "grail",
+          "name": "Lantern of Accord"
+        },
+        "mageGuild1": {
+          "cost": {
+            "gold": 2000,
+            "ore": 5,
+            "wood": 5
+          },
+          "description": "Teaches level-one spells using native guild rules.",
+          "name": "Spirit Library I"
+        },
+        "mageGuild2": {
+          "cost": {
+            "crystal": 4,
+            "gems": 4,
+            "gold": 1000,
+            "mercury": 4,
+            "ore": 5,
+            "sulfur": 4,
+            "wood": 5
+          },
+          "description": "Teaches level-two spells.",
+          "name": "Spirit Library II",
+          "upgrades": "mageGuild1"
+        },
+        "mageGuild3": {
+          "cost": {
+            "crystal": 6,
+            "gems": 6,
+            "gold": 1000,
+            "mercury": 6,
+            "ore": 5,
+            "sulfur": 6,
+            "wood": 5
+          },
+          "description": "Teaches level-three spells. No level-four or five guild is available.",
+          "name": "Spirit Library III",
+          "upgrades": "mageGuild2"
+        },
+        "marketplace": {
+          "cost": {
+            "gold": 500,
+            "wood": 5
+          },
+          "description": "Native resource trading and marketplace rates.",
+          "name": "River Exchange"
+        },
+        "resourceSilo": {
+          "bonuses": [
+            {
+              "subtype": "creatureLevel3",
+              "type": "CREATURE_GROWTH",
+              "val": 1
+            }
+          ],
+          "cost": {
+            "crystal": 3,
+            "gold": 4500,
+            "wood": 8
+          },
+          "description": "Produces one mercury daily for the current owner. Adds one scout to the tier-three shared weekly pool after native Fort/Citadel/Castle growth: 8/11/15 without Grail.",
+          "name": "Vastayan Grove",
+          "produce": {
+            "mercury": 1
+          },
+          "requires": [
+            "allOf",
+            [
+              "dwellingLvl3"
+            ],
+            [
+              "mageGuild1"
+            ],
+            [
+              "marketplace"
+            ]
+          ]
+        },
+        "ship": {
+          "cost": {},
+          "description": "A native boat is moored here.",
+          "mode": "special",
+          "name": "Moored Riverboat",
+          "requires": [
+            "shipyard"
+          ]
+        },
+        "shipyard": {
+          "cost": {
+            "gold": 2000,
+            "wood": 20
+          },
+          "description": "Native boats require a legal adjacent coastal tile.",
+          "name": "River Dock"
+        },
+        "special1": {
+          "bonuses": [
+            {
+              "subtype": "defence",
+              "type": "PRIMARY_SKILL",
+              "val": 1
+            }
+          ],
+          "cost": {
+            "gold": 3500,
+            "ore": 5,
+            "wood": 8
+          },
+          "description": "Town siege defenders gain +1 Defense. This precinct develops into the Kinkou recruitment halls; its defensive benefit remains.",
+          "name": "Kinkou Monastery",
+          "requires": [
+            "allOf",
+            [
+              "fort"
+            ],
+            [
+              "dwellingLvl1"
+            ]
+          ]
+        },
+        "special2": {
+          "bonuses": [
+            {
+              "subtype": "attack",
+              "type": "PRIMARY_SKILL",
+              "val": 1
+            }
+          ],
+          "cost": {
+            "gold": 3500,
+            "ore": 5,
+            "wood": 10
+          },
+          "description": "Town siege defenders gain +1 Attack. This voluntary guardian refuge develops into the Protector sanctuary; its defensive benefit remains. No extra strikes or growth.",
+          "name": "Protector Roost",
+          "requires": [
+            "allOf",
+            [
+              "fort"
+            ],
+            [
+              "dwellingLvl3"
+            ],
+            [
+              "mageGuild1"
+            ]
+          ]
+        },
+        "special3": {
+          "bonuses": [
+            {
+              "subtype": "spellpower",
+              "type": "PRIMARY_SKILL",
+              "val": 1
+            }
+          ],
+          "cost": {
+            "gems": 5,
+            "gold": 5000,
+            "wood": 8
+          },
+          "description": "Defending hero gains +1 Spell Power during this town siege. No permanent training or adventure portal. During this local Spirit Blossom celebration, flowering branches and small offerings frame a quiet place of remembrance.",
+          "name": "Spirit Gateway",
+          "requires": [
+            "allOf",
+            [
+              "fort"
+            ],
+            [
+              "mageGuild2"
+            ]
+          ]
+        },
+        "special4": {
+          "bonuses": [
+            {
+              "type": "LUCK",
+              "val": 1
+            }
+          ],
+          "cost": {
+            "gems": 3,
+            "gold": 4000,
+            "wood": 8
+          },
+          "description": "Town siege defenders gain +1 Luck, subject to native caps. No army-composition condition. Local families gather beneath Spirit Blossom flowers to leave offerings and remember those they have lost.",
+          "name": "Harmony Shrine",
+          "requires": [
+            "allOf",
+            [
+              "fort"
+            ],
+            [
+              "tavern"
+            ]
+          ]
+        },
+        "tavern": {
+          "cost": {
+            "gold": 500,
+            "wood": 5
+          },
+          "description": "Recruits heroes and grants native defending morale.",
+          "name": "Wayfarer's Rest"
+        },
+        "townHall": {
+          "cost": {
+            "gold": 2500
+          },
+          "description": "Produces 1000 gold daily.",
+          "name": "Town Assembly",
+          "produce": {
+            "gold": 1000
+          },
+          "requires": [
+            "tavern"
+          ],
+          "upgrades": "villageHall"
+        },
+        "villageHall": {
+          "cost": {},
+          "description": "Produces 500 gold daily for the current owner.",
+          "name": "Village Assembly",
+          "produce": {
+            "gold": 500
+          }
+        }
+      },
+      "buildingsIcons": "runeterra/ionia/town/buildingIcons.json",
+      "creatures": [
+        [
+          "ionianDisciple",
+          "enlightenedWarrior"
+        ],
+        [
+          "kinkouInitiate",
+          "kinkouAdept"
+        ],
+        [
+          "vastayanScout",
+          "vastayanWarrior"
+        ],
+        [
+          "kashuriArmsbearer",
+          "kashuriMarksman"
+        ],
+        [
+          "jeweledProtector",
+          "crestboundProtector"
+        ],
+        [
+          "resistanceBlade",
+          "resistanceVeteran"
+        ],
+        [
+          "empyrean",
+          "elderEmpyrean"
+        ]
+      ],
+      "defaultTavern": 1,
+      "guildBackground": [
+        "TPMAGE.bmp"
+      ],
+      "guildSpells": {
+        "core:airShield": 30,
+        "core:bless": 20,
+        "core:cure": 25,
+        "core:dispel": 30,
+        "core:forgetfulness": 10,
+        "core:fortune": 20,
+        "core:haste": 30,
+        "core:lightningBolt": 15,
+        "core:magicArrow": 10,
+        "core:mirth": 15,
+        "core:precision": 25,
+        "core:protectAir": 20,
+        "core:protectWater": 20,
+        "core:removeObstacle": 20,
+        "core:shield": 20
+      },
+      "guildWindow": [
+        "TPMAGECS.bmp"
+      ],
+      "guildWindowPosition": {
+        "x": 332,
+        "y": 76
+      },
+      "hallBackground": "TPTHBKCS.bmp",
+      "hallSlots": [
+        [
+          [
+            "villageHall",
+            "townHall",
+            "cityHall",
+            "capitol"
+          ],
+          [
+            "fort",
+            "citadel",
+            "castle"
+          ],
+          [
+            "mageGuild1",
+            "mageGuild2",
+            "mageGuild3"
+          ],
+          [
+            "tavern"
+          ]
+        ],
+        [
+          [
+            "marketplace"
+          ],
+          [
+            "blacksmith"
+          ],
+          [
+            "resourceSilo"
+          ],
+          [
+            "special3"
+          ]
+        ],
+        [
+          [
+            "special4"
+          ],
+          [
+            "dwellingLvl1",
+            "dwellingUpLvl1"
+          ],
+          [
+            "special1",
+            "dwellingLvl2",
+            "dwellingUpLvl2"
+          ],
+          [
+            "dwellingLvl3",
+            "dwellingUpLvl3"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl4",
+            "dwellingUpLvl4"
+          ],
+          [
+            "special2",
+            "dwellingLvl5",
+            "dwellingUpLvl5"
+          ],
+          [
+            "dwellingLvl6",
+            "dwellingUpLvl6"
+          ],
+          [
+            "dwellingLvl7",
+            "dwellingUpLvl7"
+          ]
+        ],
+        [
+          [
+            "shipyard"
+          ],
+          [
+            "grail"
+          ]
+        ]
+      ],
+      "horde": [
+        -1,
+        -1
+      ],
+      "icons": {
+        "fort": {
+          "built": {
+            "large": "runeterra/ionia/town/icons/fort_built_large.png",
+            "small": "runeterra/ionia/town/icons/fort_built_small.png"
+          },
+          "normal": {
+            "large": "runeterra/ionia/town/icons/fort_normal_large.png",
+            "small": "runeterra/ionia/town/icons/fort_normal_small.png"
+          }
+        },
+        "village": {
+          "built": {
+            "large": "runeterra/ionia/town/icons/village_built_large.png",
+            "small": "runeterra/ionia/town/icons/village_built_small.png"
+          },
+          "normal": {
+            "large": "runeterra/ionia/town/icons/village_normal_large.png",
+            "small": "runeterra/ionia/town/icons/village_normal_small.png"
+          }
+        }
+      },
+      "mageGuild": 3,
+      "mapObject": {
+        "filters": {
+          "capitol": [
+            "capitol"
+          ],
+          "castle": [
+            "allOf",
+            [
+              "castle"
+            ],
+            [
+              "noneOf",
+              [
+                "capitol"
+              ]
+            ]
+          ],
+          "citadel": [
+            "allOf",
+            [
+              "citadel"
+            ],
+            [
+              "noneOf",
+              [
+                "castle"
+              ]
+            ]
+          ],
+          "fort": [
+            "allOf",
+            [
+              "fort"
+            ],
+            [
+              "noneOf",
+              [
+                "citadel"
+              ]
+            ]
+          ],
+          "village": [
+            "noneOf",
+            [
+              "fort"
+            ]
+          ]
+        },
+        "templates": {
+          "capitol": {
+            "animation": "runeterra/ionia/town/map/capitol.json",
+            "mask": [
+              "VVVVVV",
+              "VVVVVV",
+              "VVVVVV",
+              "VVBBBV",
+              "VBBABB"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ]
+          },
+          "castle": {
+            "animation": "runeterra/ionia/town/map/castle.json",
+            "mask": [
+              "VVVVVV",
+              "VVVVVV",
+              "VVVVVV",
+              "VVBBBV",
+              "VBBABB"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ]
+          },
+          "citadel": {
+            "animation": "runeterra/ionia/town/map/citadel.json",
+            "mask": [
+              "VVVVVV",
+              "VVVVVV",
+              "VVVVVV",
+              "VVBBBV",
+              "VBBABB"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ]
+          },
+          "fort": {
+            "animation": "runeterra/ionia/town/map/fort.json",
+            "mask": [
+              "VVVVVV",
+              "VVVVVV",
+              "VVVVVV",
+              "VVBBBV",
+              "VBBABB"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ]
+          },
+          "village": {
+            "animation": "runeterra/ionia/town/map/village.json",
+            "mask": [
+              "VVVVVV",
+              "VVVVVV",
+              "VVVVVV",
+              "VVBBBV",
+              "VBBABB"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ]
+          }
+        }
+      },
+      "moatAbility": "core:castleMoat",
+      "musicTheme": [
+        "music/GoodTheme"
+      ],
+      "names": [
+        "Willow Accord",
+        "Cedar Crossing",
+        "Jade Terrace",
+        "Lotus Refuge",
+        "Mistfall",
+        "Bamboo Haven",
+        "River Sanctuary",
+        "Windrest"
+      ],
+      "primaryResource": "mercury",
+      "siege": {
+        "gate": {
+          "arch": {
+            "x": 477,
+            "y": 238
+          },
+          "gate": {
+            "x": 399,
+            "y": 274
+          }
+        },
+        "imagePrefix": "runeterra/ionia/siege/SGIO",
+        "moat": {
+          "bank": {
+            "x": 403,
+            "y": 80
+          },
+          "moat": {
+            "x": 410,
+            "y": 90
+          }
+        },
+        "shooter": "vastayanScout",
+        "static": {
+          "background": {
+            "x": 600,
+            "y": 49
+          },
+          "bottom": {
+            "x": 512,
+            "y": 347
+          },
+          "top": {
+            "x": 489,
+            "y": 79
+          }
+        },
+        "towerIconLarge": "runeterra/ionia/siege/towerLarge.png",
+        "towerIconSmall": "runeterra/ionia/siege/towerSmall.png",
+        "towers": {
+          "bottom": {
+            "battlement": {
+              "x": 602,
+              "y": 500
+            },
+            "creature": {
+              "x": 394,
+              "y": 299
+            },
+            "tower": {
+              "x": 602,
+              "y": 500
+            }
+          },
+          "keep": {
+            "battlement": {
+              "x": 720,
+              "y": 158
+            },
+            "creature": {
+              "x": 526,
+              "y": -29
+            },
+            "tower": {
+              "x": 720,
+              "y": 158
+            }
+          },
+          "top": {
+            "battlement": {
+              "x": 557,
+              "y": 24
+            },
+            "creature": {
+              "x": 342,
+              "y": -187
+            },
+            "tower": {
+              "x": 569,
+              "y": 35
+            }
+          }
+        },
+        "walls": {
+          "bottom": {
+            "x": 528,
+            "y": 350
+          },
+          "bottomMid": {
+            "x": 469,
+            "y": 291
+          },
+          "upper": {
+            "x": 524,
+            "y": 32
+          },
+          "upperMid": {
+            "x": 470,
+            "y": 127
+          }
+        }
+      },
+      "structures": {
+        "blacksmith": {
+          "animation": "runeterra/ionia/town/structures/blacksmith.json",
+          "area": "runeterra/ionia/town/structures/blacksmith_area.png",
+          "border": "runeterra/ionia/town/structures/blacksmith_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/blacksmith_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 356
+        },
+        "capitol": {
+          "animation": "runeterra/ionia/town/structures/capitol.json",
+          "area": "runeterra/ionia/town/structures/capitol_area.png",
+          "border": "runeterra/ionia/town/structures/capitol_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/capitol_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 115
+        },
+        "castle": {
+          "animation": "runeterra/ionia/town/structures/castle.json",
+          "area": "runeterra/ionia/town/structures/castle_area.png",
+          "border": "runeterra/ionia/town/structures/castle_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/castle_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 110
+        },
+        "citadel": {
+          "animation": "runeterra/ionia/town/structures/citadel.json",
+          "area": "runeterra/ionia/town/structures/citadel_area.png",
+          "border": "runeterra/ionia/town/structures/citadel_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/citadel_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 110
+        },
+        "cityHall": {
+          "animation": "runeterra/ionia/town/structures/cityHall.json",
+          "area": "runeterra/ionia/town/structures/cityHall_area.png",
+          "border": "runeterra/ionia/town/structures/cityHall_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/cityHall_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 115
+        },
+        "dwellingLvl1": {
+          "animation": "runeterra/ionia/town/structures/dwellingLvl1.json",
+          "area": "runeterra/ionia/town/structures/dwellingLvl1_area.png",
+          "border": "runeterra/ionia/town/structures/dwellingLvl1_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/dwellingLvl1_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 295
+        },
+        "dwellingLvl2": {
+          "animation": "runeterra/ionia/town/structures/dwellingLvl2.json",
+          "area": "runeterra/ionia/town/structures/dwellingLvl2_area.png",
+          "border": "runeterra/ionia/town/structures/dwellingLvl2_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/dwellingLvl2_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 213
+        },
+        "dwellingLvl3": {
+          "animation": "runeterra/ionia/town/structures/dwellingLvl3.json",
+          "area": "runeterra/ionia/town/structures/dwellingLvl3_area.png",
+          "border": "runeterra/ionia/town/structures/dwellingLvl3_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/dwellingLvl3_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 219
+        },
+        "dwellingLvl4": {
+          "animation": "runeterra/ionia/town/structures/dwellingLvl4.json",
+          "area": "runeterra/ionia/town/structures/dwellingLvl4_area.png",
+          "border": "runeterra/ionia/town/structures/dwellingLvl4_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/dwellingLvl4_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 217
+        },
+        "dwellingLvl5": {
+          "animation": "runeterra/ionia/town/structures/dwellingLvl5.json",
+          "area": "runeterra/ionia/town/structures/dwellingLvl5_area.png",
+          "border": "runeterra/ionia/town/structures/dwellingLvl5_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/dwellingLvl5_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 151
+        },
+        "dwellingLvl6": {
+          "animation": "runeterra/ionia/town/structures/dwellingLvl6.json",
+          "area": "runeterra/ionia/town/structures/dwellingLvl6_area.png",
+          "border": "runeterra/ionia/town/structures/dwellingLvl6_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/dwellingLvl6_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 299
+        },
+        "dwellingLvl7": {
+          "animation": "runeterra/ionia/town/structures/dwellingLvl7.json",
+          "area": "runeterra/ionia/town/structures/dwellingLvl7_area.png",
+          "border": "runeterra/ionia/town/structures/dwellingLvl7_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/dwellingLvl7_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 80
+        },
+        "dwellingUpLvl1": {
+          "animation": "runeterra/ionia/town/structures/dwellingUpLvl1.json",
+          "area": "runeterra/ionia/town/structures/dwellingUpLvl1_area.png",
+          "border": "runeterra/ionia/town/structures/dwellingUpLvl1_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/dwellingUpLvl1_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 295
+        },
+        "dwellingUpLvl2": {
+          "animation": "runeterra/ionia/town/structures/dwellingUpLvl2.json",
+          "area": "runeterra/ionia/town/structures/dwellingUpLvl2_area.png",
+          "border": "runeterra/ionia/town/structures/dwellingUpLvl2_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/dwellingUpLvl2_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 213
+        },
+        "dwellingUpLvl3": {
+          "animation": "runeterra/ionia/town/structures/dwellingUpLvl3.json",
+          "area": "runeterra/ionia/town/structures/dwellingUpLvl3_area.png",
+          "border": "runeterra/ionia/town/structures/dwellingUpLvl3_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/dwellingUpLvl3_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 219
+        },
+        "dwellingUpLvl4": {
+          "animation": "runeterra/ionia/town/structures/dwellingUpLvl4.json",
+          "area": "runeterra/ionia/town/structures/dwellingUpLvl4_area.png",
+          "border": "runeterra/ionia/town/structures/dwellingUpLvl4_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/dwellingUpLvl4_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 217
+        },
+        "dwellingUpLvl5": {
+          "animation": "runeterra/ionia/town/structures/dwellingUpLvl5.json",
+          "area": "runeterra/ionia/town/structures/dwellingUpLvl5_area.png",
+          "border": "runeterra/ionia/town/structures/dwellingUpLvl5_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/dwellingUpLvl5_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 151
+        },
+        "dwellingUpLvl6": {
+          "animation": "runeterra/ionia/town/structures/dwellingUpLvl6.json",
+          "area": "runeterra/ionia/town/structures/dwellingUpLvl6_area.png",
+          "border": "runeterra/ionia/town/structures/dwellingUpLvl6_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/dwellingUpLvl6_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 299
+        },
+        "dwellingUpLvl7": {
+          "animation": "runeterra/ionia/town/structures/dwellingUpLvl7.json",
+          "area": "runeterra/ionia/town/structures/dwellingUpLvl7_area.png",
+          "border": "runeterra/ionia/town/structures/dwellingUpLvl7_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/dwellingUpLvl7_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 80
+        },
+        "fort": {
+          "animation": "runeterra/ionia/town/structures/fort.json",
+          "area": "runeterra/ionia/town/structures/fort_area.png",
+          "border": "runeterra/ionia/town/structures/fort_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/fort_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 110
+        },
+        "grail": {
+          "animation": "runeterra/ionia/town/structures/grail.json",
+          "area": "runeterra/ionia/town/structures/grail_area.png",
+          "border": "runeterra/ionia/town/structures/grail_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/grail_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 352
+        },
+        "mageGuild1": {
+          "animation": "runeterra/ionia/town/structures/mageGuild1.json",
+          "area": "runeterra/ionia/town/structures/mageGuild1_area.png",
+          "border": "runeterra/ionia/town/structures/mageGuild1_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/mageGuild1_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 171
+        },
+        "mageGuild2": {
+          "animation": "runeterra/ionia/town/structures/mageGuild2.json",
+          "area": "runeterra/ionia/town/structures/mageGuild2_area.png",
+          "border": "runeterra/ionia/town/structures/mageGuild2_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/mageGuild2_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 171
+        },
+        "mageGuild3": {
+          "animation": "runeterra/ionia/town/structures/mageGuild3.json",
+          "area": "runeterra/ionia/town/structures/mageGuild3_area.png",
+          "border": "runeterra/ionia/town/structures/mageGuild3_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/mageGuild3_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 171
+        },
+        "marketplace": {
+          "animation": "runeterra/ionia/town/structures/marketplace.json",
+          "area": "runeterra/ionia/town/structures/marketplace_area.png",
+          "border": "runeterra/ionia/town/structures/marketplace_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/marketplace_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 363
+        },
+        "resourceSilo": {
+          "animation": "runeterra/ionia/town/structures/resourceSilo.json",
+          "area": "runeterra/ionia/town/structures/resourceSilo_area.png",
+          "border": "runeterra/ionia/town/structures/resourceSilo_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/resourceSilo_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 165
+        },
+        "ship": {
+          "animation": "runeterra/ionia/town/structures/ship.json",
+          "area": "runeterra/ionia/town/structures/ship_area.png",
+          "border": "runeterra/ionia/town/structures/ship_border.png",
+          "builds": "shipyard",
+          "campaignBonus": "runeterra/ionia/town/structures/ship_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 230
+        },
+        "shipyard": {
+          "animation": "runeterra/ionia/town/structures/shipyard.json",
+          "area": "runeterra/ionia/town/structures/shipyard_area.png",
+          "border": "runeterra/ionia/town/structures/shipyard_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/shipyard_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 230
+        },
+        "special1": {
+          "animation": "runeterra/ionia/town/structures/special1.json",
+          "area": "runeterra/ionia/town/structures/special1_area.png",
+          "border": "runeterra/ionia/town/structures/special1_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/special1_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 213
+        },
+        "special2": {
+          "animation": "runeterra/ionia/town/structures/special2.json",
+          "area": "runeterra/ionia/town/structures/special2_area.png",
+          "border": "runeterra/ionia/town/structures/special2_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/special2_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 151
+        },
+        "special3": {
+          "animation": "runeterra/ionia/town/structures/special3.json",
+          "area": "runeterra/ionia/town/structures/special3_area.png",
+          "border": "runeterra/ionia/town/structures/special3_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/special3_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 236
+        },
+        "special4": {
+          "animation": "runeterra/ionia/town/structures/special4.json",
+          "area": "runeterra/ionia/town/structures/special4_area.png",
+          "border": "runeterra/ionia/town/structures/special4_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/special4_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 164
+        },
+        "tavern": {
+          "animation": "runeterra/ionia/town/structures/tavern.json",
+          "area": "runeterra/ionia/town/structures/tavern_area.png",
+          "border": "runeterra/ionia/town/structures/tavern_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/tavern_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 357
+        },
+        "townHall": {
+          "animation": "runeterra/ionia/town/structures/townHall.json",
+          "area": "runeterra/ionia/town/structures/townHall_area.png",
+          "border": "runeterra/ionia/town/structures/townHall_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/townHall_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 115
+        },
+        "villageHall": {
+          "animation": "runeterra/ionia/town/structures/villageHall.json",
+          "area": "runeterra/ionia/town/structures/villageHall_area.png",
+          "border": "runeterra/ionia/town/structures/villageHall_border.png",
+          "campaignBonus": "runeterra/ionia/town/structures/villageHall_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 115
+        }
+      },
+      "tavern": {
+        "ionianWarden": 10,
+        "spiritGuide": 10
+      },
+      "tavernVideo": "TAVERN.BIK",
+      "townBackground": "runeterra/ionia/town/background.png"
+    }
+  }
+}

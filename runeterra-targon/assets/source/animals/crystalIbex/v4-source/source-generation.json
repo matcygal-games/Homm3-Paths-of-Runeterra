@@ -1,0 +1,69 @@
+{
+  "atlas": "assets/source/animals/materials/painted-atlas-v1.png",
+  "atlas_sha256": "a02f751298410c58c03b43bf753fb8845dc3c6e5d1ad173c34a415cde8a9068f",
+  "authoring_driver_role": "Preserved historical producer source; editable packed scenes are portable authored sources. Conversion reproduction uses scripts/rebuild_native.py and requires no art regeneration.",
+  "battle_scene": "assets/source/animals/crystalIbex/v4-source/crystalIbex-battle-portable.blend",
+  "battle_scene_sha256": "229103c0d7a92df3820885c3356747945d24cc9bafb98b1d9729193d3aa2e937",
+  "consumed_conversion_input": "Already-composited clean native RGBA PNG masters under ../native; compiler does not require private render passes.",
+  "map_context_producer": "assets/source/animals/authoring/compact_map_cohort_v2.py",
+  "map_context_producer_sha256": "4145d018925e91448cd3227a908e7fe9f46d2b44df5caff770d91b30cee72fcd",
+  "map_pose": "assets/source/animals/authoring/map-compact-pose-v2.json",
+  "map_pose_contract": "All requested map pose vertices are pinned per key and rendered directly from reopened saved compact map source. Legacy scene source_pose_sha256 remains documentary parent battle pose, not the derived map pose.",
+  "map_pose_sha256": "d54f54610689472728188498babcbfe8c183cab3ce4c44d92fa91f5147eb9657",
+  "map_scene": "assets/source/animals/crystalIbex/v4-source/crystalIbex-map-compact-v2-portable.blend",
+  "map_scene_sha256": "0c0736de3d6fc92b7a326cb7e96b444fead4d4f5c4ab9fe2768fa7757edd5725",
+  "private_proof_role": "Historical nonconsumed audit evidence; receipt SHA identifies retained private proof. Source conversion uses clean PNG masters directly.",
+  "private_render_receipt_sha256": "28bdea670bcdcc5d1a766bc533c9db0482caeead1b8bee2badb03634ca1941dd",
+  "producer": "assets/source/animals/authoring/animal_producer_prototype_v4.py",
+  "producer_sha256": "5748d53ca55c093e15182a6370393fb4c1da62ca89fa32863b1dedaee5960dcb",
+  "source_generation": {
+    "battle_canvas": [
+      450,
+      400
+    ],
+    "battle_root": [
+      218,
+      267
+    ],
+    "map_canvas": [
+      64,
+      64
+    ],
+    "map_root": [
+      48,
+      60
+    ],
+    "native_alpha_policy": {
+      "battle_shadow": {
+        "center": [
+          218,
+          267
+        ],
+        "radii": [
+          110,
+          38
+        ]
+      },
+      "low_alpha_cutoff": 8,
+      "map_shadow": {
+        "center": [
+          48,
+          60
+        ],
+        "radii": [
+          12,
+          3.5
+        ]
+      },
+      "method": "Original RGBA preserved inside opaque200+ and its 3px square dilation; low alpha<8 zeroed. Outside that protected neighborhood, fixed root-relative ground ellipse has flat core and smoothstep feather. Portraits retain protected body neighborhood only. No position/scale/crop fit.",
+      "near_body_radius_pixels": 3,
+      "opaque_preserve_min": 200,
+      "revision": "alpha-v14",
+      "shadow_flat_core_radius": 0.65
+    },
+    "renderer": "Blender4.5.9 Cycles",
+    "shadow": "Actor Combined alpha-over physically rendered Cycles ShadowCatcher luminance mask at factor0.30"
+  },
+  "status": "authored configuration",
+  "unit": "crystalIbex"
+}

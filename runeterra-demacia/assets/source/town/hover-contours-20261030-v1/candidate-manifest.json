@@ -1,0 +1,2205 @@
+{
+  "candidate_only": true,
+  "limitations": [
+    "No current selection, recipe, click area, painted pixel or runtime changed.",
+    "Alpha-only candidates do not establish architectural accuracy. Explicit mask tracing and visual review are required for baked scenery.",
+    "Native hover occlusion and construction-state checks remain unobserved."
+  ],
+  "producer": {
+    "path": "scripts/town_hover_outlines.py",
+    "sha256": "7fd46e1384fa603e5090cd9429116a88a7ac6b1bf393a2d7db1621f35cc29e2c"
+  },
+  "source_mutations": 0,
+  "states": [
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-blacksmith-animation.json",
+        "sha256": "f1e0f08c14b997b07ff4fa6a068181d52fee2143c3f19c9a2aa1a954ab40954e"
+      },
+      "building": "blacksmith",
+      "candidate_border": {
+        "path": "demacia/blacksmith/border.png",
+        "sha256": "65bbffa96abd616bbef55ec84bdaccf804dff2a1baff4375443d7921e9a46463"
+      },
+      "candidate_mask": {
+        "path": "demacia/blacksmith/architecture-mask.png",
+        "sha256": "4f12182013e8baacbcd6b77f5d3978e6d9b5817bb22dccf98c8ad9528b849099"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        0,
+        248,
+        253,
+        374
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/blacksmith_border.png",
+        "sha256": "eb0eb49f2c7779382254e5c800be472e34a5fbd4de85bf0ef31b493a67dc48e2"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-blacksmith-masks.json",
+        "sha256": "e60b0aa94b3d2f6ca65466da00bbcf556a1314021c9e1594f68d46465333cbff"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/blacksmith-frame.png",
+        "sha256": "0c679449e38ee6170dcdd9796a6cf75c224ba72c1375e3a9570a2b81ce0f6f71"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/blacksmith.png",
+        "sha256": "4f12182013e8baacbcd6b77f5d3978e6d9b5817bb22dccf98c8ad9528b849099"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/blacksmith.json",
+        "area": "runeterra/demacia/town/structures/blacksmith_area.png",
+        "border": "runeterra/demacia/town/structures/blacksmith_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/blacksmith_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 42
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-capitol-animation.json",
+        "sha256": "4aeb1d158cefa0189095bd5cc61886bd36c65d8fb298b3935f266cdd46b7ef6c"
+      },
+      "building": "capitol",
+      "candidate_border": {
+        "path": "demacia/capitol/border.png",
+        "sha256": "2b978c6624096a9f85baf1b33bcaf4a30ab998c5fa3abe2dcdaa17ec33b37d36"
+      },
+      "candidate_mask": {
+        "path": "demacia/capitol/architecture-mask.png",
+        "sha256": "a2d201512dccf767fd248514c5ead6c420d433006b5352f6f80edbcc37111f18"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        347,
+        11,
+        571,
+        160
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/capitol_border.png",
+        "sha256": "f60f5ff84451716d822a234b61b41e53d8f2d57220e6683ecd6cbdce60e9f241"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-capitol-masks.json",
+        "sha256": "2f325c9cd30afdc97f68fa57a31aefee6fa7740ae4effe6ea90fe9e1be0fe432"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/capitol-frame.png",
+        "sha256": "30556a020717808bb58518654841cebdd53bc9f3a9c34a4ddf5b4c5c1e31343d"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/capitol.png",
+        "sha256": "a2d201512dccf767fd248514c5ead6c420d433006b5352f6f80edbcc37111f18"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/capitol.json",
+        "area": "runeterra/demacia/town/structures/capitol_area.png",
+        "border": "runeterra/demacia/town/structures/capitol_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/capitol_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 10
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-castle-animation.json",
+        "sha256": "04d3d587691cc4e963de68b039dd497526f35c1cfcfab8698fa5dfa9a9c2c67c"
+      },
+      "building": "castle",
+      "candidate_border": {
+        "path": "demacia/castle/border.png",
+        "sha256": "4552e9bcd1e105620f79b1691959d51145d44ffa5cbb40754c2ee8dedc0154a4"
+      },
+      "candidate_mask": {
+        "path": "demacia/castle/architecture-mask.png",
+        "sha256": "99fb3a86f2f2b8085a5d6f0417dbb17a99dac4c763236dd2cedbed894da9414c"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        559,
+        47,
+        777,
+        148
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/castle_border.png",
+        "sha256": "47a45a6d69fa7f8bc7f0de2910e675119fec2f92dffb3b2c3e29484cf61e7a33"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-castle-masks.json",
+        "sha256": "ae7d6a8eed30e54c83a8db04380c89e2f9a8b9f3374ab946d6a351c86b2f823e"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/castle-frame.png",
+        "sha256": "723b56c605ddda3e135065b3b23c3aa410cf0f228234d42f3ba4ce0fb7a557a7"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/castle.png",
+        "sha256": "99fb3a86f2f2b8085a5d6f0417dbb17a99dac4c763236dd2cedbed894da9414c"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/castle.json",
+        "area": "runeterra/demacia/town/structures/castle_area.png",
+        "border": "runeterra/demacia/town/structures/castle_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/castle_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 8
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-citadel-animation.json",
+        "sha256": "c6248e2fb88830688fe7d2f5adabca44dd0e2a17ef67ae4834c1da326a5b9763"
+      },
+      "building": "citadel",
+      "candidate_border": {
+        "path": "demacia/citadel/border.png",
+        "sha256": "e3f1528ce78457b71a865c1ec751d281a93a4a14303d17f1fb1bb50b87e22562"
+      },
+      "candidate_mask": {
+        "path": "demacia/citadel/architecture-mask.png",
+        "sha256": "d93046904fa1a6e50e266743455a5e9ae390f114a0b5d6ecdda1069ec5e2bba9"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        553,
+        58,
+        783,
+        148
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/citadel_border.png",
+        "sha256": "f6e74412e71817e69c0b5e466487161867c09a9eef91c183d18deb49b998e6f6"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-citadel-masks.json",
+        "sha256": "9171fffed76ac01a48d35b1cab4bc02b3b93228e2a865a3482377b8bf3c38724"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/citadel-frame.png",
+        "sha256": "36afb6b04ea7368ed9ad9b8f775e6b16cee803c0a20a5a493926f3fe121bb220"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/citadel.png",
+        "sha256": "d93046904fa1a6e50e266743455a5e9ae390f114a0b5d6ecdda1069ec5e2bba9"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/citadel.json",
+        "area": "runeterra/demacia/town/structures/citadel_area.png",
+        "border": "runeterra/demacia/town/structures/citadel_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/citadel_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 8
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-cityHall-animation.json",
+        "sha256": "5b92d9d001814d714bdb48e5ce6e813d9d6659adf66ddf562546790563ab0cd9"
+      },
+      "building": "cityHall",
+      "candidate_border": {
+        "path": "demacia/cityHall/border.png",
+        "sha256": "6ccb5a8369a4c853cf741cdc99f9733c9be25d7084e42bf1a8ad9ebc497bbe19"
+      },
+      "candidate_mask": {
+        "path": "demacia/cityHall/architecture-mask.png",
+        "sha256": "b5a25f86265472ffd522313d4eff43edb41bfe7ab6519efb9e72b4c563bc5c19"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        347,
+        13,
+        572,
+        153
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/cityHall_border.png",
+        "sha256": "8483528a987281d852fd9e66511b26ece4b8bde0702b1582149bf22ecd2a70f6"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-cityHall-masks.json",
+        "sha256": "6204114fb2f2fa14d263c53069daa7e3a6b9f5f8756976e9aa1d3e1d6ecdeec9"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/cityHall-frame.png",
+        "sha256": "b1498d2638f35481d342fe7362b8cf63927307863c28f34f6cd00341e6b04b39"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/cityHall.png",
+        "sha256": "b5a25f86265472ffd522313d4eff43edb41bfe7ab6519efb9e72b4c563bc5c19"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/cityHall.json",
+        "area": "runeterra/demacia/town/structures/cityHall_area.png",
+        "border": "runeterra/demacia/town/structures/cityHall_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/cityHall_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 10
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingLvl1-animation.json",
+        "sha256": "78eb780f255d1f261d072d0bfbbbb697b3363e095b2fe900d1f45a0eb1df0104"
+      },
+      "building": "dwellingLvl1",
+      "candidate_border": {
+        "path": "demacia/dwellingLvl1/border.png",
+        "sha256": "0e4dfe2aa4313cfc545450e807ba1c0f595bb53aa4a78e7db6c6e8dbd1127d79"
+      },
+      "candidate_mask": {
+        "path": "demacia/dwellingLvl1/architecture-mask.png",
+        "sha256": "61275f8cbee36a4cf0d7ff05f1834f17c795cc3855901115697dd75663cb7168"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        212,
+        203,
+        331,
+        247
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingLvl1_border.png",
+        "sha256": "fbd7694545eaf8389fae6d990f6e6b06913258d3ecd47097a28b2b2239865eec"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingLvl1-masks.json",
+        "sha256": "28f399404a03d3875ada409e6d640868e7175779658b05b2b534afe097a7a733"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingLvl1-frame.png",
+        "sha256": "3c9b33b6698a221dd5ca25ee12cd6492b490808b0cac2d59bd790a92651a5a5b"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/dwellingLvl1.png",
+        "sha256": "61275f8cbee36a4cf0d7ff05f1834f17c795cc3855901115697dd75663cb7168"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/dwellingLvl1.json",
+        "area": "runeterra/demacia/town/structures/dwellingLvl1_area.png",
+        "border": "runeterra/demacia/town/structures/dwellingLvl1_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/dwellingLvl1_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 29
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingLvl2-animation.json",
+        "sha256": "5671307d63036d6fee886a867e281e1a67283a00d08ad71caddd4c1705290c23"
+      },
+      "building": "dwellingLvl2",
+      "candidate_border": {
+        "path": "demacia/dwellingLvl2/border.png",
+        "sha256": "ecf1c136809466eb43c62def6884320db1dddc4da151dc396dfa42189d085b48"
+      },
+      "candidate_mask": {
+        "path": "demacia/dwellingLvl2/architecture-mask.png",
+        "sha256": "400b2d9e4372f79fa8a1539bcd4f7a00c2d175bb0fc4aa2dc4a6315efffc864b"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        62,
+        204,
+        275,
+        287
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingLvl2_border.png",
+        "sha256": "d4fe18cca2988836c80943c44612e1b04730dc30cb4a261164052ad8fd19ebc3"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingLvl2-masks.json",
+        "sha256": "6a404952022b8922772de3ff720a58bfa5861e7fe1dcd8bbd4317e847d3e0819"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingLvl2-frame.png",
+        "sha256": "0791b2f0a33a4bda150bce8beb158635ba029082312aa0d41523379110555ff6"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/dwellingLvl2.png",
+        "sha256": "400b2d9e4372f79fa8a1539bcd4f7a00c2d175bb0fc4aa2dc4a6315efffc864b"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/dwellingLvl2.json",
+        "area": "runeterra/demacia/town/structures/dwellingLvl2_area.png",
+        "border": "runeterra/demacia/town/structures/dwellingLvl2_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/dwellingLvl2_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 31
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingLvl3-animation.json",
+        "sha256": "63e7da5a7240d777816a864278c41bad4bfbe876abd901c98a9191820d91f416"
+      },
+      "building": "dwellingLvl3",
+      "candidate_border": {
+        "path": "demacia/dwellingLvl3/border.png",
+        "sha256": "7dc206c4acabcbc7f3919a7eba709f145d2e0094480f02c8868ef69bdcb88989"
+      },
+      "candidate_mask": {
+        "path": "demacia/dwellingLvl3/architecture-mask.png",
+        "sha256": "66592c7005c13e6c3759cae0574a6e5c690f78484abf9fa7dc818d5d0713e6ee"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        301,
+        164,
+        502,
+        242
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingLvl3_border.png",
+        "sha256": "70406e751d979b3cbf4dfaba3deb293dae24ce046ddf2f03bf5f45609ae414b5"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingLvl3-masks.json",
+        "sha256": "a17e4af60f23393f5902754da62ccf6aa6f4807d95d7e420ad8fdf264a42283e"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingLvl3-frame.png",
+        "sha256": "1d952fe3ccce4f1142cf37a75de120334543dbad80c81040eea229da99145993"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/dwellingLvl3.png",
+        "sha256": "66592c7005c13e6c3759cae0574a6e5c690f78484abf9fa7dc818d5d0713e6ee"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/dwellingLvl3.json",
+        "area": "runeterra/demacia/town/structures/dwellingLvl3_area.png",
+        "border": "runeterra/demacia/town/structures/dwellingLvl3_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/dwellingLvl3_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 28
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingLvl4-animation.json",
+        "sha256": "e2a79de34e2f8b25909fde09850cc4b0447954d07d5b18c1e6a8d4c3eefd5b63"
+      },
+      "building": "dwellingLvl4",
+      "candidate_border": {
+        "path": "demacia/dwellingLvl4/border.png",
+        "sha256": "b4f183f83cc16ea95a95a3877b9aa790f7825fb4b07e93cf8715e6e220b8c64e"
+      },
+      "candidate_mask": {
+        "path": "demacia/dwellingLvl4/architecture-mask.png",
+        "sha256": "44d21aa69ca2de8c6e7509b4489cb29de0be32143d876873f15c631c316c91a0"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        491,
+        176,
+        616,
+        244
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingLvl4_border.png",
+        "sha256": "b2c18e3ecd1c6402843774a30d87741b8514fa4c79055cd2453fffd8e8ddcba7"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingLvl4-masks.json",
+        "sha256": "b33d985298e3423383d528524d5f6520b44f83b968dba58394926da00603d270"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingLvl4-frame.png",
+        "sha256": "3fd8290ba6780478b42417bd1a0f96fcce09a90b86337149a0305f035cc3ee6d"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/dwellingLvl4.png",
+        "sha256": "44d21aa69ca2de8c6e7509b4489cb29de0be32143d876873f15c631c316c91a0"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/dwellingLvl4.json",
+        "area": "runeterra/demacia/town/structures/dwellingLvl4_area.png",
+        "border": "runeterra/demacia/town/structures/dwellingLvl4_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/dwellingLvl4_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 30
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingLvl5-animation.json",
+        "sha256": "6725337944416912a4e67123eb1ce57ce282c13ced2929d7648b7faae7c76948"
+      },
+      "building": "dwellingLvl5",
+      "candidate_border": {
+        "path": "demacia/dwellingLvl5/border.png",
+        "sha256": "53082508d4f749c040e7fa2430a19cd14f987903831cfeb64d59a610b9d9592c"
+      },
+      "candidate_mask": {
+        "path": "demacia/dwellingLvl5/architecture-mask.png",
+        "sha256": "90a25227d7d15ceb1c4452d3b3edb790200d05a5ab3a7c21bd2e31a99dada7a6"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        176,
+        137,
+        312,
+        231
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingLvl5_border.png",
+        "sha256": "30aa9c36e45471984b3e738a385ea84a6a627240511d40e2353b9176017cc3e4"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingLvl5-masks.json",
+        "sha256": "025db761240e5308f1eea1980783828f58c4fcb3005a37eb3d88598c9d36174d"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingLvl5-frame.png",
+        "sha256": "520a795f78fe8e64045d33ae387e41841daeb234ad89fd04147bbf5452e27d91"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/dwellingLvl5.png",
+        "sha256": "90a25227d7d15ceb1c4452d3b3edb790200d05a5ab3a7c21bd2e31a99dada7a6"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/dwellingLvl5.json",
+        "area": "runeterra/demacia/town/structures/dwellingLvl5_area.png",
+        "border": "runeterra/demacia/town/structures/dwellingLvl5_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/dwellingLvl5_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 22
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingLvl6-animation.json",
+        "sha256": "52f48c6e6cc41e1338411e99f797d734b3a72172cc86b3282e276d1e7c4d645d"
+      },
+      "building": "dwellingLvl6",
+      "candidate_border": {
+        "path": "demacia/dwellingLvl6/border.png",
+        "sha256": "453d94720b3a618cf408a4a1df7afabce2e7d10449ca02c4df1df5653b1fa209"
+      },
+      "candidate_mask": {
+        "path": "demacia/dwellingLvl6/architecture-mask.png",
+        "sha256": "61b1d24c4edf8f51b15520ab7ed239e8827b02e55efb37cbe388a7918851e4af"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        572,
+        93,
+        730,
+        232
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingLvl6_border.png",
+        "sha256": "1ea50a139f4740eba632837c3724ee0f03e3cd6e9c3a07f6beb9841e72e7e7b7"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingLvl6-masks.json",
+        "sha256": "4549ab491367ec149049d6d0da93d6e0038d188216ec826e0ab135e47c07e788"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingLvl6-frame.png",
+        "sha256": "1732387f1f68b150bdc43faa63d78004c21d10fbde1b7cd94b72a1981c8feb70"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/dwellingLvl6.png",
+        "sha256": "61b1d24c4edf8f51b15520ab7ed239e8827b02e55efb37cbe388a7918851e4af"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/dwellingLvl6.json",
+        "area": "runeterra/demacia/town/structures/dwellingLvl6_area.png",
+        "border": "runeterra/demacia/town/structures/dwellingLvl6_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/dwellingLvl6_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 23
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingLvl7-animation.json",
+        "sha256": "95883104d588a4d2ceca38c96bafe712b9777dff9ef168875c1d0ec2e01de6fb"
+      },
+      "building": "dwellingLvl7",
+      "candidate_border": {
+        "path": "demacia/dwellingLvl7/border.png",
+        "sha256": "bedc4265b5b29b9f318de9a7f29b9cf80e84f83def02ea5080cbbb07b74fa594"
+      },
+      "candidate_mask": {
+        "path": "demacia/dwellingLvl7/architecture-mask.png",
+        "sha256": "8421f8904f9ab907ec5b124dcfc47e81046ae09596609de0537a8d8c39aeccfb"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        140,
+        39,
+        305,
+        133
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingLvl7_border.png",
+        "sha256": "b8e790e65f48f8733d891472e1bd08da8fc060da8f24c60f3d0c1715b0c6029c"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingLvl7-masks.json",
+        "sha256": "12a1af3de52a21c0b6782b9879df81b91c9adc9dd05e7e7999830ad53bb18295"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingLvl7-frame.png",
+        "sha256": "49828eaa72a441c0c9026d279060ab088038efd6c74cf66dc7263d607ecd8d7e"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/dwellingLvl7.png",
+        "sha256": "8421f8904f9ab907ec5b124dcfc47e81046ae09596609de0537a8d8c39aeccfb"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/dwellingLvl7.json",
+        "area": "runeterra/demacia/town/structures/dwellingLvl7_area.png",
+        "border": "runeterra/demacia/town/structures/dwellingLvl7_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/dwellingLvl7_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 12
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingUpLvl1-animation.json",
+        "sha256": "e2185d52743385d7245831bb42281a9e99cfac35be4fe61f287ff6a855fe1580"
+      },
+      "building": "dwellingUpLvl1",
+      "candidate_border": {
+        "path": "demacia/dwellingUpLvl1/border.png",
+        "sha256": "82ad0f5605a278c3eb32cf29c6956931a054de30a8ae71e23606daca35eb8259"
+      },
+      "candidate_mask": {
+        "path": "demacia/dwellingUpLvl1/architecture-mask.png",
+        "sha256": "48a018893a02c95e9bbf49b37a186b169e594ef1ad35ce42ccfbfd81821eda88"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        212,
+        197,
+        332,
+        252
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingUpLvl1_border.png",
+        "sha256": "51506465392d26b03f7fe932c7eaa49a3315f4cdfc86dd855e1bb00d1ac6d9c1"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingUpLvl1-masks.json",
+        "sha256": "fe840242b88c7c179d8337bf7ebc5ec29cadc7982d7c4eff62bba95728c170eb"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingUpLvl1-frame.png",
+        "sha256": "d18e582767b2becb39ef6e2d47323d4c74c9890592219a941be8c775b4dc7495"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/dwellingUpLvl1.png",
+        "sha256": "48a018893a02c95e9bbf49b37a186b169e594ef1ad35ce42ccfbfd81821eda88"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/dwellingUpLvl1.json",
+        "area": "runeterra/demacia/town/structures/dwellingUpLvl1_area.png",
+        "border": "runeterra/demacia/town/structures/dwellingUpLvl1_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/dwellingUpLvl1_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 29
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingUpLvl2-animation.json",
+        "sha256": "e29371106e620106584101dfca1a3601a8d8171ccbee74d5e9bf058dc1145994"
+      },
+      "building": "dwellingUpLvl2",
+      "candidate_border": {
+        "path": "demacia/dwellingUpLvl2/border.png",
+        "sha256": "c0151d8000e7f47927153215baffaa5d74bda3dce6f4bf30371ad9f0378e0c08"
+      },
+      "candidate_mask": {
+        "path": "demacia/dwellingUpLvl2/architecture-mask.png",
+        "sha256": "3cacb45aaa1734ed0e21f5dfbafe052ff90e35fcba917e45843db7b4995ca411"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        79,
+        208,
+        258,
+        281
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingUpLvl2_border.png",
+        "sha256": "ef8e4f59047431d09c1aea9e976d9d516fe15d1d76729b2100efacdc15cfd424"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingUpLvl2-masks.json",
+        "sha256": "cb9b9a7f6ab019f22ccbeabdab8e3c1881b8c77ae67bc1b240f6a30a623f06df"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingUpLvl2-frame.png",
+        "sha256": "50331840106bf608326f048eb2d9175b06dc87d407b5208df1469965b3d5283c"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/dwellingUpLvl2.png",
+        "sha256": "3cacb45aaa1734ed0e21f5dfbafe052ff90e35fcba917e45843db7b4995ca411"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/dwellingUpLvl2.json",
+        "area": "runeterra/demacia/town/structures/dwellingUpLvl2_area.png",
+        "border": "runeterra/demacia/town/structures/dwellingUpLvl2_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/dwellingUpLvl2_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 31
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingUpLvl3-animation.json",
+        "sha256": "e54f28467775cb89e5f09472cf4b8c997761bac9ca5d5cbf97e45f1cae846f69"
+      },
+      "building": "dwellingUpLvl3",
+      "candidate_border": {
+        "path": "demacia/dwellingUpLvl3/border.png",
+        "sha256": "42d688bf2ebae5b01392ba64db4728e0384be2fb21bb04822a93975193956b35"
+      },
+      "candidate_mask": {
+        "path": "demacia/dwellingUpLvl3/architecture-mask.png",
+        "sha256": "411fffd49fa8f35787f61b258b5366c503a94f6d1081a12903ab1e03a5eee168"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        301,
+        157,
+        502,
+        243
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingUpLvl3_border.png",
+        "sha256": "576ccb74c699100c027f353e6a533633b78a090ec42fd632f6ff2d85ab046766"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingUpLvl3-masks.json",
+        "sha256": "c7c13c256dcb6a061e3358e67db78d208359060e84b6bd1a005c8ca7e07b493c"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingUpLvl3-frame.png",
+        "sha256": "b9943ca450e887eb64d983ea75c0a5cafcd971571f360e2275260fc6d459b3f2"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/dwellingUpLvl3.png",
+        "sha256": "411fffd49fa8f35787f61b258b5366c503a94f6d1081a12903ab1e03a5eee168"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/dwellingUpLvl3.json",
+        "area": "runeterra/demacia/town/structures/dwellingUpLvl3_area.png",
+        "border": "runeterra/demacia/town/structures/dwellingUpLvl3_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/dwellingUpLvl3_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 28
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingUpLvl4-animation.json",
+        "sha256": "f802218f650d1233b03865524589221b0c430a6d55616d9e502dad4c78d732fe"
+      },
+      "building": "dwellingUpLvl4",
+      "candidate_border": {
+        "path": "demacia/dwellingUpLvl4/border.png",
+        "sha256": "c192c3c4342caf560c479af3b04cf4d7e3b796d01a8868c1ea67ab705507e3c0"
+      },
+      "candidate_mask": {
+        "path": "demacia/dwellingUpLvl4/architecture-mask.png",
+        "sha256": "dc52b4d1f6f136dc04cbcf0ca105f0994308fe499c8d7868962db297ef56af63"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        488,
+        178,
+        620,
+        240
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingUpLvl4_border.png",
+        "sha256": "a9b3398a98f1ddda2a74d898de40767a9697fc1242cff3a9deb61569508b193b"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingUpLvl4-masks.json",
+        "sha256": "d7be458ed908fc273a397ae86d1e19c4a6245c5ffcb5b8ccae25cfd14fe8adc1"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingUpLvl4-frame.png",
+        "sha256": "a7cbdd12ea41a89b256f391846cc447f0d1da10d8678a71bdcf16a9751c8db32"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/dwellingUpLvl4.png",
+        "sha256": "dc52b4d1f6f136dc04cbcf0ca105f0994308fe499c8d7868962db297ef56af63"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/dwellingUpLvl4.json",
+        "area": "runeterra/demacia/town/structures/dwellingUpLvl4_area.png",
+        "border": "runeterra/demacia/town/structures/dwellingUpLvl4_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/dwellingUpLvl4_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 30
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingUpLvl5-animation.json",
+        "sha256": "732e5f1f44d52740f38fb8ea96dd7de60c40b9890d0306d3d800b9063112824f"
+      },
+      "building": "dwellingUpLvl5",
+      "candidate_border": {
+        "path": "demacia/dwellingUpLvl5/border.png",
+        "sha256": "b88f8b15ff3e13ead5483d475dd542e499f64a9b9957557d87cc8e8f19c645b6"
+      },
+      "candidate_mask": {
+        "path": "demacia/dwellingUpLvl5/architecture-mask.png",
+        "sha256": "7ddea8f134acaefc37b4252ea1d3f7e3c550432a50692d5a1a303106dc12b0f5"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        174,
+        138,
+        313,
+        230
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingUpLvl5_border.png",
+        "sha256": "e2d4e65f7396988b9b9692204ece0a4dab4fdde2efe05d125328df1138be5889"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingUpLvl5-masks.json",
+        "sha256": "6b396f1d59fa8c8d380b861f9135514e995b8582d005610d74d708e962c78b8a"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingUpLvl5-frame.png",
+        "sha256": "b8c26f1edc3880fded5e5a82db33a76c5be45fcff6a5414318c907a5f3014db7"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/dwellingUpLvl5.png",
+        "sha256": "7ddea8f134acaefc37b4252ea1d3f7e3c550432a50692d5a1a303106dc12b0f5"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/dwellingUpLvl5.json",
+        "area": "runeterra/demacia/town/structures/dwellingUpLvl5_area.png",
+        "border": "runeterra/demacia/town/structures/dwellingUpLvl5_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/dwellingUpLvl5_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 22
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingUpLvl6-animation.json",
+        "sha256": "b7f505320a1127e7964f9219bca0988a87de656c1eeedaa9673348680e81a612"
+      },
+      "building": "dwellingUpLvl6",
+      "candidate_border": {
+        "path": "demacia/dwellingUpLvl6/border.png",
+        "sha256": "9fac6904aee94cde7adf1291cb09385de7c46bce337ca1bcec66e41a0c2f07f6"
+      },
+      "candidate_mask": {
+        "path": "demacia/dwellingUpLvl6/architecture-mask.png",
+        "sha256": "6bcc7714691ef346b889d89ea5aee83a3ac7e32cdbc31a928b9901481fca66e2"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        572,
+        93,
+        730,
+        233
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingUpLvl6_border.png",
+        "sha256": "f5dd792ed6c07494671a3539d718799a7091260bd78c2406e11114f5df609a1b"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingUpLvl6-masks.json",
+        "sha256": "eff2d349b91578cd175d27ad9118659a217595f0717cc05951cf39dfecd43dcc"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingUpLvl6-frame.png",
+        "sha256": "43ef07401a52852c9eae88fa51a41a29604580483773e59b062d7a7015271456"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/dwellingUpLvl6.png",
+        "sha256": "6bcc7714691ef346b889d89ea5aee83a3ac7e32cdbc31a928b9901481fca66e2"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/dwellingUpLvl6.json",
+        "area": "runeterra/demacia/town/structures/dwellingUpLvl6_area.png",
+        "border": "runeterra/demacia/town/structures/dwellingUpLvl6_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/dwellingUpLvl6_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 23
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingUpLvl7-animation.json",
+        "sha256": "4737e5002a9b1ea0ac776f06bca8d58cce8312daf4622920c197a1bed19c9232"
+      },
+      "building": "dwellingUpLvl7",
+      "candidate_border": {
+        "path": "demacia/dwellingUpLvl7/border.png",
+        "sha256": "5c89accf6b82d44957c176faa3944ab5271da61420418dca3d5e1b2f3fb23b50"
+      },
+      "candidate_mask": {
+        "path": "demacia/dwellingUpLvl7/architecture-mask.png",
+        "sha256": "08e2ad0ae97b0f7cb56e1a07c71251e2ad1e79b513af62da7607591a60d40f07"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        140,
+        38,
+        306,
+        141
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingUpLvl7_border.png",
+        "sha256": "80a52b4b964c9d5bdc063130a0b70cd1b9893719d049ba1e986dbf0a84900b35"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-dwellingUpLvl7-masks.json",
+        "sha256": "401c576e3fbe0817d9d962bd669563397c0607e7bcfeeb4b36db99f67eab65f8"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/dwellingUpLvl7-frame.png",
+        "sha256": "aa5b85ded433b549a2d2d8ab2c6590a67c4584359515fdb792db7dfccdc78cbd"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/dwellingUpLvl7.png",
+        "sha256": "08e2ad0ae97b0f7cb56e1a07c71251e2ad1e79b513af62da7607591a60d40f07"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/dwellingUpLvl7.json",
+        "area": "runeterra/demacia/town/structures/dwellingUpLvl7_area.png",
+        "border": "runeterra/demacia/town/structures/dwellingUpLvl7_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/dwellingUpLvl7_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 12
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-fort-animation.json",
+        "sha256": "aadd1251cd884666a3eae2c6d4f706bf9c8742c042a74e8fa4fa3388d811b828"
+      },
+      "building": "fort",
+      "candidate_border": {
+        "path": "demacia/fort/border.png",
+        "sha256": "549b82d23d9de9a466342015a8749939c17d8026e6833b9ff670450c995f47f6"
+      },
+      "candidate_mask": {
+        "path": "demacia/fort/architecture-mask.png",
+        "sha256": "29ab0f9a94255357a4b6c4fde6082f13f4aa966cc4bd0a6dcdba43dc8f7f237d"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        557,
+        82,
+        783,
+        150
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/fort_border.png",
+        "sha256": "2c989aa62916552cba789657f8b8972a8aeca29a7d454f77b9d8e1cf2f913e1e"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-fort-masks.json",
+        "sha256": "c0a21538293ff87f6239839f8301acad97237472bd80a18cf3eaaaeca6df6296"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/fort-frame.png",
+        "sha256": "40b9512bf82042e9a7b3ba7907b96e16e5b790822a823a0c5386cf5b22d5ae7d"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/fort.png",
+        "sha256": "29ab0f9a94255357a4b6c4fde6082f13f4aa966cc4bd0a6dcdba43dc8f7f237d"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/fort.json",
+        "area": "runeterra/demacia/town/structures/fort_area.png",
+        "border": "runeterra/demacia/town/structures/fort_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/fort_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 8
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-grail-animation.json",
+        "sha256": "66cfab21908dc273d7688865fe5d69118944adae1f3128c509f1b87042ad3d69"
+      },
+      "building": "grail",
+      "candidate_border": {
+        "path": "demacia/grail/border.png",
+        "sha256": "35f7af04edc69e183336f0e44f0d8d100f8273ba107d18d7cb495b1df2f1eb71"
+      },
+      "candidate_mask": {
+        "path": "demacia/grail/architecture-mask.png",
+        "sha256": "cbc93eca6f6e9d17053e2d2dbce2cf36b824c4b24d7bf8e0f59c9485112cf206"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        441,
+        121,
+        478,
+        172
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/grail_border.png",
+        "sha256": "7884a8628c47e6704dbaa48f413c5a18efb5b361384253d464ffd2e823f5c3f6"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-grail-masks.json",
+        "sha256": "04ea55e23df416373122f5f2a155f5b62170d974f8ae35fda1667407603784a8"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/grail-frame.png",
+        "sha256": "7f7eba8d6560c139cf32cbe40a3e148d0dff383ccaf6f7a07d2db6dfeff0c09c"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/grail.png",
+        "sha256": "cbc93eca6f6e9d17053e2d2dbce2cf36b824c4b24d7bf8e0f59c9485112cf206"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/grail.json",
+        "area": "runeterra/demacia/town/structures/grail_area.png",
+        "border": "runeterra/demacia/town/structures/grail_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/grail_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 14
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-mageGuild1-animation.json",
+        "sha256": "95abf7d1064b2bccb661cd05be67f5903d03c80d353c1166c92ef9a2ff51a3d8"
+      },
+      "building": "mageGuild1",
+      "candidate_border": {
+        "path": "demacia/mageGuild1/border.png",
+        "sha256": "4f0c006090c82fd74ff069f37f7a033318d53788b0be1685992d17f0eddd1f21"
+      },
+      "candidate_mask": {
+        "path": "demacia/mageGuild1/architecture-mask.png",
+        "sha256": "0eaa8bbc23b8c8d65109e5b601c76a5565e9655b6ee6aa40ebe972407528c374"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        290,
+        56,
+        365,
+        147
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/mageGuild1_border.png",
+        "sha256": "77dd5799bb1bc5151e8fc106a4e7777d2d0a424f9eec79a57dade7157f8ac61c"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-mageGuild1-masks.json",
+        "sha256": "5eae41bcb16e43f62600e01636683c74a8d41b5f92e7d2f1f33270586733736c"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/mageGuild1-frame.png",
+        "sha256": "d6e70b114d8760c3014e3e893b26c16adea4c91f02408cad8299fa71e3099631"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/mageGuild1.png",
+        "sha256": "0eaa8bbc23b8c8d65109e5b601c76a5565e9655b6ee6aa40ebe972407528c374"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/mageGuild1.json",
+        "area": "runeterra/demacia/town/structures/mageGuild1_area.png",
+        "border": "runeterra/demacia/town/structures/mageGuild1_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/mageGuild1_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 11
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-mageGuild2-animation.json",
+        "sha256": "30c85948cd91d4f45953cd6b3789dfee5b0f6970d7fd503febd843c89d582c50"
+      },
+      "building": "mageGuild2",
+      "candidate_border": {
+        "path": "demacia/mageGuild2/border.png",
+        "sha256": "9d3c41ec69559a0b1506eeb449b32fa4f4abcce31f9d8752cdfa20b3c1bcd4fa"
+      },
+      "candidate_mask": {
+        "path": "demacia/mageGuild2/architecture-mask.png",
+        "sha256": "c19a97a72ddac99ba13261ef15533ae94f69c3a31a32bee72853a1343635c6ed"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        289,
+        44,
+        366,
+        156
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/mageGuild2_border.png",
+        "sha256": "f7c3b678a68dc18cc75cb92c5fff15a889a4fb3040594eeb98cf509c3dde164e"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-mageGuild2-masks.json",
+        "sha256": "c44a8dbe6b069a77740806240a2959ef170998a0fb8a5f3b6455e24ec4f6ee2b"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/mageGuild2-frame.png",
+        "sha256": "12bf332fb161c8bfbb4978c7e5ec38d8044efc845af362acb96691383c14ada0"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/mageGuild2.png",
+        "sha256": "c19a97a72ddac99ba13261ef15533ae94f69c3a31a32bee72853a1343635c6ed"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/mageGuild2.json",
+        "area": "runeterra/demacia/town/structures/mageGuild2_area.png",
+        "border": "runeterra/demacia/town/structures/mageGuild2_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/mageGuild2_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 11
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-mageGuild3-animation.json",
+        "sha256": "9ff555ac989ed0c6d6464076c077d35c499f9ddf8de02e0c58f7df356dcff5b5"
+      },
+      "building": "mageGuild3",
+      "candidate_border": {
+        "path": "demacia/mageGuild3/border.png",
+        "sha256": "f4c53adeac505a5946ee77379efd254b602afd6b2ed7ec426dca76a760ad00a6"
+      },
+      "candidate_mask": {
+        "path": "demacia/mageGuild3/architecture-mask.png",
+        "sha256": "3e59f15200e1cbed7792be221e12ef52e1179abf330e8223dd9262564cc337ef"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        289,
+        43,
+        367,
+        156
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/mageGuild3_border.png",
+        "sha256": "f81f1c086b144c5e80efbded325ce0297488455f6e6e43c55842840d7fe950d6"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-mageGuild3-masks.json",
+        "sha256": "a712aa29c59867a9e78d13f5ecc04dfee2c9535063925e64209db4eb4b483c58"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/mageGuild3-frame.png",
+        "sha256": "954320d7ab2597b655adfe98feecaa23e5d59b584cf39ff9e32d900860ed0ef1"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/mageGuild3.png",
+        "sha256": "3e59f15200e1cbed7792be221e12ef52e1179abf330e8223dd9262564cc337ef"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/mageGuild3.json",
+        "area": "runeterra/demacia/town/structures/mageGuild3_area.png",
+        "border": "runeterra/demacia/town/structures/mageGuild3_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/mageGuild3_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 11
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-marketplace-animation.json",
+        "sha256": "9a4c515b834f66a7e71d211adbee6b387b7b6684aee8546d544eaea1fba513d9"
+      },
+      "building": "marketplace",
+      "candidate_border": {
+        "path": "demacia/marketplace/border.png",
+        "sha256": "a448178b428eb538777331d6aac7230f39b38c54aaa052240fc6e3df839943fe"
+      },
+      "candidate_mask": {
+        "path": "demacia/marketplace/architecture-mask.png",
+        "sha256": "d8bbaf31328b6ea85e4101babc37b03f0144cf3473c4b80f64fb0e7892bf6beb"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        255,
+        246,
+        544,
+        374
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/marketplace_border.png",
+        "sha256": "c22dbaa03a47b5152d66591464dfce7d467ed5ebc4c7dac24b8343c19397e744"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-marketplace-masks.json",
+        "sha256": "db82394dbcbc17a8bd9bd134b12a2ffd7b7af5975c1aca15a984b651013ec63a"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/marketplace-frame.png",
+        "sha256": "961a9d602f912b5de8c179da6dff6cacf82632289ff3d21bdf33ad637fc8a448"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/marketplace.png",
+        "sha256": "d8bbaf31328b6ea85e4101babc37b03f0144cf3473c4b80f64fb0e7892bf6beb"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/marketplace.json",
+        "area": "runeterra/demacia/town/structures/marketplace_area.png",
+        "border": "runeterra/demacia/town/structures/marketplace_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/marketplace_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 43
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-resourceSilo-animation.json",
+        "sha256": "bb2586ae53e8745e3a10d034777ffe5061b66da9638250f6e61b7bb52882d840"
+      },
+      "building": "resourceSilo",
+      "candidate_border": {
+        "path": "demacia/resourceSilo/border.png",
+        "sha256": "fa91665a113dd691a2ca071b66cba968b5ac75118f725e53bfdcc2214726cfe4"
+      },
+      "candidate_mask": {
+        "path": "demacia/resourceSilo/architecture-mask.png",
+        "sha256": "915508cdc3a2fb64c5f80361cf930414e616d3558465a230320dc045dc7d9f8f"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        0,
+        130,
+        162,
+        216
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/resourceSilo_border.png",
+        "sha256": "561b54ebaf70be21a52ed90e47682a2e81212a938661b22792f70fbbee926066"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-resourceSilo-masks.json",
+        "sha256": "4a55f7aeb138b89c3ccce59aafbf5f7b789868d1c4d28641da8d5d63a5b0b0ea"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/resourceSilo-frame.png",
+        "sha256": "08ce38720442f60f9a3c6488eb8156e6b7712bc6d821dcd29434cee201e1ef4c"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/resourceSilo.png",
+        "sha256": "915508cdc3a2fb64c5f80361cf930414e616d3558465a230320dc045dc7d9f8f"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/resourceSilo.json",
+        "area": "runeterra/demacia/town/structures/resourceSilo_area.png",
+        "border": "runeterra/demacia/town/structures/resourceSilo_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/resourceSilo_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 20
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-ship-animation.json",
+        "sha256": "4bf0c70d6b80f712c0d0fb7b9d837f872d901308a5d087e0f9f7f9e505b0f632"
+      },
+      "building": "ship",
+      "candidate_border": {
+        "path": "demacia/ship/border.png",
+        "sha256": "05e77a8067d3725412591f80b60bbf428d4cdaf65c336e05c3bc5e2cc02ec4af"
+      },
+      "candidate_mask": {
+        "path": "demacia/ship/architecture-mask.png",
+        "sha256": "2c590fdeeac59e9db3bb38a766c6a3a2bb2b2e71b9a45bab087a284a7962aea8"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        0,
+        162,
+        122,
+        257
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/ship_border.png",
+        "sha256": "4751712ca47596b2457349cbf3a5070ac4accd662b16bf48a37c54010b5669c0"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-ship-masks.json",
+        "sha256": "3b3b28e15346fadac625023b0420c917331915b2feef89cf59f003ead5450da6"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/ship-frame.png",
+        "sha256": "518bb9f19e116e87e6941908e32d2ea8b77a08bc88323247101d8fed3903c48d"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/ship.png",
+        "sha256": "2c590fdeeac59e9db3bb38a766c6a3a2bb2b2e71b9a45bab087a284a7962aea8"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/ship.json",
+        "area": "runeterra/demacia/town/structures/ship_area.png",
+        "border": "runeterra/demacia/town/structures/ship_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/ship_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 25
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-shipyard-animation.json",
+        "sha256": "498a96021a7be90f658eb07d5652eb8c690ec7baea45ba422df85e5f3eb6c35c"
+      },
+      "building": "shipyard",
+      "candidate_border": {
+        "path": "demacia/shipyard/border.png",
+        "sha256": "35f78b86fad36068d8c2fab9df761b00600c5db3b76baaeaea49ea5cd8eedb0e"
+      },
+      "candidate_mask": {
+        "path": "demacia/shipyard/architecture-mask.png",
+        "sha256": "82001caa5d7e64f77027a8bd9a38cde374473fc8dc051cd2d68aae01167b571f"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        0,
+        170,
+        119,
+        255
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/shipyard_border.png",
+        "sha256": "fb6a3e0ce6622cdb37d235a9e70ec257517229156240e8973c8487a71dc045b3"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-shipyard-masks.json",
+        "sha256": "4c88d1690861ae8ed3d3586c0c3d3d178f443bf31f413c43cb36bf00dfa82837"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/shipyard-frame.png",
+        "sha256": "4c85210e9baec772eb090bff537d58cf4b0abe7138e9d9a2b1f8ccfc5c173edb"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/shipyard.png",
+        "sha256": "82001caa5d7e64f77027a8bd9a38cde374473fc8dc051cd2d68aae01167b571f"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/shipyard.json",
+        "area": "runeterra/demacia/town/structures/shipyard_area.png",
+        "border": "runeterra/demacia/town/structures/shipyard_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/shipyard_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 25
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-special1-animation.json",
+        "sha256": "bb9ff8e2d523566f481a199df11804af38d53578cd671dba670a9f6f4c7ae067"
+      },
+      "building": "special1",
+      "candidate_border": {
+        "path": "demacia/special1/border.png",
+        "sha256": "79426bef9fcb2bb7a0e350f53ed9af17f0f9ca4ec60a0c532b1078f22b692f92"
+      },
+      "candidate_mask": {
+        "path": "demacia/special1/architecture-mask.png",
+        "sha256": "06fd22a44bc519f17727d6bdff026bab7227dfd8c9dceab3f0fffa9d0bfdc697"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        602,
+        94,
+        704,
+        232
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/special1_border.png",
+        "sha256": "d1dc6e8b76730ae2b1809c5d65b675cc2a4d5709b5ca0a7b97c0f295e8af1f87"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-special1-masks.json",
+        "sha256": "0a6759271a7f0cb5ca3215808081b9387422e37d930300a616b283b86cff4a64"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/special1-frame.png",
+        "sha256": "222c643a4a5293063ae6361f8285e54d5463e87a6c9a5f48b29a8e497952b042"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/special1.png",
+        "sha256": "06fd22a44bc519f17727d6bdff026bab7227dfd8c9dceab3f0fffa9d0bfdc697"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/special1.json",
+        "area": "runeterra/demacia/town/structures/special1_area.png",
+        "border": "runeterra/demacia/town/structures/special1_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/special1_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 23
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-special2-animation.json",
+        "sha256": "fb539a0db8bcf5bfa75a3b96a7e7ee14b7fb62ee994b75d73ba36cf32a991c0e"
+      },
+      "building": "special2",
+      "candidate_border": {
+        "path": "demacia/special2/border.png",
+        "sha256": "0247494807b0669556068e3c2b50bae802616c21e52d92dbdd320c8bdd04312d"
+      },
+      "candidate_mask": {
+        "path": "demacia/special2/architecture-mask.png",
+        "sha256": "ceab2342f4da3a34e9491ce9848a16c27be5b6cac4b7c541d9f5122b06fae0d6"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        676,
+        8,
+        780,
+        57
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/special2_border.png",
+        "sha256": "6f11cb8a076fed48952e72ff156aba8774d31cb7a6ea56eeaad21012417f784f"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-special2-masks.json",
+        "sha256": "454eed2bdf42c4c7e13ae8bcd508f9a8d2024aa665ac80183aa152e4ea78695f"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/special2-frame.png",
+        "sha256": "2bcb2d48e705a5e19a8a752ebb14608592f80541eae3dde2bc76b4649eddf5e6"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/special2.png",
+        "sha256": "ceab2342f4da3a34e9491ce9848a16c27be5b6cac4b7c541d9f5122b06fae0d6"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/special2.json",
+        "area": "runeterra/demacia/town/structures/special2_area.png",
+        "border": "runeterra/demacia/town/structures/special2_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/special2_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 9
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-special3-animation.json",
+        "sha256": "0aa2cac61e5287e5c445135a730f8dc6228ebd560946a3e626a0c776cefd0381"
+      },
+      "building": "special3",
+      "candidate_border": {
+        "path": "demacia/special3/border.png",
+        "sha256": "395c487efb314f5d77ac2df17f40a15165201e7fc497c754ba5e8a3dfc8bfe87"
+      },
+      "candidate_mask": {
+        "path": "demacia/special3/architecture-mask.png",
+        "sha256": "59d40c223508cff07ef02f3b4a186169423293102ee7be5a7ad564154e268e13"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        703,
+        142,
+        800,
+        211
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/special3_border.png",
+        "sha256": "b9ec9a15fafa7fb6f668492f342658e6715bbf1d3365ac2e2386c02c793dd1a7"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-special3-masks.json",
+        "sha256": "aa160f1b9aecafdd40541583cee85c557fe6a7ff92df27374354ffef8d3e846c"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/special3-frame.png",
+        "sha256": "ed736201c0fcb67ae5bee8c714847b5c373d10a1607e759d1c38f76442b65cd0"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/special3.png",
+        "sha256": "59d40c223508cff07ef02f3b4a186169423293102ee7be5a7ad564154e268e13"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/special3.json",
+        "area": "runeterra/demacia/town/structures/special3_area.png",
+        "border": "runeterra/demacia/town/structures/special3_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/special3_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 24
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-special4-animation.json",
+        "sha256": "5f4e95cd52ac437c8cdb0a4e4dd8b44581274c1fbe985fd9ab4fc790cdcb1e8e"
+      },
+      "building": "special4",
+      "candidate_border": {
+        "path": "demacia/special4/border.png",
+        "sha256": "318090fb43fd39b0b94077bd05a1600c66237786ddcab8e0ce54ff986bd9521f"
+      },
+      "candidate_mask": {
+        "path": "demacia/special4/architecture-mask.png",
+        "sha256": "c46f7dea4ac43533b1cce99a8c070213b9280894fe7be9770c446e5f288b6837"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        143,
+        43,
+        305,
+        128
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/special4_border.png",
+        "sha256": "8fcba7864c4959ad968985cd830110522f52a4d55a010f79920b448e3a28721c"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-special4-masks.json",
+        "sha256": "884ed39c16f4d8a87751ed8d1aee8cc3bc8b94a806659e2affc4ef0e47a6dd86"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/special4-frame.png",
+        "sha256": "a6c935036888dd5cfadb17150e69ebda285197a0cf8dc7a17810faa2cc96ebcf"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/special4.png",
+        "sha256": "c46f7dea4ac43533b1cce99a8c070213b9280894fe7be9770c446e5f288b6837"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/special4.json",
+        "area": "runeterra/demacia/town/structures/special4_area.png",
+        "border": "runeterra/demacia/town/structures/special4_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/special4_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 12
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-tavern-animation.json",
+        "sha256": "102dc30bfa88ed53b70e801b3a57bd360dc2916ca600931e7a30e9fc355e9a7f"
+      },
+      "building": "tavern",
+      "candidate_border": {
+        "path": "demacia/tavern/border.png",
+        "sha256": "bab4b614238d6698de66bf28b33cafc07170c63bd0e1a575ee6698d5abd3a1e0"
+      },
+      "candidate_mask": {
+        "path": "demacia/tavern/architecture-mask.png",
+        "sha256": "867d7e586c12b69d284504c911c06762ed0648b90191f26803c7bc56d7be0bea"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        562,
+        225,
+        800,
+        374
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/tavern_border.png",
+        "sha256": "8568061f5d01f977d9302afcb1ca4161deb76897dda2daa37adf14339cd293ab"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-tavern-masks.json",
+        "sha256": "3e25e16aafee0ce4dee74f2cd02344a6a7910caa95698841083fab3d80a5be90"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/tavern-frame.png",
+        "sha256": "4be78c9d866755ec5b436f1bb8c019cdcf50ba647e7098d2890d221072d9fff6"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/tavern.png",
+        "sha256": "867d7e586c12b69d284504c911c06762ed0648b90191f26803c7bc56d7be0bea"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/tavern.json",
+        "area": "runeterra/demacia/town/structures/tavern_area.png",
+        "border": "runeterra/demacia/town/structures/tavern_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/tavern_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 44
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-townHall-animation.json",
+        "sha256": "3104171e73b451b47787c6a89631ce8c18f57e8c0fb2822d8e78f695c7232db4"
+      },
+      "building": "townHall",
+      "candidate_border": {
+        "path": "demacia/townHall/border.png",
+        "sha256": "07fd41d84bf7b63395628656d9a346073a5d008e8767a31f428dcb378feea0f3"
+      },
+      "candidate_mask": {
+        "path": "demacia/townHall/architecture-mask.png",
+        "sha256": "76abaed914cd8e9c33838ee18e234a4f6311614b928a5ed48f98de6fcce62c9a"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        348,
+        19,
+        572,
+        155
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/townHall_border.png",
+        "sha256": "02ae9dfe882e855ed2785bbdb52fbef96fcf8aa0e3c26469c4a5f3becd3e2bf0"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-townHall-masks.json",
+        "sha256": "3b7614acf99d51009c4bc679c76cdec5d8d856f51dee29af9f5dbbee55f35deb"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/townHall-frame.png",
+        "sha256": "0155fb6bcf424b89cf4cf7bbeacc18c935c11b8fc1d3a9f8700645f407b9abaa"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/townHall.png",
+        "sha256": "76abaed914cd8e9c33838ee18e234a4f6311614b928a5ed48f98de6fcce62c9a"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/townHall.json",
+        "area": "runeterra/demacia/town/structures/townHall_area.png",
+        "border": "runeterra/demacia/town/structures/townHall_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/townHall_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 10
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-villageHall-animation.json",
+        "sha256": "3bebb2af85b6119d7bd863f5f84050f611d66392c0d30fe904df0b77bcf9264c"
+      },
+      "building": "villageHall",
+      "candidate_border": {
+        "path": "demacia/villageHall/border.png",
+        "sha256": "1797feb396ece017fe94e8061baf4648805794b1f9d9af2f361895e5b501b562"
+      },
+      "candidate_mask": {
+        "path": "demacia/villageHall/architecture-mask.png",
+        "sha256": "c7a28c420519e80d63c1fb6c99bc9d21ac8ecc605e7ca9e9b9532eb24e305202"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        350,
+        12,
+        570,
+        160
+      ],
+      "old_colours_rgba": [
+        [
+          225,
+          190,
+          80,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "demacia",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/villageHall_border.png",
+        "sha256": "ffa8db673e9e2b9bacd268647076a588a5b4c70b5220c1c732e3af9a2a79575c"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-demacia/assets/recipes/town-villageHall-masks.json",
+        "sha256": "404ab1439e0db014d3b2ffbc40c392df2aea4ff7456f235aff161b5de5f21d7b"
+      },
+      "selected_layer": {
+        "path": "runeterra-demacia/assets/generated/Content/Sprites/runeterra/demacia/town/structures/villageHall-frame.png",
+        "sha256": "ededc2386f435a0c0c0ff3159ffffa5b5ea580fc78862997adc507d3ec1d6e35"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "method": "Exact native alpha128 architecture of an already isolated layer; subject geometry unchanged, finite visual review pending.",
+        "path": "reports/demacia-hover-contours-20261030-v1/masks-v1/villageHall.png",
+        "sha256": "c7a28c420519e80d63c1fb6c99bc9d21ac8ecc605e7ca9e9b9532eb24e305202"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/demacia/town/structures/villageHall.json",
+        "area": "runeterra/demacia/town/structures/villageHall_area.png",
+        "border": "runeterra/demacia/town/structures/villageHall_border.png",
+        "campaignBonus": "runeterra/demacia/town/structures/villageHall_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 10
+      },
+      "visual_approval_granted": false
+    }
+  ],
+  "status": "design proposal",
+  "style": {
+    "alpha_threshold": 128,
+    "basis": "Native one-pixel gold edge with one further pixel of dark support; no interior tint.",
+    "connectivity": 8,
+    "gold": [
+      225,
+      190,
+      80,
+      255
+    ],
+    "gold_radius_pixels": 1,
+    "outer_shadow_radius_pixels": 2,
+    "shadow": [
+      38,
+      29,
+      15,
+      208
+    ]
+  }
+}

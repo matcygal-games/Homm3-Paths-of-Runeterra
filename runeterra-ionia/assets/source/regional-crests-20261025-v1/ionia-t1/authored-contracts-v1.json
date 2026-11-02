@@ -1,0 +1,611 @@
+{
+  "scope": "Fresh painted2D T1 pair, preserving native mechanics and all consumers; old3D action pixels explicitly forbidden as generation inputs.",
+  "status": "authored configuration",
+  "units": {
+    "enlightenedWarrior": {
+      "graphics_semantics": {
+        "animationTime": {
+          "attack": 1,
+          "idle": 10,
+          "walk": 1
+        },
+        "mapMask": [
+          "VV",
+          "VA"
+        ],
+        "timeBetweenFidgets": 0.1
+      },
+      "legacy_numeric_camera_only": {
+        "declared": {
+          "calibration_idle_bbox": [
+            145,
+            102,
+            231,
+            300
+          ],
+          "constant_scale": 0.44949494949494945,
+          "fidget": {
+            "duration_seconds": 0.7,
+            "probability_multiplier": 0.1,
+            "source_poses": 4,
+            "tick_addressing": [
+              0,
+              1,
+              1,
+              2,
+              2,
+              3,
+              3
+            ]
+          },
+          "genuine_action_groups": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            8,
+            11,
+            12,
+            13,
+            22
+          ],
+          "native_canvas": [
+            450,
+            400
+          ],
+          "per_frame_bbox_refit": false,
+          "pivot": [
+            197,
+            266
+          ],
+          "preview_schema": "stock VCMI only; no unsupported fields",
+          "status": "built-unreviewed; native action playback, visual review and redistribution approval pending",
+          "target_total_idle_height": 89,
+          "unit": "enlightenedWarrior"
+        },
+        "idle_registered_bbox_rows": [
+          {
+            "bbox": [
+              174,
+              175,
+              217,
+              268
+            ],
+            "frame": 0,
+            "group": 2
+          },
+          {
+            "bbox": [
+              174,
+              175,
+              217,
+              268
+            ],
+            "frame": 1,
+            "group": 2
+          }
+        ],
+        "no_old_image_pixels_read": true
+      },
+      "name": {
+        "plural": "Enlightened Warriors",
+        "singular": "Enlightened Warrior"
+      },
+      "nonvisual_creature": {
+        "abilities": {},
+        "advMapAmount": {
+          "max": 28,
+          "min": 14
+        },
+        "aiValue": 121,
+        "attack": 5,
+        "cost": {
+          "gold": 75
+        },
+        "damage": {
+          "max": 4,
+          "min": 2
+        },
+        "defense": 3,
+        "description": "Better protected staff infantry with ordinary retaliation; enlightenment grants no passive dodge or extra action.",
+        "disabled": false,
+        "doubleWide": false,
+        "excludeFromRandomization": false,
+        "faction": "ionia",
+        "fightValue": 112,
+        "growth": 14,
+        "hasDoubleWeek": true,
+        "hitPoints": 10,
+        "horde": 0,
+        "level": 1,
+        "name": {
+          "plural": "Enlightened Warriors",
+          "singular": "Enlightened Warrior"
+        },
+        "sound": {
+          "attack": "HALBATTK.wav",
+          "defend": "HALBDFND.wav",
+          "killed": "HALBKILL.wav",
+          "move": "HALBMOVE.wav",
+          "wince": "HALBWNCE.wav"
+        },
+        "special": false,
+        "speed": 6
+      },
+      "roles": {
+        "attackLeft": {
+          "before_live_sha256": "00791235ce9ef66dfe62dcbddb61fa2ff658acd090e8c1c9b4728d18b74f8950",
+          "fit": "contain",
+          "groups": [],
+          "original_active_recipe": "assets/recipes/creatures/enlightenedWarrior-attackLeft.json",
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/enlightenedWarrior/attackLeft.png",
+          "recipe_type": "raster",
+          "recorded_before_copy_sha256": "00791235ce9ef66dfe62dcbddb61fa2ff658acd090e8c1c9b4728d18b74f8950",
+          "require_alpha": true,
+          "size": [
+            96,
+            64
+          ],
+          "unit": "enlightenedWarrior"
+        },
+        "attackRight": {
+          "before_live_sha256": "876ee297d8043436fd1dc3635a0fbae9c291247298a384ec45812940e5bfc6fa",
+          "fit": "contain",
+          "groups": [],
+          "original_active_recipe": "assets/recipes/creatures/enlightenedWarrior-attackRight.json",
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/enlightenedWarrior/attackRight.png",
+          "recipe_type": "raster",
+          "recorded_before_copy_sha256": "876ee297d8043436fd1dc3635a0fbae9c291247298a384ec45812940e5bfc6fa",
+          "require_alpha": true,
+          "size": [
+            96,
+            64
+          ],
+          "unit": "enlightenedWarrior"
+        },
+        "battle": {
+          "before_live_sha256": "b264bb852276c94d495ba5d23298d784d2b0c20480fbbebb5c6e26cc33af74cd",
+          "canvas": [
+            450,
+            400
+          ],
+          "generateOverlay": 1,
+          "generateShadow": 1,
+          "groups": [
+            {
+              "action": null,
+              "frames": 6,
+              "group": 0
+            },
+            {
+              "action": null,
+              "frames": 7,
+              "group": 1
+            },
+            {
+              "action": null,
+              "frames": 2,
+              "group": 2
+            },
+            {
+              "action": null,
+              "frames": 3,
+              "group": 3
+            },
+            {
+              "action": null,
+              "frames": 3,
+              "group": 4
+            },
+            {
+              "action": null,
+              "frames": 6,
+              "group": 5
+            },
+            {
+              "action": null,
+              "frames": 3,
+              "group": 7
+            },
+            {
+              "action": null,
+              "frames": 3,
+              "group": 8
+            },
+            {
+              "action": null,
+              "frames": 6,
+              "group": 11
+            },
+            {
+              "action": null,
+              "frames": 6,
+              "group": 12
+            },
+            {
+              "action": null,
+              "frames": 6,
+              "group": 13
+            },
+            {
+              "action": null,
+              "frames": 1,
+              "group": 22
+            }
+          ],
+          "original_active_recipe": "assets/recipes/creatures/enlightenedWarrior-battle.json",
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/enlightenedWarrior/battle.json",
+          "pivot": {
+            "x": 197,
+            "y": 266
+          },
+          "recipe_type": "vcmi_animation",
+          "recorded_before_copy_sha256": "b264bb852276c94d495ba5d23298d784d2b0c20480fbbebb5c6e26cc33af74cd",
+          "unit": "enlightenedWarrior"
+        },
+        "large": {
+          "before_live_sha256": "cd87cb15d052d20b48ecfbb3c6738b3d44caf5677d0766ffae1f870b7d814f14",
+          "fit": "contain",
+          "groups": [],
+          "original_active_recipe": "assets/recipes/creatures/enlightenedWarrior-large.json",
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/enlightenedWarrior/large.png",
+          "recipe_type": "raster",
+          "recorded_before_copy_sha256": "cd87cb15d052d20b48ecfbb3c6738b3d44caf5677d0766ffae1f870b7d814f14",
+          "require_alpha": true,
+          "size": [
+            58,
+            64
+          ],
+          "unit": "enlightenedWarrior"
+        },
+        "map": {
+          "before_live_sha256": "fa027af2cbf6e89ad041187ab84c7b5dcdc3223ffa6cc049d77af7eb56b9782b",
+          "canvas": [
+            96,
+            64
+          ],
+          "generateOverlay": 1,
+          "generateShadow": 2,
+          "groups": [
+            {
+              "action": null,
+              "frames": 6,
+              "group": 0
+            }
+          ],
+          "original_active_recipe": "assets/recipes/creatures/enlightenedWarrior-map.json",
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/enlightenedWarrior/map.json",
+          "pivot": {
+            "x": 80,
+            "y": 60
+          },
+          "recipe_type": "vcmi_animation",
+          "recorded_before_copy_sha256": "fa027af2cbf6e89ad041187ab84c7b5dcdc3223ffa6cc049d77af7eb56b9782b",
+          "unit": "enlightenedWarrior"
+        },
+        "small": {
+          "before_live_sha256": "c745aa2d5e1750e60f21f878ca30da3ea85d79b9e894b31712481346c3e4c68c",
+          "fit": "contain",
+          "groups": [],
+          "original_active_recipe": "assets/recipes/creatures/enlightenedWarrior-small.json",
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/enlightenedWarrior/small.png",
+          "recipe_type": "raster",
+          "recorded_before_copy_sha256": "c745aa2d5e1750e60f21f878ca30da3ea85d79b9e894b31712481346c3e4c68c",
+          "require_alpha": true,
+          "size": [
+            32,
+            32
+          ],
+          "unit": "enlightenedWarrior"
+        }
+      }
+    },
+    "ionianDisciple": {
+      "graphics_semantics": {
+        "animationTime": {
+          "attack": 1,
+          "idle": 10,
+          "walk": 1
+        },
+        "mapMask": [
+          "VV",
+          "VA"
+        ],
+        "timeBetweenFidgets": 0.1
+      },
+      "legacy_numeric_camera_only": {
+        "declared": {
+          "calibration_idle_bbox": [
+            164,
+            109,
+            231,
+            300
+          ],
+          "constant_scale": 0.4566929133858268,
+          "fidget": {
+            "duration_seconds": 0.7,
+            "probability_multiplier": 0.1,
+            "source_poses": 4,
+            "tick_addressing": [
+              0,
+              1,
+              1,
+              2,
+              2,
+              3,
+              3
+            ]
+          },
+          "genuine_action_groups": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            8,
+            11,
+            12,
+            13,
+            22
+          ],
+          "native_canvas": [
+            450,
+            400
+          ],
+          "per_frame_bbox_refit": false,
+          "pivot": [
+            197,
+            266
+          ],
+          "preview_schema": "stock VCMI only; no unsupported fields",
+          "status": "built-unreviewed; native action playback, visual review and redistribution approval pending",
+          "target_total_idle_height": 87,
+          "unit": "ionianDisciple"
+        },
+        "idle_registered_bbox_rows": [
+          {
+            "bbox": [
+              181,
+              176,
+              216,
+              268
+            ],
+            "frame": 0,
+            "group": 2
+          },
+          {
+            "bbox": [
+              181,
+              176,
+              216,
+              268
+            ],
+            "frame": 1,
+            "group": 2
+          }
+        ],
+        "no_old_image_pixels_read": true
+      },
+      "name": {
+        "plural": "Ionian Disciples",
+        "singular": "Ionian Disciple"
+      },
+      "nonvisual_creature": {
+        "abilities": {},
+        "advMapAmount": {
+          "max": 28,
+          "min": 14
+        },
+        "aiValue": 84,
+        "attack": 4,
+        "cost": {
+          "gold": 55
+        },
+        "damage": {
+          "max": 3,
+          "min": 2
+        },
+        "defense": 2,
+        "description": "Living staff infantry with ordinary retaliation. Low durability rewards guarded approaches.",
+        "disabled": false,
+        "doubleWide": false,
+        "excludeFromRandomization": false,
+        "faction": "ionia",
+        "fightValue": 80,
+        "growth": 14,
+        "hasDoubleWeek": true,
+        "hitPoints": 8,
+        "horde": 0,
+        "level": 1,
+        "name": {
+          "plural": "Ionian Disciples",
+          "singular": "Ionian Disciple"
+        },
+        "sound": {
+          "attack": "PIKEATTK.wav",
+          "defend": "PIKEDFND.wav",
+          "killed": "PIKEKILL.wav",
+          "move": "PIKEMOVE.wav",
+          "wince": "PIKEWNCE.wav"
+        },
+        "special": false,
+        "speed": 5,
+        "upgrades": [
+          "enlightenedWarrior"
+        ]
+      },
+      "roles": {
+        "attackLeft": {
+          "before_live_sha256": "7bbb1ef17a489719f32756b1f8b14f4db9b91ff0016bc27dc16e0a1807b8a144",
+          "fit": "contain",
+          "groups": [],
+          "original_active_recipe": "assets/recipes/creatures/ionianDisciple-attackLeft.json",
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/ionianDisciple/attackLeft.png",
+          "recipe_type": "raster",
+          "recorded_before_copy_sha256": "7bbb1ef17a489719f32756b1f8b14f4db9b91ff0016bc27dc16e0a1807b8a144",
+          "require_alpha": true,
+          "size": [
+            96,
+            64
+          ],
+          "unit": "ionianDisciple"
+        },
+        "attackRight": {
+          "before_live_sha256": "9bf6705025cc5c011104d0d249d70f61cef52ea34d571717fc42f2fcd0d3dd23",
+          "fit": "contain",
+          "groups": [],
+          "original_active_recipe": "assets/recipes/creatures/ionianDisciple-attackRight.json",
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/ionianDisciple/attackRight.png",
+          "recipe_type": "raster",
+          "recorded_before_copy_sha256": "9bf6705025cc5c011104d0d249d70f61cef52ea34d571717fc42f2fcd0d3dd23",
+          "require_alpha": true,
+          "size": [
+            96,
+            64
+          ],
+          "unit": "ionianDisciple"
+        },
+        "battle": {
+          "before_live_sha256": "34517e12fb78c4edbd2f9d37a96457f07323f3b5f7aa28c2c67d8aab27c98006",
+          "canvas": [
+            450,
+            400
+          ],
+          "generateOverlay": 1,
+          "generateShadow": 1,
+          "groups": [
+            {
+              "action": null,
+              "frames": 6,
+              "group": 0
+            },
+            {
+              "action": null,
+              "frames": 7,
+              "group": 1
+            },
+            {
+              "action": null,
+              "frames": 2,
+              "group": 2
+            },
+            {
+              "action": null,
+              "frames": 3,
+              "group": 3
+            },
+            {
+              "action": null,
+              "frames": 3,
+              "group": 4
+            },
+            {
+              "action": null,
+              "frames": 6,
+              "group": 5
+            },
+            {
+              "action": null,
+              "frames": 3,
+              "group": 7
+            },
+            {
+              "action": null,
+              "frames": 3,
+              "group": 8
+            },
+            {
+              "action": null,
+              "frames": 6,
+              "group": 11
+            },
+            {
+              "action": null,
+              "frames": 6,
+              "group": 12
+            },
+            {
+              "action": null,
+              "frames": 6,
+              "group": 13
+            },
+            {
+              "action": null,
+              "frames": 1,
+              "group": 22
+            }
+          ],
+          "original_active_recipe": "assets/recipes/creatures/ionianDisciple-battle.json",
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/ionianDisciple/battle.json",
+          "pivot": {
+            "x": 197,
+            "y": 266
+          },
+          "recipe_type": "vcmi_animation",
+          "recorded_before_copy_sha256": "34517e12fb78c4edbd2f9d37a96457f07323f3b5f7aa28c2c67d8aab27c98006",
+          "unit": "ionianDisciple"
+        },
+        "large": {
+          "before_live_sha256": "c7d79b8794c2da12d29abd84a5f6599d837e5aac6be534ff76500a1a2dcd9157",
+          "fit": "contain",
+          "groups": [],
+          "original_active_recipe": "assets/recipes/creatures/ionianDisciple-large.json",
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/ionianDisciple/large.png",
+          "recipe_type": "raster",
+          "recorded_before_copy_sha256": "c7d79b8794c2da12d29abd84a5f6599d837e5aac6be534ff76500a1a2dcd9157",
+          "require_alpha": true,
+          "size": [
+            58,
+            64
+          ],
+          "unit": "ionianDisciple"
+        },
+        "map": {
+          "before_live_sha256": "e2dbaed24ba2f8dc4aa6d2243cad9a92d04a6eaeefb5565ca4512f9a72f0ce59",
+          "canvas": [
+            96,
+            64
+          ],
+          "generateOverlay": 1,
+          "generateShadow": 2,
+          "groups": [
+            {
+              "action": null,
+              "frames": 6,
+              "group": 0
+            }
+          ],
+          "original_active_recipe": "assets/recipes/creatures/ionianDisciple-map.json",
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/ionianDisciple/map.json",
+          "pivot": {
+            "x": 80,
+            "y": 60
+          },
+          "recipe_type": "vcmi_animation",
+          "recorded_before_copy_sha256": "e2dbaed24ba2f8dc4aa6d2243cad9a92d04a6eaeefb5565ca4512f9a72f0ce59",
+          "unit": "ionianDisciple"
+        },
+        "small": {
+          "before_live_sha256": "aae659c25e9d60cb39667da9c01d7ddf7030a962161891fb83d52ef43cc0f5ef",
+          "fit": "contain",
+          "groups": [],
+          "original_active_recipe": "assets/recipes/creatures/ionianDisciple-small.json",
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/ionianDisciple/small.png",
+          "recipe_type": "raster",
+          "recorded_before_copy_sha256": "aae659c25e9d60cb39667da9c01d7ddf7030a962161891fb83d52ef43cc0f5ef",
+          "require_alpha": true,
+          "size": [
+            32,
+            32
+          ],
+          "unit": "ionianDisciple"
+        }
+      }
+    }
+  }
+}

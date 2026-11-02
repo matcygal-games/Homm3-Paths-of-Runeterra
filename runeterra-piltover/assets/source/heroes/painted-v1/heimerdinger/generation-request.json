@@ -1,0 +1,27 @@
+{
+  "provider": "OpenAI built-in imagegen",
+  "model": "not exposed",
+  "prompt": "Use case: illustration-story. Asset type: ONE new independently painted 2D fantasy strategy-game HERO PORTRAIT MASTER, Heimerdinger of Piltover, intended to downsample to original Heroes of Might and Magic III 58x64 portrait and a 48x32 face crop. Input image1 is ONLY native Heroes III portrait framing/rendering guidance; image2 is ONLY Heimerdinger identity guidance; image3 is ONLY official Piltover crest shape guidance. Paint a wholly new portrait, do not crop or paste source pixels. Exactly one character, no panels. 928x1024 close vertical framing, entire image filled by a warmly textured portrait, no border, no labels/text. Heimerdinger: elderly brilliant male yordle inventor, very large swept-up ochre/yellow hair filling upper frame, broad white eyebrows and grand white moustache, small rosy nose, round dark red/brass engineer goggles with muted blue lenses, intelligent stern kindly expression, blue-grey work collar and tiny aged brass fastenings. Three-quarter head slightly turned toward viewer's left, gaze forward. Head/hair/face occupies nearly 85% of portrait height; shoulders only at bottom. Background is a narrow softly painted glimpse of Piltover ivory harbor stone, distant blue sea and bronze workshop arch, low contrast, not grey/transparent/flat. Native original HoMM3 visual language: compact richly textured oil/gouache miniature, strong readable facial planes and dark outlines made with paint, warm skin/fur light from upper left, shadow under moustache, subdued hand-painted brass/cloth; controlled old fantasy game colors. Preserve character anatomy without huge cute anime eyes. Small partly visible engraved Piltover civic crest on lower collar follows exact supplied shape, never substitute a clan emblem. Restrain glow to tiny goggle glints; no lightning, no neon, no glossy/plastic 3D, no modern splash art, no huge weapon, no cinematic depth of field, no photoreal skin, no contact sheet, no watermark. Make the face and distinct hair/moustache recognizable at 58x64.",
+  "status": "painted-master-complete-unapproved",
+  "selected_painted_master": "assets/source/heroes/painted-v1/heimerdinger/master.png",
+  "reference_ancestry": [
+    {
+      "role": "licensed original HeroesIII native-style reference; private only",
+      "sha256": "f08393fd4e396b29228073dc6a829cdbb783b81ded0556fe2088701c8730033b",
+      "redistribution": "Reference pixels excluded; not a portable source dependency."
+    },
+    {
+      "role": "canonical identity guidance only",
+      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Heimerdinger_0.jpg",
+      "sha256": "392e0c0d3e8bfa9d6a525fb8e7810dff634688c73140d2e0999960030b3faa4c",
+      "redistribution": "Private official reference only; not source artwork or bundled input."
+    },
+    {
+      "role": "regional crest shape guidance",
+      "url": "https://universe.leagueoflegends.com/images/piltover_crest_icon@2x.png",
+      "sha256": "791562b71b37607dc4067d6643d04473f55fa16104713ec13490d67c5baf59a2",
+      "redistribution": "Private official reference only; independently painted depiction."
+    }
+  ],
+  "raw_receipt_policy": "Exact provider request, output hint and original generated PNG are retained privately in coordinator evidence outside public source export."
+}

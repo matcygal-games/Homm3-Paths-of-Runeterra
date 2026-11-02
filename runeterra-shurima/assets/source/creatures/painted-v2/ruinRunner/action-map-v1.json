@@ -1,0 +1,95 @@
+{
+  "status": "authored configuration",
+  "selected_for_build": false,
+  "visual_approval_granted": false,
+  "canvas": [
+    450,
+    400
+  ],
+  "pivot": [
+    218,
+    266
+  ],
+  "source_root": [
+    640,
+    1130
+  ],
+  "uniform_source_scale": 0.095,
+  "per_frame_fit": false,
+  "groups": {
+    "0": [
+      "walk-contact-a-v1",
+      "walk-down-a-v1",
+      "walk-passing-a-v1",
+      "walk-contact-b-v1",
+      "walk-down-b-v1",
+      "walk-passing-b-v1"
+    ],
+    "1": [
+      "grounded-standing-v1",
+      "fidget-look-v1",
+      "grounded-standing-v1"
+    ],
+    "2": [
+      "grounded-standing-v1"
+    ],
+    "3": [
+      "grounded-standing-v1",
+      "hit-recoil-v1",
+      "grounded-standing-v1"
+    ],
+    "4": [
+      "grounded-standing-v1",
+      "defend-brace-v1",
+      "grounded-standing-v1"
+    ],
+    "5": [
+      "grounded-standing-v1",
+      "death-knees-v1",
+      "death-fall-v1",
+      "death-corpse-v1"
+    ],
+    "7": [
+      "grounded-standing-v1",
+      "turn-quarter-v1",
+      "turn-front-v1"
+    ],
+    "8": [
+      "turn-front-v1-left",
+      "turn-quarter-v1",
+      "grounded-standing-v1"
+    ],
+    "11": [
+      "grounded-standing-v1",
+      "attack-preparation-v1",
+      "attack-up-contact-v2",
+      "attack-recovery-v1",
+      "grounded-standing-v1"
+    ],
+    "12": [
+      "grounded-standing-v1",
+      "attack-preparation-v1",
+      "attack-front-contact-v2",
+      "attack-recovery-v1",
+      "grounded-standing-v1"
+    ],
+    "13": [
+      "grounded-standing-v1",
+      "attack-preparation-v1",
+      "attack-down-contact-v1",
+      "attack-recovery-v1",
+      "grounded-standing-v1"
+    ]
+  },
+  "candidates_to_preserve_not_consume": [
+    "standing-master-v0",
+    "attack-up-contact-v1",
+    "attack-front-contact-v1"
+  ],
+  "boundary_reuse": "Holding reused at genuine start/end boundaries. Articulated unique masters supply action changes; no translated still used to fill motion.",
+  "turn_join": "g7 then engine facing flip then g8; g8 starts with pivot-mirrored frontal source to retain frontal pixels across flip.",
+  "open_visual_limits": [
+    "Generated rider lean/body position varies across gait keys; independent gait continuity review pending.",
+    "Source contact shadows retain generated irregular shape; no alpha thresholding/generic ellipse added."
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "acceptance": "Technical mask derived from the painted layer: the area mask defines the clickable footprint and the border mask the highlight outline. Both must be derived from the own painted layer, never copied from another faction or from the original game.",
+  "building": "cityHall",
+  "canvas": [
+    800,
+    374
+  ],
+  "content_box": [
+    0,
+    0,
+    800,
+    374
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; prompted and technically assembled by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/halls-master.png",
+      "sha256": "b444f77788f8826688075ac4d35cd350107e847365bdf4c84de54bb24c5cd07d"
+    },
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v3/provenance/cityHall.json",
+      "sha256": "9c940b00afe6958a7dbdec59f034e80852465473f55ed760e222f5e912e43af5"
+    },
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v3/prepare.py",
+      "sha256": "820e604e675f6e6c5882374f6dbba3e252821682498fc53ac32445e9bf5f6393"
+    },
+    {
+      "path": "scripts/zaun_coastal_state_v1.py",
+      "sha256": "5aa45de45f59be66d393df44538743b1842db5ba5f1c4e48c1d83acaa13f3cf7"
+    },
+    {
+      "kind": "historical_provenance",
+      "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/cityHall-original.json",
+      "sha256": "b1ded2b815bc84b2bc14eb6e56929c536f60fc190ebfba364522ddfe75c97508"
+    }
+  ],
+  "fit": "contain",
+  "generation": {
+    "composition_rectangle": [
+      195,
+      7,
+      170,
+      133
+    ],
+    "credits": {
+      "author": "OpenAI built-in imagegen; original selected Zaun prompts and historical source retained",
+      "license": null,
+      "redistribution": "unresolved; release prohibited"
+    },
+    "generation_route": "Preserved selected own painted 2D master; whole-source uniform contain and native placement only.",
+    "historical_prompt": "Use case: precise-object-edit. Edit the attached own Zaun hall upgrade atlas. Preserve four distinct stages in same 2x2 arrangement and exact low frontal three-quarter camera, all roofs and bases fully inside their cell, genuine transparent background and clear gutters. Keep brick municipal hall identity, noticeboard, entry steps and clock on advanced states. Change only chemtech art direction: strong luminous toxic GREEN glass lamps and visible connected pressure pipes, modest cylindrical reagent gauge beside each entrance, purple slate/enamel/awning accents on brown brick, iron and copper. Base village hall stays visibly plain and small, Town Hall has more enclosed stories, City Hall strong civic clock frontage, Capitol tallest bell/clock industrial tower and more reinforced copper control piping. Do not turn halls into generic reactor blocks. Broad upper-left daylight, localized green reflections, richly textured painted/prerendered original Heroes III buildings, not glossy modern 3D. No text, no flat neon outlines, no backdrop, no clipped roofs. Keep stage silhouettes and positions so this remains a coherent same-site upgrade family.",
+    "historical_provenance": {
+      "kind": "historical_provenance",
+      "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/cityHall-original.json",
+      "sha256": "b1ded2b815bc84b2bc14eb6e56929c536f60fc190ebfba364522ddfe75c97508"
+    },
+    "historical_receipt_note": "Unchanged prior provider receipt retained privately at original authored source; not rewritten or claimed as new generation.",
+    "historical_receipt_sha256": "b1ded2b815bc84b2bc14eb6e56929c536f60fc190ebfba364522ddfe75c97508",
+    "image_generation_used": true,
+    "mirror_x": false,
+    "model": null,
+    "model_disclosed": false,
+    "native_offset": [
+      197,
+      42
+    ],
+    "native_size": [
+      166,
+      96
+    ],
+    "new_image_generation_used": false,
+    "painted_master": "assets/source/town/chemtech-v4-buildings/halls-master.png",
+    "painted_master_sha256": "b444f77788f8826688075ac4d35cd350107e847365bdf4c84de54bb24c5cd07d",
+    "placement_plan": "assets/source/town/industrial-neighborhood-20261025-v3/live-placement-plan.json",
+    "placement_plan_sha256": "ebc0f8ca5a08869bae5a7a3ad205bc5cab43a61832d85454e856f3febf292333",
+    "provider": "OpenAI built-in imagegen",
+    "release_accepted": false,
+    "runtime_verified": false,
+    "source_crop": [
+      12,
+      530,
+      766,
+      965
+    ],
+    "status": "authored configuration",
+    "technical_helper": "assets/source/town/industrial-neighborhood-20261025-v3/prepare.py",
+    "technical_helper_sha256": "820e604e675f6e6c5882374f6dbba3e252821682498fc53ac32445e9bf5f6393",
+    "visual_approval_granted": false
+  },
+  "id": "zaun.town.structure.cityHall.area",
+  "identity_review": "build/reports/industrial-neighborhood-20261025-v3/source-pixel-review.json",
+  "native_visual_review": "pending",
+  "output_path": "Content/Sprites/runeterra/zaun/town/structures/cityHall_area.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/industrial-neighborhood-20261025-v3/structures/cityHall/area.png",
+  "source_sha256": "501c4d194ca7a072f3f97ab1bdd56f1ad906258df696ee03f08ec1288dbb182c",
+  "status": "built-unreviewed",
+  "technical": true,
+  "title": "Castboard Hall area mask",
+  "visual_approval_granted": false
+}

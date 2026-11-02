@@ -1,0 +1,126 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "The same subject and camera as the battle frames, redrawn for the native 96x64 map sprite. The map cohort is a separate painting set and never reuses a battle frame. A native map creature shows one standing frame, as the original creature map sprites do.",
+  "canvas": [
+    96,
+    64
+  ],
+  "credits": {
+    "author": "OpenAI built-in image_gen; genuine paintings and technical extraction",
+    "license": "unresolved; no redistribution grant inferred",
+    "redistribution": "unresolved; release prohibited"
+  },
+  "delivery": {
+    "cohort": "assets/source/creatures/chemBaronEnforcer/painted-auxiliary-v10/auxiliary-cohort-v10.json",
+    "cohort_sha256": "e7f72e5d162ac032234b1dd81a9788abe726765ae6439addb6f3d089da812be1",
+    "source_review": {
+      "kind": "historical_provenance",
+      "path": "assets/history/selected-inputs-20261024/build/reports/art-implementation/20261021-final-aux-class-reviews/t46-auxiliary-v10-source-review.json",
+      "sha256": "6772def66393580ff3b35864463c0b981d01cc0e437b275210d9a0546359d920"
+    },
+    "sources": [
+      {
+        "path": "assets/source/creatures/chemBaronEnforcer/painted-auxiliary-v10/native/map.png",
+        "sha256": "3718463fc2395c7e0f20846a1c1dd24a6d02aa958c6936f83049f483c89f1b44"
+      }
+    ],
+    "status": "authored configuration; native review pending",
+    "visual_approval_granted": false
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/creatures/chemBaronEnforcer/painted-auxiliary-v10/master.png",
+      "sha256": "a83c995f6c0e5ac65f2762706584ce828dd0061cb650a086a5ad174b0246c5cf"
+    },
+    {
+      "path": "assets/source/creatures/chemBaronEnforcer/painted-auxiliary-v10/prompt.txt",
+      "sha256": "f01a5ce95b6e6aee3770d00de727cae4a5fc655c8ca854e101682ddd6c0c4ffa"
+    },
+    {
+      "path": "assets/source/creatures/chemBaronEnforcer/painted-auxiliary-v10/provenance.json",
+      "sha256": "572e4ce434d59f4def2a831678839725d34d14aa15c44211126ccd0c6c435806"
+    },
+    {
+      "path": "assets/source/creatures/chemBaronEnforcer/painted-auxiliary-v10/preparation.json",
+      "sha256": "f3e133593852c9a9cee3d1738db156d0f93b0d09e2699921c9a33cf1f30ca664"
+    },
+    {
+      "path": "assets/source/creatures/chemBaronEnforcer/painted-auxiliary-v10/auxiliary-cohort-v10.json",
+      "sha256": "e7f72e5d162ac032234b1dd81a9788abe726765ae6439addb6f3d089da812be1"
+    },
+    {
+      "kind": "historical_provenance",
+      "path": "assets/history/selected-inputs-20261024/build/reports/art-implementation/20261021-final-aux-class-reviews/t46-auxiliary-v10-source-review.json",
+      "sha256": "6772def66393580ff3b35864463c0b981d01cc0e437b275210d9a0546359d920"
+    },
+    {
+      "path": "build/reports/creatures-t4-t6-auxiliary-v10-20261021/native-old-new-battle.png",
+      "sha256": "d189b0600a9cee19200635b368c2120e0ad2bfd5fbf4b936b48191ac9370f757"
+    },
+    {
+      "path": "scripts/zaun_t4_t6_auxiliary_v10.py",
+      "sha256": "f47335689cde33c4cbee78a0922b02d40568f9b2f1627e9f1eaadc9988d2cf1e"
+    },
+    {
+      "path": "scripts/zaun_creatures_b_auxiliary_v2.py",
+      "sha256": "da4f2178fa3879a54ad3c7a8f6cd1d4b6a4b4bc7d4fbb72e38fa1dccefd8e554"
+    },
+    {
+      "path": "assets/source/creatures/chemBaronEnforcer/painted-auxiliary-v10/edit-input.png",
+      "sha256": "28fda0d22951360dc8a76aff28f0df476414e6581951f54aec2fda6b5c48a1f9"
+    },
+    {
+      "path": "assets/source/creatures/chemBaronEnforcer/painted-imagegen-v2/auxiliary-master.png",
+      "sha256": "1833e132f99b6c290346b7c2721c3090ce619e3407f22955844a488e4094a4ad"
+    },
+    {
+      "path": "assets/source/creatures/chemBaronEnforcer/painted-imagegen-v3/attackLeft-master.png",
+      "sha256": "8defca13a6d0e2b1b79d7b8e213dbb454c4d9e72c0ed50b4a286f878dfee0ec6"
+    }
+  ],
+  "generateOverlay": 0,
+  "generateShadow": 0,
+  "generation": {
+    "image_generation_used": true,
+    "model": null,
+    "painted_master": "assets/source/creatures/chemBaronEnforcer/painted-auxiliary-v10/master.png",
+    "painted_master_sha256": "a83c995f6c0e5ac65f2762706584ce828dd0061cb650a086a5ad174b0246c5cf",
+    "prompt": "Use case: precise-object-edit. Image1 is MY OWN existing auxiliary artwork, carefully arranged into a spacious2x2 edit input. Perform ONLY conservative chemistry/material edits preserving the SAME paintings and anatomy. EXACTLY FOUR views at the exact existing positions: TOPLEFT head-and-shoulders portrait; TOPRIGHT separately painted standing adventure figure facingRIGHT; BOTTOMLEFT independently painted encounter action facingLEFT; BOTTOMRIGHT separately painted encounter action facingRIGHT. No extra figures. T4 plain workshirt/cloth knees/apron and broad breaker. Retain each exact human face/hair, armor, tool, body pose, camera and original size. In existing glass pressure cells/windows or tubing on visible forearm/back/shoulder apparatus, make contained fluid vivid chemical GREEN. Use restrained PLUM/PURPLE strap and work-cloth accents among rust-brown, copper and matte iron, matching this unit current green/plum painted battle identity. Keep natural human skin, no green body/metal wash, no new robotic face, no new gear or invented neck/chest reservoir where none exists. Portraits use only existing visible harness/tubing/straps; keep portrait face/background framing intact. Preserve tools completely inside transparent margins: ONE flat rectangular industrial breaker for T4, ONE rigid nested telescopic double-jaw salvage clamp for T6, never chains/hooks/guns. Preserve separate left/right anatomical views, not mirrored duplicates. Do not enlarge into gutters or crop any boots/weapon. Keep exact original aspect ratio/layout and genuine alpha. Original1999HeroesIII textured painted/prerendered language, upper-left light, matte worn cloth/leather/rust with readable compact native silhouettes, no gloss/anime/UI text/scenery/floor/shadow. This is only green/plum chemistry consistency, not new costume/action design.\n",
+    "provenance": "assets/source/creatures/chemBaronEnforcer/painted-auxiliary-v10/provenance.json",
+    "provider": "OpenAI built-in image_gen",
+    "route": "genuine conservative material edits; whole-subject crop/uniform scale/native canvas only"
+  },
+  "groups": [
+    {
+      "action": "map-idle",
+      "frames": [
+        {
+          "sha256": "3718463fc2395c7e0f20846a1c1dd24a6d02aa958c6936f83049f483c89f1b44",
+          "source": "assets/source/creatures/chemBaronEnforcer/painted-auxiliary-v10/native/map.png",
+          "source_sha256": "3718463fc2395c7e0f20846a1c1dd24a6d02aa958c6936f83049f483c89f1b44"
+        }
+      ],
+      "group": 0
+    }
+  ],
+  "id": "zaun.creature.chemBaronEnforcer.map",
+  "output_path": "Content/Sprites/runeterra/zaun/creatures/chemBaronEnforcer/map.json",
+  "pivot": {
+    "x": 64,
+    "y": 63
+  },
+  "production_status": "delivered",
+  "recipe_type": "vcmi_animation",
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "source": "assets/source/creatures/chemBaronEnforcer/painted-auxiliary-v10/native/map.png",
+  "source_sha256": "3718463fc2395c7e0f20846a1c1dd24a6d02aa958c6936f83049f483c89f1b44",
+  "status": "built-unreviewed",
+  "title": "Chem-Baron Enforcer adventure map animation",
+  "unit": "chemBaronEnforcer",
+  "visual_approval_granted": false
+}

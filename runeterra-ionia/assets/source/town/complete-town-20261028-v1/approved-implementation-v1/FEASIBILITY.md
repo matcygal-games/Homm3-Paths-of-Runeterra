@@ -1,0 +1,28 @@
+# Bounded feasibility assessment against the approved painting
+
+The selected fully built image remains exact. No demonstrated finding currently
+requires changing a visible approved pixel. The remaining work is internal
+technical extraction and contact/access authoring, followed by independent review.
+This assessment does not turn provisional physical masks into accepted geometry.
+
+| Measured HOLD | Actual native-pixel finding | Required bounded correction | Visible approved art change |
+| --- | --- | --- | --- |
+| Cloud base own approach, 3 pixels at `[186,104..189,105]` | These are the lower continuation of its actual entrance stair/frontage. The inherited doorway mask ended at y103. | **Corrected** the base-state frontage through y105; retained all source/body/contact pixels. The unchanged consumer now advances to the network-connectivity check. | None; executed annotation correction. |
+| Cloud public-network connection | The already genuine painted west stair ends at `[128,197]`; the inherited global network never connected that landing. Bounded searches inside the visible west/Monastery street corridor could not reach the middle lane even at 1px clearance under the held all-state body mattes. | Reconcile public-terrace ownership in the Kinkou/Workshop masks, then trace the real paved continuation. The search is a diagnostic; no synthetic painted path or support plane was created. | No change proven necessary. Re-cutting ambient public stone out of a building is a technical ownership correction. |
+| Defense Fort/Citadel/Castle: 11/7/9 pixels at approximately x609–617,y127–129 | The inherited trace passes through the visible descending civic stair/retaining frontage. It is not an individually certified trace of the gate/tower load-bearing feet. | Trace tower/gate feet, their actual entry stairs and permanent public retaining masonry separately in all three genuine state paintings. Do not simply add support on the stair band. | None demonstrated. |
+| Highest Protector: 16 pixels at x632–639,y146–150 | The inherited long root trace follows much of the retaining face around y153–156; the hall columns and statue pedestal meet the upper cap around y146–149. The lower carved curl remains an attached relief, as previously reviewed. | Correct complete column/pedestal contacts and own entry roles against the actual cap. Preserve all real structural contacts and the complete relief; do not declare floor under the hanging curl. | None demonstrated. Any genuinely needed hidden landing repair can remain inside the actor's opaque coverage, preserving full RGBA. |
+| Library1: 11 pixels at x244–249,y174–178 | The provisional line runs across the lower stone/retaining frontage while the visible timber columns meet the upper floor around y160–163. Own masonry must be distinguished from permanent terrain rather than treating all stone as one role. | Reconcile exact construction ownership and trace the actual complete foot/plinth. **Do not discard the independently recovered Guild3 67-pixel pillar or its 22 visible connector pixels.** No blanket public-wall exemption is valid. | None demonstrated; exact own-plinth ownership remains an internal source decision to complete. |
+| Harmony pavilion: 2 pixels at x445,y160–161 | The rejected samples lie at the intersection of the small pavilion's left frontage and an over-broad provisional stair corner. Native detail shows the central own entry stair separately. | Trace actual left post/plinth versus the visible public riser, then retain all true structural contacts. Do not grow a support polygon merely around the rejected samples. | None demonstrated; if the empty absence study exposes a genuine hidden bed defect, use a genuine hidden-only landing correction. |
+| Inn: 15 pixels at x607–612,y338–343 | The old stair polygon overlaps the left side of the inn's porch/plinth edge; its outline was inherited before this selected full composition. | Trace actual visible stair risers and side porch contact independently; check the full original and inn-absent views together. If a hidden empty-bed repair is required, it must not alter any full-image pixel. | None demonstrated. |
+| Other own/public approach intersections | Provisional long routes pass through masks containing broad public stone courtyards and retaining faces, including the Kinkou frontage around y219–226. Native timber feet are higher, around y207–212. | Correct actual alpha ownership and per-state access before regenerating routes. Structural plinths, detached banner/post feet and shadows must remain complete. | No change proven necessary; no automatic path across an opaque roof is accepted. |
+| Fine architectural fringes and ambient caps | Held proposals clipped roof tips, Gateway cloth/stone and the Protector curl. Bounded technical corrections now reproduce the full exactly, but all plain-background and absent views need independent final contour review. | Trace the actual architecture, keep public sky/water/pavement in the background, and rerun exact compiled RGBA proof. | None; technical alpha/background ownership only. |
+
+The exact coordinate detail PNGs beside this file are diagnostic native-source
+crops enlarged with nearest-neighbour scaling. Green marks inherited provisional
+contact traces; orange marks inherited provisional stairs. They are not new game
+art or certificates of correct structural ownership.
+
+No visible-edit conflict is being hidden as an external blocker. The remaining
+internal work has not passed the physical consumer and `integration_allowed`
+remains false. The 155-recipe compiler packet is available for continued bounded
+engineering; it is not a ready-to-publish production selection.

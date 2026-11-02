@@ -1,0 +1,90 @@
+{
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI builtin imagegen; deterministic technical2D conversion",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/painted-v1/assemble.py",
+      "sha256": "69586f88b723643690c2867b1c50f24ca3443e92120c0b43e4cf5597b8fdab66"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/ship/master-v1.png",
+      "sha256": "332b79337ea98fbc3c9f0edc40fe2a8300c784fa7517aa90b6e51fa8ca4421b9"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/ship/native-frame.png",
+      "sha256": "8c0dbc683e5b09221565fce0f70b3093491b26709a7c0eedd826f188bd0f429f"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/ship/prompt-v1.txt",
+      "sha256": "dccacd6043ad89a8014606e66eb46e67573a32dd2115a2e7d19260b48bede07b"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/ship/source-generation.json",
+      "sha256": "053b223cd1493e2f3139cb42dd58a5a66c35a912c01bd4b2cf271bb3b1337aee"
+    },
+    {
+      "path": "assets/source/town/painted-v1/gangway/master-v1.png",
+      "sha256": "49ae546d6514c6833b7870e421349072b790f5daf4c64804424d0a59ccd01d8a"
+    },
+    {
+      "path": "assets/source/town/painted-v1/gangway/prompt-v1.txt",
+      "sha256": "b4e5f2da6988a4f205fc9202d9d6a27e10a4de5bb93df0a8954ffe16a1db4ab6"
+    },
+    {
+      "path": "assets/source/town/painted-v1/gangway/source-generation.json",
+      "sha256": "ae88659bb4cd301e99889ef04881c2fce05939fdac894d7fe379d8af0055a759"
+    },
+    {
+      "path": "assets/source/town/painted-v1/layout-plan-v3.json",
+      "sha256": "3b9498f7cfb179c67742f073454facc95144f357158aa99c1fa80a457abd9b38"
+    },
+    {
+      "path": "assets/source/town/town-rebuild-20261027-v1/assemble_v5.py",
+      "sha256": "e0a6921c838e6766a934d09a8a0135d93526d9455957cbeb7ba6fe6728998977"
+    },
+    {
+      "path": "assets/source/town/town-rebuild-20261027-v1/layout-plan-v5.json",
+      "sha256": "30ce12667d84deae5be2e6efd2092aab3ba328c5bab7115f8b8a6c8e95d3a32a"
+    },
+    {
+      "path": "assets/source/town/town-rebuild-20261027-v1/placement-calibration-v5.json",
+      "sha256": "97e7d21f33e72941feb95696ba2b23d558153f0d2054365d956ca2a4a30f05f5"
+    }
+  ],
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": true,
+    "model": "not exposed by tool",
+    "painted_master": "assets/source/town/painted-v1/buildings/ship/master-v1.png",
+    "painted_master_sha256": "332b79337ea98fbc3c9f0edc40fe2a8300c784fa7517aa90b6e51fa8ca4421b9",
+    "producer": "assets/source/town/town-rebuild-20261027-v1/assemble_v5.py",
+    "producer_sha256": "e0a6921c838e6766a934d09a8a0135d93526d9455957cbeb7ba6fe6728998977",
+    "prompt": "Standalone transparent painted2D town-building cutout for original Heroes of Might and Magic III/VCMI. Native target800x374 town, not a poster or modern game render.\nImage1 is EDIT TARGET: our own existing shipyard building; preserve its canvas/camera/root/lower core. Image2 is the ORIGINAL Heroes III Castle building: rendering-language reference only, no copied Castle pixels/silhouette. Image3 is the actual PILTOVER crest shape reference: central vertical pillar, split-ring/orb upper end, broad curved gear-flanked lower arcs; never wings or generic cog. Follow the same institutional/material family; additions/removals must be genuinely painted. The reference has technical transparent padding [500, 0, 0, 0] (left,top,right,bottom), whole-image translation only, not resized architecture. Use that spare headroom for new upper construction without moving or shrinking the existing lower door/foundation.\nOutput genuinely transparent RGBA with EXACT reference Image1 canvas dimensions and existing core scale/position; do not recenter, zoom or shrink the lower building to fill the frame. Full building, roof, stairs, foundation, cloth and subtle own rightward contact shadow entirely visible with >=35pixels transparent margins. No solid backdrop/white matte/checkerboard/grass or floor rectangle, no red/yellow/chroma edge outline. Walls and windows remain opaque painted material, not translucent see-through buildings.\nSame soft upper-left daylight and LOW FRONTAL THREE-QUARTER camera as the new town. Front facade/door dominates; modest right-side wall, limited roof planes, not strict isometric/bird's-eye. Richly textured original-H3 small-scale painted masonry, timber, slate, aged bronze/brass and dull steel. Warm ivory/hewn stone, muted dark timber, navy/teal cloth, restrained cool-blue instruments. No shiny modern3D/plastic, anime, splash-art, bloom/neon or photographic lens finish. Working Piltovan trade/science/community architecture, not16generic temples or Demacian keeps. A physical navy/teal banner or engraved plaque carries the CORRECT Piltover region crest visibly at native downsampling, with natural perspective and occlusion.\nPlanned native envelope [0, 110, 109, 74]; compact readable architectural silhouette. For a new base, leave headroom for later extensions above the same frontal ground-root nearx627,y1130. For an edit, KEEP EXACT reference canvas, lower foundation and entrance source position/scale; never zoom the smaller state to fill the canvas. Only whole real painted architecture; no people, soldiers, animals, text, labels, UI, border or watermark.\nSTATE: Moored Trading Sloop. Complete the SAME Harbor Slip with its Moored Trading Sloop. Preserve the entire original quay, shed, landward RIGHT door, stairs, root/camera/light; add one small weathered timber trade sloop moored along the left water-facing edge with folded/reefed dull sails, brass fittings and a small navy Piltover flag. This replacement layer must include BOTH the original dock and the vessel, not a separate boat floating through the shed. Keep all boat/mast/rope full and uncropped inside the same compact109x74native site. No water panel, people or extra ship.\n",
+    "prompt_file": "assets/source/town/painted-v1/buildings/ship/prompt-v1.txt",
+    "provider": "OpenAI builtin imagegen",
+    "source_generation_ledger": "assets/source/town/painted-v1/buildings/ship/source-generation.json"
+  },
+  "output_path": "Content/Sprites/runeterra/piltover/town/structures/ship_border.png",
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/town-rebuild-20261027-v1/buildings/ship/border-v5.png",
+  "source_canvas": [
+    800,
+    374
+  ],
+  "source_sha256": "c0d6c354a8aca33a76bf652933caff40e56f20d39255dbd8ea7ea23620c71c27",
+  "status": "painted-candidate",
+  "visual_approval_granted": false
+}

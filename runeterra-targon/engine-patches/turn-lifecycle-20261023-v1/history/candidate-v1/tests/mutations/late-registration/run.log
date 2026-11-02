@@ -1,0 +1,15 @@
+PASS accepted current request ends current turn
+PASS rejected request preserves turn
+PASS old accepted ACK cannot clear new turn
+PASS duplicate ACK cannot clear new turn
+PASS unknown EndTurn ACK cannot clear active turn
+PASS old rejected ACK leaves new turn active
+PASS spell rejection retains its separate result and turn
+PASS rejected EndTurn retries until same generation accepted
+PASS defeated player waits for battle cleanup without requesting turn end
+PASS same-player new turn before ACK neither retries old task nor clears new task
+PASS ACK followed by new turn before callback returns cannot trigger old retry
+FAIL immediate transport ACK sees registered request before waiting caller resumes
+PASS immediate new-turn transport reentry preserves new generation
+PASS observer path drops request without registering ownership
+RESULT 14 cases 1 failures

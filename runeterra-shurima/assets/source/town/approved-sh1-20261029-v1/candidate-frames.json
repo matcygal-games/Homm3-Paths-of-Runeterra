@@ -1,0 +1,1052 @@
+{
+  "approved_full": {
+    "path": "approved-full-native.png",
+    "sha256": "7848452633d0bf49c32e08caa00a436aaa71d3ce810bacec6bdae322c3db349b"
+  },
+  "background": {
+    "path": "background-native.png",
+    "sha256": "3565ab96ba619ddb5b07847ed989e9ffa535a31b25578bcb6cf43ddaef14fdde"
+  },
+  "candidate_only": true,
+  "canvas": [
+    800,
+    374
+  ],
+  "complete_scene_states": [
+    "dwellingUpLvl7",
+    "castle",
+    "special1",
+    "capitol",
+    "mageGuild3",
+    "dwellingUpLvl6",
+    "special3",
+    "dwellingUpLvl4",
+    "dwellingUpLvl3",
+    "dwellingUpLvl5",
+    "resourceSilo",
+    "grail",
+    "dwellingUpLvl2",
+    "blacksmith",
+    "dwellingUpLvl1",
+    "tavern",
+    "marketplace",
+    "shipyard",
+    "ship"
+  ],
+  "early_scene_states": [
+    "dwellingLvl7",
+    "fort",
+    "special1",
+    "villageHall",
+    "mageGuild1",
+    "dwellingLvl6",
+    "special3",
+    "dwellingLvl4",
+    "dwellingLvl3",
+    "dwellingLvl5",
+    "resourceSilo",
+    "grail",
+    "dwellingLvl2",
+    "blacksmith",
+    "dwellingLvl1",
+    "tavern",
+    "marketplace",
+    "shipyard"
+  ],
+  "fully_built_pixel_difference_bbox": null,
+  "fully_built_replayed": {
+    "path": "fully-built-replayed.png",
+    "sha256": "7848452633d0bf49c32e08caa00a436aaa71d3ce810bacec6bdae322c3db349b"
+  },
+  "missing_work": [
+    "Fine roof/body click-mask review",
+    "Every-state mixed occlusion/support/path validation",
+    "Painted recovery seam review",
+    "Actual native compiler twice and construction atlas",
+    "Independent source/art review; no staging or game acceptance"
+  ],
+  "region": "shurima",
+  "states": {
+    "blacksmith": {
+      "bbox": [
+        0,
+        220,
+        173,
+        321
+      ],
+      "body": {
+        "path": "masks/blacksmith-body.png",
+        "sha256": "64039dde9e92c957615f48ba48f630aee4f8c42b9ad4b15fdc017bd8a0d27920"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        91,
+        302
+      ],
+      "frame": {
+        "path": "frames/blacksmith.png",
+        "sha256": "106e98e10a466926cedd2a1c5518b69d435f05a72e11490e447cd20301e473e6"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "smith",
+      "source_tag": "approved",
+      "z": 302
+    },
+    "capitol": {
+      "bbox": [
+        304,
+        34,
+        501,
+        149
+      ],
+      "body": {
+        "path": "masks/capitol-body.png",
+        "sha256": "1a9ac80b01d1482dced78122e8348b37f070db0e0a897d26352ae079e140ba3e"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        395,
+        133
+      ],
+      "frame": {
+        "path": "frames/capitol.png",
+        "sha256": "1d5b061029bd4654281661bb3a57416ec1d0b3790ffd5164f0f7fb89a95d81d4"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "civic",
+      "source_tag": "approved",
+      "z": 133
+    },
+    "castle": {
+      "bbox": [
+        606,
+        39,
+        800,
+        149
+      ],
+      "body": {
+        "path": "masks/castle-body.png",
+        "sha256": "ba3f11513eeccadee17c134584d95a78b0eaa232a0fadb71b98fd21adaabd4b8"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        712,
+        127
+      ],
+      "frame": {
+        "path": "frames/castle.png",
+        "sha256": "adc8e96c194440c8bf84ce8102460b8e4ce31d732dae570498ca20d83204e7b4"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "defenses",
+      "source_tag": "approved",
+      "z": 127
+    },
+    "citadel": {
+      "bbox": [
+        606,
+        39,
+        800,
+        149
+      ],
+      "body": {
+        "path": "masks/citadel-body.png",
+        "sha256": "ba3f11513eeccadee17c134584d95a78b0eaa232a0fadb71b98fd21adaabd4b8"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        712,
+        127
+      ],
+      "frame": {
+        "path": "frames/citadel.png",
+        "sha256": "6a39486fc34191c961b375e686134b78a81a0e682d1e47c629171d00ea793425"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "defenses",
+      "source_tag": "middle",
+      "z": 127
+    },
+    "cityHall": {
+      "bbox": [
+        304,
+        34,
+        501,
+        149
+      ],
+      "body": {
+        "path": "masks/cityHall-body.png",
+        "sha256": "1a9ac80b01d1482dced78122e8348b37f070db0e0a897d26352ae079e140ba3e"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        395,
+        133
+      ],
+      "frame": {
+        "path": "frames/cityHall.png",
+        "sha256": "0809a01a8be2919df27bb1e064929aa2c30ac77d863fd84b40e218dcc56153c5"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "civic",
+      "source_tag": "late",
+      "z": 133
+    },
+    "dwellingLvl1": {
+      "bbox": [
+        397,
+        251,
+        585,
+        328
+      ],
+      "body": {
+        "path": "masks/dwellingLvl1-body.png",
+        "sha256": "b722c973216b136420d784e69b2c3dbf9311eaa0f03b38b1be12c4fca4c0fe46"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        479,
+        307
+      ],
+      "frame": {
+        "path": "frames/dwellingLvl1.png",
+        "sha256": "65637a58b97cfc428d7fd2f4e9df12fd640e5b247af098d37a7d9904b3791003"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "nomads",
+      "source_tag": "early",
+      "z": 307
+    },
+    "dwellingLvl2": {
+      "bbox": [
+        169,
+        227,
+        307,
+        297
+      ],
+      "body": {
+        "path": "masks/dwellingLvl2-body.png",
+        "sha256": "6eabd36ca1c29c37f76e80de412534d0028b8e3579ce5b0052ffa5894462f610"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        246,
+        274
+      ],
+      "frame": {
+        "path": "frames/dwellingLvl2.png",
+        "sha256": "f37b09a5813a5338ca6c6878b3f77f9d1e48111432ec19f8c29f9ece1cfce1ec"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "archers",
+      "source_tag": "early",
+      "z": 274
+    },
+    "dwellingLvl3": {
+      "bbox": [
+        3,
+        163,
+        168,
+        226
+      ],
+      "body": {
+        "path": "masks/dwellingLvl3-body.png",
+        "sha256": "0ce2e5da1fada273949ce50b95769d491c686e82a248811bcc346e5064c3bce6"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        91,
+        213
+      ],
+      "frame": {
+        "path": "frames/dwellingLvl3.png",
+        "sha256": "e6043c1b4dadfd554159c6150122f6b5203d8223b9cf82b531d8713d32a02c6a"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "rockbears",
+      "source_tag": "early",
+      "z": 213
+    },
+    "dwellingLvl4": {
+      "bbox": [
+        317,
+        151,
+        443,
+        226
+      ],
+      "body": {
+        "path": "masks/dwellingLvl4-body.png",
+        "sha256": "09806b210bd0d8e8a60bfb42fbb897289e205bb6581458eec380e3529ca116eb"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        383,
+        206
+      ],
+      "frame": {
+        "path": "frames/dwellingLvl4.png",
+        "sha256": "f016381eaf7864e6f5a7a3cb4605f57d02f013f2f19138d9d6b7bccb70b6b49e"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "priests",
+      "source_tag": "early",
+      "z": 206
+    },
+    "dwellingLvl5": {
+      "bbox": [
+        445,
+        168,
+        583,
+        234
+      ],
+      "body": {
+        "path": "masks/dwellingLvl5-body.png",
+        "sha256": "52195dac6951c1c0b822297ccc8a1638c16588bb0989ce2a60cc1701af7a1678"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        505,
+        219
+      ],
+      "frame": {
+        "path": "frames/dwellingLvl5.png",
+        "sha256": "1aea4070e5f10f7f1637b8ae14beba090042b970b63ef0951e89fb8f1457115e"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "runners",
+      "source_tag": "early",
+      "z": 219
+    },
+    "dwellingLvl6": {
+      "bbox": [
+        574,
+        144,
+        698,
+        197
+      ],
+      "body": {
+        "path": "masks/dwellingLvl6-body.png",
+        "sha256": "63b487cb831783dc295016473e99db1ffcc389a6a75e8973c9f81f0e54301bf2"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        633,
+        178
+      ],
+      "frame": {
+        "path": "frames/dwellingLvl6.png",
+        "sha256": "1763dabfdefa200ff2f0c725e27638aca269c9dd59c5a20ab4f157fe7ebfeb1f"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "chimera",
+      "source_tag": "early",
+      "z": 178
+    },
+    "dwellingLvl7": {
+      "bbox": [
+        10,
+        48,
+        220,
+        137
+      ],
+      "body": {
+        "path": "masks/dwellingLvl7-body.png",
+        "sha256": "c7233fe65c625389a9f5b679907b22b617d9d5fcbe57aead63e4c1870249f966"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        67,
+        109
+      ],
+      "frame": {
+        "path": "frames/dwellingLvl7.png",
+        "sha256": "24ea80796aff01cbc9a73811010df7e393ec118d341454948def09399380790d"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "colossus",
+      "source_tag": "early",
+      "z": 109
+    },
+    "dwellingUpLvl1": {
+      "bbox": [
+        397,
+        228,
+        585,
+        328
+      ],
+      "body": {
+        "path": "masks/dwellingUpLvl1-body.png",
+        "sha256": "a19ea514ddc49a4d0a582d071f53cafaa6b3435a62fb5067156328cf9963e9bb"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        479,
+        307
+      ],
+      "frame": {
+        "path": "frames/dwellingUpLvl1.png",
+        "sha256": "9dcfec01e0ad09c8b4ce60f3e376d20f134df40483d6241d23b2c2d614e922f4"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "nomads",
+      "source_tag": "approved",
+      "z": 307
+    },
+    "dwellingUpLvl2": {
+      "bbox": [
+        169,
+        211,
+        307,
+        297
+      ],
+      "body": {
+        "path": "masks/dwellingUpLvl2-body.png",
+        "sha256": "77129b4edbb56239dc56a959bcf15a588f762cb543387889bff6e3dc31ffc541"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        246,
+        274
+      ],
+      "frame": {
+        "path": "frames/dwellingUpLvl2.png",
+        "sha256": "a84bd3dd73c1d2b01b6bb87b95841376c989419126503cbd2424ae26c7004639"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "archers",
+      "source_tag": "approved",
+      "z": 274
+    },
+    "dwellingUpLvl3": {
+      "bbox": [
+        3,
+        145,
+        168,
+        226
+      ],
+      "body": {
+        "path": "masks/dwellingUpLvl3-body.png",
+        "sha256": "485630aeb8c538169abf8dce27bd676c6a835fb6297d3265c0ecba7a950d52c3"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        91,
+        213
+      ],
+      "frame": {
+        "path": "frames/dwellingUpLvl3.png",
+        "sha256": "a02ca25536f18b79c43f3a8756d6e1b4f214d2e0969395b30c371e633bb202f8"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "rockbears",
+      "source_tag": "approved",
+      "z": 213
+    },
+    "dwellingUpLvl4": {
+      "bbox": [
+        317,
+        136,
+        443,
+        226
+      ],
+      "body": {
+        "path": "masks/dwellingUpLvl4-body.png",
+        "sha256": "c684efbe9e20ae0be57f9328c1c2c457e2f303c144a058549955634611e11a24"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        383,
+        206
+      ],
+      "frame": {
+        "path": "frames/dwellingUpLvl4.png",
+        "sha256": "cebdf5ea2641edca68e41878639e4992a1fc89ef3ff8eea11614fc9905392b21"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "priests",
+      "source_tag": "approved",
+      "z": 206
+    },
+    "dwellingUpLvl5": {
+      "bbox": [
+        445,
+        144,
+        583,
+        234
+      ],
+      "body": {
+        "path": "masks/dwellingUpLvl5-body.png",
+        "sha256": "e963c6c2165003dd536e9a155db7406c060eef2fb722acd389d04e089e966a78"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        505,
+        219
+      ],
+      "frame": {
+        "path": "frames/dwellingUpLvl5.png",
+        "sha256": "9dcbe7f3fa945acd9fcb0df81e56eeca16135063d3470f28d9129f6d33de8f6f"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "runners",
+      "source_tag": "approved",
+      "z": 219
+    },
+    "dwellingUpLvl6": {
+      "bbox": [
+        574,
+        110,
+        698,
+        197
+      ],
+      "body": {
+        "path": "masks/dwellingUpLvl6-body.png",
+        "sha256": "b348351b61e5b6178fd1e1e9bd1dc01d76ec982ed2b7be3b301544814045979f"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        633,
+        178
+      ],
+      "frame": {
+        "path": "frames/dwellingUpLvl6.png",
+        "sha256": "0c208b262929103715f97c77f83c467d297c152dc483dea07ccecc778a56f5f1"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "chimera",
+      "source_tag": "approved",
+      "z": 178
+    },
+    "dwellingUpLvl7": {
+      "bbox": [
+        10,
+        0,
+        220,
+        137
+      ],
+      "body": {
+        "path": "masks/dwellingUpLvl7-body.png",
+        "sha256": "3039e04b452a9dd92615e94695166f00b004227b81700758880b586b7cc8affa"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        67,
+        109
+      ],
+      "frame": {
+        "path": "frames/dwellingUpLvl7.png",
+        "sha256": "f05e3005da41aa51d554096ecf80a29ed251237659254f3a064cfa406283d882"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "colossus",
+      "source_tag": "approved",
+      "z": 109
+    },
+    "fort": {
+      "bbox": [
+        606,
+        79,
+        800,
+        149
+      ],
+      "body": {
+        "path": "masks/fort-body.png",
+        "sha256": "9f1b50d77f09306baa573f083215fa6965ad2afac24b6602554d0b0d828e6559"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        712,
+        127
+      ],
+      "frame": {
+        "path": "frames/fort.png",
+        "sha256": "9e235d91bab9382acfc68197aba00e5edc85f73725fad3cbf9f9bf38ff6dc66f"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "defenses",
+      "source_tag": "early",
+      "z": 127
+    },
+    "grail": {
+      "bbox": [
+        345,
+        195,
+        437,
+        261
+      ],
+      "body": {
+        "path": "masks/grail-body.png",
+        "sha256": "841223fc7666510c4959d229de17affce0dd423b9fa27c55e638422bde666f5a"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        394,
+        247
+      ],
+      "frame": {
+        "path": "frames/grail.png",
+        "sha256": "3511db38176110e5a75ab8ad8abc7dec1b6677566e2a39519d9dc635df870608"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "grail",
+      "source_tag": "approved",
+      "z": 247
+    },
+    "mageGuild1": {
+      "bbox": [
+        488,
+        72,
+        625,
+        149
+      ],
+      "body": {
+        "path": "masks/mageGuild1-body.png",
+        "sha256": "1e99fa62fcaa86738a80bea20ea27bb5d74b021956d5386f3b60d2a7e570ff72"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        542,
+        135
+      ],
+      "frame": {
+        "path": "frames/mageGuild1.png",
+        "sha256": "b7d42ef0563cd0035669769798019712aa2386f243339ed08741a9657c61b692"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "guild",
+      "source_tag": "early",
+      "z": 135
+    },
+    "mageGuild2": {
+      "bbox": [
+        488,
+        20,
+        625,
+        149
+      ],
+      "body": {
+        "path": "masks/mageGuild2-body.png",
+        "sha256": "7854d355bb4dfbef9c1daced2b87534388c8ca04654375b52b22fec3089be722"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        542,
+        135
+      ],
+      "frame": {
+        "path": "frames/mageGuild2.png",
+        "sha256": "6507e29cdc7043b0182abf896288a56db2a0e771635629a218a96405b0eac7da"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "guild",
+      "source_tag": "middle",
+      "z": 135
+    },
+    "mageGuild3": {
+      "bbox": [
+        488,
+        20,
+        625,
+        149
+      ],
+      "body": {
+        "path": "masks/mageGuild3-body.png",
+        "sha256": "7854d355bb4dfbef9c1daced2b87534388c8ca04654375b52b22fec3089be722"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        542,
+        135
+      ],
+      "frame": {
+        "path": "frames/mageGuild3.png",
+        "sha256": "f3d9295f0389b44a997e303b447b5578b7282a167ba94f16be444f52e55cfd09"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "guild",
+      "source_tag": "approved",
+      "z": 135
+    },
+    "marketplace": {
+      "bbox": [
+        240,
+        245,
+        402,
+        328
+      ],
+      "body": {
+        "path": "masks/marketplace-body.png",
+        "sha256": "ca77910dee6e99f26680a4ce6f62a9d77546a5c2252b5ecb096d7f37df8221e7"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        323,
+        313
+      ],
+      "frame": {
+        "path": "frames/marketplace.png",
+        "sha256": "3290d551807e923b77ae7fa2124de0c72c2f68d574734120a9e22af69b39d7d4"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "market",
+      "source_tag": "approved",
+      "z": 313
+    },
+    "resourceSilo": {
+      "bbox": [
+        677,
+        161,
+        800,
+        241
+      ],
+      "body": {
+        "path": "masks/resourceSilo-body.png",
+        "sha256": "e9861f7859818a22ceb19c5f1f4e0ed0bf036c37c1aa3503b76de5875e8acf7a"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        755,
+        220
+      ],
+      "frame": {
+        "path": "frames/resourceSilo.png",
+        "sha256": "0b23061e62b0d979ab9c2be42f25feaf30e1e1fda5212d7a6361aef1d5bfaba0"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "buriedTemple",
+      "source_tag": "approved",
+      "z": 220
+    },
+    "ship": {
+      "bbox": [
+        703,
+        296,
+        790,
+        358
+      ],
+      "body": {
+        "path": "masks/ship-body.png",
+        "sha256": "31362ac40ff867b8b41d39f5c9a0aab277a53228ca86746ed3effa66dc2bb298"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        702,
+        323
+      ],
+      "frame": {
+        "path": "frames/ship.png",
+        "sha256": "3892293498fb166d0cb4643d0242d988f98304a8e18c50dac7cfa3c93cea97b1"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "coast",
+      "source_tag": "approved",
+      "z": 323
+    },
+    "shipyard": {
+      "bbox": [
+        670,
+        287,
+        800,
+        374
+      ],
+      "body": {
+        "path": "masks/shipyard-body.png",
+        "sha256": "45ea9109d13bf49079520866ae5774c6613115491206cd611d9a1907a111cacc"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        702,
+        323
+      ],
+      "frame": {
+        "path": "frames/shipyard.png",
+        "sha256": "12dd472e5bac6eb675d5fbd474ece0023b67e0c8d3713c8626c2b2d9c2eae1f2"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "coast",
+      "source_tag": "approved",
+      "z": 323
+    },
+    "special1": {
+      "bbox": [
+        227,
+        29,
+        306,
+        144
+      ],
+      "body": {
+        "path": "masks/special1-body.png",
+        "sha256": "b7f219dbe5a54bdbd4eb2be62d7b37b70feb80f1e15125bfacd3d06949cf0292"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        265,
+        129
+      ],
+      "frame": {
+        "path": "frames/special1.png",
+        "sha256": "be7a3764537a35c1d89fed3b14811995a4db5ec87fb711ef3c7017d9a75da3c2"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "memorial",
+      "source_tag": "approved",
+      "z": 129
+    },
+    "special2": {
+      "bbox": [
+        3,
+        145,
+        168,
+        226
+      ],
+      "body": {
+        "path": "masks/special2-body.png",
+        "sha256": "485630aeb8c538169abf8dce27bd676c6a835fb6297d3265c0ecba7a950d52c3"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        91,
+        213
+      ],
+      "frame": {
+        "path": "frames/special2.png",
+        "sha256": "d7b03c506bd75fca0b7d4e967d455f0dac16197e503a8029cb5d922edd72fccf"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "rockbears",
+      "source_tag": "middle",
+      "z": 213
+    },
+    "special3": {
+      "bbox": [
+        170,
+        138,
+        311,
+        213
+      ],
+      "body": {
+        "path": "masks/special3-body.png",
+        "sha256": "540e6980f793811ddb89b4efc58b9a8971e39dd5b2b897f1e59bfbbdcca2bad8"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        245,
+        201
+      ],
+      "frame": {
+        "path": "frames/special3.png",
+        "sha256": "39f9818faa56904ad5f3a244f56a117e61555a4c6f2fef3dd57348ae38d34b0b"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "sculptors",
+      "source_tag": "approved",
+      "z": 201
+    },
+    "special4": {
+      "bbox": [
+        10,
+        0,
+        220,
+        137
+      ],
+      "body": {
+        "path": "masks/special4-body.png",
+        "sha256": "3039e04b452a9dd92615e94695166f00b004227b81700758880b586b7cc8affa"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        67,
+        109
+      ],
+      "frame": {
+        "path": "frames/special4.png",
+        "sha256": "62246433e5b177f9dc0f10fca51d5460538fdecb7fb003d0e3aa75bafdc252a5"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "colossus",
+      "source_tag": "middle",
+      "z": 109
+    },
+    "tavern": {
+      "bbox": [
+        573,
+        214,
+        765,
+        323
+      ],
+      "body": {
+        "path": "masks/tavern-body.png",
+        "sha256": "5e8c06118072d6908d5284afecffc6e556ec0189960ca9085912ef0649e4c032"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        665,
+        310
+      ],
+      "frame": {
+        "path": "frames/tavern.png",
+        "sha256": "82ff019e9a02dcbbd93a3f2c0c896cb7ec292da5dc565d0a4f78403e84b79932"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "tavern",
+      "source_tag": "approved",
+      "z": 310
+    },
+    "townHall": {
+      "bbox": [
+        304,
+        34,
+        501,
+        149
+      ],
+      "body": {
+        "path": "masks/townHall-body.png",
+        "sha256": "1a9ac80b01d1482dced78122e8348b37f070db0e0a897d26352ae079e140ba3e"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        395,
+        133
+      ],
+      "frame": {
+        "path": "frames/townHall.png",
+        "sha256": "ad815d15ef601e9463f8fecc5fcc05db4b5bd9c5398ef4a8552b5b34a8434fe0"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "civic",
+      "source_tag": "middle",
+      "z": 133
+    },
+    "villageHall": {
+      "bbox": [
+        304,
+        75,
+        501,
+        149
+      ],
+      "body": {
+        "path": "masks/villageHall-body.png",
+        "sha256": "fb254c038629bbc3f0bf9e3ba67ed9ba2159f45384d9bd691d5bfb095ac47f9a"
+      },
+      "body_alpha_values": [
+        0,
+        255
+      ],
+      "entrance": [
+        395,
+        133
+      ],
+      "frame": {
+        "path": "frames/villageHall.png",
+        "sha256": "84d52fccc10f13c3122ec9ee6b18a4e1012bfa7a3635a0b5452f10ba90ee78a2"
+      },
+      "semantic_limit": "Full form includes own contact court/steps, not only opaque wall pixels; exposed click body needs final inspection.",
+      "site": "civic",
+      "source_tag": "early",
+      "z": 133
+    }
+  },
+  "status": "authored configuration"
+}

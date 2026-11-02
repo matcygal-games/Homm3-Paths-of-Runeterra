@@ -1,0 +1,165 @@
+{
+  "definition": {
+    "category": "ranged",
+    "comparison": [
+      "core:archMage",
+      "core:zealot"
+    ],
+    "equipment": [
+      "angular-headwrap",
+      "layered-mantle",
+      "shoulder-bands",
+      "ampoules",
+      "armored-bracer"
+    ],
+    "family": "crimson",
+    "height": 1.92,
+    "native_height": 84,
+    "nature": "living",
+    "silhouette": "Open angular headwrap, broad layered black mantle, segmented shoulder bands, reinforced forearm and three hanging ampoules; wider upper silhouette with long uneven robe panels",
+    "tier": 5,
+    "two_hex": false,
+    "upgrade": true,
+    "weakness": "Distinct one-charge action-cost Basic Curse casting pose; no free cast or transformation",
+    "weapon": "ritual-knife",
+    "width": 0.29
+  },
+  "emblem": {
+    "policy": "Leave emblem fields blank in guides. Obtain a genuine official Riot Noxus emblem, preserve exact source URL/bytes/hash and permissions before final painted art. Never invent a crest or reuse Demacia heraldry.",
+    "sha256": null,
+    "source_url": null,
+    "status": "blocked-official-source-provenance-required"
+  },
+  "generation": {
+    "image_generation_used": false,
+    "model": null,
+    "prompt": null,
+    "provider": null
+  },
+  "model_sheet_type": "editable volumetric rig + transparent pose guides, NOT painted art",
+  "native_groups": {
+    "0": {
+      "action": "walk-contact",
+      "minimum_guide_poses": 6
+    },
+    "1": {
+      "action": "fidget-equipment-check",
+      "minimum_guide_poses": 4
+    },
+    "11": {
+      "action": "melee-up",
+      "minimum_guide_poses": 6
+    },
+    "12": {
+      "action": "melee-front",
+      "minimum_guide_poses": 6
+    },
+    "13": {
+      "action": "melee-down",
+      "minimum_guide_poses": 6
+    },
+    "14": {
+      "action": "channel-release-recover",
+      "minimum_guide_poses": 8
+    },
+    "15": {
+      "action": "channel-release-recover",
+      "minimum_guide_poses": 8
+    },
+    "16": {
+      "action": "channel-release-recover",
+      "minimum_guide_poses": 8
+    },
+    "2": {
+      "action": "idle",
+      "minimum_guide_poses": 1
+    },
+    "3": {
+      "action": "hit-recoil",
+      "minimum_guide_poses": 4
+    },
+    "30": {
+      "action": "action-cost-basic-curse",
+      "minimum_guide_poses": 6
+    },
+    "31": {
+      "action": "action-cost-basic-curse",
+      "minimum_guide_poses": 6
+    },
+    "32": {
+      "action": "action-cost-basic-curse",
+      "minimum_guide_poses": 6
+    },
+    "4": {
+      "action": "defend-brace",
+      "minimum_guide_poses": 4
+    },
+    "5": {
+      "action": "death-collapse",
+      "minimum_guide_poses": 6
+    },
+    "7": {
+      "action": "turn-toward-viewer",
+      "minimum_guide_poses": 4
+    },
+    "8": {
+      "action": "turn-back",
+      "minimum_guide_poses": 4
+    }
+  },
+  "painting_contract": {
+    "acceptance": false,
+    "camera": "One measured uniform camera/placement correction per action atlas, preserve every source and rejected revision; no per-frame stretch, warping, auto-fit or idle-as-action",
+    "continuity": "Use each unit's own model/upgrade definition and all actual pose guides; preserve joint contacts and independent silhouettes",
+    "required_capability": "ChatGPT image-generation skill / built-in image_gen.imagegen or human painted masters",
+    "review": [
+      "transparent background and no baked floor",
+      "ground contact at native pivot",
+      "no cross-cell contamination",
+      "whole action semantics and projectile release",
+      "base/upgrade silhouette and equipment distinction",
+      "genuine Noxus emblem legibility and provenance",
+      "native original/Demacia comparison",
+      "real native runtime review"
+    ],
+    "status": "blocked-missing-painted-masters",
+    "style": "Original Heroes III native painted/prerendered treatment, restrained highlights, matte iron/crimson/black, upper-left lighting; not glossy modern 3D, flat vector or splash art"
+  },
+  "pipeline": [
+    "art_creature_rigs.py actual Blender assembly",
+    "all groups keyed as genuine skeletal poses",
+    "art_creature_sources.py --review fixed whole-cohort uniform native conversion",
+    "painted master production BLOCKED",
+    "source pins and native action review BLOCKED",
+    "coordinator-only manifest selection, assembly and runtime acceptance NOT PERFORMED"
+  ],
+  "production_recipes": [
+    {
+      "path": "assets/recipes/creatures/crimsonAdept-battle.json",
+      "sha256": "387776081b1021247a487a6d0caf9c754463ebdbcd377877749ed2fe8910aab9"
+    },
+    {
+      "path": "assets/recipes/creatures/crimsonAdept-map.json",
+      "sha256": "5d592dece4f97313b68d0561662232ab04c82862b239e07fa55c0617a96dc8cd"
+    },
+    {
+      "path": "assets/recipes/creatures/crimsonAdept-large.json",
+      "sha256": "54f57da275098e4868c5046b56d2d939df489cc2f59e0b0a19bc75fc7753d29e"
+    },
+    {
+      "path": "assets/recipes/creatures/crimsonAdept-small.json",
+      "sha256": "984a16939ebd5d2714ade3981d937f64e7608b335d94abe0f77d3c9af40754f6"
+    },
+    {
+      "path": "assets/recipes/creatures/crimsonAdept-attackLeft.json",
+      "sha256": "d96ea72e8255eb5cb29ba6f99913e7ee16fb776bc8d8f5d3450cecf720a741a1"
+    },
+    {
+      "path": "assets/recipes/creatures/crimsonAdept-attackRight.json",
+      "sha256": "d4254640cbf460adc1d8dbd660afcd21b9f68c09fd15a52c3ed06887c46dc63b"
+    }
+  ],
+  "status": "authored configuration",
+  "unit": "crimsonAdept",
+  "visual_approval_granted": false
+}

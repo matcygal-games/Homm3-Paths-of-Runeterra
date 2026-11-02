@@ -1,0 +1,938 @@
+{
+  "active_integration": false,
+  "background": "assets/source/town/cohesive-city-20261027-v1/background/master-v3.png",
+  "background_sha256": "f1c233242fa37dd9e993646def88f2af9fe9fdb4e70050e15bacb6d453ae6ff7",
+  "candidate_design": "assets/source/town/cohesive-city-20261027-v1/full-silhouette-plan.json",
+  "candidate_design_sha256": "019a5d8555ba8b2a992706afa006e2bf08f968b67c1a57c67e464cf59989bb71",
+  "content_z_patch": "assets/source/town/cohesive-city-20261027-v1/content-z-patch.json",
+  "content_z_patch_sha256": "d878a9e0d062a592d82fedbcfb7645439fd35cca1d093f83e4725bbc1972fed7",
+  "converter_runs": 2,
+  "geometry_checks": "build/reports/town-rebuild-20261027-v1/geometry-checks.json",
+  "geometry_checks_sha256": "43e85e1a4a616b4bf6739f51afe2cc77be7e58f15826e92b54a1ffe8a5a03e70",
+  "layout": "assets/source/town/cohesive-city-20261027-v1/town-visuals.candidate.json",
+  "layout_sha256": "dd124123a8d35040712bd03a800b8350a4cd42bb7877e75dd76e8cad40ef3199",
+  "native_verified": false,
+  "output_determinism": true,
+  "physical_outputs": {
+    "Content/Sprites/runeterra/zaun/town/background.png": "f1c233242fa37dd9e993646def88f2af9fe9fdb4e70050e15bacb6d453ae6ff7",
+    "Content/Sprites/runeterra/zaun/town/buildingIcons.json": "27a93110237d986a28786cba1d6557daa62c7185c07c4c56c63896977721a8ad",
+    "Content/Sprites/runeterra/zaun/town/construction/blacksmith.png": "f4c526ab80d9bb388bed2cef4e850549598845b6d88d7754a0292bb1d4db3aac",
+    "Content/Sprites/runeterra/zaun/town/construction/capitol.png": "5afeac7ff7e96c2212a45197b990b765893ec0b8fe16d4c8d5079c4baa2827e8",
+    "Content/Sprites/runeterra/zaun/town/construction/castle.png": "615ed97c81ab1184c3009e68fa4da9efa5b37ad89cfc7b5a970104d7f17710a2",
+    "Content/Sprites/runeterra/zaun/town/construction/citadel.png": "be187e831829db417c1190ce0d21c30389f1a19887557b001ada527bc5247fd1",
+    "Content/Sprites/runeterra/zaun/town/construction/cityHall.png": "63ea25a016e7ab225ab1e2ff05628244aa55f0a1181913190e9711de34fe0e02",
+    "Content/Sprites/runeterra/zaun/town/construction/dwellingLvl1.png": "80e8280687b3b0ca918db22154612c257e5d8bc4f6118c607ee35a2cd73f3a3e",
+    "Content/Sprites/runeterra/zaun/town/construction/dwellingLvl2.png": "697e26276672becc7fe1d49163153c93b6923ff8577fb5db16f09b4903006ced",
+    "Content/Sprites/runeterra/zaun/town/construction/dwellingLvl3.png": "162fc000977a3187c43d446148ae5fd9dd2dff25002e3ee0387af7192fa10a08",
+    "Content/Sprites/runeterra/zaun/town/construction/dwellingLvl4.png": "d71b768101ddc2ad285e23e514b3251a0659e43f0846697b033a2b1000abbb57",
+    "Content/Sprites/runeterra/zaun/town/construction/dwellingLvl5.png": "aeefd91f8170ea6343c6b84add196dd4c2a0f86288dac732d39f9d640615e63a",
+    "Content/Sprites/runeterra/zaun/town/construction/dwellingLvl6.png": "cb02605945e568d4ad2ad56c17dfc2b2afc57f6858d1c051b0f0e07e7be7beda",
+    "Content/Sprites/runeterra/zaun/town/construction/dwellingLvl7.png": "2ce143d840636adb98b33b195e6f6c3158f4c8765ae49b536eaea82d8288b5d1",
+    "Content/Sprites/runeterra/zaun/town/construction/dwellingUpLvl1.png": "1ea37f4b71b5ab6cc1b6490b10d31c1d3ed9e56a4e22d83fd94da1025d79b7ec",
+    "Content/Sprites/runeterra/zaun/town/construction/dwellingUpLvl2.png": "f6c4600e51ff90ba56f2f62ec3fbcaccc3ce6506938b18578b96603e9d99df61",
+    "Content/Sprites/runeterra/zaun/town/construction/dwellingUpLvl3.png": "01a5eb3efb1e8bacbfaee911be719e18d1e5096f8cbff1e8a010e872e17d97be",
+    "Content/Sprites/runeterra/zaun/town/construction/dwellingUpLvl4.png": "e97efb0759aceeac86b52f8a989988119f6dce84d00bce7c4dfb453e7b21c576",
+    "Content/Sprites/runeterra/zaun/town/construction/dwellingUpLvl5.png": "f39aee628bb30603ca842d58f81d220c2910b9c1b73d096244ddcbf31496733b",
+    "Content/Sprites/runeterra/zaun/town/construction/dwellingUpLvl6.png": "1193c3a9d73d364bd0c5de8f82c87ac0f0c4c8b726ac27de57af89a63a134f22",
+    "Content/Sprites/runeterra/zaun/town/construction/dwellingUpLvl7.png": "6a2de8d55a4bb15c60f12310b18d000aae5d937b3cadd116e7880780874de42d",
+    "Content/Sprites/runeterra/zaun/town/construction/fort.png": "e4357bc79d75d2ce13ad306c0f06398774fa8b013afa0f5b45f1d02e47eacb6c",
+    "Content/Sprites/runeterra/zaun/town/construction/grail.png": "f24c627908ed232775ba188438cb6f245fd8b80273cbd824ee7ce12db1782495",
+    "Content/Sprites/runeterra/zaun/town/construction/mageGuild1.png": "08b94a56432ce0c2552d7a1f4bea2cffe072e98271f9c2d604f509dcb24c0cdb",
+    "Content/Sprites/runeterra/zaun/town/construction/mageGuild2.png": "0a8bababc6abe5a60d9e486072169d08e2943ef10ac60401c7e759d949f8cbcd",
+    "Content/Sprites/runeterra/zaun/town/construction/mageGuild3.png": "e2943e46e2e7092db9f1fb8490c8487fb106a3d2c4409dc3ef08fd2f7ae3f16b",
+    "Content/Sprites/runeterra/zaun/town/construction/mageGuild4.png": "c42120e0338969df83b09de587195de72f8489812b7931d53aa7a305141f1ecc",
+    "Content/Sprites/runeterra/zaun/town/construction/marketplace.png": "790ff73061b13f322d5fd99ae41466de54c12ba89b9739130bfeb7056af2a016",
+    "Content/Sprites/runeterra/zaun/town/construction/resourceSilo.png": "f055b3069a97fd559784125a9dd44aaec7637f06c94bfe365b7f8b90bbbab0cd",
+    "Content/Sprites/runeterra/zaun/town/construction/ship.png": "9d746875b429e4317f4cc3e437d1e66f4bb24dd914612031af9a80a026909bc0",
+    "Content/Sprites/runeterra/zaun/town/construction/shipyard.png": "cdbb813855d789b22cc66d19d70dbab81c44e94842d4d43c90667bba7107ca62",
+    "Content/Sprites/runeterra/zaun/town/construction/special1.png": "d736b498004f08a0485e6986b3231a6364d0cc8925de6986e0c24f7236f50780",
+    "Content/Sprites/runeterra/zaun/town/construction/special2.png": "73573eaf397dea964c0d2e2f615e2ac2557306a85e151511cf4fd38593ce15ea",
+    "Content/Sprites/runeterra/zaun/town/construction/special3.png": "c0185c560647a3a67bdcda2b52b3dc5f0fc9bc11c0749d764c6c12fd988e4f9d",
+    "Content/Sprites/runeterra/zaun/town/construction/special4.png": "665b3edcf535723c7806b661d8129cf8dbb53caac5e802038e4bbaee2d18a51e",
+    "Content/Sprites/runeterra/zaun/town/construction/tavern.png": "732319fe344a33839815785985eb4937521af0f69ef13350142f0f682b899bfb",
+    "Content/Sprites/runeterra/zaun/town/construction/townHall.png": "89fcebe34e39fbe79849bed0b0d512d3deefebd5d570d1fa4f88222e82e1aced",
+    "Content/Sprites/runeterra/zaun/town/construction/villageHall.png": "43f43beeef29af8cff450cfcff46e5d11110525d5ad26e3e0747d7eac6827069",
+    "Content/Sprites/runeterra/zaun/town/structures/blacksmith-frames/g00-f000.png": "bcee23815c42c4e1b801efc058f0efd867f73b282cee55a95e7bc2c8ba528a28",
+    "Content/Sprites/runeterra/zaun/town/structures/blacksmith.json": "566691592ddd0b769350dabeecdb1bdc8017cf1188f96af2ec642eae597ae9b6",
+    "Content/Sprites/runeterra/zaun/town/structures/blacksmith_area.png": "d5523dad0ea7f06e7d60da65fe4448edc4b242d9c4cda780b5b03500a7de56c0",
+    "Content/Sprites/runeterra/zaun/town/structures/blacksmith_border.png": "63038764065f3e719103bca2cfc9c4f70edc292a083c387c7e2567d87cd3e448",
+    "Content/Sprites/runeterra/zaun/town/structures/capitol-frames/g00-f000.png": "6e04a9f4f32cfc40df3f1b39c580cb35b47f67855f9897c0b6eaa4fdde6e2d06",
+    "Content/Sprites/runeterra/zaun/town/structures/capitol.json": "4295d34ddb1a37fd5ea0cbc0294372b45b993d937a37e6a8a3e296657efd6e0e",
+    "Content/Sprites/runeterra/zaun/town/structures/capitol_area.png": "9f53399305648790b69ec9aad060982cdb42786cf19cf4b566589324447d517f",
+    "Content/Sprites/runeterra/zaun/town/structures/capitol_border.png": "f0290fcf2e6f8a451e3fa996fe0032d7670a26b60ebc406b75cef3558aad4f89",
+    "Content/Sprites/runeterra/zaun/town/structures/castle-frames/g00-f000.png": "dc291e4602c8e6d758d023aaa53892e3c0c48aecdc4d75fe0f72b71eac032b09",
+    "Content/Sprites/runeterra/zaun/town/structures/castle.json": "03b1bb35f8afb3e2b667f1a7b87eedc59cd15875a2c2f53ab8c8f25c401039f5",
+    "Content/Sprites/runeterra/zaun/town/structures/castle_area.png": "d6220101df5139403543fcdfb449d973af40ec61c3a11e2634efd876a61cef6b",
+    "Content/Sprites/runeterra/zaun/town/structures/castle_border.png": "a768088ee10ae04fc7aff901f0fae20ab0b095092d4897a4c1a2f438b6df9066",
+    "Content/Sprites/runeterra/zaun/town/structures/citadel-frames/g00-f000.png": "ce9f2cde94d436371b85b30b7a7ef64a9694e937f7972c782dd518d5c92f6757",
+    "Content/Sprites/runeterra/zaun/town/structures/citadel.json": "fdb5ddf74b884f2bc7d77f49b5110f6f8f3c8556368ac6cddb8953333e57c554",
+    "Content/Sprites/runeterra/zaun/town/structures/citadel_area.png": "ca41b463dff5d662e46f55022d826657824f117885edbcc8dcdf85eea0775a5f",
+    "Content/Sprites/runeterra/zaun/town/structures/citadel_border.png": "9e73efa51a379908d4c478bed4e7b296a101eee3a854756206e7840d8f29b91c",
+    "Content/Sprites/runeterra/zaun/town/structures/cityHall-frames/g00-f000.png": "2de86e93c716cf714fff7489e6b906a53d8b4ee0af4f05ecf6ddcbcf44736204",
+    "Content/Sprites/runeterra/zaun/town/structures/cityHall.json": "9b683761276c3556064c31010d22ec3d11155c1f0fce1ce0ee250629b1f5658c",
+    "Content/Sprites/runeterra/zaun/town/structures/cityHall_area.png": "e6cf993e0db6c91f1a85c66d3bf63a9bb860802f60116334954685047e9ef95c",
+    "Content/Sprites/runeterra/zaun/town/structures/cityHall_border.png": "2b140aabb7a50a371a56545edd6c4b11270cea8fcd4c23a163e9769bc6368afc",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl1-frames/g00-f000.png": "581e2c81daae828071c57e4e5057b37da2affae7258c75d3444f5a40c58522b9",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl1.json": "84a59895b1c13ed7323ca0864dd8fe923b0c4ddcfd553ec328cdecb531283b62",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl1_area.png": "6a75230ee7beacdaac971c3f62999f748e1578697a8ecb75bc3dadbf3694e8de",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl1_border.png": "55b7865ca38c4f905cbe4adf78fc25291a84877b540c3b32634f27c8e5559497",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl2-frames/g00-f000.png": "cb68b4fda68b1a663239e6222a20c556b0d1f108debd5c96281e395f0318a9b3",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl2.json": "436532fe6463717bd105ebcd591ad96aabf6b22604189d7ef34a325b96e9d9fd",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl2_area.png": "2c78b97b8517e7d1701e5ba45171cad3b4f08731489b9975f8eefa6a21a75cf4",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl2_border.png": "de6dc8b68161b8003d135859789e62c728644f97a832da04073184b4391c2662",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl3-frames/g00-f000.png": "be0b63cb9aa2f9998a7fa4cea7879ba1165f1ec7df9a8e53f8e94b4750d22d90",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl3.json": "bdd3796b10486051c01b83a9c360a27fbbb148a9ef36c34fdd8dac9a9b41af81",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl3_area.png": "350d9e3c211a050b2eabdd7fab5eaf21be6fa3964d775ef6686a04f5591f4752",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl3_border.png": "8b05e98253c40849f050b909dd9ca81b7d0b7db8eeaafb8e43fecf46481ffc7b",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl4-frames/g00-f000.png": "d4589f0d7d4efe004dd4a48c8b6a207cfced50858a6c35cb90f497fc9a801adc",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl4.json": "168d7190d74ec9cb79621f71964598a1880123c9043eedee895e628cd0549264",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl4_area.png": "18e8ff45007426251513cf21be30bb21ac4db964cd0dc3eaae161fc90c2bee57",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl4_border.png": "8ada1125ad75e8273dae869e4e1739168a946148f7fb69321eb505c0fbbd6a79",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl5-frames/g00-f000.png": "9d55172f789619fef59d07f369f53190dd5c77a85b7172f9b3234db3bb1c6dc2",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl5.json": "dc659c4767585d21642be38028cf3f397408946414d8a128354e3edbc9f9125d",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl5_area.png": "43deb10b2bacb63e0b83aa96095c4c61edb40ec828df8988774837b673cdade1",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl5_border.png": "1870b2b4bd00878f307998f90165005a0eb74c6a516b5bec3e68bdc82d50118e",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl6-frames/g00-f000.png": "d48e0a47353722927f62d1b145275092d5b79e11a6f71b9b240f48cc4f524ced",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl6.json": "d2dd5baf262609ab732cd9adcb2af11f341ad1ecb9bce9ec6bee4ed77e7e0474",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl6_area.png": "b5df7f85f366d2e8a882f34c0d38b80ad338fd34652796f54eb5cf3de168f41c",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl6_border.png": "b16a38e93a69549002564bb78f2f6ab348abd7cae6bbf21506f9eb6593865459",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl7-frames/g00-f000.png": "769a4aa282ef42de717974ffe8b0010544338f6e1c90c7b987709df8fde940f6",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl7.json": "799534c3cd536e2cf41d0379b676afd006fd8937f0d1a8d32af6eb27c2f627ea",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl7_area.png": "af4946e640ef2a842b93011e8d29258123fc6a6e83ba53a7ec58c8f043cd5f84",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl7_border.png": "1a875c20357a6265b0a8a5f2740db3d884a3577f91c8a6ef5fe7a5d9f519d11c",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl1-frames/g00-f000.png": "48cf76d1518325b1453af653ea0db1eb329d38d175b224ae4ffe97d26f9e770a",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl1.json": "33609f9f5618d9ad33b307e99af936671b97f058599c460dd2396efd1c466f96",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl1_area.png": "4a8366f6d1e20e6681fb5bf7a02f5c42bc536ddfdbc2239d1ece6378285b80f1",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl1_border.png": "5ff6f7d756f37226e607eafc62d3ca9cdf343eb7a1cfa37aba851f0f9f50b8fb",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl2-frames/g00-f000.png": "ae49c5480d25f7f0fb22ad40bf716972ddab97a2480c9f58f6888512ec770b86",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl2.json": "e3623fe6e164382db0a98fe7962ae373abbd34e16f5948addeafd72a25e32526",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl2_area.png": "9292c81a4209605afb6396f65e8ecce77f5c0d219b78b5edd2cf501ba6763379",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl2_border.png": "f99c6e36fbc9cd4d5e6a74f16e991eda790ba23b9075b2ee89c439d820ecf079",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl3-frames/g00-f000.png": "01ae16ffa9b2266e5a28fd238fe082f576e2b2021f44e54793c1f0aa6decbb21",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl3.json": "7d9b901caba5898b80083ab634c0b014b341c2f8691edfe0251d865d1da650cb",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl3_area.png": "7cf0b861c97eea71aeb0af0b36f616f04a02a58b18253a9cc3a6d890dfa51c76",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl3_border.png": "674d8a611b995e22032f347fa8412ba7ea13ed903188b51690b5df431f729344",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl4-frames/g00-f000.png": "2c09ab762900425c8d6905082ff1345e942aa0a2d7ba7eaab80cca3d7d641450",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl4.json": "a74ef00e55ec658a2bf7df9d197dcbcbc4aea38624fa430b78cce03ca4e50020",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl4_area.png": "a46a318b749691d55c7a61ff0e1b40591f3e1040930b4d016ee3c069770a4b07",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl4_border.png": "b437b538dc5f03ef3f94d9e63794fbe8e15d8cca8b6d2a506493b6c285a545fe",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl5-frames/g00-f000.png": "df5a36cad60c9dcf423be4da0d5d961806b75c1f3a54a8f0734682a28c1cf604",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl5.json": "e313a7b040b710404bbfadeb17ad97982e7b555b469d1e03e70745fa783cfbfc",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl5_area.png": "813efe179d28548679338067d48f84a5138ad0059514c420ed3eea333625f8f9",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl5_border.png": "1c9505132c9a3f015fe1bcd8ebdb9f1165c7cc6ed245ddf4866f1667110d3a92",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl6-frames/g00-f000.png": "96d65164693df35890eebc4b9614bb360f8a9b93bf5010fbca059eb633c5d4e2",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl6.json": "96fbfeaf68ce7f7144bb99f07415aa1cd9f1729db45cfec051ce909f0e9d90d8",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl6_area.png": "76d8850536680ae95f1ac1addbb66d1cab4bb15be902d8c9722d30b3f5a6cc63",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl6_border.png": "8d197f2585a56999adb7352c9ee9916c79cec88e53c3ad744044f3f3b4102cb7",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl7-frames/g00-f000.png": "6ae5729e84cc8bdc985ff8e04bc997f4c0462fb68a75f2ff23ca3d1b04af2c9c",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl7.json": "3a58ec8c2566360e59130b958de83530a9f2c421f3b76d3d66a2112d289f7fcf",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl7_area.png": "0f272f60923f615851f7c2f485a5c10979a8cb71e1390f4ee08205fff4cd5bd1",
+    "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl7_border.png": "12d12b85cfad3e071b4f23636057fff31a8330a2df29657b5233849cbb175322",
+    "Content/Sprites/runeterra/zaun/town/structures/fort-frames/g00-f000.png": "e4d1d272beb9be7e00bb83d5cf53ae3a4b06be6156ebc9a5037710f86c25a4c2",
+    "Content/Sprites/runeterra/zaun/town/structures/fort.json": "313ebd8baa4eda3b0b098a81b430d4c91d30627d17befd95f619bc59339cc0a4",
+    "Content/Sprites/runeterra/zaun/town/structures/fort_area.png": "762709b94d1e1c61a81183285998a1ba9d29ec4a5cf4bac3db3d6b43fbeafb35",
+    "Content/Sprites/runeterra/zaun/town/structures/fort_border.png": "74ce2cee861091e723e0bcc0aeb948bd7e99e4bce7789bdc1d33736518932627",
+    "Content/Sprites/runeterra/zaun/town/structures/grail-frames/g00-f000.png": "c4d9b164e561f32bb39ac5ed6b628808ce851addaccf342117751a289ffdfb27",
+    "Content/Sprites/runeterra/zaun/town/structures/grail.json": "d606e643aa86f82f559bda56d066fae2c3d263d1aa13d93995de49feb6872fb1",
+    "Content/Sprites/runeterra/zaun/town/structures/grail_area.png": "01acc3e7911b0118ebc3b3ff52d9bf642ed607e081ca965f73e6b07d353dfba0",
+    "Content/Sprites/runeterra/zaun/town/structures/grail_border.png": "02178ab129ed96998f26db99c5db51248814207f368890b5398e979fa45eae8e",
+    "Content/Sprites/runeterra/zaun/town/structures/mageGuild1-frames/g00-f000.png": "d6c1ba14b49f74daa7648f66d5c5bf889faab1d97759f24c16beb077e1bbdb8b",
+    "Content/Sprites/runeterra/zaun/town/structures/mageGuild1.json": "f8c4d406a1fe4a1b60b931af858ebdc5acf4ff2962bdaef5d5e82a833f90f0ac",
+    "Content/Sprites/runeterra/zaun/town/structures/mageGuild1_area.png": "742fc38e281752f384927b731241e8e256c630dcbef2f88cba3e4eca8c78bf1f",
+    "Content/Sprites/runeterra/zaun/town/structures/mageGuild1_border.png": "31fa2582df925242e35a86f4a2b9564def3a1af03ac7fdb6edfaa0a470067bf4",
+    "Content/Sprites/runeterra/zaun/town/structures/mageGuild2-frames/g00-f000.png": "4f9fa8240455a19b342e59d0d82587c2093f3d0715084bf8d2da41ecc742cd98",
+    "Content/Sprites/runeterra/zaun/town/structures/mageGuild2.json": "d11589748cfba4a177c2a2a683433bff3b3280f0226afac77fb1064696cee00a",
+    "Content/Sprites/runeterra/zaun/town/structures/mageGuild2_area.png": "20a070480fee293b2e66bf48c00c0ec9aa930e77b2216c15463f81349049f7e1",
+    "Content/Sprites/runeterra/zaun/town/structures/mageGuild2_border.png": "39c25f5e8a660f855863b6f714964a4d5cf238b00c08afcca9a0bb9aba43bb90",
+    "Content/Sprites/runeterra/zaun/town/structures/mageGuild3-frames/g00-f000.png": "c507ae9402ab231fd094fa26f96d437525b37df6caf7dedda5ac1b5a79a845c8",
+    "Content/Sprites/runeterra/zaun/town/structures/mageGuild3.json": "a615477755ba4c14121d09cb1572b93c4c4ecd2b6e139423420d4528df930f14",
+    "Content/Sprites/runeterra/zaun/town/structures/mageGuild3_area.png": "f6bb6a5186884993b59717e2b6a4a49d9ea20c150a6b7bd8ba90f9e09061f103",
+    "Content/Sprites/runeterra/zaun/town/structures/mageGuild3_border.png": "79c74aa2e435265abd8eadd84239ee2b9d3eae712351da9876132a49cb830e59",
+    "Content/Sprites/runeterra/zaun/town/structures/mageGuild4-frames/g00-f000.png": "e9df7e1f4a63aaebaa79848dcd74772fb86051b75012808a739b68cb4e46ed34",
+    "Content/Sprites/runeterra/zaun/town/structures/mageGuild4.json": "3d0a7d806c1d6fc00fcdb51d76cd3a4d04add4a1787fa8922a460f060e52a180",
+    "Content/Sprites/runeterra/zaun/town/structures/mageGuild4_area.png": "8a156834b8b073925f61a6fd45056e5569dce372c43eab6ae5e407f7a8c4666e",
+    "Content/Sprites/runeterra/zaun/town/structures/mageGuild4_border.png": "47623c58393ecd394a2d32730f1e0d438490becf9bb45f4a010ecd0b00485e5d",
+    "Content/Sprites/runeterra/zaun/town/structures/marketplace-frames/g00-f000.png": "face7f4695e5ebd62679cf5e163522bdebb1b9ad674c81a729bcb7068ed11f9f",
+    "Content/Sprites/runeterra/zaun/town/structures/marketplace.json": "f56b751a7423e7b09f416251955e87b55bfb056f88f010aeadc4d07fd5f9ca16",
+    "Content/Sprites/runeterra/zaun/town/structures/marketplace_area.png": "37faa005f76c289cc6b9946d8c3e6bd4bb25123827cea1f0d32f39c46a08beae",
+    "Content/Sprites/runeterra/zaun/town/structures/marketplace_border.png": "b9493967cbb7f32ecef0b07777716acae1a29954781a267812a8de95eb9943e6",
+    "Content/Sprites/runeterra/zaun/town/structures/resourceSilo-frames/g00-f000.png": "c2accae5569283350000bbad56090b77d8f794ecf36e7a7182dc761447e84dc6",
+    "Content/Sprites/runeterra/zaun/town/structures/resourceSilo.json": "9ec237cbda9a902a2d43ce201bb6a14ee7a21c1129fafc23c1a60435d05f38e3",
+    "Content/Sprites/runeterra/zaun/town/structures/resourceSilo_area.png": "82228b7c31485009ef88d7679835dba685870ab385947b9632e369d45e0e7cb6",
+    "Content/Sprites/runeterra/zaun/town/structures/resourceSilo_border.png": "42052807b9185f0cd7cd134cebdb234f0cbfdbe45d63b448303eb012f9dc6d66",
+    "Content/Sprites/runeterra/zaun/town/structures/ship-frames/g00-f000.png": "7330be72d133e43acd52dd657e15654262a1e99f9187f6d6d1b60dccdc22f0e7",
+    "Content/Sprites/runeterra/zaun/town/structures/ship.json": "cc084a52f50f12ebdba843eac2837b253ca429b3f7a4c7c6a4c2aef1be48e5e4",
+    "Content/Sprites/runeterra/zaun/town/structures/ship_area.png": "e13dbc5f9b444a7623d5a568fa7bc889367edb625d63bffea3376bf14fcc7f15",
+    "Content/Sprites/runeterra/zaun/town/structures/ship_border.png": "80e2190f82edb67eb30f4613a30611daa2175fc31cb0d5ad08a17489f0862df2",
+    "Content/Sprites/runeterra/zaun/town/structures/shipyard-frames/g00-f000.png": "070bcfe8708c2d5b83fb7e62a41b9f509afc8ff0b4b5befd5e33176e7168fff5",
+    "Content/Sprites/runeterra/zaun/town/structures/shipyard.json": "c0ea41fa6453ebb7b382f74f950e0e9bfc2d118cf6c8cab9de2d4e68ce88f9b9",
+    "Content/Sprites/runeterra/zaun/town/structures/shipyard_area.png": "bd20cc61a22bac662c71d2ae78104d892fdad89beab026255fe1c3f2d9ad4b26",
+    "Content/Sprites/runeterra/zaun/town/structures/shipyard_border.png": "758e25e099186eee8b9363303432001a817bb157c3705bdce76cd8955ccaf3ad",
+    "Content/Sprites/runeterra/zaun/town/structures/special1-frames/g00-f000.png": "15cf9f3ab5b3c863d6a9f47834facc8b00f438867b9c2b076e71c52623b4cb17",
+    "Content/Sprites/runeterra/zaun/town/structures/special1.json": "7066dd3dc167dcc3008d5c714f0a8a0630ade440173a2d5145a214f9a0734a29",
+    "Content/Sprites/runeterra/zaun/town/structures/special1_area.png": "2d1e3e173bbe917ea288847ea67f9f8302ece8f53fa72fb6666fc647feefb100",
+    "Content/Sprites/runeterra/zaun/town/structures/special1_border.png": "e8657ca920ed83f4759e3ef8e54e7891fa58ffe85b91417ce2341750567db7e8",
+    "Content/Sprites/runeterra/zaun/town/structures/special2-frames/g00-f000.png": "16dda74863c0e9820572d890f3feef12e4a55f33311ae5ce50c98ffd5b76a2c6",
+    "Content/Sprites/runeterra/zaun/town/structures/special2.json": "a8f8e596fa785799cccc6c9a33f66542474a7eae19a0ba2051707b7c9cf122b9",
+    "Content/Sprites/runeterra/zaun/town/structures/special2_area.png": "b2db96437a5cf456fdaca991c7c259067921cf5705b6efd9d5f2bfab9efa0197",
+    "Content/Sprites/runeterra/zaun/town/structures/special2_border.png": "d5d53cb1a1f52ea516b93afe33da9ab066f13968a9770db12fa2953b12c8a0c6",
+    "Content/Sprites/runeterra/zaun/town/structures/special3-frames/g00-f000.png": "3806125665942e97bcf76b6191b33cb7151b636ffe7ec145061ca962a1648fe0",
+    "Content/Sprites/runeterra/zaun/town/structures/special3.json": "cc178db1fdcb32cb97c820d75fb81b6008c7da8102686c1e72b68babea04643e",
+    "Content/Sprites/runeterra/zaun/town/structures/special3_area.png": "17a64f006402eb7c7617401e113b57cabc8bf71802da7dddc373135f63c6c3cf",
+    "Content/Sprites/runeterra/zaun/town/structures/special3_border.png": "e57186a9acbce66401246c169b160cd6c83b26fcd3fa6787c6b6daa94a414d64",
+    "Content/Sprites/runeterra/zaun/town/structures/special4-frames/g00-f000.png": "75fbfba628095d2aaa769a92223d287a4b0f76e8de4421b181128cb8c461855c",
+    "Content/Sprites/runeterra/zaun/town/structures/special4.json": "80702198499910328cd44fbb148ab01055836b22a86e344f6a3d46cdcfb5d4e1",
+    "Content/Sprites/runeterra/zaun/town/structures/special4_area.png": "49ff5abf8d175921d649cc75aee6d5472302e1b369e4cb1d59b1f442f1530245",
+    "Content/Sprites/runeterra/zaun/town/structures/special4_border.png": "10a7e6eeded5dedf0ec654075819593dea03a64171498a388c6b8b55145a93b4",
+    "Content/Sprites/runeterra/zaun/town/structures/tavern-frames/g00-f000.png": "176ee88a3878d07b416817ac08cf2c2dceed554014af6d9f1be12f0349b5a018",
+    "Content/Sprites/runeterra/zaun/town/structures/tavern.json": "5ad404d303b74d0fca0d4ea59204c8ea4da8b1e5667086270cc82fb035755b54",
+    "Content/Sprites/runeterra/zaun/town/structures/tavern_area.png": "c95fcdeba3915f5c82ca8c68b3e526eff96448416fe35f087adc55e5bc6d5ff6",
+    "Content/Sprites/runeterra/zaun/town/structures/tavern_border.png": "aa3002e3e167e92fa72ca3b7bc00ca501ff1d8d139832a0501ae1e889ed6caba",
+    "Content/Sprites/runeterra/zaun/town/structures/townHall-frames/g00-f000.png": "e6b846a0f4b35fb3d5267608ba4d003e8aadd2f901171d0535e6cb475a955911",
+    "Content/Sprites/runeterra/zaun/town/structures/townHall.json": "e0b168e2e027a5baf4f78b20593de0c349cbfeef2fa522e42b510409eca567e5",
+    "Content/Sprites/runeterra/zaun/town/structures/townHall_area.png": "d38f5d3f60e67b88da16ff7cda6819844f22dc9ddc365a057d59ca4556bee1e3",
+    "Content/Sprites/runeterra/zaun/town/structures/townHall_border.png": "089c59a70b57cc4989315717232b2c281f881ff3f8d37ec40e88dda6c1b2037b",
+    "Content/Sprites/runeterra/zaun/town/structures/villageHall-frames/g00-f000.png": "e9f6f04497bdefd38a159d66ed72d5f38371c770b58bf5202f96a35fba4d3ae5",
+    "Content/Sprites/runeterra/zaun/town/structures/villageHall.json": "b0cf6d333dbe7f63022dd3ce0719529c95c7f35818b8fad0bf3b071f4eede1ec",
+    "Content/Sprites/runeterra/zaun/town/structures/villageHall_area.png": "99f6f4d6f44af82bc78d02bab2ee4a1163d05d465801775e46d3ba864b7ba96a",
+    "Content/Sprites/runeterra/zaun/town/structures/villageHall_border.png": "a2f09403ca39b33eb6342c5ee2ad155ba2aa0112804f57c31aa2a08d7446f248"
+  },
+  "recipe_bindings": [
+    {
+      "active": "assets/recipes/town/structures/capitol-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/capitol-animation.json",
+      "sha256": "6feea45d5e7ea16201de31226431185c3e0b8f4e60b23ce23a9a660c77b0a21a"
+    },
+    {
+      "active": "assets/recipes/town/structures/capitol-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/capitol-area.json",
+      "sha256": "67c4eccb00e3f538b479b1578984a4905b3a78913f728489b0e5003e98697f19"
+    },
+    {
+      "active": "assets/recipes/town/structures/capitol-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/capitol-border.json",
+      "sha256": "f956f4c773964108ca6e2b0af072fa9079591d4dcf7577d421978aff8fbef600"
+    },
+    {
+      "active": "assets/recipes/town/construction/capitol.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/capitol.json",
+      "sha256": "e813eb96bc71c9b441784219af473c6e967315da329818761017ab8c2a791250"
+    },
+    {
+      "active": "assets/recipes/town/structures/cityHall-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/cityHall-animation.json",
+      "sha256": "03a88b58282878a7e85b43b2951dea07e5ab990df55ceb4fb0ebb979920024c6"
+    },
+    {
+      "active": "assets/recipes/town/structures/cityHall-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/cityHall-area.json",
+      "sha256": "493597870de672e3f92fce94372902581087f7bba2c578cba4d492d292e24079"
+    },
+    {
+      "active": "assets/recipes/town/structures/cityHall-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/cityHall-border.json",
+      "sha256": "73d92f4b4074d52bfcecca658b607ecbd6cf352b17ab0941e99289657797a833"
+    },
+    {
+      "active": "assets/recipes/town/construction/cityHall.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/cityHall.json",
+      "sha256": "66fcee35d155c5cad97f03369dd97206567bf2e84cb5dcda9cc79e5c1aad50ac"
+    },
+    {
+      "active": "assets/recipes/town/structures/townHall-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/townHall-animation.json",
+      "sha256": "2305aae9a1b33efe6705b837c1592db503de2387a0c09e766ed89ed1624fd591"
+    },
+    {
+      "active": "assets/recipes/town/structures/townHall-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/townHall-area.json",
+      "sha256": "530965a84d25d12dffe13d6bdd3c1a9bfa5b6c061a8be0a3d4f07b497bdedc12"
+    },
+    {
+      "active": "assets/recipes/town/structures/townHall-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/townHall-border.json",
+      "sha256": "ba5f5ea94d6a0600460827ad1a6745089930496ef9bae38c17dfec2201c2ff89"
+    },
+    {
+      "active": "assets/recipes/town/construction/townHall.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/townHall.json",
+      "sha256": "f93631471561fd6369a6251712027f11e013fb39486a90acd4cc55937e843848"
+    },
+    {
+      "active": "assets/recipes/town/structures/villageHall-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/villageHall-animation.json",
+      "sha256": "231e161e970ade2a1186cb7c7c119d16c4ba7295f3867aa610d6f2ae4815c43e"
+    },
+    {
+      "active": "assets/recipes/town/structures/villageHall-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/villageHall-area.json",
+      "sha256": "cff3e131c320026b6fcb739e824985c31a3220039fa097e00a64df006d48db98"
+    },
+    {
+      "active": "assets/recipes/town/structures/villageHall-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/villageHall-border.json",
+      "sha256": "e7cd9b7657c87475d3701f307fdcfd01838258d89c421aac0b6104a1d8bedd60"
+    },
+    {
+      "active": "assets/recipes/town/construction/villageHall.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/villageHall.json",
+      "sha256": "261ec3f411679b88e84165343a812c734033f1e3360c796fddc7e041fc9fa764"
+    },
+    {
+      "active": "assets/recipes/town/structures/castle-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/castle-animation.json",
+      "sha256": "d7d54ea7e1882807e25debdf3d6aba4e175e958749984bd84d288eff65875ffd"
+    },
+    {
+      "active": "assets/recipes/town/structures/castle-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/castle-area.json",
+      "sha256": "658172bbf8c83881ae631bd2dca4d9f19ab3741c490b9b32103bbfb3d6e4bdef"
+    },
+    {
+      "active": "assets/recipes/town/structures/castle-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/castle-border.json",
+      "sha256": "94facc1b88263b00199da4efb64381849b76374141e8de1fe34085da39c5c317"
+    },
+    {
+      "active": "assets/recipes/town/construction/castle.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/castle.json",
+      "sha256": "e715a65426b3b646eec5478ef62779d04320fce7cde0e769d0c711551594b3e6"
+    },
+    {
+      "active": "assets/recipes/town/structures/citadel-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/citadel-animation.json",
+      "sha256": "7ea7f77814fe46587bb052e76d2786a3572c8623e5a2cd4477dea816a65c7a17"
+    },
+    {
+      "active": "assets/recipes/town/structures/citadel-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/citadel-area.json",
+      "sha256": "05fe89ba0917f92d22d48c577ee87e0e20ee1d3c4ad00e49f55d7570728031da"
+    },
+    {
+      "active": "assets/recipes/town/structures/citadel-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/citadel-border.json",
+      "sha256": "34c259de841ce50d0b77923768a41f100145c1b65a6eac9c59eac59a73d2ea51"
+    },
+    {
+      "active": "assets/recipes/town/construction/citadel.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/citadel.json",
+      "sha256": "d9d2c47ae73b5e7710ccdc4d92f1f4b43802982f6d1f9143c165b3ea0534f049"
+    },
+    {
+      "active": "assets/recipes/town/structures/fort-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/fort-animation.json",
+      "sha256": "1f0e6066a3b77b6f155bbae4dd2c0206643b7ad66207cc40a64a582e7a6c18b0"
+    },
+    {
+      "active": "assets/recipes/town/structures/fort-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/fort-area.json",
+      "sha256": "56cb9d0448ce86982dce8a63457c1a2071f42857c164fead7473beb6b1a1fbfe"
+    },
+    {
+      "active": "assets/recipes/town/structures/fort-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/fort-border.json",
+      "sha256": "f2ebb0293ebf30537a451c33978e2a8b0551217d640bc846fa380bd0983c96d9"
+    },
+    {
+      "active": "assets/recipes/town/construction/fort.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/fort.json",
+      "sha256": "602a26834e0864a3e6cacab6932d1a7391c9447c0510953379158f695a4b58a5"
+    },
+    {
+      "active": "assets/recipes/town/structures/mageGuild1-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/mageGuild1-animation.json",
+      "sha256": "158eea0850a7b99a62f7fd11807f4129cbc9b82b730257c4c899490ccf99a5bb"
+    },
+    {
+      "active": "assets/recipes/town/structures/mageGuild1-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/mageGuild1-area.json",
+      "sha256": "87b878723e8cf09767a22876eebd759aa7a27ee27ae296dc05f07d9cff0d40fa"
+    },
+    {
+      "active": "assets/recipes/town/structures/mageGuild1-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/mageGuild1-border.json",
+      "sha256": "b8967b4358b69f6dbd1b7eaa49349b1dccae27628d0dcf3f5ee01d010e34cc01"
+    },
+    {
+      "active": "assets/recipes/town/construction/mageGuild1.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/mageGuild1.json",
+      "sha256": "f4ac4438f35e6a9a7d10868a713d99783c5ce7b7d919ecfeb968026ff89aee08"
+    },
+    {
+      "active": "assets/recipes/town/structures/mageGuild2-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/mageGuild2-animation.json",
+      "sha256": "a629955c7f35d69d467d87710bf470599a9e31cd0d2460347f09521b365c485b"
+    },
+    {
+      "active": "assets/recipes/town/structures/mageGuild2-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/mageGuild2-area.json",
+      "sha256": "01802ee6506fb2d653e708dcfa0ef1f9444ad338afbea550cfb99a5974cff917"
+    },
+    {
+      "active": "assets/recipes/town/structures/mageGuild2-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/mageGuild2-border.json",
+      "sha256": "0c64ec80b70a24eb1feb049c700effb7ec4e1d1a5bae98ee3dc31730cae2decb"
+    },
+    {
+      "active": "assets/recipes/town/construction/mageGuild2.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/mageGuild2.json",
+      "sha256": "06d9fe68541c0dfd54cf1c9a83fd775547372ade262988501662e833d0d24b64"
+    },
+    {
+      "active": "assets/recipes/town/structures/mageGuild3-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/mageGuild3-animation.json",
+      "sha256": "51d622cd0c806eadba5effd80646e99025f048320458c0c9ff511ee3e4d0d2a5"
+    },
+    {
+      "active": "assets/recipes/town/structures/mageGuild3-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/mageGuild3-area.json",
+      "sha256": "c7f434c01942cb5b9fe4afe3579eb117500ce471f1857a34f7d5f2c645aa3f2e"
+    },
+    {
+      "active": "assets/recipes/town/structures/mageGuild3-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/mageGuild3-border.json",
+      "sha256": "c5798dcb16e50a2364713481082e9101141f4123784ed26e527e28beb61d47e9"
+    },
+    {
+      "active": "assets/recipes/town/construction/mageGuild3.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/mageGuild3.json",
+      "sha256": "927ae8843347e27b0d0bf66e025aee22360d206e81a11029d019e96a91479a23"
+    },
+    {
+      "active": "assets/recipes/town/structures/mageGuild4-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/mageGuild4-animation.json",
+      "sha256": "4f6dfcbde997f5215ce58305ebfa416d275a4b5d99e961567bc22c0fcc0014ce"
+    },
+    {
+      "active": "assets/recipes/town/structures/mageGuild4-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/mageGuild4-area.json",
+      "sha256": "da48431e333e644b53b7f1ed016cb47b5ea042a640010fbaec10aa3d819e5c8a"
+    },
+    {
+      "active": "assets/recipes/town/structures/mageGuild4-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/mageGuild4-border.json",
+      "sha256": "4cdd20edd0257167a131254988f2b5349317675a5bbcbc979cf53838d7430a0f"
+    },
+    {
+      "active": "assets/recipes/town/construction/mageGuild4.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/mageGuild4.json",
+      "sha256": "f10257e331135ab1ffa277dae39c575c426ea2a3b7ebc7788e891338f93a3578"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl1-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingLvl1-animation.json",
+      "sha256": "abab331950701b5663be96391f98d518e2904329554a24f8c31dad19f4781715"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl1-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingLvl1-area.json",
+      "sha256": "5c10dea017ad42b703ada6bbb1e02e917cf794139b9fb86ded831e309aecdc94"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl1-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingLvl1-border.json",
+      "sha256": "c1b10eaf2d28501759a7bb32b22bafd3a9467254993438253ba18928524ab4ac"
+    },
+    {
+      "active": "assets/recipes/town/construction/dwellingLvl1.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/dwellingLvl1.json",
+      "sha256": "ca7be3cacb6bbb0adad32e06de0f09ed9d39659623bc792580bb0e5c05873a8a"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl1-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingUpLvl1-animation.json",
+      "sha256": "f5ce1ca943a8557c3f3446499a1758aa78d6349239b83bf1a8d5a0e24f9b9c6d"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl1-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingUpLvl1-area.json",
+      "sha256": "492d62c4e59a9729055af60b69aae84570e43be06f3281480fa19c456efb3a4c"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl1-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingUpLvl1-border.json",
+      "sha256": "dc4c94cd32fe8b882f3ab1c952a5ae962240e85ba6c5e84d3f1c63b76512dd0e"
+    },
+    {
+      "active": "assets/recipes/town/construction/dwellingUpLvl1.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/dwellingUpLvl1.json",
+      "sha256": "68358397f504364b6c8a4bb4b71ab84356193e7e85d3f165cf010f45c56dfc27"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl2-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingLvl2-animation.json",
+      "sha256": "b634b984793b9ae4f5c84e34a1052b37f2855d38330a2cc52793e2186efc2507"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl2-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingLvl2-area.json",
+      "sha256": "f3e4bf9086665b2cd5538a55097cc6ece642f6514d74449ddaeb9da317d49318"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl2-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingLvl2-border.json",
+      "sha256": "5fd7e625c6b987bf688db1a8d277c47f680065821869e3de2ae716de33a82543"
+    },
+    {
+      "active": "assets/recipes/town/construction/dwellingLvl2.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/dwellingLvl2.json",
+      "sha256": "37ef67022064456f07ca8d2ac2f72b9359f51c2e0581a5cdfc0833f929ae4742"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl2-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingUpLvl2-animation.json",
+      "sha256": "5814a434eb1a7feaacfc1da022066dd498dd0d34bf8ae0e5b99cab92e7d9ec39"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl2-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingUpLvl2-area.json",
+      "sha256": "f6c463ec48188007615a0a58e49b4f6d79d523b2880464752566807b05273f9e"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl2-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingUpLvl2-border.json",
+      "sha256": "a9f89cf277378c26ec9b6951687012f4bf95186e8b06adb5c1fd0cbf583c32e5"
+    },
+    {
+      "active": "assets/recipes/town/construction/dwellingUpLvl2.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/dwellingUpLvl2.json",
+      "sha256": "e071f4f0cf2de296385a5fe6f386d4e23d4a97ec4a4ddf7f23870738c7884631"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl3-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingLvl3-animation.json",
+      "sha256": "619623efde4c049355063c52ddeac2cbe751fce23a1a2fde455f55d5a4cea213"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl3-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingLvl3-area.json",
+      "sha256": "e1150f8ac24ce14120f8a41e71991eca5c8117049a2cefbaf93311119fda627a"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl3-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingLvl3-border.json",
+      "sha256": "2ed8a10f55eda7f8a50e13dbb6e6e913b04c66e131ffb5a64e1263d3abf7ff5e"
+    },
+    {
+      "active": "assets/recipes/town/construction/dwellingLvl3.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/dwellingLvl3.json",
+      "sha256": "2ecf4f2f223d3778bfc004e4872e18a78779172646c915189c36e45d54646c89"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl3-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingUpLvl3-animation.json",
+      "sha256": "2077bd8b1562e1e203a969d6e6a5aa15bf722e0efac78f7b33e47099cce44a49"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl3-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingUpLvl3-area.json",
+      "sha256": "6c579fa7530f34bef2dff8f11533f8dae319075c1a1bcd7b43189df994a3d8f4"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl3-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingUpLvl3-border.json",
+      "sha256": "998f0e3cdf03191a49032a50239855b93288278f66df48c8da24be9680213698"
+    },
+    {
+      "active": "assets/recipes/town/construction/dwellingUpLvl3.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/dwellingUpLvl3.json",
+      "sha256": "6198055ad731c3c85f69deba94fb82edb9331a0ca8cd565eba19e93f729c5503"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl4-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingLvl4-animation.json",
+      "sha256": "efecb47f132847f49736a20355685fca67460fd698e6ebfd7859667fbc3cdc85"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl4-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingLvl4-area.json",
+      "sha256": "3d7e51f8feb9c8e3a9cb0dac3ed2036c805234ce17504f9605f0ec9b20387f23"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl4-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingLvl4-border.json",
+      "sha256": "2323ce4cc8e1eea24b6dc22466fbb3851ec8ebe521f62c8ec09e3b1c86502467"
+    },
+    {
+      "active": "assets/recipes/town/construction/dwellingLvl4.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/dwellingLvl4.json",
+      "sha256": "c71090300ee4f9695139d04e291c71d2c132728f2a6fa75ddab9e438bbe38376"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl4-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingUpLvl4-animation.json",
+      "sha256": "210a772068db590e39553f056cd08669fb050ff0f41df4e0e3c00ead161b48e2"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl4-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingUpLvl4-area.json",
+      "sha256": "51192b5484509876427b0c4db7cdd7338a03fc18d3a7a9be73e505a2db13a649"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl4-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingUpLvl4-border.json",
+      "sha256": "ca95456120c378a4b0a2ab26b1a0ee509a97593822e409da875350d536f8278c"
+    },
+    {
+      "active": "assets/recipes/town/construction/dwellingUpLvl4.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/dwellingUpLvl4.json",
+      "sha256": "4f9fe9dcfad1e96898449370a8de4cb404c530008a24a54362c13e424dcda5ca"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl5-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingLvl5-animation.json",
+      "sha256": "92eebdede9c1376a49a283ec4ed4c74b81847bf237218ee220d45d6617dd0a45"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl5-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingLvl5-area.json",
+      "sha256": "fb7eeabdd51be33cc235a28d7b0e0f6c2b2b39ba1787780c061d8d7ee79b76e5"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl5-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingLvl5-border.json",
+      "sha256": "a3d84845fa9f9fad33424fe4cb9e58a14b01cfa4cd436a1dbe796dc0da8353e6"
+    },
+    {
+      "active": "assets/recipes/town/construction/dwellingLvl5.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/dwellingLvl5.json",
+      "sha256": "8b6284e3ad2d8be3c39e90de00ff45bb413bd3c4a4a0e2ff96faba9412f63f8d"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl5-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingUpLvl5-animation.json",
+      "sha256": "68fc8496b9277fa3640aaa45fe09fd8d50ea9edeeb22dfee85998490d1f4bee8"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl5-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingUpLvl5-area.json",
+      "sha256": "4331ff8aa45146aca8bda39053fc271d0d3d6f289a16215ad0d87f09464ee417"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl5-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingUpLvl5-border.json",
+      "sha256": "5e7a565126d222806cda70edfaf5018e1d742a8bd234f2f2c143324be8b9c959"
+    },
+    {
+      "active": "assets/recipes/town/construction/dwellingUpLvl5.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/dwellingUpLvl5.json",
+      "sha256": "759263cf4399b77839e89fa25bf31578de159b8874b9e654a5db37313885ef7f"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl6-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingLvl6-animation.json",
+      "sha256": "0bea9db4c010a17b3d8493137b1df6d0b86837afd9ac7197bccce42bc603e352"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl6-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingLvl6-area.json",
+      "sha256": "0b02dac6403cce4f595231afddabb8b4c52aea9e70ee3fa2b9601587db2fb23e"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl6-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingLvl6-border.json",
+      "sha256": "f24e3cfe0ca3333cd0ae0aaaca5fe0625ba146613c96ac02d7c6621cdf35b260"
+    },
+    {
+      "active": "assets/recipes/town/construction/dwellingLvl6.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/dwellingLvl6.json",
+      "sha256": "064386de020989e17385149c5951edb97cf6f272047d36e1631e45215d5ff98a"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl6-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingUpLvl6-animation.json",
+      "sha256": "f37624270690937c248b789830fdcd33af47fb79e35b08d79a1caf226ba39c6e"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl6-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingUpLvl6-area.json",
+      "sha256": "f715796f110c4951f9aa167dc360225ee19bf421de2c6e084723a399b60b09d8"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl6-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingUpLvl6-border.json",
+      "sha256": "1f14dcfe06d6cb266d661db941b4c861f1a76ef25c92a469a51307cad2b5f9f7"
+    },
+    {
+      "active": "assets/recipes/town/construction/dwellingUpLvl6.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/dwellingUpLvl6.json",
+      "sha256": "9bd34d1baa2f391bf37ad03e106a78e74ed3efbfbe80a753e626290826ed7dbe"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl7-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingLvl7-animation.json",
+      "sha256": "51a6db332a51bea9ea1e3904acea88bfa882eff86dda4d9c459b239b3892d7bd"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl7-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingLvl7-area.json",
+      "sha256": "685f6d8f73649d5838eb0f336a2b5fea475340f1d7f50cf942db9ff94452bf23"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl7-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingLvl7-border.json",
+      "sha256": "4ac48c975e5aae390835fab99563f2776e00cdfd9f816ecdea568e9f9b8d5877"
+    },
+    {
+      "active": "assets/recipes/town/construction/dwellingLvl7.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/dwellingLvl7.json",
+      "sha256": "c51841afe1f160f280a92da3548283625222ba10efcbfb846abc2e4f9e23f5d8"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl7-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingUpLvl7-animation.json",
+      "sha256": "0f9fdd8ba48f25e35ca8e4385a61a3512dabefeb4eb2fa984df3a2f6d8d9cb42"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl7-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingUpLvl7-area.json",
+      "sha256": "7d68e260ba89770af2a79f2a9ab478828987ed422b774213d43b8101c3d13fe7"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl7-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/dwellingUpLvl7-border.json",
+      "sha256": "1ade1bbf4f132c1b092f2311b162de7c58481fdba7b8c5954df529a6f27dce25"
+    },
+    {
+      "active": "assets/recipes/town/construction/dwellingUpLvl7.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/dwellingUpLvl7.json",
+      "sha256": "09ee98da290aae0c477bc0b15278ffd4b5a110f1aeb4a1979733ce6f4f06ab97"
+    },
+    {
+      "active": "assets/recipes/town/structures/tavern-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/tavern-animation.json",
+      "sha256": "a536b3437933ca26fdc6e68b80e7041dc2594da6a236fb13b205af11db7cc17d"
+    },
+    {
+      "active": "assets/recipes/town/structures/tavern-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/tavern-area.json",
+      "sha256": "e425cfbd4a143907409b2058b482322181a7073c13cb0d385e84eec6820b7bf2"
+    },
+    {
+      "active": "assets/recipes/town/structures/tavern-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/tavern-border.json",
+      "sha256": "ba006443ac5513ba11ef75bb9b071e91350dca40339f8dded89b09cfdacba962"
+    },
+    {
+      "active": "assets/recipes/town/construction/tavern.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/tavern.json",
+      "sha256": "d0faf65c88dd4543479d13313b47c445e11b1065d9e8b4ae5996c2139951c562"
+    },
+    {
+      "active": "assets/recipes/town/structures/marketplace-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/marketplace-animation.json",
+      "sha256": "1d968e6c2db078a3aa265f6e77cb9e0f316d9e01465d5ba2d8c6d426588c8922"
+    },
+    {
+      "active": "assets/recipes/town/structures/marketplace-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/marketplace-area.json",
+      "sha256": "0d09fc47be6183ed8ded58732f99dba5a4b77dd4094aa2c1734a2df4e69f8905"
+    },
+    {
+      "active": "assets/recipes/town/structures/marketplace-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/marketplace-border.json",
+      "sha256": "6d96637996f60ea63b2f9b89bf1090a095244ca9550fc3a1f32a5cd0fde47a65"
+    },
+    {
+      "active": "assets/recipes/town/construction/marketplace.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/marketplace.json",
+      "sha256": "59b90dc2331ee6e5e35e1578858d196748cbd21d5d6c6619df6b2d6f9baf1b40"
+    },
+    {
+      "active": "assets/recipes/town/structures/blacksmith-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/blacksmith-animation.json",
+      "sha256": "1ed87b4307632142fd30e126c7d005b54b3cc41cd095182a22cd85fdfbdb9311"
+    },
+    {
+      "active": "assets/recipes/town/structures/blacksmith-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/blacksmith-area.json",
+      "sha256": "df74ae1027057f8fa61215c0422908289863a14a72afb03a38ed85418309a8ab"
+    },
+    {
+      "active": "assets/recipes/town/structures/blacksmith-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/blacksmith-border.json",
+      "sha256": "103d7fe4b82b2ac486380f7a87aa0bd0d00244e4e8b7d5715d4184a22a309eff"
+    },
+    {
+      "active": "assets/recipes/town/construction/blacksmith.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/blacksmith.json",
+      "sha256": "a867e3c465754ca4e003616c12dbe739611a14429aabd3cd1f671e504592ec31"
+    },
+    {
+      "active": "assets/recipes/town/structures/resourceSilo-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/resourceSilo-animation.json",
+      "sha256": "8cde5990720011f9eb4e5e5119a5ce8eb32455df6271cf0894d8057ac96bc3b9"
+    },
+    {
+      "active": "assets/recipes/town/structures/resourceSilo-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/resourceSilo-area.json",
+      "sha256": "c8d33274b42ef5599763702d925ac501319e66a2b682f935563c6879dcb6b131"
+    },
+    {
+      "active": "assets/recipes/town/structures/resourceSilo-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/resourceSilo-border.json",
+      "sha256": "4af2311d0137023bf1a92b53da2defcba606efdb15c976fd3d4c0552b9d0b92e"
+    },
+    {
+      "active": "assets/recipes/town/construction/resourceSilo.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/resourceSilo.json",
+      "sha256": "d6f323fe9958140145947bebb8800f8497ae5d38dff17cd175195b3e54a5a4f6"
+    },
+    {
+      "active": "assets/recipes/town/structures/ship-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/ship-animation.json",
+      "sha256": "4ef0b7370ec5f713bc95244a586ca40fe85e364ab54a0edd2887005e13beb6ff"
+    },
+    {
+      "active": "assets/recipes/town/structures/ship-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/ship-area.json",
+      "sha256": "e5cfbad32714bd62bc3a07a41f379b75e18cbb6944cdc75388c15500846918f2"
+    },
+    {
+      "active": "assets/recipes/town/structures/ship-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/ship-border.json",
+      "sha256": "e224353e1252aae367d91a4138150701fd2cb6f36d3919218fe671095f074ca9"
+    },
+    {
+      "active": "assets/recipes/town/construction/ship.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/ship.json",
+      "sha256": "c2ac99e050a4ce7dcd650b5aad72be5e16b8cde5a6d722d15bc3c0d58d732fab"
+    },
+    {
+      "active": "assets/recipes/town/structures/shipyard-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/shipyard-animation.json",
+      "sha256": "026c1bb0e6bd00eafb41e7fb422a7894021b1f76927f29c9544de5b472db2458"
+    },
+    {
+      "active": "assets/recipes/town/structures/shipyard-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/shipyard-area.json",
+      "sha256": "1ab9cbb2d9d50349ef732376f42865afd400988010fa256dddd2479b939a5dc5"
+    },
+    {
+      "active": "assets/recipes/town/structures/shipyard-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/shipyard-border.json",
+      "sha256": "98d9916612f0006ca2a77aa65c2aa9207de4486455f59c7bddfe9c6ab728d7ba"
+    },
+    {
+      "active": "assets/recipes/town/construction/shipyard.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/shipyard.json",
+      "sha256": "b16377d999f8d4e148b96d1f21df6e24dc21d518bfcc497549605758528f38cc"
+    },
+    {
+      "active": "assets/recipes/town/structures/grail-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/grail-animation.json",
+      "sha256": "80f821151b43dbf02db4e9280b8686b1118681bf836c692ffa8ee248e72ea064"
+    },
+    {
+      "active": "assets/recipes/town/structures/grail-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/grail-area.json",
+      "sha256": "f9bc36a4cde5ef0dcb03652ccc15df5e690c07557c7675d4d468846ebb51b0ed"
+    },
+    {
+      "active": "assets/recipes/town/structures/grail-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/grail-border.json",
+      "sha256": "67a76b56f10379e00b47c6fa66657e3b4ff672449fa16df8509a46e5b2aeaa88"
+    },
+    {
+      "active": "assets/recipes/town/construction/grail.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/grail.json",
+      "sha256": "9f72b96c6c2fc8fc15ef29f9e39190af93df6e7df2f0d40d29b5f14ab4bd4a00"
+    },
+    {
+      "active": "assets/recipes/town/structures/special1-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/special1-animation.json",
+      "sha256": "c0230bc55f8cb70f6333ceb56683a108ea4db6668359dceb76e881356a517ecb"
+    },
+    {
+      "active": "assets/recipes/town/structures/special1-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/special1-area.json",
+      "sha256": "823800560c1e9b1fb86e2a030eb773c76bdf5cda3702ca628fadd84a40149169"
+    },
+    {
+      "active": "assets/recipes/town/structures/special1-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/special1-border.json",
+      "sha256": "f944d1b59321fcc71be6d59b155ed01afd0e474e627729713378b8165c9ccbe6"
+    },
+    {
+      "active": "assets/recipes/town/construction/special1.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/special1.json",
+      "sha256": "52feebe3f80a838674bea84c62282699d38c1f67d7881a553f2474287032514f"
+    },
+    {
+      "active": "assets/recipes/town/structures/special2-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/special2-animation.json",
+      "sha256": "00f3d37c4b5f673c4ed596e6bf5899a14a8d064ce4b34303a763db96a783a2d1"
+    },
+    {
+      "active": "assets/recipes/town/structures/special2-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/special2-area.json",
+      "sha256": "a61f819c6fc1f5c9b172a05fff0a2635ec680d3be2d8ade3b5da20bc35519c85"
+    },
+    {
+      "active": "assets/recipes/town/structures/special2-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/special2-border.json",
+      "sha256": "ccac1500ca06031150e57592fed16d1a1f2be3163f86bff7b4bdb4c354e14f56"
+    },
+    {
+      "active": "assets/recipes/town/construction/special2.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/special2.json",
+      "sha256": "2236055596d61ed003577bb625c28c25af055679f1416cd4318420c850330af4"
+    },
+    {
+      "active": "assets/recipes/town/structures/special3-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/special3-animation.json",
+      "sha256": "8e11566eddcf5010d3bf24932265aca811edc312d627fb19c0a137fc76443c0e"
+    },
+    {
+      "active": "assets/recipes/town/structures/special3-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/special3-area.json",
+      "sha256": "d740ee633dc53aec312e6536a153230c8f55591017cfc1040a60a8441ede4d40"
+    },
+    {
+      "active": "assets/recipes/town/structures/special3-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/special3-border.json",
+      "sha256": "2fb88e33772cd2f3133a4ca492500ed7cab30edb4975e68369a33425f8e9bc76"
+    },
+    {
+      "active": "assets/recipes/town/construction/special3.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/special3.json",
+      "sha256": "7a7ec901a427d14e15a67d321579dbe5e20c8959805642226d00b0541ce0d76b"
+    },
+    {
+      "active": "assets/recipes/town/structures/special4-animation.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/special4-animation.json",
+      "sha256": "8fb7aa08a7c8b4cbc42474fd34a230f1a4b592e596cf406fa111c783cc648c35"
+    },
+    {
+      "active": "assets/recipes/town/structures/special4-area.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/special4-area.json",
+      "sha256": "977e869760ef146973d8978a1bece7e1e911a6ed6bdd79c1c6ca111ce6b5ae29"
+    },
+    {
+      "active": "assets/recipes/town/structures/special4-border.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/structures/special4-border.json",
+      "sha256": "7f6694d4de557377bbf396d90ff932db8aa3340c9609a8289894f9c912f66326"
+    },
+    {
+      "active": "assets/recipes/town/construction/special4.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/construction/special4.json",
+      "sha256": "c6da7304974c00338958b68f950c00a08f71e0199d40ad6cf151baff4ca2fa7d"
+    },
+    {
+      "active": "assets/recipes/town/background.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/background.json",
+      "sha256": "f152d28da864543837cc458f0bc8b1c7eae2d74f224d48235b637fa5f60c5b0c"
+    },
+    {
+      "active": "assets/recipes/town/buildingIcons.json",
+      "candidate": "assets/source/town/cohesive-city-20261027-v1/recipes/town/buildingIcons.json",
+      "sha256": "e63e97a7c82a5703f5fa036506053a085a038bf07f2e7dc58f28c5c9bd78a9ba"
+    }
+  ],
+  "release_accepted": false,
+  "source_plan": "assets/source/town/cohesive-city-20261027-v1/full-silhouette-plan.json",
+  "source_plan_sha256": "019a5d8555ba8b2a992706afa006e2bf08f968b67c1a57c67e464cf59989bb71",
+  "status": "authored configuration",
+  "style_reference_boundary_fix": "Original HoMM3 input retained read-only as report context, not an escaping live conversion dependency.",
+  "z_amendment": "Factory nativez164?165; no actual artwork/output changes. Prior a935 selection retained under report/before-z-amendment."
+}

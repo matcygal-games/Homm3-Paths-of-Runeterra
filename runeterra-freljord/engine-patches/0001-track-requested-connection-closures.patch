@@ -1,0 +1,349 @@
+diff --git a/server/CMakeLists.txt b/server/CMakeLists.txt
+index 7f0ffa9aa..9f33a8bc9 100644
+--- a/server/CMakeLists.txt
++++ b/server/CMakeLists.txt
+@@ -56,6 +56,7 @@ set(vcmiservercommon_HEADERS
+ 		IGameServer.h
+ 		ServerSpellCastEnvironment.h
+ 		CVCMIServer.h
++		ExpectedConnectionClosures.h
+ 		LobbyNetPackVisitors.h
+ 		ServerNetPackVisitors.h
+ 		TurnTimerHandler.h
+diff --git a/server/CVCMIServer.cpp b/server/CVCMIServer.cpp
+index a781d8120..6e6d16039 100644
+--- a/server/CVCMIServer.cpp
++++ b/server/CVCMIServer.cpp
+@@ -134,6 +134,7 @@ void CVCMIServer::onNewConnection(const std::shared_ptr<INetworkConnection> & co
+ 	else
+ 	{
+ 		// TODO: reconnection support
++		expectedConnectionClosures.add(connection);
+ 		connection->close();
+ 	}
+ }
+@@ -406,7 +407,13 @@ void CVCMIServer::startGameImmediately()
+ 
+ void CVCMIServer::onDisconnected(const std::shared_ptr<INetworkConnection> & connection, const std::string & errorMessage)
+ {
+-	logNetwork->error("Network error receiving a pack. Connection has been closed");
++	if(expectedConnectionClosures.contains(connection))
++	{
++		logNetwork->debug("Connection closed after disconnection request: %s", errorMessage);
++		return;
++	}
++
++	logNetwork->error("Network error receiving a pack. Connection has been closed: %s", errorMessage);
+ 
+ 	std::shared_ptr<GameConnection> c = findConnection(connection);
+ 
+@@ -426,6 +433,9 @@ void CVCMIServer::handleReceivedPack(std::shared_ptr<GameConnection> connection,
+ 
+ 	if(checker.getResult())
+ 	{
++		if(dynamic_cast<LobbyClientDisconnected *>(&pack))
++			expectedConnectionClosures.add(connection->getConnection());
++
+ 		ApplyOnServerNetPackVisitor applier(*this, connection);
+ 		pack.visit(applier);
+ 		if (applier.getResult())
+diff --git a/server/CVCMIServer.h b/server/CVCMIServer.h
+index 3a6b6c83f..da165a051 100644
+--- a/server/CVCMIServer.h
++++ b/server/CVCMIServer.h
+@@ -10,6 +10,7 @@
+ #pragma once
+ 
+ #include "IGameServer.h"
++#include "ExpectedConnectionClosures.h"
+ 
+ #include "../lib/network/NetworkInterface.h"
+ #include "../lib/StartInfo.h"
+@@ -38,6 +39,7 @@ class CVCMIServer : public LobbyInfo, public INetworkServerListener, public INet
+ 	std::unique_ptr<INetworkHandler> networkHandler;
+ 	/// Network server instance that receives and processes incoming connections on active socket
+ 	std::unique_ptr<INetworkServer> networkServer;
++	ExpectedConnectionClosures expectedConnectionClosures;
+ 
+ 	/// Handles connection with global lobby. Must be constructed and destroyed after network handler
+ 	std::unique_ptr<GlobalLobbyProcessor> lobbyProcessor;
+diff --git a/server/ExpectedConnectionClosures.h b/server/ExpectedConnectionClosures.h
+new file mode 100644
+index 000000000..83268f6fa
+--- /dev/null
++++ b/server/ExpectedConnectionClosures.h
+@@ -0,0 +1,33 @@
++/*
++ * ExpectedConnectionClosures.h, part of VCMI engine
++ *
++ * Authors: listed in file AUTHORS in main folder
++ *
++ * License: GNU General Public License v2.0 or later
++ * Full text of license available in license.txt file, in main folder
++ *
++ */
++#pragma once
++
++#include <memory>
++#include <set>
++
++class INetworkConnection;
++
++/// Local close requests remain identifiable until queued transport callbacks release the connection.
++class ExpectedConnectionClosures
++{
++	std::set<std::weak_ptr<INetworkConnection>, std::owner_less<>> connections;
++
++public:
++	void add(const std::shared_ptr<INetworkConnection> & connection)
++	{
++		std::erase_if(connections, [](const auto & entry) { return entry.expired(); });
++		connections.insert(connection);
++	}
++
++	bool contains(const std::shared_ptr<INetworkConnection> & connection) const
++	{
++		return connections.contains(connection);
++	}
++};
+diff --git a/test/CMakeLists.txt b/test/CMakeLists.txt
+index 63a5ab222..ef9d06d11 100644
+--- a/test/CMakeLists.txt
++++ b/test/CMakeLists.txt
+@@ -114,6 +114,7 @@ set(test_SRCS
+ 		server/battles/AttackSequenceTest.cpp
+ 		server/battles/BallistaDamageTest.cpp
+ 		server/battles/BattleTestFixture.cpp
++		server/ConnectionShutdownTest.cpp
+ 		server/battles/CombatEventTriggerTest.cpp
+ 		server/battles/DamageCalculatorTest.cpp
+ 		server/battles/BindTest.cpp
+diff --git a/test/server/ConnectionShutdownTest.cpp b/test/server/ConnectionShutdownTest.cpp
+new file mode 100644
+index 000000000..02f5bb59b
+--- /dev/null
++++ b/test/server/ConnectionShutdownTest.cpp
+@@ -0,0 +1,223 @@
++/*
++ * ConnectionShutdownTest.cpp, part of VCMI engine
++ *
++ * Authors: listed in file AUTHORS in main folder
++ *
++ * License: GNU General Public License v2.0 or later
++ * Full text of license available in license.txt file, in main folder
++ *
++ */
++#include "StdInc.h"
++
++#include "../../server/CVCMIServer.h"
++#include "../../lib/serializer/GameConnection.h"
++#include "../../lib/networkPacks/PacksForLobby.h"
++
++namespace
++{
++class RecordingNetworkLogger final : public vstd::CLoggerBase
++{
++public:
++	mutable std::vector<std::pair<ELogLevel::ELogLevel, std::string>> records;
++
++	void log(ELogLevel::ELogLevel level, const std::string & message) const override
++	{
++		records.emplace_back(level, message);
++	}
++	void log(ELogLevel::ELogLevel level, const boost::format & message) const override
++	{
++		log(level, message.str());
++	}
++	bool isDebugEnabled() const override { return true; }
++	bool isTraceEnabled() const override { return true; }
++	ELogLevel::ELogLevel getEffectiveLevel() const override { return ELogLevel::TRACE; }
++	size_t errors() const
++	{
++		return std::count_if(records.begin(), records.end(), [](const auto & record) { return record.first == ELogLevel::ERROR; });
++	}
++};
++
++class TestConnection final : public INetworkConnection
++{
++public:
++	std::function<void()> onClose;
++	int closeCount = 0;
++	void sendPacket(const std::vector<std::byte> &) override {}
++	void setAsyncWritesEnabled(bool) override {}
++	void close() override
++	{
++		++closeCount;
++		if(onClose)
++			onClose();
++	}
++};
++
++class ConnectionShutdownTest : public ::testing::Test
++{
++protected:
++	RecordingNetworkLogger logger;
++	vstd::CLoggerBase * previousLogger = nullptr;
++	std::unique_ptr<CVCMIServer> server;
++	std::shared_ptr<TestConnection> transport;
++	std::shared_ptr<GameConnection> connection;
++
++	void SetUp() override
++	{
++		previousLogger = logNetwork;
++		logNetwork = &logger;
++		server = std::make_unique<CVCMIServer>(0, true);
++		transport = std::make_shared<TestConnection>();
++		server->onNewConnection(transport);
++		connection = server->activeConnections.at(0);
++		connection->connectionID = GameConnectionID(1);
++		server->setState(EServerState::GAMEPLAY);
++	}
++	void TearDown() override
++	{
++		server.reset();
++		logNetwork = previousLogger;
++	}
++	void requestDisconnect(GameConnectionID id = GameConnectionID(1), bool shutdownServer = false)
++	{
++		LobbyClientDisconnected pack;
++		pack.clientId = id;
++		pack.shutdownServer = shutdownServer;
++		server->handleReceivedPack(connection, pack);
++	}
++};
++
++TEST_F(ConnectionShutdownTest, RequestedInternalCloseThenLateCallbackIsOrderly)
++{
++	requestDisconnect();
++	ASSERT_TRUE(server->activeConnections.empty());
++	ASSERT_EQ(server->getState(), EServerState::SHUTDOWN);
++	server->onDisconnected(transport, "Internal connection has been terminated");
++	EXPECT_EQ(logger.errors(), 0);
++}
++
++TEST_F(ConnectionShutdownTest, RequestedTcpCloseThenRepeatedCompletionIsOrderly)
++{
++	requestDisconnect();
++	server->onDisconnected(transport, "Operation canceled");
++	server->onDisconnected(transport, "End of file");
++	EXPECT_EQ(logger.errors(), 0);
++	EXPECT_EQ(transport->closeCount, 1);
++}
++
++TEST_F(ConnectionShutdownTest, HostRequestedLocalServerShutdownIsOrderly)
++{
++	server->hostClientId = connection->connectionID;
++	requestDisconnect(connection->connectionID, true);
++	ASSERT_TRUE(server->activeConnections.empty());
++	EXPECT_EQ(server->getState(), EServerState::SHUTDOWN);
++	server->onDisconnected(transport, "Internal connection has been terminated");
++	EXPECT_EQ(logger.errors(), 0);
++}
++
++TEST_F(ConnectionShutdownTest, NonHostShutdownRequestCannotAuthorizeExpectedClosure)
++{
++	server->hostClientId = GameConnectionID(2);
++	requestDisconnect(connection->connectionID, true);
++	ASSERT_EQ(server->activeConnections.size(), 1);
++	ASSERT_EQ(transport->closeCount, 0);
++	server->onDisconnected(transport, "Connection reset by peer");
++	EXPECT_EQ(logger.errors(), 1);
++	EXPECT_TRUE(server->activeConnections.empty());
++}
++
++TEST_F(ConnectionShutdownTest, CallbackFromCloseSeesExpectedStateBeforeApplicationRemoval)
++{
++	transport->onClose = [this] { server->onDisconnected(transport, "Local transport closed"); };
++	requestDisconnect();
++	EXPECT_TRUE(server->activeConnections.empty());
++	EXPECT_EQ(transport->closeCount, 1);
++	EXPECT_EQ(logger.errors(), 0);
++}
++
++TEST_F(ConnectionShutdownTest, UnexpectedActiveLossRemainsErrorAndRemovesPlayerOnce)
++{
++	server->onDisconnected(transport, "Connection reset by peer");
++	EXPECT_EQ(logger.errors(), 1);
++	EXPECT_TRUE(std::any_of(logger.records.begin(), logger.records.end(), [](const auto & record)
++	{
++		return record.first == ELogLevel::ERROR && record.second.find("Connection reset by peer") != std::string::npos;
++	}));
++	EXPECT_TRUE(server->activeConnections.empty());
++	EXPECT_EQ(transport->closeCount, 1);
++	server->onDisconnected(transport, "Operation canceled");
++	EXPECT_EQ(logger.errors(), 1);
++	EXPECT_EQ(transport->closeCount, 1);
++}
++
++TEST_F(ConnectionShutdownTest, UnknownLossRemainsErrorEvenAfterOrderlyShutdown)
++{
++	requestDisconnect();
++	auto unknown = std::make_shared<TestConnection>();
++	server->onDisconnected(unknown, "Unrecognized connection failure");
++	EXPECT_EQ(logger.errors(), 1);
++	EXPECT_EQ(unknown->closeCount, 0);
++}
++
++TEST_F(ConnectionShutdownTest, RejectedDisconnectCannotAuthorizeExpectedClosure)
++{
++	requestDisconnect(GameConnectionID(2));
++	ASSERT_EQ(server->activeConnections.size(), 1);
++	ASSERT_EQ(transport->closeCount, 0);
++	server->onDisconnected(transport, "Connection reset by peer");
++	EXPECT_EQ(logger.errors(), 1);
++}
++
++TEST_F(ConnectionShutdownTest, OrderlyCloseOfOnePlayerDoesNotHideAnotherPlayersNetworkFailure)
++{
++	auto otherTransport = std::make_shared<TestConnection>();
++	auto otherConnection = std::make_shared<GameConnection>(otherTransport);
++	otherConnection->connectionID = GameConnectionID(2);
++	server->activeConnections.push_back(otherConnection);
++	requestDisconnect();
++	ASSERT_EQ(server->activeConnections.size(), 1);
++	EXPECT_EQ(server->getState(), EServerState::GAMEPLAY);
++	server->onDisconnected(transport, "Requested internal close");
++	EXPECT_EQ(logger.errors(), 0);
++	server->onDisconnected(otherTransport, "Unrequested connection reset");
++	EXPECT_EQ(logger.errors(), 1);
++	EXPECT_TRUE(server->activeConnections.empty());
++}
++
++TEST_F(ConnectionShutdownTest, RejectedIncomingConnectionHasAnExplicitLocalClose)
++{
++	auto rejected = std::make_shared<TestConnection>();
++	server->onNewConnection(rejected);
++	ASSERT_EQ(rejected->closeCount, 1);
++	server->onDisconnected(rejected, "Operation canceled");
++	EXPECT_EQ(logger.errors(), 0);
++	server->onDisconnected(transport, "Unrequested active loss");
++	EXPECT_EQ(logger.errors(), 1);
++}
++
++TEST(ExpectedConnectionClosuresTest, DoesNotKeepClosedTransportAliveOrAuthorizeAnotherOwner)
++{
++	ExpectedConnectionClosures closures;
++	auto first = std::make_shared<TestConnection>();
++	std::weak_ptr<INetworkConnection> observer = first;
++	closures.add(first);
++	closures.add(first);
++	EXPECT_TRUE(closures.contains(first));
++	first.reset();
++	EXPECT_TRUE(observer.expired());
++	auto replacement = std::make_shared<TestConnection>();
++	EXPECT_FALSE(closures.contains(replacement));
++	closures.add(replacement);
++	EXPECT_TRUE(closures.contains(replacement));
++}
++
++TEST(ExpectedConnectionClosuresTest, IdenticalRawAddressWithDifferentOwnershipIsNotAuthorized)
++{
++	ExpectedConnectionClosures closures;
++	auto transport = std::make_shared<TestConnection>();
++	closures.add(transport);
++	auto differentOwner = std::shared_ptr<INetworkConnection>(transport.get(), [](INetworkConnection *) {});
++	ASSERT_EQ(transport.get(), differentOwner.get());
++	EXPECT_FALSE(closures.contains(differentOwner));
++	EXPECT_TRUE(closures.contains(transport));
++}
++}

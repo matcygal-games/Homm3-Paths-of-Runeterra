@@ -1,0 +1,71 @@
+{
+  "edit_source": {
+    "path": "assets/source/town/buildings-v6/capitol/master.png",
+    "sha256": "d25eb3728169ced9bb0c33d51b7d11957f76f56731ad5f1a62833e2209110b45"
+  },
+  "existing_gable_box": [
+    525,
+    414,
+    614,
+    534
+  ],
+  "image_generation_used": true,
+  "mask_source": {
+    "path": "assets/source/regional-crests-20261025-v1/town/capitol/crest-mask.png",
+    "sha256": "30ac0d2113d6c90639d514a6e295758ca868e6128262bb6a174c9c0bbd0c1874"
+  },
+  "model": "not exposed by built-in tool",
+  "model_id_exposed": false,
+  "native_execution": false,
+  "preparation_helper": {
+    "path": "scripts/prepare_town_art.py",
+    "sha256": "71476dbf913919f5cc07bab81b87236c4601ef3fe0b38d627fff88c7fe91fa46"
+  },
+  "preparation_source": {
+    "path": "assets/source/town/northern-village-20261024-v3/prepared/capitol/preparation.json",
+    "sha256": "6b3531836e868528eed4da73e8c4cbbf02ab6b0c4b760d2da6784fcb590cbfb0"
+  },
+  "preservation": "Genuine local imagegen paint only; original alpha and all external RGBA preserved. Every source and runtime pixel identical to version1.",
+  "previous_source_record_sha256": "0f0dbc7995b22ad64b4e10266975a4df234fcdcf49bdcd7322edd37e9255bcbd",
+  "products": {
+    "hall_icon": {
+      "path": "assets/source/regional-crests-20261025-v1/town/capitol/icon.png",
+      "sha256": "1c8f49630934bf11ec4b897d9952f6c53b7d97fd78cb258605a357bd3f738d4b"
+    },
+    "master": {
+      "path": "assets/source/regional-crests-20261025-v1/town/capitol/master.png",
+      "sha256": "cb1beddb7271b3243d1fa5d4fef1ef6c7f29abdea0471b2eeecddef3991a81a2"
+    },
+    "native_layer": {
+      "path": "assets/source/regional-crests-20261025-v1/town/capitol/layer.png",
+      "sha256": "3adb1dece08a87875313633afb4acbf80a3f2d69930f6d69afaf2fc5af379f6f"
+    }
+  },
+  "prompt": "Use case: precise-object-edit. Asset: FRELJORD capitol civic hall painted 2D town layer, original Heroes of Might and Magic III, final town scene800x374. Image1 is EDIT TARGET, current own1536x1024 painted master. Image2 is correct official FRELJORD REGIONAL CREST DESIGN reference only. Image3 is original HoMM3 native material/contrast reference only; copy no game pixels. Change ONLY the ALREADY EXISTING small carved crest in the triangular FRONT GABLE plaque immediately above main entrance, approximately x528..610,y418..530 in image1. This is a visibility repair of an already correct intended crest, not new heraldry or architecture. Repaint that same regional angular interlocked upper-arm silhouette and long descending central point as aged pale IVORY/very light weathered carved wood inlay, with sparse dark recessed separations. Fewer bolder painted facets should remain recognizable after native downsampling. Retain same crest position and entire existing footprint; fit existing wood gable, never enlarge panel or add a floating shield/banner. Material must be hand-painted muted ivory wood against existing dark brown timber, matte and subtly worn, not glowing gold or flat vector sticker. Preserve all other pixels conceptually: architecture, full silhouette, snowy roof, knot posts, frontdoor, stairs, all windows, timber grain, camera, upperleft light, alpha/background, and canvas exactly1536x1024. Preserve any existing institution marks and Capitol blue cloth banners; change only ONE front-gable crest, no secondary edits. Painted2D original1999HoMM3 native texture/scale, NOT Blender/3D/render, glossyCGI, neon, splash art or geometric placeholder. No text. Output one exact-canvas edited master with existing transparency preserved. A later strict technical mask will retain only this local crest paint.",
+  "prompt_source": {
+    "path": "assets/source/regional-crests-20261025-v1/town/capitol/prompt.txt",
+    "sha256": "65a1fb5089f4768ce0e3120da2f6424beb2e7a4283c99f0942ad1d37fb344c06"
+  },
+  "provider": "OpenAI built-in imagegen",
+  "raw_source": {
+    "path": "assets/source/regional-crests-20261025-v1/town/capitol/raw-imagegen.png",
+    "sha256": "c424e1157355571ed2816a03a0c88a9e5ccb63e5332ba75ce8793991cc227706"
+  },
+  "reference_design": {
+    "native_style_reference_sha256": "d70d303d3b162dddcc44562c8d75b163f9632d1496900396d2c44082d17d2078",
+    "official_shape_reference_sha256": "c7a39c79c7c2e9ecd2bc0cc5204ccb66f5154d8756a05018bd1c8c478999416e",
+    "reference_policy": "Private nonbundled references viewed for design/material guidance; no private pixels or paths needed by replay",
+    "region": "Freljord"
+  },
+  "release_accepted": false,
+  "schema_version": 3,
+  "state": "capitol",
+  "status": "design proposal",
+  "supersedes_private_record_sha256": "cd9a1580c5134a94d26e8d35fc28172e68f9409e70c60dbac7614e52fff583c5",
+  "technical_producer": {
+    "path": "assets/source/regional-crests-20261025-v1/town/portable-v3/compose.py",
+    "sha256": "0abdcc0f4cd009a8d9f729ff8aadbd9bb5f44b9ec9c5aa1d93eb019018ed15fc"
+  },
+  "tool": "image_gen.imagegen",
+  "visual_approval_granted": false
+}

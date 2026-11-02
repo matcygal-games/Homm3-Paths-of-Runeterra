@@ -1,0 +1,11 @@
+{
+  "prompt": "Use case: local-object-removal. Preserve this painted2D animation sprite EXACTLY: same canvas, alpha, character pose, face, clothing, equipment, cup, body scale, all physical coordinates and foot shadow. Remove ONLY the SINGLE SMALL DETACHED GREY STONE floating just beyond the bronze cup's mouth in upper/right transparent space. Replace that detached airborne stone and its edge pixels with genuine transparent alpha. Leave the cup mouth empty; do not paint any new stone, beam, sparkle or smoke there. Keep ALL ammunition stones inside the belt pouch unchanged. This sprite is consumed with a separate native projectile, so it must contain no disconnected flying projectile. Do not move, redraw, crop, recenter, rescale, relight or restyle any part of the existing painted2D figure. No3D. Exactly the original full transparent canvas.",
+  "referenced_image_paths": [
+    "assets/source/creatures/painted-v2/highPriest/shoot-release-up-v1.png"
+  ],
+  "transparent_background": true,
+  "tool": "builtin image_gen",
+  "model": "not exposed by tool",
+  "visual_approval_granted": false,
+  "observed_defect": "Detached stone baked into unit would duplicate separate VCMI projectile."
+}

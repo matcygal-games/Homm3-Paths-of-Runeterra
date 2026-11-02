@@ -1,0 +1,1532 @@
+{
+  "bandlecity": {
+    "alignment": "neutral",
+    "boat": "core:boatCastle",
+    "creatureBackground": {
+      "120px": "runeterra/bandlecity/ui/creatureBackground120.png",
+      "130px": "runeterra/bandlecity/ui/creatureBackground130.png"
+    },
+    "description": "An additional yordle town: three walking melee, two flying melee and two finite ranged lines. Living engineering, finite friendly spell actions and bounded scouting/logistics express the faction. Neutral alignment is a HoMM3 compatibility adaptation.",
+    "name": "Bandle City",
+    "nativeTerrain": [
+      "grass"
+    ],
+    "puzzleMap": {
+      "pieces": [
+        {
+          "index": 1,
+          "x": 7,
+          "y": 8
+        },
+        {
+          "index": 18,
+          "x": 81,
+          "y": 8
+        },
+        {
+          "index": 35,
+          "x": 155,
+          "y": 8
+        },
+        {
+          "index": 4,
+          "x": 229,
+          "y": 8
+        },
+        {
+          "index": 21,
+          "x": 303,
+          "y": 8
+        },
+        {
+          "index": 38,
+          "x": 377,
+          "y": 8
+        },
+        {
+          "index": 7,
+          "x": 451,
+          "y": 8
+        },
+        {
+          "index": 24,
+          "x": 525,
+          "y": 8
+        },
+        {
+          "index": 41,
+          "x": 7,
+          "y": 99
+        },
+        {
+          "index": 10,
+          "x": 81,
+          "y": 99
+        },
+        {
+          "index": 27,
+          "x": 155,
+          "y": 99
+        },
+        {
+          "index": 44,
+          "x": 229,
+          "y": 99
+        },
+        {
+          "index": 13,
+          "x": 303,
+          "y": 99
+        },
+        {
+          "index": 30,
+          "x": 377,
+          "y": 99
+        },
+        {
+          "index": 47,
+          "x": 451,
+          "y": 99
+        },
+        {
+          "index": 16,
+          "x": 525,
+          "y": 99
+        },
+        {
+          "index": 33,
+          "x": 7,
+          "y": 190
+        },
+        {
+          "index": 2,
+          "x": 81,
+          "y": 190
+        },
+        {
+          "index": 19,
+          "x": 155,
+          "y": 190
+        },
+        {
+          "index": 36,
+          "x": 229,
+          "y": 190
+        },
+        {
+          "index": 5,
+          "x": 303,
+          "y": 190
+        },
+        {
+          "index": 22,
+          "x": 377,
+          "y": 190
+        },
+        {
+          "index": 39,
+          "x": 451,
+          "y": 190
+        },
+        {
+          "index": 8,
+          "x": 525,
+          "y": 190
+        },
+        {
+          "index": 25,
+          "x": 7,
+          "y": 281
+        },
+        {
+          "index": 42,
+          "x": 81,
+          "y": 281
+        },
+        {
+          "index": 11,
+          "x": 155,
+          "y": 281
+        },
+        {
+          "index": 28,
+          "x": 229,
+          "y": 281
+        },
+        {
+          "index": 45,
+          "x": 303,
+          "y": 281
+        },
+        {
+          "index": 14,
+          "x": 377,
+          "y": 281
+        },
+        {
+          "index": 31,
+          "x": 451,
+          "y": 281
+        },
+        {
+          "index": 48,
+          "x": 525,
+          "y": 281
+        },
+        {
+          "index": 17,
+          "x": 7,
+          "y": 372
+        },
+        {
+          "index": 34,
+          "x": 81,
+          "y": 372
+        },
+        {
+          "index": 3,
+          "x": 155,
+          "y": 372
+        },
+        {
+          "index": 20,
+          "x": 229,
+          "y": 372
+        },
+        {
+          "index": 37,
+          "x": 303,
+          "y": 372
+        },
+        {
+          "index": 6,
+          "x": 377,
+          "y": 372
+        },
+        {
+          "index": 23,
+          "x": 451,
+          "y": 372
+        },
+        {
+          "index": 40,
+          "x": 525,
+          "y": 372
+        },
+        {
+          "index": 9,
+          "x": 7,
+          "y": 463
+        },
+        {
+          "index": 26,
+          "x": 81,
+          "y": 463
+        },
+        {
+          "index": 43,
+          "x": 155,
+          "y": 463
+        },
+        {
+          "index": 12,
+          "x": 229,
+          "y": 463
+        },
+        {
+          "index": 29,
+          "x": 303,
+          "y": 463
+        },
+        {
+          "index": 46,
+          "x": 377,
+          "y": 463
+        },
+        {
+          "index": 15,
+          "x": 451,
+          "y": 463
+        },
+        {
+          "index": 32,
+          "x": 525,
+          "y": 463
+        }
+      ],
+      "prefix": "runeterra/bandlecity/puzzle/piece"
+    },
+    "town": {
+      "buildings": {
+        "blacksmith": {
+          "cost": {
+            "gold": 1000,
+            "wood": 5
+          },
+          "description": "Produces native Ballistae; remains available after Mech Garage construction.",
+          "name": "Brasswork Bench",
+          "warMachine": "core:ballista"
+        },
+        "capitol": {
+          "cost": {
+            "gold": 10000
+          },
+          "description": "Produces 4000 gold daily; native one-capitol restrictions apply.",
+          "name": "Grand Bandle Assembly",
+          "produce": {
+            "gold": 4000
+          },
+          "requires": [
+            "castle"
+          ],
+          "upgrades": "cityHall"
+        },
+        "castle": {
+          "cost": {
+            "gold": 5000,
+            "ore": 10,
+            "wood": 10
+          },
+          "description": "Native castle defense and double base growth.",
+          "name": "Bandle Bulwark",
+          "upgrades": "citadel"
+        },
+        "citadel": {
+          "cost": {
+            "gold": 2500,
+            "ore": 5
+          },
+          "description": "Adds native moat/tower and fifty percent base growth.",
+          "name": "Thorn Citadel",
+          "upgrades": "fort"
+        },
+        "cityHall": {
+          "cost": {
+            "gold": 5000
+          },
+          "description": "Produces 2000 gold daily.",
+          "name": "Bandle Assembly",
+          "produce": {
+            "gold": 2000
+          },
+          "requires": [
+            "allOf",
+            [
+              "marketplace"
+            ],
+            [
+              "blacksmith"
+            ],
+            [
+              "mageGuild1"
+            ]
+          ],
+          "upgrades": "townHall"
+        },
+        "dwellingLvl1": {
+          "cost": {
+            "gold": 500,
+            "wood": 5
+          },
+          "description": "Recruits Yordle Scout; shared base growth 14 before native fortification and special bonuses.",
+          "name": "Yordle Scout Quarters",
+          "requires": [
+            "fort"
+          ]
+        },
+        "dwellingLvl2": {
+          "cost": {
+            "gold": 1000,
+            "ore": 5,
+            "wood": 5
+          },
+          "description": "Recruits Papercraft Dragon; shared base growth 9 before native fortification and special bonuses.",
+          "name": "Papercraft Roost",
+          "requires": [
+            "dwellingLvl1"
+          ]
+        },
+        "dwellingLvl3": {
+          "cost": {
+            "gold": 1500,
+            "ore": 10
+          },
+          "description": "Recruits Mech Pilot; shared base growth 7 before native fortification and special bonuses.",
+          "name": "Mech Pilot Quarters",
+          "requires": [
+            "allOf",
+            [
+              "dwellingLvl1"
+            ],
+            [
+              "blacksmith"
+            ]
+          ]
+        },
+        "dwellingLvl4": {
+          "cost": {
+            "gold": 2500,
+            "ore": 5,
+            "wood": 5
+          },
+          "description": "Recruits Puffcap Trapper; shared base growth 4 before native fortification and special bonuses.",
+          "name": "Puffcap Trapper Quarters",
+          "requires": [
+            "dwellingLvl3"
+          ]
+        },
+        "dwellingLvl5": {
+          "cost": {
+            "gold": 3500,
+            "ore": 10,
+            "wood": 5
+          },
+          "description": "Recruits Loping Telescope; shared base growth 3 before native fortification and special bonuses.",
+          "name": "Loping Observatory",
+          "requires": [
+            "allOf",
+            [
+              "dwellingLvl3"
+            ],
+            [
+              "mageGuild1"
+            ]
+          ]
+        },
+        "dwellingLvl6": {
+          "cost": {
+            "gold": 6000,
+            "ore": 10,
+            "wood": 10
+          },
+          "description": "Recruits Bandle Gunner; shared base growth 2 before native fortification and special bonuses.",
+          "name": "Bandle Gunner Quarters",
+          "requires": [
+            "allOf",
+            [
+              "dwellingLvl4"
+            ],
+            [
+              "blacksmith"
+            ]
+          ]
+        },
+        "dwellingLvl7": {
+          "cost": {
+            "gold": 12000,
+            "mercury": 8,
+            "ore": 15,
+            "wood": 10
+          },
+          "description": "Recruits Mirror Mage; shared base growth 1 before native fortification and special bonuses.",
+          "name": "Mirror Atelier",
+          "requires": [
+            "allOf",
+            [
+              "dwellingLvl5"
+            ],
+            [
+              "mageGuild3"
+            ]
+          ]
+        },
+        "dwellingUpLvl1": {
+          "cost": {
+            "gold": 1000,
+            "wood": 5
+          },
+          "description": "Recruits Scout Patrol from the same tier-1 pool; upgrades cost full-price difference.",
+          "name": "Scout Patrol Quarters",
+          "upgrades": "dwellingLvl1"
+        },
+        "dwellingUpLvl2": {
+          "cost": {
+            "gold": 1500,
+            "ore": 5,
+            "wood": 5
+          },
+          "description": "Recruits Spellfold Dragon from the same tier-2 pool; upgrades cost full-price difference.",
+          "name": "Spellfold Roost",
+          "upgrades": "dwellingLvl2"
+        },
+        "dwellingUpLvl3": {
+          "cost": {
+            "gold": 2000,
+            "ore": 10
+          },
+          "description": "Recruits Advanced Mech from the same tier-3 pool; upgrades cost full-price difference.",
+          "name": "Advanced Mech Quarters",
+          "upgrades": "dwellingLvl3"
+        },
+        "dwellingUpLvl4": {
+          "cost": {
+            "gold": 3000,
+            "ore": 5,
+            "wood": 5
+          },
+          "description": "Recruits Master Trapper from the same tier-4 pool; upgrades cost full-price difference.",
+          "name": "Master Trapper Quarters",
+          "upgrades": "dwellingLvl4"
+        },
+        "dwellingUpLvl5": {
+          "cost": {
+            "gold": 4500,
+            "mercury": 2,
+            "ore": 10,
+            "wood": 5
+          },
+          "description": "Recruits Wayfinding Telescope from the same tier-5 pool; upgrades cost full-price difference.",
+          "name": "Wayfinding Observatory",
+          "upgrades": "dwellingLvl5"
+        },
+        "dwellingUpLvl6": {
+          "cost": {
+            "gold": 7500,
+            "mercury": 3,
+            "ore": 10,
+            "wood": 10
+          },
+          "description": "Recruits Bandle Bombardier from the same tier-6 pool; upgrades cost full-price difference.",
+          "name": "Bandle Bombardier Quarters",
+          "upgrades": "dwellingLvl6"
+        },
+        "dwellingUpLvl7": {
+          "cost": {
+            "gold": 15000,
+            "mercury": 10,
+            "ore": 15,
+            "wood": 10
+          },
+          "description": "Recruits Mirror Archmage from the same tier-7 pool; upgrades cost full-price difference.",
+          "name": "Grand Mirror Atelier",
+          "requires": [
+            "castle"
+          ],
+          "upgrades": "dwellingLvl7"
+        },
+        "fort": {
+          "cost": {
+            "gold": 5000,
+            "ore": 20,
+            "wood": 20
+          },
+          "description": "Fortifies the town.",
+          "name": "Root Rampart"
+        },
+        "grail": {
+          "cost": {},
+          "description": "Native Grail income and growth; an optional small civic ornament, not a normal land plot.",
+          "mode": "grail",
+          "name": "Wayfarers Lantern"
+        },
+        "mageGuild1": {
+          "cost": {
+            "gold": 2000,
+            "ore": 5,
+            "wood": 5
+          },
+          "description": "Teaches level-one spells.",
+          "name": "Glade Library I"
+        },
+        "mageGuild2": {
+          "cost": {
+            "crystal": 4,
+            "gems": 4,
+            "gold": 1000,
+            "mercury": 4,
+            "ore": 5,
+            "sulfur": 4,
+            "wood": 5
+          },
+          "description": "Teaches level-two spells.",
+          "name": "Glade Library II",
+          "upgrades": "mageGuild1"
+        },
+        "mageGuild3": {
+          "cost": {
+            "crystal": 6,
+            "gems": 6,
+            "gold": 1000,
+            "mercury": 6,
+            "ore": 5,
+            "sulfur": 6,
+            "wood": 5
+          },
+          "description": "Teaches level-three spells. No further guild levels.",
+          "name": "Glade Library III",
+          "upgrades": "mageGuild2"
+        },
+        "marketplace": {
+          "cost": {
+            "gold": 500,
+            "wood": 5
+          },
+          "description": "Trades resources using native marketplace rates.",
+          "name": "Acorn Exchange"
+        },
+        "resourceSilo": {
+          "bonuses": [
+            {
+              "subtype": "creatureLevel3",
+              "type": "CREATURE_GROWTH",
+              "val": 1
+            }
+          ],
+          "cost": {
+            "gold": 4500,
+            "ore": 10,
+            "wood": 5
+          },
+          "description": "Produces one mercury daily as the ordinary silo baseline. Adds one to tier-three shared weekly growth AFTER native Citadel/Castle bonuses, with Grail handled afterward.",
+          "name": "Mech Garage",
+          "produce": {
+            "mercury": 1
+          },
+          "requires": [
+            "allOf",
+            [
+              "dwellingLvl3"
+            ],
+            [
+              "blacksmith"
+            ]
+          ],
+          "upgrades": "blacksmith"
+        },
+        "ship": {
+          "cost": {},
+          "description": "A native boat is moored here.",
+          "mode": "special",
+          "name": "Moored Leafboat",
+          "requires": [
+            "shipyard"
+          ]
+        },
+        "shipyard": {
+          "cost": {
+            "gold": 2000,
+            "wood": 20
+          },
+          "description": "Native boats require a legal adjacent coastal tile.",
+          "name": "Reedbank Dock"
+        },
+        "special1": {
+          "configuration": {
+            "canRefuse": false,
+            "onVisitedMessage": "This town's portal guides have finished their training for the week. Return after the weekly reset.",
+            "resetParameters": {
+              "visitors": true,
+              "weeks": 1
+            },
+            "rewards": [
+              {
+                "bonuses": [
+                  {
+                    "duration": "ONE_WEEK",
+                    "stacking": "runeterraBandleRoutes",
+                    "subtype": "heroMovementLand",
+                    "type": "MOVEMENT",
+                    "val": 200,
+                    "valueType": "ADDITIVE_VALUE"
+                  }
+                ],
+                "message": "Portal training improves daily land movement allowance by 200 until week end. Current movement is not refilled."
+              }
+            ],
+            "selectMode": "selectFirst",
+            "showInInfobox": true,
+            "visitMode": "once"
+          },
+          "cost": {
+            "gold": 4000,
+            "mercury": 3,
+            "wood": 10
+          },
+          "description": "First visitor per town/week gains +200 to daily land movement allowance until the calendar week ends. Across all Bandle training copies only the strongest +200 applies. No immediate movement refill or adventure teleport.",
+          "manualHeroVisit": false,
+          "name": "Portal Network",
+          "requires": [
+            "allOf",
+            [
+              "tavern"
+            ],
+            [
+              "mageGuild1"
+            ]
+          ]
+        },
+        "special2": {
+          "configuration": {
+            "canRefuse": false,
+            "onVisitedMessage": "The Fae Garden's weekly harvest has already been collected. New gifts will be ready next week.",
+            "resetParameters": {
+              "visitors": true,
+              "weeks": 1
+            },
+            "rewards": [
+              {
+                "message": "The garden yields a purse worth 150 gold.",
+                "resources": {
+                  "gold": 150
+                }
+              },
+              {
+                "message": "The garden yields one bundle of useful wood.",
+                "resources": {
+                  "wood": 1
+                }
+              }
+            ],
+            "selectMode": "selectRandom",
+            "showInInfobox": true,
+            "visitMode": "once"
+          },
+          "cost": {
+            "gems": 2,
+            "gold": 3000,
+            "wood": 5
+          },
+          "description": "First visitor per town/week receives one engine-seeded random reward: 150 gold or one wood. Shared claim survives capture until weekly reset.",
+          "manualHeroVisit": false,
+          "name": "Fae Garden",
+          "requires": [
+            "allOf",
+            [
+              "marketplace"
+            ],
+            [
+              "mageGuild1"
+            ]
+          ]
+        },
+        "special3": {
+          "configuration": {
+            "canRefuse": false,
+            "onVisitedMessage": "This hero already knows the Scout Academy's paths. Further visits do not increase Bandle scouting training.",
+            "rewards": [
+              {
+                "bonuses": [
+                  {
+                    "duration": "PERMANENT",
+                    "stacking": "runeterraBandleScouting",
+                    "type": "SIGHT_RADIUS",
+                    "val": 1,
+                    "valueType": "ADDITIVE_VALUE"
+                  }
+                ],
+                "message": "Scout Academy training increases sight radius by one. Bandle scouting training does not stack."
+              }
+            ],
+            "selectMode": "selectFirst",
+            "showInInfobox": true,
+            "visitMode": "hero"
+          },
+          "cost": {
+            "gold": 3000,
+            "wood": 8
+          },
+          "description": "The expanded tavern trains visiting heroes permanently: +1 sight radius, strongest Bandle scouting source only. Native Scouting adds separately.",
+          "manualHeroVisit": false,
+          "name": "Scout Academy",
+          "requires": [
+            "allOf",
+            [
+              "tavern"
+            ],
+            [
+              "dwellingLvl1"
+            ]
+          ],
+          "upgrades": "tavern"
+        },
+        "special4": {
+          "bonuses": [
+            {
+              "type": "LUCK",
+              "val": 1
+            }
+          ],
+          "cost": {
+            "gems": 3,
+            "gold": 3500,
+            "wood": 5
+          },
+          "description": "Town siege defenders gain +1 Luck under native caps; no enemy confusion.",
+          "name": "Glamour Fountain",
+          "requires": [
+            "allOf",
+            [
+              "fort"
+            ],
+            [
+              "mageGuild2"
+            ]
+          ]
+        },
+        "tavern": {
+          "cost": {
+            "gold": 500,
+            "wood": 5
+          },
+          "description": "Recruits heroes and grants native defending morale.",
+          "name": "Wayfarer Teapot"
+        },
+        "townHall": {
+          "cost": {
+            "gold": 2500
+          },
+          "description": "Produces 1000 gold daily.",
+          "name": "Bandle Council Hall",
+          "produce": {
+            "gold": 1000
+          },
+          "requires": [
+            "tavern"
+          ],
+          "upgrades": "villageHall"
+        },
+        "villageHall": {
+          "cost": {},
+          "description": "Produces 500 gold daily.",
+          "name": "Bandle Council Hut",
+          "produce": {
+            "gold": 500
+          }
+        }
+      },
+      "buildingsIcons": "runeterra/bandlecity/town/buildingIcons.json",
+      "creatures": [
+        [
+          "yordleScout",
+          "scoutPatrol"
+        ],
+        [
+          "papercraftDragon",
+          "spellfoldDragon"
+        ],
+        [
+          "mechPilot",
+          "advancedMech"
+        ],
+        [
+          "puffcapTrapper",
+          "masterTrapper"
+        ],
+        [
+          "lopingTelescope",
+          "wayfindingTelescope"
+        ],
+        [
+          "bandleGunner",
+          "bandleBombardier"
+        ],
+        [
+          "mirrorMage",
+          "mirrorArchmage"
+        ]
+      ],
+      "defaultTavern": 1,
+      "guildBackground": [
+        "TPMAGE.bmp"
+      ],
+      "guildSpells": {
+        "core:bless": 15,
+        "core:cure": 15,
+        "core:dispel": 20,
+        "core:fortune": 30,
+        "core:haste": 20,
+        "core:magicArrow": 10,
+        "core:mirth": 20,
+        "core:precision": 20,
+        "core:removeObstacle": 20,
+        "core:shield": 10,
+        "core:teleport": 30,
+        "core:visions": 20
+      },
+      "guildWindow": [
+        "TPMAGECS.bmp"
+      ],
+      "guildWindowPosition": {
+        "x": 332,
+        "y": 76
+      },
+      "hallBackground": "TPTHBKCS.bmp",
+      "hallSlots": [
+        [
+          [
+            "villageHall",
+            "townHall",
+            "cityHall",
+            "capitol"
+          ],
+          [
+            "fort",
+            "citadel",
+            "castle"
+          ],
+          [
+            "mageGuild1",
+            "mageGuild2",
+            "mageGuild3"
+          ],
+          [
+            "tavern",
+            "special3"
+          ]
+        ],
+        [
+          [
+            "marketplace"
+          ],
+          [
+            "blacksmith",
+            "resourceSilo"
+          ],
+          [
+            "special1"
+          ],
+          [
+            "special2"
+          ]
+        ],
+        [
+          [
+            "special4"
+          ],
+          [
+            "dwellingLvl1",
+            "dwellingUpLvl1"
+          ],
+          [
+            "dwellingLvl2",
+            "dwellingUpLvl2"
+          ],
+          [
+            "dwellingLvl3",
+            "dwellingUpLvl3"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl4",
+            "dwellingUpLvl4"
+          ],
+          [
+            "dwellingLvl5",
+            "dwellingUpLvl5"
+          ],
+          [
+            "dwellingLvl6",
+            "dwellingUpLvl6"
+          ],
+          [
+            "dwellingLvl7",
+            "dwellingUpLvl7"
+          ]
+        ],
+        [
+          [
+            "shipyard"
+          ],
+          [
+            "grail"
+          ]
+        ]
+      ],
+      "horde": [
+        -1,
+        -1
+      ],
+      "icons": {
+        "fort": {
+          "built": {
+            "large": "runeterra/bandlecity/town/icons/fort_built_large.png",
+            "small": "runeterra/bandlecity/town/icons/fort_built_small.png"
+          },
+          "normal": {
+            "large": "runeterra/bandlecity/town/icons/fort_normal_large.png",
+            "small": "runeterra/bandlecity/town/icons/fort_normal_small.png"
+          }
+        },
+        "village": {
+          "built": {
+            "large": "runeterra/bandlecity/town/icons/village_built_large.png",
+            "small": "runeterra/bandlecity/town/icons/village_built_small.png"
+          },
+          "normal": {
+            "large": "runeterra/bandlecity/town/icons/village_normal_large.png",
+            "small": "runeterra/bandlecity/town/icons/village_normal_small.png"
+          }
+        }
+      },
+      "mageGuild": 3,
+      "mapObject": {
+        "filters": {
+          "capitol": [
+            "capitol"
+          ],
+          "castle": [
+            "allOf",
+            [
+              "castle"
+            ],
+            [
+              "noneOf",
+              [
+                "capitol"
+              ]
+            ]
+          ],
+          "citadel": [
+            "allOf",
+            [
+              "citadel"
+            ],
+            [
+              "noneOf",
+              [
+                "castle"
+              ]
+            ]
+          ],
+          "fort": [
+            "allOf",
+            [
+              "fort"
+            ],
+            [
+              "noneOf",
+              [
+                "citadel"
+              ]
+            ]
+          ],
+          "village": [
+            "noneOf",
+            [
+              "fort"
+            ]
+          ]
+        },
+        "templates": {
+          "capitol": {
+            "animation": "runeterra/bandlecity/town/map/capitol.json",
+            "mask": [
+              "VVVVVV",
+              "VVVVVV",
+              "VVVVVV",
+              "VVBBBV",
+              "VBBABB"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ]
+          },
+          "castle": {
+            "animation": "runeterra/bandlecity/town/map/castle.json",
+            "mask": [
+              "VVVVVV",
+              "VVVVVV",
+              "VVVVVV",
+              "VVBBBV",
+              "VBBABB"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ]
+          },
+          "citadel": {
+            "animation": "runeterra/bandlecity/town/map/citadel.json",
+            "mask": [
+              "VVVVVV",
+              "VVVVVV",
+              "VVVVVV",
+              "VVBBBV",
+              "VBBABB"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ]
+          },
+          "fort": {
+            "animation": "runeterra/bandlecity/town/map/fort.json",
+            "mask": [
+              "VVVVVV",
+              "VVVVVV",
+              "VVVVVV",
+              "VVBBBV",
+              "VBBABB"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ]
+          },
+          "village": {
+            "animation": "runeterra/bandlecity/town/map/village.json",
+            "mask": [
+              "VVVVVV",
+              "VVVVVV",
+              "VVVVVV",
+              "VVBBBV",
+              "VBBABB"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ]
+          }
+        }
+      },
+      "moatAbility": "core:castleMoat",
+      "musicTheme": [
+        "music/GoodTheme"
+      ],
+      "names": [
+        "Acorn Crossing",
+        "Mossbell Hollow",
+        "Reedbank Haven",
+        "Glade Lantern",
+        "Teapot Terrace",
+        "Briar Crossing",
+        "Wayfarers Grove",
+        "Brassroot"
+      ],
+      "primaryResource": "mercury",
+      "siege": {
+        "gate": {
+          "arch": {
+            "x": 477,
+            "y": 238
+          },
+          "gate": {
+            "x": 399,
+            "y": 274
+          }
+        },
+        "imagePrefix": "runeterra/bandlecity/siege/SGBC",
+        "moat": {
+          "bank": {
+            "x": 403,
+            "y": 80
+          },
+          "moat": {
+            "x": 410,
+            "y": 90
+          }
+        },
+        "shooter": "bandleGunner",
+        "static": {
+          "background": {
+            "x": 600,
+            "y": 49
+          },
+          "bottom": {
+            "x": 512,
+            "y": 347
+          },
+          "top": {
+            "x": 489,
+            "y": 79
+          }
+        },
+        "towerIconLarge": "runeterra/bandlecity/siege/towerLarge.png",
+        "towerIconSmall": "runeterra/bandlecity/siege/towerSmall.png",
+        "towers": {
+          "bottom": {
+            "battlement": {
+              "x": 602,
+              "y": 500
+            },
+            "creature": {
+              "x": 394,
+              "y": 299
+            },
+            "tower": {
+              "x": 602,
+              "y": 500
+            }
+          },
+          "keep": {
+            "battlement": {
+              "x": 720,
+              "y": 158
+            },
+            "creature": {
+              "x": 526,
+              "y": -29
+            },
+            "tower": {
+              "x": 720,
+              "y": 158
+            }
+          },
+          "top": {
+            "battlement": {
+              "x": 557,
+              "y": 24
+            },
+            "creature": {
+              "x": 342,
+              "y": -187
+            },
+            "tower": {
+              "x": 569,
+              "y": 35
+            }
+          }
+        },
+        "walls": {
+          "bottom": {
+            "x": 528,
+            "y": 350
+          },
+          "bottomMid": {
+            "x": 469,
+            "y": 291
+          },
+          "upper": {
+            "x": 524,
+            "y": 32
+          },
+          "upperMid": {
+            "x": 470,
+            "y": 127
+          }
+        }
+      },
+      "structures": {
+        "blacksmith": {
+          "animation": "runeterra/bandlecity/town/structures/blacksmith.json",
+          "area": "runeterra/bandlecity/town/structures/blacksmith_area.png",
+          "border": "runeterra/bandlecity/town/structures/blacksmith_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/blacksmith_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 373
+        },
+        "capitol": {
+          "animation": "runeterra/bandlecity/town/structures/capitol.json",
+          "area": "runeterra/bandlecity/town/structures/capitol_area.png",
+          "border": "runeterra/bandlecity/town/structures/capitol_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/capitol_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 123
+        },
+        "castle": {
+          "animation": "runeterra/bandlecity/town/structures/castle.json",
+          "area": "runeterra/bandlecity/town/structures/castle_area.png",
+          "border": "runeterra/bandlecity/town/structures/castle_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/castle_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 127
+        },
+        "citadel": {
+          "animation": "runeterra/bandlecity/town/structures/citadel.json",
+          "area": "runeterra/bandlecity/town/structures/citadel_area.png",
+          "border": "runeterra/bandlecity/town/structures/citadel_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/citadel_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 127
+        },
+        "cityHall": {
+          "animation": "runeterra/bandlecity/town/structures/cityHall.json",
+          "area": "runeterra/bandlecity/town/structures/cityHall_area.png",
+          "border": "runeterra/bandlecity/town/structures/cityHall_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/cityHall_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 123
+        },
+        "dwellingLvl1": {
+          "animation": "runeterra/bandlecity/town/structures/dwellingLvl1.json",
+          "area": "runeterra/bandlecity/town/structures/dwellingLvl1_area.png",
+          "border": "runeterra/bandlecity/town/structures/dwellingLvl1_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/dwellingLvl1_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 373
+        },
+        "dwellingLvl2": {
+          "animation": "runeterra/bandlecity/town/structures/dwellingLvl2.json",
+          "area": "runeterra/bandlecity/town/structures/dwellingLvl2_area.png",
+          "border": "runeterra/bandlecity/town/structures/dwellingLvl2_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/dwellingLvl2_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 249
+        },
+        "dwellingLvl3": {
+          "animation": "runeterra/bandlecity/town/structures/dwellingLvl3.json",
+          "area": "runeterra/bandlecity/town/structures/dwellingLvl3_area.png",
+          "border": "runeterra/bandlecity/town/structures/dwellingLvl3_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/dwellingLvl3_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 297
+        },
+        "dwellingLvl4": {
+          "animation": "runeterra/bandlecity/town/structures/dwellingLvl4.json",
+          "area": "runeterra/bandlecity/town/structures/dwellingLvl4_area.png",
+          "border": "runeterra/bandlecity/town/structures/dwellingLvl4_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/dwellingLvl4_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 372
+        },
+        "dwellingLvl5": {
+          "animation": "runeterra/bandlecity/town/structures/dwellingLvl5.json",
+          "area": "runeterra/bandlecity/town/structures/dwellingLvl5_area.png",
+          "border": "runeterra/bandlecity/town/structures/dwellingLvl5_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/dwellingLvl5_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 274
+        },
+        "dwellingLvl6": {
+          "animation": "runeterra/bandlecity/town/structures/dwellingLvl6.json",
+          "area": "runeterra/bandlecity/town/structures/dwellingLvl6_area.png",
+          "border": "runeterra/bandlecity/town/structures/dwellingLvl6_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/dwellingLvl6_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 245
+        },
+        "dwellingLvl7": {
+          "animation": "runeterra/bandlecity/town/structures/dwellingLvl7.json",
+          "area": "runeterra/bandlecity/town/structures/dwellingLvl7_area.png",
+          "border": "runeterra/bandlecity/town/structures/dwellingLvl7_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/dwellingLvl7_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 145
+        },
+        "dwellingUpLvl1": {
+          "animation": "runeterra/bandlecity/town/structures/dwellingUpLvl1.json",
+          "area": "runeterra/bandlecity/town/structures/dwellingUpLvl1_area.png",
+          "border": "runeterra/bandlecity/town/structures/dwellingUpLvl1_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/dwellingUpLvl1_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 373
+        },
+        "dwellingUpLvl2": {
+          "animation": "runeterra/bandlecity/town/structures/dwellingUpLvl2.json",
+          "area": "runeterra/bandlecity/town/structures/dwellingUpLvl2_area.png",
+          "border": "runeterra/bandlecity/town/structures/dwellingUpLvl2_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/dwellingUpLvl2_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 249
+        },
+        "dwellingUpLvl3": {
+          "animation": "runeterra/bandlecity/town/structures/dwellingUpLvl3.json",
+          "area": "runeterra/bandlecity/town/structures/dwellingUpLvl3_area.png",
+          "border": "runeterra/bandlecity/town/structures/dwellingUpLvl3_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/dwellingUpLvl3_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 297
+        },
+        "dwellingUpLvl4": {
+          "animation": "runeterra/bandlecity/town/structures/dwellingUpLvl4.json",
+          "area": "runeterra/bandlecity/town/structures/dwellingUpLvl4_area.png",
+          "border": "runeterra/bandlecity/town/structures/dwellingUpLvl4_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/dwellingUpLvl4_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 372
+        },
+        "dwellingUpLvl5": {
+          "animation": "runeterra/bandlecity/town/structures/dwellingUpLvl5.json",
+          "area": "runeterra/bandlecity/town/structures/dwellingUpLvl5_area.png",
+          "border": "runeterra/bandlecity/town/structures/dwellingUpLvl5_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/dwellingUpLvl5_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 274
+        },
+        "dwellingUpLvl6": {
+          "animation": "runeterra/bandlecity/town/structures/dwellingUpLvl6.json",
+          "area": "runeterra/bandlecity/town/structures/dwellingUpLvl6_area.png",
+          "border": "runeterra/bandlecity/town/structures/dwellingUpLvl6_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/dwellingUpLvl6_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 245
+        },
+        "dwellingUpLvl7": {
+          "animation": "runeterra/bandlecity/town/structures/dwellingUpLvl7.json",
+          "area": "runeterra/bandlecity/town/structures/dwellingUpLvl7_area.png",
+          "border": "runeterra/bandlecity/town/structures/dwellingUpLvl7_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/dwellingUpLvl7_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 145
+        },
+        "fort": {
+          "animation": "runeterra/bandlecity/town/structures/fort.json",
+          "area": "runeterra/bandlecity/town/structures/fort_area.png",
+          "border": "runeterra/bandlecity/town/structures/fort_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/fort_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 127
+        },
+        "grail": {
+          "animation": "runeterra/bandlecity/town/structures/grail.json",
+          "area": "runeterra/bandlecity/town/structures/grail_area.png",
+          "border": "runeterra/bandlecity/town/structures/grail_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/grail_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 128
+        },
+        "mageGuild1": {
+          "animation": "runeterra/bandlecity/town/structures/mageGuild1.json",
+          "area": "runeterra/bandlecity/town/structures/mageGuild1_area.png",
+          "border": "runeterra/bandlecity/town/structures/mageGuild1_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/mageGuild1_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 116
+        },
+        "mageGuild2": {
+          "animation": "runeterra/bandlecity/town/structures/mageGuild2.json",
+          "area": "runeterra/bandlecity/town/structures/mageGuild2_area.png",
+          "border": "runeterra/bandlecity/town/structures/mageGuild2_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/mageGuild2_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 116
+        },
+        "mageGuild3": {
+          "animation": "runeterra/bandlecity/town/structures/mageGuild3.json",
+          "area": "runeterra/bandlecity/town/structures/mageGuild3_area.png",
+          "border": "runeterra/bandlecity/town/structures/mageGuild3_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/mageGuild3_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 116
+        },
+        "marketplace": {
+          "animation": "runeterra/bandlecity/town/structures/marketplace.json",
+          "area": "runeterra/bandlecity/town/structures/marketplace_area.png",
+          "border": "runeterra/bandlecity/town/structures/marketplace_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/marketplace_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 362
+        },
+        "resourceSilo": {
+          "animation": "runeterra/bandlecity/town/structures/resourceSilo.json",
+          "area": "runeterra/bandlecity/town/structures/resourceSilo_area.png",
+          "border": "runeterra/bandlecity/town/structures/resourceSilo_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/resourceSilo_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 373
+        },
+        "ship": {
+          "animation": "runeterra/bandlecity/town/structures/ship.json",
+          "area": "runeterra/bandlecity/town/structures/ship_area.png",
+          "border": "runeterra/bandlecity/town/structures/ship_border.png",
+          "builds": "shipyard",
+          "campaignBonus": "runeterra/bandlecity/town/structures/ship_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 375
+        },
+        "shipyard": {
+          "animation": "runeterra/bandlecity/town/structures/shipyard.json",
+          "area": "runeterra/bandlecity/town/structures/shipyard_area.png",
+          "border": "runeterra/bandlecity/town/structures/shipyard_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/shipyard_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 374
+        },
+        "special1": {
+          "animation": "runeterra/bandlecity/town/structures/special1.json",
+          "area": "runeterra/bandlecity/town/structures/special1_area.png",
+          "border": "runeterra/bandlecity/town/structures/special1_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/special1_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 220
+        },
+        "special2": {
+          "animation": "runeterra/bandlecity/town/structures/special2.json",
+          "area": "runeterra/bandlecity/town/structures/special2_area.png",
+          "border": "runeterra/bandlecity/town/structures/special2_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/special2_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 247
+        },
+        "special3": {
+          "animation": "runeterra/bandlecity/town/structures/special3.json",
+          "area": "runeterra/bandlecity/town/structures/special3_area.png",
+          "border": "runeterra/bandlecity/town/structures/special3_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/special3_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 370
+        },
+        "special4": {
+          "animation": "runeterra/bandlecity/town/structures/special4.json",
+          "area": "runeterra/bandlecity/town/structures/special4_area.png",
+          "border": "runeterra/bandlecity/town/structures/special4_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/special4_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 247
+        },
+        "tavern": {
+          "animation": "runeterra/bandlecity/town/structures/tavern.json",
+          "area": "runeterra/bandlecity/town/structures/tavern_area.png",
+          "border": "runeterra/bandlecity/town/structures/tavern_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/tavern_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 370
+        },
+        "townHall": {
+          "animation": "runeterra/bandlecity/town/structures/townHall.json",
+          "area": "runeterra/bandlecity/town/structures/townHall_area.png",
+          "border": "runeterra/bandlecity/town/structures/townHall_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/townHall_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 123
+        },
+        "villageHall": {
+          "animation": "runeterra/bandlecity/town/structures/villageHall.json",
+          "area": "runeterra/bandlecity/town/structures/villageHall_area.png",
+          "border": "runeterra/bandlecity/town/structures/villageHall_border.png",
+          "campaignBonus": "runeterra/bandlecity/town/structures/villageHall_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 123
+        }
+      },
+      "tavern": {
+        "bandleMarshal": 10,
+        "gladeKeeper": 10
+      },
+      "tavernVideo": "TAVERN.BIK",
+      "townBackground": "runeterra/bandlecity/town/background.png"
+    }
+  }
+}

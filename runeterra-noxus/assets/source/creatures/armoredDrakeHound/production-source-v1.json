@@ -1,0 +1,140 @@
+{
+  "definition": {
+    "category": "walking-melee",
+    "comparison": [
+      "core:cerberus",
+      "core:hellHound"
+    ],
+    "equipment": [
+      "skull-cap",
+      "rib-plates",
+      "foreclaw-cuffs",
+      "low-harness-spikes"
+    ],
+    "family": "hound",
+    "height": 1.1,
+    "native_height": 52,
+    "nature": "living",
+    "silhouette": "Broader neck with articulated iron skull cap, three separate shoulder/rib saddle plates, low harness spikes and reinforced foreclaw cuffs; no rider or horse tack",
+    "tier": 2,
+    "two_hex": false,
+    "upgrade": true,
+    "weakness": "Grounded contact fighter; no safe free attack",
+    "weapon": "jaw",
+    "width": 0.27
+  },
+  "emblem": {
+    "policy": "Leave emblem fields blank in guides. Obtain a genuine official Riot Noxus emblem, preserve exact source URL/bytes/hash and permissions before final painted art. Never invent a crest or reuse Demacia heraldry.",
+    "sha256": null,
+    "source_url": null,
+    "status": "blocked-official-source-provenance-required"
+  },
+  "generation": {
+    "image_generation_used": false,
+    "model": null,
+    "prompt": null,
+    "provider": null
+  },
+  "model_sheet_type": "editable volumetric rig + transparent pose guides, NOT painted art",
+  "native_groups": {
+    "0": {
+      "action": "walk-contact",
+      "minimum_guide_poses": 6
+    },
+    "1": {
+      "action": "fidget-equipment-check",
+      "minimum_guide_poses": 4
+    },
+    "11": {
+      "action": "melee-up",
+      "minimum_guide_poses": 6
+    },
+    "12": {
+      "action": "melee-front",
+      "minimum_guide_poses": 6
+    },
+    "13": {
+      "action": "melee-down",
+      "minimum_guide_poses": 6
+    },
+    "2": {
+      "action": "idle",
+      "minimum_guide_poses": 1
+    },
+    "3": {
+      "action": "hit-recoil",
+      "minimum_guide_poses": 4
+    },
+    "4": {
+      "action": "defend-brace",
+      "minimum_guide_poses": 4
+    },
+    "5": {
+      "action": "death-collapse",
+      "minimum_guide_poses": 6
+    },
+    "7": {
+      "action": "turn-toward-viewer",
+      "minimum_guide_poses": 4
+    },
+    "8": {
+      "action": "turn-back",
+      "minimum_guide_poses": 4
+    }
+  },
+  "painting_contract": {
+    "acceptance": false,
+    "camera": "One measured uniform camera/placement correction per action atlas, preserve every source and rejected revision; no per-frame stretch, warping, auto-fit or idle-as-action",
+    "continuity": "Use each unit's own model/upgrade definition and all actual pose guides; preserve joint contacts and independent silhouettes",
+    "required_capability": "ChatGPT image-generation skill / built-in image_gen.imagegen or human painted masters",
+    "review": [
+      "transparent background and no baked floor",
+      "ground contact at native pivot",
+      "no cross-cell contamination",
+      "whole action semantics and projectile release",
+      "base/upgrade silhouette and equipment distinction",
+      "genuine Noxus emblem legibility and provenance",
+      "native original/Demacia comparison",
+      "real native runtime review"
+    ],
+    "status": "blocked-missing-painted-masters",
+    "style": "Original Heroes III native painted/prerendered treatment, restrained highlights, matte iron/crimson/black, upper-left lighting; not glossy modern 3D, flat vector or splash art"
+  },
+  "pipeline": [
+    "art_creature_rigs.py actual Blender assembly",
+    "all groups keyed as genuine skeletal poses",
+    "art_creature_sources.py --review fixed whole-cohort uniform native conversion",
+    "painted master production BLOCKED",
+    "source pins and native action review BLOCKED",
+    "coordinator-only manifest selection, assembly and runtime acceptance NOT PERFORMED"
+  ],
+  "production_recipes": [
+    {
+      "path": "assets/recipes/creatures/armoredDrakeHound-battle.json",
+      "sha256": "3b7d00f6cb7ecd07bded54fe2f0d1dfd6260117c17f360c4399c7e72ad2de1a8"
+    },
+    {
+      "path": "assets/recipes/creatures/armoredDrakeHound-map.json",
+      "sha256": "97f8027a22a720a3da41313fb34cd86db198badc34192998a9d58cc53f007eff"
+    },
+    {
+      "path": "assets/recipes/creatures/armoredDrakeHound-large.json",
+      "sha256": "992a92bfcf5e831c38613f071e882776070233e4b472ed8df9643d68edb6ab32"
+    },
+    {
+      "path": "assets/recipes/creatures/armoredDrakeHound-small.json",
+      "sha256": "60092d53f81a91b11d2280e139f6ecb1ce569b94f1083e92a9294ff31fd0ea16"
+    },
+    {
+      "path": "assets/recipes/creatures/armoredDrakeHound-attackLeft.json",
+      "sha256": "59a583818733ce51ac87c3da4d82a0fa440b09ac7831be8a7e9dd6a3c9e21980"
+    },
+    {
+      "path": "assets/recipes/creatures/armoredDrakeHound-attackRight.json",
+      "sha256": "68b4cd491ff5bccc7a39538262aec7aa7c47ff68ea23f799e217bb87555f027b"
+    }
+  ],
+  "status": "authored configuration",
+  "unit": "armoredDrakeHound",
+  "visual_approval_granted": false
+}

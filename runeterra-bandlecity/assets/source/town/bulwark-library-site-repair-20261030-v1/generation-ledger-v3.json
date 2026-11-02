@@ -1,0 +1,59 @@
+{
+  "derivation": {
+    "path": "assets/source/town/bulwark-library-site-repair-20261030-v1/states-v3/derivation.json",
+    "sha256": "59d72fe95de744bae8f6e907e2e43296d7ca8ddb13f69afc99e5369804289b7b"
+  },
+  "model": "not exposed by tool",
+  "no_3d": true,
+  "painted_inputs": [
+    {
+      "path": "assets/source/town/bulwark-library-site-repair-20261030-v1/background-provider-v1.png",
+      "prompt_summary": "Repair only the small mossy bridgehead/courtyard between Glade Library and the gate, making a connected walkable stone route. Preserve other approved town details. Exact old pixels restored outside the bounded ROI by technical composition.",
+      "references": [
+        {
+          "path": "assets/source/town/approved-BC1-completion-20261030-v1/background-v7.png",
+          "sha256": "3257060afff6fd87d74fc31e7c28df4ef478f15f02b1bf1a81b49cafd4b054cd"
+        }
+      ],
+      "role": "local ground repaint",
+      "sha256": "a51bb4d4846ece606daa45b8e1f169c1447de4ea182f7df58d5e3ae5067f9073"
+    },
+    {
+      "path": "assets/source/town/bulwark-library-site-repair-20261030-v1/castle-provider-v1.png",
+      "prompt_summary": "A complete isolated Bandle City twin gatehouse with stone and timber towers, teal roofs, golden lamps, leaf/spiral crest banners and centered entrance, coherent with the painted HoMM3 town. Transparent outside the full building; no scenery or bridge.",
+      "role": "independent final fortification",
+      "sha256": "19477ff0e17b0803745ad8c347fcfbe1e2fe2b1243b65ee3558ed7ba230c0c69"
+    },
+    {
+      "path": "assets/source/town/approved-BC1-completion-20261030-v1/civic-states-v1.png",
+      "role": "preserved prior painted fort and citadel, uniform scale and threshold registration only",
+      "sha256": "f8f08728ada0e1a7649a8da75e6dc2ab33f8e8ac291f6e91ba8a9870d13e3f17"
+    }
+  ],
+  "producer": {
+    "path": "assets/source/town/bulwark-library-site-repair-20261030-v1/derive-v3.py",
+    "sha256": "8d15e131cf8a9da21ce507d18296086e7eb78af00d66666585bf5597d533ad30"
+  },
+  "provider": "OpenAI built-in imagegen",
+  "reason": "User rejected the library-to-Bulwark bridgehead and unupgraded fort placement after BC1 selection.",
+  "release_accepted": false,
+  "scope": {
+    "background_roi": [
+      212,
+      54,
+      307,
+      119
+    ],
+    "common_gate_door": [
+      270,
+      75
+    ],
+    "dwelling_layers_changed": false,
+    "library_layers_changed": false,
+    "one_site_per_creature_tier_preserved": true,
+    "optional_coastal_site_preserved": true,
+    "sixteen_land_plots_preserved": true
+  },
+  "status": "authored configuration",
+  "visual_approval_granted": false
+}

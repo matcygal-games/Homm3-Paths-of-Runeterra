@@ -1,0 +1,1574 @@
+{
+  "alpha_threshold": 8,
+  "authoring_sources": [
+    {
+      "path": "assets/source/town/complete-town-20261028-v1/physical-contract-v1/terrain-observation-draft-v1.json",
+      "sha256": "baba8cd870a386d4203412da64e3856e196a010f6d6950cad75af59d1560e9c1"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261028-v1/physical-contract-v1/contact-observation-draft-v1.json",
+      "sha256": "e89924e04503e4ce97b50fbb5d2329b613d3465003d2c6c455c957b9ac6d2c06"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/source-separation.json",
+      "sha256": "e89bd9d7c02292306292c76f24c1402d5c33e3dbff96645f9639a3b89b4cab40"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical_baseline.py",
+      "sha256": "53126f37627bd9c88e7ceac19b5323f0c3c06612a302b0c247eef3e828dbce79"
+    }
+  ],
+  "background": {
+    "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/background.png",
+    "sha256": "17d8ce5fe02ba381a9b6fc3fd1e5d0e24a190be6a74eb62bc7edb960ecbb402b"
+  },
+  "canvas": [
+    800,
+    374
+  ],
+  "frames": {
+    "blacksmith": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/blacksmith/layer.png",
+      "sha256": "cc509e5a5cc805cdf663506f3ed6fe0ea15a2f0f6e38c70504ba87778808f8bd"
+    },
+    "capitol": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/capitol/layer.png",
+      "sha256": "cd9c784f4ee84ad0610c6a85411328b918a93bfc04eca35fa00b37a18bcf1229"
+    },
+    "castle": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/castle/layer.png",
+      "sha256": "0def777e974a00af4224905958630bdb148a82bca8dada07af72616f4b4bebd3"
+    },
+    "citadel": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/citadel/layer.png",
+      "sha256": "832466d96b7ca70a7efb2102a1755e5eeafa2dc764597ff383eeb56d2b342d79"
+    },
+    "cityHall": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/cityHall/layer.png",
+      "sha256": "776352d21d9c66d9f483dda43ae4fe417cbf00046bd454fd8f11a4311078a57a"
+    },
+    "dwellingLvl1": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/dwellingLvl1/layer.png",
+      "sha256": "16246f3fac042e5cfab90c6f772cc8394456a7855c614672a2efa31f08f94aba"
+    },
+    "dwellingLvl2": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/dwellingLvl2/layer.png",
+      "sha256": "aece3b56a4f3d94b163f6ed26d00be91efd59903494a13b2bb13a0a8ce395a22"
+    },
+    "dwellingLvl3": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/dwellingLvl3/layer.png",
+      "sha256": "f64310e0e4ce8b211cbb63a43b0ba4a49143a18affd53105cdb95c5f9d10117b"
+    },
+    "dwellingLvl4": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/dwellingLvl4/layer.png",
+      "sha256": "7a99a204f633cacf7b1569b459fd535bf87f70f42b679aada33dbc6491deafbc"
+    },
+    "dwellingLvl5": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/dwellingLvl5/layer.png",
+      "sha256": "dc881de882db318cdc1718dd6ac7068c1a1e68bd7cedda929da4974be579382d"
+    },
+    "dwellingLvl6": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/dwellingLvl6/layer.png",
+      "sha256": "66d6728f66fb8e895d1a7435e594675665aad022209d9172b26f467d86d9e2cb"
+    },
+    "dwellingLvl7": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/dwellingLvl7/layer.png",
+      "sha256": "faa6889c4d287d9ff035445ecc33762586eedb4311037d73a9feabfb06087718"
+    },
+    "dwellingUpLvl1": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/dwellingUpLvl1/layer.png",
+      "sha256": "3deb1ebeb6112bb8d5cbef6697cdce61cd4cb3742d0b9051858cfded322d173d"
+    },
+    "dwellingUpLvl2": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/dwellingUpLvl2/layer.png",
+      "sha256": "a508449686c49b38d1c90fc8b8cd4afa74f21bc9dda1dc58b0049950966aa864"
+    },
+    "dwellingUpLvl3": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/dwellingUpLvl3/layer.png",
+      "sha256": "683aed2a8b137da7d74f64a2ec2f526eeff1981aba29ecbfcd9eb9107f6e9402"
+    },
+    "dwellingUpLvl4": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/dwellingUpLvl4/layer.png",
+      "sha256": "c5f9b42104db271b2ef571140c963a2a60a12a77e22bba81f2e4f8804bac67a5"
+    },
+    "dwellingUpLvl5": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/dwellingUpLvl5/layer.png",
+      "sha256": "292e0dd41bf6b7e0aa00bdcf598500cae41bc1f74bd8e0fd38ee0ea53e32ac3e"
+    },
+    "dwellingUpLvl6": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/dwellingUpLvl6/layer.png",
+      "sha256": "b4f7596d491e50b8ef6cce731923b903c9f2822198ee616043f98e5692433dd6"
+    },
+    "dwellingUpLvl7": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/dwellingUpLvl7/layer.png",
+      "sha256": "6b2ad25932176f19e918fb4d9f202e1b7c6ba5e1b14a5e0de911acf29176f992"
+    },
+    "fort": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/fort/layer.png",
+      "sha256": "cf7e93a903a853102ef763a60b3aab8be4b391b96750c7b3b7e4e33b03ca757a"
+    },
+    "grail": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/grail/layer.png",
+      "sha256": "253478e485c834fe6dcb2c2d8b7e35025d6cfae3a8afeeba8ab7b73edcdc2208"
+    },
+    "mageGuild1": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/mageGuild1/layer.png",
+      "sha256": "df4953053b7ea2623c70fc73cc30fb2871ffa35a5f3d8b1d72a84d3b12b9b6f7"
+    },
+    "mageGuild2": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/mageGuild2/layer.png",
+      "sha256": "bb83b91432aad9ddb106537d9c7b539418dba17111fd58220bd88253990da086"
+    },
+    "mageGuild3": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/mageGuild3/layer.png",
+      "sha256": "938c8bec025adcd7497ad3b014712b0c68ffbd40fdf8dc8b2b706e2d85a47a32"
+    },
+    "marketplace": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/marketplace/layer.png",
+      "sha256": "55a5d2a307021d310530bf05bb3291aea99db980e2db80fc77b4917353d81dca"
+    },
+    "resourceSilo": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/resourceSilo/layer.png",
+      "sha256": "3b44eb061f5cb8dc6bc7c927bdb555266bff329181e9416002de5af62cd476d2"
+    },
+    "ship": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/ship/layer.png",
+      "sha256": "c17b9081e437370e6d44eb04fcc5426b62c12ee6086ce177af096eeba01c96f5"
+    },
+    "shipyard": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/shipyard/layer.png",
+      "sha256": "a2352ffe1a4d9ecc75f85c1fa750d8c27a3e2c69d400c48ad3f82dcd3eed4471"
+    },
+    "special1": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/special1/layer.png",
+      "sha256": "32cd7beacecfdad82c1fffb5b893d08d8c0736bd2d776b0e1a35e046993f3338"
+    },
+    "special2": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/special2/layer.png",
+      "sha256": "d8acbf51a1bd6293fcddd647537acd59bd6761f296f0bf5f6bfac66de4399d60"
+    },
+    "special3": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/special3/layer.png",
+      "sha256": "ffb93e134a2e635e221f1aee5c513eec0be941651ea9634042aeb736adae6be6"
+    },
+    "special4": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/special4/layer.png",
+      "sha256": "78257a53f9cee13b2530b972f97e91cc138374f1ba20a49ca73cafc67fb8f637"
+    },
+    "tavern": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/tavern/layer.png",
+      "sha256": "8244052e187d71ef06a7856145706b4c38f15d9b1d7610df96ec8694c3b63af4"
+    },
+    "townHall": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/townHall/layer.png",
+      "sha256": "c1630f17f239a6b16d04815da435e091bd96fd654d518f225de22350ef9fcfda"
+    },
+    "villageHall": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/prepared/structures/villageHall/layer.png",
+      "sha256": "bb3038ece8ae3e9d3561a14bcc28d06ad824faf78f5e0b1b492620d67b65176a"
+    }
+  },
+  "geometry_mode": "silhouette-v2",
+  "land_mask": {
+    "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/terrain/land.png",
+    "sha256": "88325af329a7a92433a3b3ea971ff9c461ec5f8ebeb754004507674ad402684f"
+  },
+  "ordinary_land_sites": 16,
+  "semantic_limits": "Actual independent architectural/public-terrace separation and complete-contact source annotations. Actual public consumer must pass unchanged; external art/runtime acceptance remains separate. No support fitted to feet.",
+  "silhouette_plan": {
+    "complete_scene": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/approved-full.png",
+      "sha256": "f2e766e5a3c40c09e478d7944ac84996a7d96de26e3e415fe546e3174a2a0afc"
+    },
+    "complete_scene_states": [
+      "dwellingUpLvl7",
+      "castle",
+      "capitol",
+      "dwellingUpLvl5",
+      "special4",
+      "resourceSilo",
+      "mageGuild3",
+      "dwellingUpLvl2",
+      "dwellingUpLvl4",
+      "dwellingUpLvl3",
+      "ship",
+      "special3",
+      "dwellingUpLvl1",
+      "dwellingUpLvl6",
+      "blacksmith",
+      "tavern",
+      "marketplace"
+    ],
+    "foundation_occlusions": [
+      {
+        "behind": "civic",
+        "evidence": {
+          "complete_scene": {
+            "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/foundation-cases/civic--guild/complete.png",
+            "sha256": "7154b4d7ff27138d7fc5586f0f96b87259a7c4c6d92a3232535e2d71b3edeee8"
+          },
+          "front_absent_scene": {
+            "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/foundation-cases/civic--guild/foreground-absent.png",
+            "sha256": "e69fb28cfa512c2aa9612f34f5bc4ec9c1a8f848c314c93284ef47a1737f1e49"
+          },
+          "intersection_overlay": {
+            "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/foundation-cases/civic--guild/intersection-overlay.png",
+            "sha256": "d8ff47534ef96f2c8681a84349eff904ac0573e1e24ccef75da64c2424a7fcee"
+          }
+        },
+        "front": "guild",
+        "mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/foundation-cases/civic--guild-intersection.png",
+          "sha256": "c371d13782fbf8df1a35cc45aa00e0491cc6d08a72567eb086a2dc7ba7e68541"
+        },
+        "reason": "The civic left wing stands on the upper ridge court, while the tall library stands on the distinct lower terrace. The foreground library roof projects across only a bounded non-access portion of the rear wing's contact seam. The main civic doorway and its public approach remain clear. Genuine registered library-absent studies recover the rear woodwork in every state; no foreground roof RGB remains the rear layer source.",
+        "source_case": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/foundation-cases/civic--guild/source-case.json",
+          "sha256": "08d8b74d3e97082c51c88677e7350c9ee8d2d2fdbe0b91bc34038f639bd880b4"
+        }
+      },
+      {
+        "behind": "defenses",
+        "evidence": {
+          "complete_scene": {
+            "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/foundation-cases/defenses--protector/complete.png",
+            "sha256": "ff5dfb6a20bacb6b4dbf13d9948dd3a689a3ad84e2e709de66da738b9d1a9795"
+          },
+          "front_absent_scene": {
+            "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/foundation-cases/defenses--protector/foreground-absent.png",
+            "sha256": "524ad401798059fbfdeac2fddafb6f72b38deec3a3d04bcf2277b228072ebcf9"
+          },
+          "intersection_overlay": {
+            "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/foundation-cases/defenses--protector/intersection-overlay.png",
+            "sha256": "331c9448e8f6a625d1c25f79bb81360e4d93b837254705c7600c1265615b715f"
+          }
+        },
+        "front": "protector",
+        "mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/foundation-cases/defenses--protector-intersection.png",
+          "sha256": "ced7bfa3d4202a27b57fc94d5cf5248b4cb123a052aba7bafa1ea08a9d1c2298"
+        },
+        "reason": "The bastion towers and wall stand on the upper common cap, above the separate guardian sanctuary terrace. The nearer sanctuary roof projects over a bounded non-access portion of the rear eastern wall/tower foot seam. The bastion gate and descending access remain clear. Genuine guardian-absent studies provide complete rear walls, preserving the approved fully built painting.",
+        "source_case": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/foundation-cases/defenses--protector/source-case.json",
+          "sha256": "f726484d16bd0068e48abf7d560b4aa692bdfeb00d09fbd7c2cfda4cc76a4d10"
+        }
+      },
+      {
+        "behind": "guild",
+        "evidence": {
+          "complete_scene": {
+            "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/foundation-cases/guild--kinkou/complete.png",
+            "sha256": "5bca27d60f6193fe64168e3fb346d9c6eec33c50c891dcffac8fd2e08164aca5"
+          },
+          "front_absent_scene": {
+            "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/foundation-cases/guild--kinkou/foreground-absent.png",
+            "sha256": "dc6147ca56d72dbec4010d209489e462d34834f399df7dff5a06e8afcb308e9e"
+          },
+          "intersection_overlay": {
+            "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/foundation-cases/guild--kinkou/intersection-overlay.png",
+            "sha256": "8813ce0c555f92134643520a093f18bd9c2d12f761c3905f56fbd2528256c1df"
+          }
+        },
+        "front": "kinkou",
+        "mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/foundation-cases/guild--kinkou-intersection.png",
+          "sha256": "6b7f392c96ef4954e9fe68e566774d857a9a0c25b30a2cc8f3227496379c307b"
+        },
+        "reason": "The library's recovered lower stone pillar belongs to its own higher terrace, above the separate Kinkou veranda and gate. Only its seven bottom seam pixels project behind the lower gateway structure. The complete genuine67-pixel pillar, including22 approved visible connector pixels, remains present. Its hidden level bed is genuinely painted. The library doorway and approach are outside this bounded partial root intersection.",
+        "source_case": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/foundation-cases/guild--kinkou/source-case.json",
+          "sha256": "10eba8527fccd2ea0c67c317b9286688772eadb6cbf7cc8592889d6db028ef47"
+        }
+      }
+    ],
+    "overlaps": [
+      {
+        "behind": "civic",
+        "front": "guild",
+        "mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/overlaps/civic--guild.png",
+          "sha256": "ba97b660e082376b60c72298b4f261a86da00b1ad19a6a35459352ea504ea2a7"
+        },
+        "reason": "The civic left wing stands on the upper ridge court, while the tall library stands on the distinct lower terrace. The foreground library roof projects across only a bounded non-access portion of the rear wing's contact seam. The main civic doorway and its public approach remain clear. Genuine registered library-absent studies recover the rear woodwork in every state; no foreground roof RGB remains the rear layer source."
+      },
+      {
+        "behind": "defenses",
+        "front": "protector",
+        "mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/overlaps/defenses--protector.png",
+          "sha256": "15d4c8c06db68d5088c8ab536349d8bb84e5ff3fa0610791d7a1bf1add1e7546"
+        },
+        "reason": "The bastion towers and wall stand on the upper common cap, above the separate guardian sanctuary terrace. The nearer sanctuary roof projects over a bounded non-access portion of the rear eastern wall/tower foot seam. The bastion gate and descending access remain clear. Genuine guardian-absent studies provide complete rear walls, preserving the approved fully built painting."
+      },
+      {
+        "behind": "guild",
+        "front": "kinkou",
+        "mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/overlaps/guild--kinkou.png",
+          "sha256": "17045b6b4ab58ed85cd8aea8d8d97ec5f82d355d6662e60707a912f9bbf20f09"
+        },
+        "reason": "The library's recovered lower stone pillar belongs to its own higher terrace, above the separate Kinkou veranda and gate. Only its seven bottom seam pixels project behind the lower gateway structure. The complete genuine67-pixel pillar, including22 approved visible connector pixels, remains present. Its hidden level bed is genuinely painted. The library doorway and approach are outside this bounded partial root intersection."
+      },
+      {
+        "behind": "resistance",
+        "front": "inn",
+        "mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/overlaps/resistance--inn.png",
+          "sha256": "f481167b7d1ee4168842691544eb825436a4545bb1c0bc6b4540c71905506384"
+        },
+        "reason": "A bounded portion of the rear Resistance Hall eave projects behind the nearer inn roof. This intersection contains no rear foundation or doorway. Registered inn-absent painted studies recover both rear hall variants without changing the approved full view."
+      }
+    ],
+    "paths_mask": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/terrain/paths.png",
+      "sha256": "803382d2ff0039f305d8dddf9e58afaa335dcdb9c7610d2590aa9cf32aef0635"
+    },
+    "stairs_mask": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/terrain/stairs.png",
+      "sha256": "cbeca8c79583ded0394c637e7b3975fc926f7fb0f7d8a802e291255300c5136c"
+    },
+    "states": {
+      "blacksmith": {
+        "access_kind": "door",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/blacksmith/approach.png",
+          "sha256": "8ed30adc80a3eeb3ab702b4effcda70d81ac15ca982de319c0176701e60f65a5"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/blacksmith/body.png",
+          "sha256": "9b7e482ef48209a717e776c9c76c3066c675c8e3c9cd2ba395100cbe94543bed"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/blacksmith/door.png",
+          "sha256": "049c1e9e134ffdcdd6e5099cf4f6876da221838a01c3fdf7e58303521a0e53f8"
+        },
+        "entrance": [
+          171,
+          343
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/blacksmith/foundation.png",
+          "sha256": "c371388b7f8a5041eb7a04488db092b56df145ed84e895b6109c4f7152448ebd"
+        }
+      },
+      "capitol": {
+        "access_kind": "door",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/capitol/approach.png",
+          "sha256": "2174376f7d367e92b92f4f11cecd56b1b2625d9500920959176aeb43e03ef07d"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/capitol/body.png",
+          "sha256": "e95dd0e4580511d984f07cae155bbece3e0a909bc3dcbc1612abda3fbe0440f4"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/capitol/door.png",
+          "sha256": "786020aa37eb4010b386a1f901ab4ee4bb37b79f8c1e0762727e69220db4329d"
+        },
+        "entrance": [
+          394,
+          115
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/capitol/foundation.png",
+          "sha256": "f8cb142fa4d99d263d5f28bfa2b46949346992d339b7fa71682d438d9a661273"
+        }
+      },
+      "castle": {
+        "access_kind": "door",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/castle/approach.png",
+          "sha256": "06892ea6a82c734e6dbb6841fad7cda81bb75078bed19a417069cf290b3ef0db"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/castle/body.png",
+          "sha256": "503a8a27dbc90d6f63b87080cb88a00d8a51b7200697750cdf5f593d362206d9"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/castle/door.png",
+          "sha256": "9bd4707a89ef6ed5937df7a7253c152a2d6045682c7a409937c6d68a6cd19ac7"
+        },
+        "entrance": [
+          590,
+          114
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/castle/foundation.png",
+          "sha256": "25303d27f5d6e224fca8c6f21a1fb3b8a047f716fccafeebd8f610b0496521a3"
+        }
+      },
+      "citadel": {
+        "access_kind": "door",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/citadel/approach.png",
+          "sha256": "06892ea6a82c734e6dbb6841fad7cda81bb75078bed19a417069cf290b3ef0db"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/citadel/body.png",
+          "sha256": "aba98ed455e9c747acd24d8d9600ae19638b326a0737b60144702868f9c0b29a"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/citadel/door.png",
+          "sha256": "9bd4707a89ef6ed5937df7a7253c152a2d6045682c7a409937c6d68a6cd19ac7"
+        },
+        "entrance": [
+          590,
+          114
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/citadel/foundation.png",
+          "sha256": "f16c6e9bacfbecffbc612c4b53eaaaf6f5c9d0e97b68fee106376b959cdef2fa"
+        }
+      },
+      "cityHall": {
+        "access_kind": "door",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/cityHall/approach.png",
+          "sha256": "2174376f7d367e92b92f4f11cecd56b1b2625d9500920959176aeb43e03ef07d"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/cityHall/body.png",
+          "sha256": "d7727bf704aa16dbfeb9479438bdeb3efafb0b68453e4aabcbf41d35323eff84"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/cityHall/door.png",
+          "sha256": "786020aa37eb4010b386a1f901ab4ee4bb37b79f8c1e0762727e69220db4329d"
+        },
+        "entrance": [
+          394,
+          115
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/cityHall/foundation.png",
+          "sha256": "ca3d468e2c746bdfd5e14a4b31226d2beb13038d1c3805a7a926e64530780f79"
+        }
+      },
+      "dwellingLvl1": {
+        "access_kind": "open-site",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl1/approach.png",
+          "sha256": "d992cfc5e57d054b18e92627924696703af05f980f31f152d050572b4d9c4253"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl1/body.png",
+          "sha256": "7101ce1652d7a573f594fa57270b8055a65c7a4a86b2e28bc7c67e99915b0bdc"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl1/door.png",
+          "sha256": "e211a07350beaf571dc187e259bdc976f38eda40c17254c47cf66acbd20b2a22"
+        },
+        "entrance": [
+          342,
+          296
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl1/foundation.png",
+          "sha256": "b067e201027c7d9a840db0e7f46c2af67aff3162bdfcb35aa94988e4a7edc427"
+        }
+      },
+      "dwellingLvl2": {
+        "access_kind": "open-site",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl2/approach.png",
+          "sha256": "4937067a116b53d3afdb9a87b815c329544fad4d9ab861931f560b62c6b98c4d"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl2/body.png",
+          "sha256": "029fa63ef0f23a363a3ec56c261abc799a497ae3758946e357532f2f4444b8f1"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl2/door.png",
+          "sha256": "38719a3065f79f4441120aeda4dc8c529437e5fcd18ac81066804d31fca6974c"
+        },
+        "entrance": [
+          261,
+          213
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl2/foundation.png",
+          "sha256": "338e286d12367365e40618f862485805bedcc8c870283ad5d841384b51f7868a"
+        }
+      },
+      "dwellingLvl3": {
+        "access_kind": "door",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl3/approach.png",
+          "sha256": "2c80465e4d6b8ee62090f10a3ae162f42a2d52e32c2de10274888d7b8665861e"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl3/body.png",
+          "sha256": "c74edfc3a89abb207e04f9501809b869ae6f0ea142a7aebd157e4235b7af0dd9"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl3/door.png",
+          "sha256": "ed4b317bda93337fa0d12e8e7f6ef3a00567a46e6a7035b4b47e65bcd949b1b6"
+        },
+        "entrance": [
+          382,
+          216
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl3/foundation.png",
+          "sha256": "80f5716206742641af5deb4c676b2819481b73347f21b7a860b746931f2da0e6"
+        }
+      },
+      "dwellingLvl4": {
+        "access_kind": "door",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl4/approach.png",
+          "sha256": "64bdb8304157093500159e8d5708dc0d383b683fe23bdbdfcb2fd03e72db8d63"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl4/body.png",
+          "sha256": "ac8c3b1d03b7dba1a500df8b2267ac7f1ece630fcc2f4e29c0f05185407f3c63"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl4/door.png",
+          "sha256": "cbd9f7b89dbc9767a444966f38e39a5f56c2be6e21a01464c45848be6437b9e0"
+        },
+        "entrance": [
+          551,
+          216
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl4/foundation.png",
+          "sha256": "3e3595f2c271b2ba1252b154adc7de6546a3ecdd3f862261374b40d32c9b45c0"
+        }
+      },
+      "dwellingLvl5": {
+        "access_kind": "door",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl5/approach.png",
+          "sha256": "685303e37756ec665675330e536ee01148dca1204818c05cb40bef37318210a5"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl5/body.png",
+          "sha256": "6f72418dae283ed71a4d7a28fdb8ceb02347bc6af0455ec489e2e91b6f8dda48"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl5/door.png",
+          "sha256": "37c70eee828c83b3dbd5da2bcf25104beedf7f69abbacfefdc6bbe5e6f77df01"
+        },
+        "entrance": [
+          710,
+          145
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl5/foundation.png",
+          "sha256": "3c04c9f92714f939d8cdb55a9beef4393db7b47279dd5a669ecd4bfe50ab3a48"
+        }
+      },
+      "dwellingLvl6": {
+        "access_kind": "door",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl6/approach.png",
+          "sha256": "5d16ddd58ad8b5b3ed2ba825a1925850b781b71523d6284b2d282591b4240387"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl6/body.png",
+          "sha256": "33ac59008414c6e5d2707a9a2172247821fd2ede43d960471d1ee9b0bd35507f"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl6/door.png",
+          "sha256": "7ee77e4a6b195e02dbf27bb101fb8f4a717df273228ba36fc77abf1776b596a9"
+        },
+        "entrance": [
+          542,
+          301
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl6/foundation.png",
+          "sha256": "092a04203c3bd1625c5d4a488a18ec2dd120cacac36b42ce596ab408db3f00e8"
+        }
+      },
+      "dwellingLvl7": {
+        "access_kind": "door",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl7/approach.png",
+          "sha256": "e44ff0a779d6f68adf3e802ea0ba5e06a4f89c1b543abdc17cd258ec2f7854cf"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl7/body.png",
+          "sha256": "3ddfea6caedbe0060ac7a2bf7be0c1ccdeb4bdcb071c65d57a3924fedfbb8f3b"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl7/door.png",
+          "sha256": "a32f514be2509ae7fe75125f4b8eb17d0e7683fd5aa5fefb326b3e2f29a6f80d"
+        },
+        "entrance": [
+          187,
+          97
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingLvl7/foundation.png",
+          "sha256": "08fac7ede741d34e2b088a2ddabb42bbb5d6f0a913a5c2ac9803213eb0887db5"
+        }
+      },
+      "dwellingUpLvl1": {
+        "access_kind": "open-site",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl1/approach.png",
+          "sha256": "d992cfc5e57d054b18e92627924696703af05f980f31f152d050572b4d9c4253"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl1/body.png",
+          "sha256": "7101ce1652d7a573f594fa57270b8055a65c7a4a86b2e28bc7c67e99915b0bdc"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl1/door.png",
+          "sha256": "e211a07350beaf571dc187e259bdc976f38eda40c17254c47cf66acbd20b2a22"
+        },
+        "entrance": [
+          342,
+          296
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl1/foundation.png",
+          "sha256": "b067e201027c7d9a840db0e7f46c2af67aff3162bdfcb35aa94988e4a7edc427"
+        }
+      },
+      "dwellingUpLvl2": {
+        "access_kind": "open-site",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl2/approach.png",
+          "sha256": "4937067a116b53d3afdb9a87b815c329544fad4d9ab861931f560b62c6b98c4d"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl2/body.png",
+          "sha256": "029fa63ef0f23a363a3ec56c261abc799a497ae3758946e357532f2f4444b8f1"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl2/door.png",
+          "sha256": "38719a3065f79f4441120aeda4dc8c529437e5fcd18ac81066804d31fca6974c"
+        },
+        "entrance": [
+          261,
+          213
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl2/foundation.png",
+          "sha256": "338e286d12367365e40618f862485805bedcc8c870283ad5d841384b51f7868a"
+        }
+      },
+      "dwellingUpLvl3": {
+        "access_kind": "door",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl3/approach.png",
+          "sha256": "2c80465e4d6b8ee62090f10a3ae162f42a2d52e32c2de10274888d7b8665861e"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl3/body.png",
+          "sha256": "c74edfc3a89abb207e04f9501809b869ae6f0ea142a7aebd157e4235b7af0dd9"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl3/door.png",
+          "sha256": "ed4b317bda93337fa0d12e8e7f6ef3a00567a46e6a7035b4b47e65bcd949b1b6"
+        },
+        "entrance": [
+          382,
+          216
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl3/foundation.png",
+          "sha256": "80f5716206742641af5deb4c676b2819481b73347f21b7a860b746931f2da0e6"
+        }
+      },
+      "dwellingUpLvl4": {
+        "access_kind": "door",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl4/approach.png",
+          "sha256": "64bdb8304157093500159e8d5708dc0d383b683fe23bdbdfcb2fd03e72db8d63"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl4/body.png",
+          "sha256": "ac8c3b1d03b7dba1a500df8b2267ac7f1ece630fcc2f4e29c0f05185407f3c63"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl4/door.png",
+          "sha256": "cbd9f7b89dbc9767a444966f38e39a5f56c2be6e21a01464c45848be6437b9e0"
+        },
+        "entrance": [
+          551,
+          216
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl4/foundation.png",
+          "sha256": "3e3595f2c271b2ba1252b154adc7de6546a3ecdd3f862261374b40d32c9b45c0"
+        }
+      },
+      "dwellingUpLvl5": {
+        "access_kind": "door",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl5/approach.png",
+          "sha256": "111f79e5a914f17384a717991fffcb4c28f622c9a9a1a21fb2b536a873d74a6a"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl5/body.png",
+          "sha256": "6ecbba805ffa41b0cd2d0f6010ccbe88716304f5248ec44c1e4f462756311ec4"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl5/door.png",
+          "sha256": "dfdf7d7f1ac7d22f7da797ff7a24cf990dd09d75c205ab55c3379b1881d3d8d5"
+        },
+        "entrance": [
+          704,
+          145
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl5/foundation.png",
+          "sha256": "a163a1eaf5b87d1bb91e4fd52b3079c8e7258c70ffcfc24cf3f9ac1bb52fc89b"
+        }
+      },
+      "dwellingUpLvl6": {
+        "access_kind": "door",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl6/approach.png",
+          "sha256": "5d16ddd58ad8b5b3ed2ba825a1925850b781b71523d6284b2d282591b4240387"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl6/body.png",
+          "sha256": "33ac59008414c6e5d2707a9a2172247821fd2ede43d960471d1ee9b0bd35507f"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl6/door.png",
+          "sha256": "7ee77e4a6b195e02dbf27bb101fb8f4a717df273228ba36fc77abf1776b596a9"
+        },
+        "entrance": [
+          542,
+          301
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl6/foundation.png",
+          "sha256": "092a04203c3bd1625c5d4a488a18ec2dd120cacac36b42ce596ab408db3f00e8"
+        }
+      },
+      "dwellingUpLvl7": {
+        "access_kind": "door",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl7/approach.png",
+          "sha256": "e44ff0a779d6f68adf3e802ea0ba5e06a4f89c1b543abdc17cd258ec2f7854cf"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl7/body.png",
+          "sha256": "b698b122dbc6e1063e197f9e3a51a87f6568c31d461b600c30d86d184090695d"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl7/door.png",
+          "sha256": "0487c83ee8db25f3ddb163dfc64565f66c19d6e7cce46681ddd6c8d80866a247"
+        },
+        "entrance": [
+          187,
+          97
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/dwellingUpLvl7/foundation.png",
+          "sha256": "20db170f5adce819cfc8f5cf527df909efcced1a13c267e194b30ee8103670e1"
+        }
+      },
+      "fort": {
+        "access_kind": "door",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/fort/approach.png",
+          "sha256": "06892ea6a82c734e6dbb6841fad7cda81bb75078bed19a417069cf290b3ef0db"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/fort/body.png",
+          "sha256": "1d9bf00186afadb2940c9d3e4c0bd42e924997ef1dc13a7a94677d720203665d"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/fort/door.png",
+          "sha256": "9bd4707a89ef6ed5937df7a7253c152a2d6045682c7a409937c6d68a6cd19ac7"
+        },
+        "entrance": [
+          590,
+          114
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/fort/foundation.png",
+          "sha256": "42bc55935165fd8a57c72ecf45de0216452ee6a18a5a278588ad8f3f3cc2c19d"
+        }
+      },
+      "grail": {
+        "access_kind": "open-site",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/grail/approach.png",
+          "sha256": "59a203a2e6f89f632079720b0e42b07e18005b383e3b61febe0b7477092c3f25"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/grail/body.png",
+          "sha256": "ffce77c5631489787c2a3aa9c5c39dd8a476b8996b829255558d99fab58aed9e"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/grail/door.png",
+          "sha256": "14e7af72320af906f6a5a809f76814569c3ad19c55ed82751e7105684d47812d"
+        },
+        "entrance": [
+          590,
+          350
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/grail/foundation.png",
+          "sha256": "048155a7fbb276c17bd13c3717137c3dc473dac59ec266da51ebbd155745f402"
+        }
+      },
+      "mageGuild1": {
+        "access_kind": "door",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/mageGuild1/approach.png",
+          "sha256": "ba0ed681252b685b89359ce625d18597e8f8911b049a0f169024d8986820110c"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/mageGuild1/body.png",
+          "sha256": "0e211a78c5afdaac42e0041d78f37b39e188c4800cf488f34a0c4d12b37d4254"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/mageGuild1/door.png",
+          "sha256": "4dbe06b582b302e6388a101bb0269d622444727e2109fa09aa2f686749ab664b"
+        },
+        "entrance": [
+          280,
+          171
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/mageGuild1/foundation.png",
+          "sha256": "bbca66234ce4007fbcafa7323b85b30c548106b36d8aedff5da8a31e7a181c12"
+        }
+      },
+      "mageGuild2": {
+        "access_kind": "door",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/mageGuild2/approach.png",
+          "sha256": "ba0ed681252b685b89359ce625d18597e8f8911b049a0f169024d8986820110c"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/mageGuild2/body.png",
+          "sha256": "ceeffa269b25481a828235348c9d77ea4816fa0edaf7d3f3eab5bca3ee8ec916"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/mageGuild2/door.png",
+          "sha256": "9f1a723388f4d79439fe4dfe7368a9e14317a100f90c125cf78641364754ba68"
+        },
+        "entrance": [
+          280,
+          171
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/mageGuild2/foundation.png",
+          "sha256": "b992c526de65cd8d27a1d72286c77c34980f9b4a53c1143703b80391d104b8bb"
+        }
+      },
+      "mageGuild3": {
+        "access_kind": "door",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/mageGuild3/approach.png",
+          "sha256": "ba0ed681252b685b89359ce625d18597e8f8911b049a0f169024d8986820110c"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/mageGuild3/body.png",
+          "sha256": "d30a111f184a2cf501ae24d3c4f859a2a0c81bcce049c833febc3ea0780ccbb5"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/mageGuild3/door.png",
+          "sha256": "fba1a9017d236bf4794938c6e0568966817f275d45a864c954612801a51fb387"
+        },
+        "entrance": [
+          280,
+          171
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/mageGuild3/foundation.png",
+          "sha256": "5078ad5cbc2ed9766d36a72d870103037e1740cdda942f09a2429cfe943273d2"
+        }
+      },
+      "marketplace": {
+        "access_kind": "open-site",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/marketplace/approach.png",
+          "sha256": "188fec4e6d57122c15244b7551a6c828907bd737ea7132008c184a5f25f58145"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/marketplace/body.png",
+          "sha256": "51e1099eb7a7643f83b03cd4015f1ef2f64f9dcb14cce9627afa88293570ee42"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/marketplace/door.png",
+          "sha256": "c3713275256c7877188800eeebe8e96e8c50c4a765999cf97d1c9906990a6238"
+        },
+        "entrance": [
+          405,
+          361
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/marketplace/foundation.png",
+          "sha256": "38904f447919417c13772680a4e1d5ee229064b1c72ad83fda1d86b40d727aed"
+        }
+      },
+      "resourceSilo": {
+        "access_kind": "open-site",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/resourceSilo/approach.png",
+          "sha256": "b4a8b52517f166c8770a8e65fdc3e3b9a2dad9d87c81f415c7b5ba2eeae9a48a"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/resourceSilo/body.png",
+          "sha256": "55dd9b3dbec23b12d54ebc3106e4a156d8cddb8cd648ef7a6c21122b5f90e305"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/resourceSilo/door.png",
+          "sha256": "c82c62621dc548ece676f0149961d773f04d63c45cf3ce236618bc49d9c7732d"
+        },
+        "entrance": [
+          115,
+          162
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/resourceSilo/foundation.png",
+          "sha256": "ce16b742d56423bd7515e77ba8e463dce75db0a38f981a6c1df96811f9a77755"
+        }
+      },
+      "ship": {
+        "access_kind": "moored-vessel",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/ship/approach.png",
+          "sha256": "44f8e98fca5593220594329e573da0345ef1ba524e0e9052c086204819213f9f"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/ship/body.png",
+          "sha256": "133c102499dba38b10c1545f4e62e1ca924c5ce2031ed3f96fb24c3200e22df0"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/ship/door.png",
+          "sha256": "c16fad6e5f3360a5d289612af51db88b5793c2df9baa12391e6b20ea9a5e4dc5"
+        },
+        "entrance": [
+          110,
+          222
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/ship/foundation.png",
+          "sha256": "1eee973296fe1e9f968ac7bba371f5c7bfce6c19e848669b816a6212503736f7"
+        },
+        "marine_support_kind": "moored-hull",
+        "marine_support_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/ship/marine.png",
+          "sha256": "1eee973296fe1e9f968ac7bba371f5c7bfce6c19e848669b816a6212503736f7"
+        }
+      },
+      "shipyard": {
+        "access_kind": "moored-vessel",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/shipyard/approach.png",
+          "sha256": "44f8e98fca5593220594329e573da0345ef1ba524e0e9052c086204819213f9f"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/shipyard/body.png",
+          "sha256": "83c6bf9325c8843674b310aa35cd0295d84454c9eb1b49fe2d12d1c0d8dc5100"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/shipyard/door.png",
+          "sha256": "c16fad6e5f3360a5d289612af51db88b5793c2df9baa12391e6b20ea9a5e4dc5"
+        },
+        "entrance": [
+          110,
+          222
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/shipyard/foundation.png",
+          "sha256": "c1aea97cee4e9ddd1fb4be2f2ff4ff93478c330a8265c0d1c2b850e683ba78a7"
+        },
+        "marine_support_kind": "deck-and-pilings",
+        "marine_support_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/shipyard/marine.png",
+          "sha256": "c1aea97cee4e9ddd1fb4be2f2ff4ff93478c330a8265c0d1c2b850e683ba78a7"
+        }
+      },
+      "special1": {
+        "access_kind": "open-site",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/special1/approach.png",
+          "sha256": "2231e8f598df853c87f6ae825099f7f74d95a4d8954b7adf61fd7e39fcb038ea"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/special1/body.png",
+          "sha256": "fbff410fe2ec5874b30ece8ff063286cf194d847fdcf74387793f4884c37b226"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/special1/door.png",
+          "sha256": "addc7f93c646523bfb92e61050b4ebbeb4a45401061e0fe47bede80560b8d71e"
+        },
+        "entrance": [
+          194,
+          209
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/special1/foundation.png",
+          "sha256": "dea55e4f78310e274b45ad079064a4768bf35d57f646a98270c8c053d9a0e900"
+        }
+      },
+      "special2": {
+        "access_kind": "open-site",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/special2/approach.png",
+          "sha256": "e3eb36dd48f4d845f4eb962822d7fff77e664c17773aa60bc122c110efb49a43"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/special2/body.png",
+          "sha256": "fe822181b253cba60ccb714d7b5a2e4756532dae41eae144cbd03a9bd0648b0a"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/special2/door.png",
+          "sha256": "79aa02f83d5743afc7a436184b23966dd8283519ba19eae872790c2137f1ec5a"
+        },
+        "entrance": [
+          697,
+          145
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/special2/foundation.png",
+          "sha256": "c38e1da2a73fe1f3f305ce48523e9488979f8538e1bf8dc3a83ac121406c5789"
+        }
+      },
+      "special3": {
+        "access_kind": "open-site",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/special3/approach.png",
+          "sha256": "16392e70c2325ef783d40c4ee79d81820f30cdd590ea12a881b120d106d04365"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/special3/body.png",
+          "sha256": "2ce65cb7bac532c07e9b152e5fd84d899d54ef2ae3136ba9d168ce59f2a53f81"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/special3/door.png",
+          "sha256": "c75e7b5fe699e8bfae496e0fab0879a546aa3ac40f636266623f48f0447bcddf"
+        },
+        "entrance": [
+          730,
+          238
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/special3/foundation.png",
+          "sha256": "7d50a43f4e67049e3579202adf3190305b9e6f45ac7bc61cd284ef651ca62e36"
+        }
+      },
+      "special4": {
+        "access_kind": "open-site",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/special4/approach.png",
+          "sha256": "546283824a990632c4aafabf63d72b1928a8dfcd1e019d2746a2e0a959c2d606"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/special4/body.png",
+          "sha256": "af0be49cddd0e7211a266e927ace3a262123daea433d9d254085a0358ffec801"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/special4/door.png",
+          "sha256": "5204133428866aa4ddea742b3a2bcb3c95c60ff6e5a4c403221c15da0ad90df4"
+        },
+        "entrance": [
+          464,
+          165
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/special4/foundation.png",
+          "sha256": "2c25e10f179b2af9e7676faea4d12f5d0b5fd29fb5f2447eeacc1929c60d885d"
+        }
+      },
+      "tavern": {
+        "access_kind": "door",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/tavern/approach.png",
+          "sha256": "c93740d44915a80083baf4dfb7f393389dc2afd28a644286af9db7be38c91866"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/tavern/body.png",
+          "sha256": "7de8f8074ebbc7a7288f3367effe03c481cab6cb6e18d9c6532928747c61bb27"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/tavern/door.png",
+          "sha256": "aab03c81b63fe4254d08008450cdc31b67a6052900d92199eba2e5852a933481"
+        },
+        "entrance": [
+          704,
+          352
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/tavern/foundation.png",
+          "sha256": "d59c6d9803bec0069ffb05d0a9b10585302a2666b306b780aff7b40feba8dd99"
+        }
+      },
+      "townHall": {
+        "access_kind": "door",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/townHall/approach.png",
+          "sha256": "2174376f7d367e92b92f4f11cecd56b1b2625d9500920959176aeb43e03ef07d"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/townHall/body.png",
+          "sha256": "aa5cc0ea442258ed3bb8e21e822bdd6ea4574d4411d142496c202213aeb661e2"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/townHall/door.png",
+          "sha256": "786020aa37eb4010b386a1f901ab4ee4bb37b79f8c1e0762727e69220db4329d"
+        },
+        "entrance": [
+          394,
+          115
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/townHall/foundation.png",
+          "sha256": "70ea20a1c02039c94b87eb37b36382b23ea313cb915a02609b2f282621d10710"
+        }
+      },
+      "villageHall": {
+        "access_kind": "door",
+        "approach_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/villageHall/approach.png",
+          "sha256": "2174376f7d367e92b92f4f11cecd56b1b2625d9500920959176aeb43e03ef07d"
+        },
+        "body_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/villageHall/body.png",
+          "sha256": "0634f74a945ef600228346f95e55c612728322493cec79536505d36cefac33cd"
+        },
+        "door_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/villageHall/door.png",
+          "sha256": "94a577958a932838469eac16719688349168a2d9ec87815a5fa5b23823576e99"
+        },
+        "entrance": [
+          394,
+          115
+        ],
+        "foundation_mask": {
+          "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/villageHall/foundation.png",
+          "sha256": "93694d52a0b2823104841c3f6bf760a2592a51c558cc8dafcbd13dc94b5dd5f5"
+        }
+      }
+    },
+    "support_mask": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/terrain/support.png",
+      "sha256": "19d92d5f5cc69e6b3497fc6ca58f77c057134a5731cdd409a196bbb717773dd4"
+    },
+    "version": 2,
+    "water_mask": {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/terrain/water.png",
+      "sha256": "e52a569a0d040956c93e8e30eaa435c60c1516cb15bdc616cc99412c3b9e50bc"
+    }
+  },
+  "sites": [
+    {
+      "box": [
+        284,
+        28,
+        200,
+        99
+      ],
+      "depth": 115,
+      "entrance": [
+        394,
+        115
+      ],
+      "id": "civic",
+      "intentional_water": false,
+      "silhouette_mask": {
+        "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/sites/civic.png",
+        "sha256": "8a42c5c7d5388c660fc45b48fc9ce71856ea3106f082de9a57a0cd411ae57999"
+      },
+      "states": [
+        "villageHall",
+        "townHall",
+        "cityHall",
+        "capitol"
+      ]
+    },
+    {
+      "box": [
+        130,
+        4,
+        116,
+        100
+      ],
+      "depth": 80,
+      "entrance": [
+        187,
+        97
+      ],
+      "id": "cloudDragon",
+      "intentional_water": false,
+      "silhouette_mask": {
+        "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/sites/cloudDragon.png",
+        "sha256": "e34e28abc608de1cb1ccce908430f060af27c1f08a7e71dcf17d4f4c6adcb693"
+      },
+      "states": [
+        "dwellingLvl7",
+        "dwellingUpLvl7"
+      ]
+    },
+    {
+      "box": [
+        0,
+        160,
+        119,
+        86
+      ],
+      "depth": 230,
+      "entrance": [
+        110,
+        222
+      ],
+      "id": "coast",
+      "intentional_water": true,
+      "silhouette_mask": {
+        "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/sites/coast.png",
+        "sha256": "6622e9eba8a1d7a8bc7c4f88f912f82ade3a1767e41a619661cc94d631acdbd9"
+      },
+      "states": [
+        "shipyard",
+        "ship"
+      ]
+    },
+    {
+      "box": [
+        484,
+        20,
+        193,
+        110
+      ],
+      "depth": 110,
+      "entrance": [
+        590,
+        114
+      ],
+      "id": "defenses",
+      "intentional_water": false,
+      "silhouette_mask": {
+        "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/sites/defenses.png",
+        "sha256": "70980d55cc13840faaca6470837e6c6452a53a89d2a58c41f64390c49528796a"
+      },
+      "states": [
+        "fort",
+        "citadel",
+        "castle"
+      ]
+    },
+    {
+      "box": [
+        276,
+        226,
+        142,
+        77
+      ],
+      "depth": 295,
+      "entrance": [
+        342,
+        296
+      ],
+      "id": "disciple",
+      "intentional_water": false,
+      "silhouette_mask": {
+        "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/sites/disciple.png",
+        "sha256": "7101ce1652d7a573f594fa57270b8055a65c7a4a86b2e28bc7c67e99915b0bdc"
+      },
+      "states": [
+        "dwellingLvl1",
+        "dwellingUpLvl1"
+      ]
+    },
+    {
+      "box": [
+        666,
+        164,
+        124,
+        79
+      ],
+      "depth": 236,
+      "entrance": [
+        730,
+        238
+      ],
+      "id": "gateway",
+      "intentional_water": false,
+      "silhouette_mask": {
+        "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/sites/gateway.png",
+        "sha256": "2ce65cb7bac532c07e9b152e5fd84d899d54ef2ae3136ba9d168ce59f2a53f81"
+      },
+      "states": [
+        "special3"
+      ]
+    },
+    {
+      "box": [
+        576,
+        317,
+        16,
+        35
+      ],
+      "depth": 352,
+      "entrance": [
+        590,
+        350
+      ],
+      "id": "grail",
+      "intentional_water": false,
+      "silhouette_mask": {
+        "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/sites/grail.png",
+        "sha256": "24f9a970f24b1b29373b57cc760a46968a38fbd37d75d9677c8276820e2b21ee"
+      },
+      "states": [
+        "grail"
+      ]
+    },
+    {
+      "box": [
+        74,
+        110,
+        81,
+        61
+      ],
+      "depth": 165,
+      "entrance": [
+        115,
+        162
+      ],
+      "id": "grove",
+      "intentional_water": false,
+      "silhouette_mask": {
+        "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/sites/grove.png",
+        "sha256": "55dd9b3dbec23b12d54ebc3106e4a156d8cddb8cd648ef7a6c21122b5f90e305"
+      },
+      "states": [
+        "resourceSilo"
+      ]
+    },
+    {
+      "box": [
+        233,
+        69,
+        94,
+        114
+      ],
+      "depth": 171,
+      "entrance": [
+        280,
+        171
+      ],
+      "id": "guild",
+      "intentional_water": false,
+      "silhouette_mask": {
+        "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/sites/guild.png",
+        "sha256": "43467ea48fdb01eeffffe4d0505147f79f762c8d268faea599ce8cd4d344aefd"
+      },
+      "states": [
+        "mageGuild1",
+        "mageGuild2",
+        "mageGuild3"
+      ]
+    },
+    {
+      "box": [
+        441,
+        117,
+        47,
+        55
+      ],
+      "depth": 164,
+      "entrance": [
+        464,
+        165
+      ],
+      "id": "harmony",
+      "intentional_water": false,
+      "silhouette_mask": {
+        "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/sites/harmony.png",
+        "sha256": "af0be49cddd0e7211a266e927ace3a262123daea433d9d254085a0358ffec801"
+      },
+      "states": [
+        "special4"
+      ]
+    },
+    {
+      "box": [
+        604,
+        244,
+        196,
+        120
+      ],
+      "depth": 357,
+      "entrance": [
+        704,
+        352
+      ],
+      "id": "inn",
+      "intentional_water": false,
+      "silhouette_mask": {
+        "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/sites/inn.png",
+        "sha256": "7de8f8074ebbc7a7288f3367effe03c481cab6cb6e18d9c6532928747c61bb27"
+      },
+      "states": [
+        "tavern"
+      ]
+    },
+    {
+      "box": [
+        477,
+        142,
+        145,
+        82
+      ],
+      "depth": 217,
+      "entrance": [
+        551,
+        216
+      ],
+      "id": "kashuri",
+      "intentional_water": false,
+      "silhouette_mask": {
+        "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/sites/kashuri.png",
+        "sha256": "ac8c3b1d03b7dba1a500df8b2267ac7f1ece630fcc2f4e29c0f05185407f3c63"
+      },
+      "states": [
+        "dwellingLvl4",
+        "dwellingUpLvl4"
+      ]
+    },
+    {
+      "box": [
+        135,
+        149,
+        146,
+        76
+      ],
+      "depth": 213,
+      "entrance": [
+        261,
+        213
+      ],
+      "id": "kinkou",
+      "intentional_water": false,
+      "silhouette_mask": {
+        "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/sites/kinkou.png",
+        "sha256": "eccb00bad69da1d7836e61c58b7a36888ea4e15433bc7770ed5dd6118b5329ea"
+      },
+      "states": [
+        "special1",
+        "dwellingLvl2",
+        "dwellingUpLvl2"
+      ]
+    },
+    {
+      "box": [
+        279,
+        298,
+        238,
+        70
+      ],
+      "depth": 363,
+      "entrance": [
+        405,
+        361
+      ],
+      "id": "market",
+      "intentional_water": false,
+      "silhouette_mask": {
+        "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/sites/market.png",
+        "sha256": "51e1099eb7a7643f83b03cd4015f1ef2f64f9dcb14cce9627afa88293570ee42"
+      },
+      "states": [
+        "marketplace"
+      ]
+    },
+    {
+      "box": [
+        620,
+        60,
+        168,
+        116
+      ],
+      "depth": 151,
+      "entrance": [
+        704,
+        145
+      ],
+      "id": "protector",
+      "intentional_water": false,
+      "silhouette_mask": {
+        "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/sites/protector.png",
+        "sha256": "7711869178c13cd05a4e69bbc04feeb6788decccc8f2d0fea912508ab4c227c7"
+      },
+      "states": [
+        "special2",
+        "dwellingLvl5",
+        "dwellingUpLvl5"
+      ]
+    },
+    {
+      "box": [
+        434,
+        220,
+        195,
+        89
+      ],
+      "depth": 299,
+      "entrance": [
+        542,
+        301
+      ],
+      "id": "resistance",
+      "intentional_water": false,
+      "silhouette_mask": {
+        "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/sites/resistance.png",
+        "sha256": "33ac59008414c6e5d2707a9a2172247821fd2ede43d960471d1ee9b0bd35507f"
+      },
+      "states": [
+        "dwellingLvl6",
+        "dwellingUpLvl6"
+      ]
+    },
+    {
+      "box": [
+        310,
+        154,
+        131,
+        71
+      ],
+      "depth": 219,
+      "entrance": [
+        382,
+        216
+      ],
+      "id": "vastayan",
+      "intentional_water": false,
+      "silhouette_mask": {
+        "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/sites/vastayan.png",
+        "sha256": "c74edfc3a89abb207e04f9501809b869ae6f0ea142a7aebd157e4235b7af0dd9"
+      },
+      "states": [
+        "dwellingLvl3",
+        "dwellingUpLvl3"
+      ]
+    },
+    {
+      "box": [
+        0,
+        217,
+        276,
+        140
+      ],
+      "depth": 356,
+      "entrance": [
+        171,
+        343
+      ],
+      "id": "workshop",
+      "intentional_water": false,
+      "silhouette_mask": {
+        "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v2/physical-baseline/masks/sites/workshop.png",
+        "sha256": "9b7e482ef48209a717e776c9c76c3066c675c8e3c9cd2ba395100cbe94543bed"
+      },
+      "states": [
+        "blacksmith"
+      ]
+    }
+  ],
+  "status": "authored configuration"
+}

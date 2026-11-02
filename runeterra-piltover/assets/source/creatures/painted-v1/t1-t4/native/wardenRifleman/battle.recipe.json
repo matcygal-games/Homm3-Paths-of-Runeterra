@@ -1,0 +1,757 @@
+{
+  "production_status": "painted-master-complete-unapproved",
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in imagegen",
+    "model": "Not exposed by the tool",
+    "prompt": "Create ONE original Piltover WARDEN RIFLEMAN fullbodymaster fororiginal1999HeroesIII creatureart. Reference1 ONLYnativeHoMM3paintedcompactanatomy/camera/materials notitscrossbowsoldier; reference2ONLYPiltovanWardentailoring; reference3EXACTPiltovercrestshape notgenericwing. Adultfemale civicrifleofficer withordinaryhumananatomy, exposedalertface, practicalnavyservicecap(lowunfancynotCaitlyntophat), fittednavybluecoat/leathertorso, brownbootsandbeltammo case. Carriesordinary compactwood-stock LONGRIFLE withbrasssight, bothhandsnaturallygripstock/foreend, muzzlepointsRIGHTslightlydown. No shield/baton, noCaitlynuniqueweaponorface, nohexcrystalorplasmacannon. CorrectPiltoverbrasscrestphysicallyonshoulderpatchandbroadammunitioncase: centralverticalspire, smallroundtoporb, opengearhorseshoe. RegionalworkingcivicguardidentitynotDemacianknight/Zaunfighter. RIGHT3quarterbattlefieldprofile, feetgrounded, wholebody/wholegunwithgenerouspadding. HoMM3late1990srichpaintedtexture, compactproportions,dullcloth/wornwoodandbrass, lightupperleft,warmocclusion,restrainedhighlights. Not3D/photorealplastic/anime/vector/modernLeagueplash. Genuinelytransparentbackground,noscenerytextorframe.",
+    "action_source_ledger": "assets/source/creatures/painted-v1/t1-t4/generation-ledger-v1.json",
+    "action_source_ledger_sha256": "9da66a550c881d7dc4b0f3e473fa50f7fdcb25905352c0e536cdbbbf2dcad322",
+    "painted_master": "assets/source/creatures/painted-v1/t1-t4/wardenRifleman/master-v1.png",
+    "painted_master_sha256": "59b364c2ff854a0a233340534414f71fb969dc7e114109964aff50bf8f262492",
+    "method": "Whole-source uniform cohort resampling and root registration only; no rigging, rendering, limb warping or invented poses"
+  },
+  "production_inputs": [
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/wardenRifleman/master-v1.png",
+      "sha256": "59b364c2ff854a0a233340534414f71fb969dc7e114109964aff50bf8f262492"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/wardenRifleman/portrait-v1.png",
+      "sha256": "14c83bf20a3d523e34c067ac21f2c53900cc2287d928d91fd133810fa372ea4a"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/wardenRifleman/isolated-source-map-v1.json",
+      "sha256": "8ffe2a3827e8fb84e4f4b6617973f72a7f7684faddc8e8d4f0af48ae404d53bc"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/pose-roots-v1.json",
+      "sha256": "756e77614e53335d3625b84499e4409860e4cf8cce7ef6d0c05da08078ee1355"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/producer_v1.py",
+      "sha256": "a097e5a05400368c5740004cca6225a50730a18c2440af0c13d2ba676e7d58ad"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/extract_sources.py",
+      "sha256": "0338c4026998ef34834a4c76c400c177f51777dc686da70858373fc3a9eefd7b"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/generation-ledger-v1.json",
+      "sha256": "9da66a550c881d7dc4b0f3e473fa50f7fdcb25905352c0e536cdbbbf2dcad322"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/selected-cohorts-v1.json",
+      "sha256": "d6c313a901a77675cc068ae609a0296c14c9824c8c6852e67a4c8058d8238c30"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/wardenRifleman/combat-v1.png",
+      "sha256": "b8e04a0b2b17fca1f4831b51c4f932a18ef364849e75ecfd54de536ca9006ed5"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/wardenRifleman/movement-v1.png",
+      "sha256": "9b1802627032f15974471d16b5f4bae08007db6abf7515d699caf0629a84b35e"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/wardenRifleman/shoot-v1.png",
+      "sha256": "db1d06e389f06f2cf9f24e7d5f03bffa4cb1193c5034d892d07eb44712987a2d"
+    }
+  ],
+  "recipe_type": "vcmi_animation",
+  "output_path": "Content/Sprites/runeterra/piltover/creatures/wardenRifleman/battle.json",
+  "canvas": [
+    450,
+    400
+  ],
+  "pivot": {
+    "x": 197,
+    "y": 265
+  },
+  "groups": [
+    {
+      "group": 0,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g00-f000.png",
+          "sha256": "a49d78e3dd4a3035d2001af906c5fde9c7b878b87068a41486c3351ba9ed72b0",
+          "source_sha256": "a49d78e3dd4a3035d2001af906c5fde9c7b878b87068a41486c3351ba9ed72b0",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g00-f001.png",
+          "sha256": "a19c9448794f2db0253c5c8d4823c1b6bfc6d7e91b65a31c2b4f1d6a033bdd68",
+          "source_sha256": "a19c9448794f2db0253c5c8d4823c1b6bfc6d7e91b65a31c2b4f1d6a033bdd68",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g00-f002.png",
+          "sha256": "6d27717d56e496034d635e5cd69bb964940314a1c52243b14abb2f99a887b1f7",
+          "source_sha256": "6d27717d56e496034d635e5cd69bb964940314a1c52243b14abb2f99a887b1f7",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g00-f003.png",
+          "sha256": "a24d194abada643e48b4c0d32fb6c46a985bc75883127c1a9bbb79535a08cb4c",
+          "source_sha256": "a24d194abada643e48b4c0d32fb6c46a985bc75883127c1a9bbb79535a08cb4c",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g00-f004.png",
+          "sha256": "62d218c6f54e8634dd3ed312e610682c875968687aca312d0bbf73c0f68aa082",
+          "source_sha256": "62d218c6f54e8634dd3ed312e610682c875968687aca312d0bbf73c0f68aa082",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g00-f005.png",
+          "sha256": "e970ce46d1bf253c49e0b6967ebabdf56acf6f477426c2fc60979907f9492350",
+          "source_sha256": "e970ce46d1bf253c49e0b6967ebabdf56acf6f477426c2fc60979907f9492350",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 1,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g01-f000.png",
+          "sha256": "ed0555af2e3c2479c4ea4c897bd511ddac5c5259897aa0d28b3ec9aa0cc31c05",
+          "source_sha256": "ed0555af2e3c2479c4ea4c897bd511ddac5c5259897aa0d28b3ec9aa0cc31c05",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g01-f001.png",
+          "sha256": "31fd0eaa4b39b0b659a950929f2a363400d86863cb9b88e852b481a8e893e64b",
+          "source_sha256": "31fd0eaa4b39b0b659a950929f2a363400d86863cb9b88e852b481a8e893e64b",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g01-f002.png",
+          "sha256": "31fd0eaa4b39b0b659a950929f2a363400d86863cb9b88e852b481a8e893e64b",
+          "source_sha256": "31fd0eaa4b39b0b659a950929f2a363400d86863cb9b88e852b481a8e893e64b",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g01-f003.png",
+          "sha256": "53a95ad7dc3a660f106ad2f9c5cfa7b94e3076be5b3253ca990d5e05f379005b",
+          "source_sha256": "53a95ad7dc3a660f106ad2f9c5cfa7b94e3076be5b3253ca990d5e05f379005b",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g01-f004.png",
+          "sha256": "53a95ad7dc3a660f106ad2f9c5cfa7b94e3076be5b3253ca990d5e05f379005b",
+          "source_sha256": "53a95ad7dc3a660f106ad2f9c5cfa7b94e3076be5b3253ca990d5e05f379005b",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g01-f005.png",
+          "sha256": "f62aa542771e841226b91ee0a9f1979689bc7dfc8ecfce939f0b927df6801d14",
+          "source_sha256": "f62aa542771e841226b91ee0a9f1979689bc7dfc8ecfce939f0b927df6801d14",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 6,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g01-f006.png",
+          "sha256": "f62aa542771e841226b91ee0a9f1979689bc7dfc8ecfce939f0b927df6801d14",
+          "source_sha256": "f62aa542771e841226b91ee0a9f1979689bc7dfc8ecfce939f0b927df6801d14",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 2,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g02-f000.png",
+          "sha256": "ed0555af2e3c2479c4ea4c897bd511ddac5c5259897aa0d28b3ec9aa0cc31c05",
+          "source_sha256": "ed0555af2e3c2479c4ea4c897bd511ddac5c5259897aa0d28b3ec9aa0cc31c05",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 3,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g03-f000.png",
+          "sha256": "d40e4a5d9a2f1137c884ce275d8e55d3dee2f4ab3ab8832424ba5ad7685f99c0",
+          "source_sha256": "d40e4a5d9a2f1137c884ce275d8e55d3dee2f4ab3ab8832424ba5ad7685f99c0",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g03-f001.png",
+          "sha256": "ed0555af2e3c2479c4ea4c897bd511ddac5c5259897aa0d28b3ec9aa0cc31c05",
+          "source_sha256": "ed0555af2e3c2479c4ea4c897bd511ddac5c5259897aa0d28b3ec9aa0cc31c05",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 4,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g04-f000.png",
+          "sha256": "ef75b705c96dcd6d563d59caaae4a7afc04a6726cbedda7b750192623fecd3ef",
+          "source_sha256": "ef75b705c96dcd6d563d59caaae4a7afc04a6726cbedda7b750192623fecd3ef",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 5,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g05-f000.png",
+          "sha256": "d51f5558e2d466180969dbb823382fd5fdbf35a2714863c5b2ad4e58067d1d72",
+          "source_sha256": "d51f5558e2d466180969dbb823382fd5fdbf35a2714863c5b2ad4e58067d1d72",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g05-f001.png",
+          "sha256": "a4524e48c297ab188b7daa778c03c1396d9d7bff58d56992d4ee08e37f2f414b",
+          "source_sha256": "a4524e48c297ab188b7daa778c03c1396d9d7bff58d56992d4ee08e37f2f414b",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g05-f002.png",
+          "sha256": "9aab5e735f6b61f0e3a03c4571ea8d5e1c8040e1f9ba34ffa115f3e11e59d6f8",
+          "source_sha256": "9aab5e735f6b61f0e3a03c4571ea8d5e1c8040e1f9ba34ffa115f3e11e59d6f8",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g05-f003.png",
+          "sha256": "b2dc33320d0ed339c8d737c31f7a412d275f0533456999836b2e4b5f2c4638a9",
+          "source_sha256": "b2dc33320d0ed339c8d737c31f7a412d275f0533456999836b2e4b5f2c4638a9",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 7,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g07-f000.png",
+          "sha256": "ed0555af2e3c2479c4ea4c897bd511ddac5c5259897aa0d28b3ec9aa0cc31c05",
+          "source_sha256": "ed0555af2e3c2479c4ea4c897bd511ddac5c5259897aa0d28b3ec9aa0cc31c05",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g07-f001.png",
+          "sha256": "9db88a050d7e9e11ed6776fea4bfc21b9d68bab9d6761bd8aa1eb09210d451e8",
+          "source_sha256": "9db88a050d7e9e11ed6776fea4bfc21b9d68bab9d6761bd8aa1eb09210d451e8",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g07-f002.png",
+          "sha256": "72ebea2d4e67f1a39c0b2194d71a23cc6d6132c50e7f80b6da595179a40cd5eb",
+          "source_sha256": "72ebea2d4e67f1a39c0b2194d71a23cc6d6132c50e7f80b6da595179a40cd5eb",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 8,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g08-f000.png",
+          "sha256": "72ebea2d4e67f1a39c0b2194d71a23cc6d6132c50e7f80b6da595179a40cd5eb",
+          "source_sha256": "72ebea2d4e67f1a39c0b2194d71a23cc6d6132c50e7f80b6da595179a40cd5eb",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g08-f001.png",
+          "sha256": "9db88a050d7e9e11ed6776fea4bfc21b9d68bab9d6761bd8aa1eb09210d451e8",
+          "source_sha256": "9db88a050d7e9e11ed6776fea4bfc21b9d68bab9d6761bd8aa1eb09210d451e8",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g08-f002.png",
+          "sha256": "ed0555af2e3c2479c4ea4c897bd511ddac5c5259897aa0d28b3ec9aa0cc31c05",
+          "source_sha256": "ed0555af2e3c2479c4ea4c897bd511ddac5c5259897aa0d28b3ec9aa0cc31c05",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 11,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g11-f000.png",
+          "sha256": "359c6c6cedd193728390c4ecd40b68bef3ba55cde5cd9975d882db1d1cfcc2c4",
+          "source_sha256": "359c6c6cedd193728390c4ecd40b68bef3ba55cde5cd9975d882db1d1cfcc2c4",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g11-f001.png",
+          "sha256": "853537262f1656ceaecc605ae8a252947b0c536331fbb275a6f9cb81aaf3099e",
+          "source_sha256": "853537262f1656ceaecc605ae8a252947b0c536331fbb275a6f9cb81aaf3099e",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g11-f002.png",
+          "sha256": "ca4acf3ef9ede326e251df44ab87e0feb5ec11528bb7c18435cfd39331a1bad7",
+          "source_sha256": "ca4acf3ef9ede326e251df44ab87e0feb5ec11528bb7c18435cfd39331a1bad7",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g11-f003.png",
+          "sha256": "b6e6b5d9fbe6a912d02a273f09a71991f9491a16d47b5732f47b66afa00803ee",
+          "source_sha256": "b6e6b5d9fbe6a912d02a273f09a71991f9491a16d47b5732f47b66afa00803ee",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 12,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g12-f000.png",
+          "sha256": "efffd40d6b8f6a1dc86f55c6d26d3e898ea51477389395fea3468fc8c0b1983a",
+          "source_sha256": "efffd40d6b8f6a1dc86f55c6d26d3e898ea51477389395fea3468fc8c0b1983a",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g12-f001.png",
+          "sha256": "14e459019305b82ca0146294c6875bcc33a930f17e60c5d2fcfd2b67a904afcd",
+          "source_sha256": "14e459019305b82ca0146294c6875bcc33a930f17e60c5d2fcfd2b67a904afcd",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g12-f002.png",
+          "sha256": "c601787fb712f6e5d66a24ecc3ac0fbc477b689098e973c74af522d441236eea",
+          "source_sha256": "c601787fb712f6e5d66a24ecc3ac0fbc477b689098e973c74af522d441236eea",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g12-f003.png",
+          "sha256": "7ee0f5cbfd74aee86a9ff1df0360f63b59c712a4de7aae107a2a196781f33825",
+          "source_sha256": "7ee0f5cbfd74aee86a9ff1df0360f63b59c712a4de7aae107a2a196781f33825",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 13,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g13-f000.png",
+          "sha256": "185fbbe9a5b7d1bc446e553290c8519c245e89200c91ba8d9cd7d1b8909d5bf9",
+          "source_sha256": "185fbbe9a5b7d1bc446e553290c8519c245e89200c91ba8d9cd7d1b8909d5bf9",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g13-f001.png",
+          "sha256": "00231fab850000fbc3669be1c22fbb31af5249dc55db34c65049a8d8936bda67",
+          "source_sha256": "00231fab850000fbc3669be1c22fbb31af5249dc55db34c65049a8d8936bda67",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g13-f002.png",
+          "sha256": "35b0283c94c7586bddb5e8d59f675ee4ec7b9c982459fdceccd7044840d3ee0d",
+          "source_sha256": "35b0283c94c7586bddb5e8d59f675ee4ec7b9c982459fdceccd7044840d3ee0d",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g13-f003.png",
+          "sha256": "855a0e7ef1040162dc2735907184be5848802036878699631e564c7919e52d6e",
+          "source_sha256": "855a0e7ef1040162dc2735907184be5848802036878699631e564c7919e52d6e",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 14,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g14-f000.png",
+          "sha256": "65c2a8b31f409a3b7f7a8a54eab279920e7272dd0abba03e53967a2751a3f171",
+          "source_sha256": "65c2a8b31f409a3b7f7a8a54eab279920e7272dd0abba03e53967a2751a3f171",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g14-f001.png",
+          "sha256": "0bca46a2cf1f679f06e80e61cbcfd6d63539bc07228bc9212aef2da81530029e",
+          "source_sha256": "0bca46a2cf1f679f06e80e61cbcfd6d63539bc07228bc9212aef2da81530029e",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g14-f002.png",
+          "sha256": "776369b324f76eb542d0a8a432027ba8a3597d613d08716d7b7289600205eb21",
+          "source_sha256": "776369b324f76eb542d0a8a432027ba8a3597d613d08716d7b7289600205eb21",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g14-f003.png",
+          "sha256": "b7b5b6aa7a37e0eb0a16ceeaa7ac7b77d91f819d9a8850b260297dfdb3263405",
+          "source_sha256": "b7b5b6aa7a37e0eb0a16ceeaa7ac7b77d91f819d9a8850b260297dfdb3263405",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g14-f004.png",
+          "sha256": "b86c895ad938b67c8612d96ae2adfa7af97d5abbf7f609a62dc536d16337a07e",
+          "source_sha256": "b86c895ad938b67c8612d96ae2adfa7af97d5abbf7f609a62dc536d16337a07e",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g14-f005.png",
+          "sha256": "9660aa4188dda6c5b80deeb1495c32f56928d8ec9feb191015cbbdaa14e687f1",
+          "source_sha256": "9660aa4188dda6c5b80deeb1495c32f56928d8ec9feb191015cbbdaa14e687f1",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 15,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g15-f000.png",
+          "sha256": "ecad98058ee31f7ecda1c4deb5b2bff7565cc3640751065e561cec87b2ab3c15",
+          "source_sha256": "ecad98058ee31f7ecda1c4deb5b2bff7565cc3640751065e561cec87b2ab3c15",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g15-f001.png",
+          "sha256": "0b8f1a62ea50d670931215b4047abe9a30f008281d0c348ef3f78af11216ab72",
+          "source_sha256": "0b8f1a62ea50d670931215b4047abe9a30f008281d0c348ef3f78af11216ab72",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g15-f002.png",
+          "sha256": "36b2a2ce4e5f653cd737e35ce44a26c4f900f1b5b22bccaeb406c99f60c7dc40",
+          "source_sha256": "36b2a2ce4e5f653cd737e35ce44a26c4f900f1b5b22bccaeb406c99f60c7dc40",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g15-f003.png",
+          "sha256": "65d25b3af4e72c4cd426c17dc56702aacddb5426ec8032671a2ea0c7c110580e",
+          "source_sha256": "65d25b3af4e72c4cd426c17dc56702aacddb5426ec8032671a2ea0c7c110580e",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g15-f004.png",
+          "sha256": "b47572bbec2d4543c803b1ffd1175ed40458b01374cffa7d993cc93158bc7677",
+          "source_sha256": "b47572bbec2d4543c803b1ffd1175ed40458b01374cffa7d993cc93158bc7677",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g15-f005.png",
+          "sha256": "81b998ae8f908464bb42ce26a1a3a2eee8c1a8eb6f07c503e293c5952dce1ebb",
+          "source_sha256": "81b998ae8f908464bb42ce26a1a3a2eee8c1a8eb6f07c503e293c5952dce1ebb",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 16,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g16-f000.png",
+          "sha256": "41fba6c8e553fca1ce835ae27a4797c03c6b53988e7c90670d9fc58bf9d29f80",
+          "source_sha256": "41fba6c8e553fca1ce835ae27a4797c03c6b53988e7c90670d9fc58bf9d29f80",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g16-f001.png",
+          "sha256": "bd4abefc4f4b0a1a824f71f8d12c39cc70c357da82097e545a8c1d02d48fac2b",
+          "source_sha256": "bd4abefc4f4b0a1a824f71f8d12c39cc70c357da82097e545a8c1d02d48fac2b",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g16-f002.png",
+          "sha256": "04cf64b230affc0e15ec9f081f1d082003089e18fce47f861a8b2127feb1c7d6",
+          "source_sha256": "04cf64b230affc0e15ec9f081f1d082003089e18fce47f861a8b2127feb1c7d6",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g16-f003.png",
+          "sha256": "bfeb8863f7700eb08d81ff4a38608a23588cffc0d6e5b95255308475d4c25142",
+          "source_sha256": "bfeb8863f7700eb08d81ff4a38608a23588cffc0d6e5b95255308475d4c25142",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g16-f004.png",
+          "sha256": "b91772fc97041f812779dc81e9b090a3476d6ae0889c047515517796b359ecd0",
+          "source_sha256": "b91772fc97041f812779dc81e9b090a3476d6ae0889c047515517796b359ecd0",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g16-f005.png",
+          "sha256": "cbcdc0c1d983ed868ae0e53c25a11aaae7f8a1167a4a5db78929cdf2ca0b8e30",
+          "source_sha256": "cbcdc0c1d983ed868ae0e53c25a11aaae7f8a1167a4a5db78929cdf2ca0b8e30",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 22,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenRifleman/battle/g22-f000.png",
+          "sha256": "b2dc33320d0ed339c8d737c31f7a412d275f0533456999836b2e4b5f2c4638a9",
+          "source_sha256": "b2dc33320d0ed339c8d737c31f7a412d275f0533456999836b2e4b5f2c4638a9",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    }
+  ]
+}

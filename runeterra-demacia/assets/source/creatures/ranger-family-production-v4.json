@@ -1,0 +1,221 @@
+{
+  "active_recipe_modified": false,
+  "authority": [
+    "client/battle/BattleConstants.h ECreatureAnimType groups",
+    "client/battle/BattleAnimationClasses.cpp ShootingAnimation::getAttackClimaxFrame and RangedAttackAnimation::tick",
+    "actual config/creatures/castle.json plus extracted CLCBOW/CHCBOW native references inspected"
+  ],
+  "history": {
+    "v1": "Actual initial skeletal family and rendered motion; source face/helmet defects identified.",
+    "v2": "Actual generator snapshot and physical floor-safe corpse elbow; face still obscured by full-sphere helmet.",
+    "v3": "Open-bottom helmet plus alpha-aware skin shader; projected Veteran face UV still wrong.",
+    "v4": "Selected raw source: corrected per-identity face UV and physical eye/mouth features; earlier sources retained."
+  },
+  "painted_generation_held_until_native_infantry_pilot": true,
+  "status": "editable guide/source family only; no active recipes or final acceptance",
+  "tool_provenance": "assets/source/creatures/rig-production-tools-v1.json",
+  "tool_provenance_sha256": "c6d4c8489f3fb1981e2c927c9d14b7ca5ca54316875c4519a00f72283580164a",
+  "units": [
+    {
+      "arm_forearm_length_range": [
+        0.27313014864921553,
+        0.27313020825386053
+      ],
+      "arm_upper_length_range": [
+        0.2976994812488554,
+        0.29769948124885576
+      ],
+      "climax": {
+        "authored_zero_based_release": 4,
+        "authority": "client/battle/BattleAnimationClasses.cpp ShootingAnimation::getAttackClimaxFrame returns selectedFrame-1; RangedAttackAnimation::tick emits at that current frame.",
+        "configured_one_based": 5,
+        "frames_per_direction": 8
+      },
+      "command": [
+        ".tools/blender45/blender-4.5.9-windows-x64/blender.exe",
+        "--background",
+        "--factory-startup",
+        "--python-exit-code",
+        "2",
+        "--python",
+        "runeterra-demacia/scripts/creature_ranger_rig.py",
+        "--",
+        "--project",
+        "C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-demacia",
+        "--unit",
+        "demacianRanger",
+        "--revision",
+        "4"
+      ],
+      "cwd": "C:\\Users\\matcy\\Documents\\code\\Homm3",
+      "executed_generator": "assets/source/creatures/demacianRanger/ranger-rig-v4/generator-executed-v4.py",
+      "executed_generator_sha256": "af9a830d83b682e9ba9c254aa87a6efe215964c1442868091e1ec3be737fcab7",
+      "exit_code": 0,
+      "intentional_duplicate_pose_renders": {
+        "11": [
+          [
+            0,
+            5
+          ]
+        ],
+        "12": [
+          [
+            0,
+            5
+          ]
+        ],
+        "13": [
+          [
+            0,
+            5
+          ]
+        ],
+        "14": [
+          [
+            2,
+            3
+          ]
+        ],
+        "15": [
+          [
+            2,
+            3
+          ]
+        ],
+        "16": [
+          [
+            2,
+            3
+          ]
+        ],
+        "2": [
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "metadata": {
+        "path": "assets/source/creatures/demacianRanger/ranger-rig-v4/ranger-production-v4.json",
+        "sha256": "641689c36cc695b27d5be35276e653526ef6aad7e4418eaa6e19220ac0526eba"
+      },
+      "rendered_png_count": 78,
+      "selected_source_revision": 4,
+      "source_blend": {
+        "path": "assets/source/creatures/demacianRanger/ranger-rig-v4/demacianRanger-ranger-rig-v4.blend",
+        "sha256": "d3bca73f0e03165e210c8ae74be7afbe4131bf90dfc19507ec339d461dfcfc55"
+      },
+      "source_dependencies": {
+        "executed_dependency": "scripts/creature_rig_pilot.py",
+        "executed_dependency_sha256": "fc73fef2ee3389e231389dd95b9bc75053e9b4c071e9859005663f12147e3778",
+        "no_original_game_code_or_pixels": true,
+        "packed_copy": "assets/source/creatures/demacianRanger/ranger-rig-v4/creature_rig_pilot.py",
+        "packed_copy_sha256": "fc73fef2ee3389e231389dd95b9bc75053e9b4c071e9859005663f12147e3778",
+        "purpose": "Own physical leg_points function. The generator snapshot can import this exact adjacent source when rerun directly; no Blender scene/body execution occurs on import."
+      },
+      "status": "actual source renders verified; final animation assets incomplete",
+      "unit": "demacianRanger"
+    },
+    {
+      "arm_forearm_length_range": [
+        0.27313014864921553,
+        0.27313020825386053
+      ],
+      "arm_upper_length_range": [
+        0.2976994812488554,
+        0.29769948124885576
+      ],
+      "climax": {
+        "authored_zero_based_release": 4,
+        "authority": "client/battle/BattleAnimationClasses.cpp ShootingAnimation::getAttackClimaxFrame returns selectedFrame-1; RangedAttackAnimation::tick emits at that current frame.",
+        "configured_one_based": 5,
+        "frames_per_direction": 8
+      },
+      "command": [
+        ".tools/blender45/blender-4.5.9-windows-x64/blender.exe",
+        "--background",
+        "--factory-startup",
+        "--python-exit-code",
+        "2",
+        "--python",
+        "runeterra-demacia/scripts/creature_ranger_rig.py",
+        "--",
+        "--project",
+        "C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-demacia",
+        "--unit",
+        "veteranRanger",
+        "--revision",
+        "4"
+      ],
+      "cwd": "C:\\Users\\matcy\\Documents\\code\\Homm3",
+      "executed_generator": "assets/source/creatures/veteranRanger/ranger-rig-v4/generator-executed-v4.py",
+      "executed_generator_sha256": "af9a830d83b682e9ba9c254aa87a6efe215964c1442868091e1ec3be737fcab7",
+      "exit_code": 0,
+      "intentional_duplicate_pose_renders": {
+        "11": [
+          [
+            0,
+            5
+          ]
+        ],
+        "12": [
+          [
+            0,
+            5
+          ]
+        ],
+        "13": [
+          [
+            0,
+            5
+          ]
+        ],
+        "14": [
+          [
+            2,
+            3
+          ]
+        ],
+        "15": [
+          [
+            2,
+            3
+          ]
+        ],
+        "16": [
+          [
+            2,
+            3
+          ]
+        ],
+        "2": [
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "metadata": {
+        "path": "assets/source/creatures/veteranRanger/ranger-rig-v4/ranger-production-v4.json",
+        "sha256": "e4ed39e013d6d63c1ed0101ed56176895b45c5beaa7154a6cc54dfe290b3680b"
+      },
+      "rendered_png_count": 78,
+      "selected_source_revision": 4,
+      "source_blend": {
+        "path": "assets/source/creatures/veteranRanger/ranger-rig-v4/veteranRanger-ranger-rig-v4.blend",
+        "sha256": "875dd9b9b03d5a5f6f249e34a19a0d1a5186017f20076b23425b8bafc741a288"
+      },
+      "source_dependencies": {
+        "executed_dependency": "scripts/creature_rig_pilot.py",
+        "executed_dependency_sha256": "fc73fef2ee3389e231389dd95b9bc75053e9b4c071e9859005663f12147e3778",
+        "no_original_game_code_or_pixels": true,
+        "packed_copy": "assets/source/creatures/veteranRanger/ranger-rig-v4/creature_rig_pilot.py",
+        "packed_copy_sha256": "fc73fef2ee3389e231389dd95b9bc75053e9b4c071e9859005663f12147e3778",
+        "purpose": "Own physical leg_points function. The generator snapshot can import this exact adjacent source when rerun directly; no Blender scene/body execution occurs on import."
+      },
+      "status": "actual source renders verified; final animation assets incomplete",
+      "unit": "veteranRanger"
+    }
+  ],
+  "visual_approval_granted": false
+}

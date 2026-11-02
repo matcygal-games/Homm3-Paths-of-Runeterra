@@ -1,0 +1,37 @@
+{
+  "source": "vcmi-develop/vcmi-develop/client/battle/BattleSiegeController.cpp:50-150,279-296,359-365",
+  "status": "authored configuration",
+  "verification": "Source inspection only; no native Noxus siege executed.",
+  "roles": {
+    "MAN1": "intact living keep",
+    "MAN2": "destroyed keep, no shooter",
+    "MANC": "healthy keep foreground battlement, only while keep alive",
+    "TW11": "intact bottom tower",
+    "TW12": "destroyed bottom tower",
+    "TW1C": "healthy bottom-tower foreground battlement",
+    "TW21": "intact upper tower",
+    "TW22": "destroyed upper tower",
+    "TW2C": "healthy upper-tower foreground battlement",
+    "WA11/WA12/WA13": "bottom wall intact/damaged/destroyed",
+    "WA31/WA32/WA33": "wall below gate intact/damaged/destroyed",
+    "WA41/WA42/WA43": "wall above gate intact/damaged/destroyed",
+    "WA61/WA62/WA63": "upper wall intact/damaged/destroyed",
+    "WA2": "bottom static joiner",
+    "WA5": "upper static joiner",
+    "DRW1": "partial gate during animation",
+    "DRW2": "opened lowered drawbridge",
+    "DRW3": "destroyed drawbridge",
+    "DRWC": "foreground overlay when gate opened and not destroyed",
+    "ARCH": "gate arch",
+    "TPWL": "static background wall",
+    "MLIP": "moat bank",
+    "MOAT": "moat channel",
+    "BACK": "battlefield background"
+  },
+  "rejected_variant_note": "Initial C-suffix destroyed-cap and DRWC broken-chain interpretations are preserved as unselected history; selected v2 corrects actual native semantics.",
+  "correction_notes": [
+    "The v2mainkeep and gatepier are independently redrawn slender to fit nativeattachments without axisstretch.",
+    "Crop bounds may ignore <=4/255 outside-alpha speckles only; actualpainted alpha inside the crop retained.",
+    "Each damagevariant is a real imagegen edit of the same own parentpainting; no borrowed destruction art or copied idlepose."
+  ]
+}

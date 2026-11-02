@@ -1,0 +1,110 @@
+{
+  "assembly": "Source alpha-component isolation, crop, uniform Lanczos resampling and placement only. No painting, mirroring, rig, copied original pixels, body deformation or reused battle frame.",
+  "blocked_outputs": [
+    "battle"
+  ],
+  "findings": [
+    "Imagegen painted four distinct views. No final asset approval or native gameplay claimed."
+  ],
+  "master_sha256": "eaac5ccb0249a6f1a7eb8c43967b575a0e367df602e3a4d22612d4a9c3944513",
+  "native_camera": {
+    "attack_pivot": [
+      32,
+      63
+    ],
+    "map_pivot": [
+      64,
+      63
+    ],
+    "source_contact_anchors": [
+      [
+        678,
+        709
+      ],
+      [
+        1167,
+        709
+      ],
+      [
+        1555,
+        696
+      ]
+    ],
+    "uniform_scale": 0.077
+  },
+  "outputs": {
+    "attackLeft": {
+      "alpha_bbox": [
+        1,
+        17,
+        46,
+        63
+      ],
+      "path": "assets/source/creatures/augmentationVeteran/painted-imagegen-v2/native/attackLeft.png",
+      "sha256": "4fc13c7109179cc469f9806e70dea8d7bcc7947881bcee3ee237acf728c4585d",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "attackRight": {
+      "alpha_bbox": [
+        18,
+        24,
+        63,
+        63
+      ],
+      "path": "assets/source/creatures/augmentationVeteran/painted-imagegen-v2/native/attackRight.png",
+      "sha256": "ccc9fc62cd988f257db3742689f15a11c5c0d8d415c15df7cd37bcbc708d46de",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "large": {
+      "alpha_bbox": [
+        3,
+        0,
+        55,
+        64
+      ],
+      "path": "assets/source/creatures/augmentationVeteran/painted-imagegen-v2/native/large.png",
+      "sha256": "f32af85fd0bff83d22219c49830a0dd56b96087db7ff90d11ef3f749cffdba7c",
+      "size": [
+        58,
+        64
+      ]
+    },
+    "map": {
+      "alpha_bbox": [
+        50,
+        19,
+        81,
+        63
+      ],
+      "path": "assets/source/creatures/augmentationVeteran/painted-imagegen-v2/native/map.png",
+      "sha256": "00308a1fa471b0199cfb00d2f2888a6b3af348b5d87f6474b4dbb6e5a06898d8",
+      "size": [
+        96,
+        64
+      ]
+    },
+    "small": {
+      "alpha_bbox": [
+        3,
+        0,
+        29,
+        32
+      ],
+      "path": "assets/source/creatures/augmentationVeteran/painted-imagegen-v2/native/small.png",
+      "sha256": "1b17c97ce51ba62d06fdb7d35a2360f5906337365069dc60e79884f34b0ef4c1",
+      "size": [
+        32,
+        32
+      ]
+    }
+  },
+  "status": "authored configuration",
+  "unit": "augmentationVeteran",
+  "visual_approval_granted": false
+}

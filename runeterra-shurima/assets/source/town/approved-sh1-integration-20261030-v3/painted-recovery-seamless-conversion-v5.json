@@ -1,0 +1,78 @@
+{
+  "method": "Standard Poisson/gradient-domain composition of genuinely painted imagegen sources; four-neighbour native Laplacian, fixed original/background values outside architecture-owned masks; RGB8 round-and-clip.",
+  "numpy_version": "2.5.4",
+  "output": {
+    "path": "assets/source/town/approved-sh1-integration-20261030-v3/painted-recovery-seamless-native-v5.png",
+    "sha256": "51b1e5b662e5f5f4ea5e0f43b6db9258ff4fb752cdb5dea3064324282e7742e9"
+  },
+  "outside_recovery_mask_changes": null,
+  "painted_sources": [
+    {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v3/sky-inpaint-native-crop-v2.png",
+      "sha256": "ed777956dd3f64bb9bc1d41a89d3d4dcfb51f7c4dd0f518bc2635cf299d74231"
+    },
+    {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v3/sky-repair-raw-v4.png",
+      "sha256": "bfaa58863202ef4c291c8e88cd1a975853ca9f7cd3d77ee1e1e23ee95f4d8d88"
+    },
+    {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v3/civic-finial-removal-raw-v1.png",
+      "sha256": "f4ff9649033ca9911f93af18d21656849704bc07bd7f76ddd5993a223ebc2fe7"
+    }
+  ],
+  "pole_mask": {
+    "path": "assets/source/town/approved-sh1-integration-20261030-v3/geometry/civic-finial-recovery-budget.png",
+    "sha256": "22e1a4598a9196a1e452bea8ba1a94cfffa4b6680f1fd7a9f9e0da4698935c51"
+  },
+  "producer": {
+    "path": "assets/source/town/approved-sh1-integration-20261030-v3/blend_painted_recovery.py",
+    "sha256": "ba134667d277322fb66b48f93aceaf7670e4c6c72b101e1eefeb6b78b5ee50dd"
+  },
+  "sky_mask": {
+    "path": "assets/source/town/approved-sh1-integration-20261030-v3/geometry/sky-recovery-budget.png",
+    "sha256": "7deac59ee1b46fba897a287cc94a0fee15eb1d4a48e2cb59621850c237645bdb"
+  },
+  "solves": {
+    "pole": [
+      {
+        "channel": 0,
+        "iterations": 136,
+        "maximum_equation_residual": 8.116115901478685e-09
+      },
+      {
+        "channel": 1,
+        "iterations": 138,
+        "maximum_equation_residual": 9.087362260241647e-09
+      },
+      {
+        "channel": 2,
+        "iterations": 137,
+        "maximum_equation_residual": 7.518526406564762e-09
+      }
+    ],
+    "sky": [
+      {
+        "channel": 0,
+        "iterations": 212,
+        "maximum_equation_residual": 8.22751188626041e-09
+      },
+      {
+        "channel": 1,
+        "iterations": 207,
+        "maximum_equation_residual": 7.975136152239403e-09
+      },
+      {
+        "channel": 2,
+        "iterations": 210,
+        "maximum_equation_residual": 7.848003076103213e-09
+      }
+    ]
+  },
+  "source_transforms": {
+    "pole": "Crop generator black margin (27,0,width,height), whole remaining image Lanczos25x81, paste443,36",
+    "sky_v2": "Preserve painted ridge: paste126x56at70,0",
+    "sky_v4": "Whole clean generated cloud painting Lanczos127x34, paste70,0 above the painted ridge"
+  },
+  "status": "authored configuration",
+  "visual_approval_granted": false
+}

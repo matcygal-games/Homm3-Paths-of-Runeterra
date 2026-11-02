@@ -1,0 +1,125 @@
+{
+  "acceptance": "Production requirements only. No rig/guide/primitive/reference may substitute for painted final art; this recipe must fail while its real master/hash is absent.",
+  "animation_contract": "Minimum static architectural g0 is valid; real torch/banner frames may extend the painted cohort, never duplicated fake motion",
+  "art_direction": "Independent Noxian iron/crimson/black subjects in Heroes III native painted language. Never recolour Castle or Demacia art, import original pixels or invent an official crest.",
+  "building": "blacksmith",
+  "building_contract": {
+    "full_canvas_placement": {
+      "x": 0,
+      "y": 0,
+      "z": 355
+    },
+    "name": "Legion Armory",
+    "native_ground_contact": [
+      635,
+      255,
+      142,
+      100
+    ],
+    "upgrades": null
+  },
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI built-in imagegen; deterministic project conversion",
+    "license": null,
+    "redistribution": "unresolved; no release or redistribution approval"
+  },
+  "dimensions_basis": {
+    "canvas": [
+      800,
+      374
+    ],
+    "mode": "RGB",
+    "reference_only": "runeterra-demacia/references/images/tbcsback.pcx.png",
+    "reference_sha256": "949012ea68999207934bc482f1552858474fe50cefddef17eaac00d4b98c2be9",
+    "use": "Dimensions/format only. No reference pixels, palette, source recipe, layout silhouette or licensed art copied."
+  },
+  "fit": "exact",
+  "generateOverlay": 0,
+  "generateShadow": 0,
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in imagegen",
+    "model": "Not exposed by the built-in tool",
+    "model_disclosure": "Not exposed by the builtin tool.",
+    "prompt": "Create ONE original Noxian Foundry street forge cutout for original Heroes of Might and Magic III. Supplied images are PAINTED MATERIAL/LIGHT/CAMERA CONTROLS only, not buildings to clone. New original subject: LOW BROAD inhabited blacksmith workshop with a heavy asymmetrical angular dark iron roof, charcoal volcanic coursed-basalt walls, a large open orange forge under a low iron awning, anvil, practical tool rack, coal bins and a broad squat copper/black iron chimney to one side. A few crimson cloth strips and a small warm workshop window, subtle iron rivets/soot/rust/stone grain; readable tools and broad open work frontage. Not a tall palace, fortress, giant tower or empty column kit. Genuine richly textured PAINTED 2D original HoMM3 game miniature aesthetic, compact restrained upper-left light with small warm forge light, no neon. Low three-quarter frontal camera looking gently down, doors/open forge front visible, modest roof, no lens distortion. Final native142x100 broad foreground game sprite; make coherent full continuous dry stone foundation and modest attached props. Whole building/chimney/roof and props entirely visible within a transparent margin. TRUE transparent background and soft contact shadow only under foundation. No terrain/background/scenery/road tile/grid, no characters, no text or signage, no pale Castle walls, no modern glossy 3D or vector geometry. One standalone source painting, not a sheet.",
+    "painted_master": "assets/source/town/painted-community-20261024-v2/blacksmith/master.png",
+    "painted_master_sha256": "7d50fa4019a23c82cd640e202e39ae065f1fdc1b391931877524fdf437331776",
+    "generation_record": "assets/source/town/painted-community-20261024-v2/blacksmith/generation.json",
+    "generation_record_sha256": "49be0a6118869609bc80884824fa03cd702c358e253b39d82502c588f7432134",
+    "conversion": {
+      "method": "Uniform alpha-crop/contain of genuine painted 2D source; forced-depth site placement, no perspective warping or artificial art.",
+      "source_crop": [
+        14,
+        25,
+        1471,
+        1044
+      ],
+      "placement_box": [
+        635,
+        255,
+        142,
+        100
+      ],
+      "native_position": [
+        637,
+        257
+      ],
+      "native_size": [
+        137,
+        96
+      ],
+      "site": "foundry",
+      "assembly_script": "assets/source/town/urban-community-20261024-v4/prepare.py",
+      "assembly_script_sha256": "b8c70f29e50d9036f76d86d3dea27235f85ed2d37b71b10a054208bdd121d42c",
+      "mirror_x": true,
+      "crop_coordinate_basis": "after complete master mirror when mirror_x=true"
+    }
+  },
+  "groups": [
+    {
+      "action": "own town building state, not a troop idle/action",
+      "frames": [
+        {
+          "sha256": "89cc4e91943a464e2ad4e2237e8686bcc079db35f2439653bc48ea32d296d583",
+          "source": "assets/source/town/urban-community-20261024-v4/structures/blacksmith/layer.png",
+          "source_sha256": "89cc4e91943a464e2ad4e2237e8686bcc079db35f2439653bc48ea32d296d583"
+        }
+      ],
+      "group": 0
+    }
+  ],
+  "inventory": {
+    "asset_id": "noxus.Sprites.runeterra.noxus.town.structures.blacksmith.json",
+    "manifest": "assets/manifest.json",
+    "recipe_path": "assets/recipes/town/structures/blacksmith-animation.json"
+  },
+  "output_path": "Content/Sprites/runeterra/noxus/town/structures/blacksmith.json",
+  "pivot": {
+    "basis": "Full town canvas; content declares x0/y0; no Castle/Demacia building placement copied",
+    "x": 0,
+    "y": 0
+  },
+  "production_status": "painted-master-complete",
+  "recipe_type": "vcmi_animation",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "Real independent Noxus painted master and truthful provenance",
+    "Non-null SHA256 source pins",
+    "Official Noxus emblem provenance where used",
+    "Native-size silhouette/composition/alpha and role review",
+    "Explicit coordinator selection; no automatic acceptance"
+  ],
+  "role": "town-structure-animation",
+  "sha256": "89cc4e91943a464e2ad4e2237e8686bcc079db35f2439653bc48ea32d296d583",
+  "source_sha256": "89cc4e91943a464e2ad4e2237e8686bcc079db35f2439653bc48ea32d296d583",
+  "status": "built-unreviewed",
+  "visual_approval_granted": false,
+  "source_canvas": [
+    800,
+    374
+  ]
+}

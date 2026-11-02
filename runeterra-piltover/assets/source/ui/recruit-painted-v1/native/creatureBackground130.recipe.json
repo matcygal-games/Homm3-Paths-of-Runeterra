@@ -1,0 +1,39 @@
+{
+  "recipe_type": "raster",
+  "production_status": "painted-master-complete-unapproved",
+  "output_path": "Content/Sprites/runeterra/piltover/ui/creatureBackground130.png",
+  "canvas": [
+    100,
+    130
+  ],
+  "source": "assets/source/ui/recruit-painted-v1/native/creatureBackground130.png",
+  "source_sha256": "8589a7f59b2d94012e1c6fd8c4613aaa937f834842ec72cf5968dbfc3787133d",
+  "source_canvas": [
+    100,
+    130
+  ],
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in imagegen",
+    "model": "Not exposed by the tool",
+    "prompt": "Paint ONE original PILTOVER creature recruitment/creature-window BACKGROUND for ORIGINAL Heroes of Might and Magic III, native100x130portrait, highresolution source same100:130ratio, completelyOPAQUE. Ref1 actualnativeH3backgroundis PRIVATE camera/composition/ground-scale STYLE reference ONLY; donotcopyitsTowerbuilding,snow,mountainsor pixels. Ref2 ownPiltovanpaintingis regionalpalette/material/architecture referenceONLY. ThisisEMPTYscenerywithNOcharacter, creature, furniture orcloseforegroundobject where troopwillstand. MatchoriginalH3richlytextured2Dpaintedminiature, compactprerenderedappearancewithout3Dproduction. LOWERTHIRDclearlevelweatheredwarmgrey/ochrepaving suitableforcreaturefeet/contactshadow. Middlequietivory-stonecourtyardedge, smallbrassposts far toside, abovehorizon distantblueharbor/cliffs and modest glass-roofguildhouses. Farbuildingssmall, centralstandingareaclear. OriginalH3upperleftsun, softgrey/brownshadows, warmivory/brass/weatheredwood/navyteal andtinyblueglass, naturallow-contrastdepthso troopsreadagainstbackground. DistantphysicalPiltoverregionalmarkonsmallsidebanner, notfloatinglogo. Painttextureatnative100x130clarity, no stylizedflatvector, CGI/plastic/glossy3D, modernLoLsplash, anime, neon haze, photorealism, UIborder, text, icon, watermarkoranyunit. UseclassicH3emptygroundproportions not alargepaintingtiledbehindcreature.\n",
+    "painted_master": "assets/source/ui/recruit-painted-v1/master-v1.png",
+    "painted_master_sha256": "b5fd5976327f5ead38fda99ef0deb6e2c31ae62f785f8c8c389c214c734688bc",
+    "method": "Uniform aspect-preserving centered cover crop of actual painted 2D master; no drawing"
+  },
+  "production_inputs": [
+    {
+      "path": "assets/source/ui/recruit-painted-v1/master-v1.png",
+      "sha256": "b5fd5976327f5ead38fda99ef0deb6e2c31ae62f785f8c8c389c214c734688bc"
+    },
+    {
+      "path": "assets/source/ui/recruit-painted-v1/piltover_recruit_background_v1-actual-prompt.txt",
+      "sha256": "7d0e768abe9d6b4afca9fbb7468d0f33f8234fca72de84d84ff23b376f01711d"
+    },
+    {
+      "path": "assets/source/ui/recruit-painted-v1/produce.py",
+      "sha256": "95ab5e5944702e7d844e4b0dd3fa377631f09ec7ef02a40c002669ffb0156a62"
+    }
+  ]
+}

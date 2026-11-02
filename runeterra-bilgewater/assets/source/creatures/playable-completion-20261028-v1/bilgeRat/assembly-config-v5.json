@@ -1,0 +1,663 @@
+{
+  "battle_canvas": [
+    450,
+    400
+  ],
+  "battle_root": [
+    197,
+    266
+  ],
+  "companions": {
+    "construction": "One registered96x64map raster;64x64 encounter is exact right64px crop, sharing decodedRGBA world anchor",
+    "encounter_root": [
+      44,
+      60
+    ],
+    "map_root": [
+      76,
+      60
+    ],
+    "portrait_crop": [
+      90,
+      96,
+      262,
+      270
+    ],
+    "pose": "idle",
+    "scale": 0.135
+  },
+  "excluded_source_keys": [
+    {
+      "pose": "unusedTurn0",
+      "reason": "Native half-turn begins/ends at exact HOLDING; preserve unused earlier turn study"
+    },
+    {
+      "master": "walk-v3-raw.png",
+      "reason": "Earlier broad cohort has unresolved opposite support; replaced by independently painted contact/support half cohorts"
+    },
+    {
+      "pose": "turn3",
+      "reason": "Older asymmetric frontal study retained in source history; new centred-weapon frontal pose selected at facing boundary."
+    }
+  ],
+  "generation_reference_inputs": [
+    {
+      "path": "assets/source/creatures/playable-completion-20261028-v1/bilgeRat/contact-A-v2-raw.png",
+      "sha256": "7320d6c39ced29fea2bc11a8adf9ccf89e02d8a70d8c0999f65fd9627164a156",
+      "use": "Original painted2D identity/contact source used by built-in generation, not runtime source frame"
+    },
+    {
+      "path": "assets/source/creatures/playable-completion-20261028-v1/bilgeRat/contact-B-v2-raw.png",
+      "sha256": "68ad66f2eba08db295aa7bbfb6589067e0d50e85e3a04dc6bc55e594fa721e69",
+      "use": "Original painted2D identity/contact source used by built-in generation, not runtime source frame"
+    },
+    {
+      "path": "assets/source/creatures/playable-completion-20261028-v1/bilgeRat/walk-near-contact-v1-raw.png",
+      "sha256": "af841278fb733c3aa7c5d81436e6701c873db3045e298b326d86fef908aa59c7",
+      "use": "Original painted2D identity/contact source used by built-in generation, not runtime source frame"
+    },
+    {
+      "path": "assets/source/creatures/playable-completion-20261028-v1/bilgeRat/atlas-v1-raw.png",
+      "sha256": "5527b14048a48f74562f0bcfce925de6a5872bcb3ec317d87ca95676097d4dfd",
+      "use": "Original painted2D identity/contact source used by built-in generation, not runtime source frame"
+    },
+    {
+      "path": "assets/source/creatures/playable-completion-20261028-v1/bilgeRat/assembly-config-v2.json",
+      "sha256": "63a8abbc1181d7fffda800aef50ae4cbfa09b23862a3c03409c8aa91adaca4ff",
+      "use": "Preserved source key selection before timeline expansion"
+    },
+    {
+      "path": "assets/source/creatures/playable-completion-20261028-v1/author_native_cadence_v1.py",
+      "sha256": "38a8dc7b72ac88d8b1288873f2c45982a76bb8d5e17d954b21637d9703158f31",
+      "use": "Explicit deterministic whole-painted-key timeline authoring"
+    }
+  ],
+  "groups": {
+    "0": [
+      "near0",
+      "near0",
+      "near1",
+      "far2",
+      "far0",
+      "far0",
+      "far1",
+      "near2"
+    ],
+    "1": [
+      "ready",
+      "idle",
+      "idle",
+      "idle",
+      "ready"
+    ],
+    "11": [
+      "up0",
+      "up0",
+      "up1",
+      "up1",
+      "up2",
+      "up2",
+      "ready",
+      "ready"
+    ],
+    "12": [
+      "front0",
+      "front0",
+      "front1",
+      "front1",
+      "front2",
+      "front2",
+      "ready",
+      "ready"
+    ],
+    "13": [
+      "down0",
+      "down0",
+      "down1",
+      "down1",
+      "down2",
+      "down2",
+      "ready",
+      "ready"
+    ],
+    "2": [
+      "ready"
+    ],
+    "20": [
+      "ready",
+      "near0"
+    ],
+    "21": [
+      "near2",
+      "ready"
+    ],
+    "22": [
+      "death3"
+    ],
+    "3": [
+      "hurt0",
+      "hurt0",
+      "hurt1",
+      "hurt1",
+      "ready"
+    ],
+    "4": [
+      "defend",
+      "defend",
+      "defend",
+      "ready",
+      "ready"
+    ],
+    "5": [
+      "death0",
+      "death0",
+      "death1",
+      "death1",
+      "death2",
+      "death2",
+      "death3",
+      "death3"
+    ],
+    "7": [
+      "ready",
+      "turn1",
+      "turn2",
+      "turnFront",
+      "turnFront"
+    ],
+    "8": [
+      "turnFrontNativeR",
+      "turnFrontNativeR",
+      "turn2",
+      "turn1",
+      "ready"
+    ]
+  },
+  "plates": {
+    "attacks-v2-raw.png": {
+      "expected_islands": 12,
+      "poses": {
+        "down0": {
+          "island": 8,
+          "root": [
+            170,
+            1045
+          ]
+        },
+        "down1": {
+          "island": 11,
+          "root": [
+            525,
+            1042
+          ]
+        },
+        "down2": {
+          "island": 10,
+          "root": [
+            905,
+            1042
+          ]
+        },
+        "front0": {
+          "island": 5,
+          "root": [
+            190,
+            703
+          ]
+        },
+        "front1": {
+          "island": 6,
+          "root": [
+            530,
+            703
+          ]
+        },
+        "front2": {
+          "island": 7,
+          "root": [
+            905,
+            704
+          ]
+        },
+        "ready": {
+          "island": 9,
+          "root": [
+            1300,
+            1048
+          ]
+        },
+        "up0": {
+          "island": 2,
+          "root": [
+            165,
+            376
+          ]
+        },
+        "up1": {
+          "island": 0,
+          "root": [
+            525,
+            377
+          ]
+        },
+        "up2": {
+          "island": 1,
+          "root": [
+            905,
+            377
+          ]
+        }
+      },
+      "scale": 0.25,
+      "source": "bilgeRat/attacks-v2-raw.png",
+      "source_sha256": "e95ff8c85971f986157ef0e88a7c97204e9aa302e33de6ad55ae048defc5c9dd"
+    },
+    "far-half-v2-raw.png": {
+      "expected_islands": 3,
+      "poses": {
+        "far0": {
+          "island": 0,
+          "root": [
+            315,
+            900
+          ]
+        },
+        "far1": {
+          "island": 1,
+          "root": [
+            820,
+            900
+          ]
+        },
+        "far2": {
+          "island": 2,
+          "root": [
+            1330,
+            900
+          ]
+        }
+      },
+      "scale": 0.108,
+      "source": "bilgeRat/far-half-v2-raw.png",
+      "source_sha256": "9904c39217846600e27f9e59944bf263290c3d1e7b4b30d5564f16427766dc9d"
+    },
+    "near-half-v2-raw.png": {
+      "expected_islands": 3,
+      "poses": {
+        "near0": {
+          "island": 2,
+          "root": [
+            335,
+            770
+          ]
+        },
+        "near1": {
+          "island": 0,
+          "root": [
+            965,
+            770
+          ]
+        },
+        "near2": {
+          "island": 1,
+          "root": [
+            1575,
+            770
+          ]
+        }
+      },
+      "scale": 0.112,
+      "source": "bilgeRat/near-half-v2-raw.png",
+      "source_sha256": "5af81c4ba1ab25ba814d7c209317714c11deec885669e13580a720afd4858516"
+    },
+    "reactions-v2-raw.png": {
+      "expected_islands": 12,
+      "poses": {
+        "death0": {
+          "island": 8,
+          "root": [
+            170,
+            1109
+          ]
+        },
+        "death1": {
+          "island": 9,
+          "root": [
+            495,
+            1116
+          ]
+        },
+        "death2": {
+          "island": 10,
+          "root": [
+            825,
+            1113
+          ]
+        },
+        "death3": {
+          "island": 11,
+          "root": [
+            1135,
+            1120
+          ]
+        },
+        "defend": {
+          "island": 2,
+          "root": [
+            495,
+            421
+          ]
+        },
+        "hurt0": {
+          "island": 1,
+          "root": [
+            825,
+            420
+          ]
+        },
+        "hurt1": {
+          "island": 3,
+          "root": [
+            1165,
+            421
+          ]
+        },
+        "idle": {
+          "island": 0,
+          "root": [
+            166,
+            421
+          ]
+        },
+        "turn1": {
+          "island": 6,
+          "root": [
+            500,
+            818
+          ]
+        },
+        "turn2": {
+          "island": 4,
+          "root": [
+            835,
+            818
+          ]
+        },
+        "turn3": {
+          "island": 5,
+          "root": [
+            1165,
+            816
+          ]
+        },
+        "unusedTurn0": {
+          "island": 7,
+          "root": [
+            170,
+            818
+          ]
+        }
+      },
+      "scale": 0.25,
+      "source": "bilgeRat/reactions-v2-raw.png",
+      "source_sha256": "df78c75c73ad4afd1a6b11646d87d53a6460ccd516990e6d697e14e441a9ba8d"
+    },
+    "turn-front-centred-v1": {
+      "expected_islands": 2,
+      "poses": {
+        "turnFront": {
+          "island": 1,
+          "root": [
+            570,
+            824
+          ]
+        }
+      },
+      "scale": 0.105,
+      "source": "turn-fronts-v1/t1-raw.png",
+      "source_sha256": "b237d4608507835f5c610d8aea0e73aa18dcd3f039f49206da88e7cc3c562a84"
+    }
+  },
+  "private_original_controls": {
+    "contactA_native_sha256": "1853569d4631760d27afe12d9d64f3b38192bac241388ca08be6c5f1fd839e4b",
+    "contactB_native_sha256": "42e187f2588ef5327fe8afdc503f901239cb1fc3ed6cdc4ecb8fe88c6404255a",
+    "use": "Lower-body generic weight/occlusion only; private originals never copied into final sprite or bundle"
+  },
+  "technical_pose_transforms": {
+    "turnFrontNativeR": {
+      "operation": "native_turn_full_canvas_mirror_translate",
+      "reason": "Native facing flip reflects full450px then stack x changes-58 for onehex; exact displayed endpoint compensation, no invented painted intermediate",
+      "source_pose": "turnFront",
+      "translation": [
+        -58,
+        0
+      ]
+    }
+  },
+  "timeline_contract": {
+    "battle_speed_factor": "Selected native engine setting; actual quantization and visual rhythm need runtime observation",
+    "climax_consumer": "vcmi-develop/vcmi-develop/client/battle/BattleAnimationClasses.cpp",
+    "climax_consumer_sha256": "32e58068ee148c3c56afd0c6755144eda0a819dbcb201747d5abf4edeee9a4b9",
+    "description": "Existing native8-tick melee/walk/death/shoot/cast and5-tick response/turn cadence, with explicit holds of genuine painted keys. Repeated timeline images are deliberate holds, never claimed as extra painted poses.",
+    "eight_tick_cast_release_source_index": 4,
+    "groups": [
+      {
+        "group": 0,
+        "native_ticks": 8,
+        "original_genuine_key_sequence": [
+          "near0",
+          "near1",
+          "near2",
+          "far0",
+          "far1",
+          "far2"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          0,
+          1,
+          2,
+          3,
+          3,
+          4,
+          5
+        ],
+        "unique_painted_keys": 6
+      },
+      {
+        "group": 1,
+        "native_ticks": 5,
+        "original_genuine_key_sequence": [
+          "ready",
+          "idle"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "unique_painted_keys": 2
+      },
+      {
+        "group": 11,
+        "native_ticks": 8,
+        "original_genuine_key_sequence": [
+          "up0",
+          "up1",
+          "up2",
+          "ready"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3
+        ],
+        "unique_painted_keys": 4
+      },
+      {
+        "group": 12,
+        "native_ticks": 8,
+        "original_genuine_key_sequence": [
+          "front0",
+          "front1",
+          "front2",
+          "ready"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3
+        ],
+        "unique_painted_keys": 4
+      },
+      {
+        "group": 13,
+        "native_ticks": 8,
+        "original_genuine_key_sequence": [
+          "down0",
+          "down1",
+          "down2",
+          "ready"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3
+        ],
+        "unique_painted_keys": 4
+      },
+      {
+        "group": 3,
+        "native_ticks": 5,
+        "original_genuine_key_sequence": [
+          "hurt0",
+          "hurt1",
+          "ready"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          0,
+          1,
+          1,
+          2
+        ],
+        "unique_painted_keys": 3
+      },
+      {
+        "group": 4,
+        "native_ticks": 5,
+        "original_genuine_key_sequence": [
+          "defend",
+          "ready"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "unique_painted_keys": 2
+      },
+      {
+        "group": 5,
+        "native_ticks": 8,
+        "original_genuine_key_sequence": [
+          "death0",
+          "death1",
+          "death2",
+          "death3"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3
+        ],
+        "unique_painted_keys": 4
+      },
+      {
+        "group": 7,
+        "native_ticks": 5,
+        "original_genuine_key_sequence": [
+          "ready",
+          "turn1",
+          "turn2",
+          "turn3"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          1,
+          2,
+          3,
+          3
+        ],
+        "unique_painted_keys": 4
+      },
+      {
+        "group": 8,
+        "native_ticks": 5,
+        "original_genuine_key_sequence": [
+          "turn3",
+          "turn2",
+          "turn1",
+          "ready"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          0,
+          1,
+          2,
+          3
+        ],
+        "unique_painted_keys": 4
+      }
+    ],
+    "native_base_fps": 10,
+    "native_execution": false,
+    "native_shooter_attackClimaxFrame": 4,
+    "shooter_release_source_index": 3,
+    "source_consumer": "vcmi-develop/vcmi-develop/client/battle/CreatureAnimation.cpp",
+    "source_consumer_sha256": "ab43c236c791c6c7ecb6f60029b2026bc6dc5ff18c34cf1a0e7659fadc6e98ef",
+    "status": "authored configuration"
+  },
+  "turn_contract": {
+    "holding_join": "turn7first and turn8last reuse exact selected ready pose",
+    "limitation": "Native displayed endpoint algebra is independently checked; intermediate painted quarter continuity/handedness, tiny onehex pivot quantization and final visual acceptance still require in-game review.",
+    "native_execution": false,
+    "native_full_canvas_width": 450,
+    "one_hex_stack_position_delta": -58,
+    "status": "authored configuration",
+    "turn7_end": "New genuinely painted frontal centred-weapon pose",
+    "turn8_start": "Exact fullcanvas reflected turn7 endpoint translated-58"
+  },
+  "unit": "bilgeRat",
+  "unresolved": [
+    "Source contact/leg-overlap and ordered gait require independent native-size motion review",
+    "Exact regional crest legibility needs independent native-size review",
+    "Canonical source-policy and archive admission have not run",
+    "Actual native turn quarter continuity/handedness and full visual acceptance remain pending despite exact displayed endpoint match"
+  ],
+  "version": 5
+}

@@ -1,0 +1,16 @@
+--- a/client/CServerHandler.cpp
++++ b/client/CServerHandler.cpp
+@@ -992,8 +992,11 @@
+ 		setMapInfo(mapInfo);
+ 		std::this_thread::sleep_for(std::chrono::milliseconds(50));
+ 	}
+-	// "Click" on color to remove us from it
+-	setPlayer(myFirstColor());
++	// "Click" on our color only when a seat is assigned. An all-AI save
++	// already has no local human player to remove.
++	const auto playerColor = myFirstColor();
++	if(playerColor.isValidPlayer())
++		setPlayer(playerColor);
+ 	while(myFirstColor() != PlayerColor::CANNOT_DETERMINE)
+ 		std::this_thread::sleep_for(std::chrono::milliseconds(50));
+ 

@@ -1,0 +1,34 @@
+{
+  "unit": "resonanceAdept",
+  "group": 2,
+  "version": 1,
+  "generation_record": {
+    "path": "assets/source/creatures/resonanceAdept/musician-rig-v6/paint-action-g02-atlas-v1-generation.json",
+    "sha256": "8e22362425c144bde7d64d2a5ba40ba7963b036ecdbf7b81a1389e7428b1287b"
+  },
+  "camera_record": {
+    "path": "assets/source/creatures/resonanceAdept/musician-rig-v6/paint-action-g02-camera-v1.json",
+    "sha256": "9ba4bcd246f50550568114c99bb3b33022d9d27cf33f1f41667eb6cbb55a3003"
+  },
+  "placements": [
+    {
+      "index": 0,
+      "native_translation": [
+        0,
+        -1
+      ],
+      "reviewed": true,
+      "basis": "Observed complete-frame layout drift: actual raw pose boot trajectory target267 vs returned painted bottom268, after one common atlas scale. Preserve every painted pixel and actual stance; head/torso scale drift not claimed fixed.",
+      "evidence": [
+        {
+          "path": "references/prototypes/musician-rig/painted-pilot-ground-evidence-v1.json",
+          "sha256": "bb7b947a9495327bc123825a9f7d32641c0eefd09bda2887f2c3f26d34ad0ef7"
+        }
+      ]
+    }
+  ],
+  "fixed_scale": 0.09791921664626684,
+  "policy": "Measured integer translations of COMPLETE rendered frames only; no per-frame resizing, cropping, limb warp or pose synthesis.",
+  "visual_approval_granted": false,
+  "active_assets_modified": false
+}

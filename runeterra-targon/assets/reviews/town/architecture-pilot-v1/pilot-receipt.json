@@ -1,0 +1,80 @@
+{
+  "status": "design proposal",
+  "visual_approval_granted": false,
+  "phase": "architecture pilot",
+  "producer": "scripts/targon_town_art.py",
+  "producer_sha256": "ee3c12f93def3c06b059b8c6d677f2b8cb2cc01caf78b211249442db9ff9e462",
+  "scene": "assets/source/town/buildings/targon-architecture-pilot-v1.blend",
+  "scene_sha256": "b98e820020061e0acd516f157132dc4a8ae111ae1d7d8b1af614757a685fec9a",
+  "canvas": [
+    800,
+    374
+  ],
+  "camera": {
+    "type": "PERSP",
+    "lens_mm": 43,
+    "location": [
+      0,
+      -26,
+      17
+    ],
+    "target": [
+      0,
+      0,
+      1
+    ]
+  },
+  "terrain": "assets/source/town/terrain-v1.png",
+  "terrain_sha256": "a1329b82cd020c792caf9f3a9996212756520a8dd939a5e30b29cea258a6b137",
+  "image_generation_used": false,
+  "external_texture_dependencies": [],
+  "threads": 4,
+  "states": {
+    "civic": "capitol",
+    "fortifications": "castle",
+    "guild": "mageGuild4",
+    "trailguard": "dwellingUpLvl1",
+    "archers": "dwellingUpLvl2",
+    "ibex": "dwellingUpLvl3",
+    "lunari": "dwellingUpLvl4",
+    "sunhawks": "dwellingUpLvl5",
+    "sunforgers": "dwellingUpLvl6",
+    "stellacorns": "dwellingUpLvl7",
+    "tavern": "tavern",
+    "marketplace": "marketplace",
+    "blacksmith": "blacksmith",
+    "silo": "resourceSilo",
+    "monastery": "special4",
+    "starforge": "artifactMerchant",
+    "reliquary": "special3",
+    "solariTemple": "special1",
+    "lunariShrine": "special2",
+    "grail": "grail"
+  },
+  "ordinary_parcels": 16,
+  "independent_annexes": 3,
+  "grail": 1,
+  "portability": {
+    "image_paths": "relative or none",
+    "file_browser_directories": "//",
+    "render_path": "//pilot-review.png"
+  },
+  "outputs": [
+    {
+      "source": "assets/reviews/town/architecture-pilot-v1/full-town-layer.png",
+      "sha256": "e579db4a6d6de263ed41ca2bf61f77f34176af83dfdf66ae4fba0da3497bda61"
+    },
+    {
+      "source": "assets/reviews/town/architecture-pilot-v1/partial-town-layer.png",
+      "sha256": "275605f87c45c6b661a3c5cc29a759ef7bbb9e8ac3c2c7c7a86d4d8ac7439918"
+    }
+  ],
+  "incomplete": [
+    "all 35 individually rendered states",
+    "selected production recipes",
+    "native exposed masks and clicks",
+    "construction and map/UI views",
+    "siege art",
+    "native visual review"
+  ]
+}

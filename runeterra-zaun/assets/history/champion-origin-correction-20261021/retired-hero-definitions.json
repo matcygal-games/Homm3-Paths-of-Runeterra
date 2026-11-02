@@ -1,0 +1,391 @@
+{
+  "singed": {
+    "class": "zaunChemist",
+    "female": false,
+    "special": false,
+    "texts": {
+      "name": "Singed",
+      "biography": "Singed is a Zaun-based alchymist whose work includes chemical transmutation, invasive augmentation and the alchemical fire commissioned for war in Ionia. He treats people as experimental material. His Fireball specialty is a game representation of chemical fire, not elemental spellcasting; this legacy scenario does not import the current short profile's Shimmer-origin attribution. He is not an appointed spokesman for the city's residents, and ordinary tavern availability is the project's skirmish hiring abstraction, not proof that Ekko or other protectors are his willing allies. The Chemist class supplies support and mana development; no personal poison trail is implemented.",
+      "specialty": {
+        "name": "Alchemical Bombardment",
+        "description": "After Fireball is learned normally, its effect gains the native 5% spell-specialty increase per completed hero-level/target-tier step.",
+        "tooltip": "{Alchemical Bombardment}\n\nNative Fireball scaling specialty, value 5. Fireball is not granted at recruitment. Ordinary learning, mana, spell action, targeting, protection and area friendly fire remain. Movement never paints poisonous battlefield hexes."
+      }
+    },
+    "images": {
+      "large": "runeterra/zaun/heroes/singed/large.png",
+      "small": "runeterra/zaun/heroes/singed/small.png",
+      "specialtyLarge": "runeterra/zaun/heroes/singed/specialtyLarge.png",
+      "specialtySmall": "runeterra/zaun/heroes/singed/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "zaunThug",
+        "min": 12,
+        "max": 18
+      },
+      {
+        "creature": "chemRavager",
+        "min": 2,
+        "max": 4
+      },
+      {
+        "creature": "chemtechConstruct",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:earthMagic",
+        "level": "basic"
+      },
+      {
+        "skill": "core:wisdom",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "spellScalingPercentage": "core:fireball",
+      "spellScalingVal": 5
+    },
+    "spellbook": [
+      "core:slow",
+      "core:curse"
+    ]
+  },
+  "urgot": {
+    "class": "zaunMachinist",
+    "female": false,
+    "special": false,
+    "texts": {
+      "name": "Urgot",
+      "biography": "Urgot is a former Noxian headsman remade through captivity and scavenged machinery in Zaun's Dredge. He inflicts violent trials of survival rather than serving as a loyal national officer. His legacy biography ends in Warden imprisonment; a freely commanding appearance requires an explicitly dated pre-capture scene or a project-fiction bridge. Ordinary skirmish availability is only a gameplay abstraction. He is not a representative of every undercity resident, and his command effect models a prepared fireteam rather than personally executing an enemy hero.",
+      "specialty": {
+        "name": "Dredge Fireteam",
+        "description": "Commanded creatures gain 2 Attack for ranged attacks only. Melee attacks receive no specialty increase.",
+        "tooltip": "{Dredge Fireteam}\n\nTroop ranged Attack +2. Ammunition, attack action, range and engagement rules are unchanged. No move-and-fire exemption, automatic execution or damage to a targetable enemy commander is added."
+      }
+    },
+    "images": {
+      "large": "runeterra/zaun/heroes/urgot/large.png",
+      "small": "runeterra/zaun/heroes/urgot/small.png",
+      "specialtyLarge": "runeterra/zaun/heroes/urgot/specialtyLarge.png",
+      "specialtySmall": "runeterra/zaun/heroes/urgot/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "zaunThug",
+        "min": 10,
+        "max": 16
+      },
+      {
+        "creature": "chemRavager",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "creature": "chemtechConstruct",
+        "min": 2,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:archery",
+        "level": "basic"
+      },
+      {
+        "skill": "core:armorer",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "fireteam": {
+          "type": "PRIMARY_SKILL",
+          "subtype": "attack",
+          "val": 2,
+          "effectRange": "ONLY_DISTANCE_FIGHT",
+          "limiters": "CREATURES_ONLY"
+        }
+      }
+    }
+  },
+  "ziggs": {
+    "class": "zaunChemist",
+    "female": false,
+    "special": true,
+    "texts": {
+      "name": "Ziggs",
+      "biography": "The yordle Ziggs brings an inventor's enthusiasm to explosives and demolition. The audited regional design associates his Zaun role with a move away from Piltover's more restrained engineering circles; specific expulsions and personal teaching relationships are not asserted here as verified history. He is scenario-only, with any commission or alliance supplied by that scenario. His Chemist command specialization concerns ranged crews firing into a defended town, not bombs thrown by a targetable hero or arbitrary destruction of adventure buildings.",
+      "specialty": {
+        "name": "Demolition Crew",
+        "description": "The hero's ranged creatures keep their full damage when they shoot at defenders standing behind the walls of a defended town, instead of suffering the native wall penalty for shooting through fortifications.",
+        "tooltip": "{Demolition Crew}\n\nNO_WALL_PENALTY for the hero's creatures: ranged attacks on defenders standing behind the walls of a defended town suffer no wall penalty. Melee attacks, siege engines, adventure buildings and any target outside a town siege are unaffected. The specialty grants no catapult ability, no extra shots, no damage to structures and no additional movement."
+      }
+    },
+    "images": {
+      "large": "runeterra/zaun/heroes/ziggs/large.png",
+      "small": "runeterra/zaun/heroes/ziggs/small.png",
+      "specialtyLarge": "runeterra/zaun/heroes/ziggs/specialtyLarge.png",
+      "specialtySmall": "runeterra/zaun/heroes/ziggs/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "zaunThug",
+        "min": 12,
+        "max": 18
+      },
+      {
+        "creature": "chemRavager",
+        "min": 2,
+        "max": 4
+      },
+      {
+        "creature": "chemtechConstruct",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:ballistics",
+        "level": "basic"
+      },
+      {
+        "skill": "core:artillery",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "siegeCrew": {
+          "type": "NO_WALL_PENALTY",
+          "limiters": "CREATURES_ONLY"
+        }
+      }
+    }
+  },
+  "janna": {
+    "class": "zaunChemist",
+    "female": true,
+    "special": true,
+    "texts": {
+      "name": "Janna",
+      "biography": "Janna is a wind spirit revered by those seeking protection, with a particular place in the hopes of Zaun's vulnerable residents. Reverence does not turn her into a chem-baron's servant or establish routine mortal employment. Scenario-only command represents a protective intervention chosen for that story. The Chemist class is solely the project's shared magic/support rules family, not a claim that Janna is an industrial chemist, and her presence grants no automatic flight to the grounded Zaun army.",
+      "specialty": {
+        "name": "Sheltering Tailwind",
+        "description": "The hero's army gains 1 additional point of Luck, using the native Luck bonus.",
+        "tooltip": "{Sheltering Tailwind}\n\nLUCK +1 for the hero's troops. Luck still uses the native cap and the native good/bad luck draw. This passive Luck bonus is a game metaphor for fortunate protection, not a cast, Air Shield, healing, flight, extra action or permanent Speed increase."
+      }
+    },
+    "images": {
+      "large": "runeterra/zaun/heroes/janna/large.png",
+      "small": "runeterra/zaun/heroes/janna/small.png",
+      "specialtyLarge": "runeterra/zaun/heroes/janna/specialtyLarge.png",
+      "specialtySmall": "runeterra/zaun/heroes/janna/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "zaunThug",
+        "min": 14,
+        "max": 20
+      },
+      {
+        "creature": "chemRavager",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "creature": "chemtechConstruct",
+        "min": 1,
+        "max": 1
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:wisdom",
+        "level": "basic"
+      },
+      {
+        "skill": "core:airMagic",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "tailwind": {
+          "type": "LUCK",
+          "val": 1
+        }
+      }
+    },
+    "spellbook": [
+      "core:haste",
+      "core:airShield"
+    ]
+  },
+  "caitlyn": {
+    "class": "zaunMachinist",
+    "female": true,
+    "special": true,
+    "texts": {
+      "name": "Caitlyn",
+      "biography": "Caitlyn is a Piltover-linked investigator and marksman, not a Zaun citizen reclassified by this dictionary. The selected legacy-prose reading retains her work with Vi without importing an Arcane episode's political or personal aftermath. Her presence with a Zaun army is project framing for a particular scenario, such as an investigation or negotiated operation, and she is never an ordinary Zaun tavern recruit. The Machinist class supplies command progression rather than a personal rifle combat system.",
+      "specialty": {
+        "name": "Measured Fire",
+        "description": "Archery uses its native secondary-skill specialty, increasing the skill's effectiveness by 5% per hero level.",
+        "tooltip": "{Measured Fire}\n\nNative Archery skill specialty, step size 5. It scales Archery's existing ranged-damage benefit, not critical-hit chance or five percentage points of damage per level. No direct enemy-hero shot, guaranteed hit or extra ammunition is added."
+      }
+    },
+    "images": {
+      "large": "runeterra/zaun/heroes/caitlyn/large.png",
+      "small": "runeterra/zaun/heroes/caitlyn/small.png",
+      "specialtyLarge": "runeterra/zaun/heroes/caitlyn/specialtyLarge.png",
+      "specialtySmall": "runeterra/zaun/heroes/caitlyn/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "zaunThug",
+        "min": 10,
+        "max": 16
+      },
+      {
+        "creature": "chemRavager",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "creature": "chemtechConstruct",
+        "min": 2,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:archery",
+        "level": "basic"
+      },
+      {
+        "skill": "core:scouting",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "secondary": "core:archery",
+      "stepSize": 5
+    }
+  },
+  "corki": {
+    "class": "zaunMachinist",
+    "female": false,
+    "special": true,
+    "texts": {
+      "name": "Corki",
+      "biography": "Corki is a yordle pilot with Bandle roots and a Piltover-linked aerial identity, not a Zaun citizen or a local military institution. His appearance in a Zaun scenario is project framing for a guest operation; he remains scenario-only. His aircraft is a narrative identity cue, not permission for adventure flight or a flying Zaun troop line. The command adaptation improves ordinary land travel by a fixed amount while retaining normal terrain, obstacles and army movement constraints.",
+      "specialty": {
+        "name": "Route Briefing",
+        "description": "Adds 100 native land adventure movement points per day. Sea movement and battlefield Speed are unchanged.",
+        "tooltip": "{Route Briefing}\n\nLand adventure movement +100 points per hero per day. The bonus does not multiply with stack splitting. No adventure flight, troop Speed, extra firing range or building-damage bonus is granted."
+      }
+    },
+    "images": {
+      "large": "runeterra/zaun/heroes/corki/large.png",
+      "small": "runeterra/zaun/heroes/corki/small.png",
+      "specialtyLarge": "runeterra/zaun/heroes/corki/specialtyLarge.png",
+      "specialtySmall": "runeterra/zaun/heroes/corki/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "zaunThug",
+        "min": 12,
+        "max": 18
+      },
+      {
+        "creature": "chemRavager",
+        "min": 2,
+        "max": 4
+      },
+      {
+        "creature": "chemtechConstruct",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:archery",
+        "level": "basic"
+      },
+      {
+        "skill": "core:logistics",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "briefing": {
+          "type": "MOVEMENT",
+          "subtype": "heroMovementLand",
+          "val": 100
+        }
+      }
+    }
+  },
+  "heimerdinger": {
+    "class": "zaunChemist",
+    "female": false,
+    "special": true,
+    "texts": {
+      "name": "Heimerdinger",
+      "biography": "Heimerdinger is a yordle inventor and teacher associated with Piltover, fascinated by elaborate machines and unconventional solutions. This project imagines a scenario in which his expertise benefits a Zaun construct line; no official story read here establishes that collaboration. The creature specialty is a rules adaptation and does not import his newer Council biography, assert a specific Bandle citizenship or make him a Zaun citizen.",
+      "specialty": {
+        "name": "Pressure-Frame Tuning",
+        "description": "Chemtech Constructs and their Reinforced upgrades receive the native tier-three creature specialty: +1 Speed and standard Attack/Defense growth.",
+        "tooltip": "{Pressure-Frame Tuning}\n\nUpgrade-aware native Chemtech Construct specialty, creature level 3 and step size 5. It adds +1 Speed and native 5% Attack/Defense growth per completed tier-three hero-level step. Unrelated troops are unchanged. No free construct, autonomous turret, extra active commander or real-time attack-speed statistic is created."
+      }
+    },
+    "images": {
+      "large": "runeterra/zaun/heroes/heimerdinger/large.png",
+      "small": "runeterra/zaun/heroes/heimerdinger/small.png",
+      "specialtyLarge": "runeterra/zaun/heroes/heimerdinger/specialtyLarge.png",
+      "specialtySmall": "runeterra/zaun/heroes/heimerdinger/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "zaunThug",
+        "min": 10,
+        "max": 16
+      },
+      {
+        "creature": "chemRavager",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "creature": "chemtechConstruct",
+        "min": 2,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:artillery",
+        "level": "basic"
+      },
+      {
+        "skill": "core:wisdom",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "creature": "chemtechConstruct",
+      "creatureLevel": 3,
+      "stepSize": 5
+    },
+    "spellbook": [
+      "core:magicArrow"
+    ]
+  }
+}

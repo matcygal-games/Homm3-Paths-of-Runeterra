@@ -1,0 +1,3802 @@
+{
+  "unit": "mageseeker",
+  "revision": 3,
+  "family": "grounded petricite-baton melee military disruptors",
+  "own_inputs": {
+    "unit": "mageseeker",
+    "master": {
+      "path": "assets/source/creatures/mageseeker/master-v4.png",
+      "sha256": "f174cfc45e6102266ff4d8c7960c30b29a4bc0423671e2909fae109817c698c4"
+    },
+    "identity_contract": {
+      "path": "design/unit-identity.json",
+      "sha256": "7284200ab05b5e49ccd360440bb423259655bb2b4fcecde6734625d3a290ac91"
+    },
+    "creature_content": {
+      "path": "content/creatures.json",
+      "sha256": "0435b1475ed3f7ca9a1a007ce0293dae76e05defe0f71c76d24ad53f5462173f"
+    },
+    "official_crest_reference": {
+      "path": "references/riot/heraldry/demacia-official-region-icon.png",
+      "sha256": "d71bb021a49b704420f43c74f9dbfedb2bd89779bdafec1ea4be7bb8a172e734"
+    },
+    "model_plan": "Own volumetric navy coat, closed pale hood/mask, hip codex and short onehandbaton / upgrade long twohandmace. Crest is sculpted onto coat and closedbook; no original pixels or fullbody image plane.",
+    "native_role": "Grounded melee; bounded enemy hero mana tax is native content, no animated shooting or spell casting implied.",
+    "source_only": true,
+    "visual_approval_granted": false,
+    "active_assets_modified": false
+  },
+  "source_topology": {
+    "path": "assets/source/creatures/demacianRecruit/rig-pilot-v4/demacianRecruit-rig-v4.blend",
+    "sha256": "db28157c549de77e8bc6d37d38ca456a8deb248c22daf3fd45b548be8d73d9cb"
+  },
+  "executed_generator": {
+    "path": "assets/source/creatures/mageseeker/mageseeker-rig-v3/generator-executed-v3.py",
+    "sha256": "e322c7669c8f010da839111ddf6f2a5e338cd73db38db43fb13c79c4a9415932"
+  },
+  "editable_blend": {
+    "path": "assets/source/creatures/mageseeker/mageseeker-rig-v3/mageseeker-mageseeker-rig-v3.blend",
+    "sha256": "6ebc111bbd23897285cf3e4a1c5ad9c97561e35ca27f1e89d549680b6fbc750e"
+  },
+  "bone_count": 14,
+  "weighted_mesh_count": 45,
+  "model_kind": "Actual closed hood/mask/coat/baton meshes with skeletal weights; no wholebody billboard.",
+  "camera": {
+    "type": "ORTHO",
+    "location": [
+      7.0,
+      -7.0,
+      3.5
+    ],
+    "rotation_euler": [
+      1.3186880350112915,
+      -8.58584670027085e-08,
+      0.7853981852531433
+    ],
+    "ortho_scale": 2.549999952316284,
+    "origin_raw_pixels": [
+      255.99998474121094,
+      440.7154083251953
+    ]
+  },
+  "raw_canvas": [
+    512,
+    512
+  ],
+  "native_canvas": [
+    450,
+    400
+  ],
+  "native_pivot": [
+    197,
+    266
+  ],
+  "target_idle_height": 80,
+  "actions": {
+    "0": [
+      {
+        "frame": 1,
+        "index": 0,
+        "parameters": {
+          "kind": "weighted-coat-gait",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": 0.0,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.09083208169665849,
+              -0.4521991670794306,
+              1.1910437802740885
+            ],
+            "hand": [
+              0.20000000298023224,
+              -0.25,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.03175863518267596,
+              0.44070478333772634,
+              1.1549111973234136
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000031933188438,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000031933188438
+      },
+      {
+        "frame": 2,
+        "index": 1,
+        "parameters": {
+          "kind": "weighted-coat-gait",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": 1.0471975511965976,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3569281101226807
+            ],
+            "elbow": [
+              0.09083207807960521,
+              -0.4521991898855888,
+              1.197972019164112
+            ],
+            "hand": [
+              0.20000000298023224,
+              -0.25,
+              1.0069282054901123
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3569281101226807
+            ],
+            "elbow": [
+              0.03175863518267596,
+              0.44070478333772634,
+              1.161839402813526
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9269282221794128
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.01300003007054329,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.01300003007054329
+      },
+      {
+        "frame": 3,
+        "index": 2,
+        "parameters": {
+          "kind": "weighted-coat-gait",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": 2.0943951023931953,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.343071699142456
+            ],
+            "elbow": [
+              0.09083208169665849,
+              -0.4521991670794306,
+              1.1841155747839762
+            ],
+            "hand": [
+              0.20000000298023224,
+              -0.25,
+              0.9930717349052429
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.343071699142456
+            ],
+            "elbow": [
+              0.03175863518267596,
+              0.44070478333772634,
+              1.1479829918333013
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9130718111991882
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.01300002820789814,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.01300002820789814
+      },
+      {
+        "frame": 4,
+        "index": 3,
+        "parameters": {
+          "kind": "weighted-coat-gait",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": 3.141592653589793,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.09083208169665849,
+              -0.4521991670794306,
+              1.1910437802740885
+            ],
+            "hand": [
+              0.20000000298023224,
+              -0.25,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.03175863518267596,
+              0.44070478333772634,
+              1.1549111973234136
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000020757317543,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000020757317543
+      },
+      {
+        "frame": 5,
+        "index": 4,
+        "parameters": {
+          "kind": "weighted-coat-gait",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": 4.1887902047863905,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3569281101226807
+            ],
+            "elbow": [
+              0.09083207807960521,
+              -0.4521991898855888,
+              1.197972019164112
+            ],
+            "hand": [
+              0.20000000298023224,
+              -0.25,
+              1.0069282054901123
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3569281101226807
+            ],
+            "elbow": [
+              0.03175863518267596,
+              0.44070478333772634,
+              1.161839402813526
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9269282221794128
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.01300002634525299,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.01300002634525299
+      },
+      {
+        "frame": 6,
+        "index": 5,
+        "parameters": {
+          "kind": "weighted-coat-gait",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": 5.235987755982989,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.343071699142456
+            ],
+            "elbow": [
+              0.09083208169665849,
+              -0.4521991670794306,
+              1.1841155747839762
+            ],
+            "hand": [
+              0.20000000298023224,
+              -0.25,
+              0.9930717349052429
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.343071699142456
+            ],
+            "elbow": [
+              0.03175863518267596,
+              0.44070478333772634,
+              1.1479829918333013
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9130718111991882
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000024482607841,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000024482607841
+      }
+    ],
+    "1": [
+      {
+        "frame": 7,
+        "index": 0,
+        "parameters": {
+          "kind": "baton-and-codex-check",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.09083208169665849,
+              -0.4521991670794306,
+              1.1910437802740885
+            ],
+            "hand": [
+              0.20000000298023224,
+              -0.25,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.03175863518267596,
+              0.44070478333772634,
+              1.1549111973234136
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      },
+      {
+        "frame": 8,
+        "index": 1,
+        "parameters": {
+          "kind": "baton-and-codex-check",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": -0.1,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.12,
+            0.25,
+            1.02
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.09083208169665849,
+              -0.4521991670794306,
+              1.1910437802740885
+            ],
+            "hand": [
+              0.20000000298023224,
+              -0.25,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.05430264687991961,
+              0.4542117686625883,
+              1.1780415481327973
+            ],
+            "hand": [
+              0.11999999731779099,
+              0.25,
+              0.9699999690055847
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      },
+      {
+        "frame": 9,
+        "index": 2,
+        "parameters": {
+          "kind": "baton-and-codex-check",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.06,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.09083208169665849,
+              -0.4521991670794306,
+              1.1910437802740885
+            ],
+            "hand": [
+              0.20000000298023224,
+              -0.25,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.03175863518267596,
+              0.44070478333772634,
+              1.1549111973234136
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      },
+      {
+        "frame": 10,
+        "index": 3,
+        "parameters": {
+          "kind": "baton-and-codex-check",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.09083208169665849,
+              -0.4521991670794306,
+              1.1910437802740885
+            ],
+            "hand": [
+              0.20000000298023224,
+              -0.25,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.03175863518267596,
+              0.44070478333772634,
+              1.1549111973234136
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      }
+    ],
+    "2": [
+      {
+        "frame": 11,
+        "index": 0,
+        "parameters": {
+          "kind": "quiet-melee-guard",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.09083208169665849,
+              -0.4521991670794306,
+              1.1910437802740885
+            ],
+            "hand": [
+              0.20000000298023224,
+              -0.25,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.03175863518267596,
+              0.44070478333772634,
+              1.1549111973234136
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      }
+    ],
+    "3": [
+      {
+        "frame": 12,
+        "index": 0,
+        "parameters": {
+          "kind": "physical-hit-recoil",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": -0.06,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.020987384021282196,
+              -0.20499996840953827,
+              1.3493701219558716
+            ],
+            "elbow": [
+              0.08014400538219763,
+              -0.44755839291318344,
+              1.1894863731285283
+            ],
+            "hand": [
+              0.20000000298023224,
+              -0.25,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.020987384021282196,
+              0.20499999821186066,
+              1.3493701219558716
+            ],
+            "elbow": [
+              0.020398710551588286,
+              0.4390289818093388,
+              1.1540688511668915
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      },
+      {
+        "frame": 13,
+        "index": 1,
+        "parameters": {
+          "kind": "physical-hit-recoil",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": -0.2,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.0695342943072319,
+              -0.20499996840953827,
+              1.3430233001708984
+            ],
+            "elbow": [
+              0.05569012331357837,
+              -0.4363999071948709,
+              1.1836561959080456
+            ],
+            "hand": [
+              0.20000000298023224,
+              -0.25,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.0695342943072319,
+              0.20499999821186066,
+              1.3430233001708984
+            ],
+            "elbow": [
+              -0.005749007631555943,
+              0.43556865382491794,
+              1.1496467436498377
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      },
+      {
+        "frame": 14,
+        "index": 2,
+        "parameters": {
+          "kind": "physical-hit-recoil",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": -0.09,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.03145746514201164,
+              -0.20499996840953827,
+              1.348583459854126
+            ],
+            "elbow": [
+              0.07484005838662813,
+              -0.44520327136171906,
+              1.1884954524894427
+            ],
+            "hand": [
+              0.20000000298023224,
+              -0.25,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.03145746514201164,
+              0.20499999821186066,
+              1.348583459854126
+            ],
+            "elbow": [
+              0.014745554914052538,
+              0.43823247721645536,
+              1.1534095578218
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      },
+      {
+        "frame": 15,
+        "index": 3,
+        "parameters": {
+          "kind": "physical-hit-recoil",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.09083208169665849,
+              -0.4521991670794306,
+              1.1910437802740885
+            ],
+            "hand": [
+              0.20000000298023224,
+              -0.25,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.03175863518267596,
+              0.44070478333772634,
+              1.1549111973234136
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      }
+    ],
+    "4": [
+      {
+        "frame": 16,
+        "index": 0,
+        "parameters": {
+          "kind": "petricite-baton-brace",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.02,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.006999527104198933,
+              -0.20499996840953827,
+              1.349929928779602
+            ],
+            "elbow": [
+              0.09441467830440384,
+              -0.453723889536386,
+              1.1914371442139167
+            ],
+            "hand": [
+              0.20000000298023224,
+              -0.25,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.006999527104198933,
+              0.20499999821186066,
+              1.349929928779602
+            ],
+            "elbow": [
+              0.03555652030908806,
+              0.4412867073107067,
+              1.155050351599778
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      },
+      {
+        "frame": 17,
+        "index": 1,
+        "parameters": {
+          "kind": "petricite-baton-brace",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.1,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.31,
+            -0.24,
+            1.22
+          ],
+          "weapon_direction": [
+            0.32,
+            0.05,
+            0.9
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0349416621029377,
+              -0.20499996840953827,
+              1.3482513427734375
+            ],
+            "elbow": [
+              0.1565401590648225,
+              -0.4763466945453694,
+              1.2694495654366884
+            ],
+            "hand": [
+              0.3100000023841858,
+              -0.23999999463558197,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0349416621029377,
+              0.20499999821186066,
+              1.3482513427734375
+            ],
+            "elbow": [
+              0.050770462438831036,
+              0.44372212987313053,
+              1.1548963498343372
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      },
+      {
+        "frame": 18,
+        "index": 2,
+        "parameters": {
+          "kind": "petricite-baton-brace",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.06,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.14
+          ],
+          "weapon_direction": [
+            0.54,
+            0.1,
+            0.44
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.020987384021282196,
+              -0.20499996840953827,
+              1.3493701219558716
+            ],
+            "elbow": [
+              0.12963779437739897,
+              -0.46959904627793636,
+              1.2362004410333975
+            ],
+            "hand": [
+              0.27000001072883606,
+              -0.25,
+              1.0899999141693115
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.020987384021282196,
+              0.20499999821186066,
+              1.3493701219558716
+            ],
+            "elbow": [
+              0.043161547733466074,
+              0.44248356031700475,
+              1.1551155864799367
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      },
+      {
+        "frame": 19,
+        "index": 3,
+        "parameters": {
+          "kind": "petricite-baton-brace",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.09083208169665849,
+              -0.4521991670794306,
+              1.1910437802740885
+            ],
+            "hand": [
+              0.20000000298023224,
+              -0.25,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.03175863518267596,
+              0.44070478333772634,
+              1.1549111973234136
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      }
+    ],
+    "5": [
+      {
+        "frame": 20,
+        "index": 0,
+        "parameters": {
+          "kind": "fall-and-lie",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": -0.04,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.019594751298427582,
+              -0.20499995350837708,
+              1.3496079444885254
+            ],
+            "elbow": [
+              0.07752121212175331,
+              -0.4521991631174087,
+              1.194411292536578
+            ],
+            "hand": [
+              0.19424152374267578,
+              -0.25,
+              1.0078858137130737
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.019594751298427582,
+              0.20500004291534424,
+              1.3496079444885254
+            ],
+            "elbow": [
+              0.019939945313914267,
+              0.4407048336801648,
+              1.1559453003525537
+            ],
+            "hand": [
+              0.06754465401172638,
+              0.25999999046325684,
+              0.9227513074874878
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.005478782579302788,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.005478782579302788
+      },
+      {
+        "frame": 21,
+        "index": 1,
+        "parameters": {
+          "kind": "fall-and-lie",
+          "root_height": 0.72,
+          "root_yaw": 0.0,
+          "root_fall": -0.12,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.05865893512964249,
+              -0.2049999237060547,
+              1.2064762115478516
+            ],
+            "elbow": [
+              0.05054891244368246,
+              -0.45219911489646464,
+              1.0595368830388974
+            ],
+            "hand": [
+              0.18180204927921295,
+              -0.25,
+              0.8829355835914612
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.05865893140435219,
+              0.20500004291534424,
+              1.2064762115478516
+            ],
+            "elbow": [
+              -0.0037741896038015685,
+              0.4407047689721548,
+              1.0165922796541167
+            ],
+            "hand": [
+              0.062313877046108246,
+              0.25999999046325684,
+              0.7879483699798584
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": -0.006061097607016563,
+        "rigid_floor_lift": 0.011061097607016564,
+        "minimum_world_z": 0.004999978467822075
+      },
+      {
+        "frame": 22,
+        "index": 2,
+        "parameters": {
+          "kind": "fall-and-lie",
+          "root_height": 0.55,
+          "root_yaw": 0.0,
+          "root_fall": 0.18,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.08772452175617218,
+              -0.20500005781650543,
+              1.0320833921432495
+            ],
+            "elbow": [
+              0.1486312506330305,
+              -0.4521991837886883,
+              0.8594336807170108
+            ],
+            "hand": [
+              0.22183288633823395,
+              -0.25,
+              0.6519321203231812
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.08772452175617218,
+              0.20499993860721588,
+              1.0320833921432495
+            ],
+            "elbow": [
+              0.08404338664516807,
+              0.44070469766869014,
+              0.8344608322986794
+            ],
+            "hand": [
+              0.07961083948612213,
+              0.25999999046325684,
+              0.5964985489845276
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": -0.021157613024115562,
+        "rigid_floor_lift": 0.026157613024115563,
+        "minimum_world_z": 0.005000002682209015
+      },
+      {
+        "frame": 23,
+        "index": 3,
+        "parameters": {
+          "kind": "fall-and-lie",
+          "root_height": 0.4,
+          "root_yaw": 0.0,
+          "root_fall": 0.68,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.04,
+            -0.28,
+            1.18
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.04,
+            0.28,
+            1.18
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": true,
+          "released_weapon_floor_translation": [
+            0.0,
+            0.0,
+            -0.0180510588735342
+          ]
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.3081086277961731,
+              -0.20499993860721588,
+              0.7810105085372925
+            ],
+            "elbow": [
+              0.05904339941751688,
+              -0.37920138265574665,
+              0.828395413977192
+            ],
+            "hand": [
+              0.20087698101997375,
+              -0.2800000011920929,
+              0.5847928524017334
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.3081086277961731,
+              0.20500002801418304,
+              0.7810105085372925
+            ],
+            "elbow": [
+              0.05904329665402236,
+              0.3792013362734407,
+              0.8283953730329063
+            ],
+            "hand": [
+              0.20087698101997375,
+              0.2800000011920929,
+              0.5847928524017334
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": -0.41883212327957153,
+        "rigid_floor_lift": 0.42383212327957154,
+        "minimum_world_z": 0.004999912343919277
+      },
+      {
+        "frame": 24,
+        "index": 4,
+        "parameters": {
+          "kind": "fall-and-lie",
+          "root_height": 0.25,
+          "root_yaw": 0.0,
+          "root_fall": 1.2,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            -0.07,
+            -0.28,
+            1.18
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            -0.07,
+            0.28,
+            1.18
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": true,
+          "released_weapon_floor_translation": [
+            0.0,
+            0.0,
+            -0.0180510588735342
+          ]
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.4566991329193115,
+              -0.20499998331069946,
+              0.42755526304244995
+            ],
+            "elbow": [
+              0.3153343788419577,
+              -0.25101443268636553,
+              0.6968573928386277
+            ],
+            "hand": [
+              0.2262854427099228,
+              -0.2800000011920929,
+              0.41307929158210754
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.4566991329193115,
+              0.20500001311302185,
+              0.42755526304244995
+            ],
+            "elbow": [
+              0.3153343767421773,
+              0.25101444488767444,
+              0.6968573947437957
+            ],
+            "hand": [
+              0.2262854427099228,
+              0.2800000011920929,
+              0.41307929158210754
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": -0.24304504692554474,
+        "rigid_floor_lift": 0.24804504692554474,
+        "minimum_world_z": 0.004999912343919277
+      },
+      {
+        "frame": 25,
+        "index": 5,
+        "parameters": {
+          "kind": "fall-and-lie",
+          "root_height": 0.18,
+          "root_yaw": 0.0,
+          "root_fall": 1.53,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            -0.12,
+            -0.28,
+            1.18
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            -0.12,
+            0.28,
+            1.18
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": true,
+          "released_weapon_floor_translation": [
+            0.0,
+            0.0,
+            -0.0180510588735342
+          ]
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.4895922541618347,
+              -0.20500004291534424,
+              0.19998463988304138
+            ],
+            "elbow": [
+              0.4784718518725136,
+              -0.20871160594798774,
+              0.5073728656045744
+            ],
+            "hand": [
+              0.26488107442855835,
+              -0.2800000011920929,
+              0.3109121024608612
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.4895922839641571,
+              0.20499995350837708,
+              0.19998466968536377
+            ],
+            "elbow": [
+              0.4784718070488071,
+              0.20871154538063205,
+              0.5073728923589118
+            ],
+            "hand": [
+              0.26488107442855835,
+              0.2800000011920929,
+              0.3109121024608612
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": -0.04495549201965332,
+        "rigid_floor_lift": 0.04995549201965332,
+        "minimum_world_z": 0.004999912343919277
+      }
+    ],
+    "7": [
+      {
+        "frame": 26,
+        "index": 0,
+        "parameters": {
+          "kind": "turn-toward-viewer",
+          "root_height": 0.86,
+          "root_yaw": -0.18,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.03670107573270798,
+              -0.2016880065202713,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.03959364008113139,
+              -0.463949925726563,
+              1.2084980939283525
+            ],
+            "hand": [
+              0.15201133489608765,
+              -0.2817668616771698,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.03670106828212738,
+              0.20168788731098175,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.07358074690968498,
+              0.43120417919813214,
+              1.1485374480255017
+            ],
+            "hand": [
+              0.1154167652130127,
+              0.24326728284358978,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.010660079307854176,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.010660079307854176
+      },
+      {
+        "frame": 27,
+        "index": 1,
+        "parameters": {
+          "kind": "turn-toward-viewer",
+          "root_height": 0.86,
+          "root_yaw": -0.38,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.07603870332241058,
+              -0.19037629663944244,
+              1.3499999046325684
+            ],
+            "elbow": [
+              -0.01680580701789086,
+              -0.4661941442588988,
+              1.2273583974280247
+            ],
+            "hand": [
+              0.09300285577774048,
+              -0.3063502311706543,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.07603868842124939,
+              0.19037620723247528,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11759205639275436,
+              0.41202878252458675,
+              1.1407908851423625
+            ],
+            "hand": [
+              0.16144582629203796,
+              0.21548838913440704,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.007863102480769157,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.007863102480769157
+      },
+      {
+        "frame": 28,
+        "index": 2,
+        "parameters": {
+          "kind": "turn-toward-viewer",
+          "root_height": 0.86,
+          "root_yaw": -0.58,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.11234487593173981,
+              -0.17147479951381683,
+              1.3499999046325684
+            ],
+            "elbow": [
+              -0.06959487771862853,
+              -0.4574690510210279,
+              1.2450966820077947
+            ],
+            "hand": [
+              0.03028656542301178,
+              -0.3187204599380493,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.1123449057340622,
+              0.171474888920784,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.1571811771491699,
+              0.38446254685271164,
+              1.1326271218521184
+            ],
+            "hand": [
+              0.20103858411312103,
+              0.17911861836910248,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.004978271201252937,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.004978271201252937
+      },
+      {
+        "frame": 29,
+        "index": 3,
+        "parameters": {
+          "kind": "turn-toward-viewer",
+          "root_height": 0.86,
+          "root_yaw": -0.785,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.1448991894721985,
+              -0.14501456916332245,
+              1.3499999046325684
+            ],
+            "elbow": [
+              -0.11706249368860595,
+              -0.43820051222682643,
+              1.2611625165728704
+            ],
+            "hand": [
+              -0.0352286696434021,
+              -0.31821209192276,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.1448991894721985,
+              0.14501456916332245,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.19132955415560907,
+              0.3486142223609576,
+              1.1241318838491428
+            ],
+            "hand": [
+              0.23329174518585205,
+              0.13444316387176514,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.0020076707005500793,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.0020076707005500793
+      }
+    ],
+    "8": [
+      {
+        "frame": 30,
+        "index": 0,
+        "parameters": {
+          "kind": "turn-back",
+          "root_height": 0.86,
+          "root_yaw": -0.785,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.1448991894721985,
+              -0.14501456916332245,
+              1.3499999046325684
+            ],
+            "elbow": [
+              -0.11706249368860595,
+              -0.43820051222682643,
+              1.2611625165728704
+            ],
+            "hand": [
+              -0.0352286696434021,
+              -0.31821209192276,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.1448991894721985,
+              0.14501456916332245,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.19132955415560907,
+              0.3486142223609576,
+              1.1241318838491428
+            ],
+            "hand": [
+              0.23329174518585205,
+              0.13444316387176514,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.0020076707005500793,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.0020076707005500793
+      },
+      {
+        "frame": 31,
+        "index": 1,
+        "parameters": {
+          "kind": "turn-back",
+          "root_height": 0.86,
+          "root_yaw": -0.58,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.11234487593173981,
+              -0.17147479951381683,
+              1.3499999046325684
+            ],
+            "elbow": [
+              -0.06959487771862853,
+              -0.4574690510210279,
+              1.2450966820077947
+            ],
+            "hand": [
+              0.03028656542301178,
+              -0.3187204599380493,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.1123449057340622,
+              0.171474888920784,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.1571811771491699,
+              0.38446254685271164,
+              1.1326271218521184
+            ],
+            "hand": [
+              0.20103858411312103,
+              0.17911861836910248,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.004978271201252937,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.004978271201252937
+      },
+      {
+        "frame": 32,
+        "index": 2,
+        "parameters": {
+          "kind": "turn-back",
+          "root_height": 0.86,
+          "root_yaw": -0.38,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.07603870332241058,
+              -0.19037629663944244,
+              1.3499999046325684
+            ],
+            "elbow": [
+              -0.01680580701789086,
+              -0.4661941442588988,
+              1.2273583974280247
+            ],
+            "hand": [
+              0.09300285577774048,
+              -0.3063502311706543,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.07603868842124939,
+              0.19037620723247528,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11759205639275436,
+              0.41202878252458675,
+              1.1407908851423625
+            ],
+            "hand": [
+              0.16144582629203796,
+              0.21548838913440704,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.007863102480769157,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.007863102480769157
+      },
+      {
+        "frame": 33,
+        "index": 3,
+        "parameters": {
+          "kind": "turn-back",
+          "root_height": 0.86,
+          "root_yaw": -0.18,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.03670107573270798,
+              -0.2016880065202713,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.03959364008113139,
+              -0.463949925726563,
+              1.2084980939283525
+            ],
+            "hand": [
+              0.15201133489608765,
+              -0.2817668616771698,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.03670106828212738,
+              0.20168788731098175,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.07358074690968498,
+              0.43120417919813214,
+              1.1485374480255017
+            ],
+            "hand": [
+              0.1154167652130127,
+              0.24326728284358978,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.010660079307854176,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.010660079307854176
+      }
+    ],
+    "11": [
+      {
+        "frame": 34,
+        "index": 0,
+        "parameters": {
+          "kind": "melee-up",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false,
+          "melee_elevation": 0.22,
+          "authored_melee_strike_index": 3
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.09083208169665849,
+              -0.4521991670794306,
+              1.1910437802740885
+            ],
+            "hand": [
+              0.20000000298023224,
+              -0.25,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.03175863518267596,
+              0.44070478333772634,
+              1.1549111973234136
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      },
+      {
+        "frame": 35,
+        "index": 1,
+        "parameters": {
+          "kind": "melee-up",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": -0.035,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.08,
+            -0.28,
+            1.2
+          ],
+          "weapon_direction": [
+            0.15,
+            0.05,
+            0.85
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false,
+          "melee_elevation": 0.22,
+          "authored_melee_strike_index": 3
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.01224752888083458,
+              -0.20499996840953827,
+              1.349785566329956
+            ],
+            "elbow": [
+              0.0005738852064909247,
+              -0.5110873874887962,
+              1.3220175346810654
+            ],
+            "hand": [
+              0.07999999821186066,
+              -0.2800000011920929,
+              1.1500000953674316
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.01224752888083458,
+              0.20499999821186066,
+              1.349785566329956
+            ],
+            "elbow": [
+              0.02512457198736495,
+              0.43971413225211176,
+              1.1544971598182383
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      },
+      {
+        "frame": 36,
+        "index": 2,
+        "parameters": {
+          "kind": "melee-up",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": -0.06,
+          "head_yaw": 0.0,
+          "right_hand": [
+            -0.06,
+            -0.28,
+            1.43
+          ],
+          "weapon_direction": [
+            -0.18,
+            0.04,
+            0.92
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false,
+          "melee_elevation": 0.22,
+          "authored_melee_strike_index": 3
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.020987384021282196,
+              -0.20499996840953827,
+              1.3493701219558716
+            ],
+            "elbow": [
+              0.14244951714151077,
+              -0.43182094530973547,
+              1.2210518296675255
+            ],
+            "hand": [
+              -0.05999999865889549,
+              -0.2800000011920929,
+              1.3799998760223389
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.020987384021282196,
+              0.20499999821186066,
+              1.3493701219558716
+            ],
+            "elbow": [
+              0.020398710551588286,
+              0.4390289818093388,
+              1.1540688511668915
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      },
+      {
+        "frame": 37,
+        "index": 3,
+        "parameters": {
+          "kind": "melee-up",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.09,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.39,
+            -0.24,
+            1.42
+          ],
+          "weapon_direction": [
+            0.98,
+            0.04,
+            0.22
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false,
+          "melee_elevation": 0.22,
+          "authored_melee_strike_index": 3
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.03145746514201164,
+              -0.20499996840953827,
+              1.348583459854126
+            ],
+            "elbow": [
+              0.19447376657285345,
+              -0.46568336131396026,
+              1.3583207331429588
+            ],
+            "hand": [
+              0.38999998569488525,
+              -0.23999999463558197,
+              1.369999885559082
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.03145746514201164,
+              0.20499999821186066,
+              1.348583459854126
+            ],
+            "elbow": [
+              0.04886842662527076,
+              0.4434086782078146,
+              1.1549778812096325
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      },
+      {
+        "frame": 38,
+        "index": 4,
+        "parameters": {
+          "kind": "melee-up",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.04,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.29,
+            -0.25,
+            1.24
+          ],
+          "weapon_direction": [
+            0.8,
+            0.08,
+            -0.1
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false,
+          "melee_elevation": 0.22,
+          "authored_melee_strike_index": 3
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.013996254652738571,
+              -0.20499996840953827,
+              1.3497200012207031
+            ],
+            "elbow": [
+              0.12802143116578568,
+              -0.48297335722152496,
+              1.2837350438970652
+            ],
+            "hand": [
+              0.28999999165534973,
+              -0.25,
+              1.190000057220459
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.013996254652738571,
+              0.20499999821186066,
+              1.3497200012207031
+            ],
+            "elbow": [
+              0.039357914464922664,
+              0.44187973277812775,
+              1.155118516326986
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      },
+      {
+        "frame": 39,
+        "index": 5,
+        "parameters": {
+          "kind": "melee-up",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false,
+          "melee_elevation": 0.22,
+          "authored_melee_strike_index": 3
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.09083208169665849,
+              -0.4521991670794306,
+              1.1910437802740885
+            ],
+            "hand": [
+              0.20000000298023224,
+              -0.25,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.03175863518267596,
+              0.44070478333772634,
+              1.1549111973234136
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      }
+    ],
+    "12": [
+      {
+        "frame": 40,
+        "index": 0,
+        "parameters": {
+          "kind": "melee-front",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false,
+          "melee_elevation": 0.0,
+          "authored_melee_strike_index": 3
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.09083208169665849,
+              -0.4521991670794306,
+              1.1910437802740885
+            ],
+            "hand": [
+              0.20000000298023224,
+              -0.25,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.03175863518267596,
+              0.44070478333772634,
+              1.1549111973234136
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      },
+      {
+        "frame": 41,
+        "index": 1,
+        "parameters": {
+          "kind": "melee-front",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": -0.035,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.08,
+            -0.28,
+            1.2
+          ],
+          "weapon_direction": [
+            0.15,
+            0.05,
+            0.85
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false,
+          "melee_elevation": 0.0,
+          "authored_melee_strike_index": 3
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.01224752888083458,
+              -0.20499996840953827,
+              1.349785566329956
+            ],
+            "elbow": [
+              0.0005738852064909247,
+              -0.5110873874887962,
+              1.3220175346810654
+            ],
+            "hand": [
+              0.07999999821186066,
+              -0.2800000011920929,
+              1.1500000953674316
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.01224752888083458,
+              0.20499999821186066,
+              1.349785566329956
+            ],
+            "elbow": [
+              0.02512457198736495,
+              0.43971413225211176,
+              1.1544971598182383
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      },
+      {
+        "frame": 42,
+        "index": 2,
+        "parameters": {
+          "kind": "melee-front",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": -0.06,
+          "head_yaw": 0.0,
+          "right_hand": [
+            -0.06,
+            -0.28,
+            1.43
+          ],
+          "weapon_direction": [
+            -0.18,
+            0.04,
+            0.92
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false,
+          "melee_elevation": 0.0,
+          "authored_melee_strike_index": 3
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.020987384021282196,
+              -0.20499996840953827,
+              1.3493701219558716
+            ],
+            "elbow": [
+              0.14244951714151077,
+              -0.43182094530973547,
+              1.2210518296675255
+            ],
+            "hand": [
+              -0.05999999865889549,
+              -0.2800000011920929,
+              1.3799998760223389
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.020987384021282196,
+              0.20499999821186066,
+              1.3493701219558716
+            ],
+            "elbow": [
+              0.020398710551588286,
+              0.4390289818093388,
+              1.1540688511668915
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      },
+      {
+        "frame": 43,
+        "index": 3,
+        "parameters": {
+          "kind": "melee-front",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.09,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.39,
+            -0.24,
+            1.2
+          ],
+          "weapon_direction": [
+            0.98,
+            0.04,
+            0.0
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false,
+          "melee_elevation": 0.0,
+          "authored_melee_strike_index": 3
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.03145746514201164,
+              -0.20499996840953827,
+              1.348583459854126
+            ],
+            "elbow": [
+              0.1997909116004087,
+              -0.4449922612948061,
+              1.2553498258020115
+            ],
+            "hand": [
+              0.38999998569488525,
+              -0.23999999463558197,
+              1.1500000953674316
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.03145746514201164,
+              0.20499999821186066,
+              1.348583459854126
+            ],
+            "elbow": [
+              0.04886842662527076,
+              0.4434086782078146,
+              1.1549778812096325
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      },
+      {
+        "frame": 44,
+        "index": 4,
+        "parameters": {
+          "kind": "melee-front",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.04,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.29,
+            -0.25,
+            1.13
+          ],
+          "weapon_direction": [
+            0.8,
+            0.08,
+            -0.1
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false,
+          "melee_elevation": 0.0,
+          "authored_melee_strike_index": 3
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.013996254652738571,
+              -0.20499996840953827,
+              1.3497200012207031
+            ],
+            "elbow": [
+              0.13758529586725585,
+              -0.45948774016911503,
+              1.2289446590519655
+            ],
+            "hand": [
+              0.28999999165534973,
+              -0.25,
+              1.0799999237060547
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.013996254652738571,
+              0.20499999821186066,
+              1.3497200012207031
+            ],
+            "elbow": [
+              0.039357914464922664,
+              0.44187973277812775,
+              1.155118516326986
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      },
+      {
+        "frame": 45,
+        "index": 5,
+        "parameters": {
+          "kind": "melee-front",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false,
+          "melee_elevation": 0.0,
+          "authored_melee_strike_index": 3
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.09083208169665849,
+              -0.4521991670794306,
+              1.1910437802740885
+            ],
+            "hand": [
+              0.20000000298023224,
+              -0.25,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.03175863518267596,
+              0.44070478333772634,
+              1.1549111973234136
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      }
+    ],
+    "13": [
+      {
+        "frame": 46,
+        "index": 0,
+        "parameters": {
+          "kind": "melee-down",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false,
+          "melee_elevation": -0.22,
+          "authored_melee_strike_index": 3
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.09083208169665849,
+              -0.4521991670794306,
+              1.1910437802740885
+            ],
+            "hand": [
+              0.20000000298023224,
+              -0.25,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.03175863518267596,
+              0.44070478333772634,
+              1.1549111973234136
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      },
+      {
+        "frame": 47,
+        "index": 1,
+        "parameters": {
+          "kind": "melee-down",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": -0.035,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.08,
+            -0.28,
+            1.2
+          ],
+          "weapon_direction": [
+            0.15,
+            0.05,
+            0.85
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false,
+          "melee_elevation": -0.22,
+          "authored_melee_strike_index": 3
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.01224752888083458,
+              -0.20499996840953827,
+              1.349785566329956
+            ],
+            "elbow": [
+              0.0005738852064909247,
+              -0.5110873874887962,
+              1.3220175346810654
+            ],
+            "hand": [
+              0.07999999821186066,
+              -0.2800000011920929,
+              1.1500000953674316
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.01224752888083458,
+              0.20499999821186066,
+              1.349785566329956
+            ],
+            "elbow": [
+              0.02512457198736495,
+              0.43971413225211176,
+              1.1544971598182383
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      },
+      {
+        "frame": 48,
+        "index": 2,
+        "parameters": {
+          "kind": "melee-down",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": -0.06,
+          "head_yaw": 0.0,
+          "right_hand": [
+            -0.06,
+            -0.28,
+            1.43
+          ],
+          "weapon_direction": [
+            -0.18,
+            0.04,
+            0.92
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false,
+          "melee_elevation": -0.22,
+          "authored_melee_strike_index": 3
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.020987384021282196,
+              -0.20499996840953827,
+              1.3493701219558716
+            ],
+            "elbow": [
+              0.14244951714151077,
+              -0.43182094530973547,
+              1.2210518296675255
+            ],
+            "hand": [
+              -0.05999999865889549,
+              -0.2800000011920929,
+              1.3799998760223389
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.020987384021282196,
+              0.20499999821186066,
+              1.3493701219558716
+            ],
+            "elbow": [
+              0.020398710551588286,
+              0.4390289818093388,
+              1.1540688511668915
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      },
+      {
+        "frame": 49,
+        "index": 3,
+        "parameters": {
+          "kind": "melee-down",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.09,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.39,
+            -0.24,
+            0.98
+          ],
+          "weapon_direction": [
+            0.98,
+            0.04,
+            -0.22
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false,
+          "melee_elevation": -0.22,
+          "authored_melee_strike_index": 3
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.03145746514201164,
+              -0.20499996840953827,
+              1.348583459854126
+            ],
+            "elbow": [
+              0.20869421845600802,
+              -0.3478202947900748,
+              1.1416669356064857
+            ],
+            "hand": [
+              0.38999998569488525,
+              -0.23999999463558197,
+              0.9300000071525574
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.03145746514201164,
+              0.20499999821186066,
+              1.348583459854126
+            ],
+            "elbow": [
+              0.04886842662527076,
+              0.4434086782078146,
+              1.1549778812096325
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      },
+      {
+        "frame": 50,
+        "index": 4,
+        "parameters": {
+          "kind": "melee-down",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.04,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.29,
+            -0.25,
+            1.0199999999999998
+          ],
+          "weapon_direction": [
+            0.8,
+            0.08,
+            -0.1
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false,
+          "melee_elevation": -0.22,
+          "authored_melee_strike_index": 3
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.013996254652738571,
+              -0.20499996840953827,
+              1.3497200012207031
+            ],
+            "elbow": [
+              0.14460833373553922,
+              -0.41778098814478315,
+              1.1700266991820591
+            ],
+            "hand": [
+              0.28999999165534973,
+              -0.25,
+              0.9699999690055847
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.013996254652738571,
+              0.20499999821186066,
+              1.3497200012207031
+            ],
+            "elbow": [
+              0.039357914464922664,
+              0.44187973277812775,
+              1.155118516326986
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      },
+      {
+        "frame": 51,
+        "index": 5,
+        "parameters": {
+          "kind": "melee-down",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            0.2,
+            -0.25,
+            1.05
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            0.07,
+            0.26,
+            0.97
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": false,
+          "melee_elevation": -0.22,
+          "authored_melee_strike_index": 3
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.09083208169665849,
+              -0.4521991670794306,
+              1.1910437802740885
+            ],
+            "hand": [
+              0.20000000298023224,
+              -0.25,
+              0.9999999403953552
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.03175863518267596,
+              0.44070478333772634,
+              1.1549111973234136
+            ],
+            "hand": [
+              0.07000000029802322,
+              0.25999999046325684,
+              0.9200000166893005
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "minimum_world_z": 0.013000023551285267
+      }
+    ],
+    "22": [
+      {
+        "frame": 25,
+        "index": 0,
+        "parameters": {
+          "kind": "fall-and-lie",
+          "root_height": 0.18,
+          "root_yaw": 0.0,
+          "root_fall": 1.53,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "right_hand": [
+            -0.12,
+            -0.28,
+            1.18
+          ],
+          "weapon_direction": [
+            0.75,
+            0.15,
+            -0.45
+          ],
+          "left_hand": [
+            -0.12,
+            0.28,
+            1.18
+          ],
+          "two_handed": false,
+          "weapon_length": 0.65,
+          "walk_phase": null,
+          "weapon_released": true,
+          "released_weapon_floor_translation": [
+            0.0,
+            0.0,
+            -0.0180510588735342
+          ]
+        },
+        "actual_arm_joints": {
+          "R": {
+            "shoulder": [
+              0.4895922541618347,
+              -0.20500004291534424,
+              0.19998463988304138
+            ],
+            "elbow": [
+              0.4784718518725136,
+              -0.20871160594798774,
+              0.5073728656045744
+            ],
+            "hand": [
+              0.26488107442855835,
+              -0.2800000011920929,
+              0.3109121024608612
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.4895922839641571,
+              0.20499995350837708,
+              0.19998466968536377
+            ],
+            "elbow": [
+              0.4784718070488071,
+              0.20871154538063205,
+              0.5073728923589118
+            ],
+            "hand": [
+              0.26488107442855835,
+              0.2800000011920929,
+              0.3109121024608612
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": -0.04495549201965332,
+        "rigid_floor_lift": 0.04995549201965332,
+        "minimum_world_z": 0.004999912343919277,
+        "kind": "actual final physical death pose; static corpse"
+      }
+    ]
+  },
+  "attack_timing": "Authored physical melee strike index3 of6. Native hit timing has not been observed; shooting climax is inapplicable.",
+  "status": "editable raw source; grounding/identity review required before painted actions",
+  "visual_approval_granted": false,
+  "active_assets_modified": false
+}

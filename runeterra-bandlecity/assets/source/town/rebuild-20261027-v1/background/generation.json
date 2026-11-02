@@ -1,0 +1,38 @@
+{
+  "status": "authored configuration",
+  "provider": "OpenAI built-in imagegen",
+  "tool": "image_gen.imagegen",
+  "image_generation_used": true,
+  "painted_master": "assets/source/town/rebuild-20261027-v1/background/master.png",
+  "painted_master_sha256": "72ac1ab1cecfef81310022cabbc329acd1638201c08fe791d78dfa06d1c13670",
+  "prompt_file": "assets/source/town/rebuild-20261027-v1/background/prompt.txt",
+  "prompt_sha256": "2b937ac0d1f13c7c223dc94e96d1bf55cf9462e24d16430c11496226a330e711",
+  "workflow": "painted 2D terrain plate around preplanned actual building silhouettes; no 3D render or procedural art",
+  "visual_approval_granted": false,
+  "rights": "unresolved",
+  "transparent_background_requested": false,
+  "reference_inputs": [
+    {
+      "path": "runeterra-bandlecity\\assets\\source\\town\\rebuild-20261027-v1\\background\\placement-guide-generation-input.png",
+      "sha256": "a4ffb9ba265b1ee0e1f1ae2e96510d22f4078c3b93288a70bdc65ae7652ec587",
+      "role": "technical full building/road placement guide"
+    },
+    {
+      "path": "runeterra-demacia\\references\\images\\tbcsback.pcx.png",
+      "sha256": "949012ea68999207934bc482f1552858474fe50cefddef17eaac00d4b98c2be9",
+      "role": "original HoMM3 private material/camera reference only"
+    },
+    {
+      "path": "runeterra-freljord\\references\\native-v1-03be6110fba70717\\tbrmback.pcx.png",
+      "sha256": "e44900c97aee33432a9bbe79c71c0826c1a0fe4212e0078a3d663263657b2f17",
+      "role": "original HoMM3 private material/camera reference only"
+    }
+  ],
+  "model": "not exposed by built-in tool",
+  "prompt": "Use case: stylized-concept. Asset type: COMPLETE NEW EMPTY BUILDABLE BANDLE CITY TOWN TERRAIN PLATE, original1999 Heroes of Might and Magic III, 800x374 native panoramic canvas, aspect 2.139:1. Painted2D only. Input1 is an EXACT BUILDING/SILHOUETTE PLACEMENT GUIDE, not the finished painting. Input2 original Castle empty town terrain is a private STYLE/CAMERA/MATERIAL reference only; do NOT copy its skyline/houses/rock layout or any pixels. Input3 original Rampart empty terrain is private texture/camera reference only. CREATE a richly detailed Bandle City lived-in yordle woodland village environment around Input1's reserved entire building outlines. The yellow technical roads become curved irregular worn amber cobbles with earthen verges, branching believable steps and short shared mossstone retaining walls. Every road connects to the building front door thresholds indicated in the guide. Exact final800x374 footing locations: guild(71,142), hall stairs(231,149), fortgate(429,149), tallmirrorlodge(723,163), gunnerworkshop(64,253), paperhouse(225,247), fountain(344,260), garden(445,248), portal(553,224), telescopetower(663,276), mechworkshop(748,308), foreground scoutlodge(70,373), academy(221,365), market(358,361), garage(499,373), trapperhouse(642,371). Planned building full rectangles in native coordinates: guild x14..129 y15..143;hall x151..314 y20..149;fortification x325..535 y7..149;mirrorlodge x649..794 y27..164;gunner x0..150 y143..254;paperhouse x161..287 y151..248;fountain x307..381 y170..261;garden x396..494 y183..250;portal x504..601 y137..225;telescopetower x608..716 y169..277;mech x697..800 y208..309;scout x0..142 y265..373;academy x143..294 y251..366;market x299..416 y279..362;garage x421..577 y256..373;trapper x587..700 y281..372. IMPORTANT: DELIVER ONLY TERRAIN/BACKGROUND, ERASE ALL GUIDE BUILDINGS AND ALL GUIDE COLORED LINES. Leave their full outlines as uncluttered background/ground where separate transparent buildings will go. Do not paint buildings or functional structures into their sites. Foreground footings at lowerimageedge MUST sit ON the ground, with connecting streets reaching them, not cliffs beneath thresholds. Make a SINGLE cohesive terraced village neighborhood, with one winding shared street becoming village square near center-left, a shallow root-grown elevated civic terrace behind, narrow mossstone steps joining shared level ground. No isolated oval pads, repeated rows, regimented streets, maze, gridded plots, tall walls blocking entrances, floating islands or scenic grass meadow scattered with objects. Lush Bandlewood foliage in dark olive/teal, ancient gnarled bark on extremeleft/topedges with restrained faint distant woodland homes only at far horizon outside reserved outlines; warm amber lanterns strung high across gaps, tiny bunting, lived-in tools/stored baskets and garden fences only outside full building silhouettes. Upper-left warm soft daylight matching earthy warmwood buildings, crisp small-scale material detail, no allover magicalneon. Landscape behind the towers can have distant layered green canopy/smallclouds but NO intrusive foreground giant trees obscuring silhouettes. Wide low frontal three-quarter theatrical HoMM3 mattepainting view with elevated horizon, not isometric or birdseye. No 3D modelling/render/plastic, no flatcartoon/anime/mobilestyle, no painted fakeUI, no text/markers. ONLY WATER is tiny stillbluegreek inlet at extremebottomright, native polygon(704,359)(739,350)(773,341)(799,333)(799,373)(704,373); nowhere else. Dry shore lies just above this inlet. The original screenshots are stylistic references, not composite inputs. This needs native800x374 painterly density and natural grounded scene, not a grand illustration or oversoft concept art.\n",
+  "master_canvas": [
+    1834,
+    858
+  ],
+  "post_painting_layout_correction": "Workshop full layer raised12px after observing actual painted inlet edge; all35 opaque envelopes remain disjoint and all land footings remain dry against the corrected observed water polygon."
+}

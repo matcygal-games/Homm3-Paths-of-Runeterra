@@ -1,0 +1,556 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "Follow design/chemtech-art-direction.json: strong luminous chemical green from visible reagents and chemtech, purple accents, and brown leather, cloth, hide and industrial materials. Preserve each unit's authored anatomy, role, silhouette, equipment and individual identity, including cheap ordinary workers and organic beasts. Use original Heroes III native painted/prerendered language, tactile materials and readable scale; local chemical emission must not become a uniform green filter or make ordinary skin/metal glow. Never recolour Castle, Demacia or Noxus art, import original pixels or invent an official crest.",
+  "attack_semantics": "Massive living chemtech-augmented human with visible organic anatomy and partial industrial braces. Two-hex ordinary single-target melee11/12/13; no regeneration, repair aura, all-adjacent grab, breath, artillery or free extra action. Base walks on the ground; no obstacle crossing.",
+  "canvas": [
+    450,
+    400
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; Codex measured technical extraction",
+    "license": "unresolved",
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/source-selection.json",
+      "sha256": "4f76b07f73d679c857ccc6bb0a84c50485b41e5f4b46b2e289240976d455a3ea"
+    },
+    {
+      "path": "scripts/assemble_living_t7_tubes_20261028.py",
+      "sha256": "bbc7a174fa0a9be6a660364ddc6f4e77ffce60162620175d556c949425a85155"
+    },
+    {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/general-purple-v1/master.png",
+      "sha256": "b3110a5fa5b620c4f4d9244aca2d1d95b4fa6d49dbd4fcf9e5f847227c0ba91b"
+    },
+    {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/general-purple-v1/prompt.txt",
+      "sha256": "5f53fddf98032143dd74f18fc5851eedebf2b1c1da785701faed5bf31712248a"
+    },
+    {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/general-purple-v1/registration.json",
+      "sha256": "9a86d981d9306b950ae78e82261fb0c9d529e64899c48d0e0eae6e192975fa1a"
+    },
+    {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/general-purple-v1/generation.json",
+      "sha256": "27ed931a09ee9914616170cfff0717d65f8951bf51b4337f17e082c92a48e4e2"
+    },
+    {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/melee-purple-v1/master.png",
+      "sha256": "67375e36f995acc6797ce4f5a3ec495fde51be035ab8cb4f0c1da6a630469764"
+    },
+    {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/melee-purple-v1/prompt.txt",
+      "sha256": "97a3641ec77a1be2b23029881784e971fa671b030cfcd9da4d362305d9886e92"
+    },
+    {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/melee-purple-v1/registration.json",
+      "sha256": "78a69a34d666a78a39a835bb531fb3b3ca11a510496786571082413c917407f5"
+    },
+    {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/melee-purple-v1/generation.json",
+      "sha256": "bdf82dee264724303546dc759bd0e989e58e0937a10ac2e042e47801a434ac96"
+    },
+    {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/pressureColossus/general-purple-v2/master.png",
+      "sha256": "9eee891bcbcd351eb0885e20193d22e8e71cd6dab2b6d1bc64ba1723299d87ff"
+    },
+    {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/pressureColossus/general-purple-v2/prompt.txt",
+      "sha256": "bbf00804a80874760000ec85132f2ffafd0c8f8b3f2dd77e753f71044ca96f91"
+    },
+    {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/pressureColossus/general-purple-v2/registration.json",
+      "sha256": "30b1ac0144a8f2533ceaaed6a6b03390f31befec30f0802684b53d1b3927b11d"
+    },
+    {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/pressureColossus/general-purple-v2/generation.json",
+      "sha256": "d08010d3094bfe55d13068af3474ccafb8dcb253580ab5a10177e316bea7d6c5"
+    },
+    {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/pressureColossus/melee-purple-v1/master.png",
+      "sha256": "6c2f7d8bc70a673035053927634cfa029e372a93675de7b7f0ab1a97f0e05f6f"
+    },
+    {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/pressureColossus/melee-purple-v1/prompt.txt",
+      "sha256": "f149c51634c7b8604249bbf790d8ed8b8862a7e880bd10378e7a38bf1fdbe40e"
+    },
+    {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/pressureColossus/melee-purple-v1/registration.json",
+      "sha256": "ac9c438624e3798ebd3eb7272ac1e27dd54c979afd4a33b6d20a7f5b6ffc1c1e"
+    },
+    {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/pressureColossus/melee-purple-v1/generation.json",
+      "sha256": "48bf97c10332ca59358d9722be73186d65e3674a972cce5b9e7484b9d87ebacb"
+    },
+    {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/pressureColossus/leap-purple-v1/master.png",
+      "sha256": "cf11717c8c7ea12bcdba3676d04a041474eb53e40edcfddaa78402e98bf36e55"
+    },
+    {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/pressureColossus/leap-purple-v1/prompt.txt",
+      "sha256": "d597d194a4bff3dc679025b65117160f058305aef7699e9293222bb2120edfb4"
+    },
+    {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/pressureColossus/leap-purple-v1/registration.json",
+      "sha256": "1d9370adbc0583527b3217f62c9c4b2a9e6f122d5b8f3e17c177916e24c4e4ba"
+    },
+    {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/pressureColossus/leap-purple-v1/generation.json",
+      "sha256": "a4b5c128535bf96fc251301c9d3116f9b38a8cdf18d7aaa92b36397be176b407"
+    },
+    {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/pressureColossus/travel-purple-v1/master.png",
+      "sha256": "083c3900aae8fd6f62933a0d42760a1f7de6d486fadd06b12c5d630986fe2544"
+    },
+    {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/pressureColossus/travel-purple-v1/prompt.txt",
+      "sha256": "05e54f09694f18a027c3655dd39e3f022a068205707e4b469acd5798f4d65aec"
+    },
+    {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/pressureColossus/travel-purple-v1/registration.json",
+      "sha256": "2365360dedf2e18181fb898353c3636203796feb5c1cacdf023d2e78ac9a0679"
+    },
+    {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/pressureColossus/travel-purple-v1/generation.json",
+      "sha256": "ec5927811e292ead4b5c2712927720d18a080108704f5b55cff5b950c5862fbd"
+    },
+    {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/source-selection-contract-v3.json",
+      "sha256": "6bd6e45c2c59022dbd9a0310306033470404e506357953d268ebc06c4b8c97db"
+    },
+    {
+      "path": "scripts/align_living_t7_tubes_contract_20261028_v3.py",
+      "sha256": "92b95eb5e35040e679e32b2beeae8e5755efe22f42325ebf2f53b565951ade55"
+    },
+    {
+      "path": "scripts/art_recipes.py",
+      "sha256": "c46dee8a902a674a2aa9e53a2f5c363a052318685597ae48cf862f5a8b79282d"
+    },
+    {
+      "path": "content/creatures.json",
+      "sha256": "cb6ebf320f43880d66e27954aaa64c8036255886c018423ab2bf32e5531f72cb"
+    }
+  ],
+  "footprint": {
+    "battle": {
+      "body_center": [
+        218,
+        266
+      ],
+      "doubleWide": true,
+      "front_center": [
+        240,
+        266
+      ],
+      "hex_height": 42,
+      "hex_width": 44,
+      "rear_center": [
+        196,
+        266
+      ],
+      "semantics": "Two adjacent battle hexes derived from doubleWide, not from the adventure mapMask. The mask PNG is a technical source guide only, not a game asset."
+    },
+    "doubleWide": true,
+    "mapMask": [
+      "VV",
+      "VA"
+    ]
+  },
+  "generateOverlay": 1,
+  "generateShadow": 1,
+  "generation": {
+    "alpha_preserved": true,
+    "image_generation_used": true,
+    "model": null,
+    "native_execution": false,
+    "painted_master": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/general-purple-v1/master.png",
+    "painted_master_sha256": "b3110a5fa5b620c4f4d9244aca2d1d95b4fa6d49dbd4fcf9e5f847227c0ba91b",
+    "prompt": "Edit this exact6x6Chem-Golem painted action atlas; preserve ALL36poses, geometry,bodypositions/camera, huge living anatomy, respiratormask, augmentedgauntlets/legbraces, plumcloth andZauncrest, transparentbackground, originalHeroesIIIpainted2Dstyle.\nCHANGE ONLY the chemical hose/feed colors and their matching reservoir details:\nThe THREE physical ribbed hoses connecting BACKMANIFOLD to BOTHGAUNTLETS and RESPIRATOR FACEMASK must now be visibly SHIMMER VIOLET-PURPLE. Deepviolet flexible ribbed casing, paleviolet edging and small transparent sections showing luminous purpleShimmer contents. Purplelight localized inside tubing and ports, never a globalbodyglow.\nKeep hoses thick and clearlyvisible over/outside shoulders and arms, attached at bothends with brasscouplings, consistently connected in everypose includingdeath/corpse. Gauntletinletports and respiratorhoseport have visiblevioletfluidwindows.\nBackassembly must include a clear PURPLESHIMMER reservoir supplying thesehoses, alongside retained GREEN CHEMTECH tank/legpiston accents. Use onebackcylinder with violetcontents and theothergreen, crediblebrassmanifold. Body/leather/metalstaynatural/dark, notpurplewashed.\nDo NOT change poses, add/remove figures, cropanybody/tank, makegreenhoses, removehumanface/skin,createfullymetalrobot, addtext/grid/scenery or glossy3D. Actualvioletpurplehoses, not merely purplecloth.\n",
+    "provider": "OpenAI built-in imagegen",
+    "supplemental_masters": [
+      {
+        "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/melee-purple-v1/master.png",
+        "sha256": "67375e36f995acc6797ce4f5a3ec495fde51be035ab8cb4f0c1da6a630469764"
+      }
+    ]
+  },
+  "groups": [
+    {
+      "action": "MOVING",
+      "frames": [
+        {
+          "sha256": "069753acbeeeee1b4d87844ba4e42921b9bc11059bea6a99807f850670c5c933",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r00-c00.png",
+          "source_sha256": "069753acbeeeee1b4d87844ba4e42921b9bc11059bea6a99807f850670c5c933"
+        },
+        {
+          "sha256": "d6d16a3352b08a351f23f38e9cc583d69dc8ead4b3235b2f6fa0d7e67720d4d5",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r00-c01.png",
+          "source_sha256": "d6d16a3352b08a351f23f38e9cc583d69dc8ead4b3235b2f6fa0d7e67720d4d5"
+        },
+        {
+          "sha256": "c39876f4323e6c13646fa3ef1193f84aef41c67d3391f3ad14d7b8a8dc546efc",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r00-c02.png",
+          "source_sha256": "c39876f4323e6c13646fa3ef1193f84aef41c67d3391f3ad14d7b8a8dc546efc"
+        },
+        {
+          "sha256": "8c8bd89eccc3e5c86f28935ce78c5ec9fe7c511f0143849115ae7cdcf877e478",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r00-c03.png",
+          "source_sha256": "8c8bd89eccc3e5c86f28935ce78c5ec9fe7c511f0143849115ae7cdcf877e478"
+        },
+        {
+          "sha256": "8b4d59a3355195898e0f94904f899587fdabfe53b66684175cef3c271d092759",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r00-c04.png",
+          "source_sha256": "8b4d59a3355195898e0f94904f899587fdabfe53b66684175cef3c271d092759"
+        },
+        {
+          "sha256": "c276be228a79eaebe256e13b7af1ab9ae632896818bbb22d29a329c7e7a1e5d1",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r00-c05.png",
+          "source_sha256": "c276be228a79eaebe256e13b7af1ab9ae632896818bbb22d29a329c7e7a1e5d1"
+        }
+      ],
+      "group": 0
+    },
+    {
+      "action": "MOUSEON",
+      "frames": [
+        {
+          "sha256": "286eac9b94ce955299f273308ffc4f2238ce90aaf871653c3bab9ceeb0eee936",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r01-c00.png",
+          "source_sha256": "286eac9b94ce955299f273308ffc4f2238ce90aaf871653c3bab9ceeb0eee936"
+        },
+        {
+          "sha256": "35e3fba877ee615700ef9111a019a8007da6a57e02413ac1af561926e0156b34",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r01-c01.png",
+          "source_sha256": "35e3fba877ee615700ef9111a019a8007da6a57e02413ac1af561926e0156b34"
+        },
+        {
+          "sha256": "28805325cb9d7b2cc3bf12a250c761b4477f8fec0c2680658e5ecea6c2eab263",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r01-c02.png",
+          "source_sha256": "28805325cb9d7b2cc3bf12a250c761b4477f8fec0c2680658e5ecea6c2eab263"
+        },
+        {
+          "sha256": "e1ab5c572413061cf9e9b3135817b8352890c5fef102e84861bcc6fad22d0c82",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r01-c03.png",
+          "source_sha256": "e1ab5c572413061cf9e9b3135817b8352890c5fef102e84861bcc6fad22d0c82"
+        }
+      ],
+      "group": 1
+    },
+    {
+      "action": "HOLDING",
+      "frames": [
+        {
+          "sha256": "9e4e50952cf78cb7b1a217e2d833cf19dea53ec408ec8eacf8530afd6f19e6bb",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r01-c04.png",
+          "source_sha256": "9e4e50952cf78cb7b1a217e2d833cf19dea53ec408ec8eacf8530afd6f19e6bb"
+        }
+      ],
+      "group": 2
+    },
+    {
+      "action": "HITTED",
+      "frames": [
+        {
+          "sha256": "2f759a1b8e5da56986252f763f95192397487ec70411f713c980bfc4623c486d",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r02-c00.png",
+          "source_sha256": "2f759a1b8e5da56986252f763f95192397487ec70411f713c980bfc4623c486d"
+        },
+        {
+          "sha256": "9b1f4a97e50c2b4e12de6a9a6a27ceee031129590aab79251c49457c5e33b2a3",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r02-c01.png",
+          "source_sha256": "9b1f4a97e50c2b4e12de6a9a6a27ceee031129590aab79251c49457c5e33b2a3"
+        },
+        {
+          "sha256": "49b7cad56737fef541d1fea543f3e4d2690b8f6393fb981cd4385e8ba84f120c",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r02-c02.png",
+          "source_sha256": "49b7cad56737fef541d1fea543f3e4d2690b8f6393fb981cd4385e8ba84f120c"
+        },
+        {
+          "sha256": "7164239c587eb84ce49aa205d43a6536cd8fd3c95297403b62cd36bc34d5f7d0",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r02-c03.png",
+          "source_sha256": "7164239c587eb84ce49aa205d43a6536cd8fd3c95297403b62cd36bc34d5f7d0"
+        }
+      ],
+      "group": 3
+    },
+    {
+      "action": "DEFENCE",
+      "frames": [
+        {
+          "sha256": "6023a353a48c907a01edf0e9986a8dd699de47493cc67ed094dfdc4269ac832b",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r04-c00.png",
+          "source_sha256": "6023a353a48c907a01edf0e9986a8dd699de47493cc67ed094dfdc4269ac832b"
+        },
+        {
+          "sha256": "417cb0e71ed91c6b6f4481eeff32aaca186d7338c6448f54e4ebffcc1090e002",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r04-c01.png",
+          "source_sha256": "417cb0e71ed91c6b6f4481eeff32aaca186d7338c6448f54e4ebffcc1090e002"
+        },
+        {
+          "sha256": "9d9fedf0299bd5bc6e1c5fffcc49ea38675ff20f3691a9f4398219f61f3d01ad",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r04-c02.png",
+          "source_sha256": "9d9fedf0299bd5bc6e1c5fffcc49ea38675ff20f3691a9f4398219f61f3d01ad"
+        },
+        {
+          "sha256": "96369555be040d3b251fb3503eb95600f761d392b3e06ed2afa09cb614329d09",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r04-c03.png",
+          "source_sha256": "96369555be040d3b251fb3503eb95600f761d392b3e06ed2afa09cb614329d09"
+        }
+      ],
+      "group": 4
+    },
+    {
+      "action": "DEATH",
+      "frames": [
+        {
+          "sha256": "45c58207183deb3bdd69d19bd252df342c0dd93af83207599f2485993d5c845d",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r05-c00.png",
+          "source_sha256": "45c58207183deb3bdd69d19bd252df342c0dd93af83207599f2485993d5c845d"
+        },
+        {
+          "sha256": "26cd92aa6b055890d6960e8703eaea3ec9e936d17edf8457ff079e1ded809dc6",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r05-c01.png",
+          "source_sha256": "26cd92aa6b055890d6960e8703eaea3ec9e936d17edf8457ff079e1ded809dc6"
+        },
+        {
+          "sha256": "1ca2daecd9cf392b8c4e312f3b1f8f40884dad6ba19260611deb1ae546d23efb",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r05-c02.png",
+          "source_sha256": "1ca2daecd9cf392b8c4e312f3b1f8f40884dad6ba19260611deb1ae546d23efb"
+        },
+        {
+          "sha256": "149410c1a055be8d38bdb43db6697dd4cfbe0a93d2b14d178a4dba5d6aadce54",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r05-c03.png",
+          "source_sha256": "149410c1a055be8d38bdb43db6697dd4cfbe0a93d2b14d178a4dba5d6aadce54"
+        },
+        {
+          "sha256": "87501d110e976d3a0615f782038c854a03cf515e33932f3f247e75cd36c7b073",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r05-c04.png",
+          "source_sha256": "87501d110e976d3a0615f782038c854a03cf515e33932f3f247e75cd36c7b073"
+        },
+        {
+          "sha256": "be86920a204a337ad86a4c65a81f7dad69c2351506836f462f24938d5c0c59b1",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r05-c05.png",
+          "source_sha256": "be86920a204a337ad86a4c65a81f7dad69c2351506836f462f24938d5c0c59b1"
+        }
+      ],
+      "group": 5
+    },
+    {
+      "action": "TURN_L",
+      "frames": [
+        {
+          "sha256": "9e4e50952cf78cb7b1a217e2d833cf19dea53ec408ec8eacf8530afd6f19e6bb",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r01-c04.png",
+          "source_sha256": "9e4e50952cf78cb7b1a217e2d833cf19dea53ec408ec8eacf8530afd6f19e6bb"
+        },
+        {
+          "sha256": "fbaac8af40218a6d903fb8229c42d4d0c0ecbe44aa4615283f8541849f8fc3b5",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r03-c01.png",
+          "source_sha256": "fbaac8af40218a6d903fb8229c42d4d0c0ecbe44aa4615283f8541849f8fc3b5"
+        },
+        {
+          "sha256": "8c1d099919b7bba2131e2190529e468ff98fb835f511425d2f9ca7b7f6017d7e",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r03-c02.png",
+          "source_sha256": "8c1d099919b7bba2131e2190529e468ff98fb835f511425d2f9ca7b7f6017d7e"
+        },
+        {
+          "sha256": "c502f433b93e63b12150cf684b78564051eff976dbe76aabac265799ae88fe39",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r03-c03.png",
+          "source_sha256": "c502f433b93e63b12150cf684b78564051eff976dbe76aabac265799ae88fe39"
+        }
+      ],
+      "group": 7
+    },
+    {
+      "action": "TURN_R",
+      "frames": [
+        {
+          "sha256": "c502f433b93e63b12150cf684b78564051eff976dbe76aabac265799ae88fe39",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r03-c03.png",
+          "source_sha256": "c502f433b93e63b12150cf684b78564051eff976dbe76aabac265799ae88fe39"
+        },
+        {
+          "sha256": "8c1d099919b7bba2131e2190529e468ff98fb835f511425d2f9ca7b7f6017d7e",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r03-c02.png",
+          "source_sha256": "8c1d099919b7bba2131e2190529e468ff98fb835f511425d2f9ca7b7f6017d7e"
+        },
+        {
+          "sha256": "fbaac8af40218a6d903fb8229c42d4d0c0ecbe44aa4615283f8541849f8fc3b5",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r03-c01.png",
+          "source_sha256": "fbaac8af40218a6d903fb8229c42d4d0c0ecbe44aa4615283f8541849f8fc3b5"
+        },
+        {
+          "sha256": "9e4e50952cf78cb7b1a217e2d833cf19dea53ec408ec8eacf8530afd6f19e6bb",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r01-c04.png",
+          "source_sha256": "9e4e50952cf78cb7b1a217e2d833cf19dea53ec408ec8eacf8530afd6f19e6bb"
+        }
+      ],
+      "group": 8
+    },
+    {
+      "action": "ATTACK_UP",
+      "frames": [
+        {
+          "sha256": "be4fdfa91837281da289ce36933324e56e88c70da10f59322c488938a29c59b8",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/melee-purple-v1/r00-c00.png",
+          "source_sha256": "be4fdfa91837281da289ce36933324e56e88c70da10f59322c488938a29c59b8"
+        },
+        {
+          "sha256": "7989096ce317976f6118f11a7751da250e3ba574bbd6f37365f8fe696f775dbb",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/melee-purple-v1/r00-c01.png",
+          "source_sha256": "7989096ce317976f6118f11a7751da250e3ba574bbd6f37365f8fe696f775dbb"
+        },
+        {
+          "sha256": "000f588f6ca34acbf564153c8150c832cc004d09031c11489317aa823d137d90",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/melee-purple-v1/r00-c02.png",
+          "source_sha256": "000f588f6ca34acbf564153c8150c832cc004d09031c11489317aa823d137d90"
+        },
+        {
+          "sha256": "4921e10e4cda51ab9662fd7218f74737181a72e285bff2c4c003e7cf2a149f89",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/melee-purple-v1/r00-c03.png",
+          "source_sha256": "4921e10e4cda51ab9662fd7218f74737181a72e285bff2c4c003e7cf2a149f89"
+        },
+        {
+          "sha256": "b0812fa8ccbda250de8328a5c67401858c669c79ee25ecaa147e5e587fad218c",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/melee-purple-v1/r00-c04.png",
+          "source_sha256": "b0812fa8ccbda250de8328a5c67401858c669c79ee25ecaa147e5e587fad218c"
+        },
+        {
+          "sha256": "07ff5e1c43a5e350548a9b627f4da2e945a039b51b2c38b03d9a49ffe273eb19",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/melee-purple-v1/r00-c05.png",
+          "source_sha256": "07ff5e1c43a5e350548a9b627f4da2e945a039b51b2c38b03d9a49ffe273eb19"
+        }
+      ],
+      "group": 11
+    },
+    {
+      "action": "ATTACK_FRONT",
+      "frames": [
+        {
+          "sha256": "fd1889e5980910468ede9a5812ec69bfd42e50b2a23a37c527c63e9cfb1e68e2",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/melee-purple-v1/r01-c00.png",
+          "source_sha256": "fd1889e5980910468ede9a5812ec69bfd42e50b2a23a37c527c63e9cfb1e68e2"
+        },
+        {
+          "sha256": "c34b55765cf5bf323478d764ec8fe4a8d5dd7183c6058700b4dabbac1eb553f8",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/melee-purple-v1/r01-c01.png",
+          "source_sha256": "c34b55765cf5bf323478d764ec8fe4a8d5dd7183c6058700b4dabbac1eb553f8"
+        },
+        {
+          "sha256": "ca42239de90aaa1f628b3f5008a144f3253e3a2bcb8f95d382489c3ae840559f",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/melee-purple-v1/r01-c02.png",
+          "source_sha256": "ca42239de90aaa1f628b3f5008a144f3253e3a2bcb8f95d382489c3ae840559f"
+        },
+        {
+          "sha256": "5482bff40e047f0b8303d0efa7397ee6c49f8fa892221f36ae873f5af1a12354",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/melee-purple-v1/r01-c03.png",
+          "source_sha256": "5482bff40e047f0b8303d0efa7397ee6c49f8fa892221f36ae873f5af1a12354"
+        },
+        {
+          "sha256": "3f25631dd401aa8bffbde27af1e68a08fcbe1cc24a0a5c8273c9f46080e5d1b2",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/melee-purple-v1/r01-c04.png",
+          "source_sha256": "3f25631dd401aa8bffbde27af1e68a08fcbe1cc24a0a5c8273c9f46080e5d1b2"
+        },
+        {
+          "sha256": "da0c706f6758cd561820a5ad832bffae35dd06cba340b0f2558c2953f95c2b01",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/melee-purple-v1/r01-c05.png",
+          "source_sha256": "da0c706f6758cd561820a5ad832bffae35dd06cba340b0f2558c2953f95c2b01"
+        }
+      ],
+      "group": 12
+    },
+    {
+      "action": "ATTACK_DOWN",
+      "frames": [
+        {
+          "sha256": "4177a847a270c34b7e767af82c8e4827ec4c924de42f6bfd61c91707254a2557",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/melee-purple-v1/r02-c00.png",
+          "source_sha256": "4177a847a270c34b7e767af82c8e4827ec4c924de42f6bfd61c91707254a2557"
+        },
+        {
+          "sha256": "9bdd92a8c3a7c6122e66bd1ce88218791d4824ed7451db2987e5a2752e7dc49b",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/melee-purple-v1/r02-c01.png",
+          "source_sha256": "9bdd92a8c3a7c6122e66bd1ce88218791d4824ed7451db2987e5a2752e7dc49b"
+        },
+        {
+          "sha256": "7953d1dc76912af4fe33f2b1aaf8c0d17694e5979b15370974519299af6241d2",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/melee-purple-v1/r02-c02.png",
+          "source_sha256": "7953d1dc76912af4fe33f2b1aaf8c0d17694e5979b15370974519299af6241d2"
+        },
+        {
+          "sha256": "c6a73b38cea333ab95940d0e05c46dc27870f17982e1e22648df735b3833ff39",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/melee-purple-v1/r02-c03.png",
+          "source_sha256": "c6a73b38cea333ab95940d0e05c46dc27870f17982e1e22648df735b3833ff39"
+        },
+        {
+          "sha256": "af1ae1deac7442cd8d73e6e4746dba267e4ef8c46dd98fb8bf0f71c19ab4fe11",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/melee-purple-v1/r02-c04.png",
+          "source_sha256": "af1ae1deac7442cd8d73e6e4746dba267e4ef8c46dd98fb8bf0f71c19ab4fe11"
+        },
+        {
+          "sha256": "fa2ce50dfef2cb47c129706d9060c7b9b9857145398b474b8b08f9c6e09800b4",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/melee-purple-v1/r02-c05.png",
+          "source_sha256": "fa2ce50dfef2cb47c129706d9060c7b9b9857145398b474b8b08f9c6e09800b4"
+        }
+      ],
+      "group": 13
+    },
+    {
+      "action": "DEAD",
+      "frames": [
+        {
+          "sha256": "be86920a204a337ad86a4c65a81f7dad69c2351506836f462f24938d5c0c59b1",
+          "source": "assets/source/creatures/living-chemtech-tubes-20261028-v1/chemGolem/native-v1/general-purple-v1/r05-c05.png",
+          "source_sha256": "be86920a204a337ad86a4c65a81f7dad69c2351506836f462f24938d5c0c59b1"
+        }
+      ],
+      "group": 22
+    }
+  ],
+  "id": "zaun.creature.chemGolem.battle",
+  "output_path": "Content/Sprites/runeterra/zaun/creatures/chemGolem/battle.json",
+  "pivot": {
+    "x": 218,
+    "y": 266
+  },
+  "production_status": "delivered",
+  "recipe_type": "vcmi_animation",
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "required_groups": {
+    "0": 6,
+    "1": 4,
+    "11": 6,
+    "12": 6,
+    "13": 6,
+    "2": 1,
+    "22": 1,
+    "3": 4,
+    "4": 4,
+    "5": 6,
+    "7": 4,
+    "8": 4
+  },
+  "source_registration": {
+    "fixed_scale_per_source_cohort": true,
+    "logical_battle_pivot": [
+      218,
+      266
+    ],
+    "per_frame_scaling": false,
+    "selection": {
+      "path": "assets/source/creatures/living-chemtech-tubes-20261028-v1/source-selection-contract-v3.json",
+      "sha256": "6bd6e45c2c59022dbd9a0310306033470404e506357953d268ebc06c4b8c97db"
+    }
+  },
+  "status": "built-unreviewed",
+  "unit": "chemGolem",
+  "visual_approval_granted": false
+}

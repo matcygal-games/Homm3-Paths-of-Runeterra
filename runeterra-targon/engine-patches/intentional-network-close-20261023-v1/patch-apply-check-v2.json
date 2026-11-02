@@ -1,0 +1,46 @@
+{
+  "scope": "Only own three-file disposable fixture modified, no source checkout/private build/stage edits",
+  "commands": [
+    {
+      "command": [
+        "git",
+        "-c",
+        "core.autocrlf=false",
+        "-C",
+        "C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\intentional-network-close-20261023-v1\\apply-check-v2",
+        "init",
+        "--quiet"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "core.autocrlf=false",
+        "-C",
+        "C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\intentional-network-close-20261023-v1\\apply-check-v2",
+        "apply",
+        "--check",
+        "C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\intentional-network-close-20261023-v1\\0001-track-explicit-server-connection-close-ownership.patch"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "core.autocrlf=false",
+        "-C",
+        "C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\intentional-network-close-20261023-v1\\apply-check-v2",
+        "apply",
+        "C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\intentional-network-close-20261023-v1\\0001-track-explicit-server-connection-close-ownership.patch"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "patched_files_match": true
+}

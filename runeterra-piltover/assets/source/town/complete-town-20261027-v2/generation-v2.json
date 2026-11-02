@@ -1,0 +1,49 @@
+{
+  "status": "design proposal",
+  "provider": "OpenAI built-in image_gen",
+  "workflow": "Complete settled city painting first; full-master edge correction before any layer derivation",
+  "prompt": "runeterra-piltover/assets/source/town/complete-town-20261027-v2/prompt-v2.txt",
+  "prompt_sha256": "49880951a7b4a7fe8f22019a0513f3b2d29431b839957fcb598b73d27ce2fffe",
+  "edit_target": "runeterra-piltover/assets/source/town/complete-town-20261027-v2/complete-town-master-v1.png",
+  "edit_target_sha256": "15fc3295fa701d172085099bb4584e5b9ad679db1afbc06676feab390126e3b5",
+  "master": "runeterra-piltover/assets/source/town/complete-town-20261027-v2/complete-town-master-v2.png",
+  "master_sha256": "b69a5c8803a7605d48dceaed8390484c7b9fe74810f913a24722b956954386b8",
+  "master_canvas": [
+    1833,
+    858
+  ],
+  "native": "runeterra-piltover/assets/source/town/complete-town-20261027-v2/complete-town-native-v2.png",
+  "native_sha256": "25564d48d469ba974a42f88e3b202bced394a016a83e1cc54e87ad8b420acbf7",
+  "native_canvas": [
+    800,
+    374
+  ],
+  "technical_conversion": {
+    "uniform_factor": 0.436442989634479,
+    "rounded_size": [
+      800,
+      374
+    ],
+    "crop": null,
+    "letterbox": false,
+    "method": "Uniform LANCZOS native resize only, dimensions round exactly800x374; no stretching, no crop and no padding."
+  },
+  "functional_program": "runeterra-piltover/assets/source/town/complete-town-20261027-v2/functional-program-v2.json",
+  "functional_program_sha256": "3e1e215d46bafcb1da60ef476f719fca8a4b1ce3dca19dd447b8f9aa6d9af1ee",
+  "program_counts": {
+    "ordinary_land_sites": 16,
+    "optional_coast": 1,
+    "optional_grail": 1,
+    "unique_native_building_states": 35
+  },
+  "observed_corrections": [
+    "Full compact sloop hull, stern, bow, mast/rigging inside right edge",
+    "Foreground foundry left extension/roof/front stair inside scene",
+    "Cadet/atelier entrances remain separately visible behind foundry"
+  ],
+  "layers_sliced": false,
+  "canonical_sources_changed": false,
+  "native_executed": false,
+  "review_checkpoint": "Root complete-design review pending; concept structure approved earlier, not native/final art",
+  "release_accepted": false
+}

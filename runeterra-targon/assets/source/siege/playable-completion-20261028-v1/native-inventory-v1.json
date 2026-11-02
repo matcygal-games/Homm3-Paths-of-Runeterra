@@ -1,0 +1,525 @@
+{
+  "status": "authored configuration",
+  "actual_required_outputs": [
+    "Content/Sprites/runeterra/targon/siege/SGTGARCH.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGBACK.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGDRW1.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGDRW2.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGDRW3.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGDRWC.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGMAN1.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGMAN2.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGMANC.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGMLIP.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGMOAT.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGTPWL.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGTW11.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGTW12.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGTW1C.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGTW21.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGTW22.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGTW2C.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGWA11.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGWA12.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGWA13.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGWA2.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGWA31.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGWA32.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGWA33.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGWA41.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGWA42.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGWA43.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGWA5.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGWA61.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGWA62.png",
+    "Content/Sprites/runeterra/targon/siege/SGTGWA63.png",
+    "Content/Sprites/runeterra/targon/siege/towerLarge.png",
+    "Content/Sprites/runeterra/targon/siege/towerSmall.png"
+  ],
+  "actual_required_count": 34,
+  "source_functions": {
+    "faction_pipeline.required_outputs": "45c224fa6aa15cc32bfb120c988050eb4ff7e15a61d036335203cf979542928a"
+  },
+  "faction_siege": {
+    "shooter": "mountainArcher",
+    "towerIconLarge": "runeterra/targon/siege/towerLarge.png",
+    "towerIconSmall": "runeterra/targon/siege/towerSmall.png",
+    "imagePrefix": "runeterra/targon/siege/SGTG",
+    "static": {
+      "background": {
+        "x": 600,
+        "y": 49
+      },
+      "top": {
+        "x": 489,
+        "y": 79
+      },
+      "bottom": {
+        "x": 512,
+        "y": 347
+      }
+    },
+    "towers": {
+      "top": {
+        "tower": {
+          "x": 569,
+          "y": 35
+        },
+        "battlement": {
+          "x": 557,
+          "y": 24
+        },
+        "creature": {
+          "x": 342,
+          "y": -187
+        }
+      },
+      "keep": {
+        "tower": {
+          "x": 720,
+          "y": 158
+        },
+        "battlement": {
+          "x": 720,
+          "y": 158
+        },
+        "creature": {
+          "x": 526,
+          "y": -29
+        }
+      },
+      "bottom": {
+        "tower": {
+          "x": 602,
+          "y": 500
+        },
+        "battlement": {
+          "x": 602,
+          "y": 500
+        },
+        "creature": {
+          "x": 394,
+          "y": 299
+        }
+      }
+    },
+    "walls": {
+      "upper": {
+        "x": 524,
+        "y": 32
+      },
+      "upperMid": {
+        "x": 470,
+        "y": 127
+      },
+      "bottomMid": {
+        "x": 469,
+        "y": 291
+      },
+      "bottom": {
+        "x": 528,
+        "y": 350
+      }
+    },
+    "gate": {
+      "arch": {
+        "x": 477,
+        "y": 238
+      },
+      "gate": {
+        "x": 399,
+        "y": 274
+      }
+    },
+    "moat": {
+      "bank": {
+        "x": 403,
+        "y": 80
+      },
+      "moat": {
+        "x": 410,
+        "y": 90
+      }
+    }
+  },
+  "recipes": [
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGARCH.json",
+      "before_sha256": "60275fad5802310b6bf56e4de8af67a5642b175ae7c9d8ec7d983019a41f1ca7",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGARCH.png",
+      "canvas": [
+        65,
+        225
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGARCH.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGBACK.json",
+      "before_sha256": "9076542aae32020599ac83374661e1634a50c8d336a83ee216c0b12046f9f48d",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGBACK.png",
+      "canvas": [
+        800,
+        556
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/painted-background-v2/SGTGBACK.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGDRW1.json",
+      "before_sha256": "a57eb7c211032cf1d767624c285663821996918dda093a17580dd0d26ecfbac1",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGDRW1.png",
+      "canvas": [
+        103,
+        87
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGDRW1.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGDRW2.json",
+      "before_sha256": "54aec80001626c9bd801470fc843dbf73b519320cdefcb33d2ac0e0c6fa03cdf",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGDRW2.png",
+      "canvas": [
+        103,
+        87
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGDRW2.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGDRW3.json",
+      "before_sha256": "cdb3eec037a16c65d4af918562f3541ad54f2ece1359c5a1ecf05f0247948da8",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGDRW3.png",
+      "canvas": [
+        103,
+        87
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGDRW3.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGDRWC.json",
+      "before_sha256": "6b52d0d78ffda7dbf231f4cc31c5ee7bab4926f8835909f9d6457dee954374e1",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGDRWC.png",
+      "canvas": [
+        103,
+        87
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGDRWC.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGMAN1.json",
+      "before_sha256": "e2adae356b00b51e9154f6513367cd1e5d908228a97dcfbc8d14e711f066eec7",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGMAN1.png",
+      "canvas": [
+        80,
+        300
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGMAN1.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGMAN2.json",
+      "before_sha256": "2acb785194da312f7d5e2997138026e468be49c58e67878939196a7f51924a31",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGMAN2.png",
+      "canvas": [
+        80,
+        300
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGMAN2.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGMANC.json",
+      "before_sha256": "446e51fb30e52ded284da7f1116fb5180bcd582bb44816b8321cd49556842dd5",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGMANC.png",
+      "canvas": [
+        80,
+        300
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGMANC.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGMLIP.json",
+      "before_sha256": "038d2a0e97530ef5093040057d49202ef5dce19f0f2dbb8942e8df0eb7cf985f",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGMLIP.png",
+      "canvas": [
+        200,
+        476
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGMLIP.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGMOAT.json",
+      "before_sha256": "5bbc58e353410450348ff87f6ae94b9fd966d72c3b694b194f65709ee486dca9",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGMOAT.png",
+      "canvas": [
+        213,
+        466
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGMOAT.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGTPWL.json",
+      "before_sha256": "7fd1b307f02916f46b1a62f82dbdc27a1384aae572e76ae07210cc0a77c30324",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGTPWL.png",
+      "canvas": [
+        200,
+        80
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGTPWL.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGTW11.json",
+      "before_sha256": "f49793c954b0e45058de0a56e0d1fef8b9f59e469734dacdd968a03c484c7e3b",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGTW11.png",
+      "canvas": [
+        100,
+        56
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGTW11.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGTW12.json",
+      "before_sha256": "1118cc0e10e7a9230fa50b3a29467fb78c82892324ce89a5cf112fd224783810",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGTW12.png",
+      "canvas": [
+        100,
+        56
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGTW12.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGTW1C.json",
+      "before_sha256": "1c6b8935a765927810fca8331bc2a2e5a36f7e0b8ab04130cceb8de2b0d52478",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGTW1C.png",
+      "canvas": [
+        100,
+        56
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGTW1C.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGTW21.json",
+      "before_sha256": "9dc063fa62224c423e7f41d917b15d9b00237d039d7cbe235701f03171948822",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGTW21.png",
+      "canvas": [
+        50,
+        126
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGTW21.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGTW22.json",
+      "before_sha256": "a707e53054d85736f10c49d2c4245015e7fe7546f54b8a7fff9bafa89e363443",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGTW22.png",
+      "canvas": [
+        50,
+        126
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGTW22.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGTW2C.json",
+      "before_sha256": "40c614e9978f477a6cfcebe839069953b8ff33bcde5f0f49b2858a25376d41f7",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGTW2C.png",
+      "canvas": [
+        90,
+        110
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGTW2C.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGWA11.json",
+      "before_sha256": "b2f703f4a0ba09be2f9bc9f1c9af2fc3851ad1e5433eaf038ce5f3963465ad11",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGWA11.png",
+      "canvas": [
+        150,
+        206
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGWA11.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGWA12.json",
+      "before_sha256": "71915c627376a4c7eab8a29971be3039edfb387b221e2062313637b29291498d",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGWA12.png",
+      "canvas": [
+        150,
+        206
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGWA12.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGWA13.json",
+      "before_sha256": "d8ee8cdf8411aa23bc5dc34f2e09c4092eb5415b315d5f464c1b4a52bf32121b",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGWA13.png",
+      "canvas": [
+        150,
+        206
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGWA13.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGWA2.json",
+      "before_sha256": "1033a0202bf43c1d8866bd68c319ff0d52ed7f03ad5f8be7ae01562912b0650e",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGWA2.png",
+      "canvas": [
+        151,
+        253
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGWA2.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGWA31.json",
+      "before_sha256": "2132495f23c209f01a4e12a96f023e93bc02ee586f3e009f2ac581ce3c475397",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGWA31.png",
+      "canvas": [
+        100,
+        200
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGWA31.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGWA32.json",
+      "before_sha256": "6981ed0d2a67011d1f9ed3de5e51b3c22b9c05c16dc3e7e991680de4f02f236b",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGWA32.png",
+      "canvas": [
+        100,
+        200
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGWA32.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGWA33.json",
+      "before_sha256": "668bcc178f7756e5fd67230750bc494fd55397b4fd647476cb0717c31eff7d3d",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGWA33.png",
+      "canvas": [
+        100,
+        200
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGWA33.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGWA41.json",
+      "before_sha256": "0ba63601175f26cec501ff422f6b996f622b36f2b62d342c0820924159391920",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGWA41.png",
+      "canvas": [
+        100,
+        200
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGWA41.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGWA42.json",
+      "before_sha256": "04159a2dd3af13ca55b50c9b3f28c63e1a78cbf8f4fbb8fab7d21d59ef8e7fcf",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGWA42.png",
+      "canvas": [
+        100,
+        200
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGWA42.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGWA43.json",
+      "before_sha256": "6f113dd2703366918711c895eec16fc42685266f5d07402c8f63a7daac6c9d5f",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGWA43.png",
+      "canvas": [
+        100,
+        200
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGWA43.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGWA5.json",
+      "before_sha256": "fd4394dc1d1d7a7bc9af1647c20e303dd336307451b83a9c8f5d4d32882b0404",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGWA5.png",
+      "canvas": [
+        80,
+        241
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGWA5.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGWA61.json",
+      "before_sha256": "32115f310a047873f3fd00f52fac5c5a0f2610711daa647d98ae1e36c889014c",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGWA61.png",
+      "canvas": [
+        100,
+        200
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGWA61.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGWA62.json",
+      "before_sha256": "71fe0cea2822b7495f49eb84196a44bb7f5ebe29f9b8e7c69aabd7b5e3e765d9",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGWA62.png",
+      "canvas": [
+        100,
+        200
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGWA62.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/SGTGWA63.json",
+      "before_sha256": "5e766c492dd75c1290ccb5042c703dfb9e10e0c14168917dc0055652ea603e55",
+      "output_path": "Content/Sprites/runeterra/targon/siege/SGTGWA63.png",
+      "canvas": [
+        100,
+        200
+      ],
+      "role": "siege-image",
+      "current_source": "assets/source/town/siege/production-v2/SGTGWA63.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/towerLarge.json",
+      "before_sha256": "1ef24ada7731f79530541be69bc66597286a29b01cff1bf8f226229df972566d",
+      "output_path": "Content/Sprites/runeterra/targon/siege/towerLarge.png",
+      "canvas": [
+        58,
+        64
+      ],
+      "role": "siege-tower-portrait",
+      "current_source": "assets/source/town/siege/production-v2/towerLarge.png"
+    },
+    {
+      "canonical_recipe": "assets/recipes/town/siege/towerSmall.json",
+      "before_sha256": "728bb58b3667bfab583993d5486c2c99b033eb7cc7b90f44cfc3739a341c4480",
+      "output_path": "Content/Sprites/runeterra/targon/siege/towerSmall.png",
+      "canvas": [
+        48,
+        32
+      ],
+      "role": "siege-tower-portrait",
+      "current_source": "assets/source/town/siege/production-v2/towerSmall.png"
+    }
+  ],
+  "policy_quotes": [
+    "Walls, gates and damaged states must belong to the town's architecture. Do not let objects float or drift into a canvas corner.",
+    "Code may perform technical conversion, cropping, palette/alpha processing, fixed roots, masks, frame assembly and validation; artistic content must come from coherent painted 2D sources."
+  ]
+}

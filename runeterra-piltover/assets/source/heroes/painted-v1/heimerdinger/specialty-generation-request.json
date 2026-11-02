@@ -1,0 +1,44 @@
+{
+  "provider": "OpenAI built-in imagegen, inherited own-creature and own-background sources",
+  "model": "not exposed",
+  "prompt": "No new imagegen call: Fixed crop and alpha-composite of own painted subject on a fixed cropped region of own painted stone background. Own Freight Handler chassis/crate/wheels; no named Nugget copy.",
+  "status": "painted-master-complete-unapproved",
+  "selected_painted_master": "assets/source/heroes/painted-v1/heimerdinger/specialty-master.png",
+  "derivation": {
+    "method": "Fixed crop and alpha-composite of own painted subject on a fixed cropped region of own painted stone background.",
+    "subject": "assets/source/creatures/painted-v1/t1-t4/freightHandler/master-v1.png",
+    "subject_sha256": "75ee73ae580a1d7a61e8622e93c804f85e0963146d6fca6c5493151ce571a028",
+    "subject_canvas": [
+      1330,
+      1182
+    ],
+    "subject_crop": [
+      130,
+      200,
+      1300,
+      1040
+    ],
+    "semantic_meaning": "Own Freight Handler chassis/crate/wheels; no named Nugget copy.",
+    "background": "assets/source/heroes/painted-v1/uberti/specialty-master.png",
+    "background_sha256": "1245225aa89cad5315ec0db52afbdfa87c370e5d12e12449e8969bfd4973539f",
+    "background_crop": [
+      1104,
+      0,
+      1254,
+      150
+    ]
+  },
+  "reference_ancestry": [
+    {
+      "role": "Own independently generated painted creature subject",
+      "source": "assets/source/creatures/painted-v1/t1-t4/freightHandler/master-v1.png",
+      "sha256": "75ee73ae580a1d7a61e8622e93c804f85e0963146d6fca6c5493151ce571a028",
+      "image_generation_used": true
+    },
+    {
+      "role": "Own painted stone backing crop",
+      "source": "assets/source/heroes/painted-v1/uberti/specialty-master.png",
+      "sha256": "1245225aa89cad5315ec0db52afbdfa87c370e5d12e12449e8969bfd4973539f"
+    }
+  ]
+}

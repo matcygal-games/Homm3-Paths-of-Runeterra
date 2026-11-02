@@ -1,0 +1,40 @@
+{
+  "recipe_type": "raster",
+  "production_status": "painted-master-complete-unapproved",
+  "canvas": [
+    32,
+    32
+  ],
+  "output_path": "Content/Sprites/runeterra/piltover/heroes/jayce/specialtySmall.png",
+  "source": "assets/source/heroes/hextech-v2/jayce/specialtySmall.png",
+  "source_sha256": "2feb92f2ff335bf96a093681c128c31525e23877905d82ba6bc4b3ac8cc7e2e5",
+  "source_canvas": [
+    32,
+    32
+  ],
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in imagegen inherited own Rampager portrait",
+    "model": "not exposed by tool",
+    "prompt": "No new imagegen call. Fixed square head/horns crop from own original Hextech Rampager portrait, resized to native specialty size. Jayce army-engineering specialty is a gameplay adaptation, not personal invention or transformation.",
+    "painted_master": "assets/source/creatures/painted-hextech-v2/hextechRampager/portrait-v1-master.png",
+    "painted_master_sha256": "fe1eef891f3a6018ff76356c76c8587ef68ff6c17fa05ba61e59abc35f5ad297",
+    "source_crop": [
+      450,
+      569,
+      1196,
+      1315
+    ]
+  },
+  "production_inputs": [
+    {
+      "path": "assets/source/creatures/painted-hextech-v2/hextechRampager/portrait-v1-master.png",
+      "sha256": "fe1eef891f3a6018ff76356c76c8587ef68ff6c17fa05ba61e59abc35f5ad297"
+    },
+    {
+      "path": "assets/source/heroes/hextech-v2/derive_jayce_specialty.py",
+      "sha256": "082a4a6b9db02b62746f0fb4caeb5a4201d27778ad040b2f46a0259e3d434eb3"
+    }
+  ]
+}

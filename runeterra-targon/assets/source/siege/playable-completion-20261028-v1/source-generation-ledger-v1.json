@@ -1,0 +1,964 @@
+{
+  "derived_from_blender": false,
+  "files_sha256": {
+    "assets/source/siege/playable-completion-20261028-v1/assemble-v1.py": "6133537adbe2a5e8eee79ac36d22500d94741569cdeb809de005e46a46a80cf9",
+    "assets/source/siege/playable-completion-20261028-v1/background-origin-v1.json": "b3c882f8c2cc365a151908ff3e1250aa109eb2698c477eceed527887238208d2",
+    "assets/source/siege/playable-completion-20261028-v1/complete-composition-master-v1.png": "dcc89fef83fc8fad12fd2e89956523b15410ccf41d5743318ff180ac9ff22d7e",
+    "assets/source/siege/playable-completion-20261028-v1/complete-composition-native-v1.png": "be38fc26cd866ac7601231cfa086f127591e80599a4b6aa2c27253165693667a",
+    "assets/source/siege/playable-completion-20261028-v1/complete-composition-prompt-v1.txt": "4f520cc7eb01a461723e9acf42984b51e2bc382ec385dfc29092b9959b1ef31c",
+    "assets/source/siege/playable-completion-20261028-v1/geometry-contract-v1.json": "308ee5cb4652e2fe9f45bb003eaa0bf857867f41d6bbee3171e1afe86915f1de",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGARCH/master-v1-raw.png": "f1386d66d42b66675f35ac6706ef1d4e5c530ae5eccff1fd393de6765b3daa02",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGARCH/prompt-v1.txt": "0ccdb9c251ed20b8bd95e3faf217b8e37f51daae3dd092cd90d7784c60a4db22",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGDRW1/master-v2-raw.png": "f4afaa38e8323af6bfc4218d42d977c954d31938e4d7f391ae4ed4d7c40dbdbd",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGDRW1/prompt-v2.txt": "eac75b48c84585aa0063420ec9a9aa0d1e7ad1e8f32e79c7ba86d5d04b93e99b",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGDRW2/master-v2-raw.png": "bdd3adb99b201483215f52b023bb36be1d5e7758b98a19c98ab180332dd629d1",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGDRW2/prompt-v2.txt": "1a9f6e4583959d39b97644842b2bab665dc0602ab9ac7ef38ccd1fe70cfb58e8",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGDRW3/master-v2-raw.png": "a0c90f4fca9ec0dd25ba9a57ea9e98d99554aaae95543982071520a3f193d2e9",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGDRW3/prompt-v2.txt": "63145c6c34ee1d5b369d4ebc29e3e20ec948a90bbd713df34c465037b4fd802a",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGDRWC/master-v2-raw.png": "fc1115e03cab97c12d4bbe3486ac34d7462090ed4bf658957946ee2e3295add2",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGDRWC/prompt-v2.txt": "ac24db2c1f76e1387acca71b6ea51dcc9f808b6a72b0c66f3e2bb326cdd736ca",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGMAN1/master-v1-raw.png": "2383f24d025351b1d7487a1a4a57c10953e2b34a7eeca5d9fabba287c96d4b7a",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGMAN1/prompt-v1.txt": "48cc34afc57986ac186fd95d6605e29c106fab3524b3ed1052ba81390388c684",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGMAN2/master-v1-raw.png": "2dbb24c4996a5516c7147f9271e48b4a5775275d02d58e709b1d2aa6531c89f8",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGMAN2/prompt-v1.txt": "c99772c5c7460965e87b6fd8c624dece60391218608389fa6b98828cb24fb444",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGMANC/master-v1-raw.png": "89706f71745c6c3ba3ca30e279eebb8996b1095ec6ff387732ff11332dbe9405",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGMANC/prompt-v1.txt": "c45c6ee379153e46bf05afd90e1af06faaf445a335bb48b2cf19b98674a848a7",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGMLIP/master-v1-raw.png": "91028ab41ab25bf1daedcf93792f68f3c2042f2d06b70c97c90c3a2fbcbeeab9",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGMLIP/prompt-v1.txt": "7475fc7dde3ab026f144cff623e2c3d505dc6d3c1ba089f784ab01d4746f5395",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGMOAT/master-v1-raw.png": "f6fdc12bd07a3c066e1e1e20731ce84e55e6a6bac6693f0d5d70ce41ada6e3ea",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGMOAT/prompt-v1.txt": "cdea7341657b969cefae03e066d95ac3b92c66a3eb607d8eb42d0f251ed126cb",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTPWL/master-v1-raw.png": "b71389996d827e4f28531e09298ee1f0a0b8921d1942d0714e9f6a7a88431e53",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTPWL/prompt-v1.txt": "3f51c54de160e78269ebbf65999b92bf425276cdc73b2ac462b9b7221c76e936",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTW11/master-v1-raw.png": "36be4a24914001579f1f9ff7c21a9bcb302735a98f5a3fbd74dad461e80b558e",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTW11/prompt-v1.txt": "12fd5a0dcdeda73b2727006cbacf1c4fd960eba8d1ace3d985c9ad2317f47f57",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTW12/master-v1-raw.png": "1c2dbdb1f175adda5d4a2faad0b600bc8040935f69ccaeee621621dbc0e7f98d",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTW12/prompt-v1.txt": "a7e6d2beb7ef3f6b2e955db83412e079ebf0e2b0a400d01bc994782759fb4feb",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTW1C/master-v1-raw.png": "1a8184fe767e874345585b315f31d5a806c649a39bc8af9e1fc8eb584affae5b",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTW1C/prompt-v1.txt": "0e0aefe23739a8fb4cb40f475ef6778df55960fd99b4215a20ff0d998ebb80bc",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTW21/master-v1-raw.png": "d840688144e9af8ce59642fb4efd35e6bfbfeeed7c47ac453e47b075ca761f9b",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTW21/prompt-v1.txt": "f7ad27a14ac2be6d37694e2fbdc02c9999f61f0a47df9c7e89319d9adabc49bc",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTW22/master-v1-raw.png": "63849a3fb3d5c1bae4fb6af6948acabeccdadf3c1433fd122a60a85141e92aac",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTW22/prompt-v1.txt": "027bc865ef3cff81f5a51e00f6dc06fd680e063d5bb4939efe47d5ad6d511672",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTW2C/master-v1-raw.png": "9b04e64fb1b206c331d021caa6ffce0d81e7feec47762d74aa5143168e931aca",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTW2C/prompt-v1.txt": "d02787afbb26407c8a3ad7e3e7d01cb6de39d3b52e2fb1285a2e486a60fbca28",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA11/master-v1-raw.png": "3433657d673b35741ff1ae67f49839312a1a0a76a5d75f59471ca4504f3e9836",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA11/prompt-v1.txt": "c0c32f663b3ae035e59c6ad0eb9101899817d89f33722cfdc230529b48675baa",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA12/master-v1-raw.png": "b2784b173e49d88266e51c01951f12a00714d23d9efb3ef627ace252ecc3f42f",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA12/prompt-v1.txt": "e6a5ec5fd4380f6f62e7b35bda73a0720bebadaa9f594607f65e2cd6cec00e1e",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA13/master-v1-raw.png": "c58816c2bfb99e9eb9d958e605ac46dc7327728242ad344a569fb047863d6d71",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA13/prompt-v1.txt": "e6ca251aeac5569270a04d82de64289656c62f99f875e4be553c997dc26cbdd9",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA2/master-v1-raw.png": "367d0069867437d797d2445060195a889bf6e6ebfa386ecca55c2a337f26fd03",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA2/prompt-v1.txt": "601bde68bb5df1088572695a07fd0e1232abe7f47af690553cde3308693f9df2",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA31/master-v1-raw.png": "1c70c8cc9b29e19077e250ed2dc45b3a2843bfe091e087865d4b278038f0337f",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA31/prompt-v1.txt": "b96dd6c80619836f6482585a117cd7d76afc7c93e9d9a6dd7cede58db9ef84b9",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA32/master-v1-raw.png": "9f129d5fd1c6448632ad0d690e1495c07ad023f61600e069c8683485f1c9deff",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA32/prompt-v1.txt": "572989dafd2b7025bd451df8521035cde00f601c9ad2e6823aa3cf4055506c2b",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA33/master-v1-raw.png": "e0a1dd67fa433b0994d4ee9bf02ef13f5ad8c49dd8df524c28dbdaa1737bc4e1",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA33/prompt-v1.txt": "f2f1a25e1ba4fffbb27ad3093cb9b7815497d17fdabb8e763de1523051821434",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA41/master-v1-raw.png": "3f799d7122aaaee9544cb045cf9806800d3c7ffa75f66e986b86f179f2c4a212",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA41/prompt-v1.txt": "ac78527a99fae5e9d76dff803b86ca3bb0e9451d0377a082156cf4a5270338fe",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA42/master-v1-raw.png": "0df4672aa47599bbb3e081b96a23a06cbe9c6a45aed3b55a445601ed5dc3e2e9",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA42/prompt-v1.txt": "6400167ec97e176e9579ffb663338625cf54eea315b704f3b63965e3ef12817d",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA43/master-v1-raw.png": "e08d019785657e360dc015d5ea96c51ff1b3833147aa026592b2d4b5ddcae4a5",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA43/prompt-v1.txt": "7b454a45c0f56c2e748b1ccf98bfa92d2117e8c6a0a1f8266897aaa4be65ec57",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA5/master-v1-raw.png": "f0e99719b21ea860518b60b6b5c0e10bdc23f127cbf8d3ae1d365db24db72d1b",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA5/prompt-v1.txt": "0ac9f8aa7575056214f04dee0b1a6ee52fc2ef5579ea707a179beec7a3315e54",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA61/master-v1-raw.png": "a2b49030adc1f299dcc67ff915480d35f2395615471bb1cf908ed4424bd9727f",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA61/prompt-v1.txt": "944289975b08a1e18c1e9835f88cc67a420e89f89a03831275692df4f88f81ec",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA62/master-v1-raw.png": "5587d6716c9dea464b5d21312a2ddc0b57d397215eb74dd4ea85231041bd2676",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA62/prompt-v1.txt": "f9aae73003f0eff3c7a619731b5bb8a9da54e63a6a7f7bb32facd828a89dc681",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA63/master-v1-raw.png": "d7e44686c4180fbf7f27cd021b307d80b0d2e5874ddef5551b37b5a468425a86",
+    "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA63/prompt-v1.txt": "af56ccfc74914dc7254d88db53ca2612455673bddeb30632af79d5a1642e90a3",
+    "assets/source/siege/playable-completion-20261028-v1/native-inventory-v1.json": "a461e1cfdc92e1600715fe8298f05ca9a9e56006238ab277e7794d6bdc4fef79",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGARCH.png": "b10ad164c5c98dc311d32e54e1050160ac033f635ac396c10b61942ff7ec57c1",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGBACK.png": "b8fd98da297d32c5aee49f9a0e5cbb8d22404ff582810177c4d6b2e6380e775a",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGDRW1.png": "802a16f701fd6d47980ac8306e174a920d5e14b6426d386105dd75982cf07fe8",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGDRW2.png": "c64dee4f8c0e1cc0a3436551082c4846ea005d0e1b33ed8a37a96564a88db6a6",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGDRW3.png": "051902298d2c29acd7a488034738c899fc7aeb86156bd6c12f557db6e6720546",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGDRWC.png": "34993c1d10916246b9cf18f1d9ec1b5defefb2a78fe6eebee81f71454fe79666",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGMAN1.png": "553f03ef5b5b65e622e4737f54c7c8734aca4e6f7c678f6bb451e2d675469317",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGMAN2.png": "f75dde7089c8a8a29fc70e7ffe52a7b16414c13c4fa454517723d89988b45e87",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGMANC.png": "8cc73be4f19743b5f3d8ef291b31c7bca147f6778485e0ceebd7cfd7a47cb7ec",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGMLIP.png": "6271a04c2e81b495f179a1f9c7b526c04bb021dcf3a91e1235f3d1378513908e",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGMOAT.png": "a4e03bd95e1fa73103a0e93036ee304eee7f61ac049cce5420ed6e38268d6a44",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGTPWL.png": "ee6bed1c325e866646e0ba1b1675e20f50e90b0fa318cfe45cdf335687ffa23d",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGTW11.png": "8b5e8fab7bf68d0a59d2faed8e7a0aaf07089d121daba9ec122f8b5d50b5b137",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGTW12.png": "a5eb151f5893b74b7486ec01d4371801ba778d3fadd39b646fd8a1e5c40c1e9a",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGTW1C.png": "0dec47a1e4922c43e4b01034afff908dcbf7f1bda6d98c1b7156b0e0a1732ce5",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGTW21.png": "08728555c55790b3b77ded0bd84e044dba852b0555102275b88fd05f0cface1d",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGTW22.png": "031d34a0fc89f1084d38e6f367076704c789aedd87210d1e332b524097dc592d",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGTW2C.png": "fe9871e2df7996ff87e1d6cc28a87b5c3824d7212c70f587466bce5a6dc72ddf",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA11.png": "d9c6d751220815664d575ecc9cc0ee85779d23327c4fb908cc6c8b95913f808d",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA12.png": "8689197999d91c9fd4f99b0deb5c254d3d8c143d80ec817390d9c0cb9a3e2963",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA13.png": "b787dbebdc57974266e4415be8909aabfad0d2ecdc7315a8110070d47689af8a",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA2.png": "c24c93cafbe15c604f0381b5b6354e20e69742c28bb97ee88ce6c843ffac246e",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA31.png": "af477ee43ed9fc3922e7d984bf3f945f1bfbe0f5466eee96d1af8a2cf454d587",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA32.png": "3e7698612de145d8d2d964fc7bd1275d87b7360dcb6e337a7ffbfd33231f0392",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA33.png": "e84efdfecce42cfcc9228705e6ae69587b18966f2b85caea357ee419d870f36e",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA41.png": "ff8a6cabf2d30d6e6a91accd7f386c57210c399eb5d485d08071d6aac1ce7a74",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA42.png": "92b805db61c85f02d26c0f1420287709784aafcc0f72552a77eb11f44a29237b",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA43.png": "91c9017dcc43b41cf027c0e21c0125411b9b6c76777fc1101bc1b463a83243c8",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA5.png": "73824a6339f84e04e56764110a21b6ddffea5ae6ee0e09ca91255210184bb5eb",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA61.png": "69946cb61ae8da57ba475afdd4c823c9230dd3f9b1166ea8e4f72296b7761f8c",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA62.png": "ee08ad0aad71f05bba2813c6dd6d5ad59e1a3065950709743faeae4911e92d9a",
+    "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA63.png": "42351611c98196e88fc3ccfc7481f7b760a75b12cd5be7429a8ca0d0298e320c",
+    "assets/source/siege/playable-completion-20261028-v1/prepare_selection_v1.py": "39e5d4ee1254e67597f9972006fdc33c07148d98ba177d912f28d1e18e5d9033",
+    "assets/source/siege/playable-completion-20261028-v1/selection-v1.json": "725ae8b73434dcc43a5af20bd5afe9af2522c55fe92dae649eb08908f14c2753",
+    "assets/source/town/siege/painted-background-v2/SGTGBACK.png": "b8fd98da297d32c5aee49f9a0e5cbb8d22404ff582810177c4d6b2e6380e775a",
+    "assets/source/town/siege/painted-background-v2/generation.json": "c83f5f9ea756a48774adf2efd2cd3a3459f2165efada062789d62ceb9166f369",
+    "assets/source/town/siege/painted-background-v2/master.png": "83478549b62870eec934283e649af0918fd61b59f9c02c69c7e057986cb7f421"
+  },
+  "native_siege": {
+    "gate": {
+      "arch": {
+        "x": 477,
+        "y": 238
+      },
+      "gate": {
+        "x": 399,
+        "y": 274
+      }
+    },
+    "imagePrefix": "runeterra/targon/siege/SGTG",
+    "moat": {
+      "bank": {
+        "x": 403,
+        "y": 80
+      },
+      "moat": {
+        "x": 410,
+        "y": 90
+      }
+    },
+    "shooter": "mountainArcher",
+    "static": {
+      "background": {
+        "x": 600,
+        "y": 49
+      },
+      "bottom": {
+        "x": 512,
+        "y": 347
+      },
+      "top": {
+        "x": 489,
+        "y": 79
+      }
+    },
+    "towerIconLarge": "runeterra/targon/siege/towerLarge.png",
+    "towerIconSmall": "runeterra/targon/siege/towerSmall.png",
+    "towers": {
+      "bottom": {
+        "battlement": {
+          "x": 602,
+          "y": 500
+        },
+        "creature": {
+          "x": 394,
+          "y": 299
+        },
+        "tower": {
+          "x": 602,
+          "y": 500
+        }
+      },
+      "keep": {
+        "battlement": {
+          "x": 720,
+          "y": 158
+        },
+        "creature": {
+          "x": 526,
+          "y": -29
+        },
+        "tower": {
+          "x": 720,
+          "y": 158
+        }
+      },
+      "top": {
+        "battlement": {
+          "x": 557,
+          "y": 24
+        },
+        "creature": {
+          "x": 342,
+          "y": -187
+        },
+        "tower": {
+          "x": 569,
+          "y": 35
+        }
+      }
+    },
+    "walls": {
+      "bottom": {
+        "x": 528,
+        "y": 350
+      },
+      "bottomMid": {
+        "x": 469,
+        "y": 291
+      },
+      "upper": {
+        "x": 524,
+        "y": 32
+      },
+      "upperMid": {
+        "x": 470,
+        "y": 127
+      }
+    }
+  },
+  "origins": [
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGARCH/master-v1-raw.png",
+      "sha256": "f1386d66d42b66675f35ac6706ef1d4e5c530ae5eccff1fd393de6765b3daa02"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGDRW1/master-v2-raw.png",
+      "sha256": "f4afaa38e8323af6bfc4218d42d977c954d31938e4d7f391ae4ed4d7c40dbdbd"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGDRW2/master-v2-raw.png",
+      "sha256": "bdd3adb99b201483215f52b023bb36be1d5e7758b98a19c98ab180332dd629d1"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGDRW3/master-v2-raw.png",
+      "sha256": "a0c90f4fca9ec0dd25ba9a57ea9e98d99554aaae95543982071520a3f193d2e9"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGDRWC/master-v2-raw.png",
+      "sha256": "fc1115e03cab97c12d4bbe3486ac34d7462090ed4bf658957946ee2e3295add2"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGMAN1/master-v1-raw.png",
+      "sha256": "2383f24d025351b1d7487a1a4a57c10953e2b34a7eeca5d9fabba287c96d4b7a"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGMAN2/master-v1-raw.png",
+      "sha256": "2dbb24c4996a5516c7147f9271e48b4a5775275d02d58e709b1d2aa6531c89f8"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGMANC/master-v1-raw.png",
+      "sha256": "89706f71745c6c3ba3ca30e279eebb8996b1095ec6ff387732ff11332dbe9405"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGMLIP/master-v1-raw.png",
+      "sha256": "91028ab41ab25bf1daedcf93792f68f3c2042f2d06b70c97c90c3a2fbcbeeab9"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGMOAT/master-v1-raw.png",
+      "sha256": "f6fdc12bd07a3c066e1e1e20731ce84e55e6a6bac6693f0d5d70ce41ada6e3ea"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTPWL/master-v1-raw.png",
+      "sha256": "b71389996d827e4f28531e09298ee1f0a0b8921d1942d0714e9f6a7a88431e53"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTW11/master-v1-raw.png",
+      "sha256": "36be4a24914001579f1f9ff7c21a9bcb302735a98f5a3fbd74dad461e80b558e"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTW12/master-v1-raw.png",
+      "sha256": "1c2dbdb1f175adda5d4a2faad0b600bc8040935f69ccaeee621621dbc0e7f98d"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTW1C/master-v1-raw.png",
+      "sha256": "1a8184fe767e874345585b315f31d5a806c649a39bc8af9e1fc8eb584affae5b"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTW21/master-v1-raw.png",
+      "sha256": "d840688144e9af8ce59642fb4efd35e6bfbfeeed7c47ac453e47b075ca761f9b"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTW22/master-v1-raw.png",
+      "sha256": "63849a3fb3d5c1bae4fb6af6948acabeccdadf3c1433fd122a60a85141e92aac"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTW2C/master-v1-raw.png",
+      "sha256": "9b04e64fb1b206c331d021caa6ffce0d81e7feec47762d74aa5143168e931aca"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA11/master-v1-raw.png",
+      "sha256": "3433657d673b35741ff1ae67f49839312a1a0a76a5d75f59471ca4504f3e9836"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA12/master-v1-raw.png",
+      "sha256": "b2784b173e49d88266e51c01951f12a00714d23d9efb3ef627ace252ecc3f42f"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA13/master-v1-raw.png",
+      "sha256": "c58816c2bfb99e9eb9d958e605ac46dc7327728242ad344a569fb047863d6d71"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA2/master-v1-raw.png",
+      "sha256": "367d0069867437d797d2445060195a889bf6e6ebfa386ecca55c2a337f26fd03"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA31/master-v1-raw.png",
+      "sha256": "1c70c8cc9b29e19077e250ed2dc45b3a2843bfe091e087865d4b278038f0337f"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA32/master-v1-raw.png",
+      "sha256": "9f129d5fd1c6448632ad0d690e1495c07ad023f61600e069c8683485f1c9deff"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA33/master-v1-raw.png",
+      "sha256": "e0a1dd67fa433b0994d4ee9bf02ef13f5ad8c49dd8df524c28dbdaa1737bc4e1"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA41/master-v1-raw.png",
+      "sha256": "3f799d7122aaaee9544cb045cf9806800d3c7ffa75f66e986b86f179f2c4a212"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA42/master-v1-raw.png",
+      "sha256": "0df4672aa47599bbb3e081b96a23a06cbe9c6a45aed3b55a445601ed5dc3e2e9"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA43/master-v1-raw.png",
+      "sha256": "e08d019785657e360dc015d5ea96c51ff1b3833147aa026592b2d4b5ddcae4a5"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA5/master-v1-raw.png",
+      "sha256": "f0e99719b21ea860518b60b6b5c0e10bdc23f127cbf8d3ae1d365db24db72d1b"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA61/master-v1-raw.png",
+      "sha256": "a2b49030adc1f299dcc67ff915480d35f2395615471bb1cf908ed4424bd9727f"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA62/master-v1-raw.png",
+      "sha256": "5587d6716c9dea464b5d21312a2ddc0b57d397215eb74dd4ea85231041bd2676"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA63/master-v1-raw.png",
+      "sha256": "d7e44686c4180fbf7f27cd021b307d80b0d2e5874ddef5551b37b5a468425a86"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/siege/playable-completion-20261028-v1/complete-composition-master-v1.png",
+      "sha256": "dcc89fef83fc8fad12fd2e89956523b15410ccf41d5743318ff180ac9ff22d7e"
+    },
+    {
+      "kind": "image-generation",
+      "path": "assets/source/town/siege/painted-background-v2/master.png",
+      "sha256": "83478549b62870eec934283e649af0918fd61b59f9c02c69c7e057986cb7f421"
+    }
+  ],
+  "rights": "Unresolved; release approval pending; original controls and official crest pixels are private references only.",
+  "schema": 1,
+  "siege_resources": {
+    "SGTGARCH": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGARCH/master-v1-raw.png",
+        "sha256": "f1386d66d42b66675f35ac6706ef1d4e5c530ae5eccff1fd393de6765b3daa02"
+      },
+      "native_size": [
+        65,
+        225
+      ],
+      "position": [
+        477,
+        238
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGARCH.png",
+        "sha256": "b10ad164c5c98dc311d32e54e1050160ac033f635ac396c10b61942ff7ec57c1"
+      }
+    },
+    "SGTGBACK": {
+      "master": {
+        "path": "assets/source/town/siege/painted-background-v2/SGTGBACK.png",
+        "sha256": "b8fd98da297d32c5aee49f9a0e5cbb8d22404ff582810177c4d6b2e6380e775a"
+      },
+      "native_size": [
+        800,
+        556
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGBACK.png",
+        "sha256": "b8fd98da297d32c5aee49f9a0e5cbb8d22404ff582810177c4d6b2e6380e775a"
+      }
+    },
+    "SGTGDRW1": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGDRW1/master-v2-raw.png",
+        "sha256": "f4afaa38e8323af6bfc4218d42d977c954d31938e4d7f391ae4ed4d7c40dbdbd"
+      },
+      "native_size": [
+        103,
+        87
+      ],
+      "position": [
+        399,
+        274
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGDRW1.png",
+        "sha256": "802a16f701fd6d47980ac8306e174a920d5e14b6426d386105dd75982cf07fe8"
+      }
+    },
+    "SGTGDRW2": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGDRW2/master-v2-raw.png",
+        "sha256": "bdd3adb99b201483215f52b023bb36be1d5e7758b98a19c98ab180332dd629d1"
+      },
+      "native_size": [
+        103,
+        87
+      ],
+      "position": [
+        399,
+        274
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGDRW2.png",
+        "sha256": "c64dee4f8c0e1cc0a3436551082c4846ea005d0e1b33ed8a37a96564a88db6a6"
+      }
+    },
+    "SGTGDRW3": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGDRW3/master-v2-raw.png",
+        "sha256": "a0c90f4fca9ec0dd25ba9a57ea9e98d99554aaae95543982071520a3f193d2e9"
+      },
+      "native_size": [
+        103,
+        87
+      ],
+      "position": [
+        399,
+        274
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGDRW3.png",
+        "sha256": "051902298d2c29acd7a488034738c899fc7aeb86156bd6c12f557db6e6720546"
+      }
+    },
+    "SGTGDRWC": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGDRWC/master-v2-raw.png",
+        "sha256": "fc1115e03cab97c12d4bbe3486ac34d7462090ed4bf658957946ee2e3295add2"
+      },
+      "native_size": [
+        103,
+        87
+      ],
+      "position": [
+        399,
+        274
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGDRWC.png",
+        "sha256": "34993c1d10916246b9cf18f1d9ec1b5defefb2a78fe6eebee81f71454fe79666"
+      }
+    },
+    "SGTGMAN1": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGMAN1/master-v1-raw.png",
+        "sha256": "2383f24d025351b1d7487a1a4a57c10953e2b34a7eeca5d9fabba287c96d4b7a"
+      },
+      "native_size": [
+        80,
+        300
+      ],
+      "position": [
+        720,
+        158
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGMAN1.png",
+        "sha256": "553f03ef5b5b65e622e4737f54c7c8734aca4e6f7c678f6bb451e2d675469317"
+      }
+    },
+    "SGTGMAN2": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGMAN2/master-v1-raw.png",
+        "sha256": "2dbb24c4996a5516c7147f9271e48b4a5775275d02d58e709b1d2aa6531c89f8"
+      },
+      "native_size": [
+        80,
+        300
+      ],
+      "position": [
+        720,
+        158
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGMAN2.png",
+        "sha256": "f75dde7089c8a8a29fc70e7ffe52a7b16414c13c4fa454517723d89988b45e87"
+      }
+    },
+    "SGTGMANC": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGMANC/master-v1-raw.png",
+        "sha256": "89706f71745c6c3ba3ca30e279eebb8996b1095ec6ff387732ff11332dbe9405"
+      },
+      "native_size": [
+        80,
+        300
+      ],
+      "position": [
+        720,
+        158
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGMANC.png",
+        "sha256": "8cc73be4f19743b5f3d8ef291b31c7bca147f6778485e0ceebd7cfd7a47cb7ec"
+      }
+    },
+    "SGTGMLIP": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGMLIP/master-v1-raw.png",
+        "sha256": "91028ab41ab25bf1daedcf93792f68f3c2042f2d06b70c97c90c3a2fbcbeeab9"
+      },
+      "native_size": [
+        200,
+        476
+      ],
+      "position": [
+        403,
+        80
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGMLIP.png",
+        "sha256": "6271a04c2e81b495f179a1f9c7b526c04bb021dcf3a91e1235f3d1378513908e"
+      }
+    },
+    "SGTGMOAT": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGMOAT/master-v1-raw.png",
+        "sha256": "f6fdc12bd07a3c066e1e1e20731ce84e55e6a6bac6693f0d5d70ce41ada6e3ea"
+      },
+      "native_size": [
+        213,
+        466
+      ],
+      "position": [
+        410,
+        90
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGMOAT.png",
+        "sha256": "a4e03bd95e1fa73103a0e93036ee304eee7f61ac049cce5420ed6e38268d6a44"
+      }
+    },
+    "SGTGTPWL": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTPWL/master-v1-raw.png",
+        "sha256": "b71389996d827e4f28531e09298ee1f0a0b8921d1942d0714e9f6a7a88431e53"
+      },
+      "native_size": [
+        200,
+        80
+      ],
+      "position": [
+        600,
+        49
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGTPWL.png",
+        "sha256": "ee6bed1c325e866646e0ba1b1675e20f50e90b0fa318cfe45cdf335687ffa23d"
+      }
+    },
+    "SGTGTW11": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTW11/master-v1-raw.png",
+        "sha256": "36be4a24914001579f1f9ff7c21a9bcb302735a98f5a3fbd74dad461e80b558e"
+      },
+      "native_size": [
+        100,
+        56
+      ],
+      "position": [
+        602,
+        500
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGTW11.png",
+        "sha256": "8b5e8fab7bf68d0a59d2faed8e7a0aaf07089d121daba9ec122f8b5d50b5b137"
+      }
+    },
+    "SGTGTW12": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTW12/master-v1-raw.png",
+        "sha256": "1c2dbdb1f175adda5d4a2faad0b600bc8040935f69ccaeee621621dbc0e7f98d"
+      },
+      "native_size": [
+        100,
+        56
+      ],
+      "position": [
+        602,
+        500
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGTW12.png",
+        "sha256": "a5eb151f5893b74b7486ec01d4371801ba778d3fadd39b646fd8a1e5c40c1e9a"
+      }
+    },
+    "SGTGTW1C": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTW1C/master-v1-raw.png",
+        "sha256": "1a8184fe767e874345585b315f31d5a806c649a39bc8af9e1fc8eb584affae5b"
+      },
+      "native_size": [
+        100,
+        56
+      ],
+      "position": [
+        602,
+        500
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGTW1C.png",
+        "sha256": "0dec47a1e4922c43e4b01034afff908dcbf7f1bda6d98c1b7156b0e0a1732ce5"
+      }
+    },
+    "SGTGTW21": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTW21/master-v1-raw.png",
+        "sha256": "d840688144e9af8ce59642fb4efd35e6bfbfeeed7c47ac453e47b075ca761f9b"
+      },
+      "native_size": [
+        50,
+        126
+      ],
+      "position": [
+        569,
+        35
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGTW21.png",
+        "sha256": "08728555c55790b3b77ded0bd84e044dba852b0555102275b88fd05f0cface1d"
+      }
+    },
+    "SGTGTW22": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTW22/master-v1-raw.png",
+        "sha256": "63849a3fb3d5c1bae4fb6af6948acabeccdadf3c1433fd122a60a85141e92aac"
+      },
+      "native_size": [
+        50,
+        126
+      ],
+      "position": [
+        569,
+        35
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGTW22.png",
+        "sha256": "031d34a0fc89f1084d38e6f367076704c789aedd87210d1e332b524097dc592d"
+      }
+    },
+    "SGTGTW2C": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGTW2C/master-v1-raw.png",
+        "sha256": "9b04e64fb1b206c331d021caa6ffce0d81e7feec47762d74aa5143168e931aca"
+      },
+      "native_size": [
+        90,
+        110
+      ],
+      "position": [
+        557,
+        24
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGTW2C.png",
+        "sha256": "fe9871e2df7996ff87e1d6cc28a87b5c3824d7212c70f587466bce5a6dc72ddf"
+      }
+    },
+    "SGTGWA11": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA11/master-v1-raw.png",
+        "sha256": "3433657d673b35741ff1ae67f49839312a1a0a76a5d75f59471ca4504f3e9836"
+      },
+      "native_size": [
+        150,
+        206
+      ],
+      "position": [
+        528,
+        350
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA11.png",
+        "sha256": "d9c6d751220815664d575ecc9cc0ee85779d23327c4fb908cc6c8b95913f808d"
+      }
+    },
+    "SGTGWA12": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA12/master-v1-raw.png",
+        "sha256": "b2784b173e49d88266e51c01951f12a00714d23d9efb3ef627ace252ecc3f42f"
+      },
+      "native_size": [
+        150,
+        206
+      ],
+      "position": [
+        528,
+        350
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA12.png",
+        "sha256": "8689197999d91c9fd4f99b0deb5c254d3d8c143d80ec817390d9c0cb9a3e2963"
+      }
+    },
+    "SGTGWA13": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA13/master-v1-raw.png",
+        "sha256": "c58816c2bfb99e9eb9d958e605ac46dc7327728242ad344a569fb047863d6d71"
+      },
+      "native_size": [
+        150,
+        206
+      ],
+      "position": [
+        528,
+        350
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA13.png",
+        "sha256": "b787dbebdc57974266e4415be8909aabfad0d2ecdc7315a8110070d47689af8a"
+      }
+    },
+    "SGTGWA2": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA2/master-v1-raw.png",
+        "sha256": "367d0069867437d797d2445060195a889bf6e6ebfa386ecca55c2a337f26fd03"
+      },
+      "native_size": [
+        151,
+        253
+      ],
+      "position": [
+        512,
+        347
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA2.png",
+        "sha256": "c24c93cafbe15c604f0381b5b6354e20e69742c28bb97ee88ce6c843ffac246e"
+      }
+    },
+    "SGTGWA31": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA31/master-v1-raw.png",
+        "sha256": "1c70c8cc9b29e19077e250ed2dc45b3a2843bfe091e087865d4b278038f0337f"
+      },
+      "native_size": [
+        100,
+        200
+      ],
+      "position": [
+        469,
+        291
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA31.png",
+        "sha256": "af477ee43ed9fc3922e7d984bf3f945f1bfbe0f5466eee96d1af8a2cf454d587"
+      }
+    },
+    "SGTGWA32": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA32/master-v1-raw.png",
+        "sha256": "9f129d5fd1c6448632ad0d690e1495c07ad023f61600e069c8683485f1c9deff"
+      },
+      "native_size": [
+        100,
+        200
+      ],
+      "position": [
+        469,
+        291
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA32.png",
+        "sha256": "3e7698612de145d8d2d964fc7bd1275d87b7360dcb6e337a7ffbfd33231f0392"
+      }
+    },
+    "SGTGWA33": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA33/master-v1-raw.png",
+        "sha256": "e0a1dd67fa433b0994d4ee9bf02ef13f5ad8c49dd8df524c28dbdaa1737bc4e1"
+      },
+      "native_size": [
+        100,
+        200
+      ],
+      "position": [
+        469,
+        291
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA33.png",
+        "sha256": "e84efdfecce42cfcc9228705e6ae69587b18966f2b85caea357ee419d870f36e"
+      }
+    },
+    "SGTGWA41": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA41/master-v1-raw.png",
+        "sha256": "3f799d7122aaaee9544cb045cf9806800d3c7ffa75f66e986b86f179f2c4a212"
+      },
+      "native_size": [
+        100,
+        200
+      ],
+      "position": [
+        470,
+        127
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA41.png",
+        "sha256": "ff8a6cabf2d30d6e6a91accd7f386c57210c399eb5d485d08071d6aac1ce7a74"
+      }
+    },
+    "SGTGWA42": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA42/master-v1-raw.png",
+        "sha256": "0df4672aa47599bbb3e081b96a23a06cbe9c6a45aed3b55a445601ed5dc3e2e9"
+      },
+      "native_size": [
+        100,
+        200
+      ],
+      "position": [
+        470,
+        127
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA42.png",
+        "sha256": "92b805db61c85f02d26c0f1420287709784aafcc0f72552a77eb11f44a29237b"
+      }
+    },
+    "SGTGWA43": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA43/master-v1-raw.png",
+        "sha256": "e08d019785657e360dc015d5ea96c51ff1b3833147aa026592b2d4b5ddcae4a5"
+      },
+      "native_size": [
+        100,
+        200
+      ],
+      "position": [
+        470,
+        127
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA43.png",
+        "sha256": "91c9017dcc43b41cf027c0e21c0125411b9b6c76777fc1101bc1b463a83243c8"
+      }
+    },
+    "SGTGWA5": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA5/master-v1-raw.png",
+        "sha256": "f0e99719b21ea860518b60b6b5c0e10bdc23f127cbf8d3ae1d365db24db72d1b"
+      },
+      "native_size": [
+        80,
+        241
+      ],
+      "position": [
+        489,
+        79
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA5.png",
+        "sha256": "73824a6339f84e04e56764110a21b6ddffea5ae6ee0e09ca91255210184bb5eb"
+      }
+    },
+    "SGTGWA61": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA61/master-v1-raw.png",
+        "sha256": "a2b49030adc1f299dcc67ff915480d35f2395615471bb1cf908ed4424bd9727f"
+      },
+      "native_size": [
+        100,
+        200
+      ],
+      "position": [
+        524,
+        32
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA61.png",
+        "sha256": "69946cb61ae8da57ba475afdd4c823c9230dd3f9b1166ea8e4f72296b7761f8c"
+      }
+    },
+    "SGTGWA62": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA62/master-v1-raw.png",
+        "sha256": "5587d6716c9dea464b5d21312a2ddc0b57d397215eb74dd4ea85231041bd2676"
+      },
+      "native_size": [
+        100,
+        200
+      ],
+      "position": [
+        524,
+        32
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA62.png",
+        "sha256": "ee08ad0aad71f05bba2813c6dd6d5ad59e1a3065950709743faeae4911e92d9a"
+      }
+    },
+    "SGTGWA63": {
+      "master": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/modular/SGTGWA63/master-v1-raw.png",
+        "sha256": "d7e44686c4180fbf7f27cd021b307d80b0d2e5874ddef5551b37b5a468425a86"
+      },
+      "native_size": [
+        100,
+        200
+      ],
+      "position": [
+        524,
+        32
+      ],
+      "registered_frame": {
+        "path": "assets/source/siege/playable-completion-20261028-v1/native-v1/SGTGWA63.png",
+        "sha256": "42351611c98196e88fc3ccfc7481f7b760a75b12cd5be7429a8ca0d0298e320c"
+      }
+    }
+  },
+  "status": "authored configuration",
+  "user_rejected": false,
+  "visual_review": "Root inspected whole intact/destroyed native-v1; final timber-only bridges reviewed separately. Source inspection only, not runtime/user/release acceptance.",
+  "workflow": "image-based-painted-2d"
+}

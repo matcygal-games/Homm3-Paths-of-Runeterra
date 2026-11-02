@@ -1,0 +1,27 @@
+{
+  "status": "authored configuration",
+  "scope": "Generated52-pose painted action-atlas candidate; no visual or runtime acceptance",
+  "image_generation_used": true,
+  "provider": "OpenAI built-in imagegen",
+  "model": "not exposed by built-in tool",
+  "model_id_exposed": false,
+  "prompt": "Use case: identity-preserve / game-sprite animation production. Image1 is the OWN painted Legion Veteran identity and materials reference. Image2 is the OWN exact pose/placement edit target, an RGBA action atlas1440 by2040,8columns and12rows of180 by170 cells. Replace ONLY each tiny primitive figure in image2 with the painted armored Veteran of image1 IN THE EXACT SAME BODY/WEAPON POSE and cell position. Image3 is a completed OWN Recruit action atlas showing desired consistent native-painted animation grammar, not a source to recolor or copy: the Veteran must independently retain image1 full cuirass, layered iron shoulder plates, metal cheek/mouth guard, thigh lames, knee armor, worn red tabard, boots, broad single-edged falchion and round crest buckler. Preserve image1 armor through every motion. Original Heroes III richly textured low-resolution prerendered-painted rendering; compact silhouette, light upperleft, restrained metal highlights, no glossy modern 3D. EXACTaction-row order and occupied-cell counts: row1 SIX right-facing walking-cycle poses with alternating feet; row2 FOUR small equipment-check fidget poses; row3 ONE planted idle; row4 FOUR actual hit-recoil poses; row5 FOUR shield-defend/bracing poses; row6 SIX progressive falling-death poses ending prone; row7 FOUR turning-toward-viewer poses; row8 FOUR turning-back poses; row9 SIX diagonal-upward sword attack anticipation,backswing,contact,follow-through,recovery poses; row10 SIX front-level sword attack poses; row11 SIX diagonal-down sword attack poses; row12 ONE actual prone corpse matching final death. Empty other cells must remain genuinely TRANSPARENT. Keep fixed family scale, same planted-feet anchor, fixed camera and light across poses; no auto-fit each figure to fill cells. Each strike must move blade/arms and each fall must collapse. Sprites entirely separate inside original180x170cells, no touching/clipping. No text,no gridlines,no scenery,no floor,no pedestal,no added insignia or other-faction art. Preserve independently painted round-shield mark. Most important exact8-column12-row pose layout and coherent heavier Veteran equipment in every pose.",
+  "painted_master": "assets/source/creatures/legionVeteran/painted-v1/action-atlas-v1.png",
+  "original_generated_path": "C:/Users/matcy/.codex/generated_images/01a159de-ed30-7bc2-98ee-79e3702cd7f9/exec-e50783c6-df2c-4dfd-a5d5-2857557bd35f.png",
+  "references": [
+    {
+      "path": "assets/source/creatures/legionVeteran/painted-v1/standing-master-v1.png",
+      "role": "own painted identity reference"
+    },
+    {
+      "path": "assets/source/creatures/legionVeteran/rig-v1/run-f/transparent-action-atlas-guide-v2.png",
+      "role": "own pose and layout target; guide not selected as painted pixels"
+    },
+    {
+      "path": "assets/source/creatures/legionRecruit/painted-v1/action-atlas-v1.png",
+      "role": "same faction base/upgrade camera/action-layout reference only"
+    }
+  ],
+  "native_visual_review": "pending",
+  "release_accepted": false
+}

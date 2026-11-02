@@ -1,0 +1,82 @@
+{
+  "actual_source_witnesses": {
+    "ground_wall": [
+      420,
+      316
+    ],
+    "raised_canopy": [
+      420,
+      268
+    ],
+    "visible_frontage": [
+      545,
+      315
+    ]
+  },
+  "all35_actual_bodies_retained_in_default": true,
+  "base_shared_helper_sha256": "1798ff8d33d842df0351eb9639a0d37158fd04637ae95b80825ccfca67a6255e",
+  "checks": [
+    {
+      "actual_error": null,
+      "check": "default-no-opt-in-keeps-all35-full-source-bodies",
+      "expected_rejection_contains": null,
+      "passed": true
+    },
+    {
+      "actual_error": null,
+      "check": "actual-source-Market-canopy-proposal-admitted",
+      "expected_rejection_contains": null,
+      "passed": true
+    },
+    {
+      "actual_error": "Projected cover intrudes into an actual closed ground wall/footprint: marketplace",
+      "check": "fully-repinned-permission-cannot-open-real-closed-stall-wall",
+      "expected_rejection_contains": "closed ground wall/footprint",
+      "passed": true
+    },
+    {
+      "actual_error": "Projected cover may never waive an actual visible frontage/entry: marketplace",
+      "check": "fully-repinned-permission-cannot-open-visible-frontage",
+      "expected_rejection_contains": "visible frontage/entry",
+      "passed": true
+    },
+    {
+      "actual_error": "Actual source ground wall still rejects intruding global path",
+      "check": "real-ground-wall-intrusion-remains-rejected",
+      "expected_rejection_contains": "ground wall still rejects",
+      "passed": true
+    },
+    {
+      "actual_error": "Actual source frontage still rejects other-building approach",
+      "check": "real-other-frontage-intrusion-remains-rejected",
+      "expected_rejection_contains": "frontage still rejects",
+      "passed": true
+    },
+    {
+      "actual_error": "Closed occupied footprint differs from its actual source contour/body: marketplace",
+      "check": "repinned-sparse-sole-mask-cannot-replace-closed-occupied-floor",
+      "expected_rejection_contains": "actual source contour/body",
+      "passed": true
+    },
+    {
+      "actual_error": "Unknown or duplicate source-ground projection type/state",
+      "check": "unknown-projection-type-rejected",
+      "expected_rejection_contains": "Unknown or duplicate",
+      "passed": true
+    }
+  ],
+  "failed": 0,
+  "passed": 8,
+  "proposal_helper": {
+    "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v1/physical-refinement-v1/ground_projection_proposal_v1.py",
+    "sha256": "f970d5f8796b21d5ef02a6c7890d2c91a41ea6372e37d2a189cfa3e9673564e0"
+  },
+  "record": {
+    "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v1/physical-refinement-v1/market-projection-proposal-v1/projection-record.json",
+    "sha256": "5301848cf88edacf99167d06d808571e84766abdbaf3cae411f934f0a5bffb2b"
+  },
+  "scope": "Executed opt-in proposal validator and actual source-ground intrusion predicates only. This is not a complete all35 town baseline or meaningful whole-town displaced/stair/water/path-cut control suite.",
+  "shared_helper_or_actors_modified": false,
+  "status": "authored configuration",
+  "whole_physical_baseline_passed": false
+}

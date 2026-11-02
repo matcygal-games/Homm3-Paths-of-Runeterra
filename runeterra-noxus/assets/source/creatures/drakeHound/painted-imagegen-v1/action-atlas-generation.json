@@ -1,0 +1,35 @@
+{
+  "kind": "battle-atlas",
+  "limitations": [
+    "Returned atlas did not preserve exact guide positions; extraction requires explicit original-source rectangles and contact mapping.",
+    "No frame may be filled with idle posing as attack/death.",
+    "Native visual, timing, registration, equipment continuity and rights remain pending."
+  ],
+  "model": "not exposed by built-in tool",
+  "model_id_exposed": false,
+  "original_tool_output_hint": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a159e9-f14d-7322-a4fe-626713040271 as C:\\Users\\matcy\\.codex\\generated_images\\01a159e9-f14d-7322-a4fe-626713040271\\exec-ddc786ef-e073-4cb8-8348-a97deb521842.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "production_status": "candidate-unreviewed-atlas-registration",
+  "prompt": "Use case: sketch-to-render. Asset type: PRODUCTION CHARACTER ACTION ATLAS on genuine transparent alpha. Input 1 is an unpainted NOXUS pose-registration sheet, not finished art. Input 2 is the independently painted drake-hound identity MASTER. Replace each small plain guide reptile in image 1 with the SAME painted reptile from image 2, respecting the exact pose and position of EACH guide, fixed camera, same body length and foot ground line, same leather harness and scale pattern in every frame. Preserve the atlas canvas 1440x2040 EXACTLY and its EIGHT equal 180-pixel columns by TWELVE equal170-pixel rows. Each frame stays within its own cell; use only cells occupied by a guide; leave every empty cell and all margins alpha-zero. This is 52 actual varied poses, not 96 standing copies. Paint at guide scale, don't enlarge characters or crop margins. Row action schedule top to bottom: 1 six gait-cycle poses (alternating diagonal planted feet, weight shift); 2 four modest head/tail fidgets; 3 one still ready idle; 4 four hit-recoil poses with real backward head/body response; 5 four low defensive crouches; 6 six progressively falling DEATH poses ending entirely flat on side, no standing corpse; 7 four turn-toward-viewer poses from side through front; 8 four turning-back poses ending side; 9 six upward bite windup/open jaw/lunge/contact/recovery poses; 10 six horizontal bite windup/open jaw/lunge/contact/recovery; 11 six downward bite windup/open jaw/lunge/contact/recovery; 12 ONE final flat corpse. Exact same single-headed long-snouted low charcoal olive reptile, four clawed legs, long tail, low dorsal ridges, simple narrow crimson leather chest harness/iron collar, no armor or wings/rider. Rich textured painted/prerendered 1999 Heroes III materials, controlled upper-left light, matte scale richness, natural dark edge separation. Independently draw the anatomy in the controlled poses; do NOT just paste/rotate/scale one standing master. No grid lines, text, labels, logos, scenery, floor, background haze or shadows; all outside subject silhouettes truly transparent. Consistent identity and planted-contact registration are critical.",
+  "provider": "OpenAI built-in imagegen",
+  "references": [
+    {
+      "path": "assets/source/creatures/drakeHound/rig-v1/run-f/transparent-action-atlas-guide-v2.png",
+      "sha256": "04f0ad247f2baa7a8cafeddf206f52210c12107a641098d9090055e1a178023f"
+    },
+    {
+      "path": "assets/source/creatures/drakeHound/painted-imagegen-v1/master-clean-attempt-v2.png",
+      "sha256": "775f4f72c4732d25cb90db803f096b43fe7d506ea2c68e83e1f1950e55a35a72"
+    }
+  ],
+  "refs": [
+    "assets/source/creatures/drakeHound/rig-v1/run-f/transparent-action-atlas-guide-v2.png",
+    "assets/source/creatures/drakeHound/painted-imagegen-v1/master-clean-attempt-v2.png"
+  ],
+  "runtime_verified": false,
+  "schemaVersion": 1,
+  "source_sha256": "32280cf66781e28565295e94529bc8b4827e0827953d38092d2891f3efc37574",
+  "status": "authored configuration",
+  "unit": "drakeHound",
+  "visual_approval_granted": false,
+  "workspace_copy": "assets/source/creatures/drakeHound/painted-imagegen-v1/action-atlas-rejected-grid-v1.png"
+}

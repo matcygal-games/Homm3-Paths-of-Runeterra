@@ -1,0 +1,110 @@
+{
+  "acceptance": "Technical candidate only; current native/art/rights acceptance remains separate.",
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed built-in OpenAI imagegen painted sources and deterministic technical assembly",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": false,
+    "method": "Existing canonical alpha128 silhouette area or one-native-pixel outward MaxFilter3-minus-silhouette border.",
+    "painted_source_provenance": {
+      "conversion": {
+        "alpha_bbox": [
+          25,
+          28,
+          1513,
+          986
+        ],
+        "alpha_treatment": "Preserved painted RGBA, including any soft halo; no threshold erasure/background removal",
+        "canvas": [
+          800,
+          374
+        ],
+        "mirror_x": false,
+        "placed_origin": [
+          224,
+          48
+        ],
+        "placed_size": [
+          201,
+          129
+        ],
+        "rect": [
+          224,
+          40,
+          201,
+          137
+        ],
+        "source_canvas": [
+          1536,
+          1024
+        ],
+        "source_coordinate_basis": "original master",
+        "uniform_scale": 0.1350806451612903,
+        "upscaled": false
+      },
+      "generation_record": "assets/source/town/northern-village-20261024-v3/provenance/capitol/generation.json",
+      "image_generation_used": true,
+      "model": "Not exposed by the built-in tool",
+      "model_id_exposed": false,
+      "painted_master": "assets/source/town/buildings-v6/capitol/master.png",
+      "painted_master_sha256": "d25eb3728169ced9bb0c33d51b7d11957f76f56731ad5f1a62833e2209110b45",
+      "prompt": "Precise local heraldry edit of image 1, the existing painted Freljord grand hall building master. Preserve its EXACT architecture, all roofs, complete silhouette, frontal three-quarter camera, canvas 1536x1024, snow, doorway, stairs, timber grain, lighting and background. Change ONLY the generic knot heraldry in the triangular front gable directly above the main doorway AND replace the existing generic knot emblems on the blue cloth banners with the same Freljord crest: replace the generic triquetra/knot emblem with a faithful painted/carved version of the official FRELJORD REGIONAL CREST shown in image 2. Image2 is design reference only, not a pasted logo. Preserve its recognizable angular interlocked upper arms and long central downward point, the true Freljord silhouette; NOT a snowflake, triquetra, Demacian wings or invented royal crown. On wooden panel use aged pale-gold/brown carved relief against dark wood. On any existing cloth preserve cloth folds and use muted aged gold thread. Fit within existing panel or existing banner without enlarging. Do not add new banners or remove buildings. No text or other changes. Original Heroes of Might and Magic III compatible richly textured painted 2D building appearance, restrained highlights, native-scale readability. No Blender or equivalent 3D rendering, no shiny modern CGI, no flat vector sticker, no neon or splash-art aesthetic. This is a local crest repair and must preserve building geometry.",
+      "provider": "OpenAI built-in imagegen",
+      "references": [
+        {
+          "path": "assets/source/town/buildings-v6/capitol/master.png",
+          "sha256": "d25eb3728169ced9bb0c33d51b7d11957f76f56731ad5f1a62833e2209110b45"
+        },
+        {
+          "path": "assets/source/town/northern-village-20261024-v3/provenance/capitol/generation.json",
+          "sha256": "b84090f33649ef27d2bc22140b2b273cc1c747ef43436f315d22671180a9bcc0"
+        }
+      ],
+      "technical_producer": {
+        "path": "assets/source/town/northern-village-20261024-v3/prepare_candidate.py",
+        "sha256": "5c79a631c542104c95ba473b355557f65e2f8b214faf07f66a5024e3b0c21a85"
+      },
+      "tool": "image_gen.imagegen",
+      "visual_approval_granted": false
+    },
+    "references": [
+      {
+        "path": "assets/source/town/northern-village-20261024-v3/prepared/capitol/layer.png",
+        "sha256": "79a769d7a247c013efd665e35983496f8cfc5edc9b3949465c9173325ed561de"
+      }
+    ]
+  },
+  "inputs": [
+    {
+      "path": "assets/source/town/northern-village-20261024-v3/layout-v3.json",
+      "sha256": "5760fa4c000093b10b50e8fcaaddec4a23897dd03f56b5ac9e2258db4c88a153"
+    },
+    {
+      "path": "scripts/prepare_town_art.py",
+      "sha256": "71476dbf913919f5cc07bab81b87236c4601ef3fe0b38d627fff88c7fe91fa46"
+    },
+    {
+      "path": "assets/source/town/northern-village-20261024-v3/prepare_candidate.py",
+      "sha256": "5c79a631c542104c95ba473b355557f65e2f8b214faf07f66a5024e3b0c21a85"
+    }
+  ],
+  "output_path": "Content/Sprites/runeterra/freljord/town/structures/capitol_area.png",
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "source": "assets/source/town/northern-village-20261024-v3/prepared/capitol/area.png",
+  "source_canvas": [
+    800,
+    374
+  ],
+  "source_sha256": "1178d2b86bcfb57bd40ca4b802c71b61138738a0e3e0b041ac7b18fc4bb88844",
+  "status": "authored configuration",
+  "visual_approval_granted": false
+}

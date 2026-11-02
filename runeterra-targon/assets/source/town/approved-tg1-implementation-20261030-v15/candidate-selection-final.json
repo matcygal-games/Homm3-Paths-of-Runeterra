@@ -1,0 +1,831 @@
+{
+  "actual_source_generated_geometry_consumer_pass": true,
+  "candidate_only": true,
+  "canonical_before_pins": {
+    "assets/manifest.json": "683761983fc34fc1d19571cf8ec1d825602a630c347b20ece36e93dc8e63b1ba",
+    "content/factions.json": "f3645bace30084b46f6cb0fd746a2dee7b06038d60f49d0f5ecbdeba3940696f",
+    "design/town-visuals.json": "b3f8d045d20fb708c2a70a90cacb21634b839b5975e0d3903d61e166b46e8fc6"
+  },
+  "content": {
+    "path": "assets/source/town/approved-tg1-implementation-20261030-v15/factions-candidate.json",
+    "sha256": "e17f8b17284f2e0fec5a37ce88c1bf026cf503799d056b8888c5aa52e7ada143"
+  },
+  "converter_passes": 2,
+  "design": {
+    "path": "assets/source/town/approved-tg1-implementation-20261030-v15/town-visuals-candidate.json",
+    "sha256": "aa43a6b6cc4454765d60efffb1524bc4987d8c037924fba658696e9040028a4d"
+  },
+  "frame_index": {
+    "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-final-frames.json",
+    "sha256": "7b76fc9d3fef4949ab6783e6bf710811f05a172e64ddab4c7e2aebb3ae16b9d2"
+  },
+  "native_output_pins": {
+    "Content/Sprites/runeterra/targon/town/background.png": "206813e189a81da94f5a7fabe958fbb4f480d8f151a2d1ad763844e0f42a38c0",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f000.png": "1278da88db9d72b6cd767b92dc6806be07b806dfeea22eda6006d07531b7a6a5",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f001.png": "33ec62cc8783cf20a41cca0c109984d08bd124aaf45db1ddbf281f62a969d34e",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f002.png": "2de6234a1e29a2226108437ed63968b7c042e117b3b1d4e378a9acedd16c3e5e",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f003.png": "9268f9bfbb4314ea8cc83571466749a76654b85414bc0ddd0cfea0140c93ef13",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f005.png": "9ee98fbbead8b718b3a35c6ee409f09410a390cc4229bf74291f09e414e0e919",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f007.png": "a74e5d489493944265613daf45d44b2c6062df457ac3191c1149de34a070f35e",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f008.png": "30659998145699947c0f51ed12d42fc91e24895c87682a4e8f4902ab296a8231",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f009.png": "0ce49061c29d97caf4d18762ec32c7bf581a8f68fe4f069123c8c44d35b1d19b",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f010.png": "eebbf2fe33fbdcc5d3850b4bde2e5f2ec7e2e517e6cff9a6f7d74ba6c9a53ff1",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f011.png": "1a67cb776588a080fdcf333f59496579ec4dbcf091b2125555df6331ff5f25cc",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f012.png": "496a3283c233d4c383596ff4f5bc2adb8272688372a35535298f9560e7d5328f",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f013.png": "48abb35b512f196e08a82347fe9a3d978b466e1dc8ab09d4a04ae978e5ef1dbf",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f014.png": "c09bc5f9e8faf5b1d8c25cc5da29ccca443a2af62b92e853d10a13713545a422",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f015.png": "fe09d6ac5d4a760e8d4122d5c12215d02e7b6491e36c3c39f9fe47078e512198",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f016.png": "48564e2d86c4230db8d9a1b2a8216b4e726d850ef766440639ef2c4a7c017310",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f017.png": "e75bc1cb5769befe9f6018761a1e89daf1ae49c75f8fff05479bba2acf96cd24",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f021.png": "cb0be1d04275e11bed1dec6e8ae8e8bf5d2f852603f0fe6b7a68d1df79e56ec3",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f022.png": "43d9559797c394140782849c13e9df99fc7c4c2767f44853e89a877e8f0ee010",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f023.png": "75d30ae97e6a45335efe3b0b502f1fa96a8fb82ae53b256930c95741fbde70ba",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f026.png": "e4bcd8a792729ff2e33d30b95929cd2107a989b2a56bb0cd0d4a9b85a8a40128",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f027.png": "5a5d32d90fea957aa4bc5ef8ff9619df9ed5aab5edbd58121de13183a58bf9a2",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f030.png": "91e047a45d52fb490956cdebb46e9b5f0fbc29b874e1e9d70266d8cf66195959",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f031.png": "fd74c497a41434abc0035f51418d300792adc42ce3293b51bdd62eb49a7df14e",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f032.png": "4b9bc6470b6cb5f1a4b6037de8359fcb8f5dcbe2cb0a933c343c44f1c0a95a84",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f033.png": "c8e12d77cd4edfe02b58c8da7a014528ba37aab52fba3256f3d30c5f507acce6",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f034.png": "1ced73c812ef88879b8efb9598ea9281ae2566b6460643b4cc64d0e190653d8f",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f035.png": "473a27bfa12de7d0d4da905f9714927ec84668acc41fbb7e2dcfb714bcbe580d",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f036.png": "4172d6d1b6d73f39bfcc1c164780faff2a020761615197ecf465f64d55be0618",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f037.png": "497a74a775e2b45c8c507d08d6b431ee3ecac64ec0979add8796966fc22d88dc",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f038.png": "b8cde99498ea1857df230610d35809063c751ea5e53d33b2b108e5da163fd374",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f039.png": "6ed31c4b882da47e661d0933224dccdac8fdf56ca7add3d7cd1af28e875d3f19",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f040.png": "1a6de0c215c4d05c3378ed18cb28dff1036b3f0cc8ee28ba62526b29684e6db7",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f041.png": "65409e599aa1270d0d11b63a763a8587a545220ca358e51075fd36e48eae7507",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f042.png": "5b8f41f9d51c97caf96ca233639fbb63b5e274e7e5a9d847f487dd9fa81efbbd",
+    "Content/Sprites/runeterra/targon/town/buildingIcons-frames/g00-f043.png": "ee190fb65850fdd04b299c30abe7bcbd4234c401b2d1317909862804730cef7a",
+    "Content/Sprites/runeterra/targon/town/buildingIcons.json": "c9512809afda0c6174ef6a48b3f83e9ccc64967adc4a272143201312e8cad0a1",
+    "Content/Sprites/runeterra/targon/town/structures/blacksmith-frames/g00-f000.png": "c8dbcda0ef602d264d7ce96d855178351464e78d4fd6dd2d4fe0c140128d27c1",
+    "Content/Sprites/runeterra/targon/town/structures/blacksmith.json": "3be6ef5bd0a297f5f9bfefdf560989e5fe70a95d6d012bf55eec80ee2f856f67",
+    "Content/Sprites/runeterra/targon/town/structures/blacksmith_area.png": "d04a0ec34dadd86a92aa26e14948f36e8b6dea8556ee3bf3de229ae20aa80022",
+    "Content/Sprites/runeterra/targon/town/structures/blacksmith_border.png": "a88c20ff6b4a4328a9acbdf4d0842392cc38f66fd985c1d29565e272fa88b8b1",
+    "Content/Sprites/runeterra/targon/town/structures/blacksmith_campaign.png": "37b7ba7305807fc278bba501aee5e452f3735880119630db52b0725f8a7bdc51",
+    "Content/Sprites/runeterra/targon/town/structures/capitol-frames/g00-f000.png": "43b2c68af52866fe42dc555c83ef33d3dc6b8e0de5a91e37612279d506f4cc98",
+    "Content/Sprites/runeterra/targon/town/structures/capitol.json": "7cb4bae8b52015985bde5dc34d110be489572d0e6ae547d9c90b9463db3b3e96",
+    "Content/Sprites/runeterra/targon/town/structures/capitol_area.png": "e86d0cfa148fc4869d26d15366c5d6a62a175ed4074498d0b5822a90049879ed",
+    "Content/Sprites/runeterra/targon/town/structures/capitol_border.png": "548a2ff39af7e23314eda1dde4a07e5edcb25309bb6605028c9f8bc58be8e7b0",
+    "Content/Sprites/runeterra/targon/town/structures/capitol_campaign.png": "404dc86fc5e67823890121974b80c4b021e62b70b4d19bb2e2b42dbd94717748",
+    "Content/Sprites/runeterra/targon/town/structures/castle-frames/g00-f000.png": "3517d6167e849e0a110a9cad85dff79fa261a748c1b0bc8faf08572286772c05",
+    "Content/Sprites/runeterra/targon/town/structures/castle.json": "d1c41f476144de56a39b0c8f377c685489cd9502cd9c6a87e34660c2e7902652",
+    "Content/Sprites/runeterra/targon/town/structures/castle_area.png": "42b7024382a40efdd5716988e26a1c5e0fd4d8eb7264a1a44a7ba9e8ecc16bb5",
+    "Content/Sprites/runeterra/targon/town/structures/castle_border.png": "fc0f02b7683c0b18075af4d64ee3e1cac028b6246db1bb0193f082de379fd56d",
+    "Content/Sprites/runeterra/targon/town/structures/castle_campaign.png": "5b8faeb8429b69084038268a9f76cefffec6a5f74506c97c570c98c725886a68",
+    "Content/Sprites/runeterra/targon/town/structures/citadel-frames/g00-f000.png": "3652bda00a746d1c0b511843872fec5e9fb3dfb38957e13acd2a59c84d1602ed",
+    "Content/Sprites/runeterra/targon/town/structures/citadel.json": "0494a9d7d0da318908b3736198949cb72b2cfd2934ed971b39d97dfac17bdb5c",
+    "Content/Sprites/runeterra/targon/town/structures/citadel_area.png": "c9ce967e45181177e38d7f828c3d17804c9357d7b56d353b561aba52ff77da89",
+    "Content/Sprites/runeterra/targon/town/structures/citadel_border.png": "2a5e3772839d91cdb41af0a27cb569d846971eeb3ef4bd603f830b848c2ecf1e",
+    "Content/Sprites/runeterra/targon/town/structures/citadel_campaign.png": "9822aec58d2b1e60aca4a27b5f363ec32a1ab1b2ff56d2eb05b138217ab911f3",
+    "Content/Sprites/runeterra/targon/town/structures/cityHall-frames/g00-f000.png": "93c058502b6f637d6e0063af4df55b773ee16283184c1cdce99c63c53a8e03b0",
+    "Content/Sprites/runeterra/targon/town/structures/cityHall.json": "d7b10b5b691c8fe6d61582e172e26b3542518737cb3eff7cff48f1b2638187c3",
+    "Content/Sprites/runeterra/targon/town/structures/cityHall_area.png": "b18b4b43a6610594ae975a956ed2789eef0cdde6fe14d68bf87bd8a026d09d7f",
+    "Content/Sprites/runeterra/targon/town/structures/cityHall_border.png": "41c24480a7e912c0b9cb1fa4408818bb1745621b18eed171b7bae65730d789c2",
+    "Content/Sprites/runeterra/targon/town/structures/cityHall_campaign.png": "32120206657b08091731b437832e16f7abbb5d4ff702b41a14eef8b55b428672",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl1-frames/g00-f000.png": "dd6309750118fbda40a63d08a7cd6e35f5d5585f7e5410462b7dc02940590a2b",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl1.json": "2e3f27870db7208837c9722d0222fb15c143e2daa099855d63ae880bc35ea50f",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl1_area.png": "fa62cdb4cefef9f21a3c2bf7c6544839a6492b979692d9b76d6cbc1250d6e3f5",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl1_border.png": "8e9bbf89ea01b8a2ace7c8f664d3df3ee66b97999863747027ab99ecfe883c51",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl1_campaign.png": "4ca1f3b93af47337ab6e8ebdb778cb30974e069de8a46bd54ab60030b43a438c",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl2-frames/g00-f000.png": "96413482c25fa52764a11cd8b52dfe477d03a79b21398fabba6967c3b4fe4663",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl2.json": "e83fab71604d3b00a0930bcb5710cbeca7d47311ddc619ba78590434560c4b12",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl2_area.png": "9fb086faf44900097c8c5508c5fb6b9e34553242df480e64e0c1edc1eba0bd3d",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl2_border.png": "2d45abd76ff146beca1c258b57db4aced292030b3e47cf93cb013d716ade642c",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl2_campaign.png": "b125f4ac973f2fdb972ac98e48ed2c0fc172adfcbc775657a8156072ef5395c9",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl3-frames/g00-f000.png": "899ec7a95db4c82873d67f7e30abb222e20c8aeb19205b921b59dd80a459f5c6",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl3.json": "d7cd72de6c78dde575cfa7eb4fc321565cdb13018c988f9c8a6dd97d59926115",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl3_area.png": "522b4096a16385009112152aec2e4e63849d4fe6506c810f92eeebedb895351f",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl3_border.png": "3ed9760faaf75c73b556ce4c150355fd5a608f7856770b08995fba03d56f7222",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl3_campaign.png": "7dbe980c1708b310b97cae4abc1a114319167c606c738e17bfa52ea4f617dabd",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl4-frames/g00-f000.png": "845016524eb5ffebc3372bd24df57c2d627704e08fdfaab165f6e12689bd9a58",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl4.json": "5979c00fb38876d4fb1ad5f588f4f6da69e3ef5d6182d2662822b678d4327792",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl4_area.png": "dd8c866160067b69fd0710b1acf8faa1a2e853aab437894050b335d8a9732d67",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl4_border.png": "8871f0a5ad265f6901eb5265ec26db81bea1c0346546ed1d6bd9e5c450e5edac",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl4_campaign.png": "458843e96e2d14de55af374a880facbfc56335acc281e3d61c1682b195081112",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl5-frames/g00-f000.png": "57e57f06107b79ac465eeba0b035b54efaae1c3d0e0144a7685aba5103cec4db",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl5.json": "fcf76121bd0969ab5bc1f96bee10b3e7865349d1e44c206ececf4f8dff0d8d5f",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl5_area.png": "63f49ab00d7a5ecd4a37f4e8df90300787e525b81a5b3b56c351087c67d98930",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl5_border.png": "e0200ee192c2215e7675739d58aa75acedcea5105a4c749ae3aec104b0e99695",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl5_campaign.png": "8f34ab2d9773731fde525e119dee422c38e3972a3a1a221eeb59d9b1227ff1b2",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl6-frames/g00-f000.png": "cee8cb650d077e3491a5f33dc0b58e6f6c9f73a0d267b79782b4b22050deb4dc",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl6.json": "fee228f396b16f3d27c2dbbe20143980d2fe202a2c898e6d6c165e47211a6674",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl6_area.png": "071f7a4c8cd63bfa9b5f41f1733b50c19627a2c9ffcb9a2863751849a7522e86",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl6_border.png": "1884548207bf6725eac6498147b3bffd5b1e1a2ac851004df27a68f8ec029737",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl6_campaign.png": "cd27aef121924c8c093745925ba1f3d4bba6805c6c9dcc736e013ea005b31fbc",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl7-frames/g00-f000.png": "9079b21a7865839f1bbb61b3a9bb0c72007066298916076ce0df26d5cd494d97",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl7.json": "2fb0aaffc8c00ddacfae4e2509d129cf5cc098df9444e5d0a5ad3341aff9403d",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl7_area.png": "67da28aecd1de4fafcf2c5de76ce03efd353f5cf57f0f9bcc25a942a4dbe8977",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl7_border.png": "b5864b4d0d0fcf6af4226dec1f55675d84b9ef55ac43ec48112beda2a8f54caa",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingLvl7_campaign.png": "5c63e2f1997faeefe36c3405584fed2b8076cef15c373199156baf544e540e93",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl1-frames/g00-f000.png": "b7f6219a282f09672798969d7fc69f380f302c626a3be7c99fe04568fe20cd71",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl1.json": "8b4b262f10e0914c73e8b5719be54225aead3a1f02133023800af9fcd728eef5",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl1_area.png": "d709c129bc5fcfdbbff470618f11adf78a49eca42fceae1f1c0a2aedb7291022",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl1_border.png": "cb1a2b929c2cc38e66513cdacc2a224120c06cd6c2825d17dd8fd0980f9fb350",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl1_campaign.png": "df71a821b71c55309e32f85608739032bf731b726f66b494ebe2d002ef0377ca",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl2-frames/g00-f000.png": "d9c67fec848088a88b0f7d923c4a26858a08175af83aa3817dd6387bfe7474d4",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl2.json": "f5f126f1715d95e769a595cd97403d91e4355cbec5d9ff2be9667c1576e042e9",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl2_area.png": "25d1518a15c5b94ed5a8425e8d345e11860866118d3bc43263fa79f095f17ccc",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl2_border.png": "bd65b8ac366b116a0e8400e1d8b0ff9b8d5ab3aa679c9788cca658ae59b9bacb",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl2_campaign.png": "f8915c485aae37114cd9e441429978f63ed91a10c2626081e415f42335cf510b",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl3-frames/g00-f000.png": "f3fbc4e5f4e641e7654272e617b380caebb40e09ac148001dbcdb7959b2ecae9",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl3.json": "3fdab92e9875ac9bc26b8e276637cd0a2771ef4112443b78e5ee0331ac558a19",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl3_area.png": "b5d27f2a759243d6b1e79c3e75011c3d25caa2e81775bc603470b41c67b78484",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl3_border.png": "817543a26369201c23de39a259178829c9b47f0d9ae9ee971380547d9ee4d367",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl3_campaign.png": "c8caa38e829cb464bfc5a97a6c7ca34400404b76d498e98dc37da89c10021b43",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl4-frames/g00-f000.png": "0eac2ce6dbcb2614ed8dd8d006f8959f180e479eabb4e34562bf91f2c559bbdb",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl4.json": "c656f7a34c0ff853ef3fd437107e7784a2f8bd0d976ef7635c84fe28ce5f0405",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl4_area.png": "266c8d994eb93f572c6a6e7e28e13ad180122a0892f36fd4e627f21316451441",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl4_border.png": "b2d15b59f15f335d93b89f655c3f0ad55f792be6238674104b6612c6f42cd2f6",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl4_campaign.png": "108b459ae30b3a3ca445a93ad8b7d5c417d7b04b39411d556f0bd459907d7f22",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl5-frames/g00-f000.png": "cc70522f76e5adf6c9087a7311cc55c44c1778baf3e535f7aa157cecf0e48c3a",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl5.json": "49dc59270f58e0157a50092f3bd2d420cdc2f93d7601d91caf2b95a4e11ec22d",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl5_area.png": "37292ad901a1e08bdbfebd8286b5d6568a1b4bcf2de70f2cbae6e78e430ada1a",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl5_border.png": "4937d79f67e8210a23cad03ebd3a23411d587753ce2753e857b9c5869112bd3e",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl5_campaign.png": "17c3f099d3e891aedc56e07c12fe3c3ce17cdf24811797aa072364caec39c313",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl6-frames/g00-f000.png": "0bfa4566c64521ee998ee6ca5f39c4bbab2bc4e5e5529a73d112a8252c809198",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl6.json": "22ac79d93297f0c09fa88f5b37df7b9f0376b4c4989944eb4c640cbec9ed1525",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl6_area.png": "614bec6f9d6129e4ebbf1911ad7b440cc933b65b298476410b867737a459b313",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl6_border.png": "b8bf11bf6dade787236b52b73244791c873b4655b674fb44bf3594291f040596",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl6_campaign.png": "18e7423606682653a5a53830e77a6bf08e602fecc9257368fd153c1a6d363a51",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl7-frames/g00-f000.png": "c33f64b92c6c6f8749c0b60b8070e02d57c232eb3902b31c3f7edadeb2f9644c",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl7.json": "f609e921837e6959519abb009b5dee963e9105a046341b5bb9aead65600f1153",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl7_area.png": "26e9214482a166f32777e79d3a9c5d6c4cca0a860f431cf37b4242b5df1c104b",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl7_border.png": "92d81927df1d91ba28dbfc490a837a5b747372cb5ab035a590be847302e7ee84",
+    "Content/Sprites/runeterra/targon/town/structures/dwellingUpLvl7_campaign.png": "b4aca3375896f1413e15deea64e414ca9cab09d1803b508b3f10785899eb7450",
+    "Content/Sprites/runeterra/targon/town/structures/extraTownHall-frames/g00-f000.png": "e36539b5aece1991654486a4b98475659bdb39cc710273b528ac3a0dddebac07",
+    "Content/Sprites/runeterra/targon/town/structures/extraTownHall.json": "503c6c740551bca9239b234f9859b32a4c6477d39826eee8b127839ed41880cf",
+    "Content/Sprites/runeterra/targon/town/structures/extraTownHall_area.png": "ebf0cf5ef171dd0e73820eb1aec51216693568277ad21765f677cb3ebad36c02",
+    "Content/Sprites/runeterra/targon/town/structures/extraTownHall_border.png": "9db6ce766cf709b0a191efdd93b3aa81eff2f673c8d831781aa9629eed50e798",
+    "Content/Sprites/runeterra/targon/town/structures/extraTownHall_campaign.png": "a3b41f7a2a130b4117e7d81f7b17221a89aa1efa01a6aabf48fcad064b6879e9",
+    "Content/Sprites/runeterra/targon/town/structures/fort-frames/g00-f000.png": "e050789a939966d574f1afe06ebd21326d5897b89ce35b6c659510105fe9518e",
+    "Content/Sprites/runeterra/targon/town/structures/fort.json": "1693ac296f8a954708e6b016a323f0f97a5d0117b29a94c56a5dfab7eb248360",
+    "Content/Sprites/runeterra/targon/town/structures/fort_area.png": "5ab9c3032be46e8ecb9ef487fcb69390390fe7f4bf0a89879e49aad9fa1424c8",
+    "Content/Sprites/runeterra/targon/town/structures/fort_border.png": "7cfd53f1e137872513d112ad29fb658dee36b9e866c2fbbdc8c42e9b19d77f3f",
+    "Content/Sprites/runeterra/targon/town/structures/fort_campaign.png": "6803f2bfc2644644d4fa9faa21e82d885c5ad0b6249563c3025ccd99414565d3",
+    "Content/Sprites/runeterra/targon/town/structures/grail-frames/g00-f000.png": "4f07a4adb98e031ba0180abb8b6769f4cdfa389130aedc623c86c97cc9b654a9",
+    "Content/Sprites/runeterra/targon/town/structures/grail.json": "9b134e7ed40a4e776277fffa41f602ae2eb592db5f1051bd33690477e46f6924",
+    "Content/Sprites/runeterra/targon/town/structures/grail_area.png": "6a3cc183c6354474f40f8caeb4aab7d9f9695dc3beec839ddee2c5d7ecfc2898",
+    "Content/Sprites/runeterra/targon/town/structures/grail_border.png": "9a018deed24eef4a962451b7c28e5903c971a5dec49666f72382f7b26cf5a539",
+    "Content/Sprites/runeterra/targon/town/structures/grail_campaign.png": "1be6fffaa086a601d242db16eb053c469196832f33371d645d1bbef3734afaf7",
+    "Content/Sprites/runeterra/targon/town/structures/mageGuild1-frames/g00-f000.png": "eaa42be4ebd1291e54ca9536aae2e6b75109d0edca0c8f34da87e61c00a12b02",
+    "Content/Sprites/runeterra/targon/town/structures/mageGuild1.json": "22b29dfd9c65191e8d9ca8e3232b453e1c9e3b0454327d90d34aebbdc6fb942c",
+    "Content/Sprites/runeterra/targon/town/structures/mageGuild1_area.png": "786b9571afc18266eb0f67d920b6757ff49fa0a56941bf045d05d2c14e0b99c2",
+    "Content/Sprites/runeterra/targon/town/structures/mageGuild1_border.png": "96cf0738014cec953b62c2190412ccc120435f52c292c4ebf3c9413b60eda1c5",
+    "Content/Sprites/runeterra/targon/town/structures/mageGuild1_campaign.png": "b0364f15b4f00852b3dc696911d46bd6bd3e40209e09a10d7bf1e899f0ede73b",
+    "Content/Sprites/runeterra/targon/town/structures/mageGuild2-frames/g00-f000.png": "2e71041b7a59ffca18f5e64f93177d05da1095a2e2eb17469215554a41044ece",
+    "Content/Sprites/runeterra/targon/town/structures/mageGuild2.json": "5eb098709df0f2dbbc3b61992ce65de503b0dad2f35d2af0b354c3d445f4024a",
+    "Content/Sprites/runeterra/targon/town/structures/mageGuild2_area.png": "e53995a50d202dfaad9b6d6ba42cacc67482bce680f00b5d7560228f99257ffc",
+    "Content/Sprites/runeterra/targon/town/structures/mageGuild2_border.png": "60a915a926c0a2912f51b45fb67efe09b1586b886e04c3c500bf3bf93f7f4dcd",
+    "Content/Sprites/runeterra/targon/town/structures/mageGuild2_campaign.png": "c0c0a200a9b06bdd6fb7c05b157bf0fd5d378520d2f2fb0b27005c2a4e90b737",
+    "Content/Sprites/runeterra/targon/town/structures/mageGuild3-frames/g00-f000.png": "7366a0a33e4a996cf2c900cb044666544edd8156bc77dac3bfc0c60a52fdd1dc",
+    "Content/Sprites/runeterra/targon/town/structures/mageGuild3.json": "70794d20dd597ebf6fe558def5bc241109fe34c7a7974ea93bf45ca40cd5357a",
+    "Content/Sprites/runeterra/targon/town/structures/mageGuild3_area.png": "932f09efbbeae82e64df3991ef759eefb79a40c22816c9b44a90ef66b6aba31e",
+    "Content/Sprites/runeterra/targon/town/structures/mageGuild3_border.png": "3c72e2a1114f4cc512aa1bd1901908fce167f830f2cd75960d820dc833fd0d3a",
+    "Content/Sprites/runeterra/targon/town/structures/mageGuild3_campaign.png": "fa61ea207a4b25a98ea41a90e747bffa9e344d57cd3745257e45eed0d72bbfda",
+    "Content/Sprites/runeterra/targon/town/structures/mageGuild4-frames/g00-f000.png": "5d516126f7daab76c41b9531265e6fb7833dd08697beace067dbb0821e2967e0",
+    "Content/Sprites/runeterra/targon/town/structures/mageGuild4.json": "8b6683af51479942efbea462cb0d0893745537d83b95cfa9b2244a5cbab6b4e5",
+    "Content/Sprites/runeterra/targon/town/structures/mageGuild4_area.png": "4ba3edea7a00d445c8ab34208e5c4f6a18fdfa2dcc2659b78bf6069e1e7b8aba",
+    "Content/Sprites/runeterra/targon/town/structures/mageGuild4_border.png": "b2a4cd82e03cf2224001054b4899452b3335fb96d6e852e2e845fd255561e491",
+    "Content/Sprites/runeterra/targon/town/structures/mageGuild4_campaign.png": "1f81319c48f29671e839eb370f8fc2d1a2858727c8ecc868f0166c3b938064e4",
+    "Content/Sprites/runeterra/targon/town/structures/marketplace-frames/g00-f000.png": "3b51398a081b5e13b1e0343d5b0eaf558e9be56c0e48e88cf80575eac35b7551",
+    "Content/Sprites/runeterra/targon/town/structures/marketplace.json": "02b8f6cb2424e4f331f8ab461777b25f77015b9fce91a5b3bfa817ea75284cb2",
+    "Content/Sprites/runeterra/targon/town/structures/marketplace_area.png": "a6b01fccf02908a4a1398cc2b65661e90ad5357c8a9690860072f9fe65d63f47",
+    "Content/Sprites/runeterra/targon/town/structures/marketplace_border.png": "beadfe7bd431062d293b1d1c01c03abd09d3b851d7ced4422360a823e3f3e55d",
+    "Content/Sprites/runeterra/targon/town/structures/marketplace_campaign.png": "1c5f797ab1be8108b2ac63403bef98f721c2bd47f18a5b634b14de43db9ca2b7",
+    "Content/Sprites/runeterra/targon/town/structures/resourceSilo-frames/g00-f000.png": "27223226d83e361223247bdbec4f99a71ca811d05c85bf66799dd1b2022113d7",
+    "Content/Sprites/runeterra/targon/town/structures/resourceSilo.json": "28482eacad9c18de1b7ad22a88649ea7256bc2d13e09f83193473a745191399c",
+    "Content/Sprites/runeterra/targon/town/structures/resourceSilo_area.png": "5e468fdf2dec393fb0bf26bb3cceca612be1a90e51b866c0dfac6668ddb2fce5",
+    "Content/Sprites/runeterra/targon/town/structures/resourceSilo_border.png": "23f9a7734a813077f9b617563fa1d8412d5958e5e139e67856a97000089862f1",
+    "Content/Sprites/runeterra/targon/town/structures/resourceSilo_campaign.png": "a4c49011dbc73ae180366f04e7f4fb5cdce7e2131eeefdc13726ac11d40f5bfe",
+    "Content/Sprites/runeterra/targon/town/structures/special1-frames/g00-f000.png": "06d088ea12c49453ca4f7af379e43f92b5c09d525edaab730924178958093d2e",
+    "Content/Sprites/runeterra/targon/town/structures/special1.json": "721a348632cbd591cb2bbb10eaa5ae28054b16dc8844c631cbd03a3c2fbaf4a5",
+    "Content/Sprites/runeterra/targon/town/structures/special1_area.png": "44b6c6ae3f0450abbadfa5ebd7f78683cdeac63b9597b94eecc20137a46baf54",
+    "Content/Sprites/runeterra/targon/town/structures/special1_border.png": "6bcad3cf9953493323426073c748ff01c099c0e6bf11d4e8c8edb8525f7d08ed",
+    "Content/Sprites/runeterra/targon/town/structures/special1_campaign.png": "b0bdc96558b53587c939b7ea9956a1730d984ebb6d5914a3a47d6650b65488f8",
+    "Content/Sprites/runeterra/targon/town/structures/special2-frames/g00-f000.png": "750c336c0c9931344eea274879ddfbc345b4fbc44b5eef44c55f5b81e4b302a1",
+    "Content/Sprites/runeterra/targon/town/structures/special2.json": "d4cc1af41be15a4965fa119113be04da63437f3fddecbab802555121e6c06e5c",
+    "Content/Sprites/runeterra/targon/town/structures/special2_area.png": "23d117d7dfb985ba30737bd27f723195b6b7c5f5a7a8fd716cde23045d4f43e5",
+    "Content/Sprites/runeterra/targon/town/structures/special2_border.png": "8e02af81ac2fbdb7b39f747a20fdfb5a5a203be1b1f737834e25aed04b38595c",
+    "Content/Sprites/runeterra/targon/town/structures/special2_campaign.png": "f64ba7b84ef85d64732a73640a9293e62998e1fa1f3decb846003272f878410b",
+    "Content/Sprites/runeterra/targon/town/structures/special3-frames/g00-f000.png": "987741a61d36030cc1c14a13e11ba585579e248c40c305db0b00e36591169137",
+    "Content/Sprites/runeterra/targon/town/structures/special3.json": "a1f2e1a8d6e775aa3d47086fc6a6fa8b284d4d389f3be08a166f479327f2828f",
+    "Content/Sprites/runeterra/targon/town/structures/special3_area.png": "3391e1406568b0ce2ed75b3583304f8c56e57ad17083a7f1cbb53fbe31129b21",
+    "Content/Sprites/runeterra/targon/town/structures/special3_border.png": "5b1c23b2fe3009b45254aff6a2bb4e7dd566eba8330d0ce7c4d5fdd176cc8d93",
+    "Content/Sprites/runeterra/targon/town/structures/special3_campaign.png": "4683e73365de22025619971107590ce8d6c70a07cbd7e41d27313e9b708516a3",
+    "Content/Sprites/runeterra/targon/town/structures/special4-frames/g00-f000.png": "3ef0b6acf3c30f8cf04f8a6e251adf1bb471152e596b6f69a879fe9681cdbfac",
+    "Content/Sprites/runeterra/targon/town/structures/special4.json": "d24d94ecc81e57ef738981387fffec7986e2d29086f91cd6bc930ec92198f263",
+    "Content/Sprites/runeterra/targon/town/structures/special4_area.png": "bc0c0037455be94967fb8122e522ee39b8110b77652c157691306ac7a6658640",
+    "Content/Sprites/runeterra/targon/town/structures/special4_border.png": "232087ef64b1f10a5656d383380754e466d5f181a1f721b979624d8f0d813245",
+    "Content/Sprites/runeterra/targon/town/structures/special4_campaign.png": "b743cf84390437ac317c1a626a6faa75640be25ffe149fa28ec537c9144c6855",
+    "Content/Sprites/runeterra/targon/town/structures/tavern-frames/g00-f000.png": "426e51c28a05fc8199632f4b987fb9727c617e33b4bdc911d2e1ae48a37b1f94",
+    "Content/Sprites/runeterra/targon/town/structures/tavern.json": "ab9e44433ed4584be4b44bbdb496f9bbf6e97028b9f47340bc8fc2d7ef738588",
+    "Content/Sprites/runeterra/targon/town/structures/tavern_area.png": "bac59c7bc6bec3c93dc47b5c417ee17633a95c82141ef049dd932dde1cf47d82",
+    "Content/Sprites/runeterra/targon/town/structures/tavern_border.png": "7cb2561add07091e3f5b8712fd2d97c12537e03ea2ab16611a87f23c09329c2c",
+    "Content/Sprites/runeterra/targon/town/structures/tavern_campaign.png": "626880603be226c0007840894fa22970cf9b5fd17e605775918f90ef0594ad46",
+    "Content/Sprites/runeterra/targon/town/structures/townHall-frames/g00-f000.png": "85d1e17aaddbf3218de2e56fd42aad4f446b76edd9c24c449c9a265ec6d84a31",
+    "Content/Sprites/runeterra/targon/town/structures/townHall.json": "c9d2ec34ea7d1840c988954ff3e6377cee6abef238f303bfa773ce901a9f19cf",
+    "Content/Sprites/runeterra/targon/town/structures/townHall_area.png": "c464eb2e5e20a15b49f962c72e538d54ffe7ea6e24f4eda32d6e6648096c507f",
+    "Content/Sprites/runeterra/targon/town/structures/townHall_border.png": "ed3aacc84177f226bc6ddbc25a7a5b0a372e0b2c56456d0ccd08e5021ad66dd9",
+    "Content/Sprites/runeterra/targon/town/structures/townHall_campaign.png": "af600f1ed6ea5da132475c48d0c28c39270576a653b3768ddfe67fb7a8fffa19",
+    "Content/Sprites/runeterra/targon/town/structures/villageHall-frames/g00-f000.png": "c1d19186afe110e3ed0814bf21b38be023dd3f4839978622cbdd763c98da6f95",
+    "Content/Sprites/runeterra/targon/town/structures/villageHall.json": "18579a3f116a074d63784fce0012c715af6a08471956b2eb67fccaf32e747d73",
+    "Content/Sprites/runeterra/targon/town/structures/villageHall_area.png": "790058623378947e0e0b03f56a7c2ea1e9e40737026b45c02f92efdcff374aa8",
+    "Content/Sprites/runeterra/targon/town/structures/villageHall_border.png": "27f4fb7fb1a2b21a6b64c495b7b6b1fccede6dcdbc869200e94c3345d505a007",
+    "Content/Sprites/runeterra/targon/town/structures/villageHall_campaign.png": "5be505fd86256a3b0233ffcd2b9b4ed684b3cb284b2e1bd15844bb110eb0576e"
+  },
+  "native_verified": false,
+  "output_count": 212,
+  "physical": {
+    "path": "assets/source/town/approved-tg1-implementation-20261030-v15/physical-runs/140f6922d3043a43-48c12e3eaa09/result.json",
+    "sha256": "2edf1847371d8c5e02bf323089a4a1099273584fba145ada22065bdf1127aac0"
+  },
+  "producer": {
+    "path": "assets/source/town/approved-tg1-implementation-20261030-v15/complete_sources.py",
+    "sha256": "fe73d2ae28d8d54d17c2b3d41876e1e34c7e252a5cdf65740083d09d0f83616f"
+  },
+  "recipe_count": 142,
+  "recipes": [
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/background.json",
+      "sha256": "1fecca4ba445e49b5c6261ac007390630b27473680d382ed1bcc442b0a4be8df"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/blacksmith.json",
+      "sha256": "5d1b4c53d1ba19579907923c56c7b6c6b6c3c42a0594b0d481f8d401c5bf3c3a"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/blacksmith_area.json",
+      "sha256": "33cdea3b0be7326eca1f2e039b34aaefc53f3eb81035f25b3a59bf750ddd82b9"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/blacksmith_border.json",
+      "sha256": "d1ed13a77a7ad71ad761482f2d3dce5fab69942aa069f99e4d473acdc52bf663"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/blacksmith_campaign.json",
+      "sha256": "48a3224b42edca7595a2047ae9c3f697e8a125ae981b10bc064d24fda3b3e06e"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/buildingIcons.json",
+      "sha256": "f7f6913fe164051b8c66529b260fd457ab4c215d6c359c671c6f6da54eb1d4f1"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/capitol.json",
+      "sha256": "c8b699856a4276dc27f8a3d445ad95b22ea04af24cd1f9c43afe9024e9617598"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/capitol_area.json",
+      "sha256": "f32e90673446a8e12bd243c870ca700b0b74f5be13fbc2e8a84b82b12c8349fc"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/capitol_border.json",
+      "sha256": "752fe796da502a0cc708c94029625c7997562c7f06ccad21e11b54354604aabc"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/capitol_campaign.json",
+      "sha256": "33eaa238dc4bfcbcdf5cbe8523090b5a7f9c31a1abc15b291abde4e01b9ec664"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/castle.json",
+      "sha256": "b3aebd35b4bbab9f73f42874cf20ffea06ff1521cc08e737d480ee8bb19f84fe"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/castle_area.json",
+      "sha256": "3202bc15f26b4ef6184a71d9d55a3b2d12b738b1e19801fd8be77e3b125a7f13"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/castle_border.json",
+      "sha256": "60dbb2a638037fc757d58289109fedb3e711ba64d64fe5356481eb6bf83215db"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/castle_campaign.json",
+      "sha256": "97750da8c1def9d5d72fcc1c0d8c91b30dde3841f31e6efc54a9e4784bb12ba2"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/citadel.json",
+      "sha256": "1d056e5b4b50dc37a71672ce99525b4d6c74e0d2341ff3bfe25b74cd26aa0c35"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/citadel_area.json",
+      "sha256": "bdd79a4b0f22066e9bd175c563d2ae2f8e77f2460eff64f4a12500e7698a9608"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/citadel_border.json",
+      "sha256": "4d1058a1822d91494e71cb0cec3b293a513af55ca23b4d7d4fe7b615e87c95c5"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/citadel_campaign.json",
+      "sha256": "0cac080cc7f757dfbcd9a98864c8302d72f350c58acca06b74f536c96d3acbd0"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/cityHall.json",
+      "sha256": "8f5a235f53ddb60a7bdc4f292a60214859abf89e792d4c727fe49b190bddf882"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/cityHall_area.json",
+      "sha256": "301935c52a1055e32a07380e293767030ddb154cf60e41c52b984ad30569e0c2"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/cityHall_border.json",
+      "sha256": "e2c39fc854a344b8e4fcd0955238edd027f9eeec95a3726cdc91052ac26102b8"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/cityHall_campaign.json",
+      "sha256": "4bd7b4a32543d017832115d7a65781b63e0d6712c112b327eedcc7518bcb4002"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl1.json",
+      "sha256": "4589c3f08de6af84ee8f546e256a48d22ff8b2c26aa96b439819fedb404e9d05"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl1_area.json",
+      "sha256": "dc761b946bc1d5ecef3f14c80e7375f27fef58b60a6c63b5ec26ad1f578e7527"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl1_border.json",
+      "sha256": "99d66d266a8f26da447e8a0003b434c5047b8d053314cd1c0308416469aa9784"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl1_campaign.json",
+      "sha256": "698654febe6f6553b2fd02fcc8b65a36698b0a755015599ff1daea436d35d4bb"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl2.json",
+      "sha256": "7cd1c792d5cd8da0d293e47db6edc4da24a18fc747c1e0c5b6f7a11f04f20135"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl2_area.json",
+      "sha256": "50cc8c055b1c6301d61b9bda0d3190a3f5b1ab1ec031cbc14a18c568485e363e"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl2_border.json",
+      "sha256": "28013718ec6da15ec54c188e1c5288e8596dd0679c357ed54aee3b46a1bfa882"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl2_campaign.json",
+      "sha256": "ab7d30261ce553e203991e519d8419cc5872d21f40ab16743430ab1e24c63a33"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl3.json",
+      "sha256": "d8006c4c22da65076948abb7ff813e75d677a12a6a91562c181bf7bd50cb4d38"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl3_area.json",
+      "sha256": "3a3bf9cdf981e331d858f4e9b35857abc961f88a101c2474d9e786691b5e269b"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl3_border.json",
+      "sha256": "b9014fbaac20a1cd51d9b2472033018e2067cc6156fd865440554c2e81f569db"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl3_campaign.json",
+      "sha256": "a92f75a22fc8a87fb6af6a91525485bc856e06eb02a660af8d75abc544f30671"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl4.json",
+      "sha256": "298295cdf5a0b19530875449272f6f4101ee38441a0fb119a4aa09d91e2ef7cf"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl4_area.json",
+      "sha256": "1e42f1f58123477951d822f38f53756b35cb18156b92b50cb1c9ed94989f7ae3"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl4_border.json",
+      "sha256": "f0c8cee822ad254f6c80bd7c68488bb3d93a8e9b44410958172990036a2b4c49"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl4_campaign.json",
+      "sha256": "412c03f44ef6fb7a7ad3f8bf9704a51f4ac207c047892ed6ac83fb8976aeead8"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl5.json",
+      "sha256": "61ee009254c7f3fcaa6ece10d9bfd225848f3d69f2b34f70f6f0432f17c8f538"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl5_area.json",
+      "sha256": "a5113bfa99a1f95ff475759853993a771e33bb96437880f3b4c93b05ae5d9b28"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl5_border.json",
+      "sha256": "64330a752b6e3bdb8cce123ce04a8772c555af3bf00fa907e6aa13d2a966ed63"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl5_campaign.json",
+      "sha256": "0006f60c1ce62ae53f2eaf6d8a0a3ecb8340639e711970920640ebc55a86ff79"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl6.json",
+      "sha256": "680ada2324ada4e38560c920291179a7466f4e3f0e9f63b8bca1f35503795ab9"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl6_area.json",
+      "sha256": "87e04c8bff8b8e96a25de493d2ce604d56461945aa5b5bcf7c39f38113762efd"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl6_border.json",
+      "sha256": "8ef48806f24154bd2a0a5a854a33dbd8a51a2001e393acf1c77b1a058bae3e54"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl6_campaign.json",
+      "sha256": "0dcf665847f5801cef3e54e2bbfb83098976e87efc4c6f48d792a279ae204fd6"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl7.json",
+      "sha256": "a0627381df5e1985998e274a36dd373e5798b0d4245338c33eb93a88972227f5"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl7_area.json",
+      "sha256": "1fad8075ced10363d1fa49e5bb97207491f50759d6baba3df65c501969ad01c7"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl7_border.json",
+      "sha256": "bc0eab8096d5adbbf276a2c19ff7e07b9e47f3be721b2aee6122c9d70fc44403"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingLvl7_campaign.json",
+      "sha256": "5c61b8df1b4de191359bda7bfc1ccfee2f5c54079b559d9687d43331c3a2130a"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl1.json",
+      "sha256": "f7cc19bf8130e74f3ebf4ee010c945edf6c3352d585d99028d0f3b73a41a01df"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl1_area.json",
+      "sha256": "fb65fb193ec4a7040d317cf5c5700ae821614bddb44d468089311172d3f9bdc5"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl1_border.json",
+      "sha256": "66cc686314311ee145e67ca40d03e8b8f9e0d4d51fc5406cd0346bc73a147f31"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl1_campaign.json",
+      "sha256": "88924936b38c750bb9d8677cc2f2f735290cb1aaf322b5b702901bdc9f8b2931"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl2.json",
+      "sha256": "973820fd41ae285871b57e8cd2d581ccc60e915dc16c12c6a4143193d7cfcf81"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl2_area.json",
+      "sha256": "67f9f476e13cbc546e2bfe67ddbc16150b5aa817fb555362839cd1d682ee4e22"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl2_border.json",
+      "sha256": "9e5d97eda773ffc04feaab4998e1cd1185643e458ef550e10ea89a6e5de3b276"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl2_campaign.json",
+      "sha256": "b201b97d43a126762bd8906d2054c14d1cbec3db22770bef3005672066c22731"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl3.json",
+      "sha256": "7f3e7a937302506e921277bb83920015559e46a8631cc3ef221d544319883926"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl3_area.json",
+      "sha256": "ae9c2f4a9f3cd175e7351629c10b199c2c9f2572e0e6dd2c4f4d34782606f324"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl3_border.json",
+      "sha256": "101b1c814000e467c03c6f3a9e05ede084479930065dae6bd05c6a62d9f24d72"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl3_campaign.json",
+      "sha256": "387686f7f1441d8f6488346b54614b0a4ffec0f476acff0c2e8a6ed91a7520f8"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl4.json",
+      "sha256": "46daff7ccbbb308040c0d924960ef5b700e2eb4ce500292cf55b13e40a7549e1"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl4_area.json",
+      "sha256": "78cd7af2164bfbf2e615cbcf5be2f70bfe7973f50c326d1f668963d91c4a211d"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl4_border.json",
+      "sha256": "6b189c4181215683d5e9232e9b0b2b8eecae347a75f714f5bc3f29ed3f286a2a"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl4_campaign.json",
+      "sha256": "db7457764ef1031defe3b0c7f22be9dcfb197688215aac21abce2563ad0ecf86"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl5.json",
+      "sha256": "b0492c8e6bb9485bf28c58f5d21f184735baf1cd0805f237ede06d3367149859"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl5_area.json",
+      "sha256": "6bd7d2a6aa2dc6c0b8933deab7f5f7104ebb52a784fc3d5568553e10d118eb05"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl5_border.json",
+      "sha256": "098b706f8dbc8f7bbf54fa9f0127d1493fae54299535f97d02c2d3b14830037a"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl5_campaign.json",
+      "sha256": "0f139b6b08a92c96c8055cf0e8b4d2858dc589098f4ba766b3ee9d2e8775670f"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl6.json",
+      "sha256": "53e7e9486f7d3f8530c6fc6a1530085fdcb04273a00eba7a3da6340ee782f0b6"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl6_area.json",
+      "sha256": "57f478e9d06633e745927419730662f3e0f0dec5505c84b9213a624bb7546d68"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl6_border.json",
+      "sha256": "3d2704bbf602ca4dda497197208ec948b7c1ae135082c1d43f126237a85cf3f8"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl6_campaign.json",
+      "sha256": "33ec9a7bcf1f9ac35e927b1ed8fe9903b9118e0ebac5cda60ba1d2ba3d959d9c"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl7.json",
+      "sha256": "5032429e11867b10b0150d6f3ff52a8589fa83268d3f4f48cf92b81cec41d9d0"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl7_area.json",
+      "sha256": "4217b3da3e49d807007d42ef481c6071496b06e273fa42360e060088e71c9ce4"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl7_border.json",
+      "sha256": "aa262de1a15bae2c772e165c5811ceb2145e4229d316817c0d1e4a5dec02fea8"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/dwellingUpLvl7_campaign.json",
+      "sha256": "621955703cc2946e110c0ee65a5255ba6b1c96815a6e0143e5d3b8f5bc7e209b"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/extraTownHall.json",
+      "sha256": "74ebb9b9bf5f9b6ac3a8df21ba96acdf9151175df4b7ae22c368a28495ec0e11"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/extraTownHall_area.json",
+      "sha256": "b70b959def1cffed6b273787c52680da419606a8cc6ad7cff8ad5fc04fb243c5"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/extraTownHall_border.json",
+      "sha256": "ccc0c960009baa843ef77fa6d0fb17439dad9c06761f9de5c4a5a9181d953bb4"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/extraTownHall_campaign.json",
+      "sha256": "32090728d39758bf80f67453d268230c83dc3e38f2483e1abdf10fd729fc6c53"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/fort.json",
+      "sha256": "1a6521ce72119173053c9e2669236e82dad35d3b5831a681bcb85b66dc87b29c"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/fort_area.json",
+      "sha256": "dab22a25e46de7530ddc419dc0fc46bf4ceb548bec29df6ac35441508aeb7540"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/fort_border.json",
+      "sha256": "94c6dda4b09d87780488b99f86a90b138369d23154e303508405481b7f81556b"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/fort_campaign.json",
+      "sha256": "c5609955f27a72d97a445ea8f888ef1a914a8a4c311d6dc2797d708368e5656e"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/grail.json",
+      "sha256": "d69696c7d03151f03020e196242cbf15fa1e456efa7a36076e25c2d8913d1ad6"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/grail_area.json",
+      "sha256": "79d5a17762d72d5c5c0797e0b3ca3013c304063e6c5ee21b21cb8f48206bba2d"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/grail_border.json",
+      "sha256": "bf491ce5b388248c378c90d89d561da22573d69ac72d365ed8bde3bb16b488ca"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/grail_campaign.json",
+      "sha256": "c79d72d4607857901ce68b4a22cd43d871103732a8562a94881234947b845997"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/mageGuild1.json",
+      "sha256": "9684b7ea258bbc9bb7324b14f4ac0c378fd1e56cfb3bb434183b4462e0c5df4f"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/mageGuild1_area.json",
+      "sha256": "36ba51302d5591301d0d1130f08cf2a563542d4f3e7d851fa2d55cf3afc6214b"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/mageGuild1_border.json",
+      "sha256": "3d1e0d0171276d17d97e245338b2b1775bd6febb47873e11f1788e28557e38bf"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/mageGuild1_campaign.json",
+      "sha256": "19311413c79770421a2705e2a7d276f11b642bf23b53d58856b0dfea33ed9bde"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/mageGuild2.json",
+      "sha256": "04a0831dfee03fc6862589f039fe2b97038a32c2a5ddff3e0b2ebcadedb46183"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/mageGuild2_area.json",
+      "sha256": "2ad4277430fa53e121a06f3e925637aff5138fab13d2b4f443a31da7b874ebce"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/mageGuild2_border.json",
+      "sha256": "7db30f8e0797a816f45d7e683be08bf889b004fdcfcbf2c527100eedd7072d49"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/mageGuild2_campaign.json",
+      "sha256": "64e8504b22d220506e6b9e2f1626c9cc277ff2111deb2d92d5077831a53461ae"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/mageGuild3.json",
+      "sha256": "1890578e2b53fd4ffa84499814200487ad0c42bd07606324f08c9a7148d4442d"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/mageGuild3_area.json",
+      "sha256": "826712d8f3ca10e274e37cbf07a6f183a97a2605a120d764101069dbf310091d"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/mageGuild3_border.json",
+      "sha256": "60d525e65c4e3676ee78233f6e1d9dd23e426b5bebc7484fadfc5c18dd71e7df"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/mageGuild3_campaign.json",
+      "sha256": "1ab4f1e99f207ccc137a7d18013bfa1b6c34d5bc9d1f337f674eee5dd28f1815"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/mageGuild4.json",
+      "sha256": "0128d3c64a2a94c145603c2cc023610adb0ff505d597255b17d2b234e44d9524"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/mageGuild4_area.json",
+      "sha256": "ea1ce1dcde8f0c6ec6e6eeec2dfd706ddcb0b7f2f565b6fbe282473f5ffad870"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/mageGuild4_border.json",
+      "sha256": "3724a622c4d669e98b0ad55b8a3ecc4d4ad6ef44ef6bc7cdfab52bd2ed4834f1"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/mageGuild4_campaign.json",
+      "sha256": "8e6ff225e50e8334a29ac9674ec8b2fc01d985b30fa0ae139a5ee00a350b183c"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/marketplace.json",
+      "sha256": "b803824c067349501a325e9e3d613568717246a8e9551ae607c2335c4206f096"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/marketplace_area.json",
+      "sha256": "26fade6225934714155f651fce063e111d9f0e2c031aeeca3d719ef85ef8c665"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/marketplace_border.json",
+      "sha256": "aded9b7484ebbf527e8926698a12e580bbf0d90160f28779f4ddb91d18d84e4d"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/marketplace_campaign.json",
+      "sha256": "790211a63065ba1a1e671f43c8290f31aa55aed35159b1b2da396b2fb9ad1c41"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/resourceSilo.json",
+      "sha256": "c22261d05f4dce4226f2ffe99cd9eabc694c70323b88344029cba87ffdb52795"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/resourceSilo_area.json",
+      "sha256": "417d96880deaacd9414eb5fe61f1af79d45c2c94c6824d2f4978fea57c30ce96"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/resourceSilo_border.json",
+      "sha256": "c5745c8725a543ceaead9a0e6cc3634e718a10c7e7df1763db66d9746bd23e8f"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/resourceSilo_campaign.json",
+      "sha256": "29a8bb6dab19363892b8d652bc270954636403d83d09fedfda7c952346960650"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/special1.json",
+      "sha256": "23f5bb68294d806c8a19980a5b7050e38b922ed8dbef6dcbb4623d3b99d9b14b"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/special1_area.json",
+      "sha256": "737c725ed233041f795fccc7d35b99c36b6fa20390a82b1bf630a185a828fa8a"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/special1_border.json",
+      "sha256": "23f254c656f297b3db5b3707e05c6bf143621c770f3f6999784778a723faec28"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/special1_campaign.json",
+      "sha256": "ac5986c82e0d826aba720fe8f66adaea992ce7d3f96320473318e231f07cd4f3"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/special2.json",
+      "sha256": "c66dead4c3b5d0ccb7e1f8a8116ec0c0a84aa99b93a3d107296496a84d834932"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/special2_area.json",
+      "sha256": "979d12374c6d7a0642b321206b2716603212ddc485d432e7705837c471be7625"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/special2_border.json",
+      "sha256": "7ef50e969ace34a531e93294d8068ddefd146514bc968a6fdfe11f3011261c69"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/special2_campaign.json",
+      "sha256": "0a652a97b8f3f395abd7b0a532a1f70b526d5d4c11604a51372e28319d6bc890"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/special3.json",
+      "sha256": "d4e018e30033ee7ef76ff704d421fbb3a0c1cb5eaef0a4c1d642c059c58837d5"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/special3_area.json",
+      "sha256": "e2a820024f2b3df874389a99a3a45bcfb027b40b7579f129204aab3acb1ef316"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/special3_border.json",
+      "sha256": "40e73b1dc96c14cdff1c264ea8a0125bbfdd54e81f3568e3f2f3403e1bdf0302"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/special3_campaign.json",
+      "sha256": "38ebb6d4d9116534137fcf556852768d2af2f2c17adcda55d49bf02a4872b77e"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/special4.json",
+      "sha256": "2314007249314d68d4d405efa8a916f8f731976502de3f61cbb58adf2d7ae30d"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/special4_area.json",
+      "sha256": "723ddee3ebd1b72496d52689a81bb779d66cd90c61b3cf0633e6c0b59d1e3132"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/special4_border.json",
+      "sha256": "4815f44717c87ef5ef79b1d6a1d3dcc161a035b154e6d89459e67af03fb9abd9"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/special4_campaign.json",
+      "sha256": "8be3137e5e61b276c39d5b477f6952afe227593974d69a66c31baa918f2c4f3e"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/tavern.json",
+      "sha256": "b1a1fe371644024ae5fd6e641072f27b6e19b79699bc881b270f259661ca2770"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/tavern_area.json",
+      "sha256": "74b230cbacc5b72ce78495acd6ed438ec284413353676a48dc70ef3e3e3b1d91"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/tavern_border.json",
+      "sha256": "8b358e26d3f87c7caca3d8f237955fc0c16ed8016ae4483fd46128e09409af5d"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/tavern_campaign.json",
+      "sha256": "87a9ca5fed79f320baf6db08130f86fbb3d0d6758dcdcace1307211ac6a3aa3d"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/townHall.json",
+      "sha256": "b9eb8852bcf25efb4d356eaaacaa75429e19ac4ab9ca35194dd12b28bc93756c"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/townHall_area.json",
+      "sha256": "2bf7fca640dfbbd23219534ea503a4774120320440b8878bff82aa0c569756f4"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/townHall_border.json",
+      "sha256": "b385e59c0fae2ab6008238ff50b3731a756b521e79633730b00a3f1b8b46e39b"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/townHall_campaign.json",
+      "sha256": "084bd3c9ca6a00783e614c32273eac920f26d7676d9cf0b61c6c8b588599153f"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/villageHall.json",
+      "sha256": "c10c940096acafbd688f469b68ef330b15dc13d466baf1b8f53d991e363ae8ed"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/villageHall_area.json",
+      "sha256": "c862633a0c24410bf09d95f0f376525b34050743e9628ea01c56e709ac368cd2"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/villageHall_border.json",
+      "sha256": "66e18dccb152992f0fc40b03fe65d24f84077e9a9a7c6a214e22029b228c512e"
+    },
+    {
+      "path": "assets/source/town/approved-tg1-implementation-20261030-v15/candidate-recipes/villageHall_campaign.json",
+      "sha256": "44ae46051bd2b8ea6066c667293d509a1e07ebd5d46f700a7055e9bd4d5e2105"
+    }
+  ],
+  "release_accepted": false,
+  "shared_compiler_sha256": "b105881fa75fea3601c3a838262d01ee14a5b7c7e426a5f87ed9823c01fa7a6f",
+  "shared_geometry_sha256": "61338e0e4dbe80e36dd94ceab17e5d1eada1559caa8839bb2c0d6411384620f6",
+  "source_ledger": {
+    "path": "assets/source/town/approved-tg1-implementation-20261030-v15/source-ownership-ledger.json",
+    "sha256": "9bf2e2af576f9cf943cc7157284144ca919f66370383f74dbad9c9aea3b04286"
+  },
+  "status": "authored configuration",
+  "unresolved": [
+    "Independent source visual/physical review",
+    "Canonical recipe/content/manifest integration by coordinator",
+    "Fresh stage and native building-state/click/Hall review",
+    "Rights and release acceptance"
+  ]
+}

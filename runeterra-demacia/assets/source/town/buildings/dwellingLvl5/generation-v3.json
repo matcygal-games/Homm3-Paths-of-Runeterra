@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "tool": "built-in image_gen",
+  "output": "master-v3.png",
+  "prompt_file": "prompt-v3.txt",
+  "original_generation_path": "C:\\Users\\matcy\\.codex\\generated_images\\01a15556-579f-7041-8958-a88e131375be\\exec-5caa99a3-0897-42d4-b128-ebf6a9587c91.png",
+  "reference_roles": [
+    {
+      "path": "assets/source/town/layout-v3/site-reference-crops/dragonguard.png",
+      "role": "Own site crop: edit target",
+      "sha256": "e3e1d5fd41a2d05d683dc9110489201685912b86ea21dfc2cfa0160ea5ce353a"
+    },
+    {
+      "path": "assets/source/town/layout-v3/built-study-v2.png",
+      "role": "Own complete lower-frontal composition: camera/light/material reference only",
+      "sha256": "3d24669ffadcdee6678459ca9bb3e23903f037c4babd2cf85a34a8a1d17cfcb4"
+    },
+    {
+      "path": "references/riot/heraldry/demacia-official-region-icon.png",
+      "role": "Private official crest shape: no copied original pixels",
+      "sha256": "d71bb021a49b704420f43c74f9dbfedb2bd89779bdafec1ea4be7bb8a172e734"
+    }
+  ],
+  "state": "dwellingLvl5",
+  "name": "Dragonguard Barracks",
+  "site": "dragonguard",
+  "native_box_xywh": [
+    177,
+    140,
+    134,
+    88
+  ],
+  "status": "generated-source; native-size and replacement-chain visual review pending; no release acceptance",
+  "rights": "Project-generated building. Private licensed/official subject references are separate inputs; no original image bundled.",
+  "production_mutations": "None: no active recipes, manifest or stage changed; earlier source versions preserved.",
+  "source_sha256": "03b0c989bcd7c75c4706c86a8be38bc44378eda1c51a442f11539dae5b2d7179",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "prompt_sha256": "8186beb20b23cc410b5fc4d96df154c98128a7b3e7b649b939c23b72fc8640c7",
+  "prompt": "Use-case: background-extraction plus explicitly requested construction-stage editing.\nReference1 is the EDIT TARGET crop of our project-owned lower-frontal town study. Reference2 is the complete OWN composition guide: only camera, depth, light and material authority, NOT a scene to reproduce. Reference3 is the PRIVATE official Demacia crest shape: redraw on existing small blue cloth where requested, no imported original pixels.\nMake ONE complete connected town-building construction object only. Preserve the target architectural family's lower frontal perspective and scene depth, upper-left light, richly textured painted/prerendered original-Heroes-III material language, weathered pale petricite, muted blue-gray slate/blue cloth, dark openings, steel and restrained old gold. Follow the exact specified state geometry, simpler foundations for early states and real structural improvements for upgrades. One visible state replaces its predecessor at SAME site. No high isometric dollhouse camera, glossy contemporary3D, anime, vector art, mobile proportions or League splash composition.\nTRUE transparent RGBA background, entire silhouette with modest transparent margins, only thin integral threshold/plinth and short soft alpha contact shadow. Remove ALL unrelated buildings, roads, terraces, cliff/grass rectangles, sky, water, landscape, shrubs and trees. Reconstruct obscured/cropped edges consistently. No people/crowds, labels/text/UI/frame, fake checkerboard or opaque background. Broad forms must read at actual native size; do not add tiny pointless clutter. Exact crest is upright central pointed blade/leaf, paired mirrored feather wings and tapered lower stem, NOT trident or fleur-de-lis. Do not add duplicate independent functional lots.\n\nTarget state: Dragonguard Barracks (dwellingLvl5).\nAssigned native site box: [177, 140, 134, 88] on800x374canvas.\nBASE DRAGONGUARD BARRACKS. The target is the upper-left two-story military hall, NOT the small separate recruit shed at bottom right. Simplify the main military hall to one sturdy single-story pale-stone barracks with a long plain blue slate roof, simple open timber porch, a small right entry gable and short attached stone steps. Keep hooked-polearm racks and two compact drake-hide equipment bundles under the porch. Remove the full second-story balcony, rich gold crest cornice and tall decorated right entrance block from the elite hall. This is visibly a cheaper predecessor on the same foundation/camera, not just recolored veteran building. No dragon creature, cavalry stalls, musical workshop or wizard chapel. Exact blue winged-blade military cloth mark; no neighboring structures.\n",
+  "native_candidate_export": {
+    "source": "assets/source/town/buildings/dwellingLvl5/master-v3.png",
+    "source_sha256": "03b0c989bcd7c75c4706c86a8be38bc44378eda1c51a442f11539dae5b2d7179",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "alpha_range": [
+      0,
+      254
+    ],
+    "transparent_pixels": 774964,
+    "near_opaque_pixels": 722996,
+    "nonzero_pixels": 797900,
+    "crop_alpha_threshold": 8,
+    "crop_xyxy": [
+      29,
+      153,
+      1516,
+      954
+    ],
+    "native_box_xywh": [
+      177,
+      140,
+      134,
+      88
+    ],
+    "native_preview": "references/town-comparisons/source-v3/dwellingLvl5-native.png",
+    "native_sha256": "7d8e56f03093c56b3c5f46a9b3ced254466336c93747b4731d13a9f079e90d73",
+    "approval": "not granted"
+  },
+  "alpha_treatment": "Generated RGBA preserved; technical alpha>=8 bounds crop only, no color-keying, opacity synthesis or background substitution."
+}

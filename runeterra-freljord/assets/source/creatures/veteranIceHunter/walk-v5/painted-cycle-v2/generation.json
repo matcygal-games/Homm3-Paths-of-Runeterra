@@ -1,0 +1,39 @@
+{
+  "status": "authored configuration; unselected upper-body correction candidate",
+  "provider": "OpenAI built-in image_gen tool",
+  "model": null,
+  "model_disclosure": "The callable tool did not disclose a model identifier.",
+  "prompt": "Use case: precise-object-edit / identity-preserve. IMAGE1 is the EXACT EDIT TARGET, a 1536x1024 three-column by two-row atlas of SIX already-correct alternating walking poses. Make ONLY the head/shoulders/chest/arms/carried-bow/quiver/cape identity correction described below. IMAGE2 is an enlarged EXACT CURRENT SELECTED head-and-torso crop, identity and viewpoint authority, with NO old legs. Do not imitate its enlarged square pixels or colored alpha-edge fringes: retain IMAGE1's rich hand-painted original 1999 Heroes III material language.\nABSOLUTE LOWER-BODY LOCK: preserve EVERY existing below-belt LEG, pelvis-leg attachment, exposed thigh, knee, shin, boot, near/far anatomical overlap, three pale straps on near shin and plain dark far shin, foot location, exact existing silhouette/articulation and contact order from IMAGE1 in ALL SIX cells. Do not move any boot, change any stride, swap legs, mirror, resize, recenter or make any new leg pose. The six cells' figure positions, head height and native scale stay fixed. Cell1 near strapped boot ahead right; Cell2 near supports/far passes; Cell3 near rear/far reaches; Cell4 FAR plain boot ahead and NEAR strapped boot behind; Cell5 far supports/near passes; Cell6 near reaches/far trails. All already correct; leave them unchanged. Do NOT copy Image2 into the painting. Paint ONLY the stated identity correction into the existing target positions.\nUPPER-BODY CORRECTION: the current target body is too narrow and side-on and has brown leather sleeves. Restore IMAGE2's BROADER three-quarter CHEST/SHOULDER read toward the viewer while head and nose still face screenRIGHT; restore the broad gray/iron fitted bodice, plain modest shoulder protection, and EXPOSED SKIN of upper arms between shoulder plate and forearm leather bracer. NO full leather long sleeves or modern coat. Preserve natural connection to the fixed pelvis and hips. Same adult dark-brown-haired hooded woman, same plain wood bow carried low toward screenright, same back quiver. Restore the selected pose-camera read and material balance, without touching lower-body geometry. No magic, glow, eagle, scenery or extra equipment. All six poses must remain one coherent same woman and same view, with a consistent upper body across cells. True transparent alpha background and clean transparent gutters. No words, labels, floor or haze.\nVETERAN ICE HUNTER identity: restore selected larger bright wolf-gray shaggy fur SHOULDER MANTLE and broad mottled wolf-fur CAPE, noticeably bulkier than base, richer silver-gray reinforced sleeveless BODICE and stronger dull steel shoulder caps, darker reinforced forearm bracers with bare visible upper arm, fuller broad quiver with natural brown arrow fletching; restore selected longer REINFORCED WOOD-AND-BONE bow whose upper limb reaches further out screenright than the base bow. Never turn it into a magical ice bow. The Veteran should be visibly broader and richer than the base in the selected reference; keep exactly the six existing leg geometries and the same pale-near/plain-far marker ownership from Image1. The cloak may be repainted behind the legs but must not move, cover or replace the knee/shin/boot phase markers.",
+  "returned_provenance": {
+    "output_hint": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-da23-7872-b9d7-26cd44e2d4c0 as C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-da23-7872-b9d7-26cd44e2d4c0\\exec-31706786-5762-4b1e-9931-ada9f9de5d78.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  "image_generation_used": true,
+  "art_accepted": false,
+  "credits": {
+    "author": "OpenAI image generation directed by Runeterra project",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "master_sha256": "788f69395f412a93f02acdffc83b918e8fa3642302cff4135cff5906b058390f",
+  "input_images": [
+    {
+      "path": "assets/source/creatures/veteranIceHunter/walk-v5/painted-cycle-v1/master.png",
+      "sha256": "b081054ad165ebae70b75d1c927d4b2d9de6fad1756a6d4b58371522df9fa0a4"
+    },
+    {
+      "path": "assets/source/creatures/veteranIceHunter/walk-v5/painted-cycle-v2/selected-v3-upperbody-10x-guide.png",
+      "sha256": "bf6c43f88610d8a650463e7e69c7999d38f171fe104b799b5f7cb4067aec2ffe"
+    }
+  ],
+  "selected_holding_source": {
+    "path": "assets/source/creatures/veteranIceHunter/registered-v3/native/g02-f000.png",
+    "sha256": "b712f10c1db89eee69a9db8b7c77259af0d8ad3257a7ea666d77342cd0a08aa3",
+    "upperbody_crop": [
+      170,
+      188,
+      235,
+      239
+    ],
+    "technical_guide_upscale": 10
+  }
+}

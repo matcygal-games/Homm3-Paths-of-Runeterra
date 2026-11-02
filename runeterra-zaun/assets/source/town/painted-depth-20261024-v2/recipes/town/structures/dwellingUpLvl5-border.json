@@ -1,0 +1,104 @@
+{
+  "acceptance": "Technical mask derived from the painted layer: the area mask defines the clickable footprint and the border mask the highlight outline. Both must be derived from the own painted layer, never copied from another faction or from the original game.",
+  "building": "dwellingUpLvl5",
+  "canvas": [
+    800,
+    374
+  ],
+  "content_box": [
+    0,
+    0,
+    800,
+    374
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; prompted and technically assembled by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/dw5-master.png",
+      "sha256": "576afc782f0c4d16f2ff7b51bd33247315b66e4f22ffe8bac523af90b13c053e"
+    },
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/dw5-provenance.json",
+      "sha256": "1c9bc5d7c4534e58edc9d83f7db94bcb95dbf66d07b9bfa8b9f00f1f7d941ea5"
+    },
+    {
+      "path": "assets/source/town/painted-community-20261024-v1/prepare.py",
+      "sha256": "570add080d42e1b17d7aec2939862119a175a664281e04050585cfb68138a835"
+    },
+    {
+      "path": "scripts/zaun_coastal_state_v1.py",
+      "sha256": "5aa45de45f59be66d393df44538743b1842db5ba5f1c4e48c1d83acaa13f3cf7"
+    },
+    {
+      "path": "assets/source/town/painted-depth-20261024-v2/prepare.py",
+      "sha256": "4338d2c3a5c9da1752c895765c49e198783a7ff5a233c8d629df2a0c7d62ccf3"
+    }
+  ],
+  "fit": "contain",
+  "generation": {
+    "conversion": {
+      "composition_rectangle": [
+        678,
+        152,
+        115,
+        96
+      ],
+      "depth_direction": "Larger apparent foreground framing; smaller distant monuments; staggered connected dry terraces.",
+      "method": "Existing genuine painted source, uniform contain and full-canvas placement; alpha-derived masks. No new painting or camera projection.",
+      "native_z": 248,
+      "revision": "painted-depth-20261024-v2",
+      "source_crop": [
+        775,
+        0,
+        1774,
+        887
+      ]
+    },
+    "credits": {
+      "author": "OpenAI built-in imagegen; prompted by Codex",
+      "license": null,
+      "redistribution": "unresolved; release prohibited"
+    },
+    "edit_target": "assets/source/town/painted-v3/dw5-master.png",
+    "generation_date": "2026-10-21",
+    "image_generation_used": true,
+    "model": null,
+    "model_disclosed": false,
+    "painted_master": "assets/source/town/chemtech-v4-buildings/dw5-master.png",
+    "painted_master_sha256": "576afc782f0c4d16f2ff7b51bd33247315b66e4f22ffe8bac523af90b13c053e",
+    "prompt": "Usecase: precise-object-edit. AttachedownZaunchemistlaboratory dwellingpair. PreservebaseLEFTsmallworkshop/openflaskshelves/stool andRIGHTtwo-storey reinforcedchemistlabwithprotectedupperflaskrack/strongerventilation; eachseparatewholebuildingwithmuchouterpadding, chimneycapsMUSTfullyinsidecanvas. Same lowfrontthreequartercamera, richtexturedpainted originalHeroesIIIprerenderedstyle. MakeCHEMTECH: flaskliquidsvividchemicalGREENwithvioletsecondaryreagents, visibleglowinggreenpressureglassinsertintheventilationtank, purplecloth/enamelroofdetailsandbrownbrick/wood/rustedcopper. Basehasmodestfewbottles/onegreenlamp; upgradelargerstrongerflaskhardwareandmanycagedvials. Keepchemistidentitynotweaponsfactory orreactor. Broadupperleftdaylight/localgreenreflections. Realtransparentalpha, clearwidegutter, nopeople/labels/backgroundtile/neonoutlines.",
+    "provider": "OpenAI built-in image_gen.imagegen",
+    "returned_provenance": {
+      "output_hint": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-560d-7462-a9a5-3670486c088c as C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-560d-7462-a9a5-3670486c088c\\exec-25079d16-e38f-4bf9-b3b0-e6e0e88c6b94.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "route": "Genuine image-generation edit of own Zaun buildings; technical crop/uniform scale/placement only",
+    "visual_approval_granted": false
+  },
+  "id": "zaun.town.structure.dwellingUpLvl5.border",
+  "identity_review": "build/reports/town-depth-20261024-v2/source-pixel-review.json",
+  "native_visual_review": "pending",
+  "output_path": "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl5_border.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/painted-depth-20261024-v2/structures/dwellingUpLvl5/border.png",
+  "source_sha256": "9867a4f69da0e418f515ea93a8b50471cc61f05b9430f601305f9ccc0f5cf762",
+  "status": "built-unreviewed",
+  "technical": true,
+  "title": "Master Alchemist Quarters border mask",
+  "visual_approval_granted": false
+}

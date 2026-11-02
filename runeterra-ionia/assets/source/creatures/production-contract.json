@@ -1,0 +1,217 @@
+{
+  "action_groups": {
+    "cast": [
+      30,
+      31,
+      32
+    ],
+    "corpse": 22,
+    "death": 5,
+    "defend": 4,
+    "fidget": 1,
+    "flight_transition": [
+      20,
+      21
+    ],
+    "hit": 3,
+    "holding": 2,
+    "melee": [
+      11,
+      12,
+      13
+    ],
+    "shoot": [
+      14,
+      15,
+      16
+    ],
+    "turns": [
+      7,
+      8
+    ],
+    "walk_or_fly": 0
+  },
+  "adventure_map": {
+    "acceptance": "Authored configuration; complete pixel projection and compiler proofs do not establish native execution or artistic acceptance.",
+    "attack_images": "Fourteen new compact editable3D adventure engagement poses in mesh-v8/adventure-reaction-v1. Both directions use same0.5 scale and actor reflection about projected ground anchor; never mirror the96x64 canvas. Wings/mantle chains physically folded, weapons held close/vertical.",
+    "attack_source_preservation": "OriginalV8 battle scenes, battle/portrait/projectile recipes and PNGs, all old prepared map/attack PNGs, and projectile ledger unchanged. Prior42 map/attack recipes and112 source PNGs preserved with SHA receipt before selection.",
+    "authored_group0_frames": 6,
+    "battle_pixel_scale": 0.5,
+    "canvas": [
+      96,
+      64
+    ],
+    "directional_groups_required": false,
+    "evidence": "build/reports/creature-art/20261022-v6-adventure-anchor/",
+    "native_anchor_tile": [
+      64,
+      32,
+      32,
+      32
+    ],
+    "native_consumed_groups": [
+      0
+    ],
+    "native_consumer_basis": "Source inspection: CCreatureHandler lines651-670 registers Obj::MONSTER; MapRendererContext lines95-114 sets non-Hero/Boat rotation0; objectGroupIndex lines194-197 returns idleGroups[0]=0; MapRenderer lines536-554 consumes the selected frame group. Original AVWPIKE, AVWMONK and AVWARCH DEFs expose group0 only.",
+    "object_kind": "ordinary MONSTER",
+    "per_frame_bbox_refit": false,
+    "projection": "Complete450x400 source affine projection, source ground197/218,266 ->80,60. Native MapRenderer sourceRect=imageDimensions-objectImageOffset-32; visitable offset0,0 selects bottom-right32x32. Animation pivot is documentary only.",
+    "projection_helper": "scripts/ionia_adventure_projection.py",
+    "reaction_authoring_helper": "scripts/ionia_adventure_reaction.py",
+    "source_anchor": [
+      80,
+      60
+    ],
+    "source_crop": null
+  },
+  "calibration": "Measure exactly one holding-frame alpha8 bounding box per variant. Use its fixed uniform scale and projected world origin across every action; never re-fit each frame.",
+  "commands": {
+    "projectile_projection": ".tools/blender45/blender-4.5.9-windows-x64/blender.exe --background --python runeterra-ionia/scripts/ionia_projectile_projection_audit.py",
+    "register": "runeterra-demacia/.venv/Scripts/python.exe runeterra-ionia/scripts/ionia_creature_art.py --register",
+    "render": ".tools/blender45/blender-4.5.9-windows-x64/blender.exe --background --python runeterra-ionia/scripts/ionia_creature_art.py -- --render --unit <id>",
+    "review": "runeterra-demacia/.venv/Scripts/python.exe runeterra-ionia/scripts/ionia_v8_review.py"
+  },
+  "compiler_status_explanation": "painted-master-complete-unapproved is the existing compiler's technical bitmap-cohort enum. It means available rendered PNG sources in this workflow, not a claim that poses were hand-painted or artistically approved.",
+  "fidget": {
+    "actual_pose_addresses": [
+      0,
+      1,
+      1,
+      2,
+      2,
+      3,
+      3
+    ],
+    "native_tick_rate": 10,
+    "probability_multiplier": 0.1,
+    "seconds": 0.7
+  },
+  "identity_limits": [
+    "All seven generic lines are project adaptation; no unique champion is reproduced as an ordinary stack.",
+    "Windborne/Galecrest are a fictional local living winged vastayan community, not Rakan copies and not a claim that all Lhotlan possess this anatomy.",
+    "Spirit Wardens are original opaque masked ceremonial guardians in layered robes; retired bark/log subjects remain history. They are not translucent ghosts, bare-chested turbaned Genies, Demacian petricite constructs or a copied Riot champion/skin."
+  ],
+  "known_review_work": [
+    "Low polygon candidate geometry and shader material detail still require final native Heroes III artistic review.",
+    "Ordinary monster adventure animations require only native group0; actual map rendering and artistic acceptance remain pending.",
+    "Native all-action elapsed playback, missile launch synchronization, death position, flying landing, casting and upgrade comparison remain pending.",
+    "Generated bitmap completeness does not establish artistic, gameplay, rights or release acceptance."
+  ],
+  "lor_subject_revision": {
+    "mechanics": "No combat statistics, ammunition, flight, spells, action costs or abilities changed. Native pivots/calibration and actual hand release transforms preserved.",
+    "native_playback": "not_run",
+    "other_families": "Distinct teal/ivory staff trainees, navy/teal masked Kinkou, navy/ivory/rose ceremonial Monks and practical red/navy Resistance. New cross-collar, robe, sleeve, mask and mantle geometry accompany palette changes.",
+    "reference_contract": "docs/LOR_VISUAL_REFERENCES.md",
+    "reference_use": "Eight exact official LoR full illustrations viewed privately for cloth, mask, feather, material and colour construction. URLs and SHA-256 recorded in model metadata; no illustration pixels are textures, frames or portrait crops.",
+    "release_accepted": false,
+    "revision": "mesh-v8",
+    "source_contract": "design/visual-reference-decisions.json",
+    "status": "authored configuration",
+    "subjects": {
+      "bow": "Original short-fox-eared humaniform local archers, no antlers/deer muzzle. Physical recurve and quiver, layered cross-collar robes, teal travel wrap or upgraded ivory lacquer halfmask/dusky-rose tabard/navy undersleeve.",
+      "warden": "Original opaque masked biped ceremonial spirits with indigo/ivory robes, curved engraved ivory mask, turquoise trim and dusky-rose mantle. Elder adds broad layered mantle, raised etched bronze crest and blossom reliquaries; prior log forms retired.",
+      "wing": "Original humaniform living featherfolk with small pointed ears and bound dark hair; ivory/pale-blue/dusky-rose layered feathers, Ionian robe panels and lacquered upgrade protection. No horned woodland body."
+    },
+    "visual_approval_granted": false
+  },
+  "material_detail_revision": {
+    "changes": [
+      "Original painted material atlas combined with broad procedural value wear and cloth bump folds that remain visible after native reduction.",
+      "Real stitched limb seams, robe-fold ridges, grip fingers, brow/eye/mouth planes, armor rims, weapon bevel lines and carved bark/face recess geometry.",
+      "Living Kin use curved tapered feather meshes with raised vanes, narrow quills, barb lines and overlapping shorter coverts; original wing bones and flight action semantics retained."
+    ],
+    "evidence": "build/reports/creature-art/20261022-v4-material-detail/",
+    "framing": "Use exactly the prior native-to-world scale and ground pivot. Raw resolution changes sampling, so individual alpha-edge differences are measured rather than described as unchanged pixels.",
+    "native_playback": "not_run",
+    "native_rendering": {
+      "cycles_samples": 16,
+      "native_canvas": [
+        450,
+        400
+      ],
+      "prior_calibration_locked": true,
+      "raw_canvas": [
+        384,
+        384
+      ]
+    },
+    "projectile_release": "Saved old/new Blender joint matrices, cameras and actual native projections compared at all twelve g14/15/16 frame003 cases; measured ledger points and content offsets remain unchanged.",
+    "quality_limit": "The underlying rigid segmented anatomy and generic head/hand volumes remain simple. This bounded material/detail pass does not supply final sculpted anatomy or a bespoke painted finish for every pose. Further native artistic review and refinement remain required.",
+    "release_accepted": false,
+    "scope": "All fourteen existing subjects and keyed action families; earlier source revisions and pre-pass recipe selections preserved.",
+    "selected_revision": "mesh-v7",
+    "status": "authored configuration",
+    "visual_approval_granted": false
+  },
+  "native_canvas": [
+    450,
+    400
+  ],
+  "native_ground_anchor": {
+    "single_hex": [
+      197,
+      266
+    ],
+    "two_hex": [
+      218,
+      266
+    ]
+  },
+  "native_playback": "not_run",
+  "projectile": {
+    "angles_degrees": [
+      90,
+      45,
+      0,
+      -45,
+      -90
+    ],
+    "one_based_attack_climax": 4,
+    "physical": true
+  },
+  "release_accepted": false,
+  "source_method": "Original editable volumetric Blender meshes, articulated rigid joints and keyed physical poses; original built-in imagegen painted material atlas. Rendered bitmap poses are not painted pose-atlas generation, idle-image warps, or borrowed original creature frames.",
+  "spirit_blossom_direction": {
+    "changed_variants": [
+      "ionianDisciple",
+      "enlightenedWarrior",
+      "kinkouAdept",
+      "spiritMonk",
+      "masterMonk",
+      "windborneKin",
+      "galecrestKin",
+      "spiritWarden",
+      "elderSpiritWarden"
+    ],
+    "interpretation": "Original generic troop ceremonial accents inspired by Ionia festival folklore; no canonical champion skin identity, moral classification, ghost transformation or combat statistic change.",
+    "lore_review": "docs/SPIRIT_BLOSSOM.md",
+    "original_ceremonial_revision": "mesh-v6",
+    "palette": "Matte faded sky blue, warm ivory and dusty petal pink ties, small carved remembrance charms and branch blossoms; existing indigo, purple, bark, jade and practical red equipment identities remain.",
+    "preserved_variants_in_ceremonial_pass": [
+      "kinkouInitiate",
+      "vastayanScout",
+      "vastayanWarrior",
+      "resistanceBlade",
+      "resistanceVeteran"
+    ],
+    "selected_revision": "mesh-v8",
+    "status": "authored configuration",
+    "verification": "New cohort source hashes, exact stock preview crop, action frame differences and configured compiler plan are reviewed separately from native gameplay or artistic approval."
+  },
+  "status": "authored configuration",
+  "stock_preview_rect": {
+    "single_hex": [
+      150,
+      155,
+      100,
+      120
+    ],
+    "two_hex": [
+      170,
+      155,
+      100,
+      120
+    ]
+  },
+  "visual_approval_granted": false
+}

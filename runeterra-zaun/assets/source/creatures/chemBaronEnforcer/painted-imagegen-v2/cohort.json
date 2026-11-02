@@ -1,0 +1,112 @@
+{
+  "assembly": "Source alpha-component isolation, crop, uniform Lanczos resampling and placement only. No painting, mirroring, rig, copied original pixels, body deformation or reused battle frame.",
+  "blocked_outputs": [
+    "battle",
+    "attackLeft"
+  ],
+  "findings": [
+    "Imagegen painted four distinct views. No final asset approval or native gameplay claimed.",
+    "Left encounter candidate faces right/upper-left rather than a clear left-facing encounter; unselected."
+  ],
+  "master_sha256": "1833e132f99b6c290346b7c2721c3090ce619e3407f22955844a488e4094a4ad",
+  "native_camera": {
+    "attack_pivot": [
+      32,
+      63
+    ],
+    "map_pivot": [
+      64,
+      63
+    ],
+    "source_contact_anchors": [
+      [
+        747,
+        709
+      ],
+      [
+        1275,
+        713
+      ],
+      [
+        1682,
+        720
+      ]
+    ],
+    "uniform_scale": 0.085
+  },
+  "outputs": {
+    "attackLeft": {
+      "alpha_bbox": [
+        16,
+        4,
+        49,
+        63
+      ],
+      "path": "assets/source/creatures/chemBaronEnforcer/painted-imagegen-v2/native/attackLeft.png",
+      "sha256": "2a2870c11866622444f8a13c36c0669b2dbf39c192ac51d1af654e8005dbb667",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "attackRight": {
+      "alpha_bbox": [
+        18,
+        20,
+        57,
+        63
+      ],
+      "path": "assets/source/creatures/chemBaronEnforcer/painted-imagegen-v2/native/attackRight.png",
+      "sha256": "b433e87a4af9abfdb98a727c10e0653d31d4b8cded5a759fc29b8dd897791921",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "large": {
+      "alpha_bbox": [
+        0,
+        2,
+        58,
+        64
+      ],
+      "path": "assets/source/creatures/chemBaronEnforcer/painted-imagegen-v2/native/large.png",
+      "sha256": "606c819adb91fee5a79d9724cb87f29ef0524f4045a95fdb80ca36ae7698214f",
+      "size": [
+        58,
+        64
+      ]
+    },
+    "map": {
+      "alpha_bbox": [
+        48,
+        16,
+        95,
+        63
+      ],
+      "path": "assets/source/creatures/chemBaronEnforcer/painted-imagegen-v2/native/map.png",
+      "sha256": "7d4eb19effec81b7e297181517fea1e88f9f78caae46b23a34c154ebff62bbca",
+      "size": [
+        96,
+        64
+      ]
+    },
+    "small": {
+      "alpha_bbox": [
+        1,
+        0,
+        31,
+        32
+      ],
+      "path": "assets/source/creatures/chemBaronEnforcer/painted-imagegen-v2/native/small.png",
+      "sha256": "4a9b100b5baf7226038d872cef7a820d841c7dac558583580f2f5926f405c723",
+      "size": [
+        32,
+        32
+      ]
+    }
+  },
+  "status": "authored configuration",
+  "unit": "chemBaronEnforcer",
+  "visual_approval_granted": false
+}

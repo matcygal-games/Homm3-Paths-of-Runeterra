@@ -1,0 +1,76 @@
+{
+  "acceptance": "Production requirements only. No rig/guide/primitive/reference may substitute for painted final art; this recipe must fail while its real master/hash is absent.",
+  "art_direction": "Independent Noxian iron/crimson/black subjects in Heroes III native painted language. Never recolour Castle or Demacia art, import original pixels or invent an official crest.",
+  "canvas": [
+    800,
+    374
+  ],
+  "composition_contract": "Independent Noxian town terrain/layout; no buildings baked into terrain. Ground planes,19-site/36-state composition,occlusion and all clicks need actual source/native review.",
+  "credits": {
+    "author": "Project-directed OpenAI built-in imagegen; deterministic project conversion",
+    "license": null,
+    "redistribution": "unresolved; no release or redistribution approval"
+  },
+  "dimensions_basis": {
+    "canvas": [
+      800,
+      374
+    ],
+    "mode": "RGB",
+    "reference_only": "runeterra-demacia/references/images/tbcsback.pcx.png",
+    "reference_sha256": "949012ea68999207934bc482f1552858474fe50cefddef17eaac00d4b98c2be9",
+    "use": "Dimensions/format only. No reference pixels, palette, source recipe, layout silhouette or licensed art copied."
+  },
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in image_gen",
+    "model": "Not exposed by built-in tool",
+    "prompt": "Use case: precise-object-edit.\nAsset: ONE coherent painted EMPTY Noxus town background, exactly the same full 800x374 framing/aspect2.139:1 as image1.\n\nIMAGE ROLES:\n1 EDIT TARGET: complete EMPTY terrain plate with every final road, terrace, stair and coastal connection.\n2 SUPPORTING REFERENCE ONLY: full built city, showing the unchanged separate buildings/materials/light. Do NOT put these buildings into the empty result.\n3 SUPPORTING REFERENCE ONLY: base-built city, showing why the empty plots must share the same natural paving.\n4 STYLE CONTROL ONLY: actual extracted original HeroesIII Castle source assembly, native18-source control. Use its compact handpainted grain, forced perspective and surface readability, NEVER its subjects/pixels/layout.\n5 STYLE CONTROL ONLY: actual original native Castle background. Never copy its scenery.\n\nUSER REQUEST: repaint ALL pavements and stairs TOGETHER so they look coherent and naturally joined to their surroundings. The patchwork of isolated yellow/gold floor rectangles and inconsistent stone sizes is rejected.\n\nCHANGE ONLY THE BACKGROUND SURFACE FINISH AS ONE GLOBALLY REGISTERED PAINTING:\nUse ONE consistent Noxian weathered warm GREY-BROWN masonry system, matching the existing dark iron/crimson architecture. Continuous stone coursing across street mouths and plazas; paving under ALL future building footprints must ALSO be repainted, with no protected building-shaped holes. Stone size follows the SAME existing forced-perspective camera: subtle fine distant stones, moderately larger near stones, no giant patio tiles. Handpainted wear, restrained grout, small native grain, integrated rim highlights and contact shadows. Shared upper-left warm directional light, subtle local torch glow, atmospheric depth. The city should feel built from one material/light vocabulary rather than independently resized texture samples.\n\nStairs and landings must look naturally built in the same projection, with readable horizontal treads/dark risers, consistent depth scaling, clear endpoint joins. Terrace TOP surfaces stay horizontal; CAP edges project properly; FRONT retaining faces remain vertical masonry with convincing coursing and support/shadow. No floor pattern continuing down a wall or floating over a cliff. Keep the coastal timber gangway timber and supported, with the SAME scene lighting. Blend the existing surface transitions naturally without moving their contours.\n\nIMMUTABLE GEOMETRY / SUBJECTS:\nKeep EXACT existing road footprints, curved avenue width, court shapes, terrace heights, top/cap/front boundary contours, every five new stair/landing footprint and endpoint, and coastal gangway alignment. No new paths, closures, props, debris or structures. Keep sky, distant skyline, mountains, trees/plants, geography, coastline/external water, decorative objects/braziers/rails and their positions unchanged. Preserve the whole complete background framing: no zoom, crop, camera change, strict isometric redesign or lens effect. All36 functional buildings and their crests are SEPARATE fixed assets: DO NOT repaint them, add them, or bake them into this EMPTY background.\n\nOne coherent whole-scene painted2D surface repaint, NOT separate crops/tiles, not a recolor/filter, no CGI/3D-render/plastic/vector/anime, no text, guides, labels or watermarks. Return ONE complete EMPTY background, same composition and geometry, unified natural paving/stairs/masonry surfaces.",
+    "painted_master": "assets/source/town/complete-town-20261027-v2/coherent-paving-repaint-v1/whole-scene-master-v1.png",
+    "painted_master_sha256": "c16bf0a74f93d040de2a467226a37474e73d258d9cd1d8c5844e22d1dbdeed4c",
+    "generation_record": "assets/source/town/complete-town-20261027-v2/coherent-paving-repaint-v1/generation-selected-v1.json",
+    "generation_record_sha256": "44528014ebf1869fa7ad85997d52df4849da197f3c51e06505092ae1e6322574",
+    "conversion": {
+      "mode": "ONE global whole-master fit + protected surface composite; no local texture crops/resizes, filters or code-drawn art.",
+      "source_assets_index": {
+        "path": "assets/source/town/complete-town-20261027-v2/coherent-paving-repaint-v1/source-assets-index-v1.json",
+        "sha256": "e2dbf46c208dd8ea0cb19993465ffc06e9ee3a5fda94e7d7740ae57ad3c531e1"
+      },
+      "surface_recipe": {
+        "path": "assets/source/town/complete-town-20261027-v2/coherent-paving-repaint-v1/surface-recipe-selected-v1.json",
+        "sha256": "1acf5ac36637273b88d7c68dde3e2e56f5af958c2c22eb15d44345f859413ebf"
+      }
+    }
+  },
+  "inventory": {
+    "asset_id": "noxus.Sprites.runeterra.noxus.town.background.png",
+    "manifest": "assets/manifest.json",
+    "recipe_path": "assets/recipes/town/background.json"
+  },
+  "output_path": "Content/Sprites/runeterra/noxus/town/background.png",
+  "production_status": "painted-master-complete",
+  "recipe_type": "raster",
+  "require_alpha": false,
+  "required_before_conversion": [
+    "Real independent Noxus painted master and truthful provenance",
+    "Non-null SHA256 source pins",
+    "Official Noxus emblem provenance where used",
+    "Native-size silhouette/composition/alpha and role review",
+    "Explicit coordinator selection; no automatic acceptance"
+  ],
+  "role": "town-background",
+  "sha256": "3e049c20df7009209ba424c46a450581d0097b35d1daa216f59e2df4600f0a5b",
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/complete-town-20261027-v2/coherent-paving-repaint-v1/surface-painted-native-v1.png",
+  "source_sha256": "3e049c20df7009209ba424c46a450581d0097b35d1daa216f59e2df4600f0a5b",
+  "status": "built-unreviewed",
+  "visual_approval_granted": false,
+  "source_canvas": [
+    800,
+    374
+  ]
+}

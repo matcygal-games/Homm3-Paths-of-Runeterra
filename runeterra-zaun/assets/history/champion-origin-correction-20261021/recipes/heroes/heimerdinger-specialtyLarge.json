@@ -1,0 +1,71 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "Independent Zaun character portrait in Heroes III native painted language. The portrait must match the authored biography and must not reuse official character art.",
+  "canvas": [
+    44,
+    44
+  ],
+  "credits": {
+    "author": "OpenAI built-in image_gen; independent portrait direction by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "delivery": {
+    "identity_review": "build/reports/art-implementation/20261021-champion-completion-v3/champions/REVIEW.md",
+    "sources": [
+      {
+        "path": "assets/source/heroes/heimerdinger/painted-v2/specialtyLarge-master.png",
+        "sha256": "5f64d1444668a4af10ae80a18ce34ae1dde92b3a04a4ebabda312dad4fac654b"
+      }
+    ],
+    "status": "built-unreviewed; native and final art acceptance pending",
+    "technical_crop_box": [
+      1060,
+      120,
+      1490,
+      920
+    ],
+    "visual_approval_granted": false
+  },
+  "dependencies": [],
+  "fit": "contain",
+  "generation": {
+    "image_generation_used": true,
+    "model": null,
+    "model_id_exposed": false,
+    "model_note": "Tool did not expose the model identifier.",
+    "painted_master": "assets/source/heroes/heimerdinger/painted-v2/portrait-and-specialty-master.png",
+    "painted_master_sha256": "b7d0a58a0f7540a73f0579f3d744993a0710750973c4dc3bf3d1ba55126aed19",
+    "prompt": "Use case: stylized-concept. Asset type: genuine production champion portrait and its separate specialty object for a Heroes of Might and Magic III expansion, Zaun. Independently draw the subject; do not copy official character artwork.\n\nComposition: landscape 1536 x 1024 image with TWO PANELS of ONE CHAMPION IDENTITY. LEFT two thirds x 0-1023: square close head-and-shoulders portrait, full head centered near x 512, top near y 60 and chin near y 730. RIGHT third x 1024-1535: one fully visible specialty OBJECT, centered within x 1070-1490, y 230-820, on a plain dark brown background. Straight vertical panel boundary x 1024. The specialty must not be a head, portrait crop, emblem or MOBA ability splash. No unrelated heroes, text, labels, frames or watermark.\n\nStyle: original 1999 Heroes III sculpted pre-rendered miniature portraits with a restrained oil-painted finishing pass. Strong three-dimensional facial/creature planes, rich tactile materials, directional upper-left light, crisp restrained eye highlights, readable silhouette. Natural anatomy, compact faces, rough cloth, worn leather, tarnished iron and brass. Background is real subordinate painted scenery with value separation. Must read at 58 x 64 and 48 x 32, with object readable at 44 x 44 and 32 x 32. No anime, mascot face, storybook softness, glossy modern 3D, modern splash-art layout, neon, flat vector, comic outline, mobile-game proportions, arbitrary pixel filter or painted text.\n\nChampion: HEIMERDINGER.\nPortrait: A male YORDLE inventor and teacher, Piltover-linked guest: tiny ochre-tan furry face with a short muzzle, enormous wild upswept cream-gold hair forming a broad bright fan, wide pale furry ears, very bushy eyebrows, small thoughtful eyes through round worn brass spectacles. Warm curious thoughtful expression, slight left head angle. Dark teal wool waistcoat and brown leather workshop collar with one little brass tool clip. No white-and-gold royal uniform or modern lab coat. Bright hair must be coarse modeled clumps, not fluffy mascot cotton. Background: low muted green workshop wall, dark shelves and a single amber task lamp. Distinct from Corki's white moustache/cap and Ziggs's goggles/brown ears.\nSpecialty object: One single heavy brass adjustment wrench with a compact cogwheel at its head, a broad simple steel jaw and dark wood grip. One readable pressure-frame tuning tool, not a robot face, turret or second commander.",
+    "provenance_record": "assets/source/heroes/heimerdinger/painted-v2/generation.json",
+    "provider": "OpenAI built-in image_gen tool",
+    "returned_provenance": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-1663-7df0-8ab7-dcf90bfe6162 as C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-1663-7df0-8ab7-dcf90bfe6162\\exec-ed7cf77c-4e18-4f66-b6d9-64e6bb1a57f4.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "route": "Genuine built-in image generation. Technical crop, RGBA conversion, uniform LANCZOS resampling and canvas placement only; specialty object is a separate painted panel, never a face crop."
+  },
+  "hero": "heimerdinger",
+  "id": "zaun.hero.heimerdinger.specialtyLarge",
+  "output_path": "Content/Sprites/runeterra/zaun/heroes/heimerdinger/specialtyLarge.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    44,
+    44
+  ],
+  "source": "assets/source/heroes/heimerdinger/painted-v2/specialtyLarge-master.png",
+  "source_sha256": "5f64d1444668a4af10ae80a18ce34ae1dde92b3a04a4ebabda312dad4fac654b",
+  "specialty": {
+    "description": "Chemtech Constructs and their Reinforced upgrades receive the native tier-three creature specialty: +1 Speed and standard Attack/Defense growth.",
+    "name": "Pressure-Frame Tuning",
+    "rule": "The specialty image shows the authored specialty. It is not a duplicate portrait."
+  },
+  "status": "built-unreviewed",
+  "title": "heimerdinger specialtyLarge",
+  "visual_approval_granted": false
+}

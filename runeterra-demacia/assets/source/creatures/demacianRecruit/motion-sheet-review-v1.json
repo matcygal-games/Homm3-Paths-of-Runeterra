@@ -1,0 +1,38 @@
+{
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "decision": "Do not split, assemble or register this sheet as final battle actions. Keep truthful one-frame group2 partial recipe; no idle substitution for missing attacks/death.",
+  "dimensions": [
+    1086,
+    1448
+  ],
+  "id": "demacianRecruit-motion-sheet-prototype-v1",
+  "master": "assets/source/creatures/demacianRecruit/motion-sheet-prototype-v1.png",
+  "mode": "RGBA",
+  "observed": {
+    "columns": 6,
+    "count_method": "Manual visual inspection of actual generated raster; not a loader or automated action test.",
+    "grid": "Vertical cell spacing does not follow requested8row grid; some raised swords/fallen equipment extend beyond nominal grid cells.",
+    "ground_contact": "Different row baselines require deliberate atlas repair and continuity review.",
+    "identity": "Generally preserves Recruit helmet/blue cloth/sword/shield, with genuinely changing walk/hit/death poses.",
+    "missing": "A separate six-frame horizontal/front sword-attack row.",
+    "populated_rows": 7,
+    "visible_figures": 42
+  },
+  "promotion_to_animation": false,
+  "prompt": "assets/source/creatures/demacianRecruit/motion-sheet-prompt-v1.txt",
+  "prompt_sha256": "056be66717158f210aa142a48aee6620185f5480ba8c90a9e1603a33b177807d",
+  "release_ready": false,
+  "required": {
+    "cells": 48,
+    "columns": 6,
+    "motion": "Distinct idle/fidget, six walk, four hit/two defense, six death, turning, three six-frame directional attacks with fixed cell pitch.",
+    "rows": 8
+  },
+  "schemaVersion": 1,
+  "sha256": "7fe033fc886797a193b5753310cb58a0354ae2d8826d9d2cd3c0220056260fde",
+  "status": "rejected-production-prototype",
+  "tool": "built-in image_gen.imagegen"
+}

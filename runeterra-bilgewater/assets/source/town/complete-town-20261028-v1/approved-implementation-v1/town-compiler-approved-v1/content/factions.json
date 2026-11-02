@@ -1,0 +1,1460 @@
+{
+  "bilgewater": {
+    "alignment": "neutral",
+    "boat": "core:boatCastle",
+    "creatureBackground": {
+      "120px": "runeterra/bilgewater/ui/creatureBackground120.png",
+      "130px": "runeterra/bilgewater/ui/creatureBackground130.png"
+    },
+    "description": "An additional harbor town of sailors, shell-folk gunners, Buhru tradition, coastal birds and amphibious monsters. Four ground melee lines, two finite physical ranged lines and one flying line support a deliberate landing and boarding doctrine. Neutral alignment is a compatibility value, not a moral judgment. Post-Burning Tides, before Ruined King and Ruination; rival champions coexist only as explicit skirmish or scenario adaptations.",
+    "name": "Bilgewater",
+    "nativeTerrain": [
+      "sand"
+    ],
+    "puzzleMap": {
+      "pieces": [
+        {
+          "index": 1,
+          "x": 7,
+          "y": 8
+        },
+        {
+          "index": 18,
+          "x": 81,
+          "y": 8
+        },
+        {
+          "index": 35,
+          "x": 155,
+          "y": 8
+        },
+        {
+          "index": 4,
+          "x": 229,
+          "y": 8
+        },
+        {
+          "index": 21,
+          "x": 303,
+          "y": 8
+        },
+        {
+          "index": 38,
+          "x": 377,
+          "y": 8
+        },
+        {
+          "index": 7,
+          "x": 451,
+          "y": 8
+        },
+        {
+          "index": 24,
+          "x": 525,
+          "y": 8
+        },
+        {
+          "index": 41,
+          "x": 7,
+          "y": 99
+        },
+        {
+          "index": 10,
+          "x": 81,
+          "y": 99
+        },
+        {
+          "index": 27,
+          "x": 155,
+          "y": 99
+        },
+        {
+          "index": 44,
+          "x": 229,
+          "y": 99
+        },
+        {
+          "index": 13,
+          "x": 303,
+          "y": 99
+        },
+        {
+          "index": 30,
+          "x": 377,
+          "y": 99
+        },
+        {
+          "index": 47,
+          "x": 451,
+          "y": 99
+        },
+        {
+          "index": 16,
+          "x": 525,
+          "y": 99
+        },
+        {
+          "index": 33,
+          "x": 7,
+          "y": 190
+        },
+        {
+          "index": 2,
+          "x": 81,
+          "y": 190
+        },
+        {
+          "index": 19,
+          "x": 155,
+          "y": 190
+        },
+        {
+          "index": 36,
+          "x": 229,
+          "y": 190
+        },
+        {
+          "index": 5,
+          "x": 303,
+          "y": 190
+        },
+        {
+          "index": 22,
+          "x": 377,
+          "y": 190
+        },
+        {
+          "index": 39,
+          "x": 451,
+          "y": 190
+        },
+        {
+          "index": 8,
+          "x": 525,
+          "y": 190
+        },
+        {
+          "index": 25,
+          "x": 7,
+          "y": 281
+        },
+        {
+          "index": 42,
+          "x": 81,
+          "y": 281
+        },
+        {
+          "index": 11,
+          "x": 155,
+          "y": 281
+        },
+        {
+          "index": 28,
+          "x": 229,
+          "y": 281
+        },
+        {
+          "index": 45,
+          "x": 303,
+          "y": 281
+        },
+        {
+          "index": 14,
+          "x": 377,
+          "y": 281
+        },
+        {
+          "index": 31,
+          "x": 451,
+          "y": 281
+        },
+        {
+          "index": 48,
+          "x": 525,
+          "y": 281
+        },
+        {
+          "index": 17,
+          "x": 7,
+          "y": 372
+        },
+        {
+          "index": 34,
+          "x": 81,
+          "y": 372
+        },
+        {
+          "index": 3,
+          "x": 155,
+          "y": 372
+        },
+        {
+          "index": 20,
+          "x": 229,
+          "y": 372
+        },
+        {
+          "index": 37,
+          "x": 303,
+          "y": 372
+        },
+        {
+          "index": 6,
+          "x": 377,
+          "y": 372
+        },
+        {
+          "index": 23,
+          "x": 451,
+          "y": 372
+        },
+        {
+          "index": 40,
+          "x": 525,
+          "y": 372
+        },
+        {
+          "index": 9,
+          "x": 7,
+          "y": 463
+        },
+        {
+          "index": 26,
+          "x": 81,
+          "y": 463
+        },
+        {
+          "index": 43,
+          "x": 155,
+          "y": 463
+        },
+        {
+          "index": 12,
+          "x": 229,
+          "y": 463
+        },
+        {
+          "index": 29,
+          "x": 303,
+          "y": 463
+        },
+        {
+          "index": 46,
+          "x": 377,
+          "y": 463
+        },
+        {
+          "index": 15,
+          "x": 451,
+          "y": 463
+        },
+        {
+          "index": 32,
+          "x": 525,
+          "y": 463
+        }
+      ],
+      "prefix": "runeterra/bilgewater/puzzle/piece"
+    },
+    "town": {
+      "buildings": {
+        "blacksmith": {
+          "cost": {
+            "gold": 1000,
+            "wood": 5
+          },
+          "description": "Produces native Ballistae; no dependence on the optional coastal shipyard.",
+          "name": "Shipwright's Forge",
+          "warMachine": "core:ballista"
+        },
+        "capitol": {
+          "cost": {
+            "gold": 10000
+          },
+          "description": "Produces 4000 gold daily. Native one-capitol restrictions apply.",
+          "name": "Grand Harbor Assembly",
+          "produce": {
+            "gold": 4000
+          },
+          "requires": [
+            "castle"
+          ],
+          "upgrades": "cityHall"
+        },
+        "castle": {
+          "cost": {
+            "gold": 5000,
+            "ore": 10,
+            "wood": 10
+          },
+          "description": "Native castle walls, towers and double base growth.",
+          "name": "Sea Wall Bastion",
+          "upgrades": "citadel"
+        },
+        "citadel": {
+          "cost": {
+            "gold": 2500,
+            "ore": 5
+          },
+          "description": "Adds the native keep, moat and fifty percent base creature growth.",
+          "name": "Harbor Redoubt",
+          "upgrades": "fort"
+        },
+        "cityHall": {
+          "cost": {
+            "gold": 5000
+          },
+          "description": "Produces 2000 gold daily.",
+          "name": "Captains' Assembly",
+          "produce": {
+            "gold": 2000
+          },
+          "requires": [
+            "allOf",
+            [
+              "marketplace"
+            ],
+            [
+              "blacksmith"
+            ],
+            [
+              "mageGuild1"
+            ]
+          ],
+          "upgrades": "townHall"
+        },
+        "dwellingLvl1": {
+          "cost": {
+            "gold": 500,
+            "wood": 5
+          },
+          "description": "Recruits Bilge Rats from a shared base-growth pool of fourteen.",
+          "name": "Dockhand Quarters",
+          "requires": [
+            "fort"
+          ]
+        },
+        "dwellingLvl2": {
+          "cost": {
+            "gold": 1000,
+            "ore": 5,
+            "wood": 5
+          },
+          "description": "Recruits Corsairs; shared base growth nine.",
+          "name": "Corsair Deck",
+          "requires": [
+            "dwellingLvl1"
+          ]
+        },
+        "dwellingLvl3": {
+          "cost": {
+            "gold": 1500,
+            "ore": 10
+          },
+          "description": "Recruits Shellshot Gunners; shared base growth seven.",
+          "name": "Shellshot Battery",
+          "requires": [
+            "allOf",
+            [
+              "dwellingLvl1"
+            ],
+            [
+              "blacksmith"
+            ]
+          ]
+        },
+        "dwellingLvl4": {
+          "cost": {
+            "gold": 2500,
+            "ore": 5,
+            "wood": 5
+          },
+          "description": "Recruits Kraken Priests; shared base growth four. Retains the Temple's defending Morale +1.",
+          "name": "Buhru Priest Hall",
+          "requires": [
+            "dwellingLvl3"
+          ],
+          "upgrades": "special1"
+        },
+        "dwellingLvl5": {
+          "cost": {
+            "gold": 3500,
+            "ore": 10,
+            "wood": 5
+          },
+          "description": "Recruits Cliffwings; shared base growth three.",
+          "name": "Cliffside Roost",
+          "requires": [
+            "allOf",
+            [
+              "dwellingLvl3"
+            ],
+            [
+              "mageGuild1"
+            ]
+          ]
+        },
+        "dwellingLvl6": {
+          "cost": {
+            "gold": 6000,
+            "ore": 10,
+            "wood": 10
+          },
+          "description": "Recruits Boarding Captains; shared base growth two. Retains Memorial defending Luck +1.",
+          "name": "Captains' Hall",
+          "requires": [
+            "allOf",
+            [
+              "dwellingLvl4"
+            ],
+            [
+              "blacksmith"
+            ]
+          ],
+          "upgrades": "special2"
+        },
+        "dwellingLvl7": {
+          "cost": {
+            "crystal": 8,
+            "gold": 12000,
+            "ore": 15,
+            "wood": 10
+          },
+          "description": "Recruits Shore Leviathans; shared base growth one. An accessible land basin: coastal shipyard not required.",
+          "name": "Leviathan Basin",
+          "requires": [
+            "allOf",
+            [
+              "dwellingLvl5"
+            ],
+            [
+              "mageGuild3"
+            ]
+          ]
+        },
+        "dwellingUpLvl1": {
+          "cost": {
+            "gold": 1000,
+            "wood": 5
+          },
+          "description": "Recruits Sea Dogs from the same weekly pool; upgrade charge 15 gold per sailor.",
+          "name": "Sea Dog Quarters",
+          "upgrades": "dwellingLvl1"
+        },
+        "dwellingUpLvl2": {
+          "cost": {
+            "gold": 1500,
+            "ore": 5,
+            "wood": 5
+          },
+          "description": "Recruits Pirate Marksmen from the same pool; upgrade charge 40 gold.",
+          "name": "Marksman's Deck",
+          "upgrades": "dwellingLvl2"
+        },
+        "dwellingUpLvl3": {
+          "cost": {
+            "gold": 2000,
+            "ore": 10
+          },
+          "description": "Recruits Reef Bombardiers from the same pool; upgrade charge 80 gold.",
+          "name": "Reef Battery",
+          "upgrades": "dwellingLvl3"
+        },
+        "dwellingUpLvl4": {
+          "cost": {
+            "gold": 3000,
+            "ore": 5,
+            "wood": 5
+          },
+          "description": "Recruits Tide Hierophants from the same pool; upgrade charge 170 gold. Retains the Temple blessing.",
+          "name": "Hierophant Hall",
+          "upgrades": "dwellingLvl4"
+        },
+        "dwellingUpLvl5": {
+          "cost": {
+            "crystal": 2,
+            "gold": 4500,
+            "ore": 10,
+            "wood": 5
+          },
+          "description": "Recruits Stormwings from the same pool; upgrade charge 250 gold. The name grants no lightning power.",
+          "name": "Stormwing Eyrie",
+          "upgrades": "dwellingLvl5"
+        },
+        "dwellingUpLvl6": {
+          "cost": {
+            "crystal": 3,
+            "gold": 7500,
+            "ore": 10,
+            "wood": 10
+          },
+          "description": "Recruits Fleet Veterans from the same pool; upgrade charge 400 gold. Retains Memorial defending Luck +1.",
+          "name": "Fleet Hall",
+          "upgrades": "dwellingLvl6"
+        },
+        "dwellingUpLvl7": {
+          "cost": {
+            "crystal": 10,
+            "gold": 15000,
+            "ore": 15,
+            "wood": 10
+          },
+          "description": "Recruits Elder Shore Leviathans from the same pool; upgrade charge 1000 gold and one crystal.",
+          "name": "Elder Leviathan Basin",
+          "requires": [
+            "castle"
+          ],
+          "upgrades": "dwellingLvl7"
+        },
+        "fort": {
+          "cost": {
+            "gold": 5000,
+            "ore": 20,
+            "wood": 20
+          },
+          "description": "Native fortified walls protect the town.",
+          "name": "Timber Palisade"
+        },
+        "grail": {
+          "cost": {},
+          "description": "Native Grail income and creature growth, applied once. A small civic beacon; no duplicate additional growth bonus.",
+          "mode": "grail",
+          "name": "Beacon of Safe Return"
+        },
+        "mageGuild1": {
+          "cost": {
+            "gold": 2000,
+            "ore": 5,
+            "wood": 5
+          },
+          "description": "Teaches level-one spells under native guild rules.",
+          "name": "Tide Archive I"
+        },
+        "mageGuild2": {
+          "cost": {
+            "crystal": 4,
+            "gems": 4,
+            "gold": 1000,
+            "mercury": 4,
+            "ore": 5,
+            "sulfur": 4,
+            "wood": 5
+          },
+          "description": "Teaches level-two spells.",
+          "name": "Tide Archive II",
+          "upgrades": "mageGuild1"
+        },
+        "mageGuild3": {
+          "cost": {
+            "crystal": 6,
+            "gems": 6,
+            "gold": 1000,
+            "mercury": 6,
+            "ore": 5,
+            "sulfur": 6,
+            "wood": 5
+          },
+          "description": "Teaches level-three spells. No fourth or fifth guild level.",
+          "name": "Tide Archive III",
+          "upgrades": "mageGuild2"
+        },
+        "marketplace": {
+          "cost": {
+            "gold": 500,
+            "wood": 5
+          },
+          "description": "Native resource trading and ordinary marketplace rates.",
+          "name": "Harbor Exchange"
+        },
+        "resourceSilo": {
+          "cost": {
+            "gold": 4000,
+            "ore": 5,
+            "wood": 10
+          },
+          "description": "Produces one crystal daily for the current owner. Crystal abstracts valuable marine salvage; no generated creatures or water walking. This land service needs no coastal shipyard.",
+          "name": "Slaughter Docks",
+          "produce": {
+            "crystal": 1
+          },
+          "requires": [
+            "marketplace"
+          ]
+        },
+        "ship": {
+          "cost": {},
+          "description": "A native boat is moored at the slipway.",
+          "mode": "special",
+          "name": "Moored Harborboat",
+          "requires": [
+            "shipyard"
+          ]
+        },
+        "shipyard": {
+          "cost": {
+            "gold": 2000,
+            "wood": 20
+          },
+          "description": "Optional native boats require a legal adjacent coastal tile. No ordinary dwelling depends on this site.",
+          "name": "Coastal Slipway"
+        },
+        "special1": {
+          "bonuses": [
+            {
+              "type": "MORALE",
+              "val": 1
+            }
+          ],
+          "cost": {
+            "gems": 3,
+            "gold": 4500,
+            "ore": 8
+          },
+          "description": "Defending living troops gain +1 Morale under native caps and exclusions. The precinct develops into priest recruitment halls and retains its blessing. No resurrection.",
+          "name": "Kraken Temple",
+          "requires": [
+            "allOf",
+            [
+              "fort"
+            ],
+            [
+              "mageGuild2"
+            ]
+          ]
+        },
+        "special2": {
+          "bonuses": [
+            {
+              "type": "LUCK",
+              "val": 1
+            }
+          ],
+          "cost": {
+            "gold": 3500,
+            "ore": 8
+          },
+          "description": "Town siege defenders gain +1 Luck under native caps. The precinct develops into the captains' assembly halls and retains the memorial. No casualty conversion or undead recruitment.",
+          "name": "Harbor Memorial",
+          "requires": [
+            "allOf",
+            [
+              "fort"
+            ],
+            [
+              "tavern"
+            ]
+          ]
+        },
+        "special3": {
+          "cost": {
+            "gold": 5000,
+            "ore": 5,
+            "wood": 5
+          },
+          "description": "Native artifact merchant: ordinary eligible artifact inventory, prices and restocking. No free artifact or global trading discount.",
+          "marketModes": [
+            "resource-artifact",
+            "artifact-resource"
+          ],
+          "name": "Black Market",
+          "requires": [
+            "allOf",
+            [
+              "marketplace"
+            ],
+            [
+              "mageGuild1"
+            ]
+          ]
+        },
+        "special4": {
+          "cost": {
+            "gold": 6000,
+            "ore": 10,
+            "wood": 5
+          },
+          "description": "Produces 150 gold daily for the current owner. Stored gold never compounds; no banking subsystem.",
+          "name": "Treasure Vault",
+          "produce": {
+            "gold": 150
+          },
+          "requires": [
+            "allOf",
+            [
+              "townHall"
+            ],
+            [
+              "marketplace"
+            ]
+          ]
+        },
+        "tavern": {
+          "cost": {
+            "gold": 500,
+            "wood": 5
+          },
+          "description": "Recruits heroes and grants native defending morale.",
+          "name": "The Salted Cutlass"
+        },
+        "townHall": {
+          "cost": {
+            "gold": 2500
+          },
+          "description": "Produces 1000 gold daily.",
+          "name": "Harbor Council",
+          "produce": {
+            "gold": 1000
+          },
+          "requires": [
+            "tavern"
+          ],
+          "upgrades": "villageHall"
+        },
+        "villageHall": {
+          "cost": {},
+          "description": "Produces 500 gold daily for the current owner.",
+          "name": "Dock Council",
+          "produce": {
+            "gold": 500
+          }
+        }
+      },
+      "buildingsIcons": "runeterra/bilgewater/town/buildingIcons.json",
+      "creatures": [
+        [
+          "bilgeRat",
+          "seaDog"
+        ],
+        [
+          "corsair",
+          "pirateMarksman"
+        ],
+        [
+          "shellshotGunner",
+          "reefBombardier"
+        ],
+        [
+          "krakenPriest",
+          "tideHierophant"
+        ],
+        [
+          "cliffwing",
+          "stormwing"
+        ],
+        [
+          "boardingCaptain",
+          "fleetVeteran"
+        ],
+        [
+          "shoreLeviathan",
+          "elderShoreLeviathan"
+        ]
+      ],
+      "defaultTavern": 1,
+      "guildBackground": [
+        "TPMAGE.bmp"
+      ],
+      "guildSpells": {
+        "core:airShield": 20,
+        "core:bless": 25,
+        "core:cure": 30,
+        "core:dispel": 25,
+        "core:forgetfulness": 20,
+        "core:fortune": 20,
+        "core:frostRing": 15,
+        "core:iceBolt": 20,
+        "core:magicArrow": 10,
+        "core:mirth": 15,
+        "core:precision": 20,
+        "core:protectWater": 25,
+        "core:removeObstacle": 10,
+        "core:shield": 20,
+        "core:slow": 20
+      },
+      "guildWindow": [
+        "TPMAGECS.bmp"
+      ],
+      "guildWindowPosition": {
+        "x": 332,
+        "y": 76
+      },
+      "hallBackground": "TPTHBKCS.bmp",
+      "hallSlots": [
+        [
+          [
+            "villageHall",
+            "townHall",
+            "cityHall",
+            "capitol"
+          ],
+          [
+            "fort",
+            "citadel",
+            "castle"
+          ],
+          [
+            "mageGuild1",
+            "mageGuild2",
+            "mageGuild3"
+          ],
+          [
+            "tavern"
+          ]
+        ],
+        [
+          [
+            "marketplace"
+          ],
+          [
+            "blacksmith"
+          ],
+          [
+            "resourceSilo"
+          ],
+          [
+            "special3"
+          ]
+        ],
+        [
+          [
+            "special4"
+          ],
+          [
+            "dwellingLvl1",
+            "dwellingUpLvl1"
+          ],
+          [
+            "dwellingLvl2",
+            "dwellingUpLvl2"
+          ],
+          [
+            "dwellingLvl3",
+            "dwellingUpLvl3"
+          ]
+        ],
+        [
+          [
+            "special1",
+            "dwellingLvl4",
+            "dwellingUpLvl4"
+          ],
+          [
+            "dwellingLvl5",
+            "dwellingUpLvl5"
+          ],
+          [
+            "special2",
+            "dwellingLvl6",
+            "dwellingUpLvl6"
+          ],
+          [
+            "dwellingLvl7",
+            "dwellingUpLvl7"
+          ]
+        ],
+        [
+          [
+            "shipyard"
+          ],
+          [
+            "grail"
+          ]
+        ]
+      ],
+      "horde": [
+        -1,
+        -1
+      ],
+      "icons": {
+        "fort": {
+          "built": {
+            "large": "runeterra/bilgewater/town/icons/fort_built_large.png",
+            "small": "runeterra/bilgewater/town/icons/fort_built_small.png"
+          },
+          "normal": {
+            "large": "runeterra/bilgewater/town/icons/fort_normal_large.png",
+            "small": "runeterra/bilgewater/town/icons/fort_normal_small.png"
+          }
+        },
+        "village": {
+          "built": {
+            "large": "runeterra/bilgewater/town/icons/village_built_large.png",
+            "small": "runeterra/bilgewater/town/icons/village_built_small.png"
+          },
+          "normal": {
+            "large": "runeterra/bilgewater/town/icons/village_normal_large.png",
+            "small": "runeterra/bilgewater/town/icons/village_normal_small.png"
+          }
+        }
+      },
+      "mageGuild": 3,
+      "mapObject": {
+        "filters": {
+          "capitol": [
+            "capitol"
+          ],
+          "castle": [
+            "allOf",
+            [
+              "castle"
+            ],
+            [
+              "noneOf",
+              [
+                "capitol"
+              ]
+            ]
+          ],
+          "citadel": [
+            "allOf",
+            [
+              "citadel"
+            ],
+            [
+              "noneOf",
+              [
+                "castle"
+              ]
+            ]
+          ],
+          "fort": [
+            "allOf",
+            [
+              "fort"
+            ],
+            [
+              "noneOf",
+              [
+                "citadel"
+              ]
+            ]
+          ],
+          "village": [
+            "noneOf",
+            [
+              "fort"
+            ]
+          ]
+        },
+        "templates": {
+          "capitol": {
+            "animation": "runeterra/bilgewater/town/map/capitol.json",
+            "mask": [
+              "VVVVVV",
+              "VVVVVV",
+              "VVVVVV",
+              "VVBBBV",
+              "VBBABB"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ]
+          },
+          "castle": {
+            "animation": "runeterra/bilgewater/town/map/castle.json",
+            "mask": [
+              "VVVVVV",
+              "VVVVVV",
+              "VVVVVV",
+              "VVBBBV",
+              "VBBABB"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ]
+          },
+          "citadel": {
+            "animation": "runeterra/bilgewater/town/map/citadel.json",
+            "mask": [
+              "VVVVVV",
+              "VVVVVV",
+              "VVVVVV",
+              "VVBBBV",
+              "VBBABB"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ]
+          },
+          "fort": {
+            "animation": "runeterra/bilgewater/town/map/fort.json",
+            "mask": [
+              "VVVVVV",
+              "VVVVVV",
+              "VVVVVV",
+              "VVBBBV",
+              "VBBABB"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ]
+          },
+          "village": {
+            "animation": "runeterra/bilgewater/town/map/village.json",
+            "mask": [
+              "VVVVVV",
+              "VVVVVV",
+              "VVVVVV",
+              "VVBBBV",
+              "VBBABB"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ]
+          }
+        }
+      },
+      "moatAbility": "core:castleMoat",
+      "musicTheme": [
+        "music/FortressTown"
+      ],
+      "names": [
+        "Saltwake",
+        "Reaver's Reach",
+        "Barnacle Quay",
+        "Tidebreak",
+        "Hookwater",
+        "Gull's Rest",
+        "Sailcloth Haven",
+        "Carved Harbor"
+      ],
+      "primaryResource": "crystal",
+      "siege": {
+        "gate": {
+          "arch": {
+            "x": 477,
+            "y": 238
+          },
+          "gate": {
+            "x": 399,
+            "y": 274
+          }
+        },
+        "imagePrefix": "runeterra/bilgewater/siege/SGBW",
+        "moat": {
+          "bank": {
+            "x": 403,
+            "y": 80
+          },
+          "moat": {
+            "x": 410,
+            "y": 90
+          }
+        },
+        "shooter": "corsair",
+        "static": {
+          "background": {
+            "x": 600,
+            "y": 49
+          },
+          "bottom": {
+            "x": 512,
+            "y": 347
+          },
+          "top": {
+            "x": 489,
+            "y": 79
+          }
+        },
+        "towerIconLarge": "runeterra/bilgewater/siege/towerLarge.png",
+        "towerIconSmall": "runeterra/bilgewater/siege/towerSmall.png",
+        "towers": {
+          "bottom": {
+            "battlement": {
+              "x": 602,
+              "y": 500
+            },
+            "creature": {
+              "x": 394,
+              "y": 299
+            },
+            "tower": {
+              "x": 602,
+              "y": 500
+            }
+          },
+          "keep": {
+            "battlement": {
+              "x": 720,
+              "y": 158
+            },
+            "creature": {
+              "x": 526,
+              "y": -29
+            },
+            "tower": {
+              "x": 720,
+              "y": 158
+            }
+          },
+          "top": {
+            "battlement": {
+              "x": 557,
+              "y": 24
+            },
+            "creature": {
+              "x": 342,
+              "y": -187
+            },
+            "tower": {
+              "x": 569,
+              "y": 35
+            }
+          }
+        },
+        "walls": {
+          "bottom": {
+            "x": 528,
+            "y": 350
+          },
+          "bottomMid": {
+            "x": 469,
+            "y": 291
+          },
+          "upper": {
+            "x": 524,
+            "y": 32
+          },
+          "upperMid": {
+            "x": 470,
+            "y": 127
+          }
+        }
+      },
+      "structures": {
+        "blacksmith": {
+          "animation": "runeterra/bilgewater/town/structures/blacksmith.json",
+          "area": "runeterra/bilgewater/town/structures/blacksmith_area.png",
+          "border": "runeterra/bilgewater/town/structures/blacksmith_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/blacksmith_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 307
+        },
+        "capitol": {
+          "animation": "runeterra/bilgewater/town/structures/capitol.json",
+          "area": "runeterra/bilgewater/town/structures/capitol_area.png",
+          "border": "runeterra/bilgewater/town/structures/capitol_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/capitol_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 132
+        },
+        "castle": {
+          "animation": "runeterra/bilgewater/town/structures/castle.json",
+          "area": "runeterra/bilgewater/town/structures/castle_area.png",
+          "border": "runeterra/bilgewater/town/structures/castle_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/castle_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 113
+        },
+        "citadel": {
+          "animation": "runeterra/bilgewater/town/structures/citadel.json",
+          "area": "runeterra/bilgewater/town/structures/citadel_area.png",
+          "border": "runeterra/bilgewater/town/structures/citadel_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/citadel_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 113
+        },
+        "cityHall": {
+          "animation": "runeterra/bilgewater/town/structures/cityHall.json",
+          "area": "runeterra/bilgewater/town/structures/cityHall_area.png",
+          "border": "runeterra/bilgewater/town/structures/cityHall_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/cityHall_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 132
+        },
+        "dwellingLvl1": {
+          "animation": "runeterra/bilgewater/town/structures/dwellingLvl1.json",
+          "area": "runeterra/bilgewater/town/structures/dwellingLvl1_area.png",
+          "border": "runeterra/bilgewater/town/structures/dwellingLvl1_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/dwellingLvl1_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 260
+        },
+        "dwellingLvl2": {
+          "animation": "runeterra/bilgewater/town/structures/dwellingLvl2.json",
+          "area": "runeterra/bilgewater/town/structures/dwellingLvl2_area.png",
+          "border": "runeterra/bilgewater/town/structures/dwellingLvl2_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/dwellingLvl2_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 294
+        },
+        "dwellingLvl3": {
+          "animation": "runeterra/bilgewater/town/structures/dwellingLvl3.json",
+          "area": "runeterra/bilgewater/town/structures/dwellingLvl3_area.png",
+          "border": "runeterra/bilgewater/town/structures/dwellingLvl3_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/dwellingLvl3_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 193
+        },
+        "dwellingLvl4": {
+          "animation": "runeterra/bilgewater/town/structures/dwellingLvl4.json",
+          "area": "runeterra/bilgewater/town/structures/dwellingLvl4_area.png",
+          "border": "runeterra/bilgewater/town/structures/dwellingLvl4_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/dwellingLvl4_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 228
+        },
+        "dwellingLvl5": {
+          "animation": "runeterra/bilgewater/town/structures/dwellingLvl5.json",
+          "area": "runeterra/bilgewater/town/structures/dwellingLvl5_area.png",
+          "border": "runeterra/bilgewater/town/structures/dwellingLvl5_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/dwellingLvl5_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 145
+        },
+        "dwellingLvl6": {
+          "animation": "runeterra/bilgewater/town/structures/dwellingLvl6.json",
+          "area": "runeterra/bilgewater/town/structures/dwellingLvl6_area.png",
+          "border": "runeterra/bilgewater/town/structures/dwellingLvl6_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/dwellingLvl6_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 166
+        },
+        "dwellingLvl7": {
+          "animation": "runeterra/bilgewater/town/structures/dwellingLvl7.json",
+          "area": "runeterra/bilgewater/town/structures/dwellingLvl7_area.png",
+          "border": "runeterra/bilgewater/town/structures/dwellingLvl7_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/dwellingLvl7_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 190
+        },
+        "dwellingUpLvl1": {
+          "animation": "runeterra/bilgewater/town/structures/dwellingUpLvl1.json",
+          "area": "runeterra/bilgewater/town/structures/dwellingUpLvl1_area.png",
+          "border": "runeterra/bilgewater/town/structures/dwellingUpLvl1_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/dwellingUpLvl1_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 260
+        },
+        "dwellingUpLvl2": {
+          "animation": "runeterra/bilgewater/town/structures/dwellingUpLvl2.json",
+          "area": "runeterra/bilgewater/town/structures/dwellingUpLvl2_area.png",
+          "border": "runeterra/bilgewater/town/structures/dwellingUpLvl2_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/dwellingUpLvl2_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 294
+        },
+        "dwellingUpLvl3": {
+          "animation": "runeterra/bilgewater/town/structures/dwellingUpLvl3.json",
+          "area": "runeterra/bilgewater/town/structures/dwellingUpLvl3_area.png",
+          "border": "runeterra/bilgewater/town/structures/dwellingUpLvl3_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/dwellingUpLvl3_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 193
+        },
+        "dwellingUpLvl4": {
+          "animation": "runeterra/bilgewater/town/structures/dwellingUpLvl4.json",
+          "area": "runeterra/bilgewater/town/structures/dwellingUpLvl4_area.png",
+          "border": "runeterra/bilgewater/town/structures/dwellingUpLvl4_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/dwellingUpLvl4_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 228
+        },
+        "dwellingUpLvl5": {
+          "animation": "runeterra/bilgewater/town/structures/dwellingUpLvl5.json",
+          "area": "runeterra/bilgewater/town/structures/dwellingUpLvl5_area.png",
+          "border": "runeterra/bilgewater/town/structures/dwellingUpLvl5_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/dwellingUpLvl5_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 145
+        },
+        "dwellingUpLvl6": {
+          "animation": "runeterra/bilgewater/town/structures/dwellingUpLvl6.json",
+          "area": "runeterra/bilgewater/town/structures/dwellingUpLvl6_area.png",
+          "border": "runeterra/bilgewater/town/structures/dwellingUpLvl6_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/dwellingUpLvl6_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 166
+        },
+        "dwellingUpLvl7": {
+          "animation": "runeterra/bilgewater/town/structures/dwellingUpLvl7.json",
+          "area": "runeterra/bilgewater/town/structures/dwellingUpLvl7_area.png",
+          "border": "runeterra/bilgewater/town/structures/dwellingUpLvl7_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/dwellingUpLvl7_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 190
+        },
+        "fort": {
+          "animation": "runeterra/bilgewater/town/structures/fort.json",
+          "area": "runeterra/bilgewater/town/structures/fort_area.png",
+          "border": "runeterra/bilgewater/town/structures/fort_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/fort_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 113
+        },
+        "grail": {
+          "animation": "runeterra/bilgewater/town/structures/grail.json",
+          "area": "runeterra/bilgewater/town/structures/grail_area.png",
+          "border": "runeterra/bilgewater/town/structures/grail_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/grail_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 335
+        },
+        "mageGuild1": {
+          "animation": "runeterra/bilgewater/town/structures/mageGuild1.json",
+          "area": "runeterra/bilgewater/town/structures/mageGuild1_area.png",
+          "border": "runeterra/bilgewater/town/structures/mageGuild1_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/mageGuild1_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 133
+        },
+        "mageGuild2": {
+          "animation": "runeterra/bilgewater/town/structures/mageGuild2.json",
+          "area": "runeterra/bilgewater/town/structures/mageGuild2_area.png",
+          "border": "runeterra/bilgewater/town/structures/mageGuild2_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/mageGuild2_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 133
+        },
+        "mageGuild3": {
+          "animation": "runeterra/bilgewater/town/structures/mageGuild3.json",
+          "area": "runeterra/bilgewater/town/structures/mageGuild3_area.png",
+          "border": "runeterra/bilgewater/town/structures/mageGuild3_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/mageGuild3_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 133
+        },
+        "marketplace": {
+          "animation": "runeterra/bilgewater/town/structures/marketplace.json",
+          "area": "runeterra/bilgewater/town/structures/marketplace_area.png",
+          "border": "runeterra/bilgewater/town/structures/marketplace_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/marketplace_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 331
+        },
+        "resourceSilo": {
+          "animation": "runeterra/bilgewater/town/structures/resourceSilo.json",
+          "area": "runeterra/bilgewater/town/structures/resourceSilo_area.png",
+          "border": "runeterra/bilgewater/town/structures/resourceSilo_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/resourceSilo_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 230
+        },
+        "ship": {
+          "animation": "runeterra/bilgewater/town/structures/ship.json",
+          "area": "runeterra/bilgewater/town/structures/ship_area.png",
+          "border": "runeterra/bilgewater/town/structures/ship_border.png",
+          "builds": "shipyard",
+          "campaignBonus": "runeterra/bilgewater/town/structures/ship_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 370
+        },
+        "shipyard": {
+          "animation": "runeterra/bilgewater/town/structures/shipyard.json",
+          "area": "runeterra/bilgewater/town/structures/shipyard_area.png",
+          "border": "runeterra/bilgewater/town/structures/shipyard_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/shipyard_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 370
+        },
+        "special1": {
+          "animation": "runeterra/bilgewater/town/structures/special1.json",
+          "area": "runeterra/bilgewater/town/structures/special1_area.png",
+          "border": "runeterra/bilgewater/town/structures/special1_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/special1_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 228
+        },
+        "special2": {
+          "animation": "runeterra/bilgewater/town/structures/special2.json",
+          "area": "runeterra/bilgewater/town/structures/special2_area.png",
+          "border": "runeterra/bilgewater/town/structures/special2_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/special2_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 166
+        },
+        "special3": {
+          "animation": "runeterra/bilgewater/town/structures/special3.json",
+          "area": "runeterra/bilgewater/town/structures/special3_area.png",
+          "border": "runeterra/bilgewater/town/structures/special3_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/special3_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 327
+        },
+        "special4": {
+          "animation": "runeterra/bilgewater/town/structures/special4.json",
+          "area": "runeterra/bilgewater/town/structures/special4_area.png",
+          "border": "runeterra/bilgewater/town/structures/special4_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/special4_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 204
+        },
+        "tavern": {
+          "animation": "runeterra/bilgewater/town/structures/tavern.json",
+          "area": "runeterra/bilgewater/town/structures/tavern_area.png",
+          "border": "runeterra/bilgewater/town/structures/tavern_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/tavern_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 295
+        },
+        "townHall": {
+          "animation": "runeterra/bilgewater/town/structures/townHall.json",
+          "area": "runeterra/bilgewater/town/structures/townHall_area.png",
+          "border": "runeterra/bilgewater/town/structures/townHall_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/townHall_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 132
+        },
+        "villageHall": {
+          "animation": "runeterra/bilgewater/town/structures/villageHall.json",
+          "area": "runeterra/bilgewater/town/structures/villageHall_area.png",
+          "border": "runeterra/bilgewater/town/structures/villageHall_border.png",
+          "campaignBonus": "runeterra/bilgewater/town/structures/villageHall_campaign.png",
+          "x": 0,
+          "y": 0,
+          "z": 132
+        }
+      },
+      "tavern": {
+        "freeCaptain": 10,
+        "tideSeer": 10
+      },
+      "tavernVideo": "TAVERN.BIK",
+      "townBackground": "runeterra/bilgewater/town/background.png"
+    }
+  }
+}

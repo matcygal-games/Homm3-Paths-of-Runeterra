@@ -1,0 +1,38 @@
+{
+  "status": "authored configuration",
+  "scope": "Worker inspection of unpainted construction guides only. No painted-art or runtime acceptance.",
+  "runs": ["run-e", "run-f"],
+  "native_contact_sheets_inspected": ["legionRecruit", "legionVeteran", "drakeHound", "armoredDrakeHound", "axeReckoner", "veteranAxeReckoner", "roseSpellblade", "roseInfiltrator", "crimsonDisciple", "crimsonAdept", "minotaurReckoner", "veteranMinotaur", "ruinBringer", "greaterRuinBringer"],
+  "inspection_path_pattern": "assets/source/creatures/<id>/rig-v1/run-e/native-contact-v2.png",
+  "paired_native_reference_sheet": "assets/source/creatures/guide-review-run-e-v2/paired-native-reference.png",
+  "read_only_originals_inspected": ["cpkman", "chalbd", "clcbow", "cmonkk", "csword", "cigole", "cangel"],
+  "observed_technical_properties": [
+    "All 14 rigs contain real newly authored weighted volumetric parts and keyed poses. No imported troop mesh, sprite or texture was used.",
+    "Actual walking limb changes, turning, braces, recoils, weapon strikes, prone death and fidget changes are visible in the sheets; actions were not created by translating one idle bitmap.",
+    "Axe shooting groups show wind-up, forward throw, loss of held axe at zero-based index4, recovery and rearm; index4 corresponds to one-based climax frame5. Projectile paintings remain missing.",
+    "Rose departure and arrival use distinct grounded offhand preparation poses; there is no ordinary flying animation, airborne body or copied idle substitute for teleport.",
+    "Crimson shooting and Adept Curse casting have actual raised/channeling offhand poses. No free second attack, drain or transformation is represented.",
+    "Veteran Minotaur special groups40-42 contain an actual body/axe sweep; the native friendly-fire/secondary-hex result has not been executed.",
+    "Transparent raw/native frames have no baked floor. Contact sheets add a review-only background and guide line; those are not source sprites.",
+    "Individual raw frames were rendered separately. V2 atlas cells use one measured whole-cohort union crop with at least8px margin, never neighbouring-frame extraction.",
+    "Every native guide uses the same one measured uniform scale and placement for the whole unit cohort. There is no per-frame image stretch or image recentering. The rig itself physically translates to support contact before rendering.",
+    "Earlier A/B hound death nose-tip and skeletal roll/grip issues were identified visually despite passing technical alpha checks. A/B/C history is preserved; revised E/F hounds now roll onto their sides and the maul/axe guides use an actual two-grip pose."
+  ],
+  "remaining_visual_limitations": {
+    "all": ["Unpainted low-detail rigid-part construction guides are conspicuously primitive next to original Heroes III sprites. They MUST NOT be presented as final art.", "No organic skin weighting, sculpted anatomy, cloth simulation, authored texture paint, painted native pixel finish or final lighting exists.", "Six-frame gait and short hit/fidget/brace actions need artistic timing, weight and foot-slide review. Alpha bounds and fixed bone lengths do not prove credible action or physical runtime contact.", "Some rigid-part limb gaps/intersections and corpse support/pivot differences remain visible; these need pose/mesh refinement before painting.", "Native portrait, adventure-map, attack-side and shared projectile outputs have recipes only, no painted masters.", "Official Noxus emblem file/provenance is not yet available; guide fields intentionally remain blank. No invented crest was substituted."],
+    "legion": "Armour geometry changes are real, but the humble quilted-coat versus practical plated outline and offensive cleaver read still require native painted differentiation.",
+    "hound": "Low single-headed reptilian quadruped, no rider/wings, and plate-harness upgrade are visible. Jaw direction, neck continuity, hoofless feet, side-lying corpse support and tail/joint articulation need refinement.",
+    "axe": "Separate single-bit axe/rack, helmet, pauldron, diagonal plates and greaves exist; axe edge, shoulder volume, throws and native ammunition/rearm alignment require finished anatomy and painted review. Not a Draven paired-spin/catch silhouette.",
+    "rose": "Hood versus collar/mask/shoulder change exists, but short-blade curvature, parrying-dagger implementation, coat panels and finer hand/grip/readability are incomplete. Native fade must be checked later, not inferred from pose sheets.",
+    "crimson": "Channeling and Curse poses exist, but robe length/volume, headwrap/mantle detail, vial readability and projectile/cast visual separation remain underdeveloped.",
+    "minotaur": "Bovine horn/muzzle/hoof guides and maul versus cleaving weapon are independent project geometry. Anatomy, horns, weapon-head readability, grip continuity through every brace and rear-hex cleave timing need refinement.",
+    "ruin": "Hunch, long arms/claws, torn mantle, binding straps and greater spines/body changes are guides only. Rigid parts still read mechanically; organic predatory sculpt/paint must remove any robot impression. The current grounded/twohex model follows this worker's direct assignment; coordinator's peer-only proposed flight revision has not been authorised in this session."
+  },
+  "capability": {"chatgpt_image_skill_available": false, "image_gen.imagegen_available": false, "alternate_gateway_called": false, "image_api_installed": false, "painted_masters": 0},
+  "art_accepted": 0,
+  "visual_approval_granted": false,
+  "runtime_verified": false,
+  "active_manifest_modified": false,
+  "staging_performed": false,
+  "desktop_driven": false
+}

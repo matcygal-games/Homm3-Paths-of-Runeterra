@@ -1,0 +1,78 @@
+{
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI builtin imagegen; deterministic technical2D conversion",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/hextech-revision-v1/buildings/resourceSilo/master-v4.png",
+      "sha256": "76689ec8ecc29bb663532365d233114b9ebe8980cc3bd2906774d6f4636217af"
+    },
+    {
+      "path": "assets/source/town/hextech-revision-v1/buildings/resourceSilo/prompt-v4.txt",
+      "sha256": "834befa7b14b2851c9000b253bbdc972004a8313e04237809f255f50a19228ab"
+    },
+    {
+      "path": "assets/source/town/hextech-revision-v1/buildings/resourceSilo/source-generation-v4.json",
+      "sha256": "d9a5c8529e25da66176979a09df9c948995435e88711db513f7bc19d8a81912b"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/resourceSilo/master-v1.png",
+      "sha256": "5ebcdf7ef6e03270fdb61e84f98fb822f5d595a99c994bf6cb8e6c3e427906ee"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/resourceSilo/prompt-v1.txt",
+      "sha256": "0b76820183096d5fa47ea85982e7b99def042f974bed1a909566ef8cbdeb80ca"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/resourceSilo/source-generation.json",
+      "sha256": "0841907f38af3268791f694c1f41d16d7eccd8287091d8482d5101d58cd499a1"
+    },
+    {
+      "path": "assets/source/town/town-rebuild-20261027-v1/assemble_v5.py",
+      "sha256": "e0a6921c838e6766a934d09a8a0135d93526d9455957cbeb7ba6fe6728998977"
+    },
+    {
+      "path": "assets/source/town/town-rebuild-20261027-v1/layout-plan-v5.json",
+      "sha256": "30ce12667d84deae5be2e6efd2092aab3ba328c5bab7115f8b8a6c8e95d3a32a"
+    },
+    {
+      "path": "assets/source/town/town-rebuild-20261027-v1/placement-calibration-v5.json",
+      "sha256": "97e7d21f33e72941feb95696ba2b23d558153f0d2054365d956ca2a4a30f05f5"
+    }
+  ],
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": true,
+    "model": "not exposed by tool",
+    "painted_master": "assets/source/town/hextech-revision-v1/buildings/resourceSilo/master-v4.png",
+    "painted_master_sha256": "76689ec8ecc29bb663532365d233114b9ebe8980cc3bd2906774d6f4636217af",
+    "producer": "assets/source/town/town-rebuild-20261027-v1/assemble_v5.py",
+    "producer_sha256": "e0a6921c838e6766a934d09a8a0135d93526d9455957cbeb7ba6fe6728998977",
+    "prompt": "Use case: precise-object-edit. Asset: independent original Heroes III800x374-town building layer, painted2D RGBA cutout.\nImage1 is the EDIT TARGET, our own existing painted building. Preserve its original exact source canvas, architectural scale, lower foundation and front stair/door position, frontal three-quarter perspective, upper-left daylight, entire roof/shadow and natural opaque masonry. No global smoothing, camera change, recenter, zoom, stretch or larger footprint. The next image is actual original Heroes III Castle rendering-language reference only, never copy its subject; the final image is the exact PILTOVER crest shape reference (vertical stem, split orb/ring, gear-flanked arcs; NOT wings).\nEnhance ONLY this existing slim Hextech Workshop/power silo with clearly visible CYAN PILTOVER POWER: retain its silhouette, full masonry base/stairs, large crest pediment and navy Piltover banners. Make the existing right glass capacitor visibly cyan-blue with one large distinct cut crystal held firmly within opaque bronze glass framing, a broad weathered spiral induction coil around its lower collar and a thick brass pipe fixed down the wall to foundation. Add a small ground-fixed connection socket beside the doorway within the footprint. It is a grounded powered workshop, no floating base or stair, no neon aura leaking across the whole silhouette, no Zaun green and no actors. Same lower doorway/source scale, entire painting fully visible with genuine transparent background.\nMaintain textured painted2D original-Heroes-III material treatment, compact readable forms, warm weathered ivory stone, brown timber, aged bronze/brass, navy cloth, restrained distinctly CYAN-blue hextech lights/coils/conduits. No Blender/3D renders or underpainting, no photoreal/modern gloss, anime, flat vectors, bloom, orange yellow outline, neon-green Zaun theme, text, UI, border, people or watermark. Painted building interiors/materials stay fully opaque. Genuine zero-alpha transparency outside all architecture/shadow, no black/white/brown studio matte or floor vignette. Every complete object/shadow within existing maximal silhouette; use internal blank facade/porch areas for new engineering detail. All ground-access doors/stairs physically touch foundation; no floating props or unsupported platforms.",
+    "prompt_file": "assets/source/town/hextech-revision-v1/buildings/resourceSilo/prompt-v4.txt",
+    "provider": "OpenAI builtin imagegen",
+    "source_generation_ledger": "assets/source/town/hextech-revision-v1/buildings/resourceSilo/source-generation-v4.json"
+  },
+  "output_path": "Content/Sprites/runeterra/piltover/town/structures/resourceSilo_area.png",
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/town-rebuild-20261027-v1/buildings/resourceSilo/area-v5.png",
+  "source_canvas": [
+    800,
+    374
+  ],
+  "source_sha256": "1985895a8398d6ced3512d51df467d04916c2abc9badfe4b6018af97e0ca10f3",
+  "status": "painted-candidate",
+  "visual_approval_granted": false
+}

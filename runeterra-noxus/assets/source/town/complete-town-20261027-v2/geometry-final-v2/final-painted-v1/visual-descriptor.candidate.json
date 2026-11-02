@@ -1,0 +1,5138 @@
+{
+  "schemaVersion": 1,
+  "status": "authored configuration",
+  "subject": "Noxus town visual contract: site plan, construction states, click geometry, adventure objects, siege and visual direction.",
+  "derivation": "27 October from-scratch painted2D terrain/composition rebuild around complete silhouette envelopes; all36 valid painted building masters deliberately reused unchanged. Existing19 functional sites retained, including17 ordinary land, coast and Grail. Seven dwelling families retain one site each.",
+  "siteCount": 19,
+  "stateCount": 36,
+  "stateAccounting": {
+    "hallChain": 4,
+    "fortChain": 3,
+    "mageGuild": 4,
+    "dwellingChains": 14,
+    "singleServiceBuildings": 7,
+    "specialBuildings": 4,
+    "total": 36
+  },
+  "canvas": {
+    "width": 800,
+    "height": 374,
+    "reference": "the native Heroes III town canvas used by the Castle faction",
+    "layerModel": "Every structure is authored as a full-canvas layer with an area mask and a border mask. Masks, not hand-tuned rectangles, define the clickable geometry, so a painted layer can be replaced without editing configuration.",
+    "currentState": "New painted2D Noxian city backdrop/composition with three targeted imagegen passes, full native silhouette planning before painting and exact compiler scene comparison. Source appearance inspected; native and release acceptance remain separate."
+  },
+  "sites": [
+    {
+      "id": "throneHall",
+      "name": "Legion Outpost",
+      "role": "town backbone: the four hall states carry the Noxian administrative core and the daily income curve.",
+      "buildings": [
+        "villageHall",
+        "townHall",
+        "cityHall",
+        "capitol"
+      ],
+      "states": 4,
+      "construction": "One site, four successive construction states, each replacing the previous layer set.",
+      "visual": "Austere Noxian state architecture: heavy iron ribs, dark red stone, a raised audience platform.",
+      "composition_rectangle": [
+        323,
+        4,
+        160,
+        138
+      ],
+      "native_z": 142,
+      "source_states": {
+        "villageHall": {
+          "state": "villageHall",
+          "site": "throneHall",
+          "master": "assets/source/town/urban-community-20261024-v4/villageHall/master.png",
+          "master_sha256": "c1417d33e93531b4cd669a605f95c55c064715b8d7c8a197ad8b6aa393c6f0fe",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/villageHall.json",
+          "generation_record_sha256": "34f4cd23469c5ee03896a6330cae62a183ddc3496e46d0751d1e32b8ce201080",
+          "mirror_x": false,
+          "composition_rectangle": [
+            323,
+            4,
+            160,
+            138
+          ],
+          "native_position": [
+            325,
+            25
+          ],
+          "native_size": [
+            156,
+            115
+          ],
+          "source_crop": [
+            11,
+            100,
+            1348,
+            1086
+          ],
+          "native_z": 142,
+          "full_alpha_bbox": [
+            325,
+            25,
+            481,
+            140
+          ],
+          "solid_bbox": [
+            325,
+            25,
+            481,
+            140
+          ],
+          "full_alpha_pixels": 13402,
+          "solid_pixels": 12635,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              325,
+              130,
+              480,
+              140
+            ],
+            "pixels": 1301
+          },
+          "entrance": {
+            "door": [
+              0.7,
+              0.83
+            ],
+            "stair": [
+              0.7,
+              0.96
+            ],
+            "exit": [
+              0.7,
+              0.99
+            ],
+            "facing": [
+              -0.3,
+              1
+            ],
+            "kind": "civic doorway and public stairs",
+            "door_point": [
+              434,
+              120
+            ],
+            "stair_point": [
+              434,
+              135
+            ],
+            "exit_point": [
+              434,
+              139
+            ],
+            "planned_apron": [
+              426,
+              139,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                434,
+                135
+              ],
+              [
+                434,
+                139
+              ],
+              [
+                434,
+                143
+              ],
+              [
+                434,
+                144
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "far",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/villageHall/layer.png",
+          "native_layer_sha256": "589749dda19bba99f64f674557e8fbc23af219007dba339567d87c3570b6cbb3",
+          "click_bbox": [
+            325,
+            25,
+            481,
+            140
+          ],
+          "click_pixels": 12635,
+          "visual_approval_granted": false
+        },
+        "townHall": {
+          "state": "townHall",
+          "site": "throneHall",
+          "master": "assets/source/town/urban-community-20261024-v4/townHall/master.png",
+          "master_sha256": "ed5eb68c4b03a185170af1ed5e3067f8f18600024496aaa651a4d1de71a9ba3d",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/townHall.json",
+          "generation_record_sha256": "14026657f72240266b1efc70518c9ff7c135ac54dd42c5f88e242044994a9468",
+          "mirror_x": false,
+          "composition_rectangle": [
+            323,
+            4,
+            160,
+            138
+          ],
+          "native_position": [
+            325,
+            41
+          ],
+          "native_size": [
+            156,
+            99
+          ],
+          "source_crop": [
+            0,
+            224,
+            1349,
+            1082
+          ],
+          "native_z": 142,
+          "full_alpha_bbox": [
+            325,
+            41,
+            481,
+            140
+          ],
+          "solid_bbox": [
+            326,
+            41,
+            481,
+            140
+          ],
+          "full_alpha_pixels": 12600,
+          "solid_pixels": 11944,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              325,
+              130,
+              481,
+              140
+            ],
+            "pixels": 1326
+          },
+          "entrance": {
+            "door": [
+              0.61,
+              0.84
+            ],
+            "stair": [
+              0.61,
+              0.96
+            ],
+            "exit": [
+              0.61,
+              0.99
+            ],
+            "facing": [
+              -0.3,
+              1
+            ],
+            "kind": "civic doorway and public stairs",
+            "door_point": [
+              420,
+              124
+            ],
+            "stair_point": [
+              420,
+              136
+            ],
+            "exit_point": [
+              420,
+              139
+            ],
+            "planned_apron": [
+              412,
+              139,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                420,
+                136
+              ],
+              [
+                420,
+                139
+              ],
+              [
+                420,
+                143
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "far",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/townHall/layer.png",
+          "native_layer_sha256": "37c9831c4a90c8c30ca3863b8e0598d1d2262e0329be999aebb15bcc9a142111",
+          "click_bbox": [
+            326,
+            41,
+            481,
+            140
+          ],
+          "click_pixels": 11944,
+          "visual_approval_granted": false
+        },
+        "cityHall": {
+          "state": "cityHall",
+          "site": "throneHall",
+          "master": "assets/source/town/urban-community-20261024-v4/cityHall/master.png",
+          "master_sha256": "028756614c12abdb730435caf9a21717f9534af82233277d21cbf363b5cf35e9",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/cityHall.json",
+          "generation_record_sha256": "b1ef897a6d0e8e79bd63615cc66e7cf5e0678edbe5a96bba9248d71e87d70505",
+          "mirror_x": false,
+          "composition_rectangle": [
+            323,
+            4,
+            160,
+            138
+          ],
+          "native_position": [
+            325,
+            12
+          ],
+          "native_size": [
+            156,
+            128
+          ],
+          "source_crop": [
+            11,
+            44,
+            1344,
+            1142
+          ],
+          "native_z": 142,
+          "full_alpha_bbox": [
+            325,
+            12,
+            481,
+            140
+          ],
+          "solid_bbox": [
+            325,
+            12,
+            481,
+            140
+          ],
+          "full_alpha_pixels": 14729,
+          "solid_pixels": 13965,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              325,
+              130,
+              481,
+              140
+            ],
+            "pixels": 1310
+          },
+          "entrance": {
+            "door": [
+              0.58,
+              0.84
+            ],
+            "stair": [
+              0.58,
+              0.96
+            ],
+            "exit": [
+              0.58,
+              0.99
+            ],
+            "facing": [
+              -0.3,
+              1
+            ],
+            "kind": "civic doorway and public stairs",
+            "door_point": [
+              415,
+              120
+            ],
+            "stair_point": [
+              415,
+              135
+            ],
+            "exit_point": [
+              415,
+              139
+            ],
+            "planned_apron": [
+              407,
+              139,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                415,
+                135
+              ],
+              [
+                415,
+                139
+              ],
+              [
+                415,
+                143
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "far",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/cityHall/layer.png",
+          "native_layer_sha256": "16218e222ce641837c81d032e2f625a997f450af6c6b11c384c7a7af2c42c188",
+          "click_bbox": [
+            325,
+            12,
+            481,
+            140
+          ],
+          "click_pixels": 13965,
+          "visual_approval_granted": false
+        },
+        "capitol": {
+          "state": "capitol",
+          "site": "throneHall",
+          "master": "assets/source/town/urban-community-20261024-v4/capitol/master.png",
+          "master_sha256": "9356dceda07e70cb18be8354625254a3a1d5e65ff38373e737d182a10e7af058",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/capitol.json",
+          "generation_record_sha256": "876c4d7d6d9b9ba59d7ca006480436bb7faac39c101ae13b883705cee8141694",
+          "mirror_x": false,
+          "composition_rectangle": [
+            323,
+            4,
+            160,
+            138
+          ],
+          "native_position": [
+            325,
+            10
+          ],
+          "native_size": [
+            156,
+            130
+          ],
+          "source_crop": [
+            6,
+            11,
+            1349,
+            1134
+          ],
+          "native_z": 142,
+          "full_alpha_bbox": [
+            325,
+            10,
+            481,
+            140
+          ],
+          "solid_bbox": [
+            325,
+            10,
+            481,
+            140
+          ],
+          "full_alpha_pixels": 14580,
+          "solid_pixels": 13744,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              325,
+              130,
+              481,
+              140
+            ],
+            "pixels": 1369
+          },
+          "entrance": {
+            "door": [
+              0.55,
+              0.84
+            ],
+            "stair": [
+              0.55,
+              0.96
+            ],
+            "exit": [
+              0.55,
+              0.99
+            ],
+            "facing": [
+              -0.3,
+              1
+            ],
+            "kind": "civic doorway and public stairs",
+            "door_point": [
+              411,
+              119
+            ],
+            "stair_point": [
+              411,
+              135
+            ],
+            "exit_point": [
+              411,
+              139
+            ],
+            "planned_apron": [
+              403,
+              139,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                411,
+                135
+              ],
+              [
+                411,
+                139
+              ],
+              [
+                411,
+                143
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "far",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/capitol/layer.png",
+          "native_layer_sha256": "2bd04189744a7d0609db7a6b4e6e05436b4547da0eb5bb5aa60c0f374bebb9e8",
+          "click_bbox": [
+            325,
+            10,
+            481,
+            140
+          ],
+          "click_pixels": 13744,
+          "visual_approval_granted": false
+        }
+      }
+    },
+    {
+      "id": "crownBastion",
+      "name": "Iron Rampart",
+      "role": "fortification chain and the site that carries the town fortification bonuses.",
+      "buildings": [
+        "fort",
+        "citadel",
+        "castle"
+      ],
+      "states": 3,
+      "construction": "One site, three states.",
+      "visual": "War-engineered fortification: iron-clad ramparts, bolt towers, imperial war banners.",
+      "composition_rectangle": [
+        651,
+        4,
+        143,
+        132
+      ],
+      "native_z": 136,
+      "source_states": {
+        "fort": {
+          "state": "fort",
+          "site": "crownBastion",
+          "master": "assets/source/town/urban-community-20261024-v4/fort/master.png",
+          "master_sha256": "79c63b6b4d8ab35fbc01646903627f8002c3172a83abb48fb4597f200cdddf0e",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/fort.json",
+          "generation_record_sha256": "2f0d7b7c5ece7cb626d3783191f6c2d83e3d4e9dc8e16a10510b9d99f5a388d3",
+          "mirror_x": false,
+          "composition_rectangle": [
+            651,
+            4,
+            143,
+            132
+          ],
+          "native_position": [
+            653,
+            31
+          ],
+          "native_size": [
+            139,
+            103
+          ],
+          "source_crop": [
+            28,
+            147,
+            1336,
+            1117
+          ],
+          "native_z": 136,
+          "full_alpha_bbox": [
+            653,
+            31,
+            792,
+            134
+          ],
+          "solid_bbox": [
+            653,
+            31,
+            792,
+            134
+          ],
+          "full_alpha_pixels": 9253,
+          "solid_pixels": 8542,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              706,
+              124,
+              788,
+              134
+            ],
+            "pixels": 335
+          },
+          "entrance": {
+            "door": [
+              0.53,
+              0.83
+            ],
+            "stair": [
+              0.53,
+              0.96
+            ],
+            "exit": [
+              0.53,
+              0.99
+            ],
+            "facing": [
+              -0.3,
+              1
+            ],
+            "kind": "military gate and paved bridgehead",
+            "door_point": [
+              727,
+              116
+            ],
+            "stair_point": [
+              727,
+              130
+            ],
+            "exit_point": [
+              727,
+              133
+            ],
+            "planned_apron": [
+              719,
+              133,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                727,
+                130
+              ],
+              [
+                727,
+                133
+              ],
+              [
+                727,
+                137
+              ],
+              [
+                727,
+                181
+              ],
+              [
+                596,
+                181
+              ],
+              [
+                596,
+                184
+              ],
+              [
+                594,
+                184
+              ],
+              [
+                594,
+                189
+              ],
+              [
+                516,
+                189
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "far",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/fort/layer.png",
+          "native_layer_sha256": "045a54854cca7cfda21592ae23d7cee967e42c019bbce8af41e51d074fad2bf4",
+          "click_bbox": [
+            653,
+            31,
+            792,
+            134
+          ],
+          "click_pixels": 8542,
+          "visual_approval_granted": false
+        },
+        "citadel": {
+          "state": "citadel",
+          "site": "crownBastion",
+          "master": "assets/source/town/urban-community-20261024-v4/citadel/master.png",
+          "master_sha256": "da7d5459d66607463b3e65f6155af1921d14c59aae0b29ad5115eba02ec21141",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/citadel.json",
+          "generation_record_sha256": "0faf3f419720fdf358ad5b501df357f38ed27d4803f8a37e7d795c9e5430cbce",
+          "mirror_x": false,
+          "composition_rectangle": [
+            651,
+            4,
+            143,
+            132
+          ],
+          "native_position": [
+            653,
+            24
+          ],
+          "native_size": [
+            139,
+            110
+          ],
+          "source_crop": [
+            22,
+            69,
+            1341,
+            1115
+          ],
+          "native_z": 136,
+          "full_alpha_bbox": [
+            653,
+            24,
+            792,
+            134
+          ],
+          "solid_bbox": [
+            653,
+            24,
+            792,
+            134
+          ],
+          "full_alpha_pixels": 10925,
+          "solid_pixels": 10136,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              678,
+              124,
+              777,
+              134
+            ],
+            "pixels": 561
+          },
+          "entrance": {
+            "door": [
+              0.53,
+              0.83
+            ],
+            "stair": [
+              0.53,
+              0.96
+            ],
+            "exit": [
+              0.53,
+              0.99
+            ],
+            "facing": [
+              -0.3,
+              1
+            ],
+            "kind": "military gate and paved bridgehead",
+            "door_point": [
+              727,
+              115
+            ],
+            "stair_point": [
+              727,
+              130
+            ],
+            "exit_point": [
+              727,
+              133
+            ],
+            "planned_apron": [
+              719,
+              133,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                727,
+                130
+              ],
+              [
+                727,
+                133
+              ],
+              [
+                727,
+                137
+              ],
+              [
+                727,
+                181
+              ],
+              [
+                596,
+                181
+              ],
+              [
+                596,
+                184
+              ],
+              [
+                594,
+                184
+              ],
+              [
+                594,
+                189
+              ],
+              [
+                516,
+                189
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "far",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/citadel/layer.png",
+          "native_layer_sha256": "ddefd937e1f1eeabcc39a202a751294fbdf635bb09235fb95616efa47bcc3aa6",
+          "click_bbox": [
+            653,
+            24,
+            792,
+            134
+          ],
+          "click_pixels": 10136,
+          "visual_approval_granted": false
+        },
+        "castle": {
+          "state": "castle",
+          "site": "crownBastion",
+          "master": "assets/source/town/urban-community-20261024-v4/castle/master.png",
+          "master_sha256": "e3d18273e00eb50be48f00d025473f365ffff9c054626d344880afe6ca9df935",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/castle.json",
+          "generation_record_sha256": "a71a0bf60a435ef1b638244de17ef4aa499d9945ee0745ac5f984bc88491813d",
+          "mirror_x": false,
+          "composition_rectangle": [
+            651,
+            4,
+            143,
+            132
+          ],
+          "native_position": [
+            653,
+            20
+          ],
+          "native_size": [
+            139,
+            114
+          ],
+          "source_crop": [
+            0,
+            25,
+            1353,
+            1131
+          ],
+          "native_z": 136,
+          "full_alpha_bbox": [
+            653,
+            20,
+            792,
+            134
+          ],
+          "solid_bbox": [
+            654,
+            20,
+            792,
+            134
+          ],
+          "full_alpha_pixels": 11296,
+          "solid_pixels": 10521,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              695,
+              124,
+              785,
+              134
+            ],
+            "pixels": 483
+          },
+          "entrance": {
+            "door": [
+              0.53,
+              0.83
+            ],
+            "stair": [
+              0.53,
+              0.96
+            ],
+            "exit": [
+              0.53,
+              0.99
+            ],
+            "facing": [
+              -0.3,
+              1
+            ],
+            "kind": "military gate and paved bridgehead",
+            "door_point": [
+              727,
+              115
+            ],
+            "stair_point": [
+              727,
+              129
+            ],
+            "exit_point": [
+              727,
+              133
+            ],
+            "planned_apron": [
+              719,
+              133,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                727,
+                129
+              ],
+              [
+                727,
+                133
+              ],
+              [
+                727,
+                137
+              ],
+              [
+                727,
+                181
+              ],
+              [
+                596,
+                181
+              ],
+              [
+                596,
+                184
+              ],
+              [
+                594,
+                184
+              ],
+              [
+                594,
+                189
+              ],
+              [
+                516,
+                189
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "far",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/castle/layer.png",
+          "native_layer_sha256": "7e39760136519d123ce951d9a3e7776dfda4bc5b06551b6e19975c7f4f960783",
+          "click_bbox": [
+            654,
+            20,
+            792,
+            134
+          ],
+          "click_pixels": 10521,
+          "visual_approval_granted": false
+        }
+      }
+    },
+    {
+      "id": "arcaneAthenaeum",
+      "name": "War College I",
+      "role": "mage guild with four levels and the offensive spell weights.",
+      "buildings": [
+        "mageGuild1",
+        "mageGuild2",
+        "mageGuild3",
+        "mageGuild4"
+      ],
+      "states": 4,
+      "construction": "One site, four states, each state adding a visible tier of the guild structure.",
+      "visual": "A restrained war-college rather than a gaudy tower: grey stone, iron braziers, crimson banners.",
+      "composition_rectangle": [
+        121,
+        70,
+        112,
+        128
+      ],
+      "native_z": 198,
+      "source_states": {
+        "mageGuild1": {
+          "state": "mageGuild1",
+          "site": "arcaneAthenaeum",
+          "master": "assets/source/town/painted-community-20261024-v2/mageGuild1/master.png",
+          "master_sha256": "162fd2903c5bacce3f99cd05dbd57b0c33185fdfb9b62a6227a265a340e4d78d",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/mageGuild1.json",
+          "generation_record_sha256": "a670d98a5426d89783b1fdc4c41c5e25496bc230ab6d5312719dd814f08bbffa",
+          "mirror_x": false,
+          "composition_rectangle": [
+            121,
+            70,
+            112,
+            128
+          ],
+          "native_position": [
+            123,
+            90
+          ],
+          "native_size": [
+            108,
+            106
+          ],
+          "source_crop": [
+            20,
+            60,
+            1199,
+            1221
+          ],
+          "native_z": 198,
+          "full_alpha_bbox": [
+            123,
+            90,
+            231,
+            196
+          ],
+          "solid_bbox": [
+            123,
+            92,
+            231,
+            196
+          ],
+          "full_alpha_pixels": 8336,
+          "solid_pixels": 7739,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              134,
+              186,
+              229,
+              196
+            ],
+            "pixels": 590
+          },
+          "entrance": {
+            "door": [
+              0.61,
+              0.83
+            ],
+            "stair": [
+              0.61,
+              0.95
+            ],
+            "exit": [
+              0.61,
+              0.99
+            ],
+            "facing": [
+              -0.3,
+              1
+            ],
+            "kind": "war-college doorway and porch steps",
+            "door_point": [
+              189,
+              178
+            ],
+            "stair_point": [
+              189,
+              191
+            ],
+            "exit_point": [
+              189,
+              195
+            ],
+            "planned_apron": [
+              181,
+              195,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                189,
+                191
+              ],
+              [
+                189,
+                195
+              ],
+              [
+                189,
+                199
+              ],
+              [
+                384,
+                199
+              ],
+              [
+                384,
+                154
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "far",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/mageGuild1/layer.png",
+          "native_layer_sha256": "59c4d0a56a9c4edc6a64fd1343b0e2409211d33ef01e390b8724e6741bb3d689",
+          "click_bbox": [
+            123,
+            92,
+            231,
+            196
+          ],
+          "click_pixels": 7739,
+          "visual_approval_granted": false
+        },
+        "mageGuild2": {
+          "state": "mageGuild2",
+          "site": "arcaneAthenaeum",
+          "master": "assets/source/town/painted-community-20261024-v2/mageGuild2/master.png",
+          "master_sha256": "1a9e9a182994a43f6a59357e8cc0b2566945068f05f458455e5900c8b5d3057b",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/mageGuild2.json",
+          "generation_record_sha256": "4304517fecb4398dcc5077a87f116f26796ec320a603a81c8a9f1d8dbe13ac7a",
+          "mirror_x": false,
+          "composition_rectangle": [
+            121,
+            70,
+            112,
+            128
+          ],
+          "native_position": [
+            123,
+            107
+          ],
+          "native_size": [
+            108,
+            89
+          ],
+          "source_crop": [
+            13,
+            35,
+            1342,
+            1131
+          ],
+          "native_z": 198,
+          "full_alpha_bbox": [
+            123,
+            107,
+            231,
+            196
+          ],
+          "solid_bbox": [
+            123,
+            108,
+            231,
+            196
+          ],
+          "full_alpha_pixels": 6677,
+          "solid_pixels": 6179,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              131,
+              186,
+              228,
+              196
+            ],
+            "pixels": 568
+          },
+          "entrance": {
+            "door": [
+              0.61,
+              0.83
+            ],
+            "stair": [
+              0.61,
+              0.95
+            ],
+            "exit": [
+              0.61,
+              0.99
+            ],
+            "facing": [
+              -0.3,
+              1
+            ],
+            "kind": "war-college doorway and porch steps",
+            "door_point": [
+              189,
+              181
+            ],
+            "stair_point": [
+              189,
+              192
+            ],
+            "exit_point": [
+              189,
+              195
+            ],
+            "planned_apron": [
+              181,
+              195,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                189,
+                192
+              ],
+              [
+                189,
+                195
+              ],
+              [
+                189,
+                199
+              ],
+              [
+                384,
+                199
+              ],
+              [
+                384,
+                154
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "far",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/mageGuild2/layer.png",
+          "native_layer_sha256": "f75bbabe6a94f383a5781e3ddd7fd33a0145cb3e143989fe98cdec6380180972",
+          "click_bbox": [
+            123,
+            108,
+            231,
+            196
+          ],
+          "click_pixels": 6179,
+          "visual_approval_granted": false
+        },
+        "mageGuild3": {
+          "state": "mageGuild3",
+          "site": "arcaneAthenaeum",
+          "master": "assets/source/town/painted-community-20261024-v2/mageGuild3/master.png",
+          "master_sha256": "a684c08d6a288f0e59709b93c1c4c8ea403cdafabced803bd952a3734f03d7ad",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/mageGuild3.json",
+          "generation_record_sha256": "c48eb470c6d1579080009a5eca37515a19be4cc08e505106ac809ae053211c60",
+          "mirror_x": false,
+          "composition_rectangle": [
+            121,
+            70,
+            112,
+            128
+          ],
+          "native_position": [
+            123,
+            107
+          ],
+          "native_size": [
+            108,
+            89
+          ],
+          "source_crop": [
+            9,
+            18,
+            1347,
+            1125
+          ],
+          "native_z": 198,
+          "full_alpha_bbox": [
+            123,
+            107,
+            231,
+            196
+          ],
+          "solid_bbox": [
+            123,
+            108,
+            231,
+            196
+          ],
+          "full_alpha_pixels": 6751,
+          "solid_pixels": 6239,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              137,
+              186,
+              229,
+              196
+            ],
+            "pixels": 538
+          },
+          "entrance": {
+            "door": [
+              0.61,
+              0.83
+            ],
+            "stair": [
+              0.61,
+              0.95
+            ],
+            "exit": [
+              0.61,
+              0.99
+            ],
+            "facing": [
+              -0.3,
+              1
+            ],
+            "kind": "war-college doorway and porch steps",
+            "door_point": [
+              189,
+              181
+            ],
+            "stair_point": [
+              189,
+              192
+            ],
+            "exit_point": [
+              189,
+              195
+            ],
+            "planned_apron": [
+              181,
+              195,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                189,
+                192
+              ],
+              [
+                189,
+                195
+              ],
+              [
+                189,
+                199
+              ],
+              [
+                384,
+                199
+              ],
+              [
+                384,
+                154
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "far",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/mageGuild3/layer.png",
+          "native_layer_sha256": "4e756a65168951858b7fed3c8246d07f3d3be166814cadd75f56be41a8e1b5a0",
+          "click_bbox": [
+            123,
+            108,
+            231,
+            196
+          ],
+          "click_pixels": 6239,
+          "visual_approval_granted": false
+        },
+        "mageGuild4": {
+          "state": "mageGuild4",
+          "site": "arcaneAthenaeum",
+          "master": "assets/source/town/painted-community-20261024-v2/mageGuild4/master.png",
+          "master_sha256": "96e3af8a4c2df8d3dd4f2b80ffcc5c7e0db68c20c8f5db969ecab40c85303753",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/mageGuild4.json",
+          "generation_record_sha256": "198991e8605837a3004ab342c7b61008c876f0e4d4806ba24175592cedb1b95b",
+          "mirror_x": false,
+          "composition_rectangle": [
+            121,
+            70,
+            112,
+            128
+          ],
+          "native_position": [
+            123,
+            105
+          ],
+          "native_size": [
+            108,
+            91
+          ],
+          "source_crop": [
+            14,
+            9,
+            1340,
+            1122
+          ],
+          "native_z": 198,
+          "full_alpha_bbox": [
+            123,
+            105,
+            231,
+            196
+          ],
+          "solid_bbox": [
+            123,
+            106,
+            231,
+            196
+          ],
+          "full_alpha_pixels": 7199,
+          "solid_pixels": 6669,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              134,
+              186,
+              231,
+              196
+            ],
+            "pixels": 571
+          },
+          "entrance": {
+            "door": [
+              0.61,
+              0.83
+            ],
+            "stair": [
+              0.61,
+              0.95
+            ],
+            "exit": [
+              0.61,
+              0.99
+            ],
+            "facing": [
+              -0.3,
+              1
+            ],
+            "kind": "war-college doorway and porch steps",
+            "door_point": [
+              189,
+              181
+            ],
+            "stair_point": [
+              189,
+              191
+            ],
+            "exit_point": [
+              189,
+              195
+            ],
+            "planned_apron": [
+              181,
+              195,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                189,
+                191
+              ],
+              [
+                189,
+                195
+              ],
+              [
+                189,
+                199
+              ],
+              [
+                384,
+                199
+              ],
+              [
+                384,
+                154
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "far",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/mageGuild4/layer.png",
+          "native_layer_sha256": "ecb35e5e746a9b87f879ea9e16eca8272d26fbed3149dfa16256b9814578a796",
+          "click_bbox": [
+            123,
+            106,
+            231,
+            196
+          ],
+          "click_pixels": 6669,
+          "visual_approval_granted": false
+        }
+      }
+    },
+    {
+      "id": "dwellingLegion",
+      "name": "Legion Barracks",
+      "role": "tier one Legion recruits and veterans.",
+      "buildings": [
+        "dwellingLvl1",
+        "dwellingUpLvl1"
+      ],
+      "states": 2,
+      "construction": "One site, two states.",
+      "visual": "Massed infantry drill yard, shield racks, marching order.",
+      "composition_rectangle": [
+        1,
+        235,
+        151,
+        133
+      ],
+      "native_z": 368,
+      "source_states": {
+        "dwellingLvl1": {
+          "state": "dwellingLvl1",
+          "site": "dwellingLegion",
+          "master": "assets/source/town/urban-community-20261024-v4/dwellingLvl1/master.png",
+          "master_sha256": "2ad21892fb56f1bf32c157454d8ade5acda5971f5344c719d989c425d1c1d001",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/dwellingLvl1.json",
+          "generation_record_sha256": "9c2e6c81cdace09f0abfd53cdc94b0f311d9748729e36c3b5abb28cdea6c14c8",
+          "mirror_x": true,
+          "composition_rectangle": [
+            1,
+            235,
+            151,
+            133
+          ],
+          "native_position": [
+            3,
+            264
+          ],
+          "native_size": [
+            147,
+            102
+          ],
+          "source_crop": [
+            1,
+            186,
+            1367,
+            1134
+          ],
+          "native_z": 368,
+          "full_alpha_bbox": [
+            3,
+            264,
+            150,
+            366
+          ],
+          "solid_bbox": [
+            3,
+            264,
+            150,
+            366
+          ],
+          "full_alpha_pixels": 10163,
+          "solid_pixels": 9546,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              37,
+              356,
+              93,
+              366
+            ],
+            "pixels": 283
+          },
+          "entrance": {
+            "door": [
+              0.5,
+              0.75
+            ],
+            "stair": [
+              0.5,
+              0.84
+            ],
+            "exit": [
+              0.5,
+              0.99
+            ],
+            "facing": [
+              -0.5,
+              1
+            ],
+            "kind": "barracks door, internal stair, gated forecourt and lateral urban ramp",
+            "door_point": [
+              77,
+              340
+            ],
+            "stair_point": [
+              77,
+              350
+            ],
+            "exit_point": [
+              77,
+              365
+            ],
+            "planned_apron": [
+              69,
+              365,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                77,
+                350
+              ],
+              [
+                77,
+                365
+              ],
+              [
+                77,
+                369
+              ],
+              [
+                443,
+                369
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "near",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl1/layer.png",
+          "native_layer_sha256": "683c55265459af4b3ce632b719fd20e13629753dc4a59ebdd256d9da23c3fc4b",
+          "click_bbox": [
+            3,
+            264,
+            150,
+            366
+          ],
+          "click_pixels": 9546,
+          "visual_approval_granted": false
+        },
+        "dwellingUpLvl1": {
+          "state": "dwellingUpLvl1",
+          "site": "dwellingLegion",
+          "master": "assets/source/town/urban-community-20261024-v4/dwellingUpLvl1/master.png",
+          "master_sha256": "092f4a3c84ba5988bba909fea89033b2239fa8facff819952f79c33e389d7290",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/dwellingUpLvl1.json",
+          "generation_record_sha256": "cfa46e9cc9aec89f3fe347d88c84cf42f9c12b32483e1a8bccef62d3da8531ef",
+          "mirror_x": true,
+          "composition_rectangle": [
+            1,
+            235,
+            151,
+            133
+          ],
+          "native_position": [
+            3,
+            250
+          ],
+          "native_size": [
+            147,
+            116
+          ],
+          "source_crop": [
+            12,
+            116,
+            1337,
+            1166
+          ],
+          "native_z": 368,
+          "full_alpha_bbox": [
+            3,
+            250,
+            150,
+            366
+          ],
+          "solid_bbox": [
+            3,
+            250,
+            150,
+            366
+          ],
+          "full_alpha_pixels": 11937,
+          "solid_pixels": 11295,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              37,
+              356,
+              95,
+              366
+            ],
+            "pixels": 331
+          },
+          "entrance": {
+            "door": [
+              0.5,
+              0.75
+            ],
+            "stair": [
+              0.5,
+              0.84
+            ],
+            "exit": [
+              0.5,
+              0.99
+            ],
+            "facing": [
+              -0.5,
+              1
+            ],
+            "kind": "barracks door, internal stair, gated forecourt and lateral urban ramp",
+            "door_point": [
+              77,
+              337
+            ],
+            "stair_point": [
+              77,
+              347
+            ],
+            "exit_point": [
+              77,
+              365
+            ],
+            "planned_apron": [
+              69,
+              365,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                77,
+                347
+              ],
+              [
+                77,
+                365
+              ],
+              [
+                77,
+                369
+              ],
+              [
+                443,
+                369
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "near",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl1/layer.png",
+          "native_layer_sha256": "d44cecf30a232a291fb75c0d023db10eb330e8db37c0240be6fff80b89ac883a",
+          "click_bbox": [
+            3,
+            250,
+            150,
+            366
+          ],
+          "click_pixels": 11295,
+          "visual_approval_granted": false
+        }
+      }
+    },
+    {
+      "id": "dwellingHound",
+      "name": "Drake-Hound Pens",
+      "role": "tier two drake-hounds and armoured drake-hounds.",
+      "buildings": [
+        "dwellingLvl2",
+        "dwellingUpLvl2"
+      ],
+      "states": 2,
+      "construction": "One site, two states.",
+      "visual": "Iron cages, feeding pits and a wall of scarred hide. No wings anywhere in this site.",
+      "composition_rectangle": [
+        158,
+        233,
+        116,
+        112
+      ],
+      "native_z": 345,
+      "source_states": {
+        "dwellingLvl2": {
+          "state": "dwellingLvl2",
+          "site": "dwellingHound",
+          "master": "assets/source/town/painted-community-20261024-v2/dwellingLvl2/master.png",
+          "master_sha256": "67d58e04128f5b8aec483d68b10be769bcd77678eeb9487ec9d18cbb2f42f047",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/dwellingLvl2.json",
+          "generation_record_sha256": "ba33f275099657e125794a698a3d792d2f87f4a6c88aef86821ebe116e1af25b",
+          "mirror_x": false,
+          "composition_rectangle": [
+            158,
+            233,
+            116,
+            112
+          ],
+          "native_position": [
+            160,
+            236
+          ],
+          "native_size": [
+            112,
+            107
+          ],
+          "source_crop": [
+            0,
+            8,
+            1266,
+            1212
+          ],
+          "native_z": 345,
+          "full_alpha_bbox": [
+            160,
+            236,
+            272,
+            343
+          ],
+          "solid_bbox": [
+            160,
+            236,
+            272,
+            343
+          ],
+          "full_alpha_pixels": 6890,
+          "solid_pixels": 6343,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              212,
+              333,
+              257,
+              343
+            ],
+            "pixels": 260
+          },
+          "entrance": {
+            "door": [
+              0.52,
+              0.84
+            ],
+            "stair": [
+              0.52,
+              0.95
+            ],
+            "exit": [
+              0.52,
+              0.99
+            ],
+            "facing": [
+              -0.5,
+              1
+            ],
+            "kind": "keeper gate and street-side kennel forecourt",
+            "door_point": [
+              218,
+              326
+            ],
+            "stair_point": [
+              218,
+              338
+            ],
+            "exit_point": [
+              218,
+              342
+            ],
+            "planned_apron": [
+              210,
+              342,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                218,
+                338
+              ],
+              [
+                218,
+                342
+              ],
+              [
+                218,
+                346
+              ],
+              [
+                290,
+                346
+              ],
+              [
+                290,
+                339
+              ],
+              [
+                439,
+                339
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "near",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl2/layer.png",
+          "native_layer_sha256": "d576aabb32bc5d197bb94cc959036562a0b769bcac54dc42098954f06fa32631",
+          "click_bbox": [
+            160,
+            236,
+            272,
+            343
+          ],
+          "click_pixels": 6343,
+          "visual_approval_granted": false
+        },
+        "dwellingUpLvl2": {
+          "state": "dwellingUpLvl2",
+          "site": "dwellingHound",
+          "master": "assets/source/town/painted-community-20261024-v2/dwellingUpLvl2/master.png",
+          "master_sha256": "51050f20d1c93225e6d2ff0364c50155d8f101a71f1e80592d0fb4da3a700f0c",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/dwellingUpLvl2.json",
+          "generation_record_sha256": "91547e0be3a80408ab0e0bcbe0ebacc9c010dd6529a78c94b3255db13a9e691c",
+          "mirror_x": false,
+          "composition_rectangle": [
+            158,
+            233,
+            116,
+            112
+          ],
+          "native_position": [
+            160,
+            246
+          ],
+          "native_size": [
+            112,
+            97
+          ],
+          "source_crop": [
+            0,
+            0,
+            1350,
+            1165
+          ],
+          "native_z": 345,
+          "full_alpha_bbox": [
+            160,
+            246,
+            272,
+            343
+          ],
+          "solid_bbox": [
+            160,
+            246,
+            272,
+            343
+          ],
+          "full_alpha_pixels": 6914,
+          "solid_pixels": 6381,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              202,
+              333,
+              260,
+              343
+            ],
+            "pixels": 350
+          },
+          "entrance": {
+            "door": [
+              0.52,
+              0.84
+            ],
+            "stair": [
+              0.52,
+              0.95
+            ],
+            "exit": [
+              0.52,
+              0.99
+            ],
+            "facing": [
+              -0.5,
+              1
+            ],
+            "kind": "keeper gate and street-side kennel forecourt",
+            "door_point": [
+              218,
+              327
+            ],
+            "stair_point": [
+              218,
+              338
+            ],
+            "exit_point": [
+              218,
+              342
+            ],
+            "planned_apron": [
+              210,
+              342,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                218,
+                338
+              ],
+              [
+                218,
+                342
+              ],
+              [
+                218,
+                346
+              ],
+              [
+                290,
+                346
+              ],
+              [
+                290,
+                339
+              ],
+              [
+                439,
+                339
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "near",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl2/layer.png",
+          "native_layer_sha256": "508b256ba05493ce9d4793b1163465b47831b8f9a59ed64b7cbecb57efa8d29a",
+          "click_bbox": [
+            160,
+            246,
+            272,
+            343
+          ],
+          "click_pixels": 6381,
+          "visual_approval_granted": false
+        }
+      }
+    },
+    {
+      "id": "dwellingAxe",
+      "name": "Guild Knife Yard",
+      "role": "Tier-three living short-range guild knife shooters; spell illustration inspires equipment, not a canonical troop.",
+      "buildings": [
+        "dwellingLvl3",
+        "dwellingUpLvl3"
+      ],
+      "states": 2,
+      "construction": "One site, two states.",
+      "visual": "Knife targets, practical knife rolls/racks and guild keeper's booth; no inherited axe equipment.",
+      "composition_rectangle": [
+        460,
+        276,
+        126,
+        94
+      ],
+      "native_z": 370,
+      "source_states": {
+        "dwellingLvl3": {
+          "state": "dwellingLvl3",
+          "site": "dwellingAxe",
+          "master": "assets/source/town/painted-community-20261024-v2/dwellingLvl3/master.png",
+          "master_sha256": "3839f1750deddaaa3ec4803223aef2fe4d169ddf4537d5f863685a726c0421c3",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/dwellingLvl3.json",
+          "generation_record_sha256": "8edbb5781d42453cefbad8282d64e6be0c323d313ea2dd6e93c00660773c02a5",
+          "mirror_x": false,
+          "composition_rectangle": [
+            460,
+            276,
+            126,
+            94
+          ],
+          "native_position": [
+            464,
+            278
+          ],
+          "native_size": [
+            117,
+            90
+          ],
+          "source_crop": [
+            14,
+            10,
+            1430,
+            1096
+          ],
+          "native_z": 370,
+          "full_alpha_bbox": [
+            464,
+            278,
+            581,
+            368
+          ],
+          "solid_bbox": [
+            464,
+            278,
+            581,
+            368
+          ],
+          "full_alpha_pixels": 7228,
+          "solid_pixels": 6642,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              486,
+              358,
+              562,
+              368
+            ],
+            "pixels": 278
+          },
+          "entrance": {
+            "door": [
+              0.44,
+              0.85
+            ],
+            "stair": [
+              0.44,
+              0.94
+            ],
+            "exit": [
+              0.44,
+              0.99
+            ],
+            "facing": [
+              -0.4,
+              1
+            ],
+            "kind": "knife guild gate, front stairs and lateral paved apron",
+            "door_point": [
+              515,
+              354
+            ],
+            "stair_point": [
+              515,
+              363
+            ],
+            "exit_point": [
+              515,
+              367
+            ],
+            "planned_apron": [
+              507,
+              367,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                515,
+                363
+              ],
+              [
+                515,
+                367
+              ],
+              [
+                515,
+                371
+              ],
+              [
+                449,
+                371
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "near",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl3/layer.png",
+          "native_layer_sha256": "6fb2852b9f650cf16ba9e798c51c9851163f8bc61f68dd5a6d5490d88dc3f21b",
+          "click_bbox": [
+            464,
+            278,
+            581,
+            368
+          ],
+          "click_pixels": 6642,
+          "visual_approval_granted": false
+        },
+        "dwellingUpLvl3": {
+          "state": "dwellingUpLvl3",
+          "site": "dwellingAxe",
+          "master": "assets/source/town/painted-community-20261024-v2/dwellingUpLvl3/master.png",
+          "master_sha256": "3d4961ad1ab21dc21e35bb9de6e923440a2c28553da59b3d445a545343d46aae",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/dwellingUpLvl3.json",
+          "generation_record_sha256": "f2a9a522136fe7051d9ede816ab18c2815ed220fa61160677ac64918c16e8d06",
+          "mirror_x": false,
+          "composition_rectangle": [
+            460,
+            276,
+            126,
+            94
+          ],
+          "native_position": [
+            464,
+            278
+          ],
+          "native_size": [
+            117,
+            90
+          ],
+          "source_crop": [
+            1,
+            0,
+            1430,
+            1100
+          ],
+          "native_z": 370,
+          "full_alpha_bbox": [
+            464,
+            278,
+            581,
+            368
+          ],
+          "solid_bbox": [
+            464,
+            279,
+            581,
+            368
+          ],
+          "full_alpha_pixels": 7485,
+          "solid_pixels": 6887,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              501,
+              358,
+              562,
+              368
+            ],
+            "pixels": 318
+          },
+          "entrance": {
+            "door": [
+              0.44,
+              0.85
+            ],
+            "stair": [
+              0.44,
+              0.94
+            ],
+            "exit": [
+              0.44,
+              0.99
+            ],
+            "facing": [
+              -0.4,
+              1
+            ],
+            "kind": "knife guild gate, front stairs and lateral paved apron",
+            "door_point": [
+              515,
+              354
+            ],
+            "stair_point": [
+              515,
+              363
+            ],
+            "exit_point": [
+              515,
+              367
+            ],
+            "planned_apron": [
+              507,
+              367,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                515,
+                363
+              ],
+              [
+                515,
+                367
+              ],
+              [
+                515,
+                371
+              ],
+              [
+                449,
+                371
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "near",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl3/layer.png",
+          "native_layer_sha256": "e6da43bf688cb31b6d4f409e37c4874133f9700dc3a0c0b989bde3073cd236f2",
+          "click_bbox": [
+            464,
+            279,
+            581,
+            368
+          ],
+          "click_pixels": 6887,
+          "visual_approval_granted": false
+        }
+      }
+    },
+    {
+      "id": "dwellingRose",
+      "name": "Arachnoid Pens",
+      "role": "Tier-four grounded living Arachnoid Sentry handlers and reinforced Brood Sentry pens.",
+      "buildings": [
+        "dwellingLvl4",
+        "dwellingUpLvl4"
+      ],
+      "states": 2,
+      "construction": "One site, two states.",
+      "visual": "Practical keeper shelter, iron mesh, controlled web-filled pens; no spellblade recruitment or flight.",
+      "composition_rectangle": [
+        5,
+        147,
+        109,
+        82
+      ],
+      "native_z": 229,
+      "source_states": {
+        "dwellingLvl4": {
+          "state": "dwellingLvl4",
+          "site": "dwellingRose",
+          "master": "assets/source/town/painted-community-20261024-v2/dwellingLvl4/master.png",
+          "master_sha256": "85f8c520a47bdbfbdb2ad6f4c263114c721576952c15d641d44a2bc38f6841a7",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/dwellingLvl4.json",
+          "generation_record_sha256": "dea62b3893dc71254ed7706724917c567d64049b268271abc617a1a317efe5ca",
+          "mirror_x": false,
+          "composition_rectangle": [
+            5,
+            147,
+            109,
+            82
+          ],
+          "native_position": [
+            7,
+            153
+          ],
+          "native_size": [
+            105,
+            74
+          ],
+          "source_crop": [
+            16,
+            147,
+            1340,
+            1077
+          ],
+          "native_z": 229,
+          "full_alpha_bbox": [
+            7,
+            153,
+            112,
+            227
+          ],
+          "solid_bbox": [
+            7,
+            153,
+            112,
+            227
+          ],
+          "full_alpha_pixels": 5357,
+          "solid_pixels": 4844,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              13,
+              217,
+              89,
+              227
+            ],
+            "pixels": 300
+          },
+          "entrance": {
+            "door": [
+              0.51,
+              0.84
+            ],
+            "stair": [
+              0.51,
+              0.95
+            ],
+            "exit": [
+              0.51,
+              0.99
+            ],
+            "facing": [
+              -0.3,
+              1
+            ],
+            "kind": "spider keeper gated enclosure, ground access only",
+            "door_point": [
+              61,
+              215
+            ],
+            "stair_point": [
+              61,
+              223
+            ],
+            "exit_point": [
+              61,
+              226
+            ],
+            "planned_apron": [
+              53,
+              226,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                61,
+                223
+              ],
+              [
+                61,
+                226
+              ],
+              [
+                61,
+                230
+              ],
+              [
+                384,
+                230
+              ],
+              [
+                384,
+                154
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "middle",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl4/layer.png",
+          "native_layer_sha256": "404278395a9536712762feb56e6b58775d1d8915741a40139a5e83a259a1d9f7",
+          "click_bbox": [
+            7,
+            153,
+            112,
+            227
+          ],
+          "click_pixels": 4844,
+          "visual_approval_granted": false
+        },
+        "dwellingUpLvl4": {
+          "state": "dwellingUpLvl4",
+          "site": "dwellingRose",
+          "master": "assets/source/town/painted-community-20261024-v2/dwellingUpLvl4/master.png",
+          "master_sha256": "a764188e148eccb9ae05955fef79249daf6dd3365b5c499b1b129a8685b83a54",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/dwellingUpLvl4.json",
+          "generation_record_sha256": "c058b87d05d96ccd99954d9a5dd05b690636a108d5d3333307796f68bbbc34d2",
+          "mirror_x": false,
+          "composition_rectangle": [
+            5,
+            147,
+            109,
+            82
+          ],
+          "native_position": [
+            9,
+            149
+          ],
+          "native_size": [
+            100,
+            78
+          ],
+          "source_crop": [
+            7,
+            99,
+            1350,
+            1146
+          ],
+          "native_z": 229,
+          "full_alpha_bbox": [
+            9,
+            149,
+            109,
+            227
+          ],
+          "solid_bbox": [
+            9,
+            150,
+            109,
+            227
+          ],
+          "full_alpha_pixels": 5351,
+          "solid_pixels": 4858,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              39,
+              217,
+              90,
+              227
+            ],
+            "pixels": 256
+          },
+          "entrance": {
+            "door": [
+              0.51,
+              0.84
+            ],
+            "stair": [
+              0.51,
+              0.95
+            ],
+            "exit": [
+              0.51,
+              0.99
+            ],
+            "facing": [
+              -0.3,
+              1
+            ],
+            "kind": "spider keeper gated enclosure, ground access only",
+            "door_point": [
+              60,
+              215
+            ],
+            "stair_point": [
+              60,
+              223
+            ],
+            "exit_point": [
+              60,
+              226
+            ],
+            "planned_apron": [
+              52,
+              226,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                60,
+                223
+              ],
+              [
+                60,
+                226
+              ],
+              [
+                60,
+                230
+              ],
+              [
+                384,
+                230
+              ],
+              [
+                384,
+                154
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "middle",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl4/layer.png",
+          "native_layer_sha256": "78fed614d9a8c9f018e42cec91434d2f7648e6a5c377a8ec61bcdda9aa171e55",
+          "click_bbox": [
+            9,
+            150,
+            109,
+            227
+          ],
+          "click_pixels": 4858,
+          "visual_approval_granted": false
+        }
+      }
+    },
+    {
+      "id": "dwellingCrimson",
+      "name": "Crimson Study",
+      "role": "tier five Crimson Disciples and Crimson Adepts.",
+      "buildings": [
+        "dwellingLvl5",
+        "dwellingUpLvl5"
+      ],
+      "states": 2,
+      "construction": "One site, two states.",
+      "visual": "A blood-dark cloister with surgical lamps and iron basins, restrained and not gory.",
+      "composition_rectangle": [
+        239,
+        122,
+        118,
+        104
+      ],
+      "native_z": 226,
+      "source_states": {
+        "dwellingLvl5": {
+          "state": "dwellingLvl5",
+          "site": "dwellingCrimson",
+          "master": "assets/source/town/painted-community-20261024-v2/dwellingLvl5/master.png",
+          "master_sha256": "d47c3d5165edfc485f5235a9a5b518a1d1c10ac31dd1952b07ddb864a6bd1b50",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/dwellingLvl5.json",
+          "generation_record_sha256": "5bbec06404ba6b1d2f91fa68d62df2184c27d16b978783273593d5b235f11cd7",
+          "mirror_x": false,
+          "composition_rectangle": [
+            239,
+            122,
+            118,
+            104
+          ],
+          "native_position": [
+            241,
+            137
+          ],
+          "native_size": [
+            114,
+            87
+          ],
+          "source_crop": [
+            9,
+            73,
+            1348,
+            1098
+          ],
+          "native_z": 226,
+          "full_alpha_bbox": [
+            241,
+            137,
+            355,
+            224
+          ],
+          "solid_bbox": [
+            241,
+            137,
+            355,
+            224
+          ],
+          "full_alpha_pixels": 7299,
+          "solid_pixels": 6782,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              248,
+              214,
+              349,
+              224
+            ],
+            "pixels": 645
+          },
+          "entrance": {
+            "door": [
+              0.6,
+              0.84
+            ],
+            "stair": [
+              0.6,
+              0.95
+            ],
+            "exit": [
+              0.6,
+              0.99
+            ],
+            "facing": [
+              -0.3,
+              1
+            ],
+            "kind": "Crimson practice door and paved landing",
+            "door_point": [
+              309,
+              210
+            ],
+            "stair_point": [
+              309,
+              220
+            ],
+            "exit_point": [
+              309,
+              223
+            ],
+            "planned_apron": [
+              301,
+              223,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                309,
+                220
+              ],
+              [
+                309,
+                223
+              ],
+              [
+                309,
+                227
+              ],
+              [
+                384,
+                227
+              ],
+              [
+                384,
+                154
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "middle",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl5/layer.png",
+          "native_layer_sha256": "63cce7322e10c61ff38b5d5832c368015daee40e0848d67ef0031ba2436ea346",
+          "click_bbox": [
+            241,
+            137,
+            355,
+            224
+          ],
+          "click_pixels": 6782,
+          "visual_approval_granted": false
+        },
+        "dwellingUpLvl5": {
+          "state": "dwellingUpLvl5",
+          "site": "dwellingCrimson",
+          "master": "assets/source/town/painted-community-20261024-v2/dwellingUpLvl5/master.png",
+          "master_sha256": "7abafb30b3644d3a98162344bfa471c4dfc4290506c95cc94bfa074b965980ef",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/dwellingUpLvl5.json",
+          "generation_record_sha256": "a45b57ab97103df13b82ceab28af91d8c2d58b4706cfb21e19e2431716bc335f",
+          "mirror_x": false,
+          "composition_rectangle": [
+            239,
+            122,
+            118,
+            104
+          ],
+          "native_position": [
+            241,
+            135
+          ],
+          "native_size": [
+            114,
+            89
+          ],
+          "source_crop": [
+            1,
+            67,
+            1347,
+            1112
+          ],
+          "native_z": 226,
+          "full_alpha_bbox": [
+            241,
+            135,
+            355,
+            224
+          ],
+          "solid_bbox": [
+            241,
+            135,
+            355,
+            224
+          ],
+          "full_alpha_pixels": 7791,
+          "solid_pixels": 7269,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              252,
+              214,
+              347,
+              224
+            ],
+            "pixels": 649
+          },
+          "entrance": {
+            "door": [
+              0.6,
+              0.84
+            ],
+            "stair": [
+              0.6,
+              0.95
+            ],
+            "exit": [
+              0.6,
+              0.99
+            ],
+            "facing": [
+              -0.3,
+              1
+            ],
+            "kind": "Crimson practice door and paved landing",
+            "door_point": [
+              309,
+              210
+            ],
+            "stair_point": [
+              309,
+              220
+            ],
+            "exit_point": [
+              309,
+              223
+            ],
+            "planned_apron": [
+              301,
+              223,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                309,
+                220
+              ],
+              [
+                309,
+                223
+              ],
+              [
+                309,
+                227
+              ],
+              [
+                384,
+                227
+              ],
+              [
+                384,
+                154
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "middle",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl5/layer.png",
+          "native_layer_sha256": "8491e81d9ba2f7f31e667031179730f26af44b5d576da1b28fbd8cada02141ff",
+          "click_bbox": [
+            241,
+            135,
+            355,
+            224
+          ],
+          "click_pixels": 7269,
+          "visual_approval_granted": false
+        }
+      }
+    },
+    {
+      "id": "dwellingMinotaur",
+      "name": "Minotaur Fighting Pit",
+      "role": "tier six Minotaur Reckoners and Veteran Minotaurs.",
+      "buildings": [
+        "dwellingLvl6",
+        "dwellingUpLvl6"
+      ],
+      "states": 2,
+      "construction": "One site, two states.",
+      "visual": "A sand arena with iron gates and a heavy practice floor.",
+      "composition_rectangle": [
+        665,
+        177,
+        127,
+        93
+      ],
+      "native_z": 270,
+      "source_states": {
+        "dwellingLvl6": {
+          "state": "dwellingLvl6",
+          "site": "dwellingMinotaur",
+          "master": "assets/source/town/painted-community-20261024-v2/dwellingLvl6/master.png",
+          "master_sha256": "f98e41a86696845ce09d85bef6d83008fdd759ddfbc244188888cd85ce777fef",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/dwellingLvl6.json",
+          "generation_record_sha256": "9b0bb8fbfe6054abba055a048fae5e5e743093ae7e5db6b7bcc2c28f8fefd3c4",
+          "mirror_x": false,
+          "composition_rectangle": [
+            665,
+            177,
+            127,
+            93
+          ],
+          "native_position": [
+            667,
+            180
+          ],
+          "native_size": [
+            123,
+            88
+          ],
+          "source_crop": [
+            12,
+            73,
+            1381,
+            1057
+          ],
+          "native_z": 270,
+          "full_alpha_bbox": [
+            667,
+            180,
+            790,
+            268
+          ],
+          "solid_bbox": [
+            667,
+            180,
+            790,
+            268
+          ],
+          "full_alpha_pixels": 8557,
+          "solid_pixels": 8002,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              667,
+              258,
+              790,
+              268
+            ],
+            "pixels": 1105
+          },
+          "entrance": {
+            "door": [
+              0.55,
+              0.83
+            ],
+            "stair": [
+              0.55,
+              0.94
+            ],
+            "exit": [
+              0.55,
+              0.99
+            ],
+            "facing": [
+              -0.3,
+              1
+            ],
+            "kind": "broad sentient-minotaur hall doorway and street landing",
+            "door_point": [
+              735,
+              253
+            ],
+            "stair_point": [
+              735,
+              263
+            ],
+            "exit_point": [
+              735,
+              267
+            ],
+            "planned_apron": [
+              727,
+              267,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                735,
+                263
+              ],
+              [
+                735,
+                267
+              ],
+              [
+                735,
+                271
+              ],
+              [
+                627,
+                271
+              ],
+              [
+                627,
+                258
+              ],
+              [
+                501,
+                258
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "middle",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl6/layer.png",
+          "native_layer_sha256": "020f7972a383859768fbaa73ec94183b9b4873c2b35a92250cb1a5c73968aeb9",
+          "click_bbox": [
+            667,
+            180,
+            790,
+            268
+          ],
+          "click_pixels": 8002,
+          "visual_approval_granted": false
+        },
+        "dwellingUpLvl6": {
+          "state": "dwellingUpLvl6",
+          "site": "dwellingMinotaur",
+          "master": "assets/source/town/painted-community-20261024-v2/dwellingUpLvl6/master.png",
+          "master_sha256": "b1b28c40745f9c9fc9ebbd00f8bd7a4e11f99c68d4b482a96143c5c71f782edd",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/dwellingUpLvl6.json",
+          "generation_record_sha256": "f9c4ff385bf7c18b57c5db27643fc755085e176fecba9c963b0960833efc3e43",
+          "mirror_x": false,
+          "composition_rectangle": [
+            665,
+            177,
+            127,
+            93
+          ],
+          "native_position": [
+            670,
+            179
+          ],
+          "native_size": [
+            116,
+            89
+          ],
+          "source_crop": [
+            2,
+            63,
+            1350,
+            1095
+          ],
+          "native_z": 270,
+          "full_alpha_bbox": [
+            670,
+            179,
+            786,
+            268
+          ],
+          "solid_bbox": [
+            670,
+            179,
+            786,
+            268
+          ],
+          "full_alpha_pixels": 8445,
+          "solid_pixels": 7876,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              670,
+              258,
+              786,
+              268
+            ],
+            "pixels": 1086
+          },
+          "entrance": {
+            "door": [
+              0.55,
+              0.83
+            ],
+            "stair": [
+              0.55,
+              0.94
+            ],
+            "exit": [
+              0.55,
+              0.99
+            ],
+            "facing": [
+              -0.3,
+              1
+            ],
+            "kind": "broad sentient-minotaur hall doorway and street landing",
+            "door_point": [
+              734,
+              253
+            ],
+            "stair_point": [
+              734,
+              263
+            ],
+            "exit_point": [
+              734,
+              267
+            ],
+            "planned_apron": [
+              726,
+              267,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                734,
+                263
+              ],
+              [
+                734,
+                267
+              ],
+              [
+                734,
+                271
+              ],
+              [
+                627,
+                271
+              ],
+              [
+                627,
+                258
+              ],
+              [
+                501,
+                258
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "middle",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl6/layer.png",
+          "native_layer_sha256": "af53dc3747d594a8bb869bb51efc128aa6675397ed50c6b38579c4dea3cb706a",
+          "click_bbox": [
+            670,
+            179,
+            786,
+            268
+          ],
+          "click_pixels": 7876,
+          "visual_approval_granted": false
+        }
+      }
+    },
+    {
+      "id": "bindingRift",
+      "name": "Binding Vault",
+      "role": "Coercive binding-court/vault replacement family for fictional bound ruin manifestations.",
+      "buildings": [
+        "special4",
+        "dwellingLvl7",
+        "dwellingUpLvl7"
+      ],
+      "states": 3,
+      "construction": "One site, three states. dwellingLvl7 declares \"upgrades\": \"special4\", so the vault is replaced in place and the site never shows both. The Greater Binding Rift requires the castle.",
+      "visual": "Ward piers, anchor chains and closed containment gates, no unique Atakhan statue or recruitable-species claim.",
+      "composition_rectangle": [
+        487,
+        35,
+        139,
+        121
+      ],
+      "native_z": 156,
+      "source_states": {
+        "special4": {
+          "state": "special4",
+          "site": "bindingRift",
+          "master": "assets/source/town/painted-community-20261024-v2/special4/master.png",
+          "master_sha256": "f08ae999c8b6b1eb1a55bc8e0d2ae115b5d66aa1926d84f2ab8c6ad76de8e440",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/special4.json",
+          "generation_record_sha256": "21123d376530b7e5b5390577044e118606cff3246d5e27ddb844b35e052dde54",
+          "mirror_x": false,
+          "composition_rectangle": [
+            487,
+            35,
+            139,
+            121
+          ],
+          "native_position": [
+            489,
+            72
+          ],
+          "native_size": [
+            135,
+            82
+          ],
+          "source_crop": [
+            15,
+            12,
+            1564,
+            948
+          ],
+          "native_z": 156,
+          "full_alpha_bbox": [
+            489,
+            72,
+            624,
+            154
+          ],
+          "solid_bbox": [
+            489,
+            72,
+            624,
+            154
+          ],
+          "full_alpha_pixels": 6944,
+          "solid_pixels": 6299,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              533,
+              144,
+              608,
+              154
+            ],
+            "pixels": 515
+          },
+          "entrance": {
+            "door": [
+              0.5,
+              0.83
+            ],
+            "stair": [
+              0.5,
+              0.95
+            ],
+            "exit": [
+              0.5,
+              0.99
+            ],
+            "facing": [
+              0,
+              1
+            ],
+            "kind": "warded vault gate or pre-vault ritual court stair",
+            "door_point": [
+              557,
+              140
+            ],
+            "stair_point": [
+              557,
+              150
+            ],
+            "exit_point": [
+              557,
+              153
+            ],
+            "planned_apron": [
+              549,
+              153,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                557,
+                150
+              ],
+              [
+                557,
+                153
+              ],
+              [
+                557,
+                157
+              ],
+              [
+                557,
+                189
+              ],
+              [
+                516,
+                189
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "far",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/special4/layer.png",
+          "native_layer_sha256": "18e52eb47b082a4e889f1ab9f59510ca946900c66841fa37573579e3feecd05b",
+          "click_bbox": [
+            489,
+            72,
+            624,
+            154
+          ],
+          "click_pixels": 6299,
+          "visual_approval_granted": false
+        },
+        "dwellingLvl7": {
+          "state": "dwellingLvl7",
+          "site": "bindingRift",
+          "master": "assets/source/town/painted-community-20261024-v2/dwellingLvl7/master.png",
+          "master_sha256": "07a2c56eb66a8ce5614fca88f61191c1dd497cf04e4400f3bcbfe62ad819c115",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/dwellingLvl7.json",
+          "generation_record_sha256": "518969f4c852de1febf78d647d6245734b7bd8619481da0983bae90e01f416ed",
+          "mirror_x": false,
+          "composition_rectangle": [
+            487,
+            35,
+            139,
+            121
+          ],
+          "native_position": [
+            489,
+            39
+          ],
+          "native_size": [
+            135,
+            115
+          ],
+          "source_crop": [
+            11,
+            20,
+            1310,
+            1126
+          ],
+          "native_z": 156,
+          "full_alpha_bbox": [
+            489,
+            39,
+            624,
+            154
+          ],
+          "solid_bbox": [
+            489,
+            39,
+            624,
+            154
+          ],
+          "full_alpha_pixels": 11491,
+          "solid_pixels": 10507,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              492,
+              144,
+              618,
+              154
+            ],
+            "pixels": 800
+          },
+          "entrance": {
+            "door": [
+              0.5,
+              0.83
+            ],
+            "stair": [
+              0.5,
+              0.95
+            ],
+            "exit": [
+              0.5,
+              0.99
+            ],
+            "facing": [
+              0,
+              1
+            ],
+            "kind": "warded vault gate or pre-vault ritual court stair",
+            "door_point": [
+              557,
+              134
+            ],
+            "stair_point": [
+              557,
+              148
+            ],
+            "exit_point": [
+              557,
+              153
+            ],
+            "planned_apron": [
+              549,
+              153,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                557,
+                148
+              ],
+              [
+                557,
+                153
+              ],
+              [
+                557,
+                157
+              ],
+              [
+                557,
+                189
+              ],
+              [
+                516,
+                189
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "far",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl7/layer.png",
+          "native_layer_sha256": "05b57733fb298094d67f6506005fe611f8d14707154aa2fd2750d4fcfad874b2",
+          "click_bbox": [
+            489,
+            39,
+            624,
+            154
+          ],
+          "click_pixels": 10507,
+          "visual_approval_granted": false
+        },
+        "dwellingUpLvl7": {
+          "state": "dwellingUpLvl7",
+          "site": "bindingRift",
+          "master": "assets/source/town/painted-community-20261024-v2/dwellingUpLvl7/master.png",
+          "master_sha256": "28584dc9457abcebc67d6492ea9cd9917f6fac3c883cea374279726e03be712c",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/dwellingUpLvl7.json",
+          "generation_record_sha256": "113f33fc427671f53e7301d522bb03a9fd8571aefb00f565374aa5aadd9d2049",
+          "mirror_x": false,
+          "composition_rectangle": [
+            487,
+            35,
+            139,
+            121
+          ],
+          "native_position": [
+            490,
+            37
+          ],
+          "native_size": [
+            133,
+            117
+          ],
+          "source_crop": [
+            1,
+            4,
+            1312,
+            1156
+          ],
+          "native_z": 156,
+          "full_alpha_bbox": [
+            490,
+            37,
+            623,
+            154
+          ],
+          "solid_bbox": [
+            490,
+            37,
+            623,
+            154
+          ],
+          "full_alpha_pixels": 12137,
+          "solid_pixels": 11255,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              501,
+              144,
+              615,
+              154
+            ],
+            "pixels": 758
+          },
+          "entrance": {
+            "door": [
+              0.5,
+              0.83
+            ],
+            "stair": [
+              0.5,
+              0.95
+            ],
+            "exit": [
+              0.5,
+              0.99
+            ],
+            "facing": [
+              0,
+              1
+            ],
+            "kind": "warded vault gate or pre-vault ritual court stair",
+            "door_point": [
+              556,
+              134
+            ],
+            "stair_point": [
+              556,
+              148
+            ],
+            "exit_point": [
+              556,
+              153
+            ],
+            "planned_apron": [
+              548,
+              153,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                556,
+                148
+              ],
+              [
+                556,
+                153
+              ],
+              [
+                556,
+                157
+              ],
+              [
+                556,
+                189
+              ],
+              [
+                516,
+                189
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "far",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl7/layer.png",
+          "native_layer_sha256": "c37b6c5529f3d7d675353914f3626486812977cb284e017c0cfa956c4c539c7a",
+          "click_bbox": [
+            490,
+            37,
+            623,
+            154
+          ],
+          "click_pixels": 11255,
+          "visual_approval_granted": false
+        }
+      }
+    },
+    {
+      "id": "gildedCup",
+      "name": "Legion Tavern",
+      "role": "tavern, the source of the ordinary hero pool and the hall upgrade.",
+      "buildings": [
+        "tavern"
+      ],
+      "states": 1,
+      "construction": "One site, one state.",
+      "visual": "A public hall, scarred and loud, deliberately not the same place as the Rose Garden.",
+      "composition_rectangle": [
+        287,
+        244,
+        145,
+        111
+      ],
+      "native_z": 355,
+      "source_states": {
+        "tavern": {
+          "state": "tavern",
+          "site": "gildedCup",
+          "master": "assets/source/town/urban-community-20261024-v4/tavern/master.png",
+          "master_sha256": "06b685b4900a9fb6678c8d603d33ebb37f8096cb1bd42f199947c8a4d5ecda41",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/tavern.json",
+          "generation_record_sha256": "917726b5965c118dac3b610984a22def6985a0fa0ed893bd62c4f132e0c83182",
+          "mirror_x": false,
+          "composition_rectangle": [
+            287,
+            244,
+            145,
+            111
+          ],
+          "native_position": [
+            294,
+            246
+          ],
+          "native_size": [
+            131,
+            107
+          ],
+          "source_crop": [
+            31,
+            88,
+            1272,
+            1100
+          ],
+          "native_z": 355,
+          "full_alpha_bbox": [
+            294,
+            246,
+            425,
+            353
+          ],
+          "solid_bbox": [
+            294,
+            246,
+            425,
+            353
+          ],
+          "full_alpha_pixels": 10855,
+          "solid_pixels": 10248,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              294,
+              343,
+              425,
+              353
+            ],
+            "pixels": 1211
+          },
+          "entrance": {
+            "door": [
+              0.51,
+              0.82
+            ],
+            "stair": [
+              0.51,
+              0.94
+            ],
+            "exit": [
+              0.51,
+              0.99
+            ],
+            "facing": [
+              -0.4,
+              1
+            ],
+            "kind": "inn entrance, public front landing and winding main street",
+            "door_point": [
+              361,
+              334
+            ],
+            "stair_point": [
+              361,
+              347
+            ],
+            "exit_point": [
+              361,
+              352
+            ],
+            "planned_apron": [
+              353,
+              352,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                361,
+                347
+              ],
+              [
+                361,
+                352
+              ],
+              [
+                361,
+                356
+              ],
+              [
+                441,
+                356
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "near",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/tavern/layer.png",
+          "native_layer_sha256": "c43a6a44b12d9de3bfcdb6bb6aff4f1c389f4dc22d96da69d51812df670c3aa6",
+          "click_bbox": [
+            294,
+            246,
+            425,
+            353
+          ],
+          "click_pixels": 10248,
+          "visual_approval_granted": false
+        }
+      }
+    },
+    {
+      "id": "grandMarket",
+      "name": "Campaign Market",
+      "role": "marketplace and the resource silo upgrade partner.",
+      "buildings": [
+        "marketplace"
+      ],
+      "states": 1,
+      "construction": "One site, one state.",
+      "visual": "Covered stalls, scales, contract boards, porters.",
+      "composition_rectangle": [
+        226,
+        36,
+        93,
+        71
+      ],
+      "native_z": 107,
+      "source_states": {
+        "marketplace": {
+          "state": "marketplace",
+          "site": "grandMarket",
+          "master": "assets/source/town/structures/marketplace/painted-v1/master.png",
+          "master_sha256": "844bbd64ef900860635d86c7f63f390081ffc24484c9aafa6b4c3e2a56a34ca1",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/marketplace.json",
+          "generation_record_sha256": "c57ba42a0738c483c2fd8308b53d2f28dc755c290cbdece6d51899a3318dc257",
+          "mirror_x": false,
+          "composition_rectangle": [
+            226,
+            36,
+            93,
+            71
+          ],
+          "native_position": [
+            228,
+            52
+          ],
+          "native_size": [
+            89,
+            53
+          ],
+          "source_crop": [
+            35,
+            41,
+            1506,
+            910
+          ],
+          "native_z": 107,
+          "full_alpha_bbox": [
+            228,
+            52,
+            317,
+            105
+          ],
+          "solid_bbox": [
+            228,
+            52,
+            317,
+            105
+          ],
+          "full_alpha_pixels": 3039,
+          "solid_pixels": 2617,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              228,
+              95,
+              317,
+              105
+            ],
+            "pixels": 808
+          },
+          "entrance": {
+            "door": [
+              0.5,
+              0.84
+            ],
+            "stair": [
+              0.5,
+              0.97
+            ],
+            "exit": [
+              0.5,
+              0.99
+            ],
+            "facing": [
+              0,
+              1
+            ],
+            "kind": "open market awning entrance; upper crossroad keeps old lower stair free",
+            "door_point": [
+              272,
+              97
+            ],
+            "stair_point": [
+              272,
+              103
+            ],
+            "exit_point": [
+              272,
+              104
+            ],
+            "planned_apron": [
+              264,
+              104,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                272,
+                103
+              ],
+              [
+                272,
+                104
+              ],
+              [
+                272,
+                108
+              ],
+              [
+                272,
+                148
+              ],
+              [
+                382,
+                148
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "far",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/marketplace/layer.png",
+          "native_layer_sha256": "d24d97cae8af2c556ddad5fc4998136003e9c26995c022247f79edf139ee8f1c",
+          "click_bbox": [
+            228,
+            52,
+            317,
+            105
+          ],
+          "click_pixels": 2617,
+          "visual_approval_granted": false
+        }
+      }
+    },
+    {
+      "id": "foundry",
+      "name": "Legion Armory",
+      "role": "blacksmith, the ammunition source and the tier three upgrade requirement.",
+      "buildings": [
+        "blacksmith"
+      ],
+      "states": 1,
+      "construction": "One site, one state.",
+      "visual": "A working forge with an ammunition bench. It is a service, not a machine production line.",
+      "composition_rectangle": [
+        639,
+        271,
+        142,
+        99
+      ],
+      "native_z": 370,
+      "source_states": {
+        "blacksmith": {
+          "state": "blacksmith",
+          "site": "foundry",
+          "master": "assets/source/town/painted-community-20261024-v2/blacksmith/master.png",
+          "master_sha256": "7d50fa4019a23c82cd640e202e39ae065f1fdc1b391931877524fdf437331776",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/blacksmith.json",
+          "generation_record_sha256": "279b30995c84cd9063dfc8caa5c6d17c78760b2baa30413d7bc4a4c69ed6bb6f",
+          "mirror_x": true,
+          "composition_rectangle": [
+            639,
+            271,
+            142,
+            99
+          ],
+          "native_position": [
+            642,
+            273
+          ],
+          "native_size": [
+            136,
+            95
+          ],
+          "source_crop": [
+            14,
+            25,
+            1471,
+            1044
+          ],
+          "native_z": 370,
+          "full_alpha_bbox": [
+            642,
+            273,
+            778,
+            368
+          ],
+          "solid_bbox": [
+            643,
+            273,
+            776,
+            367
+          ],
+          "full_alpha_pixels": 8741,
+          "solid_pixels": 8009,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              649,
+              357,
+              765,
+              368
+            ],
+            "pixels": 622
+          },
+          "entrance": {
+            "door": [
+              0.6,
+              0.8
+            ],
+            "stair": [
+              0.6,
+              0.93
+            ],
+            "exit": [
+              0.6,
+              0.99
+            ],
+            "facing": [
+              -0.5,
+              1
+            ],
+            "kind": "open forge threshold, front apron and lateral industrial lane",
+            "door_point": [
+              696,
+              349
+            ],
+            "stair_point": [
+              696,
+              361
+            ],
+            "exit_point": [
+              696,
+              367
+            ],
+            "planned_apron": [
+              688,
+              367,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                696,
+                361
+              ],
+              [
+                696,
+                367
+              ],
+              [
+                696,
+                371
+              ],
+              [
+                449,
+                371
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "near",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/blacksmith/layer.png",
+          "native_layer_sha256": "db84b175e66884a7fc0698bfff2088082839882f1fa73b599f511306b3b34deb",
+          "click_bbox": [
+            643,
+            273,
+            776,
+            367
+          ],
+          "click_pixels": 8009,
+          "visual_approval_granted": false
+        }
+      }
+    },
+    {
+      "id": "crimsonCitadel",
+      "name": "Crimson Citadel",
+      "role": "resource silo producing one sulfur per day.",
+      "buildings": [
+        "resourceSilo"
+      ],
+      "states": 1,
+      "construction": "One site, one state.",
+      "visual": "A sealed vault over a sulfur spring, with an iron-bound sluice.",
+      "composition_rectangle": [
+        596,
+        117,
+        65,
+        80
+      ],
+      "native_z": 197,
+      "source_states": {
+        "resourceSilo": {
+          "state": "resourceSilo",
+          "site": "crimsonCitadel",
+          "master": "assets/source/town/structures/resourceSilo/painted-v1/master.png",
+          "master_sha256": "51e5211aa5eb4bb13870b3f43cc62fef430c402c95720d4ddf1978bdccfea03b",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/resourceSilo.json",
+          "generation_record_sha256": "564f0fecb7a2020253932e33f414bea32de993e39e670795bf7ad11aba7d58ff",
+          "mirror_x": false,
+          "composition_rectangle": [
+            596,
+            117,
+            65,
+            80
+          ],
+          "native_position": [
+            598,
+            155
+          ],
+          "native_size": [
+            61,
+            40
+          ],
+          "source_crop": [
+            100,
+            43,
+            1457,
+            930
+          ],
+          "native_z": 197,
+          "full_alpha_bbox": [
+            598,
+            155,
+            659,
+            195
+          ],
+          "solid_bbox": [
+            599,
+            155,
+            658,
+            195
+          ],
+          "full_alpha_pixels": 1721,
+          "solid_pixels": 1477,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              598,
+              185,
+              659,
+              195
+            ],
+            "pixels": 574
+          },
+          "entrance": {
+            "door": [
+              0.5,
+              0.83
+            ],
+            "stair": [
+              0.5,
+              0.95
+            ],
+            "exit": [
+              0.5,
+              0.99
+            ],
+            "facing": [
+              -0.3,
+              1
+            ],
+            "kind": "resource depot service entrance",
+            "door_point": [
+              628,
+              188
+            ],
+            "stair_point": [
+              628,
+              193
+            ],
+            "exit_point": [
+              628,
+              195
+            ],
+            "planned_apron": [
+              620,
+              195,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                628,
+                193
+              ],
+              [
+                628,
+                195
+              ],
+              [
+                628,
+                199
+              ],
+              [
+                518,
+                199
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "far",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/resourceSilo/layer.png",
+          "native_layer_sha256": "6301fa2437fd0db17a9f7eceae4bd8b64491540a0a2a13af65340500a4e0d4f2",
+          "click_bbox": [
+            599,
+            155,
+            658,
+            195
+          ],
+          "click_pixels": 1477,
+          "visual_approval_granted": false
+        }
+      }
+    },
+    {
+      "id": "shipyard",
+      "name": "Imperial River Dock",
+      "role": "shipyard and the coastal ship.",
+      "buildings": [
+        "shipyard",
+        "ship"
+      ],
+      "states": 2,
+      "construction": "One site, two states.",
+      "visual": "A river wharf with a shallow-draft hull; the ship is the second state.",
+      "composition_rectangle": [
+        752,
+        132,
+        48,
+        35
+      ],
+      "native_z": 167,
+      "source_states": {
+        "shipyard": {
+          "state": "shipyard",
+          "site": "shipyard",
+          "master": "assets/source/town/structures/shipyard/painted-v1/master.png",
+          "master_sha256": "78de29ed37bc586d70df8d0df80f0dde5ecd9c31ba3550f078f4b70c5b893b2e",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/shipyard.json",
+          "generation_record_sha256": "284c85d3c238bb917eae6488b2a112f4640d4d24414b44364e1d65d3070b482f",
+          "mirror_x": false,
+          "composition_rectangle": [
+            752,
+            132,
+            48,
+            35
+          ],
+          "native_position": [
+            754,
+            135
+          ],
+          "native_size": [
+            44,
+            30
+          ],
+          "source_crop": [
+            58,
+            10,
+            1500,
+            1000
+          ],
+          "native_z": 167,
+          "full_alpha_bbox": [
+            754,
+            135,
+            798,
+            165
+          ],
+          "solid_bbox": [
+            754,
+            136,
+            798,
+            165
+          ],
+          "full_alpha_pixels": 902,
+          "solid_pixels": 633,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              754,
+              155,
+              798,
+              165
+            ],
+            "pixels": 325
+          },
+          "entrance": {
+            "door": [
+              0.32,
+              0.71
+            ],
+            "stair": [
+              0.35,
+              0.9
+            ],
+            "exit": [
+              0.35,
+              0.99
+            ],
+            "facing": [
+              -1,
+              0.2
+            ],
+            "kind": "dock building/pier access; boat intentionally intersects harbor water",
+            "door_point": [
+              768,
+              156
+            ],
+            "stair_point": [
+              769,
+              162
+            ],
+            "exit_point": [
+              769,
+              165
+            ],
+            "planned_apron": [
+              761,
+              165,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                769,
+                162
+              ],
+              [
+                769,
+                165
+              ],
+              [
+                769,
+                169
+              ],
+              [
+                769,
+                181
+              ],
+              [
+                596,
+                181
+              ],
+              [
+                596,
+                184
+              ],
+              [
+                594,
+                184
+              ],
+              [
+                594,
+                189
+              ],
+              [
+                516,
+                189
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "middle",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/shipyard/layer.png",
+          "native_layer_sha256": "a42585b43c53a5cd6a771bd429782f1c3483d5bd02f53e84ab7425dc0ff95027",
+          "click_bbox": [
+            754,
+            136,
+            798,
+            165
+          ],
+          "click_pixels": 633,
+          "visual_approval_granted": false
+        },
+        "ship": {
+          "state": "ship",
+          "site": "shipyard",
+          "master": "assets/source/town/structures/ship/painted-v1/master.png",
+          "master_sha256": "35dba902528910d6fa183e0110974d2ac4a97f39fdb1636b6528ceee6ed19864",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/ship.json",
+          "generation_record_sha256": "0c9655f2fbde77e05baee867c699d435f8dd76149f71eaec7bb20915880892d5",
+          "mirror_x": false,
+          "composition_rectangle": [
+            752,
+            132,
+            48,
+            35
+          ],
+          "native_position": [
+            754,
+            140
+          ],
+          "native_size": [
+            44,
+            25
+          ],
+          "source_crop": [
+            39,
+            53,
+            1503,
+            899
+          ],
+          "native_z": 167,
+          "full_alpha_bbox": [
+            754,
+            140,
+            798,
+            165
+          ],
+          "solid_bbox": [
+            754,
+            140,
+            798,
+            165
+          ],
+          "full_alpha_pixels": 817,
+          "solid_pixels": 658,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              754,
+              155,
+              798,
+              165
+            ],
+            "pixels": 398
+          },
+          "entrance": {
+            "door": [
+              0.32,
+              0.71
+            ],
+            "stair": [
+              0.35,
+              0.9
+            ],
+            "exit": [
+              0.35,
+              0.99
+            ],
+            "facing": [
+              -1,
+              0.2
+            ],
+            "kind": "dock building/pier access; boat intentionally intersects harbor water",
+            "door_point": [
+              768,
+              158
+            ],
+            "stair_point": [
+              769,
+              162
+            ],
+            "exit_point": [
+              769,
+              165
+            ],
+            "planned_apron": [
+              761,
+              165,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                769,
+                162
+              ],
+              [
+                769,
+                165
+              ],
+              [
+                769,
+                169
+              ],
+              [
+                769,
+                181
+              ],
+              [
+                596,
+                181
+              ],
+              [
+                596,
+                184
+              ],
+              [
+                594,
+                184
+              ],
+              [
+                594,
+                189
+              ],
+              [
+                516,
+                189
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "middle",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/ship/layer.png",
+          "native_layer_sha256": "b5f69862cc6850b121b29030247abd415c0aa96558381ec72fc401788cfb85fe",
+          "click_bbox": [
+            754,
+            140,
+            798,
+            165
+          ],
+          "click_pixels": 658,
+          "visual_approval_granted": false
+        }
+      }
+    },
+    {
+      "id": "grail",
+      "name": "Standard of the Three Principles",
+      "role": "the grail, in native grail mode: 5000 gold per day and +50% creature growth. It grants no mage guild level. Native towns carry mage guild levels one to five as ordinary structures, and this town deliberately keeps four, so fifth-circle access is omitted by design rather than by the grail.",
+      "buildings": [
+        "grail"
+      ],
+      "states": 1,
+      "construction": "One site, one state.",
+      "visual": "A trophy hall of captured standards, kept deliberately sparse.",
+      "composition_rectangle": [
+        625,
+        54,
+        29,
+        87
+      ],
+      "native_z": 141,
+      "source_states": {
+        "grail": {
+          "state": "grail",
+          "site": "grail",
+          "master": "assets/source/town/structures/grail/painted-v1/master.png",
+          "master_sha256": "c969158e99bc99b6c4c22528039a75ba0f01bb2582c13125bcc2b80121bb2fe5",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/grail.json",
+          "generation_record_sha256": "75de50caa231143c19243a0f8e29bb86fba898a0420e0f4ef2959cc07de487ce",
+          "mirror_x": false,
+          "composition_rectangle": [
+            625,
+            54,
+            29,
+            87
+          ],
+          "native_position": [
+            627,
+            114
+          ],
+          "native_size": [
+            25,
+            25
+          ],
+          "source_crop": [
+            72,
+            0,
+            1254,
+            1170
+          ],
+          "native_z": 141,
+          "full_alpha_bbox": [
+            627,
+            114,
+            652,
+            139
+          ],
+          "solid_bbox": [
+            628,
+            115,
+            651,
+            139
+          ],
+          "full_alpha_pixels": 435,
+          "solid_pixels": 291,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              627,
+              129,
+              652,
+              139
+            ],
+            "pixels": 215
+          },
+          "entrance": {
+            "door": [
+              0.5,
+              0.85
+            ],
+            "stair": [
+              0.5,
+              0.95
+            ],
+            "exit": [
+              0.5,
+              0.99
+            ],
+            "facing": [
+              0,
+              1
+            ],
+            "kind": "public monument steps, no fabricated building door",
+            "door_point": [
+              639,
+              135
+            ],
+            "stair_point": [
+              639,
+              138
+            ],
+            "exit_point": [
+              639,
+              139
+            ],
+            "planned_apron": [
+              631,
+              139,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                639,
+                138
+              ],
+              [
+                639,
+                139
+              ],
+              [
+                639,
+                143
+              ],
+              [
+                639,
+                181
+              ],
+              [
+                596,
+                181
+              ],
+              [
+                596,
+                184
+              ],
+              [
+                594,
+                184
+              ],
+              [
+                594,
+                189
+              ],
+              [
+                516,
+                189
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "far",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/grail/layer.png",
+          "native_layer_sha256": "c5d243a216be6cf75d8a341f0196f94670a186aa2ca00c192744f9a96be7ae89",
+          "click_bbox": [
+            628,
+            115,
+            651,
+            139
+          ],
+          "click_pixels": 291,
+          "visual_approval_granted": false
+        }
+      }
+    },
+    {
+      "id": "blackRoseAcademy",
+      "name": "Black Rose Academy",
+      "role": "special1: a saved, strongest-only +1 permanent sight reward on the shared runeterraNoxusScouting key.",
+      "buildings": [
+        "special1"
+      ],
+      "states": 1,
+      "construction": "One site, one state.",
+      "visual": "A walled study with maps and a single lamp. The name is a project-fiction adaptation of a local clandestine arrangement, not a claim of government control.",
+      "composition_rectangle": [
+        4,
+        20,
+        110,
+        119
+      ],
+      "native_z": 139,
+      "source_states": {
+        "special1": {
+          "state": "special1",
+          "site": "blackRoseAcademy",
+          "master": "assets/source/town/painted-community-20261024-v2/special1/master.png",
+          "master_sha256": "ef3cb9a5fc7f6caebd072a15c6c6604f33d919f2b05fadec8630f6e83c2fd824",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/special1.json",
+          "generation_record_sha256": "e7738403b148e77dcc97776234398cbb70729df19969fd147235f9817eaa75f8",
+          "mirror_x": false,
+          "composition_rectangle": [
+            4,
+            20,
+            110,
+            119
+          ],
+          "native_position": [
+            6,
+            37
+          ],
+          "native_size": [
+            106,
+            100
+          ],
+          "source_crop": [
+            16,
+            29,
+            1247,
+            1186
+          ],
+          "native_z": 139,
+          "full_alpha_bbox": [
+            6,
+            37,
+            112,
+            137
+          ],
+          "solid_bbox": [
+            8,
+            38,
+            111,
+            137
+          ],
+          "full_alpha_pixels": 7823,
+          "solid_pixels": 7216,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              6,
+              127,
+              112,
+              137
+            ],
+            "pixels": 891
+          },
+          "entrance": {
+            "door": [
+              0.55,
+              0.84
+            ],
+            "stair": [
+              0.55,
+              0.96
+            ],
+            "exit": [
+              0.55,
+              0.99
+            ],
+            "facing": [
+              -0.3,
+              1
+            ],
+            "kind": "academy door, supported terrace landing and connecting stair",
+            "door_point": [
+              64,
+              121
+            ],
+            "stair_point": [
+              64,
+              133
+            ],
+            "exit_point": [
+              64,
+              136
+            ],
+            "planned_apron": [
+              56,
+              136,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                64,
+                133
+              ],
+              [
+                64,
+                136
+              ],
+              [
+                64,
+                140
+              ],
+              [
+                64,
+                148
+              ],
+              [
+                382,
+                148
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "far",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/special1/layer.png",
+          "native_layer_sha256": "cbaaa2f954da94893053d8d6f0df023b5dff14b5d0ebb7431c246282f07a876c",
+          "click_bbox": [
+            8,
+            38,
+            111,
+            137
+          ],
+          "click_pixels": 7216,
+          "visual_approval_granted": false
+        }
+      }
+    },
+    {
+      "id": "trifarianHall",
+      "name": "Trifarian Hall",
+      "role": "special2: +2 Attack to the town defenders.",
+      "buildings": [
+        "special2"
+      ],
+      "states": 1,
+      "construction": "One site, one state.",
+      "visual": "A drill hall with weapon racks for the town garrison.",
+      "composition_rectangle": [
+        395,
+        159,
+        116,
+        90
+      ],
+      "native_z": 249,
+      "source_states": {
+        "special2": {
+          "state": "special2",
+          "site": "trifarianHall",
+          "master": "assets/source/town/urban-community-20261024-v4/special2/master.png",
+          "master_sha256": "79097b00229e883f8b7a43d8296729f6f2528f02703a5d851ecba821114f0655",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/special2.json",
+          "generation_record_sha256": "de6acf7f230f1701ab296ed667f78814ff8d80ca9f7182cd465532ed50004706",
+          "mirror_x": false,
+          "composition_rectangle": [
+            395,
+            159,
+            116,
+            90
+          ],
+          "native_position": [
+            397,
+            180
+          ],
+          "native_size": [
+            112,
+            67
+          ],
+          "source_crop": [
+            40,
+            174,
+            1368,
+            973
+          ],
+          "native_z": 249,
+          "full_alpha_bbox": [
+            397,
+            180,
+            509,
+            247
+          ],
+          "solid_bbox": [
+            397,
+            180,
+            509,
+            247
+          ],
+          "full_alpha_pixels": 5730,
+          "solid_pixels": 5250,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              397,
+              237,
+              509,
+              247
+            ],
+            "pixels": 826
+          },
+          "entrance": {
+            "door": [
+              0.6,
+              0.77
+            ],
+            "stair": [
+              0.6,
+              0.96
+            ],
+            "exit": [
+              0.6,
+              0.99
+            ],
+            "facing": [
+              -0.3,
+              1
+            ],
+            "kind": "assembly door and new paved front landing; no route through lower red-roof hut",
+            "door_point": [
+              464,
+              232
+            ],
+            "stair_point": [
+              464,
+              244
+            ],
+            "exit_point": [
+              464,
+              246
+            ],
+            "planned_apron": [
+              456,
+              246,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                464,
+                244
+              ],
+              [
+                464,
+                246
+              ],
+              [
+                464,
+                250
+              ],
+              [
+                464,
+                281
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "middle",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/special2/layer.png",
+          "native_layer_sha256": "d0a1e1102c5aec188ea896e354c027070f569234382ee74b84d70c8362127dc0",
+          "click_bbox": [
+            397,
+            180,
+            509,
+            247
+          ],
+          "click_pixels": 5250,
+          "visual_approval_granted": false
+        }
+      }
+    },
+    {
+      "id": "arenaOfValor",
+      "name": "Arena of Valor",
+      "role": "special3: 150 gold per day from the arena purses.",
+      "buildings": [
+        "special3"
+      ],
+      "states": 1,
+      "construction": "One site, one state.",
+      "visual": "A public arena with awnings and a prize table.",
+      "composition_rectangle": [
+        520,
+        191,
+        111,
+        83
+      ],
+      "native_z": 274,
+      "source_states": {
+        "special3": {
+          "state": "special3",
+          "site": "arenaOfValor",
+          "master": "assets/source/town/painted-community-20261024-v2/special3/master.png",
+          "master_sha256": "e60e5b76bf6b19e169a34e550a0e11d5d572d330a0920cc0ca4384893cb65b25",
+          "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/special3.json",
+          "generation_record_sha256": "e47be460b509a55e18f1ec050de467f268d063b6322d4a8ab88cae79df0eb9b8",
+          "mirror_x": false,
+          "composition_rectangle": [
+            520,
+            191,
+            111,
+            83
+          ],
+          "native_position": [
+            522,
+            195
+          ],
+          "native_size": [
+            107,
+            77
+          ],
+          "source_crop": [
+            6,
+            11,
+            1428,
+            1032
+          ],
+          "native_z": 274,
+          "full_alpha_bbox": [
+            522,
+            195,
+            629,
+            272
+          ],
+          "solid_bbox": [
+            522,
+            196,
+            629,
+            272
+          ],
+          "full_alpha_pixels": 6531,
+          "solid_pixels": 6014,
+          "shadow_included": true,
+          "foundation": {
+            "basis": "Full alpha including contact shadow, lower 10 native pixels",
+            "bbox": [
+              541,
+              262,
+              624,
+              272
+            ],
+            "pixels": 533
+          },
+          "entrance": {
+            "door": [
+              0.5,
+              0.82
+            ],
+            "stair": [
+              0.5,
+              0.95
+            ],
+            "exit": [
+              0.5,
+              0.99
+            ],
+            "facing": [
+              0,
+              1
+            ],
+            "kind": "arena gate and lateral public terrace approach above the knife-yard roof",
+            "door_point": [
+              576,
+              258
+            ],
+            "stair_point": [
+              576,
+              268
+            ],
+            "exit_point": [
+              576,
+              271
+            ],
+            "planned_apron": [
+              568,
+              271,
+              16,
+              10
+            ],
+            "planned_route": [
+              [
+                576,
+                268
+              ],
+              [
+                576,
+                271
+              ],
+              [
+                576,
+                275
+              ],
+              [
+                493,
+                275
+              ],
+              [
+                493,
+                272
+              ]
+            ],
+            "scope": "Frozen manually identified source doorway/stair plus planned support route; actual terrain support requires exact-pixel review. Not native pathfinding."
+          },
+          "depth": "middle",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/special3/layer.png",
+          "native_layer_sha256": "42f56665fc034adb3bd201d5e95086b8fec0da5022b03ee47bc8af70af990084",
+          "click_bbox": [
+            522,
+            196,
+            629,
+            272
+          ],
+          "click_pixels": 6014,
+          "visual_approval_granted": false
+        }
+      }
+    }
+  ],
+  "siteGroupingNote": "Nineteen visual sites hold the thirty-six authored building states. The Binding Vault, the Rift of Ruin and the Greater Binding Rift are three states of one site, because dwellingLvl7 declares \"upgrades\": \"special4\" and VCMI replaces an upgraded building in place. The site count is a design grouping; the state count comes from the authored building graph.",
+  "adventureObjects": {
+    "mapStates": [
+      "village",
+      "fort",
+      "citadel",
+      "castle",
+      "capitol"
+    ],
+    "mapStateRule": "One animation per state in the own namespace, matching the five fortification and hall stages.",
+    "icons": [
+      "fort_normal_large",
+      "fort_normal_small",
+      "fort_built_large",
+      "fort_built_small",
+      "village_normal_large",
+      "village_normal_small",
+      "village_built_large",
+      "village_built_small"
+    ],
+    "puzzle": {
+      "pieceCount": 48,
+      "paths": "runeterra/noxus/puzzle/piece00.png through piece47.png",
+      "rule": "A 48-piece native puzzle map, each piece an own artwork in the Noxus namespace."
+    }
+  },
+  "siege": {
+    "imagePrefix": "SGNX",
+    "imageCount": 32,
+    "images": [
+      "ARCH",
+      "BACK",
+      "DRW1",
+      "DRW2",
+      "DRW3",
+      "DRWC",
+      "MAN1",
+      "MAN2",
+      "MANC",
+      "MLIP",
+      "MOAT",
+      "TPWL",
+      "TW11",
+      "TW12",
+      "TW1C",
+      "TW21",
+      "TW22",
+      "TW2C",
+      "WA11",
+      "WA12",
+      "WA13",
+      "WA2",
+      "WA31",
+      "WA32",
+      "WA33",
+      "WA41",
+      "WA42",
+      "WA43",
+      "WA5",
+      "WA61",
+      "WA62",
+      "WA63"
+    ],
+    "towerPortraits": [
+      "towerIconLarge",
+      "towerIconSmall"
+    ],
+    "shooter": "axeReckoner",
+    "shooterRule": "The tier three axe Reckoner is the siege shooter of the town, so the siege screen shows the Reckoner on the walls instead of a generic archer.",
+    "wallRule": "The walls and towers keep the native Heroes III fortification grammar, repainted in the Noxian palette, so that a Noxus siege is readable to an original-game player."
+  },
+  "visualDirection": {
+    "style": "Original Heroes III Castle native painted compatibility: the same rendering language, canvas and readability, with independently designed Noxian subjects.",
+    "palette": "Iron grey, dark red stone, crimson accents, bleached bone, black cloth. No purple-and-gold imperial clich\u00e9 that would read as another faction.",
+    "architecture": "Utilitarian imperial engineering, arena and garrison imagery, the Black Rose as a secretive rather than decorative motif.",
+    "prohibitions": "No copied original troop or town art, no renamed or recoloured Demacia layer, no placeholder rectangles presented as finished art, and no use of original sprite pixels beyond the measured layout reference."
+  },
+  "assetBinding": {
+    "manifest": "runeterra-noxus/assets/manifest.json",
+    "generator": "scripts/noxus_asset_manifest.py",
+    "requiredOutputs": 366,
+    "currentState": "All required outputs are missing. The town is therefore a configuration, not a visible town."
+  },
+  "selected_source": "assets/source/town/rebuild-20261027-v1/selection.json",
+  "selected_source_sha256": "1eef0b054abf03208e652cd8de1f08daf59dbdcdf63bbe1bad73a2cbf8db4b7d",
+  "ordinary_land_sites": 17,
+  "optional_coastal_sites": 1,
+  "grail_sites": 1,
+  "site_budget_reason": "The existing Noxus graph retains independent required military and public services; no functions hidden or removed to imitate another faction's count.",
+  "terrain": {
+    "master": "assets/source/town/rebuild-20261027-v1/background-master-v3.png",
+    "master_sha256": "5e25c2dc5aedb185170932e335ec3ac796ca0f372681ca4c162e1143a182c816",
+    "native": "assets/source/town/rebuild-20261027-v1/background-native-v3.png",
+    "native_sha256": "c5966f4df98c5540c196581271898ff14fa8f9c8eaf7470a827d26de7df9958a",
+    "water_polygon": [
+      [
+        800,
+        151
+      ],
+      [
+        792,
+        157
+      ],
+      [
+        787,
+        174
+      ],
+      [
+        788,
+        195
+      ],
+      [
+        800,
+        203
+      ]
+    ]
+  },
+  "entrance_projection": "assets/source/town/rebuild-20261027-v1/entrance-projection.json",
+  "source_visual_review": "build/reports/town-rebuild-20261027-v1/REPORT.json",
+  "native_visual_acceptance": "Pending current-build normal native town/click observation; source pixels and real compiler outputs inspected separately.",
+  "preserved_master_inventory": "assets/source/town/rebuild-20261027-v1/preserved-building-master-inventory.json",
+  "composition_constraints": "Enlarged rear civic/bastion/binding landmarks, organic central curved avenue, continuous dry door aprons, no foreground retaining faces, charcoal/cinder urban floor, distant crimson smoky fortress city. Background has no invented crest marks; existing physical correct crests on functional buildings remain.",
+  "layout_geometry_mode": "silhouette-v2",
+  "layout_contract": {
+    "path": "assets/source/town/complete-town-20261027-v2/geometry-final-v2/final-painted-v1/contract/town-layout.json",
+    "sha256": "e0abec90a6f707faef8bd597ea696bcdd4592bbe3b29b02f84465a7369551700"
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "definition": {
+    "category": "walking-melee",
+    "comparison": [
+      "core:minotaurKing",
+      "core:ogreMage"
+    ],
+    "equipment": [
+      "horn-cuffs",
+      "massive-pauldron",
+      "tassets",
+      "cleaving-axe"
+    ],
+    "family": "minotaur",
+    "height": 2.34,
+    "native_height": 106,
+    "nature": "living",
+    "silhouette": "Wider bovine body, horn cuffs, one massive iron shoulder, layered belt/tassets and long broad transverse cleaving axe; physical rear-hex sweep poses, not recolour",
+    "tier": 6,
+    "two_hex": true,
+    "upgrade": true,
+    "weakness": "Cleave follows physical line and can hit friend behind primary target; no safe selective area attack",
+    "weapon": "long-cleaving-axe",
+    "width": 0.51
+  },
+  "emblem": {
+    "policy": "Leave emblem fields blank in guides. Obtain a genuine official Riot Noxus emblem, preserve exact source URL/bytes/hash and permissions before final painted art. Never invent a crest or reuse Demacia heraldry.",
+    "sha256": null,
+    "source_url": null,
+    "status": "blocked-official-source-provenance-required"
+  },
+  "generation": {
+    "image_generation_used": false,
+    "model": null,
+    "prompt": null,
+    "provider": null
+  },
+  "model_sheet_type": "editable volumetric rig + transparent pose guides, NOT painted art",
+  "native_groups": {
+    "0": {
+      "action": "walk-contact",
+      "minimum_guide_poses": 6
+    },
+    "1": {
+      "action": "fidget-equipment-check",
+      "minimum_guide_poses": 4
+    },
+    "11": {
+      "action": "melee-up",
+      "minimum_guide_poses": 6
+    },
+    "12": {
+      "action": "melee-front",
+      "minimum_guide_poses": 6
+    },
+    "13": {
+      "action": "melee-down",
+      "minimum_guide_poses": 6
+    },
+    "2": {
+      "action": "idle",
+      "minimum_guide_poses": 1
+    },
+    "3": {
+      "action": "hit-recoil",
+      "minimum_guide_poses": 4
+    },
+    "4": {
+      "action": "defend-brace",
+      "minimum_guide_poses": 4
+    },
+    "40": {
+      "action": "physical-rear-hex-cleave",
+      "minimum_guide_poses": 6
+    },
+    "41": {
+      "action": "physical-rear-hex-cleave",
+      "minimum_guide_poses": 6
+    },
+    "42": {
+      "action": "physical-rear-hex-cleave",
+      "minimum_guide_poses": 6
+    },
+    "5": {
+      "action": "death-collapse",
+      "minimum_guide_poses": 6
+    },
+    "7": {
+      "action": "turn-toward-viewer",
+      "minimum_guide_poses": 4
+    },
+    "8": {
+      "action": "turn-back",
+      "minimum_guide_poses": 4
+    }
+  },
+  "painting_contract": {
+    "acceptance": false,
+    "camera": "One measured uniform camera/placement correction per action atlas, preserve every source and rejected revision; no per-frame stretch, warping, auto-fit or idle-as-action",
+    "continuity": "Use each unit's own model/upgrade definition and all actual pose guides; preserve joint contacts and independent silhouettes",
+    "required_capability": "ChatGPT image-generation skill / built-in image_gen.imagegen or human painted masters",
+    "review": [
+      "transparent background and no baked floor",
+      "ground contact at native pivot",
+      "no cross-cell contamination",
+      "whole action semantics and projectile release",
+      "base/upgrade silhouette and equipment distinction",
+      "genuine Noxus emblem legibility and provenance",
+      "native original/Demacia comparison",
+      "real native runtime review"
+    ],
+    "status": "blocked-missing-painted-masters",
+    "style": "Original Heroes III native painted/prerendered treatment, restrained highlights, matte iron/crimson/black, upper-left lighting; not glossy modern 3D, flat vector or splash art"
+  },
+  "pipeline": [
+    "art_creature_rigs.py actual Blender assembly",
+    "all groups keyed as genuine skeletal poses",
+    "art_creature_sources.py --review fixed whole-cohort uniform native conversion",
+    "painted master production BLOCKED",
+    "source pins and native action review BLOCKED",
+    "coordinator-only manifest selection, assembly and runtime acceptance NOT PERFORMED"
+  ],
+  "production_recipes": [
+    {
+      "path": "assets/recipes/creatures/veteranMinotaur-battle.json",
+      "sha256": "b75410043dc7d1b92176f847650906394ae2b3915c3c690ca9dffcc101ee8958"
+    },
+    {
+      "path": "assets/recipes/creatures/veteranMinotaur-map.json",
+      "sha256": "e96cdd509d141d99495888b597be476037955cc5692f88e309cf4821145b4509"
+    },
+    {
+      "path": "assets/recipes/creatures/veteranMinotaur-large.json",
+      "sha256": "9c8d5d2394151b62a800673938dcb09c24ca0cc07f372c0f2bb522a4d7f6700b"
+    },
+    {
+      "path": "assets/recipes/creatures/veteranMinotaur-small.json",
+      "sha256": "84dc16e64b151e928a4253e7a696b0c1d16b01bd35375674b379585009daa8de"
+    },
+    {
+      "path": "assets/recipes/creatures/veteranMinotaur-attackLeft.json",
+      "sha256": "050d2d6bdcfef42236c11e63bb53c481cb36974baade6449b1c55ef07e4d212f"
+    },
+    {
+      "path": "assets/recipes/creatures/veteranMinotaur-attackRight.json",
+      "sha256": "45359301426ac13a8b448b5f81082597c1ca80865d0ed923e8c36fc3e8bad62d"
+    }
+  ],
+  "status": "authored configuration",
+  "unit": "veteranMinotaur",
+  "visual_approval_granted": false
+}

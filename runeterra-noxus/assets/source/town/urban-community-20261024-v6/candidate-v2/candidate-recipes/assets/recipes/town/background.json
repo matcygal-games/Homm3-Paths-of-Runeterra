@@ -1,0 +1,66 @@
+{
+  "acceptance": "Production requirements only. No rig/guide/primitive/reference may substitute for painted final art; this recipe must fail while its real master/hash is absent.",
+  "art_direction": "Independent Noxian iron/crimson/black subjects in Heroes III native painted language. Never recolour Castle or Demacia art, import original pixels or invent an official crest.",
+  "canvas": [
+    800,
+    374
+  ],
+  "composition_contract": "Independent Noxian town terrain/layout; no buildings baked into terrain. Ground planes,19-site/36-state composition,occlusion and all clicks need actual source/native review.",
+  "credits": {
+    "author": "Project-directed OpenAI built-in imagegen; deterministic project conversion",
+    "license": null,
+    "redistribution": "unresolved; no release or redistribution approval"
+  },
+  "dimensions_basis": {
+    "canvas": [
+      800,
+      374
+    ],
+    "mode": "RGB",
+    "reference_only": "runeterra-demacia/references/images/tbcsback.pcx.png",
+    "reference_sha256": "949012ea68999207934bc482f1552858474fe50cefddef17eaac00d4b98c2be9",
+    "use": "Dimensions/format only. No reference pixels, palette, source recipe, layout silhouette or licensed art copied."
+  },
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in imagegen",
+    "model": "Not exposed by the built-in tool",
+    "prompt": "Use case: precise-object-edit. EDIT ONLY THE TERRAIN/BACKDROP of image1. Asset: original Heroes of Might and MagicIII painted2D town backingplate, panoramic native800x374, preserve aspectratio.\n\nImage1 is the painted edit target, currently contains TOO MANY plot-perimeter walls/fences and stalls. Image2 is a placementreference showing our finished separate functionalbuilding layers composited on it; DO NOT include/repaint/move/resize ANY functionalbuilding from image2 in output. Image3 documents actual door support defects by native crops, backgroundleft/compositeright; use for diagnosis only, no text/collage output.\n\nKEEP EXACT composition, dark reddish smoky sky, distant dense NOXIAN rooflines/Bastion silhouette, iron/roughdarkstone/crimson/amber fire palette, upperleftwarm lighting, painterly rich originalHeroesIII texture, organic winding tapered main avenue. Genuine painted2D only, no3Drender, no Blender, no vector.\n\nCHANGE: REMOVE ALL INTERNAL PLOT-PERIMETER retainingwalls, railings, fences, chains, rectangularlotboundaries and attached stalls/plantedstrips below the functionalbuilding reservedfootprints. Replace them with actual uninterrupted GENTLY GRADED, LEVEL SUPPORTED urban cobbled paving and small REAL ground-level streetaprons. These nineteen sites are part of one coherent streetdistrict, NOT individual walled displayplinths. Absolutely no recreated perimeter fence/battlement at the plotedges.\n\nMost important: in ENTIRE FOREGROUND native y320..374, remove the near retainingwall/railing/stalls/cart/vegetation strip. The street should continue across the BOTTOM EDGE of the image as real unbroken level cobblestones. When we overlay existing fronts their stairfeet must land on this actualpaving: barracks(77,365), houndkennel(218,342), inn(361,352), knifeyard(515,367), forge(696,367). No verticalwallface, pit, vegetation, stallroof or decorativepost beneath those feet. No compulsory decorativeforegroundframe atbottom: the FUNCTIONALbuildings provide the frame.\n\nAlso clear real LEVEL landings and frontaprons at academy(64,136), spiderpen(60,226), civicHall(403,139), guild(189,195), crimsonhouse(309,223), trifarian(464,246), arena(572,271), silo(628,195), minotaurhall(733,267), riftsite(556,153), market(274,104), Grail(639,139), rearfort(728,128). Remove any wall/fence/stall/cliff under those points. Connect all landings with the actual winding street at groundlevel; no polylineoverwall or stepsdrawnacrosscliff. The water must NOT cut into rearfortfoundation or any drysite. At far right the optional existing tiny dock/ship will occupy x754..798,y140..165; leave only a quiet NARROW harbor inlet at x790..800,y151..203 with a supported dry quay nexttoit. Remove the oversized baked galleon/dock and nearshore clutter competing with that separate optional layer.\n\nMaintain dense incidental occupiedNoxian housing/workshops in farbackground and sidegaps outside the fullseparatebuildingfootprints, so it reads as a coherent inhabitedcity, not emptyparkinglot. NO new monumental functionalbuildings in the plate, NO three horizontalterracebands, NO isometricgrid, no rows of emptyfencedplots. Keep curved pavedstreettones and irregularlocalcourts as a continuous streetground, never cliff-lipped pads. Output ONE clean EMPTY backgroundpainting ONLY with the repaired ground, no originalguide/markers/text/UI, no functionalbuilding layers fromimage2.",
+    "painted_master": "assets/source/town/urban-community-20261024-v6/background-master-v2.png",
+    "painted_master_sha256": "6b3d52e6e0872d4566e2ff6ae6a7e66322bdb8e78882e5601ccbbe7e6e981dfe",
+    "generation_record": "assets/source/town/urban-community-20261024-v6/background-generation-v2.json",
+    "generation_record_sha256": "0853bbfa9cdaf40fb0931dce8b4498172468ff4fe850d66c863791baeabfe217",
+    "conversion": "Uniform cover-fit to native800x374; no artistic raster changes."
+  },
+  "inventory": {
+    "asset_id": "noxus.Sprites.runeterra.noxus.town.background.png",
+    "manifest": "assets/manifest.json",
+    "recipe_path": "assets/recipes/town/background.json"
+  },
+  "output_path": "Content/Sprites/runeterra/noxus/town/background.png",
+  "production_status": "painted-master-complete",
+  "recipe_type": "raster",
+  "require_alpha": false,
+  "required_before_conversion": [
+    "Real independent Noxus painted master and truthful provenance",
+    "Non-null SHA256 source pins",
+    "Official Noxus emblem provenance where used",
+    "Native-size silhouette/composition/alpha and role review",
+    "Explicit coordinator selection; no automatic acceptance"
+  ],
+  "role": "town-background",
+  "sha256": "12798a51f0e0c3b7ccc4c341928b54c1525472b7c5667e500992049ebe7ab69a",
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/urban-community-20261024-v6/background-native-v2.png",
+  "source_sha256": "12798a51f0e0c3b7ccc4c341928b54c1525472b7c5667e500992049ebe7ab69a",
+  "status": "built-unreviewed",
+  "visual_approval_granted": false,
+  "source_canvas": [
+    800,
+    374
+  ]
+}

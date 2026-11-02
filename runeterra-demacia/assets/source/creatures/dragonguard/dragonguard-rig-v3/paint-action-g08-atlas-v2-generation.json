@@ -1,0 +1,232 @@
+{
+  "unit": "dragonguard",
+  "group": 8,
+  "version": 2,
+  "tool": "Pillow explicit lossless same-pose rectangle crop/paste, no creative generation",
+  "generated_original": "C:\\Users\\matcy\\.codex\\generated_images\\01a15556-3fd1-79d3-80f6-cea0f7f748ff\\exec-a906b457-64d5-40d9-9185-4e21c30a02d2.png",
+  "generated_original_sha256": "6a7a2bf969a3828141408f1f32bdf1551e47448d766791b83a4f89e69307c3a5",
+  "output": "assets/source/creatures/dragonguard/dragonguard-rig-v3/paint-action-g08-atlas-v2.png",
+  "output_sha256": "4142dcee9e460298272bbc646cbc817abb6bf77a8163efb6de955f1e60f65462",
+  "prompt": {
+    "path": "assets/source/creatures/dragonguard/dragonguard-rig-v3/paint-action-g08-atlas-v1-executed-prompt.txt",
+    "sha256": "c610ca13855c8098341dcb44fc5531d9bf67203f0f7e5d7826c9897eb646af41"
+  },
+  "references": [
+    {
+      "path": "assets/source/creatures/dragonguard/dragonguard-rig-v3/raw-action-g08-atlas-padded-v1.png",
+      "sha256": "3d6427ce2da57d006aaae2af59e51fddad91497bac84f084710ad50322bd67b2"
+    },
+    {
+      "path": "assets/source/creatures/dragonguard/dragonguard-rig-v3/paint-action-g02-atlas-v1.png",
+      "sha256": "18b54db679d4658657aca230ab5b19753df43c64fd4c3ec6660bdab67c12168e"
+    },
+    {
+      "path": "assets/source/creatures/dragonguard/master-v1.png",
+      "sha256": "91d874899733bfc2723f64c8e3b9edb4b1a0d3b1f80ca5a4c8a0612db7aa06a9"
+    },
+    {
+      "path": "references/prototypes/dragonguard-family-v3/castle-grounded-polearm-native-style-v1.png",
+      "sha256": "3db649d0bbecea4f49641f87e489d46eda8e6f9d258c29118cbcc32244fe8d62"
+    },
+    {
+      "path": "references/riot/heraldry/demacia-official-region-icon.png",
+      "sha256": "d71bb021a49b704420f43c74f9dbfedb2bd89779bdafec1ea4be7bb8a172e734"
+    }
+  ],
+  "actual_source_metadata": {
+    "path": "assets/source/creatures/dragonguard/dragonguard-rig-v3/dragonguard-production-v3.json",
+    "sha256": "f625789aa291e508b815b24660c581a07afd562ae2d2f88114aa4dd4c995780f"
+  },
+  "actual_atlas_metadata": {
+    "path": "assets/source/creatures/dragonguard/dragonguard-rig-v3/raw-action-g08-padding-transform-v1.json",
+    "sha256": "08c19d55efbd9a7ced533859278ab47386f3101bee8bf15a710eb298b0e7b336"
+  },
+  "layout": [
+    2,
+    2
+  ],
+  "returned_dimensions": [
+    1536,
+    1536
+  ],
+  "returned_cell": [
+    768,
+    768
+  ],
+  "grid_integer_aligned": true,
+  "grid_note": "Logical equal-cell extents may fall on half-pixels; export uses one fixed continuous source-box scale, without per-cell fitting.",
+  "mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_diagnostics": {
+    "requires_opaque_background_composite_visual_review": true,
+    "alpha8_bbox": [
+      201,
+      67,
+      1226,
+      1224
+    ],
+    "fully_transparent_pixels": 1225554,
+    "faint_alpha1_to7_pixels": 46425,
+    "note": "Colored RGB in alpha0pixels is invisible to a correct compositor; extrema do not establish clean interior/gutters or art acceptance."
+  },
+  "source_input_transform": {
+    "scale": 0.8203125,
+    "offset": [
+      46,
+      46
+    ],
+    "executed": true
+  },
+  "actual_pose_indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "intentional_source_pose_holds": [],
+  "validation_errors": [],
+  "status": "source-only lossless assembly; native/temporal review pending",
+  "visual_approval_granted": false,
+  "active_assets_modified": false,
+  "atlas_repack": {
+    "source_generation": {
+      "path": "assets/source/creatures/dragonguard/dragonguard-rig-v3/paint-action-g08-atlas-v1-generation.json",
+      "sha256": "9f08522dad641a6a6762331d6a9ba64943a0be4724c8d4000d8231312d32e8c4"
+    },
+    "source": {
+      "path": "assets/source/creatures/dragonguard/dragonguard-rig-v3/paint-action-g08-atlas-v1.png",
+      "sha256": "6a7a2bf969a3828141408f1f32bdf1551e47448d766791b83a4f89e69307c3a5"
+    },
+    "frames": [
+      {
+        "reviewed": true,
+        "neighbor_pixels_absent": true,
+        "basis": "Actual full creative atlas and alpha8 body/weapon component bounds inspected. This exact same-pose rectangular ROI recovers complete boots/long polearm across nominal grid gutters; no resize, mask painting, pose manufacture or limb warp. Near-transparent outside-ROI speckles excluded. One common64px translation relative to original cell origin.",
+        "pieces": [
+          {
+            "source_rect": [
+              215,
+              65,
+              411,
+              627
+            ],
+            "destination_offset": [
+              279,
+              129
+            ],
+            "source_pixel_sha256": "3040e47e867d4144ca5f2157846177f8bed9578d0ed79f91f4e55779cdc38895"
+          }
+        ],
+        "index": 0,
+        "source_to_repacked_translation": [
+          64.0,
+          64.0
+        ],
+        "repacked_alpha8_bbox": [
+          281,
+          131,
+          473,
+          689
+        ]
+      },
+      {
+        "reviewed": true,
+        "neighbor_pixels_absent": true,
+        "basis": "Actual full creative atlas and alpha8 body/weapon component bounds inspected. This exact same-pose rectangular ROI recovers complete boots/long polearm across nominal grid gutters; no resize, mask painting, pose manufacture or limb warp. Near-transparent outside-ROI speckles excluded. One common64px translation relative to original cell origin.",
+        "pieces": [
+          {
+            "source_rect": [
+              858,
+              68,
+              1136,
+              628
+            ],
+            "destination_offset": [
+              295,
+              132
+            ],
+            "source_pixel_sha256": "5b4fe5c76969bc87fcad5159a80db775b785a4a5982d076749249f7036cdc14f"
+          }
+        ],
+        "index": 1,
+        "source_to_repacked_translation": [
+          64.0,
+          64.0
+        ],
+        "repacked_alpha8_bbox": [
+          297,
+          134,
+          571,
+          690
+        ]
+      },
+      {
+        "reviewed": true,
+        "neighbor_pixels_absent": true,
+        "basis": "Actual full creative atlas and alpha8 body/weapon component bounds inspected. This exact same-pose rectangular ROI recovers complete boots/long polearm across nominal grid gutters; no resize, mask painting, pose manufacture or limb warp. Near-transparent outside-ROI speckles excluded. One common64px translation relative to original cell origin.",
+        "pieces": [
+          {
+            "source_rect": [
+              199,
+              689,
+              557,
+              1225
+            ],
+            "destination_offset": [
+              263,
+              126
+            ],
+            "source_pixel_sha256": "3665c02dffdb49b4640f0ec3024726f5ecf976420baae43f55a39423a668937c"
+          }
+        ],
+        "index": 2,
+        "source_to_repacked_translation": [
+          64.0,
+          64.0
+        ],
+        "repacked_alpha8_bbox": [
+          265,
+          128,
+          619,
+          660
+        ]
+      },
+      {
+        "reviewed": true,
+        "neighbor_pixels_absent": true,
+        "basis": "Actual full creative atlas and alpha8 body/weapon component bounds inspected. This exact same-pose rectangular ROI recovers complete boots/long polearm across nominal grid gutters; no resize, mask painting, pose manufacture or limb warp. Near-transparent outside-ROI speckles excluded. One common64px translation relative to original cell origin.",
+        "pieces": [
+          {
+            "source_rect": [
+              769,
+              696,
+              1228,
+              1226
+            ],
+            "destination_offset": [
+              206,
+              133
+            ],
+            "source_pixel_sha256": "6a95b356e4e2ca5f516df849fc56c28baed33bb923b4216823d3ea447ea0df68"
+          }
+        ],
+        "index": 3,
+        "source_to_repacked_translation": [
+          64.0,
+          64.0
+        ],
+        "repacked_alpha8_bbox": [
+          208,
+          135,
+          663,
+          661
+        ]
+      }
+    ],
+    "method": "Reviewed multi-rectangle same-pose assembly with one common translation per pose; every selected pixel unchanged. Near-transparent outside-ROI speckles excluded explicitly.",
+    "inverse_translation_required": true
+  }
+}

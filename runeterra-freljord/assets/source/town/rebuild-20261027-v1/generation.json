@@ -1,0 +1,38 @@
+{
+  "art_acceptance": false,
+  "derived_from_blender": false,
+  "native_canvas": [
+    800,
+    374
+  ],
+  "native_verified": false,
+  "output": "background-native-v3.png",
+  "output_sha256": "6abf29084bcbeba6e2a00d6f55fb31b329996d08ffe9b9de48c44be06b28f644",
+  "provider": "OpenAI built-in imagegen",
+  "release_accepted": false,
+  "source_files": {
+    "assemble.py": "e5f91bd2f73760e445929dc7c7735606749d4ac5a614ea27121d0122189fa83f",
+    "background-master-v1.png": "df8f9def6e30112df68ba0cce9f9beeca6af528781c46ef09e37aeaa8c9165ca",
+    "background-master-v2.png": "814abc6a875284c3e7df6b44e30f681278134ba760c93d4372ac98bbc6737ee4",
+    "foreground-path-edit-target.png": "5e61fb4ee55c1e492f8143d663fea0ea1f4c8c57780b40300f6cbf17914ca10b",
+    "foreground-path-master.png": "3576eff27710127c35b2e8368ee3deb0ff5648184730d63422c6d90d2dbb1226",
+    "planned-water.png": "5ab9439efed1cd9f5de79862e13d84ca4b384956eccc391afff2453ac2ecfbb0",
+    "prepaint-building-road-plan.png": "52c2994c2116738295dde12c5bbad3bfde53deaea6276bff1dbca268b1a6f843",
+    "prepaint-plan.json": "17194af85b7dbcde9c2adc050239d0034ede8504f9819b326d084e468f96c761",
+    "prompt-foreground.txt": "5349a2c7747c7deb67ee8a3308c3295e68ffd5197b9b808534398f43ec054a0e",
+    "prompt-shore.txt": "794fd90ba8c96cc9a3671c6fb781431492bf7c1890648654e5ca973ddf3dbbc6",
+    "prompt-v1.txt": "4e2bff229cea6d55593b8ae964049cafab3e504d06d98c13e056d544f2eeac2f",
+    "prompt-v2.txt": "ca08abbc4ea58653fad5affa2add960788e4d85abc85764ed40d1c60aa7119aa",
+    "shore-edit-target.png": "85f82a09fbf448bf6a2c8aeea5af9a2d79b9f6bce018f16dc8d868c60b55ce24",
+    "shore-master.png": "e24f661af338d9f07ebeefb26f14f419d5485019e07ea3fcf8be19940080ac92"
+  },
+  "status": "authored configuration",
+  "technical_conversion": [
+    "Uniform wide-scene resampling to 800x374",
+    "Uniform 100x180 shore-patch resampling and bounded edge composition",
+    "Crop generated letterbox and place the painted 800x56 front street with eighteen-pixel edge transition",
+    "Opaque RGBA PNG encoding"
+  ],
+  "tool": "image_gen.imagegen",
+  "workflow": "Painted2D image generation and local painted image edits"
+}

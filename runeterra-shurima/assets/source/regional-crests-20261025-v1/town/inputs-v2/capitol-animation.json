@@ -1,0 +1,48 @@
+{
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed builtin image generation; deterministic technical conversion",
+    "license": null,
+    "redistribution": "pending; no release approval"
+  },
+  "generateOverlay": 0,
+  "generateShadow": 0,
+  "generation": {
+    "image_generation_used": true,
+    "model": "not exposed by built-in tool",
+    "painted_master": "assets/source/town/buildings-v2/capitol/master.png",
+    "painted_master_sha256": "3c92703f5ce866c5d495ae1791c465e9c6b10c77b6261e3720bad8ff5306f3ce",
+    "prompt": "Use case: precise-object-edit.\nAsset type: ONE complete isolated transparent building layer for an original Heroes III / VCMI Shurima town.\nSubject: Develop the same Restoration Assembly into a Grand Oasis Assembly: preserve all main foundation masses and camera; add a high central civic roof hall with stepped bronze cornices, two substantial flanking wings, rich ivory canopies and a dignified circular sun emblem. Monumental skyline architecture, no floating Sun Disc.\nNative destination silhouette fits a 170x105 pixel region; render at high resolution with the same width-to-height feel. This is a full building complex, not an icon, logo or diorama.\nStyle: original Heroes III richly textured hand-painted 2D architecture, crisp stone-block and textile detail, believable weathering, strong local material values. Shuriman ochre sandstone, aged bronze, ivory linen and restrained turquoise inlay.\nCamera: low mostly frontal town overview with a little top-plane visibility, not strict isometric. Sun from upper left/front, shadows down/right; compact dark contact shadow only.\nComposition: single connected building is centered with generous transparent safety margin on every side, complete foundation and roof visible. Building grounded along one baseline, no cropped edges.\nInput image1 is the edit target. Preserve the camera ANGLE and the architectural foundation identity and relative positions; alter only the described construction upgrade. REFRAME the complete complex at smaller image scale inside a larger transparent canvas so nothing approaches any image edge. Include the complete developed building, not just added pieces.\nTransparent background with genuine alpha. No checkerboard, solid backdrop, scenery tile, sky, landscape, text, labels, frame, UI, people or troops. No European Castle design, Demacian white-blue palette, pyramidal generic mobile-game icon, flat vector or glossy toy appearance. Return only this one complete cutout, no variants or comparison panels.\n\nMANDATORY PAINTED-2D EDIT: The input is an existing pure image-generated painting, not a 3D render. Use painted 2D illustration only; no Blender, geometry renderer, glossy 3D or toy/plastic finish. Match original Heroes of Might and Magic III textured architecture: broken warm stone planes, dark local recesses, quiet weathered bronze and linen, readable roof and foundation silhouettes at native game size.\nMake the upper civic roof hall, two flanking substantial wings and stepped bronze cornices clearly new architecture above the preserved lower civic court. Keep the broad hall silhouette with width/height about 170/105; a civic building, not a defense wall.\nFRAMING REPAIR: The parent may approach the canvas edge. Expand the canvas and allow extra transparent air rather than copying its clipping. Show every roof, finial, ring, wall end, foundation, stair and contact shadow completely, with at least 8% transparent margin on all four sides. Preserve the parent foundation identity, low mostly frontal town camera, slight top-plane visibility, light from upper left/front and material family; new architecture may extend higher while the complete complex remains in frame. Do not crop the structure or compress its footprint to fill a square. Only one full developed state, no comparison panel, no text, no people, no troops, no scenic background. Genuine transparent RGBA.\n\nIMPORTANT FRAMING: zoom out the entire painted complex by about 25 percent compared with the input. Keep complete transparent padding around the whole structure. Foundation registration is architectural, not a requirement to preserve the same canvas pixel coordinates. Neither roof nor stair nor any foundation corner may touch a canvas edge.\n",
+    "prompt_file": "assets/source/town/buildings-v2/capitol/prompt.txt",
+    "provider": "OpenAI built-in imagegen"
+  },
+  "groups": [
+    {
+      "frames": [
+        {
+          "frame": 0,
+          "sha256": "db5a3cb0d3c84d0107c08fd52aae65a7afa337d3f925fa27e2de3df92cf38fa8",
+          "source": "assets/source/town/painted-resume-v6/capitol/frame.png",
+          "source_canvas": [
+            800,
+            374
+          ],
+          "source_sha256": "db5a3cb0d3c84d0107c08fd52aae65a7afa337d3f925fa27e2de3df92cf38fa8"
+        }
+      ],
+      "group": 0
+    }
+  ],
+  "output_path": "Content/Sprites/runeterra/shurima/town/structures/capitol.json",
+  "pivot": {
+    "x": 406,
+    "y": 149
+  },
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "vcmi_animation",
+  "status": "painted-candidate",
+  "visual_approval_granted": false
+}

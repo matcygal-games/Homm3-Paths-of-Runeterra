@@ -1,0 +1,119 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "Independent Zaun architecture in Heroes III native painted language: corroded iron, wet concrete, industrial ruins. Never recolour Castle or Demacia art, import original pixels or invent an official crest.",
+  "building": "dwellingLvl2",
+  "building_contract": {
+    "full_canvas_placement": {
+      "x": 0,
+      "y": 0,
+      "z": 327
+    },
+    "name": "Chem-Jack Yard",
+    "native_ground_contact": [
+      128,
+      233,
+      111,
+      94
+    ],
+    "upgrades": null
+  },
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; prompted and technically assembled by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/painted-community-20261024-v1/dwellingLvl2/master.png",
+      "sha256": "37bf345d0d7973810c173a8be239e54038a3cfdadeaf361337b85e06b412414d"
+    },
+    {
+      "path": "assets/source/town/painted-community-20261024-v1/dwellingLvl2/generation.json",
+      "sha256": "fea0ca8aa2d1bd50f0ccbb3e50ed033392da1666f7d5721d111fa45f04c43e6a"
+    },
+    {
+      "path": "assets/source/town/painted-community-20261024-v1/prepare.py",
+      "sha256": "570add080d42e1b17d7aec2939862119a175a664281e04050585cfb68138a835"
+    },
+    {
+      "path": "scripts/zaun_coastal_state_v1.py",
+      "sha256": "5aa45de45f59be66d393df44538743b1842db5ba5f1c4e48c1d83acaa13f3cf7"
+    }
+  ],
+  "fit": "contain",
+  "generateOverlay": 0,
+  "generateShadow": 0,
+  "generation": {
+    "canvas": [
+      1363,
+      1154
+    ],
+    "conversion": {
+      "composition_rectangle": [
+        128,
+        233,
+        111,
+        94
+      ],
+      "method": "Original painted2D source crop; uniform contain; full800x374 placement; native alpha-derived area/one-pixel outward border",
+      "native_z": 327,
+      "revision": "painted-community-20261024-v1",
+      "source_crop": [
+        41,
+        91,
+        1340,
+        1053
+      ]
+    },
+    "created": "2026-10-24",
+    "image_generation_used": true,
+    "master": "dwellingLvl2/master.png",
+    "master_sha256": "37bf345d0d7973810c173a8be239e54038a3cfdadeaf361337b85e06b412414d",
+    "method": "Genuine painted2D image generation, no3D render or procedural painting",
+    "model": null,
+    "model_note": "Built-in tool did not expose a concrete model identifier",
+    "painted_master": "assets/source/town/painted-community-20261024-v1/dwellingLvl2/master.png",
+    "painted_master_sha256": "37bf345d0d7973810c173a8be239e54038a3cfdadeaf361337b85e06b412414d",
+    "prompt": "Use case: stylized-concept. Asset type ONE isolated TRANSPARENT PAINTED2D town building for ZAUN additional ORIGINAL1999 HeroesIII town, native111x94pixels. Subject: CHEM-JACK YARD, a modestindustrialwork-crewquarter/trainingrepairyard for augmented jackworkers. Broadlowbrickworkshop withrustedcorrugatedpurple-brownroof, closedtoolchest andpipewrenchrackunderleftlean-to, oneverticalGREENreagentglasspressurecylinder attachedtoironframeatrearright, copperlines runintobench, lowweldedscrapfencearoundanarrowdryworkplatform. One SMALL normaldooraboutone-eighthofbuildingheight andfewsmallerwindows, notgianticon-sizeddoor. Groundedconcretefooting,brownbrick,workwornleather/plumclothsmallawning,rivets,salvagediron. Foregroundservice-scalecompactarchitecture; BASEhumblerthanlaterupgrade, notrefinerytower. OriginalHeroesIIItexturedpaintedminiatureappearance, lowfrontal slightlyelevatedthreequarter frontandrightsidevisible, broadupperleftdaylight, authenticmaterialdepth, LOCALgreenreflectiononlyfromrealglassfluid. Genuinealpha transparentbackground10percentclearallaround;onlyslimcontactfoundation,noscenerygroundtilebackdrop,NOpeoplecreaturescharacters,textlettersUI,floatingicons,flatneonoutlines,greencolorwash,cartoon,vector,splashart,glossy3D,isometricgrid,pixelfilter. Completebuilding singlecoherentphysicalsite.\n",
+    "prompt_file": "dwellingLvl2/prompt.txt",
+    "prompt_sha256": "25dec5c88b9791e051e1467474a9e8ee4e5196fcdb1c8dfa419b971670216255",
+    "provider": "OpenAI built-in imagegen",
+    "references_note": "Original HoMM3 native references and official Riot Zaun environment researched as style/identity guidance; no source reference pixels composited",
+    "rights_review": "pending external review",
+    "runtime_verified": false,
+    "status": "authored configuration",
+    "visual_approval_granted": false
+  },
+  "groups": [
+    {
+      "action": "own town building state, not a troop idle/action",
+      "frames": [
+        {
+          "sha256": "27711470ef39cb61af467012d4549cebed4b0ca3cfb14be0d061f2dc18ffac84",
+          "source": "assets/source/town/painted-community-20261024-v1/structures/dwellingLvl2/layer.png"
+        }
+      ],
+      "group": 0
+    }
+  ],
+  "id": "zaun.town.structure.dwellingLvl2.animation",
+  "identity_review": "build/reports/painted-town-community-20261024-v1/source-pixel-review.json",
+  "native_visual_review": "pending",
+  "output_path": "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl2.json",
+  "production_status": "delivered",
+  "recipe_type": "vcmi_animation",
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "source_sha256": "27711470ef39cb61af467012d4549cebed4b0ca3cfb14be0d061f2dc18ffac84",
+  "status": "built-unreviewed",
+  "title": "Chem-Jack Yard town layer",
+  "visual_approval_granted": false
+}

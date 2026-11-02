@@ -1,0 +1,648 @@
+{
+  "active_recipes_modified": false,
+  "arm_forearm_length_range": [
+    0.27313014864921553,
+    0.27313020825386053
+  ],
+  "arm_upper_length_range": [
+    0.2976994812488554,
+    0.29769948124885576
+  ],
+  "climax": {
+    "authored_zero_based_release": 4,
+    "authority": "client/battle/BattleAnimationClasses.cpp ShootingAnimation::getAttackClimaxFrame returns selectedFrame-1; RangedAttackAnimation::tick emits at that current frame.",
+    "configured_one_based": 5,
+    "frames_per_direction": 8
+  },
+  "command": [
+    ".tools/blender45/blender-4.5.9-windows-x64/blender.exe",
+    "--background",
+    "--factory-startup",
+    "--python-exit-code",
+    "2",
+    "--python",
+    "runeterra-demacia/scripts/creature_ranger_rig.py",
+    "--",
+    "--project",
+    "C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-demacia",
+    "--unit",
+    "veteranRanger",
+    "--revision",
+    "2"
+  ],
+  "cwd": "C:\\Users\\matcy\\Documents\\code\\Homm3",
+  "duplicate_explanation": "Steady idle, settled reload-ready and pre-trigger aim holds. They express deliberate timing holds, not extra distinct movement. Required combat actions contain genuine articulated geometry.",
+  "executed_generator": "assets/source/creatures/veteranRanger/ranger-rig-v2/generator-executed-v2.py",
+  "executed_generator_sha256": "be595bffd0808d16cd51026a7d250de081534070788b1c157eabdd0ac6e23670",
+  "exit_code": 0,
+  "frames": [
+    {
+      "frame": 0,
+      "group": 0,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g00/g00-f000.png",
+      "rgba_sha256": "25481be9ad7aff3c4d727b9737e6b88f5ca5e0056c759c3158919ac77e0cec4d",
+      "sha256": "e7335843756ec68dfc0c4144d90b7f0dbcc36be933fc2f0fc891334f019e976e"
+    },
+    {
+      "frame": 1,
+      "group": 0,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g00/g00-f001.png",
+      "rgba_sha256": "b12c9bf8f1119fae5bb5429e91ba6a0c2c49fc6fc0000638af7e4f334e87705f",
+      "sha256": "62dbc4aaec7c7b05c47e794745ed156b40ac9e56644c2c34c37d4da35d88ceab"
+    },
+    {
+      "frame": 2,
+      "group": 0,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g00/g00-f002.png",
+      "rgba_sha256": "d9d7499fab864474737e558b2d6bb5dfd9930c6d908c9de535510fa9a2ae8109",
+      "sha256": "aafe6d061729f97ed1c6e49133b66913ac1ff6162893fd41fa40b57137478df3"
+    },
+    {
+      "frame": 3,
+      "group": 0,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g00/g00-f003.png",
+      "rgba_sha256": "ca2b639371cce203aac5290bde3f9bdc07fe28fb3a6805722fa6cbaa81e91823",
+      "sha256": "13e85e929d464309abe9d8b947df3bed909eb4a3b013addce9d49a2989e48e01"
+    },
+    {
+      "frame": 4,
+      "group": 0,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g00/g00-f004.png",
+      "rgba_sha256": "504376d59f1f6df714042ed1772e03a23ea6671cc39e864f26e53ef6dd59aec4",
+      "sha256": "4932777e2297b54070e10f21dcdeba46226069cec00ced6a112e3908787c2e98"
+    },
+    {
+      "frame": 5,
+      "group": 0,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g00/g00-f005.png",
+      "rgba_sha256": "80c141ed9565a7aad015ced70da377e90358ada66a8bdd1683364b9f9238b1ca",
+      "sha256": "a01f9c7f7297fe09070dd589d241cc12f5511aa8f4c008c5f69730f42bb82d97"
+    },
+    {
+      "frame": 0,
+      "group": 1,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g01/g01-f000.png",
+      "rgba_sha256": "1bdd4e2eba80d87ec52e2137d3253c25f19d70d53e93ad041651c3efcb9077cc",
+      "sha256": "3717a6c190e933497cd05744e3999bf0d4f6db86a20ab26bfe0ff41f8d5f27d3"
+    },
+    {
+      "frame": 1,
+      "group": 1,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g01/g01-f001.png",
+      "rgba_sha256": "d2acc7f3ef74046315aad7c7a78a096983d20740c750eadf1701d4d50adc7a3f",
+      "sha256": "47862cd299df69eb71eee14fd480b1ec58a72166b67bf295c2e901f1ba514aaa"
+    },
+    {
+      "frame": 2,
+      "group": 1,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g01/g01-f002.png",
+      "rgba_sha256": "79cd2050569ee6ce603309d50175d7726cbaabb366140aafa71c5fc43f9b406b",
+      "sha256": "c7b4b5fea94d75e5cc6d089ee4370126edef240ebedb1d94d93fa6dc32617a6d"
+    },
+    {
+      "frame": 3,
+      "group": 1,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g01/g01-f003.png",
+      "rgba_sha256": "163ab7915f7241a13cfa0fc42d90adbfaebf2a2967c63ff88b6db9cc5d16236b",
+      "sha256": "b9fe3ecec621966f88f76256b725c64f1d4a89d11ffd61bcbbdf9e7333a64db5"
+    },
+    {
+      "frame": 0,
+      "group": 2,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g02/g02-f000.png",
+      "rgba_sha256": "163ab7915f7241a13cfa0fc42d90adbfaebf2a2967c63ff88b6db9cc5d16236b",
+      "sha256": "db4687d572a673c77b62165858179e096e8270a4023b2ff274b1d2110fec9f06"
+    },
+    {
+      "frame": 1,
+      "group": 2,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g02/g02-f001.png",
+      "rgba_sha256": "518e4389513fbc0e62726bf9985e9efa77830ea6561ae44b5f877b07a87ead59",
+      "sha256": "883e72bc52bbb587eec584290156dae9593514bb311375570992ee225f7fb7dd"
+    },
+    {
+      "frame": 2,
+      "group": 2,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g02/g02-f002.png",
+      "rgba_sha256": "163ab7915f7241a13cfa0fc42d90adbfaebf2a2967c63ff88b6db9cc5d16236b",
+      "sha256": "5b3661d8d90700541127f6ef17a99ea52bc894fc863bc009b5971c3beb0bbbd1"
+    },
+    {
+      "frame": 3,
+      "group": 2,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g02/g02-f003.png",
+      "rgba_sha256": "f95b47a86edcdb5ae3b2c6da09dc02000d3b15f9d22dcb0e0295135b1c16a6b7",
+      "sha256": "0dc52a450bcddfb7b9e3208c2e7f45a93767965161cc049f444fe41089da7852"
+    },
+    {
+      "frame": 0,
+      "group": 3,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g03/g03-f000.png",
+      "rgba_sha256": "6b0702c6175a59f5fec8c4f3d0963bf2e7040a4452c7725881126cb5237ed1c6",
+      "sha256": "27ddf09d0da797b94348bbff45361e536c232e2da0d3c5fb54ab14fa04666204"
+    },
+    {
+      "frame": 1,
+      "group": 3,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g03/g03-f001.png",
+      "rgba_sha256": "db2c5cb7be591f6759edd063800679b626703570a0c9aee8a6793383a644df4e",
+      "sha256": "539d482a3ba1f8c857de67848d3ab22ca077a8061f74d42f6d3a07006b62b447"
+    },
+    {
+      "frame": 2,
+      "group": 3,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g03/g03-f002.png",
+      "rgba_sha256": "561f5a6cda42805b2b849f0f81cd7bed5a797cc4f79071fc4e7b4ba15c30aedc",
+      "sha256": "108231587d3e8f17d5c2882489b9624e7e4ec6f61cbc63053d5157ef68a90bcf"
+    },
+    {
+      "frame": 3,
+      "group": 3,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g03/g03-f003.png",
+      "rgba_sha256": "163ab7915f7241a13cfa0fc42d90adbfaebf2a2967c63ff88b6db9cc5d16236b",
+      "sha256": "4a2876311fe3fcaabf1de73c020660ca384259d490f87cd581a05025fad9fc71"
+    },
+    {
+      "frame": 0,
+      "group": 4,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g04/g04-f000.png",
+      "rgba_sha256": "c7ef265bd337cada3e0b8fc15345129cd76399f07178a69742dcb43e96e8a3c0",
+      "sha256": "1b349f1491321024438c38bc4aa0e7eebe429b0fc819b31de627f6e520ad0c8c"
+    },
+    {
+      "frame": 1,
+      "group": 4,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g04/g04-f001.png",
+      "rgba_sha256": "a8899f1bd2977dc6549b412133a51445d2cab23b28b5e84a53e13eb49e20d1ed",
+      "sha256": "f11d39c413802eae505fcf8f666c2737d30df2bdcf3e2e1e7f222cc545823369"
+    },
+    {
+      "frame": 2,
+      "group": 4,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g04/g04-f002.png",
+      "rgba_sha256": "39949d2978273f97fd52f16c3b18eadd2062ea6a7462d116f539667979f0f3d3",
+      "sha256": "6c7822c38dbffe5af54c7502b9a77b9c27c8986e2b3c9bac9cd8e0853af018e9"
+    },
+    {
+      "frame": 3,
+      "group": 4,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g04/g04-f003.png",
+      "rgba_sha256": "163ab7915f7241a13cfa0fc42d90adbfaebf2a2967c63ff88b6db9cc5d16236b",
+      "sha256": "0ebfe07172f5bdaca992f0560420d577eceff48e5873627b3151e72f526e608c"
+    },
+    {
+      "frame": 0,
+      "group": 5,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g05/g05-f000.png",
+      "rgba_sha256": "095f75be2abf0dc6b629f27a6392b6c340afcb6aa793132699a0ac3d68a09c4d",
+      "sha256": "6f6c3601da5727baadfac69db1c217eafe8da0c18ee793f9f09f4d62d4e60670"
+    },
+    {
+      "frame": 1,
+      "group": 5,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g05/g05-f001.png",
+      "rgba_sha256": "e21fa63cb4e8cc48c6efd2fa8a5a53b135abf48e0f99b6d3aa59ac24d41a638f",
+      "sha256": "03b759b689ac9aea174b3e025ae72da9b4fe2e9fc76337944ff09cf45d2f3ab5"
+    },
+    {
+      "frame": 2,
+      "group": 5,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g05/g05-f002.png",
+      "rgba_sha256": "b952d5209fdf2b612436b50f93d77df547682410b92818b9dc2f7197da6b6d42",
+      "sha256": "e9e014111b2edaf5dc44adb2e80feacf9908473f46bf9c1f727b3f783c5e3038"
+    },
+    {
+      "frame": 3,
+      "group": 5,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g05/g05-f003.png",
+      "rgba_sha256": "61ed1356db14e7f8399650e365daa4715e7f9bba2efe0caf38d1bce99a5a6fce",
+      "sha256": "6951ccedabe9bf69f6b99f26beb5ce090204885e118e8f89b8d2e991538efaad"
+    },
+    {
+      "frame": 4,
+      "group": 5,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g05/g05-f004.png",
+      "rgba_sha256": "e61d740b345bd881284e630e3e050aa8e1e4a91ba540c4d11fcf690273ac8516",
+      "sha256": "3bec7191ef50927e7d1375cdbece118847130f9322591a34ab8e5ef7687b7cda"
+    },
+    {
+      "frame": 5,
+      "group": 5,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g05/g05-f005.png",
+      "rgba_sha256": "b9c9261cd5b6a4712a0aa9010e0f9bf09cc2091ec15ce5215aa6887784416846",
+      "sha256": "77f4930fcd2c3f83d6b6dd154e5c49c45a56a20560b45569d609454895b7982d"
+    },
+    {
+      "frame": 0,
+      "group": 7,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g07/g07-f000.png",
+      "rgba_sha256": "c30e7c793694bb546d56319e0826b2c0e37ed889712e2228d2e473596d03e059",
+      "sha256": "97031702af943be12ea7dd176c9227083373e6fa03f4c9d5ed378f91df8b25cd"
+    },
+    {
+      "frame": 1,
+      "group": 7,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g07/g07-f001.png",
+      "rgba_sha256": "49f56ae06e0bfc3998069e0e5d9871a1e17212d0158dcc7009aef4687a4e6d7b",
+      "sha256": "cdd142fa5b9a2eff01884213bc8cfc89a06e65ed050dbd9c7b8dc2ee3d4acf7e"
+    },
+    {
+      "frame": 2,
+      "group": 7,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g07/g07-f002.png",
+      "rgba_sha256": "921ee8cdf264400eecb2c094e2af6f4e4b4c20f1c4a5c3e715ab1c5280b8af3f",
+      "sha256": "2a25ce58de4e8b456df3886715585e2a6afdbdff29e2973b46c17184cd403f79"
+    },
+    {
+      "frame": 3,
+      "group": 7,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g07/g07-f003.png",
+      "rgba_sha256": "80c170009e941c0e504aa516c6c2cf5f3278e198c495bf2c9ead02b6c28f66a3",
+      "sha256": "cbb740d338d91bc4641afcf87d81623a224a9d13a2553cea045a47193ef16c72"
+    },
+    {
+      "frame": 0,
+      "group": 8,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g08/g08-f000.png",
+      "rgba_sha256": "80c170009e941c0e504aa516c6c2cf5f3278e198c495bf2c9ead02b6c28f66a3",
+      "sha256": "c7a3aa2dd32a5ab046f2adb326399a7b99912f8a3b0bc88710148c4fd89589fe"
+    },
+    {
+      "frame": 1,
+      "group": 8,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g08/g08-f001.png",
+      "rgba_sha256": "921ee8cdf264400eecb2c094e2af6f4e4b4c20f1c4a5c3e715ab1c5280b8af3f",
+      "sha256": "33aa54f11bb31f0c5b420cc4f1d2fa4347eb038f0f70634cf2a0a424e5049e38"
+    },
+    {
+      "frame": 2,
+      "group": 8,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g08/g08-f002.png",
+      "rgba_sha256": "49f56ae06e0bfc3998069e0e5d9871a1e17212d0158dcc7009aef4687a4e6d7b",
+      "sha256": "b45ffe0fa15f9cfed062e547e3614b1d713f2303c7914b99bec27c48eeea769e"
+    },
+    {
+      "frame": 3,
+      "group": 8,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g08/g08-f003.png",
+      "rgba_sha256": "c30e7c793694bb546d56319e0826b2c0e37ed889712e2228d2e473596d03e059",
+      "sha256": "9fc1e0f23ee629e441d598f58a80eaed1ffba797260a279e71e83f4cd6f2c75d"
+    },
+    {
+      "frame": 0,
+      "group": 11,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g11/g11-f000.png",
+      "rgba_sha256": "9a2ccb03412213e8164d644271235474c68e7449053de55673f165ae57f73e1d",
+      "sha256": "44414403f633702ef243ac24a74180127fd8a51f68c5277734e158743d79cc8f"
+    },
+    {
+      "frame": 1,
+      "group": 11,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g11/g11-f001.png",
+      "rgba_sha256": "43440ffe8c83a55755c8cfa9c07f8428e174611299f500e34e253108a8ade86a",
+      "sha256": "ca54e3a52bf98d8f54b5757223036eace4fe903da6011119f13fa30082f159a7"
+    },
+    {
+      "frame": 2,
+      "group": 11,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g11/g11-f002.png",
+      "rgba_sha256": "46537072a41cf01487479dd55bd2c0c2a9b5cbd72b196f9e413279b6dd2ce39f",
+      "sha256": "a5b1fecba01dea1a4db7cc98f8e398e662f8344bd0c37465dc21c6d38a6eed0f"
+    },
+    {
+      "frame": 3,
+      "group": 11,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g11/g11-f003.png",
+      "rgba_sha256": "ec6e2a04f749feca2847209c4b6cef0f3545fe2681118bc49e936a5f5fcbda1e",
+      "sha256": "1ba84e8e1d21082e4b610a94939a5bd409348802288afd1774a7a6de4f6e8f3a"
+    },
+    {
+      "frame": 4,
+      "group": 11,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g11/g11-f004.png",
+      "rgba_sha256": "8656d35bb0e54bb48c0c588da4894c9d82e7a21a701bf6161dc4788b328377ce",
+      "sha256": "6a9dbadac707999d1022139f0b558eddc608e979b3334b9b6a4f9e5a22865319"
+    },
+    {
+      "frame": 5,
+      "group": 11,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g11/g11-f005.png",
+      "rgba_sha256": "9a2ccb03412213e8164d644271235474c68e7449053de55673f165ae57f73e1d",
+      "sha256": "54a3a7e7448b4180d8dc22835102de066d337821a3e6270855152466fffe8e76"
+    },
+    {
+      "frame": 0,
+      "group": 12,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g12/g12-f000.png",
+      "rgba_sha256": "9a2ccb03412213e8164d644271235474c68e7449053de55673f165ae57f73e1d",
+      "sha256": "90d27bd1f057e3b1a2fb4e9cf462bc92e07a5596be8b9731b43e972c7dd3a146"
+    },
+    {
+      "frame": 1,
+      "group": 12,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g12/g12-f001.png",
+      "rgba_sha256": "43440ffe8c83a55755c8cfa9c07f8428e174611299f500e34e253108a8ade86a",
+      "sha256": "fef44c1a5bb5e60debea71e9131388b668442a09720fe222da3d0efb27519b04"
+    },
+    {
+      "frame": 2,
+      "group": 12,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g12/g12-f002.png",
+      "rgba_sha256": "46537072a41cf01487479dd55bd2c0c2a9b5cbd72b196f9e413279b6dd2ce39f",
+      "sha256": "9ac7d7ea145f02901ddbfdf16acd0d661f65d83288f64c8e966c67b0fcf3f409"
+    },
+    {
+      "frame": 3,
+      "group": 12,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g12/g12-f003.png",
+      "rgba_sha256": "8c9df4c4b7e445e2e53ac48af69c6eb92643116501d2c9796d7bd4197c7e1bc7",
+      "sha256": "659ff8df64aff62c867318ba6c0154ec504f88978fe8c319990556c1c7717017"
+    },
+    {
+      "frame": 4,
+      "group": 12,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g12/g12-f004.png",
+      "rgba_sha256": "74b77f90a22e161e413c9965d2c512c7a45eb43a2b54eb9a4fb0ea9c99862f99",
+      "sha256": "f73c502a44a8d1d56e16d177f14c8d72590a451ff47e813ddd0be7bcb55bf2e9"
+    },
+    {
+      "frame": 5,
+      "group": 12,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g12/g12-f005.png",
+      "rgba_sha256": "9a2ccb03412213e8164d644271235474c68e7449053de55673f165ae57f73e1d",
+      "sha256": "d0fab1a08fce88cdb39a62fe97c80e6ac01d3070b010c4b37d211660df8e1756"
+    },
+    {
+      "frame": 0,
+      "group": 13,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g13/g13-f000.png",
+      "rgba_sha256": "9a2ccb03412213e8164d644271235474c68e7449053de55673f165ae57f73e1d",
+      "sha256": "2dc0b4fdea95271d015b3bced606c89972b29b0bf7ecfe9ffe251bd00f490dfa"
+    },
+    {
+      "frame": 1,
+      "group": 13,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g13/g13-f001.png",
+      "rgba_sha256": "43440ffe8c83a55755c8cfa9c07f8428e174611299f500e34e253108a8ade86a",
+      "sha256": "332b6ca830df757210fec089b5bab1e3c5f5930fe4908ab87ecdb7c9b278eaf5"
+    },
+    {
+      "frame": 2,
+      "group": 13,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g13/g13-f002.png",
+      "rgba_sha256": "46537072a41cf01487479dd55bd2c0c2a9b5cbd72b196f9e413279b6dd2ce39f",
+      "sha256": "7bac3fecee6889183510b3e0639b30393feb3b74cb7411e11a6f5cd0745801e2"
+    },
+    {
+      "frame": 3,
+      "group": 13,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g13/g13-f003.png",
+      "rgba_sha256": "d07fe2a4309f29b6977b7a3f4da6a56724a520364b3d36a41341eac8976569fb",
+      "sha256": "bdf4172ef68ea1658da1cc8342711f6de184a5ba0344cebd2b090ac27787441e"
+    },
+    {
+      "frame": 4,
+      "group": 13,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g13/g13-f004.png",
+      "rgba_sha256": "1402607671ee7df159a0311337ebb1b86e36b5343915c6d1565a9cf5e3322778",
+      "sha256": "8cb5d63cd450e207500a5932229ec1e72f123d05576e1fa6df2379fa9390f333"
+    },
+    {
+      "frame": 5,
+      "group": 13,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g13/g13-f005.png",
+      "rgba_sha256": "9a2ccb03412213e8164d644271235474c68e7449053de55673f165ae57f73e1d",
+      "sha256": "13b1f82c23fb9dda8acdbaf8a2df1bf98df3c54918669914424af87d3fbaeded"
+    },
+    {
+      "frame": 0,
+      "group": 14,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g14/g14-f000.png",
+      "rgba_sha256": "163ab7915f7241a13cfa0fc42d90adbfaebf2a2967c63ff88b6db9cc5d16236b",
+      "sha256": "286c7f0078e0d90d8de39899ec03b6192781039e2de521b81090749ddebb5a21"
+    },
+    {
+      "frame": 1,
+      "group": 14,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g14/g14-f001.png",
+      "rgba_sha256": "c5fc3c2cded141a3591a7c96aa08e1c146888f76eb39a3e143b02f568186da7b",
+      "sha256": "634095ff8ef09efbfca31bd341a4395f5f546e901e9df88de58f0eab2cbb71bc"
+    },
+    {
+      "frame": 2,
+      "group": 14,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g14/g14-f002.png",
+      "rgba_sha256": "160e922028413534ddba39aae2fc8c6f24261183b0702400d3104ce79d728f98",
+      "sha256": "c9d0df81307a718e87931aadbcb534e3d7f5a59893666415600f7dea8715a5dd"
+    },
+    {
+      "frame": 3,
+      "group": 14,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g14/g14-f003.png",
+      "rgba_sha256": "160e922028413534ddba39aae2fc8c6f24261183b0702400d3104ce79d728f98",
+      "sha256": "b85a4fb61244100bbd940e20ccd05424879b07b44a482907810ca421dd6992f8"
+    },
+    {
+      "frame": 4,
+      "group": 14,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g14/g14-f004.png",
+      "rgba_sha256": "9da4ea17e18e0b52624071cf52f944e2effd6f1f4dbed7da6c5e285b7d73e843",
+      "sha256": "a19bdbd686b9fa13943f10f71a295e24ad007f4ee6da431d45a0bc5046a75901"
+    },
+    {
+      "frame": 5,
+      "group": 14,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g14/g14-f005.png",
+      "rgba_sha256": "07adb2a6b14f2cb517cb9d94dc45022303f979ef7e453813e17735051d988e77",
+      "sha256": "7e3b7653dd14c519654622344cfadb028e7c850a69d9bbb0d734969f4cb98e7a"
+    },
+    {
+      "frame": 6,
+      "group": 14,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g14/g14-f006.png",
+      "rgba_sha256": "23b796111c8355bb50c7935b70774620506439e2e03f4e48ea97797b38552008",
+      "sha256": "faea155ef650b82e20fa2068195d8e904cfb2b5a829f80c373fcfc80aae344e9"
+    },
+    {
+      "frame": 7,
+      "group": 14,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g14/g14-f007.png",
+      "rgba_sha256": "6795c1e765b46bb2363fa1075e53c8f5e6ca2a43eff3d13b0ba0a7cf56e0f44c",
+      "sha256": "a062b0b263f97d46ac58b43a98ef084bd39ee270a1cd17ebe89fc29956a7b2b6"
+    },
+    {
+      "frame": 0,
+      "group": 15,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g15/g15-f000.png",
+      "rgba_sha256": "163ab7915f7241a13cfa0fc42d90adbfaebf2a2967c63ff88b6db9cc5d16236b",
+      "sha256": "9812e5a811c3791badc9ac5942bafa56f332ee886374128223af84c1e60fdd52"
+    },
+    {
+      "frame": 1,
+      "group": 15,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g15/g15-f001.png",
+      "rgba_sha256": "ab15b6da680db7be4787099e00508976c44d6b7dd36f29330cf354242430ad6e",
+      "sha256": "22b3927e71ff637e5a037b0b80ddc045a69a5fc11d02478c736ba926ead5940b"
+    },
+    {
+      "frame": 2,
+      "group": 15,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g15/g15-f002.png",
+      "rgba_sha256": "376a7c91c348df509d21bcf76fd642fa7e98e966ff2244a414e42781fe334139",
+      "sha256": "32fc63d2d898990e3ae49496a30e6d166d08534a9d5dc40912c75e03d2368e3c"
+    },
+    {
+      "frame": 3,
+      "group": 15,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g15/g15-f003.png",
+      "rgba_sha256": "376a7c91c348df509d21bcf76fd642fa7e98e966ff2244a414e42781fe334139",
+      "sha256": "2dd047071c89ce7f41761707b2628a6acdedc5e4899920dfe56688e02c07b209"
+    },
+    {
+      "frame": 4,
+      "group": 15,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g15/g15-f004.png",
+      "rgba_sha256": "2c98ac97f68faf795d673dfef03582d476b55bfa89eb72417f463b5dbf7bde82",
+      "sha256": "b155756d21f62367ccf5f56e05f7d59f229079257351b60442a91dea96eb42f8"
+    },
+    {
+      "frame": 5,
+      "group": 15,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g15/g15-f005.png",
+      "rgba_sha256": "3042610d2cc0c2ead56cfbf8367bff38bf26a7bae915bf6886641992c28d7baf",
+      "sha256": "c7de69ca508477dd1dc46de8ff7d51b7b00d8f08ed228f50da1ce4dfec310992"
+    },
+    {
+      "frame": 6,
+      "group": 15,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g15/g15-f006.png",
+      "rgba_sha256": "9d7de722450c41276c5f26dd987daf7d226d382d516b2ac5543a98d386a013b5",
+      "sha256": "7cd81dcf0da0104ddb4dc0ec06e779ecfc159ecb04e5d7fbf5105e57c15b971d"
+    },
+    {
+      "frame": 7,
+      "group": 15,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g15/g15-f007.png",
+      "rgba_sha256": "6795c1e765b46bb2363fa1075e53c8f5e6ca2a43eff3d13b0ba0a7cf56e0f44c",
+      "sha256": "b0a256a11d6629ff487b7827db960fdc4e79d5c4e636290564bf56a21835512d"
+    },
+    {
+      "frame": 0,
+      "group": 16,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g16/g16-f000.png",
+      "rgba_sha256": "163ab7915f7241a13cfa0fc42d90adbfaebf2a2967c63ff88b6db9cc5d16236b",
+      "sha256": "9f965ef6a494aaea27a53a26818fc34b9965b495dfd9dbd2d7c342a447c6fb02"
+    },
+    {
+      "frame": 1,
+      "group": 16,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g16/g16-f001.png",
+      "rgba_sha256": "b2aa6c679e57caa6e14f058c0d9ff671ef6e793507b31eaeccfe0ca878635083",
+      "sha256": "eabca652cb618cb298d21cabbc57727f19b75365d740b5ac5abe754a448665d7"
+    },
+    {
+      "frame": 2,
+      "group": 16,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g16/g16-f002.png",
+      "rgba_sha256": "71783b7935ae1a6b752ff4d30838154165fbb61f8d63431270585e7e278e1031",
+      "sha256": "6e11ca8171f1e21c1967ce6f822bb703dc38d84924546f15a89002062b4b894d"
+    },
+    {
+      "frame": 3,
+      "group": 16,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g16/g16-f003.png",
+      "rgba_sha256": "71783b7935ae1a6b752ff4d30838154165fbb61f8d63431270585e7e278e1031",
+      "sha256": "7524e0a2a3cb043907be4ead2e76424502fef419cf5e1e6ba6741040e1f0a736"
+    },
+    {
+      "frame": 4,
+      "group": 16,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g16/g16-f004.png",
+      "rgba_sha256": "9f197a645aa334292ca9278ad6378f0d094bf36ec3387ac9ac0f412905e3066c",
+      "sha256": "927c6bb0a1e7eb1112b1b071847fe966543c2514d98fcd966bdc953ccca2dc0b"
+    },
+    {
+      "frame": 5,
+      "group": 16,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g16/g16-f005.png",
+      "rgba_sha256": "1252d893b93dfd7cb0bd09a21b2dece4ec14b7c339186e8ffb870cf04c738bb8",
+      "sha256": "b26ffd7fcffff2107ea6e376f870d90674ffb5fe8e510c358d6ce20da2b4dd9b"
+    },
+    {
+      "frame": 6,
+      "group": 16,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g16/g16-f006.png",
+      "rgba_sha256": "bd1c768ef405b07e12435cbc68197f3a3d89d9a79d7d0246d40012d44f4058f2",
+      "sha256": "5a6b33d5f48c030d94a79d86765bd579fe9bf3f734efdb96583c7cca27d450a2"
+    },
+    {
+      "frame": 7,
+      "group": 16,
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/raw-actions/g16/g16-f007.png",
+      "rgba_sha256": "6795c1e765b46bb2363fa1075e53c8f5e6ca2a43eff3d13b0ba0a7cf56e0f44c",
+      "sha256": "7d78cdadbec8c947fa29337210689994bc109c17e580b2396c245c899665fb6b"
+    }
+  ],
+  "intentional_duplicate_pose_renders": {
+    "11": [
+      [
+        0,
+        5
+      ]
+    ],
+    "12": [
+      [
+        0,
+        5
+      ]
+    ],
+    "13": [
+      [
+        0,
+        5
+      ]
+    ],
+    "14": [
+      [
+        2,
+        3
+      ]
+    ],
+    "15": [
+      [
+        2,
+        3
+      ]
+    ],
+    "16": [
+      [
+        2,
+        3
+      ]
+    ],
+    "2": [
+      [
+        0,
+        2
+      ]
+    ]
+  },
+  "metadata": {
+    "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/ranger-production-v2.json",
+    "sha256": "bcb3b8c7efa5af34430f8a654af73c32bb3d5efd55488ecb7f3ff06d71a39def"
+  },
+  "rendered_png_count": 78,
+  "selected_source_revision": 2,
+  "source_blend": {
+    "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/veteranRanger-ranger-rig-v2.blend",
+    "sha256": "1339003157ad33c53e379a184cdfd38280f1ae93fc9da9dec3dd7a9d35124354"
+  },
+  "status": "actual source renders verified; final animation assets incomplete",
+  "unit": "veteranRanger",
+  "visual_approval_granted": false,
+  "visual_limits": [
+    "Raw guide has plain/cylindrical sleeve and hood-edge forms; no professional native art approval.",
+    "Painted action finish and its native temporal/camera review remain unproduced.",
+    "Native shadow, targeting projectile origin, selection and action playback have not been tested for this pair."
+  ]
+}

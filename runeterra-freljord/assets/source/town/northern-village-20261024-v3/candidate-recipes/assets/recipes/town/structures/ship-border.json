@@ -1,0 +1,110 @@
+{
+  "acceptance": "Technical candidate only; current native/art/rights acceptance remains separate.",
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed built-in OpenAI imagegen painted sources and deterministic technical assembly",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": false,
+    "method": "Existing canonical alpha128 silhouette area or one-native-pixel outward MaxFilter3-minus-silhouette border.",
+    "painted_source_provenance": {
+      "conversion": {
+        "alpha_bbox": [
+          32,
+          16,
+          1755,
+          849
+        ],
+        "alpha_treatment": "Preserved painted RGBA, including any soft halo; no threshold erasure/background removal",
+        "canvas": [
+          800,
+          374
+        ],
+        "mirror_x": true,
+        "placed_origin": [
+          695,
+          180
+        ],
+        "placed_size": [
+          99,
+          48
+        ],
+        "rect": [
+          693,
+          180,
+          104,
+          48
+        ],
+        "source_canvas": [
+          1801,
+          873
+        ],
+        "source_coordinate_basis": "after whole-master horizontal mirror",
+        "uniform_scale": 0.057623049219687875,
+        "upscaled": false
+      },
+      "generation_record": "assets/source/town/northern-village-20261024-v3/provenance/ship/generation.json",
+      "image_generation_used": true,
+      "model": "not exposed by built-in tool",
+      "model_id_exposed": false,
+      "painted_master": "assets/source/town/buildings-v1/ship/master.png",
+      "painted_master_sha256": "9ef88df15d820ed810c80e605f9cee78c2dd7d2ab011cb44424d20c6cf3d342c",
+      "prompt": "Use case: precise-object-edit. Asset type: one individual transparent ORIGINAL HeroesIII Freljord building upgrade/state. Input1 is exact own previousstate edit target. Change only this exact dock's moored-vessel presence state: keep the original pier, crane, rope shed, stone shoreabuttment and low frontal3/4camera the same. Add ONE small practical northern clinkerbuilt timber cargo longboat moored close alongside the FRONTLEFT pier, rounded hull, curved simple prow, rolled ochre sail on low mast and small barrelcargo, no elaborate dragonhead. Transparent space around hull and betweenpilings; NO water/oceanrectangle, shoregroundtile, scenery or people. The building state contains the complete originaldock PLUS boat, not boat alone. Keep rough1999HoMM3 painted/prerendered miniature style, lowfrontalcamera mostlyfront/rightwall, warm ochre darktimber, basaltstone and iron, restrainedsnow, upperleftdaylight. Full isolatedsubject10%clearmargin, genuineTRANSPARENT background outside physicalsubject, NO foghalo/backdrop, rectangularbase, glossyphotoreal3D, blueglow, labels/UI/text, watermark, people, deity or officialcrest. Return ONE complete newstate only, not a sheet/comparison.",
+      "provider": "OpenAI built-in imagegen",
+      "references": [
+        {
+          "path": "assets/source/town/buildings-v1/ship/master.png",
+          "sha256": "9ef88df15d820ed810c80e605f9cee78c2dd7d2ab011cb44424d20c6cf3d342c"
+        },
+        {
+          "path": "assets/source/town/northern-village-20261024-v3/provenance/ship/generation.json",
+          "sha256": "35f970549673365ce7a8e82a23cdf155919b9b02f6a65d68908f70fd4be0fb24"
+        }
+      ],
+      "technical_producer": {
+        "path": "assets/source/town/northern-village-20261024-v3/prepare_candidate.py",
+        "sha256": "5c79a631c542104c95ba473b355557f65e2f8b214faf07f66a5024e3b0c21a85"
+      },
+      "tool": "image_gen.imagegen",
+      "visual_approval_granted": false
+    },
+    "references": [
+      {
+        "path": "assets/source/town/northern-village-20261024-v3/prepared/ship/layer.png",
+        "sha256": "b60b2d6e2724ff748110726928b530b265182f35c05c384b1b14917607ff9aad"
+      }
+    ]
+  },
+  "inputs": [
+    {
+      "path": "assets/source/town/northern-village-20261024-v3/layout-v3.json",
+      "sha256": "5760fa4c000093b10b50e8fcaaddec4a23897dd03f56b5ac9e2258db4c88a153"
+    },
+    {
+      "path": "scripts/prepare_town_art.py",
+      "sha256": "71476dbf913919f5cc07bab81b87236c4601ef3fe0b38d627fff88c7fe91fa46"
+    },
+    {
+      "path": "assets/source/town/northern-village-20261024-v3/prepare_candidate.py",
+      "sha256": "5c79a631c542104c95ba473b355557f65e2f8b214faf07f66a5024e3b0c21a85"
+    }
+  ],
+  "output_path": "Content/Sprites/runeterra/freljord/town/structures/ship_border.png",
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "source": "assets/source/town/northern-village-20261024-v3/prepared/ship/border.png",
+  "source_canvas": [
+    800,
+    374
+  ],
+  "source_sha256": "1484861a44d6d99e2786fc81289eb6e78c6f09a1940f9db3feeaaa1b73519d8d",
+  "status": "authored configuration",
+  "visual_approval_granted": false
+}

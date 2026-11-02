@@ -1,0 +1,115 @@
+{
+  "acceptance": "Production requirements only. No rig/guide/primitive/reference may substitute for painted final art; this recipe must fail while its real master/hash is absent.",
+  "art_direction": "Independent Noxian iron/crimson/black subjects in Heroes III native painted language. Never recolour Castle or Demacia art, import original pixels or invent an official crest.",
+  "building": "special2",
+  "building_contract": {
+    "full_canvas_placement": {
+      "x": 0,
+      "y": 0,
+      "z": 223
+    },
+    "name": "Trifarian Hall",
+    "native_ground_contact": [
+      340,
+      136,
+      110,
+      87
+    ],
+    "upgrades": null
+  },
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI built-in imagegen; deterministic project conversion",
+    "license": null,
+    "redistribution": "unresolved; no release or redistribution approval"
+  },
+  "dimensions_basis": {
+    "canvas": [
+      800,
+      374
+    ],
+    "mode": "RGB",
+    "reference_only": "runeterra-demacia/references/images/tbcsback.pcx.png",
+    "reference_sha256": "949012ea68999207934bc482f1552858474fe50cefddef17eaac00d4b98c2be9",
+    "use": "Dimensions/format only. No reference pixels, palette, source recipe, layout silhouette or licensed art copied."
+  },
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": false,
+    "provider": "OpenAI built-in imagegen",
+    "model": "Not exposed by the built-in tool",
+    "model_disclosure": "Not exposed by the builtin tool.",
+    "prompt": "Create ONE original Trifarian Hall building cutout for a Noxus town in original Heroes of Might and Magic III. The two supplied images are PAINTED MATERIAL/CAMERA/PALETTE STYLE CONTROLS ONLY, do not reproduce their hall/fort buildings. New subject: compact low, broad officers' military assembly hall, dark volcanic coursed stone and black riveted iron, angular weathered metal roof and broad triangular iron portico, large dark wooden meeting doors with iron braces, practical spear/weapon racks on the two flanks, two small deep crimson hanging cloth panels and warm guard lanterns. Visibly an inhabited martial meeting and planning institution, not an arena, palace, fortress, giant tower, blank repeated columns or barracks clone. Rich hand-painted stone/iron/wood texture and softened restrained highlights matching original HoMM3 game art. No letters or signs, no people, no magical effects, no Tudor timber crosses, no pale Castle walls. Compact readable broad silhouette for final native98x78px. Low three-quarter frontal view looking gently downward, readable front-facing doors/windows and visible but not dominant roof, no camera distortion. Entire single complete building on a compact continuous dry stone foundation with transparent margin and no cropped extremities. TRUE transparent background; soft contact shadow only beneath the footing. No scenery/background, no grid or contact sheet. This is genuine painted 2D sprite artwork in the supplied painted controls' palette/light, not glossy modern 3D, photo or vector shapes.",
+    "painted_master": "assets/source/town/painted-community-20261024-v2/special2/master.png",
+    "painted_master_sha256": "b82b4cdecc20f7cb6be7c542f3ac526f38cfb06d3651261232aeb01c4e5e4a53",
+    "generation_record": "assets/source/town/painted-community-20261024-v2/special2/generation.json",
+    "generation_record_sha256": "217d41dd43fd883c486aff5d3edfb8296dbe19dc8e30d77830ca3702c80ed70f",
+    "conversion": {
+      "method": "Uniform alpha-crop/contain of genuine painted 2D source; forced-depth site placement, no perspective warping or artificial art.",
+      "source_crop": [
+        41,
+        175,
+        1365,
+        970
+      ],
+      "placement_box": [
+        340,
+        136,
+        110,
+        87
+      ],
+      "native_position": [
+        342,
+        157
+      ],
+      "native_size": [
+        106,
+        64
+      ],
+      "site": "trifarianHall",
+      "assembly_script": "assets/source/town/urban-community-20261024-v3/prepare.py",
+      "assembly_script_sha256": "f64b91515a739514c5200d85422dcf4286acdd1711f656cdda3b2c888bc227b8",
+      "mask_method": "Exact alpha128 silhouette; area is binary silhouette, border is two-pixel outward MaxFilter5 minus silhouette."
+    },
+    "method": "Alpha128 area mask or two-pixel outward MaxFilter5 border of exact painted native layer."
+  },
+  "inventory": {
+    "asset_id": "noxus.Sprites.runeterra.noxus.town.structures.special2_border.png",
+    "manifest": "assets/manifest.json",
+    "recipe_path": "assets/recipes/town/structures/special2-border.json"
+  },
+  "mask_contract": "Same800x374 silhouette/camera as own building. Area must isolate actual clickable painted shape; border must follow it. No rectangular/opaque placeholder mask or masks copied from native/Demacia structures.",
+  "output_path": "Content/Sprites/runeterra/noxus/town/structures/special2_border.png",
+  "pivot": {
+    "basis": "Full town canvas; content declares x0/y0; no Castle/Demacia building placement copied",
+    "x": 0,
+    "y": 0
+  },
+  "production_status": "derived-technical-mask-complete",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "Real independent Noxus painted master and truthful provenance",
+    "Non-null SHA256 source pins",
+    "Official Noxus emblem provenance where used",
+    "Native-size silhouette/composition/alpha and role review",
+    "Explicit coordinator selection; no automatic acceptance"
+  ],
+  "role": "town-structure-border",
+  "sha256": "99a39c96564a3f8d5516e0a3a8fde90a38a6da528e536eddd55bc67b294bb609",
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/urban-community-20261024-v3/structures/special2/border.png",
+  "source_sha256": "99a39c96564a3f8d5516e0a3a8fde90a38a6da528e536eddd55bc67b294bb609",
+  "status": "built-unreviewed",
+  "visual_approval_granted": false,
+  "source_canvas": [
+    800,
+    374
+  ]
+}

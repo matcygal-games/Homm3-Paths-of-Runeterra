@@ -1,0 +1,152 @@
+{
+  "definition": {
+    "category": "ranged",
+    "comparison": [
+      "core:mage",
+      "core:monk"
+    ],
+    "equipment": [
+      "low-cowl",
+      "split-robe",
+      "vial-belt"
+    ],
+    "family": "crimson",
+    "height": 1.84,
+    "lore": "Plural lesser hemomancer project ranks, not Vladimir transformation or an obedient canonical imperial ministry",
+    "native_height": 79,
+    "nature": "living",
+    "silhouette": "Human lesser hemomancer, low cowl, long practical crimson robe split for visible walking feet, leather vial belt and one bare channeling hand; separate knife melee",
+    "tier": 5,
+    "two_hex": false,
+    "upgrade": false,
+    "weakness": "Ordinary ranged damage with ammunition; no drain, resurrection or blood economy",
+    "weapon": "ritual-knife",
+    "width": 0.23
+  },
+  "emblem": {
+    "policy": "Leave emblem fields blank in guides. Obtain a genuine official Riot Noxus emblem, preserve exact source URL/bytes/hash and permissions before final painted art. Never invent a crest or reuse Demacia heraldry.",
+    "sha256": null,
+    "source_url": null,
+    "status": "blocked-official-source-provenance-required"
+  },
+  "generation": {
+    "image_generation_used": false,
+    "model": null,
+    "prompt": null,
+    "provider": null
+  },
+  "model_sheet_type": "editable volumetric rig + transparent pose guides, NOT painted art",
+  "native_groups": {
+    "0": {
+      "action": "walk-contact",
+      "minimum_guide_poses": 6
+    },
+    "1": {
+      "action": "fidget-equipment-check",
+      "minimum_guide_poses": 4
+    },
+    "11": {
+      "action": "melee-up",
+      "minimum_guide_poses": 6
+    },
+    "12": {
+      "action": "melee-front",
+      "minimum_guide_poses": 6
+    },
+    "13": {
+      "action": "melee-down",
+      "minimum_guide_poses": 6
+    },
+    "14": {
+      "action": "channel-release-recover",
+      "minimum_guide_poses": 8
+    },
+    "15": {
+      "action": "channel-release-recover",
+      "minimum_guide_poses": 8
+    },
+    "16": {
+      "action": "channel-release-recover",
+      "minimum_guide_poses": 8
+    },
+    "2": {
+      "action": "idle",
+      "minimum_guide_poses": 1
+    },
+    "3": {
+      "action": "hit-recoil",
+      "minimum_guide_poses": 4
+    },
+    "4": {
+      "action": "defend-brace",
+      "minimum_guide_poses": 4
+    },
+    "5": {
+      "action": "death-collapse",
+      "minimum_guide_poses": 6
+    },
+    "7": {
+      "action": "turn-toward-viewer",
+      "minimum_guide_poses": 4
+    },
+    "8": {
+      "action": "turn-back",
+      "minimum_guide_poses": 4
+    }
+  },
+  "painting_contract": {
+    "acceptance": false,
+    "camera": "One measured uniform camera/placement correction per action atlas, preserve every source and rejected revision; no per-frame stretch, warping, auto-fit or idle-as-action",
+    "continuity": "Use each unit's own model/upgrade definition and all actual pose guides; preserve joint contacts and independent silhouettes",
+    "required_capability": "ChatGPT image-generation skill / built-in image_gen.imagegen or human painted masters",
+    "review": [
+      "transparent background and no baked floor",
+      "ground contact at native pivot",
+      "no cross-cell contamination",
+      "whole action semantics and projectile release",
+      "base/upgrade silhouette and equipment distinction",
+      "genuine Noxus emblem legibility and provenance",
+      "native original/Demacia comparison",
+      "real native runtime review"
+    ],
+    "status": "blocked-missing-painted-masters",
+    "style": "Original Heroes III native painted/prerendered treatment, restrained highlights, matte iron/crimson/black, upper-left lighting; not glossy modern 3D, flat vector or splash art"
+  },
+  "pipeline": [
+    "art_creature_rigs.py actual Blender assembly",
+    "all groups keyed as genuine skeletal poses",
+    "art_creature_sources.py --review fixed whole-cohort uniform native conversion",
+    "painted master production BLOCKED",
+    "source pins and native action review BLOCKED",
+    "coordinator-only manifest selection, assembly and runtime acceptance NOT PERFORMED"
+  ],
+  "production_recipes": [
+    {
+      "path": "assets/recipes/creatures/crimsonDisciple-battle.json",
+      "sha256": "e6ddcacdea7f6088481ce1314b331dead00fbee3a95d33fa4769bab304503481"
+    },
+    {
+      "path": "assets/recipes/creatures/crimsonDisciple-map.json",
+      "sha256": "f70f5ff478e25a4d76d142b938e12a72f41b5b51b391cbf108133c796b282820"
+    },
+    {
+      "path": "assets/recipes/creatures/crimsonDisciple-large.json",
+      "sha256": "431723d702f2c3667af4e1a530eb3e28d3e84d3b97ec62c73afbf590e2a3a7a3"
+    },
+    {
+      "path": "assets/recipes/creatures/crimsonDisciple-small.json",
+      "sha256": "517b70231f23003b3e30f8eb0d2746ab2642d11b91cce70179d0a041dad34456"
+    },
+    {
+      "path": "assets/recipes/creatures/crimsonDisciple-attackLeft.json",
+      "sha256": "0f1a44c9a626d645da1bf731278a593d6b76ba98d75899d24f40ae5568820c91"
+    },
+    {
+      "path": "assets/recipes/creatures/crimsonDisciple-attackRight.json",
+      "sha256": "f6f3896f731b2ffe0f864c6b6bf30854fdd245479a137e0c0cfd9b3b1ff9dc79"
+    }
+  ],
+  "status": "authored configuration",
+  "unit": "crimsonDisciple",
+  "visual_approval_granted": false
+}

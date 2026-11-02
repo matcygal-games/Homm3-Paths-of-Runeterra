@@ -1,0 +1,71 @@
+{
+  "acceptance": "Production requirements only. No rig/guide/primitive/reference may substitute for painted final art; this recipe must fail while its real master/hash is absent.",
+  "art_direction": "Independent Noxian iron/crimson/black subjects in Heroes III native painted language. Never recolour Castle or Demacia art, import original pixels or invent an official crest.",
+  "canvas": [
+    58,
+    64
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI built-in imagegen; deterministic project conversion",
+    "license": null,
+    "redistribution": "unresolved; no release or redistribution approval"
+  },
+  "dimensions_basis": {
+    "canvas": [
+      58,
+      64
+    ],
+    "reference_only": "runeterra-demacia/assets/recipes/adventure-icon-fort-normal-large.json",
+    "reference_sha256": "185ec656241eb5b7d4145b41481ee17d28235248bbb6bad9cff577bf96eccdbd",
+    "use": "Read-only dimensional contract, not painted source or copied artwork"
+  },
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": true,
+    "model": "not exposed by built-in image_gen.imagegen",
+    "model_disclosure": "The built-in tool did not expose its model identifier.",
+    "provider": "OpenAI built-in imagegen",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use case: stylized-concept. Asset: ONE Noxus adventure-map town miniature sprite for original Heroes III, transparent background realalpha, final192x192. Rich painted/prerendered miniature matching original Heroes III / selected Demacia rendering quality but independently designed Noxian subjects. Unlike town-screen layers this ADVENTURE sprite uses original adventure-map three-quarter elevated orthographic camera, complete structure cluster as one compact joined settlement silhouette, no separate floating ground tile or square board-game base. Severe weathered charcoal-grey stone and black iron, plain crimson cloth accents, warm upper-left daylight, readable broad tonal planes. Full silhouette unclipped with transparent margin and ground contact centered nearbottom. No white/blue Demacia architecture, no copied Castle, no glossy modern3D, neon, illustration outline, text, logo or canonicalemblem. IMPORTANT exactly ONE small plain vivid BLUE CLOTH ownership standard on an iron pole at upperright of town silhouette. No other blue anywhere. This flag is painted art to later derive a real owner-colour overlay, not fixedfaction heraldry. Unfortified village state: humble low Legion Outpost hall and two small practical joined service roofs, open gatepath, NO outer fortification wall, NO towers. Distinct lowest development stage.",
+    "painted_master": "assets/source/town/map/village/painted-v1/master.png",
+    "painted_master_sha256": "58631cd02211d3504a1fdb400a76de30c08e34742f4e0ff9ed0dee7b1bb9a03c",
+    "generation_record": "assets/source/town/map/village/painted-v1/generation.json",
+    "conversion": {
+      "method": "Uniform crop/downsample of this own painted map master over own uniformly cover-cropped painted terrain; no original/Demacia pixels. Built-state adds independently redrawn red-X UI day-limit indicator; not an architectural upgrade.",
+      "terrain_source": "assets/source/town/painted-v1/empty-terrain-master.png",
+      "terrain_sha256": "20b591e4c39d91d765be02d5a845313fdbfc33951af03315d3b37aa08e8e4fd2",
+      "native_consumer": "client/adventureMap/CList.cpp:437"
+    }
+  },
+  "inventory": {
+    "asset_id": "noxus.Sprites.runeterra.noxus.town.icons.village_normal_large.png",
+    "manifest": "assets/manifest.json",
+    "recipe_path": "assets/recipes/town/icons/village_normal_large.json"
+  },
+  "output_path": "Content/Sprites/runeterra/noxus/town/icons/village_normal_large.png",
+  "production_status": "painted-master-complete",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "Real independent Noxus painted master and truthful provenance",
+    "Non-null SHA256 source pins",
+    "Official Noxus emblem provenance where used",
+    "Native-size silhouette/composition/alpha and role review",
+    "Explicit coordinator selection; no automatic acceptance"
+  ],
+  "role": "town-icon",
+  "sha256": "d456f47e24fb958a4ddc634141656afae7d514694c1852b083493cd50f076c1f",
+  "size": [
+    58,
+    64
+  ],
+  "source": "assets/source/town/icons/painted-v1/village_normal_large.png",
+  "source_sha256": "d456f47e24fb958a4ddc634141656afae7d514694c1852b083493cd50f076c1f",
+  "state_contract": "Distinct village/fort and normal/built state, own Noxian subject; painted native UI icon needed",
+  "status": "painted-candidate",
+  "visual_approval_granted": false,
+  "source_canvas": [
+    58,
+    64
+  ]
+}

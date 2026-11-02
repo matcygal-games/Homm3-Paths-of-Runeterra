@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "tool": "built-in image_gen",
+  "output": "master-v3.png",
+  "prompt_file": "prompt-v3.txt",
+  "original_generation_path": "C:\\Users\\matcy\\.codex\\generated_images\\01a15556-579f-7041-8958-a88e131375be\\exec-209c38c8-2da3-4bff-872c-d60327c43b20.png",
+  "reference_roles": [
+    {
+      "path": "assets/source/town/layout-v3/site-reference-crops/recruit.png",
+      "role": "Own site crop: edit target",
+      "sha256": "582c1d5f509d06ab0584fcfc96b2bceb14d60232cd0e54b2af5a540203f86134"
+    },
+    {
+      "path": "assets/source/town/layout-v3/built-study-v2.png",
+      "role": "Own complete lower-frontal composition: camera/light/material reference only",
+      "sha256": "3d24669ffadcdee6678459ca9bb3e23903f037c4babd2cf85a34a8a1d17cfcb4"
+    },
+    {
+      "path": "references/riot/heraldry/demacia-official-region-icon.png",
+      "role": "Private official crest shape: no copied original pixels",
+      "sha256": "d71bb021a49b704420f43c74f9dbfedb2bd89779bdafec1ea4be7bb8a172e734"
+    }
+  ],
+  "state": "dwellingLvl1",
+  "name": "Recruit Barracks",
+  "site": "recruit",
+  "native_box_xywh": [
+    215,
+    199,
+    113,
+    48
+  ],
+  "status": "generated-source; native-size and replacement-chain visual review pending; no release acceptance",
+  "rights": "Project-generated building. Private licensed/official subject references are separate inputs; no original image bundled.",
+  "production_mutations": "None: no active recipes, manifest or stage changed; earlier source versions preserved.",
+  "source_sha256": "bad3a82ed0d028244ab887b67056163205566f3790f4a1d73b501330d24c2afb",
+  "dimensions": [
+    1832,
+    858
+  ],
+  "prompt_sha256": "802e02d427b0b53c559fd721e0ab6a63f2e8568c375710bb25c3d29029ec9886",
+  "prompt": "Use-case: background-extraction plus explicitly requested construction-stage editing.\nReference1 is the EDIT TARGET crop of our project-owned lower-frontal town study. Reference2 is the complete OWN composition guide: only camera, depth, light and material authority, NOT a scene to reproduce. Reference3 is the PRIVATE official Demacia crest shape: redraw on existing small blue cloth where requested, no imported original pixels.\nMake ONE complete connected town-building construction object only. Preserve the target architectural family's lower frontal perspective and scene depth, upper-left light, richly textured painted/prerendered original-Heroes-III material language, weathered pale petricite, muted blue-gray slate/blue cloth, dark openings, steel and restrained old gold. Follow the exact specified state geometry, simpler foundations for early states and real structural improvements for upgrades. One visible state replaces its predecessor at SAME site. No high isometric dollhouse camera, glossy contemporary3D, anime, vector art, mobile proportions or League splash composition.\nTRUE transparent RGBA background, entire silhouette with modest transparent margins, only thin integral threshold/plinth and short soft alpha contact shadow. Remove ALL unrelated buildings, roads, terraces, cliff/grass rectangles, sky, water, landscape, shrubs and trees. Reconstruct obscured/cropped edges consistently. No people/crowds, labels/text/UI/frame, fake checkerboard or opaque background. Broad forms must read at actual native size; do not add tiny pointless clutter. Exact crest is upright central pointed blade/leaf, paired mirrored feather wings and tapered lower stem, NOT trident or fleur-de-lis. Do not add duplicate independent functional lots.\n\nTarget state: Recruit Barracks (dwellingLvl1).\nAssigned native site box: [215, 199, 113, 48] on800x374canvas.\nBASE RECRUIT BARRACKS. Isolate only the small one-story long open-front barracks/shed on the terrace, not the large upper-left Dragonguard balcony hall or music roof at right. Simplify to one low blue slate pitched roof on sturdy timber posts with pale low rear wall, modest shield racks under the eaves, one small entrance and compact threshold. NO second story, ornate corner towers or gold cornice. Long low horizontal silhouette roughly2.35:1, humble training lodge. Keep the lower frontal view from guide; no polearm army crowd.\n",
+  "native_candidate_export": {
+    "source": "assets/source/town/buildings/dwellingLvl1/master-v3.png",
+    "source_sha256": "bad3a82ed0d028244ab887b67056163205566f3790f4a1d73b501330d24c2afb",
+    "source_size": [
+      1832,
+      858
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 688284,
+    "near_opaque_pixels": 803144,
+    "nonzero_pixels": 883572,
+    "crop_alpha_threshold": 8,
+    "crop_xyxy": [
+      78,
+      67,
+      1758,
+      807
+    ],
+    "native_box_xywh": [
+      215,
+      199,
+      113,
+      48
+    ],
+    "native_preview": "references/town-comparisons/source-v3/dwellingLvl1-native.png",
+    "native_sha256": "396b0d860d801c9a9c0c9d535d716141dc5e1e782d4e5dccf0bcd7ede324a88f",
+    "approval": "not granted"
+  },
+  "alpha_treatment": "Generated RGBA preserved; technical alpha>=8 bounds crop only, no color-keying, opacity synthesis or background substitution."
+}

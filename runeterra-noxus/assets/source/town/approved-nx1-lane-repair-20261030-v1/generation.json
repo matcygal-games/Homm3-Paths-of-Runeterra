@@ -1,0 +1,29 @@
+{
+  "status": "authored configuration",
+  "candidate_only": true,
+  "image_generation_used": true,
+  "provider": "OpenAI built-in imagegen",
+  "model": "not exposed",
+  "transparent_background": false,
+  "prompt": "whole-lane-repair.prompt.txt",
+  "prompt_sha256": "92c92f10a71ae4e85458a938ada56c7e8f20c25816fb31c7c8d27418096ed70c",
+  "painted_master": "whole-lane-repair-master.png",
+  "painted_master_sha256": "9a573bb139b9a978ee7b07edf0926c6ab7362d9aede05a7b973f3ca0c5b62028",
+  "references": [
+    {
+      "role": "edit target",
+      "path": "assets/source/town/approved-nx1-20261029-v1/approved-master.png",
+      "sha256": "e37cfa2aff3c7764806772d57ccc5d5b547f10b8a3e4a0954645d90ecbd22241"
+    },
+    {
+      "role": "planning guide only",
+      "path": "assets/source/town/approved-nx1-lane-repair-20261030-v1/lane-intent-guide.png",
+      "sha256": "40f5df8075bb884913663eb13da31051c8383c0157be565f9f6bd510240c7f2b"
+    }
+  ],
+  "technical_replay": "assemble_lane_repair.py",
+  "technical_replay_sha256": "675f6069f82017e68739b20b4d94bfadc34b7fba4976510deffd4b175868ff33",
+  "scope": "Sparse actual painted lane bands from one complete-town edit; original approved master preserved. Physical/source/native acceptance remains pending.",
+  "license": null,
+  "redistribution": "unresolved"
+}

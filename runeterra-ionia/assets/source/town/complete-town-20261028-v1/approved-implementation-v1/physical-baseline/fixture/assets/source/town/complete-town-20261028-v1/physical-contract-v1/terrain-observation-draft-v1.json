@@ -1,0 +1,48 @@
+{
+  "status": "design proposal",
+  "binding": "Provisional hand observations of painted terrain, not a frozen support approval. Recheck against the final selected empty plate before generating masks.",
+  "land_boundary": [[0,68],[50,52],[110,50],[130,25],[200,10],[250,30],[280,70],[350,65],[425,82],[490,65],[560,52],[610,45],[650,69],[700,87],[740,96],[799,95],[799,373],[0,373]],
+  "water_polygons": [
+    [[0,179],[66,181],[97,188],[111,207],[140,216],[162,226],[177,238],[197,250],[217,260],[204,271],[180,277],[148,281],[109,279],[76,275],[43,276],[0,277]],
+    [[794,162],[799,163],[799,229],[791,226],[786,212],[790,194]]
+  ],
+  "level_regions": {
+    "cloud-sanctum-upper-ledge": [[126,89],[238,86],[250,98],[230,109],[140,109],[126,101]],
+    "assembly-upper-court": [[298,104],[447,103],[462,116],[443,132],[320,132],[298,120]],
+    "bastion-upper-gate-platform": [[488,95],[662,95],[676,109],[650,133],[576,136],[549,121],[493,114]],
+    "grove-covered-herbal-court": [[63,143],[145,142],[159,151],[142,175],[78,176],[58,163]],
+    "library-level-frontage": [[235,156],[310,153],[326,164],[306,186],[249,185],[233,174]],
+    "protector-upper-platform": [[624,139],[763,137],[781,149],[755,166],[646,166],[623,156]],
+    "monastery-front-court": [[132,200],[245,199],[259,213],[238,231],[153,231],[132,220]],
+    "monastery-banner-court": [[258,215],[282,215],[288,229],[279,235],[257,231]],
+    "bow-lodge-frontage": [[308,202],[430,202],[444,217],[414,233],[329,232],[308,221]],
+    "kashuri-armory-frontage": [[472,204],[606,202],[619,216],[591,234],[492,234],[473,224]],
+    "harmony-pavilion-landing": [[438,152],[482,150],[493,160],[478,176],[446,176],[434,165]],
+    "gateway-lower-open-court": [[674,219],[770,216],[785,232],[761,248],[696,247],[677,237]],
+    "disciple-court": [[273,281],[400,280],[420,298],[398,314],[296,311],[274,300]],
+    "resistance-assembly-court": [[432,284],[601,280],[632,296],[627,313],[475,312],[435,302]],
+    "workshop-level-front-and-side": [[0,326],[254,312],[269,341],[243,366],[147,370],[0,359]],
+    "inn-level-front-and-side": [[605,325],[799,322],[799,368],[719,371],[652,367],[605,350]],
+    "market-foreground-lane": [[279,344],[510,341],[524,358],[500,373],[300,373],[279,360]],
+    "grail-civic-lantern-footway": [[567,340],[601,340],[607,354],[593,362],[568,359],[563,350]]
+  },
+  "public_stair_observations": [
+    {"id":"west-upper-descent","polygon":[[231,103],[240,102],[279,140],[268,148],[246,127],[229,110]]},
+    {"id":"central-upper-descent","polygon":[[428,124],[440,123],[458,158],[445,161]]},
+    {"id":"bastion-east-descent","polygon":[[602,124],[614,124],[639,148],[629,155]]},
+    {"id":"library-west-monastery-descent","polygon":[[233,168],[246,171],[254,196],[244,199],[235,181]]},
+    {"id":"east-middle-descent","polygon":[[628,228],[640,229],[625,268],[612,269]]},
+    {"id":"central-lower-descent","polygon":[[434,235],[449,237],[446,279],[431,281]]},
+    {"id":"east-lower-descent","polygon":[[606,306],[616,306],[610,350],[599,350]]}
+  ],
+  "semantic_rules": [
+    "Level support is authored from horizontal landing/court observations, then explicitly excludes real stairs and external water. It is never the union of whatever foundation masks happen to be chosen.",
+    "Terrain land includes solid cliff/retaining surfaces, but level support does not automatically include their vertical faces.",
+    "Complete contact tracing must account for actual side feet, columns, detached owned banner/guardian bases and contact shadows, not only the bottom-center pixel.",
+    "Own entrance stairs may be role-partitioned only with an exact complete-contact union; no structural root or hidden coast pile is dropped.",
+    "All provisional polygons require exact final native pixel review and may expose source defects. They are not instructions to deform or move artwork until tests pass."
+  ],
+  "consumer_execution": false,
+  "physical_geometry_accepted": false,
+  "release_accepted": false
+}

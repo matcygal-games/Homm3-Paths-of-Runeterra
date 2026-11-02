@@ -1,0 +1,37 @@
+{
+  "status":"authored configuration",
+  "method":"References used for the recorded built-in image generations. Official anatomy/crest and installed native rendering examples are reference-only; project sources contain independently painted actors. Raw licensed inputs stay private outside the bundled source.",
+  "primary_reference_ids":{
+    "hallunatis-official":{"url":"https://dd.b.pvp.net/7_10_0/set7b/en_us/img/cards/07SH044-full.png","sha256":"ffb280fa3162718d9000c1f3aa0b451eec94d82003829f493d38ea3a5d05a314","role":"species anatomy only"},
+    "pairofant-official":{"url":"https://dd.b.pvp.net/7_10_0/set7b/en_us/img/cards/07SH043-full.png","sha256":"1da824557158db56d0e087a855da4f08a56ad69ced8f2d842626a2075a89f7d2","role":"visible head/tusks/tendrils and living megafauna identity; occluded body is original resolution"},
+    "ixtal-official-crest":{"url":"https://universe.leagueoflegends.com/images/ixtal_crest_icon@2x.png","sha256":"4837f95e3a7504627678742fb858b4c05f180e63e07d082651194cd0daf22450","role":"exact emblem shape; fictional coalition cloth adaptation"},
+    "native-roc":{"resource":"CROC.DEF","role":"actual native hand-painted materials/camera/scale; no copied actor pixels"},
+    "native-ancient-behemoth":{"resource":"CABEHE.DEF","role":"actual native hand-painted materials/camera/scale; no copied actor pixels or humanoid anatomy"}
+  },
+  "generations":{
+    "auroraHallunatis/master-v1.png":{"references":["hallunatis-official","native-roc","ixtal-official-crest"]},
+    "pairofant/master-v1.png":{"references":["pairofant-official","native-ancient-behemoth","ixtal-official-crest"]},
+    "crownedHallunatis/master-v1.png":{"own_inputs":["auroraHallunatis/master-v1.png"]},
+    "crownedHallunatis/master-v2.png":{"own_inputs":["crownedHallunatis/master-v1.png","auroraHallunatis/master-v1.png"]},
+    "elderPairofant/master-v1.png":{"own_inputs":["pairofant/master-v1.png"]},
+    "auroraHallunatis/movement-v1.png":{"own_inputs":["auroraHallunatis/master-v1.png"]},
+    "auroraHallunatis/combat-v1.png":{"own_inputs":["auroraHallunatis/master-v1.png"]},
+    "auroraHallunatis/flight-v1.png":{"own_inputs":["auroraHallunatis/master-v1.png"]},
+    "auroraHallunatis/holding-v2.png":{"own_inputs":["auroraHallunatis/master-v1.png"]},
+    "crownedHallunatis/movement-v1.png":{"own_inputs":["crownedHallunatis/master-v2.png"]},
+    "crownedHallunatis/combat-v1.png":{"own_inputs":["crownedHallunatis/master-v2.png"]},
+    "crownedHallunatis/flight-v1.png":{"own_inputs":["crownedHallunatis/master-v2.png"]},
+    "crownedHallunatis/holding-v2.png":{"own_inputs":["crownedHallunatis/master-v2.png"]},
+    "pairofant/movement-v1.png":{"own_inputs":["pairofant/master-v1.png"]},
+    "pairofant/combat-v1.png":{"own_inputs":["pairofant/master-v1.png"]},
+    "pairofant/death-v1.png":{"own_inputs":["pairofant/master-v1.png"]},
+    "pairofant/holding-v2.png":{"own_inputs":["pairofant/master-v1.png"]},
+    "elderPairofant/movement-v1.png":{"own_inputs":["elderPairofant/master-v1.png"]},
+    "elderPairofant/combat-v1.png":{"own_inputs":["elderPairofant/master-v1.png"]},
+    "elderPairofant/holding-v2.png":{"own_inputs":["elderPairofant/master-v1.png"],"selection":"unselected still too broad"},
+    "elderPairofant/holding-v3.png":{"own_inputs":["pairofant/holding-v2.png","elderPairofant/master-v1.png"]}
+  },
+  "excluded_selected_frames":[{"source":"elderPairofant/holding-v3.png","index":3,"reason":"outer soft-alpha touches right source edge; selected fidget uses three complete poses and neutral return"}],
+  "unselected_history":["crownedHallunatis/master-v1.png","crownedHallunatis/master-v2.png","elderPairofant/holding-v2.png"],
+  "visual_approval_granted":false
+}

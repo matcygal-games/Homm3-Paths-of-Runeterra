@@ -1,0 +1,58 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "Native portrait language of the same subject: readable silhouette at native size, visible equipment, no details below one pixel. attackLeft and attackRight must be two real directional attacks, not mirrored copies of one image.",
+  "canvas": [
+    58,
+    64
+  ],
+  "credits": {
+    "author": "OpenAI built-in image_gen; project-directed prompts and technical extraction",
+    "license": "unresolved; no redistribution grant inferred",
+    "redistribution": "pending; release prohibited"
+  },
+  "delivery": {
+    "cohort": "assets/source/creatures/chemBaronAgent/painted-imagegen-v2/cohort.json",
+    "cohort_sha256": "2d422e38ad02fef785886c55dbb210f70e2098a6d328b88f04e808a82d3c7e27",
+    "sources": [
+      {
+        "path": "assets/source/creatures/chemBaronAgent/painted-imagegen-v2/native/large.png",
+        "sha256": "416f7550910e1393d227bb9bd829ec791e73c6b818dbb69a4644ac23c10968bc"
+      }
+    ],
+    "status": "authored configuration; native review pending",
+    "visual_approval_granted": false
+  },
+  "dependencies": [],
+  "fit": "contain",
+  "generation": {
+    "image_generation_used": true,
+    "model": "not exposed by tool",
+    "painted_master": "assets/source/creatures/chemBaronAgent/painted-imagegen-v2/auxiliary-master.png",
+    "painted_master_sha256": "226887cc372c1b7e0b5bf7d3531f99903df6e18a6407312559a3e112f7eff97b",
+    "prompt": "Use case: stylized-concept. Production sheet of FOUR independently painted character views for an original Heroes of Might and Magic III additional Zaun town. A wide 4:1 image with exactly FOUR equal-width columns in ONE horizontal row, separated by generous transparent gutters. Genuinely transparent background, no grid lines or labels, no text. ONE view in each column. Original Heroes III prerendered-painted look: compact realistic proportions, tangible richly painted worn metal/cloth/leather, muted ochre highlights, cold deep shadows, fixed upper-left light. Low three-quarter frontal SIDE camera, not top-down or isometric, strong simple native sprite silhouette. No glossy modern 3D, anime, modern splash illustration, neon or flat vector.\nLEFT column1: HEAD AND SHOULDERS portrait, close enough for a readable face at58x64, fills its column with transparent corners and muted painted grey-brown vignette near shoulders.\nColumn2: separately painted full-body ADVENTURE standing figure facing RIGHT, entire figure including feet and tool, stable stance, head/body/tool exact same identity as portrait.\nColumn3: separately painted full-body MAP ENCOUNTER figure facing LEFT with tool raised in a short attack, redraw opposite view anatomically, not a mirrored duplicate.\nColumn4: separately painted full-body MAP ENCOUNTER figure facing RIGHT with tool in distinct contact pose. \nColumns2,3,4 keep identical scale: body head-to-foot about70% of image height with feet on common baseline88% down. Leave room for long tools, no cropped hands/feet/equipment, no painted ground shadows. They will be uniformly reduced to96x64 and64x64; solid material/value shapes matter more than micro detail. One person per column, absolutely no extra figures, references only for language/identity, paint everything fresh.\nSubject identity and equipment: ONE mature olive-skinned HUMAN WOMAN chemist with dark tied-back hair, keen visible unmasked face. T5 lean upright professional wearing stained ochre canvas long work coat with open split lower panels, leather reagent satchel at left hip, small CAGED amber/glass reagent flasks on a copper harness at shoulderback, narrow copper HOOKED WALKING STAFF carried as melee tool, one small capped vial in free hand, filter respirator HANGING AT BELT not worn. Clearest amber and restrained green liquid, dark crimson reagent, no glowing aura or gascloud. Base version: light worn unarmored canvas, three caged flasks, small satchel. No wizard hat, robes, gun, horror or corruption.\n",
+    "provenance": "assets/source/creatures/chemBaronAgent/painted-imagegen-v2/auxiliary-provenance.json",
+    "provider": "OpenAI built-in image_gen",
+    "route": "genuine painted auxiliary cohort; technical crop, uniform resample and assembly"
+  },
+  "id": "zaun.creature.chemBaronAgent.large",
+  "output_path": "Content/Sprites/runeterra/zaun/creatures/chemBaronAgent/large.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    58,
+    64
+  ],
+  "source": "assets/source/creatures/chemBaronAgent/painted-imagegen-v2/native/large.png",
+  "source_sha256": "416f7550910e1393d227bb9bd829ec791e73c6b818dbb69a4644ac23c10968bc",
+  "status": "built-unreviewed",
+  "title": "Chem-Baron Agent large",
+  "unit": "chemBaronAgent",
+  "visual_approval_granted": false
+}

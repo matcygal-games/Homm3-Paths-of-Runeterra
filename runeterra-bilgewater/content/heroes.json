@@ -1,0 +1,298 @@
+{
+  "missFortune":{
+    "class":"freeCaptain","female":true,"special":false,
+    "texts":{"name":"Miss Fortune","biography":"Sarah Fortune's long struggle against Gangplank has changed Bilgewater's balance of power. This post-Burning Tides command adaptation represents a local captain and her crews, without asserting that rivals cooperate in the same canonical army. Her unique paired pistols do not become mass-produced champion copies.","specialty":{"name":"Fortune's Crew","description":"Native upgrade-aware creature specialty for Corsairs and Pirate Marksmen.","tooltip":"{Fortune's Crew}\n\nNative tier-two creature specialty grants its ordinary level-dependent Attack, Defense and specialty Speed. No free second shot, missile splash or combat hero body."}},
+    "images":{"large":"runeterra/bilgewater/heroes/missFortune/large.png","small":"runeterra/bilgewater/heroes/missFortune/small.png","specialtyLarge":"runeterra/bilgewater/heroes/missFortune/specialtyLarge.png","specialtySmall":"runeterra/bilgewater/heroes/missFortune/specialtySmall.png"},
+    "army":[{"creature":"bilgeRat","min":12,"max":18},{"creature":"corsair","min":3,"max":4},{"creature":"shellshotGunner","min":1,"max":1}],
+    "skills":[{"skill":"core:archery","level":"basic"},{"skill":"core:leadership","level":"basic"}],"specialty":{"creature":"corsair"}
+  },
+  "illaoi":{
+    "class":"tideSeer","female":true,"special":false,
+    "texts":{"name":"Illaoi","biography":"Illaoi is the Truth Bearer of Nagakabouros, grounded in Buhru tradition and the life of Bilgewater. Her trials and conviction are not a promise of universal rescue or divine army resurrection. Patient spell-point recovery is a bounded command adaptation; her idol remains unique and no troop upgrades into Illaoi.","specialty":{"name":"Enduring Motion","description":"Recovers one additional spell point daily under native maximum-mana rules.","tooltip":"{Enduring Motion}\n\nMana regeneration +1 per day. No immediate refill, resurrection, automatic healing or additional combat cast."}},
+    "images":{"large":"runeterra/bilgewater/heroes/illaoi/large.png","small":"runeterra/bilgewater/heroes/illaoi/small.png","specialtyLarge":"runeterra/bilgewater/heroes/illaoi/specialtyLarge.png","specialtySmall":"runeterra/bilgewater/heroes/illaoi/specialtySmall.png"},
+    "army":[{"creature":"bilgeRat","min":10,"max":16},{"creature":"corsair","min":2,"max":3},{"creature":"shellshotGunner","min":1,"max":2}],
+    "skills":[{"skill":"core:wisdom","level":"basic"},{"skill":"core:mysticism","level":"basic"}],"spellbook":["core:cure","core:bless"],"specialty":{"bonuses":{"endurance":{"type":"MANA_REGENERATION","val":1}}}
+  },
+  "twistedFate":{
+    "class":"tideSeer","female":false,"special":false,
+    "texts":{"name":"Twisted Fate","biography":"Tobias Felix has made his life among the ports, wagers and criminal partnerships of Bilgewater. His enduring relationship with Graves supplies a local story role beyond a passing visit. His resourcefulness becomes a fixed army Luck bonus rather than guaranteed outcomes, magical card stun or a global teleport.","specialty":{"name":"Loaded Dice","description":"Native fixed army Luck +1, subject to normal caps.","tooltip":"{Loaded Dice}\n\nLuck +1, independent of hero level. Ordinary Luck skill and Fortune add under the native cap. No guaranteed critical hit, free gold or map teleport."}},
+    "images":{"large":"runeterra/bilgewater/heroes/twistedFate/large.png","small":"runeterra/bilgewater/heroes/twistedFate/small.png","specialtyLarge":"runeterra/bilgewater/heroes/twistedFate/specialtyLarge.png","specialtySmall":"runeterra/bilgewater/heroes/twistedFate/specialtySmall.png"},
+    "army":[{"creature":"bilgeRat","min":10,"max":16},{"creature":"corsair","min":2,"max":3},{"creature":"shellshotGunner","min":1,"max":2}],
+    "skills":[{"skill":"core:wisdom","level":"basic"},{"skill":"core:luck","level":"basic"}],"spellbook":["core:fortune","core:magicArrow"],"specialty":{"bonuses":{"loadedDice":{"type":"LUCK","val":1}}}
+  },
+  "graves":{
+    "class":"freeCaptain","female":false,"special":false,
+    "texts":{"name":"Graves","biography":"Malcolm Graves is an outlaw whose long partnership and feud with Twisted Fate belong to Bilgewater's continuing criminal life. His weapon remains one exceptional firearm. This army command adaptation improves ordinary ranged skill; it does not supply a personal shotgun stack, smoke screen or damage stored for a later blast.","specialty":{"name":"Heavy Shot","description":"Native Archery specialty, step size five.","tooltip":"{Heavy Shot}\n\nIncreases the existing Archery skill's effectiveness by 5% per hero level. Does not add five percentage points per level or remove melee, distance and wall penalties."}},
+    "images":{"large":"runeterra/bilgewater/heroes/graves/large.png","small":"runeterra/bilgewater/heroes/graves/small.png","specialtyLarge":"runeterra/bilgewater/heroes/graves/specialtyLarge.png","specialtySmall":"runeterra/bilgewater/heroes/graves/specialtySmall.png"},
+    "army":[{"creature":"bilgeRat","min":12,"max":18},{"creature":"corsair","min":3,"max":4},{"creature":"shellshotGunner","min":1,"max":1}],
+    "skills":[{"skill":"core:archery","level":"basic"},{"skill":"core:tactics","level":"basic"}],"specialty":{"secondary":"core:archery","stepSize":5}
+  },
+  "gangplank": {
+    "class": "freeCaptain",
+    "female": false,
+    "special": false,
+    "texts": {
+      "name": "Gangplank",
+      "biography": "The former Reaver King survives the loss of his ship and public power after Burning Tides. His continuing local ties and rival ambition support voluntary ordinary skirmish command, not obedience to Miss Fortune or a canonical alliance. Native Offense is an army adaptation; no barrel chain, global bombardment or free plunder income.",
+      "specialty": {
+        "name": "Reaver's Command",
+        "description": "Native Offense specialty, step size five.",
+        "tooltip": "{Reaver's Command}\n\nScales existing Offense effectiveness by 5% per hero level under native melee rules. Ordinary skirmish eligibility does not assert cooperation with rival captains; no free cannon barrage or permanent income."
+      }
+    },
+    "images": {
+      "large": "runeterra/bilgewater/heroes/gangplank/large.png",
+      "small": "runeterra/bilgewater/heroes/gangplank/small.png",
+      "specialtyLarge": "runeterra/bilgewater/heroes/gangplank/specialtyLarge.png",
+      "specialtySmall": "runeterra/bilgewater/heroes/gangplank/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "bilgeRat",
+        "min": 12,
+        "max": 18
+      },
+      {
+        "creature": "corsair",
+        "min": 3,
+        "max": 4
+      },
+      {
+        "creature": "shellshotGunner",
+        "min": 1,
+        "max": 1
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:offence",
+        "level": "basic"
+      },
+      {
+        "skill": "core:artillery",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "secondary": "core:offence",
+      "stepSize": 5
+    }
+  },
+  "fizz": {
+    "class": "tideSeer",
+    "female": false,
+    "special": false,
+    "texts": {
+      "name": "Fizz",
+      "biography": "Fizz is an amphibious yordle with enduring ties to Bilgewater's reefs, sailors and local folklore. Voluntary ordinary skirmish command is a project adaptation, not civic obedience or a transfer to Bandle City. Native Navigation improves boat movement; ordinary armies do not gain swimming, untargetability or a summoned shark.",
+      "specialty": {
+        "name": "Tide Runner",
+        "description": "Native Navigation specialty, step size five.",
+        "tooltip": "{Tide Runner}\n\nScales existing Navigation effectiveness by 5% per hero level while sailing a boat. No land movement bonus, water walking, summoned shark or invulnerability."
+      }
+    },
+    "images": {
+      "large": "runeterra/bilgewater/heroes/fizz/large.png",
+      "small": "runeterra/bilgewater/heroes/fizz/small.png",
+      "specialtyLarge": "runeterra/bilgewater/heroes/fizz/specialtyLarge.png",
+      "specialtySmall": "runeterra/bilgewater/heroes/fizz/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "bilgeRat",
+        "min": 10,
+        "max": 16
+      },
+      {
+        "creature": "corsair",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "creature": "shellshotGunner",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:wisdom",
+        "level": "basic"
+      },
+      {
+        "skill": "core:navigation",
+        "level": "basic"
+      }
+    ],
+    "spellbook": [
+      "core:haste",
+      "core:bless"
+    ],
+    "specialty": {
+      "secondary": "core:navigation",
+      "stepSize": 5
+    }
+  },
+  "pyke": {
+    "class": "freeCaptain",
+    "female": false,
+    "special": false,
+    "texts": {
+      "name": "Pyke",
+      "biography": "Pyke's slaughter-dock life and supernatural return bind him to Bilgewater's harbor story. Ordinary skirmish eligibility represents a unique voluntary commander adaptation, not a tame civic officer or a new undead military institution. Native Scouting supplies awareness without executions, casualty conversion or kill payments.",
+      "specialty": {
+        "name": "Harbor Stalker",
+        "description": "Native Scouting specialty, step size five.",
+        "tooltip": "{Harbor Stalker}\n\nScales existing Scouting effectiveness by 5% per hero level, with native integer rounding. No army invisibility, hidden-target detection, instant execution or bounty resource."
+      }
+    },
+    "images": {
+      "large": "runeterra/bilgewater/heroes/pyke/large.png",
+      "small": "runeterra/bilgewater/heroes/pyke/small.png",
+      "specialtyLarge": "runeterra/bilgewater/heroes/pyke/specialtyLarge.png",
+      "specialtySmall": "runeterra/bilgewater/heroes/pyke/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "bilgeRat",
+        "min": 10,
+        "max": 16
+      },
+      {
+        "creature": "corsair",
+        "min": 3,
+        "max": 4
+      },
+      {
+        "creature": "shellshotGunner",
+        "min": 1,
+        "max": 1
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:scouting",
+        "level": "basic"
+      },
+      {
+        "skill": "core:offence",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "secondary": "core:scouting",
+      "stepSize": 5
+    }
+  },
+  "nautilus": {
+    "class": "tideSeer",
+    "female": false,
+    "special": false,
+    "texts": {
+      "name": "Nautilus",
+      "biography": "Nautilus belongs to Bilgewater's continuing salvage and tithe legends. Ordinary skirmish eligibility is a unique commander abstraction, not political obedience or a claim that his armor is mass-produced. Native Armorer translates endurance into bounded army command, without a targetable champion stack or universal spell protection.",
+      "specialty": {
+        "name": "Titan's Burden",
+        "description": "Native Armorer specialty, step size five.",
+        "tooltip": "{Titan's Burden}\n\nScales existing Armorer effectiveness by 5% per hero level. Ordinary physical-reduction stacking applies to leviathan hide. No universal spell protection, depth-charge stun or immortal commander body."
+      }
+    },
+    "images": {
+      "large": "runeterra/bilgewater/heroes/nautilus/large.png",
+      "small": "runeterra/bilgewater/heroes/nautilus/small.png",
+      "specialtyLarge": "runeterra/bilgewater/heroes/nautilus/specialtyLarge.png",
+      "specialtySmall": "runeterra/bilgewater/heroes/nautilus/specialtySmall.png"
+    },
+    "army": [
+      {
+        "creature": "bilgeRat",
+        "min": 10,
+        "max": 16
+      },
+      {
+        "creature": "corsair",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "creature": "shellshotGunner",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "skills": [
+      {
+        "skill": "core:wisdom",
+        "level": "basic"
+      },
+      {
+        "skill": "core:armorer",
+        "level": "basic"
+      }
+    ],
+    "spellbook": [
+      "core:shield",
+      "core:slow"
+    ],
+    "specialty": {
+      "secondary": "core:armorer",
+      "stepSize": 5
+    }
+  },
+  "jack": {
+    "class": "freeCaptain", "female": false, "special": false,
+    "texts": {"name": "Jack", "biography": "Jack's fighting business and King's Court crew belong to Bilgewater's harbor underworld. His trip to the Navori pits does not make Ionia his primary home. Recruiting this unique LoR champion as an army commander is a skirmish adaptation, not a promise that rival crews cooperate or that his personal boxing becomes a recruitable species.", "specialty": {"name": "King's Court", "description": "Native Offense specialty, step size five.", "tooltip": "{King's Court}\n\nImproves the effectiveness of existing Offense by 5% per hero level under native rules. Applies to ordinary melee damage; no personal champion stack, coin engine or extra attacks."}},
+    "images": {"large": "runeterra/bilgewater/heroes/jack/large.png", "small": "runeterra/bilgewater/heroes/jack/small.png", "specialtyLarge": "runeterra/bilgewater/heroes/jack/specialtyLarge.png", "specialtySmall": "runeterra/bilgewater/heroes/jack/specialtySmall.png"},
+    "army": [{"creature": "bilgeRat", "min": 12, "max": 18}, {"creature": "corsair", "min": 3, "max": 4}, {"creature": "shellshotGunner", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:offence", "level": "basic"}, {"skill": "core:leadership", "level": "basic"}],
+    "specialty": {"secondary": "core:offence", "stepSize": 5}
+  },
+  "rafen": {
+    "class": "freeCaptain", "female": false, "special": false,
+    "texts": {"name": "Rafen", "biography": "A longstanding member of Sarah Fortune's crew, Rafen carries out her preparations in Burning Tides and remains beside her after Gangplank's defeat. This supporting character becomes a unique Bilgewater skirmish commander. His portrait and navigational specialty are original project interpretations; the source does not establish those exact features or powers.", "specialty": {"name": "Syren's Course", "description": "Native Navigation specialty, step size five.", "tooltip": "{Syren's Course}\n\nImproves existing Navigation effectiveness by 5% per hero level. Applies while sailing a boat, with ordinary native limits; no land movement bonus, water walking or free vessel."}},
+    "images": {"large": "runeterra/bilgewater/heroes/rafen/large.png", "small": "runeterra/bilgewater/heroes/rafen/small.png", "specialtyLarge": "runeterra/bilgewater/heroes/rafen/specialtyLarge.png", "specialtySmall": "runeterra/bilgewater/heroes/rafen/specialtySmall.png"},
+    "army": [{"creature": "bilgeRat", "min": 11, "max": 17}, {"creature": "corsair", "min": 3, "max": 4}, {"creature": "shellshotGunner", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:navigation", "level": "basic"}, {"skill": "core:scouting", "level": "basic"}],
+    "specialty": {"secondary": "core:navigation", "stepSize": 5}
+  },
+  "nukkle": {
+    "class": "freeCaptain", "female": false, "special": false,
+    "texts": {"name": "Nukkle", "biography": "Nukkle is a named fighter in the King's Court circle depicted by Legends of Runeterra. This command adaptation gives the harbor scrapper a separate identity rather than cloning Jack. His ordinary skirmish access and crew-training specialty are project fiction; no League champion biography or permanent civic allegiance is invented.", "specialty": {"name": "Dockside Scrappers", "description": "Native upgrade-aware Bilge Rat creature specialty.", "tooltip": "{Dockside Scrappers}\n\nNative level-dependent Attack, Defense and specialty Speed for Bilge Rats and Sea Dogs. No personal fighter stack, bleed or free follow-up attack."}},
+    "images": {"large": "runeterra/bilgewater/heroes/nukkle/large.png", "small": "runeterra/bilgewater/heroes/nukkle/small.png", "specialtyLarge": "runeterra/bilgewater/heroes/nukkle/specialtyLarge.png", "specialtySmall": "runeterra/bilgewater/heroes/nukkle/specialtySmall.png"},
+    "army": [{"creature": "bilgeRat", "min": 14, "max": 20}, {"creature": "corsair", "min": 2, "max": 3}, {"creature": "shellshotGunner", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:offence", "level": "basic"}, {"skill": "core:scouting", "level": "basic"}],
+    "specialty": {"creature": "bilgeRat"}
+  },
+  "mako": {
+    "class": "freeCaptain", "female": false, "special": false,
+    "texts": {"name": "Mako", "biography": "Mako is a distinct named fighter in the Bilgewater King's Court cohort, linked to Nukkle and Bull in official LoR records. The trip to Ionia's fighting pits does not transfer this crew's regional home. Scouting is a bounded army-command adaptation, not a canonical spell, extra troop or claim of political obedience.", "specialty": {"name": "Ring Awareness", "description": "Native Scouting specialty, step size five.", "tooltip": "{Ring Awareness}\n\nImproves existing Scouting effectiveness by 5% per hero level, with native rounding. No combat evasion, invisibility, teleport or additional attack."}},
+    "images": {"large": "runeterra/bilgewater/heroes/mako/large.png", "small": "runeterra/bilgewater/heroes/mako/small.png", "specialtyLarge": "runeterra/bilgewater/heroes/mako/specialtyLarge.png", "specialtySmall": "runeterra/bilgewater/heroes/mako/specialtySmall.png"},
+    "army": [{"creature": "bilgeRat", "min": 12, "max": 18}, {"creature": "corsair", "min": 3, "max": 4}, {"creature": "shellshotGunner", "min": 1, "max": 1}],
+    "skills": [{"skill": "core:scouting", "level": "basic"}, {"skill": "core:tactics", "level": "basic"}],
+    "specialty": {"secondary": "core:scouting", "stepSize": 5}
+  },
+  "bull": {
+    "class": "freeCaptain", "female": false, "special": false,
+    "texts": {"name": "Bull", "biography": "Official LoR flavor identifies Bull as Jack's scarred mentor and sparring partner. That continuing relationship grounds this unique supporting figure in Bilgewater's fighting community. His Armorer specialty translates patient defense into native army command; it is project fiction and grants neither invulnerability nor an automatically inherited champion body.", "specialty": {"name": "Veteran Guard", "description": "Native Armorer specialty, step size five.", "tooltip": "{Veteran Guard}\n\nImproves existing Armorer effectiveness by 5% per hero level. Ordinary physical-reduction stacking and rounding apply; no spell immunity, regeneration or retaliation immunity."}},
+    "images": {"large": "runeterra/bilgewater/heroes/bull/large.png", "small": "runeterra/bilgewater/heroes/bull/small.png", "specialtyLarge": "runeterra/bilgewater/heroes/bull/specialtyLarge.png", "specialtySmall": "runeterra/bilgewater/heroes/bull/specialtySmall.png"},
+    "army": [{"creature": "bilgeRat", "min": 12, "max": 18}, {"creature": "corsair", "min": 2, "max": 3}, {"creature": "shellshotGunner", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:armorer", "level": "basic"}, {"skill": "core:offence", "level": "basic"}],
+    "specialty": {"secondary": "core:armorer", "stepSize": 5}
+  },
+  "fivePunchPablo": {
+    "class": "freeCaptain", "female": false, "special": false,
+    "texts": {"name": "Five-Punch Pablo", "biography": "Pablo's official LoR dialogue presents an experienced boxing trainer who keeps Jack fighting fit. His enduring King's Court role supports a Bilgewater home beyond a card-region label. A native First Aid specialty is a small project adaptation of that coaching role, requiring the ordinary war machine; it is not a copied spell or automatic resurrection.", "specialty": {"name": "Back in the Fight", "description": "Native First Aid specialty, step size five.", "tooltip": "{Back in the Fight}\n\nImproves existing First Aid effectiveness by 5% per hero level through its native specialty target. Requires a First Aid Tent and ordinary legal targets; no free tent, resurrection or passive army-wide healing."}},
+    "images": {"large": "runeterra/bilgewater/heroes/fivePunchPablo/large.png", "small": "runeterra/bilgewater/heroes/fivePunchPablo/small.png", "specialtyLarge": "runeterra/bilgewater/heroes/fivePunchPablo/specialtyLarge.png", "specialtySmall": "runeterra/bilgewater/heroes/fivePunchPablo/specialtySmall.png"},
+    "army": [{"creature": "bilgeRat", "min": 10, "max": 16}, {"creature": "corsair", "min": 3, "max": 4}, {"creature": "shellshotGunner", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:firstAid", "level": "basic"}, {"skill": "core:armorer", "level": "basic"}],
+    "specialty": {"secondary": "core:firstAid", "stepSize": 5}
+  },
+  "perfidiousPromoter": {
+    "class": "freeCaptain", "female": false, "special": false,
+    "texts": {"name": "Perfidious Promoter", "biography": "The named Perfidious Promoter card presents the contact for Jack's fight business. His continuing commercial role, crew context and harbor identity support Bilgewater rather than a visiting Ionian allegiance. This unique supporting figure becomes a skirmish commander; his card title supplies the display identity without inventing a canonical personal name or government office.", "specialty": {"name": "Favorable Odds", "description": "Native fixed army Luck +1 under ordinary caps.", "tooltip": "{Favorable Odds}\n\nLuck +1, independent of level and subject to ordinary caps. No guaranteed lucky strike, gambling income, free resources or improved marketplace exchange."}},
+    "images": {"large": "runeterra/bilgewater/heroes/perfidiousPromoter/large.png", "small": "runeterra/bilgewater/heroes/perfidiousPromoter/small.png", "specialtyLarge": "runeterra/bilgewater/heroes/perfidiousPromoter/specialtyLarge.png", "specialtySmall": "runeterra/bilgewater/heroes/perfidiousPromoter/specialtySmall.png"},
+    "army": [{"creature": "bilgeRat", "min": 10, "max": 16}, {"creature": "corsair", "min": 3, "max": 4}, {"creature": "shellshotGunner", "min": 1, "max": 2}],
+    "skills": [{"skill": "core:luck", "level": "basic"}, {"skill": "core:scouting", "level": "basic"}],
+    "specialty": {"bonuses": {"favorableOdds": {"type": "LUCK", "val": 1}}}
+  }
+}

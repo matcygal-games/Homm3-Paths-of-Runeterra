@@ -1,0 +1,116 @@
+{
+  "acceptance": "Production requirements only. No rig/guide/primitive/reference may substitute for painted final art; this recipe must fail while its real master/hash is absent.",
+  "art_direction": "Independent Noxian iron/crimson/black subjects in Heroes III native painted language. Never recolour Castle or Demacia art, import original pixels or invent an official crest.",
+  "building": "villageHall",
+  "building_contract": {
+    "full_canvas_placement": {
+      "x": 0,
+      "y": 0,
+      "z": 142
+    },
+    "name": "Legion Outpost",
+    "native_ground_contact": [
+      323,
+      10,
+      145,
+      132
+    ],
+    "upgrades": null
+  },
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI built-in imagegen; deterministic project conversion",
+    "license": null,
+    "redistribution": "unresolved; no release or redistribution approval"
+  },
+  "dimensions_basis": {
+    "canvas": [
+      800,
+      374
+    ],
+    "mode": "RGB",
+    "reference_only": "runeterra-demacia/references/images/tbcsback.pcx.png",
+    "reference_sha256": "949012ea68999207934bc482f1552858474fe50cefddef17eaac00d4b98c2be9",
+    "use": "Dimensions/format only. No reference pixels, palette, source recipe, layout silhouette or licensed art copied."
+  },
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": false,
+    "provider": "OpenAI built-in imagegen",
+    "model": "Not exposed by the built-in tool",
+    "model_disclosure": "Not exposed by the builtin tool.",
+    "prompt": "Precise painted2D HERALDRY EDIT only. Firstimage is an own genuinely paintedNoxian townbuilding. Second image is Riot's official Noxus regioncrest reference for SHAPE ONLY, not a texture to paste. Paint the exact characteristic NOXUS CREST as an agedSILVER/IVORYcloth-embroideredsilhouette on the building's principal visible hanging crimsonbanner: bilateral swept hookedouterlobes, paired uppernegativecutouts, narrowcentralspine anddeep lower channels. It MUST resemble thatactualNoxussymbol, notgenerictrident, sword, eagle, fleur-de-lis or inventedglyph. Choose a clearlyvisiblelargefrontcrimsonbanner; fitcrestgenerouslyinsidefabricfolds, preserveembroidery/light andplainclothborder, no lettering. Preserve ALL architecture, doors/stairs/foundationposition, lowthreequartercamera, richdarkbasalt/blackiron/copperpaintedmaterials, lighting, exactoverallshape andGenuinealphaoutsidebuilding. Do not invent newbanner if principalone exists; no opaque backdrop, neon, modern3D/Blender/vector/anime. Thepaintedcrestmustremainlegible afterthebuildingisdownsampledtotheoriginalHeroesIII townsize (roughly110pxwide), notminusculeornament. Output ONE complete transparentbuilding, samecanvasandregistration asfirstimage. This is independent paintedheraldry, notredistributionofreferenceicon.\nBuilding state: villageHall",
+    "painted_master": "assets/source/town/urban-community-20261024-v4/villageHall/master.png",
+    "painted_master_sha256": "c1417d33e93531b4cd669a605f95c55c064715b8d7c8a197ad8b6aa393c6f0fe",
+    "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/villageHall.json",
+    "generation_record_sha256": "34f4cd23469c5ee03896a6330cae62a183ddc3496e46d0751d1e32b8ce201080",
+    "conversion": {
+      "method": "Uniform alpha crop/contain of the byte-exact existing painted2D master; frozen930 planned placement. No new building art, perspective warp or raster painting.",
+      "source_crop": [
+        11,
+        100,
+        1348,
+        1086
+      ],
+      "placement_box": [
+        323,
+        10,
+        145,
+        132
+      ],
+      "native_position": [
+        325,
+        36
+      ],
+      "native_size": [
+        141,
+        104
+      ],
+      "site": "throneHall",
+      "mirror_x": false,
+      "assembly_script": "assets/source/town/urban-community-20261024-v6/prepare_candidate.py",
+      "assembly_script_sha256": "5c3a7440841551441cc7a5cf6ee1edac1d80c7c7931da13e0f9db168ebe581e8",
+      "frozen_plan_sha256": "93097eded68b7c275dd689c0fe344684b0e439102d4acf5c0549ba0b0c0b88c0"
+    },
+    "method": "Exact alpha128 silhouette area and two-pixel outward MaxFilter5-minus-silhouette highlight."
+  },
+  "inventory": {
+    "asset_id": "noxus.Sprites.runeterra.noxus.town.structures.villageHall_border.png",
+    "manifest": "assets/manifest.json",
+    "recipe_path": "assets/recipes/town/structures/villageHall-border.json"
+  },
+  "mask_contract": "Same800x374 silhouette/camera as own building. Area must isolate actual clickable painted shape; border must follow it. No rectangular/opaque placeholder mask or masks copied from native/Demacia structures.",
+  "output_path": "Content/Sprites/runeterra/noxus/town/structures/villageHall_border.png",
+  "pivot": {
+    "basis": "Full town canvas; content declares x0/y0; no Castle/Demacia building placement copied",
+    "x": 0,
+    "y": 0
+  },
+  "production_status": "derived-technical-mask-complete",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "Real independent Noxus painted master and truthful provenance",
+    "Non-null SHA256 source pins",
+    "Official Noxus emblem provenance where used",
+    "Native-size silhouette/composition/alpha and role review",
+    "Explicit coordinator selection; no automatic acceptance"
+  ],
+  "role": "town-structure-border",
+  "sha256": "0891b0e3635d659f31504fafef4f2a69b5ba5558e22fbb02f25d48187747d3ce",
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/urban-community-20261024-v6/structures/villageHall/border.png",
+  "source_sha256": "0891b0e3635d659f31504fafef4f2a69b5ba5558e22fbb02f25d48187747d3ce",
+  "status": "built-unreviewed",
+  "visual_approval_granted": false,
+  "source_canvas": [
+    800,
+    374
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "Independent Zaun character portrait in Heroes III native painted language. The portrait must match the authored biography and must not reuse official character art.",
+  "canvas": [
+    48,
+    32
+  ],
+  "credits": {
+    "author": "OpenAI built-in image_gen, independently prompted by Runeterra Zaun champion art worker",
+    "license": "No external redistribution clearance asserted",
+    "redistribution": "unresolved; release prohibited"
+  },
+  "delivery": {
+    "sources": [
+      {
+        "path": "assets/source/heroes/urgot/painted-v2/small-master.png",
+        "sha256": "cb20cd75395e9e09ae5e5b8a34bf50bd108483d57f2c427537c36654e4402e7c"
+      }
+    ],
+    "status": "built-unreviewed; runtime and final visual acceptance pending",
+    "visual_approval_granted": false
+  },
+  "dependencies": [],
+  "fit": "contain",
+  "generation": {
+    "image_generation_used": true,
+    "model": null,
+    "model_note": "Tool did not expose the model identifier.",
+    "painted_master": "assets/source/heroes/urgot/painted-v2/portrait-and-specialty-master.png",
+    "painted_master_sha256": "c3dde787d09d2b434502840c3a18b52190440de091b33d5523b25a72614aeb25",
+    "prompt": "Use case: stylized-concept. Asset type: production champion portrait plus its own specialty object, original Heroes of Might and Magic III expansion ZAUN. Generate an independently painted master, not a copied official artwork.\nComposition: landscape1536x1024, two panels only. LEFT two thirds squareportrait x0-1023: head-and-shoulders, whole head centered x512, hair top y60, chin y730, shoulders visible. RIGHT third x1024-1535: the single specialty object, fully visible and centrally contained in x1080-1480,y280-750 on flat dark brown. Sharp vertical boundary x1024. No text, frame, labels, watermark or other heroes. Specialty is NOT a cropped face.\nStyle: original1999 Heroes III richly textured pre-rendered/painted fantasy portraits. Strong readable simple facial planes and silhouette, lit face, rugged worn materials, top-left light, opaque atmospheric scenery behind subject, subdued background. At58x64 large and48x32 small, face and hair must read distinctly. Restrained highlights, detailed brushwork and material irregularity. No modern League splash-art composition, anime, storybook cute, glossy contemporary3D, neon, military camouflage, modern streetwear, arbitrary coarse pixelfilter.\n\nIdentity:URGOT. Portrait subject:Massive bald pale-skinned former headsman, heavy scarred brow, harsh eyes looking down-left, broad fused industrial shoulder machinery, lower jaw restrained in an iron respirator collar. A human face with heavy mechanical augmentation, not a green robot or an undead corpse. Cold steel and ochre industrial plating. Background: murky green-gray Dredge chain-hoist interior, head clearly lit from upper left. No gore.\nRIGHT specialty object:One short heavy industrial shotgun receiver and stubby barrel, brutally practical dark iron, wood grip, brass chamber. Single coherent weapon fully visible on dark brown.",
+    "provenance_record": "assets/source/heroes/urgot/painted-v2/generation.json",
+    "provider": "OpenAI built-in image_gen tool",
+    "returned_provenance": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-1663-7df0-8ab7-dcf90bfe6162 as C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-1663-7df0-8ab7-dcf90bfe6162\\exec-4fcb90d3-7ddf-4f6b-962f-c1b21f00d98d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "route": "Genuine built-in image generation; original master copied byte-for-byte; technical rectangular crop, RGBA conversion and uniform LANCZOS resampling. Specialty is the separate object panel, never the portrait."
+  },
+  "hero": "urgot",
+  "id": "zaun.hero.urgot.small",
+  "output_path": "Content/Sprites/runeterra/zaun/heroes/urgot/small.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    48,
+    32
+  ],
+  "source": "assets/source/heroes/urgot/painted-v2/small-master.png",
+  "source_sha256": "cb20cd75395e9e09ae5e5b8a34bf50bd108483d57f2c427537c36654e4402e7c",
+  "status": "built-unreviewed",
+  "title": "urgot small",
+  "visual_approval_granted": false
+}

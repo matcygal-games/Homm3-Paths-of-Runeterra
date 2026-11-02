@@ -1,0 +1,69 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "Independent Zaun character portrait in Heroes III native painted language. The portrait must match the authored biography and must not reuse official character art.",
+  "canvas": [
+    32,
+    32
+  ],
+  "credits": {
+    "author": "OpenAI built-in image_gen, independently prompted by Runeterra Zaun champion art worker",
+    "license": "No external redistribution clearance asserted",
+    "redistribution": "unresolved; release prohibited"
+  },
+  "delivery": {
+    "sources": [
+      {
+        "path": "assets/source/heroes/singed/painted-v2/specialtySmall-tight-crop-master.png",
+        "sha256": "8baf35fb8db975468855abb76b84d5863d391b3e676f06e730597f9061b555d1"
+      }
+    ],
+    "status": "built-unreviewed; runtime and final visual acceptance pending",
+    "technical_crop_box": [
+      1070,
+      150,
+      1495,
+      860
+    ],
+    "visual_approval_granted": false
+  },
+  "dependencies": [],
+  "fit": "contain",
+  "generation": {
+    "image_generation_used": true,
+    "model": null,
+    "model_note": "Tool did not expose the model identifier.",
+    "painted_master": "assets/source/heroes/singed/painted-v2/portrait-and-specialty-master.png",
+    "painted_master_sha256": "95f19db41b36dbf6d9f869cc44aaf9f94fd52b80d245d65246dcd7198bff55a1",
+    "prompt": "Use case: stylized-concept. Asset type: production champion portrait plus its own specialty object, original Heroes of Might and Magic III expansion ZAUN. Generate an independently painted master, not a copied official artwork.\nComposition: landscape1536x1024, two panels only. LEFT two thirds squareportrait x0-1023: head-and-shoulders, whole head centered x512, hair top y60, chin y730, shoulders visible. RIGHT third x1024-1535: the single specialty object, fully visible and centrally contained in x1080-1480,y280-750 on flat dark brown. Sharp vertical boundary x1024. No text, frame, labels, watermark or other heroes. Specialty is NOT a cropped face.\nStyle: original1999 Heroes III richly textured pre-rendered/painted fantasy portraits. Strong readable simple facial planes and silhouette, lit face, rugged worn materials, top-left light, opaque atmospheric scenery behind subject, subdued background. At58x64 large and48x32 small, face and hair must read distinctly. Restrained highlights, detailed brushwork and material irregularity. No modern League splash-art composition, anime, storybook cute, glossy contemporary3D, neon, military camouflage, modern streetwear, arbitrary coarse pixelfilter.\n\nIdentity:SINGED. Portrait subject:An older lean bald human alchymist of Zaun, narrow calculating eyes, scarred but legible pale face with cloth bandage wrapping the lower jaw, high dark leather laboratory collar, small tarnished vial clips. Head turned three-quarter left, hard top-left light. Background: dim olive chemical laboratory with bottle silhouettes and a warm hanging lamp. No Shimmer attribution, no gas covering the face.\nRIGHT specialty object:One heavy amber reagent flask with a wrapped neck, iron stopper and a faint ember in amber liquid, on dark brown.",
+    "provenance_record": "assets/source/heroes/singed/painted-v2/generation.json",
+    "provider": "OpenAI built-in image_gen tool",
+    "returned_provenance": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-1663-7df0-8ab7-dcf90bfe6162 as C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-1663-7df0-8ab7-dcf90bfe6162\\exec-693b27fb-3e39-4070-8221-43af72e065b8.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "route": "Genuine built-in image generation; original master copied byte-for-byte; technical rectangular crop, RGBA conversion and uniform LANCZOS resampling. Specialty is the separate object panel, never the portrait."
+  },
+  "hero": "singed",
+  "id": "zaun.hero.singed.specialtySmall",
+  "output_path": "Content/Sprites/runeterra/zaun/heroes/singed/specialtySmall.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    32,
+    32
+  ],
+  "source": "assets/source/heroes/singed/painted-v2/specialtySmall-tight-crop-master.png",
+  "source_sha256": "8baf35fb8db975468855abb76b84d5863d391b3e676f06e730597f9061b555d1",
+  "specialty": {
+    "description": "After Fireball is learned normally, its effect gains the native 5% spell-specialty increase per completed hero-level/target-tier step.",
+    "name": "Alchemical Bombardment",
+    "rule": "The specialty image shows the authored specialty. It is not a duplicate portrait."
+  },
+  "status": "built-unreviewed",
+  "title": "singed specialtySmall",
+  "visual_approval_granted": false
+}

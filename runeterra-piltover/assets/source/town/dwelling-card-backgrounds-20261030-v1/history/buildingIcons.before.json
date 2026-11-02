@@ -1,0 +1,668 @@
+{
+  "canvas": [
+    150,
+    70
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI built-in imagegen and deterministic 2D source conversion",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/assemble_complete_v2.py",
+      "sha256": "c000c646047f8d81bec5d19694ff0df30e4a1e405dc8e788cf34c3c738b220d5"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/atlas-calibration-v1.json",
+      "sha256": "5da797c544d4959bbdaeb280048f2833aaef2811b48547c44041ef912d885453"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/build_geometry_v2.py",
+      "sha256": "99334916056e8a91d5539d0b7fc5fe2a5c8df31b285fe24756f6272240fae32a"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/build_recipes_v2.py",
+      "sha256": "98c466f65f1f49c57ec16c11e48e1a0daf5cd7d630971876225c2b6c7c1f6dcc"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/complete-town-master-v2-clean.png",
+      "sha256": "0b2308b17236cd02d7a3247d51a47f861ef0d419bcd4f5fc163b5f83c69a0155"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/complete-town-native-v2.png",
+      "sha256": "25564d48d469ba974a42f88e3b202bced394a016a83e1cc54e87ad8b420acbf7"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/family-atlases/academy/atlas-v1.png",
+      "sha256": "2468e1d653f5f7ac6a3c4efb57ec8ce7fa162aa096a4eab18683ac6fa84c0740"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/family-atlases/academy/prompt-v1.txt",
+      "sha256": "13acf1ef38727a99e0c416839066b3f3474b95b702ac7ec8316946ffb116ebb8"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/family-atlases/apex/atlas-v1.png",
+      "sha256": "9b29690a42dacb7e86f643be0a102dd3074a6a2eb396d52773f4a797b1581638"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/family-atlases/apex/prompt-v1.txt",
+      "sha256": "d9d12ee6273ddce4c39c679f615ec28ee13afe3a2b704a2696c948caebaecdc0"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/family-atlases/artificers/atlas-v1.png",
+      "sha256": "bf1913912598147cc5121519061cedb4f33ce85e0d980c245bfad0874c0afe39"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/family-atlases/artificers/prompt-v1.txt",
+      "sha256": "1c1f1cd8adc2ca3aaeede38608e7f1d37adde6b1e4b716cea5e5d9cf0a181571"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/family-atlases/cadets/atlas-v1.png",
+      "sha256": "88489463d32ee3f46064c7f2d15fbd24a8c7d05b09e358015aafebab9a084b65"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/family-atlases/cadets/prompt-v1.txt",
+      "sha256": "87d01c5a5f64998b1c1f3b0c26e0f2801e6884612d4afd3928fc7353bc126551"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/family-atlases/coast/atlas-v1.png",
+      "sha256": "ef8ee82348eb508f4616b74df16171bb792a38dd32d2f77d65d0f4add072eafe"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/family-atlases/coast/prompt-v1.txt",
+      "sha256": "ef533f3fd63f108a86cd3ad97c99398bccd73af33b05f4ebc012c386f55731d6"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/family-atlases/council/atlas-v1.png",
+      "sha256": "070624cbfc39ca87396038dce44b9dd027a0389dc057476a424e159da9478fe9"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/family-atlases/council/prompt-v1.txt",
+      "sha256": "c3c48618cc34527f6dab9a0009ed8664c9104f86924ea70a6403b9592740b87b"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/family-atlases/empty-terrain/atlas-v2.png",
+      "sha256": "d962df516d6d60666676cb15858287f271effcffa2f3b4cad85966a9fc28d527"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/family-atlases/empty-terrain/prompt-v2.txt",
+      "sha256": "7a819d935a1303028e7f58023ea32651d5184ffc5d8b3488d8e216d9486437cd"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/family-atlases/fort/atlas-v1.png",
+      "sha256": "1e8fda649addc9e9a67e27fb3671248c2a58f0e400692e7f9a35330c9d778a72"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/family-atlases/fort/prompt-v1.txt",
+      "sha256": "4755fa123a13594d78a6248ba6a6f4a7816ac52c557ff60a6f1aed619b596738"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/family-atlases/freight/atlas-v1.png",
+      "sha256": "72256bdaa97179652bc6da454fd5a40251fd02c52ba8b1956cfb2d363d09e931"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/family-atlases/freight/prompt-v1.txt",
+      "sha256": "05de2b5e58e7b55ca9a4cf5432c61d68b337a10262081f2167af71057bafe953"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/family-atlases/rifles/atlas-v1.png",
+      "sha256": "27cb611f491e6cd26e81e1e0762f4c39d402b6f78be6db29c4925f8a070d2fbf"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/family-atlases/rifles/prompt-v1.txt",
+      "sha256": "da227247183bebdc0bf8899f5549beb31aa35676730ecd015d635e3c75407f7e"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/family-atlases/rotors/atlas-v1.png",
+      "sha256": "26fec945a45fab6b75d255c70922093805bd813d07221e24fddd0b71b5ebe474"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/family-atlases/rotors/prompt-v1.txt",
+      "sha256": "88ff1c004f4b34aefb71bce7349003a3a1191fc7c5954a3c4f4295d0c52e5b46"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/family-atlases/stompers/atlas-v1.png",
+      "sha256": "11c163bda3667f4c22c233550dd802f29f0b0f55e9dd24fab0765f47e79d640c"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/family-atlases/stompers/prompt-v1.txt",
+      "sha256": "3fac29eb0ff4379907a7d36dc6e731a97fa546ed74cf12939d9216351a93454e"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/frame-registration-v1.json",
+      "sha256": "08392a7730c99b2cd843231ea00c3f91add9fa32f934ce79ccd3a82eb6825333"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/functional-program-v2.json",
+      "sha256": "3e1e215d46bafcb1da60ef476f719fca8a4b1ce3dca19dd447b8f9aa6d9af1ee"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/prompt-v2.txt",
+      "sha256": "49880951a7b4a7fe8f22019a0513f3b2d29431b839957fcb598b73d27ce2fffe"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/silhouette-traces-v1.json",
+      "sha256": "66a6fad6e1eaceebcfd38014f5437385312239ccb66996c4cd443be0665d9919"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/source-generation-public-v2.json",
+      "sha256": "149a0097ef19b9b896bc448f991b84d0ffeac06a08d42eafce22522b1e2d5ce5"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/blacksmith/construction.png",
+      "sha256": "a89a1804e730d5dfb6956e3d4805b040333e2ab3dc2dec264b2a4b326bacb118"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/capitol/construction.png",
+      "sha256": "94bb8094e144e3a7bee97b25b2bc5fe3bbb1fbd222164d0ef29c2ccfa789211e"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/castle/construction.png",
+      "sha256": "94c8d87f5b9fc245dfda077b1d874b743d8e3c861da3740138bad8a8289393e8"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/citadel/construction.png",
+      "sha256": "431012fe63cbdf716605db421160bcbcbff340949fc7ed2eabec5027e7a46aa9"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/cityHall/construction.png",
+      "sha256": "c7cd752ad00a2b1c0b85bdc6d619d5f5c697fe1970e050e3f885be6ee9506ad8"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingLvl1/construction.png",
+      "sha256": "ce544599ff0e1aa3558b7b9a47791c662a99b2731cf320ea7130491df0393ded"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingLvl2/construction.png",
+      "sha256": "22047bee03078b14537265939c82dc0249a4d82b50000b77021f6303bbc88627"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingLvl3/construction.png",
+      "sha256": "9e7cec8104c738b10f62c7b03d53b02f4297bd01f6018cd5aa11236dcffb8c7a"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingLvl4/construction.png",
+      "sha256": "1b271a0ced5570635e069af5b17f905aae55902860e972f35481582ce5e3cee5"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingLvl5/construction.png",
+      "sha256": "8a5fa19a9aba0f0fd6cd929230d6a4b823e07017fdb5abf6b0085c0ceeb5e60f"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingLvl6/construction.png",
+      "sha256": "acd2a836f0444e3c164bd85834a1b77fd0d2966ec8d591950cd931935271b463"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingLvl7/construction.png",
+      "sha256": "1ec8493c6a55abacc14f6f1c5bed3f041850e6802e26bd7365d41f3f74a2b2a3"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingUpLvl1/construction.png",
+      "sha256": "d291f0fd8f30984bc5eae3d4f38e887f51ab59c7f286e6c2d4358fca312a01cd"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingUpLvl2/construction.png",
+      "sha256": "86d439addeefc481c800baf0a6cd9cd82f71a6a0035cfa88351e6e233a0004ca"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingUpLvl3/construction.png",
+      "sha256": "74f10ed798676ac961f6f8c6e6ab5bad00a8fc649348e2723b5f2491dc577660"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingUpLvl4/construction.png",
+      "sha256": "fac4ab0704461ec6a29e6a0551d71ffe094fc45ce31dc88371f7c8f1d8fa630f"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingUpLvl5/construction.png",
+      "sha256": "6702a5639b7b60bfbd246d0ebe729dc2ab4e014cd3888fb62ebe5312a44ec39e"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingUpLvl6/construction.png",
+      "sha256": "9cf51e13451883a8f95e5fd4d996907f741162decee8a6353b4431a1d97989d4"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingUpLvl7/construction.png",
+      "sha256": "08e80e3ce90f22d389b36a028f8ac51935537d008b867bc51db41309a5f4e067"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/fort/construction.png",
+      "sha256": "6bcd7b8bf21c810ffdf9449abf15968d9883b68eb2f26994b3b4d8fdf621cd9d"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/grail/construction.png",
+      "sha256": "aa0f951bae3d62856550f83b4b73d473db3d351c6bde8d67b07d2e1135f9e1d5"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/mageGuild1/construction.png",
+      "sha256": "977fc34cd1bca1a8c118d72a3fba0546f0a7570fa95dae82f9adb1e491fe749f"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/mageGuild2/construction.png",
+      "sha256": "61c4564ebafb185b1610d6c2968314ba8f0ab99a8ab4afba1d7c46c430b042c5"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/mageGuild3/construction.png",
+      "sha256": "bd595bc3f1cec25948af3fd6e4869e868e629cd54a064b7d7693be84ce1ca5a2"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/marketplace/construction.png",
+      "sha256": "21c125c142523a6ba035ed815b774d75474507dd14cc4e7e1151decbe278e0ba"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/resourceSilo/construction.png",
+      "sha256": "0837c82f139f7d974297cc8a74a0cbae0799679219a105cf46edb4d7b96a2855"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/ship/construction.png",
+      "sha256": "aa57816715f5ffe9bec94a2665cac7e82d52f835bc671dd0e0dfcf5db0a9f1b9"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/shipyard/construction.png",
+      "sha256": "a683a20bb045f2835858acdd3f6970e1731dc04c6a3d279e8296291a4ff19074"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/special1/construction.png",
+      "sha256": "ad6580f3c36cb26b2a3484c3f6bcc4eb2e749aa77ec396c37097cfd141638fae"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/special2/construction.png",
+      "sha256": "bd187700863c4f23c5b27398ba5e10d2ce093243e18d52ff0fec3c79240c69b9"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/special3/construction.png",
+      "sha256": "747fa2dc21d815f5b06b79f4788d2084170f0545cbadde8a6ad709c5f1174bbe"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/special4/construction.png",
+      "sha256": "de68fc822b2f5bf9f65b19c85ea1d6e1ba71a6cae42378d6268d5ac127e66e2d"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/tavern/construction.png",
+      "sha256": "989f2aa15d3e5f23dcf7599aee526f26a3e486670675aa460dde1d7d62415b36"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/townHall/construction.png",
+      "sha256": "aa3bb26da3aec30090045ae3de43ce61207d0d85af50f2598e7d60841fcc5e81"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/derived-ui/villageHall/construction.png",
+      "sha256": "5c6ba8441bfc58f6d5fb245c44e17ec85277635d8c26a06ba03f84f00ad26d58"
+    }
+  ],
+  "frames": [
+    {
+      "building": "mageGuild1",
+      "frame": 0,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/mageGuild1/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "977fc34cd1bca1a8c118d72a3fba0546f0a7570fa95dae82f9adb1e491fe749f"
+    },
+    {
+      "building": "mageGuild2",
+      "frame": 1,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/mageGuild2/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "61c4564ebafb185b1610d6c2968314ba8f0ab99a8ab4afba1d7c46c430b042c5"
+    },
+    {
+      "building": "mageGuild3",
+      "frame": 2,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/mageGuild3/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "bd595bc3f1cec25948af3fd6e4869e868e629cd54a064b7d7693be84ce1ca5a2"
+    },
+    {
+      "building": "tavern",
+      "frame": 5,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/tavern/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "989f2aa15d3e5f23dcf7599aee526f26a3e486670675aa460dde1d7d62415b36"
+    },
+    {
+      "building": "shipyard",
+      "frame": 6,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/shipyard/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "a683a20bb045f2835858acdd3f6970e1731dc04c6a3d279e8296291a4ff19074"
+    },
+    {
+      "building": "fort",
+      "frame": 7,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/fort/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "6bcd7b8bf21c810ffdf9449abf15968d9883b68eb2f26994b3b4d8fdf621cd9d"
+    },
+    {
+      "building": "citadel",
+      "frame": 8,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/citadel/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "431012fe63cbdf716605db421160bcbcbff340949fc7ed2eabec5027e7a46aa9"
+    },
+    {
+      "building": "castle",
+      "frame": 9,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/castle/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "94c8d87f5b9fc245dfda077b1d874b743d8e3c861da3740138bad8a8289393e8"
+    },
+    {
+      "building": "villageHall",
+      "frame": 10,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/villageHall/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "5c6ba8441bfc58f6d5fb245c44e17ec85277635d8c26a06ba03f84f00ad26d58"
+    },
+    {
+      "building": "townHall",
+      "frame": 11,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/townHall/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "aa3bb26da3aec30090045ae3de43ce61207d0d85af50f2598e7d60841fcc5e81"
+    },
+    {
+      "building": "cityHall",
+      "frame": 12,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/cityHall/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "c7cd752ad00a2b1c0b85bdc6d619d5f5c697fe1970e050e3f885be6ee9506ad8"
+    },
+    {
+      "building": "capitol",
+      "frame": 13,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/capitol/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "94bb8094e144e3a7bee97b25b2bc5fe3bbb1fbd222164d0ef29c2ccfa789211e"
+    },
+    {
+      "building": "marketplace",
+      "frame": 14,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/marketplace/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "21c125c142523a6ba035ed815b774d75474507dd14cc4e7e1151decbe278e0ba"
+    },
+    {
+      "building": "resourceSilo",
+      "frame": 15,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/resourceSilo/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "0837c82f139f7d974297cc8a74a0cbae0799679219a105cf46edb4d7b96a2855"
+    },
+    {
+      "building": "blacksmith",
+      "frame": 16,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/blacksmith/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "a89a1804e730d5dfb6956e3d4805b040333e2ab3dc2dec264b2a4b326bacb118"
+    },
+    {
+      "building": "special1",
+      "frame": 17,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/special1/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "ad6580f3c36cb26b2a3484c3f6bcc4eb2e749aa77ec396c37097cfd141638fae"
+    },
+    {
+      "building": "ship",
+      "frame": 20,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/ship/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "aa57816715f5ffe9bec94a2665cac7e82d52f835bc671dd0e0dfcf5db0a9f1b9"
+    },
+    {
+      "building": "special2",
+      "frame": 21,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/special2/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "bd187700863c4f23c5b27398ba5e10d2ce093243e18d52ff0fec3c79240c69b9"
+    },
+    {
+      "building": "special3",
+      "frame": 22,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/special3/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "747fa2dc21d815f5b06b79f4788d2084170f0545cbadde8a6ad709c5f1174bbe"
+    },
+    {
+      "building": "special4",
+      "frame": 23,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/special4/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "de68fc822b2f5bf9f65b19c85ea1d6e1ba71a6cae42378d6268d5ac127e66e2d"
+    },
+    {
+      "building": "grail",
+      "frame": 26,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/grail/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "aa0f951bae3d62856550f83b4b73d473db3d351c6bde8d67b07d2e1135f9e1d5"
+    },
+    {
+      "building": "dwellingLvl1",
+      "frame": 30,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingLvl1/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "ce544599ff0e1aa3558b7b9a47791c662a99b2731cf320ea7130491df0393ded"
+    },
+    {
+      "building": "dwellingLvl2",
+      "frame": 31,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingLvl2/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "22047bee03078b14537265939c82dc0249a4d82b50000b77021f6303bbc88627"
+    },
+    {
+      "building": "dwellingLvl3",
+      "frame": 32,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingLvl3/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "9e7cec8104c738b10f62c7b03d53b02f4297bd01f6018cd5aa11236dcffb8c7a"
+    },
+    {
+      "building": "dwellingLvl4",
+      "frame": 33,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingLvl4/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "1b271a0ced5570635e069af5b17f905aae55902860e972f35481582ce5e3cee5"
+    },
+    {
+      "building": "dwellingLvl5",
+      "frame": 34,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingLvl5/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "8a5fa19a9aba0f0fd6cd929230d6a4b823e07017fdb5abf6b0085c0ceeb5e60f"
+    },
+    {
+      "building": "dwellingLvl6",
+      "frame": 35,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingLvl6/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "acd2a836f0444e3c164bd85834a1b77fd0d2966ec8d591950cd931935271b463"
+    },
+    {
+      "building": "dwellingLvl7",
+      "frame": 36,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingLvl7/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "1ec8493c6a55abacc14f6f1c5bed3f041850e6802e26bd7365d41f3f74a2b2a3"
+    },
+    {
+      "building": "dwellingUpLvl1",
+      "frame": 37,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingUpLvl1/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "d291f0fd8f30984bc5eae3d4f38e887f51ab59c7f286e6c2d4358fca312a01cd"
+    },
+    {
+      "building": "dwellingUpLvl2",
+      "frame": 38,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingUpLvl2/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "86d439addeefc481c800baf0a6cd9cd82f71a6a0035cfa88351e6e233a0004ca"
+    },
+    {
+      "building": "dwellingUpLvl3",
+      "frame": 39,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingUpLvl3/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "74f10ed798676ac961f6f8c6e6ab5bad00a8fc649348e2723b5f2491dc577660"
+    },
+    {
+      "building": "dwellingUpLvl4",
+      "frame": 40,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingUpLvl4/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "fac4ab0704461ec6a29e6a0551d71ffe094fc45ce31dc88371f7c8f1d8fa630f"
+    },
+    {
+      "building": "dwellingUpLvl5",
+      "frame": 41,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingUpLvl5/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "6702a5639b7b60bfbd246d0ebe729dc2ab4e014cd3888fb62ebe5312a44ec39e"
+    },
+    {
+      "building": "dwellingUpLvl6",
+      "frame": 42,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingUpLvl6/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "9cf51e13451883a8f95e5fd4d996907f741162decee8a6353b4431a1d97989d4"
+    },
+    {
+      "building": "dwellingUpLvl7",
+      "frame": 43,
+      "source": "assets/source/town/complete-town-20261027-v2/derived-ui/dwellingUpLvl7/construction.png",
+      "source_canvas": [
+        150,
+        70
+      ],
+      "source_sha256": "08e80e3ce90f22d389b36a028f8ac51935537d008b867bc51db41309a5f4e067"
+    }
+  ],
+  "generateOverlay": 0,
+  "generateShadow": 0,
+  "generation": {
+    "image_generation_used": true,
+    "model": "not exposed by tool",
+    "painted_master": "assets/source/town/complete-town-20261027-v2/complete-town-master-v2-clean.png",
+    "painted_master_sha256": "0b2308b17236cd02d7a3247d51a47f861ef0d419bcd4f5fc163b5f83c69a0155",
+    "producer": "assets/source/town/complete-town-20261027-v2/assemble_complete_v2.py",
+    "producer_sha256": "c000c646047f8d81bec5d19694ff0df30e4a1e405dc8e788cf34c3c738b220d5",
+    "prompt": "Use case: precise-object-edit / complete HeroesIII town master correction.\nImage1 EDIT TARGET is the complete newly designed Piltover city. Image2 original native HeroesIII backdrop supplies only earthy painted contrast/rendering, not composition. Keep the target's exact wide2.139:1 framing, low-front three-quarter forced perspective, whole cohesive city architecture, all16 functional families, every existing clear door/street/landing, blue/brass/ivory palette, civic crests, lighting and compact urban density. DO NOT return an empty backdrop or cutout sprites. Work only within this COMPLETE WHOLE TOWN painting. No labels/UI/text.\nThe city layout is approved as a source concept: grand council clockhall upperleft, major academy/blue observatory center-right, Warden gate farright, rotor testingloft highmiddleleft, big blue machine assembly middleleft, small inhabited craft neighborhoods, powerful foreground foundry/market/cargo exchange. Preserve all that.\nCorrect TWO clipped edge subjects so their full silhouette and contact shadows are INSIDE the canvas:\n1 FAR-RIGHT OPTIONAL BOAT: current moored ship's bow/hull/sails are cut by right edge. Repaint as a COMPLETE compact elegant dark-timber single-mast trading sloop with blue/navy furled canvas and modest brass rigging, moored diagonally at the existing right-edge quay. Reorient it so the COMPLETE bow, stern, hull, mast/rigging and its water reflection fit between native x738 and790 and y245 and360, with at least8nativepixels clear right margin. Move/recompose ONLY that boat and immediate dockwater as needed; keep cargo warehouse, its dry masonry footing and supported quay/shipyard distinct and unchanged. Do not replace boat with tiny toy or add another huge dock building. Connected gangway must meet dry quay. Water remains intentional only at harbor/right-bottom edge.\n2 FOREGROUND LEFT FOUNDRY: its left extension roof/facade and some groundshadow currently touch/cross the left image edge. Recompose the foundry's whole connected architectural footprint slightly inward, subtly shorten its left lean-to as needed so ALL functional roofs, chimneys, complete left wall, steps and contact shadow fit inside the canvas, with at least8nativepixels of actual painted paving/ground margin at the left. Preserve its strong size, open orange furnace, robust brass gantry, blue induction cylinders, navy crest and coherent streetfront. Do NOT simply zoom out the entire city or move every building. Do not mask away/crop architecture. Keep a level stone landing under its full root profile, clear entrance and existing connection to central market lane.\nKeep the two middle-left civic/artisan frontages BEHIND the foundry separately readable: the small two-storey cadet station with navy civic banner atnative x15..95,y180..220 and the adjacent gabled artificer's atelier atx100..190,y185..240 should each show its own frontdoor and full visible front steps; avoid the revised foundry covering those doors. Keep the other ordinary functional buildings, open blue power substation, social inn, Stomper workshop, freight depot, rifle lodge, museum, optional central Progress Orrery all present and unchanged. No new architecture/function removals or merged structures.\nEvery functional building stands on LEVEL dry masonry beneath its complete foundation/contactshadow. Stairs link landings between buildings, never run under bodies. Preserve actual connected small streets and present restrained natural overlaps; no giant vacant plazas or repeatedpads.\nRich genuine painted2D original1999HeroesIII matte surfaces, warm coherent light, no Blender/3D/photo/anime/vector/bloom. Full-bleed exactly800:374 aspect; no letterbox/margins outside the town scene, no UI or framing. Output ONE corrected complete city painting, no slices.\n",
+    "prompt_file": "assets/source/town/complete-town-20261027-v2/prompt-v2.txt",
+    "provider": "OpenAI builtin imagegen",
+    "source_generation_ledger": "assets/source/town/complete-town-20261027-v2/source-generation-public-v2.json"
+  },
+  "output_path": "Content/Sprites/runeterra/piltover/town/buildingIcons.json",
+  "pivot": {
+    "x": 75,
+    "y": 35
+  },
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "indexed_animation",
+  "status": "painted-candidate",
+  "visual_approval_granted": false
+}

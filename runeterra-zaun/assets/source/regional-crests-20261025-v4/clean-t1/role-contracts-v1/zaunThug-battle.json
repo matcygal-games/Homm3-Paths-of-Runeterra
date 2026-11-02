@@ -1,0 +1,115 @@
+{
+  "attack_semantics": "One ordinary single-target melee strike with ordinary retaliation. No shot, spell, teleport, extra action or breath unless the declared action groups say so.",
+  "canvas": [
+    450,
+    400
+  ],
+  "contract_scope": "Ordinary current semantic replay input only. No old guided source/frame/generation path is retained or parsed by the producer.",
+  "current_graphics_timing": {
+    "animationTime": {
+      "attack": 1,
+      "idle": 10,
+      "walk": 1
+    },
+    "timeBetweenFidgets": 0.1
+  },
+  "footprint": {
+    "battle": {
+      "body_center": [
+        175,
+        266
+      ],
+      "doubleWide": false,
+      "front_center": [
+        197,
+        266
+      ],
+      "hex_height": 42,
+      "hex_width": 44,
+      "rear_center": [
+        153,
+        266
+      ],
+      "semantics": "Two adjacent battle hexes derived from doubleWide, not from the adventure mapMask. The mask PNG is a technical source guide only, not a game asset."
+    },
+    "doubleWide": false,
+    "mapMask": [
+      "VV",
+      "VA"
+    ]
+  },
+  "generateOverlay": 1,
+  "generateShadow": 1,
+  "groups": [
+    {
+      "action": "MOVING",
+      "frame_count": 6,
+      "group": 0
+    },
+    {
+      "action": "MOUSEON",
+      "frame_count": 4,
+      "group": 1
+    },
+    {
+      "action": "HOLDING",
+      "frame_count": 1,
+      "group": 2
+    },
+    {
+      "action": "HITTED",
+      "frame_count": 4,
+      "group": 3
+    },
+    {
+      "action": "DEFENCE",
+      "frame_count": 4,
+      "group": 4
+    },
+    {
+      "action": "DEATH",
+      "frame_count": 6,
+      "group": 5
+    },
+    {
+      "action": "TURN_L",
+      "frame_count": 4,
+      "group": 7
+    },
+    {
+      "action": "TURN_R",
+      "frame_count": 4,
+      "group": 8
+    },
+    {
+      "action": "ATTACK_UP",
+      "frame_count": 6,
+      "group": 11
+    },
+    {
+      "action": "ATTACK_FRONT",
+      "frame_count": 6,
+      "group": 12
+    },
+    {
+      "action": "ATTACK_DOWN",
+      "frame_count": 6,
+      "group": 13
+    },
+    {
+      "action": "DEAD",
+      "frame_count": 1,
+      "group": 22
+    }
+  ],
+  "id": "zaun.creature.zaunThug.battle",
+  "native_registration": "450x400/pivot197,266 for battle. Legacy body_center175 data is preserved as historical metadata only; new actual root ledger governs conversion, without changing content footprint.",
+  "output_path": "Content/Sprites/runeterra/zaun/creatures/zaunThug/battle.json",
+  "pivot": {
+    "x": 197,
+    "y": 266
+  },
+  "recipe_type": "vcmi_animation",
+  "title": "Zaun Thug battle animation",
+  "unit": "zaunThug"
+}

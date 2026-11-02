@@ -1,0 +1,119 @@
+{
+  "acceptance": "Technical mask derived from the painted layer: the area mask defines the clickable footprint and the border mask the highlight outline. Both must be derived from the own painted layer, never copied from another faction or from the original game.",
+  "building": "ship",
+  "canvas": [
+    800,
+    374
+  ],
+  "content_box": [
+    0,
+    0,
+    800,
+    374
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; prompted and technically assembled by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/port-master.png",
+      "sha256": "bd0674cf0338491b7a070601d82f5d2ce401b9e3a295e38751812e1f49828704"
+    },
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/port-provenance.json",
+      "sha256": "28fb7bdaa304ee3159397c943b43ee3ed884c1eb9af5bae84ee0b11bae94a804"
+    },
+    {
+      "path": "assets/source/town/painted-community-20261024-v1/prepare.py",
+      "sha256": "570add080d42e1b17d7aec2939862119a175a664281e04050585cfb68138a835"
+    },
+    {
+      "path": "scripts/zaun_coastal_state_v1.py",
+      "sha256": "5aa45de45f59be66d393df44538743b1842db5ba5f1c4e48c1d83acaa13f3cf7"
+    },
+    {
+      "path": "assets/source/town/painted-community-20261024-v1/structures/shipyard/layer.png",
+      "sha256": "326747886992bc3920566618277d6ff02358f18ff5c8313c9afff3a03b95a1ba"
+    }
+  ],
+  "fit": "contain",
+  "generation": {
+    "conversion": {
+      "composition_rectangle": [
+        712,
+        278,
+        88,
+        96
+      ],
+      "method": "Original painted2D source crop; uniform contain; full800x374 placement; native alpha-derived area/one-pixel outward border",
+      "native_z": 374,
+      "revision": "painted-community-20261024-v1",
+      "source_crop": [
+        1216,
+        16,
+        2151,
+        716
+      ]
+    },
+    "credits": {
+      "author": "OpenAI built-in imagegen; prompted by Codex",
+      "license": null,
+      "redistribution": "unresolved; release prohibited"
+    },
+    "edit_target": [
+      "assets/source/town/painted-v3/dock-master.png",
+      "assets/source/town/painted-v3/ship_only-master.png"
+    ],
+    "generation_date": "2026-10-21",
+    "image_generation_used": true,
+    "model": null,
+    "model_disclosed": false,
+    "painted_master": "assets/source/town/chemtech-v4-buildings/port-master.png",
+    "painted_master_sha256": "bd0674cf0338491b7a070601d82f5d2ce401b9e3a295e38751812e1f49828704",
+    "prompt": "Usecase: precise-object-edit. OwnZaunportassets. Input1LEFTemptydock isdocktarget; ignoreitsrightdockedshipassembly. Input2isstandalonebarge. ProduceTWO fullySEPARATEcutoutsSIDE BY SIDE withlargegutter: LEFTemptyindustrialdockwith2cranes/hoistssmallstoreshed, RIGHTstandalonecargoBARGe onlywithNOdockunderit. Keep existingbrownwetwood/rustiron/rope/crate shapes andlowfrontthreequartercamera. CHEMTECHrevision: greenpressureglasslampsandshortcopperfeedpipeonthedock; bargehasvisiblegreenreagentcargo barrels/flasks/cratesandonegreenenginepressurecell, patchedPURPLEcargotarpandpurpleflag, greenlocalglasslightnotgreeneverywhere. Preserveboatwholehull/bow/sternandflagpole withgeneroustransparentpadding, allcraneapicesanddockrampsinsidecanvas. OriginalHeroesIIItexturedpainted/prerenderedtownstyle,broadupperleftlight, locallyreflectedchemicalgreen. Genuinealphaoutside2independentcutouts,nobackdrop/waterbackground/text/neonoutlines/people.",
+    "provider": "OpenAI built-in image_gen.imagegen",
+    "returned_provenance": {
+      "output_hint": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-560d-7462-a9a5-3670486c088c as C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-560d-7462-a9a5-3670486c088c\\exec-fca7e239-59cb-41f4-a3be-3df24f868be5.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "route": "Genuine image-generation edit of own Zaun buildings; technical crop/uniform scale/placement only",
+    "technical_assembly": {
+      "boat_sha256": "5e61c5d798c70b1611f82ca0293c47e0fe860f73fe3fcdca9245a0fa0acc2b64",
+      "boat_source": "assets/source/town/painted-community-20261024-v1/structures/ship/boat-only.png",
+      "contains_base_shipyard": true,
+      "dock_sha256": "326747886992bc3920566618277d6ff02358f18ff5c8313c9afff3a03b95a1ba",
+      "dock_source": "assets/source/town/painted-community-20261024-v1/structures/shipyard/layer.png",
+      "method": "Existing native Zaun dock+boat family replacement helper"
+    },
+    "visual_approval_granted": false
+  },
+  "id": "zaun.town.structure.ship.border",
+  "identity_review": "build/reports/painted-town-community-20261024-v1/source-pixel-review.json",
+  "native_visual_review": "pending",
+  "output_path": "Content/Sprites/runeterra/zaun/town/structures/ship_border.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/painted-community-20261024-v1/structures/ship/border.png",
+  "source_sha256": "53ede2fc0e1f6928da3ebb4840df18336d96768cd03747ad2c3053d38f48bfbf",
+  "status": "built-unreviewed",
+  "technical": true,
+  "technical_assembly": {
+    "image_generation_used": false,
+    "native_replacement_contains_base": true,
+    "provenance": "assets/source/town/coastal-state-v1/provenance.json"
+  },
+  "title": "Moored Barge border mask",
+  "visual_approval_granted": false
+}

@@ -1,0 +1,757 @@
+{
+  "production_status": "painted-master-complete-unapproved",
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in imagegen",
+    "model": "Not exposed by the tool",
+    "prompt": "Original1999HeroesofMightandMagicIII richlytextured painted2D creatureart, compactbelievableanatomyandreadableequipment, upperleftlight,warmocclusion, restrainedhighlights,noplastic3D, noanime/vector/modernLeagueplash. CreateONEoriginal PILTOVER ACADEMY ARTIFICER fullbodymaster. Adultbrown-skinnedmanwithdarkshorttexturedhairandmaturevisibleface, ivorycottonshirt/darktailorednavywaistcoat, brownleathertoolbeltcase, practicalboots, protectivegogglesWORNABOVEeyesnotblindfold, smallcog-spirePiltovercrestonphysicalwaistcoatshoulderpatch. CarriesaHANDHELDCRAFTEDCROSSBOW withbroadbronze-limbedasymmetricstock/woodgrip/smallclosedhelicalcoilfittings, aVISIBLEphysicalboltprojectileontopandordinarybrownboltquiver. Twohandsoperatecrossbow; no rifle, no shield, nogauntletcannon, noHeimerturret/noEzrealweapon. Reference1 ONLYmechanicalcoil/workshopmaterials, NOTchild'sface/blindfringeorheruniquearmweapon. Reference2exactregionalcrest; ref3onlyHoMM3painterlyview/readablescale notmagecostume. Simpletier4fieldacademicworkwearnotwizardrobes. Entirebody/wholecrossbowfacingRIGHTin3quarterbattleprofile, feetgrounded, amplepadding. GenuinelyTRANSPARENTbackground,nofloor/haze/text/splashscenery.",
+    "action_source_ledger": "assets/source/creatures/painted-v1/t1-t4/generation-ledger-v1.json",
+    "action_source_ledger_sha256": "9da66a550c881d7dc4b0f3e473fa50f7fdcb25905352c0e536cdbbbf2dcad322",
+    "painted_master": "assets/source/creatures/painted-v1/t1-t4/academyArtificer/master-v1.png",
+    "painted_master_sha256": "e10d8e0b5fc0f85ab803544e929e6d4607351e4e81040d19c91b02fa463b477e",
+    "method": "Whole-source uniform cohort resampling and root registration only; no rigging, rendering, limb warping or invented poses"
+  },
+  "production_inputs": [
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/academyArtificer/master-v1.png",
+      "sha256": "e10d8e0b5fc0f85ab803544e929e6d4607351e4e81040d19c91b02fa463b477e"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/academyArtificer/portrait-v1.png",
+      "sha256": "056ef1f041f1606d5400244fb4e177c43fd3554f68023793bff3c11f04106947"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/academyArtificer/isolated-source-map-v1.json",
+      "sha256": "586b51a06a82ddcc17376ae96347d34589a41dd1b5ef330590e293f919b2ffbd"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/pose-roots-v1.json",
+      "sha256": "756e77614e53335d3625b84499e4409860e4cf8cce7ef6d0c05da08078ee1355"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/producer_v1.py",
+      "sha256": "a097e5a05400368c5740004cca6225a50730a18c2440af0c13d2ba676e7d58ad"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/extract_sources.py",
+      "sha256": "0338c4026998ef34834a4c76c400c177f51777dc686da70858373fc3a9eefd7b"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/generation-ledger-v1.json",
+      "sha256": "9da66a550c881d7dc4b0f3e473fa50f7fdcb25905352c0e536cdbbbf2dcad322"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/selected-cohorts-v1.json",
+      "sha256": "d6c313a901a77675cc068ae609a0296c14c9824c8c6852e67a4c8058d8238c30"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/academyArtificer/combat-v1.png",
+      "sha256": "2c8e9440402054ffd455cba24c910ae13544b562c7ae3a44c3b03a35b0af240d"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/academyArtificer/movement-v1.png",
+      "sha256": "0b0ebe81e7887f3969b667bf1af2c17b2ede492ea94dae7681f30c697eaf16eb"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/academyArtificer/shoot-v2.png",
+      "sha256": "ef2925c09a5125b49efb9a386be78cd18565d71f85ef4358a92a8e8747a81cb9"
+    }
+  ],
+  "recipe_type": "vcmi_animation",
+  "output_path": "Content/Sprites/runeterra/piltover/creatures/academyArtificer/battle.json",
+  "canvas": [
+    450,
+    400
+  ],
+  "pivot": {
+    "x": 197,
+    "y": 265
+  },
+  "groups": [
+    {
+      "group": 0,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g00-f000.png",
+          "sha256": "e10f4a2144894ff068a75cbb272a26ebb09da9d471a230adb6050fab65c1e8ba",
+          "source_sha256": "e10f4a2144894ff068a75cbb272a26ebb09da9d471a230adb6050fab65c1e8ba",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g00-f001.png",
+          "sha256": "225aa5d07d80a1c42a87b15d2f98ccdc9ce164d3d990d1cf0c8be74664f52015",
+          "source_sha256": "225aa5d07d80a1c42a87b15d2f98ccdc9ce164d3d990d1cf0c8be74664f52015",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g00-f002.png",
+          "sha256": "241cee1d678c4604b371c717a5c4511ff3ae47599b733c92032b944c20b493a7",
+          "source_sha256": "241cee1d678c4604b371c717a5c4511ff3ae47599b733c92032b944c20b493a7",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g00-f003.png",
+          "sha256": "88aa84e6b07574a0074a900237c6dc10b7c0e1561c42517dda6cb341269e8fff",
+          "source_sha256": "88aa84e6b07574a0074a900237c6dc10b7c0e1561c42517dda6cb341269e8fff",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g00-f004.png",
+          "sha256": "1f742378b03634231da8a2219d23ff80def5d6421d2316806ffb863897709caf",
+          "source_sha256": "1f742378b03634231da8a2219d23ff80def5d6421d2316806ffb863897709caf",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g00-f005.png",
+          "sha256": "ebad2369b8459c9bbaa54fb498c011310850c5a30038f3b4427bc266d2557c78",
+          "source_sha256": "ebad2369b8459c9bbaa54fb498c011310850c5a30038f3b4427bc266d2557c78",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 1,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g01-f000.png",
+          "sha256": "70f66c2303cedc7f5fc6eae8b137b7d0b0bf3afa4a8ecd2af9239d4266a69006",
+          "source_sha256": "70f66c2303cedc7f5fc6eae8b137b7d0b0bf3afa4a8ecd2af9239d4266a69006",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g01-f001.png",
+          "sha256": "123f537c91db4c082b3e1f9adbb631bb9cd47f2754e4bba812482ee5c7aea349",
+          "source_sha256": "123f537c91db4c082b3e1f9adbb631bb9cd47f2754e4bba812482ee5c7aea349",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g01-f002.png",
+          "sha256": "123f537c91db4c082b3e1f9adbb631bb9cd47f2754e4bba812482ee5c7aea349",
+          "source_sha256": "123f537c91db4c082b3e1f9adbb631bb9cd47f2754e4bba812482ee5c7aea349",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g01-f003.png",
+          "sha256": "e6ef8787ed94211ee1086f43abd804eb0f794a974b0bc84e1570c2ddefbca833",
+          "source_sha256": "e6ef8787ed94211ee1086f43abd804eb0f794a974b0bc84e1570c2ddefbca833",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g01-f004.png",
+          "sha256": "e6ef8787ed94211ee1086f43abd804eb0f794a974b0bc84e1570c2ddefbca833",
+          "source_sha256": "e6ef8787ed94211ee1086f43abd804eb0f794a974b0bc84e1570c2ddefbca833",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g01-f005.png",
+          "sha256": "1fecd4c9dec115410e07b0ecd3e7b3d7876edf177e59aab52780f8e0c34448e6",
+          "source_sha256": "1fecd4c9dec115410e07b0ecd3e7b3d7876edf177e59aab52780f8e0c34448e6",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 6,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g01-f006.png",
+          "sha256": "1fecd4c9dec115410e07b0ecd3e7b3d7876edf177e59aab52780f8e0c34448e6",
+          "source_sha256": "1fecd4c9dec115410e07b0ecd3e7b3d7876edf177e59aab52780f8e0c34448e6",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 2,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g02-f000.png",
+          "sha256": "70f66c2303cedc7f5fc6eae8b137b7d0b0bf3afa4a8ecd2af9239d4266a69006",
+          "source_sha256": "70f66c2303cedc7f5fc6eae8b137b7d0b0bf3afa4a8ecd2af9239d4266a69006",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 3,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g03-f000.png",
+          "sha256": "ce9d203c514ee5bf25e92e10d83699e90d6ac42090da3e0b113747b8fd54a4ed",
+          "source_sha256": "ce9d203c514ee5bf25e92e10d83699e90d6ac42090da3e0b113747b8fd54a4ed",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g03-f001.png",
+          "sha256": "70f66c2303cedc7f5fc6eae8b137b7d0b0bf3afa4a8ecd2af9239d4266a69006",
+          "source_sha256": "70f66c2303cedc7f5fc6eae8b137b7d0b0bf3afa4a8ecd2af9239d4266a69006",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 4,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g04-f000.png",
+          "sha256": "cfc2e7899b7234efdf19b4c2c564991f9e93aa2563f39a331742823cbe127425",
+          "source_sha256": "cfc2e7899b7234efdf19b4c2c564991f9e93aa2563f39a331742823cbe127425",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 5,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g05-f000.png",
+          "sha256": "8c59746f550bdba2b5be3293e2706e6f11ca21fb6ee5af90ccedb4fd3c3c1091",
+          "source_sha256": "8c59746f550bdba2b5be3293e2706e6f11ca21fb6ee5af90ccedb4fd3c3c1091",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g05-f001.png",
+          "sha256": "b544c5e9cc8a0953c76fe3af0bfa9c4a496f005f4f092e0e75e01fb7e29f58e6",
+          "source_sha256": "b544c5e9cc8a0953c76fe3af0bfa9c4a496f005f4f092e0e75e01fb7e29f58e6",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g05-f002.png",
+          "sha256": "78bbd88df5daadc6c3ca8743b8a9ea0867530cc1867fd8332f46265735723fa7",
+          "source_sha256": "78bbd88df5daadc6c3ca8743b8a9ea0867530cc1867fd8332f46265735723fa7",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g05-f003.png",
+          "sha256": "40df05fd3603c054bc61e4f415ff0a871bef3dd9e3b0f2306759be79a3c19ea2",
+          "source_sha256": "40df05fd3603c054bc61e4f415ff0a871bef3dd9e3b0f2306759be79a3c19ea2",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 7,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g07-f000.png",
+          "sha256": "70f66c2303cedc7f5fc6eae8b137b7d0b0bf3afa4a8ecd2af9239d4266a69006",
+          "source_sha256": "70f66c2303cedc7f5fc6eae8b137b7d0b0bf3afa4a8ecd2af9239d4266a69006",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g07-f001.png",
+          "sha256": "28d2d80df2618513b8693c07486d847c2a750ca0deebe297518ae8479c2e64c3",
+          "source_sha256": "28d2d80df2618513b8693c07486d847c2a750ca0deebe297518ae8479c2e64c3",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g07-f002.png",
+          "sha256": "db416ed048735a04b0a6c7dd69171a034feab42eb6f84e23455e6b93553603a2",
+          "source_sha256": "db416ed048735a04b0a6c7dd69171a034feab42eb6f84e23455e6b93553603a2",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 8,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g08-f000.png",
+          "sha256": "db416ed048735a04b0a6c7dd69171a034feab42eb6f84e23455e6b93553603a2",
+          "source_sha256": "db416ed048735a04b0a6c7dd69171a034feab42eb6f84e23455e6b93553603a2",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g08-f001.png",
+          "sha256": "28d2d80df2618513b8693c07486d847c2a750ca0deebe297518ae8479c2e64c3",
+          "source_sha256": "28d2d80df2618513b8693c07486d847c2a750ca0deebe297518ae8479c2e64c3",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g08-f002.png",
+          "sha256": "70f66c2303cedc7f5fc6eae8b137b7d0b0bf3afa4a8ecd2af9239d4266a69006",
+          "source_sha256": "70f66c2303cedc7f5fc6eae8b137b7d0b0bf3afa4a8ecd2af9239d4266a69006",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 11,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g11-f000.png",
+          "sha256": "956b4ad572acedc90ec55a513ffc314ce49d222af23d3094c1d29865d603752a",
+          "source_sha256": "956b4ad572acedc90ec55a513ffc314ce49d222af23d3094c1d29865d603752a",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g11-f001.png",
+          "sha256": "4290c097e254ac5465335f043d278cbdfeef5ecad031a2039254e08ef9bab1a7",
+          "source_sha256": "4290c097e254ac5465335f043d278cbdfeef5ecad031a2039254e08ef9bab1a7",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g11-f002.png",
+          "sha256": "f62d3de494511cb50df10947d55be335d719a2c8978c3a219d9b7711d3069412",
+          "source_sha256": "f62d3de494511cb50df10947d55be335d719a2c8978c3a219d9b7711d3069412",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g11-f003.png",
+          "sha256": "3f69a7a22463a4ed5ebd06c3615ca47377a3253763eaf3cc376d2421d961f7fe",
+          "source_sha256": "3f69a7a22463a4ed5ebd06c3615ca47377a3253763eaf3cc376d2421d961f7fe",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 12,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g12-f000.png",
+          "sha256": "ba5d5ec14cfe26f7826db4b1e05e74190805a3ffed7bcc2276e70dcc2c1e903d",
+          "source_sha256": "ba5d5ec14cfe26f7826db4b1e05e74190805a3ffed7bcc2276e70dcc2c1e903d",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g12-f001.png",
+          "sha256": "eb1ff4e538b6e5b600e458b6bc947d1b3f066b568e267941df86d20a58870f1b",
+          "source_sha256": "eb1ff4e538b6e5b600e458b6bc947d1b3f066b568e267941df86d20a58870f1b",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g12-f002.png",
+          "sha256": "91c5c78b0e2678a39aa04c1aec3028d3dc6563bf203830d58d1af8b68d295e3f",
+          "source_sha256": "91c5c78b0e2678a39aa04c1aec3028d3dc6563bf203830d58d1af8b68d295e3f",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g12-f003.png",
+          "sha256": "0109bff529d3f54c137a4e71680aa9e8aebd9fab98df76ba07d28bd6c2ff7d58",
+          "source_sha256": "0109bff529d3f54c137a4e71680aa9e8aebd9fab98df76ba07d28bd6c2ff7d58",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 13,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g13-f000.png",
+          "sha256": "a8612210a388564b34a9075ae335e99df9a4a2e71742a16d2457c63cb2d73724",
+          "source_sha256": "a8612210a388564b34a9075ae335e99df9a4a2e71742a16d2457c63cb2d73724",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g13-f001.png",
+          "sha256": "b3dac63c50176d2a6fa9039cbd2fc90b4af2b80ddcfffc256cb896492706c8d0",
+          "source_sha256": "b3dac63c50176d2a6fa9039cbd2fc90b4af2b80ddcfffc256cb896492706c8d0",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g13-f002.png",
+          "sha256": "8d532d89423c9a6f898c99f43289facff42b210672c587094de4bb4f252bc032",
+          "source_sha256": "8d532d89423c9a6f898c99f43289facff42b210672c587094de4bb4f252bc032",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g13-f003.png",
+          "sha256": "a395bbc205a7b6cbc51f612c526194e4e0b9932eaf811c4bdae57442bbe736c6",
+          "source_sha256": "a395bbc205a7b6cbc51f612c526194e4e0b9932eaf811c4bdae57442bbe736c6",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 14,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g14-f000.png",
+          "sha256": "5e2cecde983d0e59f9a5881ddf9dd97d73311e6a90f2f9fee299e5405298da9d",
+          "source_sha256": "5e2cecde983d0e59f9a5881ddf9dd97d73311e6a90f2f9fee299e5405298da9d",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g14-f001.png",
+          "sha256": "89974f2ea0fb1b04974a0a44528b29ab22cd89e4d5411807ba15b1ca335c9586",
+          "source_sha256": "89974f2ea0fb1b04974a0a44528b29ab22cd89e4d5411807ba15b1ca335c9586",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g14-f002.png",
+          "sha256": "c851dfd92324e89bd69132bb024ab7ed57ebc3b68c48f950aefdf65b87a50131",
+          "source_sha256": "c851dfd92324e89bd69132bb024ab7ed57ebc3b68c48f950aefdf65b87a50131",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g14-f003.png",
+          "sha256": "375ae578f0cdfd519a2da5bebfc93c6de9cb7da7b0eca30719769c788696f18e",
+          "source_sha256": "375ae578f0cdfd519a2da5bebfc93c6de9cb7da7b0eca30719769c788696f18e",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g14-f004.png",
+          "sha256": "7e9d3dccf5741e43645b885cee2c71de63b58a2646c0db089a16f321c29d328d",
+          "source_sha256": "7e9d3dccf5741e43645b885cee2c71de63b58a2646c0db089a16f321c29d328d",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g14-f005.png",
+          "sha256": "823d6d998ae3c812c7524e98b21d8a546afc1f99dd198771b5c9ddf961f009c6",
+          "source_sha256": "823d6d998ae3c812c7524e98b21d8a546afc1f99dd198771b5c9ddf961f009c6",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 15,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g15-f000.png",
+          "sha256": "4485fa737974686d68167e38c01760f2f34e5a9a647d1b88669b8989f711f0b8",
+          "source_sha256": "4485fa737974686d68167e38c01760f2f34e5a9a647d1b88669b8989f711f0b8",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g15-f001.png",
+          "sha256": "489c0b1dfac1998ef5b4c532ecea489c4f78a552ab500c5a0182031346c86096",
+          "source_sha256": "489c0b1dfac1998ef5b4c532ecea489c4f78a552ab500c5a0182031346c86096",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g15-f002.png",
+          "sha256": "7d7b6db9bedd148e4274af72e8ea52c638cf23b73e17b2d124f51733a4af9160",
+          "source_sha256": "7d7b6db9bedd148e4274af72e8ea52c638cf23b73e17b2d124f51733a4af9160",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g15-f003.png",
+          "sha256": "ace157aef6bfc7cb04229ed76cbbcc948d1edfe08add397318feccdc68be5292",
+          "source_sha256": "ace157aef6bfc7cb04229ed76cbbcc948d1edfe08add397318feccdc68be5292",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g15-f004.png",
+          "sha256": "03cbc731407073fd8499a0772516352a68ccac5d7108673af442aa7559bba227",
+          "source_sha256": "03cbc731407073fd8499a0772516352a68ccac5d7108673af442aa7559bba227",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g15-f005.png",
+          "sha256": "6abf9b9b5be9e5fff2405064b04fa1d54f6ec9a1b01fea1c45afad9298a53887",
+          "source_sha256": "6abf9b9b5be9e5fff2405064b04fa1d54f6ec9a1b01fea1c45afad9298a53887",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 16,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g16-f000.png",
+          "sha256": "7673e4636c081f490021108ac7573b178332e9f53097ec981ad60357f204fa7d",
+          "source_sha256": "7673e4636c081f490021108ac7573b178332e9f53097ec981ad60357f204fa7d",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g16-f001.png",
+          "sha256": "38365673f436c71d90c0ec7a69244c15f98148ac3a1b12beb472b550489f25c5",
+          "source_sha256": "38365673f436c71d90c0ec7a69244c15f98148ac3a1b12beb472b550489f25c5",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g16-f002.png",
+          "sha256": "f06b335923dbb9bd1f773d4d8e9a078c6606e68ee450b58664f1f6c9ba8d3023",
+          "source_sha256": "f06b335923dbb9bd1f773d4d8e9a078c6606e68ee450b58664f1f6c9ba8d3023",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g16-f003.png",
+          "sha256": "02bfe2008fd7bf87e05d809816c13e5bed930484effeb8c9dba795077f13fe7e",
+          "source_sha256": "02bfe2008fd7bf87e05d809816c13e5bed930484effeb8c9dba795077f13fe7e",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g16-f004.png",
+          "sha256": "084bbbe1e58c7c00158e373bca1032b874599f7f7015474beaeb70eb713863e5",
+          "source_sha256": "084bbbe1e58c7c00158e373bca1032b874599f7f7015474beaeb70eb713863e5",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g16-f005.png",
+          "sha256": "e748bcb1d527dc19e502c198abaae21fe2ba0e0345d5a480a00e9ad95c95ff36",
+          "source_sha256": "e748bcb1d527dc19e502c198abaae21fe2ba0e0345d5a480a00e9ad95c95ff36",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 22,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/battle/g22-f000.png",
+          "sha256": "40df05fd3603c054bc61e4f415ff0a871bef3dd9e3b0f2306759be79a3c19ea2",
+          "source_sha256": "40df05fd3603c054bc61e4f415ff0a871bef3dd9e3b0f2306759be79a3c19ea2",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    }
+  ]
+}

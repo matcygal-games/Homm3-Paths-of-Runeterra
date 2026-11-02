@@ -1,0 +1,746 @@
+{
+  "compact_holding_registration": {
+    "earlier_side_holding_preserved_as_control": true,
+    "method": "Genuinely painted near-frontal folded-wing holding/fidget at unchanged95/100px physical height. No full battle cohort reduction or tail crop.",
+    "native_preview_crop": [
+      170,
+      155,
+      270,
+      275
+    ]
+  },
+  "companions": {
+    "encounter_pose": "baseEncounter",
+    "map_pose": "baseMap",
+    "portrait_crop": [
+      1165,
+      50,
+      1517,
+      402
+    ],
+    "portrait_pose": "basePortrait",
+    "scale": 0.08900523560209424
+  },
+  "groups": {
+    "0": [
+      "m0",
+      "m0",
+      "m1",
+      "m2",
+      "m3",
+      "m3",
+      "m4",
+      "m5"
+    ],
+    "1": [
+      "hold",
+      "fidget",
+      "fidget",
+      "hold",
+      "hold"
+    ],
+    "11": [
+      "up0",
+      "up0",
+      "up0",
+      "up1",
+      "up1",
+      "up2",
+      "up3",
+      "hold"
+    ],
+    "12": [
+      "frontHit0",
+      "frontHit0",
+      "frontHit0",
+      "frontHit1",
+      "frontHit1",
+      "frontHit2",
+      "frontHit3",
+      "hold"
+    ],
+    "13": [
+      "down0",
+      "down0",
+      "down0",
+      "down1",
+      "down1",
+      "down2",
+      "down3",
+      "hold"
+    ],
+    "2": [
+      "hold"
+    ],
+    "20": [
+      "hold",
+      "takeoff0",
+      "takeoff1",
+      "takeoff2",
+      "m0"
+    ],
+    "21": [
+      "m5",
+      "landing0",
+      "landing1",
+      "landing2",
+      "hold"
+    ],
+    "22": [
+      "death3"
+    ],
+    "3": [
+      "pain0",
+      "pain0",
+      "pain1",
+      "pain1",
+      "hold"
+    ],
+    "4": [
+      "defend0",
+      "defend0",
+      "defend1",
+      "defend1",
+      "hold"
+    ],
+    "5": [
+      "death0",
+      "death0",
+      "death1",
+      "death1",
+      "death2",
+      "death2",
+      "death3",
+      "death3"
+    ],
+    "7": [
+      "hold",
+      "quarter",
+      "quarter",
+      "front",
+      "front"
+    ],
+    "8": [
+      "turnJoin",
+      "turnJoin",
+      "quarter",
+      "hold",
+      "hold"
+    ]
+  },
+  "limitations": [
+    "Authored configuration; native in-game silhouettes, fast playback, recruitment/body crops and shadow composition remain unverified.",
+    "Correct regional crest is physically painted; tiny battle/adventure fidelity needs independent native-size appearance approval.",
+    "Explicit repeated genuine painted-key holds are timeline cadence, not additional unique painted poses.",
+    "Source portrait heads use own painted coastal background; rights and release acceptance remain pending."
+  ],
+  "native_consumer": {
+    "cadence": {
+      "base_fps": 10,
+      "contact_zero_based": 3,
+      "death_ticks": 8,
+      "melee_ticks": 8,
+      "moving_ticks": 8,
+      "new_shooter_or_cast_groups": false,
+      "painted_key_holds_explicit": true,
+      "response_ticks": 5
+    },
+    "client/battle/BattleAnimationClasses.cpp": {
+      "sha256": "32e58068ee148c3c56afd0c6755144eda0a819dbcb201747d5abf4edeee9a4b9",
+      "use": "Read-only native frame/facing/cadence reference; excluded from creature source masters"
+    },
+    "client/battle/BattleStacksController.cpp": {
+      "sha256": "c12c369cdebeca2d94cdeb2351f5d53ec572d6a9ce2b727f79da4aa76da18682",
+      "use": "Read-only native frame/facing/cadence reference; excluded from creature source masters"
+    },
+    "client/battle/CreatureAnimation.cpp": {
+      "sha256": "ab43c236c791c6c7ecb6f60029b2026bc6dc5ff18c34cf1a0e7659fadc6e98ef",
+      "use": "Read-only native frame/facing/cadence reference; excluded from creature source masters"
+    },
+    "turn": {
+      "canvas_full_mirror_axis": 449,
+      "group7": "TURN_L before facing change",
+      "group8": "TURN_R after facing toggle/reposition",
+      "group8_first_full_mirror_then_translate_x": -14,
+      "two_hex_position_flip_delta": -14
+    }
+  },
+  "plates": {
+    "attacks": {
+      "expected_islands": 12,
+      "poses": {
+        "down0": {
+          "inspected_opaque_box": [
+            22,
+            670,
+            383,
+            991
+          ],
+          "island": 9,
+          "root": [
+            260,
+            999
+          ]
+        },
+        "down1": {
+          "inspected_opaque_box": [
+            427,
+            655,
+            771,
+            976
+          ],
+          "island": 8,
+          "root": [
+            650,
+            999
+          ]
+        },
+        "down2": {
+          "inspected_opaque_box": [
+            819,
+            700,
+            1175,
+            989
+          ],
+          "island": 10,
+          "root": [
+            1035,
+            999
+          ]
+        },
+        "down3": {
+          "inspected_opaque_box": [
+            1190,
+            793,
+            1509,
+            988
+          ],
+          "island": 11,
+          "root": [
+            1390,
+            999
+          ]
+        },
+        "frontHit0": {
+          "inspected_opaque_box": [
+            17,
+            400,
+            387,
+            662
+          ],
+          "island": 6,
+          "root": [
+            260,
+            675
+          ]
+        },
+        "frontHit1": {
+          "inspected_opaque_box": [
+            380,
+            371,
+            819,
+            616
+          ],
+          "island": 4,
+          "root": [
+            650,
+            675
+          ]
+        },
+        "frontHit2": {
+          "inspected_opaque_box": [
+            819,
+            398,
+            1192,
+            630
+          ],
+          "island": 5,
+          "root": [
+            1035,
+            675
+          ]
+        },
+        "frontHit3": {
+          "inspected_opaque_box": [
+            1189,
+            474,
+            1524,
+            670
+          ],
+          "island": 7,
+          "root": [
+            1390,
+            675
+          ]
+        },
+        "up0": {
+          "inspected_opaque_box": [
+            25,
+            45,
+            389,
+            366
+          ],
+          "island": 1,
+          "root": [
+            260,
+            370
+          ]
+        },
+        "up1": {
+          "inspected_opaque_box": [
+            386,
+            10,
+            811,
+            339
+          ],
+          "island": 0,
+          "root": [
+            650,
+            370
+          ]
+        },
+        "up2": {
+          "inspected_opaque_box": [
+            824,
+            68,
+            1179,
+            349
+          ],
+          "island": 2,
+          "root": [
+            1035,
+            370
+          ]
+        },
+        "up3": {
+          "inspected_opaque_box": [
+            1190,
+            120,
+            1500,
+            365
+          ],
+          "island": 3,
+          "root": [
+            1390,
+            370
+          ]
+        }
+      },
+      "scale": 0.3877551020408163,
+      "sha256": "e3b2b6aa4c91b426c44730e664c4125798dafc7e37e4b47f24d45945adbac0b1",
+      "source": "cliffwing-attacks-v1-raw.png"
+    },
+    "companions": {
+      "expected_islands": 8,
+      "poses": {
+        "baseEncounter": {
+          "inspected_opaque_box": [
+            751,
+            154,
+            1145,
+            460
+          ],
+          "island": 3,
+          "root": [
+            950,
+            460
+          ]
+        },
+        "baseFidget": {
+          "inspected_opaque_box": [
+            404,
+            75,
+            730,
+            451
+          ],
+          "island": 2,
+          "root": [
+            610,
+            452
+          ]
+        },
+        "baseMap": {
+          "inspected_opaque_box": [
+            24,
+            70,
+            356,
+            452
+          ],
+          "island": 1,
+          "root": [
+            230,
+            452
+          ]
+        },
+        "basePortrait": {
+          "inspected_opaque_box": [
+            1157,
+            49,
+            1515,
+            467
+          ],
+          "island": 0,
+          "root": [
+            1350,
+            467
+          ]
+        },
+        "fidget": {
+          "inspected_opaque_box": [
+            404,
+            75,
+            730,
+            451
+          ],
+          "island": 2,
+          "root": [
+            590,
+            452
+          ]
+        },
+        "hold": {
+          "inspected_opaque_box": [
+            24,
+            70,
+            356,
+            452
+          ],
+          "island": 1,
+          "root": [
+            210,
+            452
+          ]
+        }
+      },
+      "scale": 0.2486910994764398,
+      "sha256": "c120828cfb850e1c22e4fcc22bfee6d910d721e7790499fa351fd7cb4f7f3c15",
+      "source": "bird-companions-v1-raw.png"
+    },
+    "locomotion": {
+      "expected_islands": 9,
+      "poses": {
+        "front": {
+          "inspected_opaque_box": [
+            1139,
+            679,
+            1420,
+            996
+          ],
+          "island": 6,
+          "root": [
+            1280,
+            997
+          ]
+        },
+        "m0": {
+          "inspected_opaque_box": [
+            67,
+            15,
+            468,
+            323
+          ],
+          "island": 0,
+          "root": [
+            320,
+            360
+          ]
+        },
+        "m1": {
+          "inspected_opaque_box": [
+            517,
+            43,
+            966,
+            329
+          ],
+          "island": 1,
+          "root": [
+            820,
+            360
+          ]
+        },
+        "m2": {
+          "inspected_opaque_box": [
+            987,
+            171,
+            1509,
+            326
+          ],
+          "island": 2,
+          "root": [
+            1340,
+            360
+          ]
+        },
+        "m3": {
+          "inspected_opaque_box": [
+            50,
+            442,
+            485,
+            668
+          ],
+          "island": 5,
+          "root": [
+            320,
+            680
+          ]
+        },
+        "m4": {
+          "inspected_opaque_box": [
+            583,
+            357,
+            974,
+            644
+          ],
+          "island": 3,
+          "root": [
+            820,
+            680
+          ]
+        },
+        "m5": {
+          "inspected_opaque_box": [
+            1059,
+            357,
+            1491,
+            658
+          ],
+          "island": 4,
+          "root": [
+            1340,
+            680
+          ]
+        },
+        "quarter": {
+          "inspected_opaque_box": [
+            605,
+            684,
+            913,
+            999
+          ],
+          "island": 8,
+          "root": [
+            805,
+            999
+          ]
+        },
+        "sideControl": {
+          "inspected_opaque_box": [
+            47,
+            683,
+            459,
+            999
+          ],
+          "island": 7,
+          "root": [
+            320,
+            999
+          ]
+        }
+      },
+      "scale": 0.30063291139240506,
+      "sha256": "78d448aec8da2031ae042280ac36944d81adb1cab35c89041374e535b36f18e0",
+      "source": "cliffwing-locomotion-v1-raw.png"
+    },
+    "reactions": {
+      "expected_islands": 8,
+      "poses": {
+        "death0": {
+          "inspected_opaque_box": [
+            20,
+            610,
+            369,
+            896
+          ],
+          "island": 4,
+          "root": [
+            270,
+            896
+          ]
+        },
+        "death1": {
+          "inspected_opaque_box": [
+            361,
+            694,
+            733,
+            889
+          ],
+          "island": 6,
+          "root": [
+            600,
+            889
+          ]
+        },
+        "death2": {
+          "inspected_opaque_box": [
+            751,
+            686,
+            1115,
+            885
+          ],
+          "island": 5,
+          "root": [
+            930,
+            885
+          ]
+        },
+        "death3": {
+          "inspected_opaque_box": [
+            1129,
+            765,
+            1519,
+            887
+          ],
+          "island": 7,
+          "root": [
+            1300,
+            887
+          ]
+        },
+        "defend0": {
+          "inspected_opaque_box": [
+            756,
+            197,
+            1129,
+            474
+          ],
+          "island": 2,
+          "root": [
+            970,
+            474
+          ]
+        },
+        "defend1": {
+          "inspected_opaque_box": [
+            1145,
+            220,
+            1517,
+            476
+          ],
+          "island": 3,
+          "root": [
+            1380,
+            476
+          ]
+        },
+        "pain0": {
+          "inspected_opaque_box": [
+            26,
+            137,
+            382,
+            478
+          ],
+          "island": 0,
+          "root": [
+            280,
+            478
+          ]
+        },
+        "pain1": {
+          "inspected_opaque_box": [
+            400,
+            180,
+            734,
+            475
+          ],
+          "island": 1,
+          "root": [
+            620,
+            475
+          ]
+        }
+      },
+      "scale": 0.3220338983050847,
+      "sha256": "667a658bd801b7583257f0d0c0e2fcd24b8a402650580b37617fd33848e4a377",
+      "source": "cliffwing-reactions-v1-raw.png"
+    },
+    "transitions": {
+      "expected_islands": 6,
+      "poses": {
+        "landing0": {
+          "inspected_opaque_box": [
+            18,
+            461,
+            506,
+            931
+          ],
+          "island": 3,
+          "root": [
+            320,
+            960
+          ]
+        },
+        "landing1": {
+          "inspected_opaque_box": [
+            551,
+            629,
+            1028,
+            964
+          ],
+          "island": 4,
+          "root": [
+            820,
+            964
+          ]
+        },
+        "landing2": {
+          "inspected_opaque_box": [
+            1066,
+            664,
+            1491,
+            974
+          ],
+          "island": 5,
+          "root": [
+            1340,
+            974
+          ]
+        },
+        "takeoff0": {
+          "inspected_opaque_box": [
+            42,
+            147,
+            514,
+            487
+          ],
+          "island": 1,
+          "root": [
+            320,
+            487
+          ]
+        },
+        "takeoff1": {
+          "inspected_opaque_box": [
+            530,
+            209,
+            1035,
+            494
+          ],
+          "island": 2,
+          "root": [
+            820,
+            487
+          ]
+        },
+        "takeoff2": {
+          "inspected_opaque_box": [
+            1073,
+            46,
+            1517,
+            415
+          ],
+          "island": 0,
+          "root": [
+            1340,
+            465
+          ]
+        }
+      },
+      "scale": 0.3064516129032258,
+      "sha256": "e77130b8e1bb9eb6a949a9937e879aeed1ad8aeb7946dbed70561f596292281c",
+      "source": "cliffwing-transitions-v1-raw.png"
+    }
+  },
+  "turn_front": "front",
+  "unit": "cliffwing",
+  "version": 4
+}

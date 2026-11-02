@@ -1,0 +1,148 @@
+{
+  "definition": {
+    "category": "teleporting-melee",
+    "comparison": [
+      "core:devil",
+      "runeterra-demacia:duelist"
+    ],
+    "equipment": [
+      "open-hood",
+      "split-coat",
+      "leather-bracers"
+    ],
+    "family": "rose",
+    "height": 1.78,
+    "lore": "Black Rose inspired project fiction; teleport is gameplay adaptation, not universal canonical cabal power or LeBlanc clone",
+    "native_height": 77,
+    "nature": "living",
+    "silhouette": "Narrow hooded occult agent, asymmetric split black coat, practical dark leather and one low curved blade; open offhand performs grounded departure/arrival ward",
+    "tier": 4,
+    "two_hex": false,
+    "upgrade": false,
+    "weakness": "Fragile contact fighter; native speed-limited teleport and ordinary retaliation",
+    "weapon": "curved-shortblade",
+    "width": 0.21
+  },
+  "emblem": {
+    "policy": "Leave emblem fields blank in guides. Obtain a genuine official Riot Noxus emblem, preserve exact source URL/bytes/hash and permissions before final painted art. Never invent a crest or reuse Demacia heraldry.",
+    "sha256": null,
+    "source_url": null,
+    "status": "blocked-official-source-provenance-required"
+  },
+  "generation": {
+    "image_generation_used": false,
+    "model": null,
+    "prompt": null,
+    "provider": null
+  },
+  "model_sheet_type": "editable volumetric rig + transparent pose guides, NOT painted art",
+  "native_groups": {
+    "0": {
+      "action": "walk-contact",
+      "minimum_guide_poses": 6
+    },
+    "1": {
+      "action": "fidget-equipment-check",
+      "minimum_guide_poses": 4
+    },
+    "11": {
+      "action": "melee-up",
+      "minimum_guide_poses": 6
+    },
+    "12": {
+      "action": "melee-front",
+      "minimum_guide_poses": 6
+    },
+    "13": {
+      "action": "melee-down",
+      "minimum_guide_poses": 6
+    },
+    "2": {
+      "action": "idle",
+      "minimum_guide_poses": 1
+    },
+    "3": {
+      "action": "hit-recoil",
+      "minimum_guide_poses": 4
+    },
+    "4": {
+      "action": "defend-brace",
+      "minimum_guide_poses": 4
+    },
+    "5": {
+      "action": "death-collapse",
+      "minimum_guide_poses": 6
+    },
+    "50": {
+      "action": "grounded-teleport-departure",
+      "minimum_guide_poses": 4
+    },
+    "51": {
+      "action": "grounded-teleport-arrival",
+      "minimum_guide_poses": 4
+    },
+    "7": {
+      "action": "turn-toward-viewer",
+      "minimum_guide_poses": 4
+    },
+    "8": {
+      "action": "turn-back",
+      "minimum_guide_poses": 4
+    }
+  },
+  "painting_contract": {
+    "acceptance": false,
+    "camera": "One measured uniform camera/placement correction per action atlas, preserve every source and rejected revision; no per-frame stretch, warping, auto-fit or idle-as-action",
+    "continuity": "Use each unit's own model/upgrade definition and all actual pose guides; preserve joint contacts and independent silhouettes",
+    "required_capability": "ChatGPT image-generation skill / built-in image_gen.imagegen or human painted masters",
+    "review": [
+      "transparent background and no baked floor",
+      "ground contact at native pivot",
+      "no cross-cell contamination",
+      "whole action semantics and projectile release",
+      "base/upgrade silhouette and equipment distinction",
+      "genuine Noxus emblem legibility and provenance",
+      "native original/Demacia comparison",
+      "real native runtime review"
+    ],
+    "status": "blocked-missing-painted-masters",
+    "style": "Original Heroes III native painted/prerendered treatment, restrained highlights, matte iron/crimson/black, upper-left lighting; not glossy modern 3D, flat vector or splash art"
+  },
+  "pipeline": [
+    "art_creature_rigs.py actual Blender assembly",
+    "all groups keyed as genuine skeletal poses",
+    "art_creature_sources.py --review fixed whole-cohort uniform native conversion",
+    "painted master production BLOCKED",
+    "source pins and native action review BLOCKED",
+    "coordinator-only manifest selection, assembly and runtime acceptance NOT PERFORMED"
+  ],
+  "production_recipes": [
+    {
+      "path": "assets/recipes/creatures/roseSpellblade-battle.json",
+      "sha256": "775c9ce17a6e129ce3c540d86f6b0c3f7fe67ba0c3ecef06df447d8a714cd6db"
+    },
+    {
+      "path": "assets/recipes/creatures/roseSpellblade-map.json",
+      "sha256": "f61c63008a032d814630dc9d19e32b337fa7017968ec6a2cacd28b10646ab529"
+    },
+    {
+      "path": "assets/recipes/creatures/roseSpellblade-large.json",
+      "sha256": "f490b4d1808f986dfb879626c597875a91979f2c4d43309fc6900859f02c8452"
+    },
+    {
+      "path": "assets/recipes/creatures/roseSpellblade-small.json",
+      "sha256": "a5e3d14109f97fcea16cdefbf56f78fc1f121135cc3bb9b0699d15a2c04380f2"
+    },
+    {
+      "path": "assets/recipes/creatures/roseSpellblade-attackLeft.json",
+      "sha256": "e5078a32b2aa64346844ad8d585fa8d6f5766e905db8f2a6b685840ae4f1739c"
+    },
+    {
+      "path": "assets/recipes/creatures/roseSpellblade-attackRight.json",
+      "sha256": "d3a5cdf330f1dcc5b2b115c5345f364cfd7c480666230a11301b7e1d24fbb790"
+    }
+  ],
+  "status": "authored configuration",
+  "unit": "roseSpellblade",
+  "visual_approval_granted": false
+}

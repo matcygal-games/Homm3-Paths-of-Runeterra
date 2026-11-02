@@ -1,0 +1,31 @@
+{
+  "recipe_type": "raster",
+  "production_status": "painted-master-complete-unapproved",
+  "canvas": [
+    32,
+    32
+  ],
+  "output_path": "Content/Sprites/runeterra/piltover/heroes/zevi/specialtySmall.png",
+  "source": "assets/source/heroes/painted-v1/zevi/specialtySmall.png",
+  "source_sha256": "1a7d9ed136a17524213293a27cb17d0c419fe10f15f5acc658f8b5a4e6318544",
+  "source_canvas": [
+    32,
+    32
+  ],
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in imagegen, inherited own-creature and own-background sources",
+    "model": "not exposed",
+    "prompt": "No new imagegen call: fixed technical crop of own Academy Artificer head/upper torso and crossbow mechanism, composited over fixed own painted stone backing. Tighter troop framing improves creature-specialty recognition at44x44; no anatomy repaint or unique champion copy.",
+    "painted_master": "assets/source/heroes/painted-v1/zevi/specialty-master.png",
+    "painted_master_sha256": "55b77d186b7323f80111bb377d1c00fd8344d5b3cc9c994c59918fcec46ba51b",
+    "master_canvas": [
+      1024,
+      1024
+    ],
+    "derivation": "LANCZOS same-master fixed native crop",
+    "small_source_crop": null,
+    "producer": "assets/source/heroes/painted-v1/derive_native.py"
+  }
+}

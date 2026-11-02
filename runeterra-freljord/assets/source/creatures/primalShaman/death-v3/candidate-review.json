@@ -1,0 +1,55 @@
+{
+  "reviewer": "Codex Freljord creature-art worker",
+  "status": "authored configuration",
+  "selected": false,
+  "release_accepted": false,
+  "native_gameplay": "not run",
+  "intent": "Focused upgrade fur readability candidate; existing death already retained the correct fur and staff identity",
+  "source_master": "death-atlas-v3.png",
+  "source_master_sha256": "2336c46b431299894aa1a6d5d078a908b61d50d4787f5c57009ae586339ff3eb",
+  "actual_painted_pose_count": 6,
+  "technical_check": "Six separate real body components; all selected native poses fit450x400 without opaque clipping; original RGBA retained within cell cuts",
+  "uniform_camera_scale": 0.18731117824773413,
+  "calibration": {
+    "method": "one matched kneeling pose camera; apply identical factor to every collapse frame, never refit corpse",
+    "reference": "assets\\source\\creatures\\primalShaman\\registered-v2\\native\\g05-f000.png",
+    "reference_sha256": "faa22064bc2e80f55980dee98921e9e60f800e988a6d829216f3b37804f8faea",
+    "reference_opaque_bbox": [
+      172,
+      208,
+      248,
+      270
+    ],
+    "candidate_matching_bbox": [
+      69,
+      168,
+      481,
+      499
+    ]
+  },
+  "observations": [
+    "Same long dark hair/beard, gray-blue trousers, dark bracers and boots survive all six poses.",
+    "Silver-gray/white fur is more prominent over the shoulders and back throughout collapse than in the current native action.",
+    "Crescent/antler staff crown is complete in all six poses and stays with the body.",
+    "Progression remains kneel, brace, falling chest, ground contact, settle and final prone corpse; all six are actual paint rather than shifted idle.",
+    "One calibration from the matched first kneeling pose is applied to every frame; prone frames are not enlarged to standing height."
+  ],
+  "caveats": [
+    "Generated costume/staff detailing is not pixel-identical to the standing source; coordinator must compare identity continuity before selection.",
+    "Low-alpha generated colored fringe remains in the master and is preserved, not cleaned by arbitrary threshold.",
+    "No native all-action playback, shadow, timing or release acceptance."
+  ],
+  "active_production_modified_by_this_task": false,
+  "files_sha256": {
+    "current-death-edit-layout.png": "78f6984ab03cd818d9ff4f6b9a01fbfc19f4e7a98cb303c77b102aca80358e0c",
+    "current-death-reference.png": "d284e46d6269e1e2352c32a00e141ea2c450fbb66947aa333ae2288fb7981f82",
+    "death-atlas-v3.png": "2336c46b431299894aa1a6d5d078a908b61d50d4787f5c57009ae586339ff3eb",
+    "evaluate_candidate.py": "7b9a8765df18c9b380711adf84e78788ed0ef57ce5043f93ca4fcd9984f6fb51",
+    "generation-v3.json": "0adc2ff5bda89710bb6e6e3e323c7bdba345e040fe2d8ed4b6b8209ce0c71fe5",
+    "input-evidence.json": "5ccf5b0c6b5eb0135d89ab4720b2369be919c9e6c81ed0b96f8311acc2ec51c5",
+    "native-comparison.png": "683f45107240a77c0e6a78d93746f6068da30951f9953cf49b508b3a2b28b215",
+    "six-isolated-collapse-guide.png": "ae281f2cac0fe54da09766d0ab2c619b0c8e1f7838da0c5d7414e761fe80f75d",
+    "standing-identity-reference.png": "20fad24789fe2f987e59c4949a0eece8205efd9c3b46f746c1b6d25716c6dc96",
+    "technical-review.json": "a65bc0b1aa3042702f12b563d5c878fb3bcaf79a5cc4961f2317fd986a43a7c2"
+  }
+}

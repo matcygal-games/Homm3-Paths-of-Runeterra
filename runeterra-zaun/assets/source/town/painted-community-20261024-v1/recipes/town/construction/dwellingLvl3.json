@@ -1,0 +1,99 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "One own building icon in the native Heroes III town icon language: the same building read at icon scale, with the same equipment and materials as the painted town layer. Never a borrowed icon.",
+  "building": "dwellingLvl3",
+  "canvas": [
+    150,
+    70
+  ],
+  "content_box": [
+    0,
+    0,
+    150,
+    70
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; prompted and technically assembled by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/dw3-master.png",
+      "sha256": "2aa098ed8108c48ea94d218e8604692d678e4bd9122587005d6c9c250f14a709"
+    },
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/dw3-provenance.json",
+      "sha256": "3429ac4dd5897a4dc1fc1aba947cc8a53171247e15b4e0c26e613397cc710bf4"
+    },
+    {
+      "path": "assets/source/town/painted-community-20261024-v1/prepare.py",
+      "sha256": "570add080d42e1b17d7aec2939862119a175a664281e04050585cfb68138a835"
+    },
+    {
+      "path": "scripts/zaun_coastal_state_v1.py",
+      "sha256": "5aa45de45f59be66d393df44538743b1842db5ba5f1c4e48c1d83acaa13f3cf7"
+    }
+  ],
+  "fit": "contain",
+  "generation": {
+    "conversion": {
+      "composition_rectangle": [
+        485,
+        286,
+        108,
+        83
+      ],
+      "method": "Original painted2D source crop; uniform contain; full800x374 placement; native alpha-derived area/one-pixel outward border",
+      "native_z": 369,
+      "revision": "painted-community-20261024-v1",
+      "source_crop": [
+        4,
+        85,
+        947,
+        675
+      ]
+    },
+    "credits": {
+      "author": "OpenAI built-in imagegen; prompted by Codex",
+      "license": null,
+      "redistribution": "unresolved; release prohibited"
+    },
+    "edit_target": "assets/source/town/painted-v2/dwelling3-master.png",
+    "generation_date": "2026-10-21",
+    "image_generation_used": true,
+    "model": null,
+    "model_disclosed": false,
+    "painted_master": "assets/source/town/chemtech-v4-buildings/dw3-master.png",
+    "painted_master_sha256": "2aa098ed8108c48ea94d218e8604692d678e4bd9122587005d6c9c250f14a709",
+    "prompt": "Use case: precise-object-edit. Edit own Zaun Chemthrower Workshop base/upgraded dwellingpair. Keep two wholebuildings side-by-side, exactlowfrontal3quartercamera, brownbrickopenworkshop, visiblebronzeshortnozzlebenchmachines, tallsidefluidtank, upgradehasuppergantryandtwo tanks, basecheaper/simpler. MakeCHEMTECHobvious: largebrighttoxicGREENglassfluidwindows onsidepressuretanks andgreenreagentjarsonbenches, violetglass/paintedpurplemetalroofbands, connectedcoppercoolingandpressurepipes. Mainmetal/brickstaybrown/rustwithtexturedhighlights. Localgreenillumination,broadupperleftlight; richlypaintedoriginalHeroesIIIprerenderedbuildings. Generousouterpadding: allchimneys/cranes/roofcornersandfloorbasesclearofcanvas, wideemptygutter. Genuinetransparentalpha,no backdrop orcommongroundtile. Not a scifireactor, nopeople/text/neonoutlines.",
+    "provider": "OpenAI built-in image_gen.imagegen",
+    "returned_provenance": {
+      "output_hint": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-560d-7462-a9a5-3670486c088c as C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-560d-7462-a9a5-3670486c088c\\exec-0531c50e-ad0d-439e-b99d-b21fe322e0d4.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "route": "Genuine image-generation edit of own Zaun buildings; technical crop/uniform scale/placement only",
+    "visual_approval_granted": false
+  },
+  "id": "zaun.town.construction.dwellingLvl3",
+  "identity_review": "build/reports/painted-town-community-20261024-v1/source-pixel-review.json",
+  "native_visual_review": "pending",
+  "output_path": "Content/Sprites/runeterra/zaun/town/construction/dwellingLvl3.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    150,
+    70
+  ],
+  "source": "assets/source/town/painted-community-20261024-v1/structures/dwellingLvl3/construction.png",
+  "source_sha256": "d72d07af560fc796add7217943f33701438767924d0e441beae189fa4f3e99c7",
+  "status": "built-unreviewed",
+  "title": "Chemtech Construct Quarters building icon",
+  "visual_approval_granted": false
+}

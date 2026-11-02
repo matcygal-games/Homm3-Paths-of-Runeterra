@@ -1,0 +1,450 @@
+{
+  "battle_canvas": [
+    450,
+    400
+  ],
+  "battle_root": [
+    197,
+    266
+  ],
+  "cast_contract": {
+    "consumer": "Native CastAnimation chooses groups30/31/32 and maxFrames/2 climax, independently of shooter attackClimaxFrame",
+    "eight_tick_release_index": 4,
+    "gameplay": "Existing one finite native Cure/action cost and10HP per current priest remain unchanged",
+    "native_execution": false,
+    "selected_release": "Genuine extended open-palm pose held through native Cure effect; no intrinsic bitmap projectile"
+  },
+  "companions": {
+    "encounter_root": [
+      44,
+      60
+    ],
+    "map_root": [
+      76,
+      60
+    ],
+    "portrait_crop": [
+      135,
+      100,
+      260,
+      245
+    ],
+    "pose": "ready",
+    "scale": 0.14
+  },
+  "excluded_source_keys": [
+    {
+      "islands": [
+        0,
+        4,
+        10
+      ],
+      "plate": "cast-v1-raw.png",
+      "reason": "Large intrinsic green glow studies remain unselected. Native Cure provides its spell effect; creature release holds the genuine open-palm blessing pose without creating a projectile or synthetic glow."
+    },
+    {
+      "pose": "turn2",
+      "reason": "Preserved near-front study; selected5-tick halfturn uses ready/right-diagonal/diagonal-front/full-front with explicit holds."
+    }
+  ],
+  "groups": {
+    "0": [
+      "near0",
+      "near1",
+      "near2",
+      "far0",
+      "far1",
+      "far2"
+    ],
+    "1": [
+      "ready",
+      "castFrontPrep"
+    ],
+    "11": [
+      "up0",
+      "up1",
+      "up2",
+      "ready"
+    ],
+    "12": [
+      "front0",
+      "front1",
+      "front2",
+      "ready"
+    ],
+    "13": [
+      "down0",
+      "down1",
+      "down2",
+      "ready"
+    ],
+    "2": [
+      "ready"
+    ],
+    "20": [
+      "ready",
+      "near0"
+    ],
+    "21": [
+      "far2",
+      "ready"
+    ],
+    "22": [
+      "death3"
+    ],
+    "3": [
+      "hurt0",
+      "hurt1",
+      "ready"
+    ],
+    "30": [
+      "ready",
+      "castUpPrep",
+      "castUpAim",
+      "castUpAim",
+      "castUpRecover",
+      "ready"
+    ],
+    "31": [
+      "ready",
+      "castFrontPrep",
+      "castFrontAim",
+      "castFrontAim",
+      "castFrontRecover",
+      "ready"
+    ],
+    "32": [
+      "ready",
+      "castDownPrep",
+      "castDownAim",
+      "castDownAim",
+      "castDownRecover",
+      "ready"
+    ],
+    "4": [
+      "defend",
+      "ready"
+    ],
+    "5": [
+      "death0",
+      "death1",
+      "death2",
+      "death3"
+    ],
+    "7": [
+      "ready",
+      "turn0",
+      "turn1",
+      "turn3"
+    ],
+    "8": [
+      "turn3",
+      "turn1",
+      "turn0",
+      "ready"
+    ]
+  },
+  "plates": {
+    "cast-v1-raw.png": {
+      "expected_islands": 12,
+      "poses": {
+        "castDownAim": {
+          "island": 11,
+          "root": [
+            500,
+            1126
+          ]
+        },
+        "castDownPrep": {
+          "island": 9,
+          "root": [
+            165,
+            1125
+          ]
+        },
+        "castDownRecover": {
+          "island": 8,
+          "root": [
+            1175,
+            1127
+          ]
+        },
+        "castFrontAim": {
+          "island": 7,
+          "root": [
+            500,
+            784
+          ]
+        },
+        "castFrontPrep": {
+          "island": 5,
+          "root": [
+            165,
+            784
+          ]
+        },
+        "castFrontRecover": {
+          "island": 6,
+          "root": [
+            1175,
+            784
+          ]
+        },
+        "castUpAim": {
+          "island": 2,
+          "root": [
+            500,
+            409
+          ]
+        },
+        "castUpPrep": {
+          "island": 1,
+          "root": [
+            165,
+            407
+          ]
+        },
+        "castUpRecover": {
+          "island": 3,
+          "root": [
+            1175,
+            408
+          ]
+        }
+      },
+      "scale": 0.261,
+      "source": "krakenPriest/cast-v1-raw.png",
+      "source_sha256": "59c63204c44383ed786b3a7d978a97e60f35a5e0f75a9528ad891652c2105964"
+    },
+    "far-walk-v1-raw.png": {
+      "expected_islands": 3,
+      "poses": {
+        "far0": {
+          "island": 2,
+          "root": [
+            250,
+            987
+          ]
+        },
+        "far1": {
+          "island": 0,
+          "root": [
+            690,
+            987
+          ]
+        },
+        "far2": {
+          "island": 1,
+          "root": [
+            1120,
+            987
+          ]
+        }
+      },
+      "scale": 0.126,
+      "source": "krakenPriest/far-walk-v1-raw.png",
+      "source_sha256": "d9a514bea1c3a19a185efaa0c8fb9430cf5803627a3e9936f7f3b6278cbb6716"
+    },
+    "melee-v1-raw.png": {
+      "expected_islands": 12,
+      "poses": {
+        "down0": {
+          "island": 8,
+          "root": [
+            205,
+            997
+          ]
+        },
+        "down1": {
+          "island": 10,
+          "root": [
+            570,
+            997
+          ]
+        },
+        "down2": {
+          "island": 11,
+          "root": [
+            970,
+            997
+          ]
+        },
+        "front0": {
+          "island": 5,
+          "root": [
+            190,
+            677
+          ]
+        },
+        "front1": {
+          "island": 7,
+          "root": [
+            570,
+            677
+          ]
+        },
+        "front2": {
+          "island": 6,
+          "root": [
+            970,
+            677
+          ]
+        },
+        "up0": {
+          "island": 0,
+          "root": [
+            215,
+            384
+          ]
+        },
+        "up1": {
+          "island": 1,
+          "root": [
+            580,
+            384
+          ]
+        },
+        "up2": {
+          "island": 3,
+          "root": [
+            970,
+            384
+          ]
+        }
+      },
+      "scale": 0.309,
+      "source": "krakenPriest/melee-v1-raw.png",
+      "source_sha256": "4a2c283b6a44644a936fb0c4f6436f3cb952a420e22e5bbca6a39b9cdda4a7bd"
+    },
+    "near-walk-v1-raw.png": {
+      "expected_islands": 3,
+      "poses": {
+        "near0": {
+          "island": 1,
+          "root": [
+            285,
+            905
+          ]
+        },
+        "near1": {
+          "island": 2,
+          "root": [
+            800,
+            905
+          ]
+        },
+        "near2": {
+          "island": 0,
+          "root": [
+            1300,
+            905
+          ]
+        }
+      },
+      "scale": 0.113,
+      "source": "krakenPriest/near-walk-v1-raw.png",
+      "source_sha256": "006911c4ccb1923438161035084cf86f0b4c4045bed73b2f89941818f7140b55"
+    },
+    "reactions-v1-raw.png": {
+      "expected_islands": 12,
+      "poses": {
+        "death0": {
+          "island": 8,
+          "root": [
+            175,
+            993
+          ]
+        },
+        "death1": {
+          "island": 9,
+          "root": [
+            545,
+            996
+          ]
+        },
+        "death2": {
+          "island": 10,
+          "root": [
+            900,
+            996
+          ]
+        },
+        "death3": {
+          "island": 11,
+          "root": [
+            1290,
+            997
+          ]
+        },
+        "defend": {
+          "island": 1,
+          "root": [
+            550,
+            413
+          ]
+        },
+        "hurt0": {
+          "island": 2,
+          "root": [
+            950,
+            412
+          ]
+        },
+        "hurt1": {
+          "island": 3,
+          "root": [
+            1365,
+            414
+          ]
+        },
+        "ready": {
+          "island": 0,
+          "root": [
+            205,
+            405
+          ]
+        },
+        "turn0": {
+          "island": 4,
+          "root": [
+            185,
+            742
+          ]
+        },
+        "turn1": {
+          "island": 5,
+          "root": [
+            545,
+            740
+          ]
+        },
+        "turn2": {
+          "island": 7,
+          "root": [
+            950,
+            741
+          ]
+        },
+        "turn3": {
+          "island": 6,
+          "root": [
+            1370,
+            743
+          ]
+        }
+      },
+      "scale": 0.271,
+      "source": "krakenPriest/reactions-v1-raw.png",
+      "source_sha256": "ade64978fec5424a999bf3fd82d7329e0d170b2aa94abf7653d130e28d63b276"
+    }
+  },
+  "unit": "krakenPriest",
+  "unresolved": [
+    "Independent source gait/leg-overlap and native1x loop review remains required",
+    "Staff/body root continuity and stock body crops need inspection",
+    "Native Cure event/cast-phase alignment and both facings have not been observed",
+    "Correct regional crest legibility requires independent native-size review",
+    "Canonical source-policy and archive admission have not run"
+  ],
+  "version": 1
+}

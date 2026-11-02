@@ -1,0 +1,11 @@
+{
+  "prompt": "Use case: background-removal. Preserve this EXACT alreadypainted2D AWAKENED SUNFORGED quadruped, source1536x1024, entirechassis/fourlegs/wheel/ram andeverypaintedobjectpixel, allphysicalpositions/scale/camera. The actual sourcealpha currentlycontains unwantednonzero warmhaze anddarkbackground evenin emptycorners. Remove ALL background/halo/vignette/haze pixels outside the physicalmachine. Output a genuine isolated cutout: alpha MUST BE ZERO across every emptybackgroundregion and sourcecorner, including the large area above/aroundwheel andram; no semitransparentwarmgradients. Retain only a SMALL tight neutraldarkcontactshadow directlyunderfeet, not a broad atmosphericshadow. Preserve matte chippedstone/bronze/tinyturquoise paint andupgradearmor precisely. No crop/movement/zoom/posechange or materialrestyle. TrueRGBA transparency, no newbackground, 3D or filters.",
+  "referenced_image_paths": [
+    "assets/source/creatures/painted-v2/awakenedSunforged/standing-v1.png"
+  ],
+  "transparent_background": true,
+  "tool": "builtin image_gen",
+  "model": "not exposed by tool",
+  "visual_approval_granted": false,
+  "observed_defect": "Actual source alpha nonzero at corners (22,4,48), unlike baseline invisible RGB halo."
+}

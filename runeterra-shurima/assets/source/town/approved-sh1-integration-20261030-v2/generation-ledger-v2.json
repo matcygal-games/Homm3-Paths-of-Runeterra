@@ -1,0 +1,175 @@
+{
+  "approved_code": "SH1",
+  "derived_from_blender": false,
+  "hidden_face_completion": {
+    "generated_original": "C:/Users/matcy/.codex/generated_images/01a158d4-4bfa-7ad3-9641-2f065f9b313e/exec-5e25862f-ec38-4e8f-86c7-310d63768a64.png",
+    "input": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/approved-full-raw.png",
+      "sha256": "6f97d9a1020c073db9dcc6132546254278a1ee68a21550395b931f4204d2489f"
+    },
+    "model": "Not exposed by tool",
+    "native_conversion": "Uniform whole-scene Lanczos conversion to800x374; only recorded foreground-occluded rear pixels enter the candidate layers.",
+    "prompt": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/hidden-face-completion-prompt-v1.txt",
+      "sha256": "4052381a91d8db1b5a4775426043c6ef4e4c955a22e688937531a60a88b4dcee"
+    },
+    "provider": "OpenAI",
+    "tool": "built-in image_gen.imagegen",
+    "use_case": "precise-object-edit"
+  },
+  "occluded_sky_completion": {
+    "final_application_mask": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/geometry/sky-recovery-budget.png",
+      "sha256": "8e80e2005c20158e52361d41a83e527bc73328426111368b789e56f43fa50a49"
+    },
+    "generated_original": "C:/Users/matcy/.codex/generated_images/01a158d4-4bfa-7ad3-9641-2f065f9b313e/exec-4370e51a-61f3-4ee2-8ec5-33342b9441b8.png",
+    "guide_conversion": "Approved native crop (70,0,196,56), nearest 4x technical editing guide; frozen guide mask separately preserved.",
+    "guide_mask": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/sky-inpaint-removal-mask-v2.png",
+      "sha256": "05221550918de67cc81459da31f634a35ac6f2f537760b207add0509ceaba3bb"
+    },
+    "input": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/sky-inpaint-input-crop-v2.png",
+      "sha256": "f658e1cbc7b3f0c7592fba1dcdc54dc2e737249d9f7a4cc34a87f23f48c9879f"
+    },
+    "model": "Not exposed by tool",
+    "native_conversion": "Whole generated crop Lanczos to126x56, placed at70,0, used only under final geometry/sky-recovery-budget.png. Every visible approved sky pixel is preserved.",
+    "prompt": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/sky-inpaint-prompt-v2.txt",
+      "sha256": "fe695944845e73a041d12e974f5b0e2b6dfb5f355a1bd2551a43829824d15d78"
+    },
+    "provider": "OpenAI",
+    "residual": "Recovered empty-state sky can retain a subtle boundary at the original arch silhouette. No final visual acceptance granted.",
+    "tool": "built-in image_gen.imagegen"
+  },
+  "policy_quotes": [
+    "Derive click masks/highlights from selected visible silhouettes.",
+    "Rear buildings need level landings supporting their complete root, foundation and contact-shadow profiles.",
+    "The terrain plate must not contain completed functional architecture."
+  ],
+  "preserved_parent_ledger": {
+    "path": "assets/source/town/approved-sh1-integration-20261030-v2/generation-ledger.json",
+    "sha256": "e782ffaff1071e6c5f76bad1300a2216485e859f2609876943ee769eec4b88a3"
+  },
+  "producers": {
+    "build_candidate.py": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/build_candidate.py",
+      "sha256": "2bfeeaa7c75898d291768b972a18ba8b785be0fbec86abddbe634d464583f0a5"
+    },
+    "compile_candidate.py": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/compile_candidate.py",
+      "sha256": "45501cd84218fa8a5f15011fed85f783eab1d4ce473f98b427fd5025b56bae33"
+    },
+    "prepare_contract.py": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/prepare_contract.py",
+      "sha256": "87dbcdf67ac96b29c89ac32f55d0c20df556f91b0ff5fb0d49f9d45e49531121"
+    }
+  },
+  "scope": "Painted source and deterministic technical annotation/assembly only; no native or final art/rights acceptance.",
+  "sources": {
+    "approved-full-native.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/approved-full-native.png",
+      "sha256": "7848452633d0bf49c32e08caa00a436aaa71d3ce810bacec6bdae322c3db349b"
+    },
+    "approved-full-raw.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/approved-full-raw.png",
+      "sha256": "6f97d9a1020c073db9dcc6132546254278a1ee68a21550395b931f4204d2489f"
+    },
+    "early-states-native.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/early-states-native.png",
+      "sha256": "d285f2546770796fbee709969022eadfbdf79112e00d310fe3ec818689f1b9cb"
+    },
+    "early-states-raw.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/early-states-raw.png",
+      "sha256": "10d90c3fb538630de54939ee79ab6b5ed4405418115908e2a1f001d702b77f18"
+    },
+    "empty-recovery-native.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/empty-recovery-native.png",
+      "sha256": "298e559d50b3e767623cf4e33847679bf0acfbfa2fae2d3111d386be016254c2"
+    },
+    "empty-recovery-raw.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/empty-recovery-raw.png",
+      "sha256": "7f7f2161fab15e6a8814ad17132d968d30185362e5f5ad088176c6b5a97dff13"
+    },
+    "hidden-face-completion-native-v1.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/hidden-face-completion-native-v1.png",
+      "sha256": "7c8882430590dd983258b9b3cafa87af7f288b9f2b03f54dd9c3c28fd1d40393"
+    },
+    "hidden-face-completion-raw-v1.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/hidden-face-completion-raw-v1.png",
+      "sha256": "57655bc519412bad437dcf272c6ad15c2d2b800878ad57f1f077030d1f2946f1"
+    },
+    "late-states-native.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/late-states-native.png",
+      "sha256": "fb7d7e6f9a9bdbda38178dbefd26884619d4a22d9e0c40af38ca65722849fe29"
+    },
+    "late-states-raw.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/late-states-raw.png",
+      "sha256": "687fa1bd81d21927cdebf6ffe2ac4a9a1a251bf5d858455d6ae3491c2e9d20e9"
+    },
+    "middle-states-native.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/middle-states-native.png",
+      "sha256": "eb1128aaf42eb28a6e60cfb9d3f914212dfde5a535dbc63ddd2cca46433a611c"
+    },
+    "middle-states-raw.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/middle-states-raw.png",
+      "sha256": "d7fc0a31e1b45dc37aa5881284f97058ae5947f9dc2fca2fa35f84878c6d00dd"
+    },
+    "sky-inpaint-input-crop-v2.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/sky-inpaint-input-crop-v2.png",
+      "sha256": "f658e1cbc7b3f0c7592fba1dcdc54dc2e737249d9f7a4cc34a87f23f48c9879f"
+    },
+    "sky-inpaint-native-crop-v2.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/sky-inpaint-native-crop-v2.png",
+      "sha256": "ed777956dd3f64bb9bc1d41a89d3d4dcfb51f7c4dd0f518bc2635cf299d74231"
+    },
+    "sky-inpaint-raw-v2.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/sky-inpaint-raw-v2.png",
+      "sha256": "d96c35ca226d893ccb969f7436306b9fa89b97e12b0e4a51c6b7d9a68eee6809"
+    },
+    "sky-inpaint-removal-mask-v2.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/sky-inpaint-removal-mask-v2.png",
+      "sha256": "05221550918de67cc81459da31f634a35ac6f2f537760b207add0509ceaba3bb"
+    }
+  },
+  "status": "authored configuration",
+  "unselected_bounded_sky_repair_v3": {
+    "generated_original": "C:/Users/matcy/.codex/generated_images/01a158d4-4bfa-7ad3-9641-2f065f9b313e/exec-e1571c98-c6a7-4c3b-806c-bf7f986b606d.png",
+    "guide": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/sky-repair-guide-mask-v3.png",
+      "sha256": "a17be789f38cb31de9e50173e64517da07f8676a832998c8de14a403dcf2a8e8"
+    },
+    "input": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/sky-repair-input-crop-v3.png",
+      "sha256": "c7df014e95c3449ac8aeb567f8c3e7f9bd045fc947881baacef3f7140fd76d7a"
+    },
+    "model": "Not exposed by tool",
+    "native": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/sky-repair-native-crop-v3.png",
+      "sha256": "68698ec6c47de890e1729c3cc9514ce184e3447f77d5fa912dabe6d5e227e75f"
+    },
+    "native_conversion": "Whole generated crop Lanczos to150x65, placed at60,0; attempted composite confined to the frozen recovery budget; proposed background is unselected.",
+    "prompt": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/sky-repair-prompt-v3.txt",
+      "sha256": "1c66c1cffcce851fa65cad92f7f870cfe5582bac4e5438af01d7f7adcf96762a"
+    },
+    "provider": "OpenAI",
+    "raw": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v2/sky-repair-raw-v3.png",
+      "sha256": "57346f26d0e7cbacdd6f2868fa3bbab49150452e2e8c6ce475e765cb10076ce8"
+    },
+    "reason": "Actual constrained composite still shows an angled colour transition at immutable original sky. No clear visual improvement over v2; retained as failed bounded repair history, not selected.",
+    "selected": false,
+    "tool": "built-in image_gen.imagegen"
+  },
+  "unselected_preserved_sky_attempt": {
+    "prompt": "sky-recovery-prompt-v1.txt",
+    "reason": "Whole-scene sky recovery insufficiently matched the approved sky; superseded by bounded crop recovery. Historical edit input was not frozen byte-exact and is not claimed reproducible.",
+    "selected": false,
+    "sources": [
+      "sky-recovery-raw-v1.png",
+      "sky-recovery-native-v1.png"
+    ]
+  },
+  "workflow": "image-based-painted-2d"
+}

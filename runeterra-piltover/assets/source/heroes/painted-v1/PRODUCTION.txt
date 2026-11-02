@@ -1,0 +1,33 @@
+PILTOVER HERO ART CANDIDATES, 25 OCTOBER 2026
+
+Status: painted-master-complete-unapproved. No native gameplay, interface,
+final external art or redistribution approval is claimed.
+
+Fifteen distinct hero portrait masters were each generated in a separate built-in
+OpenAI imagegen call. Full prompts and sanitized reference ancestry are in each
+hero's generation-request.json. Lymere/Uberti appearances are project fiction;
+Mir's name/body association and Kepple's female presentation are explicit project
+interpretations. The other named appearances were guided by inspected private
+official references without reusing their illustration pixels.
+
+Specialty masters use eleven separately generated painted motif images, with one
+survey-spyglass image intentionally shared by Ezreal's sight and Jae's Scouting.
+Heimerdinger, Jayce and Zevi specialties derive from the project's own Freight
+Handler, living Dockyard Lifter and Academy Artificer art. Their exact technical
+crop/own-background ancestry is in specialty-generation-request.json.
+
+Every hero has large.png (58x64), small.png (48x32), specialtyLarge.png (44x44)
+and specialtySmall.png (32x32), all RGBA. Corresponding raster candidate recipes
+bind the exact native source, canvas and cached painted-master SHA-256.
+
+Reproduce all sixty native files and recipes from the cached own masters:
+  python assets/source/heroes/painted-v1/derive_native.py
+
+The coordinator selects canonical recipes and publishes stages. This candidate
+producer does not write a live stage or select its own work for release.
+
+Public PNG metadata and JSON ancestry omit private workstation/provider paths.
+Metadata stripping was checked with exact decoded RGBA byte equality. Raw
+provider requests/hints/original PNGs and licensed reference pictures remain in
+private coordinator reports outside public source bundles. Cached independently
+painted masters, technical sources and recipes are retained here for replay.

@@ -1,0 +1,24 @@
+# Auxiliary artwork sources
+
+Status: **authored configuration**. OpenAI's built-in imagegen produced46 saved painted masters across the owned siege, adventure-town, UI, puzzle and projectile categories. Each version directory stores the actual prompt, returned original path, provider disclosure and source hash in `generation.json`. The built-in model identifier was not exposed. All artistic and redistribution approval remains pending.
+
+`scripts/prepare_aux_art.py` assembles101 recipes:32 independent siege fragments; two portraits derived from the exact own Ice Hunter source; five adventure-town states; eight town icons; three UI vignettes;48 adjacent puzzle pieces; and three five-direction projectile resources. The ordinary arrow, Spirit Walker's short pale-blue/ochre wisp and Ancient Yeti's solid fractured ice boulder use static native angle selections, not a spinning temporal sequence. Neither wisp nor boulder gives an elemental damage school, mana economy, freeze, AoE or free cast to the underlying physical attack. Technical preparation reads existing sources and never generates replacement artwork, writes content/design, edits manifests, stages a mod or grants acceptance.
+
+The original Cyclops projectile was decoded read only from `PCYCLBX.DEF`, member SHA-256 `95d18d496dab525b1972e2f3c7ad2d717e83681a65bb170f3d66ad49be3aa738`: canvas33×33, first visible rock30×29. The independent Yeti painting uses up to32×28 visible pixels inside48×48, leaving room for all diagonal rotations without clipping. Original extracted reference pixels remain under `references/native-projectile-20261021/` and are excluded from production sources and packages. Only numeric size/hash evidence appears in the boulder's recipe.
+
+The selected siege source versions are `SGFRMAN1/painted-v2`, `SGFRMAN2/painted-v2` and `SGFRMOAT/painted-v2`; other siege fragments use `painted-v1`. Earlier variants are preserved history. The original main tower had an unwanted side fence which narrowed its native fit and left its front occluder floating. The new independently painted roofless narrow keep fixes that static placement. The original moat included stakes, removed by the selected second painting. Neither correction is a native game observation.
+
+Original Castle PCX canvases and attachment rectangles are measured read only, with reference checksums in `native-geometry-v1.json`. Only numeric format/geometry measurements are retained. No original pixels, contours, palettes, troop frames, Demacian assets or Noxian assets are copied into these game resources. Dark timber, rough stone, modest snow and open physical water define the new northern defensive subjects.
+
+Damaged wall/tower states use their own intact painting's camera scale and footing. Ruins are not independently enlarged to fill the old wall. Minor built-in canvas rounding below2% uses a disclosed uniform contain and transparent bottom-aligned padding; larger frame changes fail. This is technical normalization, not proof of pixel registration, artistic approval or legal battlefield openings.
+
+The current reproducible static candidate views live in checksum-named `layout-reviews/<input-signature>/`. Each receipt binds all101 recipes and current faction geometry to three siege reconstructions and the five adventure-state views with simulated red ownership tint. These are candidate pictures assembled outside the engine. Earlier `native-layout-v1` and `native-layout-v2` pictures are historical static checks. The game still needs actual gate/wall damage, moat, tower shooter, occlusion, pathing, map entrance/masks, tint and icon-state tests.
+
+Run:
+
+```powershell
+& 'runeterra-demacia/.venv/Scripts/python.exe' -B runeterra-freljord/scripts/prepare_aux_art.py
+& 'runeterra-demacia/.venv/Scripts/python.exe' -B -m unittest discover -s runeterra-freljord/tests -p test_aux_art.py -v
+```
+
+The latest executed auxiliary suite passed16 tests with zero skips and exit0. Tests cover camera-locked rubble, altered-canvas rejection, alpha, tampered source pins, path safety, painted ownership flags, all101 real source/compiler plans, exact48-piece reassembly, all three sets of five angle frames, measured boulder size/diagonal margins and the actual own shooter identity. All three projectiles actually compile in an isolated view and pass the strict asset-closure consumer used by the CLI. That same validator additionally runs against an isolated view of all11 camera-dependent siege recipes: valid nested `source_sha256` pins pass, and removing one pin produces the required checksum failure. This fixes the earlier wrong `sha256` field which compiler planning alone did not reject. They do not establish native rendering, originality, final art acceptance or rights. No Ice Wyrm-specific art was produced by this auxiliary work; the later roster change does not select a retired T7 subject here.

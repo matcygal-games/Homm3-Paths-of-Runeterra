@@ -1,0 +1,104 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "One own building icon in the native Heroes III town icon language: the same building read at icon scale, with the same equipment and materials as the painted town layer. Never a borrowed icon.",
+  "building": "special2",
+  "canvas": [
+    150,
+    70
+  ],
+  "content_box": [
+    0,
+    0,
+    150,
+    70
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; prompted and technically assembled by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/specials-master.png",
+      "sha256": "0c7ef0668fe562363b5b1b0133782e7f0f6c057b2f01623f59b812cb1fb8d1b0"
+    },
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/specials-provenance.json",
+      "sha256": "188562b8af9d372a13339400c7ed69b1ad8f79c2dd711aca91d99b22621e0429"
+    },
+    {
+      "path": "assets/source/town/painted-community-20261024-v1/prepare.py",
+      "sha256": "570add080d42e1b17d7aec2939862119a175a664281e04050585cfb68138a835"
+    },
+    {
+      "path": "scripts/zaun_coastal_state_v1.py",
+      "sha256": "5aa45de45f59be66d393df44538743b1842db5ba5f1c4e48c1d83acaa13f3cf7"
+    },
+    {
+      "path": "assets/source/town/painted-depth-20261024-v2/prepare.py",
+      "sha256": "4338d2c3a5c9da1752c895765c49e198783a7ff5a233c8d629df2a0c7d62ccf3"
+    }
+  ],
+  "fit": "contain",
+  "generation": {
+    "conversion": {
+      "composition_rectangle": [
+        279,
+        156,
+        93,
+        70
+      ],
+      "depth_direction": "Larger apparent foreground framing; smaller distant monuments; staggered connected dry terraces.",
+      "method": "Existing genuine painted source, uniform contain and full-canvas placement; alpha-derived masks. No new painting or camera projection.",
+      "native_z": 226,
+      "revision": "painted-depth-20261024-v2",
+      "source_crop": [
+        800,
+        16,
+        1527,
+        506
+      ]
+    },
+    "credits": {
+      "author": "OpenAI built-in imagegen; prompted by Codex",
+      "license": null,
+      "redistribution": "unresolved; release prohibited"
+    },
+    "edit_target": "assets/source/town/painted-v3/specials-master.png",
+    "generation_date": "2026-10-21",
+    "image_generation_used": true,
+    "model": null,
+    "model_disclosed": false,
+    "painted_master": "assets/source/town/chemtech-v4-buildings/specials-master.png",
+    "painted_master_sha256": "0c7ef0668fe562363b5b1b0133782e7f0f6c057b2f01623f59b812cb1fb8d1b0",
+    "prompt": "Usecase: precise-object-edit. Edit ownZaun specialservice4-buildingatlas2x2. Keepallfourroles and positions, independentwholebuildings, lowfrontalcamera, originalHeroesIIIrichlypaintedtexturedprerenderedstyle. TOPLEFT augmentationworkshop: prostheticchair/hooktools remain, glasssidepressurecylinder vividCHEMICALGREEN, copperpipes,purplecanvas details. TOPRIGHT clinic: recognizablebeds/medicalchair/shelves/cleancreamlinen, purpleprivacycurtains, smallgreenmedicalreagentvials/lamp/dosingtank, NOTreactor. BOTTOMLEFT sumppumps: toxicGREENluminescentwaterpool/outflowandpressureglassinspectioncell, rustyconcrete/ironpump/bridge. BOTTOMRIGHT fightingpit: curvedarena/spectatorseats/centralfightingfloor, purplestandards/canopies, vividgreenfluidonlyoutside sumpchannels andfewgreenlamps, retainreadablearenafloor, notbigchemicalreactor. Stronggreen-purple-brownchemtechidentity, localreflections, upperleftdaylight. Allstructurescompleteinsideeachcellwithwidepadding/gutters. Realtransparentalpha, nobackdrop/sharedgroundtile/text/neonoutlines/glossymodern3D.",
+    "provider": "OpenAI built-in image_gen.imagegen",
+    "returned_provenance": {
+      "output_hint": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-560d-7462-a9a5-3670486c088c as C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-560d-7462-a9a5-3670486c088c\\exec-72d5a35c-ada6-4a66-acf0-dcfe616d69b4.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "route": "Genuine image-generation edit of own Zaun buildings; technical crop/uniform scale/placement only",
+    "visual_approval_granted": false
+  },
+  "id": "zaun.town.construction.special2",
+  "identity_review": "build/reports/town-depth-20261024-v2/source-pixel-review.json",
+  "native_visual_review": "pending",
+  "output_path": "Content/Sprites/runeterra/zaun/town/construction/special2.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    150,
+    70
+  ],
+  "source": "assets/source/town/painted-depth-20261024-v2/structures/special2/construction.png",
+  "source_sha256": "ef51f4c157b034902f216581f7a6be22c4697047dc4ba10f911294ae63e9e0b7",
+  "status": "built-unreviewed",
+  "title": "Augmentation Clinic building icon",
+  "visual_approval_granted": false
+}

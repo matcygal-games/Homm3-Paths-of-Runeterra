@@ -1,0 +1,45 @@
+{
+  "approved_master": {
+    "path": "approved-full-raw.png",
+    "sha256": "735af66359c87df49ad752bd47d0fa843671b44f44668c69f8ae931af3b01ec5"
+  },
+  "concept_history": "approval-concept-before-user-decision.json",
+  "derived_from_blender": false,
+  "empty_recovery": {
+    "model": "Not exposed",
+    "path": "empty-recovery-raw.png",
+    "prompt": "Precise-object-edit: remove all functional buildings from approved painting; preserve camera, roads, stairs, terrain and surroundings; recover honestly the covered terrain. Original painted2D HoMM3 style. No new architecture, no3D.",
+    "provider": "OpenAI built-in image_gen",
+    "sha256": "9147a4d27ce2694e6247ebf66385057fdc0fea67d216c23a9c3b8dfc273f2f04"
+  },
+  "native_compiler_producer": "compile_source.py",
+  "native_compiler_producer_sha256": "0a34c1e7e9e23ade3d5b10d2b4d860064340f6b218fdb17e10d255fba1400624",
+  "portable_helper_sha256": "9cf56e551ed31c79dca68ac2153d7dd60f91980639673df9a66a8a29ec4472ac",
+  "state_sources": {
+    "early": {
+      "model": "Not exposed",
+      "path": "early-states-raw.png",
+      "prompt_summary": "Genuine painted earlier construction architecture inside the same approved plots, preserving camera/ground contacts/roads. Early=all7 base dwellings+VillageHall/Fort/Mage1; middle=TownHall/Citadel/Mage2; late=CityHall/Mage3. No scaled/recolored final-state clones.",
+      "provider": "OpenAI built-in image_gen",
+      "sha256": "186c256961d86c65d9d492ade6d22fa47720cbc9f6bf4ec365085d2fb71f584a"
+    },
+    "late": {
+      "model": "Not exposed",
+      "path": "late-states-raw.png",
+      "prompt_summary": "Genuine painted earlier construction architecture inside the same approved plots, preserving camera/ground contacts/roads. Early=all7 base dwellings+VillageHall/Fort/Mage1; middle=TownHall/Citadel/Mage2; late=CityHall/Mage3. No scaled/recolored final-state clones.",
+      "provider": "OpenAI built-in image_gen",
+      "sha256": "00a323511663c614055c6acd9fea16706d34390b8b53a2437eac627e9ca0fb91"
+    },
+    "middle": {
+      "model": "Not exposed",
+      "path": "middle-states-raw.png",
+      "prompt_summary": "Genuine painted earlier construction architecture inside the same approved plots, preserving camera/ground contacts/roads. Early=all7 base dwellings+VillageHall/Fort/Mage1; middle=TownHall/Citadel/Mage2; late=CityHall/Mage3. No scaled/recolored final-state clones.",
+      "provider": "OpenAI built-in image_gen",
+      "sha256": "7c8f7bac40516650ea5cb3020b5a1d24f3010ef8b784ba931b3de34f5db62bc7"
+    }
+  },
+  "status": "authored configuration",
+  "technical_producer": "assemble_source.py",
+  "technical_producer_sha256": "7d8d9d233c3cd9f1b7a296c3416e841cecdef3b77ed486dae474af492b0e2faa",
+  "workflow": "image-based-painted-2d"
+}

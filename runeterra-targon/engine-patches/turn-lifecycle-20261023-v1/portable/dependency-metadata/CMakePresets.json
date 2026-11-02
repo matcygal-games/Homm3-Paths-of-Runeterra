@@ -1,0 +1,54 @@
+{
+    "version": 3,
+    "vendor": {
+        "conan": {}
+    },
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 15,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "conan-release",
+            "displayName": "'conan-release' config",
+            "description": "'conan-release' configure using 'Ninja' generator",
+            "generator": "Ninja",
+            "cacheVariables": {
+                "CMAKE_POLICY_DEFAULT_CMP0091": "NEW",
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_C_COMPILER": "cl",
+                "CMAKE_CXX_COMPILER": "cl"
+            },
+            "toolset": {
+                "value": "v145",
+                "strategy": "external"
+            },
+            "architecture": {
+                "value": "x64",
+                "strategy": "external"
+            },
+            "toolchainFile": "conan_toolchain.cmake",
+            "binaryDir": "<SDK_ROOT>\\conan-generated"
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "conan-release",
+            "configurePreset": "conan-release",
+            "jobs": 16
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "conan-release",
+            "configurePreset": "conan-release",
+            "execution": {
+                "jobs": 16
+            },
+            "environment": {
+                "PATH": "<SDK_ROOT>\\conan-home\\p\\minizf455d3a92e5f9\\p\\bin;<SDK_ROOT>\\conan-home\\p\\onetbeec24a0b9e43d\\p\\bin;<SDK_ROOT>\\conan-home\\p\\sdl_i44042adf09a1b\\p\\bin;<SDK_ROOT>\\conan-home\\p\\sdl_ma71c9f6f2fcfe\\p\\bin;<SDK_ROOT>\\conan-home\\p\\ogg5ed6d81817e4c\\p\\bin;<SDK_ROOT>\\conan-home\\p\\sdl_td9fee9bb38b98\\p\\bin;<SDK_ROOT>\\conan-home\\p\\boost2daea649742b4\\p\\bin;<SDK_ROOT>\\conan-home\\p\\ffmpe58f6e49b85723\\p\\bin;<SDK_ROOT>\\conan-home\\p\\bzip229180355bba12\\p\\bin;<SDK_ROOT>\\conan-home\\p\\xz_ut74796b4afa323\\p\\bin;<SDK_ROOT>\\conan-home\\p\\opusa6deb694451ce\\p\\bin;<SDK_ROOT>\\conan-home\\p\\sdl0eecc6fcfc36a\\p\\bin;<SDK_ROOT>\\conan-home\\p\\libica3ca054de0149\\p\\bin;<SDK_ROOT>\\conan-home\\p\\qtde84f76087842\\p\\bin;<SDK_ROOT>\\conan-home\\p\\libpnea4a3e718b3d7\\p\\bin;<SDK_ROOT>\\conan-home\\p\\zlib705a7ddfe2543\\p\\bin;$penv{PATH}"
+            }
+        }
+    ]
+}

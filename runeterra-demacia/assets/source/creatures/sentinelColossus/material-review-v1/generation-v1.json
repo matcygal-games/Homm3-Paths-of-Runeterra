@@ -1,0 +1,34 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "prompt": {
+    "path": "assets/source/creatures/sentinelColossus/material-review-v1/prompt-v1.txt",
+    "sha256": "f475b6da78d10ead7f82602204ae46963a65895fd8c6604d0de4270f86ac072b"
+  },
+  "output": {
+    "path": "assets/source/creatures/sentinelColossus/material-review-v1/material-pilot-v1.png",
+    "sha256": "876af6b354b9c1584981dc57bba5eea3e85a8aa898bac5f6d7ce30daca336102"
+  },
+  "inputs": [
+    {
+      "path": "assets/source/creatures/sentinelColossus/colossus-rig-v2/paint-action-g02-atlas-v1.png",
+      "sha256": "d2c3bd1cd5c507d6d25e94e7c5f21410c7cfe6dfbb254ff314709d5a5401cb60"
+    },
+    {
+      "path": "references/frames/csgole/g02-f000.png",
+      "sha256": "54230f0ba8eea126f4c33afe4d0f99bbe835cabb3803189fa57071e4d1bd7955"
+    }
+  ],
+  "native_comparison": {
+    "path": "build/reports/art-review/current-20261020/upper/sentinel-material-pilot-native-comparison.png",
+    "sha256": "009c9d01f272e93c0cc3c30f9d4c392e96e63785b6c65b93d253e4671270f19e"
+  },
+  "comparison_conversion": "First627-square cell, alpha8 subject bounds, uniform LANCZOS resize to113px height for comparison only. No production candidate/selected frame is overwritten.",
+  "decision": "reject-for-selection",
+  "findings": [
+    "Material changes are modest at native scale; pilot does not establish a worthwhile improvement.",
+    "Generated subject head/sole/cell proportions shifted slightly despite invariants; replacing only ready would break coherent action identity/camera.",
+    "Do not promote this static pilot into battle, map, portrait or manifest. Full material-family revision would require all poses and new measured cameras."
+  ],
+  "active_recipes_changed": false,
+  "visual_approval_granted": false
+}

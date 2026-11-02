@@ -1,0 +1,150 @@
+{
+  "before_relation": "Exact current private source bytes match previously reviewed patched-v3; read-only comparison only.",
+  "before_v3_sha256": "10d7a983e62d9e41bf20ab2f1402a87f40c89e5b30ab4a598c26ba137ed61062",
+  "candidate_sha256": "b552b406f8f00c01ee082eeafa42726811b45f0fe98d0d62744aeb9d55fff1ee",
+  "incremental_patch_sha256": "f341e785a793887eb8ebaacd7e809096ce802cd266aea7a85b96336dc92a9eba",
+  "native_execution": false,
+  "official_commit": "66fa496c6328a276c4eb14c0011b3a9d751dfac3",
+  "read_only_actual_consumer_method_comparisons": {
+    "client/CServerHandler.cpp::bool CServerHandler::isMyColor(": {
+      "actual_private_method_matches_official": true,
+      "sha256": "143c43ee3578059d03a90bfbc101ddc4f5e80296c64dd970741b4b4063726223"
+    },
+    "client/CServerHandler.cpp::void CServerHandler::debugStartTest(": {
+      "actual_private_method_matches_official": true,
+      "sha256": "d7bde43bec49cc7b07cbeaf745407e0c21ae6725ff895917d0df57dd12e2f603"
+    },
+    "client/Client.cpp::int CClient::sendRequest(": {
+      "actual_private_method_matches_official": false,
+      "copied_fragment": "actual-consumers/client-send-request-v3.cpp",
+      "matches_reviewed_turn_lifecycle_request_registration_repair": true,
+      "sha256": "2d026e38211dc87baafe900a77b3403fe29485e1edd95c571d18e43064477805"
+    },
+    "client/Client.cpp::void CClient::initPlayerInterfaces(": {
+      "actual_private_method_matches_official": true,
+      "sha256": "525a1fa10ee6562b4093be0e175cc78e306d5266189b1bb07f02311426c47e8b"
+    },
+    "client/Client.cpp::void CClient::installNewPlayerInterface(": {
+      "actual_private_method_matches_official": true,
+      "sha256": "3470ed58635bc934b889505bfb18386f09e0b40801ee7a1a57a69146438c52c5"
+    },
+    "client/GameInstance.cpp::CPlayerInterface * GameInstance::interface(": {
+      "actual_private_method_matches_official": true,
+      "sha256": "6350d497787b0b06dac99a7c3e5559f2f37c1104dcf078c4d833ccea1c8bef8c"
+    },
+    "lib/serializer/GameConnection.cpp::std::shared_ptr<INetworkConnection> GameConnection::getConnection(": {
+      "actual_private_method_matches_official": true,
+      "sha256": "0561eb7141e39bbbcc725bd2b17d0c603da4c53e87eef22ec7b64b54439aa5c7"
+    },
+    "server/CVCMIServer.cpp::bool CVCMIServer::hasPlayerAt(": {
+      "actual_private_method_matches_official": true,
+      "sha256": "f6b3b071b8b71e5408f34303cd95df1a98577f59785ceea05889c03fa4663f66"
+    }
+  },
+  "sources": {
+    "client/CServerHandler.cpp": {
+      "git_blob_sha1": "304ff739b39b856c4ad306444379b1637faa1a5a",
+      "sha256": "973ddc90f8992454203e5ca58266e1d907aca0669e94f0ffbdddbf8265deb879",
+      "url": "https://raw.githubusercontent.com/vcmi/vcmi/66fa496c6328a276c4eb14c0011b3a9d751dfac3/client/CServerHandler.cpp"
+    },
+    "client/CServerHandler.h": {
+      "git_blob_sha1": "93005382e81fca31c450641c60d5d3a49a71cdfe",
+      "sha256": "06a69ca175914b3503bc02317d3135929b216b47a06f7a7cfd7c65cbdbcb95ea",
+      "url": "https://raw.githubusercontent.com/vcmi/vcmi/66fa496c6328a276c4eb14c0011b3a9d751dfac3/client/CServerHandler.h"
+    },
+    "client/Client.cpp": {
+      "git_blob_sha1": "f8e606969302df7ab849a1df86632bdc58a29ad6",
+      "sha256": "c0812894e8c539ca4b92b4d2764b3fea3fcd2baf2f85a6ca4b0b7a015d27f22a",
+      "url": "https://raw.githubusercontent.com/vcmi/vcmi/66fa496c6328a276c4eb14c0011b3a9d751dfac3/client/Client.cpp"
+    },
+    "client/Client.h": {
+      "git_blob_sha1": "241b2f04e58516b737a736617e2553eec654212c",
+      "sha256": "fc93b5e64de215954c32f534d71948c43fcec2bcb389290a41f4653a0d6e57b9",
+      "url": "https://raw.githubusercontent.com/vcmi/vcmi/66fa496c6328a276c4eb14c0011b3a9d751dfac3/client/Client.h"
+    },
+    "client/GameInstance.cpp": {
+      "git_blob_sha1": "ede3aed7688d8d5529a606a85d2727d8de034233",
+      "sha256": "3a9edc0a1fd52f18427e858a1b2cd8d7f4b29d3646ff4154b42616b60d864ad1"
+    },
+    "client/GameInstance.h": {
+      "git_blob_sha1": "0f2208af18c2997f6f2d29302c31ac8721d2d2bd",
+      "sha256": "f3279eaf164404dd050a067426ed8cfb02ea82402e4ee008d4d417345b8e7dda"
+    },
+    "clientapp/EntryPoint.cpp": {
+      "git_blob_sha1": "5d9b824e769020dd9a99af7fa492493b09eff064",
+      "sha256": "13b39c6431d016919dd745e1e3f90d2db6490fed6eef9eeee673be51aa17ac01"
+    },
+    "lib/StartInfo.cpp": {
+      "git_blob_sha1": "43031b1e99702ec630696a271be42f1f0d224bf5",
+      "sha256": "79d0865a497fe711fd0c1757f96050d76a85881332188f42630df72a5c2f05e3",
+      "url": "https://raw.githubusercontent.com/vcmi/vcmi/66fa496c6328a276c4eb14c0011b3a9d751dfac3/lib/StartInfo.cpp"
+    },
+    "lib/StartInfo.h": {
+      "git_blob_sha1": "a4e971eabcfd666a99e9cd6d8ab3b969cbf7cac5",
+      "sha256": "d4de235f6579f9087d2c35dcfbf1b8e05dcab6612cfd511aae7f2b8d594e691a",
+      "url": "https://raw.githubusercontent.com/vcmi/vcmi/66fa496c6328a276c4eb14c0011b3a9d751dfac3/lib/StartInfo.h"
+    },
+    "lib/callback/CCallback.cpp": {
+      "git_blob_sha1": "75a152fe4f11d5fad6f1f6fe83f9819315231e63",
+      "sha256": "9c3fde15ba5a733c0d577d019ffd1df5b55b897f25fd0744e0a728f268b3851f",
+      "url": "https://raw.githubusercontent.com/vcmi/vcmi/66fa496c6328a276c4eb14c0011b3a9d751dfac3/lib/callback/CCallback.cpp"
+    },
+    "lib/networkPacks/PacksForServer.h": {
+      "git_blob_sha1": "796bd8428550a666fe9cec4785013b42efca2f55",
+      "sha256": "1a92f957676f36b4ea0cb4b79072b89a60130053798088b43e37fc9e15d9cc84",
+      "url": "https://raw.githubusercontent.com/vcmi/vcmi/66fa496c6328a276c4eb14c0011b3a9d751dfac3/lib/networkPacks/PacksForServer.h"
+    },
+    "lib/serializer/CSaveFile.cpp": {
+      "git_blob_sha1": "0c51a6d6cb0fbb0924e2b229203922ed4f4dcc01",
+      "sha256": "2e1c51acd6d030b0dc86d598f8028a80411c95272b14b6f1c0cd372e6dc93e2f",
+      "url": "https://raw.githubusercontent.com/vcmi/vcmi/66fa496c6328a276c4eb14c0011b3a9d751dfac3/lib/serializer/CSaveFile.cpp"
+    },
+    "lib/serializer/GameConnection.cpp": {
+      "git_blob_sha1": "cd77d01464c78bd4c54c7af55b07ccbea5f0b9e0",
+      "sha256": "62e36e804d667d154f32a2b0520b0df0385677baf33a5d3fe9dd8e63601fe535"
+    },
+    "lib/serializer/GameConnection.h": {
+      "git_blob_sha1": "8b6330974a4f6330b3938be0d970bcce58c10c6c",
+      "sha256": "c2215e5d2da3ec1299c11573fe0106482ad071d2c3247d50cb3274c715f18d9f"
+    },
+    "lib/serializer/GameConnectionID.h": {
+      "git_blob_sha1": "985faad353ff20b69e18b8577949252465647e56",
+      "sha256": "6a7c954aad980ce5d27b53ce1edc0e174ef20a5794baff7e341637d98bf222b4"
+    },
+    "lib/serializer/PlayerConnectionID.h": {
+      "git_blob_sha1": "edb5df6571eb4f4cc935884b629e12fb5275c317",
+      "sha256": "e8d55857af0bb2103e6b9ce773e4727cce6d75861a694476b63fe176c15523bc"
+    },
+    "license.txt": {
+      "git_blob_sha1": "88f62e95c1b5247f93ede5a308fcf8561ffb4082",
+      "sha256": "2d5ffb759ac6444583842abd4a25745f5d172f63318dc49966f8c9859b4ca849",
+      "url": "https://raw.githubusercontent.com/vcmi/vcmi/66fa496c6328a276c4eb14c0011b3a9d751dfac3/license.txt"
+    },
+    "server/CGameHandler.cpp": {
+      "git_blob_sha1": "e6415f266025c038c0589debec427a621a75b966",
+      "sha256": "28ba0b3cee891b61cf9660c70e2e20fee940885bd732904410064e2905124f4d",
+      "url": "https://raw.githubusercontent.com/vcmi/vcmi/66fa496c6328a276c4eb14c0011b3a9d751dfac3/server/CGameHandler.cpp"
+    },
+    "server/CVCMIServer.cpp": {
+      "git_blob_sha1": "1c57f2ced94a9a105e8db292baff26b348a8734e",
+      "sha256": "1ebb8f1c50d85ebb786c9008e8444440ce7f0eb68ca53663b27042f781ca2719",
+      "url": "https://raw.githubusercontent.com/vcmi/vcmi/66fa496c6328a276c4eb14c0011b3a9d751dfac3/server/CVCMIServer.cpp"
+    },
+    "server/NetPacksServer.cpp": {
+      "git_blob_sha1": "be92e5dd4176909c54dc772fea4ba900688a91ce",
+      "sha256": "758984a8d618cebb05fd6204a76922ed1a88d87a58eebd51821176df5bd6f3ad",
+      "url": "https://raw.githubusercontent.com/vcmi/vcmi/66fa496c6328a276c4eb14c0011b3a9d751dfac3/server/NetPacksServer.cpp"
+    },
+    "server/activities/Activity.cpp": {
+      "git_blob_sha1": "a5e5891e0f4e31d1996fa997300e64811866b39a",
+      "sha256": "2c2b01ec4be16a41d68b85be7883cf73f14c312fc18514d7deff7679cf525c1c",
+      "url": "https://raw.githubusercontent.com/vcmi/vcmi/66fa496c6328a276c4eb14c0011b3a9d751dfac3/server/activities/Activity.cpp"
+    },
+    "server/activities/MapActivities.cpp": {
+      "git_blob_sha1": "68dc14bc2ffd94919d9f74e225c024b091acf52b",
+      "sha256": "039529acf5b51f3d701522441b2e405d13317ed48b9307c771ca6e344f15c203",
+      "url": "https://raw.githubusercontent.com/vcmi/vcmi/66fa496c6328a276c4eb14c0011b3a9d751dfac3/server/activities/MapActivities.cpp"
+    }
+  },
+  "status": "authored configuration"
+}

@@ -1,0 +1,753 @@
+diff --git a/client/CServerHandler.cpp b/client/CServerHandler.cpp
+index 304ff739b..9171e66be 100644
+--- a/client/CServerHandler.cpp
++++ b/client/CServerHandler.cpp
+@@ -222,7 +222,7 @@ void CServerHandler::startLocalServerAndConnect(bool connectToLobby)
+ 		si->difficulty = settings["general"]["lastDifficulty"].Integer();
+ 
+ 	logNetwork->trace("\tStarting local server");
+-	serverRunner->start(loadMode == ELoadMode::MULTI, connectToLobby, si);
++	serverRunner->start(loadMode == ELoadMode::MULTI, connectToLobby, si, hotseatMode);
+ 	logNetwork->trace("\tConnecting to local server");
+ 	connectToServer(getLocalHostname(), getLocalPort());
+ 	logNetwork->trace("\tWaiting for connection");
+diff --git a/client/ServerRunner.cpp b/client/ServerRunner.cpp
+index a7207412e..9a1c2dc53 100644
+--- a/client/ServerRunner.cpp
++++ b/client/ServerRunner.cpp
+@@ -35,8 +35,9 @@
+ ServerThreadRunner::ServerThreadRunner() = default;
+ ServerThreadRunner::~ServerThreadRunner() = default;
+ 
+-void ServerThreadRunner::start(bool listenForConnections, bool connectToLobby, std::shared_ptr<StartInfo> startingInfo)
++void ServerThreadRunner::start(bool listenForConnections, bool connectToLobby, std::shared_ptr<StartInfo> startingInfo, bool hotseat)
+ {
++	listenForConnections = listenForConnections && !hotseat;
+ 	// cfgport may be 0 -- the real port is returned after calling prepare()
+ 	uint16_t port = settings["server"]["localPort"].Integer();
+ 	server = std::make_unique<CVCMIServer>(port, true);
+@@ -112,7 +113,7 @@ int ServerProcessRunner::exitCode()
+ 	return child->exit_code();
+ }
+ 
+-void ServerProcessRunner::start(bool listenForConnections, bool connectToLobby, std::shared_ptr<StartInfo> startingInfo)
++void ServerProcessRunner::start(bool listenForConnections, bool connectToLobby, std::shared_ptr<StartInfo> startingInfo, bool hotseat)
+ {
+ 	uint16_t port = settings["server"]["localPort"].Integer();
+ 	boost::filesystem::path serverPath = VCMIDirs::get().serverPath();
+@@ -122,6 +123,8 @@ void ServerProcessRunner::start(bool listenForConnections, bool connectToLobby,
+ 	args.push_back("--run-by-client");
+ 	if(connectToLobby)
+ 		args.push_back("--lobby");
++	else if(!listenForConnections || hotseat)
++		args.push_back("--local-only");
+ 
+ 	std::error_code ec;
+ 	child = std::make_unique<boost::process::child>(serverPath, args, ec, boost::process::std_out > logPath);
+diff --git a/client/ServerRunner.h b/client/ServerRunner.h
+index 3805bd0e0..b8b1d5cd0 100644
+--- a/client/ServerRunner.h
++++ b/client/ServerRunner.h
+@@ -18,7 +18,7 @@ class CVCMIServer;
+ class IServerRunner
+ {
+ public:
+-	virtual void start(bool listenForConnections, bool connectToLobby, std::shared_ptr<StartInfo> startingInfo) = 0;
++	virtual void start(bool listenForConnections, bool connectToLobby, std::shared_ptr<StartInfo> startingInfo, bool hotseat = false) = 0;
+ 	virtual void shutdown() = 0;
+ 	virtual void wait() = 0;
+ 	virtual int exitCode() = 0;
+@@ -37,7 +37,7 @@ class ServerThreadRunner final : public IServerRunner, boost::noncopyable
+ 	bool lobbyMode = false;
+ 
+ public:
+-	void start(bool listenForConnections, bool connectToLobby, std::shared_ptr<StartInfo> startingInfo) override;
++	void start(bool listenForConnections, bool connectToLobby, std::shared_ptr<StartInfo> startingInfo, bool hotseat = false) override;
+ 	void shutdown() override;
+ 	void wait() override;
+ 	int exitCode() override;
+@@ -74,7 +74,7 @@ class ServerProcessRunner final : public IServerRunner, boost::noncopyable
+ 	std::unique_ptr<boost::process::child> child;
+ 
+ public:
+-	void start(bool listenForConnections, bool connectToLobby, std::shared_ptr<StartInfo> startingInfo) override;
++	void start(bool listenForConnections, bool connectToLobby, std::shared_ptr<StartInfo> startingInfo, bool hotseat = false) override;
+ 	void shutdown() override;
+ 	void wait() override;
+ 	int exitCode() override;
+diff --git a/lib/network/NetworkInterface.h b/lib/network/NetworkInterface.h
+index d6a2d5e8c..28a48f286 100644
+--- a/lib/network/NetworkInterface.h
++++ b/lib/network/NetworkInterface.h
+@@ -71,7 +71,7 @@ class DLL_LINKAGE INetworkServer : boost::noncopyable
+ public:
+ 	virtual ~INetworkServer() = default;
+ 
+-	virtual uint16_t start(uint16_t port) = 0;
++	virtual uint16_t start(uint16_t port, bool localOnly = false) = 0;
+ 	virtual void receiveInternalConnection(std::shared_ptr<IInternalConnection> remoteConnection) = 0;
+ };
+ 
+diff --git a/lib/network/NetworkServer.cpp b/lib/network/NetworkServer.cpp
+index 237bd65e9..1a898262a 100644
+--- a/lib/network/NetworkServer.cpp
++++ b/lib/network/NetworkServer.cpp
+@@ -17,9 +17,10 @@ NetworkServer::NetworkServer(INetworkServerListener & listener, NetworkContext &
+ {
+ }
+ 
+-uint16_t NetworkServer::start(uint16_t port)
++uint16_t NetworkServer::start(uint16_t port, bool localOnly)
+ {
+-	acceptor = std::make_shared<NetworkAcceptor>(context, boost::asio::ip::tcp::endpoint(boost::asio::ip::tcp::v4(), port));
++	const auto address = localOnly ? boost::asio::ip::address_v4::loopback() : boost::asio::ip::address_v4::any();
++	acceptor = std::make_shared<NetworkAcceptor>(context, boost::asio::ip::tcp::endpoint(address, port));
+ 	return startAsyncAccept();
+ }
+ 
+diff --git a/lib/network/NetworkServer.h b/lib/network/NetworkServer.h
+index ba7c98010..c2826adae 100644
+--- a/lib/network/NetworkServer.h
++++ b/lib/network/NetworkServer.h
+@@ -29,5 +29,5 @@ public:
+ 
+ 	void receiveInternalConnection(std::shared_ptr<IInternalConnection> remoteConnection) override;
+ 
+-	uint16_t start(uint16_t port) override;
++	uint16_t start(uint16_t port, bool localOnly = false) override;
+ };
+diff --git a/server/CVCMIServer.cpp b/server/CVCMIServer.cpp
+index 6e6d16039..3b6479b14 100644
+--- a/server/CVCMIServer.cpp
++++ b/server/CVCMIServer.cpp
+@@ -75,8 +75,9 @@ public:
+ 	}
+ };
+ 
+-CVCMIServer::CVCMIServer(uint16_t port, bool runByClient)
+-	: currentClientId(GameConnectionID::FIRST_CONNECTION)
++CVCMIServer::CVCMIServer(uint16_t port, bool runByClient, std::unique_ptr<INetworkHandler> handler)
++	: networkHandler(std::move(handler))
++	, currentClientId(GameConnectionID::FIRST_CONNECTION)
+ 	, currentPlayerId(PlayerConnectionID::FIRST_HUMAN)
+ 	, port(port)
+ 	, runByClient(runByClient)
+@@ -84,10 +85,6 @@ CVCMIServer::CVCMIServer(uint16_t port, bool runByClient)
+ 	uuid = boost::uuids::to_string(boost::uuids::random_generator()());
+ 	logNetwork->trace("CVCMIServer created! UUID: %s", uuid);
+ 
+-	networkHandler = INetworkHandler::createHandler();
+-
+-	if(state == EServerState::LOBBY)
+-		startDiscoveryListener();
+ }
+ 
+ CVCMIServer::~CVCMIServer()
+@@ -95,17 +92,22 @@ CVCMIServer::~CVCMIServer()
+ 	stopDiscoveryListener();
+ }
+ 
+-uint16_t CVCMIServer::prepare(bool connectToLobby, bool listenForConnections) {
++uint16_t CVCMIServer::prepare(bool connectToLobby, bool listenForConnections, bool localOnly) {
++	if(connectToLobby && localOnly)
++		throw std::invalid_argument("Local-only server cannot host through the global lobby.");
++
+ 	if(connectToLobby) {
+ 		lobbyProcessor = std::make_unique<GlobalLobbyProcessor>(*this);
+ 		return 0;
+ 	} else {
+-		return startAcceptingIncomingConnections(listenForConnections);
++		return startAcceptingIncomingConnections(listenForConnections, localOnly);
+ 	}
+ }
+ 
+-uint16_t CVCMIServer::startAcceptingIncomingConnections(bool listenForConnections)
++uint16_t CVCMIServer::startAcceptingIncomingConnections(bool listenForConnections, bool localOnly)
+ {
++	stopDiscoveryListener();
++	acceptsRemoteConnections = false;
+ 	networkServer = networkHandler->createServerTCP(*this);
+ 
+ 	port
+@@ -116,9 +118,12 @@ uint16_t CVCMIServer::startAcceptingIncomingConnections(bool listenForConnection
+ 
+ 	if (listenForConnections)
+ 	{
+-		auto srvport = networkServer->start(port);
+-		logNetwork->info("Listening for connections at port %d", srvport);
+-		return srvport;
++		port = networkServer->start(port, localOnly);
++		acceptsRemoteConnections = !localOnly;
++		if(acceptsRemoteConnections && state == EServerState::LOBBY)
++			startDiscoveryListener();
++		logNetwork->info("Listening for connections at port %d", port);
++		return port;
+ 	}
+ 	else
+ 		return 0;
+@@ -158,18 +163,22 @@ void CVCMIServer::setState(EServerState value)
+ 	// do not attempt to restart dying server
+ 	assert(state != EServerState::SHUTDOWN || state == value);
+ 
+-	if(state != EServerState::LOBBY && value == EServerState::LOBBY && discoveryListener)
+-		startDiscoveryListener();
++	const bool returningToLobby = state != EServerState::LOBBY && value == EServerState::LOBBY;
+ 	if(state == EServerState::LOBBY && value != EServerState::LOBBY && discoveryListener)
+ 		stopDiscoveryListener();
+ 
+ 	state = value;
++	if(returningToLobby && acceptsRemoteConnections)
++		startDiscoveryListener();
+ 
+ 	if (state == EServerState::SHUTDOWN)
+ 		networkHandler->stop();
+ }
+ void CVCMIServer::startDiscoveryListener()
+ {
++	if(!acceptsRemoteConnections || state != EServerState::LOBBY)
++		return;
++
+ 	if(!discoveryListener)
+ 		discoveryListener = getNetworkHandler().createServerDiscoveryListener(*this);
+ 
+diff --git a/server/CVCMIServer.h b/server/CVCMIServer.h
+index da165a051..a932a45b3 100644
+--- a/server/CVCMIServer.h
++++ b/server/CVCMIServer.h
+@@ -52,6 +52,7 @@ class CVCMIServer : public LobbyInfo, public INetworkServerListener, public INet
+ 	PlayerConnectionID currentPlayerId;
+ 	uint16_t port;
+ 	bool runByClient;
++	bool acceptsRemoteConnections = false;
+ 
+ 	std::shared_ptr<IServerDiscoveryListener> discoveryListener;
+ 
+@@ -76,7 +77,7 @@ public:
+ 	/// List of all active connections
+ 	std::vector<std::shared_ptr<GameConnection>> activeConnections;
+ 
+-	uint16_t prepare(bool connectToLobby, bool listenForConnections);
++	uint16_t prepare(bool connectToLobby, bool listenForConnections, bool localOnly = false);
+ 
+ 	// INetworkListener impl
+ 	void onDisconnected(const std::shared_ptr<INetworkConnection> & connection, const std::string & errorMessage) override;
+@@ -86,7 +87,7 @@ public:
+ 
+ 	std::shared_ptr<CGameHandler> gh;
+ 
+-	CVCMIServer(uint16_t port, bool runByClient);
++	CVCMIServer(uint16_t port, bool runByClient, std::unique_ptr<INetworkHandler> handler = INetworkHandler::createHandler());
+ 	~CVCMIServer();
+ 
+ 	void run();
+@@ -95,7 +96,7 @@ public:
+ 	bool prepareToStartGame();
+ 	void prepareToRestart();
+ 	void startGameImmediately();
+-	uint16_t startAcceptingIncomingConnections(bool listenForConnections);
++	uint16_t startAcceptingIncomingConnections(bool listenForConnections, bool localOnly = false);
+ 
+ 	void threadHandleClient(std::shared_ptr<GameConnection> c);
+ 
+diff --git a/serverapp/EntryPoint.cpp b/serverapp/EntryPoint.cpp
+index 28c60c16b..c449cb006 100644
+--- a/serverapp/EntryPoint.cpp
++++ b/serverapp/EntryPoint.cpp
+@@ -234,6 +234,7 @@ static void handleCommandOptions(int argc, const char * argv[], boost::program_o
+ 	("help,h", "display help and exit")
+ 	("version,v", "display version information and exit")
+ 	("run-by-client", "indicate that server launched by client on same machine")
++	("local-only", "accept TCP connections only on loopback, without LAN discovery")
+ 	("dummy-run", "Shutdown immediately after loading was sucessful")
+ 	("creature-values", "Compute AI values and fight values of all creatures and compare them against configured values")
+ 	("translate-mod", boost::program_options::value<std::string>(), "Export translations for specified mod")
+@@ -254,6 +255,11 @@ static void handleCommandOptions(int argc, const char * argv[], boost::program_o
+ 	}
+ 
+ 	boost::program_options::notify(options);
++	if(options.count("local-only") && options.count("lobby"))
++	{
++		std::cerr << "--local-only cannot be combined with --lobby" << std::endl;
++		exit(1);
++	}
+ 
+ 	if(options.count("help"))
+ 	{
+@@ -314,13 +320,13 @@ int main(int argc, const char * argv[])
+ 	else if(!opts.count("dummy-run"))
+ 	{
+ 		bool connectToLobby = opts.count("lobby");
+-		bool runByClient = opts.count("runByClient");
++		bool runByClient = opts.count("run-by-client");
+ 		uint16_t port = settings["server"]["localPort"].Integer();
+ 		if(opts.count("port"))
+ 			port = opts["port"].as<uint16_t>();
+ 
+ 		CVCMIServer server(port, runByClient);
+-		server.prepare(connectToLobby, true);
++		server.prepare(connectToLobby, true, opts.count("local-only"));
+ 		server.run();
+ 		// CVCMIServer destructor must be called here - before LIBRARY cleanup
+ 	}
+diff --git a/test/CMakeLists.txt b/test/CMakeLists.txt
+index ef9d06d11..8a2fbfead 100644
+--- a/test/CMakeLists.txt
++++ b/test/CMakeLists.txt
+@@ -115,6 +115,8 @@ set(test_SRCS
+ 		server/battles/BallistaDamageTest.cpp
+ 		server/battles/BattleTestFixture.cpp
+ 		server/ConnectionShutdownTest.cpp
++		server/LocalServerDiscoveryTest.cpp
++		../client/ServerRunner.cpp
+ 		server/battles/CombatEventTriggerTest.cpp
+ 		server/battles/DamageCalculatorTest.cpp
+ 		server/battles/BindTest.cpp
+@@ -293,6 +295,9 @@ foreach(optional_vcmitest_target IN ITEMS vcmiLua EmptyAI StupidAI MMAI TBB::tbb
+ 	endif()
+ endforeach()
+ target_link_libraries(vcmitest PRIVATE ${vcmitest_LIBS})
++if(WIN32)
++	target_link_libraries(vcmitest PRIVATE iphlpapi)
++endif()
+ 
+ target_include_directories(vcmitest
+ 		PUBLIC	${CMAKE_CURRENT_SOURCE_DIR}
+diff --git a/test/server/LocalServerDiscoveryTest.cpp b/test/server/LocalServerDiscoveryTest.cpp
+new file mode 100644
+index 000000000..736081600
+--- /dev/null
++++ b/test/server/LocalServerDiscoveryTest.cpp
+@@ -0,0 +1,433 @@
++/*
++ * LocalServerDiscoveryTest.cpp, part of VCMI engine
++ *
++ * Authors: listed in file AUTHORS in main folder
++ *
++ * License: GNU General Public License v2.0 or later
++ * Full text of license available in license.txt file, in main folder
++ */
++#include "StdInc.h"
++
++#include "../../server/CVCMIServer.h"
++#include "../../client/ServerRunner.h"
++#include "../../lib/CConfigHandler.h"
++#include "../../lib/network/NetworkDiscovery.h"
++#include "../../lib/network/NetworkServer.h"
++#include <filesystem>
++
++#ifdef _WIN32
++#include <iphlpapi.h>
++#include <tlhelp32.h>
++#endif
++
++namespace
++{
++struct NetworkCalls
++{
++	int tcpCreated = 0;
++	int tcpStarted = 0;
++	int discoveryCreated = 0;
++	int discoveryStarted = 0;
++	int discoveryStopped = 0;
++	int stopped = 0;
++	bool localOnly = false;
++	bool failStart = false;
++	uint16_t requestedPort = 0;
++	uint16_t discoveryPort = 0;
++	uint16_t announcedPort = 0;
++	uint16_t assignedPort = 41777;
++	std::vector<std::string> order;
++};
++
++class RecordingTcpServer : public INetworkServer
++{
++	NetworkCalls & calls;
++public:
++	explicit RecordingTcpServer(NetworkCalls & calls) : calls(calls) {}
++	uint16_t start(uint16_t port, bool localOnly = false) override
++	{
++		++calls.tcpStarted;
++		calls.requestedPort = port;
++		calls.localOnly = localOnly;
++		calls.order.push_back("tcp");
++		if(calls.failStart)
++			throw std::runtime_error("test bind failed");
++		return calls.assignedPort;
++	}
++	void receiveInternalConnection(std::shared_ptr<IInternalConnection>) override {}
++};
++
++class RecordingDiscovery : public IServerDiscoveryListener
++{
++	NetworkCalls & calls;
++	IServerDiscoveryAnnouncer & announcer;
++public:
++	RecordingDiscovery(NetworkCalls & calls, IServerDiscoveryAnnouncer & announcer)
++		: calls(calls), announcer(announcer) {}
++	void start() override
++	{
++		++calls.discoveryStarted;
++		calls.announcedPort = announcer.getPort();
++		calls.order.push_back("discovery");
++	}
++	void stop() override { ++calls.discoveryStopped; }
++};
++
++class RecordingNetwork : public INetworkHandler
++{
++	NetworkCalls & calls;
++	NetworkContext context;
++public:
++	explicit RecordingNetwork(NetworkCalls & calls) : calls(calls) {}
++	std::unique_ptr<INetworkServer> createServerTCP(INetworkServerListener &) override
++	{
++		++calls.tcpCreated;
++		return std::make_unique<RecordingTcpServer>(calls);
++	}
++	std::shared_ptr<IServerDiscoveryListener> createServerDiscoveryListener(IServerDiscoveryAnnouncer & announcer, uint16_t port) override
++	{
++		++calls.discoveryCreated;
++		calls.discoveryPort = port;
++		return std::make_shared<RecordingDiscovery>(calls, announcer);
++	}
++	void connectToRemote(INetworkClientListener &, const std::string &, uint16_t) override {}
++	void createInternalConnection(INetworkClientListener &, INetworkServer &) override {}
++	std::shared_ptr<INetworkConnection> createAsyncConnection(INetworkConnectionListener &) override { return {}; }
++	void createTimer(INetworkTimerListener &, std::chrono::milliseconds) override {}
++	std::shared_ptr<IServerDiscovery> createServerDiscovery(IServerDiscoveryObserver &) override { return {}; }
++	void run() override {}
++	void stop() override { ++calls.stopped; }
++	NetworkContext & getContext() override { return context; }
++};
++
++class ConnectionObserver : public INetworkClientListener
++{
++public:
++	std::shared_ptr<INetworkConnection> connection;
++	std::string failure;
++	void onConnectionEstablished(const std::shared_ptr<INetworkConnection> & value) override { connection = value; }
++	void onConnectionFailed(const std::string & error) override { failure = error; }
++	void onDisconnected(const std::shared_ptr<INetworkConnection> &, const std::string &) override {}
++	void onPacketReceived(const std::shared_ptr<INetworkConnection> &, const std::vector<std::byte> &) override {}
++};
++
++class ScopedLocalPort
++{
++	JsonNode previous = settings["server"]["localPort"];
++public:
++	explicit ScopedLocalPort(uint16_t port)
++	{
++		Settings value = settings.write["server"]["localPort"];
++		value->Integer() = port;
++	}
++	~ScopedLocalPort()
++	{
++		Settings value = settings.write["server"]["localPort"];
++		*value.operator->() = previous;
++	}
++};
++
++class ScopedThreadServer
++{
++public:
++	ServerThreadRunner runner;
++	ScopedThreadServer(bool listen, bool hotseat) { runner.start(listen, false, {}, hotseat); }
++	~ScopedThreadServer() { runner.shutdown(); runner.wait(); }
++};
++
++#ifdef _WIN32
++struct ListeningSocket
++{
++	int protocol;
++	uint32_t address;
++	uint16_t port;
++	bool operator<(const ListeningSocket & other) const
++	{
++		return std::tie(protocol, address, port) < std::tie(other.protocol, other.address, other.port);
++	}
++	bool operator==(const ListeningSocket & other) const = default;
++};
++
++std::set<ListeningSocket> listeningSockets(DWORD process = GetCurrentProcessId())
++{
++	std::set<ListeningSocket> result;
++	DWORD size = 0;
++	GetExtendedTcpTable(nullptr, &size, FALSE, AF_INET, TCP_TABLE_OWNER_PID_LISTENER, 0);
++	std::vector<std::byte> buffer(size);
++	if(GetExtendedTcpTable(buffer.data(), &size, FALSE, AF_INET, TCP_TABLE_OWNER_PID_LISTENER, 0) != NO_ERROR)
++	{
++		ADD_FAILURE() << "Could not inspect owning-PID TCP listeners";
++		return result;
++	}
++	const auto * tcp = reinterpret_cast<const MIB_TCPTABLE_OWNER_PID *>(buffer.data());
++	for(DWORD i = 0; i < tcp->dwNumEntries; ++i)
++		if(tcp->table[i].dwOwningPid == process)
++			result.insert({IPPROTO_TCP, ntohl(tcp->table[i].dwLocalAddr), ntohs(static_cast<u_short>(tcp->table[i].dwLocalPort))});
++	size = 0;
++	GetExtendedUdpTable(nullptr, &size, FALSE, AF_INET, UDP_TABLE_OWNER_PID, 0);
++	buffer.resize(size);
++	if(GetExtendedUdpTable(buffer.data(), &size, FALSE, AF_INET, UDP_TABLE_OWNER_PID, 0) != NO_ERROR)
++	{
++		ADD_FAILURE() << "Could not inspect owning-PID UDP endpoints";
++		return result;
++	}
++	const auto * udp = reinterpret_cast<const MIB_UDPTABLE_OWNER_PID *>(buffer.data());
++	for(DWORD i = 0; i < udp->dwNumEntries; ++i)
++		if(udp->table[i].dwOwningPid == process)
++			result.insert({IPPROTO_UDP, ntohl(udp->table[i].dwLocalAddr), ntohs(static_cast<u_short>(udp->table[i].dwLocalPort))});
++	return result;
++}
++
++DWORD childServerProcess()
++{
++	const auto snapshot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
++	if(snapshot == INVALID_HANDLE_VALUE)
++		return 0;
++	PROCESSENTRY32 entry{};
++	entry.dwSize = sizeof(entry);
++	DWORD result = 0;
++	if(Process32First(snapshot, &entry))
++		do
++		{
++			if(entry.th32ParentProcessID == GetCurrentProcessId() && std::filesystem::path(entry.szExeFile).filename() == "VCMI_server.exe")
++				result = entry.th32ProcessID;
++		} while(Process32Next(snapshot, &entry));
++	CloseHandle(snapshot);
++	return result;
++}
++#endif
++}
++
++TEST(LocalServerDiscovery, constructionAndInternalLocalPreparationOpenNoListener)
++{
++	NetworkCalls calls;
++	CVCMIServer server(0, true, std::make_unique<RecordingNetwork>(calls));
++	EXPECT_EQ(calls.discoveryCreated, 0);
++	EXPECT_EQ(calls.tcpCreated, 0);
++	EXPECT_EQ(server.prepare(false, false), 0);
++	server.startDiscoveryListener();
++	server.setState(EServerState::GAMEPLAY);
++	server.setState(EServerState::LOBBY);
++	EXPECT_EQ(calls.tcpCreated, 1);
++	EXPECT_EQ(calls.tcpStarted, 0);
++	EXPECT_EQ(calls.discoveryCreated, 0);
++	server.setState(EServerState::SHUTDOWN);
++	EXPECT_EQ(calls.stopped, 1);
++}
++
++TEST(LocalServerDiscovery, externalLocalPreparationUsesLoopbackWithoutDiscovery)
++{
++	NetworkCalls calls;
++	CVCMIServer server(0, true, std::make_unique<RecordingNetwork>(calls));
++	EXPECT_EQ(server.prepare(false, true, true), calls.assignedPort);
++	EXPECT_TRUE(calls.localOnly);
++	EXPECT_EQ(calls.tcpStarted, 1);
++	EXPECT_EQ(server.getPort(), calls.assignedPort);
++	server.setState(EServerState::GAMEPLAY);
++	server.setState(EServerState::LOBBY);
++	EXPECT_EQ(calls.discoveryCreated, 0);
++}
++
++TEST(LocalServerDiscovery, lanHostingAdvertisesOnlyAfterBindAndRestartsInLobby)
++{
++	NetworkCalls calls;
++	{
++		CVCMIServer server(0, false, std::make_unique<RecordingNetwork>(calls));
++		EXPECT_EQ(server.prepare(false, true), calls.assignedPort);
++		EXPECT_FALSE(calls.localOnly);
++		EXPECT_EQ(calls.requestedPort, 0);
++		EXPECT_EQ(calls.discoveryPort, 3030);
++		EXPECT_EQ(calls.announcedPort, calls.assignedPort);
++		EXPECT_EQ(calls.order, (std::vector<std::string>{"tcp", "discovery"}));
++		server.setState(EServerState::GAMEPLAY);
++		EXPECT_EQ(calls.discoveryStopped, 1);
++		server.startDiscoveryListener();
++		EXPECT_EQ(calls.discoveryStarted, 1);
++		server.setState(EServerState::LOBBY);
++		EXPECT_EQ(calls.discoveryStarted, 2);
++		server.setState(EServerState::SHUTDOWN);
++		EXPECT_EQ(calls.discoveryStopped, 2);
++	}
++	EXPECT_EQ(calls.discoveryStopped, 2);
++}
++
++TEST(LocalServerDiscovery, failedTcpBindDoesNotAdvertiseAnUnavailableServer)
++{
++	NetworkCalls calls;
++	calls.failStart = true;
++	CVCMIServer server(0, false, std::make_unique<RecordingNetwork>(calls));
++	EXPECT_THROW(server.prepare(false, true), std::runtime_error);
++	EXPECT_EQ(calls.discoveryCreated, 0);
++	server.startDiscoveryListener();
++	EXPECT_EQ(calls.discoveryCreated, 0);
++}
++
++TEST(LocalServerDiscovery, globalLobbyCanStartRealHostingLaterButCannotOverrideLocalOnly)
++{
++	NetworkCalls calls;
++	CVCMIServer server(0, true, std::make_unique<RecordingNetwork>(calls));
++	EXPECT_THROW(server.prepare(true, true, true), std::invalid_argument);
++	EXPECT_EQ(calls.discoveryCreated, 0);
++	EXPECT_EQ(server.prepare(true, false), 0);
++	EXPECT_EQ(calls.tcpStarted, 0);
++	EXPECT_EQ(server.startAcceptingIncomingConnections(true), calls.assignedPort);
++	EXPECT_EQ(calls.discoveryStarted, 1);
++}
++
++TEST(LocalServerDiscovery, genuineLanDiscoveryRepliesWithActualTcpPortAndAcceptsConnection)
++{
++	NetworkContext clientContext;
++	boost::asio::ip::udp::socket probe(clientContext, {boost::asio::ip::udp::v4(), 0});
++	auto discoveryPort = probe.local_endpoint().port();
++	probe.close();
++	boost::system::error_code unavailable;
++	probe.open(boost::asio::ip::udp::v4());
++	probe.bind({boost::asio::ip::udp::v4(), 3030}, unavailable);
++	const bool productionPortAvailable = !unavailable;
++	RecordProperty("automatic_udp_3030_observed", productionPortAvailable ? "true" : "unavailable");
++	probe.close();
++	if(productionPortAvailable)
++		discoveryPort = 3030;
++	CVCMIServer server(0, false);
++	const auto tcpPort = server.prepare(false, true);
++	ASSERT_NE(tcpPort, 0);
++	EXPECT_EQ(server.getPort(), tcpPort);
++	std::shared_ptr<IServerDiscoveryListener> isolatedDiscovery;
++	if(!productionPortAvailable)
++	{
++		// Another instance owns 3030: isolate only the wire-format probe, not lifecycle assertions.
++		isolatedDiscovery = server.getNetworkHandler().createServerDiscoveryListener(server, discoveryPort);
++		isolatedDiscovery->start();
++	}
++#ifdef _WIN32
++	EXPECT_TRUE(listeningSockets().count({IPPROTO_TCP, 0, tcpPort}));
++	if(productionPortAvailable)
++		EXPECT_TRUE(listeningSockets().count({IPPROTO_UDP, 0, 3030}));
++#endif
++	server.setState(EServerState::GAMEPLAY);
++#ifdef _WIN32
++	if(productionPortAvailable)
++		EXPECT_FALSE(listeningSockets().count({IPPROTO_UDP, 0, 3030}));
++#endif
++	server.setState(EServerState::LOBBY);
++#ifdef _WIN32
++	if(productionPortAvailable)
++		EXPECT_TRUE(listeningSockets().count({IPPROTO_UDP, 0, 3030}));
++#endif
++	probe.open(boost::asio::ip::udp::v4());
++	probe.bind({boost::asio::ip::address_v4::loopback(), 0});
++	const std::string request = "VCMI_DISCOVERY";
++	probe.send_to(boost::asio::buffer(request), {boost::asio::ip::address_v4::loopback(), discoveryPort});
++	server.getNetworkHandler().getContext().run_for(std::chrono::milliseconds(100));
++	ASSERT_GT(probe.available(), 0);
++	std::array<char, 128> buffer{};
++	boost::asio::ip::udp::endpoint sender;
++	const auto bytes = probe.receive_from(boost::asio::buffer(buffer), sender);
++	EXPECT_EQ(std::string(buffer.data(), bytes), "VCMI_SERVER:" + std::to_string(tcpPort));
++	boost::asio::ip::tcp::socket connection(clientContext);
++	connection.connect({boost::asio::ip::address_v4::loopback(), tcpPort});
++	server.getNetworkHandler().getContext().run_for(std::chrono::milliseconds(100));
++	EXPECT_EQ(server.activeConnections.size(), 1);
++	if(isolatedDiscovery)
++		isolatedDiscovery->stop();
++	server.setState(EServerState::SHUTDOWN);
++#ifdef _WIN32
++	if(productionPortAvailable)
++		EXPECT_FALSE(listeningSockets().count({IPPROTO_UDP, 0, 3030}));
++#endif
++}
++
++#ifdef _WIN32
++TEST(LocalServerDiscovery, singlePlayerThreadUsesInternalTransportWithoutTcpOrUdpSockets)
++{
++	ScopedLocalPort port(0);
++	const auto before = listeningSockets();
++	{
++		ScopedThreadServer server(false, false);
++		EXPECT_EQ(listeningSockets(), before);
++		auto client = INetworkHandler::createHandler();
++		ConnectionObserver observer;
++		server.runner.connect(*client, observer);
++		client->getContext().run_for(std::chrono::milliseconds(100));
++		EXPECT_TRUE(observer.connection);
++		EXPECT_TRUE(observer.failure.empty());
++		EXPECT_EQ(listeningSockets(), before);
++	}
++	EXPECT_EQ(listeningSockets(), before);
++}
++
++TEST(LocalServerDiscovery, hotseatMultiplayerThreadUsesInternalTransportWithoutTcpOrUdpSockets)
++{
++	ScopedLocalPort port(0);
++	const auto before = listeningSockets();
++	{
++		ScopedThreadServer server(true, true);
++		EXPECT_EQ(listeningSockets(), before);
++		auto client = INetworkHandler::createHandler();
++		ConnectionObserver observer;
++		server.runner.connect(*client, observer);
++		client->getContext().run_for(std::chrono::milliseconds(100));
++		EXPECT_TRUE(observer.connection);
++		EXPECT_TRUE(observer.failure.empty());
++		EXPECT_EQ(listeningSockets(), before);
++	}
++	EXPECT_EQ(listeningSockets(), before);
++}
++
++TEST(LocalServerDiscovery, actualLoopbackTcpBindingDoesNotListenOnAnyAddress)
++{
++	const auto before = listeningSockets();
++	{
++		CVCMIServer server(0, true);
++		const auto port = server.prepare(false, true, true);
++		const auto sockets = listeningSockets();
++		EXPECT_TRUE(sockets.count({IPPROTO_TCP, 0x7f000001, port}));
++		EXPECT_FALSE(sockets.count({IPPROTO_TCP, 0, port}));
++		for(const auto & socket : sockets)
++			if(!before.count(socket))
++				EXPECT_EQ(socket.protocol, IPPROTO_TCP);
++		server.setState(EServerState::SHUTDOWN);
++	}
++	EXPECT_EQ(listeningSockets(), before);
++}
++
++TEST(LocalServerDiscovery, actualExternalSingleAndHotseatServersListenOnlyOnLoopback)
++{
++	for(const bool hotseat : {false, true})
++	{
++		NetworkContext context;
++		boost::asio::ip::tcp::acceptor reservation(context, {boost::asio::ip::address_v4::loopback(), 0});
++		const auto port = reservation.local_endpoint().port();
++		reservation.close();
++		ScopedLocalPort configuredPort(port);
++		ServerProcessRunner runner;
++		runner.start(hotseat, false, {}, hotseat);
++		DWORD process = 0;
++		bool listening = false;
++		for(int attempt = 0; attempt < 250 && !listening; ++attempt)
++		{
++			process = childServerProcess();
++			if(process)
++				listening = listeningSockets(process).count({IPPROTO_TCP, 0x7f000001, port});
++			if(!listening)
++				std::this_thread::sleep_for(std::chrono::milliseconds(20));
++		}
++		EXPECT_TRUE(listening) << "actual external local server must bind loopback";
++		if(process)
++		{
++			const auto sockets = listeningSockets(process);
++			EXPECT_EQ(sockets.size(), 1);
++			EXPECT_TRUE(sockets.count({IPPROTO_TCP, 0x7f000001, port}));
++		}
++		runner.shutdown();
++		runner.wait();
++		if(process)
++		{
++			// Windows may retire the owning-PID TCP table entry shortly after process exit.
++			for(int attempt = 0; attempt < 50 && !listeningSockets(process).empty(); ++attempt)
++				std::this_thread::sleep_for(std::chrono::milliseconds(20));
++			EXPECT_TRUE(listeningSockets(process).empty()) << "terminated external server PID " << process;
++		}
++	}
++}
++#endif

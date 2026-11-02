@@ -1,0 +1,157 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "Independent Zaun architecture in Heroes III native painted language: corroded iron, wet concrete, industrial ruins. Never recolour Castle or Demacia art, import original pixels or invent an official crest.",
+  "building": "ship",
+  "building_contract": {
+    "full_canvas_placement": {
+      "x": 0,
+      "y": 0,
+      "z": 361
+    },
+    "hidden": true,
+    "name": "Moored Barge",
+    "native_ground_contact": [
+      706,
+      318,
+      89,
+      42
+    ],
+    "upgrades": "shipyard"
+  },
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; prompted and technically assembled by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/port-master.png",
+      "sha256": "bd0674cf0338491b7a070601d82f5d2ce401b9e3a295e38751812e1f49828704"
+    },
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/ship.json",
+      "sha256": "07942abf2580a3acbdc3971551a08d5e5c924635a6d42b865c117ed1da21522b"
+    },
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v4/prepare.py",
+      "sha256": "a7b7e6160b50cff6fc87b097f5bc59f0e31648bf208edd0f42afbcc4b604d35f"
+    },
+    {
+      "path": "scripts/zaun_coastal_state_v1.py",
+      "sha256": "5aa45de45f59be66d393df44538743b1842db5ba5f1c4e48c1d83acaa13f3cf7"
+    },
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v4/structures/ship/body-opacity-mask.png",
+      "sha256": "37b1335bfbdc648e9825a91a17cee5f0e1c6ff1ba3bc514a221747ba1ba5b37a"
+    },
+    {
+      "kind": "historical_provenance",
+      "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/ship-original.json",
+      "sha256": "28fb7bdaa304ee3159397c943b43ee3ed884c1eb9af5bae84ee0b11bae94a804"
+    },
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/port-master.png",
+      "sha256": "bd0674cf0338491b7a070601d82f5d2ce401b9e3a295e38751812e1f49828704"
+    }
+  ],
+  "fit": "contain",
+  "generateOverlay": 0,
+  "generateShadow": 0,
+  "generation": {
+    "body_opacity": {
+      "changed_alpha_pixels": 577,
+      "mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/ship/body-opacity-mask.png",
+      "mask_sha256": "37b1335bfbdc648e9825a91a17cee5f0e1c6ff1ba3bc514a221747ba1ba5b37a",
+      "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/ship.png",
+      "original_native_layer_sha256": "d0e02069bf9c7bf96c2658fc7dee2825ec80129df4e21fa7851f05e413002ebf",
+      "policy": "Only originalalpha248..254 AND2px-eroded(alpha>=128) structural core becomes255; all RGB and outside-mask RGBA unchanged. No fill of holes, arches, lowalpha glass/glow/shadows or outer antialias."
+    },
+    "composition_rectangle": [
+      706,
+      318,
+      89,
+      42
+    ],
+    "credits": {
+      "author": "OpenAI built-in imagegen; original selected Zaun prompts and historical source retained",
+      "license": null,
+      "redistribution": "unresolved; release prohibited"
+    },
+    "generation_route": "Preserved selected own painted 2D master; whole-source uniform contain and native placement only.",
+    "historical_prompt": "Usecase: precise-object-edit. OwnZaunportassets. Input1LEFTemptydock isdocktarget; ignoreitsrightdockedshipassembly. Input2isstandalonebarge. ProduceTWO fullySEPARATEcutoutsSIDE BY SIDE withlargegutter: LEFTemptyindustrialdockwith2cranes/hoistssmallstoreshed, RIGHTstandalonecargoBARGe onlywithNOdockunderit. Keep existingbrownwetwood/rustiron/rope/crate shapes andlowfrontthreequartercamera. CHEMTECHrevision: greenpressureglasslampsandshortcopperfeedpipeonthedock; bargehasvisiblegreenreagentcargo barrels/flasks/cratesandonegreenenginepressurecell, patchedPURPLEcargotarpandpurpleflag, greenlocalglasslightnotgreeneverywhere. Preserveboatwholehull/bow/sternandflagpole withgeneroustransparentpadding, allcraneapicesanddockrampsinsidecanvas. OriginalHeroesIIItexturedpainted/prerenderedtownstyle,broadupperleftlight, locallyreflectedchemicalgreen. Genuinealphaoutside2independentcutouts,nobackdrop/waterbackground/text/neonoutlines/people.",
+    "historical_provenance": {
+      "kind": "historical_provenance",
+      "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/ship-original.json",
+      "sha256": "28fb7bdaa304ee3159397c943b43ee3ed884c1eb9af5bae84ee0b11bae94a804"
+    },
+    "historical_receipt_note": "Unchanged prior provider receipt retained privately at original authored source; not rewritten or claimed as new generation.",
+    "historical_receipt_sha256": "28fb7bdaa304ee3159397c943b43ee3ed884c1eb9af5bae84ee0b11bae94a804",
+    "image_generation_used": true,
+    "mirror_x": false,
+    "model": null,
+    "model_disclosed": false,
+    "native_offset": [
+      725,
+      320
+    ],
+    "native_size": [
+      51,
+      38
+    ],
+    "new_image_generation_used": false,
+    "painted_master": "assets/source/town/chemtech-v4-buildings/port-master.png",
+    "painted_master_sha256": "bd0674cf0338491b7a070601d82f5d2ce401b9e3a295e38751812e1f49828704",
+    "placement_plan": "assets/source/town/industrial-neighborhood-20261025-v4/live-placement-plan.json",
+    "placement_plan_sha256": "ebc0f8ca5a08869bae5a7a3ad205bc5cab43a61832d85454e856f3febf292333",
+    "provider": "OpenAI built-in imagegen",
+    "release_accepted": false,
+    "runtime_verified": false,
+    "source_crop": [
+      1216,
+      16,
+      2151,
+      716
+    ],
+    "status": "authored configuration",
+    "technical_helper": "assets/source/town/industrial-neighborhood-20261025-v4/prepare.py",
+    "technical_helper_sha256": "a7b7e6160b50cff6fc87b097f5bc59f0e31648bf208edd0f42afbcc4b604d35f",
+    "visual_approval_granted": false
+  },
+  "groups": [
+    {
+      "action": "own town building state, not a troop idle/action",
+      "frames": [
+        {
+          "sha256": "81cb0a50263365ac1598f623243bb3a608458cb3d345ce6b2852c420997f10ed",
+          "source": "assets/source/town/industrial-neighborhood-20261025-v4/structures/ship/layer.png"
+        }
+      ],
+      "group": 0
+    }
+  ],
+  "id": "zaun.town.structure.ship.animation",
+  "identity_review": "build/reports/industrial-neighborhood-20261025-v4/source-pixel-review.json",
+  "native_visual_review": "pending",
+  "output_path": "Content/Sprites/runeterra/zaun/town/structures/ship.json",
+  "production_status": "delivered",
+  "recipe_type": "vcmi_animation",
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "source_sha256": "81cb0a50263365ac1598f623243bb3a608458cb3d345ce6b2852c420997f10ed",
+  "status": "built-unreviewed",
+  "technical_assembly": {
+    "image_generation_used": false,
+    "native_replacement_contains_base": true,
+    "provenance": "assets/source/town/coastal-state-v1/provenance.json"
+  },
+  "title": "Moored Barge town layer",
+  "visual_approval_granted": false
+}

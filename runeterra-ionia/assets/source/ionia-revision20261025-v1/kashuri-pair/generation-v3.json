@@ -1,0 +1,798 @@
+{
+  "current_technical_inputs": [
+    {
+      "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/pose_tools.py",
+      "source_sha256": "f29f27f992ddd731c70bc2a61764f8c1715e1ae83b26afca57370af606424140"
+    },
+    {
+      "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/painted_components.py",
+      "source_sha256": "933208dcdae4000fb1f8fe649c03c48decffa6405993a560eda777fcad412302"
+    },
+    {
+      "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/assemble_base_gait.py",
+      "source_sha256": "1b5106c284ec4e9a4c5aa69d72a689b0c3ff30e8c1dd3df7f3f262acb8f9a843"
+    },
+    {
+      "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/prepare_gait_reference.py",
+      "source_sha256": "c69a17cf73bc4ffa6032ad4fb1c3eedd97aaa75a9b36cd74556be33824c8cf35"
+    },
+    {
+      "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/prepare_reference_inputs_v1.py",
+      "source_sha256": "e2b7beeaa805cf60c6f631a0104857954bf4d6517b36d52bf3fcbcd79f79087d"
+    },
+    {
+      "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/assemble_native_v1.py",
+      "source_sha256": "fc45217d14a9b00c6e24351f100eb15405343690e0d2319605c2d094ec604193"
+    },
+    {
+      "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/native-assembly-contract-v1.json",
+      "source_sha256": "0eecaf7a4ae38674818ac2146a1403c5dfa72be5edec57a534e7f9240c5c14b8"
+    },
+    {
+      "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/whole-pose-ownership-v1.json",
+      "source_sha256": "d59d90aced17ce906a94ef2cb5ac81c237584f58cb6141326aaf955dcf90e871"
+    },
+    {
+      "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/portrait-background/lineage-v1.json",
+      "source_sha256": "a4cd2703d853dd8519e40d16460be20b0b35c5a6dda95898c6443377d2b27df7"
+    },
+    {
+      "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/reference-inputs/base-walk-native-guide-v1.json",
+      "source_sha256": "e25ca2c269d75383203dd7e04bfad9a873c60e4f5c1620483a54c8de0a90500c"
+    },
+    {
+      "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/release-mouth-registration-v2.json",
+      "source_sha256": "a3b4db3e4257e48cf813b2ba84813b31d7198bb963e451cc62a56f648313f6e9"
+    },
+    {
+      "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/bind_recipes_v3.py",
+      "source_sha256": "093e2f69f2a622c6481601213ef232769e04309de8cba717afb63dc48b66eed8"
+    },
+    {
+      "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/reproduce_v2.py",
+      "source_sha256": "7fa856ee69e8f9e5fd764ffd0833c5b5483e2b7b1a87ac13d15347376496ec37"
+    },
+    {
+      "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/role-contracts-v1.json",
+      "source_sha256": "525db612e9cd0c5b3e8944620b3b8fd493355c1884748c2a884f49e81b8d4275"
+    }
+  ],
+  "no_3d_image_ancestry": true,
+  "no_native_human_art_rights_or_release_approval": true,
+  "provider": "OpenAI built-in imagegen",
+  "records": [
+    {
+      "exact_private_request_receipt_sha256": "6779b21c166540ea6d321c5e1e5940875d9c2cbe8c320f40808bde73b02f3916",
+      "master": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/auxiliary-v1.png",
+      "master_sha256": "396793dfdf3b2fcb709e9345a4eaa0d006a88d178172ba70cadb2c2034bd1691",
+      "model": "not exposed by built-in tool",
+      "not_native_or_rights_approval": true,
+      "prompt": "assets/source/ionia-revision20261025-v1/kashuri-pair/generation-prompts-v1/kashuriArmsbearer-auxiliary-v1.txt",
+      "prompt_sha256": "6949a7a063f5cad81be6c7285a4712d022aa9abd4f1e45556f2ce06d24fee3cc",
+      "provider": "OpenAI built-in imagegen",
+      "provider_output_basename": "exec-a6f7a951-e536-45c0-b853-572c00339ce7.png",
+      "references": [
+        {
+          "ordinal": 1,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/identity-v2.png",
+          "source_sha256": "b9573949dea2a6435640e19f850dfbebee1507d2b4a323718329922acfc1f508"
+        },
+        {
+          "ordinal": 2,
+          "reference_name": "private-original-native-style-only.png",
+          "reference_sha256": "c0544a73393695be226f259a9289ac54d2afdacdddccd01ff398cfd46ae6b7bf",
+          "role": "external original HeroesIII native style/category/action-function guidance only; private unbundled read-only reference"
+        },
+        {
+          "ordinal": 3,
+          "reference_sha256": "c8df47b7021ed103cf646b72fdb2275211a97846cd921923893f0a756659c535",
+          "role": "external official regional shape guidance only; private unbundled reference",
+          "url": "https://universe.leagueoflegends.com/images/iona_crest_icon.png"
+        },
+        {
+          "ordinal": 4,
+          "reference_name": "private-original-close-creature-portraits.png",
+          "reference_sha256": "e524f59a2483b7de2cc21a510c3f2465c3cc0c9b5774b30d2d5ecdad380ecf56",
+          "role": "external original HeroesIII native style/category/action-function guidance only; private unbundled read-only reference"
+        }
+      ],
+      "technical_claim": "Genuine painted2D source output; no 3D models/renders/rejected painted-over renders used as tool inputs"
+    },
+    {
+      "exact_private_request_receipt_sha256": "a984006f0cc581904383d0a50d2bd6ef9024b6f959c9338e067bbe701b78eee9",
+      "master": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/death-v1.png",
+      "master_sha256": "f3746312dd141a511b02c8fb801b84868631fb622ddaa205efa6604cf111b2f4",
+      "model": "not exposed by built-in tool",
+      "not_native_or_rights_approval": true,
+      "prompt": "assets/source/ionia-revision20261025-v1/kashuri-pair/generation-prompts-v1/kashuriArmsbearer-death-v1.txt",
+      "prompt_sha256": "8f25715794425f5b7bd3c21366dcda57b6f1206c80371c0bd48b00ca2a0fa10f",
+      "provider": "OpenAI built-in imagegen",
+      "provider_output_basename": "exec-9c9e17fc-0969-4474-a1bc-2ebf18432491.png",
+      "references": [
+        {
+          "ordinal": 1,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/identity-v2.png",
+          "source_sha256": "b9573949dea2a6435640e19f850dfbebee1507d2b4a323718329922acfc1f508"
+        },
+        {
+          "ordinal": 2,
+          "reference_name": "private-original-native-style-only.png",
+          "reference_sha256": "c0544a73393695be226f259a9289ac54d2afdacdddccd01ff398cfd46ae6b7bf",
+          "role": "external original HeroesIII native style/category/action-function guidance only; private unbundled read-only reference"
+        },
+        {
+          "ordinal": 3,
+          "reference_sha256": "c8df47b7021ed103cf646b72fdb2275211a97846cd921923893f0a756659c535",
+          "role": "external official regional shape guidance only; private unbundled reference",
+          "url": "https://universe.leagueoflegends.com/images/iona_crest_icon.png"
+        }
+      ],
+      "technical_claim": "Genuine painted2D source output; no 3D models/renders/rejected painted-over renders used as tool inputs"
+    },
+    {
+      "exact_private_request_receipt_sha256": "08185b4d68df4d8cf6442c434e74b3b2b0d9aa8169ecbb4069851f8c0331ab66",
+      "master": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/general-v1.png",
+      "master_sha256": "1558df411ac273c4143dafd54a2045fc3e96575ecdbf9c66e56601377aff59e4",
+      "model": "not exposed by built-in tool",
+      "not_native_or_rights_approval": true,
+      "prompt": "assets/source/ionia-revision20261025-v1/kashuri-pair/generation-prompts-v1/kashuriArmsbearer-general-v1.txt",
+      "prompt_sha256": "d68573427be914a23880d5e6a44bb6443b522e2f4cf9d43dc5b2cc2514b1ed08",
+      "provider": "OpenAI built-in imagegen",
+      "provider_output_basename": "exec-40b80940-2757-48da-bfa6-0a8960ed35db.png",
+      "references": [
+        {
+          "ordinal": 1,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/identity-v2.png",
+          "source_sha256": "b9573949dea2a6435640e19f850dfbebee1507d2b4a323718329922acfc1f508"
+        },
+        {
+          "ordinal": 2,
+          "reference_name": "private-original-native-style-only.png",
+          "reference_sha256": "c0544a73393695be226f259a9289ac54d2afdacdddccd01ff398cfd46ae6b7bf",
+          "role": "external original HeroesIII native style/category/action-function guidance only; private unbundled read-only reference"
+        },
+        {
+          "ordinal": 3,
+          "reference_sha256": "c8df47b7021ed103cf646b72fdb2275211a97846cd921923893f0a756659c535",
+          "role": "external official regional shape guidance only; private unbundled reference",
+          "url": "https://universe.leagueoflegends.com/images/iona_crest_icon.png"
+        }
+      ],
+      "technical_claim": "Genuine painted2D source output; no 3D models/renders/rejected painted-over renders used as tool inputs"
+    },
+    {
+      "exact_private_request_receipt_sha256": "7a3b1cd4b1d966ed96fc5d2d7c6b28987f6cff76cf3a2a3b7310c170510a1808",
+      "master": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/identity-v1.png",
+      "master_sha256": "f6ab8f97437bd5bc31eaf12ad9550463b08daeb6673407f258fb530fb5493f82",
+      "model": "not exposed by built-in tool",
+      "not_native_or_rights_approval": true,
+      "prompt": "assets/source/ionia-revision20261025-v1/kashuri-pair/generation-prompts-v1/kashuriArmsbearer-identity-v1.txt",
+      "prompt_sha256": "81f14cb0a0b057cd9f395cf24e469e834c573ffb2b347866b381382c10472452",
+      "provider": "OpenAI built-in imagegen",
+      "provider_output_basename": "exec-496c7246-59c4-4035-aa14-4097e39b4106.png",
+      "references": [
+        {
+          "ordinal": 1,
+          "reference_name": "private-original-native-style-only.png",
+          "reference_sha256": "c0544a73393695be226f259a9289ac54d2afdacdddccd01ff398cfd46ae6b7bf",
+          "role": "external original HeroesIII native style/category/action-function guidance only; private unbundled read-only reference"
+        },
+        {
+          "ordinal": 2,
+          "reference_sha256": "c8df47b7021ed103cf646b72fdb2275211a97846cd921923893f0a756659c535",
+          "role": "external official regional shape guidance only; private unbundled reference",
+          "url": "https://universe.leagueoflegends.com/images/iona_crest_icon.png"
+        }
+      ],
+      "technical_claim": "Genuine painted2D source output; no 3D models/renders/rejected painted-over renders used as tool inputs"
+    },
+    {
+      "exact_private_request_receipt_sha256": "8712c7828632ef65f3df6a54259190a9f0a3f8016b61523c3e6b6bca01abd258",
+      "master": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/identity-v2.png",
+      "master_sha256": "b9573949dea2a6435640e19f850dfbebee1507d2b4a323718329922acfc1f508",
+      "model": "not exposed by built-in tool",
+      "not_native_or_rights_approval": true,
+      "prompt": "assets/source/ionia-revision20261025-v1/kashuri-pair/generation-prompts-v1/kashuriArmsbearer-identity-v2.txt",
+      "prompt_sha256": "6f668bdb72b6cc736937b602b75decbc00eb10abf45a6e8b7bd7ccc53d15f479",
+      "provider": "OpenAI built-in imagegen",
+      "provider_output_basename": "exec-b9bd0497-b31e-43ee-b53a-2aa1299cf79a.png",
+      "references": [
+        {
+          "ordinal": 1,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/identity-v1.png",
+          "source_sha256": "f6ab8f97437bd5bc31eaf12ad9550463b08daeb6673407f258fb530fb5493f82"
+        },
+        {
+          "ordinal": 2,
+          "reference_sha256": "c8df47b7021ed103cf646b72fdb2275211a97846cd921923893f0a756659c535",
+          "role": "external official regional shape guidance only; private unbundled reference",
+          "url": "https://universe.leagueoflegends.com/images/iona_crest_icon.png"
+        },
+        {
+          "ordinal": 3,
+          "reference_name": "private-original-native-style-only.png",
+          "reference_sha256": "c0544a73393695be226f259a9289ac54d2afdacdddccd01ff398cfd46ae6b7bf",
+          "role": "external original HeroesIII native style/category/action-function guidance only; private unbundled read-only reference"
+        }
+      ],
+      "technical_claim": "Genuine painted2D source output; no 3D models/renders/rejected painted-over renders used as tool inputs"
+    },
+    {
+      "exact_private_request_receipt_sha256": "5de6e2d4d33bab82d1a926b35e732b672d4d69ad1e187306c38ab075e48cfb9c",
+      "master": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/melee-v1.png",
+      "master_sha256": "a10bcf41dcceb7dcf9f80bf3b383a333d25d69b701ebb98528a6197989879d17",
+      "model": "not exposed by built-in tool",
+      "not_native_or_rights_approval": true,
+      "prompt": "assets/source/ionia-revision20261025-v1/kashuri-pair/generation-prompts-v1/kashuriArmsbearer-melee-v1.txt",
+      "prompt_sha256": "2372684f636f2d0e764441a1b57b337539a4b273eaaa00aeb2323f02a5793f01",
+      "provider": "OpenAI built-in imagegen",
+      "provider_output_basename": "exec-8fc7a7d4-c82f-4e7e-b62f-57f655de46b8.png",
+      "references": [
+        {
+          "ordinal": 1,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/identity-v2.png",
+          "source_sha256": "b9573949dea2a6435640e19f850dfbebee1507d2b4a323718329922acfc1f508"
+        },
+        {
+          "ordinal": 2,
+          "reference_name": "private-original-native-style-only.png",
+          "reference_sha256": "c0544a73393695be226f259a9289ac54d2afdacdddccd01ff398cfd46ae6b7bf",
+          "role": "external original HeroesIII native style/category/action-function guidance only; private unbundled read-only reference"
+        },
+        {
+          "ordinal": 3,
+          "reference_sha256": "c8df47b7021ed103cf646b72fdb2275211a97846cd921923893f0a756659c535",
+          "role": "external official regional shape guidance only; private unbundled reference",
+          "url": "https://universe.leagueoflegends.com/images/iona_crest_icon.png"
+        }
+      ],
+      "technical_claim": "Genuine painted2D source output; no 3D models/renders/rejected painted-over renders used as tool inputs"
+    },
+    {
+      "exact_private_request_receipt_sha256": "b1ba027fd290493d4e613b6c9ce9a62fc7058ed3a77ca412f7b6f70140ddee4d",
+      "master": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/shoot-v1.png",
+      "master_sha256": "d84294ce9d0a20f66d09b907cb7e0006dcfc74d1f48688e50ce85152ae8b5502",
+      "model": "not exposed by built-in tool",
+      "not_native_or_rights_approval": true,
+      "prompt": "assets/source/ionia-revision20261025-v1/kashuri-pair/generation-prompts-v1/kashuriArmsbearer-shoot-v1.txt",
+      "prompt_sha256": "9be152b7c27a23dae690e33871bfe8c681771fb9ec88a78b86cfbf7530bf7e3f",
+      "provider": "OpenAI built-in imagegen",
+      "provider_output_basename": "exec-8ae0f7e9-728b-446a-8400-cbae46b95969.png",
+      "references": [
+        {
+          "ordinal": 1,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/identity-v2.png",
+          "source_sha256": "b9573949dea2a6435640e19f850dfbebee1507d2b4a323718329922acfc1f508"
+        },
+        {
+          "ordinal": 2,
+          "reference_name": "private-original-native-style-only.png",
+          "reference_sha256": "c0544a73393695be226f259a9289ac54d2afdacdddccd01ff398cfd46ae6b7bf",
+          "role": "external original HeroesIII native style/category/action-function guidance only; private unbundled read-only reference"
+        },
+        {
+          "ordinal": 3,
+          "reference_sha256": "c8df47b7021ed103cf646b72fdb2275211a97846cd921923893f0a756659c535",
+          "role": "external official regional shape guidance only; private unbundled reference",
+          "url": "https://universe.leagueoflegends.com/images/iona_crest_icon.png"
+        }
+      ],
+      "technical_claim": "Genuine painted2D source output; no 3D models/renders/rejected painted-over renders used as tool inputs"
+    },
+    {
+      "exact_private_request_receipt_sha256": "9f359f6adf5e199269dbb5c0b35eea69eb4d7c585b99ef6a552c4c949554ace8",
+      "master": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/walk-contactB-v2.png",
+      "master_sha256": "54b6fd2dd42b5cf6ded73f50f89730134bdb756cf95d69d0bc084a4f840237f5",
+      "model": "not exposed by built-in tool",
+      "not_native_or_rights_approval": true,
+      "prompt": "assets/source/ionia-revision20261025-v1/kashuri-pair/generation-prompts-v1/kashuriArmsbearer-walk-contactB-v2.txt",
+      "prompt_sha256": "c9141001adc48e18c2b882bdf3cbdcafe93acbfd93ea6de31e3954ea23ce4371",
+      "provider": "OpenAI built-in imagegen",
+      "provider_output_basename": "exec-186a2f83-0deb-4ab9-98e1-cc7e7d3455a4.png",
+      "references": [
+        {
+          "ordinal": 1,
+          "reference_name": "private-original-contactB-function.png",
+          "reference_sha256": "7da01b8a2de5c42ad251851e1e0a8e34ce9e6370ad2804c2fcef231ac1c97023",
+          "role": "external original HeroesIII native style/category/action-function guidance only; private unbundled read-only reference"
+        },
+        {
+          "ordinal": 2,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/identity-v2.png",
+          "source_sha256": "b9573949dea2a6435640e19f850dfbebee1507d2b4a323718329922acfc1f508"
+        }
+      ],
+      "technical_claim": "Genuine painted2D source output; no 3D models/renders/rejected painted-over renders used as tool inputs"
+    },
+    {
+      "exact_private_request_receipt_sha256": "d08a17fde64a50f3a351f3e176c1b8f6a4cf10b972756091fd328517f346891b",
+      "master": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/walk-contacts-v1.png",
+      "master_sha256": "a3e1af484178e07f89b21d59594937de9858c5a09613e3048490797fc256f919",
+      "model": "not exposed by built-in tool",
+      "not_native_or_rights_approval": true,
+      "prompt": "assets/source/ionia-revision20261025-v1/kashuri-pair/generation-prompts-v1/kashuriArmsbearer-walk-contacts-v1.txt",
+      "prompt_sha256": "c40d55b7d5ae59f270eed9460e4725e0fe7371b690e25ec33f43cee22f5751a2",
+      "provider": "OpenAI built-in imagegen",
+      "provider_output_basename": "exec-99f5c1bd-56eb-42d9-9657-2d66b2a0254a.png",
+      "references": [
+        {
+          "ordinal": 1,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/identity-v2.png",
+          "source_sha256": "b9573949dea2a6435640e19f850dfbebee1507d2b4a323718329922acfc1f508"
+        },
+        {
+          "ordinal": 2,
+          "reference_name": "private-original-opposed-walk-contacts.png",
+          "reference_sha256": "06fdc876e9269b9454634dbcca62022e865571e8aac3b01a1884d119b4679b22",
+          "role": "external original HeroesIII native style/category/action-function guidance only; private unbundled read-only reference"
+        },
+        {
+          "ordinal": 3,
+          "reference_sha256": "c8df47b7021ed103cf646b72fdb2275211a97846cd921923893f0a756659c535",
+          "role": "external official regional shape guidance only; private unbundled reference",
+          "url": "https://universe.leagueoflegends.com/images/iona_crest_icon.png"
+        }
+      ],
+      "technical_claim": "Genuine painted2D source output; no 3D models/renders/rejected painted-over renders used as tool inputs"
+    },
+    {
+      "exact_private_request_receipt_sha256": "afdff8d6fedc6ff8cc963ce56187eafe69803f8876eee9eb38a697818e9d2370",
+      "master": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/walk-opposed-half-v1.png",
+      "master_sha256": "ce8e9c46e46cc3f5fcb4c55a65091ec405f53c2b590df67e154d8396d3cbc831",
+      "model": "not exposed by built-in tool",
+      "not_native_or_rights_approval": true,
+      "prompt": "assets/source/ionia-revision20261025-v1/kashuri-pair/generation-prompts-v1/kashuriArmsbearer-walk-opposed-half-v1.txt",
+      "prompt_sha256": "156f2d7637598036da79205087d2eaaf8b75690a32b5e15a18cbb8a8bd5c252e",
+      "provider": "OpenAI built-in imagegen",
+      "provider_output_basename": "exec-5e1ee661-80d8-45fe-b134-adee46b5d1a9.png",
+      "references": [
+        {
+          "ordinal": 1,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/walk-contactB-v2.png",
+          "source_sha256": "54b6fd2dd42b5cf6ded73f50f89730134bdb756cf95d69d0bc084a4f840237f5"
+        },
+        {
+          "ordinal": 2,
+          "reference_name": "private-original-native-style-only.png",
+          "reference_sha256": "c0544a73393695be226f259a9289ac54d2afdacdddccd01ff398cfd46ae6b7bf",
+          "role": "external original HeroesIII native style/category/action-function guidance only; private unbundled read-only reference"
+        },
+        {
+          "ordinal": 3,
+          "reference_sha256": "c8df47b7021ed103cf646b72fdb2275211a97846cd921923893f0a756659c535",
+          "role": "external official regional shape guidance only; private unbundled reference",
+          "url": "https://universe.leagueoflegends.com/images/iona_crest_icon.png"
+        }
+      ],
+      "technical_claim": "Genuine painted2D source output; no 3D models/renders/rejected painted-over renders used as tool inputs"
+    },
+    {
+      "exact_private_request_receipt_sha256": "6bed269e74436b2cd271ffb654b60bad1fabf3e53c150f09ad5a2a3d5b1239fc",
+      "master": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/walk-six-v1.png",
+      "master_sha256": "49cf6005572bd8a84ba152473ed5fea8a0336981c3eb6776b54e6fd03a34aaa3",
+      "model": "not exposed by built-in tool",
+      "not_native_or_rights_approval": true,
+      "prompt": "assets/source/ionia-revision20261025-v1/kashuri-pair/generation-prompts-v1/kashuriArmsbearer-walk-six-v1.txt",
+      "prompt_sha256": "0b638ea72568b47b6ddf8d73cd60285539c6d48b76218b614e3edc566fd1a9ee",
+      "provider": "OpenAI built-in imagegen",
+      "provider_output_basename": "exec-4a26b8eb-2f3c-4d2d-80ed-d479cbe1e03b.png",
+      "references": [
+        {
+          "ordinal": 1,
+          "producer": "assets/source/ionia-revision20261025-v1/kashuri-pair/prepare_reference_inputs_v1.py",
+          "producer_sha256": "e2b7beeaa805cf60c6f631a0104857954bf4d6517b36d52bf3fcbcd79f79087d",
+          "role": "own painted whole-contact comparison; archived exact original tool input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/reference-inputs/own-painted-opposed-contacts-v1.png",
+          "source_sha256": "d629277879e9bf91a89b1bda3f75913d00f5be4a92a127e8fa75099388bea30f"
+        },
+        {
+          "ordinal": 2,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/identity-v2.png",
+          "source_sha256": "b9573949dea2a6435640e19f850dfbebee1507d2b4a323718329922acfc1f508"
+        },
+        {
+          "ordinal": 3,
+          "reference_name": "private-original-native-style-only.png",
+          "reference_sha256": "c0544a73393695be226f259a9289ac54d2afdacdddccd01ff398cfd46ae6b7bf",
+          "role": "external original HeroesIII native style/category/action-function guidance only; private unbundled read-only reference"
+        },
+        {
+          "ordinal": 4,
+          "reference_sha256": "c8df47b7021ed103cf646b72fdb2275211a97846cd921923893f0a756659c535",
+          "role": "external official regional shape guidance only; private unbundled reference",
+          "url": "https://universe.leagueoflegends.com/images/iona_crest_icon.png"
+        }
+      ],
+      "technical_claim": "Genuine painted2D source output; no 3D models/renders/rejected painted-over renders used as tool inputs"
+    },
+    {
+      "exact_private_request_receipt_sha256": "5ebab1dcbd1c19433cbd61a903966ee80bd4ae5f6135fde8542c0017a17a75ef",
+      "master": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriMarksman/auxiliary-v1.png",
+      "master_sha256": "7ecda5a532a9b369a2dd2022bb6f0adb4c3db61f9b23299ad67bb3ee1c8286e5",
+      "model": "not exposed by built-in tool",
+      "not_native_or_rights_approval": true,
+      "prompt": "assets/source/ionia-revision20261025-v1/kashuri-pair/generation-prompts-v1/kashuriMarksman-auxiliary-v1.txt",
+      "prompt_sha256": "592be379769f403a390a21aa8f4574688d9bab74cbc882b1fe0d3d3cdd256626",
+      "provider": "OpenAI built-in imagegen",
+      "provider_output_basename": "exec-1fe615f3-09c9-4782-9efc-f5dc4996131e.png",
+      "references": [
+        {
+          "ordinal": 1,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/auxiliary-v1.png",
+          "source_sha256": "396793dfdf3b2fcb709e9345a4eaa0d006a88d178172ba70cadb2c2034bd1691"
+        },
+        {
+          "ordinal": 2,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriMarksman/identity-v2.png",
+          "source_sha256": "768386db0d0fc609065c48bae93cf4abd1bc7b3e9abc61fe6d8d3a432d0b9984"
+        },
+        {
+          "ordinal": 3,
+          "reference_sha256": "c8df47b7021ed103cf646b72fdb2275211a97846cd921923893f0a756659c535",
+          "role": "external official regional shape guidance only; private unbundled reference",
+          "url": "https://universe.leagueoflegends.com/images/iona_crest_icon.png"
+        },
+        {
+          "ordinal": 4,
+          "reference_name": "private-original-native-style-only.png",
+          "reference_sha256": "c0544a73393695be226f259a9289ac54d2afdacdddccd01ff398cfd46ae6b7bf",
+          "role": "external original HeroesIII native style/category/action-function guidance only; private unbundled read-only reference"
+        },
+        {
+          "ordinal": 5,
+          "reference_name": "private-original-close-creature-portraits.png",
+          "reference_sha256": "e524f59a2483b7de2cc21a510c3f2465c3cc0c9b5774b30d2d5ecdad380ecf56",
+          "role": "external original HeroesIII native style/category/action-function guidance only; private unbundled read-only reference"
+        }
+      ],
+      "technical_claim": "Genuine painted2D source output; no 3D models/renders/rejected painted-over renders used as tool inputs"
+    },
+    {
+      "exact_private_request_receipt_sha256": "022132a1fd3db8201cb97fff3e2d45e632643e2c167c8e4b28159e0415a3714f",
+      "master": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriMarksman/death-v1.png",
+      "master_sha256": "8bd42ac1f07634192326c2aa7692a78427dc7b5c8c4dbcd5645bfff5be9d9a40",
+      "model": "not exposed by built-in tool",
+      "not_native_or_rights_approval": true,
+      "prompt": "assets/source/ionia-revision20261025-v1/kashuri-pair/generation-prompts-v1/kashuriMarksman-death-v1.txt",
+      "prompt_sha256": "6a5a7a0613d7e3e99fee70827cd7c485d38b58ebbee173524064e357f5881dd2",
+      "provider": "OpenAI built-in imagegen",
+      "provider_output_basename": "exec-e1ebdfe0-e08c-4013-b81d-e2436367f97c.png",
+      "references": [
+        {
+          "ordinal": 1,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/death-v1.png",
+          "source_sha256": "f3746312dd141a511b02c8fb801b84868631fb622ddaa205efa6604cf111b2f4"
+        },
+        {
+          "ordinal": 2,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriMarksman/identity-v2.png",
+          "source_sha256": "768386db0d0fc609065c48bae93cf4abd1bc7b3e9abc61fe6d8d3a432d0b9984"
+        },
+        {
+          "ordinal": 3,
+          "reference_sha256": "c8df47b7021ed103cf646b72fdb2275211a97846cd921923893f0a756659c535",
+          "role": "external official regional shape guidance only; private unbundled reference",
+          "url": "https://universe.leagueoflegends.com/images/iona_crest_icon.png"
+        },
+        {
+          "ordinal": 4,
+          "reference_name": "private-original-native-style-only.png",
+          "reference_sha256": "c0544a73393695be226f259a9289ac54d2afdacdddccd01ff398cfd46ae6b7bf",
+          "role": "external original HeroesIII native style/category/action-function guidance only; private unbundled read-only reference"
+        }
+      ],
+      "technical_claim": "Genuine painted2D source output; no 3D models/renders/rejected painted-over renders used as tool inputs"
+    },
+    {
+      "exact_private_request_receipt_sha256": "84f3aaf594d58563ea412d4ece9df75c5a999c9214a4fe617ed78c88a639e754",
+      "master": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriMarksman/general-v1.png",
+      "master_sha256": "45ccf337aa9f2f9489963a1c7699496e8670c375801b8e7fa3a06276adf9843a",
+      "model": "not exposed by built-in tool",
+      "not_native_or_rights_approval": true,
+      "prompt": "assets/source/ionia-revision20261025-v1/kashuri-pair/generation-prompts-v1/kashuriMarksman-general-v1.txt",
+      "prompt_sha256": "62246e31a4c6bf2897429d91d9b9782ad2edd3e4e2e9d745a6cd7a32264a2062",
+      "provider": "OpenAI built-in imagegen",
+      "provider_output_basename": "exec-1febaf0b-c8ac-4e59-9eee-9baf3c13af84.png",
+      "references": [
+        {
+          "ordinal": 1,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/general-v1.png",
+          "source_sha256": "1558df411ac273c4143dafd54a2045fc3e96575ecdbf9c66e56601377aff59e4"
+        },
+        {
+          "ordinal": 2,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriMarksman/identity-v2.png",
+          "source_sha256": "768386db0d0fc609065c48bae93cf4abd1bc7b3e9abc61fe6d8d3a432d0b9984"
+        },
+        {
+          "ordinal": 3,
+          "reference_sha256": "c8df47b7021ed103cf646b72fdb2275211a97846cd921923893f0a756659c535",
+          "role": "external official regional shape guidance only; private unbundled reference",
+          "url": "https://universe.leagueoflegends.com/images/iona_crest_icon.png"
+        },
+        {
+          "ordinal": 4,
+          "reference_name": "private-original-native-style-only.png",
+          "reference_sha256": "c0544a73393695be226f259a9289ac54d2afdacdddccd01ff398cfd46ae6b7bf",
+          "role": "external original HeroesIII native style/category/action-function guidance only; private unbundled read-only reference"
+        }
+      ],
+      "technical_claim": "Genuine painted2D source output; no 3D models/renders/rejected painted-over renders used as tool inputs"
+    },
+    {
+      "exact_private_request_receipt_sha256": "58b857f38e3ae3c9a3b5ee84fce54700e6d86696b2b275a5179cdcfa6194a80e",
+      "master": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriMarksman/identity-v1.png",
+      "master_sha256": "7999c85072a555adc9ca1c232f6e844960e9db8b8280e79a8135575062d533fe",
+      "model": "not exposed by built-in tool",
+      "not_native_or_rights_approval": true,
+      "prompt": "assets/source/ionia-revision20261025-v1/kashuri-pair/generation-prompts-v1/kashuriMarksman-identity-v1.txt",
+      "prompt_sha256": "187b6cf7a54f9b68bd1adedf45ac93d15dafc42235b0979d0b1812035aed60a5",
+      "provider": "OpenAI built-in imagegen",
+      "provider_output_basename": "exec-3fbc1ebb-4dcc-4af0-940d-7023736c9e00.png",
+      "references": [
+        {
+          "ordinal": 1,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/identity-v1.png",
+          "source_sha256": "f6ab8f97437bd5bc31eaf12ad9550463b08daeb6673407f258fb530fb5493f82"
+        },
+        {
+          "ordinal": 2,
+          "reference_name": "private-original-native-style-only.png",
+          "reference_sha256": "c0544a73393695be226f259a9289ac54d2afdacdddccd01ff398cfd46ae6b7bf",
+          "role": "external original HeroesIII native style/category/action-function guidance only; private unbundled read-only reference"
+        },
+        {
+          "ordinal": 3,
+          "reference_sha256": "c8df47b7021ed103cf646b72fdb2275211a97846cd921923893f0a756659c535",
+          "role": "external official regional shape guidance only; private unbundled reference",
+          "url": "https://universe.leagueoflegends.com/images/iona_crest_icon.png"
+        }
+      ],
+      "technical_claim": "Genuine painted2D source output; no 3D models/renders/rejected painted-over renders used as tool inputs"
+    },
+    {
+      "exact_private_request_receipt_sha256": "e50a18f09e663e47a2b4ec6c9d1fc56825ecac47729560de20e50ba5361c171e",
+      "master": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriMarksman/identity-v2.png",
+      "master_sha256": "768386db0d0fc609065c48bae93cf4abd1bc7b3e9abc61fe6d8d3a432d0b9984",
+      "model": "not exposed by built-in tool",
+      "not_native_or_rights_approval": true,
+      "prompt": "assets/source/ionia-revision20261025-v1/kashuri-pair/generation-prompts-v1/kashuriMarksman-identity-v2.txt",
+      "prompt_sha256": "d55f260e3134c73b709dddfe9baf8e1de4925859d1ba98ffb8fb87434d2cd140",
+      "provider": "OpenAI built-in imagegen",
+      "provider_output_basename": "exec-2ad7beb4-cc33-47eb-a9aa-13ec3aea5b1d.png",
+      "references": [
+        {
+          "ordinal": 1,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/identity-v2.png",
+          "source_sha256": "b9573949dea2a6435640e19f850dfbebee1507d2b4a323718329922acfc1f508"
+        },
+        {
+          "ordinal": 2,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriMarksman/identity-v1.png",
+          "source_sha256": "7999c85072a555adc9ca1c232f6e844960e9db8b8280e79a8135575062d533fe"
+        },
+        {
+          "ordinal": 3,
+          "reference_name": "private-original-native-style-only.png",
+          "reference_sha256": "c0544a73393695be226f259a9289ac54d2afdacdddccd01ff398cfd46ae6b7bf",
+          "role": "external original HeroesIII native style/category/action-function guidance only; private unbundled read-only reference"
+        },
+        {
+          "ordinal": 4,
+          "reference_sha256": "c8df47b7021ed103cf646b72fdb2275211a97846cd921923893f0a756659c535",
+          "role": "external official regional shape guidance only; private unbundled reference",
+          "url": "https://universe.leagueoflegends.com/images/iona_crest_icon.png"
+        }
+      ],
+      "technical_claim": "Genuine painted2D source output; no 3D models/renders/rejected painted-over renders used as tool inputs"
+    },
+    {
+      "exact_private_request_receipt_sha256": "24c4312e27ccea329c93e24ade23360f5ef838181daf1586a4bf9d2873e68067",
+      "master": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriMarksman/melee-repair-v1.png",
+      "master_sha256": "81462dd7eff99bf31e253939ff83be94bd08c580863252fc2df96d157363cf81",
+      "model": "not exposed by built-in tool",
+      "not_native_or_rights_approval": true,
+      "prompt": "assets/source/ionia-revision20261025-v1/kashuri-pair/generation-prompts-v1/kashuriMarksman-melee-repair-v1.txt",
+      "prompt_sha256": "ca8bfa591d853b4ade318bfe70fd9e7fd20d56b3d77684a4870d139f87e8a517",
+      "provider": "OpenAI built-in imagegen",
+      "provider_output_basename": "exec-e80e5621-5728-4b06-933f-b03335285478.png",
+      "references": [
+        {
+          "ordinal": 1,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/reference-inputs/marksman-downstrike-merged-function-v1.png",
+          "source_sha256": "52dd63489b140d01b0bc476c4e232db420d4f0019e030ae586e6223441f06f1a"
+        },
+        {
+          "ordinal": 2,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriMarksman/identity-v2.png",
+          "source_sha256": "768386db0d0fc609065c48bae93cf4abd1bc7b3e9abc61fe6d8d3a432d0b9984"
+        }
+      ],
+      "technical_claim": "Genuine painted2D source output; no 3D models/renders/rejected painted-over renders used as tool inputs"
+    },
+    {
+      "exact_private_request_receipt_sha256": "9acb0e3ec68ecd4c0dc5d6c3f5ea845c3bf344f2574827678e384dd398ae9018",
+      "master": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriMarksman/melee-v1.png",
+      "master_sha256": "ad4be5fbd0dc4098c21fc84760c1866d65caa960bd426d316d4930af91ca30fb",
+      "model": "not exposed by built-in tool",
+      "not_native_or_rights_approval": true,
+      "prompt": "assets/source/ionia-revision20261025-v1/kashuri-pair/generation-prompts-v1/kashuriMarksman-melee-v1.txt",
+      "prompt_sha256": "0c92782acc159f9bf745996c8e943411997de88d42ec47f7f21689f78eb98fa0",
+      "provider": "OpenAI built-in imagegen",
+      "provider_output_basename": "exec-8dc7d208-8fc2-4dd2-81b4-cfad98f0ae8e.png",
+      "references": [
+        {
+          "ordinal": 1,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/melee-v1.png",
+          "source_sha256": "a10bcf41dcceb7dcf9f80bf3b383a333d25d69b701ebb98528a6197989879d17"
+        },
+        {
+          "ordinal": 2,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriMarksman/identity-v2.png",
+          "source_sha256": "768386db0d0fc609065c48bae93cf4abd1bc7b3e9abc61fe6d8d3a432d0b9984"
+        },
+        {
+          "ordinal": 3,
+          "reference_sha256": "c8df47b7021ed103cf646b72fdb2275211a97846cd921923893f0a756659c535",
+          "role": "external official regional shape guidance only; private unbundled reference",
+          "url": "https://universe.leagueoflegends.com/images/iona_crest_icon.png"
+        },
+        {
+          "ordinal": 4,
+          "reference_name": "private-original-native-style-only.png",
+          "reference_sha256": "c0544a73393695be226f259a9289ac54d2afdacdddccd01ff398cfd46ae6b7bf",
+          "role": "external original HeroesIII native style/category/action-function guidance only; private unbundled read-only reference"
+        }
+      ],
+      "technical_claim": "Genuine painted2D source output; no 3D models/renders/rejected painted-over renders used as tool inputs"
+    },
+    {
+      "exact_private_request_receipt_sha256": "0db90200e831c8bea4bddb60282a72c9fd575acfae31a6dd9ba9560e1acba9f8",
+      "master": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriMarksman/shoot-up-repair-v1.png",
+      "master_sha256": "772f409a6acf627b0e72dd68185cc4b2cad45ff81e0592a8440fdd5b3248c576",
+      "model": "not exposed by built-in tool",
+      "not_native_or_rights_approval": true,
+      "prompt": "assets/source/ionia-revision20261025-v1/kashuri-pair/generation-prompts-v1/kashuriMarksman-shoot-up-repair-v1.txt",
+      "prompt_sha256": "54298b048b4249f241a78e83d540da6190da8af8fba7bd74e72b087e09b9b4d7",
+      "provider": "OpenAI built-in imagegen",
+      "provider_output_basename": "exec-4fd2b560-df78-4482-86ca-e70c8a1f4f04.png",
+      "references": [
+        {
+          "ordinal": 1,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/owned-v1/shoot/04-whole.png",
+          "source_sha256": "c757f8ab65f69fdf157f3e435322c8a4c7d9afd8c65773fe344b3a95aae00f6f"
+        },
+        {
+          "ordinal": 2,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriMarksman/identity-v2.png",
+          "source_sha256": "768386db0d0fc609065c48bae93cf4abd1bc7b3e9abc61fe6d8d3a432d0b9984"
+        }
+      ],
+      "technical_claim": "Genuine painted2D source output; no 3D models/renders/rejected painted-over renders used as tool inputs"
+    },
+    {
+      "exact_private_request_receipt_sha256": "94ea8bbea710f2cb735defddef36dc1e27c3032feffe67d18c8a0e2f93fb7b59",
+      "master": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriMarksman/shoot-v1.png",
+      "master_sha256": "49f62b47078e526a5c60e3577d1bd22d4a93f561084f3f7952534532244610af",
+      "model": "not exposed by built-in tool",
+      "not_native_or_rights_approval": true,
+      "prompt": "assets/source/ionia-revision20261025-v1/kashuri-pair/generation-prompts-v1/kashuriMarksman-shoot-v1.txt",
+      "prompt_sha256": "f893bae4a2dd9c952a0a53ce74184b726a65802fc72dd019f54409b7caaaa7ba",
+      "provider": "OpenAI built-in imagegen",
+      "provider_output_basename": "exec-0c4fc2e9-c7e5-4a42-8f86-6e2b7af36b0e.png",
+      "references": [
+        {
+          "ordinal": 1,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriArmsbearer/shoot-v1.png",
+          "source_sha256": "d84294ce9d0a20f66d09b907cb7e0006dcfc74d1f48688e50ce85152ae8b5502"
+        },
+        {
+          "ordinal": 2,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriMarksman/identity-v2.png",
+          "source_sha256": "768386db0d0fc609065c48bae93cf4abd1bc7b3e9abc61fe6d8d3a432d0b9984"
+        },
+        {
+          "ordinal": 3,
+          "reference_sha256": "c8df47b7021ed103cf646b72fdb2275211a97846cd921923893f0a756659c535",
+          "role": "external official regional shape guidance only; private unbundled reference",
+          "url": "https://universe.leagueoflegends.com/images/iona_crest_icon.png"
+        },
+        {
+          "ordinal": 4,
+          "reference_name": "private-original-native-style-only.png",
+          "reference_sha256": "c0544a73393695be226f259a9289ac54d2afdacdddccd01ff398cfd46ae6b7bf",
+          "role": "external original HeroesIII native style/category/action-function guidance only; private unbundled read-only reference"
+        }
+      ],
+      "technical_claim": "Genuine painted2D source output; no 3D models/renders/rejected painted-over renders used as tool inputs"
+    },
+    {
+      "exact_private_request_receipt_sha256": "a51d81e7932c328b1524c4c8d59d2c5a1cb2dd4d45e5d0ac6fd9e883a1959c81",
+      "master": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriMarksman/walk-v1.png",
+      "master_sha256": "88e3bd0608dde71d3588833357051e3bfa00bed99ee13d92d26c50c7937676d6",
+      "model": "not exposed by built-in tool",
+      "not_native_or_rights_approval": true,
+      "prompt": "assets/source/ionia-revision20261025-v1/kashuri-pair/generation-prompts-v1/kashuriMarksman-walk-v1.txt",
+      "prompt_sha256": "d897be204b5b78dfd8a86b05eb38ac107637c0c59cf8ede15ab68b3bc2016fb4",
+      "provider": "OpenAI built-in imagegen",
+      "provider_output_basename": "exec-7098af9a-b6be-454b-a41e-d879164b3dae.png",
+      "references": [
+        {
+          "ordinal": 1,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/reference-inputs/base-walk-native-guide-v1.png",
+          "source_sha256": "8c66b17e4bd898bcaf3d909158327259a44d8caee1c20fa1fa71539c60f009e4"
+        },
+        {
+          "ordinal": 2,
+          "role": "own genuine painted2D subject/action input",
+          "source": "assets/source/ionia-revision20261025-v1/kashuri-pair/kashuriMarksman/identity-v2.png",
+          "source_sha256": "768386db0d0fc609065c48bae93cf4abd1bc7b3e9abc61fe6d8d3a432d0b9984"
+        },
+        {
+          "ordinal": 3,
+          "reference_sha256": "c8df47b7021ed103cf646b72fdb2275211a97846cd921923893f0a756659c535",
+          "role": "external official regional shape guidance only; private unbundled reference",
+          "url": "https://universe.leagueoflegends.com/images/iona_crest_icon.png"
+        },
+        {
+          "ordinal": 4,
+          "reference_name": "private-original-native-style-only.png",
+          "reference_sha256": "c0544a73393695be226f259a9289ac54d2afdacdddccd01ff398cfd46ae6b7bf",
+          "role": "external original HeroesIII native style/category/action-function guidance only; private unbundled read-only reference"
+        }
+      ],
+      "technical_claim": "Genuine painted2D source output; no 3D models/renders/rejected painted-over renders used as tool inputs"
+    },
+    {
+      "exact_private_request_receipt_sha256": "62414769aaf063786dd3f7e1f3d545fd9210540b7249d2d6bcec25823016f3bd",
+      "master": "assets/source/ionia-revision20261025-v1/kashuri-pair/projectile-v1.png",
+      "master_sha256": "5596ac2d02a365d47dc578bc31bb0ae54229bf4b2e5bef22c52ca84c49eed354",
+      "model": "not exposed by built-in tool",
+      "not_native_or_rights_approval": true,
+      "prompt": "assets/source/ionia-revision20261025-v1/kashuri-pair/generation-prompts-v1/projectile-v1.txt",
+      "prompt_sha256": "31267bdaa57af9866b7dd51130174c77047a2259cb8b5edc044a23676b85b55c",
+      "provider": "OpenAI built-in imagegen",
+      "provider_output_basename": "exec-a8bdb318-2bcb-49e6-91b0-998dad83d4d4.png",
+      "references": [
+        {
+          "ordinal": 1,
+          "reference_name": "g00-f000.png",
+          "reference_sha256": "01e12ce209359c7ace7ac4e041b67b41b3b6364f18a47772e4b8d9d30631060b",
+          "role": "external original HeroesIII native style/category/action-function guidance only; private unbundled read-only reference"
+        }
+      ],
+      "technical_claim": "Genuine painted2D source output; no 3D models/renders/rejected painted-over renders used as tool inputs"
+    }
+  ],
+  "source_record_revision": "v3 complete portable actual binder/reproducer/ordinary-contract paths; no artwork changes",
+  "source_review_scope": "All original image inputs traced through actual raw receipts; original native guidance stays private. Copied output masters and direct own inputs are ordinary current replay sources. No stale canonical/history recipe reads.",
+  "status": "authored configuration"
+}

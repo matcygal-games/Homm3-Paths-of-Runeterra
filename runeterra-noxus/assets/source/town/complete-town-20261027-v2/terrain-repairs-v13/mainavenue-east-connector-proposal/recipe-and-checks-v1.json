@@ -1,0 +1,381 @@
+{
+  "status": "design proposal",
+  "base": {
+    "path": "assets/source/town/complete-town-20261027-v2/terrain/final-native-v12-proposal.png",
+    "sha256": "d594523cc2d00e0fc4f372e8de5e349496bf675f831d6bc9fd47ef7ee2cfee3f"
+  },
+  "source_index": {
+    "path": "assets/source/town/complete-town-20261027-v2/native-transforms-v13/states.json",
+    "sha256": "c8ea791aeab8ba7db5c4d4e8acca28337576235e85c51cede426f5fdc818dbe1"
+  },
+  "geometry_guide": {
+    "path": "assets/source/town/complete-town-20261027-v2/geometry-final-v2/connector-source-guide-v12-v2/index.json",
+    "sha256": "1db52256aa54ff69dfcbfccc367fc5f3bf769fd7f690e62a34fbb980a488f61c"
+  },
+  "script": {
+    "path": "assets/source/town/complete-town-20261027-v2/terrain-repairs-v13/mainavenue-east-connector-proposal/compose_and_check.py",
+    "sha256": "b8860fed035df2ce3ec48de77a292f3efeaf56211a2d61e45b07535627828a8f"
+  },
+  "patches": [
+    {
+      "side": "east",
+      "master": {
+        "path": "assets/source/town/complete-town-20261027-v2/terrain-repairs-v13/mainavenue-east-connector-proposal/east-master-v1.png",
+        "sha256": "a989e20a5d1f9612157306d4d85c0de409f6f43d226b8d521a2d7c1c43dc97e4"
+      },
+      "source_crop": [
+        0,
+        0,
+        1647,
+        955
+      ],
+      "native_patch": {
+        "path": "assets/source/town/complete-town-20261027-v2/terrain-repairs-v13/mainavenue-east-connector-proposal/east-native-v1.png",
+        "sha256": "f487197f34691527675c9aed13d4eba30feffc83b4a7c10871fa6a39b9c340b3"
+      },
+      "native_box": [
+        414,
+        168,
+        445,
+        186
+      ],
+      "body_overlap_pixels": 0,
+      "structural_contact_overlap_pixels": 0,
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "conversion": "Exact genuine painted source crop; uniform coverfit LANCZOS; no artistic raster edits."
+    },
+    {
+      "side": "west",
+      "master": {
+        "path": "assets/source/town/complete-town-20261027-v2/terrain-repairs-v13/mainavenue-east-connector-proposal/west-master-v1.png",
+        "sha256": "8eba17306928b7756d52b7ac7f79f59427601d8e8a1c38b25c88ab7864ff4310"
+      },
+      "source_crop": [
+        0,
+        0,
+        826,
+        1422
+      ],
+      "native_patch": {
+        "path": "assets/source/town/complete-town-20261027-v2/terrain-repairs-v13/mainavenue-east-connector-proposal/west-native-v1.png",
+        "sha256": "f585711f2ff40200efc0f7092ef5f1a2dcadbb48a5366a7d337ac12ae03fd9cd"
+      },
+      "native_box": [
+        0,
+        130,
+        10,
+        148
+      ],
+      "body_overlap_pixels": 0,
+      "structural_contact_overlap_pixels": 0,
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "conversion": "Exact genuine painted source crop; uniform coverfit LANCZOS; no artistic raster edits."
+    }
+  ],
+  "proposal": {
+    "path": "assets/source/town/complete-town-20261027-v2/terrain-repairs-v13/mainavenue-east-connector-proposal/terrain-two-connectors-v1.png",
+    "sha256": "4dbc1eff8f652603ce06308e54df844a11705b8a7f6df4e5971e93d7b0b1660e"
+  },
+  "outside_union_difference_bbox": null,
+  "all36_selected_frames_and36_raw_masters_match_pins": true,
+  "preserved_frame_master_pins": [
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/structures/villageHall/layer.png",
+      "sha256": "d6b5a0e68d96027cf36e0b8525e27104571836746ccdc54590d02ea191fb5bf6"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/villageHall/master.png",
+      "sha256": "4fd032e7504953cdfd6a9a85ac0e3cda2978773df42ba61773525b37c29163ab"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/structures/townHall/layer.png",
+      "sha256": "e1ac37d2f8a86ac54d6232b70ca1dfc49353ecfdd99af5716986908e101a64f7"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/townHall/master.png",
+      "sha256": "224a22341766da20dbd9edb1537f542c424c03e2aef49d6e9017bc46c00fc1c9"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/structures/cityHall/layer.png",
+      "sha256": "78abff02f3398091dd511d41756f77342f1ad6645f5c955f7eb945f53e09b4a7"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/cityHall/master.png",
+      "sha256": "1a5f4c4bd5d0d53fb98074a1a5ca7d003292963dbc4bad7999f4945b36950da1"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/structures/capitol/layer.png",
+      "sha256": "42fda895859272e65c54c746853ba4cef022f9c0d41fc0009d1c2625bf59b164"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/capitol/master.png",
+      "sha256": "ad0615abfa921081c466319c0f63d6f6eb3316d3dc7c93c8681d6db65cf42bf2"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/structures/fort/layer.png",
+      "sha256": "0b0bc66e8585f9c3095145f3cb8be0b86ecc72cf758954b1391c04fddbffd4af"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/fort/master.png",
+      "sha256": "8f96a75ada90fb333299d6eaa6088167cce4a4c5ff49112834b95cb9802cb711"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/structures/citadel/layer.png",
+      "sha256": "77a439629ddac00ec6165ca677f767f788fb02334225d2ec09c296f12ce552b9"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/citadel/master.png",
+      "sha256": "48c1e1b4aebc03cd6a2bd4e488017a69f5359a31d9710c954951dc2a787db4ff"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/structures/castle/layer.png",
+      "sha256": "829d7cb2e7834f963c67821b0808a402530f6b095df95f05022d0513774f4c55"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/castle-extraction/master.png",
+      "sha256": "7f2d616ecb150583d61073a3942450d51bda71861905ffd599db372388f94a5d"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/native-transforms-v7/mageGuild1/layer.png",
+      "sha256": "a0afc5bbffd3c314a7c7474ef39921595b133ae1a914ec76344e19670a48961e"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/mageGuild1/master.png",
+      "sha256": "a0eb8135900337c9d4fcb22b287184523fb7c6887ee2e72ab1f3dbf4b58e99c1"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/native-transforms-v7/mageGuild2/layer.png",
+      "sha256": "8b6de0106400d99379c3d2938e593fed23814b8d5fe853cbd9d1dbadc52486f0"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/mageGuild2/master.png",
+      "sha256": "a66fefa6bb06131fdd969a7f21cc172d590e0052f7b12541c9d0e4222a209042"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/native-transforms-v7/mageGuild3/layer.png",
+      "sha256": "bb4bab56fa01d5a96fdbc5212bd49bf20add8216a866d06812aa09d2c6702695"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/mageGuild3/master.png",
+      "sha256": "b169a7cbb9d8c552d45bfd09a206db5bf77a740f13f8c1dd42fdb1f22dbb1c0e"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/native-transforms-v7/mageGuild4/layer.png",
+      "sha256": "39936fc7b907dc18978729ea5e969a00970abc2239edfb8dffb76a975d229b1b"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/mageGuild4/master.png",
+      "sha256": "82eecbae74123b6a07b31fc40b9286959a66f85f1c1eef3196dc5777afff37ef"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/native-transforms-v6/dwellingLvl1/layer.png",
+      "sha256": "6610015b9895b52760495cc4668487031a8ed4dc7cc6fe3e3f34a07d5253c720"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/dwellingLvl1/master.png",
+      "sha256": "d73b340ab72c97a98cf14fd453f81ae620343574c5e693314abedb1c84ab3854"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/native-transforms-v6/dwellingUpLvl1/layer.png",
+      "sha256": "0e3eecb39929ca9f138111a218dedb92c705b08d00021aeffcb56aa5923dd4b6"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/dwellingUpLvl1/master.png",
+      "sha256": "12a894bacd991477b82f87c5ca7427d684b14218aca6c4d521aae787af7349f9"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/native-transforms-v13/dwellingLvl2/layer.png",
+      "sha256": "acd3505d7954ee798d0629345c07d9442cc25b6c91bfeecd7abc146390125ec9"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/dwellingLvl2/master.png",
+      "sha256": "25dc38def8f6dac6dc8c9507dba4db97caa505abde9050dd1b4142acbde5f373"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/native-transforms-v13/dwellingUpLvl2/layer.png",
+      "sha256": "c5aa2ba76b4361934c179569580bcd48389584b2e42d9e0894163c16303c96d4"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/dwellingUpLvl2/master.png",
+      "sha256": "e465c47f1e3638acb177a8ec77fee5b3fd8749506433273e410605ec0e4d8b94"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/structures/dwellingLvl3/layer.png",
+      "sha256": "314e05e32f25e06c623f9630ead89b7f05afd725b474c1f851c9a3a0ff34c327"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/dwellingLvl3/master.png",
+      "sha256": "ffeef2442baca644d693efce8fcab203673b4d786d121cefbe1456780651ea03"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/structures/dwellingUpLvl3/layer.png",
+      "sha256": "bfeeff729ec372a6b8a4c257e0897f5b5b688cf33c2f235c43959e74f89c813c"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/dwellingUpLvl3/master.png",
+      "sha256": "fef6436fcf70f347f4aba3461eef618d7bb319f7bc950a978073c72a37eedde8"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/native-transforms-v6/dwellingLvl4/layer.png",
+      "sha256": "16e2cb146fe54e396c36e576f9dde2a82fff4c1b9fa60e359fa82cb385356c3f"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/dwellingLvl4/master.png",
+      "sha256": "7243a228fb5d9dc4da994a5996e950ae73dc1fc456c2923197810c2cbf264662"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/native-transforms-v6/dwellingUpLvl4/layer.png",
+      "sha256": "5de8c70e898348d1f935ab3e86000604592b4cccab6fa8414852e6a30ab08c93"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/dwellingUpLvl4/master.png",
+      "sha256": "375931be32c60f992bfde19c412c29a85b1402689f0177acaebd80d459fca0e2"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/structures/dwellingLvl5/layer.png",
+      "sha256": "6c8494e5b5a61579c0c90c781b46fcdab7f3b118e8a175ee4769f6fcb12846fb"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/dwellingLvl5/master.png",
+      "sha256": "36e84b410120489f0113818413489cf61a2012abf8e7870c6c84a5f225dbb84c"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/structures/dwellingUpLvl5/layer.png",
+      "sha256": "eb9be06a6a77e2c4e3626ece7c5387676d32456b703742a1807930e2a17a9779"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/dwellingUpLvl5/master.png",
+      "sha256": "0c3aa4e72ef1fe8f9ebae7c1292007ece0bb741451fe0ee4dce16e370cf6c674"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/structures-final-v2/dwellingLvl6/layer.png",
+      "sha256": "85116e82343a6476b67436f81616b5f384fee4ece06eb81d75711f867a1c7ac4"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/dwellingLvl6/master.png",
+      "sha256": "f2fb478e226e3ef3a2cea24446cfb8a70d316caac8d1d380717d80c0e63a3f3c"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/structures-final-v2/dwellingUpLvl6/layer.png",
+      "sha256": "9c4c1d4f2158b06dab694c5114973afb221a4472a1556f6ea1f1f64b98dd9be8"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/dwellingUpLvl6/master.png",
+      "sha256": "30db9cadf7009cf9552cdfc3d0d4141932b3f9da043c0e67361c92ab8f3f6fab"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/structures-clearance-v2/special4/layer.png",
+      "sha256": "b61520b92ee1cea10a9684ff10943a888aa0695fe1a1adc88705c302c7b75621"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/special4/master.png",
+      "sha256": "8b3dbaf3c872ff6ab3dc2fc07d51651737551627e6b11021a5f2fa9fea90d64c"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/structures-clearance-v2/dwellingLvl7/layer.png",
+      "sha256": "9da3b38b709e989b1cf76fd5b31629ff49710903bfe36c78591df7acf2af0306"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/dwellingLvl7/master.png",
+      "sha256": "134aa4ed0f310bdf98c40c85981f1a798704d65a8b9cd311eac2e69e4416e779"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/structures-clearance-v2/dwellingUpLvl7/layer.png",
+      "sha256": "6efd1f68ce575b7eaaed3b9ad9156ff22a07f056c246220a2f22dae907726277"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/dwellingUpLvl7/master.png",
+      "sha256": "d439f3512b6bb4de7100d67e45eb61ff4807be6daed5e4c731388249f8b94806"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/structures/tavern/layer.png",
+      "sha256": "85f136c45ab17458cd65d00d3eb7418fbb1430a6210f20c9eea190c5996b395e"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/tavern/master.png",
+      "sha256": "a8ab98f48ac807f101218a462643a528616d53a3958dc2cfb7200c715da6787a"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/native-transforms-v13/marketplace/layer.png",
+      "sha256": "ed96e35c8cb145692166946917f08b5feded13294dffaa01e61c3e4f527edc95"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/marketplace/master.png",
+      "sha256": "973f40a3bdfc280ed6299039829ec1e2018989f18c77e84be8191df6a65745cd"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/structures/blacksmith/layer.png",
+      "sha256": "25554f08ccce651735f0537a6a825fc2aadefc32534aa9da203183598d3def87"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/blacksmith/master.png",
+      "sha256": "419c06b9cbb5212db529c106975c314d3fc9b5571016954614863f7fdabe59eb"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/structures-clearance-v2/resourceSilo/layer.png",
+      "sha256": "469021fa99d8bbf667961282f15c1fab11eb2a856f64f13edb112b3bcb7e34dc"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/resourceSilo/master.png",
+      "sha256": "3f7cc44f28149daaf3106f4fa878f4d9382232c10703d103ed574753255b6ed2"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/structures/special1/layer.png",
+      "sha256": "16115f792577a11f295573e110d889a52972849ee39c5a3816846f9a4b2938a3"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/special1/master.png",
+      "sha256": "dd715651ed1bcf28b5516375ab64850a22d01f2e0c2bac550bebdfdd4bc50940"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/native-transforms-v6/special2/layer.png",
+      "sha256": "8a9355c5964f36a9cae1a53f4d7ef9d268ab27a6ddd37d2c45ed246ab4327f78"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/special2/master.png",
+      "sha256": "8213b74b50bb292f83b78615d8c4a1d101f2263f5899f7934d1877c9c92bf92d"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/structures/special3/layer.png",
+      "sha256": "4a72ec5076774f3e8c3c002766e5934fc3defda2b69273d9064acc735da072d9"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/special3/master.png",
+      "sha256": "c697726e00c2921ccb90d63f36caa23c0872bc1d23537cc98996616e0cd83a48"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/structures/shipyard/layer.png",
+      "sha256": "52f2f4dba06ce50413b796fe3839de6e2c86017dbcc75172ef78692bc3937034"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/shipyard/master.png",
+      "sha256": "92446fc0b52c1d8e97bb5594b96d776d9013b876e033e37372f2ed506472e537"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/structures/ship/layer.png",
+      "sha256": "9490dd3dbd21f25defc9d52375910939661edf25c5af56c8693812afa763688c"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/ship/master.png",
+      "sha256": "98d7c323432a65f4775338cd7586387144fa43f79a887312f2069806fcf1de24"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/structures/grail/layer.png",
+      "sha256": "632f5336ba3f8017fd372d60805aee474189aa78ae5d4e4ecfa79df50be451c1"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/state-art/grail/master.png",
+      "sha256": "2a7c1317ce609d067306d9edf8d316c0524eadecb6ed04956e42b98528cba9c2"
+    }
+  ],
+  "independent_actualflight_review_pending": true,
+  "source_owner_integration_pending": true,
+  "native_verified": false,
+  "release_accepted": false
+}

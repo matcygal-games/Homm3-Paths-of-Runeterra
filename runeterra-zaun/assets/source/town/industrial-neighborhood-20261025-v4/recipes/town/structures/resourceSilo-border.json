@@ -1,0 +1,130 @@
+{
+  "acceptance": "Technical mask derived from the painted layer: the area mask defines the clickable footprint and the border mask the highlight outline. Both must be derived from the own painted layer, never copied from another faction or from the original game.",
+  "building": "resourceSilo",
+  "canvas": [
+    800,
+    374
+  ],
+  "content_box": [
+    0,
+    0,
+    800,
+    374
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; prompted and technically assembled by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/services-master.png",
+      "sha256": "0183fb1d96a6f2a0b0980cad6810ae319028244c746761abfa62f61f3d78dea6"
+    },
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/resourceSilo.json",
+      "sha256": "941b2f1c32c63f3c2bcb7e4dc6159999d566b0a63a6eb89a894a991560a3e27d"
+    },
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v4/prepare.py",
+      "sha256": "a7b7e6160b50cff6fc87b097f5bc59f0e31648bf208edd0f42afbcc4b604d35f"
+    },
+    {
+      "path": "scripts/zaun_coastal_state_v1.py",
+      "sha256": "5aa45de45f59be66d393df44538743b1842db5ba5f1c4e48c1d83acaa13f3cf7"
+    },
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v4/structures/resourceSilo/body-opacity-mask.png",
+      "sha256": "cd5c12005b8620ccd10572ad761ac41528bc46127e9f00620c82ce3a8d47e0e6"
+    },
+    {
+      "kind": "historical_provenance",
+      "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/resourceSilo-original.json",
+      "sha256": "2176c4b4d631e32282f770cdb53f8684e9303d167def2dc66cfbd5572b820771"
+    }
+  ],
+  "fit": "contain",
+  "generation": {
+    "body_opacity": {
+      "changed_alpha_pixels": 2089,
+      "mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/resourceSilo/body-opacity-mask.png",
+      "mask_sha256": "cd5c12005b8620ccd10572ad761ac41528bc46127e9f00620c82ce3a8d47e0e6",
+      "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/resourceSilo.png",
+      "original_native_layer_sha256": "22f0f338581f76f8c72c6a9dc79c80e29967fb866b661d09d0146e830804556c",
+      "policy": "Only originalalpha248..254 AND2px-eroded(alpha>=128) structural core becomes255; all RGB and outside-mask RGBA unchanged. No fill of holes, arches, lowalpha glass/glow/shadows or outer antialias."
+    },
+    "composition_rectangle": [
+      537,
+      79,
+      79,
+      84
+    ],
+    "credits": {
+      "author": "OpenAI built-in imagegen; original selected Zaun prompts and historical source retained",
+      "license": null,
+      "redistribution": "unresolved; release prohibited"
+    },
+    "generation_route": "Preserved selected own painted 2D master; whole-source uniform contain and native placement only.",
+    "historical_prompt": "Use case: precise-object-edit. Edit target: the attached own Zaun service-building atlas. Keep the four distinct buildings, front three-quarter low town camera, readable silhouette, roof shape, material texture and 2x2 cell positions. Return four independent complete cutout sprites on REAL TRANSPARENT ALPHA, no painted backdrop, with clean gutters and padding. New user direction: visibly CHEMTECH, luminous toxic chemical GREEN with purple and browns, chempunk, still richly textured original Heroes III painted/prerendered building art. TOP LEFT tavern: keep pub and barrels, purple patched awning, two green glass pipe lamps and a small green brewing gauge/reservoir beside the entry. TOP RIGHT scrap marketplace: keep open canopy, scales and sorted scrap, plum-purple patched canvas and green glass lamps/chemical trade vessels, not a reactor. BOTTOM LEFT ammo foundry: keep orange hot furnace and physical shell racks, add a clearly visible green-glass coolant pressure tank with rusty pipe links, violet enamel accents; furnace stays orange. BOTTOM RIGHT Shimmer factory: large vivid green reagent cylinders and coil pipes, green liquid remains behind textured glass, violet observation windows and valve markings. Brown soot brick, tarred wood, oxidized copper and rusty iron remain dominant solid materials; green light has only localized reflections. Keep all chimneys, poles, floor contact and equipment fully inside each cell, avoid clipping. No text, no flat neon outlines, no modern glossy science fiction, no recolor filter. Match fixed camera and top-left light across all four.",
+    "historical_provenance": {
+      "kind": "historical_provenance",
+      "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/resourceSilo-original.json",
+      "sha256": "2176c4b4d631e32282f770cdb53f8684e9303d167def2dc66cfbd5572b820771"
+    },
+    "historical_receipt_note": "Unchanged prior provider receipt retained privately at original authored source; not rewritten or claimed as new generation.",
+    "historical_receipt_sha256": "2176c4b4d631e32282f770cdb53f8684e9303d167def2dc66cfbd5572b820771",
+    "image_generation_used": true,
+    "mirror_x": false,
+    "model": null,
+    "model_disclosed": false,
+    "native_offset": [
+      539,
+      109
+    ],
+    "native_size": [
+      75,
+      52
+    ],
+    "new_image_generation_used": false,
+    "painted_master": "assets/source/town/chemtech-v4-buildings/services-master.png",
+    "painted_master_sha256": "0183fb1d96a6f2a0b0980cad6810ae319028244c746761abfa62f61f3d78dea6",
+    "placement_plan": "assets/source/town/industrial-neighborhood-20261025-v4/live-placement-plan.json",
+    "placement_plan_sha256": "ebc0f8ca5a08869bae5a7a3ad205bc5cab43a61832d85454e856f3febf292333",
+    "provider": "OpenAI built-in imagegen",
+    "release_accepted": false,
+    "runtime_verified": false,
+    "source_crop": [
+      800,
+      490,
+      1525,
+      992
+    ],
+    "status": "authored configuration",
+    "technical_helper": "assets/source/town/industrial-neighborhood-20261025-v4/prepare.py",
+    "technical_helper_sha256": "a7b7e6160b50cff6fc87b097f5bc59f0e31648bf208edd0f42afbcc4b604d35f",
+    "visual_approval_granted": false
+  },
+  "id": "zaun.town.structure.resourceSilo.border",
+  "identity_review": "build/reports/industrial-neighborhood-20261025-v4/source-pixel-review.json",
+  "native_visual_review": "pending",
+  "output_path": "Content/Sprites/runeterra/zaun/town/structures/resourceSilo_border.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/industrial-neighborhood-20261025-v4/structures/resourceSilo/border.png",
+  "source_sha256": "68a13f91b91143feb517a79d96e7bf4a4ca2ad6182bb93b851a639b14d36211f",
+  "status": "built-unreviewed",
+  "technical": true,
+  "title": "Shimmer Factory border mask",
+  "visual_approval_granted": false
+}

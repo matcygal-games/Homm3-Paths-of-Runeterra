@@ -1,0 +1,4587 @@
+{
+  "unit": "veteranRanger",
+  "revision": 1,
+  "family": "female grounded crossbow scout, no eagle",
+  "source_human_topology": "assets/source/creatures/demacianRecruit/rig-pilot-v4/demacianRecruit-rig-v4.blend",
+  "source_human_topology_sha256": "db28157c549de77e8bc6d37d38ca456a8deb248c22daf3fd45b548be8d73d9cb",
+  "own_model": "assets/source/creatures/veteranRanger/master-v5.png",
+  "own_model_sha256": "36bc04a9e0ff7e1d05581472a232e83ca7a9530b7d33597f848009eb2338396e",
+  "source_crops": {
+    "unit": "veteranRanger",
+    "master": "assets/source/creatures/veteranRanger/master-v5.png",
+    "master_sha256": "36bc04a9e0ff7e1d05581472a232e83ca7a9530b7d33597f848009eb2338396e",
+    "outputs": [
+      {
+        "role": "face",
+        "crop": [
+          694,
+          164,
+          795,
+          277
+        ],
+        "path": "assets/source/creatures/veteranRanger/ranger-rig-v1/own-face-diffuse-crop-v1.png",
+        "sha256": "75642b7aaa4231a68ecc1bf615483452262cfd4a022b28eb0c32639e11130463"
+      },
+      {
+        "role": "chest",
+        "crop": [
+          649,
+          333,
+          800,
+          470
+        ],
+        "path": "assets/source/creatures/veteranRanger/ranger-rig-v1/own-chest-diffuse-crop-v1.png",
+        "sha256": "a0695c8ff40658bedb6ac409a1bf50005dcf46e376619ffdff13956baf2a6ea7"
+      }
+    ],
+    "operation": "Exact Pillow crops only, no creative image edits.",
+    "status": "source texture candidates; native visual review pending",
+    "visual_approval_granted": false
+  },
+  "bone_count": 19,
+  "weighted_mesh_count": 68,
+  "model_kind": "Fully volumetric meshes and editable weighted skeleton; face/chest textures on shaped geometry, no whole-body billboard.",
+  "native_canvas": [
+    450,
+    400
+  ],
+  "native_pivot": [
+    197,
+    266
+  ],
+  "target_idle_height": 80,
+  "raw_canvas": [
+    512,
+    512
+  ],
+  "raw_world_origin_pixels": [
+    255.99998474121094,
+    440.7154083251953
+  ],
+  "actions": {
+    "0": [
+      {
+        "frame": 1,
+        "index": 0,
+        "parameters": {
+          "kind": "walk",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": 0.0
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.08868185869267613,
+              -0.325914477098642,
+              1.0928225520854933
+            ],
+            "hand": [
+              0.10000000149011612,
+              -0.054999999701976776,
+              1.059999942779541
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.21312562269314694,
+              0.2637523449878052,
+              1.150624349872675
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.059999942779541
+            ]
+          }
+        }
+      },
+      {
+        "frame": 2,
+        "index": 1,
+        "parameters": {
+          "kind": "walk",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": 1.0471975511965976
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3569281101226807
+            ],
+            "elbow": [
+              0.08868185869267613,
+              -0.325914477098642,
+              1.0997507575756056
+            ],
+            "hand": [
+              0.10000000149011612,
+              -0.054999999701976776,
+              1.0669281482696533
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3569281101226807
+            ],
+            "elbow": [
+              0.21312562269314694,
+              0.2637523449878052,
+              1.1575525553627872
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.0669281482696533
+            ]
+          }
+        }
+      },
+      {
+        "frame": 3,
+        "index": 2,
+        "parameters": {
+          "kind": "walk",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": 2.0943951023931953
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.343071699142456
+            ],
+            "elbow": [
+              0.08868185869267613,
+              -0.325914477098642,
+              1.085894346595381
+            ],
+            "hand": [
+              0.10000000149011612,
+              -0.054999999701976776,
+              1.0530717372894287
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.343071699142456
+            ],
+            "elbow": [
+              0.21312562269314694,
+              0.2637523449878052,
+              1.1436961443825626
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.0530717372894287
+            ]
+          }
+        }
+      },
+      {
+        "frame": 4,
+        "index": 3,
+        "parameters": {
+          "kind": "walk",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": 3.141592653589793
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.08868185869267613,
+              -0.325914477098642,
+              1.0928225520854933
+            ],
+            "hand": [
+              0.10000000149011612,
+              -0.054999999701976776,
+              1.059999942779541
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.21312562269314694,
+              0.2637523449878052,
+              1.150624349872675
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.059999942779541
+            ]
+          }
+        }
+      },
+      {
+        "frame": 5,
+        "index": 4,
+        "parameters": {
+          "kind": "walk",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": 4.1887902047863905
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3569281101226807
+            ],
+            "elbow": [
+              0.08868185869267613,
+              -0.325914477098642,
+              1.0997507575756056
+            ],
+            "hand": [
+              0.10000000149011612,
+              -0.054999999701976776,
+              1.0669281482696533
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3569281101226807
+            ],
+            "elbow": [
+              0.21312562269314694,
+              0.2637523449878052,
+              1.1575525553627872
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.0669281482696533
+            ]
+          }
+        }
+      },
+      {
+        "frame": 6,
+        "index": 5,
+        "parameters": {
+          "kind": "walk",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": 5.235987755982989
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.343071699142456
+            ],
+            "elbow": [
+              0.08868185869267613,
+              -0.325914477098642,
+              1.085894346595381
+            ],
+            "hand": [
+              0.10000000149011612,
+              -0.054999999701976776,
+              1.0530717372894287
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.343071699142456
+            ],
+            "elbow": [
+              0.21312562269314694,
+              0.2637523449878052,
+              1.1436961443825626
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.0530717372894287
+            ]
+          }
+        }
+      }
+    ],
+    "1": [
+      {
+        "frame": 7,
+        "index": 0,
+        "parameters": {
+          "kind": "reload-fidget",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "quiver",
+          "string_drawn": 0.0,
+          "bolt_loaded": false,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              -0.13043879403433592,
+              -0.3875609907658962,
+              1.545658217164664
+            ],
+            "hand": [
+              -0.10000000149011612,
+              -0.11999999731779099,
+              1.5
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.21312562269314694,
+              0.2637523449878052,
+              1.150624349872675
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.059999942779541
+            ]
+          }
+        }
+      },
+      {
+        "frame": 8,
+        "index": 1,
+        "parameters": {
+          "kind": "reload-fidget",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "load-bolt",
+          "string_drawn": 0.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": -0.1,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.22706917842076824,
+              -0.3066646272504641,
+              1.1865102520856468
+            ],
+            "hand": [
+              0.25,
+              -0.03500000014901161,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.21312562269314694,
+              0.2637523449878052,
+              1.150624349872675
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.059999942779541
+            ]
+          }
+        }
+      },
+      {
+        "frame": 9,
+        "index": 2,
+        "parameters": {
+          "kind": "reload-fidget",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "cock",
+          "string_drawn": 0.5,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.08,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.15589987620046133,
+              -0.3263204041276807,
+              1.1272858242207575
+            ],
+            "hand": [
+              0.20999999344348907,
+              -0.07000000029802322,
+              1.0499999523162842
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.21312562269314694,
+              0.2637523449878052,
+              1.150624349872675
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.059999942779541
+            ]
+          }
+        }
+      },
+      {
+        "frame": 10,
+        "index": 3,
+        "parameters": {
+          "kind": "reload-fidget",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.08868185869267613,
+              -0.325914477098642,
+              1.0928225520854933
+            ],
+            "hand": [
+              0.10000000149011612,
+              -0.054999999701976776,
+              1.059999942779541
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.21312562269314694,
+              0.2637523449878052,
+              1.150624349872675
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.059999942779541
+            ]
+          }
+        }
+      }
+    ],
+    "2": [
+      {
+        "frame": 11,
+        "index": 0,
+        "parameters": {
+          "kind": "holding",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.08868185869267613,
+              -0.325914477098642,
+              1.0928225520854933
+            ],
+            "hand": [
+              0.10000000149011612,
+              -0.054999999701976776,
+              1.059999942779541
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.21312562269314694,
+              0.2637523449878052,
+              1.150624349872675
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.059999942779541
+            ]
+          }
+        }
+      },
+      {
+        "frame": 12,
+        "index": 1,
+        "parameters": {
+          "kind": "holding",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.012,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.08868185869267613,
+              -0.325914477098642,
+              1.0928225520854933
+            ],
+            "hand": [
+              0.10000000149011612,
+              -0.054999999701976776,
+              1.059999942779541
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.21312562269314694,
+              0.2637523449878052,
+              1.150624349872675
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.059999942779541
+            ]
+          }
+        }
+      },
+      {
+        "frame": 13,
+        "index": 2,
+        "parameters": {
+          "kind": "holding",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.08868185869267613,
+              -0.325914477098642,
+              1.0928225520854933
+            ],
+            "hand": [
+              0.10000000149011612,
+              -0.054999999701976776,
+              1.059999942779541
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.21312562269314694,
+              0.2637523449878052,
+              1.150624349872675
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.059999942779541
+            ]
+          }
+        }
+      },
+      {
+        "frame": 14,
+        "index": 3,
+        "parameters": {
+          "kind": "holding",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": -0.012,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.08868185869267613,
+              -0.325914477098642,
+              1.0928225520854933
+            ],
+            "hand": [
+              0.10000000149011612,
+              -0.054999999701976776,
+              1.059999942779541
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.21312562269314694,
+              0.2637523449878052,
+              1.150624349872675
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.059999942779541
+            ]
+          }
+        }
+      }
+    ],
+    "3": [
+      {
+        "frame": 15,
+        "index": 0,
+        "parameters": {
+          "kind": "hit",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": -0.07,
+          "weapon_height": 1.13,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.024479974061250687,
+              -0.20499996840953827,
+              1.3491427898406982
+            ],
+            "elbow": [
+              0.07783163351317796,
+              -0.32160389219925445,
+              1.0950545353931227
+            ],
+            "hand": [
+              0.10000000149011612,
+              -0.054999999701976776,
+              1.0399999618530273
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.024479974061250687,
+              0.20499999821186066,
+              1.3491427898406982
+            ],
+            "elbow": [
+              0.1920665285624806,
+              0.24593172251569467,
+              1.1489998726970156
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.0399999618530273
+            ]
+          }
+        }
+      },
+      {
+        "frame": 16,
+        "index": 1,
+        "parameters": {
+          "kind": "hit",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": -0.2,
+          "weapon_height": 1.07,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.0695342943072319,
+              -0.20499996840953827,
+              1.3430233001708984
+            ],
+            "elbow": [
+              0.04971558972578692,
+              -0.30092254760539416,
+              1.0876739216825928
+            ],
+            "hand": [
+              0.10000000149011612,
+              -0.054999999701976776,
+              0.9800000786781311
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.0695342943072319,
+              0.20499999821186066,
+              1.3430233001708984
+            ],
+            "elbow": [
+              0.14439991087824577,
+              0.173618496485946,
+              1.13839598445542
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              0.9800000786781311
+            ]
+          }
+        }
+      },
+      {
+        "frame": 17,
+        "index": 2,
+        "parameters": {
+          "kind": "hit",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": -0.1,
+          "weapon_height": 1.1,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.0349416621029377,
+              -0.20499996840953827,
+              1.3482513427734375
+            ],
+            "elbow": [
+              0.06772700215375002,
+              -0.3138710006372411,
+              1.090897063894574
+            ],
+            "hand": [
+              0.10000000149011612,
+              -0.054999999701976776,
+              1.0099999904632568
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.0349416621029377,
+              0.20499999821186066,
+              1.3482513427734375
+            ],
+            "elbow": [
+              0.1771378455394303,
+              0.22493378112388557,
+              1.1402852208380974
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.0099999904632568
+            ]
+          }
+        }
+      },
+      {
+        "frame": 18,
+        "index": 3,
+        "parameters": {
+          "kind": "hit",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.08868185869267613,
+              -0.325914477098642,
+              1.0928225520854933
+            ],
+            "hand": [
+              0.10000000149011612,
+              -0.054999999701976776,
+              1.059999942779541
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.21312562269314694,
+              0.2637523449878052,
+              1.150624349872675
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.059999942779541
+            ]
+          }
+        }
+      }
+    ],
+    "4": [
+      {
+        "frame": 19,
+        "index": 0,
+        "parameters": {
+          "kind": "crossbow-brace-defend",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.02,
+          "weapon_height": 1.24,
+          "weapon_pitch": 0.1,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.006999527104198933,
+              -0.20499996840953827,
+              1.349929928779602
+            ],
+            "elbow": [
+              0.1263377298444283,
+              -0.3232978421362751,
+              1.1041882197143669
+            ],
+            "hand": [
+              0.10399333387613297,
+              -0.054999999701976776,
+              1.1501998901367188
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.006999527104198933,
+              0.20499999821186066,
+              1.349929928779602
+            ],
+            "elbow": [
+              0.25351281943306736,
+              0.2893144257938446,
+              1.2058908537251505
+            ],
+            "hand": [
+              0.312944233417511,
+              0.02500000037252903,
+              1.1711647510528564
+            ]
+          }
+        }
+      },
+      {
+        "frame": 20,
+        "index": 1,
+        "parameters": {
+          "kind": "crossbow-brace-defend",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.12,
+          "weapon_height": 1.3,
+          "weapon_pitch": 0.22,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.041899245232343674,
+              -0.20499996840953827,
+              1.3474829196929932
+            ],
+            "elbow": [
+              0.16679240661275552,
+              -0.29408217928800157,
+              1.0923534641586525
+            ],
+            "hand": [
+              0.10872917622327805,
+              -0.054999999701976776,
+              1.2109639644622803
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.041899245232343674,
+              0.20499999821186066,
+              1.3474829196929932
+            ],
+            "elbow": [
+              0.3101244817858688,
+              0.2981046663350947,
+              1.2579746832825618
+            ],
+            "hand": [
+              0.3136676549911499,
+              0.02500000037252903,
+              1.2567923069000244
+            ]
+          }
+        }
+      },
+      {
+        "frame": 21,
+        "index": 2,
+        "parameters": {
+          "kind": "crossbow-brace-defend",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.07,
+          "weapon_height": 1.27,
+          "weapon_pitch": 0.14,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.024479974061250687,
+              -0.20499996840953827,
+              1.3491427898406982
+            ],
+            "elbow": [
+              0.14468629066927824,
+              -0.31277980388778887,
+              1.0990249583139364
+            ],
+            "hand": [
+              0.10558172315359116,
+              -0.054999999701976776,
+              1.1803913116455078
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.024479974061250687,
+              0.20499999821186066,
+              1.3491427898406982
+            ],
+            "elbow": [
+              0.2798985748743168,
+              0.2955661226867922,
+              1.2259190234961959
+            ],
+            "hand": [
+              0.31352707743644714,
+              0.02500000037252903,
+              1.2096953392028809
+            ]
+          }
+        }
+      },
+      {
+        "frame": 22,
+        "index": 3,
+        "parameters": {
+          "kind": "crossbow-brace-defend",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.08868185869267613,
+              -0.325914477098642,
+              1.0928225520854933
+            ],
+            "hand": [
+              0.10000000149011612,
+              -0.054999999701976776,
+              1.059999942779541
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.21312562269314694,
+              0.2637523449878052,
+              1.150624349872675
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.059999942779541
+            ]
+          }
+        }
+      }
+    ],
+    "5": [
+      {
+        "frame": 23,
+        "index": 0,
+        "parameters": {
+          "kind": "death",
+          "root_height": 0.86,
+          "root_fall": -0.1,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": -0.1,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": false,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.04891832172870636,
+              -0.20499996840953827,
+              1.3475520610809326
+            ],
+            "elbow": [
+              0.06195309317887416,
+              -0.3260890364538716,
+              1.0992177136934163
+            ],
+            "hand": [
+              0.07554043084383011,
+              -0.054999999701976776,
+              1.068784236907959
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.04891832172870636,
+              0.20499999821186066,
+              1.3475520610809326
+            ],
+            "elbow": [
+              0.17610542518562294,
+              0.25803283241665576,
+              1.159997234545649
+            ],
+            "hand": [
+              0.2855404317378998,
+              0.02500000037252903,
+              1.0687843561172485
+            ]
+          }
+        }
+      },
+      {
+        "frame": 24,
+        "index": 1,
+        "parameters": {
+          "kind": "death",
+          "root_height": 0.7,
+          "root_fall": -0.18,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": -0.18,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": false,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.08772452175617218,
+              -0.20500005781650543,
+              1.1820833683013916
+            ],
+            "elbow": [
+              0.04034677112375101,
+              -0.3262498288485155,
+              0.9422475534184016
+            ],
+            "hand": [
+              0.0554172657430172,
+              -0.054999999701976776,
+              0.9140254259109497
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.08772452175617218,
+              0.20499993860721588,
+              1.1820833683013916
+            ],
+            "elbow": [
+              0.14623180280805867,
+              0.25349546327574335,
+              1.004495070772083
+            ],
+            "hand": [
+              0.26541727781295776,
+              0.02500000037252903,
+              0.9140254259109497
+            ]
+          }
+        }
+      },
+      {
+        "frame": 25,
+        "index": 2,
+        "parameters": {
+          "kind": "death",
+          "root_height": 0.53,
+          "root_fall": 0.2,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.2,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": false,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.09734797477722168,
+              -0.20499998331069946,
+              1.0102324485778809
+            ],
+            "elbow": [
+              0.1399642741506645,
+              -0.32567397395540376,
+              0.741445134618623
+            ],
+            "hand": [
+              0.1456873118877411,
+              -0.054999999701976776,
+              0.7053490877151489
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.09734797477722168,
+              0.20500001311302185,
+              1.0102324485778809
+            ],
+            "elbow": [
+              0.28442176245370565,
+              0.2748952593158705,
+              0.7894542031403952
+            ],
+            "hand": [
+              0.35568732023239136,
+              0.02500000037252903,
+              0.7053489685058594
+            ]
+          }
+        }
+      },
+      {
+        "frame": 26,
+        "index": 3,
+        "parameters": {
+          "kind": "death",
+          "root_height": 0.43,
+          "root_fall": 0.72,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.72,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": false,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.32309845089912415,
+              -0.20499999821186066,
+              0.7983847856521606
+            ],
+            "elbow": [
+              0.17235635540874297,
+              0.04717381412808411,
+              0.7503205561988043
+            ],
+            "hand": [
+              0.2334328591823578,
+              -0.054999999701976776,
+              0.5044949054718018
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.32309845089912415,
+              0.20499999821186066,
+              0.7983847856521606
+            ],
+            "elbow": [
+              0.4776473947559983,
+              -0.04713173009205625,
+              0.7641912676839506
+            ],
+            "hand": [
+              0.4334328770637512,
+              0.02500000037252903,
+              0.5044949054718018
+            ]
+          }
+        }
+      },
+      {
+        "frame": 27,
+        "index": 4,
+        "parameters": {
+          "kind": "death",
+          "root_height": 0.3,
+          "root_fall": 1.2,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 1.2,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": false,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.4566991329193115,
+              -0.20499998331069946,
+              0.4775552749633789
+            ],
+            "elbow": [
+              0.22270074463765266,
+              -0.026624039130656266,
+              0.5228516098625937
+            ],
+            "hand": [
+              0.25992509722709656,
+              -0.054999999701976776,
+              0.25376197695732117
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.4566991329193115,
+              0.20500001311302185,
+              0.4775552749633789
+            ],
+            "elbow": [
+              0.4620175265678945,
+              -0.091752948401347,
+              0.5006718416913332
+            ],
+            "hand": [
+              0.4599250853061676,
+              0.02500000037252903,
+              0.25376197695732117
+            ]
+          }
+        }
+      },
+      {
+        "frame": 28,
+        "index": 5,
+        "parameters": {
+          "kind": "death",
+          "root_height": 0.24,
+          "root_fall": 1.55,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 1.55,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": false,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.4898940324783325,
+              -0.20500005781650543,
+              0.25018933415412903
+            ],
+            "elbow": [
+              0.25961212050829285,
+              -0.06564159491806731,
+              0.3773681097963141
+            ],
+            "hand": [
+              0.24202749133110046,
+              -0.054999999701976776,
+              0.1050124317407608
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.4898940920829773,
+              0.20499993860721588,
+              0.2501893937587738
+            ],
+            "elbow": [
+              0.4191116243860586,
+              -0.061174061070555966,
+              0.36317711564973804
+            ],
+            "hand": [
+              0.4420275092124939,
+              0.02500000037252903,
+              0.1050124317407608
+            ]
+          }
+        }
+      }
+    ],
+    "7": [
+      {
+        "frame": 29,
+        "index": 0,
+        "parameters": {
+          "kind": "turn-toward-viewer",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": -0.18,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.03670107573270798,
+              -0.2016880065202713,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.06779674079285017,
+              -0.34008760740949867,
+              1.1080273071118343
+            ],
+            "hand": [
+              0.08853774517774582,
+              -0.07201436907052994,
+              1.059999942779541
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.03670106828212738,
+              0.20168788731098175,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.24015096427308077,
+              0.22279807537160554,
+              1.133695764780477
+            ],
+            "hand": [
+              0.30946728587150574,
+              -0.03090309537947178,
+              1.059999942779541
+            ]
+          }
+        }
+      },
+      {
+        "frame": 30,
+        "index": 1,
+        "parameters": {
+          "kind": "turn-toward-viewer",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": -0.38,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.07603870332241058,
+              -0.19037629663944244,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.03826760940240251,
+              -0.3507912688608319,
+              1.1267823320843797
+            ],
+            "hand": [
+              0.07246585190296173,
+              -0.08816859126091003,
+              1.059999942779541
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.07603868842124939,
+              0.19037620723247528,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.25623255605437883,
+              0.17288976894844235,
+              1.1136751795626116
+            ],
+            "hand": [
+              0.2971590757369995,
+              -0.09176868945360184,
+              1.059999942779541
+            ]
+          }
+        }
+      },
+      {
+        "frame": 31,
+        "index": 2,
+        "parameters": {
+          "kind": "turn-toward-viewer",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": -0.58,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.11234487593173981,
+              -0.17147479951381683,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.003991875504683048,
+              -0.35507726518059796,
+              1.1465770052280613
+            ],
+            "hand": [
+              0.053504955023527145,
+              -0.10080783069133759,
+              1.059999942779541
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.1123449057340622,
+              0.171474888920784,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.25456225474110794,
+              0.12149019808522389,
+              1.0932885152098952
+            ],
+            "hand": [
+              0.27300402522087097,
+              -0.14897584915161133,
+              1.059999942779541
+            ]
+          }
+        }
+      },
+      {
+        "frame": 32,
+        "index": 3,
+        "parameters": {
+          "kind": "turn-toward-viewer",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": -0.785,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.1448991894721985,
+              -0.14501456916332245,
+              1.3499999046325684
+            ],
+            "elbow": [
+              -0.03356940852529556,
+              -0.35206471733195777,
+              1.167350247765936
+            ],
+            "hand": [
+              0.03186343237757683,
+              -0.1095888763666153,
+              1.059999942779541
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.1448991894721985,
+              0.14501456916332245,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.23216552346040184,
+              0.07123886623118032,
+              1.075105900069054
+            ],
+            "hand": [
+              0.2369609773159027,
+              -0.20143112540245056,
+              1.059999942779541
+            ]
+          }
+        }
+      }
+    ],
+    "8": [
+      {
+        "frame": 33,
+        "index": 0,
+        "parameters": {
+          "kind": "turn-back",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": -0.785,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.1448991894721985,
+              -0.14501456916332245,
+              1.3499999046325684
+            ],
+            "elbow": [
+              -0.03356940852529556,
+              -0.35206471733195777,
+              1.167350247765936
+            ],
+            "hand": [
+              0.03186343237757683,
+              -0.1095888763666153,
+              1.059999942779541
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.1448991894721985,
+              0.14501456916332245,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.23216552346040184,
+              0.07123886623118032,
+              1.075105900069054
+            ],
+            "hand": [
+              0.2369609773159027,
+              -0.20143112540245056,
+              1.059999942779541
+            ]
+          }
+        }
+      },
+      {
+        "frame": 34,
+        "index": 1,
+        "parameters": {
+          "kind": "turn-back",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": -0.58,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.11234487593173981,
+              -0.17147479951381683,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.003991875504683048,
+              -0.35507726518059796,
+              1.1465770052280613
+            ],
+            "hand": [
+              0.053504955023527145,
+              -0.10080783069133759,
+              1.059999942779541
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.1123449057340622,
+              0.171474888920784,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.25456225474110794,
+              0.12149019808522389,
+              1.0932885152098952
+            ],
+            "hand": [
+              0.27300402522087097,
+              -0.14897584915161133,
+              1.059999942779541
+            ]
+          }
+        }
+      },
+      {
+        "frame": 35,
+        "index": 2,
+        "parameters": {
+          "kind": "turn-back",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": -0.38,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.07603870332241058,
+              -0.19037629663944244,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.03826760940240251,
+              -0.3507912688608319,
+              1.1267823320843797
+            ],
+            "hand": [
+              0.07246585190296173,
+              -0.08816859126091003,
+              1.059999942779541
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.07603868842124939,
+              0.19037620723247528,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.25623255605437883,
+              0.17288976894844235,
+              1.1136751795626116
+            ],
+            "hand": [
+              0.2971590757369995,
+              -0.09176868945360184,
+              1.059999942779541
+            ]
+          }
+        }
+      },
+      {
+        "frame": 36,
+        "index": 3,
+        "parameters": {
+          "kind": "turn-back",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": -0.18,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              -0.03670107573270798,
+              -0.2016880065202713,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.06779674079285017,
+              -0.34008760740949867,
+              1.1080273071118343
+            ],
+            "hand": [
+              0.08853774517774582,
+              -0.07201436907052994,
+              1.059999942779541
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.03670106828212738,
+              0.20168788731098175,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.24015096427308077,
+              0.22279807537160554,
+              1.133695764780477
+            ],
+            "hand": [
+              0.30946728587150574,
+              -0.03090309537947178,
+              1.059999942779541
+            ]
+          }
+        }
+      }
+    ],
+    "11": [
+      {
+        "frame": 37,
+        "index": 0,
+        "parameters": {
+          "kind": "knife-up",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.03,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "knife",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "knife_phase": 0,
+          "knife_elevation": 0.18
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.0,
+              -0.3896887200258004,
+              1.1165153309188767
+            ],
+            "hand": [
+              0.0,
+              -0.20000000298023224,
+              0.9200000166893005
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.1359207742805048,
+              0.34804421363277827,
+              1.1270898853659597
+            ],
+            "hand": [
+              0.25,
+              0.1850000023841858,
+              0.9399999976158142
+            ]
+          }
+        }
+      },
+      {
+        "frame": 38,
+        "index": 1,
+        "parameters": {
+          "kind": "knife-up",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.03,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "knife",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": true,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "knife_phase": 1,
+          "knife_elevation": 0.18
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.058160162132245695,
+              -0.4635071782914929,
+              1.214292870490503
+            ],
+            "hand": [
+              0.11999999731779099,
+              -0.23999999463558197,
+              1.0699999332427979
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.1359207742805048,
+              0.34804421363277827,
+              1.1270898853659597
+            ],
+            "hand": [
+              0.25,
+              0.1850000023841858,
+              0.9399999976158142
+            ]
+          }
+        }
+      },
+      {
+        "frame": 39,
+        "index": 2,
+        "parameters": {
+          "kind": "knife-up",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.03,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "knife",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": true,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "knife_phase": 2,
+          "knife_elevation": 0.18
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              -0.00022221829990981892,
+              -0.5026967034864718,
+              1.3512591422586673
+            ],
+            "hand": [
+              -0.029999999329447746,
+              -0.28999999165534973,
+              1.5199999809265137
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.1359207742805048,
+              0.34804421363277827,
+              1.1270898853659597
+            ],
+            "hand": [
+              0.25,
+              0.1850000023841858,
+              0.9399999976158142
+            ]
+          }
+        }
+      },
+      {
+        "frame": 40,
+        "index": 3,
+        "parameters": {
+          "kind": "knife-up",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.03,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "knife",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": true,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "knife_phase": 3,
+          "knife_elevation": 0.18
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.1662821304578453,
+              -0.4519316071807534,
+              1.3499999046325684
+            ],
+            "hand": [
+              0.3700000047683716,
+              -0.27000001072883606,
+              1.3499999046325684
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.1359207742805048,
+              0.34804421363277827,
+              1.1270898853659597
+            ],
+            "hand": [
+              0.25,
+              0.1850000023841858,
+              0.9399999976158142
+            ]
+          }
+        }
+      },
+      {
+        "frame": 41,
+        "index": 4,
+        "parameters": {
+          "kind": "knife-up",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.03,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "knife",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": true,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "knife_phase": 4,
+          "knife_elevation": 0.18
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.1415387326389845,
+              -0.45578562095865516,
+              1.2745126555483592
+            ],
+            "hand": [
+              0.30000001192092896,
+              -0.25,
+              1.190000057220459
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.1359207742805048,
+              0.34804421363277827,
+              1.1270898853659597
+            ],
+            "hand": [
+              0.25,
+              0.1850000023841858,
+              0.9399999976158142
+            ]
+          }
+        }
+      },
+      {
+        "frame": 42,
+        "index": 5,
+        "parameters": {
+          "kind": "knife-up",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.03,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "knife",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "knife_phase": 5,
+          "knife_elevation": 0.18
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.0,
+              -0.3896887200258004,
+              1.1165153309188767
+            ],
+            "hand": [
+              0.0,
+              -0.20000000298023224,
+              0.9200000166893005
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.1359207742805048,
+              0.34804421363277827,
+              1.1270898853659597
+            ],
+            "hand": [
+              0.25,
+              0.1850000023841858,
+              0.9399999976158142
+            ]
+          }
+        }
+      }
+    ],
+    "12": [
+      {
+        "frame": 43,
+        "index": 0,
+        "parameters": {
+          "kind": "knife-front",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.03,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "knife",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "knife_phase": 0,
+          "knife_elevation": 0.0
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.0,
+              -0.3896887200258004,
+              1.1165153309188767
+            ],
+            "hand": [
+              0.0,
+              -0.20000000298023224,
+              0.9200000166893005
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.1359207742805048,
+              0.34804421363277827,
+              1.1270898853659597
+            ],
+            "hand": [
+              0.25,
+              0.1850000023841858,
+              0.9399999976158142
+            ]
+          }
+        }
+      },
+      {
+        "frame": 44,
+        "index": 1,
+        "parameters": {
+          "kind": "knife-front",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.03,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "knife",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": true,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "knife_phase": 1,
+          "knife_elevation": 0.0
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.058160162132245695,
+              -0.4635071782914929,
+              1.214292870490503
+            ],
+            "hand": [
+              0.11999999731779099,
+              -0.23999999463558197,
+              1.0699999332427979
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.1359207742805048,
+              0.34804421363277827,
+              1.1270898853659597
+            ],
+            "hand": [
+              0.25,
+              0.1850000023841858,
+              0.9399999976158142
+            ]
+          }
+        }
+      },
+      {
+        "frame": 45,
+        "index": 2,
+        "parameters": {
+          "kind": "knife-front",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.03,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "knife",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": true,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "knife_phase": 2,
+          "knife_elevation": 0.0
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              -0.00022221829990981892,
+              -0.5026967034864718,
+              1.3512591422586673
+            ],
+            "hand": [
+              -0.029999999329447746,
+              -0.28999999165534973,
+              1.5199999809265137
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.1359207742805048,
+              0.34804421363277827,
+              1.1270898853659597
+            ],
+            "hand": [
+              0.25,
+              0.1850000023841858,
+              0.9399999976158142
+            ]
+          }
+        }
+      },
+      {
+        "frame": 46,
+        "index": 3,
+        "parameters": {
+          "kind": "knife-front",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.03,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "knife",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": true,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "knife_phase": 3,
+          "knife_elevation": 0.0
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.17261856603801248,
+              -0.4325428349888675,
+              1.266023386106973
+            ],
+            "hand": [
+              0.3700000047683716,
+              -0.27000001072883606,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.1359207742805048,
+              0.34804421363277827,
+              1.1270898853659597
+            ],
+            "hand": [
+              0.25,
+              0.1850000023841858,
+              0.9399999976158142
+            ]
+          }
+        }
+      },
+      {
+        "frame": 47,
+        "index": 4,
+        "parameters": {
+          "kind": "knife-front",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.03,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "knife",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": true,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "knife_phase": 4,
+          "knife_elevation": 0.0
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.14544961900748493,
+              -0.4347346143169758,
+              1.2287918936093711
+            ],
+            "hand": [
+              0.30000001192092896,
+              -0.25,
+              1.0999999046325684
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.1359207742805048,
+              0.34804421363277827,
+              1.1270898853659597
+            ],
+            "hand": [
+              0.25,
+              0.1850000023841858,
+              0.9399999976158142
+            ]
+          }
+        }
+      },
+      {
+        "frame": 48,
+        "index": 5,
+        "parameters": {
+          "kind": "knife-front",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.03,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "knife",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "knife_phase": 5,
+          "knife_elevation": 0.0
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.0,
+              -0.3896887200258004,
+              1.1165153309188767
+            ],
+            "hand": [
+              0.0,
+              -0.20000000298023224,
+              0.9200000166893005
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.1359207742805048,
+              0.34804421363277827,
+              1.1270898853659597
+            ],
+            "hand": [
+              0.25,
+              0.1850000023841858,
+              0.9399999976158142
+            ]
+          }
+        }
+      }
+    ],
+    "13": [
+      {
+        "frame": 49,
+        "index": 0,
+        "parameters": {
+          "kind": "knife-down",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.03,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "knife",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "knife_phase": 0,
+          "knife_elevation": -0.18
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.0,
+              -0.3896887200258004,
+              1.1165153309188767
+            ],
+            "hand": [
+              0.0,
+              -0.20000000298023224,
+              0.9200000166893005
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.1359207742805048,
+              0.34804421363277827,
+              1.1270898853659597
+            ],
+            "hand": [
+              0.25,
+              0.1850000023841858,
+              0.9399999976158142
+            ]
+          }
+        }
+      },
+      {
+        "frame": 50,
+        "index": 1,
+        "parameters": {
+          "kind": "knife-down",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.03,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "knife",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": true,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "knife_phase": 1,
+          "knife_elevation": -0.18
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.058160162132245695,
+              -0.4635071782914929,
+              1.214292870490503
+            ],
+            "hand": [
+              0.11999999731779099,
+              -0.23999999463558197,
+              1.0699999332427979
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.1359207742805048,
+              0.34804421363277827,
+              1.1270898853659597
+            ],
+            "hand": [
+              0.25,
+              0.1850000023841858,
+              0.9399999976158142
+            ]
+          }
+        }
+      },
+      {
+        "frame": 51,
+        "index": 2,
+        "parameters": {
+          "kind": "knife-down",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.03,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "knife",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": true,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "knife_phase": 2,
+          "knife_elevation": -0.18
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              -0.00022221829990981892,
+              -0.5026967034864718,
+              1.3512591422586673
+            ],
+            "hand": [
+              -0.029999999329447746,
+              -0.28999999165534973,
+              1.5199999809265137
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.1359207742805048,
+              0.34804421363277827,
+              1.1270898853659597
+            ],
+            "hand": [
+              0.25,
+              0.1850000023841858,
+              0.9399999976158142
+            ]
+          }
+        }
+      },
+      {
+        "frame": 52,
+        "index": 3,
+        "parameters": {
+          "kind": "knife-down",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.03,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "knife",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": true,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "knife_phase": 3,
+          "knife_elevation": -0.18
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.1840849139007703,
+              -0.35552395066910264,
+              1.1708902835210657
+            ],
+            "hand": [
+              0.3700000047683716,
+              -0.27000001072883606,
+              0.9899999499320984
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.1359207742805048,
+              0.34804421363277827,
+              1.1270898853659597
+            ],
+            "hand": [
+              0.25,
+              0.1850000023841858,
+              0.9399999976158142
+            ]
+          }
+        }
+      },
+      {
+        "frame": 53,
+        "index": 4,
+        "parameters": {
+          "kind": "knife-down",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.03,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "knife",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": true,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "knife_phase": 4,
+          "knife_elevation": -0.18
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.14891559291957226,
+              -0.3998473233645735,
+              1.181228948635168
+            ],
+            "hand": [
+              0.30000001192092896,
+              -0.25,
+              1.0099999904632568
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.1359207742805048,
+              0.34804421363277827,
+              1.1270898853659597
+            ],
+            "hand": [
+              0.25,
+              0.1850000023841858,
+              0.9399999976158142
+            ]
+          }
+        }
+      },
+      {
+        "frame": 54,
+        "index": 5,
+        "parameters": {
+          "kind": "knife-down",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.03,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "knife",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "knife_phase": 5,
+          "knife_elevation": -0.18
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.0,
+              -0.3896887200258004,
+              1.1165153309188767
+            ],
+            "hand": [
+              0.0,
+              -0.20000000298023224,
+              0.9200000166893005
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.1359207742805048,
+              0.34804421363277827,
+              1.1270898853659597
+            ],
+            "hand": [
+              0.25,
+              0.1850000023841858,
+              0.9399999976158142
+            ]
+          }
+        }
+      }
+    ],
+    "14": [
+      {
+        "frame": 55,
+        "index": 0,
+        "parameters": {
+          "kind": "shoot-up-reload",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "native_release_frame": 4
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.08868185869267613,
+              -0.325914477098642,
+              1.0928225520854933
+            ],
+            "hand": [
+              0.10000000149011612,
+              -0.054999999701976776,
+              1.059999942779541
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.21312562269314694,
+              0.2637523449878052,
+              1.150624349872675
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.059999942779541
+            ]
+          }
+        }
+      },
+      {
+        "frame": 56,
+        "index": 1,
+        "parameters": {
+          "kind": "shoot-up-reload",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.28,
+          "weapon_pitch": 0.192,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "native_release_frame": 4
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.15495662342845784,
+              -0.314724904761715,
+              1.120709991348099
+            ],
+            "hand": [
+              0.10763289034366608,
+              -0.054999999701976776,
+              1.190735101699829
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.2657843015500814,
+              0.29326250913493424,
+              1.2490374593822307
+            ],
+            "hand": [
+              0.313774049282074,
+              0.02500000037252903,
+              1.2308077812194824
+            ]
+          }
+        }
+      },
+      {
+        "frame": 57,
+        "index": 2,
+        "parameters": {
+          "kind": "shoot-up-reload",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.36,
+          "weapon_pitch": 0.32,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "native_release_frame": 4
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.23618256231566062,
+              -0.2830260759186618,
+              1.1864312495032268
+            ],
+            "hand": [
+              0.11258264631032944,
+              -0.054999999701976776,
+              1.2720305919647217
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.28305125561640476,
+              0.29659780885893794,
+              1.3391920873470762
+            ],
+            "hand": [
+              0.3119221031665802,
+              0.02500000037252903,
+              1.3380897045135498
+            ]
+          }
+        }
+      },
+      {
+        "frame": 58,
+        "index": 3,
+        "parameters": {
+          "kind": "shoot-up-reload",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.36,
+          "weapon_pitch": 0.32,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "native_release_frame": 4
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.23618256231566062,
+              -0.2830260759186618,
+              1.1864312495032268
+            ],
+            "hand": [
+              0.11258264631032944,
+              -0.054999999701976776,
+              1.2720305919647217
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.28305125561640476,
+              0.29659780885893794,
+              1.3391920873470762
+            ],
+            "hand": [
+              0.3119221031665802,
+              0.02500000037252903,
+              1.3380897045135498
+            ]
+          }
+        }
+      },
+      {
+        "frame": 59,
+        "index": 4,
+        "parameters": {
+          "kind": "shoot-up-reload",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.36,
+          "weapon_pitch": 0.32,
+          "weapon_recoil": -0.025,
+          "hand_mode": "hold",
+          "string_drawn": 0.0,
+          "bolt_loaded": false,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "native_release_frame": 4
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.21774332678753738,
+              -0.2653129246801202,
+              1.1561567410150801
+            ],
+            "hand": [
+              0.08758264780044556,
+              -0.054999999701976776,
+              1.2720305919647217
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.2825257629115613,
+              0.29809476341631236,
+              1.3382721973286662
+            ],
+            "hand": [
+              0.2869220972061157,
+              0.02500000037252903,
+              1.3380897045135498
+            ]
+          }
+        }
+      },
+      {
+        "frame": 60,
+        "index": 5,
+        "parameters": {
+          "kind": "shoot-up-reload",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.32,
+          "weapon_pitch": 0.272,
+          "weapon_recoil": -0.015,
+          "hand_mode": "hold",
+          "string_drawn": 0.0,
+          "bolt_loaded": false,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "native_release_frame": 4
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.17844836065739522,
+              -0.2943293989722009,
+              1.1290894781020935
+            ],
+            "hand": [
+              0.09574633091688156,
+              -0.054999999701976776,
+              1.2314705848693848
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.27707913571001275,
+              0.29729082164638737,
+              1.2922544494018138
+            ],
+            "hand": [
+              0.29802578687667847,
+              0.02500000037252903,
+              1.287889003753662
+            ]
+          }
+        }
+      },
+      {
+        "frame": 61,
+        "index": 6,
+        "parameters": {
+          "kind": "shoot-up-reload",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.08,
+          "weapon_recoil": 0.0,
+          "hand_mode": "cock",
+          "string_drawn": 0.45,
+          "bolt_loaded": false,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "native_release_frame": 4
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.16044503918454428,
+              -0.3279099899707072,
+              1.1314238374688903
+            ],
+            "hand": [
+              0.2136439085006714,
+              -0.07000000029802322,
+              1.058950424194336
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.21904826341344802,
+              0.26829064480719805,
+              1.1585916146215698
+            ],
+            "hand": [
+              0.3125249445438385,
+              0.02500000037252903,
+              1.0769100189208984
+            ]
+          }
+        }
+      },
+      {
+        "frame": 62,
+        "index": 7,
+        "parameters": {
+          "kind": "shoot-up-reload",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "load-bolt",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "native_release_frame": 4
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.22706917842076824,
+              -0.3066646272504641,
+              1.1865102520856468
+            ],
+            "hand": [
+              0.25,
+              -0.03500000014901161,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.21312562269314694,
+              0.2637523449878052,
+              1.150624349872675
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.059999942779541
+            ]
+          }
+        }
+      }
+    ],
+    "15": [
+      {
+        "frame": 63,
+        "index": 0,
+        "parameters": {
+          "kind": "shoot-front-reload",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "native_release_frame": 4
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.08868185869267613,
+              -0.325914477098642,
+              1.0928225520854933
+            ],
+            "hand": [
+              0.10000000149011612,
+              -0.054999999701976776,
+              1.059999942779541
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.21312562269314694,
+              0.2637523449878052,
+              1.150624349872675
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.059999942779541
+            ]
+          }
+        }
+      },
+      {
+        "frame": 64,
+        "index": 1,
+        "parameters": {
+          "kind": "shoot-front-reload",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.28,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "native_release_frame": 4
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.14695691513281772,
+              -0.3133611052218058,
+              1.1148690681622395
+            ],
+            "hand": [
+              0.10000000149011612,
+              -0.054999999701976776,
+              1.190000057220459
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.2533722289284859,
+              0.2905921240145947,
+              1.219227267035028
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.190000057220459
+            ]
+          }
+        }
+      },
+      {
+        "frame": 65,
+        "index": 2,
+        "parameters": {
+          "kind": "shoot-front-reload",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.36,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "native_release_frame": 4
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.22584943177407735,
+              -0.27551223974371414,
+              1.169320534215081
+            ],
+            "hand": [
+              0.10000000149011612,
+              -0.054999999701976776,
+              1.2699999809265137
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.27456168019422716,
+              0.2956669512292872,
+              1.2791453456028459
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.2699999809265137
+            ]
+          }
+        }
+      },
+      {
+        "frame": 66,
+        "index": 3,
+        "parameters": {
+          "kind": "shoot-front-reload",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.36,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "native_release_frame": 4
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.22584943177407735,
+              -0.27551223974371414,
+              1.169320534215081
+            ],
+            "hand": [
+              0.10000000149011612,
+              -0.054999999701976776,
+              1.2699999809265137
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.27456168019422716,
+              0.2956669512292872,
+              1.2791453456028459
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.2699999809265137
+            ]
+          }
+        }
+      },
+      {
+        "frame": 67,
+        "index": 4,
+        "parameters": {
+          "kind": "shoot-front-reload",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.36,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": -0.025,
+          "hand_mode": "hold",
+          "string_drawn": 0.0,
+          "bolt_loaded": false,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "native_release_frame": 4
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.2004296512005124,
+              -0.25740384886206297,
+              1.1362084890682476
+            ],
+            "hand": [
+              0.07500000298023224,
+              -0.054999999701976776,
+              1.2699999809265137
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.272335865892847,
+              0.29781329322566913,
+              1.2735548292325747
+            ],
+            "hand": [
+              0.2850000262260437,
+              0.02500000037252903,
+              1.2699999809265137
+            ]
+          }
+        }
+      },
+      {
+        "frame": 68,
+        "index": 5,
+        "parameters": {
+          "kind": "shoot-front-reload",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.32,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": -0.015,
+          "hand_mode": "hold",
+          "string_drawn": 0.0,
+          "bolt_loaded": false,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "native_release_frame": 4
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.16479590438105912,
+              -0.29067352152885995,
+              1.1173470874758074
+            ],
+            "hand": [
+              0.08500000089406967,
+              -0.054999999701976776,
+              1.2300000190734863
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.2625941314421956,
+              0.2958804224018894,
+              1.2431820607721111
+            ],
+            "hand": [
+              0.29500001668930054,
+              0.02500000037252903,
+              1.2300000190734863
+            ]
+          }
+        }
+      },
+      {
+        "frame": 69,
+        "index": 6,
+        "parameters": {
+          "kind": "shoot-front-reload",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "cock",
+          "string_drawn": 0.45,
+          "bolt_loaded": false,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "native_release_frame": 4
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.15589987620046133,
+              -0.3263204041276807,
+              1.1272858242207575
+            ],
+            "hand": [
+              0.20999999344348907,
+              -0.07000000029802322,
+              1.0499999523162842
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.21312562269314694,
+              0.2637523449878052,
+              1.150624349872675
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.059999942779541
+            ]
+          }
+        }
+      },
+      {
+        "frame": 70,
+        "index": 7,
+        "parameters": {
+          "kind": "shoot-front-reload",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "load-bolt",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "native_release_frame": 4
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.22706917842076824,
+              -0.3066646272504641,
+              1.1865102520856468
+            ],
+            "hand": [
+              0.25,
+              -0.03500000014901161,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.21312562269314694,
+              0.2637523449878052,
+              1.150624349872675
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.059999942779541
+            ]
+          }
+        }
+      }
+    ],
+    "16": [
+      {
+        "frame": 71,
+        "index": 0,
+        "parameters": {
+          "kind": "shoot-down-reload",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": -0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "native_release_frame": 4
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.08868185869267613,
+              -0.325914477098642,
+              1.0928225520854933
+            ],
+            "hand": [
+              0.10000000149011612,
+              -0.054999999701976776,
+              1.059999942779541
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.21312562269314694,
+              0.2637523449878052,
+              1.150624349872675
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.059999942779541
+            ]
+          }
+        }
+      },
+      {
+        "frame": 72,
+        "index": 1,
+        "parameters": {
+          "kind": "shoot-down-reload",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.28,
+          "weapon_pitch": -0.192,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "native_release_frame": 4
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.13947214207423436,
+              -0.31148450468782074,
+              1.109513842136919
+            ],
+            "hand": [
+              0.09236711263656616,
+              -0.054999999701976776,
+              1.190735101699829
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.23771674848804022,
+              0.2881663478657086,
+              1.191257701959916
+            ],
+            "hand": [
+              0.29850825667381287,
+              0.02500000037252903,
+              1.1506624221801758
+            ]
+          }
+        }
+      },
+      {
+        "frame": 73,
+        "index": 2,
+        "parameters": {
+          "kind": "shoot-down-reload",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.36,
+          "weapon_pitch": -0.32,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "native_release_frame": 4
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.21758039899434234,
+              -0.2651894342963147,
+              1.1559355356578256
+            ],
+            "hand": [
+              0.0874173566699028,
+              -0.054999999701976776,
+              1.2720305919647217
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.25341847125901457,
+              0.29557028723037204,
+              1.2227164323838704
+            ],
+            "hand": [
+              0.28675681352615356,
+              0.02500000037252903,
+              1.2059717178344727
+            ]
+          }
+        }
+      },
+      {
+        "frame": 74,
+        "index": 3,
+        "parameters": {
+          "kind": "shoot-down-reload",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.36,
+          "weapon_pitch": -0.32,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "native_release_frame": 4
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.21758039899434234,
+              -0.2651894342963147,
+              1.1559355356578256
+            ],
+            "hand": [
+              0.0874173566699028,
+              -0.054999999701976776,
+              1.2720305919647217
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.25341847125901457,
+              0.29557028723037204,
+              1.2227164323838704
+            ],
+            "hand": [
+              0.28675681352615356,
+              0.02500000037252903,
+              1.2059717178344727
+            ]
+          }
+        }
+      },
+      {
+        "frame": 75,
+        "index": 4,
+        "parameters": {
+          "kind": "shoot-down-reload",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.36,
+          "weapon_pitch": -0.32,
+          "weapon_recoil": -0.025,
+          "hand_mode": "hold",
+          "string_drawn": 0.0,
+          "bolt_loaded": false,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "native_release_frame": 4
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.18424828483937672,
+              -0.24630236547013054,
+              1.1198441689520626
+            ],
+            "hand": [
+              0.06241735443472862,
+              -0.054999999701976776,
+              1.2720305919647217
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.2478643391559774,
+              0.29766953850791494,
+              1.2136158630003953
+            ],
+            "hand": [
+              0.2617568075656891,
+              0.02500000037252903,
+              1.2059717178344727
+            ]
+          }
+        }
+      },
+      {
+        "frame": 76,
+        "index": 5,
+        "parameters": {
+          "kind": "shoot-down-reload",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.32,
+          "weapon_pitch": -0.272,
+          "weapon_recoil": -0.015,
+          "hand_mode": "hold",
+          "string_drawn": 0.0,
+          "bolt_loaded": false,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "native_release_frame": 4
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.15218201999922423,
+              -0.2853325959880479,
+              1.1070754660284503
+            ],
+            "hand": [
+              0.07425367087125778,
+              -0.054999999701976776,
+              1.2314705848693848
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.23989703929800163,
+              0.2946677656633637,
+              1.1982300685248821
+            ],
+            "hand": [
+              0.2765331268310547,
+              0.02500000037252903,
+              1.1750524044036865
+            ]
+          }
+        }
+      },
+      {
+        "frame": 77,
+        "index": 6,
+        "parameters": {
+          "kind": "shoot-down-reload",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": -0.08,
+          "weapon_recoil": 0.0,
+          "hand_mode": "cock",
+          "string_drawn": 0.45,
+          "bolt_loaded": false,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "native_release_frame": 4
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.15111880892732496,
+              -0.3248102332265183,
+              1.1232101624291135
+            ],
+            "hand": [
+              0.20565246045589447,
+              -0.07000000029802322,
+              1.0413694381713867
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.2068138250008251,
+              0.2591758264700668,
+              1.142833298836887
+            ],
+            "hand": [
+              0.3061317801475525,
+              0.02500000037252903,
+              1.0433459281921387
+            ]
+          }
+        }
+      },
+      {
+        "frame": 78,
+        "index": 7,
+        "parameters": {
+          "kind": "shoot-down-reload",
+          "root_height": 0.86,
+          "root_fall": 0.0,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": -0.0,
+          "weapon_recoil": 0.0,
+          "hand_mode": "load-bolt",
+          "string_drawn": 1.0,
+          "bolt_loaded": true,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null,
+          "native_release_frame": 4
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.22706917842076824,
+              -0.3066646272504641,
+              1.1865102520856468
+            ],
+            "hand": [
+              0.25,
+              -0.03500000014901161,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.21312562269314694,
+              0.2637523449878052,
+              1.150624349872675
+            ],
+            "hand": [
+              0.3100000023841858,
+              0.02500000037252903,
+              1.059999942779541
+            ]
+          }
+        }
+      }
+    ],
+    "22": [
+      {
+        "frame": 28,
+        "index": 0,
+        "parameters": {
+          "kind": "death",
+          "root_height": 0.24,
+          "root_fall": 1.55,
+          "root_yaw": 0.0,
+          "spine_tilt": 0.0,
+          "weapon_height": 1.15,
+          "weapon_pitch": 1.55,
+          "weapon_recoil": 0.0,
+          "hand_mode": "hold",
+          "string_drawn": 1.0,
+          "bolt_loaded": false,
+          "knife_out": false,
+          "head_yaw": 0.0,
+          "walk_phase": null
+        },
+        "arm_joints": {
+          "R": {
+            "shoulder": [
+              0.4898940324783325,
+              -0.20500005781650543,
+              0.25018933415412903
+            ],
+            "elbow": [
+              0.25961212050829285,
+              -0.06564159491806731,
+              0.3773681097963141
+            ],
+            "hand": [
+              0.24202749133110046,
+              -0.054999999701976776,
+              0.1050124317407608
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.4898940920829773,
+              0.20499993860721588,
+              0.2501893937587738
+            ],
+            "elbow": [
+              0.4191116243860586,
+              -0.061174061070555966,
+              0.36317711564973804
+            ],
+            "hand": [
+              0.4420275092124939,
+              0.02500000037252903,
+              0.1050124317407608
+            ]
+          }
+        },
+        "kind": "actual final death corpse pose"
+      }
+    ]
+  },
+  "shooting_climax": {
+    "configured_one_based": 5,
+    "authored_zero_based_release": 4,
+    "frames_per_direction": 8,
+    "authority": "client/battle/BattleAnimationClasses.cpp ShootingAnimation::getAttackClimaxFrame returns selectedFrame-1; RangedAttackAnimation::tick emits at that current frame."
+  },
+  "status": "actual rig/action source candidate; painted native finish not produced or accepted",
+  "visual_approval_granted": false,
+  "active_recipe_modified": false
+}

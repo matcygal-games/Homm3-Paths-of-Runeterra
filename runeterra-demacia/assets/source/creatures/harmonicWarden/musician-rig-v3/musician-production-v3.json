@@ -1,0 +1,6261 @@
+{
+  "unit": "harmonicWarden",
+  "revision": 3,
+  "family": "grounded strapped dulcimer musicians; project fiction",
+  "own_inputs": {
+    "unit": "harmonicWarden",
+    "master": "assets/source/creatures/harmonicWarden/master-v2.png",
+    "master_sha256": "653e42d63b6440e256efe889deb71ce211f73ffe49d53ab40968a65430bac8c2",
+    "face_crop": [
+      624,
+      132,
+      758,
+      286
+    ],
+    "face_crop_output": "assets/source/creatures/harmonicWarden/musician-rig-v3/own-face-diffuse-crop-v1.png",
+    "face_crop_sha256": "3ad3e920a3ec3e0d85230cc9395f9f10ea140080ed4d293030b0556fe1d38b84",
+    "identity_contract": "design/unit-identity.json",
+    "identity_contract_sha256": "7284200ab05b5e49ccd360440bb423259655bb2b4fcecde6734625d3a290ac91",
+    "creature_content": "content/creatures.json",
+    "creature_content_sha256": "89e522e943d35666ddd6f8636f10a6c30e4d3965937d6e56ce6259c97e439139",
+    "ammunition": 10,
+    "native_climax_one_based": 5,
+    "operation": "Exact Pillow own-master face crop only. Crest below is sculpted surface geometry; no original game pixels.",
+    "status": "own source preparation; appearance and native action behavior unaccepted",
+    "active_recipe_modified": false,
+    "visual_approval_granted": false
+  },
+  "source_topology": "assets/source/creatures/demacianRecruit/rig-pilot-v4/demacianRecruit-rig-v4.blend",
+  "source_topology_sha256": "db28157c549de77e8bc6d37d38ca456a8deb248c22daf3fd45b548be8d73d9cb",
+  "executed_generator": "assets/source/creatures/harmonicWarden/musician-rig-v3/generator-executed-v3.py",
+  "executed_generator_sha256": "874d4101c52e34c77730e0c9b86ce448e19645bc9b1ff00322fb944698acfafa",
+  "editable_blend": "assets/source/creatures/harmonicWarden/musician-rig-v3/harmonicWarden-musician-rig-v3.blend",
+  "editable_blend_sha256": "d9d83bb9be07cfb0292097f1c6571c34f27f659c66eacaf69610a833ed50b5fc",
+  "bone_count": 16,
+  "weighted_mesh_count": 78,
+  "model_kind": "Actual volumetric closed resonator/meshes and editable skeletal weights; shaped face texture, no whole-body billboard.",
+  "camera": {
+    "type": "ORTHO",
+    "location": [
+      7.0,
+      -7.0,
+      3.5
+    ],
+    "rotation_euler": [
+      1.3186880350112915,
+      -8.58584670027085e-08,
+      0.7853981852531433
+    ],
+    "ortho_scale": 2.549999952316284,
+    "origin_raw_pixels": [
+      255.99998474121094,
+      440.7154083251953
+    ]
+  },
+  "raw_canvas": [
+    512,
+    512
+  ],
+  "native_canvas": [
+    450,
+    400
+  ],
+  "native_pivot": [
+    197,
+    266
+  ],
+  "native_ground_exclusive_bottom": 267,
+  "target_idle_height": 84,
+  "actions": {
+    "0": [
+      {
+        "frame": 1,
+        "index": 0,
+        "parameters": {
+          "kind": "walk-with-strapped-instrument",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": 0.0,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254498955739914,
+              -0.4812771766112053,
+              1.274969977848175
+            ],
+            "hand": [
+              0.26999998092651367,
+              -0.25,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000031933188438,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000031933188438,
+        "right_mallet_tip_raw_pixels": [
+          295.7532653808594,
+          247.555908203125
+        ]
+      },
+      {
+        "frame": 2,
+        "index": 1,
+        "parameters": {
+          "kind": "walk-with-strapped-instrument",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": 1.0471975511965976,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3569281101226807
+            ],
+            "elbow": [
+              0.11254498955739914,
+              -0.4812771766112053,
+              1.2818981833382872
+            ],
+            "hand": [
+              0.26999998092651367,
+              -0.25,
+              1.1769282817840576
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3569281101226807
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2818981706978667
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1769282817840576
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.01300003007054329,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.01300003007054329,
+        "right_mallet_tip_raw_pixels": [
+          295.7532653808594,
+          246.20880126953125
+        ]
+      },
+      {
+        "frame": 3,
+        "index": 2,
+        "parameters": {
+          "kind": "walk-with-strapped-instrument",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": 2.0943951023931953,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.343071699142456
+            ],
+            "elbow": [
+              0.11254498955739914,
+              -0.4812771766112053,
+              1.2680417723580626
+            ],
+            "hand": [
+              0.26999998092651367,
+              -0.25,
+              1.163071870803833
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.343071699142456
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.268041759717642
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.163071870803833
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.01300002820789814,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.01300002820789814,
+        "right_mallet_tip_raw_pixels": [
+          295.7532653808594,
+          248.90298461914062
+        ]
+      },
+      {
+        "frame": 4,
+        "index": 3,
+        "parameters": {
+          "kind": "walk-with-strapped-instrument",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": 3.141592653589793,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254498955739914,
+              -0.4812771766112053,
+              1.274969977848175
+            ],
+            "hand": [
+              0.26999998092651367,
+              -0.25,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000020757317543,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000020757317543,
+        "right_mallet_tip_raw_pixels": [
+          295.7532653808594,
+          247.555908203125
+        ]
+      },
+      {
+        "frame": 5,
+        "index": 4,
+        "parameters": {
+          "kind": "walk-with-strapped-instrument",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": 4.1887902047863905,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3569281101226807
+            ],
+            "elbow": [
+              0.11254498955739914,
+              -0.4812771766112053,
+              1.2818981833382872
+            ],
+            "hand": [
+              0.26999998092651367,
+              -0.25,
+              1.1769282817840576
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3569281101226807
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2818981706978667
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1769282817840576
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.01300002634525299,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.01300002634525299,
+        "right_mallet_tip_raw_pixels": [
+          295.7532653808594,
+          246.20880126953125
+        ]
+      },
+      {
+        "frame": 6,
+        "index": 5,
+        "parameters": {
+          "kind": "walk-with-strapped-instrument",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": 5.235987755982989,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.343071699142456
+            ],
+            "elbow": [
+              0.11254498955739914,
+              -0.4812771766112053,
+              1.2680417723580626
+            ],
+            "hand": [
+              0.26999998092651367,
+              -0.25,
+              1.163071870803833
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.343071699142456
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.268041759717642
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.163071870803833
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000024482607841,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000024482607841,
+        "right_mallet_tip_raw_pixels": [
+          295.7532653808594,
+          248.90298461914062
+        ]
+      }
+    ],
+    "1": [
+      {
+        "frame": 7,
+        "index": 0,
+        "parameters": {
+          "kind": "check-strings-and-grip",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254498955739914,
+              -0.4812771766112053,
+              1.274969977848175
+            ],
+            "hand": [
+              0.26999998092651367,
+              -0.25,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          295.7532653808594,
+          247.555908203125
+        ]
+      },
+      {
+        "frame": 8,
+        "index": 1,
+        "parameters": {
+          "kind": "check-strings-and-grip",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": -0.08,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.17,
+            -0.24,
+            1.32
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.29,
+            -0.18,
+            1.44
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.02771596252499664,
+              -0.510787901697905,
+              1.331277574756291
+            ],
+            "hand": [
+              0.14920857548713684,
+              -0.2503957152366638,
+              1.2492084503173828
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          271.61737060546875,
+          187.09280395507812
+        ]
+      },
+      {
+        "frame": 9,
+        "index": 2,
+        "parameters": {
+          "kind": "check-strings-and-grip",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.04,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.3,
+            -0.19,
+            1.2
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.15
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.14425297109138507,
+              -0.45587120086923894,
+              1.2456942700057052
+            ],
+            "hand": [
+              0.25878381729125977,
+              -0.19257600605487823,
+              1.1628799438476562
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          295.7532653808594,
+          249.50027465820312
+        ]
+      },
+      {
+        "frame": 10,
+        "index": 3,
+        "parameters": {
+          "kind": "check-strings-and-grip",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254498955739914,
+              -0.4812771766112053,
+              1.274969977848175
+            ],
+            "hand": [
+              0.26999998092651367,
+              -0.25,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          295.7532653808594,
+          247.555908203125
+        ]
+      }
+    ],
+    "2": [
+      {
+        "frame": 11,
+        "index": 0,
+        "parameters": {
+          "kind": "holding",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254498955739914,
+              -0.4812771766112053,
+              1.274969977848175
+            ],
+            "hand": [
+              0.26999998092651367,
+              -0.25,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          295.7532653808594,
+          247.555908203125
+        ]
+      }
+    ],
+    "3": [
+      {
+        "frame": 12,
+        "index": 0,
+        "parameters": {
+          "kind": "recoil-hit",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": -0.06,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.07,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              -0.020987384021282196,
+              -0.20499996840953827,
+              1.3493701219558716
+            ],
+            "elbow": [
+              0.10416155984549202,
+              -0.47394125846329194,
+              1.2679251422904096
+            ],
+            "hand": [
+              0.26999998092651367,
+              -0.25,
+              1.1600000858306885
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.020987384021282196,
+              0.20499999821186066,
+              1.3493701219558716
+            ],
+            "elbow": [
+              0.10416157720674515,
+              0.4739412767651736,
+              1.2679251309919772
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1600000858306885
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          295.75323486328125,
+          249.50027465820312
+        ]
+      },
+      {
+        "frame": 13,
+        "index": 1,
+        "parameters": {
+          "kind": "recoil-hit",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": -0.19,
+          "head_yaw": 0.0,
+          "instrument_pitch": -0.12,
+          "instrument_height": 1.02,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              -0.06610063463449478,
+              -0.20499996840953827,
+              1.3437013626098633
+            ],
+            "elbow": [
+              0.09701938608266458,
+              -0.4380028779603451,
+              1.2265413722481966
+            ],
+            "hand": [
+              0.28568094968795776,
+              -0.25,
+              1.091036319732666
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.06610063463449478,
+              0.20499999821186066,
+              1.3437013626098633
+            ],
+            "elbow": [
+              0.09701939762315112,
+              0.4380028955155654,
+              1.2265413639593103
+            ],
+            "hand": [
+              0.28568094968795776,
+              0.25,
+              1.091036319732666
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          296.76580810546875,
+          267.5005645751953
+        ]
+      },
+      {
+        "frame": 14,
+        "index": 2,
+        "parameters": {
+          "kind": "recoil-hit",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": -0.1,
+          "head_yaw": 0.0,
+          "instrument_pitch": -0.06,
+          "instrument_height": 1.04,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              -0.0349416621029377,
+              -0.20499996840953827,
+              1.3482513427734375
+            ],
+            "elbow": [
+              0.1053767067771169,
+              -0.45904459658755703,
+              1.2462854533388483
+            ],
+            "hand": [
+              0.27812501788139343,
+              -0.25,
+              1.120753526687622
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.0349416621029377,
+              0.20499999821186066,
+              1.3482513427734375
+            ],
+            "elbow": [
+              0.10537672092326664,
+              0.45904461445048395,
+              1.2462854430591908
+            ],
+            "hand": [
+              0.27812501788139343,
+              0.25,
+              1.120753526687622
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          296.34747314453125,
+          259.47373962402344
+        ]
+      },
+      {
+        "frame": 15,
+        "index": 3,
+        "parameters": {
+          "kind": "recoil-hit",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254498955739914,
+              -0.4812771766112053,
+              1.274969977848175
+            ],
+            "hand": [
+              0.26999998092651367,
+              -0.25,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          295.7532653808594,
+          247.555908203125
+        ]
+      }
+    ],
+    "4": [
+      {
+        "frame": 16,
+        "index": 0,
+        "parameters": {
+          "kind": "brace-instrument-defend",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.03,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.04,
+          "instrument_height": 1.1,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.010498416610062122,
+              -0.20499996840953827,
+              1.3498424291610718
+            ],
+            "elbow": [
+              0.1111386245264317,
+              -0.4891989536316388,
+              1.2887896183434528
+            ],
+            "hand": [
+              0.2642814815044403,
+              -0.25,
+              1.1958863735198975
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.010498416610062122,
+              0.20499999821186066,
+              1.3498424291610718
+            ],
+            "elbow": [
+              0.11113864643524357,
+              0.48919897282044017,
+              1.2887896050525964
+            ],
+            "hand": [
+              0.2642814815044403,
+              0.25,
+              1.1958863735198975
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          295.26043701171875,
+          240.91302490234375
+        ]
+      },
+      {
+        "frame": 17,
+        "index": 1,
+        "parameters": {
+          "kind": "brace-instrument-defend",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.11,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.2,
+          "instrument_height": 1.16,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.038422372192144394,
+              -0.20499996840953827,
+              1.3478845357894897
+            ],
+            "elbow": [
+              0.09495477067003155,
+              -0.5067130615348403,
+              1.327928140359603
+            ],
+            "hand": [
+              0.23919625580310822,
+              -0.25,
+              1.2770097255706787
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.038422372192144394,
+              0.20499999821186066,
+              1.3478845357894897
+            ],
+            "elbow": [
+              0.09495480603879074,
+              0.5067130838842336,
+              1.327928127874144
+            ],
+            "hand": [
+              0.23919625580310822,
+              0.25,
+              1.2770097255706787
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          292.5345458984375,
+          218.37432861328125
+        ]
+      },
+      {
+        "frame": 18,
+        "index": 2,
+        "parameters": {
+          "kind": "brace-instrument-defend",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.07,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.12,
+          "instrument_height": 1.13,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.024479974061250687,
+              -0.20499996840953827,
+              1.3491427898406982
+            ],
+            "elbow": [
+              0.10449063301539241,
+              -0.49939566750063225,
+              1.3097165654482472
+            ],
+            "hand": [
+              0.25216156244277954,
+              -0.25,
+              1.2369499206542969
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.024479974061250687,
+              0.20499999821186066,
+              1.3491427898406982
+            ],
+            "elbow": [
+              0.104490660773072,
+              0.499395687927206,
+              1.3097165517703135
+            ],
+            "hand": [
+              0.25216156244277954,
+              0.25,
+              1.2369499206542969
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          294.0464172363281,
+          229.60614013671875
+        ]
+      },
+      {
+        "frame": 19,
+        "index": 3,
+        "parameters": {
+          "kind": "brace-instrument-defend",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254498955739914,
+              -0.4812771766112053,
+              1.274969977848175
+            ],
+            "hand": [
+              0.26999998092651367,
+              -0.25,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          295.7532653808594,
+          247.555908203125
+        ]
+      }
+    ],
+    "5": [
+      {
+        "frame": 20,
+        "index": 0,
+        "parameters": {
+          "kind": "collapse-and-lie-with-instrument",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": -0.04,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.28,
+            -0.25,
+            1.19
+          ],
+          "left_hand": [
+            0.28,
+            0.25,
+            1.19
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              -0.019594751298427582,
+              -0.20499995350837708,
+              1.3496079444885254
+            ],
+            "elbow": [
+              0.09323187744941418,
+              -0.4794238450614171,
+              1.2684498275208693
+            ],
+            "hand": [
+              0.25399908423423767,
+              -0.25563693046569824,
+              1.1528072357177734
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.019594751298427582,
+              0.20500004291534424,
+              1.3496079444885254
+            ],
+            "elbow": [
+              0.09323192961295983,
+              0.4794239019250633,
+              1.2684497899987417
+            ],
+            "hand": [
+              0.25399908423423767,
+              0.25563693046569824,
+              1.1528072357177734
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.005478782579302788,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.005478782579302788,
+        "right_mallet_tip_raw_pixels": [
+          294.2816467285156,
+          243.6510009765625
+        ]
+      },
+      {
+        "frame": 21,
+        "index": 1,
+        "parameters": {
+          "kind": "collapse-and-lie-with-instrument",
+          "root_height": 0.72,
+          "root_yaw": 0.0,
+          "root_fall": -0.12,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.28,
+            -0.25,
+            1.19
+          ],
+          "left_hand": [
+            0.28,
+            0.25,
+            1.19
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              -0.05865893512964249,
+              -0.2049999237060547,
+              1.2064762115478516
+            ],
+            "elbow": [
+              0.06029255129260592,
+              -0.47942382565641056,
+              1.1345941812778813
+            ],
+            "hand": [
+              0.22978714108467102,
+              -0.25563693046569824,
+              1.0321691036224365
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.05865893140435219,
+              0.20500004291534424,
+              1.2064762115478516
+            ],
+            "elbow": [
+              0.06029262619845429,
+              0.4794239025016135,
+              1.134594137335322
+            ],
+            "hand": [
+              0.22978714108467102,
+              0.25563693046569824,
+              1.0321691036224365
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": -0.006061097607016563,
+        "rigid_floor_lift": 0.011061097607016564,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.004999978467822075,
+        "right_mallet_tip_raw_pixels": [
+          291.0345153808594,
+          261.09173583984375
+        ]
+      },
+      {
+        "frame": 22,
+        "index": 2,
+        "parameters": {
+          "kind": "collapse-and-lie-with-instrument",
+          "root_height": 0.55,
+          "root_yaw": 0.0,
+          "root_fall": 0.18,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.28,
+            -0.25,
+            1.19
+          ],
+          "left_hand": [
+            0.28,
+            0.25,
+            1.19
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.08772452175617218,
+              -0.20500005781650543,
+              1.0320833921432495
+            ],
+            "elbow": [
+              0.1801206795496076,
+              -0.47942390371409216,
+              0.9282591984924345
+            ],
+            "hand": [
+              0.3117762804031372,
+              -0.25563693046569824,
+              0.7803197503089905
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.08772452175617218,
+              0.20499993860721588,
+              1.0320833921432495
+            ],
+            "elbow": [
+              0.1801206225925146,
+              0.479423827895899,
+              0.9282592624942761
+            ],
+            "hand": [
+              0.3117762804031372,
+              0.25563693046569824,
+              0.7803197503089905
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": -0.021157613024115562,
+        "rigid_floor_lift": 0.026157613024115563,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.005000002682209015,
+        "right_mallet_tip_raw_pixels": [
+          301.0525817871094,
+          320.86529541015625
+        ]
+      },
+      {
+        "frame": 23,
+        "index": 3,
+        "parameters": {
+          "kind": "collapse-and-lie-with-instrument",
+          "root_height": 0.4,
+          "root_yaw": 0.0,
+          "root_fall": 0.68,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.04,
+            -0.28,
+            1.18
+          ],
+          "left_hand": [
+            0.04,
+            0.28,
+            1.18
+          ],
+          "right_tip": [
+            -0.019999999999999997,
+            -0.29,
+            0.98
+          ],
+          "left_tip": [
+            -0.019999999999999997,
+            0.29,
+            0.98
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.3081086277961731,
+              -0.20499993860721588,
+              0.7810105085372925
+            ],
+            "elbow": [
+              0.0603190874596439,
+              -0.38097115166458684,
+              0.8285440360140404
+            ],
+            "hand": [
+              0.20264340937137604,
+              -0.279897540807724,
+              0.585999608039856
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.3081086277961731,
+              0.20500002801418304,
+              0.7810105085372925
+            ],
+            "elbow": [
+              0.060318982940627375,
+              0.3809711052362793,
+              0.8285439940302727
+            ],
+            "hand": [
+              0.20264340937137604,
+              0.279897540807724,
+              0.585999608039856
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": -0.46061575412750244,
+        "rigid_floor_lift": 0.46561575412750245,
+        "instrument_released_from_harness": true,
+        "minimum_world_z": 0.00499996542930603,
+        "right_mallet_tip_raw_pixels": [
+          218.8681640625,
+          270.65753173828125
+        ]
+      },
+      {
+        "frame": 24,
+        "index": 4,
+        "parameters": {
+          "kind": "collapse-and-lie-with-instrument",
+          "root_height": 0.25,
+          "root_yaw": 0.0,
+          "root_fall": 1.2,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            -0.07,
+            -0.28,
+            1.18
+          ],
+          "left_hand": [
+            -0.07,
+            0.28,
+            1.18
+          ],
+          "right_tip": [
+            -0.13,
+            -0.29,
+            0.98
+          ],
+          "left_tip": [
+            -0.13,
+            0.29,
+            0.98
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.4566991329193115,
+              -0.20499998331069946,
+              0.42755526304244995
+            ],
+            "elbow": [
+              0.31635700205989425,
+              -0.25104532672518176,
+              0.6973864565971136
+            ],
+            "hand": [
+              0.2284180074930191,
+              -0.279897540807724,
+              0.41324886679649353
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.4566991329193115,
+              0.20500001311302185,
+              0.42755526304244995
+            ],
+            "elbow": [
+              0.31635699992610633,
+              0.25104533890578457,
+              0.697386458494365
+            ],
+            "hand": [
+              0.2284180074930191,
+              0.279897540807724,
+              0.41324886679649353
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": -0.3684846758842468,
+        "rigid_floor_lift": 0.37348467588424683,
+        "instrument_released_from_harness": true,
+        "minimum_world_z": 0.004999995231628418,
+        "right_mallet_tip_raw_pixels": [
+          217.40187072753906,
+          301.90858459472656
+        ]
+      },
+      {
+        "frame": 25,
+        "index": 5,
+        "parameters": {
+          "kind": "collapse-and-lie-with-instrument",
+          "root_height": 0.18,
+          "root_yaw": 0.0,
+          "root_fall": 1.53,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            -0.12,
+            -0.28,
+            1.18
+          ],
+          "left_hand": [
+            -0.12,
+            0.28,
+            1.18
+          ],
+          "right_tip": [
+            -0.18,
+            -0.29,
+            0.98
+          ],
+          "left_tip": [
+            -0.18,
+            0.29,
+            0.98
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.4895922541618347,
+              -0.20500004291534424,
+              0.19998463988304138
+            ],
+            "elbow": [
+              0.4798900571359463,
+              -0.20826394132294207,
+              0.5074259752618572
+            ],
+            "hand": [
+              0.2669534981250763,
+              -0.279897540807724,
+              0.3103814721107483
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.4895922839641571,
+              0.20499995350837708,
+              0.19998466968536377
+            ],
+            "elbow": [
+              0.4798900116466689,
+              0.2082638807040021,
+              0.5074260023825026
+            ],
+            "hand": [
+              0.2669534981250763,
+              0.279897540807724,
+              0.3103814721107483
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": -0.1979084312915802,
+        "rigid_floor_lift": 0.2029084312915802,
+        "instrument_released_from_harness": true,
+        "minimum_world_z": 0.005000099539756775,
+        "right_mallet_tip_raw_pixels": [
+          223.7147216796875,
+          343.22650146484375
+        ]
+      }
+    ],
+    "7": [
+      {
+        "frame": 26,
+        "index": 0,
+        "parameters": {
+          "kind": "turn-toward-viewer",
+          "root_height": 0.86,
+          "root_yaw": -0.18,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              -0.03670107573270798,
+              -0.2016880065202713,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.03937315234831742,
+              -0.4949652734118486,
+              1.2968386696399872
+            ],
+            "hand": [
+              0.22088037431240082,
+              -0.29429891705513,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.03670106828212738,
+              0.20168788731098175,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.18298239002971028,
+              0.45461361585733684,
+              1.2537953771583925
+            ],
+            "hand": [
+              0.31039518117904663,
+              0.19762292504310608,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.010660079307854176,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.010660079307854176,
+        "right_mallet_tip_raw_pixels": [
+          278.8435363769531,
+          248.96502685546875
+        ]
+      },
+      {
+        "frame": 27,
+        "index": 1,
+        "parameters": {
+          "kind": "turn-toward-viewer",
+          "root_height": 0.86,
+          "root_yaw": -0.38,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              -0.07603870332241058,
+              -0.19037629663944244,
+              1.3499999046325684
+            ],
+            "elbow": [
+              -0.040812414020243076,
+              -0.49476111322991534,
+              1.3229083500326948
+            ],
+            "hand": [
+              0.1580093652009964,
+              -0.332314670085907,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.07603868842124939,
+              0.19037620723247528,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.2540843050546166,
+              0.41074805682368876,
+              1.2301626538928865
+            ],
+            "hand": [
+              0.3434695601463318,
+              0.13201767206192017,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.007863102480769157,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.007863102480769157,
+        "right_mallet_tip_raw_pixels": [
+          259.2138977050781,
+          249.61721801757812
+        ]
+      },
+      {
+        "frame": 28,
+        "index": 2,
+        "parameters": {
+          "kind": "turn-toward-viewer",
+          "root_height": 0.86,
+          "root_yaw": -0.58,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              -0.11234487593173981,
+              -0.17147479951381683,
+              1.3499999046325684
+            ],
+            "elbow": [
+              -0.11446379126631841,
+              -0.4790733633875903,
+              1.3518957052683873
+            ],
+            "hand": [
+              0.08883893489837646,
+              -0.3570820987224579,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.1123449057340622,
+              0.171474888920784,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.3135725413423448,
+              0.353754360058614,
+              1.2054087796329094
+            ],
+            "hand": [
+              0.3628508746623993,
+              0.0611492395401001,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.004978271201252937,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.004978271201252937,
+        "right_mallet_tip_raw_pixels": [
+          239.45611572265625,
+          249.2835693359375
+        ]
+      },
+      {
+        "frame": 29,
+        "index": 3,
+        "parameters": {
+          "kind": "turn-toward-viewer",
+          "root_height": 0.86,
+          "root_yaw": -0.785,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              -0.1448991894721985,
+              -0.14501456916332245,
+              1.3499999046325684
+            ],
+            "elbow": [
+              -0.17621504300168386,
+              -0.44897246744042374,
+              1.3854099844424324
+            ],
+            "hand": [
+              0.014288485050201416,
+              -0.367689847946167,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.1448991894721985,
+              0.14501456916332245,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.35813353097333056,
+              0.284581879827124,
+              1.1777296467291618
+            ],
+            "hand": [
+              0.36770111322402954,
+              -0.013995751738548279,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.0020076707005500793,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.0020076707005500793,
+        "right_mallet_tip_raw_pixels": [
+          219.8955841064453,
+          247.93270874023438
+        ]
+      }
+    ],
+    "8": [
+      {
+        "frame": 30,
+        "index": 0,
+        "parameters": {
+          "kind": "turn-back",
+          "root_height": 0.86,
+          "root_yaw": -0.785,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              -0.1448991894721985,
+              -0.14501456916332245,
+              1.3499999046325684
+            ],
+            "elbow": [
+              -0.17621504300168386,
+              -0.44897246744042374,
+              1.3854099844424324
+            ],
+            "hand": [
+              0.014288485050201416,
+              -0.367689847946167,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.1448991894721985,
+              0.14501456916332245,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.35813353097333056,
+              0.284581879827124,
+              1.1777296467291618
+            ],
+            "hand": [
+              0.36770111322402954,
+              -0.013995751738548279,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.0020076707005500793,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.0020076707005500793,
+        "right_mallet_tip_raw_pixels": [
+          219.8955841064453,
+          247.93270874023438
+        ]
+      },
+      {
+        "frame": 31,
+        "index": 1,
+        "parameters": {
+          "kind": "turn-back",
+          "root_height": 0.86,
+          "root_yaw": -0.58,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              -0.11234487593173981,
+              -0.17147479951381683,
+              1.3499999046325684
+            ],
+            "elbow": [
+              -0.11446379126631841,
+              -0.4790733633875903,
+              1.3518957052683873
+            ],
+            "hand": [
+              0.08883893489837646,
+              -0.3570820987224579,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.1123449057340622,
+              0.171474888920784,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.3135725413423448,
+              0.353754360058614,
+              1.2054087796329094
+            ],
+            "hand": [
+              0.3628508746623993,
+              0.0611492395401001,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.004978271201252937,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.004978271201252937,
+        "right_mallet_tip_raw_pixels": [
+          239.45611572265625,
+          249.2835693359375
+        ]
+      },
+      {
+        "frame": 32,
+        "index": 2,
+        "parameters": {
+          "kind": "turn-back",
+          "root_height": 0.86,
+          "root_yaw": -0.38,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              -0.07603870332241058,
+              -0.19037629663944244,
+              1.3499999046325684
+            ],
+            "elbow": [
+              -0.040812414020243076,
+              -0.49476111322991534,
+              1.3229083500326948
+            ],
+            "hand": [
+              0.1580093652009964,
+              -0.332314670085907,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.07603868842124939,
+              0.19037620723247528,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.2540843050546166,
+              0.41074805682368876,
+              1.2301626538928865
+            ],
+            "hand": [
+              0.3434695601463318,
+              0.13201767206192017,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.007863102480769157,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.007863102480769157,
+        "right_mallet_tip_raw_pixels": [
+          259.2138977050781,
+          249.61721801757812
+        ]
+      },
+      {
+        "frame": 33,
+        "index": 3,
+        "parameters": {
+          "kind": "turn-back",
+          "root_height": 0.86,
+          "root_yaw": -0.18,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              -0.03670107573270798,
+              -0.2016880065202713,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.03937315234831742,
+              -0.4949652734118486,
+              1.2968386696399872
+            ],
+            "hand": [
+              0.22088037431240082,
+              -0.29429891705513,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.03670106828212738,
+              0.20168788731098175,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.18298239002971028,
+              0.45461361585733684,
+              1.2537953771583925
+            ],
+            "hand": [
+              0.31039518117904663,
+              0.19762292504310608,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.010660079307854176,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.010660079307854176,
+        "right_mallet_tip_raw_pixels": [
+          278.8435363769531,
+          248.96502685546875
+        ]
+      }
+    ],
+    "11": [
+      {
+        "frame": 34,
+        "index": 0,
+        "parameters": {
+          "kind": "mallet-melee-up",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "melee_elevation": 0.22
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254498955739914,
+              -0.4812771766112053,
+              1.274969977848175
+            ],
+            "hand": [
+              0.26999998092651367,
+              -0.25,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          295.7532653808594,
+          247.555908203125
+        ]
+      },
+      {
+        "frame": 35,
+        "index": 1,
+        "parameters": {
+          "kind": "mallet-melee-up",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": -0.03,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.12,
+            -0.28,
+            1.37
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.06,
+            -0.24,
+            1.57
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "melee_elevation": 0.22
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              -0.010498416610062122,
+              -0.20499996840953827,
+              1.3498424291610718
+            ],
+            "elbow": [
+              -0.07063518371306837,
+              -0.5063881733583702,
+              1.3630211817413993
+            ],
+            "hand": [
+              0.11960044503211975,
+              -0.2797336280345917,
+              1.3213317394256592
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.010498416610062122,
+              0.20499999821186066,
+              1.3498424291610718
+            ],
+            "elbow": [
+              0.10793456022812598,
+              0.47855560901275607,
+              1.2739087860504716
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          230.4443359375,
+          155.79534912109375
+        ]
+      },
+      {
+        "frame": 36,
+        "index": 2,
+        "parameters": {
+          "kind": "mallet-melee-up",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": -0.06,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            -0.03,
+            -0.26,
+            1.62
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            -0.12,
+            -0.24,
+            1.85
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "melee_elevation": 0.22
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              -0.020987384021282196,
+              -0.20499996840953827,
+              1.3493701219558716
+            ],
+            "elbow": [
+              -0.02824919469118642,
+              -0.5011462585751343,
+              1.4322531798531455
+            ],
+            "hand": [
+              -0.04329463094472885,
+              -0.2570456266403198,
+              1.6039750576019287
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.020987384021282196,
+              0.20499999821186066,
+              1.3493701219558716
+            ],
+            "elbow": [
+              0.10331759215508345,
+              0.47574343744826564,
+              1.2727462133653407
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          204.88865661621094,
+          94.97821044921875
+        ]
+      },
+      {
+        "frame": 37,
+        "index": 3,
+        "parameters": {
+          "kind": "mallet-melee-up",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.07,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.43,
+            -0.25,
+            1.46
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.65,
+            -0.21,
+            1.46
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "melee_elevation": 0.22
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.024479974061250687,
+              -0.20499996840953827,
+              1.3491427898406982
+            ],
+            "elbow": [
+              0.21791883451311606,
+              -0.4425125335987004,
+              1.377323439297401
+            ],
+            "hand": [
+              0.4422193169593811,
+              -0.24777831137180328,
+              1.4100000858306885
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.024479974061250687,
+              0.20499999821186066,
+              1.3491427898406982
+            ],
+            "elbow": [
+              0.12324631119824489,
+              0.48727093701738206,
+              1.2770783179155882
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          318.46942138671875,
+          197.01605224609375
+        ]
+      },
+      {
+        "frame": 38,
+        "index": 4,
+        "parameters": {
+          "kind": "mallet-melee-up",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.04,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.36,
+            -0.25,
+            1.32
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.56,
+            -0.2,
+            1.29
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "melee_elevation": 0.22
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.013996254652738571,
+              -0.20499996840953827,
+              1.3497200012207031
+            ],
+            "elbow": [
+              0.1620832407152746,
+              -0.4724407148448487,
+              1.315505208155538
+            ],
+            "hand": [
+              0.3572538495063782,
+              -0.25068652629852295,
+              1.2704119682312012
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.013996254652738571,
+              0.20499999821186066,
+              1.3497200012207031
+            ],
+            "elbow": [
+              0.11867259464559192,
+              0.4847637997315929,
+              1.2762350397361775
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          307.1113586425781,
+          226.52886962890625
+        ]
+      },
+      {
+        "frame": 39,
+        "index": 5,
+        "parameters": {
+          "kind": "mallet-melee-up",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "melee_elevation": 0.22
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254498955739914,
+              -0.4812771766112053,
+              1.274969977848175
+            ],
+            "hand": [
+              0.26999998092651367,
+              -0.25,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          295.7532653808594,
+          247.555908203125
+        ]
+      }
+    ],
+    "12": [
+      {
+        "frame": 40,
+        "index": 0,
+        "parameters": {
+          "kind": "mallet-melee-front",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "melee_elevation": 0.0
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254498955739914,
+              -0.4812771766112053,
+              1.274969977848175
+            ],
+            "hand": [
+              0.26999998092651367,
+              -0.25,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          295.7532653808594,
+          247.555908203125
+        ]
+      },
+      {
+        "frame": 41,
+        "index": 1,
+        "parameters": {
+          "kind": "mallet-melee-front",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": -0.03,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.12,
+            -0.28,
+            1.37
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.06,
+            -0.24,
+            1.57
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "melee_elevation": 0.0
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              -0.010498416610062122,
+              -0.20499996840953827,
+              1.3498424291610718
+            ],
+            "elbow": [
+              -0.07063518371306837,
+              -0.5063881733583702,
+              1.3630211817413993
+            ],
+            "hand": [
+              0.11960044503211975,
+              -0.2797336280345917,
+              1.3213317394256592
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.010498416610062122,
+              0.20499999821186066,
+              1.3498424291610718
+            ],
+            "elbow": [
+              0.10793456022812598,
+              0.47855560901275607,
+              1.2739087860504716
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          230.4443359375,
+          155.79534912109375
+        ]
+      },
+      {
+        "frame": 42,
+        "index": 2,
+        "parameters": {
+          "kind": "mallet-melee-front",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": -0.06,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            -0.03,
+            -0.26,
+            1.62
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            -0.12,
+            -0.24,
+            1.85
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "melee_elevation": 0.0
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              -0.020987384021282196,
+              -0.20499996840953827,
+              1.3493701219558716
+            ],
+            "elbow": [
+              -0.02824919469118642,
+              -0.5011462585751343,
+              1.4322531798531455
+            ],
+            "hand": [
+              -0.04329463094472885,
+              -0.2570456266403198,
+              1.6039750576019287
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.020987384021282196,
+              0.20499999821186066,
+              1.3493701219558716
+            ],
+            "elbow": [
+              0.10331759215508345,
+              0.47574343744826564,
+              1.2727462133653407
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          204.88865661621094,
+          94.97821044921875
+        ]
+      },
+      {
+        "frame": 43,
+        "index": 3,
+        "parameters": {
+          "kind": "mallet-melee-front",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.07,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.43,
+            -0.25,
+            1.24
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.65,
+            -0.21,
+            1.24
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "melee_elevation": 0.0
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.024479974061250687,
+              -0.20499996840953827,
+              1.3491427898406982
+            ],
+            "elbow": [
+              0.22072790292157551,
+              -0.4297714299306009,
+              1.274379825325023
+            ],
+            "hand": [
+              0.4422193169593811,
+              -0.24777831137180328,
+              1.190000057220459
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.024479974061250687,
+              0.20499999821186066,
+              1.3491427898406982
+            ],
+            "elbow": [
+              0.12324631119824489,
+              0.48727093701738206,
+              1.2770783179155882
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          318.46942138671875,
+          239.79226684570312
+        ]
+      },
+      {
+        "frame": 44,
+        "index": 4,
+        "parameters": {
+          "kind": "mallet-melee-front",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.04,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.36,
+            -0.25,
+            1.21
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.56,
+            -0.2,
+            1.18
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "melee_elevation": 0.0
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.013996254652738571,
+              -0.20499996840953827,
+              1.3497200012207031
+            ],
+            "elbow": [
+              0.16816048646687798,
+              -0.4572489714844543,
+              1.26469770746006
+            ],
+            "hand": [
+              0.3572538495063782,
+              -0.25068652629852295,
+              1.1604118347167969
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.013996254652738571,
+              0.20499999821186066,
+              1.3497200012207031
+            ],
+            "elbow": [
+              0.11867259464559192,
+              0.4847637997315929,
+              1.2762350397361775
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          307.111328125,
+          247.9169921875
+        ]
+      },
+      {
+        "frame": 45,
+        "index": 5,
+        "parameters": {
+          "kind": "mallet-melee-front",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "melee_elevation": 0.0
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254498955739914,
+              -0.4812771766112053,
+              1.274969977848175
+            ],
+            "hand": [
+              0.26999998092651367,
+              -0.25,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          295.7532653808594,
+          247.555908203125
+        ]
+      }
+    ],
+    "13": [
+      {
+        "frame": 46,
+        "index": 0,
+        "parameters": {
+          "kind": "mallet-melee-down",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "melee_elevation": -0.22
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254498955739914,
+              -0.4812771766112053,
+              1.274969977848175
+            ],
+            "hand": [
+              0.26999998092651367,
+              -0.25,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          295.7532653808594,
+          247.555908203125
+        ]
+      },
+      {
+        "frame": 47,
+        "index": 1,
+        "parameters": {
+          "kind": "mallet-melee-down",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": -0.03,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.12,
+            -0.28,
+            1.37
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.06,
+            -0.24,
+            1.57
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "melee_elevation": -0.22
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              -0.010498416610062122,
+              -0.20499996840953827,
+              1.3498424291610718
+            ],
+            "elbow": [
+              -0.07063518371306837,
+              -0.5063881733583702,
+              1.3630211817413993
+            ],
+            "hand": [
+              0.11960044503211975,
+              -0.2797336280345917,
+              1.3213317394256592
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.010498416610062122,
+              0.20499999821186066,
+              1.3498424291610718
+            ],
+            "elbow": [
+              0.10793456022812598,
+              0.47855560901275607,
+              1.2739087860504716
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          230.4443359375,
+          155.79534912109375
+        ]
+      },
+      {
+        "frame": 48,
+        "index": 2,
+        "parameters": {
+          "kind": "mallet-melee-down",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": -0.06,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            -0.03,
+            -0.26,
+            1.62
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            -0.12,
+            -0.24,
+            1.85
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "melee_elevation": -0.22
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              -0.020987384021282196,
+              -0.20499996840953827,
+              1.3493701219558716
+            ],
+            "elbow": [
+              -0.02824919469118642,
+              -0.5011462585751343,
+              1.4322531798531455
+            ],
+            "hand": [
+              -0.04329463094472885,
+              -0.2570456266403198,
+              1.6039750576019287
+            ]
+          },
+          "L": {
+            "shoulder": [
+              -0.020987384021282196,
+              0.20499999821186066,
+              1.3493701219558716
+            ],
+            "elbow": [
+              0.10331759215508345,
+              0.47574343744826564,
+              1.2727462133653407
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          204.88865661621094,
+          94.97821044921875
+        ]
+      },
+      {
+        "frame": 49,
+        "index": 3,
+        "parameters": {
+          "kind": "mallet-melee-down",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.07,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.43,
+            -0.25,
+            1.02
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.65,
+            -0.21,
+            1.02
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "melee_elevation": -0.22
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.024479974061250687,
+              -0.20499996840953827,
+              1.3491427898406982
+            ],
+            "elbow": [
+              0.2307118743042104,
+              -0.3356062555643875,
+              1.161965436944423
+            ],
+            "hand": [
+              0.4422193169593811,
+              -0.24777831137180328,
+              0.9699999690055847
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.024479974061250687,
+              0.20499999821186066,
+              1.3491427898406982
+            ],
+            "elbow": [
+              0.12324631119824489,
+              0.48727093701738206,
+              1.2770783179155882
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          318.4693908691406,
+          282.5684814453125
+        ]
+      },
+      {
+        "frame": 50,
+        "index": 4,
+        "parameters": {
+          "kind": "mallet-melee-down",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.04,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.36,
+            -0.25,
+            1.0999999999999999
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.56,
+            -0.2,
+            1.0699999999999998
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "melee_elevation": -0.22
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.013996254652738571,
+              -0.20499996840953827,
+              1.3497200012207031
+            ],
+            "elbow": [
+              0.17502527921056416,
+              -0.4263125248929429,
+              1.2093085844762346
+            ],
+            "hand": [
+              0.3572538495063782,
+              -0.25068652629852295,
+              1.0504119396209717
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.013996254652738571,
+              0.20499999821186066,
+              1.3497200012207031
+            ],
+            "elbow": [
+              0.11867259464559192,
+              0.4847637997315929,
+              1.2762350397361775
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          307.111328125,
+          269.30506896972656
+        ]
+      },
+      {
+        "frame": 51,
+        "index": 5,
+        "parameters": {
+          "kind": "mallet-melee-down",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "melee_elevation": -0.22
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254498955739914,
+              -0.4812771766112053,
+              1.274969977848175
+            ],
+            "hand": [
+              0.26999998092651367,
+              -0.25,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          295.7532653808594,
+          247.555908203125
+        ]
+      }
+    ],
+    "14": [
+      {
+        "frame": 52,
+        "index": 0,
+        "parameters": {
+          "kind": "play-shoot-up",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "native_release_frame": 4,
+          "shoot_elevation": 0.2
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254498955739914,
+              -0.4812771766112053,
+              1.274969977848175
+            ],
+            "hand": [
+              0.26999998092651367,
+              -0.25,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          295.7532653808594,
+          247.555908203125
+        ]
+      },
+      {
+        "frame": 53,
+        "index": 1,
+        "parameters": {
+          "kind": "play-shoot-up",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.09000000000000001,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.19,
+            -0.27,
+            1.36
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.31,
+            -0.19,
+            1.55
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "native_release_frame": 4,
+          "shoot_elevation": 0.2
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.015130591348171754,
+              -0.5122376305250167,
+              1.3489778759032556
+            ],
+            "hand": [
+              0.1762959361076355,
+              -0.2608273923397064,
+              1.3380916118621826
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.1037920847237647,
+              0.48658838940621263,
+              1.2824710852091161
+            ],
+            "hand": [
+              0.25680989027023315,
+              0.25,
+              1.182915210723877
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          266.93048095703125,
+          162.29339599609375
+        ]
+      },
+      {
+        "frame": 54,
+        "index": 2,
+        "parameters": {
+          "kind": "play-shoot-up",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.2,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.15,
+            -0.26,
+            1.48
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.29,
+            -0.18,
+            1.68
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "native_release_frame": 4,
+          "shoot_elevation": 0.2
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.006952414971358234,
+              -0.5123898640750421,
+              1.3593848035809057
+            ],
+            "hand": [
+              0.0872805118560791,
+              -0.24576358497142792,
+              1.467817783355713
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.09211413653689719,
+              0.49252185707888946,
+              1.2910836345269006
+            ],
+            "hand": [
+              0.23919625580310822,
+              0.25,
+              1.197009801864624
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          254.21249389648438,
+          131.84490966796875
+        ]
+      },
+      {
+        "frame": 55,
+        "index": 3,
+        "parameters": {
+          "kind": "play-shoot-up",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.2,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.22,
+            -0.24,
+            1.43
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.4,
+            -0.17,
+            1.61
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "native_release_frame": 4,
+          "shoot_elevation": 0.2
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.07294068366319964,
+              -0.5017530467843928,
+              1.3852451525568805
+            ],
+            "hand": [
+              0.1766127347946167,
+              -0.2259949892759323,
+              1.4353399276733398
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.09211413653689719,
+              0.49252185707888946,
+              1.2910836345269006
+            ],
+            "hand": [
+              0.23919625580310822,
+              0.25,
+              1.197009801864624
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          272.9127197265625,
+          144.8914794921875
+        ]
+      },
+      {
+        "frame": 56,
+        "index": 4,
+        "parameters": {
+          "kind": "play-shoot-up",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.2,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.3,
+            -0.22,
+            1.16
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.52,
+            -0.16,
+            1.135
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": true,
+          "native_release_frame": 4,
+          "shoot_elevation": 0.2
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.149404248937116,
+              -0.4536228664154289,
+              1.2475792751376147
+            ],
+            "hand": [
+              0.29803240299224854,
+              -0.21523605287075043,
+              1.145690679550171
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.09211413653689719,
+              0.49252185707888946,
+              1.2910836345269006
+            ],
+            "hand": [
+              0.23919625580310822,
+              0.25,
+              1.197009801864624
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          304.4279479980469,
+          237.92578125
+        ]
+      },
+      {
+        "frame": 57,
+        "index": 5,
+        "parameters": {
+          "kind": "play-shoot-up",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.16000000000000003,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.26,
+            -0.24,
+            1.31
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.44,
+            -0.18,
+            1.46
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "native_release_frame": 4,
+          "shoot_elevation": 0.2
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.10099001219016462,
+              -0.4948587197927369,
+              1.329803814816536
+            ],
+            "hand": [
+              0.24107831716537476,
+              -0.23238907754421234,
+              1.3017888069152832
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.09648003405189062,
+              0.4904384646906421,
+              1.2880205109356198
+            ],
+            "hand": [
+              0.24577948451042175,
+              0.25,
+              1.1921095848083496
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          283.73809814453125,
+          177.25851440429688
+        ]
+      },
+      {
+        "frame": 58,
+        "index": 6,
+        "parameters": {
+          "kind": "play-shoot-up",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.06,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.28,
+            -0.25,
+            1.25
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.48,
+            -0.18,
+            1.29
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "native_release_frame": 4,
+          "shoot_elevation": 0.2
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11179685251571136,
+              -0.4858388422041834,
+              1.29293896271264
+            ],
+            "hand": [
+              0.2735898792743683,
+              -0.248554989695549,
+              1.210360050201416
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.10679273122996097,
+              0.4848618288590792,
+              1.280016844806017
+            ],
+            "hand": [
+              0.2613351047039032,
+              0.25,
+              1.1787426471710205
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          296.7129821777344,
+          218.39459228515625
+        ]
+      },
+      {
+        "frame": 59,
+        "index": 7,
+        "parameters": {
+          "kind": "play-shoot-up",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "native_release_frame": 4,
+          "shoot_elevation": 0.2
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254498955739914,
+              -0.4812771766112053,
+              1.274969977848175
+            ],
+            "hand": [
+              0.26999998092651367,
+              -0.25,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          295.7532653808594,
+          247.555908203125
+        ]
+      }
+    ],
+    "15": [
+      {
+        "frame": 60,
+        "index": 0,
+        "parameters": {
+          "kind": "play-shoot-front",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "native_release_frame": 4,
+          "shoot_elevation": 0.0
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254498955739914,
+              -0.4812771766112053,
+              1.274969977848175
+            ],
+            "hand": [
+              0.26999998092651367,
+              -0.25,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          295.7532653808594,
+          247.555908203125
+        ]
+      },
+      {
+        "frame": 61,
+        "index": 1,
+        "parameters": {
+          "kind": "play-shoot-front",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.19,
+            -0.27,
+            1.36
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.31,
+            -0.19,
+            1.55
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "native_release_frame": 4,
+          "shoot_elevation": 0.0
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.039514997101023075,
+              -0.510042665955121,
+              1.3464674780340316
+            ],
+            "hand": [
+              0.20375889539718628,
+              -0.2608273923397064,
+              1.331784963607788
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          273.037109375,
+          166.76718139648438
+        ]
+      },
+      {
+        "frame": 62,
+        "index": 2,
+        "parameters": {
+          "kind": "play-shoot-front",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.15,
+            -0.26,
+            1.48
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.29,
+            -0.18,
+            1.68
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "native_release_frame": 4,
+          "shoot_elevation": 0.0
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.05251620208370543,
+              -0.5061022151891286,
+              1.3847050319546212
+            ],
+            "hand": [
+              0.17491371929645538,
+              -0.24576358497142792,
+              1.4655909538269043
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          271.6173400878906,
+          140.42791748046875
+        ]
+      },
+      {
+        "frame": 63,
+        "index": 3,
+        "parameters": {
+          "kind": "play-shoot-front",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.22,
+            -0.24,
+            1.43
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.4,
+            -0.17,
+            1.61
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "native_release_frame": 4,
+          "shoot_elevation": 0.0
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11680598828568467,
+              -0.48797381381564353,
+              1.3801184085153964
+            ],
+            "hand": [
+              0.256012886762619,
+              -0.2259949892759323,
+              1.4160130023956299
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          288.65447998046875,
+          157.58001708984375
+        ]
+      },
+      {
+        "frame": 64,
+        "index": 4,
+        "parameters": {
+          "kind": "play-shoot-front",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.3,
+            -0.22,
+            1.16
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.52,
+            -0.16,
+            1.135
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": true,
+          "native_release_frame": 4,
+          "shoot_elevation": 0.0
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.15938362987565743,
+              -0.4383721306343883,
+              1.2285122394742838
+            ],
+            "hand": [
+              0.3174678087234497,
+              -0.21523605287075043,
+              1.1080150604248047
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          307.111328125,
+          253.83340454101562
+        ]
+      },
+      {
+        "frame": 65,
+        "index": 5,
+        "parameters": {
+          "kind": "play-shoot-front",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.26,
+            -0.24,
+            1.31
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.44,
+            -0.18,
+            1.46
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "native_release_frame": 4,
+          "shoot_elevation": 0.0
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.1261230475266305,
+              -0.4837763959119844,
+              1.3183511967438966
+            ],
+            "hand": [
+              0.2828327417373657,
+              -0.23238907754421234,
+              1.2790272235870361
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          292.91375732421875,
+          188.516357421875
+        ]
+      },
+      {
+        "frame": 66,
+        "index": 6,
+        "parameters": {
+          "kind": "play-shoot-front",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.28,
+            -0.25,
+            1.25
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.48,
+            -0.18,
+            1.29
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "native_release_frame": 4,
+          "shoot_elevation": 0.0
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11876134520081456,
+              -0.48182639129276983,
+              1.2876473999577682
+            ],
+            "hand": [
+              0.2841286063194275,
+              -0.248554989695549,
+              1.2008256912231445
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          298.5927734375,
+          222.98733520507812
+        ]
+      },
+      {
+        "frame": 67,
+        "index": 7,
+        "parameters": {
+          "kind": "play-shoot-front",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "native_release_frame": 4,
+          "shoot_elevation": 0.0
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254498955739914,
+              -0.4812771766112053,
+              1.274969977848175
+            ],
+            "hand": [
+              0.26999998092651367,
+              -0.25,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          295.7532653808594,
+          247.555908203125
+        ]
+      }
+    ],
+    "16": [
+      {
+        "frame": 68,
+        "index": 0,
+        "parameters": {
+          "kind": "play-shoot-down",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": -0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "native_release_frame": 4,
+          "shoot_elevation": -0.2
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254498955739914,
+              -0.4812771766112053,
+              1.274969977848175
+            ],
+            "hand": [
+              0.26999998092651367,
+              -0.25,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          295.7532653808594,
+          247.555908203125
+        ]
+      },
+      {
+        "frame": 69,
+        "index": 1,
+        "parameters": {
+          "kind": "play-shoot-down",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": -0.09000000000000001,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.19,
+            -0.27,
+            1.36
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.31,
+            -0.19,
+            1.55
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "native_release_frame": 4,
+          "shoot_elevation": -0.2
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.06134513786643703,
+              -0.5063473672237377,
+              1.3428249727501433
+            ],
+            "hand": [
+              0.230543851852417,
+              -0.2608273923397064,
+              1.323035478591919
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.12052785896194378,
+              0.47558877510124076,
+              1.2670558910148704
+            ],
+            "hand": [
+              0.2819758653640747,
+              0.25,
+              1.155951738357544
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          278.9254150390625,
+          171.92626953125
+        ]
+      },
+      {
+        "frame": 70,
+        "index": 2,
+        "parameters": {
+          "kind": "play-shoot-down",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": -0.2,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.15,
+            -0.26,
+            1.48
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.29,
+            -0.18,
+            1.68
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "native_release_frame": 4,
+          "shoot_elevation": -0.2
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.10234799011924475,
+              -0.4926207748498409,
+              1.3877374321169533
+            ],
+            "hand": [
+              0.26035770773887634,
+              -0.24576358497142792,
+              1.4459984302520752
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.12918532915969605,
+              0.46817043807042835,
+              1.256847176953757
+            ],
+            "hand": [
+              0.29482367634773254,
+              0.25,
+              1.137408971786499
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          288.05999755859375,
+          153.42178344726562
+        ]
+      },
+      {
+        "frame": 71,
+        "index": 3,
+        "parameters": {
+          "kind": "play-shoot-down",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": -0.2,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.22,
+            -0.24,
+            1.43
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.4,
+            -0.17,
+            1.61
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "native_release_frame": 4,
+          "shoot_elevation": -0.2
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.15700013006053806,
+              -0.46911017516078474,
+              1.364890109810529
+            ],
+            "hand": [
+              0.3299906253814697,
+              -0.2259949892759323,
+              1.3812968730926514
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.12918532915969605,
+              0.46817043807042835,
+              1.256847176953757
+            ],
+            "hand": [
+              0.29482367634773254,
+              0.25,
+              1.137408971786499
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          302.8113708496094,
+          173.98165893554688
+        ]
+      },
+      {
+        "frame": 72,
+        "index": 4,
+        "parameters": {
+          "kind": "play-shoot-down",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": -0.2,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.3,
+            -0.22,
+            1.16
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.52,
+            -0.16,
+            1.135
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": true,
+          "native_release_frame": 4,
+          "shoot_elevation": -0.2
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.16537902453713715,
+              -0.42196648752965016,
+              1.207872257133917
+            ],
+            "hand": [
+              0.3290307819843292,
+              -0.21523605287075043,
+              1.0672290325164795
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.12918532915969605,
+              0.46817043807042835,
+              1.256847176953757
+            ],
+            "hand": [
+              0.29482367634773254,
+              0.25,
+              1.137408971786499
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          307.5306396484375,
+          269.6026611328125
+        ]
+      },
+      {
+        "frame": 73,
+        "index": 5,
+        "parameters": {
+          "kind": "play-shoot-down",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": -0.16000000000000003,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.26,
+            -0.24,
+            1.31
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.44,
+            -0.18,
+            1.46
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "native_release_frame": 4,
+          "shoot_elevation": -0.2
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.14816875450420397,
+              -0.470572308425478,
+              1.3037147799531985
+            ],
+            "hand": [
+              0.3204275071620941,
+              -0.23238907754421234,
+              1.2499043941497803
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.12618043306544688,
+              0.47092393216437134,
+              1.2606247401734705
+            ],
+            "hand": [
+              0.2903886139392853,
+              0.25,
+              1.1443140506744385
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          300.9288024902344,
+          201.3721923828125
+        ]
+      },
+      {
+        "frame": 74,
+        "index": 6,
+        "parameters": {
+          "kind": "play-shoot-down",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": -0.06,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.28,
+            -0.25,
+            1.25
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.48,
+            -0.18,
+            1.29
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "native_release_frame": 4,
+          "shoot_elevation": -0.2
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.12531868990312894,
+              -0.477599517700904,
+              1.282105338969612
+            ],
+            "hand": [
+              0.2940766513347626,
+              -0.248554989695549,
+              1.1906764507293701
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11795490485257096,
+              0.4775248612480685,
+              1.269739081014997
+            ],
+            "hand": [
+              0.27812501788139343,
+              0.25,
+              1.1607534885406494
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          300.28863525390625,
+          227.68118286132812
+        ]
+      },
+      {
+        "frame": 75,
+        "index": 7,
+        "parameters": {
+          "kind": "play-shoot-down",
+          "root_height": 0.86,
+          "root_yaw": 0.0,
+          "root_fall": 0.0,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": -0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            0.27,
+            -0.25,
+            1.22
+          ],
+          "left_hand": [
+            0.27,
+            0.25,
+            1.22
+          ],
+          "right_tip": [
+            0.46,
+            -0.18,
+            1.16
+          ],
+          "left_tip": [
+            0.46,
+            0.18,
+            1.16
+          ],
+          "walk_phase": null,
+          "mallet_contact": false,
+          "native_release_frame": 4,
+          "shoot_elevation": -0.2
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.0,
+              -0.20499996840953827,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254498955739914,
+              -0.4812771766112053,
+              1.274969977848175
+            ],
+            "hand": [
+              0.26999998092651367,
+              -0.25,
+              1.1700000762939453
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.0,
+              0.20499999821186066,
+              1.3499999046325684
+            ],
+            "elbow": [
+              0.11254500851804662,
+              0.481277195256849,
+              1.2749699652077544
+            ],
+            "hand": [
+              0.26999998092651367,
+              0.25,
+              1.1700000762939453
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": 0.013000023551285267,
+        "rigid_floor_lift": 0.0,
+        "instrument_released_from_harness": false,
+        "minimum_world_z": 0.013000023551285267,
+        "right_mallet_tip_raw_pixels": [
+          295.7532653808594,
+          247.555908203125
+        ]
+      }
+    ],
+    "22": [
+      {
+        "frame": 25,
+        "index": 0,
+        "parameters": {
+          "kind": "collapse-and-lie-with-instrument",
+          "root_height": 0.18,
+          "root_yaw": 0.0,
+          "root_fall": 1.53,
+          "spine_tilt": 0.0,
+          "head_yaw": 0.0,
+          "instrument_pitch": 0.0,
+          "instrument_height": 1.08,
+          "right_hand": [
+            -0.12,
+            -0.28,
+            1.18
+          ],
+          "left_hand": [
+            -0.12,
+            0.28,
+            1.18
+          ],
+          "right_tip": [
+            -0.18,
+            -0.29,
+            0.98
+          ],
+          "left_tip": [
+            -0.18,
+            0.29,
+            0.98
+          ],
+          "walk_phase": null,
+          "mallet_contact": false
+        },
+        "arm_joints_before_grounding": {
+          "R": {
+            "shoulder": [
+              0.4895922541618347,
+              -0.20500004291534424,
+              0.19998463988304138
+            ],
+            "elbow": [
+              0.4798900571359463,
+              -0.20826394132294207,
+              0.5074259752618572
+            ],
+            "hand": [
+              0.2669534981250763,
+              -0.279897540807724,
+              0.3103814721107483
+            ]
+          },
+          "L": {
+            "shoulder": [
+              0.4895922839641571,
+              0.20499995350837708,
+              0.19998466968536377
+            ],
+            "elbow": [
+              0.4798900116466689,
+              0.2082638807040021,
+              0.5074260023825026
+            ],
+            "hand": [
+              0.2669534981250763,
+              0.279897540807724,
+              0.3103814721107483
+            ]
+          }
+        },
+        "minimum_world_z_before_grounding": -0.1979084312915802,
+        "rigid_floor_lift": 0.2029084312915802,
+        "instrument_released_from_harness": true,
+        "minimum_world_z": 0.005000099539756775,
+        "right_mallet_tip_raw_pixels": [
+          223.7147216796875,
+          343.22650146484375
+        ],
+        "kind": "actual final physical death pose; static corpse"
+      }
+    ]
+  },
+  "grounding": "Walk leg chains solve a planted and a lifted half-cycle with preserved bone lengths; death alone rigidly lifts evaluated whole skeleton off z0.",
+  "shooting_climax": {
+    "configured_one_based": 5,
+    "authored_zero_based_release": 4,
+    "frames_per_direction": 8,
+    "physical_contact": "Right padded mallet reaches string-bank height at index4.",
+    "authority": "client/battle/BattleAnimationClasses.cpp:767-773,801-813; selectedFrame-1, emit when current frame reaches it.",
+    "local_source_sha256": "32e58068ee148c3c56afd0c6755144eda0a819dbcb201747d5abf4edeee9a4b9"
+  },
+  "status": "editable actual rig and authored keyframes; raw grounding review required before painted generation",
+  "visual_approval_granted": false,
+  "runtime_animation_test": "not run",
+  "active_recipe_modified": false
+}

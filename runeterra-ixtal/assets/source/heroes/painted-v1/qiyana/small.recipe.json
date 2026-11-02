@@ -1,0 +1,36 @@
+{
+  "recipe_type": "raster",
+  "production_status": "painted-master-complete-unapproved",
+  "canvas": [
+    48,
+    32
+  ],
+  "output_path": "Content/Sprites/runeterra/ixtal/heroes/qiyana/small.png",
+  "source": "assets/source/heroes/painted-v1/qiyana/small.png",
+  "source_sha256": "9482995e442e64010fb6451cc1dd020984fb6eab85d8241ff07b8e6dd40f42d8",
+  "source_canvas": [
+    48,
+    32
+  ],
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in imagegen",
+    "model": "not exposed",
+    "prompt": "Use case: stylized-concept. Asset type: one ORIGINAL Heroes of Might and Magic III hero portrait source, 1024x1024 opaque painted image, to be technically cropped to 58x64 large and 48x32 small native portraits. Image 1 is the actual native Castle portrait board: use its earthy hand-painted compact faces, sharp believable anatomy, varied landscape behind the head, mottled material texture, modest light and classic 1999 strategy-game portrait rendering. Image 2 is official Qiyana design reference ONLY; preserve her recognizable warm brown face, golden eyes, white-lilac thick curls and blunt short fringe, angular gold-and-turquoise circlet, dark jade garment and muted gold neck jewelry; entirely repaint in native HoMM3 appearance rather than reproducing its modern splash style. Qiyana is an ambitious young adult Ixtali royal claimant, NOT a newly crowned reigning empress. Tight head-and-upper-shoulders, dignified skeptical three-quarter face toward viewer left; whole circlet and hair fit inside image, hair top about10%, chin near70%, lower shoulders occupy bottom20%, face big enough to read at58x64. Behind: a visibly painted inhabited ivory arcology court and jade jungle foliage in dappled warm daylight, richer terrain on both upper side corners, restrained ochre accents. No battle weapon dominates. Do not copy the source pose/background. No text, border, UI, circular crop, collage, graphic rune overlay, white/flat background, anime, glossy 3D figure, neon glow, airbrush glamour or filter-pixelated splash art. This must be newly painted 2D art with the original game's grainy compact material character.",
+    "painted_master": "assets/source/heroes/painted-v1/qiyana/master.png",
+    "painted_master_sha256": "2dd872dad02252fa81a32f24f33df4891393747a816ea9f4582138ed948d02e6",
+    "master_canvas": [
+      1254,
+      1254
+    ],
+    "derivation": "Fixed original painted source face crop and LANCZOS resize",
+    "small_source_crop": [
+      0,
+      163,
+      1254,
+      999
+    ],
+    "producer": "assets/source/heroes/painted-v1/derive_native.py"
+  }
+}

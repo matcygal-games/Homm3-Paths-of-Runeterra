@@ -1,0 +1,55 @@
+{
+  "canvas": [
+    96,
+    96
+  ],
+  "generation": {
+    "image_generation_used": true,
+    "method": "Whole painted actor extraction and fixed cohort registration; no per-frame fitting, warping or artistic acceptance.",
+    "model": "not exposed",
+    "painted_master": "assets/source/sites/world-expansion-20261030-v1/targonianFoothills/master-v1.png",
+    "painted_master_sha256": "88916e5dbd8897489ab8cb4cb02b4f71bce4dcac787af05c2fcea0533cad3b93",
+    "prompt": "Paint one complete adventure-map object for Heroes of Might and Magic III: Targonian Foothills, a compact stepped mountain wayside shrine built directly into a rugged grey-lavender rock outcrop. Eight worn stone ascent steps rise from an accessible lower-center landing toward a small bronze-and-stone sun/moon trail marker at back, sparse alpine grass and a little snow in high crevice, narrow indigo pilgrim ribbon. No characters, no building copied from town, no levitation or waterfall. Slight elevated three-quarter oblique map viewpoint, upper-left light, hand-painted compact textured original1999fantasy strategy game appearance, restrained celestial motif. It must read at96x96pixels across3x3tiles with solid rocky base lower/middle and clear south-facing first step/visitor threshold. Transparent background, no text/grid/frame/square terrain base, no3Drender, entireoutcrop with ample clear margin.\n",
+    "provider": "OpenAI built-in imagegen"
+  },
+  "groups": [
+    {
+      "frames": [
+        {
+          "frame": 0,
+          "sha256": "8cbecbdce93efc4c7be083b70858e237abd956ed1f4d29838b4ee240739f1746",
+          "source": "assets/source/sites/world-expansion-20261030-v1/targonianFoothills/native-v1.png",
+          "source_canvas": [
+            96,
+            96
+          ],
+          "source_sha256": "8cbecbdce93efc4c7be083b70858e237abd956ed1f4d29838b4ee240739f1746"
+        }
+      ],
+      "generateOverlay": 0,
+      "generateShadow": 1,
+      "group": 0
+    }
+  ],
+  "output_path": "Content/Sprites/runeterra/world/sites/targonianFoothills/map.json",
+  "pivot": {
+    "x": 48,
+    "y": 94
+  },
+  "production_inputs": [
+    {
+      "path": "assets/source/sites/world-expansion-20261030-v1/targonianFoothills/master-v1.png",
+      "sha256": "88916e5dbd8897489ab8cb4cb02b4f71bce4dcac787af05c2fcea0533cad3b93"
+    },
+    {
+      "path": "assets/source/sites/world-expansion-20261030-v1/targonianFoothills/prompt-v1.txt",
+      "sha256": "8cefc7b337c7e4af065bd3ab86ad2eb9973369ac372abbaddb31a0a0c4df3f20"
+    },
+    {
+      "path": "assets/source/creatures/voidgrub-20261030-v1/produce_candidates.py",
+      "sha256": "221762de8894661e882636cb0f2c46b5308b5d36815fd3400774b5b5d35cd651"
+    }
+  ],
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "vcmi_animation"
+}

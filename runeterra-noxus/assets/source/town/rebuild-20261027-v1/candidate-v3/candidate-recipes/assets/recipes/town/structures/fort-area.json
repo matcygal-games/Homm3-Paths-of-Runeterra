@@ -1,0 +1,116 @@
+{
+  "acceptance": "Production requirements only. No rig/guide/primitive/reference may substitute for painted final art; this recipe must fail while its real master/hash is absent.",
+  "art_direction": "Independent Noxian iron/crimson/black subjects in Heroes III native painted language. Never recolour Castle or Demacia art, import original pixels or invent an official crest.",
+  "building": "fort",
+  "building_contract": {
+    "full_canvas_placement": {
+      "x": 0,
+      "y": 0,
+      "z": 136
+    },
+    "name": "Iron Rampart",
+    "native_ground_contact": [
+      651,
+      4,
+      143,
+      132
+    ],
+    "upgrades": null
+  },
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI built-in imagegen; deterministic project conversion",
+    "license": null,
+    "redistribution": "unresolved; no release or redistribution approval"
+  },
+  "dimensions_basis": {
+    "canvas": [
+      800,
+      374
+    ],
+    "mode": "RGB",
+    "reference_only": "runeterra-demacia/references/images/tbcsback.pcx.png",
+    "reference_sha256": "949012ea68999207934bc482f1552858474fe50cefddef17eaac00d4b98c2be9",
+    "use": "Dimensions/format only. No reference pixels, palette, source recipe, layout silhouette or licensed art copied."
+  },
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": false,
+    "provider": "OpenAI built-in imagegen",
+    "model": "Not exposed by the built-in tool",
+    "model_disclosure": "Not exposed by the builtin tool.",
+    "prompt": "Precise painted2D HERALDRY EDIT only. Firstimage is an own genuinely paintedNoxian townbuilding. Second image is Riot's official Noxus regioncrest reference for SHAPE ONLY, not a texture to paste. Paint the exact characteristic NOXUS CREST as an agedSILVER/IVORYcloth-embroideredsilhouette on the building's principal visible hanging crimsonbanner: bilateral swept hookedouterlobes, paired uppernegativecutouts, narrowcentralspine anddeep lower channels. It MUST resemble thatactualNoxussymbol, notgenerictrident, sword, eagle, fleur-de-lis or inventedglyph. Choose a clearlyvisiblelargefrontcrimsonbanner; fitcrestgenerouslyinsidefabricfolds, preserveembroidery/light andplainclothborder, no lettering. Preserve ALL architecture, doors/stairs/foundationposition, lowthreequartercamera, richdarkbasalt/blackiron/copperpaintedmaterials, lighting, exactoverallshape andGenuinealphaoutsidebuilding. Do not invent newbanner if principalone exists; no opaque backdrop, neon, modern3D/Blender/vector/anime. Thepaintedcrestmustremainlegible afterthebuildingisdownsampledtotheoriginalHeroesIII townsize (roughly110pxwide), notminusculeornament. Output ONE complete transparentbuilding, samecanvasandregistration asfirstimage. This is independent paintedheraldry, notredistributionofreferenceicon.\nBuildingstate fort. On fortifications put crest on a broad visible crimson tower banner, preserving its folds and damage.",
+    "painted_master": "assets/source/town/urban-community-20261024-v4/fort/master.png",
+    "painted_master_sha256": "79c63b6b4d8ab35fbc01646903627f8002c3172a83abb48fb4597f200cdddf0e",
+    "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/fort.json",
+    "generation_record_sha256": "2f0d7b7c5ece7cb626d3783191f6c2d83e3d4e9dc8e16a10510b9d99f5a388d3",
+    "conversion": {
+      "method": "Uniform alpha crop/contain of the byte-exact existing painted2D master; frozen silhouette rebuild plan planned placement. No new building art, perspective warp or raster painting.",
+      "source_crop": [
+        28,
+        147,
+        1336,
+        1117
+      ],
+      "placement_box": [
+        651,
+        4,
+        143,
+        132
+      ],
+      "native_position": [
+        653,
+        31
+      ],
+      "native_size": [
+        139,
+        103
+      ],
+      "site": "crownBastion",
+      "mirror_x": false,
+      "assembly_script": "assets/source/town/rebuild-20261027-v1/prepare_candidate.py",
+      "assembly_script_sha256": "4c26a6b4dbcb908d1ab7f3cce4d14faac54722f13fb488e7708ef2c44766f579",
+      "frozen_plan_sha256": "af7379ba622e19c76a476b44135da1c1231e5a5e0b369e95096520bb7a1fe4fd"
+    },
+    "method": "Exact alpha128 silhouette area and two-pixel outward MaxFilter5-minus-silhouette highlight."
+  },
+  "inventory": {
+    "asset_id": "noxus.Sprites.runeterra.noxus.town.structures.fort_area.png",
+    "manifest": "assets/manifest.json",
+    "recipe_path": "assets/recipes/town/structures/fort-area.json"
+  },
+  "mask_contract": "Same800x374 silhouette/camera as own building. Area must isolate actual clickable painted shape; border must follow it. No rectangular/opaque placeholder mask or masks copied from native/Demacia structures.",
+  "output_path": "Content/Sprites/runeterra/noxus/town/structures/fort_area.png",
+  "pivot": {
+    "basis": "Full town canvas; content declares x0/y0; no Castle/Demacia building placement copied",
+    "x": 0,
+    "y": 0
+  },
+  "production_status": "derived-technical-mask-complete",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "Real independent Noxus painted master and truthful provenance",
+    "Non-null SHA256 source pins",
+    "Official Noxus emblem provenance where used",
+    "Native-size silhouette/composition/alpha and role review",
+    "Explicit coordinator selection; no automatic acceptance"
+  ],
+  "role": "town-structure-area",
+  "sha256": "451ba949a557fe3aa2e997d43f9f9a4c08a01ef0e9a7070fa6b3477aeeb585c9",
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/rebuild-20261027-v1/structures/fort/area.png",
+  "source_sha256": "451ba949a557fe3aa2e997d43f9f9a4c08a01ef0e9a7070fa6b3477aeeb585c9",
+  "status": "built-unreviewed",
+  "visual_approval_granted": false,
+  "source_canvas": [
+    800,
+    374
+  ]
+}

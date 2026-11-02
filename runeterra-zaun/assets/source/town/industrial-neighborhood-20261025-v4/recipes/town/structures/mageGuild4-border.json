@@ -1,0 +1,130 @@
+{
+  "acceptance": "Technical mask derived from the painted layer: the area mask defines the clickable footprint and the border mask the highlight outline. Both must be derived from the own painted layer, never copied from another faction or from the original game.",
+  "building": "mageGuild4",
+  "canvas": [
+    800,
+    374
+  ],
+  "content_box": [
+    0,
+    0,
+    800,
+    374
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; prompted and technically assembled by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/guild4-master.png",
+      "sha256": "8ec6b6de43bbe98d90baec72b501669119265c6b447576567f99fdb703056d42"
+    },
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/mageGuild4.json",
+      "sha256": "c0e5078d3ce02412a49889a0adf52caa32c5da7f229740097ed788fac87a185d"
+    },
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v4/prepare.py",
+      "sha256": "a7b7e6160b50cff6fc87b097f5bc59f0e31648bf208edd0f42afbcc4b604d35f"
+    },
+    {
+      "path": "scripts/zaun_coastal_state_v1.py",
+      "sha256": "5aa45de45f59be66d393df44538743b1842db5ba5f1c4e48c1d83acaa13f3cf7"
+    },
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v4/structures/mageGuild4/body-opacity-mask.png",
+      "sha256": "5d8077548f03e357415606d11fdf50d42007fd578ec6a12e9acf05a49783a598"
+    },
+    {
+      "kind": "historical_provenance",
+      "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/mageGuild4-original.json",
+      "sha256": "b4e72db47d3c2016704893ea86f98416698136d63001215152d057cc39437748"
+    }
+  ],
+  "fit": "contain",
+  "generation": {
+    "body_opacity": {
+      "changed_alpha_pixels": 5127,
+      "mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/mageGuild4/body-opacity-mask.png",
+      "mask_sha256": "5d8077548f03e357415606d11fdf50d42007fd578ec6a12e9acf05a49783a598",
+      "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/mageGuild4.png",
+      "original_native_layer_sha256": "6d8742d6cae0b7502c3e41d22aa983cd82febf6e23cdbd7a31fb00dafef25189",
+      "policy": "Only originalalpha248..254 AND2px-eroded(alpha>=128) structural core becomes255; all RGB and outside-mask RGBA unchanged. No fill of holes, arches, lowalpha glass/glow/shadows or outer antialias."
+    },
+    "composition_rectangle": [
+      420,
+      30,
+      113,
+      146
+    ],
+    "credits": {
+      "author": "OpenAI built-in imagegen; original selected Zaun prompts and historical source retained",
+      "license": null,
+      "redistribution": "unresolved; release prohibited"
+    },
+    "generation_route": "Preserved selected own painted 2D master; whole-source uniform contain and native placement only.",
+    "historical_prompt": "Usecase: precise-object-edit. SINGLEownZaunadvancedcondensertoweredit. Keepattachedfulltallnarrowindustrialtowerandall5pressurecolumns, highcentralcopperdome/spiralcatwalks/frontstairs, samephysicalsilhouette andlowfrontthreequartercamera. ChangeallfluidglassvesselstostrongluminoustoxicCHEMICALGREEN, purpleglassobservationwindows andvioletrooftile/enamelbands, browns/oxidizedcopper/rustmetaltexture. Localgreenreflections/broadupperleftlight. OriginalHeroesIIIrichtexturedpainted/prerenderedgamebuilding. Keepentiretowerapex/base/sidepipesclearofcanvaswith10%transparentpaddingallaround. Realtransparentalpha,nobackdrop/groundtile/people/text/flatneonoutlines. Thistallnarrowstage4towerisdominantcentralfocalpoint, notlowwidefactory.",
+    "historical_provenance": {
+      "kind": "historical_provenance",
+      "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/mageGuild4-original.json",
+      "sha256": "b4e72db47d3c2016704893ea86f98416698136d63001215152d057cc39437748"
+    },
+    "historical_receipt_note": "Unchanged prior provider receipt retained privately at original authored source; not rewritten or claimed as new generation.",
+    "historical_receipt_sha256": "b4e72db47d3c2016704893ea86f98416698136d63001215152d057cc39437748",
+    "image_generation_used": true,
+    "mirror_x": false,
+    "model": null,
+    "model_disclosed": false,
+    "native_offset": [
+      422,
+      47
+    ],
+    "native_size": [
+      109,
+      127
+    ],
+    "new_image_generation_used": false,
+    "painted_master": "assets/source/town/chemtech-v4-buildings/guild4-master.png",
+    "painted_master_sha256": "8ec6b6de43bbe98d90baec72b501669119265c6b447576567f99fdb703056d42",
+    "placement_plan": "assets/source/town/industrial-neighborhood-20261025-v4/live-placement-plan.json",
+    "placement_plan_sha256": "ebc0f8ca5a08869bae5a7a3ad205bc5cab43a61832d85454e856f3febf292333",
+    "provider": "OpenAI built-in imagegen",
+    "release_accepted": false,
+    "runtime_verified": false,
+    "source_crop": [
+      5,
+      30,
+      1145,
+      1363
+    ],
+    "status": "authored configuration",
+    "technical_helper": "assets/source/town/industrial-neighborhood-20261025-v4/prepare.py",
+    "technical_helper_sha256": "a7b7e6160b50cff6fc87b097f5bc59f0e31648bf208edd0f42afbcc4b604d35f",
+    "visual_approval_granted": false
+  },
+  "id": "zaun.town.structure.mageGuild4.border",
+  "identity_review": "build/reports/industrial-neighborhood-20261025-v4/source-pixel-review.json",
+  "native_visual_review": "pending",
+  "output_path": "Content/Sprites/runeterra/zaun/town/structures/mageGuild4_border.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/industrial-neighborhood-20261025-v4/structures/mageGuild4/border.png",
+  "source_sha256": "fe49a86d56534c68e41e81109d71f5866e061601f544f85e5eca3d3463ee3eb4",
+  "status": "built-unreviewed",
+  "technical": true,
+  "title": "Shimmer Institute IV border mask",
+  "visual_approval_granted": false
+}

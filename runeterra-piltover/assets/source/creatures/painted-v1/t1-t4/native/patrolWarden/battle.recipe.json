@@ -1,0 +1,552 @@
+{
+  "production_status": "painted-master-complete-unapproved",
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in imagegen",
+    "model": "Not exposed by the tool",
+    "prompt": "Create ONE original UPGRADED production character master: Piltover PATROL WARDEN, the materiallystronger upgrade of the referenced PatrolCadet. Preserve regionalhumanface/servicecoat/baton-and-shield identity, originalHoMM3 compactpainted2D lightupperleft andbodyproportions. Changeequipment clearly: substantial reinforced navycoat armorpanels, dullsteelforearmcuffs andshoulderprotection, broadfacedoval shieldlargerandsteelrimmed withprotectedbrassPiltover cog-spire crest, heavier polishedhardwoodbaton withbrassstrikinghead, reinforcedboots, practicalclose servicecap/lowhelmet withprotectedrim. Upgrade mustlooknoticeablybetter equipped withoutbecomingDemacianplateknight ormagicwarrior. No fullsuitglossyplate, nobigspikes, nogun, nohexgauntlets, nospear, nosecondaryfloatingbadge. Reference2 givesEXACTPiltoveremblem: centralverticalspire, roundeyelikelensattop, opengearhorseshoebase. Paintrecognizableemblem on physicalshieldandcoatstrapmatchingperspective. Fullbody facingRIGHT threequarterbattlefieldprofile, groundedstablealertstance, bothfeet/hands/wholebaton/wholeshieldvisible withwidepadding. Texturedpaintednavycloth, wornbrownleather, dullsteel/brass, restrainedhighlightsandwarmocclusion. Itmustlooklikeaprofessionallypaintedadditional1999HoMM3creature, NOT3Drender, notplasticfigurine, notanime/vector/Leagueplash. GenuinelyTRANSPARENTbackground nofloor/noletters/nolabels.",
+    "action_source_ledger": "assets/source/creatures/painted-v1/t1-t4/generation-ledger-v1.json",
+    "action_source_ledger_sha256": "9da66a550c881d7dc4b0f3e473fa50f7fdcb25905352c0e536cdbbbf2dcad322",
+    "painted_master": "assets/source/creatures/painted-v1/t1-t4/patrolWarden/master-v1.png",
+    "painted_master_sha256": "cf760afbc22e242c7d0bc802e80b0bcf9f0cd98977db89c495782d77061b01da",
+    "method": "Whole-source uniform cohort resampling and root registration only; no rigging, rendering, limb warping or invented poses"
+  },
+  "production_inputs": [
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/patrolWarden/master-v1.png",
+      "sha256": "cf760afbc22e242c7d0bc802e80b0bcf9f0cd98977db89c495782d77061b01da"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/patrolWarden/portrait-v1.png",
+      "sha256": "672832e99d1c9f13781600d6f4182d0d918bb8e0cf21e8f93b16063ef4b2e4c0"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/patrolWarden/isolated-source-map-v1.json",
+      "sha256": "384c6265d879adc5a3f6472d9be850dcbc9a7153e8c95b621fea635535f7e024"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/pose-roots-v1.json",
+      "sha256": "756e77614e53335d3625b84499e4409860e4cf8cce7ef6d0c05da08078ee1355"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/producer_v1.py",
+      "sha256": "a097e5a05400368c5740004cca6225a50730a18c2440af0c13d2ba676e7d58ad"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/extract_sources.py",
+      "sha256": "0338c4026998ef34834a4c76c400c177f51777dc686da70858373fc3a9eefd7b"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/generation-ledger-v1.json",
+      "sha256": "9da66a550c881d7dc4b0f3e473fa50f7fdcb25905352c0e536cdbbbf2dcad322"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/selected-cohorts-v1.json",
+      "sha256": "d6c313a901a77675cc068ae609a0296c14c9824c8c6852e67a4c8058d8238c30"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/patrolWarden/combat-v1.png",
+      "sha256": "e4cee616a2440f29805226025406e1920cdd007bbd29cd3df827cba1657500fe"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/patrolWarden/movement-v1.png",
+      "sha256": "48c2f344fcdb7a6f9e82df2bd8b221c41a82b43493dae2668c42dbfe0497590b"
+    }
+  ],
+  "recipe_type": "vcmi_animation",
+  "output_path": "Content/Sprites/runeterra/piltover/creatures/patrolWarden/battle.json",
+  "canvas": [
+    450,
+    400
+  ],
+  "pivot": {
+    "x": 197,
+    "y": 265
+  },
+  "groups": [
+    {
+      "group": 0,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g00-f000.png",
+          "sha256": "9d287941f87d42aeca47ce59ca52b390d917aca521a909e565e7ddd87bf34d17",
+          "source_sha256": "9d287941f87d42aeca47ce59ca52b390d917aca521a909e565e7ddd87bf34d17",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g00-f001.png",
+          "sha256": "1dd128c0196b86913388a71966374060be7b69a0da66ffee0af5fab625c7df5d",
+          "source_sha256": "1dd128c0196b86913388a71966374060be7b69a0da66ffee0af5fab625c7df5d",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g00-f002.png",
+          "sha256": "0fb0531be2937cbc5f915e8a7e9ba0602704675a6b58fb316dadba12b30c28e3",
+          "source_sha256": "0fb0531be2937cbc5f915e8a7e9ba0602704675a6b58fb316dadba12b30c28e3",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g00-f003.png",
+          "sha256": "8dc419eda2e4988866c416497a91d3c2546b98c1cfa35215cc429ff6790d8daa",
+          "source_sha256": "8dc419eda2e4988866c416497a91d3c2546b98c1cfa35215cc429ff6790d8daa",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g00-f004.png",
+          "sha256": "4eef84eb1d31ff97656e08bf03b930a7112a4195dce3ad2656201909daa1cca6",
+          "source_sha256": "4eef84eb1d31ff97656e08bf03b930a7112a4195dce3ad2656201909daa1cca6",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g00-f005.png",
+          "sha256": "81e0b4976a0ab75b9d1251651b285aba0a1ceff8f90104347729c9b9d821b91d",
+          "source_sha256": "81e0b4976a0ab75b9d1251651b285aba0a1ceff8f90104347729c9b9d821b91d",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 1,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g01-f000.png",
+          "sha256": "54bfd44eb2b9eb000688702a294442efcdfd1cdc9c1255ed253fe7663d6f42a5",
+          "source_sha256": "54bfd44eb2b9eb000688702a294442efcdfd1cdc9c1255ed253fe7663d6f42a5",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g01-f001.png",
+          "sha256": "b887d3e450d70ca18dc4a740e2520ddddf5ed303acae56f576831811feffecd5",
+          "source_sha256": "b887d3e450d70ca18dc4a740e2520ddddf5ed303acae56f576831811feffecd5",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g01-f002.png",
+          "sha256": "b887d3e450d70ca18dc4a740e2520ddddf5ed303acae56f576831811feffecd5",
+          "source_sha256": "b887d3e450d70ca18dc4a740e2520ddddf5ed303acae56f576831811feffecd5",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g01-f003.png",
+          "sha256": "da0ee13ed58c50d1e943663341eb8bcbea4b7380ac59bf3b1e2d5ad804e3a817",
+          "source_sha256": "da0ee13ed58c50d1e943663341eb8bcbea4b7380ac59bf3b1e2d5ad804e3a817",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g01-f004.png",
+          "sha256": "da0ee13ed58c50d1e943663341eb8bcbea4b7380ac59bf3b1e2d5ad804e3a817",
+          "source_sha256": "da0ee13ed58c50d1e943663341eb8bcbea4b7380ac59bf3b1e2d5ad804e3a817",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g01-f005.png",
+          "sha256": "dc70cc732e2bfb48c588f02269117ce414519f1f751cf39fdc9dca07db2709a3",
+          "source_sha256": "dc70cc732e2bfb48c588f02269117ce414519f1f751cf39fdc9dca07db2709a3",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 6,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g01-f006.png",
+          "sha256": "dc70cc732e2bfb48c588f02269117ce414519f1f751cf39fdc9dca07db2709a3",
+          "source_sha256": "dc70cc732e2bfb48c588f02269117ce414519f1f751cf39fdc9dca07db2709a3",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 2,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g02-f000.png",
+          "sha256": "54bfd44eb2b9eb000688702a294442efcdfd1cdc9c1255ed253fe7663d6f42a5",
+          "source_sha256": "54bfd44eb2b9eb000688702a294442efcdfd1cdc9c1255ed253fe7663d6f42a5",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 3,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g03-f000.png",
+          "sha256": "847c8f1ff0752cbd78142c2999e09dd96d2460e4cf71e85a22171c972aa3d6fc",
+          "source_sha256": "847c8f1ff0752cbd78142c2999e09dd96d2460e4cf71e85a22171c972aa3d6fc",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g03-f001.png",
+          "sha256": "54bfd44eb2b9eb000688702a294442efcdfd1cdc9c1255ed253fe7663d6f42a5",
+          "source_sha256": "54bfd44eb2b9eb000688702a294442efcdfd1cdc9c1255ed253fe7663d6f42a5",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 4,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g04-f000.png",
+          "sha256": "32d64439e87f8524605d85ac2c611cf95158a251f709a4a5e8182cdd610846ea",
+          "source_sha256": "32d64439e87f8524605d85ac2c611cf95158a251f709a4a5e8182cdd610846ea",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 5,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g05-f000.png",
+          "sha256": "929dd7bd2c05aef54f05b6b72a9ba12f0b33c21d9b6bcbdb4fd3d04517b9c651",
+          "source_sha256": "929dd7bd2c05aef54f05b6b72a9ba12f0b33c21d9b6bcbdb4fd3d04517b9c651",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g05-f001.png",
+          "sha256": "e53ab261faf2920a95da6a688abc8bc8404acb35a9453f0ddcd365715f98b240",
+          "source_sha256": "e53ab261faf2920a95da6a688abc8bc8404acb35a9453f0ddcd365715f98b240",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g05-f002.png",
+          "sha256": "6714943f204d4b90d42d8e8bb52c054dc9da5309bfdf05be6f368b604a641b56",
+          "source_sha256": "6714943f204d4b90d42d8e8bb52c054dc9da5309bfdf05be6f368b604a641b56",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g05-f003.png",
+          "sha256": "d2365f1a95fe797f8d5468490cd11a664dbcadf0ac064c91b7de1f3c242e3bbf",
+          "source_sha256": "d2365f1a95fe797f8d5468490cd11a664dbcadf0ac064c91b7de1f3c242e3bbf",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 7,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g07-f000.png",
+          "sha256": "54bfd44eb2b9eb000688702a294442efcdfd1cdc9c1255ed253fe7663d6f42a5",
+          "source_sha256": "54bfd44eb2b9eb000688702a294442efcdfd1cdc9c1255ed253fe7663d6f42a5",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g07-f001.png",
+          "sha256": "1c693e51ea8230e6c6e0e0651ba37151243c24e5670c8a70cb3390141b839358",
+          "source_sha256": "1c693e51ea8230e6c6e0e0651ba37151243c24e5670c8a70cb3390141b839358",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g07-f002.png",
+          "sha256": "48a806c934240facd27d341f028439154a13edba8cb438faa3ec14a8638d6197",
+          "source_sha256": "48a806c934240facd27d341f028439154a13edba8cb438faa3ec14a8638d6197",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 8,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g08-f000.png",
+          "sha256": "48a806c934240facd27d341f028439154a13edba8cb438faa3ec14a8638d6197",
+          "source_sha256": "48a806c934240facd27d341f028439154a13edba8cb438faa3ec14a8638d6197",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g08-f001.png",
+          "sha256": "1c693e51ea8230e6c6e0e0651ba37151243c24e5670c8a70cb3390141b839358",
+          "source_sha256": "1c693e51ea8230e6c6e0e0651ba37151243c24e5670c8a70cb3390141b839358",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g08-f002.png",
+          "sha256": "54bfd44eb2b9eb000688702a294442efcdfd1cdc9c1255ed253fe7663d6f42a5",
+          "source_sha256": "54bfd44eb2b9eb000688702a294442efcdfd1cdc9c1255ed253fe7663d6f42a5",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 11,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g11-f000.png",
+          "sha256": "970800372d0f603e5f95c92703ce31c6e23018290e6f2ec495f7d3ee74493686",
+          "source_sha256": "970800372d0f603e5f95c92703ce31c6e23018290e6f2ec495f7d3ee74493686",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g11-f001.png",
+          "sha256": "ee45d3e5ae1a36f96c152e285f9ae82c26f5af8b2e27e7d1c5c2a2eef5d7df0f",
+          "source_sha256": "ee45d3e5ae1a36f96c152e285f9ae82c26f5af8b2e27e7d1c5c2a2eef5d7df0f",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g11-f002.png",
+          "sha256": "8da2074b04a9969ead1a1aa3f51e54c6c0e70a1c777517f01e184702d6039c6a",
+          "source_sha256": "8da2074b04a9969ead1a1aa3f51e54c6c0e70a1c777517f01e184702d6039c6a",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g11-f003.png",
+          "sha256": "5f8ca53b2ff75d06f529fcefd199e9aa3344df91905b0ab5dcc0334c23f2da52",
+          "source_sha256": "5f8ca53b2ff75d06f529fcefd199e9aa3344df91905b0ab5dcc0334c23f2da52",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 12,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g12-f000.png",
+          "sha256": "1fab7c32a5cb1730b42be3e2bd7c9ae3928a2e564d9cd7b1e14e9bf938a50311",
+          "source_sha256": "1fab7c32a5cb1730b42be3e2bd7c9ae3928a2e564d9cd7b1e14e9bf938a50311",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g12-f001.png",
+          "sha256": "7b59e84199c1b7e0e6a06b31efe683c289a79d3459593c2bcf73f6f865a87905",
+          "source_sha256": "7b59e84199c1b7e0e6a06b31efe683c289a79d3459593c2bcf73f6f865a87905",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g12-f002.png",
+          "sha256": "36e57a8e863680afec88ce944472708c26921bebb558202e94aaa3578b559389",
+          "source_sha256": "36e57a8e863680afec88ce944472708c26921bebb558202e94aaa3578b559389",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g12-f003.png",
+          "sha256": "34ba557a78898b7fa602b07b692083d18f37898662b099313c10279e2c31e53f",
+          "source_sha256": "34ba557a78898b7fa602b07b692083d18f37898662b099313c10279e2c31e53f",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 13,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g13-f000.png",
+          "sha256": "e41dc64488a232e923f7dd4fc4f29838abd065f5d1b9a3d121eae6cfe479fc25",
+          "source_sha256": "e41dc64488a232e923f7dd4fc4f29838abd065f5d1b9a3d121eae6cfe479fc25",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g13-f001.png",
+          "sha256": "f1117566993eccf0a50ea966b627c426789319c0078ce6e582e2fcaa04a9c74c",
+          "source_sha256": "f1117566993eccf0a50ea966b627c426789319c0078ce6e582e2fcaa04a9c74c",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g13-f002.png",
+          "sha256": "c513905cc1f789d5a98f3efcfa6d1006bc64434e81dde8687bc782bb056741dc",
+          "source_sha256": "c513905cc1f789d5a98f3efcfa6d1006bc64434e81dde8687bc782bb056741dc",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g13-f003.png",
+          "sha256": "0b12847253ab7fb2b1cccd447e9b3873b5a8c1bdf30257cee41d4e1c9ccf344c",
+          "source_sha256": "0b12847253ab7fb2b1cccd447e9b3873b5a8c1bdf30257cee41d4e1c9ccf344c",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 22,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/patrolWarden/battle/g22-f000.png",
+          "sha256": "d2365f1a95fe797f8d5468490cd11a664dbcadf0ac064c91b7de1f3c242e3bbf",
+          "source_sha256": "d2365f1a95fe797f8d5468490cd11a664dbcadf0ac064c91b7de1f3c242e3bbf",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    }
+  ]
+}

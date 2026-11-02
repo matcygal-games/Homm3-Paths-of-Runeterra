@@ -1,0 +1,354 @@
+{
+  "battle_canvas": [
+    450,
+    400
+  ],
+  "battle_root": [
+    197,
+    266
+  ],
+  "companions": {
+    "encounter_root": [
+      44,
+      60
+    ],
+    "map_root": [
+      76,
+      60
+    ],
+    "portrait_crop": [
+      130,
+      5,
+      240,
+      140
+    ],
+    "pose": "ready",
+    "scale": 0.145
+  },
+  "excluded_source_keys": [
+    {
+      "pose": "turn2",
+      "reason": "Preserved near-front pose study; turn phase consumer review pending."
+    },
+    {
+      "islands": [
+        10
+      ],
+      "plate": "melee-v1-raw.png",
+      "reason": "Lower contact and recovery touch; combined source island excluded and independently painted separated down-repair source used."
+    }
+  ],
+  "groups": {
+    "0": [
+      "near0",
+      "near1",
+      "near2",
+      "far0",
+      "far1",
+      "far2"
+    ],
+    "1": [
+      "ready",
+      "turn0"
+    ],
+    "11": [
+      "up0",
+      "up1",
+      "up2",
+      "ready"
+    ],
+    "12": [
+      "front0",
+      "front1",
+      "front2",
+      "ready"
+    ],
+    "13": [
+      "down0",
+      "down1",
+      "down2",
+      "ready"
+    ],
+    "2": [
+      "ready"
+    ],
+    "20": [
+      "ready",
+      "near0"
+    ],
+    "21": [
+      "far2",
+      "ready"
+    ],
+    "22": [
+      "death3"
+    ],
+    "3": [
+      "hurt0",
+      "hurt1",
+      "ready"
+    ],
+    "4": [
+      "defend",
+      "ready"
+    ],
+    "5": [
+      "death0",
+      "death1",
+      "death2",
+      "death3"
+    ],
+    "7": [
+      "ready",
+      "turn0",
+      "turn1",
+      "turn3"
+    ],
+    "8": [
+      "turn3",
+      "turn1",
+      "turn0",
+      "ready"
+    ]
+  },
+  "plates": {
+    "down-repair-v1-raw.png": {
+      "expected_islands": 2,
+      "poses": {
+        "down1": {
+          "island": 1,
+          "root": [
+            540,
+            690
+          ]
+        },
+        "down2": {
+          "island": 0,
+          "root": [
+            1515,
+            690
+          ]
+        }
+      },
+      "scale": 0.15,
+      "source": "boardingCaptain/down-repair-v1-raw.png",
+      "source_sha256": "fec1ab3582fcf2d06c09b52ddc480c280cd23fd30382de9f9dc10b39fca19b17"
+    },
+    "far-walk-v1-raw.png": {
+      "expected_islands": 3,
+      "poses": {
+        "far0": {
+          "island": 1,
+          "root": [
+            375,
+            673
+          ]
+        },
+        "far1": {
+          "island": 0,
+          "root": [
+            1120,
+            673
+          ]
+        },
+        "far2": {
+          "island": 2,
+          "root": [
+            1810,
+            673
+          ]
+        }
+      },
+      "scale": 0.14,
+      "source": "boardingCaptain/far-walk-v1-raw.png",
+      "source_sha256": "d3a85c637e732ef9e882dd25f984ef05b0a5b44ea1f3137cbf9c3e97a33ca807"
+    },
+    "melee-v1-raw.png": {
+      "expected_islands": 11,
+      "poses": {
+        "down0": {
+          "island": 8,
+          "root": [
+            175,
+            1067
+          ]
+        },
+        "front0": {
+          "island": 5,
+          "root": [
+            175,
+            758
+          ]
+        },
+        "front1": {
+          "island": 7,
+          "root": [
+            550,
+            758
+          ]
+        },
+        "front2": {
+          "island": 6,
+          "root": [
+            920,
+            758
+          ]
+        },
+        "up0": {
+          "island": 0,
+          "root": [
+            175,
+            430
+          ]
+        },
+        "up1": {
+          "island": 1,
+          "root": [
+            550,
+            430
+          ]
+        },
+        "up2": {
+          "island": 2,
+          "root": [
+            920,
+            430
+          ]
+        }
+      },
+      "scale": 0.275,
+      "source": "boardingCaptain/melee-v1-raw.png",
+      "source_sha256": "2e854a104e786e8fffb8e170edcbb6cde6999ab3dc2364f62ff47c64b9be7d01"
+    },
+    "near-walk-v1-raw.png": {
+      "expected_islands": 3,
+      "poses": {
+        "near0": {
+          "island": 0,
+          "root": [
+            375,
+            690
+          ]
+        },
+        "near1": {
+          "island": 2,
+          "root": [
+            1120,
+            690
+          ]
+        },
+        "near2": {
+          "island": 1,
+          "root": [
+            1810,
+            690
+          ]
+        }
+      },
+      "scale": 0.13,
+      "source": "boardingCaptain/near-walk-v1-raw.png",
+      "source_sha256": "71e046654edf115d572b26769c7c407de7fe21003f82df4629dd3e2deb94d9b8"
+    },
+    "reactions-v1-raw.png": {
+      "expected_islands": 12,
+      "poses": {
+        "death0": {
+          "island": 8,
+          "root": [
+            175,
+            1010
+          ]
+        },
+        "death1": {
+          "island": 9,
+          "root": [
+            550,
+            1010
+          ]
+        },
+        "death2": {
+          "island": 10,
+          "root": [
+            865,
+            1017
+          ]
+        },
+        "death3": {
+          "island": 11,
+          "root": [
+            1245,
+            1017
+          ]
+        },
+        "defend": {
+          "island": 2,
+          "root": [
+            550,
+            370
+          ]
+        },
+        "hurt0": {
+          "island": 1,
+          "root": [
+            900,
+            370
+          ]
+        },
+        "hurt1": {
+          "island": 3,
+          "root": [
+            1280,
+            370
+          ]
+        },
+        "ready": {
+          "island": 0,
+          "root": [
+            175,
+            370
+          ]
+        },
+        "turn0": {
+          "island": 4,
+          "root": [
+            175,
+            750
+          ]
+        },
+        "turn1": {
+          "island": 5,
+          "root": [
+            550,
+            750
+          ]
+        },
+        "turn2": {
+          "island": 6,
+          "root": [
+            905,
+            750
+          ]
+        },
+        "turn3": {
+          "island": 7,
+          "root": [
+            1260,
+            750
+          ]
+        }
+      },
+      "scale": 0.245,
+      "source": "boardingCaptain/reactions-v1-raw.png",
+      "source_sha256": "21329415712f332521a2c9a8602ce966a1f490567fdf54409152152512e398a6"
+    }
+  },
+  "unit": "boardingCaptain",
+  "unresolved": [
+    "Independent actual1x gait/leg-ownership and costume/root continuity review pending",
+    "Displayed native paired-turn facing/reposition continuity not yet verified",
+    "Stock body preview/companions require bounded pixel inspection",
+    "Regional crest native1x legibility and artistic acceptance remain pending",
+    "Canonical source/archive admission and native gameplay not run"
+  ],
+  "version": 1
+}

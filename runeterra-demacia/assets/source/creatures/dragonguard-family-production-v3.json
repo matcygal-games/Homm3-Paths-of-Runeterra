@@ -1,0 +1,103 @@
+{
+  "units": [
+    {
+      "id": "dragonguard",
+      "source_revision": 3,
+      "verification": {
+        "path": "assets/source/creatures/dragonguard/dragonguard-rig-v3/source-production-verification-v3.json",
+        "sha256": "aec9bfc560cc7785fe2c998d751d1c662cb1a7fc3dfef7d6551ade8122711727"
+      },
+      "blend": {
+        "path": "assets/source/creatures/dragonguard/dragonguard-rig-v3/dragonguard-dragonguard-rig-v3.blend",
+        "sha256": "1201b1b15dcdfd4850270b279c92ff1768c7726025c95dac5a57d44c0a8aea7f"
+      },
+      "raw_pose_metadata": {
+        "path": "assets/source/creatures/dragonguard/dragonguard-rig-v3/dragonguard-production-v3.json",
+        "sha256": "f625789aa291e508b815b24660c581a07afd562ae2d2f88114aa4dd4c995780f"
+      },
+      "actual_rendered_frames": 54,
+      "minimum_source_gutter_pixels": 36,
+      "groups": {
+        "0": 6,
+        "1": 4,
+        "2": 4,
+        "3": 4,
+        "4": 4,
+        "5": 6,
+        "7": 4,
+        "8": 4,
+        "11": 6,
+        "12": 6,
+        "13": 6,
+        "22": 1
+      },
+      "actions_native_contact": {
+        "path": "assets/source/creatures/dragonguard/dragonguard-rig-v3/raw-all-actions-native-contact-v1.png",
+        "sha256": "ab3ee23c7c7f234700d2ae97188feb356a0748ef6a40badc5c5726ea96336f06"
+      },
+      "physical_contract": "One rigid petricite polearm, both real IK hands fixed .36m apart on same shaft, persistent proper arm/leg lengths, true mesh floor constraint and final horizontal blade roll.",
+      "open_issues": [
+        "Raw anatomy/materials remain primitive volumetric guide; use own master and actual raw-pose-target painted finishing.",
+        "No native renderer, final equipment/crest, animation pacing, shadow or battle acceptance."
+      ],
+      "status": "raw source ready for first controlled painted action pilot; no active recipe changes"
+    },
+    {
+      "id": "veteranDragonguard",
+      "source_revision": 3,
+      "verification": {
+        "path": "assets/source/creatures/veteranDragonguard/dragonguard-rig-v3/source-production-verification-v3.json",
+        "sha256": "4b8d3ee52ce8f59fb1afe42aa0460d09dab46f5eb95a52ef5d88389973498bf4"
+      },
+      "blend": {
+        "path": "assets/source/creatures/veteranDragonguard/dragonguard-rig-v3/veteranDragonguard-dragonguard-rig-v3.blend",
+        "sha256": "d23b24e0a3d329752f87cd77c7c36044a084b056f56eb8a1cdc9f87f39d5e65d"
+      },
+      "raw_pose_metadata": {
+        "path": "assets/source/creatures/veteranDragonguard/dragonguard-rig-v3/dragonguard-production-v3.json",
+        "sha256": "aea3eaf71f8382f1f882271b05f3f69af730f69e607a2d9cf4c2acdd1ae2877c"
+      },
+      "actual_rendered_frames": 54,
+      "minimum_source_gutter_pixels": 36,
+      "groups": {
+        "0": 6,
+        "1": 4,
+        "2": 4,
+        "3": 4,
+        "4": 4,
+        "5": 6,
+        "7": 4,
+        "8": 4,
+        "11": 6,
+        "12": 6,
+        "13": 6,
+        "22": 1
+      },
+      "actions_native_contact": {
+        "path": "assets/source/creatures/veteranDragonguard/dragonguard-rig-v3/raw-all-actions-native-contact-v1.png",
+        "sha256": "4816c448ad50a4f3b58b86ee2abb566f534d76a5a28e4d5be20f8fb5ae5f0e6b"
+      },
+      "physical_contract": "One rigid petricite polearm, both real IK hands fixed .36m apart on same shaft, persistent proper arm/leg lengths, true mesh floor constraint and final horizontal blade roll.",
+      "open_issues": [
+        "Raw anatomy/materials remain primitive volumetric guide; use own master and actual raw-pose-target painted finishing.",
+        "No native renderer, final equipment/crest, animation pacing, shadow or battle acceptance."
+      ],
+      "status": "raw source ready for first controlled painted action pilot; no active recipe changes"
+    }
+  ],
+  "renderer_provenance": {
+    "path": "assets/source/creatures/rig-production-tools-v1.json",
+    "sha256": "c6d4c8489f3fb1981e2c927c9d14b7ca5ca54316875c4519a00f72283580164a"
+  },
+  "source_helper": {
+    "path": "scripts/creature_dragonguard_rig.py",
+    "sha256": "1a730696afcf722024dfc23f8ec085e3b64784be5821ffa6c690cac9199af54e"
+  },
+  "review_helper": {
+    "path": "scripts/creature_dragonguard_review.py",
+    "sha256": "72c4b4d32c4f02752c82e6ad7403ae01e411e976ce8c572962cb26cb9a92a7ed"
+  },
+  "history": "v1 preserved a failed foot-roll orientation draft; v2 built/rendered checkpoints and exposed upright death blade forcing body above floor. v3 corrects actual polearm roll/relaxes both legs before full108source renders. No source history overwritten.",
+  "active_assets_modified": false,
+  "visual_approval_granted": false
+}

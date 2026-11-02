@@ -1,0 +1,202 @@
+{
+  "status": "design proposal",
+  "visual_approval_granted": false,
+  "phase": "architecture pilot",
+  "producer": "scripts/targon_town_art.py",
+  "producer_sha256": "732296de4b7ed23f9b2085e93f6803dd72ccc9e65de0db8726895408540d6436",
+  "scene": "assets/source/town/buildings/targon-architecture-pilot-v2.blend",
+  "scene_sha256": "38bb64c797c17f21ff98bdad3a583d3c7a04b62793f4186a30d5610074230c58",
+  "canvas": [
+    800,
+    374
+  ],
+  "camera": {
+    "type": "PERSP",
+    "lens_mm": 43,
+    "location": [
+      0,
+      -26,
+      17
+    ],
+    "target": [
+      0,
+      0,
+      1
+    ]
+  },
+  "terrain": "assets/source/town/terrain-v1.png",
+  "terrain_sha256": "a1329b82cd020c792caf9f3a9996212756520a8dd939a5e30b29cea258a6b137",
+  "image_generation_used": false,
+  "external_texture_dependencies": [],
+  "threads": 4,
+  "states": {
+    "civic": "capitol",
+    "fortifications": "castle",
+    "guild": "mageGuild4",
+    "trailguard": "dwellingUpLvl1",
+    "archers": "dwellingUpLvl2",
+    "ibex": "dwellingUpLvl3",
+    "lunari": "dwellingUpLvl4",
+    "sunhawks": "dwellingUpLvl5",
+    "sunforgers": "dwellingUpLvl6",
+    "stellacorns": "dwellingUpLvl7",
+    "tavern": "tavern",
+    "marketplace": "marketplace",
+    "blacksmith": "blacksmith",
+    "silo": "resourceSilo",
+    "monastery": "special4",
+    "starforge": "extraTownHall",
+    "reliquary": "special3",
+    "solariTemple": "special1",
+    "lunariShrine": "special2",
+    "grail": "grail"
+  },
+  "ordinary_parcels": 16,
+  "independent_annexes": 3,
+  "grail": 1,
+  "geometry_projection_bounds": {
+    "civic": [
+      324.9,
+      56.66,
+      427.14,
+      169.42
+    ],
+    "fortifications": [
+      545.55,
+      -6.88,
+      791.71,
+      139.47
+    ],
+    "guild": [
+      441.29,
+      58.73,
+      536.89,
+      183.39
+    ],
+    "trailguard": [
+      20.44,
+      193.59,
+      191.47,
+      318.46
+    ],
+    "archers": [
+      192.76,
+      85.68,
+      306.88,
+      171.99
+    ],
+    "ibex": [
+      123.41,
+      167.22,
+      305.25,
+      275.82
+    ],
+    "lunari": [
+      628.45,
+      197.86,
+      739.7,
+      299.58
+    ],
+    "sunhawks": [
+      14.52,
+      41.82,
+      195.07,
+      154.01
+    ],
+    "sunforgers": [
+      290.89,
+      183.85,
+      456.09,
+      305.78
+    ],
+    "stellacorns": [
+      212.09,
+      5.78,
+      403.58,
+      120.17
+    ],
+    "tavern": [
+      538.03,
+      245.71,
+      730.53,
+      370.45
+    ],
+    "marketplace": [
+      177.04,
+      243.84,
+      405.91,
+      361.4
+    ],
+    "blacksmith": [
+      17.83,
+      251.18,
+      182.03,
+      368.31
+    ],
+    "silo": [
+      459.67,
+      267.75,
+      543.42,
+      339.25
+    ],
+    "monastery": [
+      76.88,
+      104.38,
+      208.33,
+      234.32
+    ],
+    "starforge": [
+      380.11,
+      258.32,
+      539.47,
+      368.51
+    ],
+    "reliquary": [
+      375.08,
+      121.03,
+      437.88,
+      169.58
+    ],
+    "solariTemple": [
+      539.99,
+      137.29,
+      601.49,
+      186.66
+    ],
+    "lunariShrine": [
+      734.91,
+      277.58,
+      792.55,
+      319.37
+    ],
+    "grail": [
+      442.49,
+      209.3,
+      466.58,
+      227.63
+    ]
+  },
+  "portability": {
+    "image_paths": "relative or none",
+    "file_browser_directories": "//",
+    "render_path": "//pilot-review.png"
+  },
+  "outputs": [
+    {
+      "source": "assets/reviews/town/architecture-pilot-v1/full-town-layer.png",
+      "sha256": "7313f6ce9ed594fd5bc78d480fd38967d39c192f35d72669d9506946090df6ac"
+    },
+    {
+      "source": "assets/reviews/town/architecture-pilot-v1/partial-town-layer.png",
+      "sha256": "98041fa27807a194d98c4a1466f2e13f5c18ddae099bfeebd300609565fe0ee9"
+    }
+  ],
+  "incomplete": [
+    "all 35 individually rendered states",
+    "selected production recipes",
+    "native exposed masks and clicks",
+    "construction and map/UI views",
+    "siege art",
+    "native visual review"
+  ]
+}

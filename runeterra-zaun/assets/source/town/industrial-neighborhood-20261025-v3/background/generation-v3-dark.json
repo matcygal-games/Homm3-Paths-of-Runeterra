@@ -1,0 +1,45 @@
+{
+  "status": "authored configuration",
+  "provider": "OpenAI built-in imagegen",
+  "model": null,
+  "model_note": "Tool did not expose concrete model identifier",
+  "created": "2026-10-25",
+  "image_generation_used": true,
+  "method": "Genuine painted2D mood/lighting/graffiti edit followed only by RGBA conversion and native800x374 LANCZOS resizing; no3D or code-drawn art",
+  "master": "assets/source/town/industrial-neighborhood-20261025-v3/background/master-v3-dark.png",
+  "master_sha256": "5da74497bc16b61b6afb7e9fcc196d226bc8b95c247c387f3670369417b116dd",
+  "canvas": [
+    800,
+    374
+  ],
+  "prompt": "EDIT FIRST IMAGE ONLY: an empty800x374 Zaun town backdrop. Current warmgold daylight atmosphere is USER REJECTED. Make it substantially DARKER, sinister CHEMPUNK at industrial midnight, oppressive smoky charcoal/nearblack soot, deep oxblood-brown corroded iron and dark purple shadow recesses. Toxic luminous CHEMTECH GREEN is the dominant emitted light, small violet SHIMMER windows/lamps, acidic green reflections in dark wet brick and pipework. Remove sunny amber/gold daylight feel, sky becomes almost black/green smoky smog behind ominous industrial silhouettes. Keep rich readable original Heroes of Might and Magic III painted2D texture at native size, don't crush silhouettes into unreadableblack. Dark undercity menace and contraband chemical industry, not generic gothic skulls or demons. Add a few weathered green/purple spraypaint regionalZaun respirator-mask crests on EXISTING contextual wall surfaces at farleft/rightedges and on existingpavement around (320,252) and (390,186); tiny worn chempunk graffiti, not text/signs/cogs/Glascfamily logos. Thirdreference is correctZauncrest. SECOND IMAGE IS PLACEMENT GUIDE ONLY, DO NOT PAINT ITS BUILDINGS OR OUTLINES. The full building plots and entrances are ALREADYplanned and MUST KEEP exact terrain levels, empty dry brick streets, ground perspective, composition, size and geometry. ALL firstimage architectural silhouettes remain exactly where they are. No added architecture/walls/barriers in open ground. No missing buildings are to be filled in, actual functional buildings will be separate. Streets remain connected and clear under ALL guidebuildingfootprints; Sump stairright(545,245), fort gatecourtx74..124 y142..159 supported, forgefoundationx668..763 y251..316 fullydry. Tiny deliberatewaterinlet bottomright ONLY as firstimage; dockLEFTapproachx722..740 y334..345 fullydry, rightboathullx745..796 y337..367 wet. Do not enlargewater or addstairs/fences/cliffs. Make this exactlysame cohesiveurbanplace at night with dark sinister chempunk green mood, NOT field, isolatedtilelots or repeatedrockyterraces. Existing buildings preserved separately; output EMPTYBACKGROUND ONLY wide800:374, no annotations/people/letters/Blender/3D/camera distortion.\n",
+  "prompt_file": "assets/source/town/industrial-neighborhood-20261025-v3/background/prompt-v5-dark.txt",
+  "prompt_sha256": "ada1766ba8b97297e7abf040368b0c0aaadc4442497894c91cd79b07fe9831ab",
+  "dependencies": [
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v3/background/raw-v5-dark.png",
+      "sha256": "b64c8f25464ce355f5517f562f9bb14fb103a6054ad261dda335c32406b2ee21"
+    },
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v3/background/master-v3-dark.png",
+      "sha256": "5da74497bc16b61b6afb7e9fcc196d226bc8b95c247c387f3670369417b116dd"
+    },
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v3/background/prompt-v5-dark.txt",
+      "sha256": "ada1766ba8b97297e7abf040368b0c0aaadc4442497894c91cd79b07fe9831ab"
+    },
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v3/background/master-v2.png",
+      "sha256": "1143946437a8e849284d4e7b361b2894365e5d192a3ec4ab78ff8bc3f3fb1513"
+    }
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; prompted and technically resized by Codex",
+    "redistribution": "unresolved; release prohibited"
+  },
+  "visual_approval_granted": false,
+  "source_pins": {
+    "assets/source/town/industrial-neighborhood-20261025-v3/background/water-mask-v2.png": "718a85d2ce329cbcf95a11dd9df8d2fad4883350a5dc8d3d639f6c2ecc1ddec0"
+  },
+  "shore_note": "Fixed planned inlet permission mask preserved as a geometry constraint; actual newly painted shoreline/support still requires pixel review, not inferred from this mask."
+}

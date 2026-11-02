@@ -1,0 +1,75 @@
+NOXUS AXE / MINOTAUR TECHNICAL CANDIDATES — 20 OCTOBER 2026
+
+Status: authored configuration. No native runtime, final art, rights or release
+acceptance is granted. No manifest, stage, content dictionary or desktop changes.
+
+Executed closure:
+  runeterra-demacia/.venv/Scripts/python.exe -B
+    runeterra-noxus/scripts/art_axe_finish.py --audit-owned
+  exit 0; 24/24 selected logical outputs, 322 actual physical files,
+  274 actual battle frame references, zero errors; two complete compile passes
+  produced identical file hashes, and every selected file matched on disk.
+
+Receipt:
+  build/reports/art-start-20261020/human-brutes-finish-v1/
+    audit-1792528400959410600.json
+
+Families:
+  Axe Reckoner:         76 battle frames; 15 native action groups.
+  Veteran Axe Reckoner: 76 battle frames; 15 native action groups.
+  Minotaur Reckoner:    52 battle frames; 12 native action groups.
+  Veteran Minotaur:     70 battle frames; 15 native action groups.
+All six assets per family are compiled: battle/map animations, large/small
+portraits and left/right attack icons. The count includes their actual referenced
+PNG files, not a claim that 322 different paintings were generated.
+
+Axe finish sources and extraction:
+  assets/source/creatures/<unit>/painted-v1/focused-action-v2/
+  assets/source/creatures/<unit>/painted-v1/finish-v3/
+  scripts/art_axe_finish.py --assemble --compile
+Real saved focused paintings provide all melee and shooting directions. Source
+alpha-island ownership preserves original kept RGBA pixels and excludes other
+principal figures. A single uniform scale applies to each painted action cohort;
+no code generates a pose or stretches an individual frame to its weapon bounds.
+The historical walk/fidget/idle/hit/defend/death painted frames stay selected.
+
+Source half-turn 7 goes canonical-right toward the front midpoint. Source half-
+turn 8 reverses those genuine right-to-front drawings, because the engine flips
+the actor between the two phases. The front midpoint is held one tick; this is
+documented timing, not a claim of a new painted interpolation. All four families
+pass exact half-turn source reversal and final death/corpse equality checks.
+
+The Axe's upper/front/lower shot sequences were inspected as actual paintings.
+Each releases its physical axe with an empty right hand at source index 4,
+matching content's one-based attackClimaxFrame 5. The engine owns the projectile;
+the character painting does not add a second flying axe. Exact projectile-origin
+alignment and native playback remain unobserved.
+
+Minotaur recovery:
+  scripts/art_minotaur_finish.py --check -> exit 0; 122 frames; zero errors.
+  Three selected recipes (both battles plus repaired base attackRight) compiled
+  with no errors in compiler/compile-1792527961600129700.json.
+  Existing finish-v1 sources retain genuine focused walk, recoil and upward
+  strike repairs, explicit blade ownership and independent Veteran cleave poses.
+  Final-death/corpse selection avoids a jump to another dropped-weapon layout.
+
+Pixel review performed:
+  Inspected both Minotaur full sequence overviews and native turn-order strip;
+  both Axe full sequence overviews, native upward shot and half-turn contacts;
+  the actual focused up/front/down melee and diagonal throw masters, original
+  front shot and original reactions. Action contacts and lossless animated WebP
+  previews are under each family's assets/reviews/creatures/<unit>/finish-v3/
+  (Axe) or finish-v1/ (Minotaur). These are offline previews, not VCMI captures.
+
+Still incomplete:
+  Two focused single-figure leg-only edits were executed and preserved as
+  focused-action-v2/map-leg-only-edit-v5.png with exact generation sidecars.
+  Both repeat the dominant thigh lead; neither is selected as a successful gait
+  correction. Map/walk lead-leg continuity, precise motion weight, cross-cohort
+  hand/weapon consistency, native contact/timing, official crest fidelity and
+  final artistic approval remain pending. Do not promote these candidates to
+  accepted based on the technical receipt. Provider model ID is not exposed;
+  redistribution rights remain unresolved and no licence was invented.
+
+Original masters, rejected iterations and prior receipts remain preserved.
+Native statistics, abilities, costs, growth, roster and balance are unchanged.

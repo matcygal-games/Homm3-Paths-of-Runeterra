@@ -1,0 +1,31 @@
+{
+  "recipe_type": "raster",
+  "production_status": "painted-master-complete-unapproved",
+  "canvas": [
+    32,
+    32
+  ],
+  "output_path": "Content/Sprites/runeterra/piltover/heroes/jayce/specialtySmall.png",
+  "source": "assets/source/heroes/painted-v1/jayce/specialtySmall.png",
+  "source_sha256": "a44be0c9f6c59ca5d9d025206a412383fe5c464210f0cc0637967b4b935ec727",
+  "source_canvas": [
+    32,
+    32
+  ],
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in imagegen, inherited own-creature and own-background sources",
+    "model": "not exposed",
+    "prompt": "No new imagegen call: Fixed square crop from own painted portrait; no new pixels except resampling. Own living Dockyard Lifter operator/cage/control portrait; no autonomous robot classification.",
+    "painted_master": "assets/source/heroes/painted-v1/jayce/specialty-master.png",
+    "painted_master_sha256": "fdd11fe70e95a13dc5744c8cf74a1ef4a24bb5a0a1f3b42281b77f63ada26c36",
+    "master_canvas": [
+      1024,
+      1024
+    ],
+    "derivation": "LANCZOS same-master fixed native crop",
+    "small_source_crop": null,
+    "producer": "assets/source/heroes/painted-v1/derive_native.py"
+  }
+}

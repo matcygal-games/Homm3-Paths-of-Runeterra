@@ -1,0 +1,54 @@
+{
+  "asset_sha256": "c736700046a0aaa7bda762c8ab11f94c9396c8adc5f87c54166f7d1b020889e8",
+  "checks": {
+    "distinct_equipment": true,
+    "distinct_silhouette": true,
+    "native_scale": true,
+    "not_recolored_original": true,
+    "upgrade_readability": false
+  },
+  "comparison_sha256": "c283a76f125843e3ce8a234ac110ebfd5b4cf1d61c53369164678ee025ce3741",
+  "comparison_sheet": "assets/reviews/creatures/beast-map-registered-v1/native-comparison.png",
+  "credits": {
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "findings": [
+    "Viewed six actual alpha-composited map atlases, explicit registration references and all40native frames at1:1.",
+    "Actual walking phases or thorn-wing flight poses, not copied idle silhouettes; all native RGBA frame hashes are distinct within their own unit.",
+    "Exactly one fixed global scale per unit and integer translation from explicit common row/column ground-plane or sternum landmarks.",
+    "No per-pose bbox normalization, body warping or world-foot snap; source foot bob and wing arcs remain in the native images.",
+    "Separate strong-alpha connected figures permit complete flying poses despite overlapping rectangular row bands; detached near-transparent atlas noise is not imported.",
+    "No strong-alpha pixel touches a native canvas edge; no whole figure is clipped by an atlas rectangle."
+  ],
+  "frame_sha256": {
+    "Content/Sprites/runeterra/noxus/creatures/ruinBringer/map-frames/g00-f000.png": "574f8ec240901e58a8a0fd432233d7d313f38ef519d98b3f2fe5f6a868cecd66",
+    "Content/Sprites/runeterra/noxus/creatures/ruinBringer/map-frames/g00-f001.png": "751a32af496bc1d9591d56469c57cc4e7afea6ea2814440ef7a02f63520e8847",
+    "Content/Sprites/runeterra/noxus/creatures/ruinBringer/map-frames/g00-f002.png": "f3f155a4d067f5a94461bc0013d83809139784ab9b6457662449f6347162b7e8",
+    "Content/Sprites/runeterra/noxus/creatures/ruinBringer/map-frames/g00-f003.png": "ea5979f6dcabf3bca5aae967bcb0fce00a76135d71511d4101e96e07ac473fc7",
+    "Content/Sprites/runeterra/noxus/creatures/ruinBringer/map-frames/g00-f004.png": "d9b9b6fad55fe81fdb287aadb6fa77ac2c987240dc43045d070c5b71a2710306",
+    "Content/Sprites/runeterra/noxus/creatures/ruinBringer/map-frames/g00-f005.png": "1020fe82b66408127534cbef89132ac31b8b2c8a0b6f6df70a4e932c9b0b0002",
+    "Content/Sprites/runeterra/noxus/creatures/ruinBringer/map-frames/g00-f006.png": "b32cb82827ed4bbdf030b7cc66c1b208d3494e1210ab729a6304c23175df7251",
+    "Content/Sprites/runeterra/noxus/creatures/ruinBringer/map-frames/g00-f007.png": "c826f835402705a4857cefcb6cb78e1d110360be1898d2290d1bda8a4e681cfd"
+  },
+  "output_path": "Content/Sprites/runeterra/noxus/creatures/ruinBringer/map.json",
+  "pending": [
+    "Native VCMI adventure footprint, facing, player ownership tint/shadow, scale, timing and positional stability review.",
+    "Source pose/anatomy/camera continuity, including relative demon body size across base/upgrade cohorts.",
+    "The demon upgrade is not yet distinct enough at small map scale to affirm upgrade readability.",
+    "Official regional crest evidence and redistribution licence clearance remain unresolved."
+  ],
+  "recipe_sha256": "3e4543a560beba720b79642bcdd7956bf608668817b1156a5cac2260f3e632cb",
+  "registration_evidence": "build/reports/art-start-20261020/beast-maps/ruinBringer-registration.json",
+  "registration_sha256": "549050b1aaeb4b1ba9c282c4c3643206aeddde1787c6045da4c43971b760b1ab",
+  "release_accepted": false,
+  "review_status": "candidate native-sheet review; not accepted",
+  "reviewer": "Codex /root/noxus_portraits",
+  "runtime_verified": false,
+  "source_atlas": "assets/source/creatures/ruinBringer/painted-imagegen-v1/map-atlas-wide-v2.png",
+  "source_atlas_sha256": "60757bfa77a9779b957fed60318ea1d9789e123bab93b91770b0acefaf6a74c9",
+  "status": "authored configuration",
+  "uniform_scale": 0.125,
+  "unit_id": "ruinBringer",
+  "visual_approval_granted": false
+}

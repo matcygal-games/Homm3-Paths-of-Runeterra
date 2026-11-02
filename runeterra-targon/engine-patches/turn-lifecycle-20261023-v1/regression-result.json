@@ -1,0 +1,44 @@
+{
+  "utc": "2026-10-23T12:05:24.244068+00:00",
+  "compiler": "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe",
+  "compiler_sha256": "e6d57100c82ae0310c18b16abfe52bc0df8fbb272ca6c5fb287d485807cfce91",
+  "scope": "Extracted actual pinned consumer methods compiled against minimal dependency fixtures. Not a complete engine build or native gameplay test.",
+  "variants": {
+    "upstream": {
+      "compile_command": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe",
+        "/nologo",
+        "/std:c++17",
+        "/EHsc",
+        "/W4",
+        "/Od",
+        "C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\upstream\\consumer_regression.cpp",
+        "/Fe:C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\upstream\\consumer_regression.exe",
+        "/Fo:C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\upstream\\consumer_regression.obj"
+      ],
+      "compile_exit_code": 0,
+      "source_sha256": "ed23ddd31ff81f821335dada704eadbce123b1f7de0870e42622dedbdf368987",
+      "run_exit_code": 1,
+      "output": "PASS accepted current request ends current turn\nPASS rejected request preserves turn\nFAIL old accepted ACK cannot clear new turn\nFAIL duplicate ACK cannot clear new turn\nFAIL unknown EndTurn ACK cannot clear active turn\nPASS old rejected ACK leaves new turn active\nPASS spell rejection retains its separate result and turn\nPASS rejected EndTurn retries until same generation accepted\nPASS defeated player waits for battle cleanup without requesting turn end\nFAIL same-player new turn before ACK neither retries old task nor clears new task\nFAIL ACK then new turn must not loop\nPASS immediate transport ACK sees registered request before waiting caller resumes\nFAIL immediate new-turn transport reentry preserves new generation\nPASS observer path drops request without registering ownership\nFAIL turn replaced during cleanup wait cannot submit from the old task\nRESULT 15 cases 7 failures\n",
+      "binary_sha256": "0fda5db1d9b30340ed1a74093180def6893b346d20fd710ebbc1b9bc5d52a090"
+    },
+    "patched": {
+      "compile_command": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe",
+        "/nologo",
+        "/std:c++17",
+        "/EHsc",
+        "/W4",
+        "/Od",
+        "C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\patched\\consumer_regression.cpp",
+        "/Fe:C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\patched\\consumer_regression.exe",
+        "/Fo:C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\patched\\consumer_regression.obj"
+      ],
+      "compile_exit_code": 0,
+      "source_sha256": "0c9bdd436724cc44bffdd945d6d9d0f20d01372292d07e6e0d1de90c762b0ad2",
+      "run_exit_code": 0,
+      "output": "PASS accepted current request ends current turn\nPASS rejected request preserves turn\nPASS old accepted ACK cannot clear new turn\nPASS duplicate ACK cannot clear new turn\nPASS unknown EndTurn ACK cannot clear active turn\nPASS old rejected ACK leaves new turn active\nPASS spell rejection retains its separate result and turn\nPASS rejected EndTurn retries until same generation accepted\nPASS defeated player waits for battle cleanup without requesting turn end\nPASS same-player new turn before ACK neither retries old task nor clears new task\nPASS ACK followed by new turn before callback returns cannot trigger old retry\nPASS immediate transport ACK sees registered request before waiting caller resumes\nPASS immediate new-turn transport reentry preserves new generation\nPASS observer path drops request without registering ownership\nPASS turn replaced during cleanup wait cannot submit from the old task\nRESULT 15 cases 0 failures\n",
+      "binary_sha256": "f50d7c316b49ff72b5d46160756379a0d9b38a87020595e684e933983489b7ae"
+    }
+  }
+}

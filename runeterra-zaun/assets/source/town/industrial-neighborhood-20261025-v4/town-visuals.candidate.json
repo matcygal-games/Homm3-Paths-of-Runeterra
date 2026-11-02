@@ -1,0 +1,3503 @@
+{
+  "adventureObjects": {
+    "icons": [
+      "fort_normal_large",
+      "fort_normal_small",
+      "fort_built_large",
+      "fort_built_small",
+      "village_normal_large",
+      "village_normal_small",
+      "village_built_large",
+      "village_built_small"
+    ],
+    "mapStateRule": "One animation per state in the own namespace, matching the five fortification and hall stages.",
+    "mapStates": [
+      "village",
+      "fort",
+      "citadel",
+      "castle",
+      "capitol"
+    ],
+    "puzzle": {
+      "paths": "runeterra/zaun/puzzle/piece00.png through piece47.png",
+      "pieceCount": 48,
+      "rule": "A 48-piece native puzzle map, each piece an own artwork in the Zaun namespace."
+    }
+  },
+  "artDirectionPolicy": "design/chemtech-art-direction.json",
+  "assetBinding": {
+    "rule": "Each of the 36 states needs a full-canvas layer, an area mask and a border mask in the own namespace; the masks define the click geometry and are derived from the painted layer.",
+    "status": "146 bounded town recipes prepared with the actual existing Zaun converter; technical execution does not grant art/native/rights approval."
+  },
+  "canvas": {
+    "currentState": "Selected painted-depth-20261024-v2: enlarged near worker-yard/tavern framing, smaller distant civic/foundry landmarks, staggered dry terrace groups. Existing painted V3 background retained; no new camera projection or painting claimed. Native graphical acceptance remains pending.",
+    "height": 374,
+    "layerModel": "Every structure is authored as a full-canvas layer with an area mask and a border mask. Masks, not hand-tuned rectangles, define the clickable geometry, so a painted layer can be replaced without editing configuration.",
+    "reference": "the native Heroes III town canvas used by the Castle faction",
+    "width": 800
+  },
+  "derivation": "All36 selected building states preserve their21 painted master files and exact crop selectors. Whole-source uniform scaling/placement and alpha-derived masks/icons follow the finite prepaint plan; the separate genuinely painted background must match the actual full foundations and doors.",
+  "layoutPolicy": {
+    "authority": "Latest25October2026 user industrial-neighborhood/large-rear/real-door correction",
+    "composition": "One dark chempunk Zaun iron-and-glass neighborhood, organic streets/alleys/industrial platforms and inhabited edges; toxic low light, local vivid chemical green, deep violet shadow and rust-brown masonry. Much larger physically grand rear institutions; readable front fa\u00e7ades. Neon chemical green is localized glass/lamps, with purple Shimmer/cloth and brown rust. No universal near/far size ratio, plot-grid or three horizontal terrace bands.",
+    "coordinatorPixelReview": "build/reports/industrial-neighborhood-20261025-v4/source-pixel-review.json",
+    "functionalBoundary": "Preserve twenty independent sites and thirty-six states, layers ordered by depth and exposed alpha-derived click areas. Natural partial occlusion is allowed; no building may be completely hidden or unselectable.",
+    "geometryEvidence": "build/reports/industrial-neighborhood-20261025-v4/geometry-validation.json",
+    "independentSourceReview": "pending current-neighborhood finite source review",
+    "nativeComposition": "build/reports/industrial-neighborhood-20261025-v4/grail-native.png",
+    "nativeReview": "pending current-stage native review",
+    "selectedSourcePlan": "assets/source/town/industrial-neighborhood-20261025-v4/live-placement-plan.json",
+    "selectedSourcePlanSha256": "ebc0f8ca5a08869bae5a7a3ad205bc5cab43a61832d85454e856f3febf292333",
+    "siteGeometry": "Exact twenty composition rectangles/state render limits and dry support are merged into sites; full-canvas origins remain0,0; alpha-derived masks supply click geometry. No equal-scale grid or unintended solid-body overlap.",
+    "status": "authored configuration",
+    "supersedes": "The user-rejected sparse rocky town/foreground-to-background universal scaling quota; native hallSlots are a separate consumer."
+  },
+  "schemaVersion": 1,
+  "selected_sources": {
+    "background": "assets/source/town/industrial-neighborhood-20261025-v3/background/master-v4-dark-paths.png",
+    "kind": "painted2D-industrial-neighborhood",
+    "revision": "industrial-neighborhood-20261025-v4",
+    "selection": "assets/source/town/industrial-neighborhood-20261025-v4/selection.json"
+  },
+  "siege": {
+    "imageCount": 32,
+    "imagePrefix": "SGZA",
+    "images": [
+      "ARCH",
+      "BACK",
+      "DRW1",
+      "DRW2",
+      "DRW3",
+      "DRWC",
+      "MAN1",
+      "MAN2",
+      "MANC",
+      "MLIP",
+      "MOAT",
+      "TPWL",
+      "TW11",
+      "TW12",
+      "TW1C",
+      "TW21",
+      "TW22",
+      "TW2C",
+      "WA11",
+      "WA12",
+      "WA13",
+      "WA2",
+      "WA31",
+      "WA32",
+      "WA33",
+      "WA41",
+      "WA42",
+      "WA43",
+      "WA5",
+      "WA61",
+      "WA62",
+      "WA63"
+    ],
+    "shooter": "chemtechConstruct",
+    "shooterRule": "The tier three chemical construct is the siege shooter of the town, so the siege screen shows a construct on the walls. It is a machine, not a person, and it fires its own pressurised shot.",
+    "towerPortraits": [
+      "towerIconLarge",
+      "towerIconSmall"
+    ]
+  },
+  "siteAccounting": {
+    "chainSites": 3,
+    "chainStates": 11,
+    "dwellingSites": 7,
+    "dwellingStates": 14,
+    "serviceSites": 6,
+    "serviceStates": 7,
+    "specialSites": 4,
+    "specialStates": 4,
+    "totalSites": 20,
+    "totalStates": 36
+  },
+  "siteCount": 20,
+  "siteGroupingNote": "Twenty independent sites cover all 36 authored building states: three chain sites (the four hall states, the three fortification states and the four mage guild states), seven dwelling sites with two states each, six service sites (tavern, market, forge, shimmer factory, wharf with its moored barge, and the grail hall) and four special sites. The Fighting Pit is its own independent site: it is a fourth special building that pays a daily wage and is not a construction stage of the tier seven dwelling. State arithmetic: 4 + 3 + 4 + 14 + 7 + 4 = 36 states over 20 sites.",
+  "sites": [
+    {
+      "buildings": [
+        "villageHall",
+        "townHall",
+        "cityHall",
+        "capitol"
+      ],
+      "composition_rectangle": [
+        195,
+        7,
+        170,
+        133
+      ],
+      "construction": "One site, four successive construction states, each replacing the previous layer set.",
+      "id": "foundryHall",
+      "name": "Foundry Hall",
+      "native_z": 140,
+      "role": "town backbone: the four hall states carry the administrative core and the daily income curve.",
+      "source_states": {
+        "capitol": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/capitol/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "944bfdde28a8165aa87383c104122a70d37c27caee6bdc9ce0d2750c4e553ac3",
+          "click_bbox": [
+            198,
+            15,
+            362,
+            137
+          ],
+          "click_pixels": 12207,
+          "composition_rectangle": [
+            195,
+            7,
+            170,
+            133
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/capitol-foundation.png",
+          "foundation_mask_sha256": "b28440267d7787dc0fbf3be82a21212836556ce96f021c3607ae22153439e7dc",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            262,
+            134
+          ],
+          "full_alpha_bbox": [
+            197,
+            14,
+            363,
+            138
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/capitol-original.json",
+            "sha256": "a9528e25fc08c253bbfcbe3e12756ae4fb8ea00575db4644c8e3ca628f4f769d"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/capitol-master.png",
+          "master_sha256": "bebf786dc32e75fecc5a725d76cfd23658655e0caefd6b548fe4f1662be6d05b",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/capitol/layer.png",
+          "native_layer_sha256": "6243c0e5288f377f0c873bdf185e01304e4275cea2348ec2346293c480f058a4",
+          "native_offset": [
+            197,
+            14
+          ],
+          "native_size": [
+            166,
+            124
+          ],
+          "native_z": 140,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/capitol.png",
+          "original_native_layer_sha256": "3d2fd6c85fa77695459861edc20bb6e4ba04762b429b7b1fb1e0de71baf07368",
+          "prepaint_z": 140,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/capitol.json",
+          "provenance_sha256": "dd9844083b285a42e53aeee7be981aa301c053ad201e78dcf647043b6ef1c081",
+          "site": "foundryHall",
+          "solid_bbox": [
+            198,
+            15,
+            362,
+            137
+          ],
+          "source_crop": [
+            132,
+            29,
+            1440,
+            1006
+          ],
+          "state": "capitol",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            253,
+            134,
+            271,
+            145
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "bebf786dc32e75fecc5a725d76cfd23658655e0caefd6b548fe4f1662be6d05b"
+        },
+        "cityHall": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/cityHall/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "3fcaa7b9d4a414a7f95965d040454a3ec68ddd74e8198c64bbe35f8218fe14c9",
+          "click_bbox": [
+            198,
+            43,
+            363,
+            138
+          ],
+          "click_pixels": 11464,
+          "composition_rectangle": [
+            195,
+            7,
+            170,
+            133
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/cityHall-foundation.png",
+          "foundation_mask_sha256": "6d7340a368fa0f3a076156a99536d676e329a6abb8cc5999aa58e72f17abe6a5",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            260,
+            135
+          ],
+          "full_alpha_bbox": [
+            197,
+            42,
+            363,
+            138
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/cityHall-original.json",
+            "sha256": "b1ded2b815bc84b2bc14eb6e56929c536f60fc190ebfba364522ddfe75c97508"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/halls-master.png",
+          "master_sha256": "b444f77788f8826688075ac4d35cd350107e847365bdf4c84de54bb24c5cd07d",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/cityHall/layer.png",
+          "native_layer_sha256": "ce2f2ba1a822e0c9b9971e0841d3ccb05ee3e1e6d9d55a4cfacb2facec94669f",
+          "native_offset": [
+            197,
+            42
+          ],
+          "native_size": [
+            166,
+            96
+          ],
+          "native_z": 140,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/cityHall.png",
+          "original_native_layer_sha256": "df7753a56e4e162aee8a4d5c2ab912a443f038abe7e54dfe8157faae9bd9ecfe",
+          "prepaint_z": 140,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/cityHall.json",
+          "provenance_sha256": "1c578fe20c1329237262db169e62a939ea4ffe459bcf56fea753282ccd08fe75",
+          "site": "foundryHall",
+          "solid_bbox": [
+            198,
+            43,
+            363,
+            138
+          ],
+          "source_crop": [
+            12,
+            530,
+            766,
+            965
+          ],
+          "state": "cityHall",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            251,
+            135,
+            269,
+            146
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "b444f77788f8826688075ac4d35cd350107e847365bdf4c84de54bb24c5cd07d"
+        },
+        "townHall": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/townHall/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "391f4300e64c9705a7393dbbbd91f0b71c1da1fd39c5638296b3b2d2e0a25be1",
+          "click_bbox": [
+            199,
+            25,
+            362,
+            137
+          ],
+          "click_pixels": 12116,
+          "composition_rectangle": [
+            195,
+            7,
+            170,
+            133
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/townHall-foundation.png",
+          "foundation_mask_sha256": "2e9a9fba4d728379115ea30a4a2a94b9009cf555b12cebd066bd37e780a5c7ea",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            245,
+            133
+          ],
+          "full_alpha_bbox": [
+            197,
+            24,
+            363,
+            138
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/townHall-original.json",
+            "sha256": "cbacca7c904a6f9f197d8087ad892a72b3144e1df1f1ebf888eb9ee5f78721dc"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/townhall-master.png",
+          "master_sha256": "96342152fae9f50ff8080e65f0de51f5042a76b0da3ba1e04d5416d5d002a8ae",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/townHall/layer.png",
+          "native_layer_sha256": "2fd43aaedde567d90427803aebe95cfc600108656a9e69a19182fa4be9c4e52d",
+          "native_offset": [
+            197,
+            24
+          ],
+          "native_size": [
+            166,
+            114
+          ],
+          "native_z": 140,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/townHall.png",
+          "original_native_layer_sha256": "6538d71b17bc52dcf18759f0e5d8163fba8d2b7fa87dc027b81cb0251ce87eb2",
+          "prepaint_z": 140,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/townHall.json",
+          "provenance_sha256": "98b2ce1b37ea493c10dd88888b9ee9b6a9a4086d7d46f3ba3a6df08838ab9e69",
+          "site": "foundryHall",
+          "solid_bbox": [
+            199,
+            25,
+            362,
+            137
+          ],
+          "source_crop": [
+            156,
+            52,
+            1500,
+            978
+          ],
+          "state": "townHall",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            236,
+            133,
+            254,
+            144
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "96342152fae9f50ff8080e65f0de51f5042a76b0da3ba1e04d5416d5d002a8ae"
+        },
+        "villageHall": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/villageHall/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "4d9e8232077d02ebf338657e5fa979542f2fd2871648ad4b5714377f3a2c2d13",
+          "click_bbox": [
+            200,
+            48,
+            359,
+            137
+          ],
+          "click_pixels": 8532,
+          "composition_rectangle": [
+            195,
+            7,
+            170,
+            133
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/villageHall-foundation.png",
+          "foundation_mask_sha256": "12c0be6fd88d299deca6a3ce60f8f90011597edc82eaddaa4201411d4e4f841d",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            258,
+            132
+          ],
+          "full_alpha_bbox": [
+            197,
+            45,
+            362,
+            138
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/villageHall-original.json",
+            "sha256": "b1ded2b815bc84b2bc14eb6e56929c536f60fc190ebfba364522ddfe75c97508"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/halls-master.png",
+          "master_sha256": "b444f77788f8826688075ac4d35cd350107e847365bdf4c84de54bb24c5cd07d",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/villageHall/layer.png",
+          "native_layer_sha256": "13df99629124acb05b22ec7ca8d8899bf613c9e3e717761ef69fc41160b8c289",
+          "native_offset": [
+            197,
+            45
+          ],
+          "native_size": [
+            166,
+            93
+          ],
+          "native_z": 140,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/villageHall.png",
+          "original_native_layer_sha256": "0aff0f55bd3ba84fd8c0027c233b82e9916df72379c9d8a7c560a29ddd029faf",
+          "prepaint_z": 140,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/villageHall.json",
+          "provenance_sha256": "467932f4872ad20c32f8635016be542e210568dfc47774aa46ecffb5dfa2a6b5",
+          "site": "foundryHall",
+          "solid_bbox": [
+            200,
+            48,
+            359,
+            137
+          ],
+          "source_crop": [
+            150,
+            100,
+            710,
+            415
+          ],
+          "state": "villageHall",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            249,
+            132,
+            267,
+            143
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "b444f77788f8826688075ac4d35cd350107e847365bdf4c84de54bb24c5cd07d"
+        }
+      },
+      "states": 4,
+      "visual": "Zaunite civic architecture: brick over a wet foundation, pipework on the facade, soot-stained glass and a municipal notice board. Iron, not marble."
+    },
+    {
+      "buildings": [
+        "fort",
+        "citadel",
+        "castle"
+      ],
+      "composition_rectangle": [
+        5,
+        19,
+        155,
+        133
+      ],
+      "construction": "One site, three states.",
+      "id": "sumpRampart",
+      "name": "Sump Rampart",
+      "native_z": 152,
+      "role": "fortification chain and the site that carries the town fortification bonuses.",
+      "source_states": {
+        "castle": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/castle/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "ec092ee3cef333f02a41f72301902822cae68c06319438131f6375c27c7baeab",
+          "click_bbox": [
+            8,
+            27,
+            158,
+            148
+          ],
+          "click_pixels": 12224,
+          "composition_rectangle": [
+            5,
+            19,
+            155,
+            133
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/castle-foundation.png",
+          "foundation_mask_sha256": "ed77eaf9072d7b62f0de103595779270bb3d80b7a6e3ca10e5723427ab3202d4",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            102,
+            145
+          ],
+          "full_alpha_bbox": [
+            7,
+            24,
+            158,
+            150
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/castle-original.json",
+            "sha256": "cc50ac347243f36a3ffda55dc5ae3668c0cc4dc8d36dc8a2df66170a25becb10"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/rampart-master.png",
+          "master_sha256": "1464f4b5bdd1b0baf21789b46db46bdba15dce8edcffed4c85e047f6ec2a2bd2",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/castle/layer.png",
+          "native_layer_sha256": "2cf46794ab14511e829c3f00dfd0cbf190e1fe3396a75b6c553d0ff4b071c3e2",
+          "native_offset": [
+            7,
+            24
+          ],
+          "native_size": [
+            151,
+            126
+          ],
+          "native_z": 152,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/castle.png",
+          "original_native_layer_sha256": "9337e63e91324b01f0b03b58b7c7fb47a8e8aa2c26ab37872d7a8cdb0f2b7320",
+          "prepaint_z": 152,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/castle.json",
+          "provenance_sha256": "24f60d81c9f38b469304677ef760a994d5f16332b195ec6e7f18a1168db36db9",
+          "site": "sumpRampart",
+          "solid_bbox": [
+            8,
+            27,
+            158,
+            148
+          ],
+          "source_crop": [
+            1427,
+            25,
+            2172,
+            645
+          ],
+          "state": "castle",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            93,
+            145,
+            111,
+            156
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "1464f4b5bdd1b0baf21789b46db46bdba15dce8edcffed4c85e047f6ec2a2bd2"
+        },
+        "citadel": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/citadel/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "8bed86bdbef0e8e66451e1e6f85d8da71e1c1676088f80fc2b0a5f0572c42c36",
+          "click_bbox": [
+            8,
+            47,
+            156,
+            149
+          ],
+          "click_pixels": 9790,
+          "composition_rectangle": [
+            5,
+            19,
+            155,
+            133
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/citadel-foundation.png",
+          "foundation_mask_sha256": "ee98b1ab855b26b7821b2f986b76bf50c2b7617323ed82e3cf4b2be4fb0ca8a7",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            93,
+            145
+          ],
+          "full_alpha_bbox": [
+            7,
+            46,
+            158,
+            150
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/citadel-original.json",
+            "sha256": "cc50ac347243f36a3ffda55dc5ae3668c0cc4dc8d36dc8a2df66170a25becb10"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/rampart-master.png",
+          "master_sha256": "1464f4b5bdd1b0baf21789b46db46bdba15dce8edcffed4c85e047f6ec2a2bd2",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/citadel/layer.png",
+          "native_layer_sha256": "a6f5a2fac203f1b869b2ed8a3c305645c09cdcc237280fcf2af949c9529f123d",
+          "native_offset": [
+            7,
+            45
+          ],
+          "native_size": [
+            151,
+            105
+          ],
+          "native_z": 152,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/citadel.png",
+          "original_native_layer_sha256": "363ff9bd3b9dcc79da43c73a15a47c6988da2e497abfa6c687a952afcf7ac0ff",
+          "prepaint_z": 152,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/citadel.json",
+          "provenance_sha256": "5ceb8db17472d41dc41d149106b1352d91efe6c0993ceaefb6dddfdb80797bea",
+          "site": "sumpRampart",
+          "solid_bbox": [
+            8,
+            47,
+            156,
+            149
+          ],
+          "source_crop": [
+            713,
+            150,
+            1420,
+            640
+          ],
+          "state": "citadel",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            84,
+            145,
+            102,
+            156
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "1464f4b5bdd1b0baf21789b46db46bdba15dce8edcffed4c85e047f6ec2a2bd2"
+        },
+        "fort": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/fort/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "c261d3758634f0b4f5bc68494f8dc39cd5c5bcbc253354f6809f905b11c59a38",
+          "click_bbox": [
+            9,
+            73,
+            157,
+            148
+          ],
+          "click_pixels": 7763,
+          "composition_rectangle": [
+            5,
+            19,
+            155,
+            133
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/fort-foundation.png",
+          "foundation_mask_sha256": "48159a1f7c6f45c949e8a9cb29c5feb369d95a98943b838c841891f0ef2470ae",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            92,
+            145
+          ],
+          "full_alpha_bbox": [
+            7,
+            71,
+            158,
+            150
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/fort-original.json",
+            "sha256": "cc50ac347243f36a3ffda55dc5ae3668c0cc4dc8d36dc8a2df66170a25becb10"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/rampart-master.png",
+          "master_sha256": "1464f4b5bdd1b0baf21789b46db46bdba15dce8edcffed4c85e047f6ec2a2bd2",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/fort/layer.png",
+          "native_layer_sha256": "fd7e7e1ae1dc2436134392b097123a57f2bf5838439cc4f5a0b1df7e88db0835",
+          "native_offset": [
+            7,
+            71
+          ],
+          "native_size": [
+            151,
+            79
+          ],
+          "native_z": 152,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/fort.png",
+          "original_native_layer_sha256": "617d9cb1cd72f973022c9c4fbe3cf23c13a6425f7c9912522ef1eab5c190b3b0",
+          "prepaint_z": 152,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/fort.json",
+          "provenance_sha256": "7e726d8f37c0a6eae7610b44159fad048eca864164548393b3c24d2f813e8ebb",
+          "site": "sumpRampart",
+          "solid_bbox": [
+            9,
+            73,
+            157,
+            148
+          ],
+          "source_crop": [
+            0,
+            280,
+            700,
+            645
+          ],
+          "state": "fort",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            83,
+            145,
+            101,
+            156
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "1464f4b5bdd1b0baf21789b46db46bdba15dce8edcffed4c85e047f6ec2a2bd2"
+        }
+      },
+      "states": 3,
+      "visual": "Scavenged plate, poured concrete, welded scrap and cable anchors above a chemical moat. Bolts, clamps and rivets instead of banners."
+    },
+    {
+      "buildings": [
+        "mageGuild1",
+        "mageGuild2",
+        "mageGuild3",
+        "mageGuild4"
+      ],
+      "composition_rectangle": [
+        420,
+        30,
+        113,
+        146
+      ],
+      "construction": "One site, four states that grow upward in a single tower.",
+      "id": "shimmerInstitute",
+      "name": "Shimmer Institute",
+      "native_z": 176,
+      "role": "mage guild with four levels and the chemical spell weights.",
+      "source_states": {
+        "mageGuild1": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/mageGuild1/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "3c5cdfddfd67be9ecfe628796a9c65dc9f42ff39877363dc7111c0e87d3e532a",
+          "click_bbox": [
+            424,
+            102,
+            529,
+            173
+          ],
+          "click_pixels": 4453,
+          "composition_rectangle": [
+            420,
+            30,
+            113,
+            146
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/mageGuild1-foundation.png",
+          "foundation_mask_sha256": "a48a0fcb08f426a4845dfaefbdc6e7990af4d26f6179b9c42a8e4311c3569c1b",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            478,
+            170
+          ],
+          "full_alpha_bbox": [
+            422,
+            100,
+            531,
+            174
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/mageGuild1-original.json",
+            "sha256": "3428d7e280dc321b803cb51d68d22c38aa4269f82ca395a4b2f637cd928a8c9d"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/guild-master.png",
+          "master_sha256": "5522f7f76f6f12ab27a69854e3ed8d7ada59df5f574570c9f69bfeb7ef72dfee",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/mageGuild1/layer.png",
+          "native_layer_sha256": "f9f0629f3932093a84832af05acdc6e4583c88f91d87a4d89d07c73856eb49fb",
+          "native_offset": [
+            422,
+            100
+          ],
+          "native_size": [
+            109,
+            74
+          ],
+          "native_z": 176,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/mageGuild1.png",
+          "original_native_layer_sha256": "5f54e2259f7f233f98f13980be93693036462c756c4ed96acf54b242ef604935",
+          "prepaint_z": 176,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/mageGuild1.json",
+          "provenance_sha256": "e34e132d48599a252d2cd5d5a06d40cd3a78f980f2e0963a8028597d4b56d0c4",
+          "site": "shimmerInstitute",
+          "solid_bbox": [
+            424,
+            102,
+            529,
+            173
+          ],
+          "source_crop": [
+            180,
+            85,
+            670,
+            418
+          ],
+          "state": "mageGuild1",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            469,
+            170,
+            487,
+            181
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "5522f7f76f6f12ab27a69854e3ed8d7ada59df5f574570c9f69bfeb7ef72dfee"
+        },
+        "mageGuild2": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/mageGuild2/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "fff824cbd3d7192333ba2d0c55ccb56195833606d6a0ed227d11e498cee08a8c",
+          "click_bbox": [
+            424,
+            96,
+            529,
+            174
+          ],
+          "click_pixels": 5344,
+          "composition_rectangle": [
+            420,
+            30,
+            113,
+            146
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/mageGuild2-foundation.png",
+          "foundation_mask_sha256": "af25b8722b1e4efc693c7d9f58c7e26d42361d7a132aa5c0964b85d03f2922c6",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            481,
+            171
+          ],
+          "full_alpha_bbox": [
+            422,
+            94,
+            531,
+            174
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/mageGuild2-original.json",
+            "sha256": "3428d7e280dc321b803cb51d68d22c38aa4269f82ca395a4b2f637cd928a8c9d"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/guild-master.png",
+          "master_sha256": "5522f7f76f6f12ab27a69854e3ed8d7ada59df5f574570c9f69bfeb7ef72dfee",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/mageGuild2/layer.png",
+          "native_layer_sha256": "a335a34e4d694fd7383dd8c095fa0342b264c495f0591d8b7a3690ddc4634e23",
+          "native_offset": [
+            422,
+            94
+          ],
+          "native_size": [
+            109,
+            80
+          ],
+          "native_z": 176,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/mageGuild2.png",
+          "original_native_layer_sha256": "e550242eadb81fb4d863cc7c47835df948f033cbb62facfa88fbff2865c8f132",
+          "prepaint_z": 176,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/mageGuild2.json",
+          "provenance_sha256": "07027af09a785b9329f08348301f518c4ca4f7fa01038ce327d6cbc4ce3cb7b2",
+          "site": "shimmerInstitute",
+          "solid_bbox": [
+            424,
+            96,
+            529,
+            174
+          ],
+          "source_crop": [
+            880,
+            5,
+            1444,
+            420
+          ],
+          "state": "mageGuild2",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            472,
+            171,
+            490,
+            182
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "5522f7f76f6f12ab27a69854e3ed8d7ada59df5f574570c9f69bfeb7ef72dfee"
+        },
+        "mageGuild3": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/mageGuild3/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "73f808f6452bda6db7d7fb49650f555fb8f4a9b1a73842671a2ebdbdcec4feec",
+          "click_bbox": [
+            424,
+            46,
+            529,
+            173
+          ],
+          "click_pixels": 8542,
+          "composition_rectangle": [
+            420,
+            30,
+            113,
+            146
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/mageGuild3-foundation.png",
+          "foundation_mask_sha256": "35b71af363a7ab25238e33722d14901665c14ff2c25067402fcb85a0a821903d",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            478,
+            169
+          ],
+          "full_alpha_bbox": [
+            422,
+            45,
+            531,
+            174
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/mageGuild3-original.json",
+            "sha256": "3428d7e280dc321b803cb51d68d22c38aa4269f82ca395a4b2f637cd928a8c9d"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/guild-master.png",
+          "master_sha256": "5522f7f76f6f12ab27a69854e3ed8d7ada59df5f574570c9f69bfeb7ef72dfee",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/mageGuild3/layer.png",
+          "native_layer_sha256": "d7ed325c0ac8cf1cfeb3fedc354a1f4371ab3d5c1ab0f2600cd5267f820c297b",
+          "native_offset": [
+            422,
+            45
+          ],
+          "native_size": [
+            109,
+            129
+          ],
+          "native_z": 176,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/mageGuild3.png",
+          "original_native_layer_sha256": "1f8fbbf1a21e5f6782abccec3e1c1f4d611cbea74f132ed8420c1ef2505b6c73",
+          "prepaint_z": 176,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/mageGuild3.json",
+          "provenance_sha256": "3c89d08ceee877786272def3be6aae6d028047ce7cc4e6d6ab6fc9947fcec104",
+          "site": "shimmerInstitute",
+          "solid_bbox": [
+            424,
+            46,
+            529,
+            173
+          ],
+          "source_crop": [
+            150,
+            416,
+            642,
+            1000
+          ],
+          "state": "mageGuild3",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            469,
+            169,
+            487,
+            180
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "5522f7f76f6f12ab27a69854e3ed8d7ada59df5f574570c9f69bfeb7ef72dfee"
+        },
+        "mageGuild4": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/mageGuild4/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "5d8077548f03e357415606d11fdf50d42007fd578ec6a12e9acf05a49783a598",
+          "click_bbox": [
+            423,
+            48,
+            530,
+            173
+          ],
+          "click_pixels": 6679,
+          "composition_rectangle": [
+            420,
+            30,
+            113,
+            146
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/mageGuild4-foundation.png",
+          "foundation_mask_sha256": "abe43ee6d228bb54916a89708519d816082785006cb7d56818afd382bf1c721a",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            478,
+            170
+          ],
+          "full_alpha_bbox": [
+            422,
+            47,
+            531,
+            174
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/mageGuild4-original.json",
+            "sha256": "b4e72db47d3c2016704893ea86f98416698136d63001215152d057cc39437748"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/guild4-master.png",
+          "master_sha256": "8ec6b6de43bbe98d90baec72b501669119265c6b447576567f99fdb703056d42",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/mageGuild4/layer.png",
+          "native_layer_sha256": "6f0dd7c7e47a794f2d1946ecbfff1c25c928af9c1382a71eb4935ad567a33a83",
+          "native_offset": [
+            422,
+            47
+          ],
+          "native_size": [
+            109,
+            127
+          ],
+          "native_z": 176,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/mageGuild4.png",
+          "original_native_layer_sha256": "6d8742d6cae0b7502c3e41d22aa983cd82febf6e23cdbd7a31fb00dafef25189",
+          "prepaint_z": 176,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/mageGuild4.json",
+          "provenance_sha256": "c0e5078d3ce02412a49889a0adf52caa32c5da7f229740097ed788fac87a185d",
+          "site": "shimmerInstitute",
+          "solid_bbox": [
+            423,
+            48,
+            530,
+            173
+          ],
+          "source_crop": [
+            5,
+            30,
+            1145,
+            1363
+          ],
+          "state": "mageGuild4",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            469,
+            170,
+            487,
+            181
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "8ec6b6de43bbe98d90baec72b501669119265c6b447576567f99fdb703056d42"
+        }
+      },
+      "states": 4,
+      "visual": "A distillation tower with pressure gauges, luminous green reagent glass columns, purple secondary vessels and brown/corroded supporting machinery. Upgrade states increase controlled apparatus, not a holy wizard spire."
+    },
+    {
+      "buildings": [
+        "dwellingLvl1",
+        "dwellingUpLvl1"
+      ],
+      "composition_rectangle": [
+        4,
+        249,
+        148,
+        104
+      ],
+      "construction": "One site, two states.",
+      "id": "dwellingThug",
+      "name": "Thug Quarter",
+      "native_z": 353,
+      "role": "tier one recruitment site.",
+      "source_states": {
+        "dwellingLvl1": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingLvl1/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "0f78a1940d30831fd4c8dddf63eaa526040a5a4424adc1456143406dfe9d04e6",
+          "click_bbox": [
+            20,
+            253,
+            134,
+            350
+          ],
+          "click_pixels": 6930,
+          "composition_rectangle": [
+            4,
+            249,
+            148,
+            104
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingLvl1-foundation.png",
+          "foundation_mask_sha256": "54b0cc2f4d428f9b91662bf120f02dc92504f95f847ad9d9dc7457267cb48b26",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            66,
+            342
+          ],
+          "full_alpha_bbox": [
+            20,
+            251,
+            135,
+            351
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/dwellingLvl1-original.json",
+            "sha256": "7c75715356b37d5e0baa417c5588b7c13e07b7ba4b376cddb478a4aaa63c4a15"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/dw1-master.png",
+          "master_sha256": "9e14fe8c593f8b48dccfa1e0583bda80e680cfd76a67ba2cb5f0b089c1244770",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingLvl1/layer.png",
+          "native_layer_sha256": "17188f6e4ec3e9657c09cd8fc026915ea5733b0e0f03fe0c76bb3d97538ca241",
+          "native_offset": [
+            20,
+            251
+          ],
+          "native_size": [
+            115,
+            100
+          ],
+          "native_z": 353,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingLvl1.png",
+          "original_native_layer_sha256": "139fc827c428e66ce569f3d753a6d4c2b5526b4a4b40f3e9ce7db748939c2ec6",
+          "prepaint_z": 353,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/dwellingLvl1.json",
+          "provenance_sha256": "57946904dee88e9ecdf3052ce86a7d75213e724eb03ff8be66746a9cb4aeb161",
+          "site": "dwellingThug",
+          "solid_bbox": [
+            20,
+            253,
+            134,
+            350
+          ],
+          "source_crop": [
+            0,
+            50,
+            815,
+            760
+          ],
+          "state": "dwellingLvl1",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            57,
+            342,
+            75,
+            353
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "9e14fe8c593f8b48dccfa1e0583bda80e680cfd76a67ba2cb5f0b089c1244770"
+        },
+        "dwellingUpLvl1": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingUpLvl1/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "7ffbf4ef6220bbe2c030d541d7398d4e78b6d37f55069fc65ade5b9b43f7ca66",
+          "click_bbox": [
+            10,
+            252,
+            146,
+            350
+          ],
+          "click_pixels": 8779,
+          "composition_rectangle": [
+            4,
+            249,
+            148,
+            104
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingUpLvl1-foundation.png",
+          "foundation_mask_sha256": "9c2d0d5994ed4b07a1afd3a87e11d1776db85305dfcaa7298e970824f839d86d",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            68,
+            342
+          ],
+          "full_alpha_bbox": [
+            9,
+            251,
+            147,
+            351
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/dwellingUpLvl1-original.json",
+            "sha256": "199491ea7bc5fcbbb6734462298d17236080dfe7847551d0b55fc927c0606657"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/dw1up-master.png",
+          "master_sha256": "c3aae169491dc99a47887995537f2d2ef4eb3aedee1ce4db073453d78e6ba1bc",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingUpLvl1/layer.png",
+          "native_layer_sha256": "c9ed0c4a08bd2ae6150a5c5638deb4616383330325e3e8893b80a94c1fc39890",
+          "native_offset": [
+            9,
+            251
+          ],
+          "native_size": [
+            138,
+            100
+          ],
+          "native_z": 353,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingUpLvl1.png",
+          "original_native_layer_sha256": "e8002c82c32ffd0cae2708edc4a7b384bd44f84ecaeaed026eee4d3fd668c23d",
+          "prepaint_z": 353,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/dwellingUpLvl1.json",
+          "provenance_sha256": "d744709c49a513910097065db10b674eb6a875151153ef6bbdc87e3d871a9ab2",
+          "site": "dwellingThug",
+          "solid_bbox": [
+            10,
+            252,
+            146,
+            350
+          ],
+          "source_crop": [
+            160,
+            57,
+            1463,
+            1000
+          ],
+          "state": "dwellingUpLvl1",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            59,
+            342,
+            77,
+            353
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "c3aae169491dc99a47887995537f2d2ef4eb3aedee1ce4db073453d78e6ba1bc"
+        }
+      },
+      "states": 2,
+      "visual": "A rented back room behind a market stall, then a fenced yard with scrap training gear."
+    },
+    {
+      "buildings": [
+        "dwellingLvl2",
+        "dwellingUpLvl2"
+      ],
+      "composition_rectangle": [
+        161,
+        247,
+        132,
+        85
+      ],
+      "construction": "One site, two states.",
+      "id": "dwellingRavager",
+      "name": "Chem-Jack Yard",
+      "native_z": 332,
+      "role": "tier two recruitment site.",
+      "source_states": {
+        "dwellingLvl2": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingLvl2/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "79bbec79d184db4c00aefcd0bf23799d71b626c94a5548c20267cfeeaa3ff057",
+          "click_bbox": [
+            173,
+            250,
+            280,
+            329
+          ],
+          "click_pixels": 5298,
+          "composition_rectangle": [
+            161,
+            247,
+            132,
+            85
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingLvl2-foundation.png",
+          "foundation_mask_sha256": "fef573f4e20ab14871d69ef13775e2f68eb31ce109397ee9f8b347fb030ecedf",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            230,
+            326
+          ],
+          "full_alpha_bbox": [
+            172,
+            249,
+            281,
+            330
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/dwellingLvl2-original.json",
+            "sha256": "fea0ca8aa2d1bd50f0ccbb3e50ed033392da1666f7d5721d111fa45f04c43e6a"
+          },
+          "master": "assets/source/town/painted-community-20261024-v1/dwellingLvl2/master.png",
+          "master_sha256": "37bf345d0d7973810c173a8be239e54038a3cfdadeaf361337b85e06b412414d",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingLvl2/layer.png",
+          "native_layer_sha256": "fb5a59de7df68d779625eadcc2fac89d5a8cbd1d18a3902bc5f5ea50315132d0",
+          "native_offset": [
+            172,
+            249
+          ],
+          "native_size": [
+            109,
+            81
+          ],
+          "native_z": 332,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingLvl2.png",
+          "original_native_layer_sha256": "20a08c853ba59fe488fe358cec583ee6f10829374183fb522961c57c11984dd3",
+          "prepaint_z": 332,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/dwellingLvl2.json",
+          "provenance_sha256": "80b5fc2c304df7b69703d91e25c6dfb58bba6ecaa6366b58298764b3adb6b39b",
+          "site": "dwellingRavager",
+          "solid_bbox": [
+            173,
+            250,
+            280,
+            329
+          ],
+          "source_crop": [
+            41,
+            91,
+            1340,
+            1053
+          ],
+          "state": "dwellingLvl2",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            221,
+            326,
+            239,
+            337
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "37bf345d0d7973810c173a8be239e54038a3cfdadeaf361337b85e06b412414d"
+        },
+        "dwellingUpLvl2": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingUpLvl2/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "754ec89af7c2812b4b298c024f35bded5d76a2acd6f6fc62d312f32c722eda4f",
+          "click_bbox": [
+            175,
+            250,
+            279,
+            329
+          ],
+          "click_pixels": 5394,
+          "composition_rectangle": [
+            161,
+            247,
+            132,
+            85
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingUpLvl2-foundation.png",
+          "foundation_mask_sha256": "3e0d17eb6dca237c227d8897d7b830d28ed2d0eeb929514e21dc5717a25c1623",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            224,
+            325
+          ],
+          "full_alpha_bbox": [
+            174,
+            249,
+            279,
+            330
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/dwellingUpLvl2-original.json",
+            "sha256": "f5a4de737c77c565fe290cf1a3ff3f49ae2a3478f9a20cec12d07a543687b16d"
+          },
+          "master": "assets/source/town/painted-community-20261024-v1/dwellingUpLvl2/master.png",
+          "master_sha256": "707fc301895f44408206e0947d8a96668be74b2d4101c8f36da16be4f8d616b9",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingUpLvl2/layer.png",
+          "native_layer_sha256": "f8e854ddaad8e2963b8d0324db5a54e6a6c5b24c068fb2bdafbd6e316725a687",
+          "native_offset": [
+            174,
+            249
+          ],
+          "native_size": [
+            105,
+            81
+          ],
+          "native_z": 332,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingUpLvl2.png",
+          "original_native_layer_sha256": "8f80969b5b9e2a81c7c4f9b093fc0e59a3d9dbd45753e50d3b34605e971e7cf0",
+          "prepaint_z": 332,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/dwellingUpLvl2.json",
+          "provenance_sha256": "c117aa6258d2cc823a523ff11907ae58d8ababfdb6296d8b6fa2e9831bea73d5",
+          "site": "dwellingRavager",
+          "solid_bbox": [
+            175,
+            250,
+            279,
+            329
+          ],
+          "source_crop": [
+            23,
+            82,
+            1363,
+            1112
+          ],
+          "state": "dwellingUpLvl2",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            215,
+            325,
+            233,
+            336
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "707fc301895f44408206e0947d8a96668be74b2d4101c8f36da16be4f8d616b9"
+        }
+      },
+      "states": 2,
+      "visual": "Living protected industrial workers; practical tools and pressure-assisted reinforced yard upgrade."
+    },
+    {
+      "buildings": [
+        "dwellingLvl3",
+        "dwellingUpLvl3"
+      ],
+      "composition_rectangle": [
+        543,
+        291,
+        110,
+        69
+      ],
+      "construction": "One site, two states.",
+      "id": "dwellingConstruct",
+      "name": "Construct Workshop",
+      "native_z": 359,
+      "role": "tier three recruitment site.",
+      "source_states": {
+        "dwellingLvl3": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingLvl3/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "d5b12fb9234a2e6ab954e99e72b5a9b32d081caa042e6ba57f9845f2d224ffe8",
+          "click_bbox": [
+            548,
+            294,
+            649,
+            357
+          ],
+          "click_pixels": 4466,
+          "composition_rectangle": [
+            543,
+            291,
+            110,
+            69
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingLvl3-foundation.png",
+          "foundation_mask_sha256": "c4030443fbc737d4c76c2ee8f50eb93b6a8372a6473ac687e9eba8ce28d20367",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            595,
+            354
+          ],
+          "full_alpha_bbox": [
+            546,
+            293,
+            650,
+            358
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/dwellingLvl3-original.json",
+            "sha256": "3429ac4dd5897a4dc1fc1aba947cc8a53171247e15b4e0c26e613397cc710bf4"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/dw3-master.png",
+          "master_sha256": "2aa098ed8108c48ea94d218e8604692d678e4bd9122587005d6c9c250f14a709",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingLvl3/layer.png",
+          "native_layer_sha256": "f0b8f743e81fca8255a86efa2e87671a1414599fe1274f99e929adfa9e067318",
+          "native_offset": [
+            546,
+            293
+          ],
+          "native_size": [
+            104,
+            65
+          ],
+          "native_z": 359,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingLvl3.png",
+          "original_native_layer_sha256": "5b5acf248e84de880119a7c334ee83db7b223fa29cfad899545c740eeb0e51cd",
+          "prepaint_z": 359,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/dwellingLvl3.json",
+          "provenance_sha256": "a8a939fde5d90290f7caf27fd3c9fbf4348a5507fd9828b4cf1eaf3c9c5f19b5",
+          "site": "dwellingConstruct",
+          "solid_bbox": [
+            548,
+            294,
+            649,
+            357
+          ],
+          "source_crop": [
+            4,
+            85,
+            947,
+            675
+          ],
+          "state": "dwellingLvl3",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            586,
+            354,
+            604,
+            365
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "2aa098ed8108c48ea94d218e8604692d678e4bd9122587005d6c9c250f14a709"
+        },
+        "dwellingUpLvl3": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingUpLvl3/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "17263058763f3357f2177e40140a56e6c99c17bf9e2b0f0cd099110bef6f04ee",
+          "click_bbox": [
+            546,
+            300,
+            650,
+            357
+          ],
+          "click_pixels": 4023,
+          "composition_rectangle": [
+            543,
+            291,
+            110,
+            69
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingUpLvl3-foundation.png",
+          "foundation_mask_sha256": "dfe3843701601f81b91694655ab4f86b8e1ff34e94f9215a22a255cd244d9cb2",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            599,
+            354
+          ],
+          "full_alpha_bbox": [
+            545,
+            299,
+            651,
+            358
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/dwellingUpLvl3-original.json",
+            "sha256": "3429ac4dd5897a4dc1fc1aba947cc8a53171247e15b4e0c26e613397cc710bf4"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/dw3-master.png",
+          "master_sha256": "2aa098ed8108c48ea94d218e8604692d678e4bd9122587005d6c9c250f14a709",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingUpLvl3/layer.png",
+          "native_layer_sha256": "5dcdf925011d61f95469787aa6bd2771040f8142ea7aa1e84d6de54c4a61f663",
+          "native_offset": [
+            545,
+            299
+          ],
+          "native_size": [
+            106,
+            59
+          ],
+          "native_z": 359,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingUpLvl3.png",
+          "original_native_layer_sha256": "10d06b31d22ec720b19fc56ceecef41ecd159a1a92944db96766042b4b0e8a22",
+          "prepaint_z": 359,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/dwellingUpLvl3.json",
+          "provenance_sha256": "d337a9536afc69f7c50c89821f02065cddb34ac803954029f551670c81a18eec",
+          "site": "dwellingConstruct",
+          "solid_bbox": [
+            546,
+            300,
+            650,
+            357
+          ],
+          "source_crop": [
+            951,
+            8,
+            2171,
+            686
+          ],
+          "state": "dwellingUpLvl3",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            590,
+            354,
+            608,
+            365
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "2aa098ed8108c48ea94d218e8604692d678e4bd9122587005d6c9c250f14a709"
+        }
+      },
+      "states": 2,
+      "visual": "A fabrication bay with a gantry, a pressure rig and half-built frames on stands."
+    },
+    {
+      "buildings": [
+        "dwellingLvl4",
+        "dwellingUpLvl4"
+      ],
+      "composition_rectangle": [
+        8,
+        158,
+        117,
+        91
+      ],
+      "construction": "One site, two states.",
+      "id": "dwellingEnforcer",
+      "name": "Enforcer Yard",
+      "native_z": 249,
+      "role": "tier four recruitment site.",
+      "source_states": {
+        "dwellingLvl4": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingLvl4/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "77fe7df52a101d1e2f50d5ac3b91b5fbe3524d304565b93559183a9f74a5296b",
+          "click_bbox": [
+            18,
+            161,
+            114,
+            246
+          ],
+          "click_pixels": 4858,
+          "composition_rectangle": [
+            8,
+            158,
+            117,
+            91
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingLvl4-foundation.png",
+          "foundation_mask_sha256": "04fd29219faccfc1c33682f1ab33986110167e96aec9ac0f2cb1fde40ea7e441",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            63,
+            241
+          ],
+          "full_alpha_bbox": [
+            17,
+            160,
+            115,
+            247
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/dwellingLvl4-original.json",
+            "sha256": "3114dffbe279ec8486a192b5879512cba18e69bc44071c0e30b010d8ea163318"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/dw4-master.png",
+          "master_sha256": "e833de56aa24b050b810ddedf690b05f4a340933c5a7c5f1a955a025d18d609b",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingLvl4/layer.png",
+          "native_layer_sha256": "a33fbbb56d7165fc7909cb3202f1638632fe19dd8f7b13afd75fcbe34e0f2e92",
+          "native_offset": [
+            17,
+            160
+          ],
+          "native_size": [
+            98,
+            87
+          ],
+          "native_z": 249,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingLvl4.png",
+          "original_native_layer_sha256": "269a51a72a4a00ef716a265d82e22da23c0b4b31e2f6f69b6742a66e8ae5195f",
+          "prepaint_z": 249,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/dwellingLvl4.json",
+          "provenance_sha256": "5e2ecf1fb2145b248a9eb07659d738f6ce25fa562a51d7b817eb825371a58241",
+          "site": "dwellingEnforcer",
+          "solid_bbox": [
+            18,
+            161,
+            114,
+            246
+          ],
+          "source_crop": [
+            5,
+            0,
+            895,
+            790
+          ],
+          "state": "dwellingLvl4",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            54,
+            241,
+            72,
+            252
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "e833de56aa24b050b810ddedf690b05f4a340933c5a7c5f1a955a025d18d609b"
+        },
+        "dwellingUpLvl4": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingUpLvl4/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "fdb94f8ff38b1378c6994b5d59df136baea9167651804ed9aa89ca27b9771bde",
+          "click_bbox": [
+            14,
+            161,
+            120,
+            246
+          ],
+          "click_pixels": 6314,
+          "composition_rectangle": [
+            8,
+            158,
+            117,
+            91
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingUpLvl4-foundation.png",
+          "foundation_mask_sha256": "4b432f048675a2601e10404060dc682e308fa9d8ae01ea712191f553e37195b2",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            63,
+            241
+          ],
+          "full_alpha_bbox": [
+            13,
+            160,
+            120,
+            247
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/dwellingUpLvl4-original.json",
+            "sha256": "3114dffbe279ec8486a192b5879512cba18e69bc44071c0e30b010d8ea163318"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/dw4-master.png",
+          "master_sha256": "e833de56aa24b050b810ddedf690b05f4a340933c5a7c5f1a955a025d18d609b",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingUpLvl4/layer.png",
+          "native_layer_sha256": "3b724350eb8d3942860bcdad2b1e562f6648daedde3e4f03c8342f0a3562e109",
+          "native_offset": [
+            13,
+            160
+          ],
+          "native_size": [
+            107,
+            87
+          ],
+          "native_z": 249,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingUpLvl4.png",
+          "original_native_layer_sha256": "599a0306f538d500fd4f58fda1885d09ffe4b3622857d3311e4bef25c7731f0b",
+          "prepaint_z": 249,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/dwellingUpLvl4.json",
+          "provenance_sha256": "ee67b5a8b206e72c503ccda2d7957c2abff7274f8b1152bf38219a858faac3a4",
+          "site": "dwellingEnforcer",
+          "solid_bbox": [
+            14,
+            161,
+            120,
+            246
+          ],
+          "source_crop": [
+            930,
+            0,
+            1920,
+            807
+          ],
+          "state": "dwellingUpLvl4",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            54,
+            241,
+            72,
+            252
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "e833de56aa24b050b810ddedf690b05f4a340933c5a7c5f1a955a025d18d609b"
+        }
+      },
+      "states": 2,
+      "visual": "A fenced drill yard with brace racks and cleaver racks."
+    },
+    {
+      "buildings": [
+        "dwellingLvl5",
+        "dwellingUpLvl5"
+      ],
+      "composition_rectangle": [
+        669,
+        154,
+        126,
+        92
+      ],
+      "construction": "One site, two states.",
+      "id": "dwellingAgent",
+      "name": "Reagent Store",
+      "native_z": 246,
+      "role": "tier five recruitment site.",
+      "source_states": {
+        "dwellingLvl5": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingLvl5/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "0fa1f78dfb9750b9b65634ebda6870142ff88590f73be5529222ffaa303937cf",
+          "click_bbox": [
+            682,
+            157,
+            782,
+            243
+          ],
+          "click_pixels": 4679,
+          "composition_rectangle": [
+            669,
+            154,
+            126,
+            92
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingLvl5-foundation.png",
+          "foundation_mask_sha256": "2fa9ee1dd4d57630936da3624b76eb56658e7c1c0d1f08de13e7b8073a94661a",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            727,
+            240
+          ],
+          "full_alpha_bbox": [
+            681,
+            156,
+            782,
+            244
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/dwellingLvl5-original.json",
+            "sha256": "1c9bc5d7c4534e58edc9d83f7db94bcb95dbf66d07b9bfa8b9f00f1f7d941ea5"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/dw5-master.png",
+          "master_sha256": "576afc782f0c4d16f2ff7b51bd33247315b66e4f22ffe8bac523af90b13c053e",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingLvl5/layer.png",
+          "native_layer_sha256": "a3b18af96977ca659bc4f6cc0ea3a1294fd5efa607498d9e1c6187dc2dd812b7",
+          "native_offset": [
+            681,
+            156
+          ],
+          "native_size": [
+            101,
+            88
+          ],
+          "native_z": 246,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingLvl5.png",
+          "original_native_layer_sha256": "85339b330eed575ae8df058adb17b59ef8f4f31a0ed923f0f863ea045f3b38ad",
+          "prepaint_z": 246,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/dwellingLvl5.json",
+          "provenance_sha256": "3202424d2178474fe4faf3332b46d64985319eed802b5b8fb5b9a5d3c5b39f73",
+          "site": "dwellingAgent",
+          "solid_bbox": [
+            682,
+            157,
+            782,
+            243
+          ],
+          "source_crop": [
+            0,
+            165,
+            785,
+            849
+          ],
+          "state": "dwellingLvl5",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            718,
+            240,
+            736,
+            251
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "576afc782f0c4d16f2ff7b51bd33247315b66e4f22ffe8bac523af90b13c053e"
+        },
+        "dwellingUpLvl5": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingUpLvl5/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "a582f67435e46edd265413c3760631fec11e7573d99411e1d0f73847a9f6cc54",
+          "click_bbox": [
+            682,
+            156,
+            780,
+            244
+          ],
+          "click_pixels": 5855,
+          "composition_rectangle": [
+            669,
+            154,
+            126,
+            92
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingUpLvl5-foundation.png",
+          "foundation_mask_sha256": "c23e68da945002e9043d5b5895fb80dce1f39f7c22b6a8b9325ce1837f8c26e6",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            727,
+            240
+          ],
+          "full_alpha_bbox": [
+            682,
+            156,
+            781,
+            244
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/dwellingUpLvl5-original.json",
+            "sha256": "1c9bc5d7c4534e58edc9d83f7db94bcb95dbf66d07b9bfa8b9f00f1f7d941ea5"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/dw5-master.png",
+          "master_sha256": "576afc782f0c4d16f2ff7b51bd33247315b66e4f22ffe8bac523af90b13c053e",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingUpLvl5/layer.png",
+          "native_layer_sha256": "6913ec9ebbe87cbabc0b8b4451fc20dad3e36bd7df87f46947388469ddaf51c2",
+          "native_offset": [
+            682,
+            156
+          ],
+          "native_size": [
+            99,
+            88
+          ],
+          "native_z": 246,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingUpLvl5.png",
+          "original_native_layer_sha256": "91dbebe93841b409272530267b38f8f7642fcc99575560ea387ce35bcfd163fd",
+          "prepaint_z": 246,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/dwellingUpLvl5.json",
+          "provenance_sha256": "c19295067d98bd15bd5514e13cbd3555c217f786c9099d8f448ee07955ced5ac",
+          "site": "dwellingAgent",
+          "solid_bbox": [
+            682,
+            156,
+            780,
+            244
+          ],
+          "source_crop": [
+            775,
+            0,
+            1774,
+            887
+          ],
+          "state": "dwellingUpLvl5",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            718,
+            240,
+            736,
+            251
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "576afc782f0c4d16f2ff7b51bd33247315b66e4f22ffe8bac523af90b13c053e"
+        }
+      },
+      "states": 2,
+      "visual": "Shelved reagent jars, a mixing bench and a fume hood over the door."
+    },
+    {
+      "buildings": [
+        "dwellingLvl6",
+        "dwellingUpLvl6"
+      ],
+      "composition_rectangle": [
+        564,
+        180,
+        105,
+        92
+      ],
+      "construction": "One site, two states.",
+      "id": "dwellingVeteran",
+      "name": "Sump Reclaimer Depot",
+      "native_z": 272,
+      "role": "tier six recruitment site.",
+      "source_states": {
+        "dwellingLvl6": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingLvl6/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "2092757fc72d8cdd6a0b68d9d59d7d07e0511de715c258a7af86f45577d112bf",
+          "click_bbox": [
+            567,
+            203,
+            666,
+            269
+          ],
+          "click_pixels": 4167,
+          "composition_rectangle": [
+            564,
+            180,
+            105,
+            92
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingLvl6-foundation.png",
+          "foundation_mask_sha256": "45fd49203ff9a89af2339eb639d87508ee3d314aba7951dcb72426caaf074928",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            626,
+            268
+          ],
+          "full_alpha_bbox": [
+            566,
+            202,
+            667,
+            270
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/dwellingLvl6-original.json",
+            "sha256": "24b7b20eeeec721417a6a5e9b56c34f71fe674c108b15ed40fbea5be54744852"
+          },
+          "master": "assets/source/town/painted-community-20261024-v1/dwellingLvl6/master.png",
+          "master_sha256": "8bac5448daff75fc02a2635037d4dbd964a9602ba5b08c8a8803f0e493b0de21",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingLvl6/layer.png",
+          "native_layer_sha256": "03a7471571ed0a98c833598b9cb8615856aa95b0656d43190253c8195a8b0963",
+          "native_offset": [
+            566,
+            202
+          ],
+          "native_size": [
+            101,
+            68
+          ],
+          "native_z": 272,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingLvl6.png",
+          "original_native_layer_sha256": "66befcb590e6bab9182a52637765a389458921f93acc11ff169a3b0cf2eedf40",
+          "prepaint_z": 272,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/dwellingLvl6.json",
+          "provenance_sha256": "f9e5a50ca67b44f76f0606cd09588ef3362d71df574bb35623b2d0947a406034",
+          "site": "dwellingVeteran",
+          "solid_bbox": [
+            567,
+            203,
+            666,
+            269
+          ],
+          "source_crop": [
+            56,
+            122,
+            1330,
+            985
+          ],
+          "state": "dwellingLvl6",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            617,
+            268,
+            635,
+            279
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "8bac5448daff75fc02a2635037d4dbd964a9602ba5b08c8a8803f0e493b0de21"
+        },
+        "dwellingUpLvl6": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingUpLvl6/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "7d824e3a04aea8424ac8536000bac3d1291078deadfe1353ff66f63113cfaa9b",
+          "click_bbox": [
+            567,
+            203,
+            666,
+            269
+          ],
+          "click_pixels": 4217,
+          "composition_rectangle": [
+            564,
+            180,
+            105,
+            92
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingUpLvl6-foundation.png",
+          "foundation_mask_sha256": "6006281505b95ceb782e9417736b29be3009496633d520a27b954325442c437f",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            625,
+            268
+          ],
+          "full_alpha_bbox": [
+            566,
+            202,
+            667,
+            270
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/dwellingUpLvl6-original.json",
+            "sha256": "f912e7e60ad5655d7dd52b4b67e6e912c6a186794b3b40d99e488b28b2bdfcb2"
+          },
+          "master": "assets/source/town/painted-community-20261024-v1/dwellingUpLvl6/master.png",
+          "master_sha256": "9132fb8815cd3bab6bfd9999996dc4462eb4551499d3290f88f1d0a946faf448",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingUpLvl6/layer.png",
+          "native_layer_sha256": "1c9310f1dc78a5334624980d088a5e74fd1cdec98a17c6edd3ed703bee5d737b",
+          "native_offset": [
+            566,
+            202
+          ],
+          "native_size": [
+            101,
+            68
+          ],
+          "native_z": 272,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingUpLvl6.png",
+          "original_native_layer_sha256": "43bd79091ceb633d08143526c11ff69bc57ea0cfc88ab7f64113ad67ee6dfa69",
+          "prepaint_z": 272,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/dwellingUpLvl6.json",
+          "provenance_sha256": "2d6470171b20f97a6729699b0f9356344c4e924e314801422b61c37469fabfc5",
+          "site": "dwellingVeteran",
+          "solid_bbox": [
+            567,
+            203,
+            666,
+            269
+          ],
+          "source_crop": [
+            52,
+            117,
+            1343,
+            987
+          ],
+          "state": "dwellingUpLvl6",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            616,
+            268,
+            634,
+            279
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "9132fb8815cd3bab6bfd9999996dc4462eb4551499d3290f88f1d0a946faf448"
+        }
+      },
+      "states": 2,
+      "visual": "Living salvage workers; extended hydraulic clamp and reinforced gantry upgrade."
+    },
+    {
+      "buildings": [
+        "dwellingLvl7",
+        "dwellingUpLvl7"
+      ],
+      "composition_rectangle": [
+        615,
+        9,
+        174,
+        141
+      ],
+      "construction": "One site, two states: the pens of the Apex Predator line, then the perfected strain.",
+      "id": "dwellingPredator",
+      "name": "Chem-Golem Foundry",
+      "native_z": 150,
+      "role": "tier seven creature quarters for the two-hex laboratory beast line.",
+      "source_states": {
+        "dwellingLvl7": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingLvl7/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "bfe27e44b6cdda248b9e6c4860ebcde3a23f1b9ca9d39826196109b19fb0c181",
+          "click_bbox": [
+            618,
+            14,
+            786,
+            147
+          ],
+          "click_pixels": 15619,
+          "composition_rectangle": [
+            615,
+            9,
+            174,
+            141
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingLvl7-foundation.png",
+          "foundation_mask_sha256": "f6cd62fd171d018fa7445e07695851ccf0a1173d1eaaf8df79d107471fa9ca70",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            690,
+            144
+          ],
+          "full_alpha_bbox": [
+            617,
+            13,
+            787,
+            148
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/dwellingLvl7-original.json",
+            "sha256": "a8b9a1699868985c831180989076175d7653161abd3c079674d65d9f17da22d1"
+          },
+          "master": "assets/source/town/painted-community-20261024-v1/dwellingLvl7/master.png",
+          "master_sha256": "f79e950f9ce3070ffcbfeca6e9bf39fbd6295456ae21d70bcb69f11edf666fa9",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingLvl7/layer.png",
+          "native_layer_sha256": "16f7020fd9afc9150b6b78176f3419165d9defd73fe62bf8fd25bf27107688bb",
+          "native_offset": [
+            617,
+            13
+          ],
+          "native_size": [
+            170,
+            135
+          ],
+          "native_z": 150,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingLvl7.png",
+          "original_native_layer_sha256": "0a2f54a7817433281110873dd08e979885d9819f0c4a92cb427ae52fcac8f244",
+          "prepaint_z": 150,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/dwellingLvl7.json",
+          "provenance_sha256": "43baf6b6612bd63ba3ce5a8849e7eab55d645ca74e0af31bac99ade55057ee71",
+          "site": "dwellingPredator",
+          "solid_bbox": [
+            618,
+            14,
+            786,
+            147
+          ],
+          "source_crop": [
+            73,
+            1,
+            1405,
+            1058
+          ],
+          "state": "dwellingLvl7",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            681,
+            144,
+            699,
+            155
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "f79e950f9ce3070ffcbfeca6e9bf39fbd6295456ae21d70bcb69f11edf666fa9"
+        },
+        "dwellingUpLvl7": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingUpLvl7/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "8da16866331808cfa49088bc4eb377529dad0bcf7067940524a045bb7de3ff82",
+          "click_bbox": [
+            618,
+            16,
+            786,
+            147
+          ],
+          "click_pixels": 15753,
+          "composition_rectangle": [
+            615,
+            9,
+            174,
+            141
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingUpLvl7-foundation.png",
+          "foundation_mask_sha256": "d9d8ff646eea772456b7a5e2d081402f859666608fdf3da3393cc367fec9c883",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            690,
+            144
+          ],
+          "full_alpha_bbox": [
+            617,
+            15,
+            787,
+            148
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/dwellingUpLvl7-original.json",
+            "sha256": "942325f32f08d48fa058e59dd9dd16a570c7c65e0069cd96c5cae9b0ddea29c4"
+          },
+          "master": "assets/source/town/painted-community-20261024-v1/dwellingUpLvl7/master.png",
+          "master_sha256": "c73382ee2a966dc8215d876992192331c9d1051fa514ea6e753440f1121cb3cf",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingUpLvl7/layer.png",
+          "native_layer_sha256": "31eddf54c75a7d2489eb47c6a3511ed912f8c38f7e414f8a7122ea2599833a61",
+          "native_offset": [
+            617,
+            15
+          ],
+          "native_size": [
+            170,
+            133
+          ],
+          "native_z": 150,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingUpLvl7.png",
+          "original_native_layer_sha256": "06be84cf8df8ddf00e0d4ed7558e1ca44cfde03f3a7b097146e488b80fd00a6d",
+          "prepaint_z": 150,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/dwellingUpLvl7.json",
+          "provenance_sha256": "b6da90e0a9f74a8e7ea98ccd330820e16729fa3d91800c4761ce82a4ef6e62a2",
+          "site": "dwellingPredator",
+          "solid_bbox": [
+            618,
+            16,
+            786,
+            147
+          ],
+          "source_crop": [
+            11,
+            0,
+            1411,
+            1099
+          ],
+          "state": "dwellingUpLvl7",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            681,
+            144,
+            699,
+            155
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "c73382ee2a966dc8215d876992192331c9d1051fa514ea6e753440f1121cb3cf"
+        }
+      },
+      "states": 2,
+      "visual": "Unmanned industrial golem casting institution; rear multi-storey pressure foundry landmark."
+    },
+    {
+      "buildings": [
+        "tavern"
+      ],
+      "composition_rectangle": [
+        300,
+        282,
+        130,
+        78
+      ],
+      "construction": "One site, one state.",
+      "id": "grog",
+      "name": "The Grog",
+      "native_z": 360,
+      "role": "tavern and hero recruitment.",
+      "source_states": {
+        "tavern": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/tavern/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "73d32ba673ef1c5eccf2c42ccd3099f82d65d76d1df86caf5448dd49d8f81739",
+          "click_bbox": [
+            306,
+            285,
+            425,
+            358
+          ],
+          "click_pixels": 5749,
+          "composition_rectangle": [
+            300,
+            282,
+            130,
+            78
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/tavern-foundation.png",
+          "foundation_mask_sha256": "e561239d1345133273b6f55aa2dc96ab755ee0c0919e97a79ddf3b4a84aeec83",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            363,
+            354
+          ],
+          "full_alpha_bbox": [
+            304,
+            284,
+            426,
+            358
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/tavern-original.json",
+            "sha256": "2176c4b4d631e32282f770cdb53f8684e9303d167def2dc66cfbd5572b820771"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/services-master.png",
+          "master_sha256": "0183fb1d96a6f2a0b0980cad6810ae319028244c746761abfa62f61f3d78dea6",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/tavern/layer.png",
+          "native_layer_sha256": "2eb179b4f239772503c8c7bc35766e8f4c1f63651b7b60a4f854fe6d8e3854a2",
+          "native_offset": [
+            304,
+            284
+          ],
+          "native_size": [
+            122,
+            74
+          ],
+          "native_z": 360,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/tavern.png",
+          "original_native_layer_sha256": "f40aefd33d0375dce9f77f105342109491cd32a9ca4d3e5752645cce0f497c37",
+          "prepaint_z": 360,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/tavern.json",
+          "provenance_sha256": "f02aafee505e52f677025401b5db96557fcd59b08461574f5c88acbdc7b68ba9",
+          "site": "grog",
+          "solid_bbox": [
+            306,
+            285,
+            425,
+            358
+          ],
+          "source_crop": [
+            25,
+            0,
+            759,
+            447
+          ],
+          "state": "tavern",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            354,
+            354,
+            372,
+            365
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "0183fb1d96a6f2a0b0980cad6810ae319028244c746761abfa62f61f3d78dea6"
+        }
+      },
+      "states": 1,
+      "visual": "A low-ceilinged bar built into a wall, with a warm light in one corner and the rest in shadow."
+    },
+    {
+      "buildings": [
+        "marketplace"
+      ],
+      "composition_rectangle": [
+        347,
+        198,
+        100,
+        65
+      ],
+      "construction": "One site, one state.",
+      "id": "scrapExchange",
+      "name": "Scrap Exchange",
+      "native_z": 263,
+      "role": "marketplace and resource trade.",
+      "source_states": {
+        "marketplace": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/marketplace/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "b854449084d338890b86d928c4603f2a487ded4a24b9dda368f8b6ab5a2f6efe",
+          "click_bbox": [
+            350,
+            206,
+            444,
+            260
+          ],
+          "click_pixels": 3162,
+          "composition_rectangle": [
+            347,
+            198,
+            100,
+            65
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/marketplace-foundation.png",
+          "foundation_mask_sha256": "86c5ebee585cd544b62bff8c90552ae550181c153a79a6721a3e6aa8194049fe",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            409,
+            258
+          ],
+          "full_alpha_bbox": [
+            349,
+            204,
+            445,
+            261
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/marketplace-original.json",
+            "sha256": "2176c4b4d631e32282f770cdb53f8684e9303d167def2dc66cfbd5572b820771"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/services-master.png",
+          "master_sha256": "0183fb1d96a6f2a0b0980cad6810ae319028244c746761abfa62f61f3d78dea6",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/marketplace/layer.png",
+          "native_layer_sha256": "4c885d53299a0c4f38fcfff92de8310b49bc33b4ff198ac05108c72f5de86726",
+          "native_offset": [
+            349,
+            204
+          ],
+          "native_size": [
+            96,
+            57
+          ],
+          "native_z": 263,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/marketplace.png",
+          "original_native_layer_sha256": "767cc7c7132ac6100c1dd7635cd0d5c8a7572fd788e677355b529313c7629466",
+          "prepaint_z": 263,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/marketplace.json",
+          "provenance_sha256": "f89d7295e2df91de18363a036b5611de5170ba47f78ca6164c79ecd1704aa4ad",
+          "site": "scrapExchange",
+          "solid_bbox": [
+            350,
+            206,
+            444,
+            260
+          ],
+          "source_crop": [
+            778,
+            25,
+            1530,
+            470
+          ],
+          "state": "marketplace",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            400,
+            258,
+            418,
+            269
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "0183fb1d96a6f2a0b0980cad6810ae319028244c746761abfa62f61f3d78dea6"
+        }
+      },
+      "states": 1,
+      "visual": "Open trestles of salvage, weighed on a crane scale."
+    },
+    {
+      "buildings": [
+        "blacksmith"
+      ],
+      "composition_rectangle": [
+        668,
+        251,
+        95,
+        65
+      ],
+      "construction": "One site, one state.",
+      "id": "ammoFoundry",
+      "name": "Ammo Foundry",
+      "native_z": 316,
+      "role": "blacksmith and the native Ammo Cart.",
+      "source_states": {
+        "blacksmith": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/blacksmith/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "49dfbc9668e0ff3ae4b6aa536049a399940ec4f43695fc25b26d99ee075b58ef",
+          "click_bbox": [
+            675,
+            253,
+            756,
+            313
+          ],
+          "click_pixels": 3003,
+          "composition_rectangle": [
+            668,
+            251,
+            95,
+            65
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/blacksmith-foundation.png",
+          "foundation_mask_sha256": "b5f0e4af2bb85b32bad2ad0d9895e7ff8cf9e56a24e2d75f828ae90957930e4b",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            720,
+            312
+          ],
+          "full_alpha_bbox": [
+            674,
+            253,
+            757,
+            314
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/blacksmith-original.json",
+            "sha256": "2176c4b4d631e32282f770cdb53f8684e9303d167def2dc66cfbd5572b820771"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/services-master.png",
+          "master_sha256": "0183fb1d96a6f2a0b0980cad6810ae319028244c746761abfa62f61f3d78dea6",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/blacksmith/layer.png",
+          "native_layer_sha256": "25c58de60fa1b654a782217d92405ccc98743accb7ab35e57b12e301f210c92c",
+          "native_offset": [
+            674,
+            253
+          ],
+          "native_size": [
+            83,
+            61
+          ],
+          "native_z": 316,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/blacksmith.png",
+          "original_native_layer_sha256": "e38b10e3d4e5d7ff23ded8583abab59e63b8dcea0eea2f6a71a83dbfd37caef3",
+          "prepaint_z": 316,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/blacksmith.json",
+          "provenance_sha256": "e13912642c05ecac048e61428c01fca158d14dd3a0d7937b7f501ceac42ceda5",
+          "site": "ammoFoundry",
+          "solid_bbox": [
+            675,
+            253,
+            756,
+            313
+          ],
+          "source_crop": [
+            18,
+            446,
+            768,
+            996
+          ],
+          "state": "blacksmith",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            711,
+            312,
+            729,
+            323
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "0183fb1d96a6f2a0b0980cad6810ae319028244c746761abfa62f61f3d78dea6"
+        }
+      },
+      "states": 1,
+      "visual": "A shell shop: a casting bench, a rack of casings and a heat glow from the forge slit."
+    },
+    {
+      "buildings": [
+        "resourceSilo"
+      ],
+      "composition_rectangle": [
+        537,
+        79,
+        79,
+        84
+      ],
+      "construction": "One site, one state.",
+      "id": "shimmerFactory",
+      "name": "Shimmer Factory",
+      "native_z": 163,
+      "role": "rare resource silo producing one sulfur per day.",
+      "source_states": {
+        "resourceSilo": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/resourceSilo/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "cd5c12005b8620ccd10572ad761ac41528bc46127e9f00620c82ce3a8d47e0e6",
+          "click_bbox": [
+            540,
+            110,
+            613,
+            160
+          ],
+          "click_pixels": 2743,
+          "composition_rectangle": [
+            537,
+            79,
+            79,
+            84
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/resourceSilo-foundation.png",
+          "foundation_mask_sha256": "04193ee48d4ba83f50cc136b4f2f6e0b6cf57e1bd7bdb2dd735e29e3851e5a9b",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            586,
+            158
+          ],
+          "full_alpha_bbox": [
+            539,
+            109,
+            614,
+            161
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/resourceSilo-original.json",
+            "sha256": "2176c4b4d631e32282f770cdb53f8684e9303d167def2dc66cfbd5572b820771"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/services-master.png",
+          "master_sha256": "0183fb1d96a6f2a0b0980cad6810ae319028244c746761abfa62f61f3d78dea6",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/resourceSilo/layer.png",
+          "native_layer_sha256": "76c82c89fbe23a4569494496270dd56afa729776f114075887cf82af577b85b5",
+          "native_offset": [
+            539,
+            109
+          ],
+          "native_size": [
+            75,
+            52
+          ],
+          "native_z": 163,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/resourceSilo.png",
+          "original_native_layer_sha256": "22f0f338581f76f8c72c6a9dc79c80e29967fb866b661d09d0146e830804556c",
+          "prepaint_z": 163,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/resourceSilo.json",
+          "provenance_sha256": "941b2f1c32c63f3c2bcb7e4dc6159999d566b0a63a6eb89a894a991560a3e27d",
+          "site": "shimmerFactory",
+          "solid_bbox": [
+            540,
+            110,
+            613,
+            160
+          ],
+          "source_crop": [
+            800,
+            490,
+            1525,
+            992
+          ],
+          "state": "resourceSilo",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            577,
+            158,
+            595,
+            169
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "0183fb1d96a6f2a0b0980cad6810ae319028244c746761abfa62f61f3d78dea6"
+        }
+      },
+      "states": 1,
+      "visual": "A refinery block with condenser towers, green reagent reservoirs and inspection windows, purple-glass accents and brown/rusted pressure pipes. Amber remains secondary furnace heat."
+    },
+    {
+      "buildings": [
+        "shipyard",
+        "ship"
+      ],
+      "composition_rectangle": [
+        706,
+        318,
+        89,
+        42
+      ],
+      "construction": "One site, two states.",
+      "id": "shipyard",
+      "name": "Sump Dock",
+      "native_z": 361,
+      "role": "coastal shipyard and the moored vessel display.",
+      "source_states": {
+        "ship": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/ship/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "37b1335bfbdc648e9825a91a17cee5f0e1c6ff1ba3bc514a221747ba1ba5b37a",
+          "click_bbox": [
+            723,
+            321,
+            788,
+            365
+          ],
+          "click_pixels": 1222,
+          "composition_rectangle": [
+            706,
+            318,
+            89,
+            42
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": null,
+          "footing_water_pixels": null,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/ship-foundation.png",
+          "foundation_mask_sha256": "b5b74a3ede235843fd9baf3db00ce1287b89dbdb07ff4641ddd4aa70f6cb1a51",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            731,
+            334
+          ],
+          "full_alpha_bbox": [
+            722,
+            320,
+            788,
+            365
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/ship-original.json",
+            "sha256": "28fb7bdaa304ee3159397c943b43ee3ed884c1eb9af5bae84ee0b11bae94a804"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/port-master.png",
+          "master_sha256": "bd0674cf0338491b7a070601d82f5d2ce401b9e3a295e38751812e1f49828704",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/ship/layer.png",
+          "native_layer_sha256": "81cb0a50263365ac1598f623243bb3a608458cb3d345ce6b2852c420997f10ed",
+          "native_offset": [
+            725,
+            320
+          ],
+          "native_size": [
+            51,
+            38
+          ],
+          "native_z": 361,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/ship.png",
+          "original_native_layer_sha256": "d0e02069bf9c7bf96c2658fc7dee2825ec80129df4e21fa7851f05e413002ebf",
+          "prepaint_z": 361,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/ship.json",
+          "provenance_sha256": "07942abf2580a3acbdc3971551a08d5e5c924635a6d42b865c117ed1da21522b",
+          "site": "shipyard",
+          "solid_bbox": [
+            723,
+            321,
+            788,
+            365
+          ],
+          "source_crop": [
+            1216,
+            16,
+            2151,
+            716
+          ],
+          "state": "ship",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            722,
+            334,
+            740,
+            345
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "bd0674cf0338491b7a070601d82f5d2ce401b9e3a295e38751812e1f49828704"
+        },
+        "shipyard": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/shipyard/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "bcf7752e616d14e96cf937fd55e9f03d214d44334c6d2da1a35692197eea76c0",
+          "click_bbox": [
+            723,
+            321,
+            778,
+            358
+          ],
+          "click_pixels": 904,
+          "composition_rectangle": [
+            706,
+            318,
+            89,
+            42
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": null,
+          "footing_water_pixels": null,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/shipyard-foundation.png",
+          "foundation_mask_sha256": "a8311f116d5d6111cc32445096993db119fd7490245ce8fc2067282cfe09b75b",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            731,
+            334
+          ],
+          "full_alpha_bbox": [
+            722,
+            320,
+            779,
+            358
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/shipyard-original.json",
+            "sha256": "28fb7bdaa304ee3159397c943b43ee3ed884c1eb9af5bae84ee0b11bae94a804"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/port-master.png",
+          "master_sha256": "bd0674cf0338491b7a070601d82f5d2ce401b9e3a295e38751812e1f49828704",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/shipyard/layer.png",
+          "native_layer_sha256": "41ebc01eafa97da1d1a80dedb960be1937ca67b87263a059d63ef9d7c658a252",
+          "native_offset": [
+            722,
+            320
+          ],
+          "native_size": [
+            57,
+            38
+          ],
+          "native_z": 361,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/shipyard.png",
+          "original_native_layer_sha256": "3926cfb00aedbc864db2517f1b16b279d9f0c709681c134fed032beb08836d8a",
+          "prepaint_z": 361,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/shipyard.json",
+          "provenance_sha256": "9cb77a09e9b84fa9514b266979896578f991875ca841ac6139e4a73876b54e05",
+          "site": "shipyard",
+          "solid_bbox": [
+            723,
+            321,
+            778,
+            358
+          ],
+          "source_crop": [
+            15,
+            0,
+            1108,
+            724
+          ],
+          "state": "shipyard",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            722,
+            334,
+            740,
+            345
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "bd0674cf0338491b7a070601d82f5d2ce401b9e3a295e38751812e1f49828704"
+        }
+      },
+      "states": 2,
+      "visual": "A sloped slipway with a tarred barge and crane poles."
+    },
+    {
+      "buildings": [
+        "grail"
+      ],
+      "composition_rectangle": [
+        366,
+        112,
+        45,
+        61
+      ],
+      "construction": "One site, one state.",
+      "id": "codeOfProgress",
+      "name": "Code of Progress",
+      "native_z": 173,
+      "role": "Grail monument in native Grail mode.",
+      "source_states": {
+        "grail": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/grail/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "cccdf1956dc4ffbb5b175a2dc67fa853fd486edbde6862f93b97f0f3ce895925",
+          "click_bbox": [
+            368,
+            131,
+            409,
+            171
+          ],
+          "click_pixels": 675,
+          "composition_rectangle": [
+            366,
+            112,
+            45,
+            61
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/grail-foundation.png",
+          "foundation_mask_sha256": "61940f44f7bebcc59b2041a3f14a47b3fef9f83bb577a438613dad45ca41e3a2",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            390,
+            170
+          ],
+          "full_alpha_bbox": [
+            368,
+            130,
+            409,
+            171
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/grail-original.json",
+            "sha256": "70ae6aa6bba8d46dad33adf0155e4a7d6aff77a8d6c1da853b5e43ec8d0ef09c"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/grail-master.png",
+          "master_sha256": "b2c544df1b244fadf2624cb430a8ed84f6e8aa66a91771762c554d4eb0d4e466",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/grail/layer.png",
+          "native_layer_sha256": "eb95b188002d5e3fa6e80cc95f8c399c45cae80c846e2a49f8881a96fe112388",
+          "native_offset": [
+            368,
+            130
+          ],
+          "native_size": [
+            41,
+            41
+          ],
+          "native_z": 173,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/grail.png",
+          "original_native_layer_sha256": "38380169b5e1e430aaa9ab384f7f1ba9f9fde11a4c7b004ece4febb0f5799b8d",
+          "prepaint_z": 173,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/grail.json",
+          "provenance_sha256": "8e84acae6836cc61ee2cee588855b84e26ed90cf3ed1c741b4d8ca2106ff04e2",
+          "site": "codeOfProgress",
+          "solid_bbox": [
+            368,
+            131,
+            409,
+            171
+          ],
+          "source_crop": [
+            92,
+            2,
+            1277,
+            1184
+          ],
+          "state": "grail",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            381,
+            170,
+            399,
+            181
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "b2c544df1b244fadf2624cb430a8ed84f6e8aa66a91771762c554d4eb0d4e466"
+        }
+      },
+      "states": 1,
+      "visual": "A project-fiction monument: a plate-metal stele with a ledger slab and a single lamp. It is a city decree, not a relic."
+    },
+    {
+      "buildings": [
+        "special1"
+      ],
+      "composition_rectangle": [
+        143,
+        142,
+        111,
+        91
+      ],
+      "construction": "One site, one state.",
+      "id": "augmentationWorkshop",
+      "name": "Augmentation Workshop",
+      "native_z": 233,
+      "role": "special one: the fabrication prerequisite of the tier six upgrade.",
+      "source_states": {
+        "special1": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/special1/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "4d91f9717a2ee9cef0637dc869c21e8e080b59b7f0d31b4abf0a193e97175da1",
+          "click_bbox": [
+            147,
+            163,
+            251,
+            230
+          ],
+          "click_pixels": 5031,
+          "composition_rectangle": [
+            143,
+            142,
+            111,
+            91
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/special1-foundation.png",
+          "foundation_mask_sha256": "11765618eb03b264a0598674eb9203d26724de5ad5d4e7d0b9aee6895e881cdb",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            202,
+            227
+          ],
+          "full_alpha_bbox": [
+            145,
+            162,
+            252,
+            231
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/special1-original.json",
+            "sha256": "188562b8af9d372a13339400c7ed69b1ad8f79c2dd711aca91d99b22621e0429"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/specials-master.png",
+          "master_sha256": "0c7ef0668fe562363b5b1b0133782e7f0f6c057b2f01623f59b812cb1fb8d1b0",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/special1/layer.png",
+          "native_layer_sha256": "753875539c795669b979592ed50f07fc8b97691dab6e1c7444162f7cf9926a3d",
+          "native_offset": [
+            145,
+            162
+          ],
+          "native_size": [
+            107,
+            69
+          ],
+          "native_z": 233,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/special1.png",
+          "original_native_layer_sha256": "ffb4cecc0a8c18281568757b2fd37d45233e1eaa1aa3e6ae4c12db8689ab33b7",
+          "prepaint_z": 233,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/special1.json",
+          "provenance_sha256": "fd18abd86bd665fa7b8c487660a6085b64c8e31357f18e98ad05c1bed764b08e",
+          "site": "augmentationWorkshop",
+          "solid_bbox": [
+            147,
+            163,
+            251,
+            230
+          ],
+          "source_crop": [
+            15,
+            0,
+            774,
+            486
+          ],
+          "state": "special1",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            193,
+            227,
+            211,
+            238
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "0c7ef0668fe562363b5b1b0133782e7f0f6c057b2f01623f59b812cb1fb8d1b0"
+        }
+      },
+      "states": 1,
+      "visual": "A clean workshop with brace tooling on the wall and a workbench lamp."
+    },
+    {
+      "buildings": [
+        "special2"
+      ],
+      "composition_rectangle": [
+        273,
+        156,
+        82,
+        64
+      ],
+      "construction": "One site, one state.",
+      "id": "augmentationClinic",
+      "name": "Augmentation Clinic",
+      "native_z": 220,
+      "role": "special two: the weekly mana top-up visit.",
+      "source_states": {
+        "special2": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/special2/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "2f83d01a2aeccde59688ec8f0dd4baec0d74b58311c87196a552816f8fb7b42c",
+          "click_bbox": [
+            276,
+            166,
+            352,
+            218
+          ],
+          "click_pixels": 2812,
+          "composition_rectangle": [
+            273,
+            156,
+            82,
+            64
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/special2-foundation.png",
+          "foundation_mask_sha256": "49977ee6b0b633f8cc17d0ab8d2f40565c5adcef3dfaedfabbe2db84aba28698",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            326,
+            215
+          ],
+          "full_alpha_bbox": [
+            275,
+            165,
+            353,
+            218
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/special2-original.json",
+            "sha256": "188562b8af9d372a13339400c7ed69b1ad8f79c2dd711aca91d99b22621e0429"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/specials-master.png",
+          "master_sha256": "0c7ef0668fe562363b5b1b0133782e7f0f6c057b2f01623f59b812cb1fb8d1b0",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/special2/layer.png",
+          "native_layer_sha256": "605fe8bad72e3f51f2142dc3d00cc5a2d7243d9f33a1ebda25bbb9cfccb79ffe",
+          "native_offset": [
+            275,
+            165
+          ],
+          "native_size": [
+            78,
+            53
+          ],
+          "native_z": 220,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/special2.png",
+          "original_native_layer_sha256": "75eff622b07f4e66166007cb117c5f023fd63028ee009d3a99da052f7cd0c992",
+          "prepaint_z": 220,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/special2.json",
+          "provenance_sha256": "da12c79bf1c27b973663bc53299da1f9e7a7b09181226db233f6389d68abeaae",
+          "site": "augmentationClinic",
+          "solid_bbox": [
+            276,
+            166,
+            352,
+            218
+          ],
+          "source_crop": [
+            800,
+            16,
+            1527,
+            506
+          ],
+          "state": "special2",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            317,
+            215,
+            335,
+            226
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "0c7ef0668fe562363b5b1b0133782e7f0f6c057b2f01623f59b812cb1fb8d1b0"
+        }
+      },
+      "states": 1,
+      "visual": "A quiet clinic room with cots, a saline stand and a wall of numbered cabinets."
+    },
+    {
+      "buildings": [
+        "special3"
+      ],
+      "composition_rectangle": [
+        452,
+        177,
+        100,
+        88
+      ],
+      "construction": "One site, one state.",
+      "id": "theSump",
+      "name": "The Sump",
+      "native_z": 265,
+      "role": "special three: the siege Defense bonus.",
+      "source_states": {
+        "special3": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/special3/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "483262cf7ae2c72a5ed6c57ac5b9614520ca78751deeb9e6b6fd23978d1b9466",
+          "click_bbox": [
+            455,
+            196,
+            549,
+            262
+          ],
+          "click_pixels": 3833,
+          "composition_rectangle": [
+            452,
+            177,
+            100,
+            88
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/special3-foundation.png",
+          "foundation_mask_sha256": "43ef8831e07a18678e49938c0b44fbf7e1dba70a3fabee4f41449a6e0ec9e28d",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            545,
+            245
+          ],
+          "full_alpha_bbox": [
+            454,
+            196,
+            550,
+            263
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/special3-original.json",
+            "sha256": "188562b8af9d372a13339400c7ed69b1ad8f79c2dd711aca91d99b22621e0429"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/specials-master.png",
+          "master_sha256": "0c7ef0668fe562363b5b1b0133782e7f0f6c057b2f01623f59b812cb1fb8d1b0",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/special3/layer.png",
+          "native_layer_sha256": "323cfd27c0959b952bd2f5f959d2eb196be27ca04ba955c53397eb23d53bfdba",
+          "native_offset": [
+            454,
+            196
+          ],
+          "native_size": [
+            96,
+            67
+          ],
+          "native_z": 265,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/special3.png",
+          "original_native_layer_sha256": "b3dc563ebf1ed64d89f52195f450d9ecc40507827abfd7e5f49dfa7e7132d844",
+          "prepaint_z": 265,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/special3.json",
+          "provenance_sha256": "3117627453c95c55f238d3dc4392f2aae682cd3b5c579e149c22f36ede1454cf",
+          "site": "theSump",
+          "solid_bbox": [
+            455,
+            196,
+            549,
+            262
+          ],
+          "source_crop": [
+            3,
+            486,
+            778,
+            1024
+          ],
+          "state": "special3",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            536,
+            245,
+            554,
+            256
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "0c7ef0668fe562363b5b1b0133782e7f0f6c057b2f01623f59b812cb1fb8d1b0"
+        }
+      },
+      "states": 1,
+      "visual": "A fenced outflow basin with a heavy grating, a settling tank and vapour over the water."
+    },
+    {
+      "buildings": [
+        "special4"
+      ],
+      "composition_rectangle": [
+        435,
+        271,
+        100,
+        77
+      ],
+      "construction": "One site, one state; it is built and stays built.",
+      "id": "fightingPit",
+      "name": "Fighting Pit",
+      "native_z": 348,
+      "role": "fourth special building: the pit that pays a daily wage to the town.",
+      "source_states": {
+        "special4": {
+          "apron_water_pixels": 0,
+          "body_opacity_mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/special4/body-opacity-mask.png",
+          "body_opacity_mask_sha256": "dfde3a68ca9aa0684d2bf0b10bfdfb83a11e96bdf8999a9111e30f6d940fc043",
+          "click_bbox": [
+            438,
+            281,
+            532,
+            345
+          ],
+          "click_pixels": 4778,
+          "composition_rectangle": [
+            435,
+            271,
+            100,
+            77
+          ],
+          "contact_measurement": "Measured native threshold or front stair foot; source-relative fractions explicit, not plot bottom surrogate.",
+          "door_facing": "front/southwest",
+          "footing_outside_buildable_floor_pixels": 0,
+          "footing_water_pixels": 0,
+          "foundation_mask": "assets/source/town/industrial-neighborhood-20261025-v3/layers/special4-foundation.png",
+          "foundation_mask_sha256": "fec686ab169a5729155479c5c9c6ca6c0c25862d9be14e11a02dd34fb1be5290",
+          "foundation_rule": "All visible lower-body foundation pixels plus contact shadows require supported floor; Sump interior basin and coastal dock piles are intentional liquid structures.",
+          "front_exit": [
+            483,
+            343
+          ],
+          "full_alpha_bbox": [
+            437,
+            281,
+            533,
+            346
+          ],
+          "historical_provenance": {
+            "kind": "historical_provenance",
+            "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/special4-original.json",
+            "sha256": "188562b8af9d372a13339400c7ed69b1ad8f79c2dd711aca91d99b22621e0429"
+          },
+          "master": "assets/source/town/chemtech-v4-buildings/specials-master.png",
+          "master_sha256": "0c7ef0668fe562363b5b1b0133782e7f0f6c057b2f01623f59b812cb1fb8d1b0",
+          "mirror_x": false,
+          "native_layer": "assets/source/town/industrial-neighborhood-20261025-v4/structures/special4/layer.png",
+          "native_layer_sha256": "fcb1e56364c235c7677b8ebe9ca15993f439fecfdfd49f085531ed07e580f255",
+          "native_offset": [
+            437,
+            281
+          ],
+          "native_size": [
+            96,
+            65
+          ],
+          "native_z": 348,
+          "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/special4.png",
+          "original_native_layer_sha256": "4628112a7b1e845feaa5e9194c135b59dba016ecf7366b7691166391db8d1a05",
+          "prepaint_z": 348,
+          "provenance": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/special4.json",
+          "provenance_sha256": "2060953554a3d91cfc28e447d1475aa5a6e2fb4458727a29171297a29a03b8b6",
+          "site": "fightingPit",
+          "solid_bbox": [
+            438,
+            281,
+            532,
+            345
+          ],
+          "source_crop": [
+            782,
+            503,
+            1536,
+            1017
+          ],
+          "state": "special4",
+          "terrain_support_status": "Selected painted-shore mask measured; actual ground/door pixels remain separately reviewed.",
+          "visible_front_apron": [
+            474,
+            343,
+            492,
+            354
+          ],
+          "visual_approval_granted": false,
+          "whole_master_sha256": "0c7ef0668fe562363b5b1b0133782e7f0f6c057b2f01623f59b812cb1fb8d1b0"
+        }
+      },
+      "states": 1,
+      "visual": "A sunken chemical pit ringed by scaffold and pipework, with a grimy gallery of onlookers above it. The crowd is silhouettes and gloved hands, not readable faces."
+    }
+  ],
+  "stateAccounting": {
+    "dwellingChains": 14,
+    "fortChain": 3,
+    "hallChain": 4,
+    "mageGuild": 4,
+    "singleServiceBuildings": 7,
+    "specialBuildings": 4,
+    "total": 36
+  },
+  "stateCount": 36,
+  "status": "authored configuration",
+  "subject": "Zaun town visual contract: site plan, construction states, click geometry, adventure objects, siege and visual direction.",
+  "visualDirection": "One dark chempunk Zaun iron-and-glass neighborhood, organic streets/alleys/industrial platforms and inhabited edges; toxic low light, local vivid chemical green, deep violet shadow and rust-brown masonry. Much larger physically grand rear institutions; readable front fa\u00e7ades. Neon chemical green is localized glass/lamps, with purple Shimmer/cloth and brown rust. No universal near/far size ratio, plot-grid or three horizontal terrace bands."
+}

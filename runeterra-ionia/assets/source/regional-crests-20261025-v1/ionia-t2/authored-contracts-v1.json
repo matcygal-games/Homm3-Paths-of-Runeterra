@@ -1,0 +1,619 @@
+{
+  "scope": "Fresh painted2D T2 Kinkou pair, preserving native mechanics and all consumers; old3D action pixels explicitly forbidden as generation inputs.",
+  "status": "authored configuration",
+  "units": {
+    "kinkouAdept": {
+      "graphics_semantics": {
+        "animationTime": {
+          "attack": 1,
+          "idle": 10,
+          "walk": 1
+        },
+        "mapMask": [
+          "VV",
+          "VA"
+        ],
+        "timeBetweenFidgets": 0.1
+      },
+      "legacy_numeric_camera_only": {
+        "declared": {
+          "calibration_idle_bbox": [
+            154,
+            112,
+            231,
+            300
+          ],
+          "constant_scale": 0.4603174603174603,
+          "fidget": {
+            "duration_seconds": 0.7,
+            "probability_multiplier": 0.1,
+            "source_poses": 4,
+            "tick_addressing": [
+              0,
+              1,
+              1,
+              2,
+              2,
+              3,
+              3
+            ]
+          },
+          "genuine_action_groups": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            8,
+            11,
+            12,
+            13,
+            22
+          ],
+          "native_canvas": [
+            450,
+            400
+          ],
+          "per_frame_bbox_refit": false,
+          "pivot": [
+            197,
+            266
+          ],
+          "preview_schema": "stock VCMI only; no unsupported fields",
+          "status": "built-unreviewed; native action playback, visual review and redistribution approval pending",
+          "target_total_idle_height": 87,
+          "unit": "kinkouAdept"
+        },
+        "idle_registered_bbox_rows": [
+          {
+            "bbox": [
+              178,
+              177,
+              218,
+              268
+            ],
+            "frame": 0,
+            "group": 2
+          },
+          {
+            "bbox": [
+              178,
+              177,
+              218,
+              268
+            ],
+            "frame": 1,
+            "group": 2
+          }
+        ],
+        "no_old_image_pixels_read": true
+      },
+      "name": {
+        "plural": "Kinkou Adepts",
+        "singular": "Kinkou Adept"
+      },
+      "nonvisual_creature": {
+        "abilities": {
+          "precision": {
+            "type": "BLOCKS_RETALIATION"
+          }
+        },
+        "advMapAmount": {
+          "max": 18,
+          "min": 9
+        },
+        "aiValue": 330,
+        "attack": 8,
+        "cost": {
+          "gold": 150
+        },
+        "damage": {
+          "max": 7,
+          "min": 4
+        },
+        "defense": 5,
+        "description": "Grounded Kinkou blade adept prevents enemy retaliation; no shadow clone, teleport or extra action. Order of Shadow training is separate.",
+        "disabled": false,
+        "doubleWide": false,
+        "excludeFromRandomization": false,
+        "faction": "ionia",
+        "fightValue": 255,
+        "growth": 9,
+        "hasDoubleWeek": true,
+        "hitPoints": 18,
+        "horde": 0,
+        "level": 2,
+        "name": {
+          "plural": "Kinkou Adepts",
+          "singular": "Kinkou Adept"
+        },
+        "sound": {
+          "attack": "CRUSATTK.wav",
+          "defend": "CRUSDFND.wav",
+          "killed": "CRUSKILL.wav",
+          "move": "CRUSMOVE.wav",
+          "wince": "CRUSWNCE.wav"
+        },
+        "special": false,
+        "speed": 7
+      },
+      "roles": {
+        "attackLeft": {
+          "before_live_sha256": "1dbb49a8a3dd2d637f99ed2bfa95b607de202750bc483bef80e309f84d9ad7a4",
+          "fit": "contain",
+          "groups": [],
+          "original_active_recipe": "assets/recipes/creatures/kinkouAdept-attackLeft.json",
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/kinkouAdept/attackLeft.png",
+          "recipe_type": "raster",
+          "recorded_before_copy_sha256": "1dbb49a8a3dd2d637f99ed2bfa95b607de202750bc483bef80e309f84d9ad7a4",
+          "require_alpha": true,
+          "size": [
+            96,
+            64
+          ],
+          "unit": "kinkouAdept"
+        },
+        "attackRight": {
+          "before_live_sha256": "985c2c91c25840473b2731c2e63091a84470933e5fc40b212aa038caa3637543",
+          "fit": "contain",
+          "groups": [],
+          "original_active_recipe": "assets/recipes/creatures/kinkouAdept-attackRight.json",
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/kinkouAdept/attackRight.png",
+          "recipe_type": "raster",
+          "recorded_before_copy_sha256": "985c2c91c25840473b2731c2e63091a84470933e5fc40b212aa038caa3637543",
+          "require_alpha": true,
+          "size": [
+            96,
+            64
+          ],
+          "unit": "kinkouAdept"
+        },
+        "battle": {
+          "before_live_sha256": "97a622a93b174079631ab45f6f301fa87f81d0799b0287d8514bbf8a0c27bcbf",
+          "canvas": [
+            450,
+            400
+          ],
+          "generateOverlay": 1,
+          "generateShadow": 1,
+          "groups": [
+            {
+              "action": null,
+              "frames": 6,
+              "group": 0
+            },
+            {
+              "action": null,
+              "frames": 7,
+              "group": 1
+            },
+            {
+              "action": null,
+              "frames": 2,
+              "group": 2
+            },
+            {
+              "action": null,
+              "frames": 3,
+              "group": 3
+            },
+            {
+              "action": null,
+              "frames": 3,
+              "group": 4
+            },
+            {
+              "action": null,
+              "frames": 6,
+              "group": 5
+            },
+            {
+              "action": null,
+              "frames": 3,
+              "group": 7
+            },
+            {
+              "action": null,
+              "frames": 3,
+              "group": 8
+            },
+            {
+              "action": null,
+              "frames": 6,
+              "group": 11
+            },
+            {
+              "action": null,
+              "frames": 6,
+              "group": 12
+            },
+            {
+              "action": null,
+              "frames": 6,
+              "group": 13
+            },
+            {
+              "action": null,
+              "frames": 1,
+              "group": 22
+            }
+          ],
+          "original_active_recipe": "assets/recipes/creatures/kinkouAdept-battle.json",
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/kinkouAdept/battle.json",
+          "pivot": {
+            "x": 197,
+            "y": 266
+          },
+          "recipe_type": "vcmi_animation",
+          "recorded_before_copy_sha256": "97a622a93b174079631ab45f6f301fa87f81d0799b0287d8514bbf8a0c27bcbf",
+          "unit": "kinkouAdept"
+        },
+        "large": {
+          "before_live_sha256": "8d24a700d05b1044faec8d91ef41a2b16ba5c665d079691cab2647674ca97b12",
+          "fit": "contain",
+          "groups": [],
+          "original_active_recipe": "assets/recipes/creatures/kinkouAdept-large.json",
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/kinkouAdept/large.png",
+          "recipe_type": "raster",
+          "recorded_before_copy_sha256": "8d24a700d05b1044faec8d91ef41a2b16ba5c665d079691cab2647674ca97b12",
+          "require_alpha": true,
+          "size": [
+            58,
+            64
+          ],
+          "unit": "kinkouAdept"
+        },
+        "map": {
+          "before_live_sha256": "2a254f6b635109e8867e44950d40c5f236ff2117234a67915fea213c90fac59c",
+          "canvas": [
+            96,
+            64
+          ],
+          "generateOverlay": 1,
+          "generateShadow": 2,
+          "groups": [
+            {
+              "action": null,
+              "frames": 6,
+              "group": 0
+            }
+          ],
+          "original_active_recipe": "assets/recipes/creatures/kinkouAdept-map.json",
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/kinkouAdept/map.json",
+          "pivot": {
+            "x": 80,
+            "y": 60
+          },
+          "recipe_type": "vcmi_animation",
+          "recorded_before_copy_sha256": "2a254f6b635109e8867e44950d40c5f236ff2117234a67915fea213c90fac59c",
+          "unit": "kinkouAdept"
+        },
+        "small": {
+          "before_live_sha256": "64e5828706a2735bfa81bea46226760e79cf799c21491aba3ac829f5a73a6c15",
+          "fit": "contain",
+          "groups": [],
+          "original_active_recipe": "assets/recipes/creatures/kinkouAdept-small.json",
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/kinkouAdept/small.png",
+          "recipe_type": "raster",
+          "recorded_before_copy_sha256": "64e5828706a2735bfa81bea46226760e79cf799c21491aba3ac829f5a73a6c15",
+          "require_alpha": true,
+          "size": [
+            32,
+            32
+          ],
+          "unit": "kinkouAdept"
+        }
+      }
+    },
+    "kinkouInitiate": {
+      "graphics_semantics": {
+        "animationTime": {
+          "attack": 1,
+          "idle": 10,
+          "walk": 1
+        },
+        "mapMask": [
+          "VV",
+          "VA"
+        ],
+        "timeBetweenFidgets": 0.1
+      },
+      "legacy_numeric_camera_only": {
+        "declared": {
+          "calibration_idle_bbox": [
+            165,
+            118,
+            231,
+            300
+          ],
+          "constant_scale": 0.4644808743169399,
+          "fidget": {
+            "duration_seconds": 0.7,
+            "probability_multiplier": 0.1,
+            "source_poses": 4,
+            "tick_addressing": [
+              0,
+              1,
+              1,
+              2,
+              2,
+              3,
+              3
+            ]
+          },
+          "genuine_action_groups": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            8,
+            11,
+            12,
+            13,
+            22
+          ],
+          "native_canvas": [
+            450,
+            400
+          ],
+          "per_frame_bbox_refit": false,
+          "pivot": [
+            197,
+            266
+          ],
+          "preview_schema": "stock VCMI only; no unsupported fields",
+          "status": "built-unreviewed; native action playback, visual review and redistribution approval pending",
+          "target_total_idle_height": 85,
+          "unit": "kinkouInitiate"
+        },
+        "idle_registered_bbox_rows": [
+          {
+            "bbox": [
+              182,
+              179,
+              217,
+              268
+            ],
+            "frame": 0,
+            "group": 2
+          },
+          {
+            "bbox": [
+              182,
+              179,
+              217,
+              268
+            ],
+            "frame": 1,
+            "group": 2
+          }
+        ],
+        "no_old_image_pixels_read": true
+      },
+      "name": {
+        "plural": "Kinkou Initiates",
+        "singular": "Kinkou Initiate"
+      },
+      "nonvisual_creature": {
+        "abilities": {
+          "precision": {
+            "type": "BLOCKS_RETALIATION"
+          }
+        },
+        "advMapAmount": {
+          "max": 18,
+          "min": 9
+        },
+        "aiValue": 230,
+        "attack": 6,
+        "cost": {
+          "gold": 110
+        },
+        "damage": {
+          "max": 5,
+          "min": 3
+        },
+        "defense": 4,
+        "description": "Grounded short-blade harassment prevents enemy retaliation. The initiate stays beside its target and cannot cross blocked routes or walls.",
+        "disabled": false,
+        "doubleWide": false,
+        "excludeFromRandomization": false,
+        "faction": "ionia",
+        "fightValue": 180,
+        "growth": 9,
+        "hasDoubleWeek": true,
+        "hitPoints": 14,
+        "horde": 0,
+        "level": 2,
+        "name": {
+          "plural": "Kinkou Initiates",
+          "singular": "Kinkou Initiate"
+        },
+        "sound": {
+          "attack": "SWRDATTK.wav",
+          "defend": "SWRDDFND.wav",
+          "killed": "SWRDKILL.wav",
+          "move": "SWRDMOVE.wav",
+          "wince": "SWRDWNCE.wav"
+        },
+        "special": false,
+        "speed": 6,
+        "upgrades": [
+          "kinkouAdept"
+        ]
+      },
+      "roles": {
+        "attackLeft": {
+          "before_live_sha256": "622237ab42d825f52a8fbe42df943081fd924b4f7d627c7450f33163ac6bdb4b",
+          "fit": "contain",
+          "groups": [],
+          "original_active_recipe": "assets/recipes/creatures/kinkouInitiate-attackLeft.json",
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/kinkouInitiate/attackLeft.png",
+          "recipe_type": "raster",
+          "recorded_before_copy_sha256": "622237ab42d825f52a8fbe42df943081fd924b4f7d627c7450f33163ac6bdb4b",
+          "require_alpha": true,
+          "size": [
+            96,
+            64
+          ],
+          "unit": "kinkouInitiate"
+        },
+        "attackRight": {
+          "before_live_sha256": "d1a996197293dad22ca7516541f587a8626a820a57e275f6b07765e3e6727d5b",
+          "fit": "contain",
+          "groups": [],
+          "original_active_recipe": "assets/recipes/creatures/kinkouInitiate-attackRight.json",
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/kinkouInitiate/attackRight.png",
+          "recipe_type": "raster",
+          "recorded_before_copy_sha256": "d1a996197293dad22ca7516541f587a8626a820a57e275f6b07765e3e6727d5b",
+          "require_alpha": true,
+          "size": [
+            96,
+            64
+          ],
+          "unit": "kinkouInitiate"
+        },
+        "battle": {
+          "before_live_sha256": "d1c4995611100193cbadfa9e24f6ea07a3b90bb237bf857cceb0c4522272e6aa",
+          "canvas": [
+            450,
+            400
+          ],
+          "generateOverlay": 1,
+          "generateShadow": 1,
+          "groups": [
+            {
+              "action": null,
+              "frames": 6,
+              "group": 0
+            },
+            {
+              "action": null,
+              "frames": 7,
+              "group": 1
+            },
+            {
+              "action": null,
+              "frames": 2,
+              "group": 2
+            },
+            {
+              "action": null,
+              "frames": 3,
+              "group": 3
+            },
+            {
+              "action": null,
+              "frames": 3,
+              "group": 4
+            },
+            {
+              "action": null,
+              "frames": 6,
+              "group": 5
+            },
+            {
+              "action": null,
+              "frames": 3,
+              "group": 7
+            },
+            {
+              "action": null,
+              "frames": 3,
+              "group": 8
+            },
+            {
+              "action": null,
+              "frames": 6,
+              "group": 11
+            },
+            {
+              "action": null,
+              "frames": 6,
+              "group": 12
+            },
+            {
+              "action": null,
+              "frames": 6,
+              "group": 13
+            },
+            {
+              "action": null,
+              "frames": 1,
+              "group": 22
+            }
+          ],
+          "original_active_recipe": "assets/recipes/creatures/kinkouInitiate-battle.json",
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/kinkouInitiate/battle.json",
+          "pivot": {
+            "x": 197,
+            "y": 266
+          },
+          "recipe_type": "vcmi_animation",
+          "recorded_before_copy_sha256": "d1c4995611100193cbadfa9e24f6ea07a3b90bb237bf857cceb0c4522272e6aa",
+          "unit": "kinkouInitiate"
+        },
+        "large": {
+          "before_live_sha256": "67f649125a84763b5bb97f4b8c351d862ce8e91881256333db8943922034880e",
+          "fit": "contain",
+          "groups": [],
+          "original_active_recipe": "assets/recipes/creatures/kinkouInitiate-large.json",
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/kinkouInitiate/large.png",
+          "recipe_type": "raster",
+          "recorded_before_copy_sha256": "67f649125a84763b5bb97f4b8c351d862ce8e91881256333db8943922034880e",
+          "require_alpha": true,
+          "size": [
+            58,
+            64
+          ],
+          "unit": "kinkouInitiate"
+        },
+        "map": {
+          "before_live_sha256": "91bff61d91fffe15759102002c61ea8f427149f3505508543035d9ad7714a17d",
+          "canvas": [
+            96,
+            64
+          ],
+          "generateOverlay": 1,
+          "generateShadow": 2,
+          "groups": [
+            {
+              "action": null,
+              "frames": 6,
+              "group": 0
+            }
+          ],
+          "original_active_recipe": "assets/recipes/creatures/kinkouInitiate-map.json",
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/kinkouInitiate/map.json",
+          "pivot": {
+            "x": 80,
+            "y": 60
+          },
+          "recipe_type": "vcmi_animation",
+          "recorded_before_copy_sha256": "91bff61d91fffe15759102002c61ea8f427149f3505508543035d9ad7714a17d",
+          "unit": "kinkouInitiate"
+        },
+        "small": {
+          "before_live_sha256": "b9cbc0a6a177a777fe4749f7f3e5c0bc133d33a7b4c055094cf251d9bf21062e",
+          "fit": "contain",
+          "groups": [],
+          "original_active_recipe": "assets/recipes/creatures/kinkouInitiate-small.json",
+          "output_path": "Content/Sprites/runeterra/ionia/creatures/kinkouInitiate/small.png",
+          "recipe_type": "raster",
+          "recorded_before_copy_sha256": "b9cbc0a6a177a777fe4749f7f3e5c0bc133d33a7b4c055094cf251d9bf21062e",
+          "require_alpha": true,
+          "size": [
+            32,
+            32
+          ],
+          "unit": "kinkouInitiate"
+        }
+      }
+    }
+  }
+}

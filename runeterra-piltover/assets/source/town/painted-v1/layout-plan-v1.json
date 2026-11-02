@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "status": "design proposal",
+  "canvas": [800, 374],
+  "ordinary_land_sites": 16,
+  "optional_coastal_sites": 1,
+  "camera": "Theatrical low three-quarter matte-painting composition, elevated horizon, readable frontal doors. Architecture uses forced depth rather than a strict isometric grid.",
+  "palette": "Warm ivory and weathered hewn stone, aged bronze/brass, muted timber brown, navy/teal cloth, restrained cool-blue hextech. No acid-green Zaun smog or royal Demacian wing heraldry.",
+  "lighting": "Soft upper-left daylight; warm southwest-facing stone, coherent rightward contact shadows, cool harbor distance.",
+  "region": "Piltover cliffside trade-and-workshop quarter; compressed playable community is project fiction, not a canonical street map.",
+  "envelope_rule": "Each box includes the largest state, full roof, stairs, foundations and contact shadow, plus four pixels of internal padding. Complete structural silhouettes must stay inside; masks derive from painted alpha, not these planning boxes.",
+  "topology": "Four upper-city skyline masses descend through an irregular craft terrace to five larger foreground framing services. The central stepped civic route links lateral terrace streets and every door. Foreground apparent size and physical landmark size are distinct.",
+  "water_polygons": [[[0, 70], [112, 105], [109, 184], [0, 184]]],
+  "coastal_site": {"id": "coast", "keys": ["shipyard", "ship"], "box": [0, 110, 109, 74], "door": [101, 179], "approach": [111, 188], "water_contact": "Intentional quay and moored-ship family only; landward door is on the dry front quay."},
+  "optional_grail": {"key": "grail", "proposal": "Integral civic Progress Orrery or crest-tower addition at the hall site; final mount and coexistence must be resolved against the actual Grail consumer before painting.", "status": "design proposal; consumer question sent to content owner"},
+  "sites": [
+    {"id": "aerial", "keys": ["dwellingLvl6", "dwellingUpLvl6"], "box": [122, 50, 116, 119], "door": [197, 163], "approach": [200, 179], "depth": 169, "subject": "Personal-flight workshop, landing platform and narrow survey mast; modest skywatch upgrade, not a Corki hangar or mass airship fleet."},
+    {"id": "guild", "keys": ["mageGuild1", "mageGuild2", "mageGuild3"], "box": [250, 46, 133, 124], "door": [321, 164], "approach": [320, 180], "depth": 170, "subject": "Civic academy lecture observatory; one low teaching hall develops into a glass-and-brass instrument tower."},
+    {"id": "hall", "keys": ["villageHall", "townHall", "cityHall", "capitol"], "box": [397, 29, 188, 145], "door": [490, 166], "approach": [491, 181], "depth": 174, "subject": "Trade council lodge developing into a grand mercantile assembly hall and civic clock tower; strong physical size at distance."},
+    {"id": "fort", "keys": ["fort", "citadel", "castle"], "box": [601, 37, 199, 144], "door": [693, 174], "approach": [690, 189], "depth": 181, "subject": "Terraced city gate and Warden walls with bronze-trimmed watch towers; fortified civic architecture rather than a Noxian war keep."},
+    {"id": "museum", "keys": ["special4"], "box": [2, 190, 98, 58], "door": [56, 241], "approach": [59, 254], "depth": 248, "subject": "Small public museum portico at the quayside stair; civic banners and public display windows."},
+    {"id": "handlers", "keys": ["dwellingLvl3", "special2", "dwellingUpLvl3"], "box": [112, 205, 88, 59], "door": [169, 257], "approach": [172, 272], "depth": 264, "subject": "Compact freight-machine dispatch yard; Inventor Guild office and reinforced handler service bay develop the same site."},
+    {"id": "wardens", "keys": ["dwellingLvl1", "special1", "dwellingUpLvl1"], "box": [212, 185, 98, 76], "door": [263, 253], "approach": [268, 271], "depth": 261, "subject": "Cadet civic patrol lodge; Academy drill gallery and senior Warden barracks extend the same building."},
+    {"id": "rifles", "keys": ["dwellingLvl2", "dwellingUpLvl2"], "box": [322, 188, 98, 80], "door": [372, 260], "approach": [375, 276], "depth": 268, "subject": "Warden rifle depot and enclosed training gallery; upgraded arsenal adds a readable upper gallery."},
+    {"id": "silo", "keys": ["resourceSilo"], "box": [432, 186, 60, 88], "door": [464, 266], "approach": [465, 280], "depth": 274, "subject": "Narrow hextech materials workshop with an opaque stone base and a small protected blue-crystal reservoir."},
+    {"id": "artificers", "keys": ["dwellingLvl4", "dwellingUpLvl4"], "box": [504, 183, 121, 88], "door": [566, 263], "approach": [566, 280], "depth": 271, "subject": "Academy craft hall and engineered crossbow testing gallery; scholarly tools and brass lattice windows."},
+    {"id": "lifters", "keys": ["dwellingLvl7", "dwellingUpLvl7"], "box": [637, 177, 163, 91], "door": [717, 261], "approach": [713, 278], "depth": 268, "subject": "Heavy living-operated dockyard work-suit fitting hall, gantry and reinforced industrial assembly bay; no autonomous Hexcore Titan."},
+    {"id": "smith", "keys": ["blacksmith"], "box": [0, 272, 172, 102], "door": [100, 359], "approach": [112, 371], "depth": 374, "subject": "Large foreground framing street forge, weathered timber work roof and restrained orange furnace light."},
+    {"id": "engineers", "keys": ["dwellingLvl5", "dwellingUpLvl5"], "box": [187, 280, 144, 94], "door": [269, 359], "approach": [273, 371], "depth": 374, "subject": "Practical forge-engineer cooperative and master instrument works; visible tools and blue precision device, no extra turret army."},
+    {"id": "tavern", "keys": ["tavern"], "box": [349, 280, 170, 94], "door": [437, 359], "approach": [440, 371], "depth": 374, "subject": "Large welcoming timber-and-stone craftworkers' inn, hanging sign and teal awning; part of the same street."},
+    {"id": "market", "keys": ["marketplace"], "box": [531, 290, 78, 84], "door": [571, 360], "approach": [572, 371], "depth": 374, "subject": "Narrow foreground guild shop with varied cloth awnings, trade goods and a small civic seal; not a duplicate house."},
+    {"id": "exchange", "keys": ["special3"], "box": [619, 280, 181, 94], "door": [704, 359], "approach": [701, 371], "depth": 374, "subject": "Large foreground cargo exchange and coach-service warehouse, painted shipping marks and side loading porch."}
+  ],
+  "roads": [
+    {"id": "upper-civic-spine", "width": 10, "points": [[111,188],[200,179],[320,180],[491,181],[690,189],[790,183]]},
+    {"id": "terrace-street", "width": 12, "points": [[59,254],[172,272],[268,271],[375,276],[465,280],[566,280],[713,278],[795,275]]},
+    {"id": "civic-stairs", "width": 14, "points": [[491,181],[499,206],[496,239],[490,273],[497,285],[522,306]]},
+    {"id": "front-street", "width": 12, "points": [[0,371],[112,371],[273,371],[440,371],[572,371],[701,371],[800,371]]}
+  ],
+  "state_review": ["empty", "early", "partial", "all-base", "all-upgraded", "coastal", "grail"],
+  "native_observed": false,
+  "final_art_accepted": false
+}

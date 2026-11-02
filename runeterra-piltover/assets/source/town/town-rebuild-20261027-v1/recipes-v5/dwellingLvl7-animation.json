@@ -1,0 +1,103 @@
+{
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI builtin imagegen; deterministic technical2D conversion",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/hextech-revision-v1/buildings/dwellingLvl7/master-v4.png",
+      "sha256": "fab301d00a68c2c77c8a8315dfd585d3ad7a62727413674e71da87b4bd605a59"
+    },
+    {
+      "path": "assets/source/town/hextech-revision-v1/buildings/dwellingLvl7/master-v4b.png",
+      "sha256": "461a2758b7f13377c956b0b2234213e7fb13b9a3b844cf78398bad917563345e"
+    },
+    {
+      "path": "assets/source/town/hextech-revision-v1/buildings/dwellingLvl7/prompt-v4.txt",
+      "sha256": "d5d15f06e858a245dd26f44c94cab7a8dc053468a5c5d8387c8a91e4edce9f73"
+    },
+    {
+      "path": "assets/source/town/hextech-revision-v1/buildings/dwellingLvl7/prompt-v4b.txt",
+      "sha256": "8e84cdab3dd6f21c7a70610962385cc007733697f286ad8049089a79749f4fc3"
+    },
+    {
+      "path": "assets/source/town/hextech-revision-v1/buildings/dwellingLvl7/source-generation-v4.json",
+      "sha256": "f78c6354e93e0964e2b5c7d8107fc388cc6988ac688aed23c531fc8111ea028f"
+    },
+    {
+      "path": "assets/source/town/hextech-revision-v1/buildings/dwellingLvl7/source-generation-v4b.json",
+      "sha256": "4a51ed608a3e33c33a921b3754681577ebec84b6c79e2db35d4a2fc5f65d69c3"
+    },
+    {
+      "path": "assets/source/town/hextech-revision-v1/buildings/dwellingLvl7/uncrop-edit-target.png",
+      "sha256": "2f1b3c1c8f8613019c8a86d7a7c4ffc690415c445c963efa19702c5892a8c92e"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl7/master-v1.png",
+      "sha256": "2824a85a659db1311e2f7f148d120f2242737aa42415abfcd5af3be88450a066"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl7/prompt-v1.txt",
+      "sha256": "be080ccc45522a3fcc1bc6c1b16d12d0882ee7e948b25e2f442bbcdb53aa83aa"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl7/source-generation.json",
+      "sha256": "2aca995fd787f9993bad030c1c0da5a804efbba0e8464111c05fd906c94f0af3"
+    },
+    {
+      "path": "assets/source/town/town-rebuild-20261027-v1/assemble_v5.py",
+      "sha256": "e0a6921c838e6766a934d09a8a0135d93526d9455957cbeb7ba6fe6728998977"
+    },
+    {
+      "path": "assets/source/town/town-rebuild-20261027-v1/layout-plan-v5.json",
+      "sha256": "30ce12667d84deae5be2e6efd2092aab3ba328c5bab7115f8b8a6c8e95d3a32a"
+    },
+    {
+      "path": "assets/source/town/town-rebuild-20261027-v1/placement-calibration-v5.json",
+      "sha256": "97e7d21f33e72941feb95696ba2b23d558153f0d2054365d956ca2a4a30f05f5"
+    }
+  ],
+  "generateOverlay": 0,
+  "generateShadow": 0,
+  "generation": {
+    "image_generation_used": true,
+    "model": "not exposed by tool",
+    "painted_master": "assets/source/town/hextech-revision-v1/buildings/dwellingLvl7/master-v4b.png",
+    "painted_master_sha256": "461a2758b7f13377c956b0b2234213e7fb13b9a3b844cf78398bad917563345e",
+    "producer": "assets/source/town/town-rebuild-20261027-v1/assemble_v5.py",
+    "producer_sha256": "e0a6921c838e6766a934d09a8a0135d93526d9455957cbeb7ba6fe6728998977",
+    "prompt": "Precise boundary repair of our own painted2D Piltover Rampager Research Assembly Hangar. This edit target has100pixels of technical TRANSPARENT padding around the original image; all existing architecture was merely translated intact. KEEP EXACT TARGET CANVAS and keep existing architecture/root/scale/sourceposition and transparent padding. ONLY restore the tiny cropped far RIGHT END of the stone foundation/wall/contactshadow where the original image ended100pixels before current right boundary. Paint the missing final stone corner and side sill coherently within this new clear margin, then genuine transparent empty outside. Do not enlarge/recenter/change the hangar, add a new room, change its details, repaint the existing core, move stairs, modify crest or cyanreactors, or generate a studio background. Preserve painted2D originalHeroesIII look and fully opaque body, true zeroalpha aroundoutside. Complete roof, left/right foundation and contact shadow must be completely enclosed by at least50pixels transparent margin on all sides. No 3D, no text, no people, no objects beyond finishing the cutoff stone corner.\n",
+    "prompt_file": "assets/source/town/hextech-revision-v1/buildings/dwellingLvl7/prompt-v4b.txt",
+    "provider": "OpenAI builtin imagegen",
+    "source_generation_ledger": "assets/source/town/hextech-revision-v1/buildings/dwellingLvl7/source-generation-v4b.json"
+  },
+  "groups": [
+    {
+      "frames": [
+        {
+          "source": "assets/source/town/town-rebuild-20261027-v1/buildings/dwellingLvl7/native-frame.png",
+          "source_canvas": [
+            800,
+            374
+          ],
+          "source_sha256": "1ffe785dd2eeef6106ece6e2ea41077f8ea54cf52eec97ccafb780c371707d0c"
+        }
+      ],
+      "group": 0
+    }
+  ],
+  "output_path": "Content/Sprites/runeterra/piltover/town/structures/dwellingLvl7.json",
+  "pivot": {
+    "x": 721,
+    "y": 255
+  },
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "vcmi_animation",
+  "status": "painted-candidate",
+  "visual_approval_granted": false
+}

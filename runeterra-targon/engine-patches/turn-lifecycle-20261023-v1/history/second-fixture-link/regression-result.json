@@ -1,0 +1,40 @@
+{
+  "utc": "2026-10-23T12:00:46.053243+00:00",
+  "compiler": "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe",
+  "compiler_sha256": "e6d57100c82ae0310c18b16abfe52bc0df8fbb272ca6c5fb287d485807cfce91",
+  "scope": "Extracted actual pinned consumer methods compiled against minimal dependency fixtures. Not a complete engine build or native gameplay test.",
+  "variants": {
+    "upstream": {
+      "compile_command": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe",
+        "/nologo",
+        "/std:c++17",
+        "/EHsc",
+        "/W4",
+        "/Od",
+        "C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\upstream\\consumer_regression.cpp",
+        "/Fe:C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\upstream\\consumer_regression.exe",
+        "/Fo:C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\upstream\\consumer_regression.obj"
+      ],
+      "compile_exit_code": 2,
+      "source_sha256": "e12bfa6220f96c2b2eb10e484e9c8d21df9c891726575771ded448a09dd54d29",
+      "compile_output": "consumer_regression.cpp\nC:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\upstream\\consumer_regression.cpp(216): warning C4189: 'gsUnlocker': local variable is initialized but not referenced\nC:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\upstream\\consumer_regression.cpp(243): warning C4101: 'e': unreferenced local variable\nC:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\upstream\\consumer_regression.cpp(244): warning C4101: 'e': unreferenced local variable\nC:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\upstream\\consumer_regression.cpp(63) : warning C4702: unreachable code\nC:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\upstream\\consumer_regression.cpp(63) : warning C4702: unreachable code\nconsumer_regression.obj : error LNK2019: unresolved external symbol \"public: void __cdecl AIStatus::attemptedAnsweringQuestion(int,int)\" (?attemptedAnsweringQuestion@AIStatus@@QEAAXHH@Z) referenced in function \"public: void __cdecl AIGateway::requestSent(struct CPackForServer const *,int)\" (?requestSent@AIGateway@@QEAAXPEBUCPackForServer@@H@Z)\nconsumer_regression.obj : error LNK2019: unresolved external symbol \"public: void __cdecl IGameEventsReceiver::requestRealized(struct PackageApplied *)\" (?requestRealized@IGameEventsReceiver@@QEAAXPEAUPackageApplied@@@Z) referenced in function \"public: void __cdecl ApplyClientNetPackVisitor::visitPackageApplied(struct PackageApplied &)\" (?visitPackageApplied@ApplyClientNetPackVisitor@@QEAAXAEAUPackageApplied@@@Z)\nC:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\upstream\\consumer_regression.exe : fatal error LNK1120: 2 unresolved externals\n"
+    },
+    "patched": {
+      "compile_command": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe",
+        "/nologo",
+        "/std:c++17",
+        "/EHsc",
+        "/W4",
+        "/Od",
+        "C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\patched\\consumer_regression.cpp",
+        "/Fe:C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\patched\\consumer_regression.exe",
+        "/Fo:C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\patched\\consumer_regression.obj"
+      ],
+      "compile_exit_code": 2,
+      "source_sha256": "42f126b993a5ce67f36d0e82398cdbfe855ee66b409803b77fe855c4352809c7",
+      "compile_output": "consumer_regression.cpp\nC:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\patched\\consumer_regression.cpp(243): warning C4189: 'gsUnlocker': local variable is initialized but not referenced\nC:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\patched\\consumer_regression.cpp(270): warning C4101: 'e': unreferenced local variable\nC:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\patched\\consumer_regression.cpp(271): warning C4101: 'e': unreferenced local variable\nC:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\patched\\consumer_regression.cpp(68) : warning C4702: unreachable code\nC:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\patched\\consumer_regression.cpp(68) : warning C4702: unreachable code\nconsumer_regression.obj : error LNK2019: unresolved external symbol \"public: void __cdecl AIStatus::attemptedAnsweringQuestion(int,int)\" (?attemptedAnsweringQuestion@AIStatus@@QEAAXHH@Z) referenced in function \"public: void __cdecl AIGateway::requestSent(struct CPackForServer const *,int)\" (?requestSent@AIGateway@@QEAAXPEBUCPackForServer@@H@Z)\nconsumer_regression.obj : error LNK2019: unresolved external symbol \"public: void __cdecl IGameEventsReceiver::requestRealized(struct PackageApplied *)\" (?requestRealized@IGameEventsReceiver@@QEAAXPEAUPackageApplied@@@Z) referenced in function \"public: void __cdecl ApplyClientNetPackVisitor::visitPackageApplied(struct PackageApplied &)\" (?visitPackageApplied@ApplyClientNetPackVisitor@@QEAAXAEAUPackageApplied@@@Z)\nC:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\turn-lifecycle-20261023-v1\\tests\\patched\\consumer_regression.exe : fatal error LNK1120: 2 unresolved externals\n"
+    }
+  }
+}

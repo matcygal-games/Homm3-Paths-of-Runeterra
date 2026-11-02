@@ -1,0 +1,239 @@
+{
+  "status": "authored configuration",
+  "scope": "Compiled extracted actual official66fa consumer bodies with minimal dependency fixtures and actual InternalConnection methods; not full engine/native gameplay",
+  "compiler": "MSVC19.51 (C++17), isolated copied-consumer executables only",
+  "compiler_sha256": "e6d57100c82ae0310c18b16abfe52bc0df8fbb272ca6c5fb287d485807cfce91",
+  "original_receipts_sha256": {
+    "regression-result-v2.json": "b2eb1efb4a9bf88ec95e10a4161624c5a339f864ce9aefb71c9d01be170a2b3f",
+    "mutation-results.json": "1028e2da09da021343268adf151cd08069c4f9b45e2b90e094e2f266c554a41c",
+    "patch-apply-check-v2.json": "f4263551e1ae78fb353fe5045f87333bfc3c3ccdad6356967374788ccd813d37",
+    "extracted-consumers-v2.json": "41ed9a5f67baf51c9b28af33f8773f472f412379959d2f1204bd8f82481f65ba"
+  },
+  "variants": {
+    "upstream": {
+      "compile_exit_code": 0,
+      "passed": 6,
+      "failed": 8,
+      "generated_cpp_sha256": "a94fef58172a1ef79edc66a4fcfed1f8d538a681b54ef947a35d596ddacd76bd",
+      "compile_log_sha256": "f32a690313d13551bfaaf3c302f6677370f8e9cd7685d98fd3d85746160fe879",
+      "binary_sha256": "7ab74c8c41e48708431c092d36d1c4126546a881bdd7694f0e6e9d40262b1c18",
+      "cases": {
+        "authorized-request-late-and-duplicate": {
+          "exit_code": 1,
+          "output": "FAIL authorized-request-late-and-duplicate: intentional callback ERROR\nRESULT 0 passed 1 failed\n",
+          "raw_log_relative_path": "tests-v2/upstream/authorized-request-late-and-duplicate.log",
+          "raw_log_sha256": "832d4dc43e84a56a22f7afe69b61f8b04f273d468ecc425418c8e1362608de81"
+        },
+        "synchronous-close-before-removal": {
+          "exit_code": 1,
+          "output": "FAIL synchronous-close-before-removal: consumer assertion: vstd::contains(activeConnections, connection)\nRESULT 0 passed 1 failed\n",
+          "raw_log_relative_path": "tests-v2/upstream/synchronous-close-before-removal.log",
+          "raw_log_sha256": "2c70c709c780c96f66ff5ffe1ae5b32ffc7b3cc136f06c5a8797029850cdf76f"
+        },
+        "unexpected-active-loss-cleanup-once": {
+          "exit_code": 1,
+          "output": "FAIL unexpected-active-loss-cleanup-once: duplicate local-close error\nRESULT 0 passed 1 failed\n",
+          "raw_log_relative_path": "tests-v2/upstream/unexpected-active-loss-cleanup-once.log",
+          "raw_log_sha256": "e7b63120fc908aa6dab5302a8243d2335600d23a8c1436c42f7ac8bc6870b677"
+        },
+        "unknown-loss-after-shutdown-remains-error": {
+          "exit_code": 0,
+          "output": "PASS unknown-loss-after-shutdown-remains-error\nRESULT 1 passed 0 failed\n",
+          "raw_log_relative_path": "tests-v2/upstream/unknown-loss-after-shutdown-remains-error.log",
+          "raw_log_sha256": "95a7ff497440abf7a6a02f201645cefa8feba42da484f7e205b9d8497a2a870c"
+        },
+        "rejected-wrong-client-cannot-mark": {
+          "exit_code": 0,
+          "output": "PASS rejected-wrong-client-cannot-mark\nRESULT 1 passed 0 failed\n",
+          "raw_log_relative_path": "tests-v2/upstream/rejected-wrong-client-cannot-mark.log",
+          "raw_log_sha256": "2b68d26cd36352f0d2f73c65a6f98e629858e17a0cf32355f279b58e83ead9d6"
+        },
+        "rejected-nonhost-shutdown-cannot-mark": {
+          "exit_code": 0,
+          "output": "PASS rejected-nonhost-shutdown-cannot-mark\nRESULT 1 passed 0 failed\n",
+          "raw_log_relative_path": "tests-v2/upstream/rejected-nonhost-shutdown-cannot-mark.log",
+          "raw_log_sha256": "718b414f6bec039a15640201a0bb59b1d37ba4902693a39ac7d8edec32b2eee9"
+        },
+        "rejected-dedicated-shutdown-cannot-mark": {
+          "exit_code": 0,
+          "output": "PASS rejected-dedicated-shutdown-cannot-mark\nRESULT 1 passed 0 failed\n",
+          "raw_log_relative_path": "tests-v2/upstream/rejected-dedicated-shutdown-cannot-mark.log",
+          "raw_log_sha256": "e14b61946b2dd3bdf17e8de66090d7637bff5ad53603df997b0dae8c06117c87"
+        },
+        "one-peer-close-other-peer-failure": {
+          "exit_code": 1,
+          "output": "FAIL one-peer-close-other-peer-failure: first intentional peer ERROR\nRESULT 0 passed 1 failed\n",
+          "raw_log_relative_path": "tests-v2/upstream/one-peer-close-other-peer-failure.log",
+          "raw_log_sha256": "e604fb5010f2594f392352001998c0f8e30127f34ba47f4c2e67585707d89a0d"
+        },
+        "other-peer-failure-before-local-completion": {
+          "exit_code": 1,
+          "output": "FAIL other-peer-failure-before-local-completion: completion ordering lost failure\nRESULT 0 passed 1 failed\n",
+          "raw_log_relative_path": "tests-v2/upstream/other-peer-failure-before-local-completion.log",
+          "raw_log_sha256": "539c68d1ca6dd1b4af2dcbe86ca00f048acc5f69e01c66ba4c9f0c9c0ef79e02"
+        },
+        "rejected-new-connection-owned-close": {
+          "exit_code": 1,
+          "output": "FAIL rejected-new-connection-owned-close: known rejected transport ERROR\nRESULT 0 passed 1 failed\n",
+          "raw_log_relative_path": "tests-v2/upstream/rejected-new-connection-owned-close.log",
+          "raw_log_sha256": "dcd9d91ddbf45a71f95f34db31932019500a835401e0061600b607d75a1f8c6c"
+        },
+        "weak-lifetime-and-address-reuse": {
+          "exit_code": 0,
+          "output": "PASS weak-lifetime-and-address-reuse\nRESULT 1 passed 0 failed\n",
+          "raw_log_relative_path": "tests-v2/upstream/weak-lifetime-and-address-reuse.log",
+          "raw_log_sha256": "befaa968eff072adb51302fe43bea3065b4d4fe76866469bc186eb2c962fcb87"
+        },
+        "same-address-different-shared-ownership-remains-error": {
+          "exit_code": 0,
+          "output": "PASS same-address-different-shared-ownership-remains-error\nRESULT 1 passed 0 failed\n",
+          "raw_log_relative_path": "tests-v2/upstream/same-address-different-shared-ownership-remains-error.log",
+          "raw_log_sha256": "fdf3496cb31b3512f55455a80be1ad1e90df21cfe0db9f013a3aa99afb493f41"
+        },
+        "valid-host-shutdown-cleanup": {
+          "exit_code": 1,
+          "output": "FAIL valid-host-shutdown-cleanup: valid host shutdown lifecycle changed\nRESULT 0 passed 1 failed\n",
+          "raw_log_relative_path": "tests-v2/upstream/valid-host-shutdown-cleanup.log",
+          "raw_log_sha256": "f113e0dfe59cd53f01568507ba006ca39894048a45deeaffb720e0e3ad9c3760"
+        },
+        "actual-internal-queued-requested-completion": {
+          "exit_code": 1,
+          "output": "FAIL actual-internal-queued-requested-completion: actual queued intentional close ERROR\nRESULT 0 passed 1 failed\n",
+          "raw_log_relative_path": "tests-v2/upstream/actual-internal-queued-requested-completion.log",
+          "raw_log_sha256": "496771a3362d29ca12ebcd0a6d4f4d898cb5223a5188688b4a6c538aa34384ba"
+        }
+      }
+    },
+    "patched": {
+      "compile_exit_code": 0,
+      "passed": 14,
+      "failed": 0,
+      "generated_cpp_sha256": "7394caa7820524a2194594d0ab8c867ffea33aa10af797dc155be9716250decf",
+      "compile_log_sha256": "8a07f65eac4b8842aaf0e383c6158ae55e814e6ca3c9e104e282b2394289ae6d",
+      "binary_sha256": "22f6e4329bf37df6ed7dcb5566c3313e1e921bfa44a14fcd33e64a1417173bf0",
+      "cases": {
+        "authorized-request-late-and-duplicate": {
+          "exit_code": 0,
+          "output": "PASS authorized-request-late-and-duplicate\nRESULT 1 passed 0 failed\n",
+          "raw_log_relative_path": "tests-v2/patched/authorized-request-late-and-duplicate.log",
+          "raw_log_sha256": "d41c6f89205385d34fed4c79e2a2f685ef28bc9537348596cbb8eb7597f13a58"
+        },
+        "synchronous-close-before-removal": {
+          "exit_code": 0,
+          "output": "PASS synchronous-close-before-removal\nRESULT 1 passed 0 failed\n",
+          "raw_log_relative_path": "tests-v2/patched/synchronous-close-before-removal.log",
+          "raw_log_sha256": "30755935f394c007e5cd108a4f8405c74b6c90008ba03c855aca2c22c14e2697"
+        },
+        "unexpected-active-loss-cleanup-once": {
+          "exit_code": 0,
+          "output": "PASS unexpected-active-loss-cleanup-once\nRESULT 1 passed 0 failed\n",
+          "raw_log_relative_path": "tests-v2/patched/unexpected-active-loss-cleanup-once.log",
+          "raw_log_sha256": "a186e307dd1ce66eff65755d98f39239dc1d1a14833c7d75a2c7f8ed0624e3ab"
+        },
+        "unknown-loss-after-shutdown-remains-error": {
+          "exit_code": 0,
+          "output": "PASS unknown-loss-after-shutdown-remains-error\nRESULT 1 passed 0 failed\n",
+          "raw_log_relative_path": "tests-v2/patched/unknown-loss-after-shutdown-remains-error.log",
+          "raw_log_sha256": "95a7ff497440abf7a6a02f201645cefa8feba42da484f7e205b9d8497a2a870c"
+        },
+        "rejected-wrong-client-cannot-mark": {
+          "exit_code": 0,
+          "output": "PASS rejected-wrong-client-cannot-mark\nRESULT 1 passed 0 failed\n",
+          "raw_log_relative_path": "tests-v2/patched/rejected-wrong-client-cannot-mark.log",
+          "raw_log_sha256": "2b68d26cd36352f0d2f73c65a6f98e629858e17a0cf32355f279b58e83ead9d6"
+        },
+        "rejected-nonhost-shutdown-cannot-mark": {
+          "exit_code": 0,
+          "output": "PASS rejected-nonhost-shutdown-cannot-mark\nRESULT 1 passed 0 failed\n",
+          "raw_log_relative_path": "tests-v2/patched/rejected-nonhost-shutdown-cannot-mark.log",
+          "raw_log_sha256": "718b414f6bec039a15640201a0bb59b1d37ba4902693a39ac7d8edec32b2eee9"
+        },
+        "rejected-dedicated-shutdown-cannot-mark": {
+          "exit_code": 0,
+          "output": "PASS rejected-dedicated-shutdown-cannot-mark\nRESULT 1 passed 0 failed\n",
+          "raw_log_relative_path": "tests-v2/patched/rejected-dedicated-shutdown-cannot-mark.log",
+          "raw_log_sha256": "e14b61946b2dd3bdf17e8de66090d7637bff5ad53603df997b0dae8c06117c87"
+        },
+        "one-peer-close-other-peer-failure": {
+          "exit_code": 0,
+          "output": "PASS one-peer-close-other-peer-failure\nRESULT 1 passed 0 failed\n",
+          "raw_log_relative_path": "tests-v2/patched/one-peer-close-other-peer-failure.log",
+          "raw_log_sha256": "8c4bde311723ee3f50186ff3514ffbeae0507a0c0fe3a9ebfa37fbca03fd8b66"
+        },
+        "other-peer-failure-before-local-completion": {
+          "exit_code": 0,
+          "output": "PASS other-peer-failure-before-local-completion\nRESULT 1 passed 0 failed\n",
+          "raw_log_relative_path": "tests-v2/patched/other-peer-failure-before-local-completion.log",
+          "raw_log_sha256": "cbac56bf0dd60f865ed5f2785bd811b35045ba6a9cf66946c1b45889c4acf901"
+        },
+        "rejected-new-connection-owned-close": {
+          "exit_code": 0,
+          "output": "PASS rejected-new-connection-owned-close\nRESULT 1 passed 0 failed\n",
+          "raw_log_relative_path": "tests-v2/patched/rejected-new-connection-owned-close.log",
+          "raw_log_sha256": "b036510135a191d1c9757a9acb18eda734d15f0279abd29cd7457340eec1944c"
+        },
+        "weak-lifetime-and-address-reuse": {
+          "exit_code": 0,
+          "output": "PASS weak-lifetime-and-address-reuse\nRESULT 1 passed 0 failed\n",
+          "raw_log_relative_path": "tests-v2/patched/weak-lifetime-and-address-reuse.log",
+          "raw_log_sha256": "befaa968eff072adb51302fe43bea3065b4d4fe76866469bc186eb2c962fcb87"
+        },
+        "same-address-different-shared-ownership-remains-error": {
+          "exit_code": 0,
+          "output": "PASS same-address-different-shared-ownership-remains-error\nRESULT 1 passed 0 failed\n",
+          "raw_log_relative_path": "tests-v2/patched/same-address-different-shared-ownership-remains-error.log",
+          "raw_log_sha256": "fdf3496cb31b3512f55455a80be1ad1e90df21cfe0db9f013a3aa99afb493f41"
+        },
+        "valid-host-shutdown-cleanup": {
+          "exit_code": 0,
+          "output": "PASS valid-host-shutdown-cleanup\nRESULT 1 passed 0 failed\n",
+          "raw_log_relative_path": "tests-v2/patched/valid-host-shutdown-cleanup.log",
+          "raw_log_sha256": "6402019920c63b0b690b2ad7089296df57e134b746a637df8123d71801cd7f86"
+        },
+        "actual-internal-queued-requested-completion": {
+          "exit_code": 0,
+          "output": "PASS actual-internal-queued-requested-completion\nRESULT 1 passed 0 failed\n",
+          "raw_log_relative_path": "tests-v2/patched/actual-internal-queued-requested-completion.log",
+          "raw_log_sha256": "022a25ca3b502c0409553a4224481c0e7ea68f3be044747205e060ae61a678e3"
+        }
+      }
+    }
+  },
+  "mutations": {
+    "global-shutdown-suppression": {
+      "compile_exit_code": 0,
+      "case": "unknown-loss-after-shutdown-remains-error",
+      "run_exit_code": 1,
+      "rejected": true,
+      "output": "FAIL unknown-loss-after-shutdown-remains-error: unknown ERROR hidden by global shutdown\nRESULT 0 passed 1 failed\n",
+      "source_sha256": "884b13698416182b3441ca7db858543d5100b30f414bef2e358a4651b5c12292",
+      "compile_log_sha256": "8fdfa7a2cf731605056b4c09182832d8e0cdc1afa7f13a097d917493266e55eb",
+      "raw_run_log_sha256": "bbc7dc35994d8deb4f1838df2639f1120d30a7ebd6e3b0d3ead47ea8c749eb0f"
+    },
+    "mark-after-close": {
+      "compile_exit_code": 0,
+      "case": "synchronous-close-before-removal",
+      "run_exit_code": 1,
+      "rejected": true,
+      "output": "FAIL synchronous-close-before-removal: consumer assertion: vstd::contains(activeConnections, connection)\nRESULT 0 passed 1 failed\n",
+      "source_sha256": "39761e579ef0216f6db3d857932e398f9d07a3396a507c363c59f17a1a5175f1",
+      "compile_log_sha256": "dcd32957a189b184e67a97bacc722989e653f76384426233149dd4feb543c717",
+      "raw_run_log_sha256": "2c70c709c780c96f66ff5ffe1ae5b32ffc7b3cc136f06c5a8797029850cdf76f"
+    }
+  },
+  "apply_check": {
+    "exit_codes": [
+      0,
+      0,
+      0
+    ],
+    "patched_files_match": true
+  },
+  "historical_failures_preserved_locally": [
+    "First consumer enumeration named a nonexistent LobbyNetPackVisitors.cpp; actual file NetPacksLobbyServer.cpp used after officialtree verification",
+    "Initial fixture compilation had local constexpr capture error; unmodified generatedfailedsource/compilelogs/receipt retained",
+    "Initial isolated gitapply respected globalautoCRLF and exactbytecomparison failed; separatev2disablesautocrlf and matchesbytes"
+  ],
+  "native_gameplay_verified": false,
+  "observed_callback_identity_verified": false
+}

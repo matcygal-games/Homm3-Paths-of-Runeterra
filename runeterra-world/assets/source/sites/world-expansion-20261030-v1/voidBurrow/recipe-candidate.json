@@ -1,0 +1,55 @@
+{
+  "canvas": [
+    96,
+    96
+  ],
+  "generation": {
+    "image_generation_used": true,
+    "method": "Whole painted actor extraction and fixed cohort registration; no per-frame fitting, warping or artistic acceptance.",
+    "model": "not exposed",
+    "painted_master": "assets/source/sites/world-expansion-20261030-v1/voidBurrow/master-v1.png",
+    "painted_master_sha256": "864a8d6e36cb9b71911925b9d8329d1585e770ed2693cbf2c7f790af1e5565da",
+    "prompt": "Paint one complete small adventure-map object for Heroes of Might and Magic III: a Void Burrow, a low irregular burrow mouth ripped into cracked grey-brown rock and violet chitin growth, muted purple mineral thorns, two pink egg sacs deep inside the shadowed hollow. Original Runeterra-inspired local encounter, no recognizable champion or huge monster. It must have a clear open entrance facing the bottom center viewer, with a small dry approach apron; grounded, no water or portal glow cloud. Slight elevated three-quarter oblique map viewpoint, upper-left light, hand-painted compact richly textured 1999 fantasy game style, readable as a96x96sprite across3x3maptiles. Main solid object concentrated in center/lower two-thirds; tall spines may overhang rear only. Transparent background, no text, no grid, no square base, no scenery surrounding, no characters, no3Drender. Whole subject with generous transparent margin and visible bottom foundations.\n",
+    "provider": "OpenAI built-in imagegen"
+  },
+  "groups": [
+    {
+      "frames": [
+        {
+          "frame": 0,
+          "sha256": "641584886b1f71ca8b1dbebbe3ab45983a966efd0c724604bc02355174993903",
+          "source": "assets/source/sites/world-expansion-20261030-v1/voidBurrow/native-v1.png",
+          "source_canvas": [
+            96,
+            96
+          ],
+          "source_sha256": "641584886b1f71ca8b1dbebbe3ab45983a966efd0c724604bc02355174993903"
+        }
+      ],
+      "generateOverlay": 0,
+      "generateShadow": 1,
+      "group": 0
+    }
+  ],
+  "output_path": "Content/Sprites/runeterra/world/sites/voidBurrow/map.json",
+  "pivot": {
+    "x": 48,
+    "y": 94
+  },
+  "production_inputs": [
+    {
+      "path": "assets/source/sites/world-expansion-20261030-v1/voidBurrow/master-v1.png",
+      "sha256": "864a8d6e36cb9b71911925b9d8329d1585e770ed2693cbf2c7f790af1e5565da"
+    },
+    {
+      "path": "assets/source/sites/world-expansion-20261030-v1/voidBurrow/prompt-v1.txt",
+      "sha256": "4a459e5909a2601592999e382c57e42d1287e4d4512fb68211853f47a0a07541"
+    },
+    {
+      "path": "assets/source/creatures/voidgrub-20261030-v1/produce_candidates.py",
+      "sha256": "221762de8894661e882636cb0f2c46b5308b5d36815fd3400774b5b5d35cd651"
+    }
+  ],
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "vcmi_animation"
+}

@@ -1,0 +1,216 @@
+{
+  "image_paths": {
+    "painted-atlas-v1.png": "//..\\..\\materials\\painted-atlas-v1.png"
+  },
+  "integrity": {
+    "mesh_count": 280,
+    "mesh_sha256": "53c8a543b2153fd7d5ab5d5fa97626d66adfc5ecc12b11fa5e2dd67d12811642",
+    "packed_image_sha256": {
+      "painted-atlas-v1.png": "a02f751298410c58c03b43bf753fb8845dc3c6e5d1ad173c34a415cde8a9068f"
+    }
+  },
+  "integrity_matches": true,
+  "opposing_facing_geometry_check": {
+    "passed": true,
+    "samples": [
+      {
+        "frame": 0,
+        "group": 2,
+        "left": {
+          "projected_head": [
+            206.37367,
+            196.72556
+          ],
+          "world_head": [
+            -0.37,
+            -0.0,
+            2.03
+          ]
+        },
+        "right": {
+          "projected_head": [
+            229.62633,
+            202.0632
+          ],
+          "world_head": [
+            0.37,
+            0.0,
+            2.03
+          ]
+        }
+      },
+      {
+        "frame": 2,
+        "group": 0,
+        "left": {
+          "projected_head": [
+            206.37367,
+            179.40788
+          ],
+          "world_head": [
+            -0.37,
+            -0.0,
+            2.55
+          ]
+        },
+        "right": {
+          "projected_head": [
+            229.62633,
+            184.74553
+          ],
+          "world_head": [
+            0.37,
+            0.0,
+            2.55
+          ]
+        }
+      },
+      {
+        "frame": 3,
+        "group": 12,
+        "left": {
+          "projected_head": [
+            186.94367,
+            194.2524
+          ],
+          "world_head": [
+            -0.98835,
+            -0.0,
+            1.97034
+          ]
+        },
+        "right": {
+          "projected_head": [
+            249.05633,
+            208.51035
+          ],
+          "world_head": [
+            0.98835,
+            0.0,
+            1.97034
+          ]
+        }
+      },
+      {
+        "frame": 7,
+        "group": 5,
+        "left": {
+          "projected_head": [
+            196.74714,
+            250.18404
+          ],
+          "world_head": [
+            -0.39684,
+            -0.48379,
+            0.60034
+          ]
+        },
+        "right": {
+          "projected_head": [
+            239.25288,
+            243.82955
+          ],
+          "world_head": [
+            0.39684,
+            0.48379,
+            0.60034
+          ]
+        }
+      }
+    ],
+    "unanimated_parent": true
+  },
+  "reopened_in_blender": true,
+  "resting_wing_ground_clearance": {
+    "ground_world_z": 0,
+    "lowest_world_z": 0.7174050211906433,
+    "passed": true
+  },
+  "scene": "assets/source/creatures/animals/solariSunhawk/v13/solariSunhawk-derivatives-portable.blend",
+  "scene_sha256": "c5fdb66b9bda2f9060dc347914c34750db9c793d38c8d06db171f4bc7bec53dd",
+  "status": "authored configuration",
+  "transition_endpoint_geometry_check": {
+    "comparisons": {
+      "landing_airborne": {
+        "body_location": [
+          0.0,
+          0.0,
+          0.52
+        ],
+        "projected_feet": [
+          [
+            211.85515,
+            223.29431
+          ],
+          [
+            219.11725,
+            218.30068
+          ]
+        ]
+      },
+      "landing_landed": {
+        "body_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "projected_feet": [
+          [
+            218.76812,
+            268.17541
+          ],
+          [
+            226.03021,
+            263.18177
+          ]
+        ]
+      },
+      "takeoff_airborne": {
+        "body_location": [
+          0.0,
+          0.0,
+          0.52
+        ],
+        "projected_feet": [
+          [
+            211.85515,
+            223.29431
+          ],
+          [
+            219.11725,
+            218.30068
+          ]
+        ]
+      },
+      "takeoff_landed": {
+        "body_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "projected_feet": [
+          [
+            218.76812,
+            268.17541
+          ],
+          [
+            226.03021,
+            263.18177
+          ]
+        ]
+      }
+    },
+    "method": "Reopened saved scene; evaluated all animal mesh world vertex coordinates, projected articulated feet and body location against actual holding0/moving0 poses.",
+    "passed": true
+  },
+  "turn_consumer_endpoint_check": {
+    "all_mesh_endpoint_coordinates_match": true,
+    "consumer": "vcmi-develop/vcmi-develop/client/battle/BattleAnimationClasses.cpp",
+    "limits": "Saved-scene geometry and native mirror arithmetic executed; native playback remains pending.",
+    "native_mirror_foot_delta_pixels": 0.0,
+    "native_mirror_head_delta_pixels": 4.5299530029296875e-06,
+    "passed": true,
+    "route": "ReverseAnimation::init group7; setupSecondPart rotateStack then group8"
+  },
+  "visual_approval_granted": false
+}

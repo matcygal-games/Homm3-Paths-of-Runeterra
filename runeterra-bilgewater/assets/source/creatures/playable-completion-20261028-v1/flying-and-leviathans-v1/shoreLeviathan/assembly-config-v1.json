@@ -1,0 +1,665 @@
+{
+  "compact_holding_registration": {
+    "excluded_raws": [
+      "leviathan-compact-holding-v1-raw.png: erroneous biped grasping crest",
+      "leviathan-compact-holding-v2-raw.png: correct quadruped but three-quarter footprint still too broad"
+    ],
+    "method": "New genuine exact-frontal four-grounded-paw pose, tail curled/occluded behind body. Same95/102px physical height as full battle cohort; no whole-unit reduction or clipping.",
+    "native_preview_crop": [
+      170,
+      155,
+      270,
+      275
+    ]
+  },
+  "companions": {
+    "encounter_pose": "baseEncounter",
+    "map_pose": "baseMap",
+    "portrait_crop": [
+      1344,
+      24,
+      1765,
+      445
+    ],
+    "portrait_pose": "basePortrait",
+    "scale": 0.08174386920980926
+  },
+  "groups": {
+    "0": [
+      "m0",
+      "m0",
+      "m1",
+      "m2",
+      "m3",
+      "m3",
+      "m4",
+      "m5"
+    ],
+    "1": [
+      "hold",
+      "fidget",
+      "fidget",
+      "hold",
+      "hold"
+    ],
+    "11": [
+      "up0",
+      "up0",
+      "up0",
+      "up1",
+      "up1",
+      "up2",
+      "up3",
+      "hold"
+    ],
+    "12": [
+      "frontHit0",
+      "frontHit0",
+      "frontHit0",
+      "frontHit1",
+      "frontHit1",
+      "frontHit2",
+      "frontHit3",
+      "hold"
+    ],
+    "13": [
+      "down0",
+      "down0",
+      "down0",
+      "down1",
+      "down1",
+      "down2",
+      "down3",
+      "hold"
+    ],
+    "2": [
+      "hold"
+    ],
+    "20": [
+      "hold",
+      "m0"
+    ],
+    "21": [
+      "m5",
+      "hold"
+    ],
+    "22": [
+      "death3"
+    ],
+    "3": [
+      "pain0",
+      "pain0",
+      "pain1",
+      "pain1",
+      "hold"
+    ],
+    "4": [
+      "defend0",
+      "defend0",
+      "defend1",
+      "defend1",
+      "hold"
+    ],
+    "5": [
+      "death0",
+      "death0",
+      "death1",
+      "death1",
+      "death2",
+      "death2",
+      "death3",
+      "death3"
+    ],
+    "7": [
+      "hold",
+      "quarter",
+      "quarter",
+      "front",
+      "front"
+    ],
+    "8": [
+      "turnJoin",
+      "turnJoin",
+      "quarter",
+      "hold",
+      "hold"
+    ]
+  },
+  "limitations": [
+    "Authored configuration; native in-game fast playback, action transitions and battle/shadow composition remain unverified.",
+    "Correct crest is physically painted; tiny native-size appearance and stronger upgrade readability need independent approval.",
+    "Holding is genuinely front-facing to fit the actual stock creature-window crop; all locomotion/strikes retain genuine broader three-quarter anatomy.",
+    "Repeated genuine painted-key holds express native cadence, not extra unique art. Rights and release acceptance remain pending."
+  ],
+  "native_consumer": {
+    "cadence": {
+      "base_fps": 10,
+      "contact_zero_based": 3,
+      "death_ticks": 8,
+      "melee_ticks": 8,
+      "moving_ticks": 8,
+      "new_shooter_or_cast_groups": false,
+      "painted_key_holds_explicit": true,
+      "response_ticks": 5
+    },
+    "client/battle/BattleAnimationClasses.cpp": {
+      "sha256": "32e58068ee148c3c56afd0c6755144eda0a819dbcb201747d5abf4edeee9a4b9",
+      "use": "Read-only native frame/facing/cadence reference; excluded from creature source masters"
+    },
+    "client/battle/BattleStacksController.cpp": {
+      "sha256": "c12c369cdebeca2d94cdeb2351f5d53ec572d6a9ce2b727f79da4aa76da18682",
+      "use": "Read-only native frame/facing/cadence reference; excluded from creature source masters"
+    },
+    "client/battle/CreatureAnimation.cpp": {
+      "sha256": "ab43c236c791c6c7ecb6f60029b2026bc6dc5ff18c34cf1a0e7659fadc6e98ef",
+      "use": "Read-only native frame/facing/cadence reference; excluded from creature source masters"
+    },
+    "turn": {
+      "canvas_full_mirror_axis": 449,
+      "group7": "TURN_L before facing change",
+      "group8": "TURN_R after facing toggle/reposition",
+      "group8_first_full_mirror_then_translate_x": -14,
+      "two_hex_position_flip_delta": -14
+    }
+  },
+  "plates": {
+    "attacks": {
+      "expected_islands": 12,
+      "poses": {
+        "down0": {
+          "inspected_opaque_box": [
+            15,
+            722,
+            412,
+            956
+          ],
+          "island": 8,
+          "root": [
+            270,
+            956
+          ]
+        },
+        "down1": {
+          "inspected_opaque_box": [
+            416,
+            737,
+            800,
+            959
+          ],
+          "island": 11,
+          "root": [
+            660,
+            959
+          ]
+        },
+        "down2": {
+          "inspected_opaque_box": [
+            789,
+            729,
+            1164,
+            959
+          ],
+          "island": 10,
+          "root": [
+            1040,
+            959
+          ]
+        },
+        "down3": {
+          "inspected_opaque_box": [
+            1140,
+            727,
+            1526,
+            960
+          ],
+          "island": 9,
+          "root": [
+            1420,
+            960
+          ]
+        },
+        "frontHit0": {
+          "inspected_opaque_box": [
+            6,
+            425,
+            409,
+            653
+          ],
+          "island": 4,
+          "root": [
+            270,
+            653
+          ]
+        },
+        "frontHit1": {
+          "inspected_opaque_box": [
+            398,
+            432,
+            808,
+            651
+          ],
+          "island": 6,
+          "root": [
+            660,
+            651
+          ]
+        },
+        "frontHit2": {
+          "inspected_opaque_box": [
+            799,
+            436,
+            1162,
+            656
+          ],
+          "island": 7,
+          "root": [
+            1040,
+            656
+          ]
+        },
+        "frontHit3": {
+          "inspected_opaque_box": [
+            1162,
+            429,
+            1530,
+            657
+          ],
+          "island": 5,
+          "root": [
+            1420,
+            657
+          ]
+        },
+        "up0": {
+          "inspected_opaque_box": [
+            6,
+            84,
+            409,
+            361
+          ],
+          "island": 1,
+          "root": [
+            270,
+            361
+          ]
+        },
+        "up1": {
+          "inspected_opaque_box": [
+            387,
+            53,
+            758,
+            358
+          ],
+          "island": 0,
+          "root": [
+            660,
+            358
+          ]
+        },
+        "up2": {
+          "inspected_opaque_box": [
+            757,
+            92,
+            1102,
+            363
+          ],
+          "island": 2,
+          "root": [
+            1040,
+            363
+          ]
+        },
+        "up3": {
+          "inspected_opaque_box": [
+            1118,
+            101,
+            1531,
+            368
+          ],
+          "island": 3,
+          "root": [
+            1420,
+            368
+          ]
+        }
+      },
+      "scale": 0.4,
+      "sha256": "75aceb44b5f804edcbb6f0b5cc7e2bba652ddfe9c0c8b91fb014ee4300554a19",
+      "source": "shoreLeviathan-attacks-v1-raw.png"
+    },
+    "compact_holding": {
+      "expected_islands": 4,
+      "poses": {
+        "fidget": {
+          "inspected_opaque_box": [
+            729,
+            18,
+            1193,
+            564
+          ],
+          "island": 0,
+          "root": [
+            960,
+            565
+          ]
+        },
+        "hold": {
+          "inspected_opaque_box": [
+            155,
+            25,
+            602,
+            565
+          ],
+          "island": 1,
+          "root": [
+            380,
+            565
+          ]
+        }
+      },
+      "scale": 0.17592592592592593,
+      "sha256": "de04318cde57c1312a555eaf2a9c6dcbdd4859d556acb9292f5cb51a984128ea",
+      "source": "leviathan-compact-holding-v3-raw.png"
+    },
+    "companions": {
+      "expected_islands": 8,
+      "poses": {
+        "baseEncounter": {
+          "inspected_opaque_box": [
+            895,
+            72,
+            1340,
+            420
+          ],
+          "island": 3,
+          "root": [
+            1118,
+            420
+          ]
+        },
+        "baseMap": {
+          "inspected_opaque_box": [
+            37,
+            46,
+            434,
+            413
+          ],
+          "island": 1,
+          "root": [
+            235,
+            413
+          ]
+        },
+        "baseMapFidget": {
+          "inspected_opaque_box": [
+            468,
+            47,
+            875,
+            414
+          ],
+          "island": 2,
+          "root": [
+            672,
+            414
+          ]
+        },
+        "basePortrait": {
+          "inspected_opaque_box": [
+            1344,
+            24,
+            1765,
+            400
+          ],
+          "island": 0,
+          "root": [
+            1550,
+            400
+          ]
+        }
+      },
+      "scale": 1,
+      "sha256": "1ea76963c5ccad2feb7eeb2950c2ab424d7ccc00665685334e7e9815ade99f7b",
+      "source": "leviathan-companions-v1-raw.png"
+    },
+    "locomotion": {
+      "expected_islands": 9,
+      "poses": {
+        "front": {
+          "inspected_opaque_box": [
+            1124,
+            665,
+            1495,
+            980
+          ],
+          "island": 7,
+          "root": [
+            1315,
+            980
+          ]
+        },
+        "m0": {
+          "inspected_opaque_box": [
+            9,
+            31,
+            513,
+            291
+          ],
+          "island": 0,
+          "root": [
+            350,
+            291
+          ]
+        },
+        "m1": {
+          "inspected_opaque_box": [
+            518,
+            35,
+            1017,
+            291
+          ],
+          "island": 1,
+          "root": [
+            850,
+            291
+          ]
+        },
+        "m2": {
+          "inspected_opaque_box": [
+            1010,
+            49,
+            1531,
+            291
+          ],
+          "island": 2,
+          "root": [
+            1360,
+            291
+          ]
+        },
+        "m3": {
+          "inspected_opaque_box": [
+            12,
+            365,
+            552,
+            626
+          ],
+          "island": 3,
+          "root": [
+            350,
+            626
+          ]
+        },
+        "m4": {
+          "inspected_opaque_box": [
+            503,
+            369,
+            1019,
+            625
+          ],
+          "island": 4,
+          "root": [
+            850,
+            625
+          ]
+        },
+        "m5": {
+          "inspected_opaque_box": [
+            1010,
+            371,
+            1531,
+            624
+          ],
+          "island": 5,
+          "root": [
+            1360,
+            624
+          ]
+        },
+        "quarter": {
+          "inspected_opaque_box": [
+            559,
+            662,
+            1070,
+            975
+          ],
+          "island": 6,
+          "root": [
+            850,
+            975
+          ]
+        },
+        "sideControl": {
+          "inspected_opaque_box": [
+            12,
+            700,
+            562,
+            975
+          ],
+          "island": 8,
+          "root": [
+            350,
+            975
+          ]
+        }
+      },
+      "scale": 0.34545454545454546,
+      "sha256": "23809cf8d0591e6b4e5130a82ef1ca533af76b16d01814a4cd9ecc130a799a8d",
+      "source": "shoreLeviathan-locomotion-v1-raw.png"
+    },
+    "reactions": {
+      "expected_islands": 8,
+      "poses": {
+        "death0": {
+          "inspected_opaque_box": [
+            7,
+            552,
+            461,
+            807
+          ],
+          "island": 4,
+          "root": [
+            280,
+            807
+          ]
+        },
+        "death1": {
+          "inspected_opaque_box": [
+            457,
+            618,
+            869,
+            806
+          ],
+          "island": 5,
+          "root": [
+            720,
+            806
+          ]
+        },
+        "death2": {
+          "inspected_opaque_box": [
+            874,
+            619,
+            1304,
+            816
+          ],
+          "island": 6,
+          "root": [
+            1160,
+            816
+          ]
+        },
+        "death3": {
+          "inspected_opaque_box": [
+            1315,
+            643,
+            1765,
+            809
+          ],
+          "island": 7,
+          "root": [
+            1600,
+            809
+          ]
+        },
+        "defend0": {
+          "inspected_opaque_box": [
+            829,
+            217,
+            1331,
+            441
+          ],
+          "island": 3,
+          "root": [
+            1160,
+            441
+          ]
+        },
+        "defend1": {
+          "inspected_opaque_box": [
+            1300,
+            153,
+            1761,
+            440
+          ],
+          "island": 0,
+          "root": [
+            1600,
+            440
+          ]
+        },
+        "pain0": {
+          "inspected_opaque_box": [
+            14,
+            154,
+            442,
+            430
+          ],
+          "island": 1,
+          "root": [
+            280,
+            430
+          ]
+        },
+        "pain1": {
+          "inspected_opaque_box": [
+            417,
+            154,
+            871,
+            439
+          ],
+          "island": 2,
+          "root": [
+            720,
+            439
+          ]
+        }
+      },
+      "scale": 0.3333333333333333,
+      "sha256": "2ba585c27be5c789429999a62f367390739046cfaa5694e0916ff051c2d7cfe9",
+      "source": "shoreLeviathan-reactions-v1-raw.png"
+    }
+  },
+  "turn_front": "front",
+  "unit": "shoreLeviathan",
+  "version": 1
+}

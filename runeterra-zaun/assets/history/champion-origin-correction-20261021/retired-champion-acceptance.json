@@ -1,0 +1,276 @@
+[
+  {
+    "id": "singed",
+    "name": "Singed",
+    "status": "authored configuration",
+    "class": "zaunChemist",
+    "regionAffiliation": {
+      "region": "Zaun-associated",
+      "allegiance": "Independent exploitative scientist/contractor, not regional spokesman",
+      "primaryCoverage": "Full and short biography and live profile read by the deep review (B03/P03), plus S16 and S18. The current short profile's Shimmer authorship is a newer layer and is excluded from the frozen legacy account."
+    },
+    "eraReading": "Legacy alchemical experimenter; no imported Arcane family motive or synchronized Noxian chemical-war chapter.",
+    "source": [
+      "B-singed",
+      "P-warwick-story",
+      "ZL08"
+    ],
+    "availability": {
+      "rule": "ordinary tavern",
+      "special": false,
+      "reason": "Detached skirmish laboratory-command/commission abstraction, not ethical endorsement or willing alliance with his victims."
+    },
+    "specialtyName": "Alchemical Bombardment",
+    "nativeSpecialty": {
+      "spellScalingPercentage": "core:fireball",
+      "spellScalingVal": 5
+    },
+    "boundedEffect": "After ordinary acquisition, Fireball receives the native5*floor(level/targetTier) percentage specialty modifier. Starts with Slow/Curse, NOT Fireball; normal mana, action, area, friendly fire and protection remain. No poison trail.",
+    "behavioralChecks": {
+      "executed": false,
+      "assertions": [
+        "Recruitment does not teach Fireball; ordinary learning restrictions apply.",
+        "Matched tier1-7/level1,5,10 damage follows native scaling and rounding; unrelated spells/hero movement gain no effect."
+      ]
+    }
+  },
+  {
+    "id": "urgot",
+    "name": "Urgot",
+    "status": "authored configuration",
+    "class": "zaunMachinist",
+    "regionAffiliation": {
+      "region": "Noxian origin / selected Zaun residence",
+      "allegiance": "Independent coercive armed cell, neither Noxian delegate nor generic baron officer",
+      "readings": [
+        "Origin/service reading: former Noxian executioner.",
+        "Selected current chapter: Zaun-based Dredge survivor with his own creed."
+      ],
+      "chosenReading": "Zaun scenario/skirmish association by present selected chapter, not changed birthplace or imperial loyalty.",
+      "primaryCoverage": "Full and short biography and live profile read by the deep review (B06/P06). The Swain coup backstory and the Dredge transformation are read, and the biography ends in the Warden prison."
+    },
+    "eraReading": "Post-Dredge independent chapter; exact betrayal, imprisonment length and limb-loss history not certified.",
+    "source": [
+      "B-urgot",
+      "ZL12"
+    ],
+    "availability": {
+      "rule": "ordinary tavern",
+      "special": false,
+      "reason": "Independent armed-cell command option in skirmish, not proof that protectors accept his coercive politics."
+    },
+    "specialtyName": "Dredge Fireteam",
+    "nativeSpecialty": {
+      "bonuses": {
+        "fireteam": {
+          "type": "PRIMARY_SKILL",
+          "subtype": "attack",
+          "val": 2,
+          "effectRange": "ONLY_DISTANCE_FIGHT",
+          "limiters": "CREATURES_ONLY"
+        }
+      }
+    },
+    "boundedEffect": "Fixed troop Attack+2 on ranged attacks only. No melee specialty bonus, personal execution threshold, free shooting or move-and-fire exemption.",
+    "behavioralPlan": "attackMode",
+    "nativeExecution": false
+  },
+  {
+    "id": "ziggs",
+    "name": "Ziggs",
+    "status": "authored configuration",
+    "class": "zaunChemist",
+    "regionAffiliation": {
+      "region": "Yordle / selected Zaun guest",
+      "allegiance": "Independent demolition inventor",
+      "readings": [
+        "Earlier Piltover-linked engineering association in audited dossier.",
+        "Selected Zaun-associated demolition chapter; yordle identity is not a human citizenship record."
+      ],
+      "chosenReading": "Zaun guest chapter, preserving prior Piltover association without assuming its exact cause/date.",
+      "primaryCoverage": "Full and short biography and live profile read by the deep review (B11/P11). The older Yordle Academy account and the newer Zaun chapter are not stitched into one proven itinerary."
+    },
+    "eraReading": "No certified college expulsion, harmlessness or Heimerdinger teaching timeline.",
+    "source": [
+      "B-ziggs",
+      "ZL14"
+    ],
+    "availability": {
+      "rule": "scenario-only",
+      "special": true,
+      "reason": "An explicit demolition commission or guest operation, not compulsory service by every Zaun-associated inventor."
+    },
+    "specialtyName": "Demolition Crew",
+    "nativeSpecialty": {
+      "bonuses": {
+        "siegeCrew": {
+          "type": "NO_WALL_PENALTY",
+          "limiters": "CREATURES_ONLY"
+        }
+      }
+    },
+    "boundedEffect": "The hero's ranged creatures suffer no wall penalty when shooting at defenders standing behind the walls of a defended town; the native -0.5 shot factor for firing through fortifications is not applied. Melee attacks, siege engines, adventure buildings and any target outside a town siege are unaffected; the specialty grants no catapult ability, no extra shots and no damage to structures.",
+    "behavioralChecks": {
+      "executed": false,
+      "assertions": [
+        "Siege shots from the hero's ranged creatures at defenders behind the walls keep the same damage factor as the same shot in open ground, while an unbuffed control army still loses the native wall factor.",
+        "Field combat, siege engines and adventure buildings gain no free bombardment; native wall hit and damage targeting is unchanged."
+      ]
+    },
+    "behavioralPlan": "siegeWallPenalty"
+  },
+  {
+    "id": "janna",
+    "name": "Janna",
+    "status": "authored configuration",
+    "class": "zaunChemist",
+    "regionAffiliation": {
+      "region": "Zaun devotional association; broader origin unresolved here",
+      "allegiance": "Independent wind-spirit protector, not a human citizen or baron officer",
+      "readings": [
+        "Regional association through Zaunite reverence/protection.",
+        "A wider ancient spirit identity is not reducible to Zaun state membership."
+      ],
+      "chosenReading": "Zaun-associated divine/spirit scenario guest, with full historical origin left open.",
+      "primaryCoverage": "Full and short biography and live profile read by the deep review (B13/P13) and the Deep Breath prayer in S12. The ancient coastal Shuriman worship and the modern Zaun protection are separated in time, and her complete origin stays open."
+    },
+    "eraReading": "Devotional protector chapter; ancient traditions require separately framed memories, not a precisely dated modern arrival.",
+    "source": [
+      "B-janna",
+      "P-warwick-story",
+      "ZL16"
+    ],
+    "availability": {
+      "rule": "scenario-only",
+      "special": true,
+      "reason": "Exceptional protective intervention chosen for a story, never normal mortal employment or industrial ownership."
+    },
+    "specialtyName": "Sheltering Tailwind",
+    "nativeSpecialty": {
+      "bonuses": {
+        "tailwind": {
+          "type": "LUCK",
+          "val": 1
+        }
+      }
+    },
+    "boundedEffect": "One additional point of native Luck for the hero's troops, still subject to the native cap and the native draw. No Air Shield, free healing, extra actions or permanent Speed.",
+    "behavioralPlan": "luck",
+    "nativeExecution": false
+  },
+  {
+    "id": "caitlyn",
+    "name": "Caitlyn",
+    "status": "authored configuration",
+    "class": "zaunMachinist",
+    "regionAffiliation": {
+      "region": "Piltover",
+      "allegiance": "Piltover sheriff/investigator, not Zaun citizenship",
+      "primaryCoverage": "Full and short biography and live profile read by the deep review (B14/P14) and the complete story Interrogation101. The Arcane council succession is not imported."
+    },
+    "eraReading": "Selected legacy sheriff/Warden partnership, no imported later political or personal aftermath.",
+    "source": [
+      "P-vi-story",
+      "B-caitlyn",
+      "ZL17"
+    ],
+    "availability": {
+      "rule": "scenario-only",
+      "special": true,
+      "reason": "Piltover-linked investigator/negotiated-operation guest only; a Zaun class and default army are project framing, not citizenship."
+    },
+    "specialtyName": "Measured Fire",
+    "nativeSpecialty": {
+      "secondary": "core:archery",
+      "stepSize": 5
+    },
+    "boundedEffect": "Native Archery skill-effect efficiency+5%per hero level. No critical-hit system, guaranteed shot, extra ammunition or direct enemy-hero attack.",
+    "behavioralPlan": "secondary",
+    "nativeExecution": false
+  },
+  {
+    "id": "corki",
+    "name": "Corki",
+    "status": "authored configuration",
+    "class": "zaunMachinist",
+    "regionAffiliation": {
+      "region": "Bandle/yordle roots; Piltover-linked guest",
+      "allegiance": "Independent guest pilot, not Zaun citizenship",
+      "readings": [
+        "Audited header: Bandle City / Piltover guest.",
+        "Retained narrative associates his flying career with Piltover."
+      ],
+      "chosenReading": "Retain both as origin/career associations, not a Zaun institutional role.",
+      "primaryCoverage": "Full and short biography and live profile read by the deep review (B16/P16). The metadata tags Bandle City and the short body establishes the adopted Piltover defence and the Yipsnakes, so only a limited common pilot identity is used."
+    },
+    "eraReading": "Legacy inventor-pilot theme; exact squadron record and relationship chronology unverified.",
+    "source": [
+      "B-corki",
+      "ZL17"
+    ],
+    "availability": {
+      "rule": "scenario-only",
+      "special": true,
+      "reason": "Piltover-linked/Bandle guest operation with an explicit scenario bridge, not a Zaun tavern pilot institution."
+    },
+    "specialtyName": "Route Briefing",
+    "nativeSpecialty": {
+      "bonuses": {
+        "briefing": {
+          "type": "MOVEMENT",
+          "subtype": "heroMovementLand",
+          "val": 100
+        }
+      }
+    },
+    "boundedEffect": "Fixed100land adventure movement points per hero/day. No sea bonus, adventure flight, battlefield Speed, extra firing range or damage to buildings.",
+    "behavioralChecks": {
+      "executed": false,
+      "assertions": [
+        "Matched terrain/army/Logistics control has exactly100fewer land points at reset; sea movement and troop Speed match.",
+        "Splitting troops, repeated town visits and reload never multiply the fixed modifier."
+      ]
+    }
+  },
+  {
+    "id": "heimerdinger",
+    "name": "Heimerdinger",
+    "status": "authored configuration",
+    "class": "zaunChemist",
+    "regionAffiliation": {
+      "region": "Piltover-linked yordle; Bandle guest association",
+      "allegiance": "Independent technical visitor, not Zaun citizen or town founder",
+      "readings": [
+        "Audited Piltover/Bandle guest identity.",
+        "Later Viktor payload gives an Arcane-linked Council/Academy mentorship chronology."
+      ],
+      "chosenReading": "First reading with cautious legacy invention theme; later mentorship/Council chronology not imported.",
+      "primaryCoverage": "Full and short biography and live profile read by the deep review (B17/P17). The full body is the eccentric Piltover inventor and teacher, and the newer Council office in the short body is excluded from the legacy project history."
+    },
+    "eraReading": "Legacy inventor guest without a certified Council tenure, founding date or later outcome.",
+    "source": [
+      "B-heimerdinger",
+      "P-viktor-story",
+      "ZL17"
+    ],
+    "availability": {
+      "rule": "scenario-only",
+      "special": true,
+      "reason": "Piltover-linked technical cooperation is explicit scenario fiction, not citizenship or canonical authorship of Zaun recruits."
+    },
+    "specialtyName": "Pressure-Frame Tuning",
+    "nativeSpecialty": {
+      "creature": "chemtechConstruct",
+      "creatureLevel": 3,
+      "stepSize": 5
+    },
+    "boundedEffect": "Upgrade-aware native specialty targets chemtechConstruct and actual reinforcedConstruct: +1Speed and tier-three native5%Attack/Defense growth steps. Retargets the audited core:ballista prototype, not canon inventorship. No free construct, turret, separate commander or attack-speed system.",
+    "behavioralChecks": {
+      "executed": false,
+      "assertions": [
+        "Both actual tier-three variants gain1Speed; Attack/Defense follow native completed-level/tier steps at levels1,3,5,6,10.",
+        "Unrelated troops/core Ballista do not gain this specialty; no troop is created; save/reload keeps the same target set."
+      ]
+    }
+  }
+]

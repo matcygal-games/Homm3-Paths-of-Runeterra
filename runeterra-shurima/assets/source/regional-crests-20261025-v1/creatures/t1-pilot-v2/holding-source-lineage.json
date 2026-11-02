@@ -1,0 +1,100 @@
+{
+  "derived_from_3d_conclusion": "No 3D input among actual explicit references in traced calls; original Nomad is text-only. The armour supplement is pixel-exact crop of the traced painted Warrior.",
+  "nodes": [
+    {
+      "actual_call_id": "call_5d3440675baa499f876c64d3de3305c7",
+      "actual_call_input_sha256": "af0eea209084a7d49231f959fdeabe78b91eea222cecdd252e7c5be8bd443fdb",
+      "actual_reference_inputs": [],
+      "initial_text_only_generation": true,
+      "no_implicit_last_images": true,
+      "node": "original-nomad",
+      "output": {
+        "source": "assets/source/creatures/painted-v1/desertNomad-standing-master-v1.png",
+        "source_sha256": "75622a350ce5bc372f868bbf628ba2416f2b4ca75c80959905ee9eddadec485b"
+      },
+      "private_raw_receipt_sha256": "f5cd9e3b43230ff0c498581caba90053650138cc2e32be01a01206ab05af1e4b",
+      "provider_output_bytes_match_current_source": true
+    },
+    {
+      "actual_call_id": "call_e09a40329d984d82937bd30522381f7d",
+      "actual_call_input_sha256": "1cdab53956c3bcc47107ba64834f41ced28b062f25159d251155102435a61662",
+      "actual_reference_inputs": [
+        {
+          "source": "assets/source/creatures/painted-v1/desertNomad-standing-master-v1.png",
+          "source_sha256": "75622a350ce5bc372f868bbf628ba2416f2b4ca75c80959905ee9eddadec485b"
+        }
+      ],
+      "initial_text_only_generation": false,
+      "no_implicit_last_images": true,
+      "node": "original-warrior",
+      "output": {
+        "source": "assets/source/creatures/painted-v1/sandWarrior-standing-master-v1.png",
+        "source_sha256": "aca58f7addb7b8e716d687e62f9581bfebcef2fba0e50520ae61f8fb36c7cc4e"
+      },
+      "private_raw_receipt_sha256": "6141359c2f851219ff80f5f7a6660021b24665fd248d071b253f4a20bdcb954c",
+      "provider_output_bytes_match_current_source": true
+    },
+    {
+      "actual_call_id": "call_aff3de7f65c54f909030ef8c23f5e638",
+      "actual_call_input_sha256": "e2b561ba54843cfc4b1b0923135069b475b9461560f14a2a911e0a82bc7cdadd",
+      "actual_reference_inputs": [
+        {
+          "source": "assets/source/creatures/painted-v1/desertNomad-standing-master-v1.png",
+          "source_sha256": "75622a350ce5bc372f868bbf628ba2416f2b4ca75c80959905ee9eddadec485b"
+        }
+      ],
+      "initial_text_only_generation": false,
+      "no_implicit_last_images": true,
+      "node": "grounded-nomad",
+      "output": {
+        "source": "assets/source/creatures/painted-v2/desertNomad/grounded-standing-v1.png",
+        "source_sha256": "505cb96a8e7956258f10e5577f63a52007334d4097b532022c672cba083a0535"
+      },
+      "private_raw_receipt_sha256": "8c6f927838e40c186fe895a9646f2bd1d471c51b8784001fe6d16f49fb2ba38f",
+      "provider_output_bytes_match_current_source": true
+    },
+    {
+      "actual_call_id": "call_797492a895d3405894030e2461e728ea",
+      "actual_call_input_sha256": "00ee447194bfed13d842beccab562f5284cead0d2e6421af11e2f4c5859eba9a",
+      "actual_reference_inputs": [
+        {
+          "source": "assets/source/creatures/painted-v2/desertNomad/grounded-standing-v1.png",
+          "source_sha256": "505cb96a8e7956258f10e5577f63a52007334d4097b532022c672cba083a0535"
+        },
+        {
+          "source": "assets/source/creatures/painted-v2/sandWarrior/upgrade-armour-detail-reference-v1.png",
+          "source_sha256": "c4d7debba759a98103a0a5106e86fc1a50fd60ef38085f9daa3c08e6cefd638a"
+        }
+      ],
+      "initial_text_only_generation": false,
+      "no_implicit_last_images": true,
+      "node": "grounded-upgraded-warrior",
+      "output": {
+        "source": "assets/source/creatures/painted-v2/sandWarrior/grounded-standing-v2.png",
+        "source_sha256": "9660e46c141fbaae94e39117d685c3bf5473be3f1e637aef54d11c57cf009d31"
+      },
+      "private_raw_receipt_sha256": "072817a3f03f4c7bc69db3d520881779e8075da2486c1c663afd8e5aa065439e",
+      "provider_output_bytes_match_current_source": true
+    },
+    {
+      "actual_crop_source": {
+        "source": "assets/source/creatures/painted-v1/sandWarrior-standing-master-v1.png",
+        "source_sha256": "aca58f7addb7b8e716d687e62f9581bfebcef2fba0e50520ae61f8fb36c7cc4e"
+      },
+      "crop": [
+        270,
+        0,
+        1040,
+        740
+      ],
+      "decoded_pixels_exact": true,
+      "node": "warrior-armour-supplement",
+      "output": {
+        "source": "assets/source/creatures/painted-v2/sandWarrior/upgrade-armour-detail-reference-v1.png",
+        "source_sha256": "c4d7debba759a98103a0a5106e86fc1a50fd60ef38085f9daa3c08e6cefd638a"
+      }
+    }
+  ],
+  "scope": "ONLY selected T1 holding-master ancestors, not all action source ancestry",
+  "status": "authored configuration"
+}

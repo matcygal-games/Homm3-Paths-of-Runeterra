@@ -1,0 +1,139 @@
+{
+  "definition": {
+    "category": "walking-melee",
+    "comparison": [
+      "core:pikeman",
+      "runeterra-demacia:demacianRecruit"
+    ],
+    "equipment": [
+      "open-cap",
+      "quilted-coat",
+      "small-buckler"
+    ],
+    "family": "legion",
+    "height": 1.83,
+    "native_height": 76,
+    "nature": "living",
+    "silhouette": "Open iron cap, short quilted crimson coat, plain narrow iron buckler, work boots and one short forward cleaver; offensive recruit, not Demacian shield-first recruit",
+    "tier": 1,
+    "two_hex": false,
+    "upgrade": false,
+    "weakness": "Light body protection; ordinary retaliation",
+    "weapon": "short-cleaver",
+    "width": 0.25
+  },
+  "emblem": {
+    "policy": "Leave emblem fields blank in guides. Obtain a genuine official Riot Noxus emblem, preserve exact source URL/bytes/hash and permissions before final painted art. Never invent a crest or reuse Demacia heraldry.",
+    "sha256": null,
+    "source_url": null,
+    "status": "blocked-official-source-provenance-required"
+  },
+  "generation": {
+    "image_generation_used": false,
+    "model": null,
+    "prompt": null,
+    "provider": null
+  },
+  "model_sheet_type": "editable volumetric rig + transparent pose guides, NOT painted art",
+  "native_groups": {
+    "0": {
+      "action": "walk-contact",
+      "minimum_guide_poses": 6
+    },
+    "1": {
+      "action": "fidget-equipment-check",
+      "minimum_guide_poses": 4
+    },
+    "11": {
+      "action": "melee-up",
+      "minimum_guide_poses": 6
+    },
+    "12": {
+      "action": "melee-front",
+      "minimum_guide_poses": 6
+    },
+    "13": {
+      "action": "melee-down",
+      "minimum_guide_poses": 6
+    },
+    "2": {
+      "action": "idle",
+      "minimum_guide_poses": 1
+    },
+    "3": {
+      "action": "hit-recoil",
+      "minimum_guide_poses": 4
+    },
+    "4": {
+      "action": "defend-brace",
+      "minimum_guide_poses": 4
+    },
+    "5": {
+      "action": "death-collapse",
+      "minimum_guide_poses": 6
+    },
+    "7": {
+      "action": "turn-toward-viewer",
+      "minimum_guide_poses": 4
+    },
+    "8": {
+      "action": "turn-back",
+      "minimum_guide_poses": 4
+    }
+  },
+  "painting_contract": {
+    "acceptance": false,
+    "camera": "One measured uniform camera/placement correction per action atlas, preserve every source and rejected revision; no per-frame stretch, warping, auto-fit or idle-as-action",
+    "continuity": "Use each unit's own model/upgrade definition and all actual pose guides; preserve joint contacts and independent silhouettes",
+    "required_capability": "ChatGPT image-generation skill / built-in image_gen.imagegen or human painted masters",
+    "review": [
+      "transparent background and no baked floor",
+      "ground contact at native pivot",
+      "no cross-cell contamination",
+      "whole action semantics and projectile release",
+      "base/upgrade silhouette and equipment distinction",
+      "genuine Noxus emblem legibility and provenance",
+      "native original/Demacia comparison",
+      "real native runtime review"
+    ],
+    "status": "blocked-missing-painted-masters",
+    "style": "Original Heroes III native painted/prerendered treatment, restrained highlights, matte iron/crimson/black, upper-left lighting; not glossy modern 3D, flat vector or splash art"
+  },
+  "pipeline": [
+    "art_creature_rigs.py actual Blender assembly",
+    "all groups keyed as genuine skeletal poses",
+    "art_creature_sources.py --review fixed whole-cohort uniform native conversion",
+    "painted master production BLOCKED",
+    "source pins and native action review BLOCKED",
+    "coordinator-only manifest selection, assembly and runtime acceptance NOT PERFORMED"
+  ],
+  "production_recipes": [
+    {
+      "path": "assets/recipes/creatures/legionRecruit-battle.json",
+      "sha256": "247c0572bd0b46c9983992f969124b55713f054dbd13ace3604031cf7bb7a53a"
+    },
+    {
+      "path": "assets/recipes/creatures/legionRecruit-map.json",
+      "sha256": "2364e272d03a6b343ba07cc3ebed6a446d780c213c9155045b34960ddda03313"
+    },
+    {
+      "path": "assets/recipes/creatures/legionRecruit-large.json",
+      "sha256": "2f3eb4d331a41ff218cf8db7690478764fe981a336caec98574b21547683e93b"
+    },
+    {
+      "path": "assets/recipes/creatures/legionRecruit-small.json",
+      "sha256": "18b79722cf5e5c69bb470325c58f20b864a152834bd1b61723758e7b5f8c8185"
+    },
+    {
+      "path": "assets/recipes/creatures/legionRecruit-attackLeft.json",
+      "sha256": "0fc537b69795c5e2797d2bf2713272913c5a1ef51e236b1dd384f3d62cc70eca"
+    },
+    {
+      "path": "assets/recipes/creatures/legionRecruit-attackRight.json",
+      "sha256": "7d82a7c84e815fb698b809a05508a1dec58743ebfce51c3e4ce08843cbaf1902"
+    }
+  ],
+  "status": "authored configuration",
+  "unit": "legionRecruit",
+  "visual_approval_granted": false
+}

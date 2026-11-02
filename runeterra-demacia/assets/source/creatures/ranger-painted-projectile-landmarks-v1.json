@@ -1,0 +1,64 @@
+{
+  "authority": "client/battle/BattleAnimationClasses.cpp ShootingAnimation projectile origin right=(197+offsetX,265+offsetY) at default creature placement; selectedFrame-1 releaseindex.",
+  "variants": [
+    {
+      "unit": "demacianRanger",
+      "group": 15,
+      "release_frame_zero_based": 4,
+      "native_frame": {
+        "path": "assets/source/creatures/demacianRanger/ranger-rig-v4/paint-action-g15-native-export-v2-placement-v1/g15-f004.png",
+        "sha256": "20f32bfa7918e109c7950338b8fafcbb9daa0ede34093653a61dd5f7c8f98b72"
+      },
+      "native_canvas": [
+        450,
+        400
+      ],
+      "observed_forward_central_crossbow_tip": [
+        230,
+        200
+      ],
+      "provisional_missile_offset": {
+        "x": 33,
+        "y": -65
+      },
+      "inspection_evidence": {
+        "path": "assets/source/creatures/demacianRanger/ranger-rig-v4/paint-g15-release-native-landmark-review-v1.png",
+        "sha256": "135f7f06a6a6c4b6134f341a312bfc904975f5187c3b02217c9a766bec2b2700"
+      },
+      "method": "Manual actual native raster inspection of forward central crossbow muzzle/stock tip, rather than full alpha bbox or highest limb. Approximate +/-2nativepx; no derivative from raw-rig guide.",
+      "status": "provisional straight-shot source candidate only; native projectile trajectory/alignment not executed"
+    },
+    {
+      "unit": "veteranRanger",
+      "group": 15,
+      "release_frame_zero_based": 4,
+      "native_frame": {
+        "path": "assets/source/creatures/veteranRanger/ranger-rig-v4/paint-action-g15-native-export-v2-placement-v1/g15-f004.png",
+        "sha256": "d31ab2dd8babd004b16cef10a52047e702d1d2949d6139c839ce7f8b79a58d05"
+      },
+      "native_canvas": [
+        450,
+        400
+      ],
+      "observed_forward_central_crossbow_tip": [
+        236,
+        206
+      ],
+      "provisional_missile_offset": {
+        "x": 39,
+        "y": -59
+      },
+      "inspection_evidence": {
+        "path": "assets/source/creatures/veteranRanger/ranger-rig-v4/paint-g15-release-native-landmark-review-v1.png",
+        "sha256": "5808e7bde46bb866847cf94b8ffac6c4b2f1da202b2e18db90f467fb4541b920"
+      },
+      "method": "Manual actual native raster inspection of forward central crossbow muzzle/stock tip, rather than full alpha bbox or highest limb. Approximate +/-2nativepx; no derivative from raw-rig guide.",
+      "status": "provisional straight-shot source candidate only; native projectile trajectory/alignment not executed"
+    }
+  ],
+  "limits": [
+    "Only actual painted straight g15 releases measured. Upper/lower shots do not yet have painted masters.",
+    "Native diagnostic preview may still use explicitly temporary original combat proxy; these offsets are for own painted source only.",
+    "No content, active recipe or staged entity changed."
+  ]
+}

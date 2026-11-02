@@ -1,0 +1,19 @@
+{
+  "provider": "OpenAI built-in imagegen",
+  "model": "not exposed by built-in tool",
+  "prompt": "Use case: precise-object-edit. Repair only the sheet's cropped right claw tip and insufficient margins. Reference1 is the existing six-pose painted attack-front sheet; reference2 its correct identity. Keep all SIX identical actual poses, anatomy, iron binding design, silver Noxus crests, orientation and colors. Re-layout 2 columns by 3 rows in reading order with at least 70 pixels clear alpha padding around each whole figure and wide 100 pixel transparent gutters. Uniformly reduce all six bodies enough to show every extended fingertip inside each cell; do not crop cloak or claw; no mixed scales. In pose4 (middle row right) redraw the rightmost cut claw tip to complete the natural same hand. Keep genuine six phase ready/windup/strike/recoil/recovery sequence and silver emblem where not physically occluded. Original Heroes III painted 2D, matte rough iron and textured charcoal/crimson cloak, restrained contrast, no 3D/no glossy render/no extra weapon/wings. Genuine transparent RGBA outside figures, no scene floor shadow background haze or text. No warping/stretching/duplicate poses.",
+  "output": "assets/source/creatures/painted-bound-20261024-v1/greaterRuinManifestation/heraldry-v1/attack-front-v2.png",
+  "input_sources": [
+    {
+      "path": "assets/source/creatures/painted-bound-20261024-v1/greaterRuinManifestation/heraldry-v1/attack-front.png",
+      "sha256": "0358233c794f0b5fc372480deac647cf8c4dcd54e33e5ca26a350ea903973b88"
+    },
+    {
+      "path": "assets/source/creatures/painted-bound-20261024-v1/greaterRuinManifestation/heraldry-v1/identity.png",
+      "sha256": "ead873ee8d08d9b2ada3609b1bc93dc26b5148e62e3092f8413f6b54387d6be3"
+    }
+  ],
+  "reason": "prior crested attack-front source clipped middle-row-right claw at source border; retained rejected original, genuinely repainted whole sequence with larger margins",
+  "rights": "unresolved; release prohibited",
+  "output_sha256": "224b3e675dc09747e3a55c30e1f08bb9aae1de5a1a45954f808cda0ce57631c8"
+}

@@ -1,0 +1,3385 @@
+{
+  "unit": "primalShaman",
+  "status": "authored configuration",
+  "art_accepted": false,
+  "native_playback": "not_run",
+  "source_masters": [
+    {
+      "path": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad"
+    },
+    {
+      "path": "assets/source/creatures/primalShaman/launch-v1/launch-atlas-v1.png",
+      "sha256": "cc0e566db1731678ff3f900ed27e77b58785482cf8dfcd9bff9a8086a6b0cbf0"
+    },
+    {
+      "path": "assets/source/creatures/primalShaman/death-v3/death-atlas-v3.png",
+      "sha256": "2336c46b431299894aa1a6d5d078a908b61d50d4787f5c57009ae586339ff3eb"
+    }
+  ],
+  "frame_sha256": {
+    "assets/source/creatures/primalShaman/registered-v3/native/g00-f000.png": "7e3e2053b0efa604f21aefd2177bfe355b5ab8b31b322a1153676b77f85879df",
+    "assets/source/creatures/primalShaman/registered-v3/native/g00-f001.png": "7f28db6be4f47bb8856c5207de43187930b990c5f5459e843ac3b6312d0b1031",
+    "assets/source/creatures/primalShaman/registered-v3/native/g00-f002.png": "90304160907e227fcd14c8c418d44ceda5dd0d66746702cd041bdedd9f63fa55",
+    "assets/source/creatures/primalShaman/registered-v3/native/g00-f003.png": "381530b05f31a6473a9ccc27b5576cda62b8f39c51d914958cea1fd52f4e0139",
+    "assets/source/creatures/primalShaman/registered-v3/native/g00-f004.png": "e0ee0ee4953ab875d1fb5495cbc27a576113fb233071e5d5ad21aab53172ec97",
+    "assets/source/creatures/primalShaman/registered-v3/native/g00-f005.png": "4b5bc80f38dbe1906157a78777bea30ccb3d182f2f6d4f9c85840f9dd83046ba",
+    "assets/source/creatures/primalShaman/registered-v3/native/g01-f000.png": "c9dedca8f90a3bcd3eac898b71597266baca4aa5382121c15789e291f06c64a5",
+    "assets/source/creatures/primalShaman/registered-v3/native/g01-f001.png": "4ded1cf0114f720eafab0a74e9463302c5d53b7ae1c9dd95d6670cbf101dec00",
+    "assets/source/creatures/primalShaman/registered-v3/native/g01-f002.png": "c51a88c5bdbd68514221d574bfed8ae264dfc0d743ee9b4b0192a5335341adbd",
+    "assets/source/creatures/primalShaman/registered-v3/native/g01-f003.png": "b314362b5729d3a7c02829796484c1e9a41b2c3da47769a3019e56fc3216736d",
+    "assets/source/creatures/primalShaman/registered-v3/native/g01-f004.png": "c9dedca8f90a3bcd3eac898b71597266baca4aa5382121c15789e291f06c64a5",
+    "assets/source/creatures/primalShaman/registered-v3/native/g02-f000.png": "57f57f187b63779aac08b3171ca2753064bff5e08a9bd4f6b0dc2d64be0c53d7",
+    "assets/source/creatures/primalShaman/registered-v3/native/g03-f000.png": "eb3dad9437272d99a5d54c8457f072c975f3d38c75f3bc4583797a801a759d55",
+    "assets/source/creatures/primalShaman/registered-v3/native/g03-f001.png": "5774582d0a66195b0b972a6aac37746a73d14a014bac86c65e1168c53a99a063",
+    "assets/source/creatures/primalShaman/registered-v3/native/g03-f002.png": "42f1ba6e866de7cd847110b9769b8195c2650df58197a0ce0c842ee643eb686a",
+    "assets/source/creatures/primalShaman/registered-v3/native/g04-f000.png": "e9f9972668bb7786a900767359953156f01dec9ee733670348c8aa4732cdf148",
+    "assets/source/creatures/primalShaman/registered-v3/native/g04-f001.png": "b31b1c111e7ad444f34ba2741773be2993ccd43aec2651a89da4f3e32b8bdedd",
+    "assets/source/creatures/primalShaman/registered-v3/native/g04-f002.png": "2cf4ea0a57cbbe6e6c24f8d96228d7c31b3ae74001669d05b79af76589b5af8a",
+    "assets/source/creatures/primalShaman/registered-v3/native/g05-f000.png": "954920636a0f64fdb5c5da67e78c35dfed3b23f9fec7e532c13c925967f14612",
+    "assets/source/creatures/primalShaman/registered-v3/native/g05-f001.png": "915706fc098fbbf012daaaaa818705423402c697c75326f7a51b6d737eba7896",
+    "assets/source/creatures/primalShaman/registered-v3/native/g05-f002.png": "deea25ec7ca8e304e2899ce3914f29916a32cb327ce7dd7e11a216da174497fd",
+    "assets/source/creatures/primalShaman/registered-v3/native/g05-f003.png": "b9e1fa8fd21cbf7c014c275361c7130bddbab4fb17a5a3e539f0268cee3349e5",
+    "assets/source/creatures/primalShaman/registered-v3/native/g05-f004.png": "d93b8af09d99ed621f4fb687a1d3bf95e87846d4d5fdbd116214b993b3cd11fa",
+    "assets/source/creatures/primalShaman/registered-v3/native/g05-f005.png": "63a01161740dbff65c611bc7df8fd8ca140ac7248c40dbc7965db03503aa359b",
+    "assets/source/creatures/primalShaman/registered-v3/native/g07-f000.png": "599d2635eb895f3624a0ad13b19eb2e19926f9ee4c1eb44d1d2071894a1254fc",
+    "assets/source/creatures/primalShaman/registered-v3/native/g07-f001.png": "fe1e1de90c8f1ebddd0750b338fe0534d9661378d2982cfec6bf01b2887a8aec",
+    "assets/source/creatures/primalShaman/registered-v3/native/g07-f002.png": "d05ea49f97adb876fa61fa880fda48d7154496aa13336698bea885f3a7a8b01f",
+    "assets/source/creatures/primalShaman/registered-v3/native/g08-f000.png": "d05ea49f97adb876fa61fa880fda48d7154496aa13336698bea885f3a7a8b01f",
+    "assets/source/creatures/primalShaman/registered-v3/native/g08-f001.png": "fe1e1de90c8f1ebddd0750b338fe0534d9661378d2982cfec6bf01b2887a8aec",
+    "assets/source/creatures/primalShaman/registered-v3/native/g08-f002.png": "599d2635eb895f3624a0ad13b19eb2e19926f9ee4c1eb44d1d2071894a1254fc",
+    "assets/source/creatures/primalShaman/registered-v3/native/g11-f000.png": "c2ca25fbe6e0b5038bb87caf981d0fcda8f5f6d5a7dd899cbc8cf445ccebbbca",
+    "assets/source/creatures/primalShaman/registered-v3/native/g11-f001.png": "abe6526a312939ccc6a81d4abc4878ca724d8e78da5bd921784211f12d9fcce3",
+    "assets/source/creatures/primalShaman/registered-v3/native/g11-f002.png": "12a92d2231e0cd93e8d45803d9d7255d09f8f2393f7b1d2105d24902fe952bb6",
+    "assets/source/creatures/primalShaman/registered-v3/native/g11-f003.png": "53e4707df607a58c933634463ad1accd5de3529a60a072aab4a59ccf21bf6599",
+    "assets/source/creatures/primalShaman/registered-v3/native/g11-f004.png": "9934507c3595df9a65a50474b7fc372e392099e36a66b9e884d1f3ccf4fec40b",
+    "assets/source/creatures/primalShaman/registered-v3/native/g11-f005.png": "22135c72787b47f4bcb08596734de9bed0d475fb74326d8b93092861d77ac915",
+    "assets/source/creatures/primalShaman/registered-v3/native/g12-f000.png": "f0f9738691196bb31f7fceb84ee211e90b14c901bd45904eb0c8282dfdc3dc58",
+    "assets/source/creatures/primalShaman/registered-v3/native/g12-f001.png": "d282807acd8b5ffe63d2ca19ce4a8876904e669696c072cf4f97b4db499db535",
+    "assets/source/creatures/primalShaman/registered-v3/native/g12-f002.png": "025f9b99bf087575c17e836cabef4cc41a2b884551bc461aacc021c3c6845329",
+    "assets/source/creatures/primalShaman/registered-v3/native/g12-f003.png": "5549b58fb1e9796ff7b22063edce427f440e46f6237a8aa834af13d2dd302fe7",
+    "assets/source/creatures/primalShaman/registered-v3/native/g12-f004.png": "9fbb2887ae0abb7d1bbbcb94a98c56a9dde1b98fd6bad3f4380196ba992a0921",
+    "assets/source/creatures/primalShaman/registered-v3/native/g12-f005.png": "d34a1385a06f780b98d14cb1a1dd8b878517fe6c18d5c87a98daf80d04f1921e",
+    "assets/source/creatures/primalShaman/registered-v3/native/g13-f000.png": "869e35a663dbba58afc07229adcbe4b376ad96eb81aad19a7f443e27765c5023",
+    "assets/source/creatures/primalShaman/registered-v3/native/g13-f001.png": "5c0871c2def1719ed88742f777cc87b6ea118548c126c31956f4806377ced76e",
+    "assets/source/creatures/primalShaman/registered-v3/native/g13-f002.png": "9d1bddce9b9742b747259a7994d1d1da540169c33be0a7d44cdcf96cb957289d",
+    "assets/source/creatures/primalShaman/registered-v3/native/g13-f003.png": "6c261ffe8b7a4eaefddc2e74cad9eaf0f370d24f8a169e5b657d0ada14d3f5ad",
+    "assets/source/creatures/primalShaman/registered-v3/native/g13-f004.png": "deefa96dac00b77beb516f8ee4c841b6d0bcf9f48ab8da4c0035d1fe5e608bbe",
+    "assets/source/creatures/primalShaman/registered-v3/native/g13-f005.png": "952890be44a94376bc8dc86618b21d816bdf70a1ee6d09f072a6cd96f921e8e0",
+    "assets/source/creatures/primalShaman/registered-v3/native/g22-f000.png": "63a01161740dbff65c611bc7df8fd8ca140ac7248c40dbc7965db03503aa359b",
+    "assets/source/creatures/primalShaman/registered-v3/native/g23-f000.png": "63a01161740dbff65c611bc7df8fd8ca140ac7248c40dbc7965db03503aa359b",
+    "assets/source/creatures/primalShaman/registered-v3/native/g30-f000.png": "7415ce20f44523516d9222a660f6773a112dfc4872f405a91f475205852d3930",
+    "assets/source/creatures/primalShaman/registered-v3/native/g30-f001.png": "12e25fdd830b96f8b1b3dda37a6e1a309c449360b0fb69d03ed586906d2f8f35",
+    "assets/source/creatures/primalShaman/registered-v3/native/g30-f002.png": "4c4b4781e83804eb7d82caec7d72fc6b5d66ecda5531b0dc584d1dee023b6099",
+    "assets/source/creatures/primalShaman/registered-v3/native/g30-f003.png": "5347e7efaaa64ad45c8fff110a019d3c9a32c1b8f130c9895005111dba9fb571",
+    "assets/source/creatures/primalShaman/registered-v3/native/g30-f004.png": "fce6e30e98e5847a89fedbb3264439431c80fb730feff3db6b716f3900dfab1c",
+    "assets/source/creatures/primalShaman/registered-v3/native/g30-f005.png": "e4f71021428211b50cda1372a130092413b582fade256d0fd85e7db90efd62f5",
+    "assets/source/creatures/primalShaman/registered-v3/native/g31-f000.png": "7415ce20f44523516d9222a660f6773a112dfc4872f405a91f475205852d3930",
+    "assets/source/creatures/primalShaman/registered-v3/native/g31-f001.png": "12e25fdd830b96f8b1b3dda37a6e1a309c449360b0fb69d03ed586906d2f8f35",
+    "assets/source/creatures/primalShaman/registered-v3/native/g31-f002.png": "4c4b4781e83804eb7d82caec7d72fc6b5d66ecda5531b0dc584d1dee023b6099",
+    "assets/source/creatures/primalShaman/registered-v3/native/g31-f003.png": "5347e7efaaa64ad45c8fff110a019d3c9a32c1b8f130c9895005111dba9fb571",
+    "assets/source/creatures/primalShaman/registered-v3/native/g31-f004.png": "fce6e30e98e5847a89fedbb3264439431c80fb730feff3db6b716f3900dfab1c",
+    "assets/source/creatures/primalShaman/registered-v3/native/g31-f005.png": "e4f71021428211b50cda1372a130092413b582fade256d0fd85e7db90efd62f5",
+    "assets/source/creatures/primalShaman/registered-v3/native/g32-f000.png": "7415ce20f44523516d9222a660f6773a112dfc4872f405a91f475205852d3930",
+    "assets/source/creatures/primalShaman/registered-v3/native/g32-f001.png": "12e25fdd830b96f8b1b3dda37a6e1a309c449360b0fb69d03ed586906d2f8f35",
+    "assets/source/creatures/primalShaman/registered-v3/native/g32-f002.png": "4c4b4781e83804eb7d82caec7d72fc6b5d66ecda5531b0dc584d1dee023b6099",
+    "assets/source/creatures/primalShaman/registered-v3/native/g32-f003.png": "5347e7efaaa64ad45c8fff110a019d3c9a32c1b8f130c9895005111dba9fb571",
+    "assets/source/creatures/primalShaman/registered-v3/native/g32-f004.png": "fce6e30e98e5847a89fedbb3264439431c80fb730feff3db6b716f3900dfab1c",
+    "assets/source/creatures/primalShaman/registered-v3/native/g32-f005.png": "e4f71021428211b50cda1372a130092413b582fade256d0fd85e7db90efd62f5",
+    "assets/source/creatures/primalShaman/registered-v3/native/g14-f000.png": "e04b17a678ad4e1d9e0e30dad2a2994256a4b703564206f5f9beb3f170f34b0d",
+    "assets/source/creatures/primalShaman/registered-v3/native/g14-f001.png": "9404a5007ca13e42fd95f24149015c12b6949938bb2d9950576c9e9b6da1a5d8",
+    "assets/source/creatures/primalShaman/registered-v3/native/g14-f002.png": "46cdc5fec88e73b91342fb8e89dda99b1d6907a18af13115b48b1d6790c58ff3",
+    "assets/source/creatures/primalShaman/registered-v3/native/g14-f003.png": "3e0f240760839dcb1368e9e49778bc47e0f2c613c1354c82c75144b17fd7910f",
+    "assets/source/creatures/primalShaman/registered-v3/native/g14-f004.png": "2c5f95da8c2ed45bbd01b0eb8de39a01d2d116fc03456991b1f3cf2197ddca12",
+    "assets/source/creatures/primalShaman/registered-v3/native/g14-f005.png": "b9a8ad4def669bf70a4ebac39eecec91193c0c0d88bd3027d9f00dfb7ef4cb9c",
+    "assets/source/creatures/primalShaman/registered-v3/native/g15-f000.png": "46be7651766653924a92617c8ff51d8f0bcabfe718b9a69b2f4b8fb22e318d21",
+    "assets/source/creatures/primalShaman/registered-v3/native/g15-f001.png": "6927608f936d8700fda7460f409fb2866fa4ac357b67c21e67facac9981e5135",
+    "assets/source/creatures/primalShaman/registered-v3/native/g15-f002.png": "2d85ea56452c14bfdea69fc0fcb68747995b21728703f923d6de2bc8faa3845b",
+    "assets/source/creatures/primalShaman/registered-v3/native/g15-f003.png": "7f5b407fc5349d898cad0011ee52b4bbf88a08e123763f78cc45f704d78f89c0",
+    "assets/source/creatures/primalShaman/registered-v3/native/g15-f004.png": "b672237ab006b91d19dd8cef76c608cdd1d1505dad7a2a245060595aea5a1d32",
+    "assets/source/creatures/primalShaman/registered-v3/native/g15-f005.png": "7ae35d3bc52f4d1ac85c12d58051d36e9daf75d817130d8f37aa68c15e2cfa9f",
+    "assets/source/creatures/primalShaman/registered-v3/native/g16-f000.png": "e7e9f6da3b05c7e26c3ca64a87674a2db2e7452be675faf5debe25216b2d33b7",
+    "assets/source/creatures/primalShaman/registered-v3/native/g16-f001.png": "11c71c2e93b0876f47598544e955a3f2e36e9364342955d0e326cc60d229e72b",
+    "assets/source/creatures/primalShaman/registered-v3/native/g16-f002.png": "2b817123b85e3222351e3f39e463e2e392a492095dbcd69b03884ab1a9c6d43e",
+    "assets/source/creatures/primalShaman/registered-v3/native/g16-f003.png": "741648416e63328df381a0131086b4cc86b44585d0486ac604061af516bc95e2",
+    "assets/source/creatures/primalShaman/registered-v3/native/g16-f004.png": "10b6c8a79e8925d04378fef2d13ae50a7c8c582e1464a72e42fdad5660c7d2c1",
+    "assets/source/creatures/primalShaman/registered-v3/native/g16-f005.png": "deede974f7e2a676663ee69f8b73c94beaa6ff6718aa3ac2e75042af19c6075c"
+  },
+  "source_cells": [
+    {
+      "group": 0,
+      "frame": 0,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 5,
+      "source_bbox": [
+        14,
+        8,
+        181,
+        195
+      ],
+      "source_opaque_bbox": [
+        45,
+        17,
+        157,
+        171
+      ],
+      "source_opaque_area": 7822,
+      "source_centroid": [
+        98.36934287905906,
+        98.9473280490923
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 0,
+      "row_ground_baseline": 170.0,
+      "row_float_center": 97.68260550513807,
+      "source_camera_anchor": [
+        85.33333333333333,
+        170.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 0,
+      "frame": 1,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 7,
+      "source_bbox": [
+        204,
+        10,
+        371,
+        189
+      ],
+      "source_opaque_bbox": [
+        216,
+        17,
+        334,
+        170
+      ],
+      "source_opaque_area": 8377,
+      "source_centroid": [
+        268.9771994747523,
+        97.53384266443834
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 1,
+      "row_ground_baseline": 170.0,
+      "row_float_center": 97.68260550513807,
+      "source_camera_anchor": [
+        256.0,
+        170.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 0,
+      "frame": 2,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 1,
+      "source_bbox": [
+        344,
+        0,
+        521,
+        191
+      ],
+      "source_opaque_bbox": [
+        377,
+        15,
+        501,
+        170
+      ],
+      "source_opaque_area": 8269,
+      "source_centroid": [
+        431.6688837828032,
+        95.78691498367397
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 2,
+      "row_ground_baseline": 170.0,
+      "row_float_center": 97.68260550513807,
+      "source_camera_anchor": [
+        426.6666666666667,
+        170.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 0,
+      "frame": 3,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 24,
+      "source_bbox": [
+        505,
+        11,
+        717,
+        203
+      ],
+      "source_opaque_bbox": [
+        537,
+        19,
+        665,
+        170
+      ],
+      "source_opaque_area": 8397,
+      "source_centroid": [
+        595.8352983208289,
+        97.8313683458378
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 3,
+      "row_ground_baseline": 170.0,
+      "row_float_center": 97.68260550513807,
+      "source_camera_anchor": [
+        597.3333333333334,
+        170.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 0,
+      "frame": 4,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 17,
+      "source_bbox": [
+        672,
+        11,
+        837,
+        195
+      ],
+      "source_opaque_bbox": [
+        702,
+        18,
+        824,
+        170
+      ],
+      "source_opaque_area": 8113,
+      "source_centroid": [
+        758.0195981757673,
+        96.57179834832984
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 4,
+      "row_ground_baseline": 170.0,
+      "row_float_center": 97.68260550513807,
+      "source_camera_anchor": [
+        768.0,
+        170.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 0,
+      "frame": 5,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 38,
+      "source_bbox": [
+        832,
+        10,
+        1003,
+        263
+      ],
+      "source_opaque_bbox": [
+        869,
+        20,
+        992,
+        170
+      ],
+      "source_opaque_area": 8095,
+      "source_centroid": [
+        924.5885114268067,
+        97.9478690549722
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 0,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 5,
+      "row_ground_baseline": 170.0,
+      "row_float_center": 97.68260550513807,
+      "source_camera_anchor": [
+        938.6666666666666,
+        170.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 1,
+      "frame": 0,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 1970,
+      "source_bbox": [
+        0,
+        175,
+        203,
+        358
+      ],
+      "source_opaque_bbox": [
+        47,
+        190,
+        154,
+        336
+      ],
+      "source_opaque_area": 7706,
+      "source_centroid": [
+        94.05242668050869,
+        264.9227874383597
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 0,
+      "row_ground_baseline": 337,
+      "row_float_center": 264.21897262842145,
+      "source_camera_anchor": [
+        85.33333333333333,
+        337
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 1,
+      "frame": 1,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 1982,
+      "source_bbox": [
+        188,
+        166,
+        359,
+        368
+      ],
+      "source_opaque_bbox": [
+        213,
+        192,
+        332,
+        338
+      ],
+      "source_opaque_area": 8327,
+      "source_centroid": [
+        262.39834274048275,
+        262.5578239461991
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 3,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 1,
+      "row_ground_baseline": 337,
+      "row_float_center": 264.21897262842145,
+      "source_camera_anchor": [
+        256.0,
+        337
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 1,
+      "frame": 2,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 2052,
+      "source_bbox": [
+        344,
+        186,
+        543,
+        367
+      ],
+      "source_opaque_bbox": [
+        384,
+        199,
+        510,
+        337
+      ],
+      "source_opaque_area": 7891,
+      "source_centroid": [
+        434.20998606006845,
+        262.8279052084653
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 2,
+      "row_ground_baseline": 337,
+      "row_float_center": 264.21897262842145,
+      "source_camera_anchor": [
+        426.6666666666667,
+        337
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 1,
+      "frame": 3,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 1972,
+      "source_bbox": [
+        514,
+        166,
+        705,
+        380
+      ],
+      "source_opaque_bbox": [
+        548,
+        190,
+        664,
+        336
+      ],
+      "source_opaque_area": 8001,
+      "source_centroid": [
+        597.7245344331958,
+        264.21897262842145
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 3,
+      "row_ground_baseline": 337,
+      "row_float_center": 264.21897262842145,
+      "source_camera_anchor": [
+        597.3333333333334,
+        337
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 1,
+      "frame": 4,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 1970,
+      "source_bbox": [
+        0,
+        175,
+        203,
+        358
+      ],
+      "source_opaque_bbox": [
+        47,
+        190,
+        154,
+        336
+      ],
+      "source_opaque_area": 7706,
+      "source_centroid": [
+        94.05242668050869,
+        264.9227874383597
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 0,
+      "row_ground_baseline": 337,
+      "row_float_center": 264.21897262842145,
+      "source_camera_anchor": [
+        85.33333333333333,
+        337
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 2,
+      "frame": 0,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 1967,
+      "source_bbox": [
+        680,
+        173,
+        917,
+        347
+      ],
+      "source_opaque_bbox": [
+        719,
+        188,
+        835,
+        338
+      ],
+      "source_opaque_area": 8060,
+      "source_centroid": [
+        769.4507444168735,
+        264.5663771712159
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 4,
+      "row_ground_baseline": 337,
+      "row_float_center": 264.21897262842145,
+      "source_camera_anchor": [
+        768.0,
+        337
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 3,
+      "frame": 0,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 3606,
+      "source_bbox": [
+        0,
+        346,
+        187,
+        534
+      ],
+      "source_opaque_bbox": [
+        51,
+        359,
+        154,
+        507
+      ],
+      "source_opaque_area": 8649,
+      "source_centroid": [
+        98.38779049601109,
+        432.5648051797896
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 2,
+      "source_column": 0,
+      "row_ground_baseline": 508.5,
+      "row_float_center": 436.83840200975806,
+      "source_camera_anchor": [
+        85.33333333333333,
+        508.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 3,
+      "frame": 1,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 3557,
+      "source_bbox": [
+        186,
+        328,
+        365,
+        545
+      ],
+      "source_opaque_bbox": [
+        221,
+        345,
+        322,
+        510
+      ],
+      "source_opaque_area": 8402,
+      "source_centroid": [
+        270.42335158295646,
+        435.0111878124256
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 4,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 2,
+      "source_column": 1,
+      "row_ground_baseline": 508.5,
+      "row_float_center": 436.83840200975806,
+      "source_camera_anchor": [
+        256.0,
+        508.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 3,
+      "frame": 2,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 3576,
+      "source_bbox": [
+        358,
+        334,
+        541,
+        543
+      ],
+      "source_opaque_bbox": [
+        387,
+        353,
+        492,
+        506
+      ],
+      "source_opaque_area": 8055,
+      "source_centroid": [
+        435.86505276225944,
+        434.5015518311608
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 2,
+      "source_column": 2,
+      "row_ground_baseline": 508.5,
+      "row_float_center": 436.83840200975806,
+      "source_camera_anchor": [
+        426.6666666666667,
+        508.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 4,
+      "frame": 0,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 3705,
+      "source_bbox": [
+        524,
+        330,
+        719,
+        541
+      ],
+      "source_opaque_bbox": [
+        541,
+        367,
+        673,
+        508
+      ],
+      "source_opaque_area": 8714,
+      "source_centroid": [
+        602.5735597888455,
+        439.90337388111084
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 2,
+      "source_column": 3,
+      "row_ground_baseline": 508.5,
+      "row_float_center": 436.83840200975806,
+      "source_camera_anchor": [
+        597.3333333333334,
+        508.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 4,
+      "frame": 1,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 3633,
+      "source_bbox": [
+        670,
+        342,
+        881,
+        559
+      ],
+      "source_opaque_bbox": [
+        700,
+        361,
+        830,
+        511
+      ],
+      "source_opaque_area": 8930,
+      "source_centroid": [
+        761.0166853303472,
+        440.0087346024636
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 2,
+      "source_column": 4,
+      "row_ground_baseline": 508.5,
+      "row_float_center": 436.83840200975806,
+      "source_camera_anchor": [
+        768.0,
+        508.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 4,
+      "frame": 2,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 3596,
+      "source_bbox": [
+        838,
+        276,
+        1009,
+        543
+      ],
+      "source_opaque_bbox": [
+        874,
+        357,
+        995,
+        509
+      ],
+      "source_opaque_area": 8885,
+      "source_centroid": [
+        933.1459763646595,
+        438.6656162070906
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 2,
+      "source_column": 5,
+      "row_ground_baseline": 508.5,
+      "row_float_center": 436.83840200975806,
+      "source_camera_anchor": [
+        938.6666666666666,
+        508.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 5,
+      "frame": 0,
+      "master": "assets/source/creatures/primalShaman/death-v3/death-atlas-v3.png",
+      "master_sha256": "2336c46b431299894aa1a6d5d078a908b61d50d4787f5c57009ae586339ff3eb",
+      "uniform_camera_scale": 0.18731117824773413,
+      "opaque_component": 1,
+      "source_bbox": [
+        0,
+        0,
+        558,
+        629
+      ],
+      "source_opaque_bbox": [
+        69,
+        168,
+        481,
+        499
+      ],
+      "source_opaque_area": 56702,
+      "source_centroid": [
+        232.08389474798068,
+        341.7944693308878
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 0,
+      "row_ground_baseline": 500,
+      "row_float_center": 357.35193222820686,
+      "source_camera_anchor": [
+        256.0,
+        500
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 5,
+      "frame": 1,
+      "master": "assets/source/creatures/primalShaman/death-v3/death-atlas-v3.png",
+      "master_sha256": "2336c46b431299894aa1a6d5d078a908b61d50d4787f5c57009ae586339ff3eb",
+      "uniform_camera_scale": 0.18731117824773413,
+      "opaque_component": 63,
+      "source_bbox": [
+        476,
+        52,
+        1103,
+        667
+      ],
+      "source_opaque_bbox": [
+        581,
+        228,
+        1012,
+        500
+      ],
+      "source_opaque_area": 57369,
+      "source_centroid": [
+        762.1409123394168,
+        357.35193222820686
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 1,
+      "row_ground_baseline": 500,
+      "row_float_center": 357.35193222820686,
+      "source_camera_anchor": [
+        768.0,
+        500
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 5,
+      "frame": 2,
+      "master": "assets/source/creatures/primalShaman/death-v3/death-atlas-v3.png",
+      "master_sha256": "2336c46b431299894aa1a6d5d078a908b61d50d4787f5c57009ae586339ff3eb",
+      "uniform_camera_scale": 0.18731117824773413,
+      "opaque_component": 159,
+      "source_bbox": [
+        990,
+        44,
+        1536,
+        636
+      ],
+      "source_opaque_bbox": [
+        1048,
+        273,
+        1529,
+        505
+      ],
+      "source_opaque_area": 50846,
+      "source_centroid": [
+        1298.064095504071,
+        373.73343035833693
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 7,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 2,
+      "row_ground_baseline": 500,
+      "row_float_center": 357.35193222820686,
+      "source_camera_anchor": [
+        1280.0,
+        500
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 5,
+      "frame": 3,
+      "master": "assets/source/creatures/primalShaman/death-v3/death-atlas-v3.png",
+      "master_sha256": "2336c46b431299894aa1a6d5d078a908b61d50d4787f5c57009ae586339ff3eb",
+      "uniform_camera_scale": 0.18731117824773413,
+      "opaque_component": 1237,
+      "source_bbox": [
+        28,
+        555,
+        592,
+        1024
+      ],
+      "source_opaque_bbox": [
+        40,
+        702,
+        510,
+        903
+      ],
+      "source_opaque_area": 49817,
+      "source_centroid": [
+        285.08077563883813,
+        794.0054800570086
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 0,
+      "row_ground_baseline": 902,
+      "row_float_center": 794.0724077406741,
+      "source_camera_anchor": [
+        256.0,
+        902
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 5,
+      "frame": 4,
+      "master": "assets/source/creatures/primalShaman/death-v3/death-atlas-v3.png",
+      "master_sha256": "2336c46b431299894aa1a6d5d078a908b61d50d4787f5c57009ae586339ff3eb",
+      "uniform_camera_scale": 0.18731117824773413,
+      "opaque_component": 1242,
+      "source_bbox": [
+        496,
+        572,
+        1089,
+        1024
+      ],
+      "source_opaque_bbox": [
+        539,
+        703,
+        1016,
+        901
+      ],
+      "source_opaque_area": 45009,
+      "source_centroid": [
+        774.7794441111778,
+        794.0724077406741
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 1,
+      "row_ground_baseline": 902,
+      "row_float_center": 794.0724077406741,
+      "source_camera_anchor": [
+        768.0,
+        902
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 5,
+      "frame": 5,
+      "master": "assets/source/creatures/primalShaman/death-v3/death-atlas-v3.png",
+      "master_sha256": "2336c46b431299894aa1a6d5d078a908b61d50d4787f5c57009ae586339ff3eb",
+      "uniform_camera_scale": 0.18731117824773413,
+      "opaque_component": 1261,
+      "source_bbox": [
+        1000,
+        574,
+        1525,
+        1024
+      ],
+      "source_opaque_bbox": [
+        1041,
+        709,
+        1518,
+        902
+      ],
+      "source_opaque_area": 48855,
+      "source_centroid": [
+        1291.9777095486645,
+        798.6830825913418
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 2,
+      "row_ground_baseline": 902,
+      "row_float_center": 794.0724077406741,
+      "source_camera_anchor": [
+        1280.0,
+        902
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 7,
+      "frame": 0,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 6275,
+      "source_bbox": [
+        30,
+        648,
+        173,
+        865
+      ],
+      "source_opaque_bbox": [
+        46,
+        664,
+        155,
+        838
+      ],
+      "source_opaque_area": 9125,
+      "source_centroid": [
+        96.46093150684932,
+        756.9707397260274
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 5,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 4,
+      "source_column": 0,
+      "row_ground_baseline": 836.0,
+      "row_float_center": 757.5876510301225,
+      "source_camera_anchor": [
+        85.33333333333333,
+        836.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 7,
+      "frame": 1,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 6302,
+      "source_bbox": [
+        186,
+        656,
+        344,
+        877
+      ],
+      "source_opaque_bbox": [
+        204,
+        668,
+        326,
+        839
+      ],
+      "source_opaque_area": 10039,
+      "source_centroid": [
+        260.84231497161073,
+        755.6082279111465
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 6,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 4,
+      "source_column": 1,
+      "row_ground_baseline": 836.0,
+      "row_float_center": 757.5876510301225,
+      "source_camera_anchor": [
+        256.0,
+        836.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 7,
+      "frame": 2,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 6274,
+      "source_bbox": [
+        350,
+        653,
+        513,
+        852
+      ],
+      "source_opaque_bbox": [
+        376,
+        663,
+        492,
+        835
+      ],
+      "source_opaque_area": 10011,
+      "source_centroid": [
+        431.3066626710618,
+        754.1040855059434
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 7,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 4,
+      "source_column": 2,
+      "row_ground_baseline": 836.0,
+      "row_float_center": 757.5876510301225,
+      "source_camera_anchor": [
+        426.6666666666667,
+        836.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 8,
+      "frame": 0,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 6274,
+      "source_bbox": [
+        350,
+        653,
+        513,
+        852
+      ],
+      "source_opaque_bbox": [
+        376,
+        663,
+        492,
+        835
+      ],
+      "source_opaque_area": 10011,
+      "source_centroid": [
+        431.3066626710618,
+        754.1040855059434
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 7,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 4,
+      "source_column": 2,
+      "row_ground_baseline": 836.0,
+      "row_float_center": 757.5876510301225,
+      "source_camera_anchor": [
+        426.6666666666667,
+        836.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 8,
+      "frame": 1,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 6302,
+      "source_bbox": [
+        186,
+        656,
+        344,
+        877
+      ],
+      "source_opaque_bbox": [
+        204,
+        668,
+        326,
+        839
+      ],
+      "source_opaque_area": 10039,
+      "source_centroid": [
+        260.84231497161073,
+        755.6082279111465
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 6,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 4,
+      "source_column": 1,
+      "row_ground_baseline": 836.0,
+      "row_float_center": 757.5876510301225,
+      "source_camera_anchor": [
+        256.0,
+        836.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 8,
+      "frame": 2,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 6275,
+      "source_bbox": [
+        30,
+        648,
+        173,
+        865
+      ],
+      "source_opaque_bbox": [
+        46,
+        664,
+        155,
+        838
+      ],
+      "source_opaque_area": 9125,
+      "source_centroid": [
+        96.46093150684932,
+        756.9707397260274
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 5,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 4,
+      "source_column": 0,
+      "row_ground_baseline": 836.0,
+      "row_float_center": 757.5876510301225,
+      "source_camera_anchor": [
+        85.33333333333333,
+        836.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 11,
+      "frame": 0,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 8403,
+      "source_bbox": [
+        0,
+        812,
+        191,
+        1039
+      ],
+      "source_opaque_bbox": [
+        40,
+        830,
+        176,
+        1015
+      ],
+      "source_opaque_area": 8517,
+      "source_centroid": [
+        102.9319009040742,
+        939.7057649407068
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 2,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 5,
+      "source_column": 0,
+      "row_ground_baseline": 1019.0,
+      "row_float_center": 941.7078850758771,
+      "source_camera_anchor": [
+        85.33333333333333,
+        1019.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 11,
+      "frame": 1,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 8472,
+      "source_bbox": [
+        198,
+        818,
+        359,
+        1048
+      ],
+      "source_opaque_bbox": [
+        218,
+        836,
+        330,
+        1014
+      ],
+      "source_opaque_area": 8403,
+      "source_centroid": [
+        271.5027966202547,
+        939.034630489111
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 3,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 5,
+      "source_column": 1,
+      "row_ground_baseline": 1019.0,
+      "row_float_center": 941.7078850758771,
+      "source_camera_anchor": [
+        256.0,
+        1019.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 11,
+      "frame": 2,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 8493,
+      "source_bbox": [
+        343,
+        828,
+        520,
+        1052
+      ],
+      "source_opaque_bbox": [
+        375,
+        840,
+        511,
+        1020
+      ],
+      "source_opaque_area": 8974,
+      "source_centroid": [
+        433.593492311121,
+        938.5822375752173
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 2,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 5,
+      "source_column": 2,
+      "row_ground_baseline": 1019.0,
+      "row_float_center": 941.7078850758771,
+      "source_camera_anchor": [
+        426.6666666666667,
+        1019.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 11,
+      "frame": 3,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 8581,
+      "source_bbox": [
+        530,
+        842,
+        693,
+        1029
+      ],
+      "source_opaque_bbox": [
+        544,
+        855,
+        679,
+        1018
+      ],
+      "source_opaque_area": 7676,
+      "source_centroid": [
+        598.5402553413236,
+        943.7100052110475
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 5,
+      "source_column": 3,
+      "row_ground_baseline": 1019.0,
+      "row_float_center": 941.7078850758771,
+      "source_camera_anchor": [
+        597.3333333333334,
+        1019.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 11,
+      "frame": 4,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 8630,
+      "source_bbox": [
+        700,
+        840,
+        889,
+        1057
+      ],
+      "source_opaque_bbox": [
+        712,
+        861,
+        837,
+        1020
+      ],
+      "source_opaque_area": 7931,
+      "source_centroid": [
+        764.38053208927,
+        947.5624763585929
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 2,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 5,
+      "source_column": 4,
+      "row_ground_baseline": 1019.0,
+      "row_float_center": 941.7078850758771,
+      "source_camera_anchor": [
+        768.0,
+        1019.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 11,
+      "frame": 5,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 8567,
+      "source_bbox": [
+        838,
+        839,
+        1005,
+        1035
+      ],
+      "source_opaque_bbox": [
+        877,
+        853,
+        994,
+        1021
+      ],
+      "source_opaque_area": 8603,
+      "source_centroid": [
+        933.6021155410904,
+        946.0478902708358
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 2,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 5,
+      "source_column": 5,
+      "row_ground_baseline": 1019.0,
+      "row_float_center": 941.7078850758771,
+      "source_camera_anchor": [
+        938.6666666666666,
+        1019.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 12,
+      "frame": 0,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 10143,
+      "source_bbox": [
+        0,
+        1030,
+        220,
+        1219
+      ],
+      "source_opaque_bbox": [
+        31,
+        1046,
+        207,
+        1185
+      ],
+      "source_opaque_area": 8739,
+      "source_centroid": [
+        87.95342716557958,
+        1112.2702826410346
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 2,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 6,
+      "source_column": 0,
+      "row_ground_baseline": 1185.0,
+      "row_float_center": 1112.3292060477052,
+      "source_camera_anchor": [
+        85.33333333333333,
+        1185.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 12,
+      "frame": 1,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 10064,
+      "source_bbox": [
+        164,
+        1014,
+        390,
+        1213
+      ],
+      "source_opaque_bbox": [
+        198,
+        1026,
+        376,
+        1179
+      ],
+      "source_opaque_area": 8204,
+      "source_centroid": [
+        259.4566065333983,
+        1107.8097269624573
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 4,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 6,
+      "source_column": 1,
+      "row_ground_baseline": 1185.0,
+      "row_float_center": 1112.3292060477052,
+      "source_camera_anchor": [
+        256.0,
+        1185.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 12,
+      "frame": 2,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 10175,
+      "source_bbox": [
+        364,
+        1036,
+        578,
+        1223
+      ],
+      "source_opaque_bbox": [
+        375,
+        1050,
+        566,
+        1185
+      ],
+      "source_opaque_area": 8219,
+      "source_centroid": [
+        441.85156345054145,
+        1112.1859106947318
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 12,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 6,
+      "source_column": 2,
+      "row_ground_baseline": 1185.0,
+      "row_float_center": 1112.3292060477052,
+      "source_camera_anchor": [
+        426.6666666666667,
+        1185.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 12,
+      "frame": 3,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 10197,
+      "source_bbox": [
+        534,
+        1036,
+        731,
+        1197
+      ],
+      "source_opaque_bbox": [
+        547,
+        1053,
+        719,
+        1180
+      ],
+      "source_opaque_area": 7966,
+      "source_centroid": [
+        612.3257594777806,
+        1113.9573186040673
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 5,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 6,
+      "source_column": 3,
+      "row_ground_baseline": 1185.0,
+      "row_float_center": 1112.3292060477052,
+      "source_camera_anchor": [
+        597.3333333333334,
+        1185.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 12,
+      "frame": 4,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 10073,
+      "source_bbox": [
+        696,
+        1019,
+        877,
+        1231
+      ],
+      "source_opaque_bbox": [
+        705,
+        1033,
+        835,
+        1190
+      ],
+      "source_opaque_area": 8322,
+      "source_centroid": [
+        765.2732516222062,
+        1117.9938716654651
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 3,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 6,
+      "source_column": 4,
+      "row_ground_baseline": 1185.0,
+      "row_float_center": 1112.3292060477052,
+      "source_camera_anchor": [
+        768.0,
+        1185.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 12,
+      "frame": 5,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 10071,
+      "source_bbox": [
+        838,
+        1019,
+        1024,
+        1225
+      ],
+      "source_opaque_bbox": [
+        877,
+        1032,
+        1010,
+        1185
+      ],
+      "source_opaque_area": 8559,
+      "source_centroid": [
+        932.5002920901975,
+        1112.3881294543755
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 6,
+      "source_column": 5,
+      "row_ground_baseline": 1185.0,
+      "row_float_center": 1112.3292060477052,
+      "source_camera_anchor": [
+        938.6666666666666,
+        1185.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 13,
+      "frame": 0,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 11576,
+      "source_bbox": [
+        0,
+        1208,
+        189,
+        1390
+      ],
+      "source_opaque_bbox": [
+        27,
+        1221,
+        166,
+        1349
+      ],
+      "source_opaque_area": 7818,
+      "source_centroid": [
+        81.84548477871579,
+        1284.1678178562292
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 82,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 7,
+      "source_column": 0,
+      "row_ground_baseline": 1352.0,
+      "row_float_center": 1284.1387459689836,
+      "source_camera_anchor": [
+        85.33333333333333,
+        1352.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 13,
+      "frame": 1,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 11476,
+      "source_bbox": [
+        174,
+        1179,
+        340,
+        1382
+      ],
+      "source_opaque_bbox": [
+        200,
+        1189,
+        311,
+        1338
+      ],
+      "source_opaque_area": 7957,
+      "source_centroid": [
+        248.9641824808345,
+        1270.4123413346738
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 49,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 7,
+      "source_column": 1,
+      "row_ground_baseline": 1352.0,
+      "row_float_center": 1284.1387459689836,
+      "source_camera_anchor": [
+        256.0,
+        1352.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 13,
+      "frame": 2,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 11480,
+      "source_bbox": [
+        326,
+        1185,
+        523,
+        1389
+      ],
+      "source_opaque_bbox": [
+        360,
+        1191,
+        500,
+        1359
+      ],
+      "source_opaque_area": 8193,
+      "source_centroid": [
+        418.35872085927014,
+        1279.6114976199194
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 100,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 7,
+      "source_column": 2,
+      "row_ground_baseline": 1352.0,
+      "row_float_center": 1284.1387459689836,
+      "source_camera_anchor": [
+        426.6666666666667,
+        1352.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 13,
+      "frame": 3,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 11523,
+      "source_bbox": [
+        482,
+        1196,
+        689,
+        1390
+      ],
+      "source_opaque_bbox": [
+        517,
+        1210,
+        664,
+        1358
+      ],
+      "source_opaque_area": 7673,
+      "source_centroid": [
+        577.1943177375211,
+        1284.2504887267041
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 108,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 7,
+      "source_column": 3,
+      "row_ground_baseline": 1352.0,
+      "row_float_center": 1284.1387459689836,
+      "source_camera_anchor": [
+        597.3333333333334,
+        1352.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 13,
+      "frame": 4,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 11511,
+      "source_bbox": [
+        650,
+        1191,
+        856,
+        1390
+      ],
+      "source_opaque_bbox": [
+        687,
+        1206,
+        839,
+        1347
+      ],
+      "source_opaque_area": 7732,
+      "source_centroid": [
+        744.5829022245215,
+        1284.1096740817381
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 16,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 7,
+      "source_column": 4,
+      "row_ground_baseline": 1352.0,
+      "row_float_center": 1284.1387459689836,
+      "source_camera_anchor": [
+        768.0,
+        1352.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 13,
+      "frame": 5,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 11541,
+      "source_bbox": [
+        820,
+        1200,
+        1024,
+        1385
+      ],
+      "source_opaque_bbox": [
+        853,
+        1214,
+        1009,
+        1355
+      ],
+      "source_opaque_area": 8280,
+      "source_centroid": [
+        911.598309178744,
+        1287.2031400966184
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 54,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 7,
+      "source_column": 5,
+      "row_ground_baseline": 1352.0,
+      "row_float_center": 1284.1387459689836,
+      "source_camera_anchor": [
+        938.6666666666666,
+        1352.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 22,
+      "frame": 0,
+      "master": "assets/source/creatures/primalShaman/death-v3/death-atlas-v3.png",
+      "master_sha256": "2336c46b431299894aa1a6d5d078a908b61d50d4787f5c57009ae586339ff3eb",
+      "uniform_camera_scale": 0.18731117824773413,
+      "opaque_component": 1261,
+      "source_bbox": [
+        1000,
+        574,
+        1525,
+        1024
+      ],
+      "source_opaque_bbox": [
+        1041,
+        709,
+        1518,
+        902
+      ],
+      "source_opaque_area": 48855,
+      "source_centroid": [
+        1291.9777095486645,
+        798.6830825913418
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 2,
+      "row_ground_baseline": 902,
+      "row_float_center": 794.0724077406741,
+      "source_camera_anchor": [
+        1280.0,
+        902
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 23,
+      "frame": 0,
+      "master": "assets/source/creatures/primalShaman/death-v3/death-atlas-v3.png",
+      "master_sha256": "2336c46b431299894aa1a6d5d078a908b61d50d4787f5c57009ae586339ff3eb",
+      "uniform_camera_scale": 0.18731117824773413,
+      "opaque_component": 1261,
+      "source_bbox": [
+        1000,
+        574,
+        1525,
+        1024
+      ],
+      "source_opaque_bbox": [
+        1041,
+        709,
+        1518,
+        902
+      ],
+      "source_opaque_area": 48855,
+      "source_centroid": [
+        1291.9777095486645,
+        798.6830825913418
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 2,
+      "row_ground_baseline": 902,
+      "row_float_center": 794.0724077406741,
+      "source_camera_anchor": [
+        1280.0,
+        902
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 30,
+      "frame": 0,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 12854,
+      "source_bbox": [
+        6,
+        1339,
+        195,
+        1536
+      ],
+      "source_opaque_bbox": [
+        36,
+        1351,
+        145,
+        1516
+      ],
+      "source_opaque_area": 8613,
+      "source_centroid": [
+        89.60640891675375,
+        1437.7841634738186
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 96,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 8,
+      "source_column": 0,
+      "row_ground_baseline": 1516.0,
+      "row_float_center": 1437.7534398614039,
+      "source_camera_anchor": [
+        85.33333333333333,
+        1516.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 30,
+      "frame": 1,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 12922,
+      "source_bbox": [
+        174,
+        1340,
+        370,
+        1525
+      ],
+      "source_opaque_bbox": [
+        194,
+        1358,
+        336,
+        1516
+      ],
+      "source_opaque_area": 9573,
+      "source_centroid": [
+        255.36853650893136,
+        1437.5978272223963
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 50,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 8,
+      "source_column": 1,
+      "row_ground_baseline": 1516.0,
+      "row_float_center": 1437.7534398614039,
+      "source_camera_anchor": [
+        256.0,
+        1516.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 30,
+      "frame": 2,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 12831,
+      "source_bbox": [
+        328,
+        1338,
+        513,
+        1523
+      ],
+      "source_opaque_bbox": [
+        375,
+        1348,
+        477,
+        1516
+      ],
+      "source_opaque_area": 8434,
+      "source_centroid": [
+        425.011263931705,
+        1437.6035096039839
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 99,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 8,
+      "source_column": 2,
+      "row_ground_baseline": 1516.0,
+      "row_float_center": 1437.7534398614039,
+      "source_camera_anchor": [
+        426.6666666666667,
+        1516.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 30,
+      "frame": 3,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 12849,
+      "source_bbox": [
+        498,
+        1339,
+        689,
+        1523
+      ],
+      "source_opaque_bbox": [
+        533,
+        1350,
+        637,
+        1516
+      ],
+      "source_opaque_area": 8659,
+      "source_centroid": [
+        586.2977249104978,
+        1437.7227162489894
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 110,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 8,
+      "source_column": 3,
+      "row_ground_baseline": 1516.0,
+      "row_float_center": 1437.7534398614039,
+      "source_camera_anchor": [
+        597.3333333333334,
+        1516.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 30,
+      "frame": 4,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 13034,
+      "source_bbox": [
+        668,
+        1356,
+        859,
+        1523
+      ],
+      "source_opaque_bbox": [
+        700,
+        1378,
+        820,
+        1514
+      ],
+      "source_opaque_area": 8138,
+      "source_centroid": [
+        754.3085524698943,
+        1442.2655443597935
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 18,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 8,
+      "source_column": 4,
+      "row_ground_baseline": 1516.0,
+      "row_float_center": 1437.7534398614039,
+      "source_camera_anchor": [
+        768.0,
+        1516.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 30,
+      "frame": 5,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 12899,
+      "source_bbox": [
+        840,
+        1342,
+        1011,
+        1523
+      ],
+      "source_opaque_bbox": [
+        872,
+        1355,
+        983,
+        1516
+      ],
+      "source_opaque_area": 8664,
+      "source_centroid": [
+        925.3598799630655,
+        1438.2353416435826
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 56,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 8,
+      "source_column": 5,
+      "row_ground_baseline": 1516.0,
+      "row_float_center": 1437.7534398614039,
+      "source_camera_anchor": [
+        938.6666666666666,
+        1516.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 31,
+      "frame": 0,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 12854,
+      "source_bbox": [
+        6,
+        1339,
+        195,
+        1536
+      ],
+      "source_opaque_bbox": [
+        36,
+        1351,
+        145,
+        1516
+      ],
+      "source_opaque_area": 8613,
+      "source_centroid": [
+        89.60640891675375,
+        1437.7841634738186
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 96,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 8,
+      "source_column": 0,
+      "row_ground_baseline": 1516.0,
+      "row_float_center": 1437.7534398614039,
+      "source_camera_anchor": [
+        85.33333333333333,
+        1516.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 31,
+      "frame": 1,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 12922,
+      "source_bbox": [
+        174,
+        1340,
+        370,
+        1525
+      ],
+      "source_opaque_bbox": [
+        194,
+        1358,
+        336,
+        1516
+      ],
+      "source_opaque_area": 9573,
+      "source_centroid": [
+        255.36853650893136,
+        1437.5978272223963
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 50,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 8,
+      "source_column": 1,
+      "row_ground_baseline": 1516.0,
+      "row_float_center": 1437.7534398614039,
+      "source_camera_anchor": [
+        256.0,
+        1516.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 31,
+      "frame": 2,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 12831,
+      "source_bbox": [
+        328,
+        1338,
+        513,
+        1523
+      ],
+      "source_opaque_bbox": [
+        375,
+        1348,
+        477,
+        1516
+      ],
+      "source_opaque_area": 8434,
+      "source_centroid": [
+        425.011263931705,
+        1437.6035096039839
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 99,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 8,
+      "source_column": 2,
+      "row_ground_baseline": 1516.0,
+      "row_float_center": 1437.7534398614039,
+      "source_camera_anchor": [
+        426.6666666666667,
+        1516.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 31,
+      "frame": 3,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 12849,
+      "source_bbox": [
+        498,
+        1339,
+        689,
+        1523
+      ],
+      "source_opaque_bbox": [
+        533,
+        1350,
+        637,
+        1516
+      ],
+      "source_opaque_area": 8659,
+      "source_centroid": [
+        586.2977249104978,
+        1437.7227162489894
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 110,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 8,
+      "source_column": 3,
+      "row_ground_baseline": 1516.0,
+      "row_float_center": 1437.7534398614039,
+      "source_camera_anchor": [
+        597.3333333333334,
+        1516.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 31,
+      "frame": 4,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 13034,
+      "source_bbox": [
+        668,
+        1356,
+        859,
+        1523
+      ],
+      "source_opaque_bbox": [
+        700,
+        1378,
+        820,
+        1514
+      ],
+      "source_opaque_area": 8138,
+      "source_centroid": [
+        754.3085524698943,
+        1442.2655443597935
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 18,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 8,
+      "source_column": 4,
+      "row_ground_baseline": 1516.0,
+      "row_float_center": 1437.7534398614039,
+      "source_camera_anchor": [
+        768.0,
+        1516.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 31,
+      "frame": 5,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 12899,
+      "source_bbox": [
+        840,
+        1342,
+        1011,
+        1523
+      ],
+      "source_opaque_bbox": [
+        872,
+        1355,
+        983,
+        1516
+      ],
+      "source_opaque_area": 8664,
+      "source_centroid": [
+        925.3598799630655,
+        1438.2353416435826
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 56,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 8,
+      "source_column": 5,
+      "row_ground_baseline": 1516.0,
+      "row_float_center": 1437.7534398614039,
+      "source_camera_anchor": [
+        938.6666666666666,
+        1516.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 32,
+      "frame": 0,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 12854,
+      "source_bbox": [
+        6,
+        1339,
+        195,
+        1536
+      ],
+      "source_opaque_bbox": [
+        36,
+        1351,
+        145,
+        1516
+      ],
+      "source_opaque_area": 8613,
+      "source_centroid": [
+        89.60640891675375,
+        1437.7841634738186
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 96,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 8,
+      "source_column": 0,
+      "row_ground_baseline": 1516.0,
+      "row_float_center": 1437.7534398614039,
+      "source_camera_anchor": [
+        85.33333333333333,
+        1516.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 32,
+      "frame": 1,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 12922,
+      "source_bbox": [
+        174,
+        1340,
+        370,
+        1525
+      ],
+      "source_opaque_bbox": [
+        194,
+        1358,
+        336,
+        1516
+      ],
+      "source_opaque_area": 9573,
+      "source_centroid": [
+        255.36853650893136,
+        1437.5978272223963
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 50,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 8,
+      "source_column": 1,
+      "row_ground_baseline": 1516.0,
+      "row_float_center": 1437.7534398614039,
+      "source_camera_anchor": [
+        256.0,
+        1516.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 32,
+      "frame": 2,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 12831,
+      "source_bbox": [
+        328,
+        1338,
+        513,
+        1523
+      ],
+      "source_opaque_bbox": [
+        375,
+        1348,
+        477,
+        1516
+      ],
+      "source_opaque_area": 8434,
+      "source_centroid": [
+        425.011263931705,
+        1437.6035096039839
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 99,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 8,
+      "source_column": 2,
+      "row_ground_baseline": 1516.0,
+      "row_float_center": 1437.7534398614039,
+      "source_camera_anchor": [
+        426.6666666666667,
+        1516.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 32,
+      "frame": 3,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 12849,
+      "source_bbox": [
+        498,
+        1339,
+        689,
+        1523
+      ],
+      "source_opaque_bbox": [
+        533,
+        1350,
+        637,
+        1516
+      ],
+      "source_opaque_area": 8659,
+      "source_centroid": [
+        586.2977249104978,
+        1437.7227162489894
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 110,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 8,
+      "source_column": 3,
+      "row_ground_baseline": 1516.0,
+      "row_float_center": 1437.7534398614039,
+      "source_camera_anchor": [
+        597.3333333333334,
+        1516.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 32,
+      "frame": 4,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 13034,
+      "source_bbox": [
+        668,
+        1356,
+        859,
+        1523
+      ],
+      "source_opaque_bbox": [
+        700,
+        1378,
+        820,
+        1514
+      ],
+      "source_opaque_area": 8138,
+      "source_centroid": [
+        754.3085524698943,
+        1442.2655443597935
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 18,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 8,
+      "source_column": 4,
+      "row_ground_baseline": 1516.0,
+      "row_float_center": 1437.7534398614039,
+      "source_camera_anchor": [
+        768.0,
+        1516.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 32,
+      "frame": 5,
+      "master": "assets/source/creatures/primalShaman/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "d19c06bc2a32a8966480224ae4772cdca55362143271d657c22d51466b44b8ad",
+      "uniform_camera_scale": 0.49845703124999996,
+      "opaque_component": 12899,
+      "source_bbox": [
+        840,
+        1342,
+        1011,
+        1523
+      ],
+      "source_opaque_bbox": [
+        872,
+        1355,
+        983,
+        1516
+      ],
+      "source_opaque_area": 8664,
+      "source_centroid": [
+        925.3598799630655,
+        1438.2353416435826
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 56,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 8,
+      "source_column": 5,
+      "row_ground_baseline": 1516.0,
+      "row_float_center": 1437.7534398614039,
+      "source_camera_anchor": [
+        938.6666666666666,
+        1516.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 14,
+      "frame": 0,
+      "master": "assets/source/creatures/primalShaman/launch-v1/launch-atlas-v1.png",
+      "master_sha256": "cc0e566db1731678ff3f900ed27e77b58785482cf8dfcd9bff9a8086a6b0cbf0",
+      "uniform_camera_scale": 0.28772266065388946,
+      "opaque_component": 213,
+      "source_bbox": [
+        0,
+        20,
+        326,
+        358
+      ],
+      "source_opaque_bbox": [
+        37,
+        54,
+        236,
+        297
+      ],
+      "source_opaque_area": 21838,
+      "source_centroid": [
+        126.63416979576884,
+        187.3028207711329
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 0,
+      "row_ground_baseline": 297.0,
+      "row_float_center": 182.20447213750978,
+      "source_camera_anchor": [
+        147.83333333333334,
+        297.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 14,
+      "frame": 1,
+      "master": "assets/source/creatures/primalShaman/launch-v1/launch-atlas-v1.png",
+      "master_sha256": "cc0e566db1731678ff3f900ed27e77b58785482cf8dfcd9bff9a8086a6b0cbf0",
+      "uniform_camera_scale": 0.28772266065388946,
+      "opaque_component": 10,
+      "source_bbox": [
+        262,
+        16,
+        626,
+        324
+      ],
+      "source_opaque_bbox": [
+        328,
+        33,
+        522,
+        297
+      ],
+      "source_opaque_area": 24365,
+      "source_centroid": [
+        420.6320952185512,
+        178.71335932690334
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 1,
+      "row_ground_baseline": 297.0,
+      "row_float_center": 182.20447213750978,
+      "source_camera_anchor": [
+        443.5,
+        297.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 14,
+      "frame": 2,
+      "master": "assets/source/creatures/primalShaman/launch-v1/launch-atlas-v1.png",
+      "master_sha256": "cc0e566db1731678ff3f900ed27e77b58785482cf8dfcd9bff9a8086a6b0cbf0",
+      "uniform_camera_scale": 0.28772266065388946,
+      "opaque_component": 1,
+      "source_bbox": [
+        560,
+        18,
+        949,
+        359
+      ],
+      "source_opaque_bbox": [
+        622,
+        27,
+        852,
+        297
+      ],
+      "source_opaque_area": 22079,
+      "source_centroid": [
+        716.0127723175868,
+        181.7008469586485
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 2,
+      "row_ground_baseline": 297.0,
+      "row_float_center": 182.20447213750978,
+      "source_camera_anchor": [
+        739.1666666666666,
+        297.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 14,
+      "frame": 3,
+      "master": "assets/source/creatures/primalShaman/launch-v1/launch-atlas-v1.png",
+      "master_sha256": "cc0e566db1731678ff3f900ed27e77b58785482cf8dfcd9bff9a8086a6b0cbf0",
+      "uniform_camera_scale": 0.28772266065388946,
+      "opaque_component": 5,
+      "source_bbox": [
+        857,
+        14,
+        1184,
+        364
+      ],
+      "source_opaque_bbox": [
+        915,
+        30,
+        1176,
+        297
+      ],
+      "source_opaque_area": 21538,
+      "source_centroid": [
+        1008.5552976135203,
+        182.70809731637107
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 3,
+      "row_ground_baseline": 297.0,
+      "row_float_center": 182.20447213750978,
+      "source_camera_anchor": [
+        1034.8333333333333,
+        297.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 14,
+      "frame": 4,
+      "master": "assets/source/creatures/primalShaman/launch-v1/launch-atlas-v1.png",
+      "master_sha256": "cc0e566db1731678ff3f900ed27e77b58785482cf8dfcd9bff9a8086a6b0cbf0",
+      "uniform_camera_scale": 0.28772266065388946,
+      "opaque_component": 32,
+      "source_bbox": [
+        1139,
+        7,
+        1525,
+        352
+      ],
+      "source_opaque_bbox": [
+        1210,
+        37,
+        1474,
+        297
+      ],
+      "source_opaque_area": 22299,
+      "source_centroid": [
+        1306.92636441096,
+        179.8919682496973
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 4,
+      "row_ground_baseline": 297.0,
+      "row_float_center": 182.20447213750978,
+      "source_camera_anchor": [
+        1330.5,
+        297.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 14,
+      "frame": 5,
+      "master": "assets/source/creatures/primalShaman/launch-v1/launch-atlas-v1.png",
+      "master_sha256": "cc0e566db1731678ff3f900ed27e77b58785482cf8dfcd9bff9a8086a6b0cbf0",
+      "uniform_camera_scale": 0.28772266065388946,
+      "opaque_component": 57,
+      "source_bbox": [
+        1441,
+        30,
+        1747,
+        356
+      ],
+      "source_opaque_bbox": [
+        1535,
+        40,
+        1739,
+        297
+      ],
+      "source_opaque_area": 22502,
+      "source_centroid": [
+        1629.0943027286464,
+        184.2786418984979
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 5,
+      "row_ground_baseline": 297.0,
+      "row_float_center": 182.20447213750978,
+      "source_camera_anchor": [
+        1626.1666666666667,
+        297.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 15,
+      "frame": 0,
+      "master": "assets/source/creatures/primalShaman/launch-v1/launch-atlas-v1.png",
+      "master_sha256": "cc0e566db1731678ff3f900ed27e77b58785482cf8dfcd9bff9a8086a6b0cbf0",
+      "uniform_camera_scale": 0.28772266065388946,
+      "opaque_component": 2724,
+      "source_bbox": [
+        0,
+        288,
+        261,
+        638
+      ],
+      "source_opaque_bbox": [
+        33,
+        312,
+        235,
+        568
+      ],
+      "source_opaque_area": 22809,
+      "source_centroid": [
+        125.2502959358148,
+        453.3258801350344
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 0,
+      "row_ground_baseline": 568.0,
+      "row_float_center": 458.7351603254508,
+      "source_camera_anchor": [
+        147.83333333333334,
+        568.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 15,
+      "frame": 1,
+      "master": "assets/source/creatures/primalShaman/launch-v1/launch-atlas-v1.png",
+      "master_sha256": "cc0e566db1731678ff3f900ed27e77b58785482cf8dfcd9bff9a8086a6b0cbf0",
+      "uniform_camera_scale": 0.28772266065388946,
+      "opaque_component": 2797,
+      "source_bbox": [
+        260,
+        302,
+        602,
+        620
+      ],
+      "source_opaque_bbox": [
+        308,
+        332,
+        516,
+        566
+      ],
+      "source_opaque_area": 22321,
+      "source_centroid": [
+        396.5109986111733,
+        455.42834102414764
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 1,
+      "row_ground_baseline": 568.0,
+      "row_float_center": 458.7351603254508,
+      "source_camera_anchor": [
+        443.5,
+        568.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 15,
+      "frame": 2,
+      "master": "assets/source/creatures/primalShaman/launch-v1/launch-atlas-v1.png",
+      "master_sha256": "cc0e566db1731678ff3f900ed27e77b58785482cf8dfcd9bff9a8086a6b0cbf0",
+      "uniform_camera_scale": 0.28772266065388946,
+      "opaque_component": 3059,
+      "source_bbox": [
+        518,
+        312,
+        922,
+        613
+      ],
+      "source_opaque_bbox": [
+        587,
+        371,
+        878,
+        568
+      ],
+      "source_opaque_area": 22298,
+      "source_centroid": [
+        694.5886626603283,
+        463.76993452327565
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 2,
+      "row_ground_baseline": 568.0,
+      "row_float_center": 458.7351603254508,
+      "source_camera_anchor": [
+        739.1666666666666,
+        568.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 15,
+      "frame": 3,
+      "master": "assets/source/creatures/primalShaman/launch-v1/launch-atlas-v1.png",
+      "master_sha256": "cc0e566db1731678ff3f900ed27e77b58785482cf8dfcd9bff9a8086a6b0cbf0",
+      "uniform_camera_scale": 0.28772266065388946,
+      "opaque_component": 3050,
+      "source_bbox": [
+        821,
+        320,
+        1211,
+        619
+      ],
+      "source_opaque_bbox": [
+        891,
+        370,
+        1180,
+        568
+      ],
+      "source_opaque_area": 22688,
+      "source_centroid": [
+        995.0279002115656,
+        464.45283850493655
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 3,
+      "row_ground_baseline": 568.0,
+      "row_float_center": 458.7351603254508,
+      "source_camera_anchor": [
+        1034.8333333333333,
+        568.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 15,
+      "frame": 4,
+      "master": "assets/source/creatures/primalShaman/launch-v1/launch-atlas-v1.png",
+      "master_sha256": "cc0e566db1731678ff3f900ed27e77b58785482cf8dfcd9bff9a8086a6b0cbf0",
+      "uniform_camera_scale": 0.28772266065388946,
+      "opaque_component": 3042,
+      "source_bbox": [
+        1151,
+        320,
+        1535,
+        628
+      ],
+      "source_opaque_bbox": [
+        1202,
+        369,
+        1509,
+        568
+      ],
+      "source_opaque_area": 23051,
+      "source_centroid": [
+        1308.5283067979697,
+        461.1971714893063
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 4,
+      "row_ground_baseline": 568.0,
+      "row_float_center": 458.7351603254508,
+      "source_camera_anchor": [
+        1330.5,
+        568.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 15,
+      "frame": 5,
+      "master": "assets/source/creatures/primalShaman/launch-v1/launch-atlas-v1.png",
+      "master_sha256": "cc0e566db1731678ff3f900ed27e77b58785482cf8dfcd9bff9a8086a6b0cbf0",
+      "uniform_camera_scale": 0.28772266065388946,
+      "opaque_component": 2750,
+      "source_bbox": [
+        1472,
+        312,
+        1750,
+        628
+      ],
+      "source_opaque_bbox": [
+        1540,
+        323,
+        1740,
+        567
+      ],
+      "source_opaque_area": 22841,
+      "source_centroid": [
+        1633.961166323716,
+        456.27314916159537
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 5,
+      "row_ground_baseline": 568.0,
+      "row_float_center": 458.7351603254508,
+      "source_camera_anchor": [
+        1626.1666666666667,
+        568.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 16,
+      "frame": 0,
+      "master": "assets/source/creatures/primalShaman/launch-v1/launch-atlas-v1.png",
+      "master_sha256": "cc0e566db1731678ff3f900ed27e77b58785482cf8dfcd9bff9a8086a6b0cbf0",
+      "uniform_camera_scale": 0.28772266065388946,
+      "opaque_component": 5215,
+      "source_bbox": [
+        14,
+        564,
+        285,
+        852
+      ],
+      "source_opaque_bbox": [
+        38,
+        595,
+        222,
+        837
+      ],
+      "source_opaque_area": 22788,
+      "source_centroid": [
+        129.98617693522908,
+        728.4973231525364
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 2,
+      "source_column": 0,
+      "row_ground_baseline": 836.0,
+      "row_float_center": 728.1260965453761,
+      "source_camera_anchor": [
+        147.83333333333334,
+        836.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 16,
+      "frame": 1,
+      "master": "assets/source/creatures/primalShaman/launch-v1/launch-atlas-v1.png",
+      "master_sha256": "cc0e566db1731678ff3f900ed27e77b58785482cf8dfcd9bff9a8086a6b0cbf0",
+      "uniform_camera_scale": 0.28772266065388946,
+      "opaque_component": 5337,
+      "source_bbox": [
+        257,
+        591,
+        588,
+        866
+      ],
+      "source_opaque_bbox": [
+        321,
+        617,
+        556,
+        836
+      ],
+      "source_opaque_area": 25411,
+      "source_centroid": [
+        416.85325252843256,
+        727.7548699382157
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 2,
+      "source_column": 1,
+      "row_ground_baseline": 836.0,
+      "row_float_center": 728.1260965453761,
+      "source_camera_anchor": [
+        443.5,
+        836.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 16,
+      "frame": 2,
+      "master": "assets/source/creatures/primalShaman/launch-v1/launch-atlas-v1.png",
+      "master_sha256": "cc0e566db1731678ff3f900ed27e77b58785482cf8dfcd9bff9a8086a6b0cbf0",
+      "uniform_camera_scale": 0.28772266065388946,
+      "opaque_component": 5360,
+      "source_bbox": [
+        546,
+        595,
+        886,
+        874
+      ],
+      "source_opaque_bbox": [
+        610,
+        620,
+        847,
+        833
+      ],
+      "source_opaque_area": 24477,
+      "source_centroid": [
+        703.7306859500756,
+        727.3372145279242
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 2,
+      "source_column": 2,
+      "row_ground_baseline": 836.0,
+      "row_float_center": 728.1260965453761,
+      "source_camera_anchor": [
+        739.1666666666666,
+        836.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 16,
+      "frame": 3,
+      "master": "assets/source/creatures/primalShaman/launch-v1/launch-atlas-v1.png",
+      "master_sha256": "cc0e566db1731678ff3f900ed27e77b58785482cf8dfcd9bff9a8086a6b0cbf0",
+      "uniform_camera_scale": 0.28772266065388946,
+      "opaque_component": 5361,
+      "source_bbox": [
+        849,
+        587,
+        1171,
+        872
+      ],
+      "source_opaque_bbox": [
+        912,
+        620,
+        1157,
+        836
+      ],
+      "source_opaque_area": 24089,
+      "source_centroid": [
+        1008.2174436464776,
+        734.12636473079
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 2,
+      "source_column": 3,
+      "row_ground_baseline": 836.0,
+      "row_float_center": 728.1260965453761,
+      "source_camera_anchor": [
+        1034.8333333333333,
+        836.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 16,
+      "frame": 4,
+      "master": "assets/source/creatures/primalShaman/launch-v1/launch-atlas-v1.png",
+      "master_sha256": "cc0e566db1731678ff3f900ed27e77b58785482cf8dfcd9bff9a8086a6b0cbf0",
+      "uniform_camera_scale": 0.28772266065388946,
+      "opaque_component": 5352,
+      "source_bbox": [
+        1127,
+        600,
+        1511,
+        887
+      ],
+      "source_opaque_bbox": [
+        1203,
+        619,
+        1487,
+        836
+      ],
+      "source_opaque_area": 24930,
+      "source_centroid": [
+        1309.977376654633,
+        736.597833935018
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 2,
+      "source_column": 4,
+      "row_ground_baseline": 836.0,
+      "row_float_center": 728.1260965453761,
+      "source_camera_anchor": [
+        1330.5,
+        836.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 16,
+      "frame": 5,
+      "master": "assets/source/creatures/primalShaman/launch-v1/launch-atlas-v1.png",
+      "master_sha256": "cc0e566db1731678ff3f900ed27e77b58785482cf8dfcd9bff9a8086a6b0cbf0",
+      "uniform_camera_scale": 0.28772266065388946,
+      "opaque_component": 5214,
+      "source_bbox": [
+        1463,
+        576,
+        1748,
+        887
+      ],
+      "source_opaque_bbox": [
+        1533,
+        594,
+        1733,
+        840
+      ],
+      "source_opaque_area": 23044,
+      "source_centroid": [
+        1626.204999132095,
+        727.6996181218539
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 2,
+      "source_column": 5,
+      "row_ground_baseline": 836.0,
+      "row_float_center": 728.1260965453761,
+      "source_camera_anchor": [
+        1626.1666666666667,
+        836.0
+      ],
+      "excluded_detached_native_projectiles": []
+    }
+  ],
+  "known_pending": [
+    "native all-action playback and contact",
+    "gait/anatomy review",
+    "shot direction and release timing",
+    "upgrade contrast",
+    "redistribution review"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "behavioral_expectations": [
+    "A host-owned live AI interface can submit the existing native SaveGame packet.",
+    "Guest inherits only directly connected colors, never host AI or neutral.",
+    "Queued context/ownership/transport loss remains rejected; human callback/locking/filename behavior is unchanged.",
+    "Submission/ACK/visitor message is never serializer-after-write/readback evidence."
+  ],
+  "cause": "Human connected-color membership was used for host-managed AI ownership.",
+  "decision": "Use actual native getAllClientPlayers(current connectionID), with valid assigned ID/transport presence and existing live/interface/session checks.",
+  "scope": "Existing headless console source repair; no town gameplay definitions changed",
+  "status": "authored configuration",
+  "unresolved": [
+    "Independent source review",
+    "Coordinator export/integration and separately authorized build",
+    "Fresh native loader/runtime binding",
+    "Actual authentic save/reload/resave proof"
+  ]
+}

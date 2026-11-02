@@ -1,0 +1,55 @@
+{
+  "status": "authored configuration",
+  "decision": "GO for bounded source integration of compact V19",
+  "selection_sha256": "3729a3b99d6e9a91e87ce90c69e1c9c3b2a1cd82dc8930123ba98a1570c04c67",
+  "approved_v18_selection_sha256": "9469c3cf619891c178a71c4418ae2177c0c98251822ca4929587a8bedb7b5378",
+  "independently_executed_tests": {
+    "tests": 7,
+    "failures": 0,
+    "errors": 0,
+    "seconds": 6.428,
+    "raw_log_sha256": "a393cbb989597b8eb4e8fdb7c37b4be0cb8cb295ac3ad4a4d5fc4cd2cc830c8c",
+    "test_sha256": "cada913d911c5e63c5349cc15959f2106e0bda939b69602dde7d9416af0d4b65",
+    "selection_sha256": "3729a3b99d6e9a91e87ce90c69e1c9c3b2a1cd82dc8930123ba98a1570c04c67",
+    "compositor_outputs_redirected_to_isolated_report_temporary_directory": true,
+    "native_executed": false
+  },
+  "verified_delta": {
+    "states": 35,
+    "alpha_bytes_changed": 0,
+    "nontransparent_RGBA_pixels_changed": 0,
+    "fully_built_and_empty_RGBA_changes": 0,
+    "native_output_count": 212,
+    "encoded_native_frame_PNGs_changed": 35,
+    "other_native_outputs_byte_identical": 177,
+    "frame_storage_bytes_before": 27981360,
+    "frame_storage_bytes_after": 731960,
+    "physical_contract_equal_except_frame_references": true,
+    "faction_gameplay_content_byte_identical": true
+  },
+  "reproducibility": {
+    "source_ledger_inputs_verified": 444,
+    "root_recipes_verified": 142,
+    "canonical_before_pins_preserved": 3,
+    "compositor_replay": "Real pinned painted masters, editable alpha masks and genuine hidden-face paintings; generated35frames+background+full in isolated report temporary directory; all output PNG bytes matched compact candidate exactly. Corrupted approved master pin rejected.",
+    "no_prior_full_RGB_frame_cache_dependency": true
+  },
+  "unchanged_physical_guard": {
+    "dependency_count": 212,
+    "dependency_bytes": 4181627,
+    "existing_limit_bytes": 4194304,
+    "guard_was_not_modified": true,
+    "source_and_actual_generated_resource_consumer_pass": true
+  },
+  "visual_inspection": "Inspected800x374 compact full/empty. Exact full and background equality plus per-state alpha/nontransparent RGBA equality transfers reviewed V18 appearance; transparent RGB cleanup changes no visible source pixels.",
+  "evidence_sha256": {
+    "candidate-tests.log": "a393cbb989597b8eb4e8fdb7c37b4be0cb8cb295ac3ad4a4d5fc4cd2cc830c8c",
+    "candidate-tests.json": "31a1c79cef8e31a3d893326b550fdf66359a90e7476cf2aa61f7f35adff0e1b2"
+  },
+  "limitations": [
+    "Source integration GO only; no canonical selection, assets/stage/profile publishing or game executed.",
+    "V18 native rendering/click, service/gameplay, final user visual and rights/release limitations remain unchanged."
+  ],
+  "native_executed": false,
+  "source_written": false
+}

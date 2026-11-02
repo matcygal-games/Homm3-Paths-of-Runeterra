@@ -1,0 +1,66 @@
+{
+  "canvas": [
+    58,
+    64
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI builtin imagegen; deterministic technical2D conversion",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/painted-v1/buildings/mageGuild3/master-v1.png",
+      "sha256": "d765ea70c1ca2cb0eef5cfa421e9d116964f15de24f5cbd59dda3ee996be1dcc"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/mageGuild3/prompt-v1.txt",
+      "sha256": "f5a481618eac5d3f1a50177e19991c5a7b25d3e16e87dd55245d813d07cea7c8"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/mageGuild3/source-generation.json",
+      "sha256": "54ef9dcfdef30a38911607935e291c27e5513bf31e52a873056e2bf418df6cd8"
+    },
+    {
+      "path": "assets/source/town/town-rebuild-20261027-v1/assemble_v5.py",
+      "sha256": "e0a6921c838e6766a934d09a8a0135d93526d9455957cbeb7ba6fe6728998977"
+    },
+    {
+      "path": "assets/source/town/town-rebuild-20261027-v1/layout-plan-v5.json",
+      "sha256": "30ce12667d84deae5be2e6efd2092aab3ba328c5bab7115f8b8a6c8e95d3a32a"
+    },
+    {
+      "path": "assets/source/town/town-rebuild-20261027-v1/placement-calibration-v5.json",
+      "sha256": "97e7d21f33e72941feb95696ba2b23d558153f0d2054365d956ca2a4a30f05f5"
+    }
+  ],
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": true,
+    "model": "not exposed by tool",
+    "painted_master": "assets/source/town/painted-v1/buildings/mageGuild3/master-v1.png",
+    "painted_master_sha256": "d765ea70c1ca2cb0eef5cfa421e9d116964f15de24f5cbd59dda3ee996be1dcc",
+    "producer": "assets/source/town/town-rebuild-20261027-v1/assemble_v5.py",
+    "producer_sha256": "e0a6921c838e6766a934d09a8a0135d93526d9455957cbeb7ba6fe6728998977",
+    "prompt": "Standalone transparent painted2D town-building cutout for original Heroes of Might and Magic III/VCMI. Native target800x374 town, not a poster or modern game render.\nImage1 is EDIT TARGET: our own existing mageGuild2 building; preserve its canvas/camera/root/lower core. Image2 is the ORIGINAL Heroes III Castle building: rendering-language reference only, no copied Castle pixels/silhouette. Image3 is the actual PILTOVER crest shape reference: central vertical pillar, split-ring/orb upper end, broad curved gear-flanked lower arcs; never wings or generic cog. Follow the same institutional/material family; additions/removals must be genuinely painted. The reference has technical transparent padding [0, 300, 0, 0] (left,top,right,bottom), whole-image translation only, not resized architecture. Use that spare headroom for new upper construction without moving or shrinking the existing lower door/foundation.\nOutput genuinely transparent RGBA with EXACT reference Image1 canvas dimensions and existing core scale/position; do not recenter, zoom or shrink the lower building to fill the frame. Full building, roof, stairs, foundation, cloth and subtle own rightward contact shadow entirely visible with >=35pixels transparent margins. No solid backdrop/white matte/checkerboard/grass or floor rectangle, no red/yellow/chroma edge outline. Walls and windows remain opaque painted material, not translucent see-through buildings.\nSame soft upper-left daylight and LOW FRONTAL THREE-QUARTER camera as the new town. Front facade/door dominates; modest right-side wall, limited roof planes, not strict isometric/bird's-eye. Richly textured original-H3 small-scale painted masonry, timber, slate, aged bronze/brass and dull steel. Warm ivory/hewn stone, muted dark timber, navy/teal cloth, restrained cool-blue instruments. No shiny modern3D/plastic, anime, splash-art, bloom/neon or photographic lens finish. Working Piltovan trade/science/community architecture, not16generic temples or Demacian keeps. A physical navy/teal banner or engraved plaque carries the CORRECT Piltover region crest visibly at native downsampling, with natural perspective and occlusion.\nPlanned native envelope [250, 26, 133, 124]; compact readable architectural silhouette. For a new base, leave headroom for later extensions above the same frontal ground-root nearx627,y1130. For an edit, KEEP EXACT reference canvas, lower foundation and entrance source position/scale; never zoom the smaller state to fill the canvas. Only whole real painted architecture; no people, soldiers, animals, text, labels, UI, border or watermark.\nSTATE: Artificers' Archive III. Develop the SAME Archive II into Archive III. Preserve foundation, public door/steps, lower rooms, camera/light/root. Add a slender high glass-and-bronze scientific observatory, compact dark slate cupola and precise nested mechanical sighting rings. Greater height and instrument complexity, not a church/wizard tower or giant magic crystal. Same muted ivory, bronze and dark teal family; correct Piltover banners. Full tallest state and contact shadow remain visible.\n",
+    "prompt_file": "assets/source/town/painted-v1/buildings/mageGuild3/prompt-v1.txt",
+    "provider": "OpenAI builtin imagegen",
+    "source_generation_ledger": "assets/source/town/painted-v1/buildings/mageGuild3/source-generation.json"
+  },
+  "output_path": "Content/Sprites/runeterra/piltover/town/structures/mageGuild3_campaign.png",
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "size": [
+    58,
+    64
+  ],
+  "source": "assets/source/town/town-rebuild-20261027-v1/buildings/mageGuild3/campaign-v5.png",
+  "source_canvas": [
+    58,
+    64
+  ],
+  "source_sha256": "2ac15434eb4fc4f5f28c95c39a12526ab9aa42bf0d421bdabce87e43b2156e51",
+  "status": "painted-candidate",
+  "visual_approval_granted": false
+}

@@ -1,0 +1,112 @@
+void ClientCommandManager::handleSaveCommand(std::istringstream & singleWordBuffer)
+{
+	std::string saveFilename;
+	std::string extraArgument;
+	if(!(singleWordBuffer >> saveFilename) || (singleWordBuffer >> extraArgument))
+	{
+		printCommandMessage("Usage: save <relative save filename>");
+		return;
+	}
+
+	// Resource names may contain directories, but must remain relative to the local filesystem.
+	if(saveFilename.front() == '/' || saveFilename.front() == '\\'
+		|| saveFilename.find(':') != std::string::npos
+		|| saveFilename.find_first_of("\"<>|?*") != std::string::npos
+		|| std::any_of(saveFilename.begin(), saveFilename.end(), [](unsigned char value) { return value < ' ' || value == 127; }))
+	{
+		printCommandMessage("Invalid relative save filename");
+		return;
+	}
+	std::string component;
+	std::istringstream pathComponents(boost::replace_all_copy(saveFilename, "\\", "/"));
+	while(std::getline(pathComponents, component, '/'))
+	{
+		if(component.empty() || component == "." || component == "..")
+		{
+			printCommandMessage("Invalid relative save filename");
+			return;
+		}
+	}
+	if(saveFilename.back() == '/' || saveFilename.back() == '\\')
+	{
+		printCommandMessage("Invalid relative save filename");
+		return;
+	}
+
+	if(!GAME)
+	{
+		printCommandMessage("Game is not in playing state");
+		return;
+	}
+
+	// Reacquire all state on its owner thread. The queued task retains no interface/client pointer.
+	const auto submitSave = [saveFilename, fromIngameConsole = currentCallFromIngameConsole]()
+	{
+		ClientCommandManager output;
+		output.currentCallFromIngameConsole = fromIngameConsole;
+		if(!GAME || GAME->server().getState() != EClientState::GAMEPLAY
+			|| !GAME->server().client || !GAME->server().logicConnection)
+		{
+			output.printCommandMessage("Game is not in playing state");
+			return;
+		}
+		auto & server = GAME->server();
+		auto & client = *server.client;
+		if(client.observerMode || server.isReplayActive() || !client.gameStatePtr())
+		{
+			output.printCommandMessage("Cannot save an observer or replay session");
+			return;
+		}
+
+		if(auto * interface = GAME->interface())
+		{
+			const auto player = interface->cb ? interface->cb->getPlayerID() : std::nullopt;
+			const auto registered = player ? client.playerint.find(*player) : client.playerint.end();
+			if(!player || !player->isValidPlayer() || !server.isMyColor(*player)
+				|| registered == client.playerint.end() || registered->second.get() != interface)
+			{
+				output.printCommandMessage("No owned player interface can save this game");
+				return;
+			}
+			// Preserve the normal human callback and native SaveGame protocol.
+			interface->cb->save(saveFilename, false);
+			output.printCommandMessage("Save request submitted: " + saveFilename);
+			return;
+		}
+
+		if(!settings["session"]["headless"].Bool())
+		{
+			output.printCommandMessage("No owned player interface can save this game");
+			return;
+		}
+
+		// A headless client owns adventure AI interfaces instead of CPlayerInterface.
+		// Keep the server's activity/ownership checks; never impersonate a foreign or neutral player.
+		// AI request producers hold a shared game-state lock and release it while awaiting replies.
+		// Serialize this new producer without waiting for a response on the network thread.
+		std::unique_lock stateLock(CGameState::mutex);
+		for(const auto & entry : client.playerint)
+		{
+			const auto & player = entry.first;
+			if(!player.isValidPlayer() || !entry.second || !server.isMyColor(player))
+				continue;
+			const auto state = client.gameState().players.find(player);
+			if(state == client.gameState().players.end() || state->second.status != EPlayerStatus::INGAME)
+				continue;
+			SaveGame request(saveFilename, false);
+			if(client.sendRequest(request, player, false) > 0)
+				output.printCommandMessage("Save request submitted: " + saveFilename);
+			return;
+		}
+		output.printCommandMessage("No owned player interface can save this game");
+	};
+
+	if(ENGINE)
+	{
+		// Both actual command callers run on workers, as does handleControlaiCommand.
+		std::scoped_lock interfaceLock(ENGINE->interfaceMutex);
+		submitSave();
+	}
+	else
+		boost::asio::post(GAME->server().getNetworkHandler().getContext(), submitSave);
+}

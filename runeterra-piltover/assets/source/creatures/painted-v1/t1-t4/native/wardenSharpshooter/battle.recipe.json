@@ -1,0 +1,757 @@
+{
+  "production_status": "painted-master-complete-unapproved",
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in imagegen",
+    "model": "Not exposed by the tool",
+    "prompt": "Original1999HeroesofMightandMagicIII richlytextured painted2D creatureart, compactbelievableanatomyandreadableequipment, upperleftlight,warmocclusion, restrainedhighlights,noplastic3D, noanime/vector/modernLeagueplash. CreateONEfullbodyUPGRADEmaster WARDENSHARPSHOOTER fortheexactadultfemalePiltovanrifleofficerreference. Clearlybetterkit notcolourchange: substantialreinforcednavycoat/steelshoulder-and-forearmarmor, protectedlongerbarrelwood-stockriflewithlongshoulderbraceandpracticalbrasssight, largereinforcedbrownammunitioncase, reinforcedboots, slightlyprotectedlowservicecap. Samehumanfaceanddarkhairbun,nottophat/noCaitlynweapon/nocrystalcannon/nosecondgun. ExactPiltovercog-spirecrestonphysicalshoulderpatchandammocase. RIGHTthreequarterbattleprofilewholebodyandwholelongrifleentirelyvisiblewithpadding, bothhandsgripriflenaturally, feetgrounded. GenuinelyTRANSPARENTbackgroundnofloor/nohaze/nobackdrop.",
+    "action_source_ledger": "assets/source/creatures/painted-v1/t1-t4/generation-ledger-v1.json",
+    "action_source_ledger_sha256": "9da66a550c881d7dc4b0f3e473fa50f7fdcb25905352c0e536cdbbbf2dcad322",
+    "painted_master": "assets/source/creatures/painted-v1/t1-t4/wardenSharpshooter/master-v1.png",
+    "painted_master_sha256": "66061f1c74af4b8cafe67fbb3a1c645f36d1ebf82b6a87c2660b004fb4ec27ce",
+    "method": "Whole-source uniform cohort resampling and root registration only; no rigging, rendering, limb warping or invented poses"
+  },
+  "production_inputs": [
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/wardenSharpshooter/master-v1.png",
+      "sha256": "66061f1c74af4b8cafe67fbb3a1c645f36d1ebf82b6a87c2660b004fb4ec27ce"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/wardenSharpshooter/portrait-v1.png",
+      "sha256": "1ded7ec79b30c4835f470fc3a90cc9f9c344d48b1d866972dc68ae1de63c8feb"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/wardenSharpshooter/isolated-source-map-v1.json",
+      "sha256": "62ddef63effa95b03012c8b499a6cfed3ab9235a87cb18385a81aabcdd24c2a7"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/pose-roots-v1.json",
+      "sha256": "756e77614e53335d3625b84499e4409860e4cf8cce7ef6d0c05da08078ee1355"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/producer_v1.py",
+      "sha256": "a097e5a05400368c5740004cca6225a50730a18c2440af0c13d2ba676e7d58ad"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/extract_sources.py",
+      "sha256": "0338c4026998ef34834a4c76c400c177f51777dc686da70858373fc3a9eefd7b"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/generation-ledger-v1.json",
+      "sha256": "9da66a550c881d7dc4b0f3e473fa50f7fdcb25905352c0e536cdbbbf2dcad322"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/selected-cohorts-v1.json",
+      "sha256": "d6c313a901a77675cc068ae609a0296c14c9824c8c6852e67a4c8058d8238c30"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/wardenSharpshooter/combat-v1.png",
+      "sha256": "08b198db83f12bb72531a0cb1bc52e2f7582b27e445252b4ee5e40a412bbef92"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/wardenSharpshooter/movement-v1.png",
+      "sha256": "2e5fc2e02d27980088efab6869f5e3ec27698539a034ef49f7356c0bac11946f"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/wardenSharpshooter/shoot-v3.png",
+      "sha256": "8e043754a54f2864dc075f8e38a8d193cb5816a6ae0399488eccde0747beba72"
+    }
+  ],
+  "recipe_type": "vcmi_animation",
+  "output_path": "Content/Sprites/runeterra/piltover/creatures/wardenSharpshooter/battle.json",
+  "canvas": [
+    450,
+    400
+  ],
+  "pivot": {
+    "x": 197,
+    "y": 265
+  },
+  "groups": [
+    {
+      "group": 0,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g00-f000.png",
+          "sha256": "86b7b116987af412e22bf345d11ec323710ab55856b80b2bee76e9f5c3d8861c",
+          "source_sha256": "86b7b116987af412e22bf345d11ec323710ab55856b80b2bee76e9f5c3d8861c",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g00-f001.png",
+          "sha256": "1096e86ceb57a8bac4f158e685cd6f131f1f9e9ec7ba6d3e6e325b6f6cfe0cfa",
+          "source_sha256": "1096e86ceb57a8bac4f158e685cd6f131f1f9e9ec7ba6d3e6e325b6f6cfe0cfa",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g00-f002.png",
+          "sha256": "0f0682fa6e2b9ccc9f7bf3273e3873d8965b9638ce098453beccdb4f9c3cb0ad",
+          "source_sha256": "0f0682fa6e2b9ccc9f7bf3273e3873d8965b9638ce098453beccdb4f9c3cb0ad",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g00-f003.png",
+          "sha256": "3dbfabae8ff392bc13b9d8f17180c2a81b7a0d788d297a63f313ff291926c070",
+          "source_sha256": "3dbfabae8ff392bc13b9d8f17180c2a81b7a0d788d297a63f313ff291926c070",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g00-f004.png",
+          "sha256": "9563c1e4e1341b0a51feb8ca91cc7b2f4e54acb5c4726066dc38474df04ae371",
+          "source_sha256": "9563c1e4e1341b0a51feb8ca91cc7b2f4e54acb5c4726066dc38474df04ae371",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g00-f005.png",
+          "sha256": "d3f73aa34c341e12e461104ed476800f5dfcabdfffd36bb19cdabc9152567e9c",
+          "source_sha256": "d3f73aa34c341e12e461104ed476800f5dfcabdfffd36bb19cdabc9152567e9c",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 1,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g01-f000.png",
+          "sha256": "f2207598a17c07a5c3656456747f74281d122d6326edde07c390e8513dfa29fd",
+          "source_sha256": "f2207598a17c07a5c3656456747f74281d122d6326edde07c390e8513dfa29fd",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g01-f001.png",
+          "sha256": "5493f836d44f8078ff068fe122e580df353b9e755f75ad0ddd7ebb4fe8fc1681",
+          "source_sha256": "5493f836d44f8078ff068fe122e580df353b9e755f75ad0ddd7ebb4fe8fc1681",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g01-f002.png",
+          "sha256": "5493f836d44f8078ff068fe122e580df353b9e755f75ad0ddd7ebb4fe8fc1681",
+          "source_sha256": "5493f836d44f8078ff068fe122e580df353b9e755f75ad0ddd7ebb4fe8fc1681",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g01-f003.png",
+          "sha256": "5b8d3eeb466fa2d96e6c3c48901aad04356da846d0956d8beda32865db5fb9a7",
+          "source_sha256": "5b8d3eeb466fa2d96e6c3c48901aad04356da846d0956d8beda32865db5fb9a7",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g01-f004.png",
+          "sha256": "5b8d3eeb466fa2d96e6c3c48901aad04356da846d0956d8beda32865db5fb9a7",
+          "source_sha256": "5b8d3eeb466fa2d96e6c3c48901aad04356da846d0956d8beda32865db5fb9a7",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g01-f005.png",
+          "sha256": "27ee3e274e763fc02716c7b1920a4fd65e8220ed0257d8128e0412eab6a25ac2",
+          "source_sha256": "27ee3e274e763fc02716c7b1920a4fd65e8220ed0257d8128e0412eab6a25ac2",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 6,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g01-f006.png",
+          "sha256": "27ee3e274e763fc02716c7b1920a4fd65e8220ed0257d8128e0412eab6a25ac2",
+          "source_sha256": "27ee3e274e763fc02716c7b1920a4fd65e8220ed0257d8128e0412eab6a25ac2",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 2,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g02-f000.png",
+          "sha256": "f2207598a17c07a5c3656456747f74281d122d6326edde07c390e8513dfa29fd",
+          "source_sha256": "f2207598a17c07a5c3656456747f74281d122d6326edde07c390e8513dfa29fd",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 3,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g03-f000.png",
+          "sha256": "f30ca26aa5194b1c3e2b969e6a05634b55fe2540d7f4ae9923a56fe99b964581",
+          "source_sha256": "f30ca26aa5194b1c3e2b969e6a05634b55fe2540d7f4ae9923a56fe99b964581",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g03-f001.png",
+          "sha256": "f2207598a17c07a5c3656456747f74281d122d6326edde07c390e8513dfa29fd",
+          "source_sha256": "f2207598a17c07a5c3656456747f74281d122d6326edde07c390e8513dfa29fd",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 4,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g04-f000.png",
+          "sha256": "cb725de18cb9b52d9398c45cf14a8f2378b036773fc016798c1be4c6e747e5e7",
+          "source_sha256": "cb725de18cb9b52d9398c45cf14a8f2378b036773fc016798c1be4c6e747e5e7",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 5,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g05-f000.png",
+          "sha256": "93c20367bce2382a6ea0ef9f53dc7ea1f84794763fece38dc58622b58f2c0ce4",
+          "source_sha256": "93c20367bce2382a6ea0ef9f53dc7ea1f84794763fece38dc58622b58f2c0ce4",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g05-f001.png",
+          "sha256": "68631e80cf8f687750a2f7c5829d0bd2293e1044ef9011a6d1e02f1982e34584",
+          "source_sha256": "68631e80cf8f687750a2f7c5829d0bd2293e1044ef9011a6d1e02f1982e34584",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g05-f002.png",
+          "sha256": "3a3bf440b81588e688ae6b937060b50883b0d216482df568c08f773f38ef0d94",
+          "source_sha256": "3a3bf440b81588e688ae6b937060b50883b0d216482df568c08f773f38ef0d94",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g05-f003.png",
+          "sha256": "c4f40994feecab672d48942a68e21b6b98c20c36599283bde90ea8cf0cc06f8e",
+          "source_sha256": "c4f40994feecab672d48942a68e21b6b98c20c36599283bde90ea8cf0cc06f8e",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 7,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g07-f000.png",
+          "sha256": "f2207598a17c07a5c3656456747f74281d122d6326edde07c390e8513dfa29fd",
+          "source_sha256": "f2207598a17c07a5c3656456747f74281d122d6326edde07c390e8513dfa29fd",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g07-f001.png",
+          "sha256": "c0dd8499e97db3f23b99a097dc4c7044a4f48cddf8b24c0b8318f184bc276b84",
+          "source_sha256": "c0dd8499e97db3f23b99a097dc4c7044a4f48cddf8b24c0b8318f184bc276b84",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g07-f002.png",
+          "sha256": "904c17005932b99901d2f593d10b5c7b23737b66f642de58810c5376fb2616d9",
+          "source_sha256": "904c17005932b99901d2f593d10b5c7b23737b66f642de58810c5376fb2616d9",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 8,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g08-f000.png",
+          "sha256": "904c17005932b99901d2f593d10b5c7b23737b66f642de58810c5376fb2616d9",
+          "source_sha256": "904c17005932b99901d2f593d10b5c7b23737b66f642de58810c5376fb2616d9",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g08-f001.png",
+          "sha256": "c0dd8499e97db3f23b99a097dc4c7044a4f48cddf8b24c0b8318f184bc276b84",
+          "source_sha256": "c0dd8499e97db3f23b99a097dc4c7044a4f48cddf8b24c0b8318f184bc276b84",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g08-f002.png",
+          "sha256": "f2207598a17c07a5c3656456747f74281d122d6326edde07c390e8513dfa29fd",
+          "source_sha256": "f2207598a17c07a5c3656456747f74281d122d6326edde07c390e8513dfa29fd",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 11,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g11-f000.png",
+          "sha256": "641025b6d27074916c63ecb0b5a20c20369c35eb929ba7ea8b78b049eabd0dc9",
+          "source_sha256": "641025b6d27074916c63ecb0b5a20c20369c35eb929ba7ea8b78b049eabd0dc9",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g11-f001.png",
+          "sha256": "e956e1de43ecb59a25f9cedb0ce89feb75db772f7c49c2163859c1c966354639",
+          "source_sha256": "e956e1de43ecb59a25f9cedb0ce89feb75db772f7c49c2163859c1c966354639",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g11-f002.png",
+          "sha256": "13f67a644da64ede175c674a25cb97e80d51258efa1b2a1993ed4bfcdfd8e255",
+          "source_sha256": "13f67a644da64ede175c674a25cb97e80d51258efa1b2a1993ed4bfcdfd8e255",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g11-f003.png",
+          "sha256": "ec943cf810fe9d98b30e0d39b79990c88c70e7b41e09a11ae7606ac29b1d6707",
+          "source_sha256": "ec943cf810fe9d98b30e0d39b79990c88c70e7b41e09a11ae7606ac29b1d6707",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 12,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g12-f000.png",
+          "sha256": "8f9dc4b2abfc0c6ce865a226608eff5a196180952c5522bdcc5f243fa67da225",
+          "source_sha256": "8f9dc4b2abfc0c6ce865a226608eff5a196180952c5522bdcc5f243fa67da225",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g12-f001.png",
+          "sha256": "a3337eb68d5dbd1f0f5ff1e09710e5ba8b5c6caa1f99d5453d14c35e8a9a79f7",
+          "source_sha256": "a3337eb68d5dbd1f0f5ff1e09710e5ba8b5c6caa1f99d5453d14c35e8a9a79f7",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g12-f002.png",
+          "sha256": "1acd4dca3261a754be63e471153bbab807c7acbf17d8060c0da529193e44b0f5",
+          "source_sha256": "1acd4dca3261a754be63e471153bbab807c7acbf17d8060c0da529193e44b0f5",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g12-f003.png",
+          "sha256": "6bc72cf29061a6a18d7d514776f4e51b93ce70f2c16e780e7e484ab8fbc4ac4a",
+          "source_sha256": "6bc72cf29061a6a18d7d514776f4e51b93ce70f2c16e780e7e484ab8fbc4ac4a",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 13,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g13-f000.png",
+          "sha256": "5df118856a219d4d6a75f1adbd72d2317201a1fd9ee9b7540503d665fdeab55c",
+          "source_sha256": "5df118856a219d4d6a75f1adbd72d2317201a1fd9ee9b7540503d665fdeab55c",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g13-f001.png",
+          "sha256": "f2b4b8c91dfc40f18c5350fcfd4e0dbda5b84e1497894b3c287a753287af0883",
+          "source_sha256": "f2b4b8c91dfc40f18c5350fcfd4e0dbda5b84e1497894b3c287a753287af0883",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g13-f002.png",
+          "sha256": "851b102622740aa4d1c139771cdadd1591ef81ebd65a7ea13de02605359e9e9b",
+          "source_sha256": "851b102622740aa4d1c139771cdadd1591ef81ebd65a7ea13de02605359e9e9b",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g13-f003.png",
+          "sha256": "62d7ad6b80e67147046355041a86251818d86a25decfdd2d0da10973ad1a9ef7",
+          "source_sha256": "62d7ad6b80e67147046355041a86251818d86a25decfdd2d0da10973ad1a9ef7",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 14,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g14-f000.png",
+          "sha256": "fd3c2375e7762148ee12c3f18fef0283d56d246f3ee421cc6f13d62acc7fdc3f",
+          "source_sha256": "fd3c2375e7762148ee12c3f18fef0283d56d246f3ee421cc6f13d62acc7fdc3f",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g14-f001.png",
+          "sha256": "f08ab5dcfb0dc0b6b3bc47da7abc8e27d8cc05dacdd70d3bbf368d7c6e2f05d9",
+          "source_sha256": "f08ab5dcfb0dc0b6b3bc47da7abc8e27d8cc05dacdd70d3bbf368d7c6e2f05d9",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g14-f002.png",
+          "sha256": "e6e5458291b823b81b813fecd4a84073184d8b2eab065a6af1b128dfbe842389",
+          "source_sha256": "e6e5458291b823b81b813fecd4a84073184d8b2eab065a6af1b128dfbe842389",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g14-f003.png",
+          "sha256": "d4d51acbaf3e9bd16e2e816b341e9dd08ff64c70f7774edf3badb9973e3a78c6",
+          "source_sha256": "d4d51acbaf3e9bd16e2e816b341e9dd08ff64c70f7774edf3badb9973e3a78c6",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g14-f004.png",
+          "sha256": "d3142ae055c4ba4dcf91c2099ac416a6a4e07cca935adb0a2fb387129ba6b130",
+          "source_sha256": "d3142ae055c4ba4dcf91c2099ac416a6a4e07cca935adb0a2fb387129ba6b130",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g14-f005.png",
+          "sha256": "d7ce7be40d3eb4d2adf58053ddeacd7df51a16086d8471e4d1e0473f09e6fb3e",
+          "source_sha256": "d7ce7be40d3eb4d2adf58053ddeacd7df51a16086d8471e4d1e0473f09e6fb3e",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 15,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g15-f000.png",
+          "sha256": "f0a3365915db6faed2e5b7eb7d46f249cc6495e3c7a3c11117d0810106b6c2c8",
+          "source_sha256": "f0a3365915db6faed2e5b7eb7d46f249cc6495e3c7a3c11117d0810106b6c2c8",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g15-f001.png",
+          "sha256": "239041193296dcff7a9dc59fb84ea23475d1e669b7d12f3c3beb5e62b3f5bca4",
+          "source_sha256": "239041193296dcff7a9dc59fb84ea23475d1e669b7d12f3c3beb5e62b3f5bca4",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g15-f002.png",
+          "sha256": "dd78ba14d6ee0b299151fed7b34d48f746ff7765ed70f63b995e16029c6174ef",
+          "source_sha256": "dd78ba14d6ee0b299151fed7b34d48f746ff7765ed70f63b995e16029c6174ef",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g15-f003.png",
+          "sha256": "0e9b354abebf34cdb7c754860ae1372950be2dbb39ade94bed7c5c48ff33b4d2",
+          "source_sha256": "0e9b354abebf34cdb7c754860ae1372950be2dbb39ade94bed7c5c48ff33b4d2",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g15-f004.png",
+          "sha256": "88bc16ca2a16fb8a6738c2a59a08fbbcbfba15a8133da62f10ccafbfb361affc",
+          "source_sha256": "88bc16ca2a16fb8a6738c2a59a08fbbcbfba15a8133da62f10ccafbfb361affc",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g15-f005.png",
+          "sha256": "af7af08115b170af4bc48a2ed8cf4871deb8b0d00231f6171fc1bba99bbf4024",
+          "source_sha256": "af7af08115b170af4bc48a2ed8cf4871deb8b0d00231f6171fc1bba99bbf4024",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 16,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g16-f000.png",
+          "sha256": "1c7a5f5d13359bd337b0fa277bdaf2557dac0956de7d67c086ee9d65585788f2",
+          "source_sha256": "1c7a5f5d13359bd337b0fa277bdaf2557dac0956de7d67c086ee9d65585788f2",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g16-f001.png",
+          "sha256": "6ad3d9760c48b34515577241f978f50e9c1b06a77b682897e637c02ae4b565b7",
+          "source_sha256": "6ad3d9760c48b34515577241f978f50e9c1b06a77b682897e637c02ae4b565b7",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g16-f002.png",
+          "sha256": "5021dcaa87d6a53b9f72a3b4a4ba248e480da26f222f4c5f8c8d93756bf0dcf5",
+          "source_sha256": "5021dcaa87d6a53b9f72a3b4a4ba248e480da26f222f4c5f8c8d93756bf0dcf5",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g16-f003.png",
+          "sha256": "4100ce4e476df54c782e53e4cf7c42afc49fda35add3fbc8c97a2224537bf37a",
+          "source_sha256": "4100ce4e476df54c782e53e4cf7c42afc49fda35add3fbc8c97a2224537bf37a",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g16-f004.png",
+          "sha256": "b56a03f320ea533f619bc49ced177ae243b92c325188f9f9d11affb7a83e55be",
+          "source_sha256": "b56a03f320ea533f619bc49ced177ae243b92c325188f9f9d11affb7a83e55be",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g16-f005.png",
+          "sha256": "dd7db94a4a04aeb0e95f396e411eacd0a2718873a0ee927942c9646864e2c261",
+          "source_sha256": "dd7db94a4a04aeb0e95f396e411eacd0a2718873a0ee927942c9646864e2c261",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 22,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/wardenSharpshooter/battle/g22-f000.png",
+          "sha256": "c4f40994feecab672d48942a68e21b6b98c20c36599283bde90ea8cf0cc06f8e",
+          "source_sha256": "c4f40994feecab672d48942a68e21b6b98c20c36599283bde90ea8cf0cc06f8e",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    }
+  ]
+}

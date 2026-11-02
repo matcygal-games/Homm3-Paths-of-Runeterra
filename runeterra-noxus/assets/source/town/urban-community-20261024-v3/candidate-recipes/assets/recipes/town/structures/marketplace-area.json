@@ -1,0 +1,115 @@
+{
+  "acceptance": "Production requirements only. No rig/guide/primitive/reference may substitute for painted final art; this recipe must fail while its real master/hash is absent.",
+  "art_direction": "Independent Noxian iron/crimson/black subjects in Heroes III native painted language. Never recolour Castle or Demacia art, import original pixels or invent an official crest.",
+  "building": "marketplace",
+  "building_contract": {
+    "full_canvas_placement": {
+      "x": 0,
+      "y": 0,
+      "z": 229
+    },
+    "name": "Campaign Market",
+    "native_ground_contact": [
+      110,
+      165,
+      88,
+      64
+    ],
+    "upgrades": null
+  },
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI built-in imagegen; deterministic project conversion",
+    "license": null,
+    "redistribution": "unresolved; no release or redistribution approval"
+  },
+  "dimensions_basis": {
+    "canvas": [
+      800,
+      374
+    ],
+    "mode": "RGB",
+    "reference_only": "runeterra-demacia/references/images/tbcsback.pcx.png",
+    "reference_sha256": "949012ea68999207934bc482f1552858474fe50cefddef17eaac00d4b98c2be9",
+    "use": "Dimensions/format only. No reference pixels, palette, source recipe, layout silhouette or licensed art copied."
+  },
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": false,
+    "provider": "OpenAI built-in imagegen",
+    "model": "Not exposed by the built-in tool",
+    "model_disclosure": "Not exposed by the builtin tool.",
+    "prompt": "Use case: stylized-concept. Asset: ONE independent Noxus architectural building layer for an original Heroes III additional town. Transparent background with real alpha. Full building complete uncropped, centered, ample clear margin, no ground platform or surroundings. Low FRONTAL three-quarter perspective, only slight view onto roof, not isometric and not a tile/board-game piece. Rich painted/prerendered miniature materials with native Heroes III readability, matching Demacia's selected rich painted stone/cloth/metal quality, independent architecture. Severe Noxian military engineering, charcoal-grey weathered masonry with warm-grey illuminated faces, blackened iron ribs, sparse crimson or bone cloth. Soft upper-left daylight, moderate contrast, readable details, restrained highlights, soft contact shadow only immediately under foundation. No white petricite, blue/gold Demacia decoration, medieval Castle turrets, readable text, letters, numbers, game logo, flags with unverified official logo, neon, glossy modern3D, cel outline, forest, people. Geometry broad and compact with low frontal-facing entrance.  All hanging banners completely plain crimson cloth; absolutely NO logo, NO emblem, NO trident, NO heraldic device, NO glyph.Grand Market: compact group of three CONNECTED merchant stalls forming one integrated market building around a small iron weighing-scale platform, low bone-colour and crimson cloth awnings, crates, sacks, contract board WITHOUT legible text. Broad low light canopy silhouette, no surrounding town or people, no independent scattered structures.",
+    "painted_master": "assets/source/town/structures/marketplace/painted-v1/master.png",
+    "painted_master_sha256": "844bbd64ef900860635d86c7f63f390081ffc24484c9aafa6b4c3e2a56a34ca1",
+    "generation_record": "assets/source/town/structures/marketplace/painted-v1/generation.json",
+    "generation_record_sha256": "1bfee0bb78c800bd7109d63e9acc9386493bfe0d089c1116517ad1d8324db73d",
+    "conversion": {
+      "method": "Uniform alpha-crop/contain of genuine painted 2D source; forced-depth site placement, no perspective warping or artificial art.",
+      "source_crop": [
+        35,
+        41,
+        1506,
+        910
+      ],
+      "placement_box": [
+        110,
+        165,
+        88,
+        64
+      ],
+      "native_position": [
+        112,
+        177
+      ],
+      "native_size": [
+        84,
+        50
+      ],
+      "site": "grandMarket",
+      "assembly_script": "assets/source/town/urban-community-20261024-v3/prepare.py",
+      "assembly_script_sha256": "f64b91515a739514c5200d85422dcf4286acdd1711f656cdda3b2c888bc227b8",
+      "mask_method": "Exact alpha128 silhouette; area is binary silhouette, border is two-pixel outward MaxFilter5 minus silhouette."
+    },
+    "method": "Alpha128 area mask or two-pixel outward MaxFilter5 border of exact painted native layer."
+  },
+  "inventory": {
+    "asset_id": "noxus.Sprites.runeterra.noxus.town.structures.marketplace_area.png",
+    "manifest": "assets/manifest.json",
+    "recipe_path": "assets/recipes/town/structures/marketplace-area.json"
+  },
+  "mask_contract": "Same800x374 silhouette/camera as own building. Area must isolate actual clickable painted shape; border must follow it. No rectangular/opaque placeholder mask or masks copied from native/Demacia structures.",
+  "output_path": "Content/Sprites/runeterra/noxus/town/structures/marketplace_area.png",
+  "pivot": {
+    "basis": "Full town canvas; content declares x0/y0; no Castle/Demacia building placement copied",
+    "x": 0,
+    "y": 0
+  },
+  "production_status": "derived-technical-mask-complete",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "Real independent Noxus painted master and truthful provenance",
+    "Non-null SHA256 source pins",
+    "Official Noxus emblem provenance where used",
+    "Native-size silhouette/composition/alpha and role review",
+    "Explicit coordinator selection; no automatic acceptance"
+  ],
+  "role": "town-structure-area",
+  "sha256": "6495aba5de29393d18af11350a4309b7eeb8303cc4897a28b7d996f5facd39a1",
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/urban-community-20261024-v3/structures/marketplace/area.png",
+  "source_sha256": "6495aba5de29393d18af11350a4309b7eeb8303cc4897a28b7d996f5facd39a1",
+  "status": "built-unreviewed",
+  "visual_approval_granted": false,
+  "source_canvas": [
+    800,
+    374
+  ]
+}

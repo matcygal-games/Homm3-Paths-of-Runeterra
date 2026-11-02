@@ -1,0 +1,25 @@
+{
+  "after_sha256": "20631378bedef95cb6f94705968bf5c151ba2165a729f7d06466168b9eb56c31",
+  "before_sha256": "5c16190818c8de39e1215d17f948344b83c1254c626f11dcd7f88ef9aabebab5",
+  "changes": [
+    {
+      "cleared_nonzero_bytes": 42,
+      "field": "dir",
+      "field_offset": 96,
+      "field_size": 1090,
+      "path": "",
+      "sdna": 822,
+      "structure": "FileSelectParams"
+    },
+    {
+      "cleared_nonzero_bytes": 0,
+      "field": "filepath",
+      "field_offset": 32,
+      "field_size": 1024,
+      "path": "//../../materials/painted-atlas-v1.png",
+      "sdna": 240,
+      "structure": "ImagePackedFile"
+    }
+  ],
+  "invariant": "Only bytes after first NUL in DNA-declared ImagePackedFile.filepath and FileSelectParams.dir changed; all other bytes identical"
+}

@@ -1,0 +1,710 @@
+{
+  "companions": {
+    "encounter_pose": "upEncounter",
+    "map_pose": "upMap",
+    "portrait_crop": [
+      1158,
+      497,
+      1525,
+      864
+    ],
+    "portrait_pose": "upPortrait",
+    "scale": 0.08108108108108109
+  },
+  "groups": {
+    "0": [
+      "m0",
+      "m0",
+      "m1",
+      "m2",
+      "m3",
+      "m3",
+      "m4",
+      "m5"
+    ],
+    "1": [
+      "hold",
+      "pain1",
+      "pain1",
+      "hold",
+      "hold"
+    ],
+    "11": [
+      "up0",
+      "up0",
+      "up0",
+      "up1",
+      "up1",
+      "up2",
+      "up3",
+      "hold"
+    ],
+    "12": [
+      "frontHit0",
+      "frontHit0",
+      "frontHit0",
+      "frontHit1",
+      "frontHit1",
+      "frontHit2",
+      "frontHit3",
+      "hold"
+    ],
+    "13": [
+      "down0",
+      "down0",
+      "down0",
+      "down1",
+      "down1",
+      "down2",
+      "down3",
+      "hold"
+    ],
+    "2": [
+      "hold"
+    ],
+    "20": [
+      "hold",
+      "takeoff0",
+      "takeoff1",
+      "takeoff2",
+      "m0"
+    ],
+    "21": [
+      "m5",
+      "landing0",
+      "landing1",
+      "landing2",
+      "hold"
+    ],
+    "22": [
+      "death3"
+    ],
+    "3": [
+      "pain0",
+      "pain0",
+      "pain1",
+      "pain1",
+      "hold"
+    ],
+    "4": [
+      "defend0",
+      "defend0",
+      "defend1",
+      "defend1",
+      "hold"
+    ],
+    "5": [
+      "death0",
+      "death0",
+      "death1",
+      "death1",
+      "death2",
+      "death2",
+      "death3",
+      "death3"
+    ],
+    "7": [
+      "hold",
+      "quarter",
+      "quarter",
+      "front",
+      "front"
+    ],
+    "8": [
+      "turnJoin",
+      "turnJoin",
+      "quarter",
+      "hold",
+      "hold"
+    ]
+  },
+  "limitations": [
+    "Authored configuration; native in-game silhouettes, fast playback, recruitment/body crops and shadow composition remain unverified.",
+    "Correct regional crest is physically painted; tiny battle/adventure fidelity needs independent native-size appearance approval.",
+    "Explicit repeated genuine painted-key holds are timeline cadence, not additional unique painted poses.",
+    "Source portrait heads use own painted coastal background; rights and release acceptance remain pending."
+  ],
+  "native_consumer": {
+    "cadence": {
+      "base_fps": 10,
+      "contact_zero_based": 3,
+      "death_ticks": 8,
+      "melee_ticks": 8,
+      "moving_ticks": 8,
+      "new_shooter_or_cast_groups": false,
+      "painted_key_holds_explicit": true,
+      "response_ticks": 5
+    },
+    "client/battle/BattleAnimationClasses.cpp": {
+      "sha256": "32e58068ee148c3c56afd0c6755144eda0a819dbcb201747d5abf4edeee9a4b9",
+      "use": "Read-only native frame/facing/cadence reference; excluded from creature source masters"
+    },
+    "client/battle/BattleStacksController.cpp": {
+      "sha256": "c12c369cdebeca2d94cdeb2351f5d53ec572d6a9ce2b727f79da4aa76da18682",
+      "use": "Read-only native frame/facing/cadence reference; excluded from creature source masters"
+    },
+    "client/battle/CreatureAnimation.cpp": {
+      "sha256": "ab43c236c791c6c7ecb6f60029b2026bc6dc5ff18c34cf1a0e7659fadc6e98ef",
+      "use": "Read-only native frame/facing/cadence reference; excluded from creature source masters"
+    },
+    "turn": {
+      "canvas_full_mirror_axis": 449,
+      "group7": "TURN_L before facing change",
+      "group8": "TURN_R after facing toggle/reposition",
+      "group8_first_full_mirror_then_translate_x": -14,
+      "two_hex_position_flip_delta": -14
+    }
+  },
+  "plates": {
+    "attacks": {
+      "expected_islands": 12,
+      "poses": {
+        "down0": {
+          "inspected_opaque_box": [
+            29,
+            691,
+            413,
+            993
+          ],
+          "island": 9,
+          "root": [
+            260,
+            999
+          ]
+        },
+        "down1": {
+          "inspected_opaque_box": [
+            425,
+            667,
+            832,
+            999
+          ],
+          "island": 8,
+          "root": [
+            650,
+            999
+          ]
+        },
+        "down2": {
+          "inspected_opaque_box": [
+            846,
+            703,
+            1205,
+            987
+          ],
+          "island": 10,
+          "root": [
+            1035,
+            999
+          ]
+        },
+        "down3": {
+          "inspected_opaque_box": [
+            1201,
+            784,
+            1508,
+            996
+          ],
+          "island": 11,
+          "root": [
+            1390,
+            999
+          ]
+        },
+        "frontHit0": {
+          "inspected_opaque_box": [
+            22,
+            376,
+            430,
+            683
+          ],
+          "island": 5,
+          "root": [
+            260,
+            690
+          ]
+        },
+        "frontHit1": {
+          "inspected_opaque_box": [
+            408,
+            374,
+            852,
+            639
+          ],
+          "island": 4,
+          "root": [
+            650,
+            690
+          ]
+        },
+        "frontHit2": {
+          "inspected_opaque_box": [
+            842,
+            405,
+            1227,
+            651
+          ],
+          "island": 6,
+          "root": [
+            1035,
+            690
+          ]
+        },
+        "frontHit3": {
+          "inspected_opaque_box": [
+            1202,
+            455,
+            1524,
+            689
+          ],
+          "island": 7,
+          "root": [
+            1390,
+            690
+          ]
+        },
+        "up0": {
+          "inspected_opaque_box": [
+            29,
+            26,
+            394,
+            370
+          ],
+          "island": 1,
+          "root": [
+            260,
+            370
+          ]
+        },
+        "up1": {
+          "inspected_opaque_box": [
+            400,
+            14,
+            822,
+            370
+          ],
+          "island": 0,
+          "root": [
+            650,
+            370
+          ]
+        },
+        "up2": {
+          "inspected_opaque_box": [
+            824,
+            68,
+            1189,
+            368
+          ],
+          "island": 2,
+          "root": [
+            1035,
+            370
+          ]
+        },
+        "up3": {
+          "inspected_opaque_box": [
+            1207,
+            117,
+            1523,
+            369
+          ],
+          "island": 3,
+          "root": [
+            1390,
+            370
+          ]
+        }
+      },
+      "scale": 0.3968253968253968,
+      "sha256": "3ea132117c0e4af3e9117428ece37e44e4913b52b76f181752ceacebafc04c7a",
+      "source": "stormwing-attacks-v1-raw.png"
+    },
+    "companions": {
+      "expected_islands": 8,
+      "poses": {
+        "upEncounter": {
+          "inspected_opaque_box": [
+            738,
+            599,
+            1157,
+            963
+          ],
+          "island": 7,
+          "root": [
+            1000,
+            963
+          ]
+        },
+        "upFidget": {
+          "inspected_opaque_box": [
+            387,
+            516,
+            750,
+            962
+          ],
+          "island": 5,
+          "root": [
+            610,
+            962
+          ]
+        },
+        "upMap": {
+          "inspected_opaque_box": [
+            14,
+            518,
+            358,
+            962
+          ],
+          "island": 6,
+          "root": [
+            230,
+            962
+          ]
+        },
+        "upPortrait": {
+          "inspected_opaque_box": [
+            1157,
+            495,
+            1523,
+            978
+          ],
+          "island": 4,
+          "root": [
+            1350,
+            978
+          ]
+        }
+      },
+      "scale": 1,
+      "sha256": "c120828cfb850e1c22e4fcc22bfee6d910d721e7790499fa351fd7cb4f7f3c15",
+      "source": "bird-companions-v1-raw.png"
+    },
+    "locomotion": {
+      "expected_islands": 9,
+      "poses": {
+        "front": {
+          "inspected_opaque_box": [
+            1131,
+            661,
+            1425,
+            998
+          ],
+          "island": 8,
+          "root": [
+            1280,
+            1000
+          ]
+        },
+        "hold": {
+          "inspected_opaque_box": [
+            35,
+            652,
+            478,
+            1005
+          ],
+          "island": 6,
+          "root": [
+            320,
+            1004
+          ]
+        },
+        "m0": {
+          "inspected_opaque_box": [
+            56,
+            12,
+            495,
+            331
+          ],
+          "island": 0,
+          "root": [
+            320,
+            360
+          ]
+        },
+        "m1": {
+          "inspected_opaque_box": [
+            485,
+            44,
+            1001,
+            332
+          ],
+          "island": 1,
+          "root": [
+            820,
+            360
+          ]
+        },
+        "m2": {
+          "inspected_opaque_box": [
+            1018,
+            168,
+            1512,
+            338
+          ],
+          "island": 2,
+          "root": [
+            1340,
+            360
+          ]
+        },
+        "m3": {
+          "inspected_opaque_box": [
+            31,
+            452,
+            515,
+            688
+          ],
+          "island": 5,
+          "root": [
+            320,
+            680
+          ]
+        },
+        "m4": {
+          "inspected_opaque_box": [
+            567,
+            352,
+            1000,
+            645
+          ],
+          "island": 3,
+          "root": [
+            820,
+            680
+          ]
+        },
+        "m5": {
+          "inspected_opaque_box": [
+            1043,
+            352,
+            1509,
+            666
+          ],
+          "island": 4,
+          "root": [
+            1340,
+            680
+          ]
+        },
+        "quarter": {
+          "inspected_opaque_box": [
+            607,
+            652,
+            946,
+            1003
+          ],
+          "island": 7,
+          "root": [
+            805,
+            1004
+          ]
+        }
+      },
+      "scale": 0.28328611898017,
+      "sha256": "581d60cbb9631fd4ccc28614148f21b89dd6f751ec77de4d21ea757708957a35",
+      "source": "stormwing-locomotion-v1-raw.png"
+    },
+    "reactions": {
+      "expected_islands": 8,
+      "poses": {
+        "death0": {
+          "inspected_opaque_box": [
+            23,
+            528,
+            441,
+            830
+          ],
+          "island": 4,
+          "root": [
+            290,
+            830
+          ]
+        },
+        "death1": {
+          "inspected_opaque_box": [
+            421,
+            608,
+            863,
+            822
+          ],
+          "island": 5,
+          "root": [
+            705,
+            822
+          ]
+        },
+        "death2": {
+          "inspected_opaque_box": [
+            867,
+            613,
+            1312,
+            817
+          ],
+          "island": 6,
+          "root": [
+            1150,
+            817
+          ]
+        },
+        "death3": {
+          "inspected_opaque_box": [
+            1319,
+            672,
+            1753,
+            816
+          ],
+          "island": 7,
+          "root": [
+            1605,
+            816
+          ]
+        },
+        "defend0": {
+          "inspected_opaque_box": [
+            870,
+            103,
+            1326,
+            443
+          ],
+          "island": 3,
+          "root": [
+            1150,
+            443
+          ]
+        },
+        "defend1": {
+          "inspected_opaque_box": [
+            1335,
+            96,
+            1724,
+            443
+          ],
+          "island": 2,
+          "root": [
+            1605,
+            443
+          ]
+        },
+        "pain0": {
+          "inspected_opaque_box": [
+            19,
+            59,
+            383,
+            445
+          ],
+          "island": 0,
+          "root": [
+            290,
+            445
+          ]
+        },
+        "pain1": {
+          "inspected_opaque_box": [
+            445,
+            85,
+            822,
+            443
+          ],
+          "island": 1,
+          "root": [
+            705,
+            443
+          ]
+        }
+      },
+      "scale": 0.27932960893854747,
+      "sha256": "99feab3da25bd32cfaf9fc7d682886d35e21a91241ae46b217c8fc5a9cd7e319",
+      "source": "stormwing-reactions-v1-raw.png"
+    },
+    "transitions": {
+      "expected_islands": 6,
+      "poses": {
+        "landing0": {
+          "inspected_opaque_box": [
+            17,
+            463,
+            535,
+            979
+          ],
+          "island": 3,
+          "root": [
+            320,
+            1000
+          ]
+        },
+        "landing1": {
+          "inspected_opaque_box": [
+            558,
+            634,
+            1100,
+            983
+          ],
+          "island": 4,
+          "root": [
+            820,
+            984
+          ]
+        },
+        "landing2": {
+          "inspected_opaque_box": [
+            1081,
+            635,
+            1474,
+            982
+          ],
+          "island": 5,
+          "root": [
+            1340,
+            984
+          ]
+        },
+        "takeoff0": {
+          "inspected_opaque_box": [
+            24,
+            139,
+            539,
+            490
+          ],
+          "island": 1,
+          "root": [
+            320,
+            498
+          ]
+        },
+        "takeoff1": {
+          "inspected_opaque_box": [
+            541,
+            143,
+            1069,
+            498
+          ],
+          "island": 2,
+          "root": [
+            820,
+            498
+          ]
+        },
+        "takeoff2": {
+          "inspected_opaque_box": [
+            1069,
+            8,
+            1531,
+            425
+          ],
+          "island": 0,
+          "root": [
+            1340,
+            475
+          ]
+        }
+      },
+      "scale": 0.2881844380403458,
+      "sha256": "1c9187ad07bee31a8e8366d697ee2fb6600bfd7ea80502bfed737c49196954eb",
+      "source": "stormwing-transitions-v1-raw.png"
+    }
+  },
+  "turn_front": "front",
+  "unit": "stormwing",
+  "version": 1
+}

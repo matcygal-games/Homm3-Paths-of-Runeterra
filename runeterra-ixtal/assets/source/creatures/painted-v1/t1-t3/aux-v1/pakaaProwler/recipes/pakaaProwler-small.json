@@ -1,0 +1,60 @@
+{
+  "recipe_type": "raster",
+  "canvas": [
+    32,
+    32
+  ],
+  "fit": "exact",
+  "source": "assets/source/creatures/painted-v1/t1-t3/aux-v1/pakaaProwler/portraits/small.png",
+  "source_sha256": "1599ec534f38bd07a1e44e81e61beb5474f3fc8144fdf399078cc0d2456d9e7f",
+  "source_canvas": [
+    32,
+    32
+  ],
+  "output_path": "Content/Sprites/runeterra/ixtal/creatures/pakaaProwler/small.png",
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in image_gen",
+    "model": "not exposed by built-in tool",
+    "prompt": "Usecase: identity-preserve. Assettype: ORIGINALHeroes3 IXTAL ADULT PAKAA PROWLERcreaturePORTRAITmaster, native58x64large and32x32small. Image1exactownadultPakaaidentity;image2actualnativeHoMM3creatureportraitSTYLE/dimensionsreferenceONLY,nocopyknight/backgroundpixels;image3exactIxtalcrest. PaintONEcloseHEAD,NECKandUPPERSHOULDERportraitofSAMEadultlivingforestFELINE: longchocolate/smokebrownfur, distinctPALEivory/bluegrayANGULARFACEmarkingswithdarkverticalforehead/nosestripe, alertyelloweyes,pointedears/headtufts,roughneck/backmane, substantialnaturalcatjawandvisibleanimalshoulders. VisuallyRIGHTthreequarterprofile. NoRengar/humanoidbody/weapon/eyepatch/shapeshift/wolf/antlers/wings, nocutejuvenile. ExactloosejadewovenshoulderassociationbandandclothsideflapinlowerportraitwithEXACTwornivorygoldIxtalcrest, physicalforeshortening, noarmor/rider/saddle/crown orfloatingbadge. BackgroundMUSTbeREALOWNPAINTEDSCENERY: quietIxtaljunglecanopyedge,agedtree/trailstone,subdueddeepgreenbroadleaves/vines,dappledwarmdaylightandatmosphericdepthbehindhead; noIoniancherryblossoms,magicneon,flatgradient/blackvignette/cardframe. ActualnativeHoMM3portraitlanguage: richtexturedpainted2Dfur/cloth/stone,darkcontours, restrainedhighlights,top-leftwarmlight, compactbelievableanatomy andreadabilityat58x64. OPAQUEportraitrectangle58:64aspect, largeeditablemasterforuniformnativecrop/downsample, headfillsupperhalf,mane/shoulder/markerlowerhalf, notfullbodyminiature. NoBlender/3D/glossyplastic/anime/vector/pixelfilter,text/UI/frame/watermark.",
+    "painted_master": "assets/source/creatures/painted-v1/t1-t3/pakaaProwler/portrait-master-v1.png",
+    "painted_master_sha256": "42478ee1e28f078f23761137d5ed76a52010a9fdbd330d9ec713f5855396a277",
+    "method": "Genuine painted2D dedicated source poses/scenic portrait, technical isolation and fixed uniform registration only; no3D, bbox fitting or body warps."
+  },
+  "production_inputs": [
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/assemble_aux_roles_v1.py",
+      "sha256": "d16f8481e863a603d62da3bac0392e61f288472b2ce55ad38ec7eb2814bffb8e"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/components.py",
+      "sha256": "2c3bd6f800958b39cffa67d13edf7678c3eb460eb1f59dcfc8679b2e82833336"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/aux_registration.json",
+      "sha256": "d66b2c36bf8a119f5ecc4c67daeb03e8fb36e4b73742e98a929154e2ede41ef6"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/aux-v1/pakaaProwler/role-placement.json",
+      "sha256": "6e0fe54d43393b3679b0fcd3c142f52c5db15653191dd720689e9dcdbc389f34"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/pakaaProwler/adventure-atlas-v1.png",
+      "sha256": "1bbc4dbf3e045d6e81d56276b02e008815b6459c144dd2e6c80944b838dd0824"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/pakaaProwler/adventure-atlas-v1.generation.json",
+      "sha256": "ec7604826c419221042e3724a302853d12711e7f7765418b874fcee0f4cb2a6f"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/pakaaProwler/portrait-master-v1.png",
+      "sha256": "42478ee1e28f078f23761137d5ed76a52010a9fdbd330d9ec713f5855396a277"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/pakaaProwler/portrait-master-v1.generation.json",
+      "sha256": "230082d02aebc877dc92d80ba13287a96bc126b35a0b5b67469896d990fa039c"
+    }
+  ],
+  "production_status": "painted-master-complete-unapproved",
+  "acceptance": "authored configuration; independent/native/pixels/rights pending"
+}

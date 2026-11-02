@@ -1,0 +1,276 @@
+{
+  "atlas_tests": {
+    "command": "C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-demacia\\.venv\\Scripts\\python.exe -B runeterra-zaun/scripts/test_zaun_t57_atlas.py",
+    "exit_code": 0,
+    "log": "assets/reviews/creatures/t57-imagegen-v3/atlas-tests.log",
+    "log_sha256": "2f2affdccfa9e6c0a45d6337fb3723469458f5132df1307d1d4f0719f592ab10"
+  },
+  "battle_recipes_delivered": 0,
+  "candidate_native_frames": {
+    "apexPredator": {
+      "battle_delivered": false,
+      "cohort": "assets/source/creatures/apexPredator/painted-imagegen-v3/battle-cohort-v4.json",
+      "cohort_sha256": "72bde0f2519df397d5a24d93c8c871c5d64628f57ed89970c754224be7f3d221",
+      "prepared_native_references": 52,
+      "unique_native_frames": 51
+    },
+    "chemBaronAgent": {
+      "battle_delivered": false,
+      "cohort": "assets/source/creatures/chemBaronAgent/painted-imagegen-v3/partial-battle-cohort-v3.json",
+      "cohort_sha256": "265f989b3ce6ab315d621f518957c4aad28e6e0f37746513d936a11e0d84f15c",
+      "prepared_native_references": 25,
+      "unique_native_frames": 24
+    }
+  },
+  "errors": [],
+  "generation_evidence": "assets/reviews/creatures/t57-imagegen-v3/generation-evidence.json",
+  "generation_evidence_sha256": "003d2629e4bf94aee73bb8bffec4a2a9808a15cca7f27b8e3a3abdf100b42049",
+  "inherited_agent_auxiliary_recipes_preserved": 5,
+  "missing_or_rejected": {
+    "apexPredator": {
+      "missing_painted_groups": [],
+      "reason": "52 source-only native candidates exist; final taller-limb walk has opposite support but all-action camera/model/contact continuity still needs independent review. Battle deliberately blocked.",
+      "unapproved_full_cohort": true
+    },
+    "chemBaronAgent": {
+      "missing_or_rejected_groups": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        11,
+        12,
+        13
+      ],
+      "prepared_candidates": [
+        5,
+        22,
+        30,
+        31,
+        32
+      ],
+      "reason": "Repeated near leading boot in guided walk; large common atlas compressed guard/death and omitted one front attack; unused common source retained in build history."
+    },
+    "masterAlchemist": {
+      "missing_groups": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        11,
+        12,
+        13,
+        22,
+        30,
+        31,
+        32
+      ],
+      "reason": "No battle source cohort yet."
+    },
+    "perfectMutation": {
+      "missing_groups": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        11,
+        12,
+        13,
+        22,
+        40,
+        41,
+        42
+      ],
+      "partial_painted_candidate_groups": [
+        0
+      ],
+      "reason": "Only short-limb6walk source; not registered/selected and full standard/all-adjacent grab cohorts absent."
+    }
+  },
+  "new_auxiliary_native_pngs": 15,
+  "new_auxiliary_recipes_delivered": 15,
+  "no_runtime_stage_manifest_content_design_or_other_faction_writes": true,
+  "recipes": [
+    {
+      "path": "assets/recipes/creatures/chemBaronAgent-attackLeft.json",
+      "production_status": "delivered",
+      "sha256": "9fe4c7df0e42c6db423e5de81b0d241d73b1dbc58b965e70db0f5915ba8360ab",
+      "status": "built-unreviewed",
+      "unit": "chemBaronAgent"
+    },
+    {
+      "path": "assets/recipes/creatures/chemBaronAgent-attackRight.json",
+      "production_status": "delivered",
+      "sha256": "803872ff58e56ceac3fcc94b18fa5092abb53e84f4720673d808102b1311ad00",
+      "status": "built-unreviewed",
+      "unit": "chemBaronAgent"
+    },
+    {
+      "path": "assets/recipes/creatures/chemBaronAgent-battle.json",
+      "production_status": "blocked-missing-painted-master",
+      "sha256": "150fd198edc9f81ea1483e6147a943068a046b87a1a977867658efb1c87d261b",
+      "status": "missing",
+      "unit": "chemBaronAgent"
+    },
+    {
+      "path": "assets/recipes/creatures/chemBaronAgent-large.json",
+      "production_status": "delivered",
+      "sha256": "41bf16e727ede3cd7e7005bbd2e61cf65020db64f7006360e7aee7db3572f7c5",
+      "status": "built-unreviewed",
+      "unit": "chemBaronAgent"
+    },
+    {
+      "path": "assets/recipes/creatures/chemBaronAgent-map.json",
+      "production_status": "delivered",
+      "sha256": "5927813a61c7211910c0f31cc82e5a6495f13d125502b0479a514d7a8963cbc5",
+      "status": "built-unreviewed",
+      "unit": "chemBaronAgent"
+    },
+    {
+      "path": "assets/recipes/creatures/chemBaronAgent-small.json",
+      "production_status": "delivered",
+      "sha256": "4107591163fb647d718ca654ed9106e1f756ebf0fe395eb97b1361e4820f08c0",
+      "status": "built-unreviewed",
+      "unit": "chemBaronAgent"
+    },
+    {
+      "path": "assets/recipes/creatures/masterAlchemist-attackLeft.json",
+      "production_status": "delivered",
+      "sha256": "05535104e54c7d0806a95d38a1b473f0f6c4e5be02a7211e97aae09478e601af",
+      "status": "built-unreviewed",
+      "unit": "masterAlchemist"
+    },
+    {
+      "path": "assets/recipes/creatures/masterAlchemist-attackRight.json",
+      "production_status": "delivered",
+      "sha256": "652ca965428cbbaf202b246228791ece68915c5bad33efdb39ccc6ba6d1bb843",
+      "status": "built-unreviewed",
+      "unit": "masterAlchemist"
+    },
+    {
+      "path": "assets/recipes/creatures/masterAlchemist-battle.json",
+      "production_status": "blocked-missing-painted-master",
+      "sha256": "8264860f5b5e41ed9879d5573258a3e78ed6529daaa38b7ab388a2503169e756",
+      "status": "missing",
+      "unit": "masterAlchemist"
+    },
+    {
+      "path": "assets/recipes/creatures/masterAlchemist-large.json",
+      "production_status": "delivered",
+      "sha256": "120c5ad766a823cb85f66838dbe777ddb7c35499e1fe9252a1db302c8d07a59c",
+      "status": "built-unreviewed",
+      "unit": "masterAlchemist"
+    },
+    {
+      "path": "assets/recipes/creatures/masterAlchemist-map.json",
+      "production_status": "delivered",
+      "sha256": "64a61c5827f093a09de0a94d77080ca02afaa7ec5e15af4c64bab8ce2b8cb921",
+      "status": "built-unreviewed",
+      "unit": "masterAlchemist"
+    },
+    {
+      "path": "assets/recipes/creatures/masterAlchemist-small.json",
+      "production_status": "delivered",
+      "sha256": "0de4236c8ef871c5e1de9fc0a6c5e84b4008adafa84bf1ad68549317764c9b48",
+      "status": "built-unreviewed",
+      "unit": "masterAlchemist"
+    },
+    {
+      "path": "assets/recipes/creatures/apexPredator-attackLeft.json",
+      "production_status": "delivered",
+      "sha256": "0c501ccab090af50e1fa5932682afb384f9ef2ec4707adb94c024a9ba7017604",
+      "status": "built-unreviewed",
+      "unit": "apexPredator"
+    },
+    {
+      "path": "assets/recipes/creatures/apexPredator-attackRight.json",
+      "production_status": "delivered",
+      "sha256": "e63c91953288fba08b0bdedfdd32e1efaf0e8f86f18ed6304d4a9d85a15b87c7",
+      "status": "built-unreviewed",
+      "unit": "apexPredator"
+    },
+    {
+      "path": "assets/recipes/creatures/apexPredator-battle.json",
+      "production_status": "blocked-missing-painted-master",
+      "sha256": "ca958734d8ed9d0689effe04f9c52404d699d841b20116de0874480ec6a1c722",
+      "status": "missing",
+      "unit": "apexPredator"
+    },
+    {
+      "path": "assets/recipes/creatures/apexPredator-large.json",
+      "production_status": "delivered",
+      "sha256": "5f7417f5cede865ebf2e5aceb84d281de4dddc92dc84a79848feed37d599c2e6",
+      "status": "built-unreviewed",
+      "unit": "apexPredator"
+    },
+    {
+      "path": "assets/recipes/creatures/apexPredator-map.json",
+      "production_status": "delivered",
+      "sha256": "83dbc3b1f9b837d4ddb60ec0858984ee5d89d9b961595f6063d8f7c27a81bf72",
+      "status": "built-unreviewed",
+      "unit": "apexPredator"
+    },
+    {
+      "path": "assets/recipes/creatures/apexPredator-small.json",
+      "production_status": "delivered",
+      "sha256": "44668ecb3a9d5a17715447cbb16d7dbd6510d83b43aff7a7a5114dc256c7d7e3",
+      "status": "built-unreviewed",
+      "unit": "apexPredator"
+    },
+    {
+      "path": "assets/recipes/creatures/perfectMutation-attackLeft.json",
+      "production_status": "delivered",
+      "sha256": "8b4e0d099a5e8cf467be3930d69f9a3ba0e1d36f4420337c0781ce0ee1e89f9e",
+      "status": "built-unreviewed",
+      "unit": "perfectMutation"
+    },
+    {
+      "path": "assets/recipes/creatures/perfectMutation-attackRight.json",
+      "production_status": "delivered",
+      "sha256": "3a0c600b5ef4a348ad57cf24f865dbf3b9c8d7029c132df444b94ec23c91cb94",
+      "status": "built-unreviewed",
+      "unit": "perfectMutation"
+    },
+    {
+      "path": "assets/recipes/creatures/perfectMutation-battle.json",
+      "production_status": "blocked-missing-painted-master",
+      "sha256": "8ba776c1b0831766d941723f61ede7103a3f0e39c155b0218bd860167f087a3f",
+      "status": "missing",
+      "unit": "perfectMutation"
+    },
+    {
+      "path": "assets/recipes/creatures/perfectMutation-large.json",
+      "production_status": "delivered",
+      "sha256": "a70423c606d299007d805a42b4c4efd893c591d5ebf29cb65d09ef7e12b1d516",
+      "status": "built-unreviewed",
+      "unit": "perfectMutation"
+    },
+    {
+      "path": "assets/recipes/creatures/perfectMutation-map.json",
+      "production_status": "delivered",
+      "sha256": "8859d92ca140fc5fecea8ec962d657e2881cd2f88c563e1e13765cb0b9e1e881",
+      "status": "built-unreviewed",
+      "unit": "perfectMutation"
+    },
+    {
+      "path": "assets/recipes/creatures/perfectMutation-small.json",
+      "production_status": "delivered",
+      "sha256": "321416a35c53648a75767009321f765035641db1af6266003f6be082ea1abae8",
+      "status": "built-unreviewed",
+      "unit": "perfectMutation"
+    }
+  ],
+  "source_pin_checks": 44,
+  "status": "authored configuration",
+  "visual_approval_granted": false
+}

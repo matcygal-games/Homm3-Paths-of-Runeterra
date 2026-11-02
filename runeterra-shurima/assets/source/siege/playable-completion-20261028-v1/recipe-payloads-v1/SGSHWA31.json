@@ -1,0 +1,69 @@
+{
+  "acceptance": "Authored configuration; native siege, damage, tower and gate observations pending.",
+  "canvas": [
+    100,
+    200
+  ],
+  "conversion": {
+    "local_crop": [
+      0,
+      0,
+      100,
+      200
+    ],
+    "uniform_local_canvas": [
+      100,
+      200
+    ],
+    "visible_alpha8_clipped": 0,
+    "whole_family_translation": [
+      0,
+      0
+    ]
+  },
+  "credits": {
+    "author": "Project-directed OpenAI built-in imagegen; technical 2D registration",
+    "license": null,
+    "redistribution": "unresolved; release approval pending"
+  },
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": true,
+    "model": "not exposed by tool",
+    "painted_master": "assets/source/siege/painted-v3/masters/WA31-v2.png",
+    "painted_master_sha256": "e80d6b2fb281a0066b5990a756d42035a0838be2d4b375f5954eaa3ecd7b92d4",
+    "prompt": "Use case: precise-object-edit. Image1 is PRIVATE originalHeroesIII geometricprofile reference, exact100x200pixelcanvas. Image2 is OWN Shuriman paintedarchitecture STYLE ONLY. Paint a NEW wallfollowing Image1's EXACT narrowcameraangle, outlineproportions, nativeblockscale and placementwithin this100x200canvas. Important: thiswall's actualopaquewidth isonly42nativepixels andheight146nativepixels; its upperend isaroundlocal(28,28), lowerend around(65,172). DoNOT enlargeit orimport Image2's broadlongwall. Keep alloriginaltransparentpadding, topandbottomendpoints andnarrow almostverticaldiagonal silhouette. ReplaceallgreyEuropeanstonetexturewith own weatheredwarmochresandstone courses, shallowflatsteppedmerlons, sparsebronzeedgefittings andonlytinyboundedturquoiseinset. Original1999HeroesIII tinyhandpaintedmaterialplanes anddarksideface, matte localtexture; sameupperleftlight andsamecamera. Entireoutput100x200aspect, allnonwallpixels genuinelytransparent. No ground, moat,building,frame,text,UI or additionalpylons. Thisis justone narrow native belowgatewallsegment, notwholefortification. Repaintallvisiblepixels asnewsubject; no copiedoriginalart.",
+    "prompt_file": "assets/source/siege/painted-v3/prompts/WA31-v2.json",
+    "provider": "builtin image_gen.imagegen"
+  },
+  "output_path": "Content/Sprites/runeterra/shurima/siege/SGSHWA31.png",
+  "production_inputs": [
+    {
+      "path": "assets/source/siege/painted-v3/masters/WA31-v2.png",
+      "sha256": "e80d6b2fb281a0066b5990a756d42035a0838be2d4b375f5954eaa3ecd7b92d4"
+    },
+    {
+      "path": "assets/source/siege/painted-v3/native-geometry-contract-v1.json",
+      "sha256": "5341590172230d1c5221a13cf8af7afcec50ceb9681767846e14d9064bddef87"
+    },
+    {
+      "path": "assets/source/siege/painted-v3/prompts/WA31-v2.json",
+      "sha256": "e09e7c031ea3b4701e16389d2af01bdf594df97a77a4317bb3f59abcdb348169"
+    },
+    {
+      "path": "assets/source/siege/playable-completion-20261028-v1/assemble.py",
+      "sha256": "c64cbea9d818412eaa7ae1e64ee38814c044b67367452dd6a65e0adc39e2078c"
+    }
+  ],
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "role": "siege-image",
+  "source": "assets/source/siege/playable-completion-20261028-v1/prepared-v1/SGSHWA31.png",
+  "source_canvas": [
+    100,
+    200
+  ],
+  "source_sha256": "a86d7a2ca75ff4d7afa383a2925036ae2c610b2ecaaa8d8b5ec981b471e86159",
+  "visual_approval_granted": false
+}

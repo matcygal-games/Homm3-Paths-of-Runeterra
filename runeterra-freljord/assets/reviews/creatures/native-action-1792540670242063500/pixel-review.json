@@ -1,0 +1,79 @@
+{
+  "reviewer": "Codex Freljord creature-art worker",
+  "status": "authored configuration",
+  "release_accepted": false,
+  "scope": "Actual painted native-size source-frame review, not in-game playback or art acceptance",
+  "evidence_directory": "assets/reviews/creatures/native-action-1792540670242063500",
+  "implemented": [
+    "Fourteen active variants have canonical six-resource recipes; retired Raiders and Ice Wyrms remain unselected history.",
+    "Nonuniform painted atlas cell extraction preserves original RGBA inside each selected region, excludes neighboring cells and records cut-boundary alpha.",
+    "One uniform camera per painted source, fixed native canvas and row ground-plane registration; collapsed bodies retain their painted reduced height.",
+    "Base Spirit Walker brown-fur identity repaired through built-in imagegen.",
+    "Ancient Yeti six directional physical ice-heave poses per group14/15/16 and six collapse poses, with explicit two-pose isolated source overrides.",
+    "Native corpse groups22/23; Hawks retain actual flight/takeoff/landing groups0/20/21; paid ritual casts are separate30/31/32."
+  ],
+  "tested": {
+    "read_only_compile_plan": {
+      "recipes": 84,
+      "physical_outputs": 1001,
+      "strict_source_pins_checked": 1165,
+      "errors": 0
+    },
+    "atlas_regressions": {
+      "executed": 6,
+      "passed": 6
+    },
+    "native_gameplay": "not run by this worker"
+  },
+  "unit_lines": [
+    {
+      "line": "Omen Hawk / Elder Omen Hawk",
+      "findings": "Small gold-crest raptors and real wing poses read distinctly from humanoids and original large Roc. Elder/base equipment and silhouette distinction remains too modest for final acceptance.",
+      "accepted": false
+    },
+    {
+      "line": "Ice Hunter / Veteran Ice Hunter",
+      "findings": "Female fur-clad ordinary-bow hunters; upgraded metal/white-fur coverage is visible. Death selection is complete. Three directional shooting groups still share the same forward-aim painted action; requires genuine directional source repair.",
+      "accepted": false
+    },
+    {
+      "line": "Frost Troll / Rime Troll",
+      "findings": "Blue living blunt-weapon silhouettes and upgrade armor are legible. Neighbor bleed and fixed-cell death cuts corrected. Gait and weapon-contact continuity require actual native playback.",
+      "accepted": false
+    },
+    {
+      "line": "Ursine Warrior / Storm Chosen",
+      "findings": "Bear-altered naked-claw combatants differ from armed trolls, but the upgraded white-fur Storm Chosen remains smaller/weaker in its painted silhouette than its base. Genuine stronger upgrade source repair remains required.",
+      "accepted": false
+    },
+    {
+      "line": "Spirit Walker / Primal Shaman",
+      "findings": "Brown plain-staff base and gray-fur crescent-staff upgrade are distinct when standing. Base death row now keeps its brown identity. Primal Shaman death still uses browner/plain gear than its gray-fur standing identity. Distinct ranged staff launches and paid cast poses exist, but this upgrade death mismatch requires focused painting repair.",
+      "accepted": false
+    },
+    {
+      "line": "Druvask Rider / Winter Outrider",
+      "findings": "Tusked shaggy boar silhouette is distinct from a horse. Upgrade has materially fuller metal armor on rider and boar; native ground baseline gap corrected. Charge contacts and alternating boar hoof gait require playback review.",
+      "accepted": false
+    },
+    {
+      "line": "Feral Yeti / Ancient Yeti",
+      "findings": "Four-arm living white-fur/tusked anatomy reads apart from armed trolls. Six genuine Ancient directional heaves visibly lift and release huge opaque ice chunks; native projectile owns detached-flight paint. Six complete corpse/collapse sources now exported. Release is first empty hands at frame4 one-based. Upper held-ice pose has10px opaque top margin and is complete; low-alpha fringe alone reaches original edge. Upgrade silhouette while idle remains modest, though ranged role creates clear action difference.",
+      "accepted": false
+    }
+  ],
+  "incomplete": [
+    "Native action playback, anatomy, aiming, gait, shadow, pivot and timing acceptance.",
+    "Primal Shaman upgraded death-gear consistency.",
+    "Stronger genuinely painted Storm Chosen and Elder Hawk upgrade silhouettes.",
+    "True Hunter diagonal ranged aim sources.",
+    "Final rights/redistribution review."
+  ],
+  "blocked": [],
+  "evidence_sha256": {
+    "action-contact-sheet.png": "5f850672107c8a37f304e0bb8301e98531fda377501780609aaa6d08e377a01f",
+    "ancient-yeti-shoot-death-native.png": "193a169a6dfe5fe6a56194ca34e68dc74d7a209ec57182bfab223dcdda77ac34",
+    "measurements.json": "04dcc05676e30889327edb7c1b6cacaa6ce0ecc9b4b747e62bee9c4825f3e2d9",
+    "strict-compile-plan.json": "eade5efde84ffdc784fdcd08066a3788afda731a62b3a17f4825f3764556de82"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "Own Zaun puzzle master: the undercity skyline, refinery stacks and a lit pit arena.",
+  "canvas": [
+    74,
+    91
+  ],
+  "composition": {
+    "crop": {
+      "height": 91,
+      "width": 74,
+      "x": 296,
+      "y": 91
+    },
+    "grid": {
+      "columns": 8,
+      "rows": 6
+    },
+    "master": "assets/source/puzzle/chemtech-palette-v7/master-592x544.png",
+    "master_sha256": "9b1a3a73ff25eb96923a98f5a3fbca640aeac56cc76d81608d9ee3fabaa89afa",
+    "master_size": [
+      592,
+      544
+    ],
+    "rule": "One own 592x544 Zaun master is sliced into 48 pieces of 74 pixels wide; the first five rows are 91 pixels high and the last row is 89 pixels high. The crop origin is the top left corner of the piece inside the master. The reveal order comes from the authored puzzle map, not from the art."
+  },
+  "credits": {
+    "author": "Runeterra Zaun project using OpenAI built-in image_gen",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "delivery": {
+    "independent_review": null,
+    "independent_review_sha256": null,
+    "palette_policy": "design/chemtech-art-direction.json",
+    "palette_provenance": "assets/source/puzzle/chemtech-palette-v7/generation.json",
+    "runtime_verified": false,
+    "sources": [
+      {
+        "path": "assets/source/puzzle/chemtech-palette-v7/piece12.png",
+        "sha256": "3f02fbac9b99b597489b7c3f19d8b173f1ade88264031793c3b1c841bcc0d443"
+      },
+      {
+        "path": "assets/source/puzzle/chemtech-palette-v7/master-generated.png",
+        "sha256": "681ba94fffbbf67f3504ca3dddd09f90b684254c8b4f869da0b427b6946f4c5d"
+      }
+    ],
+    "status": "built-unreviewed",
+    "visual_approval_granted": false
+  },
+  "dependencies": [],
+  "fit": "contain",
+  "generation": {
+    "image_generation_used": true,
+    "model": null,
+    "model_disclosure": "The built-in tool did not expose a model identifier.",
+    "painted_master": "assets/source/puzzle/chemtech-palette-v7/master-generated.png",
+    "painted_master_sha256": "681ba94fffbbf67f3504ca3dddd09f90b684254c8b4f869da0b427b6946f4c5d",
+    "prompt": "assets/source/puzzle/chemtech-palette-v7/prompt.txt",
+    "provider": "OpenAI built-in image_gen",
+    "returned_provenance": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a15daf-dfea-7600-bbfa-72115facede7 as C:\\Users\\matcy\\.codex\\generated_images\\01a15daf-dfea-7600-bbfa-72115facede7\\exec-e2facc33-a47c-4087-9f2f-e8ea8ce56369.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "route": "genuine green/purple/brown palette painting edit; uniform native resample/crop only"
+  },
+  "id": "zaun.puzzle.piece12",
+  "output_path": "Content/Sprites/runeterra/zaun/puzzle/piece12.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    74,
+    91
+  ],
+  "source": "assets/source/puzzle/chemtech-palette-v7/piece12.png",
+  "source_sha256": "3f02fbac9b99b597489b7c3f19d8b173f1ade88264031793c3b1c841bcc0d443",
+  "status": "built-unreviewed",
+  "title": "puzzle piece 12",
+  "visual_approval_granted": false
+}

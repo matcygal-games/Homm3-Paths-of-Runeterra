@@ -1,0 +1,59 @@
+{
+  "art_context_record": "build/reports/town-rebuild-20261027-v1/art-context.json",
+  "art_context_reference_id": "original-homm3-castle-town-terrain",
+  "base_generation": "assets/source/town/cohesive-city-20261027-v1/background/generation-v1.json",
+  "base_generation_sha256": "640e72d7d89682fd95e766b20595df8541f4cd79acb90927d2a5290284f649f3",
+  "correction": "Actual source-pixel inspection found forge over broad toxic water in v1; v2 whole-background attempt baked an unwanted boat and was rejected. v3 reclaims the forge floor/apron as dry cobbles and retains only tiny deliberate lower-right basin.",
+  "credits": {
+    "author": "OpenAI built-in imagegen; prompt and technical assembly by project",
+    "redistribution": "unresolved; release prohibited"
+  },
+  "derived_from_blender": false,
+  "image_generation_used": true,
+  "master": "assets/source/town/cohesive-city-20261027-v1/background/master-v3.png",
+  "master_sha256": "f1c233242fa37dd9e993646def88f2af9fe9fdb4e70050e15bacb6d453ae6ff7",
+  "model": null,
+  "model_disclosed": false,
+  "new_image_generation_used": true,
+  "prompt": "assets/source/town/cohesive-city-20261027-v1/background/prompt-quay-v3.txt",
+  "prompt_sha256": "7da2bf4183419f612caf0300f44c3027de901edf86a392a494a3bbe3d46382e7",
+  "provider": "OpenAI built-in imagegen",
+  "quay_composite_rectangle": [
+    685,
+    235,
+    115,
+    139
+  ],
+  "quay_edit_target": "assets/source/town/cohesive-city-20261027-v1/background/quay-edit-target-4x.png",
+  "quay_edit_target_sha256": "abc70aef4b630ed2791da33b202b85b95c6f29787407fe516f5318303cf91254",
+  "quay_raw": "assets/source/town/cohesive-city-20261027-v1/background/quay-raw-v3.png",
+  "quay_raw_sha256": "347a987c060850c5c8e9b7445487184b20b92c46822c850a8c8699894c4cdb23",
+  "raw": "assets/source/town/cohesive-city-20261027-v1/background/raw-v1.png",
+  "raw_sha256": "f14ce6116a8d22c394f3d02213eaa7944f6015525ce3e80c851729610bad12fa",
+  "reference_inputs": [
+    {
+      "note": "Exact frozen original input bytes retained at versioned path; SHA verified equal after subsequent placement refinement.",
+      "original_path": "build/reports/town-rebuild-20261027-v1/prepaint-entrance-guide.png",
+      "path": "assets/source/town/cohesive-city-20261027-v1/background/reference-guide-v1.png",
+      "role": "functional silhouette/entrance placement, keep-clear volumes",
+      "sha256": "b1092ffab2eb1c1cf06e5dc752480b4061473e2c679d48ded72851e9cff5047f"
+    },
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v3/background/master-v4-dark-paths.png",
+      "role": "rejected old plate palette only",
+      "sha256": "e76cc247150d352be2ef41c92a7c6ea828e88c86e8c71b5ed59821b631b782d3"
+    },
+    {
+      "path": "build/reports/industrial-neighborhood-20261025-v3/lore/official-zaun-regional-crest.png",
+      "role": "official crest shape only",
+      "sha256": "dd05b89e1a82934ec4585811ae4b7a20ef64d359f6ae0bde8cb25c4f3658ec14"
+    }
+  ],
+  "reference_scope_note": "Original HoMM3 terrain style source is contextual reference metadata, not a live conversion dependency or copied output pixels.",
+  "release_accepted": false,
+  "route": "New genuinely painted2D city background v1 plus built-in imagegen quay crop repair, uniformly resized to115x139 and alpha-composited at685,235. Source pixels outside crop unchanged. No code-drawn scenery or3D.",
+  "runtime_verified": false,
+  "status": "authored configuration",
+  "visual_approval_granted": false,
+  "workflow": "painted2D"
+}

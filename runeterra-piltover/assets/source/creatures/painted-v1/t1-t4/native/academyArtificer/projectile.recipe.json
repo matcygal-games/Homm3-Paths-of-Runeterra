@@ -1,0 +1,144 @@
+{
+  "production_status": "painted-master-complete-unapproved",
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in imagegen",
+    "model": "Not exposed by the tool",
+    "prompt": "Exact reference adult brown-skinned male Piltover Academy Artificer, short darkhair/goatee, goggles aboveeyes, ivoryshirt/navywaistcoat/toolbelt, handcrafted handheld crossbow. Physical Piltover spire/orb/open-C cog crest on vest/toolcase. Original1999HeroesIII painted2D textured matte materials, upperleftlight, compact anatomy, no3D/plastic/anime. Transparent RGBA, no scenery/floor/labels. Separate wholebodyactors with widegutters; complete crossbow/feet always visible, fixed bodydensity/camera and projectedpelvisroot percell. Create EXACT6columns3rows SHOOTING sourceatlas,18wholebodyposes. Eachrow is same stableactorfacingRIGHT. Row1 aimUPRIGHT, row2 aimLEVELRIGHT, row3 aimDOWNRIGHT. Sixcolumns ineachrow: 1ready crossbowloaded;2raisebow;3steadyfullaim;4ACTUALBOLTRELEASE withdrawnbowstring relaxing andONEshortphysicalsilverbronze boltjustCLEAROFTHEBOWMOUTH;5emptybowrecoil;6recoverbowtohold. RELEASE MUSTBEFOURTHCOLUMN forALL3rows, no firing/bolt incolumn5, no muzzleflash/gunpowder or neonmagic. Distinct3angles, realarms/bowrotation, no duplicatedhorizontalshot. The bow has physical limbs/string and has no riflegunbarrel.",
+    "action_source_ledger": "assets/source/creatures/painted-v1/t1-t4/generation-ledger-v1.json",
+    "action_source_ledger_sha256": "9da66a550c881d7dc4b0f3e473fa50f7fdcb25905352c0e536cdbbbf2dcad322",
+    "painted_master": "assets/source/creatures/painted-v1/t1-t4/academyArtificer/shoot-v1.png",
+    "painted_master_sha256": "5937a0cdb7db9b531699406c858190ef0c7c38d754eb22e431eef01ad2826e91",
+    "method": "Extract complete own painted projectile, uniformly reduce and rotate five native directions; no drawing"
+  },
+  "production_inputs": [
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/academyArtificer/master-v1.png",
+      "sha256": "e10d8e0b5fc0f85ab803544e929e6d4607351e4e81040d19c91b02fa463b477e"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/academyArtificer/portrait-v1.png",
+      "sha256": "056ef1f041f1606d5400244fb4e177c43fd3554f68023793bff3c11f04106947"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/academyArtificer/isolated-source-map-v1.json",
+      "sha256": "586b51a06a82ddcc17376ae96347d34589a41dd1b5ef330590e293f919b2ffbd"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/pose-roots-v1.json",
+      "sha256": "756e77614e53335d3625b84499e4409860e4cf8cce7ef6d0c05da08078ee1355"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/producer_v1.py",
+      "sha256": "a097e5a05400368c5740004cca6225a50730a18c2440af0c13d2ba676e7d58ad"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/extract_sources.py",
+      "sha256": "0338c4026998ef34834a4c76c400c177f51777dc686da70858373fc3a9eefd7b"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/generation-ledger-v1.json",
+      "sha256": "9da66a550c881d7dc4b0f3e473fa50f7fdcb25905352c0e536cdbbbf2dcad322"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/selected-cohorts-v1.json",
+      "sha256": "d6c313a901a77675cc068ae609a0296c14c9824c8c6852e67a4c8058d8238c30"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/academyArtificer/combat-v1.png",
+      "sha256": "2c8e9440402054ffd455cba24c910ae13544b562c7ae3a44c3b03a35b0af240d"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/academyArtificer/movement-v1.png",
+      "sha256": "0b0ebe81e7887f3969b667bf1af2c17b2ede492ea94dae7681f30c697eaf16eb"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/academyArtificer/shoot-v2.png",
+      "sha256": "ef2925c09a5125b49efb9a386be78cd18565d71f85ef4358a92a8e8747a81cb9"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/academyArtificer/shoot-v1.png",
+      "sha256": "5937a0cdb7db9b531699406c858190ef0c7c38d754eb22e431eef01ad2826e91"
+    }
+  ],
+  "recipe_type": "vcmi_animation",
+  "output_path": "Content/Sprites/runeterra/piltover/projectiles/academyArtificer.json",
+  "canvas": [
+    32,
+    32
+  ],
+  "pivot": {
+    "x": 16,
+    "y": 16
+  },
+  "groups": [
+    {
+      "group": 0,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/projectile/g00-f000.png",
+          "sha256": "c59d26e279d34896d38410faccd2e4179ae40c7a0c60ebff1690493bfc4b639a",
+          "source_sha256": "c59d26e279d34896d38410faccd2e4179ae40c7a0c60ebff1690493bfc4b639a",
+          "source_canvas": [
+            32,
+            32
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/projectile/g00-f001.png",
+          "sha256": "2b5b72117209cf990c07c59b788e4d9c8f55345a2a2b24a601e5fae5fbd4789c",
+          "source_sha256": "2b5b72117209cf990c07c59b788e4d9c8f55345a2a2b24a601e5fae5fbd4789c",
+          "source_canvas": [
+            32,
+            32
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/projectile/g00-f002.png",
+          "sha256": "8102786a906a7e301a156659eafc062fc0573b2244f9e13ffb57c6d26a763b66",
+          "source_sha256": "8102786a906a7e301a156659eafc062fc0573b2244f9e13ffb57c6d26a763b66",
+          "source_canvas": [
+            32,
+            32
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/projectile/g00-f003.png",
+          "sha256": "956113463ae4325a6229b6afbdc66caf14d3f327ee541792da3f121c41c5b1ee",
+          "source_sha256": "956113463ae4325a6229b6afbdc66caf14d3f327ee541792da3f121c41c5b1ee",
+          "source_canvas": [
+            32,
+            32
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/academyArtificer/projectile/g00-f004.png",
+          "sha256": "c1b7837cd0acff2c4f226a70385359b20fd82b4b3b722a2e9284ebc753bc6a3d",
+          "source_sha256": "c1b7837cd0acff2c4f226a70385359b20fd82b4b3b722a2e9284ebc753bc6a3d",
+          "source_canvas": [
+            32,
+            32
+          ]
+        }
+      ],
+      "generateShadow": 0,
+      "generateOverlay": 0
+    }
+  ],
+  "painted_projectile_crop": {
+    "source": "assets/source/creatures/painted-v1/t1-t4/academyArtificer/shoot-v1.png",
+    "source_sha256": "5937a0cdb7db9b531699406c858190ef0c7c38d754eb22e431eef01ad2826e91",
+    "crop": [
+      1147,
+      392,
+      1229,
+      411
+    ],
+    "decoded_rgba_sha256": "163afc842a5f1121652050fe15693fa115f55eaf9313927ecb049a697c862980"
+  }
+}

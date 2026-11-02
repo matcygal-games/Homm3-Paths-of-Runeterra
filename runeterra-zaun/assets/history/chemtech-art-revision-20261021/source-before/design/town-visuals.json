@@ -1,0 +1,349 @@
+{
+  "schemaVersion": 1,
+  "status": "authored configuration",
+  "subject": "Zaun town visual contract: site plan, construction states, click geometry, adventure objects, siege and visual direction.",
+  "derivation": "The state count is derived from the authored building graph in runeterra-zaun/content/factions.json, which defines 36 building states, and the site count is the grouping of those states into independently modelled locations. The authored structures all still carry placeholder x/y of 0, so the physical layout is a contract that the art must satisfy.",
+  "siteCount": 20,
+  "stateCount": 36,
+  "stateAccounting": {
+    "hallChain": 4,
+    "fortChain": 3,
+    "mageGuild": 4,
+    "dwellingChains": 14,
+    "singleServiceBuildings": 7,
+    "specialBuildings": 4,
+    "total": 36
+  },
+  "canvas": {
+    "width": 800,
+    "height": 374,
+    "reference": "the native Heroes III town canvas used by the Castle faction",
+    "layerModel": "Every structure is authored as a full-canvas layer with an area mask and a border mask. Masks, not hand-tuned rectangles, define the clickable geometry, so a painted layer can be replaced without editing configuration.",
+    "currentState": "The authored dictionary points every structure at a missing animation, area and border resource with a full-canvas x/y of 0 and a declared z order. The geometry is therefore a contract, not a finished layout: the area and border masks must be authored with the art before any click test can pass."
+  },
+  "sites": [
+    {
+      "id": "foundryHall",
+      "name": "Foundry Hall",
+      "role": "town backbone: the four hall states carry the administrative core and the daily income curve.",
+      "buildings": [
+        "villageHall",
+        "townHall",
+        "cityHall",
+        "capitol"
+      ],
+      "states": 4,
+      "construction": "One site, four successive construction states, each replacing the previous layer set.",
+      "visual": "Zaunite civic architecture: brick over a wet foundation, pipework on the facade, soot-stained glass and a municipal notice board. Iron, not marble."
+    },
+    {
+      "id": "sumpRampart",
+      "name": "Sump Rampart",
+      "role": "fortification chain and the site that carries the town fortification bonuses.",
+      "buildings": [
+        "fort",
+        "citadel",
+        "castle"
+      ],
+      "states": 3,
+      "construction": "One site, three states.",
+      "visual": "Scavenged plate, poured concrete, welded scrap and cable anchors above a chemical moat. Bolts, clamps and rivets instead of banners."
+    },
+    {
+      "id": "shimmerInstitute",
+      "name": "Shimmer Institute",
+      "role": "mage guild with four levels and the chemical spell weights.",
+      "buildings": [
+        "mageGuild1",
+        "mageGuild2",
+        "mageGuild3",
+        "mageGuild4"
+      ],
+      "states": 4,
+      "construction": "One site, four states that grow upward in a single tower.",
+      "visual": "A distillation tower with glass columns and pressure gauges. The glow is amber and green, never Piltover blue hextech."
+    },
+    {
+      "id": "dwellingThug",
+      "name": "Thug Quarter",
+      "role": "tier one recruitment site.",
+      "buildings": [
+        "dwellingLvl1",
+        "dwellingUpLvl1"
+      ],
+      "states": 2,
+      "construction": "One site, two states.",
+      "visual": "A rented back room behind a market stall, then a fenced yard with scrap training gear."
+    },
+    {
+      "id": "dwellingRavager",
+      "name": "Ravager Pens",
+      "role": "tier two recruitment site.",
+      "buildings": [
+        "dwellingLvl2",
+        "dwellingUpLvl2"
+      ],
+      "states": 2,
+      "construction": "One site, two states.",
+      "visual": "Dosing stalls and a rinse channel for the ravager line."
+    },
+    {
+      "id": "dwellingConstruct",
+      "name": "Construct Workshop",
+      "role": "tier three recruitment site.",
+      "buildings": [
+        "dwellingLvl3",
+        "dwellingUpLvl3"
+      ],
+      "states": 2,
+      "construction": "One site, two states.",
+      "visual": "A fabrication bay with a gantry, a pressure rig and half-built frames on stands."
+    },
+    {
+      "id": "dwellingEnforcer",
+      "name": "Enforcer Yard",
+      "role": "tier four recruitment site.",
+      "buildings": [
+        "dwellingLvl4",
+        "dwellingUpLvl4"
+      ],
+      "states": 2,
+      "construction": "One site, two states.",
+      "visual": "A fenced drill yard with brace racks and cleaver racks."
+    },
+    {
+      "id": "dwellingAgent",
+      "name": "Reagent Store",
+      "role": "tier five recruitment site.",
+      "buildings": [
+        "dwellingLvl5",
+        "dwellingUpLvl5"
+      ],
+      "states": 2,
+      "construction": "One site, two states.",
+      "visual": "Shelved reagent jars, a mixing bench and a fume hood over the door."
+    },
+    {
+      "id": "dwellingVeteran",
+      "name": "Augmentation Rows",
+      "role": "tier six recruitment site.",
+      "buildings": [
+        "dwellingLvl6",
+        "dwellingUpLvl6"
+      ],
+      "states": 2,
+      "construction": "One site, two states.",
+      "visual": "Brace frames on rails, medical benches and a privacy screen; the augmentation is supervised, not improvised."
+    },
+    {
+      "id": "dwellingPredator",
+      "name": "Labyrinth Hollow",
+      "role": "tier seven creature quarters for the two-hex laboratory beast line.",
+      "buildings": [
+        "dwellingLvl7",
+        "dwellingUpLvl7"
+      ],
+      "states": 2,
+      "construction": "One site, two states: the pens of the Apex Predator line, then the perfected strain.",
+      "visual": "A deep, half-flooded holding pen ringed with observation glass, cable winches and a chemical sump. The beast's own scale is implied by the tunnel mouth, not by a person standing next to it."
+    },
+    {
+      "id": "grog",
+      "name": "The Grog",
+      "role": "tavern and hero recruitment.",
+      "buildings": [
+        "tavern"
+      ],
+      "states": 1,
+      "construction": "One site, one state.",
+      "visual": "A low-ceilinged bar built into a wall, with a warm light in one corner and the rest in shadow."
+    },
+    {
+      "id": "scrapExchange",
+      "name": "Scrap Exchange",
+      "role": "marketplace and resource trade.",
+      "buildings": [
+        "marketplace"
+      ],
+      "states": 1,
+      "construction": "One site, one state.",
+      "visual": "Open trestles of salvage, weighed on a crane scale."
+    },
+    {
+      "id": "ammoFoundry",
+      "name": "Ammo Foundry",
+      "role": "blacksmith and the native Ammo Cart.",
+      "buildings": [
+        "blacksmith"
+      ],
+      "states": 1,
+      "construction": "One site, one state.",
+      "visual": "A shell shop: a casting bench, a rack of casings and a heat glow from the forge slit."
+    },
+    {
+      "id": "shimmerFactory",
+      "name": "Shimmer Factory",
+      "role": "rare resource silo producing one sulfur per day.",
+      "buildings": [
+        "resourceSilo"
+      ],
+      "states": 1,
+      "construction": "One site, one state.",
+      "visual": "A refinery block with condenser towers and a slow amber pulse in the pipes."
+    },
+    {
+      "id": "shipyard",
+      "name": "Sump Dock",
+      "role": "coastal shipyard and the moored vessel display.",
+      "buildings": [
+        "shipyard",
+        "ship"
+      ],
+      "states": 2,
+      "construction": "One site, two states.",
+      "visual": "A sloped slipway with a tarred barge and crane poles."
+    },
+    {
+      "id": "codeOfProgress",
+      "name": "Code of Progress",
+      "role": "Grail monument in native Grail mode.",
+      "buildings": [
+        "grail"
+      ],
+      "states": 1,
+      "construction": "One site, one state.",
+      "visual": "A project-fiction monument: a plate-metal stele with a ledger slab and a single lamp. It is a city decree, not a relic."
+    },
+    {
+      "id": "augmentationWorkshop",
+      "name": "Augmentation Workshop",
+      "role": "special one: the fabrication prerequisite of the tier six upgrade.",
+      "buildings": [
+        "special1"
+      ],
+      "states": 1,
+      "construction": "One site, one state.",
+      "visual": "A clean workshop with brace tooling on the wall and a workbench lamp."
+    },
+    {
+      "id": "augmentationClinic",
+      "name": "Augmentation Clinic",
+      "role": "special two: the weekly mana top-up visit.",
+      "buildings": [
+        "special2"
+      ],
+      "states": 1,
+      "construction": "One site, one state.",
+      "visual": "A quiet clinic room with cots, a saline stand and a wall of numbered cabinets."
+    },
+    {
+      "id": "theSump",
+      "name": "The Sump",
+      "role": "special three: the siege Defense bonus.",
+      "buildings": [
+        "special3"
+      ],
+      "states": 1,
+      "construction": "One site, one state.",
+      "visual": "A fenced outflow basin with a heavy grating, a settling tank and vapour over the water."
+    },
+    {
+      "id": "fightingPit",
+      "name": "Fighting Pit",
+      "role": "fourth special building: the pit that pays a daily wage to the town.",
+      "buildings": [
+        "special4"
+      ],
+      "states": 1,
+      "construction": "One site, one state; it is built and stays built.",
+      "visual": "A sunken chemical pit ringed by scaffold and pipework, with a grimy gallery of onlookers above it. The crowd is silhouettes and gloved hands, not readable faces."
+    }
+  ],
+  "siteGroupingNote": "Twenty independent sites cover all 36 authored building states: three chain sites (the four hall states, the three fortification states and the four mage guild states), seven dwelling sites with two states each, six service sites (tavern, market, forge, shimmer factory, wharf with its moored barge, and the grail hall) and four special sites. The Fighting Pit is its own independent site: it is a fourth special building that pays a daily wage and is not a construction stage of the tier seven dwelling. State arithmetic: 4 + 3 + 4 + 14 + 7 + 4 = 36 states over 20 sites.",
+  "adventureObjects": {
+    "mapStates": [
+      "village",
+      "fort",
+      "citadel",
+      "castle",
+      "capitol"
+    ],
+    "mapStateRule": "One animation per state in the own namespace, matching the five fortification and hall stages.",
+    "icons": [
+      "fort_normal_large",
+      "fort_normal_small",
+      "fort_built_large",
+      "fort_built_small",
+      "village_normal_large",
+      "village_normal_small",
+      "village_built_large",
+      "village_built_small"
+    ],
+    "puzzle": {
+      "pieceCount": 48,
+      "paths": "runeterra/zaun/puzzle/piece00.png through piece47.png",
+      "rule": "A 48-piece native puzzle map, each piece an own artwork in the Zaun namespace."
+    }
+  },
+  "siege": {
+    "imagePrefix": "SGZA",
+    "imageCount": 32,
+    "images": [
+      "ARCH",
+      "BACK",
+      "DRW1",
+      "DRW2",
+      "DRW3",
+      "DRWC",
+      "MAN1",
+      "MAN2",
+      "MANC",
+      "MLIP",
+      "MOAT",
+      "TPWL",
+      "TW11",
+      "TW12",
+      "TW1C",
+      "TW21",
+      "TW22",
+      "TW2C",
+      "WA11",
+      "WA12",
+      "WA13",
+      "WA2",
+      "WA31",
+      "WA32",
+      "WA33",
+      "WA41",
+      "WA42",
+      "WA43",
+      "WA5",
+      "WA61",
+      "WA62",
+      "WA63"
+    ],
+    "towerPortraits": [
+      "towerIconLarge",
+      "towerIconSmall"
+    ],
+    "shooter": "chemtechConstruct",
+    "shooterRule": "The tier three chemical construct is the siege shooter of the town, so the siege screen shows a construct on the walls. It is a machine, not a person, and it fires its own pressurised shot."
+  },
+  "visualDirection": "Original Heroes III Castle native painted compatibility, rendered with Zaun subjects: corroded iron, wet concrete, chemical amber and green, industrial ruins, salvage scaffolds and pit-fighting crowds. The town must read as an undercity refinery, never as a recoloured Castle and never as Piltover's clean hextech skyline.",
+  "assetBinding": {
+    "rule": "Each of the 36 states needs a full-canvas layer, an area mask and a border mask in the own namespace; the masks define the click geometry and are derived from the painted layer.",
+    "status": "All assets are missing. The recipes under assets/recipes are the production contract and are blocked on their missing painted masters."
+  },
+  "siteAccounting": {
+    "chainSites": 3,
+    "chainStates": 11,
+    "dwellingSites": 7,
+    "dwellingStates": 14,
+    "serviceSites": 6,
+    "serviceStates": 7,
+    "specialSites": 4,
+    "specialStates": 4,
+    "totalSites": 20,
+    "totalStates": 36
+  }
+}

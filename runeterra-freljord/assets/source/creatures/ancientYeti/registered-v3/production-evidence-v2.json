@@ -1,0 +1,3241 @@
+{
+  "unit": "ancientYeti",
+  "status": "authored configuration",
+  "art_accepted": false,
+  "native_playback": "not_run",
+  "source_masters": [
+    {
+      "path": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd"
+    },
+    {
+      "path": "assets/source/creatures/ancientYeti/repair-v3/collapse-two-poses-v3.png",
+      "sha256": "c3fafc8f0f089d07a39f5c54d8d2843ee2650d0bfead64542979b3bdfb231aa0"
+    },
+    {
+      "path": "assets/source/creatures/ancientYeti/repair-v2/shoot-atlas-v2.png",
+      "sha256": "ece414a264bee755b69015a58294f1102bd8d0c808bafdf923ee5ad8579af9f8"
+    }
+  ],
+  "frame_sha256": {
+    "assets/source/creatures/ancientYeti/registered-v3/native/g00-f000.png": "ae8157eadf8e03c5b3fa8560cc64032ac847acd7f06b7e06bf6f393b63371b42",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g00-f001.png": "12fd8189b0ba65fab94d3058d4a2c393ea77559bfeb9dcf533ba7c6b04c898b5",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g00-f002.png": "7a4b2fe5ec984bd54cc2b6e3f3cacf336114b2f95e5c0d1bd045618533713670",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g00-f003.png": "5328a7f3c771a14bb3858b803f21e449e988df933503192513f3b2fbebd3ad4e",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g00-f004.png": "b04bee4bdccebbcb9864b4ba438b869edc26c04fe749451d18dfea2f3440dcf2",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g00-f005.png": "1c255b1a92a40aef0522c84d2032155899b9f00217023a9b078f50831ce6fdfd",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g01-f000.png": "6f2913498018fdc532f9a341db37cc1e78e44bcf1b6ce1d31499e3aaea9d524f",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g01-f001.png": "857e9dd288e5d797608b0878c9160106ec00e1729c5ddcee9a211fa78c13aea7",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g01-f002.png": "62fa4c41b866e6debb0f64547a7d28acd1932a45393d55447bd030d407691c4e",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g01-f003.png": "276534f660dafd95eb2e58f4090177f6caec720250fc8918530c8fd638bdd14a",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g01-f004.png": "6f2913498018fdc532f9a341db37cc1e78e44bcf1b6ce1d31499e3aaea9d524f",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g02-f000.png": "2527d422adf3dba10ed2c8756f046624e130721c48074b9160b517e7977fdb79",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g03-f000.png": "ab963fa09baa8fcb4bb7db849c7fcf38ed0344c98f8fa765efaa85226e6dfd0a",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g03-f001.png": "8dfd7110fc574d51f284c73e764f9a23b9ccf051d11d9f5523e7c6b109542465",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g03-f002.png": "911f64db9201a4499c1ea665ee128ed9c27a7ef85b017c2df287ac16cd99c70e",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g04-f000.png": "f099cfc748631cba9518df27b10f951a36cf32e100a356c981552d399e7f9b75",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g04-f001.png": "ef2485720b36d8365039f18f47814a06636782297a90001f485c60a654b97411",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g04-f002.png": "786ede683dc587bd9605047f7995c30fe7bace0e65477e9a1139fe54640515e6",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g05-f000.png": "3e5f90c66462bc1b2fb01d91408902573f9596bd2376c1b0d3b22849c1683f24",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g05-f001.png": "4dc13c060e2e4f77415d58af4a567821ee8ca7f00b37ea7affe2f17c94b3ce95",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g05-f002.png": "7224d5e395b4023a162381c00abc58c87b90e431cfac7ec4aa81b892765797a8",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g05-f003.png": "1d40ad20504f2b676b29fa290e9bf59535301699532ef08a07076cb6eea79fe5",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g05-f004.png": "99eafe64c62f2cfb37d75d6fe106d350a03ca7b3b167f6832c1fa42ec3d3ce80",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g05-f005.png": "58037245303c92bec5fc152a021422feb2c58a7ecb9177a01c532034bdaf4167",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g07-f000.png": "18d1ef1c48a5c57e0e9d19e4f9f9ded7cbdc172ebe7569b23fe69b87c6376805",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g07-f001.png": "81302c80072d0fd18963e9f4fb5c530f4c0208e59863b515f322e3fd5195a640",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g07-f002.png": "2ddb72e439be0c13ffa092db42a7048b0fdb2b9f98458d169fcdcc8bd959f5de",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g08-f000.png": "2ddb72e439be0c13ffa092db42a7048b0fdb2b9f98458d169fcdcc8bd959f5de",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g08-f001.png": "81302c80072d0fd18963e9f4fb5c530f4c0208e59863b515f322e3fd5195a640",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g08-f002.png": "18d1ef1c48a5c57e0e9d19e4f9f9ded7cbdc172ebe7569b23fe69b87c6376805",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g11-f000.png": "ff2ac03e86e6f40efbebc388aa156f89449926fe2f379b579bb6e6d895d36fda",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g11-f001.png": "1af178473742ee25ef9a0540da45a5dbc02158c70ba8a432d344acb256718f19",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g11-f002.png": "b5cd121141c8854caf7f8a63f65391b7ec3e9e84a8d1ffdde2e740bdae923b98",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g11-f003.png": "26503af75def5dbeb77c6acb79997982a8ca6ae490867783b2e75b4019aa768c",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g11-f004.png": "12594c2b5e35cd71dc17ec9d2172fc9fbe857daf2833cce2d4b4e6847744a6c8",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g11-f005.png": "ec08b1d84c965cba354ecba2a29a67bad6e2a7985056a5f09290decf03958ae1",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g12-f000.png": "c0268a6be114f57b117f8d11bba84fc1981cb5b69de7d800ee37fb59dd77f479",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g12-f001.png": "d8fae8e403687ba237aa3953e4f7f8a3e5ff40685e355afbf7d9fb6a03c46e63",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g12-f002.png": "40e5ec3e1779308a75616c05170de7917a9bbae92a20da33e81c2f22a66c3ed1",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g12-f003.png": "78b3b8b2cb7c093e40ba3491f9c5e4aa2af2fe9f9dd24145169694c11607d5cd",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g12-f004.png": "7debb1e00d3d514ee604ca12171787b2ab68d3623389e817399761c770392bca",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g12-f005.png": "e0d298716a112ec4f76d9745acbabda54af6a1973f1e288b8fa48ddf384c360a",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g13-f000.png": "3e57d0869deb8c0e5ecf3889f7fa5147b1a0973de9635545fb0f3cbc696810d9",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g13-f001.png": "0a628ed4bb3fc1586e678da6044758b387e6178a2c530f23fd9461657517ecd5",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g13-f002.png": "e7e58f1bd74e27d7657935d759841ed66fa49db5573b1b99b1f4b94b40ec3121",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g13-f003.png": "e497794df1d1c75b134514c6b8467b5455ba09298beb9f84bd31c65fdae09a7e",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g13-f004.png": "902cac9fc69425be44f67edd7d088613779363e593247912c5473930e0562c2f",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g13-f005.png": "2221f0aaab66f58996da16cf9359192d8607da41cf3256804dad5a6f35602850",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g22-f000.png": "58037245303c92bec5fc152a021422feb2c58a7ecb9177a01c532034bdaf4167",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g23-f000.png": "58037245303c92bec5fc152a021422feb2c58a7ecb9177a01c532034bdaf4167",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g14-f000.png": "0a7cddb8e167107b5a403a99273aee20458ef51e5e6fbe19cfd71ae6f87174d5",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g14-f001.png": "4d013cae3455b3fb6db5aa240fd3736803ccad7b2afadd3adc7d18807ed9effb",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g14-f002.png": "1a0b01ee93a12345c14cc1fbde5a60fb1822c9f418fdc3809e3bc1ec906c4bfe",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g14-f003.png": "6e0677232cf2764f050999eac7172f705197791f40afe72a4f492cffbc536914",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g14-f004.png": "25edb0bdda31e969d74256e67a8199be7d9970e5a65b6b36cb227b804fb51c94",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g14-f005.png": "db2fb2202e5e20b9d70d5041cf45d9a2c97fc0f310898b9ecfa08d235f4ae21d",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g15-f000.png": "65ac3a07e065e19de5c43e2fe51e21c0ceb44a6aed7a8781b2516baeebfd7265",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g15-f001.png": "d44d733cf76f5f0059a97c39374b48fa9ab06ca39c1e318d3489bbe36b101917",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g15-f002.png": "471ffc03e41244319592f612f407884f31853921201592341ebe6ab514f5f139",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g15-f003.png": "2e627ec3e54f2a6b3bb82076dcaddd316b1e89b98a12d8933c32eb8e37286c87",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g15-f004.png": "7b0f3facc6c83024f102a9bc353ce42b338e1419e2f0737a5e0655f2d6b825c1",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g15-f005.png": "eb65addcfc65f70a90987abdd97e007f26d02e6cfe01c39bc468c036fc14dd23",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g16-f000.png": "3a2d46137843563ae408c8a81d7c289e9a23ead0f1783d0768b2d0ef37b6f27b",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g16-f001.png": "829af43df8938577aa8197b24d2dfc9c48e7bbfde2e74129a66979655f171448",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g16-f002.png": "81e8236396d9dbacbe241c6328b8fd02879982c1da36fe2d39c165dd34cc8475",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g16-f003.png": "ac4fdace956d75ee72de38e3d212abe702695ee0a4b4cd2cffd7928d1564dffb",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g16-f004.png": "c846a459b390bb6cd3376c54f2b772dbcad95c1f6143dd9742d28639ef080557",
+    "assets/source/creatures/ancientYeti/registered-v3/native/g16-f005.png": "27c02bda9faf28b7ee21d42cdc97ac0844d6522f99a7df21c3decd11200c7335"
+  },
+  "source_cells": [
+    {
+      "group": 0,
+      "frame": 0,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 8,
+      "source_bbox": [
+        0,
+        2,
+        199,
+        208
+      ],
+      "source_opaque_bbox": [
+        10,
+        15,
+        178,
+        174
+      ],
+      "source_opaque_area": 17219,
+      "source_centroid": [
+        98.28921540159126,
+        96.66728613740635
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 4,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 0,
+      "row_ground_baseline": 174.5,
+      "row_float_center": 96.28133420289316,
+      "source_camera_anchor": [
+        90.5,
+        174.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 0,
+      "frame": 1,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 1,
+      "source_bbox": [
+        179,
+        0,
+        381,
+        193
+      ],
+      "source_opaque_bbox": [
+        196,
+        13,
+        354,
+        174
+      ],
+      "source_opaque_area": 16569,
+      "source_centroid": [
+        275.7029995775243,
+        93.9738065061259
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 1,
+      "row_ground_baseline": 174.5,
+      "row_float_center": 96.28133420289316,
+      "source_camera_anchor": [
+        271.5,
+        174.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 0,
+      "frame": 2,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 5,
+      "source_bbox": [
+        355,
+        0,
+        544,
+        198
+      ],
+      "source_opaque_bbox": [
+        372,
+        14,
+        533,
+        174
+      ],
+      "source_opaque_area": 16847,
+      "source_centroid": [
+        452.1013830355553,
+        95.49955481688134
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 2,
+      "row_ground_baseline": 174.5,
+      "row_float_center": 96.28133420289316,
+      "source_camera_anchor": [
+        452.5,
+        174.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 0,
+      "frame": 3,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 7,
+      "source_bbox": [
+        525,
+        7,
+        732,
+        208
+      ],
+      "source_opaque_bbox": [
+        547,
+        14,
+        711,
+        175
+      ],
+      "source_opaque_area": 17043,
+      "source_centroid": [
+        630.1820102094701,
+        95.89538226837998
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 3,
+      "row_ground_baseline": 174.5,
+      "row_float_center": 96.28133420289316,
+      "source_camera_anchor": [
+        633.5,
+        174.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 0,
+      "frame": 4,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 47,
+      "source_bbox": [
+        711,
+        12,
+        911,
+        199
+      ],
+      "source_opaque_bbox": [
+        732,
+        19,
+        895,
+        176
+      ],
+      "source_opaque_area": 16881,
+      "source_centroid": [
+        817.4306024524614,
+        99.51057401812689
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 4,
+      "row_ground_baseline": 174.5,
+      "row_float_center": 96.28133420289316,
+      "source_camera_anchor": [
+        814.5,
+        174.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 0,
+      "frame": 5,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 64,
+      "source_bbox": [
+        897,
+        12,
+        1086,
+        228
+      ],
+      "source_opaque_bbox": [
+        910,
+        21,
+        1080,
+        175
+      ],
+      "source_opaque_area": 16619,
+      "source_centroid": [
+        996.8259823094049,
+        99.96479932607257
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 5,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 5,
+      "row_ground_baseline": 174.5,
+      "row_float_center": 96.28133420289316,
+      "source_camera_anchor": [
+        995.5,
+        174.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 1,
+      "frame": 0,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 1480,
+      "source_bbox": [
+        0,
+        174,
+        196,
+        375
+      ],
+      "source_opaque_bbox": [
+        22,
+        190,
+        171,
+        354
+      ],
+      "source_opaque_area": 17269,
+      "source_centroid": [
+        93.39805431698419,
+        273.0433146099948
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 0,
+      "row_ground_baseline": 357,
+      "row_float_center": 274.64992541024367,
+      "source_camera_anchor": [
+        90.5,
+        357
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 1,
+      "frame": 1,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 1502,
+      "source_bbox": [
+        178,
+        180,
+        372,
+        379
+      ],
+      "source_opaque_bbox": [
+        207,
+        194,
+        353,
+        355
+      ],
+      "source_opaque_area": 16088,
+      "source_centroid": [
+        274.3468423669816,
+        274.64992541024367
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 1,
+      "row_ground_baseline": 357,
+      "row_float_center": 274.64992541024367,
+      "source_camera_anchor": [
+        271.5,
+        357
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 1,
+      "frame": 2,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 1482,
+      "source_bbox": [
+        365,
+        178,
+        559,
+        373
+      ],
+      "source_opaque_bbox": [
+        382,
+        190,
+        540,
+        357
+      ],
+      "source_opaque_area": 17748,
+      "source_centroid": [
+        454.42911877394636,
+        274.3127112914131
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 2,
+      "row_ground_baseline": 357,
+      "row_float_center": 274.64992541024367,
+      "source_camera_anchor": [
+        452.5,
+        357
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 1,
+      "frame": 3,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 1520,
+      "source_bbox": [
+        541,
+        186,
+        728,
+        375
+      ],
+      "source_opaque_bbox": [
+        559,
+        196,
+        707,
+        358
+      ],
+      "source_opaque_area": 16634,
+      "source_centroid": [
+        628.5804376578093,
+        277.8654562943369
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 2,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 3,
+      "row_ground_baseline": 357,
+      "row_float_center": 274.64992541024367,
+      "source_camera_anchor": [
+        633.5,
+        357
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 1,
+      "frame": 4,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 1480,
+      "source_bbox": [
+        0,
+        174,
+        196,
+        375
+      ],
+      "source_opaque_bbox": [
+        22,
+        190,
+        171,
+        354
+      ],
+      "source_opaque_area": 17269,
+      "source_centroid": [
+        93.39805431698419,
+        273.0433146099948
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 0,
+      "row_ground_baseline": 357,
+      "row_float_center": 274.64992541024367,
+      "source_camera_anchor": [
+        90.5,
+        357
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 2,
+      "frame": 0,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 1493,
+      "source_bbox": [
+        717,
+        176,
+        931,
+        393
+      ],
+      "source_opaque_bbox": [
+        736,
+        192,
+        887,
+        357
+      ],
+      "source_opaque_area": 17064,
+      "source_centroid": [
+        807.0478199718706,
+        277.3190928270042
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 4,
+      "row_ground_baseline": 357,
+      "row_float_center": 274.64992541024367,
+      "source_camera_anchor": [
+        814.5,
+        357
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 3,
+      "frame": 0,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 2648,
+      "source_bbox": [
+        0,
+        365,
+        199,
+        567
+      ],
+      "source_opaque_bbox": [
+        21,
+        376,
+        182,
+        547
+      ],
+      "source_opaque_area": 18655,
+      "source_centroid": [
+        96.20546770302867,
+        459.5813454837845
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 2,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 2,
+      "source_column": 0,
+      "row_ground_baseline": 543.5,
+      "row_float_center": 460.35597629381584,
+      "source_camera_anchor": [
+        90.5,
+        543.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 3,
+      "frame": 1,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 2656,
+      "source_bbox": [
+        180,
+        362,
+        379,
+        582
+      ],
+      "source_opaque_bbox": [
+        205,
+        378,
+        361,
+        548
+      ],
+      "source_opaque_area": 19026,
+      "source_centroid": [
+        283.7382003574057,
+        460.14716703458424
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 3,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 2,
+      "source_column": 1,
+      "row_ground_baseline": 543.5,
+      "row_float_center": 460.35597629381584,
+      "source_camera_anchor": [
+        271.5,
+        543.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 3,
+      "frame": 2,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 2741,
+      "source_bbox": [
+        365,
+        376,
+        546,
+        590
+      ],
+      "source_opaque_bbox": [
+        385,
+        389,
+        536,
+        545
+      ],
+      "source_opaque_area": 16981,
+      "source_centroid": [
+        455.70926329427004,
+        468.97544314233556
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 3,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 2,
+      "source_column": 2,
+      "row_ground_baseline": 543.5,
+      "row_float_center": 460.35597629381584,
+      "source_camera_anchor": [
+        452.5,
+        543.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 4,
+      "frame": 0,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 2651,
+      "source_bbox": [
+        541,
+        365,
+        735,
+        564
+      ],
+      "source_opaque_bbox": [
+        555,
+        377,
+        724,
+        542
+      ],
+      "source_opaque_area": 17720,
+      "source_centroid": [
+        636.2225169300226,
+        460.5647855530474
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 3,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 2,
+      "source_column": 3,
+      "row_ground_baseline": 543.5,
+      "row_float_center": 460.35597629381584,
+      "source_camera_anchor": [
+        633.5,
+        543.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 4,
+      "frame": 1,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 2652,
+      "source_bbox": [
+        699,
+        365,
+        903,
+        600
+      ],
+      "source_opaque_bbox": [
+        728,
+        377,
+        882,
+        540
+      ],
+      "source_opaque_area": 16765,
+      "source_centroid": [
+        809.6536832687145,
+        460.91613480465253
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 4,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 2,
+      "source_column": 4,
+      "row_ground_baseline": 543.5,
+      "row_float_center": 460.35597629381584,
+      "source_camera_anchor": [
+        814.5,
+        543.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 4,
+      "frame": 2,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 2647,
+      "source_bbox": [
+        894,
+        288,
+        1075,
+        598
+      ],
+      "source_opaque_bbox": [
+        907,
+        375,
+        1066,
+        539
+      ],
+      "source_opaque_area": 17205,
+      "source_centroid": [
+        986.3107817494914,
+        459.5228712583551
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 2,
+      "source_column": 5,
+      "row_ground_baseline": 543.5,
+      "row_float_center": 460.35597629381584,
+      "source_camera_anchor": [
+        995.5,
+        543.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 5,
+      "frame": 0,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 4038,
+      "source_bbox": [
+        0,
+        560,
+        197,
+        728
+      ],
+      "source_opaque_bbox": [
+        8,
+        572,
+        177,
+        712
+      ],
+      "source_opaque_area": 16918,
+      "source_centroid": [
+        97.09215037238444,
+        646.3860385388343
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 4,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 3,
+      "source_column": 0,
+      "row_ground_baseline": 712,
+      "row_float_center": 655.3778309703554,
+      "source_camera_anchor": [
+        90.5,
+        712
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 5,
+      "frame": 1,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 4040,
+      "source_bbox": [
+        174,
+        556,
+        366,
+        734
+      ],
+      "source_opaque_bbox": [
+        191,
+        573,
+        359,
+        712
+      ],
+      "source_opaque_area": 15897,
+      "source_centroid": [
+        269.1402151349311,
+        642.6728313518274
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 9,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 3,
+      "source_column": 1,
+      "row_ground_baseline": 712,
+      "row_float_center": 655.3778309703554,
+      "source_camera_anchor": [
+        271.5,
+        712
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 5,
+      "frame": 2,
+      "master": "assets/source/creatures/ancientYeti/repair-v3/collapse-two-poses-v3.png",
+      "master_sha256": "c3fafc8f0f089d07a39f5c54d8d2843ee2650d0bfead64542979b3bdfb231aa0",
+      "uniform_camera_scale": 0.1536,
+      "opaque_component": 1,
+      "source_bbox": [
+        0,
+        26,
+        1003,
+        920
+      ],
+      "source_opaque_bbox": [
+        170,
+        201,
+        884,
+        740
+      ],
+      "source_opaque_area": 220468,
+      "source_centroid": [
+        528.1161256962462,
+        501.21687501133954
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 0,
+      "row_ground_baseline": 740,
+      "row_float_center": 501.21687501133954,
+      "source_camera_anchor": [
+        512.0,
+        740
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 5,
+      "frame": 3,
+      "master": "assets/source/creatures/ancientYeti/repair-v3/collapse-two-poses-v3.png",
+      "master_sha256": "c3fafc8f0f089d07a39f5c54d8d2843ee2650d0bfead64542979b3bdfb231aa0",
+      "uniform_camera_scale": 0.1536,
+      "opaque_component": 1255,
+      "source_bbox": [
+        0,
+        886,
+        1013,
+        1536
+      ],
+      "source_opaque_bbox": [
+        73,
+        1055,
+        951,
+        1430
+      ],
+      "source_opaque_area": 185338,
+      "source_centroid": [
+        505.3025445402454,
+        1252.1790890157442
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 0,
+      "row_ground_baseline": 1430,
+      "row_float_center": 1252.1790890157442,
+      "source_camera_anchor": [
+        512.0,
+        1430
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 5,
+      "frame": 4,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 4227,
+      "source_bbox": [
+        715,
+        575,
+        934,
+        731
+      ],
+      "source_opaque_bbox": [
+        727,
+        619,
+        917,
+        712
+      ],
+      "source_opaque_area": 10629,
+      "source_centroid": [
+        821.9941669018723,
+        666.688399661304
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 19,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 3,
+      "source_column": 3,
+      "row_ground_baseline": 712,
+      "row_float_center": 655.3778309703554,
+      "source_camera_anchor": [
+        814.5,
+        712
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 5,
+      "frame": 5,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 4302,
+      "source_bbox": [
+        899,
+        595,
+        1086,
+        717
+      ],
+      "source_opaque_bbox": [
+        907,
+        633,
+        1083,
+        703
+      ],
+      "source_opaque_area": 8036,
+      "source_centroid": [
+        1000.5345943255351,
+        668.4178695868592
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 17,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 3,
+      "source_column": 4,
+      "row_ground_baseline": 712,
+      "row_float_center": 655.3778309703554,
+      "source_camera_anchor": [
+        995.5,
+        712
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 7,
+      "frame": 0,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 5017,
+      "source_bbox": [
+        0,
+        722,
+        182,
+        907
+      ],
+      "source_opaque_bbox": [
+        14,
+        735,
+        167,
+        893
+      ],
+      "source_opaque_area": 17164,
+      "source_centroid": [
+        90.27534374271731,
+        814.8340713120484
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 4,
+      "source_column": 0,
+      "row_ground_baseline": 898.0,
+      "row_float_center": 817.0179674966987,
+      "source_camera_anchor": [
+        90.5,
+        898.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 7,
+      "frame": 1,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 4981,
+      "source_bbox": [
+        173,
+        719,
+        364,
+        932
+      ],
+      "source_opaque_bbox": [
+        189,
+        728,
+        352,
+        895
+      ],
+      "source_opaque_area": 17687,
+      "source_centroid": [
+        266.1986204557019,
+        813.2672018997004
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 2,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 4,
+      "source_column": 1,
+      "row_ground_baseline": 898.0,
+      "row_float_center": 817.0179674966987,
+      "source_camera_anchor": [
+        271.5,
+        898.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 7,
+      "frame": 2,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 4984,
+      "source_bbox": [
+        353,
+        715,
+        555,
+        912
+      ],
+      "source_opaque_bbox": [
+        375,
+        729,
+        537,
+        897
+      ],
+      "source_opaque_area": 18897,
+      "source_centroid": [
+        453.95247922950733,
+        816.5665449542255
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 3,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 4,
+      "source_column": 2,
+      "row_ground_baseline": 898.0,
+      "row_float_center": 817.0179674966987,
+      "source_camera_anchor": [
+        452.5,
+        898.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 8,
+      "frame": 0,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 4984,
+      "source_bbox": [
+        353,
+        715,
+        555,
+        912
+      ],
+      "source_opaque_bbox": [
+        375,
+        729,
+        537,
+        897
+      ],
+      "source_opaque_area": 18897,
+      "source_centroid": [
+        453.95247922950733,
+        816.5665449542255
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 3,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 4,
+      "source_column": 2,
+      "row_ground_baseline": 898.0,
+      "row_float_center": 817.0179674966987,
+      "source_camera_anchor": [
+        452.5,
+        898.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 8,
+      "frame": 1,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 4981,
+      "source_bbox": [
+        173,
+        719,
+        364,
+        932
+      ],
+      "source_opaque_bbox": [
+        189,
+        728,
+        352,
+        895
+      ],
+      "source_opaque_area": 17687,
+      "source_centroid": [
+        266.1986204557019,
+        813.2672018997004
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 2,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 4,
+      "source_column": 1,
+      "row_ground_baseline": 898.0,
+      "row_float_center": 817.0179674966987,
+      "source_camera_anchor": [
+        271.5,
+        898.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 8,
+      "frame": 2,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 5017,
+      "source_bbox": [
+        0,
+        722,
+        182,
+        907
+      ],
+      "source_opaque_bbox": [
+        14,
+        735,
+        167,
+        893
+      ],
+      "source_opaque_area": 17164,
+      "source_centroid": [
+        90.27534374271731,
+        814.8340713120484
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 4,
+      "source_column": 0,
+      "row_ground_baseline": 898.0,
+      "row_float_center": 817.0179674966987,
+      "source_camera_anchor": [
+        90.5,
+        898.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 11,
+      "frame": 0,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 6590,
+      "source_bbox": [
+        0,
+        915,
+        196,
+        1083
+      ],
+      "source_opaque_bbox": [
+        15,
+        926,
+        177,
+        1071
+      ],
+      "source_opaque_area": 15057,
+      "source_centroid": [
+        93.01693564455071,
+        998.7292289300658
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 5,
+      "source_column": 0,
+      "row_ground_baseline": 1073.5,
+      "row_float_center": 996.1705233150594,
+      "source_camera_anchor": [
+        90.5,
+        1073.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 11,
+      "frame": 1,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 6480,
+      "source_bbox": [
+        184,
+        889,
+        370,
+        1089
+      ],
+      "source_opaque_bbox": [
+        196,
+        906,
+        357,
+        1070
+      ],
+      "source_opaque_area": 15906,
+      "source_centroid": [
+        275.940588457186,
+        990.8370426254244
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 2,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 5,
+      "source_column": 1,
+      "row_ground_baseline": 1073.5,
+      "row_float_center": 996.1705233150594,
+      "source_camera_anchor": [
+        271.5,
+        1073.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 11,
+      "frame": 2,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 6485,
+      "source_bbox": [
+        383,
+        896,
+        548,
+        1089
+      ],
+      "source_opaque_bbox": [
+        391,
+        910,
+        531,
+        1075
+      ],
+      "source_opaque_area": 14813,
+      "source_centroid": [
+        459.0144467697293,
+        990.5924525754405
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 3,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 5,
+      "source_column": 2,
+      "row_ground_baseline": 1073.5,
+      "row_float_center": 996.1705233150594,
+      "source_camera_anchor": [
+        452.5,
+        1073.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 11,
+      "frame": 3,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 6487,
+      "source_bbox": [
+        541,
+        899,
+        732,
+        1088
+      ],
+      "source_opaque_bbox": [
+        566,
+        910,
+        718,
+        1075
+      ],
+      "source_opaque_area": 15096,
+      "source_centroid": [
+        643.6128113407525,
+        993.6118177000529
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 5,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 5,
+      "source_column": 3,
+      "row_ground_baseline": 1073.5,
+      "row_float_center": 996.1705233150594,
+      "source_camera_anchor": [
+        633.5,
+        1073.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 11,
+      "frame": 4,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 6656,
+      "source_bbox": [
+        727,
+        926,
+        911,
+        1085
+      ],
+      "source_opaque_bbox": [
+        741,
+        933,
+        897,
+        1073
+      ],
+      "source_opaque_area": 13906,
+      "source_centroid": [
+        818.3353947936142,
+        1005.2502516899181
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 4,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 5,
+      "source_column": 4,
+      "row_ground_baseline": 1073.5,
+      "row_float_center": 996.1705233150594,
+      "source_camera_anchor": [
+        814.5,
+        1073.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 11,
+      "frame": 5,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 6657,
+      "source_bbox": [
+        908,
+        927,
+        1081,
+        1085
+      ],
+      "source_opaque_bbox": [
+        923,
+        933,
+        1070,
+        1074
+      ],
+      "source_opaque_area": 13454,
+      "source_centroid": [
+        995.7919577820722,
+        1005.1464248550617
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 7,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 5,
+      "source_column": 5,
+      "row_ground_baseline": 1073.5,
+      "row_float_center": 996.1705233150594,
+      "source_camera_anchor": [
+        995.5,
+        1073.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 12,
+      "frame": 0,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 7952,
+      "source_bbox": [
+        0,
+        1074,
+        200,
+        1246
+      ],
+      "source_opaque_bbox": [
+        8,
+        1091,
+        182,
+        1235
+      ],
+      "source_opaque_area": 15100,
+      "source_centroid": [
+        93.75417218543046,
+        1163.9540397350993
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 4,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 6,
+      "source_column": 0,
+      "row_ground_baseline": 1239.5,
+      "row_float_center": 1162.3683288888672,
+      "source_camera_anchor": [
+        90.5,
+        1239.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 12,
+      "frame": 1,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 7944,
+      "source_bbox": [
+        174,
+        1063,
+        394,
+        1260
+      ],
+      "source_opaque_bbox": [
+        187,
+        1089,
+        381,
+        1239
+      ],
+      "source_opaque_area": 17401,
+      "source_centroid": [
+        282.06430664904315,
+        1160.7938049537383
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 2,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 6,
+      "source_column": 1,
+      "row_ground_baseline": 1239.5,
+      "row_float_center": 1162.3683288888672,
+      "source_camera_anchor": [
+        271.5,
+        1239.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 12,
+      "frame": 2,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 7949,
+      "source_bbox": [
+        348,
+        1073,
+        558,
+        1264
+      ],
+      "source_opaque_bbox": [
+        381,
+        1090,
+        544,
+        1240
+      ],
+      "source_opaque_area": 15203,
+      "source_centroid": [
+        467.0780766953891,
+        1164.9973689403407
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 3,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 6,
+      "source_column": 2,
+      "row_ground_baseline": 1239.5,
+      "row_float_center": 1162.3683288888672,
+      "source_camera_anchor": [
+        452.5,
+        1239.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 12,
+      "frame": 3,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 7966,
+      "source_bbox": [
+        535,
+        1074,
+        756,
+        1280
+      ],
+      "source_opaque_bbox": [
+        552,
+        1092,
+        747,
+        1241
+      ],
+      "source_opaque_area": 18061,
+      "source_centroid": [
+        647.0744144842479,
+        1161.0107967443664
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 5,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 6,
+      "source_column": 3,
+      "row_ground_baseline": 1239.5,
+      "row_float_center": 1162.3683288888672,
+      "source_camera_anchor": [
+        633.5,
+        1239.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 12,
+      "frame": 4,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 7926,
+      "source_bbox": [
+        719,
+        1073,
+        927,
+        1275
+      ],
+      "source_opaque_bbox": [
+        748,
+        1083,
+        908,
+        1240
+      ],
+      "source_opaque_area": 16145,
+      "source_centroid": [
+        827.0224837410963,
+        1162.380799008981
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 6,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 6,
+      "source_column": 4,
+      "row_ground_baseline": 1239.5,
+      "row_float_center": 1162.3683288888672,
+      "source_camera_anchor": [
+        814.5,
+        1239.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 12,
+      "frame": 5,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 7927,
+      "source_bbox": [
+        918,
+        1074,
+        1086,
+        1256
+      ],
+      "source_opaque_bbox": [
+        925,
+        1083,
+        1077,
+        1239
+      ],
+      "source_opaque_area": 15464,
+      "source_centroid": [
+        999.5732669425763,
+        1162.3558587687533
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 6,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 6,
+      "source_column": 5,
+      "row_ground_baseline": 1239.5,
+      "row_float_center": 1162.3683288888672,
+      "source_camera_anchor": [
+        995.5,
+        1239.5
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 13,
+      "frame": 0,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 9295,
+      "source_bbox": [
+        0,
+        1228,
+        183,
+        1448
+      ],
+      "source_opaque_bbox": [
+        16,
+        1242,
+        170,
+        1428
+      ],
+      "source_opaque_area": 18774,
+      "source_centroid": [
+        89.91669329924363,
+        1334.1201129221263
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 4,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 7,
+      "source_column": 0,
+      "row_ground_baseline": 1422.0,
+      "row_float_center": 1347.427148012379,
+      "source_camera_anchor": [
+        90.5,
+        1422.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 13,
+      "frame": 1,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 9326,
+      "source_bbox": [
+        176,
+        1240,
+        377,
+        1431
+      ],
+      "source_opaque_bbox": [
+        186,
+        1257,
+        358,
+        1420
+      ],
+      "source_opaque_area": 18751,
+      "source_centroid": [
+        275.600554637086,
+        1343.7341475121327
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 3,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 7,
+      "source_column": 1,
+      "row_ground_baseline": 1422.0,
+      "row_float_center": 1347.427148012379,
+      "source_camera_anchor": [
+        271.5,
+        1422.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 13,
+      "frame": 2,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 9400,
+      "source_bbox": [
+        355,
+        1243,
+        554,
+        1437
+      ],
+      "source_opaque_bbox": [
+        368,
+        1272,
+        535,
+        1422
+      ],
+      "source_opaque_area": 17885,
+      "source_centroid": [
+        452.72574783337996,
+        1350.4390271176965
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 3,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 7,
+      "source_column": 2,
+      "row_ground_baseline": 1422.0,
+      "row_float_center": 1347.427148012379,
+      "source_camera_anchor": [
+        452.5,
+        1422.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 13,
+      "frame": 3,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 9522,
+      "source_bbox": [
+        535,
+        1274,
+        736,
+        1448
+      ],
+      "source_opaque_bbox": [
+        547,
+        1287,
+        717,
+        1422
+      ],
+      "source_opaque_area": 14850,
+      "source_centroid": [
+        628.1549494949495,
+        1357.219595959596
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 2,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 7,
+      "source_column": 3,
+      "row_ground_baseline": 1422.0,
+      "row_float_center": 1347.427148012379,
+      "source_camera_anchor": [
+        633.5,
+        1422.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 13,
+      "frame": 4,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 9433,
+      "source_bbox": [
+        713,
+        1259,
+        918,
+        1435
+      ],
+      "source_opaque_bbox": [
+        731,
+        1275,
+        899,
+        1422
+      ],
+      "source_opaque_area": 16116,
+      "source_centroid": [
+        811.8530032266071,
+        1350.6587242491933
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 2,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 7,
+      "source_column": 4,
+      "row_ground_baseline": 1422.0,
+      "row_float_center": 1347.427148012379,
+      "source_camera_anchor": [
+        814.5,
+        1422.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 13,
+      "frame": 5,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 9347,
+      "source_bbox": [
+        898,
+        1254,
+        1086,
+        1437
+      ],
+      "source_opaque_bbox": [
+        915,
+        1262,
+        1075,
+        1423
+      ],
+      "source_opaque_area": 16753,
+      "source_centroid": [
+        993.2131558526831,
+        1344.4152689070613
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 2,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 7,
+      "source_column": 5,
+      "row_ground_baseline": 1422.0,
+      "row_float_center": 1347.427148012379,
+      "source_camera_anchor": [
+        995.5,
+        1422.0
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 22,
+      "frame": 0,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 4302,
+      "source_bbox": [
+        899,
+        595,
+        1086,
+        717
+      ],
+      "source_opaque_bbox": [
+        907,
+        633,
+        1083,
+        703
+      ],
+      "source_opaque_area": 8036,
+      "source_centroid": [
+        1000.5345943255351,
+        668.4178695868592
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 17,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 3,
+      "source_column": 4,
+      "row_ground_baseline": 712,
+      "row_float_center": 655.3778309703554,
+      "source_camera_anchor": [
+        995.5,
+        712
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 23,
+      "frame": 0,
+      "master": "assets/source/creatures/ancientYeti/controlled-v1/action-atlas-v1.png",
+      "master_sha256": "a4e10490248d60d8de006875385d995f694c0a9eb03aaea454ef2e550a26dabd",
+      "uniform_camera_scale": 0.64,
+      "opaque_component": 4302,
+      "source_bbox": [
+        899,
+        595,
+        1086,
+        717
+      ],
+      "source_opaque_bbox": [
+        907,
+        633,
+        1083,
+        703
+      ],
+      "source_opaque_area": 8036,
+      "source_centroid": [
+        1000.5345943255351,
+        668.4178695868592
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 17,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 3,
+      "source_column": 4,
+      "row_ground_baseline": 712,
+      "row_float_center": 655.3778309703554,
+      "source_camera_anchor": [
+        995.5,
+        712
+      ],
+      "excluded_detached_native_projectiles": []
+    },
+    {
+      "group": 14,
+      "frame": 0,
+      "master": "assets/source/creatures/ancientYeti/repair-v2/shoot-atlas-v2.png",
+      "master_sha256": "ece414a264bee755b69015a58294f1102bd8d0c808bafdf923ee5ad8579af9f8",
+      "uniform_camera_scale": 0.39179255918827505,
+      "opaque_component": 572,
+      "source_bbox": [
+        0,
+        87,
+        299,
+        398
+      ],
+      "source_opaque_bbox": [
+        8,
+        136,
+        288,
+        332
+      ],
+      "source_opaque_area": 35229,
+      "source_centroid": [
+        154.85554514746374,
+        249.32788327798121
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 4,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 0,
+      "row_ground_baseline": 338.0,
+      "row_float_center": 221.32474920035338,
+      "source_camera_anchor": [
+        147.83333333333334,
+        338.0
+      ],
+      "excluded_detached_native_projectiles": [
+        {
+          "component": 1,
+          "bbox": [
+            1352,
+            7,
+            1489,
+            118
+          ],
+          "area": 10577
+        },
+        {
+          "component": 5582,
+          "bbox": [
+            1381,
+            782,
+            1492,
+            877
+          ],
+          "area": 7842
+        },
+        {
+          "component": 2640,
+          "bbox": [
+            1379,
+            395,
+            1494,
+            477
+          ],
+          "area": 7200
+        }
+      ]
+    },
+    {
+      "group": 14,
+      "frame": 1,
+      "master": "assets/source/creatures/ancientYeti/repair-v2/shoot-atlas-v2.png",
+      "master_sha256": "ece414a264bee755b69015a58294f1102bd8d0c808bafdf923ee5ad8579af9f8",
+      "uniform_camera_scale": 0.39179255918827505,
+      "opaque_component": 358,
+      "source_bbox": [
+        290,
+        26,
+        614,
+        376
+      ],
+      "source_opaque_bbox": [
+        334,
+        110,
+        578,
+        336
+      ],
+      "source_opaque_area": 37220,
+      "source_centroid": [
+        448.72264911337993,
+        228.6661472326706
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 1,
+      "row_ground_baseline": 338.0,
+      "row_float_center": 221.32474920035338,
+      "source_camera_anchor": [
+        443.5,
+        338.0
+      ],
+      "excluded_detached_native_projectiles": [
+        {
+          "component": 1,
+          "bbox": [
+            1352,
+            7,
+            1489,
+            118
+          ],
+          "area": 10577
+        },
+        {
+          "component": 5582,
+          "bbox": [
+            1381,
+            782,
+            1492,
+            877
+          ],
+          "area": 7842
+        },
+        {
+          "component": 2640,
+          "bbox": [
+            1379,
+            395,
+            1494,
+            477
+          ],
+          "area": 7200
+        }
+      ]
+    },
+    {
+      "group": 14,
+      "frame": 2,
+      "master": "assets/source/creatures/ancientYeti/repair-v2/shoot-atlas-v2.png",
+      "master_sha256": "ece414a264bee755b69015a58294f1102bd8d0c808bafdf923ee5ad8579af9f8",
+      "uniform_camera_scale": 0.39179255918827505,
+      "opaque_component": 4,
+      "source_bbox": [
+        562,
+        0,
+        892,
+        366
+      ],
+      "source_opaque_bbox": [
+        618,
+        10,
+        825,
+        339
+      ],
+      "source_opaque_area": 48705,
+      "source_centroid": [
+        719.3586695411149,
+        169.85711939225953
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 5,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 2,
+      "row_ground_baseline": 338.0,
+      "row_float_center": 221.32474920035338,
+      "source_camera_anchor": [
+        739.1666666666666,
+        338.0
+      ],
+      "excluded_detached_native_projectiles": [
+        {
+          "component": 1,
+          "bbox": [
+            1352,
+            7,
+            1489,
+            118
+          ],
+          "area": 10577
+        },
+        {
+          "component": 5582,
+          "bbox": [
+            1381,
+            782,
+            1492,
+            877
+          ],
+          "area": 7842
+        },
+        {
+          "component": 2640,
+          "bbox": [
+            1379,
+            395,
+            1494,
+            477
+          ],
+          "area": 7200
+        }
+      ]
+    },
+    {
+      "group": 14,
+      "frame": 3,
+      "master": "assets/source/creatures/ancientYeti/repair-v2/shoot-atlas-v2.png",
+      "master_sha256": "ece414a264bee755b69015a58294f1102bd8d0c808bafdf923ee5ad8579af9f8",
+      "uniform_camera_scale": 0.39179255918827505,
+      "opaque_component": 142,
+      "source_bbox": [
+        843,
+        28,
+        1165,
+        386
+      ],
+      "source_opaque_bbox": [
+        882,
+        76,
+        1153,
+        338
+      ],
+      "source_opaque_area": 34505,
+      "source_centroid": [
+        1009.929807274308,
+        221.5668164034198
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 3,
+      "row_ground_baseline": 338.0,
+      "row_float_center": 221.32474920035338,
+      "source_camera_anchor": [
+        1034.8333333333333,
+        338.0
+      ],
+      "excluded_detached_native_projectiles": [
+        {
+          "component": 1,
+          "bbox": [
+            1352,
+            7,
+            1489,
+            118
+          ],
+          "area": 10577
+        },
+        {
+          "component": 5582,
+          "bbox": [
+            1381,
+            782,
+            1492,
+            877
+          ],
+          "area": 7842
+        },
+        {
+          "component": 2640,
+          "bbox": [
+            1379,
+            395,
+            1494,
+            477
+          ],
+          "area": 7200
+        }
+      ]
+    },
+    {
+      "group": 14,
+      "frame": 4,
+      "master": "assets/source/creatures/ancientYeti/repair-v2/shoot-atlas-v2.png",
+      "master_sha256": "ece414a264bee755b69015a58294f1102bd8d0c808bafdf923ee5ad8579af9f8",
+      "uniform_camera_scale": 0.39179255918827505,
+      "opaque_component": 173,
+      "source_bbox": [
+        1133,
+        40,
+        1415,
+        374
+      ],
+      "source_opaque_bbox": [
+        1168,
+        81,
+        1406,
+        338
+      ],
+      "source_opaque_area": 30962,
+      "source_centroid": [
+        1281.082197532459,
+        221.08268199728698
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 3,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 4,
+      "row_ground_baseline": 338.0,
+      "row_float_center": 221.32474920035338,
+      "source_camera_anchor": [
+        1330.5,
+        338.0
+      ],
+      "excluded_detached_native_projectiles": [
+        {
+          "component": 1,
+          "bbox": [
+            1352,
+            7,
+            1489,
+            118
+          ],
+          "area": 10577
+        },
+        {
+          "component": 5582,
+          "bbox": [
+            1381,
+            782,
+            1492,
+            877
+          ],
+          "area": 7842
+        },
+        {
+          "component": 2640,
+          "bbox": [
+            1379,
+            395,
+            1494,
+            477
+          ],
+          "area": 7200
+        }
+      ]
+    },
+    {
+      "group": 14,
+      "frame": 5,
+      "master": "assets/source/creatures/ancientYeti/repair-v2/shoot-atlas-v2.png",
+      "master_sha256": "ece414a264bee755b69015a58294f1102bd8d0c808bafdf923ee5ad8579af9f8",
+      "uniform_camera_scale": 0.39179255918827505,
+      "opaque_component": 134,
+      "source_bbox": [
+        1455,
+        44,
+        1769,
+        392
+      ],
+      "source_opaque_bbox": [
+        1507,
+        73,
+        1762,
+        338
+      ],
+      "source_opaque_area": 31794,
+      "source_centroid": [
+        1617.8198716739007,
+        219.0324589545197
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 0,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 0,
+      "source_column": 5,
+      "row_ground_baseline": 338.0,
+      "row_float_center": 221.32474920035338,
+      "source_camera_anchor": [
+        1626.1666666666667,
+        338.0
+      ],
+      "excluded_detached_native_projectiles": [
+        {
+          "component": 1,
+          "bbox": [
+            1352,
+            7,
+            1489,
+            118
+          ],
+          "area": 10577
+        },
+        {
+          "component": 5582,
+          "bbox": [
+            1381,
+            782,
+            1492,
+            877
+          ],
+          "area": 7842
+        },
+        {
+          "component": 2640,
+          "bbox": [
+            1379,
+            395,
+            1494,
+            477
+          ],
+          "area": 7200
+        }
+      ]
+    },
+    {
+      "group": 15,
+      "frame": 0,
+      "master": "assets/source/creatures/ancientYeti/repair-v2/shoot-atlas-v2.png",
+      "master_sha256": "ece414a264bee755b69015a58294f1102bd8d0c808bafdf923ee5ad8579af9f8",
+      "uniform_camera_scale": 0.39179255918827505,
+      "opaque_component": 2611,
+      "source_bbox": [
+        0,
+        357,
+        316,
+        646
+      ],
+      "source_opaque_bbox": [
+        7,
+        390,
+        297,
+        582
+      ],
+      "source_opaque_area": 36834,
+      "source_centroid": [
+        155.50529402182767,
+        500.2244936743226
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 4,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 0,
+      "row_ground_baseline": 588.0,
+      "row_float_center": 491.3048050085221,
+      "source_camera_anchor": [
+        147.83333333333334,
+        588.0
+      ],
+      "excluded_detached_native_projectiles": [
+        {
+          "component": 1,
+          "bbox": [
+            1352,
+            7,
+            1489,
+            118
+          ],
+          "area": 10577
+        },
+        {
+          "component": 5582,
+          "bbox": [
+            1381,
+            782,
+            1492,
+            877
+          ],
+          "area": 7842
+        },
+        {
+          "component": 2640,
+          "bbox": [
+            1379,
+            395,
+            1494,
+            477
+          ],
+          "area": 7200
+        }
+      ]
+    },
+    {
+      "group": 15,
+      "frame": 1,
+      "master": "assets/source/creatures/ancientYeti/repair-v2/shoot-atlas-v2.png",
+      "master_sha256": "ece414a264bee755b69015a58294f1102bd8d0c808bafdf923ee5ad8579af9f8",
+      "uniform_camera_scale": 0.39179255918827505,
+      "opaque_component": 2550,
+      "source_bbox": [
+        308,
+        353,
+        614,
+        608
+      ],
+      "source_opaque_bbox": [
+        337,
+        371,
+        582,
+        582
+      ],
+      "source_opaque_area": 34670,
+      "source_centroid": [
+        453.56426305162967,
+        477.8211421978656
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 1,
+      "row_ground_baseline": 588.0,
+      "row_float_center": 491.3048050085221,
+      "source_camera_anchor": [
+        443.5,
+        588.0
+      ],
+      "excluded_detached_native_projectiles": [
+        {
+          "component": 1,
+          "bbox": [
+            1352,
+            7,
+            1489,
+            118
+          ],
+          "area": 10577
+        },
+        {
+          "component": 5582,
+          "bbox": [
+            1381,
+            782,
+            1492,
+            877
+          ],
+          "area": 7842
+        },
+        {
+          "component": 2640,
+          "bbox": [
+            1379,
+            395,
+            1494,
+            477
+          ],
+          "area": 7200
+        }
+      ]
+    },
+    {
+      "group": 15,
+      "frame": 2,
+      "master": "assets/source/creatures/ancientYeti/repair-v2/shoot-atlas-v2.png",
+      "master_sha256": "ece414a264bee755b69015a58294f1102bd8d0c808bafdf923ee5ad8579af9f8",
+      "uniform_camera_scale": 0.39179255918827505,
+      "opaque_component": 2519,
+      "source_bbox": [
+        576,
+        324,
+        890,
+        610
+      ],
+      "source_opaque_bbox": [
+        636,
+        340,
+        835,
+        587
+      ],
+      "source_opaque_area": 35828,
+      "source_centroid": [
+        731.7747013508988,
+        461.28952216143796
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 5,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 2,
+      "row_ground_baseline": 588.0,
+      "row_float_center": 491.3048050085221,
+      "source_camera_anchor": [
+        739.1666666666666,
+        588.0
+      ],
+      "excluded_detached_native_projectiles": [
+        {
+          "component": 1,
+          "bbox": [
+            1352,
+            7,
+            1489,
+            118
+          ],
+          "area": 10577
+        },
+        {
+          "component": 5582,
+          "bbox": [
+            1381,
+            782,
+            1492,
+            877
+          ],
+          "area": 7842
+        },
+        {
+          "component": 2640,
+          "bbox": [
+            1379,
+            395,
+            1494,
+            477
+          ],
+          "area": 7200
+        }
+      ]
+    },
+    {
+      "group": 15,
+      "frame": 3,
+      "master": "assets/source/creatures/ancientYeti/repair-v2/shoot-atlas-v2.png",
+      "master_sha256": "ece414a264bee755b69015a58294f1102bd8d0c808bafdf923ee5ad8579af9f8",
+      "uniform_camera_scale": 0.39179255918827505,
+      "opaque_component": 2577,
+      "source_bbox": [
+        841,
+        339,
+        1172,
+        616
+      ],
+      "source_opaque_bbox": [
+        881,
+        380,
+        1150,
+        589
+      ],
+      "source_opaque_area": 30112,
+      "source_centroid": [
+        1008.9958488310308,
+        486.6374867162593
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 3,
+      "row_ground_baseline": 588.0,
+      "row_float_center": 491.3048050085221,
+      "source_camera_anchor": [
+        1034.8333333333333,
+        588.0
+      ],
+      "excluded_detached_native_projectiles": [
+        {
+          "component": 1,
+          "bbox": [
+            1352,
+            7,
+            1489,
+            118
+          ],
+          "area": 10577
+        },
+        {
+          "component": 5582,
+          "bbox": [
+            1381,
+            782,
+            1492,
+            877
+          ],
+          "area": 7842
+        },
+        {
+          "component": 2640,
+          "bbox": [
+            1379,
+            395,
+            1494,
+            477
+          ],
+          "area": 7200
+        }
+      ]
+    },
+    {
+      "group": 15,
+      "frame": 4,
+      "master": "assets/source/creatures/ancientYeti/repair-v2/shoot-atlas-v2.png",
+      "master_sha256": "ece414a264bee755b69015a58294f1102bd8d0c808bafdf923ee5ad8579af9f8",
+      "uniform_camera_scale": 0.39179255918827505,
+      "opaque_component": 2790,
+      "source_bbox": [
+        1117,
+        365,
+        1428,
+        628
+      ],
+      "source_opaque_bbox": [
+        1155,
+        417,
+        1391,
+        592
+      ],
+      "source_opaque_area": 24008,
+      "source_centroid": [
+        1262.9438937020993,
+        501.674775074975
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 11,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 4,
+      "row_ground_baseline": 588.0,
+      "row_float_center": 491.3048050085221,
+      "source_camera_anchor": [
+        1330.5,
+        588.0
+      ],
+      "excluded_detached_native_projectiles": [
+        {
+          "component": 1,
+          "bbox": [
+            1352,
+            7,
+            1489,
+            118
+          ],
+          "area": 10577
+        },
+        {
+          "component": 5582,
+          "bbox": [
+            1381,
+            782,
+            1492,
+            877
+          ],
+          "area": 7842
+        },
+        {
+          "component": 2640,
+          "bbox": [
+            1379,
+            395,
+            1494,
+            477
+          ],
+          "area": 7200
+        }
+      ]
+    },
+    {
+      "group": 15,
+      "frame": 5,
+      "master": "assets/source/creatures/ancientYeti/repair-v2/shoot-atlas-v2.png",
+      "master_sha256": "ece414a264bee755b69015a58294f1102bd8d0c808bafdf923ee5ad8579af9f8",
+      "uniform_camera_scale": 0.39179255918827505,
+      "opaque_component": 2666,
+      "source_bbox": [
+        1423,
+        363,
+        1774,
+        626
+      ],
+      "source_opaque_bbox": [
+        1517,
+        399,
+        1767,
+        590
+      ],
+      "source_opaque_area": 26115,
+      "source_centroid": [
+        1633.0952709170974,
+        495.972123300785
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 3,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 1,
+      "source_column": 5,
+      "row_ground_baseline": 588.0,
+      "row_float_center": 491.3048050085221,
+      "source_camera_anchor": [
+        1626.1666666666667,
+        588.0
+      ],
+      "excluded_detached_native_projectiles": [
+        {
+          "component": 1,
+          "bbox": [
+            1352,
+            7,
+            1489,
+            118
+          ],
+          "area": 10577
+        },
+        {
+          "component": 5582,
+          "bbox": [
+            1381,
+            782,
+            1492,
+            877
+          ],
+          "area": 7842
+        },
+        {
+          "component": 2640,
+          "bbox": [
+            1379,
+            395,
+            1494,
+            477
+          ],
+          "area": 7200
+        }
+      ]
+    },
+    {
+      "group": 16,
+      "frame": 0,
+      "master": "assets/source/creatures/ancientYeti/repair-v2/shoot-atlas-v2.png",
+      "master_sha256": "ece414a264bee755b69015a58294f1102bd8d0c808bafdf923ee5ad8579af9f8",
+      "uniform_camera_scale": 0.39179255918827505,
+      "opaque_component": 4588,
+      "source_bbox": [
+        0,
+        613,
+        314,
+        878
+      ],
+      "source_opaque_bbox": [
+        9,
+        653,
+        295,
+        863
+      ],
+      "source_opaque_area": 38213,
+      "source_centroid": [
+        159.65637348546306,
+        769.7984455551775
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 3,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 2,
+      "source_column": 0,
+      "row_ground_baseline": 859.5,
+      "row_float_center": 747.2563060790881,
+      "source_camera_anchor": [
+        147.83333333333334,
+        859.5
+      ],
+      "excluded_detached_native_projectiles": [
+        {
+          "component": 1,
+          "bbox": [
+            1352,
+            7,
+            1489,
+            118
+          ],
+          "area": 10577
+        },
+        {
+          "component": 5582,
+          "bbox": [
+            1381,
+            782,
+            1492,
+            877
+          ],
+          "area": 7842
+        },
+        {
+          "component": 2640,
+          "bbox": [
+            1379,
+            395,
+            1494,
+            477
+          ],
+          "area": 7200
+        }
+      ]
+    },
+    {
+      "group": 16,
+      "frame": 1,
+      "master": "assets/source/creatures/ancientYeti/repair-v2/shoot-atlas-v2.png",
+      "master_sha256": "ece414a264bee755b69015a58294f1102bd8d0c808bafdf923ee5ad8579af9f8",
+      "uniform_camera_scale": 0.39179255918827505,
+      "opaque_component": 4482,
+      "source_bbox": [
+        316,
+        589,
+        586,
+        887
+      ],
+      "source_opaque_bbox": [
+        341,
+        629,
+        577,
+        862
+      ],
+      "source_opaque_area": 36302,
+      "source_centroid": [
+        449.93796485042145,
+        750.4887058564267
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 2,
+      "source_column": 1,
+      "row_ground_baseline": 859.5,
+      "row_float_center": 747.2563060790881,
+      "source_camera_anchor": [
+        443.5,
+        859.5
+      ],
+      "excluded_detached_native_projectiles": [
+        {
+          "component": 1,
+          "bbox": [
+            1352,
+            7,
+            1489,
+            118
+          ],
+          "area": 10577
+        },
+        {
+          "component": 5582,
+          "bbox": [
+            1381,
+            782,
+            1492,
+            877
+          ],
+          "area": 7842
+        },
+        {
+          "component": 2640,
+          "bbox": [
+            1379,
+            395,
+            1494,
+            477
+          ],
+          "area": 7200
+        }
+      ]
+    },
+    {
+      "group": 16,
+      "frame": 2,
+      "master": "assets/source/creatures/ancientYeti/repair-v2/shoot-atlas-v2.png",
+      "master_sha256": "ece414a264bee755b69015a58294f1102bd8d0c808bafdf923ee5ad8579af9f8",
+      "uniform_camera_scale": 0.39179255918827505,
+      "opaque_component": 4451,
+      "source_bbox": [
+        569,
+        576,
+        872,
+        887
+      ],
+      "source_opaque_bbox": [
+        619,
+        598,
+        825,
+        873
+      ],
+      "source_opaque_area": 39285,
+      "source_centroid": [
+        724.4333206058292,
+        735.0976454117348
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 4,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 2,
+      "source_column": 2,
+      "row_ground_baseline": 859.5,
+      "row_float_center": 747.2563060790881,
+      "source_camera_anchor": [
+        739.1666666666666,
+        859.5
+      ],
+      "excluded_detached_native_projectiles": [
+        {
+          "component": 1,
+          "bbox": [
+            1352,
+            7,
+            1489,
+            118
+          ],
+          "area": 10577
+        },
+        {
+          "component": 5582,
+          "bbox": [
+            1381,
+            782,
+            1492,
+            877
+          ],
+          "area": 7842
+        },
+        {
+          "component": 2640,
+          "bbox": [
+            1379,
+            395,
+            1494,
+            477
+          ],
+          "area": 7200
+        }
+      ]
+    },
+    {
+      "group": 16,
+      "frame": 3,
+      "master": "assets/source/creatures/ancientYeti/repair-v2/shoot-atlas-v2.png",
+      "master_sha256": "ece414a264bee755b69015a58294f1102bd8d0c808bafdf923ee5ad8579af9f8",
+      "uniform_camera_scale": 0.39179255918827505,
+      "opaque_component": 4498,
+      "source_bbox": [
+        867,
+        622,
+        1168,
+        887
+      ],
+      "source_opaque_bbox": [
+        898,
+        635,
+        1159,
+        850
+      ],
+      "source_opaque_area": 33213,
+      "source_centroid": [
+        1016.9785325023335,
+        744.0239063017493
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 1,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 2,
+      "source_column": 3,
+      "row_ground_baseline": 859.5,
+      "row_float_center": 747.2563060790881,
+      "source_camera_anchor": [
+        1034.8333333333333,
+        859.5
+      ],
+      "excluded_detached_native_projectiles": [
+        {
+          "component": 1,
+          "bbox": [
+            1352,
+            7,
+            1489,
+            118
+          ],
+          "area": 10577
+        },
+        {
+          "component": 5582,
+          "bbox": [
+            1381,
+            782,
+            1492,
+            877
+          ],
+          "area": 7842
+        },
+        {
+          "component": 2640,
+          "bbox": [
+            1379,
+            395,
+            1494,
+            477
+          ],
+          "area": 7200
+        }
+      ]
+    },
+    {
+      "group": 16,
+      "frame": 4,
+      "master": "assets/source/creatures/ancientYeti/repair-v2/shoot-atlas-v2.png",
+      "master_sha256": "ece414a264bee755b69015a58294f1102bd8d0c808bafdf923ee5ad8579af9f8",
+      "uniform_camera_scale": 0.39179255918827505,
+      "opaque_component": 4540,
+      "source_bbox": [
+        1143,
+        621,
+        1449,
+        858
+      ],
+      "source_opaque_bbox": [
+        1178,
+        645,
+        1422,
+        841
+      ],
+      "source_opaque_area": 25936,
+      "source_centroid": [
+        1285.0868291178285,
+        742.7660394818014
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 7,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 2,
+      "source_column": 4,
+      "row_ground_baseline": 859.5,
+      "row_float_center": 747.2563060790881,
+      "source_camera_anchor": [
+        1330.5,
+        859.5
+      ],
+      "excluded_detached_native_projectiles": [
+        {
+          "component": 1,
+          "bbox": [
+            1352,
+            7,
+            1489,
+            118
+          ],
+          "area": 10577
+        },
+        {
+          "component": 5582,
+          "bbox": [
+            1381,
+            782,
+            1492,
+            877
+          ],
+          "area": 7842
+        },
+        {
+          "component": 2640,
+          "bbox": [
+            1379,
+            395,
+            1494,
+            477
+          ],
+          "area": 7200
+        }
+      ]
+    },
+    {
+      "group": 16,
+      "frame": 5,
+      "master": "assets/source/creatures/ancientYeti/repair-v2/shoot-atlas-v2.png",
+      "master_sha256": "ece414a264bee755b69015a58294f1102bd8d0c808bafdf923ee5ad8579af9f8",
+      "uniform_camera_scale": 0.39179255918827505,
+      "opaque_component": 4665,
+      "source_bbox": [
+        1466,
+        629,
+        1761,
+        874
+      ],
+      "source_opaque_bbox": [
+        1515,
+        664,
+        1748,
+        857
+      ],
+      "source_opaque_area": 27922,
+      "source_centroid": [
+        1631.259186304706,
+        769.8586777451472
+      ],
+      "alpha_threshold_for_analysis_only": 128,
+      "cell_boundary_max_alpha": 2,
+      "painted_rgba_preserved": true,
+      "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+      "source_row": 2,
+      "source_column": 5,
+      "row_ground_baseline": 859.5,
+      "row_float_center": 747.2563060790881,
+      "source_camera_anchor": [
+        1626.1666666666667,
+        859.5
+      ],
+      "excluded_detached_native_projectiles": [
+        {
+          "component": 1,
+          "bbox": [
+            1352,
+            7,
+            1489,
+            118
+          ],
+          "area": 10577
+        },
+        {
+          "component": 5582,
+          "bbox": [
+            1381,
+            782,
+            1492,
+            877
+          ],
+          "area": 7842
+        },
+        {
+          "component": 2640,
+          "bbox": [
+            1379,
+            395,
+            1494,
+            477
+          ],
+          "area": 7200
+        }
+      ]
+    }
+  ],
+  "known_pending": [
+    "native all-action playback and contact",
+    "gait/anatomy review",
+    "shot direction and release timing",
+    "upgrade contrast",
+    "redistribution review"
+  ]
+}

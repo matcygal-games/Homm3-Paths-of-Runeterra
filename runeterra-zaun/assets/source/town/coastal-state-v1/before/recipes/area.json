@@ -1,0 +1,69 @@
+{
+  "acceptance": "Technical mask derived from the painted layer: the area mask defines the clickable footprint and the border mask the highlight outline. Both must be derived from the own painted layer, never copied from another faction or from the original game.",
+  "building": "ship",
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; prompted and technically assembled by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/port-master.png",
+      "sha256": "bd0674cf0338491b7a070601d82f5d2ce401b9e3a295e38751812e1f49828704"
+    },
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/port-provenance.json",
+      "sha256": "28fb7bdaa304ee3159397c943b43ee3ed884c1eb9af5bae84ee0b11bae94a804"
+    },
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/selection.json",
+      "sha256": "7f5f6168779eae0bef917194c0713758ac5459a83b1bb44e3b3218c57e0b5f8d"
+    },
+    {
+      "path": "scripts/zaun_chemtech_town_v4.py",
+      "sha256": "7acfd01d1507ecd26cf9de53de7d3f1202c589c779929c1c711bc4958688b6a1"
+    },
+    {
+      "path": "scripts/zaun_painted_town.py",
+      "sha256": "db7df36af68804059582b99c6cec06d2d29dbaf7db57a74936050442a9f6bc68"
+    }
+  ],
+  "fit": "contain",
+  "generation": {
+    "image_generation_used": true,
+    "model": null,
+    "painted_master": "assets/source/town/chemtech-v4-buildings/port-master.png",
+    "prompt": "Usecase: precise-object-edit. OwnZaunportassets. Input1LEFTemptydock isdocktarget; ignoreitsrightdockedshipassembly. Input2isstandalonebarge. ProduceTWO fullySEPARATEcutoutsSIDE BY SIDE withlargegutter: LEFTemptyindustrialdockwith2cranes/hoistssmallstoreshed, RIGHTstandalonecargoBARGe onlywithNOdockunderit. Keep existingbrownwetwood/rustiron/rope/crate shapes andlowfrontthreequartercamera. CHEMTECHrevision: greenpressureglasslampsandshortcopperfeedpipeonthedock; bargehasvisiblegreenreagentcargo barrels/flasks/cratesandonegreenenginepressurecell, patchedPURPLEcargotarpandpurpleflag, greenlocalglasslightnotgreeneverywhere. Preserveboatwholehull/bow/sternandflagpole withgeneroustransparentpadding, allcraneapicesanddockrampsinsidecanvas. OriginalHeroesIIItexturedpainted/prerenderedtownstyle,broadupperleftlight, locallyreflectedchemicalgreen. Genuinealphaoutside2independentcutouts,nobackdrop/waterbackground/text/neonoutlines/people.",
+    "provenance": "assets/source/town/chemtech-v4-buildings/port-provenance.json",
+    "provenance_sha256": "28fb7bdaa304ee3159397c943b43ee3ed884c1eb9af5bae84ee0b11bae94a804",
+    "provider": "OpenAI built-in image_gen.imagegen",
+    "route": "Genuine image-generation edit of own Zaun buildings; technical crop/uniform scale/placement only"
+  },
+  "id": "zaun.town.structure.ship.area",
+  "identity_review": "assets/reviews/town/chemtech-v5-organic/review.json",
+  "native_visual_review": "pending",
+  "output_path": "Content/Sprites/runeterra/zaun/town/structures/ship_area.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/chemtech-v4-buildings/native/ship/area.png",
+  "source_sha256": "313a8544ac3069df9cd905767e414b2a26500a16f049ec9551d31cc61769b840",
+  "status": "built-unreviewed",
+  "technical": true,
+  "title": "Moored Barge area mask",
+  "visual_approval_granted": false
+}

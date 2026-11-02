@@ -1,0 +1,51 @@
+{
+  "tool": "image_gen.imagegen",
+  "provider": "OpenAI built-in imagegen",
+  "model": "Not exposed by the built-in tool",
+  "prompt": "Use case: precise-object-edit. EDIT THIS CLOSE-UP BACKGROUND PATCH ONLY. It is a 6\u00c3\u2014 nearest-neighbor enlarged 150\u00c3\u201490 native pixel crop from an ORIGINAL HeroesIII painted2D Noxian city. Keep the SAME 5:3 canvas, preferably900\u00c3\u2014540. We will downsample back to150\u00c3\u201490 and place it at EXACT originalposition. Do NOT add anycastle/building.\n\nImage1 is target backgroundpatch. Image2 shows GREEN area that MUST BECOME DRY LEVEL COBBLED GROUND. Yellowhorizontalguide is where separatebuildingbases will end; CYAN horizontal line is the LOWEST allowed shorelineedge. Image3 white/blackregionmask: WHITE=painttheleveldryground; BLACK=preserveoutsidecontext. Image4 yellow irregularcontactlines mark ACTUAL lowest stonebases ofallthreeexistingfortifications, for diagnosisONLY. They are NOT architecturetoinsert and mustnotappear inoutput.\n\nCRITICAL: Present target has WATER and littleROOFS UNDER the yellowbasecontactlines. This is WRONG. REMOVE THE WATER, LITTLE HOUSES, POSTS, RAILINGS AND VERTICAL STONEWALLFACE through the ENTIRE GREEN/WHITE AREA. Replace all of it with ONE CONTINUOUS LEVEL SUPPORTED WALKABLE BASALT/COBBLESTONE COURTYARD SURFACE, connecting naturally to the pavedground atLEFT. The TOP SURFACE must remain actualdryfloor fromnear TOP ofcrop all the way down to the CYANline about76%down thecrop. The separatebuilding's fullbasecontacts around49%down must stand comfortablyonfloor, with moredrypaving BELOW them. Do NOT put a cliff/wall/waterlineat50%down like currenttarget. Any quaysideVERTICALFACE or WATER must start ONLY IN THEBOTTOMQUARTER BELOW thecyanline. Keep the bottomstrip's quietwater/boatcontext and the topmostedge context wherepossible. Do not fill the oceanbelowthecyanline.\n\nMatch existing originalHeroesIII PAINTED2D stonegrain, native cobblestonescale, perspective/upperleftwarm lighting, darkcharcoal/warmgray/brownstone and restrainedamberfirelight. The floor must be a genuinely painted believablegroundplane with no rectangularpatchseams or floatingplatform. NO newbattlement/fence alongyellowlines/greenregionedges. No code/vector/3D/Blender/gloss/photo; no text, guidecolors/lines, UI or labels. OUTPUT clean150\u00c3\u201490proportionedbackgroundpatch paintedat900\u00c3\u2014540: DRY GROUND ACROSSUPPER76%, intentionalquaywateronlyBOTTOM24%, nofunctionalbuilding.",
+  "edit_target": "build/reports/urban-town-community-20261024-v6/quay-local-edit-target-v6.png",
+  "reference_paths": [
+    "build/reports/urban-town-community-20261024-v6/quay-local-edit-target-v6.png",
+    "build/reports/urban-town-community-20261024-v6/quay-local-edit-guide-v6.png",
+    "build/reports/urban-town-community-20261024-v6/quay-local-edit-mask-v6.png",
+    "build/reports/urban-town-community-20261024-v6/quay-local-complete-family-contact-guide-v6.png"
+  ],
+  "visual_approval_granted": false,
+  "record_kind": "Portable producer metadata for technical composition of genuine imagegen painted background and local imagegen painted patch, not a raw tool receipt",
+  "private_original_receipt_sha256": "d6ef6f4b2d9f405a133090a95f65771f9c1c7258d87289c1b6347ea183275e96",
+  "painted_master": "assets/source/town/urban-community-20261024-v6/background-master-v6.png",
+  "painted_master_sha256": "23c40b323af27bc87000e8b3e72fbdd7f51a8a9a90777023eda4909ffb083eb0",
+  "local_painted_patch": "assets/source/town/urban-community-20261024-v6/quay-local-painted-master-v6.png",
+  "local_painted_patch_sha256": "e34edeb73a6636e134996203639b625eb906079ae335707801841b1f05537e77",
+  "composition": {
+    "status": "authored configuration",
+    "method": "Exact rectangular technical assembly of two genuine imagegen-painted2D sources, with uniform crop/downsample of local patch. No generated geometry, procedural paving, building pixels or painted filters.",
+    "base_native": "assets/source/town/urban-community-20261024-v6/background-native-v5.png",
+    "base_native_sha256": "14e00a87bcaa1eab9b46ce0a1c2943422cdfee51ac326646e773fcb68e504312",
+    "base_painted_master": "assets/source/town/urban-community-20261024-v6/background-master-v5.png",
+    "base_painted_master_sha256": "ca193d3c9bb75ed51873323b285e93d6c0e05519d1e4337f157cc758890b2aac",
+    "painted_patch": "assets/source/town/urban-community-20261024-v6/quay-local-painted-master-v6.png",
+    "painted_patch_sha256": "e34edeb73a6636e134996203639b625eb906079ae335707801841b1f05537e77",
+    "painted_patch_original_size": [
+      1619,
+      971
+    ],
+    "native_patch": "assets/source/town/urban-community-20261024-v6/quay-local-native-v6.png",
+    "native_patch_sha256": "41457f0033ad40411a7166eb0148a77174865b44dfceadf0106d3f604debe5cd",
+    "patch_rectangle_xywh": [
+      650,
+      85,
+      150,
+      90
+    ],
+    "crop_fit": "Pillow ImageOps.fit LANCZOS, same5:3ratio",
+    "outside_patch_rgba_difference_pixels": 0,
+    "output": "assets/source/town/urban-community-20261024-v6/background-master-v6.png",
+    "output_sha256": "23c40b323af27bc87000e8b3e72fbdd7f51a8a9a90777023eda4909ffb083eb0",
+    "assembly_script": "assets/source/town/urban-community-20261024-v6/assemble_quay_patch.py",
+    "assembly_script_sha256": "97c551a2ee5fcaccf1c8e94fc37d1988b7cbfb559f355426f9bf1b21db9a91b0",
+    "frozen_placement_plan_sha256": "93097eded68b7c275dd689c0fe344684b0e439102d4acf5c0549ba0b0c0b88c0",
+    "visual_approval_granted": false
+  },
+  "rights": "Unresolved; attribution and tool access do not grant release approval"
+}

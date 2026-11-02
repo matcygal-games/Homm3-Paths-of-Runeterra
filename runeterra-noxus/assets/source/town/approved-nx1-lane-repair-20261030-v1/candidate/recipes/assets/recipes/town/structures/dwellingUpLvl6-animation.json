@@ -1,0 +1,122 @@
+{
+  "acceptance": "Production requirements only. No rig/guide/primitive/reference may substitute for painted final art; this recipe must fail while its real master/hash is absent.",
+  "animation_contract": "Minimum static architectural g0 is valid; real torch/banner frames may extend the painted cohort, never duplicated fake motion",
+  "art_direction": "Independent Noxian iron/crimson/black subjects in Heroes III native painted language. Never recolour Castle or Demacia art, import original pixels or invent an official crest.",
+  "building": "dwellingUpLvl6",
+  "building_contract": {
+    "full_canvas_placement": {
+      "x": 0,
+      "y": 0,
+      "z": 197
+    },
+    "name": "Grand Reckoning Pit",
+    "native_ground_contact": [
+      216,
+      166,
+      335,
+      182
+    ],
+    "upgrades": "dwellingLvl6"
+  },
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI built-in imagegen; deterministic project conversion",
+    "license": null,
+    "redistribution": "unresolved; no release or redistribution approval"
+  },
+  "dimensions_basis": {
+    "canvas": [
+      800,
+      374
+    ],
+    "mode": "RGB",
+    "reference_only": "runeterra-demacia/references/images/tbcsback.pcx.png",
+    "reference_sha256": "949012ea68999207934bc482f1552858474fe50cefddef17eaac00d4b98c2be9",
+    "use": "Dimensions/format only. No reference pixels, palette, source recipe, layout silhouette or licensed art copied."
+  },
+  "fit": "exact",
+  "generateOverlay": 0,
+  "generateShadow": 0,
+  "generation": {
+    "assembly_script": "assets/source/town/approved-nx1-lane-repair-20261030-v1/assemble_candidate.py",
+    "assembly_script_sha256": "41c1d57f39ef8de44e0dbcae84c906282e8290a8b9fb1ea8bddcb8a2c6064ca7",
+    "candidate_only": true,
+    "finite_patch_prompts": [
+      {
+        "path": "assets/source/town/approved-nx1-lane-repair-20261030-v1/whole-lane-repair.prompt.txt",
+        "sha256": "92c92f10a71ae4e85458a938ada56c7e8f20c25816fb31c7c8d27418096ed70c",
+        "text": "Precise painted 2D town edit. IMAGE1 is the accepted whole Noxian town; IMAGE2 is a PLANNING DIAGRAM ONLY with four turquoise lane intentions. Preserve the entire visual identity of image1: every existing building, all roof styles, architecture, Noxian crests, native 800x374 composition/aspect, red smoky sky, fortress skyline, upper-left light, urban community details. No new castle arrangement or camera change. Repair only small architectural pinch points along the four intended lanes so the town has clearly visible continuous weathered stone walkways/stairs BETWEEN complete buildings. The final has NO annotations or cyan.\nA: a narrow supported upper terrace path behind the Arena connects via a visible side stair between Arena and Minotaur pit, then a small alley along the LEFT end of the barracks and along the RIGHT edge of the Tavern/LEFT edge of the Market to foreground street. Preserve both complete frontages; pull back only obstructing eaves or canopy edges a few native pixels to make a real alley.\nB: open the slim gap BETWEEN Minotaur pit and central Trifarian hall, connecting palace terrace to the market/monument avenue. Preserve the entire pen and hall; adjust their facing masonry/roof edges only slightly, with level landings and convincing stone stair.\nC: a clear supported lane down the LEFT side of the upper-right red-banner storehouse and Hound pens, along RIGHT side of central hall, then between central monument and Forge awning. Pull back the obstructing Forge awning a few pixels; do not draw a road through its roof or walls. Connect its actual ground entrance to street.\nD: a narrow stone stair/landing route from the Bastion's real frontage around LEFT side of the round Crimson shrine to the shared forecourt ABOVE Hound/Spider pens, then on to the Binding Vault's actual frontage. Retaining masonry/support must be visible; no paths floating over cliff voids. Where original source has a cliff, build a small supported stone stair/terrace instead of painting flat paving in the air.\nKeep streets naturally curved, irregular and joined with ONE consistent paving scale/material. Doors/forecourts actually meet paths. No detached paving squares, no stair underneath building, no water under land architecture. Width about4-7 native pixels in the small rear gaps, wider in foreground. This is a modest access repair, not a new design: keep all public buildings and dwellings, community, scenery and full framing. Classic original Heroes III matte painted aesthetic, no CGI, 3D, vector or text.\n"
+      },
+      {
+        "path": "assets/source/town/approved-nx1-lane-repair-20261030-v1/edge-gap-v2.prompt.txt",
+        "sha256": "813e55caa961747eaa47433b6bba7bd42b246a9c41a9e2bf65b0597178430f6a",
+        "text": "Precise minimal painted 2D town edit. First image is approved Noxian whole-town composition, second is technical diagram ONLY with two turquoise intended public walkways. Keep every building, all architecture, all black/red Noxian crests and all existing lanes, overall dimensions/aspect, sky, camera, lighting and original Heroes III painted aesthetic. NO annotation in final. Repair ONLY two very narrow pinch points: (1) The tiny horizontal passage immediately behind the Hound pen, just in front of the upper red-banner storehouse, around native x577..613,y174..178: shift/shorten the obstructing Hound pen rear post a few pixels forward and expose a narrow real stone walkway between the two structures. Do not paint paving on a roof or remove the pen. (2) At the extreme right edge, join the Binding Vault's front stair landing near native x779,y285 to a very narrow supported stone stair/alley that descends along the RIGHT outside edge of the foreground Forge, to the public foreground street at x794,y373. Pull back the Forge's rightmost awning/eave edge slightly so a real outside alley fits INSIDE frame; make retaining walls/stone support visible so it is genuinely grounded. Do not run the lane through roof/walls. Keep forge main facade/canopy complete and city identity unchanged. Only about 5-8 native pixels wide at the right edge. No broad new plazas, no changed town arrangement, no 3D or vector.\n"
+      },
+      {
+        "path": "assets/source/town/approved-nx1-lane-repair-20261030-v1/hound-service-gate-v3.prompt.txt",
+        "sha256": "b6d70eb4439681efbb1f1434cc3bd9beaa56860e62ee45c4a14a17fbab6a9e71",
+        "text": "Edit this complete Noxian painted 2D town ONLY at one tiny spot: the LEFT side fence of the Hound pen (the two enormous armored hounds in the middle-right), native coordinates around x535,y209 in the 800x374 composition. Add a clearly visible SMALL OPEN SERVICE GATE in that existing left fence, immediately beside the existing stone lane down the left side of the pen at x525. Make a grounded 4-6 native pixel wide threshold/short stone step from the lane into the pen, with the existing fence posts forming its sides. Preserve the hounds, the entire pen and front gate, every other building, all Noxian banners, architecture, atmosphere, camera and original Heroes III 2D matte-painted look exactly. This is a second side gate for the handlers, not a new building or general repaint. Ensure the real stone lane visibly meets the open gate with no fence or post blocking it. Do not change the rest of the image. No cyan, arrows, labels, text, CGI or 3D.\n"
+      },
+      {
+        "path": "assets/source/town/approved-nx1-lane-repair-20261030-v1/empty-frontage-clean-v4.prompt.txt",
+        "sha256": "7e59a4dfca0af23aab97d92cac604ce6eab2e36f7add9ef0371b69258366d5da",
+        "text": "Precise painted 2D cleanup of this EMPTY Noxian town background. Preserve all geography, terraces, stairs, retaining walls, street layout, dark red smoky sky and incidental houses outside scene, camera and original Heroes III 1999 town matte painting aesthetic. ONE defect to remove: a leftover small red tent/canopy with supporting dark-red posts/building fragments on the middle-left empty frontage, around native x141..176,y208..241 in the 800x374 image. Erase that entire red awning and attached leftover functional facade fragments, restoring coherent continuous weathered basalt paving and the existing terrace retaining wall behind it. This is meant to be an EMPTY construction site for a later independent barracks layer. Do not leave a half-awning, red wall stump or building ghost; no functional building at that location in the empty plate. Preserve the adjacent stairs, black lantern post, existing stone walls and paved road perspective. Change nothing else. No new buildings, no labels, no text, no CGI/3D/vector or pasted texture tile.\n"
+      }
+    ],
+    "image_generation_used": true,
+    "method": "Whole painted town first; finite generated supported-lane/gate edits; hand traced public pavement ownership; actual all-state strict silhouette contract. Genuine predecessors remain painted sources, with a whole-subject guardhouse scale fit. No 3D.",
+    "model": "Not exposed by tool",
+    "painted_master": "assets/source/town/approved-nx1-20261029-v1/approved-master.png",
+    "painted_master_sha256": "e37cfa2aff3c7764806772d57ccc5d5b547f10b8a3e4a0954645d90ecbd22241",
+    "prompt": "Use case: precise-object-edit. Image1 is the target full Noxian city painting, image2 is PRIVATE heraldry reference only. Preserve the entire city composition, all building bodies, placement, dark reddish sky, roads, paving, stairs, lighting and canvas exactly as image1. Change ONLY the false trident/fleur-de-lis symbols painted on the crimson civic/military banners. Replace each with an independently painted warm ivory or worn pale gold adaptation of the actual Noxus crest from image2: broad paired hooked outer axe lobes, two rounded upper negative-space openings, sharp central upright point and split tapering blades below. Keep recognizable silhouette and cutouts, materially painted into cloth with existing folds/perspective/light, do not simply paste reference PNG pixels. Keep the existing Black Rose flower marks on the clandestine left buildings unchanged. No other changes, no words, no new buildings, no cropping. This remains a complete painted2D Heroes3 town concept, not accepted game art.\n",
+    "provider": "OpenAI built-in image_gen",
+    "source_ledger": "assets/source/town/approved-nx1-lane-repair-20261030-v1/source-ledger-v5.json",
+    "source_ledger_sha256": "b2af6cd245635e2eee0814639e523e2e52bfe44150bcb8163dc1202211c28325"
+  },
+  "groups": [
+    {
+      "action": "own town building state, not a troop idle/action",
+      "frames": [
+        {
+          "sha256": "16f9db1180f6b34ca64499754b6b26628acbce8b8164724cbf289d865ceaa87f",
+          "source": "assets/source/town/approved-nx1-lane-repair-20261030-v1/decomposition-v5/structures/dwellingUpLvl6/layer.png",
+          "source_sha256": "16f9db1180f6b34ca64499754b6b26628acbce8b8164724cbf289d865ceaa87f"
+        }
+      ],
+      "group": 0
+    }
+  ],
+  "inventory": {
+    "asset_id": "noxus.Sprites.runeterra.noxus.town.structures.dwellingUpLvl6.json",
+    "manifest": "assets/manifest.json",
+    "recipe_path": "assets/recipes/town/structures/dwellingUpLvl6-animation.json"
+  },
+  "output_path": "Content/Sprites/runeterra/noxus/town/structures/dwellingUpLvl6.json",
+  "pivot": {
+    "basis": "Full town canvas; content declares x0/y0; no Castle/Demacia building placement copied",
+    "x": 0,
+    "y": 0
+  },
+  "production_status": "painted-master-complete",
+  "recipe_type": "vcmi_animation",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "Real independent Noxus painted master and truthful provenance",
+    "Non-null SHA256 source pins",
+    "Official Noxus emblem provenance where used",
+    "Native-size silhouette/composition/alpha and role review",
+    "Explicit coordinator selection; no automatic acceptance"
+  ],
+  "role": "town-structure-animation",
+  "sha256": "16f9db1180f6b34ca64499754b6b26628acbce8b8164724cbf289d865ceaa87f",
+  "source_canvas": [
+    800,
+    374
+  ],
+  "source_sha256": "16f9db1180f6b34ca64499754b6b26628acbce8b8164724cbf289d865ceaa87f",
+  "status": "candidate-unselected",
+  "visual_approval_granted": false
+}

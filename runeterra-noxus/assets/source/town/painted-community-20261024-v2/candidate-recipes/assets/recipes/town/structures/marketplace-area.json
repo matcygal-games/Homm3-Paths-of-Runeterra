@@ -1,0 +1,113 @@
+{
+  "acceptance": "Production requirements only. No rig/guide/primitive/reference may substitute for painted final art; this recipe must fail while its real master/hash is absent.",
+  "art_direction": "Independent Noxian iron/crimson/black subjects in Heroes III native painted language. Never recolour Castle or Demacia art, import original pixels or invent an official crest.",
+  "building": "marketplace",
+  "building_contract": {
+    "full_canvas_placement": {
+      "x": 0,
+      "y": 0,
+      "z": 281
+    },
+    "name": "Campaign Market",
+    "native_ground_contact": [
+      270,
+      226,
+      93,
+      55
+    ],
+    "upgrades": null
+  },
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI built-in imagegen; deterministic project conversion",
+    "license": null,
+    "redistribution": "unresolved; no release or redistribution approval"
+  },
+  "dimensions_basis": {
+    "canvas": [
+      800,
+      374
+    ],
+    "mode": "RGB",
+    "reference_only": "runeterra-demacia/references/images/tbcsback.pcx.png",
+    "reference_sha256": "949012ea68999207934bc482f1552858474fe50cefddef17eaac00d4b98c2be9",
+    "use": "Dimensions/format only. No reference pixels, palette, source recipe, layout silhouette or licensed art copied."
+  },
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": false,
+    "provider": "OpenAI built-in imagegen",
+    "model": null,
+    "model_disclosure": "Not exposed by the builtin tool.",
+    "painted_master": "assets/source/town/structures/marketplace/painted-v1/master.png",
+    "painted_master_sha256": "844bbd64ef900860635d86c7f63f390081ffc24484c9aafa6b4c3e2a56a34ca1",
+    "generation_record": "assets/source/town/structures/marketplace/painted-v1/generation.json",
+    "generation_record_sha256": "1bfee0bb78c800bd7109d63e9acc9386493bfe0d089c1116517ad1d8324db73d",
+    "conversion": {
+      "method": "Uniform alpha-crop/contain of genuine painted 2D source; forced-depth site placement, no perspective warping or artificial art.",
+      "source_crop": [
+        35,
+        41,
+        1506,
+        910
+      ],
+      "placement_box": [
+        270,
+        226,
+        93,
+        55
+      ],
+      "native_position": [
+        273,
+        228
+      ],
+      "native_size": [
+        86,
+        51
+      ],
+      "site": "grandMarket",
+      "assembly_script": "assets/source/town/painted-community-20261024-v2/prepare.py",
+      "assembly_script_sha256": "de2dc989190d2a649ec58c6d438ae46b1575952866de5146fa5843c260238303",
+      "mask_method": "Exact alpha128 silhouette; area is binary silhouette, border is two-pixel outward MaxFilter5 minus silhouette."
+    }
+  },
+  "inventory": {
+    "asset_id": "noxus.Sprites.runeterra.noxus.town.structures.marketplace_area.png",
+    "manifest": "assets/manifest.json",
+    "recipe_path": "assets/recipes/town/structures/marketplace-area.json"
+  },
+  "mask_contract": "Same800x374 silhouette/camera as own building. Area must isolate actual clickable painted shape; border must follow it. No rectangular/opaque placeholder mask or masks copied from native/Demacia structures.",
+  "output_path": "Content/Sprites/runeterra/noxus/town/structures/marketplace_area.png",
+  "pivot": {
+    "basis": "Full town canvas; content declares x0/y0; no Castle/Demacia building placement copied",
+    "x": 0,
+    "y": 0
+  },
+  "production_status": "derived-technical-mask-complete",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "Real independent Noxus painted master and truthful provenance",
+    "Non-null SHA256 source pins",
+    "Official Noxus emblem provenance where used",
+    "Native-size silhouette/composition/alpha and role review",
+    "Explicit coordinator selection; no automatic acceptance"
+  ],
+  "role": "town-structure-area",
+  "sha256": "19bd0e07e9cab2f05776e720cf9fe62f0af7e476031795596e156e4383fe109b",
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/painted-community-20261024-v2/structures/marketplace/area.png",
+  "source_sha256": "19bd0e07e9cab2f05776e720cf9fe62f0af7e476031795596e156e4383fe109b",
+  "status": "built-unreviewed",
+  "visual_approval_granted": false,
+  "source_canvas": [
+    800,
+    374
+  ]
+}

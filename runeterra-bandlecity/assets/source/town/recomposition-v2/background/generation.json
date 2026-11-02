@@ -1,0 +1,31 @@
+{
+  "image_generation_used": true,
+  "master_canvas": [
+    1834,
+    858
+  ],
+  "model": "not exposed by built-in tool",
+  "painted_master": "assets/source/town/recomposition-v2/background/master.png",
+  "painted_master_sha256": "bdcc4aeb69acbd47db12b70107978fde57e40463bd9a6362d5b323365000ff15",
+  "prompt": "Use case: precise-object-edit. Asset type: EMPTY terrain background plate for an additional original Heroes III Bandle City town, native target800x374, wide panoramic aspect800:374. Input image1 is the old EMPTY terrain edit target; input image2 is ONLY a placement guide showing separate building overlays, NEVER paint any of those buildings into the output. Primary request: substantially recompose the EMPTY terrain to support the irregular town arrangement shown in image2. Preserve the rich earthy painted/prerendered1999 miniature rendering, top-left soft daylight, mossy warm ochre earth, sparse distant woodland, hazy warm blue sky, huge gnarled roots at the far edges, and a very small pool at the extreme lower-right. Replace the three parallel horizontal cliff bands with organic meandering mossstone low banks, shallow diagonal slopes, branching tree roots and irregular usable clearings. A broad gently curving worn earth path enters around x335 bottom edge, bends left through public square aroundx335 y320, then bends right toward the hall stair area x380 y286 and forks: toward the left dwellings x80 y270/x205 y205, toward right dwellings x575 y230/x720 y245, and up to small rear skyline clearings x215 y126/x365 y126/x535 y125/x720 y135. Building footings will cover those areas later. Make paths subtle earth, connected, unpaved, uneven edged and partially screened by low moss, not giant roads. Foreground unbuilt ground should be usable across nearly the entire width, larger terrain details near viewer and fine details far away; scene depth must support foreground buildings roughly twice distant buildings. Foreground site bottoms are staggered: near left academy y374, marketplace y344, workshop y370, mushroom lodge y360; ground and low mossbanks should naturally follow these uneven levels, avoiding a straight row. NO horizontal striped terraces, large central bare stripe or evenly spaced islands. EMPTY MEANS ZERO architecture: no buildings, huts, houses, roofs, doors, windows, wall, bridge, tower, foundations, fortifications, lamps, flags, characters, circles, geometry guides, rectangles, letters, labels, text or UI. No screenshot borders. All35 buildingstates will be separate transparent layers and must not be baked in. Keep tree canopy/corner roots restrained and out of the usable center. Output one finished bare terrain painting, same panoramic framing asimage1.",
+  "prompt_file": "assets/source/town/recomposition-v2/background/prompt.txt",
+  "provider": "OpenAI built-in imagegen",
+  "reference_images": [
+    {
+      "path": "assets/source/town/background-v1/native.png",
+      "role": "Own empty terrain edit target",
+      "sha256": "bf602572b520578c599315e03fe2e92eeb85fea00cfd8cf0f16902e0deea50d2"
+    },
+    {
+      "path": "build/reports/art-review/town/recomposition-v2/proposal-native.png",
+      "role": "Building placement guide only; architecture forbidden in output",
+      "sha256": "f840bdf4a1c0f932c3736efb61c78f98afdce3f45a09ada80281e477004cf265"
+    }
+  ],
+  "returned_source": "C:/Users/matcy/.codex/generated_images/01a16429-4c5c-7b51-8e0d-ab41618e727e/exec-0b7c321d-b520-4adf-9731-aa2c799b7926.png",
+  "rights": "unresolved",
+  "status": "authored configuration",
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": false,
+  "visual_approval_granted": false
+}

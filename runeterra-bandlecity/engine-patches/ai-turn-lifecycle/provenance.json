@@ -1,0 +1,199 @@
+{
+  "schema": 1,
+  "status": "authored configuration",
+  "locally_modified_engine": true,
+  "release_accepted": false,
+  "native_gameplay_executed": false,
+  "baseline_source_zip": "vcmi-725ae80-patched-source-a168a7b34aef.zip",
+  "baseline_source_zip_sha256": "ecf04d296dcd02fc26219eae26749165fb2890022e4ae7454beb032945751346",
+  "baseline_commit": "725ae80c42929ebbf6ccd620b38bd45ac32644c2",
+  "baseline_existing_combined_diff_sha256": "a168a7b34aefe870f13d556563f50cab049ea7572d3c516703c231fa409e310e",
+  "baseline_ordered_patches": [
+    {
+      "file": "0001-track-requested-connection-closures.patch",
+      "sha256": "fda36a1cf4aa5742de3f6a108610cea2ac16996c5226bb0a8685979c6c99395a"
+    },
+    {
+      "file": "0002-stop-unoccupiable-escapes-and-exhausted-chains.patch",
+      "sha256": "9410fb047a1c102f8397b180933918186cf192796a2c93a39c584899fdb8fbad"
+    },
+    {
+      "file": "0003-keep-local-games-off-lan-listeners.patch",
+      "sha256": "3f894f73627b92435a2abc6dea3ba54d31ae8331f3a99ae772d3a6b32bade212"
+    }
+  ],
+  "incremental_patch_sha256": "2cc42f37d47c6c688eaa1b0e270dae04e08e4a5641d47dca1359829bcc56eb3a",
+  "changes_sha256": "832299fe5e313a8666819831475d226df5a929fca216ffcd968363e4365dd522",
+  "source_file_count": 4074,
+  "source_inventory_sha256": "6b1aebe017d3f0f4cfa100ca4fb165682c5738cdf74aa5f990f5b945091703f0",
+  "exact_reproduction_matches_build_and_both_green_receipts": true,
+  "original_consumer_red_diff_exactly_these8_production_files": [
+    "AI/Nullkiller2/AIGateway.cpp",
+    "AI/Nullkiller2/AIGateway.h",
+    "AI/Nullkiller2/Engine/Nullkiller.cpp",
+    "AI/Nullkiller2/Engine/Nullkiller.h",
+    "AI/Nullkiller2/Goals/ExecuteHeroChain.cpp",
+    "server/CGameHandler.cpp",
+    "server/NetPacksServer.cpp",
+    "server/ServerNetPackVisitors.h"
+  ],
+  "identical_native_fixtures_between_red_and_green": true,
+  "red_failed_cases": [
+    "Nullkiller2_TurnLifecycle.nextTurnBeforeOldAcknowledgementRemainsActive",
+    "Nullkiller2_TurnLifecycle.duplicateOldAcknowledgementCannotFinishNewPendingTurn",
+    "Nullkiller2_TurnLifecycle.unknownAcknowledgementCannotFinishCurrentTurn",
+    "Nullkiller2_TurnLifecycle.failedAndDuplicateAcknowledgementsCannotFinishCurrentTurn",
+    "Nullkiller2_TurnLifecycle.acknowledgementAfterMultipleGenerationsCannotFinishLatest",
+    "Nullkiller2_TurnLifecycle.staleEndTurnInvocationNeverRetriesAgainstTheNextTurn",
+    "Nullkiller2_TurnLifecycle.appliedNextDayWithDelayedStartedTurnCannotSubmitOldTaskEndTurn",
+    "Nullkiller2_TurnLifecycle.nextDayCallbackBeforeSubmissionCannotEndTheNewTurn",
+    "TerminalMoveCancellation.winnerQueuedMoveIsCancelledWithFalseAcknowledgementAndNoMutation",
+    "TerminalMoveCancellation.loserQueuedMoveIsCancelledOnlyAfterOwnerAuthentication",
+    "ExecuteHeroChainMovementTest.rescuedPrisonAndNewHeroExchangeAreDistinctInteractions"
+  ],
+  "receipts": {
+    "original_consumer_red": {
+      "directory": "runeterra-bandlecity/build/reports/engine-ai-lifecycle/test-1792679808463508700",
+      "result_sha256": "23aedccd9c7dea3782c9086a2400c65027fd10b59542077ca1629249dd29a39a",
+      "output_sha256": "05b2a75a974b3453632b272dd038b01bacc8d8212ac47b1da959f104f14faa9c",
+      "exit_code": 1,
+      "tests": 28,
+      "failures": 11,
+      "errors": 0,
+      "gtest_sha256": "38738d1a324e6ecd293d44382c35f5b64a1c3699e9bfd5931a79d565d6adcb6c"
+    },
+    "targeted_green": {
+      "directory": "runeterra-bandlecity/build/reports/engine-ai-lifecycle/test-1792680406116474000",
+      "result_sha256": "bca14bda742780e7ceb646f6c3c67e8595a0348a55a38b42d43625b34d1fb7fb",
+      "output_sha256": "58a6cea83ea8ab51d9f0a53086358b445a84bdba3f209431aa82e0eecf2f8433",
+      "exit_code": 0,
+      "tests": 28,
+      "failures": 0,
+      "errors": 0,
+      "gtest_sha256": "a94e7a49d3cc70c735ce6fd687769e9fdba30e94b606805aec61d66537a70ed2"
+    },
+    "broader_green": {
+      "directory": "runeterra-bandlecity/build/reports/engine-ai-lifecycle/test-1792680334133395100",
+      "result_sha256": "bc648eae3c0b354177a00a63fca7275a645c708b393e597bdd65387908a59ecd",
+      "output_sha256": "3d6b0af8f37df311d8bb4f7bd30101f549a9af4ac2fd5ccb11dee47d958d7007",
+      "exit_code": 0,
+      "tests": 72,
+      "failures": 0,
+      "errors": 0,
+      "gtest_sha256": "3adf98492c9c346e9e4993d1009fb11f949f64008d870e6283720c055017abe9"
+    },
+    "full_build": {
+      "directory": "runeterra-bandlecity/build/reports/engine-ai-lifecycle/build-1792679951324726500",
+      "result_sha256": "91622c5a2007d2daa03631dca47c0db1a622fbd5213ad78d8d0c94b064e3dfda",
+      "output_sha256": "fee9b8d197eb6ddfc2d6b4e3bd20eb1f3013dfc409fccbd191d9a2e8e5108478",
+      "exit_code": 0
+    }
+  },
+  "runtime_pe_inventory": {
+    "avcodec-63.dll": "79b550837d21de73828fcf3a598346f6a46d186b1956959deea7c0c15b78af9c",
+    "avformat-63.dll": "e32d2a0076ce4991347b9b6f3c3da4c97909d3a6ac67af5b8a52d48d5a5b6a69",
+    "avutil-61.dll": "3a34517fd04d8e2cc1422063c27407cdff38ec67808680f2f1c20d2c75342465",
+    "boost_atomic.dll": "786b7717a2ccd6abe0d48ae1dfe556f88aa2e723480105aef3fd39731c10106c",
+    "boost_date_time.dll": "5a4f12134abc1ee4cd343429e0afd17da466ceace7d3ab206f8d2104a8be0a2c",
+    "boost_filesystem.dll": "c7646c80544635fc948495492f222a446ff195a849e02b3885792a2f2243e815",
+    "boost_iostreams.dll": "256402251696ea1f457c6cd7d6d720f725897b4c75fedd0d926bfdeba3ca19ff",
+    "boost_program_options.dll": "6e6979b3494c9f174a3aebf71defbc114106724fed8b6f5c4c0cd7bd89fc9102",
+    "boost_random.dll": "ea59e6bd511da9acc681454210b32a72eb148a93530f98a4f9bd4195f5ed0df4",
+    "boost_regex.dll": "8cc41d899389f63b352b523f141080b68f69fb6d7e60db72f6b37022ad8747c7",
+    "boost_system.dll": "657f95a58ffbdae0fe4c5e38fd6b5a99a895c33e29298f39d2d1308ba3820f86",
+    "bz2.dll": "09aae77a42c6ed7bbafc803062234404ab8604de9e652a7100fdf9a1a395745a",
+    "charset-1.dll": "25471ab2ea2986bdb5af33cfc9409d9d08fa6fc17304f3cebdf4a8228e6ccce3",
+    "concrt140.dll": "54716f0738af891f283d213b5c8d11b25896bb8ee3097d301eae718560cf974e",
+    "iconv-2.dll": "10d5290ff843fc70b1fe4a1006770038f3ee2e0d621be4b7cc29d76c7556f655",
+    "liblzma.dll": "a46be727973e891826c391aabdc0f818d10afacbc4cb38a92e41a57adee91129",
+    "libpng16.dll": "bf142856b47c9758a69b8b59c38f45cf134721b16f12a57792eae351540468da",
+    "minizip.dll": "fe30d9dca5ec60458aa301a46837b1b561409bca05563d7bd3afefbc3bdecdfa",
+    "msvcp140.dll": "7c26614e1d733892c2deac7e245ce115504b1d80592dd0a01b08e3e5a55f89ca",
+    "msvcp140_1.dll": "206c931bf90fdad8816de3b5e2ef80b2bcaa9406c89ecc05fe6fddffe251e982",
+    "msvcp140_2.dll": "d50d7883f20d1dc6191768d3746f52dd9cac89c346ffaed5be1f110c2f34a838",
+    "msvcp140_atomic_wait.dll": "3d0cbfaa1bf3eecf5a3f4491d2960ee803cb994f30292c6adc4a07c498f60e2b",
+    "msvcp140_codecvt_ids.dll": "8a65c7596ef2e6938731f5a1058e7e40145b6d97967cc649231a076b9a608d78",
+    "ogg.dll": "d0a724100d8b3b7eeff748f11523da318d4c1ee37b6e1275435f7e2189ff6175",
+    "opus.dll": "5fb2e9d0c5b15fde2755d5d3ca1e28375eca5e39a64234045671bc8f382fd590",
+    "SDL3.dll": "484ccd86fd542c066b2f8b8acaa4ed0375328862f21fa1f502773c34a99e87a7",
+    "SDL3_image.dll": "ce0f4a11de402758ef3728f1dd8079830f102ff662bca8b077be6faa1c7188f4",
+    "SDL3_mixer.dll": "77c6520381bee6fedcdaed3dc172c5550c890e2c5f9688b1608fc315a099977b",
+    "SDL3_ttf.dll": "18a54326c73b1a41c6da5a162dd0e4153264932029f9c2bfa74cd876125172a9",
+    "swresample-7.dll": "979f4a755a7a52dee7c86f4152b594cfae9e17d0031c0b4436c2221478e1ec63",
+    "swscale-10.dll": "9983a4670e30e276c9eaa6504416765b9528d5c7b8affdbff512152cc1b714e9",
+    "tbb12.dll": "7f3c2891a22c795726bb34d48394472e007eb540e61912102f025c419e3c599a",
+    "vccorlib140.dll": "09f93d5ff96ae09767f3e1af3cdd43a5a58f2598654fc63089429bb6f9f4737f",
+    "VCMI_client.exe": "690e3c534b4877b9bb5b7441d6834f27cd334e182bc5feb0c8ec7bf612c75602",
+    "VCMI_lib.dll": "61ca3b40dc8070ac57707d2c49d973bf2945227bdbf2919c8d6bfa17efea3c70",
+    "VCMI_server.exe": "eba68ecfd95635fdd5f925982c8a5a85aac473ddf06306a9eb8d2178c69500e6",
+    "vcruntime140.dll": "d1f4225df2cd877dbf130d5668a021dce3f94118455ff5ec952061c30afc9ce7",
+    "vcruntime140_1.dll": "a7146c08f89fe5b04541ab507cdb59ff7b44534d4ba3c668a426c6450a03434e",
+    "vcruntime140_threads.dll": "40f39e8cee5f5a531b4010e18b807e8fe265b908dc58f959ecb7ebc6ea6cb11a",
+    "zlib1.dll": "d3cc936bdaa6ea8eac607db6620b34f94e2b52780b3f8a5c7ff097cd631c443c"
+  },
+  "runtime_binary_delta": [
+    {
+      "path": "VCMI_client.exe",
+      "sha256": "690e3c534b4877b9bb5b7441d6834f27cd334e182bc5feb0c8ec7bf612c75602",
+      "bytes": 7540736,
+      "baseline_sha256": "404b04c8818f6001cdd51860d487db62715a1723d64a3d12c1e07954faec21bb"
+    },
+    {
+      "path": "VCMI_lib.dll",
+      "sha256": "61ca3b40dc8070ac57707d2c49d973bf2945227bdbf2919c8d6bfa17efea3c70",
+      "bytes": 9579520,
+      "baseline_sha256": "034981f3469c0bdfcb9442af7617d99ad3b5f505f008eb87faeb8d607e8aa46d"
+    },
+    {
+      "path": "VCMI_server.exe",
+      "sha256": "eba68ecfd95635fdd5f925982c8a5a85aac473ddf06306a9eb8d2178c69500e6",
+      "bytes": 1097216,
+      "baseline_sha256": "c475bd4832b1cbc563befefd461cbd0113fe0ade673616c7459b0dcf13cc2d47"
+    }
+  ],
+  "additional_dependency_delta": [],
+  "runtime_configuration_changes_required": [],
+  "runtime_baseline_signature": "45062b4064c7cb60ee08aef39eb8efdae55699f0a065e4107891b40a7cd0a3a2",
+  "runtime_handoff_report": "runeterra-bandlecity/build/reports/engine-ai-lifecycle/handoff-1792681002072337300/runtime-overlay.json",
+  "runtime_handoff_sha256": "0c1e1971f7b403f0a83cd22b10fce6445483451c2b3250c10dabfa5bbf5fd01f",
+  "link_proof_report": "runeterra-bandlecity/build/reports/engine-ai-lifecycle/handoff-1792681002072337300/link-proof.json",
+  "link_proof_sha256": "a9d9fba1c5550657b7cd555cce7539bc6d11962204c18aca08fbdb195117594b",
+  "toolchain": {
+    "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+    "msvc": "14.51.36231",
+    "windows_sdk": "10.0.26100.0\\",
+    "msvc_cl_sha256": "e6d57100c82ae0310c18b16abfe52bc0df8fbb272ca6c5fb287d485807cfce91",
+    "cmake_sha256": "8e30b660920a328bcc62c4b6de1b86f0de7a178aca8ec5dbb6924fd05b4eb683",
+    "ninja_sha256": "4a641b1a404e390cf869b79782fecea9bc6cd9e5d2e0f97163cf4582c93bc843",
+    "external_conan_tree": "runeterra-freljord/.tools/engine-shutdown-fix/conan-home",
+    "conan_toolchain_sha256": "37cf18cb9a12f3f6a740c6074e87e58fbcd25d8d9f609e26f5074812d77ff6b1",
+    "conan_runtime_list_sha256": "20fd8639d594b26f325e8aefbbaae9c8e16a30648809e7ca0a135b883d6422a5",
+    "requirements_tools_lock_sha256": "ff2285e14875978c3c3a2ede6e7fbacac1634c922936d065eb2fb0ea181df797",
+    "build_flags": "Release;2/4jobs;SDL3 ON;launcher/editor/MMAI/LTO/ccache/GITVERSION/COPY_CONFIG_ON_BUILD OFF"
+  },
+  "determinism_and_compatibility": {
+    "new_serialized_or_network_fields": false,
+    "save_or_protocol_version_change": false,
+    "rng_api_changes": false,
+    "bit_identical_asynchronous_outcomes_asserted": false,
+    "save_load_execution_performed": false,
+    "day_guard_proof": "acting->acted, authoritative NewTurn(day+1), then acted->awaiting; one normal turn/player/day. Load-resume uses new interface/session. GSshared blocks day mutation between guard/send; carried day catches delayed callback."
+  },
+  "source_payload_excludes": [
+    "src/",
+    "src-reproduced*/",
+    "b/",
+    "licensed Data",
+    "private user/config/cache",
+    "executables/DLL/PDB",
+    "dependency caches",
+    "source ZIP"
+  ],
+  "remaining": [
+    "independent final complete candidate metadata audit",
+    "coordinator runtime selection",
+    "fresh exact-stage gameplay by sole operator",
+    "ordinary lost-hero/unrelated AI diagnostics",
+    "external human and rights acceptance"
+  ]
+}

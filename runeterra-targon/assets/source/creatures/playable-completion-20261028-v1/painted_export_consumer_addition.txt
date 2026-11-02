@@ -1,0 +1,61 @@
+def _selected_painted_creature_exports(root, workspace, ledger):
+    """Validate the explicitly selected painted-2D source closure.
+
+    Existing town/siege editable-scene semantics remain unchanged. Creature
+    replacements use genuine masters and deterministic image assemblies;
+    renamed geometry declarations or missing inputs cannot pass this route.
+    """
+    selected = ledger.get("painted_creature_sources")
+    if selected is None:
+        return {}
+    creatures_path = _export_input(root, workspace, "content/creatures.json", "content/", ".json")
+    creatures = _unique_json(creatures_path)
+    if not isinstance(selected, dict) or set(selected) != set(creatures):
+        raise ValueError("Painted creature source selection must cover every actual variant exactly")
+    exports = {}
+    for unit, binding in sorted(selected.items()):
+        if not isinstance(binding, dict):
+            raise ValueError("Invalid painted creature source binding: " + unit)
+        name = binding.get("source_generation_ledger")
+        path = _export_input(root, workspace, name, "assets/source/", ".json")
+        if shared.digest(path) != binding.get("source_generation_ledger_sha256"):
+            raise ValueError("Painted creature source ledger changed: " + unit)
+        origin = _unique_json(path)
+        if (origin.get("workflow") != "image-based-painted-2d"
+                or origin.get("derived_from_blender") is not False
+                or origin.get("user_rejected") is not False):
+            raise ValueError("Selected creature origin is not current unrejected painted2D: " + unit)
+        files = origin.get("files_sha256")
+        if not isinstance(files, dict) or not files or not isinstance(origin.get("origins"), list) or not origin["origins"]:
+            raise ValueError("Painted creature origin has no concrete source closure: " + unit)
+        for record in origin["origins"]:
+            if (not isinstance(record, dict) or record.get("kind") not in ("painted-2d-master", "image-generation")
+                    or files.get(record.get("path")) != record.get("sha256")):
+                raise ValueError("Unbound painted creature origin: " + unit)
+        exports[MOD_ID + "/" + name] = path
+        for source, pin in sorted(files.items()):
+            suffix = Path(source).suffix.casefold()
+            if suffix not in (".png", ".json", ".py", ".txt"):
+                raise ValueError("Unsupported painted creature input: " + source)
+            source_path = _export_input(root, workspace, source, "assets/source/", suffix)
+            if not isinstance(pin, str) or not re.fullmatch(r"[0-9a-f]{64}", pin) or shared.digest(source_path) != pin:
+                raise ValueError("Painted creature source missing or changed: " + source)
+            if suffix == ".py" and re.search(r"\b(?:import\s+bpy|from\s+bpy\b)", source_path.read_text(encoding="utf-8")):
+                raise ValueError("Geometry producer cannot be selected as painted creature source: " + source)
+            exports[MOD_ID + "/" + source] = source_path
+        recipes = binding.get("canonical_recipes")
+        if not isinstance(recipes, dict) or not recipes:
+            raise ValueError("Painted creature binding has no actual canonical recipes: " + unit)
+        for recipe_name, pin in sorted(recipes.items()):
+            recipe_path = _export_input(root, workspace, recipe_name, "assets/recipes/", ".json")
+            if shared.digest(recipe_path) != pin:
+                raise ValueError("Painted creature canonical recipe changed: " + recipe_name)
+            recipe = _unique_json(recipe_path)
+            generation = recipe.get("generation", {})
+            if (recipe.get("unit") != unit or generation.get("workflow") != "image-based-painted-2d"
+                    or generation.get("source_generation_ledger") != name
+                    or generation.get("source_generation_ledger_sha256") != binding["source_generation_ledger_sha256"]):
+                raise ValueError("Canonical recipe is not bound to its selected painted creature: " + recipe_name)
+            exports[MOD_ID + "/" + recipe_name] = recipe_path
+    return dict(sorted(exports.items()))
+

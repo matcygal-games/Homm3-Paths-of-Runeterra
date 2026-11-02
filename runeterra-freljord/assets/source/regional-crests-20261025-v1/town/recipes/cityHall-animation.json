@@ -1,0 +1,182 @@
+{
+  "acceptance": "Technical candidate only; current native/art/rights acceptance remains separate.",
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed built-in OpenAI imagegen painted sources and deterministic technical assembly",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "generation": {
+    "generation_record": "assets/source/regional-crests-20261025-v1/town/cityHall/generation.json",
+    "generation_record_sha256": "47fa188493615ac7a71855fdf260f9942a15e1230c6a264074cd4cee86c541e7",
+    "image_generation_used": true,
+    "model": "not exposed by built-in tool",
+    "model_id_exposed": false,
+    "painted_master": "assets/source/regional-crests-20261025-v1/town/cityHall/master.png",
+    "painted_master_sha256": "160ac0bd27809c2a8b77017e29c1a8b47d06fe8214ab6363e3b920440615cd1b",
+    "preparation_helper": {
+      "path": "scripts/prepare_town_art.py",
+      "sha256": "71476dbf913919f5cc07bab81b87236c4601ef3fe0b38d627fff88c7fe91fa46"
+    },
+    "prompt": "Use case: precise-object-edit. Asset: FRELJORD cityHall civic hall painted 2D town layer, original Heroes of Might and Magic III, final town scene800x374. Image1 is EDIT TARGET, current own1536x1024 painted master. Image2 is correct official FRELJORD REGIONAL CREST DESIGN reference only. Image3 is original HoMM3 native material/contrast reference only; copy no game pixels. Change ONLY the ALREADY EXISTING small carved crest in the triangular FRONT GABLE plaque immediately above main entrance, approximately x514..605,y343..477 in image1. This is a visibility repair of an already correct intended crest, not new heraldry or architecture. Repaint that same regional angular interlocked upper-arm silhouette and long descending central point as aged pale IVORY/very light weathered carved wood inlay, with sparse dark recessed separations. Fewer bolder painted facets should remain recognizable after native downsampling. Retain same crest position and entire existing footprint; fit existing wood gable, never enlarge panel or add a floating shield/banner. Material must be hand-painted muted ivory wood against existing dark brown timber, matte and subtly worn, not glowing gold or flat vector sticker. Preserve all other pixels conceptually: architecture, full silhouette, snowy roof, knot posts, frontdoor, stairs, all windows, timber grain, camera, upperleft light, alpha/background, and canvas exactly1536x1024. Preserve any existing institution marks and Capitol blue cloth banners; change only ONE front-gable crest, no secondary edits. Painted2D original1999HoMM3 native texture/scale, NOT Blender/3D/render, glossyCGI, neon, splash art or geometric placeholder. No text. Output one exact-canvas edited master with existing transparency preserved. A later strict technical mask will retain only this local crest paint.",
+    "provider": "OpenAI built-in imagegen",
+    "references": [
+      {
+        "path": "assets/source/regional-crests-20261025-v1/town/cityHall/master.png",
+        "sha256": "160ac0bd27809c2a8b77017e29c1a8b47d06fe8214ab6363e3b920440615cd1b"
+      },
+      {
+        "path": "assets/source/regional-crests-20261025-v1/town/cityHall/prompt.txt",
+        "sha256": "1a7807b414e57f56bfc24faab8c51e4902e68d1c7bc73b4a933ccd4247ca4ced"
+      },
+      {
+        "path": "assets/source/regional-crests-20261025-v1/town/cityHall/generation.json",
+        "sha256": "47fa188493615ac7a71855fdf260f9942a15e1230c6a264074cd4cee86c541e7"
+      },
+      {
+        "path": "assets/source/regional-crests-20261025-v1/town/cityHall/raw-imagegen.png",
+        "sha256": "5406b47052977c02bdfd7c249c47ebd194ac48f6d5f5d121b482b91d8d05685a"
+      },
+      {
+        "path": "assets/source/town/buildings-v6/cityHall/master.png",
+        "sha256": "eb3543e8700586a068fbbecfb3f952c0ccea36f25b0b90f9a9c84249359208cb"
+      },
+      {
+        "path": "assets/source/town/northern-village-20261024-v3/prepared/cityHall/preparation.json",
+        "sha256": "9a7819539baf1333379efc69f583b33fe3f5fba3feafeeb1835f6adc75411a77"
+      }
+    ],
+    "regional_crest_visibility_repair": {
+      "consumed_inputs": {
+        "path": "assets/source/regional-crests-20261025-v1/town/portable-v2/consumed-inputs.json",
+        "sha256": "d8ac1cd63b7c061826d0f209b11f2c27f784b71deadbeadc5e2376052ae5fed9"
+      },
+      "method": "Metadata-only portable successor; all version1 painted/native/runtime bytes preserved",
+      "version": 2
+    },
+    "technical_producer": {
+      "path": "assets/source/regional-crests-20261025-v1/town/portable-v2/compose.py",
+      "sha256": "d5fef35c5529f9121ef62a4bdeb4ade739ab4beb3ccf7309a63fe11bd744272c"
+    },
+    "tool": "image_gen.imagegen",
+    "upstream_original_generation": {
+      "conversion": {
+        "alpha_bbox": [
+          0,
+          0,
+          1536,
+          994
+        ],
+        "alpha_treatment": "Preserved painted RGBA, including any soft halo; no threshold erasure/background removal",
+        "canvas": [
+          800,
+          374
+        ],
+        "mirror_x": false,
+        "placed_origin": [
+          235,
+          62
+        ],
+        "placed_size": [
+          178,
+          115
+        ],
+        "rect": [
+          235,
+          56,
+          178,
+          121
+        ],
+        "source_canvas": [
+          1536,
+          1024
+        ],
+        "source_coordinate_basis": "original master",
+        "uniform_scale": 0.11588541666666667,
+        "upscaled": false
+      },
+      "generation_record": "assets/source/town/northern-village-20261024-v3/provenance/cityHall/generation.json",
+      "image_generation_used": true,
+      "model": "Not exposed by the built-in tool",
+      "model_id_exposed": false,
+      "painted_master": "assets/source/town/buildings-v6/cityHall/master.png",
+      "painted_master_sha256": "eb3543e8700586a068fbbecfb3f952c0ccea36f25b0b90f9a9c84249359208cb",
+      "prompt": "Precise local heraldry edit of image 1, the existing painted Freljord city hall building master. Preserve its EXACT architecture, all roofs, complete silhouette, frontal three-quarter camera, canvas 1536x1024, snow, doorway, stairs, timber grain, lighting and background. Change ONLY the generic knot heraldry in the triangular front gable directly above the main doorway: replace the generic triquetra/knot emblem with a faithful painted/carved version of the official FRELJORD REGIONAL CREST shown in image 2. Image2 is design reference only, not a pasted logo. Preserve its recognizable angular interlocked upper arms and long central downward point, the true Freljord silhouette; NOT a snowflake, triquetra, Demacian wings or invented royal crown. On wooden panel use aged pale-gold/brown carved relief against dark wood. On any existing cloth preserve cloth folds and use muted aged gold thread. Fit within existing panel or existing banner without enlarging. Do not add new banners or remove buildings. No text or other changes. Original Heroes of Might and Magic III compatible richly textured painted 2D building appearance, restrained highlights, native-scale readability. No Blender or equivalent 3D rendering, no shiny modern CGI, no flat vector sticker, no neon or splash-art aesthetic. This is a local crest repair and must preserve building geometry.",
+      "provider": "OpenAI built-in imagegen",
+      "references": [
+        {
+          "path": "assets/source/town/buildings-v6/cityHall/master.png",
+          "sha256": "eb3543e8700586a068fbbecfb3f952c0ccea36f25b0b90f9a9c84249359208cb"
+        },
+        {
+          "path": "assets/source/town/northern-village-20261024-v3/provenance/cityHall/generation.json",
+          "sha256": "de5cfd9911e96ca9f95ea99226638e315155b588b51784fd77e0696daabf6d17"
+        }
+      ],
+      "technical_producer": {
+        "path": "assets/source/town/northern-village-20261024-v3/prepare_candidate.py",
+        "sha256": "5c79a631c542104c95ba473b355557f65e2f8b214faf07f66a5024e3b0c21a85"
+      },
+      "tool": "image_gen.imagegen",
+      "visual_approval_granted": false
+    },
+    "visual_approval_granted": false
+  },
+  "groups": [
+    {
+      "frames": [
+        {
+          "sha256": "eba6583662f2523e871e851c4eb2fd820d82a4079d9cef91890e4cef0caabe03",
+          "source": "assets/source/regional-crests-20261025-v1/town/cityHall/layer.png",
+          "source_canvas": [
+            800,
+            374
+          ],
+          "source_sha256": "eba6583662f2523e871e851c4eb2fd820d82a4079d9cef91890e4cef0caabe03"
+        }
+      ],
+      "generateOverlay": 0,
+      "generateShadow": 0,
+      "group": 0
+    }
+  ],
+  "inputs": [
+    {
+      "path": "assets/source/town/northern-village-20261024-v3/layout-v3.json",
+      "sha256": "5760fa4c000093b10b50e8fcaaddec4a23897dd03f56b5ac9e2258db4c88a153"
+    },
+    {
+      "path": "scripts/prepare_town_art.py",
+      "sha256": "71476dbf913919f5cc07bab81b87236c4601ef3fe0b38d627fff88c7fe91fa46"
+    },
+    {
+      "path": "assets/source/town/northern-village-20261024-v3/prepare_candidate.py",
+      "sha256": "5c79a631c542104c95ba473b355557f65e2f8b214faf07f66a5024e3b0c21a85"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/portable-v2/compose.py",
+      "sha256": "d5fef35c5529f9121ef62a4bdeb4ade739ab4beb3ccf7309a63fe11bd744272c"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/portable-v2/consumed-inputs.json",
+      "sha256": "d8ac1cd63b7c061826d0f209b11f2c27f784b71deadbeadc5e2376052ae5fed9"
+    },
+    {
+      "path": "scripts/prepare_town_art.py",
+      "sha256": "71476dbf913919f5cc07bab81b87236c4601ef3fe0b38d627fff88c7fe91fa46"
+    }
+  ],
+  "output_path": "Content/Sprites/runeterra/freljord/town/structures/cityHall.json",
+  "pivot": {
+    "x": 0,
+    "y": 0
+  },
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "vcmi_animation",
+  "require_alpha": true,
+  "status": "authored configuration",
+  "visual_approval_granted": false
+}

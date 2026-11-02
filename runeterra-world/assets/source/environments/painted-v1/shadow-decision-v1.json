@@ -1,0 +1,14 @@
+{
+  "status":"authored configuration",
+  "decision":"Use native generateShadow1 projection for all seven environment map PNG animations. Preserve real painted material/contact shade. Do not fabricate or install empty shadow sidecars.",
+  "authorization":"Coordinator explicitly chose option B after inspected native consumer evidence; the four separately owned service sites will use the same policy.",
+  "consumer_evidence":[
+    {"path":"vcmi-develop/vcmi-develop/lib/mapObjects/MapObjectDrawOrder.cpp","line":58,"behavior":"Only HERO and BOAT use a fixed draw slot."},
+    {"path":"vcmi-develop/vcmi-develop/client/mapView/MapRenderer.cpp","line":399,"behavior":"Other objects split into layers; getShadowAnimation at442–445 requests ONLY_SHADOW."},
+    {"path":"vcmi-develop/vcmi-develop/clientsdl3/render/RenderHandler.cpp","line":464,"behavior":"For ONLY_SHADOW, generateShadow0 appends -SHADOW; generateShadow1 loads original PNG and invokes drawShadow at505–506."},
+    {"path":"vcmi-develop/vcmi-develop/clientsdl2/render/RenderHandler.cpp","line":422,"behavior":"SDL2 has the equivalent shadow selection and -SHADOW branch at422–436."}
+  ],
+  "source_art":"All actors/objects remain original painted2D. Native 2D alpha projection is renderer compositing, not a 3D artwork production dependency.",
+  "limit":"Source inspection and compiler memory-plan replay prove declared loader branch/resource intent only. Actual native projection, ground contact and possible doubled material/contact shade remain unobserved and require native pixel review.",
+  "native_execution_performed":false,"visual_approval_granted":false
+}

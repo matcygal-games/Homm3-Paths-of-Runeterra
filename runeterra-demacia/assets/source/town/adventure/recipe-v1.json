@@ -1,0 +1,457 @@
+{
+  "accepted": false,
+  "comparison_sheet": "references/demacia-adventure-native-comparison-v1.png",
+  "limitations": [
+    "Architecture is static; group0 frame0 is intentional and is not creature animation scaffolding.",
+    "The town mask and click/entrance alignment require actual adventure-map rendering and movement checks.",
+    "Two front cloth panels have explicit grayscale-alpha owner-color sidecars; native runtime rendering is not yet observed.",
+    "Generated masters contain faint alpha dust; crop geometry ignores opacity below16 but does not flatten retained alpha.",
+    "Native contrast, angle, scale, terrain contact and all8 state icons still require visual acceptance.",
+    "No generated output is marked approved and no global asset-manifest entry is changed."
+  ],
+  "records": [
+    {
+      "alpha_bbox": [
+        14,
+        73,
+        192,
+        192
+      ],
+      "animation": "assets/source/Sprites/runeterra/demacia/town/map/village.json",
+      "animation_sha256": "470a46b1ada69c587bc91ce01880cfc9f643ec000de28266e404fb107024cd81",
+      "canvas": [
+        192,
+        192
+      ],
+      "crop": [
+        34,
+        320,
+        1239,
+        1127
+      ],
+      "crop_alpha_threshold": 16,
+      "master": "assets/source/town/adventure/village/master-v1.png",
+      "master_sha256": "5cc0c261c27cb26789c722356f0687dd9831199ee02fd3c1e22678ad67a016e4",
+      "output": "assets/source/Sprites/runeterra/demacia/town/map/village.png",
+      "output_sha256": "3b490cdaf983acc9c46703a345cc7fbd1c82d190dc9919ed9bcc034707c415c2",
+      "owner_mask": {
+        "alpha_bbox": [
+          100,
+          133,
+          141,
+          156
+        ],
+        "blue_excess": 5,
+        "owner_color_baked": false,
+        "selected_pixels": 93
+      },
+      "owner_overlay": "assets/source/Sprites/runeterra/demacia/town/map/village-OVERLAY.png",
+      "owner_overlay_sha256": "dd9f4e01d0d6c7e012dd257eeedc71f282e1a5d4eeaa272bb70d9a25822a56d4",
+      "position": [
+        14,
+        73
+      ],
+      "required_groups": {
+        "0": 1
+      },
+      "resample": "Pillow LANCZOS",
+      "role": "adventure-map town",
+      "scaled_size": [
+        178,
+        119
+      ],
+      "state": "village",
+      "status": "generated-unreviewed"
+    },
+    {
+      "alpha_bbox": [
+        14,
+        67,
+        192,
+        192
+      ],
+      "animation": "assets/source/Sprites/runeterra/demacia/town/map/fort.json",
+      "animation_sha256": "89eb22df6a797cec29503e2fc38b5d8a30951ce9da97b1bcaf8af4accf6cb889",
+      "canvas": [
+        192,
+        192
+      ],
+      "crop": [
+        26,
+        305,
+        1245,
+        1158
+      ],
+      "crop_alpha_threshold": 16,
+      "master": "assets/source/town/adventure/fort/master-v1.png",
+      "master_sha256": "d9bf407ff8f91f79dfe0ac3bf8bd77bd35f5f5ed2589816807197706c43f392b",
+      "output": "assets/source/Sprites/runeterra/demacia/town/map/fort.png",
+      "output_sha256": "9044892a2598ae05a0694356a86b4c5ec231a482b50d0ebd40ade60d14ac7a5d",
+      "owner_mask": {
+        "alpha_bbox": [
+          112,
+          156,
+          148,
+          170
+        ],
+        "blue_excess": 5,
+        "owner_color_baked": false,
+        "selected_pixels": 49
+      },
+      "owner_overlay": "assets/source/Sprites/runeterra/demacia/town/map/fort-OVERLAY.png",
+      "owner_overlay_sha256": "ef3539407ba9aaf7747ed703af7cc01028a5777319bcc2dca7b1dc5d372070e2",
+      "position": [
+        14,
+        67
+      ],
+      "required_groups": {
+        "0": 1
+      },
+      "resample": "Pillow LANCZOS",
+      "role": "adventure-map town",
+      "scaled_size": [
+        178,
+        125
+      ],
+      "state": "fort",
+      "status": "generated-unreviewed"
+    },
+    {
+      "alpha_bbox": [
+        14,
+        57,
+        192,
+        192
+      ],
+      "animation": "assets/source/Sprites/runeterra/demacia/town/map/citadel.json",
+      "animation_sha256": "f8fc7a888f17dadb712de003cb66890b951da7a8193a6f07cfad84cb8921259b",
+      "canvas": [
+        192,
+        192
+      ],
+      "crop": [
+        4,
+        204,
+        1253,
+        1154
+      ],
+      "crop_alpha_threshold": 16,
+      "master": "assets/source/town/adventure/citadel/master-v1.png",
+      "master_sha256": "df7df6c12a0298403059171cc809933535f1a85b64a4ef85a6e4f9c53728818f",
+      "output": "assets/source/Sprites/runeterra/demacia/town/map/citadel.png",
+      "output_sha256": "6781393361764e1e9e53d269b98fce2553b02beb18574714e6d1539b21bfdeda",
+      "owner_mask": {
+        "alpha_bbox": [
+          115,
+          148,
+          142,
+          167
+        ],
+        "blue_excess": 5,
+        "owner_color_baked": false,
+        "selected_pixels": 101
+      },
+      "owner_overlay": "assets/source/Sprites/runeterra/demacia/town/map/citadel-OVERLAY.png",
+      "owner_overlay_sha256": "069eaf51071d25243e8474883517c079a6d7ef0470cfbb7c832f52ec2d8f761e",
+      "position": [
+        14,
+        57
+      ],
+      "required_groups": {
+        "0": 1
+      },
+      "resample": "Pillow LANCZOS",
+      "role": "adventure-map town",
+      "scaled_size": [
+        178,
+        135
+      ],
+      "state": "citadel",
+      "status": "generated-unreviewed"
+    },
+    {
+      "alpha_bbox": [
+        14,
+        54,
+        192,
+        192
+      ],
+      "animation": "assets/source/Sprites/runeterra/demacia/town/map/castle.json",
+      "animation_sha256": "6a4df49475be28b72cf75fddbb26173aa58151290abea6bc4f4431602fa25d11",
+      "canvas": [
+        192,
+        192
+      ],
+      "crop": [
+        5,
+        200,
+        1253,
+        1167
+      ],
+      "crop_alpha_threshold": 16,
+      "master": "assets/source/town/adventure/castle/master-v1.png",
+      "master_sha256": "71bcc62b7d82a4995ccd02069e78d08f28114d9b945852caf4837ede0a85a362",
+      "output": "assets/source/Sprites/runeterra/demacia/town/map/castle.png",
+      "output_sha256": "d3c81ac9e1aabd602566ebe412edeecdfb3f1152da0eeaa162834c4b6573e0bf",
+      "owner_mask": {
+        "alpha_bbox": [
+          115,
+          146,
+          142,
+          165
+        ],
+        "blue_excess": 5,
+        "owner_color_baked": false,
+        "selected_pixels": 96
+      },
+      "owner_overlay": "assets/source/Sprites/runeterra/demacia/town/map/castle-OVERLAY.png",
+      "owner_overlay_sha256": "bb05f2af2efeb2d0b75fd7329a57d5b2bf1438a13759ece98e98afaf099945bc",
+      "position": [
+        14,
+        54
+      ],
+      "required_groups": {
+        "0": 1
+      },
+      "resample": "Pillow LANCZOS",
+      "role": "adventure-map town",
+      "scaled_size": [
+        178,
+        138
+      ],
+      "state": "castle",
+      "status": "generated-unreviewed"
+    },
+    {
+      "alpha_bbox": [
+        14,
+        49,
+        192,
+        192
+      ],
+      "animation": "assets/source/Sprites/runeterra/demacia/town/map/capitol.json",
+      "animation_sha256": "77f422879f427a691349d68eec3da00951c0d8c4b75f29342aaf9841228a8b7e",
+      "canvas": [
+        192,
+        192
+      ],
+      "crop": [
+        0,
+        168,
+        1254,
+        1172
+      ],
+      "crop_alpha_threshold": 16,
+      "master": "assets/source/town/adventure/capitol/master-v1.png",
+      "master_sha256": "56b331fdb7eca19a4d09b9dfa7696643c5b74909687f9896a831cdee8fae1d0a",
+      "output": "assets/source/Sprites/runeterra/demacia/town/map/capitol.png",
+      "output_sha256": "19b432a3ea1da2b1976efa583963fd5b700e18f5ac4c02d616365c70ec6bf166",
+      "owner_mask": {
+        "alpha_bbox": [
+          114,
+          145,
+          140,
+          163
+        ],
+        "blue_excess": 5,
+        "owner_color_baked": false,
+        "selected_pixels": 93
+      },
+      "owner_overlay": "assets/source/Sprites/runeterra/demacia/town/map/capitol-OVERLAY.png",
+      "owner_overlay_sha256": "f291d400e5afd907c18f80f78a57f9a0e15aad44dd5d1cffa40780699bb2a2cc",
+      "position": [
+        14,
+        49
+      ],
+      "required_groups": {
+        "0": 1
+      },
+      "resample": "Pillow LANCZOS",
+      "role": "adventure-map town",
+      "scaled_size": [
+        178,
+        143
+      ],
+      "state": "capitol",
+      "status": "generated-unreviewed"
+    },
+    {
+      "background_crop": [
+        150,
+        0,
+        490,
+        374
+      ],
+      "background_master": "assets/source/town/background-candidates/terrain-v2-native.png",
+      "background_sha256": "4d996c1f17bf07cc8e7b015461354c2e7c58d5680baffa0def4b1dee011b7f1e",
+      "dimensions": [
+        58,
+        64
+      ],
+      "output": "assets/source/Sprites/runeterra/demacia/town/icons/village_normal_large.png",
+      "output_sha256": "2e74dcdf52f3654c31bd715181293c5194c79c2230b4cf88b28498bfeb084fe6",
+      "role": "town interface state icon",
+      "spent_construction_mark": null,
+      "state": "village",
+      "status": "generated-unreviewed",
+      "subject_master": "assets/source/town/adventure/village/master-v1.png",
+      "variant": "normal"
+    },
+    {
+      "background_crop": [
+        150,
+        0,
+        490,
+        374
+      ],
+      "background_master": "assets/source/town/background-candidates/terrain-v2-native.png",
+      "background_sha256": "4d996c1f17bf07cc8e7b015461354c2e7c58d5680baffa0def4b1dee011b7f1e",
+      "dimensions": [
+        58,
+        64
+      ],
+      "output": "assets/source/Sprites/runeterra/demacia/town/icons/village_built_large.png",
+      "output_sha256": "83d0e30e261bc06a56894570cad0c586e37f4f16e132049d48723747abab2aa1",
+      "role": "town interface state icon",
+      "spent_construction_mark": "project-authored red cross",
+      "state": "village",
+      "status": "generated-unreviewed",
+      "subject_master": "assets/source/town/adventure/village/master-v1.png",
+      "variant": "built"
+    },
+    {
+      "background_crop": [
+        0,
+        0,
+        561,
+        374
+      ],
+      "background_master": "assets/source/town/background-candidates/terrain-v2-native.png",
+      "background_sha256": "4d996c1f17bf07cc8e7b015461354c2e7c58d5680baffa0def4b1dee011b7f1e",
+      "dimensions": [
+        48,
+        32
+      ],
+      "output": "assets/source/Sprites/runeterra/demacia/town/icons/village_normal_small.png",
+      "output_sha256": "4da64af2cac016f52f3599535c9328712264bbdf1a0c2e7dd7e516f5ab44c53e",
+      "role": "town interface state icon",
+      "spent_construction_mark": null,
+      "state": "village",
+      "status": "generated-unreviewed",
+      "subject_master": "assets/source/town/adventure/village/master-v1.png",
+      "variant": "normal"
+    },
+    {
+      "background_crop": [
+        0,
+        0,
+        561,
+        374
+      ],
+      "background_master": "assets/source/town/background-candidates/terrain-v2-native.png",
+      "background_sha256": "4d996c1f17bf07cc8e7b015461354c2e7c58d5680baffa0def4b1dee011b7f1e",
+      "dimensions": [
+        48,
+        32
+      ],
+      "output": "assets/source/Sprites/runeterra/demacia/town/icons/village_built_small.png",
+      "output_sha256": "abf0425cb361428a9f20f7313e72744cc0f29e86ebc890d7e9e2ba8ddf468f0e",
+      "role": "town interface state icon",
+      "spent_construction_mark": "project-authored red cross",
+      "state": "village",
+      "status": "generated-unreviewed",
+      "subject_master": "assets/source/town/adventure/village/master-v1.png",
+      "variant": "built"
+    },
+    {
+      "background_crop": [
+        150,
+        0,
+        490,
+        374
+      ],
+      "background_master": "assets/source/town/background-candidates/terrain-v2-native.png",
+      "background_sha256": "4d996c1f17bf07cc8e7b015461354c2e7c58d5680baffa0def4b1dee011b7f1e",
+      "dimensions": [
+        58,
+        64
+      ],
+      "output": "assets/source/Sprites/runeterra/demacia/town/icons/fort_normal_large.png",
+      "output_sha256": "1c9719f37e4236dd912c1f17aebec58d6523bd74c23c6968e0127ac30d83d971",
+      "role": "town interface state icon",
+      "spent_construction_mark": null,
+      "state": "fort",
+      "status": "generated-unreviewed",
+      "subject_master": "assets/source/town/adventure/castle/master-v1.png",
+      "variant": "normal"
+    },
+    {
+      "background_crop": [
+        150,
+        0,
+        490,
+        374
+      ],
+      "background_master": "assets/source/town/background-candidates/terrain-v2-native.png",
+      "background_sha256": "4d996c1f17bf07cc8e7b015461354c2e7c58d5680baffa0def4b1dee011b7f1e",
+      "dimensions": [
+        58,
+        64
+      ],
+      "output": "assets/source/Sprites/runeterra/demacia/town/icons/fort_built_large.png",
+      "output_sha256": "f2f5f77ed9615ef26c711c9f13e8cb7a94976c3b88d9b73102740e8820e2d0e1",
+      "role": "town interface state icon",
+      "spent_construction_mark": "project-authored red cross",
+      "state": "fort",
+      "status": "generated-unreviewed",
+      "subject_master": "assets/source/town/adventure/castle/master-v1.png",
+      "variant": "built"
+    },
+    {
+      "background_crop": [
+        0,
+        0,
+        561,
+        374
+      ],
+      "background_master": "assets/source/town/background-candidates/terrain-v2-native.png",
+      "background_sha256": "4d996c1f17bf07cc8e7b015461354c2e7c58d5680baffa0def4b1dee011b7f1e",
+      "dimensions": [
+        48,
+        32
+      ],
+      "output": "assets/source/Sprites/runeterra/demacia/town/icons/fort_normal_small.png",
+      "output_sha256": "97b29f812a31668b103092c4f341cd5cc97e81275c6b92b154958dd531c77022",
+      "role": "town interface state icon",
+      "spent_construction_mark": null,
+      "state": "fort",
+      "status": "generated-unreviewed",
+      "subject_master": "assets/source/town/adventure/castle/master-v1.png",
+      "variant": "normal"
+    },
+    {
+      "background_crop": [
+        0,
+        0,
+        561,
+        374
+      ],
+      "background_master": "assets/source/town/background-candidates/terrain-v2-native.png",
+      "background_sha256": "4d996c1f17bf07cc8e7b015461354c2e7c58d5680baffa0def4b1dee011b7f1e",
+      "dimensions": [
+        48,
+        32
+      ],
+      "output": "assets/source/Sprites/runeterra/demacia/town/icons/fort_built_small.png",
+      "output_sha256": "72d68da0c3d09a084dc6a1ed18067bfbd138c415a9fe809c78d1d688c7e6d983",
+      "role": "town interface state icon",
+      "spent_construction_mark": "project-authored red cross",
+      "state": "fort",
+      "status": "generated-unreviewed",
+      "subject_master": "assets/source/town/adventure/castle/master-v1.png",
+      "variant": "built"
+    }
+  ],
+  "status": "generated-unreviewed",
+  "version": 1
+}

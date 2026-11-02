@@ -1,0 +1,58 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "Native portrait language of the same subject: readable silhouette at native size, visible equipment, no details below one pixel. attackLeft and attackRight must be two real directional attacks, not mirrored copies of one image.",
+  "canvas": [
+    64,
+    64
+  ],
+  "credits": {
+    "author": "OpenAI built-in image_gen; project-directed prompts and technical extraction",
+    "license": "unresolved; no redistribution grant inferred",
+    "redistribution": "unresolved; release prohibited"
+  },
+  "delivery": {
+    "cohort": "assets/source/creatures/cyberneticGuard/painted-imagegen-v3/cohort.json",
+    "cohort_sha256": "43f16380b965f60a7a96ed79a66f748a5c14a4338f9549132275767f07e62b16",
+    "sources": [
+      {
+        "path": "assets/source/creatures/cyberneticGuard/painted-imagegen-v3/native/attackRight.png",
+        "sha256": "7af3a071d403d7a0b32f3993f3d210f80e951b9d544ca7ca997b7f95bfaebe9f"
+      }
+    ],
+    "status": "built-unreviewed; native visual review pending",
+    "visual_approval_granted": false
+  },
+  "dependencies": [],
+  "fit": "contain",
+  "generation": {
+    "image_generation_used": true,
+    "model": "not exposed by tool",
+    "painted_master": "assets/source/creatures/cyberneticGuard/painted-imagegen-v3/auxiliary-master.png",
+    "painted_master_sha256": "2eb18aee75ce4853a4888035c9b87570f412953b652f6e413580b5b45bba8516",
+    "prompt": "undefined\nSubject: CYBERNETIC GUARD upgrade of reference's Chem-Baron Enforcer. SAME mature brown-skinned human man, cropped blackhair and visible exposed face, same profession, not a robot. Much stronger silhouette than base: tall segmented ribbed dark-iron chest guard over leather apron, broad independently articulated reinforced shoulder/spine/arm hydraulic bracing, thick knee guards, embossed worn crimson harness brand. The two-handed rectangular industrial BREAKER-CLEAVER now has a broader heavy edge and reinforced long grip for one wide sweeping fan strike. Not a shield user; ribbed shield-plate means chest armor, both hands hold ONE long breaker. Patinated grey steel, stained brown leather, brass piston collars, tiny amber stain, no glow. Clearly industrial, not knight, no Noxian axe/sword or chrome android. Base reference is identity/material only; independently paint new upgraded equipment in ALL FOUR views. Column3 must show the back/right side of face with nose and eyes directed LEFT, tool extends LEFT, legs stepping left; do not retain right-facing head.\n",
+    "provenance": "assets/source/creatures/cyberneticGuard/painted-imagegen-v3/auxiliary-provenance.json",
+    "provider": "OpenAI built-in image_gen",
+    "route": "genuine painted auxiliary cohort; technical alpha isolation, crop, uniform resampling and placement"
+  },
+  "id": "zaun.creature.cyberneticGuard.attackRight",
+  "output_path": "Content/Sprites/runeterra/zaun/creatures/cyberneticGuard/attackRight.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    64,
+    64
+  ],
+  "source": "assets/source/creatures/cyberneticGuard/painted-imagegen-v3/native/attackRight.png",
+  "source_sha256": "7af3a071d403d7a0b32f3993f3d210f80e951b9d544ca7ca997b7f95bfaebe9f",
+  "status": "built-unreviewed",
+  "title": "Cybernetic Guard attackRight",
+  "unit": "cyberneticGuard",
+  "visual_approval_granted": false
+}

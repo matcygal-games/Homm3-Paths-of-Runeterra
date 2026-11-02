@@ -1,0 +1,85 @@
+{
+  "units": [
+    "demacianRanger",
+    "veteranRanger"
+  ],
+  "groups": [
+    0,
+    2,
+    15
+  ],
+  "actual_rendered_frames": 36,
+  "native_canvas": [
+    450,
+    400
+  ],
+  "source_records": [
+    {
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v4/paint-action-g00-atlas-v1-generation.json",
+      "sha256": "131d956a433fc5386a6501b3da62cd1dd793e2fb1080464484dac4952ad59cc4"
+    },
+    {
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v4/paint-action-g02-atlas-v1-generation.json",
+      "sha256": "9666d170cb3fe67c1291208074a4004d6b4b5861634266caa4d5cdd298c3f2c2"
+    },
+    {
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v4/paint-action-g15-atlas-v1-generation.json",
+      "sha256": "9f0a799c24f2a11ce0757404b9d37d309ffe866e92c23988b7f1de75cd7554d4"
+    },
+    {
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v4/paint-action-g00-atlas-v1-generation.json",
+      "sha256": "5647a646bceb4481b95a5eec4f2f29ba346ec7d970ce3d7b0489e1fee9ed88b5"
+    },
+    {
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v4/paint-action-g02-atlas-v1-generation.json",
+      "sha256": "9b036c75aae6f24ab16f9f509e17805221e29fe209b5839324e8067aef9bf291"
+    },
+    {
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v4/paint-action-g15-atlas-v1-generation.json",
+      "sha256": "fb4e133f81788371589e01f69b62c537a47d119be0c0fa66ee426c89a11c3b0b"
+    }
+  ],
+  "native_export_records": [
+    {
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v4/paint-action-g00-native-export-v2-placement-v1.json",
+      "sha256": "c545ce68fadc302026ce8a280f9eb825765f0575bf62423614f651015adf956f"
+    },
+    {
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v4/paint-action-g02-native-export-v2-placement-v1.json",
+      "sha256": "3dc336fc5fafce8a478c6efbac1f6bda6aed4dfd35ff774af903320233a77053"
+    },
+    {
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v4/paint-action-g15-native-export-v2-placement-v1.json",
+      "sha256": "9e2f414cd84fd4e48d936e10c47a973c992169ee12317fb54dce79aa1c2d2a24"
+    },
+    {
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v4/paint-action-g00-native-export-v2-placement-v1.json",
+      "sha256": "efea82e305dcb0351a07a06731265d5bc37b35da1ddc792f3810840548201cc2"
+    },
+    {
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v4/paint-action-g02-native-export-v2-placement-v1.json",
+      "sha256": "e2f8030637c4a187f0fc1f032c983a5f54bd608ded68a6bb5d571788d42ff345"
+    },
+    {
+      "path": "assets/source/creatures/veteranRanger/ranger-rig-v4/paint-action-g15-native-export-v2-placement-v1.json",
+      "sha256": "7f79f4c397cf7f9c8513f1502c424c5bffbe82af1dd2e20fce464048d0531d96"
+    }
+  ],
+  "pose_semantics": {
+    "g00": "Six genuine opposite contact/pass phases per female scout.",
+    "g02": "Four quiet holding poses; legitimate repeated holds are retained.",
+    "g15": "Eight genuine raise, aim, intentional aim hold, release at zero-based4, recoil, cock and reload phases; no pixel noise or invented extra action."
+  },
+  "transparency_review": "Actually viewed native light/dark alpha composites. Diffuse RGB outside sprites lies mainly underalpha0; alpha1\u20137 speckles exist but no visible native backdrop halo was observed. No alpha clipping, repaint or original pixels used.",
+  "limitations": [
+    "Only three groups produced per variant; directional shots, hit, defense, death/corpse, turns, fidgets and knife attacks remain raw3D only.",
+    "Generated source camera and framing changed; independently measured whole-atlas scale and explicit whole-frame translations record that correction.",
+    "Body/cloth form varies slightly across painted poses; temporal/native renderer review remains required.",
+    "Shooting projectile origins must be remeasured from these actual painted release frames before any production promotion.",
+    "Crest is present but complete heraldic shape at native battle scale remains unapproved.",
+    "No active recipes, generated assets, manifests, stage files or final art acceptance changed."
+  ],
+  "status": "source-only first native-ready pilot for parent review; no game renderer acceptance or release approval",
+  "visual_approval_granted": false,
+  "active_assets_modified": false
+}

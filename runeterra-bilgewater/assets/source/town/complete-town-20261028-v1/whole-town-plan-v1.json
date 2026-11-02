@@ -1,0 +1,879 @@
+{
+  "status": "design proposal",
+  "request_date": "2026-10-28",
+  "request": "Rebuild complete coherent Bilgewater town first, then derive playable layers; actual full silhouettes, doors, roads, support and intentional shoreline determine layout.",
+  "quotes": [
+    "Design the town as one immersive place before splitting functional layers.",
+    "Use the native 800 x 374 scene.",
+    "Reserve the largest valid replacement-state envelope at each site, clear supported door approaches, connecting roads and explicit water/shore boundaries.",
+    "The terrain plate must not contain completed functional architecture."
+  ],
+  "preservation": "All old authored inputs remain unchanged. No creature, hero, economy, service or construction prerequisite change. Root alone integrates/builds/publishes.",
+  "ordinary_land_sites": 16,
+  "optional_coastal_sites": 1,
+  "small_grail_sites": 1,
+  "actual_building_state_count": 35,
+  "actual_states": {
+    "villageHall": {
+      "name": "Dock Council",
+      "upgrades": null,
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/villageHall.json",
+        "area": "runeterra/bilgewater/town/structures/villageHall_area.png",
+        "border": "runeterra/bilgewater/town/structures/villageHall_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/villageHall_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 10
+      }
+    },
+    "townHall": {
+      "name": "Harbor Council",
+      "upgrades": "villageHall",
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/townHall.json",
+        "area": "runeterra/bilgewater/town/structures/townHall_area.png",
+        "border": "runeterra/bilgewater/town/structures/townHall_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/townHall_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 10
+      }
+    },
+    "cityHall": {
+      "name": "Captains' Assembly",
+      "upgrades": "townHall",
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/cityHall.json",
+        "area": "runeterra/bilgewater/town/structures/cityHall_area.png",
+        "border": "runeterra/bilgewater/town/structures/cityHall_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/cityHall_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 10
+      }
+    },
+    "capitol": {
+      "name": "Grand Harbor Assembly",
+      "upgrades": "cityHall",
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/capitol.json",
+        "area": "runeterra/bilgewater/town/structures/capitol_area.png",
+        "border": "runeterra/bilgewater/town/structures/capitol_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/capitol_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 10
+      }
+    },
+    "fort": {
+      "name": "Timber Palisade",
+      "upgrades": null,
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/fort.json",
+        "area": "runeterra/bilgewater/town/structures/fort_area.png",
+        "border": "runeterra/bilgewater/town/structures/fort_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/fort_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 9
+      }
+    },
+    "citadel": {
+      "name": "Harbor Redoubt",
+      "upgrades": "fort",
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/citadel.json",
+        "area": "runeterra/bilgewater/town/structures/citadel_area.png",
+        "border": "runeterra/bilgewater/town/structures/citadel_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/citadel_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 9
+      }
+    },
+    "castle": {
+      "name": "Sea Wall Bastion",
+      "upgrades": "citadel",
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/castle.json",
+        "area": "runeterra/bilgewater/town/structures/castle_area.png",
+        "border": "runeterra/bilgewater/town/structures/castle_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/castle_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 9
+      }
+    },
+    "mageGuild1": {
+      "name": "Tide Archive I",
+      "upgrades": null,
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/mageGuild1.json",
+        "area": "runeterra/bilgewater/town/structures/mageGuild1_area.png",
+        "border": "runeterra/bilgewater/town/structures/mageGuild1_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/mageGuild1_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 11
+      }
+    },
+    "mageGuild2": {
+      "name": "Tide Archive II",
+      "upgrades": "mageGuild1",
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/mageGuild2.json",
+        "area": "runeterra/bilgewater/town/structures/mageGuild2_area.png",
+        "border": "runeterra/bilgewater/town/structures/mageGuild2_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/mageGuild2_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 11
+      }
+    },
+    "mageGuild3": {
+      "name": "Tide Archive III",
+      "upgrades": "mageGuild2",
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/mageGuild3.json",
+        "area": "runeterra/bilgewater/town/structures/mageGuild3_area.png",
+        "border": "runeterra/bilgewater/town/structures/mageGuild3_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/mageGuild3_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 11
+      }
+    },
+    "tavern": {
+      "name": "The Salted Cutlass",
+      "upgrades": null,
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/tavern.json",
+        "area": "runeterra/bilgewater/town/structures/tavern_area.png",
+        "border": "runeterra/bilgewater/town/structures/tavern_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/tavern_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 43
+      }
+    },
+    "marketplace": {
+      "name": "Harbor Exchange",
+      "upgrades": null,
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/marketplace.json",
+        "area": "runeterra/bilgewater/town/structures/marketplace_area.png",
+        "border": "runeterra/bilgewater/town/structures/marketplace_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/marketplace_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 42
+      }
+    },
+    "blacksmith": {
+      "name": "Shipwright's Forge",
+      "upgrades": null,
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/blacksmith.json",
+        "area": "runeterra/bilgewater/town/structures/blacksmith_area.png",
+        "border": "runeterra/bilgewater/town/structures/blacksmith_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/blacksmith_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 41
+      }
+    },
+    "resourceSilo": {
+      "name": "Slaughter Docks",
+      "upgrades": null,
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/resourceSilo.json",
+        "area": "runeterra/bilgewater/town/structures/resourceSilo_area.png",
+        "border": "runeterra/bilgewater/town/structures/resourceSilo_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/resourceSilo_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 27
+      }
+    },
+    "special1": {
+      "name": "Kraken Temple",
+      "upgrades": null,
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/special1.json",
+        "area": "runeterra/bilgewater/town/structures/special1_area.png",
+        "border": "runeterra/bilgewater/town/structures/special1_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/special1_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 28
+      }
+    },
+    "special2": {
+      "name": "Harbor Memorial",
+      "upgrades": null,
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/special2.json",
+        "area": "runeterra/bilgewater/town/structures/special2_area.png",
+        "border": "runeterra/bilgewater/town/structures/special2_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/special2_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 30
+      }
+    },
+    "special3": {
+      "name": "Black Market",
+      "upgrades": null,
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/special3.json",
+        "area": "runeterra/bilgewater/town/structures/special3_area.png",
+        "border": "runeterra/bilgewater/town/structures/special3_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/special3_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 32
+      }
+    },
+    "special4": {
+      "name": "Treasure Vault",
+      "upgrades": null,
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/special4.json",
+        "area": "runeterra/bilgewater/town/structures/special4_area.png",
+        "border": "runeterra/bilgewater/town/structures/special4_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/special4_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 21
+      }
+    },
+    "dwellingLvl1": {
+      "name": "Dockhand Quarters",
+      "upgrades": null,
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/dwellingLvl1.json",
+        "area": "runeterra/bilgewater/town/structures/dwellingLvl1_area.png",
+        "border": "runeterra/bilgewater/town/structures/dwellingLvl1_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/dwellingLvl1_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 31
+      }
+    },
+    "dwellingUpLvl1": {
+      "name": "Sea Dog Quarters",
+      "upgrades": "dwellingLvl1",
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/dwellingUpLvl1.json",
+        "area": "runeterra/bilgewater/town/structures/dwellingUpLvl1_area.png",
+        "border": "runeterra/bilgewater/town/structures/dwellingUpLvl1_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/dwellingUpLvl1_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 31
+      }
+    },
+    "dwellingLvl2": {
+      "name": "Corsair Deck",
+      "upgrades": null,
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/dwellingLvl2.json",
+        "area": "runeterra/bilgewater/town/structures/dwellingLvl2_area.png",
+        "border": "runeterra/bilgewater/town/structures/dwellingLvl2_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/dwellingLvl2_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 29
+      }
+    },
+    "dwellingUpLvl2": {
+      "name": "Marksman's Deck",
+      "upgrades": "dwellingLvl2",
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/dwellingUpLvl2.json",
+        "area": "runeterra/bilgewater/town/structures/dwellingUpLvl2_area.png",
+        "border": "runeterra/bilgewater/town/structures/dwellingUpLvl2_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/dwellingUpLvl2_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 29
+      }
+    },
+    "dwellingLvl3": {
+      "name": "Shellshot Battery",
+      "upgrades": null,
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/dwellingLvl3.json",
+        "area": "runeterra/bilgewater/town/structures/dwellingLvl3_area.png",
+        "border": "runeterra/bilgewater/town/structures/dwellingLvl3_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/dwellingLvl3_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 23
+      }
+    },
+    "dwellingUpLvl3": {
+      "name": "Reef Battery",
+      "upgrades": "dwellingLvl3",
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/dwellingUpLvl3.json",
+        "area": "runeterra/bilgewater/town/structures/dwellingUpLvl3_area.png",
+        "border": "runeterra/bilgewater/town/structures/dwellingUpLvl3_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/dwellingUpLvl3_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 23
+      }
+    },
+    "dwellingLvl4": {
+      "name": "Buhru Priest Hall",
+      "upgrades": "special1",
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/dwellingLvl4.json",
+        "area": "runeterra/bilgewater/town/structures/dwellingLvl4_area.png",
+        "border": "runeterra/bilgewater/town/structures/dwellingLvl4_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/dwellingLvl4_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 28
+      }
+    },
+    "dwellingUpLvl4": {
+      "name": "Hierophant Hall",
+      "upgrades": "dwellingLvl4",
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/dwellingUpLvl4.json",
+        "area": "runeterra/bilgewater/town/structures/dwellingUpLvl4_area.png",
+        "border": "runeterra/bilgewater/town/structures/dwellingUpLvl4_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/dwellingUpLvl4_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 28
+      }
+    },
+    "dwellingLvl5": {
+      "name": "Cliffside Roost",
+      "upgrades": null,
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/dwellingLvl5.json",
+        "area": "runeterra/bilgewater/town/structures/dwellingLvl5_area.png",
+        "border": "runeterra/bilgewater/town/structures/dwellingLvl5_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/dwellingLvl5_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 20
+      }
+    },
+    "dwellingUpLvl5": {
+      "name": "Stormwing Eyrie",
+      "upgrades": "dwellingLvl5",
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/dwellingUpLvl5.json",
+        "area": "runeterra/bilgewater/town/structures/dwellingUpLvl5_area.png",
+        "border": "runeterra/bilgewater/town/structures/dwellingUpLvl5_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/dwellingUpLvl5_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 20
+      }
+    },
+    "dwellingLvl6": {
+      "name": "Captains' Hall",
+      "upgrades": "special2",
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/dwellingLvl6.json",
+        "area": "runeterra/bilgewater/town/structures/dwellingLvl6_area.png",
+        "border": "runeterra/bilgewater/town/structures/dwellingLvl6_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/dwellingLvl6_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 30
+      }
+    },
+    "dwellingUpLvl6": {
+      "name": "Fleet Hall",
+      "upgrades": "dwellingLvl6",
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/dwellingUpLvl6.json",
+        "area": "runeterra/bilgewater/town/structures/dwellingUpLvl6_area.png",
+        "border": "runeterra/bilgewater/town/structures/dwellingUpLvl6_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/dwellingUpLvl6_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 30
+      }
+    },
+    "dwellingLvl7": {
+      "name": "Leviathan Basin",
+      "upgrades": null,
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/dwellingLvl7.json",
+        "area": "runeterra/bilgewater/town/structures/dwellingLvl7_area.png",
+        "border": "runeterra/bilgewater/town/structures/dwellingLvl7_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/dwellingLvl7_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 12
+      }
+    },
+    "dwellingUpLvl7": {
+      "name": "Elder Leviathan Basin",
+      "upgrades": "dwellingLvl7",
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/dwellingUpLvl7.json",
+        "area": "runeterra/bilgewater/town/structures/dwellingUpLvl7_area.png",
+        "border": "runeterra/bilgewater/town/structures/dwellingUpLvl7_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/dwellingUpLvl7_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 12
+      }
+    },
+    "shipyard": {
+      "name": "Coastal Slipway",
+      "upgrades": null,
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/shipyard.json",
+        "area": "runeterra/bilgewater/town/structures/shipyard_area.png",
+        "border": "runeterra/bilgewater/town/structures/shipyard_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/shipyard_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 33
+      }
+    },
+    "ship": {
+      "name": "Moored Harborboat",
+      "upgrades": null,
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/ship.json",
+        "area": "runeterra/bilgewater/town/structures/ship_area.png",
+        "border": "runeterra/bilgewater/town/structures/ship_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/ship_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 34,
+        "builds": "shipyard"
+      }
+    },
+    "grail": {
+      "name": "Beacon of Safe Return",
+      "upgrades": null,
+      "original_structure": {
+        "animation": "runeterra/bilgewater/town/structures/grail.json",
+        "area": "runeterra/bilgewater/town/structures/grail_area.png",
+        "border": "runeterra/bilgewater/town/structures/grail_border.png",
+        "campaignBonus": "runeterra/bilgewater/town/structures/grail_campaign.png",
+        "x": 0,
+        "y": 0,
+        "z": 15
+      }
+    }
+  },
+  "source_control_sha256": {
+    "content/factions.json": "255a8ca9874686aad2ac20fc50ec2075bcdc7e92bddf7660e9e9909ec4caf218",
+    "design/town-visuals.json": "d12a9eb153c2b22f2ff86e701cd5adaeff63f045f8fc74272a1d889f0b81e9c2",
+    "assets/recipes/town/background.png.json": "1202d6a26934edd0fa3e0d241d73797d9731ce8bda32d5ff7520d5814f17462e",
+    "assets/recipes/town/buildingIcons.json.json": "f1055f271767fba78d76b920211879b8cf9dc3afdc4b87b93ad91ebf34b7c71f",
+    "assets/recipes/town/icons_fort_built_large.png.json": "58238e4cbb55277af278e218c150fc2bbbb25cc9be4a07e1c48c9759da6a9de9",
+    "assets/recipes/town/icons_fort_built_small.png.json": "1d2cbdcb596e97347f21918484ab61e653053d500707b0463209bd754f44606c",
+    "assets/recipes/town/icons_fort_normal_large.png.json": "1a24f125c5faf80207ea33dee9e21efc06edbc4489a82bb8005cef8d72e08bc9",
+    "assets/recipes/town/icons_fort_normal_small.png.json": "b92382f9f9e177ca60e5b54341a7727aff00d95d8cc7df09ec543fc647963b3a",
+    "assets/recipes/town/icons_village_built_large.png.json": "f42c74ec4fb3a94f641f912b6241906847b08d5ee516f08e2c324dcbdec7878e",
+    "assets/recipes/town/icons_village_built_small.png.json": "6f949f6dc5908411a4c8727419bd8ca711771be1203f31ddf11b2a8d0598008b",
+    "assets/recipes/town/icons_village_normal_large.png.json": "04152567e9d6480b2b0046b5372d74e1311221b0713e0337edb80f5a0c899a53",
+    "assets/recipes/town/icons_village_normal_small.png.json": "f7844f2deae1a416632019df156f5d501a57253fe2fe280e0cb6a272dd9f2c23",
+    "assets/recipes/town/map_capitol.json.json": "ef73ee6577a5b09e421092ce0adad0723956f856ccf189b71a7c3bfde7e687b5",
+    "assets/recipes/town/map_castle.json.json": "0214fd1cb97c9a212b57b30c528a258cf61e4d37eb40bfb6f01be4ea107e4393",
+    "assets/recipes/town/map_citadel.json.json": "43398a325a95ef0a64d512b5641ae300e22202e0008a2884021fa2f0371cb601",
+    "assets/recipes/town/map_fort.json.json": "9ed3e754547a6f1253cc02e40b513aacb76bcb960f8f00558a2d4244b938d43b",
+    "assets/recipes/town/map_village.json.json": "2784cd7df627e3f7beaff7b4fbf956c04d3585c0b8f4b07bc7a24e0dfefb8632",
+    "assets/recipes/town/structures_blacksmith.json.json": "7b0a32e3ddd60ca4065a419ed15a91e98518564d39b52b4300d5bc88b4651250",
+    "assets/recipes/town/structures_blacksmith_area.png.json": "24ec2cadb605d261830d69731408369b713ae171e775eed31d9e814867b9bfea",
+    "assets/recipes/town/structures_blacksmith_border.png.json": "b306bbaf163ca3b5b9b08de63ac3805d2adaa7f7a059b1e93184313b77c2c7ec",
+    "assets/recipes/town/structures_blacksmith_campaign.png.json": "74578e5c73a40d68eafd5e01ea9a6d1fc6f3a90a68051db2bc396a997a0fc483",
+    "assets/recipes/town/structures_capitol.json.json": "0b44de673c03904d5c3aeae1b23836fa3145b31ca9cc061783bbf65583cee7f7",
+    "assets/recipes/town/structures_capitol_area.png.json": "ebe0492e4a818c3e85fe0df4af9e480ea62688e7d60dce1fc5e13141cdf2effb",
+    "assets/recipes/town/structures_capitol_border.png.json": "b428071e6ac1a18022d98056c3d855bfadc16d77da0dbee8a007ba805a76f201",
+    "assets/recipes/town/structures_capitol_campaign.png.json": "19701889e17d87bf01f6fd07502337bebc509b042733f3e07c339d1ae347636a",
+    "assets/recipes/town/structures_castle.json.json": "e3a8cb3d698affbfc3f471fc6bb159287eac266035ca2b4267f9bbeb656bb26d",
+    "assets/recipes/town/structures_castle_area.png.json": "be1a170da1848160eed6cd672f63829c26e764789b1e90fe0c042b1099339d9c",
+    "assets/recipes/town/structures_castle_border.png.json": "d28dc26fa8a470181130977371ca354f7acd2abf7a598d66c2ff2edce5b709dd",
+    "assets/recipes/town/structures_castle_campaign.png.json": "ef5735aa2fe1f9737246fb6824242f9236fa978a9d92b2b81a0c34febb8eb177",
+    "assets/recipes/town/structures_citadel.json.json": "8280e096a0f524e8d79503cda4918598ed83406531f3448cae8a933c3970e698",
+    "assets/recipes/town/structures_citadel_area.png.json": "47c93bb8bde634362e5d92403d75487b1e3b02e3449f06588c02404929526a8d",
+    "assets/recipes/town/structures_citadel_border.png.json": "f9201779ed371d92b1c9cea6a83cfc5c8b6edd5ab4257b6d7ddaca332c6c0c27",
+    "assets/recipes/town/structures_citadel_campaign.png.json": "6e2b7f2454e1b8397f9ac603fb2c3595a684ce236ca7953f155a6e444456e822",
+    "assets/recipes/town/structures_cityHall.json.json": "c3f92fa425ad4223381616695743d42ee645cc78fed0ff0f157cc7e976a5789c",
+    "assets/recipes/town/structures_cityHall_area.png.json": "c352dee4f2c3d3e5b7d11b9aa490de8f644a8f0fd6548255013628515003a270",
+    "assets/recipes/town/structures_cityHall_border.png.json": "363e6b4e5c3b51d948dde8321ecec384fe2a118ab4dd25392432e6ad4f32b2ec",
+    "assets/recipes/town/structures_cityHall_campaign.png.json": "143aa757912157fabc0dec101ecce6ed5c1a577350db883b16ac09dad734c43c",
+    "assets/recipes/town/structures_dwellingLvl1.json.json": "d999f88f4795c30938ac84836ed4751a6400676d8bee58aef3a8007ce8d82b9f",
+    "assets/recipes/town/structures_dwellingLvl1_area.png.json": "4776668a2978d331092584bd78fa0213f25441c4ad5138d1f9024185a8c17b9e",
+    "assets/recipes/town/structures_dwellingLvl1_border.png.json": "7b6ab6b5afe7f737a5c45d994f0a163b2026c2ae67d2cd50fe26c9a0fadea37b",
+    "assets/recipes/town/structures_dwellingLvl1_campaign.png.json": "371cb99c6f68a0c37e3b7d425603b9608ee4511c839fcb0c07b0eb21e7ff6c14",
+    "assets/recipes/town/structures_dwellingLvl2.json.json": "db9049f552902f68e43d55b81e14f502b73c6a4d7f122e2f781253ea0cb166cc",
+    "assets/recipes/town/structures_dwellingLvl2_area.png.json": "6be054247da9a4279a586df3f34750ceeb3cf52ffbbc83e392c7fca9ef3467b4",
+    "assets/recipes/town/structures_dwellingLvl2_border.png.json": "79f17af7687f52c2cf9882134ce6d889ec7cbe3958571cd65e342cd5b7e5ee2e",
+    "assets/recipes/town/structures_dwellingLvl2_campaign.png.json": "b974b54ba957faab4806e906596cd48748774f8cb73aaa5d921a17d2275b7656",
+    "assets/recipes/town/structures_dwellingLvl3.json.json": "19f8bc9891f09ae77e7dbe0bcab3cec39a799f6e06917a49a48b080a7b974076",
+    "assets/recipes/town/structures_dwellingLvl3_area.png.json": "066dac53b9d1ed920f881bed0a58a14adc0acc08ba4becb4802ab6e783351da7",
+    "assets/recipes/town/structures_dwellingLvl3_border.png.json": "e1c51ba145520eff2dedd2a47f48f3cae2841d19a90edf466c3cf4d49e8326cc",
+    "assets/recipes/town/structures_dwellingLvl3_campaign.png.json": "697aa7669b1682934224583768ff1cba223d53aaa08471351cbdccb9b31b8be1",
+    "assets/recipes/town/structures_dwellingLvl4.json.json": "b4f61265ec5570f9c58d2483dc877e5a49a0ffc6d85fd9a23e00c5fdcaab0280",
+    "assets/recipes/town/structures_dwellingLvl4_area.png.json": "0df8e042ad15ba64f4035283e22d8759f55a05c2cf034ff32b9c369e7ab6df05",
+    "assets/recipes/town/structures_dwellingLvl4_border.png.json": "e914b89efbc94dec40285184e3b6d819f4d53022fc098d74faf3550643c20822",
+    "assets/recipes/town/structures_dwellingLvl4_campaign.png.json": "8da5d3a3d9871626a8512d47433cf4a94b7cf5d5778d02e9a235207b40f40ebb",
+    "assets/recipes/town/structures_dwellingLvl5.json.json": "be1223e780220e956aba4fb58b541178e789dedbfb42a0ef9b32c60f98056073",
+    "assets/recipes/town/structures_dwellingLvl5_area.png.json": "deb4ff93d4cbc85be2f5590263c2d0ecd6f57a550d138d39977fb56eceb42251",
+    "assets/recipes/town/structures_dwellingLvl5_border.png.json": "74a09da273c48c0ae0952a0fce32a02bf91a16124ce45b3f53ab7b5bc5c1b76c",
+    "assets/recipes/town/structures_dwellingLvl5_campaign.png.json": "2d9af847f882305c7a6c230bdbcf6da2875501de5902189252aa826dfaea92f7",
+    "assets/recipes/town/structures_dwellingLvl6.json.json": "3ca36b1edafebf2ef773232cf6813c5b5169d801ecd1e1c206645ec1b64683f7",
+    "assets/recipes/town/structures_dwellingLvl6_area.png.json": "df1228932be69dc04fbdd07644db7b0cf44962a403e2a20c61e01178df8a8441",
+    "assets/recipes/town/structures_dwellingLvl6_border.png.json": "9728e20362a0a12d5c9e11d40a97582ea30613caa8a4213099a0a552e28e8a70",
+    "assets/recipes/town/structures_dwellingLvl6_campaign.png.json": "c17b4cc930b3272d5736e5d7f8a9e9cd05747a12fa762da686c61a6b2d2f5b22",
+    "assets/recipes/town/structures_dwellingLvl7.json.json": "4e47fe4b9ef183c0ffc7169163023ebde005933839b7d50edac53b446f7a24f2",
+    "assets/recipes/town/structures_dwellingLvl7_area.png.json": "2ccbf366a14fca0cd7287c2bff9c581a2d6e797ae91343472693eb9a87b4a08d",
+    "assets/recipes/town/structures_dwellingLvl7_border.png.json": "f127bc4d9a698b67754dc2f966d334fec30f7b741d887562de519c10cd641be9",
+    "assets/recipes/town/structures_dwellingLvl7_campaign.png.json": "f4dff9788059cf46d71cb2a5419fcc466c73ffd0ea6582200c7a10731fb6d7b5",
+    "assets/recipes/town/structures_dwellingUpLvl1.json.json": "7dd8b72d38c43e39ef1210fbcbee7b46a00def25680a74f0b54f9a4d74734645",
+    "assets/recipes/town/structures_dwellingUpLvl1_area.png.json": "84587935e42eb3c60dcf7bec0ecf5aa2eea3a8dbae9142c24227afc90a0f96c0",
+    "assets/recipes/town/structures_dwellingUpLvl1_border.png.json": "0a135cb6d40568c608af63a6876dd372d443a1014355226922fbdfc2f622ccf1",
+    "assets/recipes/town/structures_dwellingUpLvl1_campaign.png.json": "96d5777b6ce801e8b30d3729df96cdcd57775a2245054e920b9f036c001dcd64",
+    "assets/recipes/town/structures_dwellingUpLvl2.json.json": "dcf8457f8b9f882381b88919b50875d2547f78843c763dd6204e14a5cbac14af",
+    "assets/recipes/town/structures_dwellingUpLvl2_area.png.json": "c642ab2632f40eff822f1ef4484dbbf78987274f8059cf74d8c22f48ee3823fb",
+    "assets/recipes/town/structures_dwellingUpLvl2_border.png.json": "727eb26aa7b7054ef0656a781f59319c62d86208ab87cca534f1ce7a99497721",
+    "assets/recipes/town/structures_dwellingUpLvl2_campaign.png.json": "b7e9745afc9fd734c14469a24a4d74d6864dc89a96d1db524dd79aabef063347",
+    "assets/recipes/town/structures_dwellingUpLvl3.json.json": "09dee5f340231d3f7305a6c1709a92d0a05dc622ccffb0648ba77d153ae844fd",
+    "assets/recipes/town/structures_dwellingUpLvl3_area.png.json": "7b65f798454b9d36f0adb9b13e8d2967555df081cdb01575729a93575b07f078",
+    "assets/recipes/town/structures_dwellingUpLvl3_border.png.json": "e57de21043885568045bd3035b2b3305edc10e39b02442dfff59e51ec0b222ef",
+    "assets/recipes/town/structures_dwellingUpLvl3_campaign.png.json": "60e989f6dd398a8806908fddbbb0bcc14934976c586c4dfb6533d90c8afe7d19",
+    "assets/recipes/town/structures_dwellingUpLvl4.json.json": "42dbc5024ad8278a493d584a19d2d5c87b67f9c15a2c3e90e400a3ce7aed45a7",
+    "assets/recipes/town/structures_dwellingUpLvl4_area.png.json": "b7b455c1bc41e20587ad5248e5ef67202f8d85890d3a1d0814955b08a4a2d8ea",
+    "assets/recipes/town/structures_dwellingUpLvl4_border.png.json": "25e09cd18edf67e1600ddc710af7a8ff470b6724027e44b688d9355c15c124d6",
+    "assets/recipes/town/structures_dwellingUpLvl4_campaign.png.json": "f215103d2cb7b4e6f7b4671d9496a0dc24dc9d945ccda0435725d1261e36b8cb",
+    "assets/recipes/town/structures_dwellingUpLvl5.json.json": "a9b536e03f946d71df59952a16bca0e7707d87bfbf54ff97197bde6fec2cd3d4",
+    "assets/recipes/town/structures_dwellingUpLvl5_area.png.json": "7a967ae253134448ca2d67b42127c1f98ea2ef1a540664ec195a4699c5c22eb3",
+    "assets/recipes/town/structures_dwellingUpLvl5_border.png.json": "82819fa33da530dd84991a8226b1367bfbde3ce465e9b8b1a92b54d9dac28d70",
+    "assets/recipes/town/structures_dwellingUpLvl5_campaign.png.json": "75c234d6045b534b6b97a87e7a5f7440f7ec936b9b91de5a2876bc0e89867937",
+    "assets/recipes/town/structures_dwellingUpLvl6.json.json": "828474b9bd3fc0831310f450ba38fd7773e92caf66c381e57a479744ab363016",
+    "assets/recipes/town/structures_dwellingUpLvl6_area.png.json": "b46759ba414791ea810d4f2c70b5ed5217411347e4756e81eaed9d88ace91b13",
+    "assets/recipes/town/structures_dwellingUpLvl6_border.png.json": "641477badd9908bc19956cb89a3ad518c491cd4f5be43de8e907221f51effe56",
+    "assets/recipes/town/structures_dwellingUpLvl6_campaign.png.json": "d33ddb455af19e49cd574273aa513b1be53d2fe409597c4ebd28951de5290c3b",
+    "assets/recipes/town/structures_dwellingUpLvl7.json.json": "a0bb13105dcc5f689da158d27ac183e514a8b35f492781f068d691a4c630acaa",
+    "assets/recipes/town/structures_dwellingUpLvl7_area.png.json": "0ae622c916804b50a537a24c6093cc454a4a00621c1741eabbd8a42a158511f2",
+    "assets/recipes/town/structures_dwellingUpLvl7_border.png.json": "3ddee4d81519d7ccc491c39f633555b2ed14fdea9b435a429312d712638714f7",
+    "assets/recipes/town/structures_dwellingUpLvl7_campaign.png.json": "db202539b5921cf8707833d67428cb719ad649393f99dafec910938cb311fefd",
+    "assets/recipes/town/structures_fort.json.json": "700d820b8288048597813d39b3233023092bd69f42c28b91c7425cf69a9021d1",
+    "assets/recipes/town/structures_fort_area.png.json": "26076dd4a8f8936377ea7cc432b94d8bacc1a22b5773a194629620728252260b",
+    "assets/recipes/town/structures_fort_border.png.json": "6687fc8518a964855b9c225c075a409ce83908e3a2419c6e56f2dbc95e37eb9e",
+    "assets/recipes/town/structures_fort_campaign.png.json": "0203554d20f4e5fa09db4087c6710ace48f26e78abac325b71f8bc8ebfad9713",
+    "assets/recipes/town/structures_grail.json.json": "b12a8ad3933ae02af2753ae465b30f03b883818b597339000ba0564399447583",
+    "assets/recipes/town/structures_grail_area.png.json": "2555254bf310974d21f8e290d25afa97d7d62dba8977656e8893154f9de2aa6c",
+    "assets/recipes/town/structures_grail_border.png.json": "bc45bccf2e08cab6373f9b95aa1ef144d19c944a1839fe758525b219afd83bd0",
+    "assets/recipes/town/structures_grail_campaign.png.json": "78db644a868d2e0b99adcfd2cf4e74bd820152444dd7046db190faf85746949f",
+    "assets/recipes/town/structures_mageGuild1.json.json": "c12a12582520beed29e2108b4fb03df4c9fe2823e90ae3953454ad1e879f200b",
+    "assets/recipes/town/structures_mageGuild1_area.png.json": "8147103cc994bbca4ab5b240230b75f6664f6592279fe5bd8d4f382c6ef1508d",
+    "assets/recipes/town/structures_mageGuild1_border.png.json": "f89b0209239b45fbe02874c42d1339feb64dac632058e6d2f0fd9b9209c1c696",
+    "assets/recipes/town/structures_mageGuild1_campaign.png.json": "0cff5ca105807ec77962bfdcb32d45ae3d241c0265087b8ec3bfaf095a51a330",
+    "assets/recipes/town/structures_mageGuild2.json.json": "fc7d344c78f68d3bdeb3347b7592954fe7a107756e3614d0452c638544c3aa3c",
+    "assets/recipes/town/structures_mageGuild2_area.png.json": "6aacab395be429a069ab502dd51d3a54e65992cd33459380ce2be05a81850736",
+    "assets/recipes/town/structures_mageGuild2_border.png.json": "ff82482a09cb6f1939a0f8f34175c1bb61f5d38f88c82ba2fde6212c1a804813",
+    "assets/recipes/town/structures_mageGuild2_campaign.png.json": "52e0ea5f1d90af018d9220c8a125b7331aaa842766d68e5f181add9accaa521f",
+    "assets/recipes/town/structures_mageGuild3.json.json": "254f3688cdd5caa4ba27d0e7241538b37cfdf231b89e1ad4be9c3be6e78860d5",
+    "assets/recipes/town/structures_mageGuild3_area.png.json": "fda51a2658461432490448b617549ff5aaa73747847a23207774c915b978d7fc",
+    "assets/recipes/town/structures_mageGuild3_border.png.json": "89af90ab3d927a5e976c475c9fc27497314dd332085bbe7a046c8cc134c3ba3f",
+    "assets/recipes/town/structures_mageGuild3_campaign.png.json": "89475c2a46ccce0763d312c23d1ba79670a3d137e73f801d262d18dcc6d032d7",
+    "assets/recipes/town/structures_marketplace.json.json": "0e8ce5f39985c229ef66991d1e0f422c545327169225d099b0141c64b20a8330",
+    "assets/recipes/town/structures_marketplace_area.png.json": "8adebe9daec43ca9428897eb65eb14553b388fb7c9fd612f8b057b14da799096",
+    "assets/recipes/town/structures_marketplace_border.png.json": "3631bcc5dde742cd21402bbaa4cf112f452cbbb972270d70f22c51b34a4acf4c",
+    "assets/recipes/town/structures_marketplace_campaign.png.json": "25e3c7990e52d189a344b664aa064cba3996f58375d903deb628de7f6c933360",
+    "assets/recipes/town/structures_resourceSilo.json.json": "0d6bc848c60a278d3a7f82fd7e74a8b8e119ba43a1272bb5745f0487205eb8a7",
+    "assets/recipes/town/structures_resourceSilo_area.png.json": "cf14fc3f50ac06991e20a69e99c2cdeb1f5df185e6e2931d9a0c42c70323479f",
+    "assets/recipes/town/structures_resourceSilo_border.png.json": "868a132ae2d57c867b1f820ce11251a206e0097f6a8696aee943e88db6b0a28a",
+    "assets/recipes/town/structures_resourceSilo_campaign.png.json": "c03203936afe05a5483b49e17a47119f8fe19a9e215f2f288dea9837df2dc8d5",
+    "assets/recipes/town/structures_ship.json.json": "b35ec1024840c94659c204e5f5f5e05e2a588f04696ba55002c3031686600a8e",
+    "assets/recipes/town/structures_ship_area.png.json": "e47466d8146df5d8d0f59bb7187dbcf947ee56c8018b1291cb0e4a94f1feb7c2",
+    "assets/recipes/town/structures_ship_border.png.json": "0e42d9d7f1646bf6a403a589d4505ce5c01c22104ab7770bef55f4c8b534d044",
+    "assets/recipes/town/structures_ship_campaign.png.json": "10502704223d647560540718bdbacfe83d1862824e61b9f6805a48715732da7e",
+    "assets/recipes/town/structures_shipyard.json.json": "b6c317863f8aff201929e5c38673acc9349ffadd981f83a67a7325502cdd440c",
+    "assets/recipes/town/structures_shipyard_area.png.json": "d67d80f3455b9d2ffdf286be28dbe0cd8dc5065e07366864fefaf552706c9330",
+    "assets/recipes/town/structures_shipyard_border.png.json": "12654ba4c496ff8a16ca586d9d9716c3c9ffe30338371ad77e2eefae612b3466",
+    "assets/recipes/town/structures_shipyard_campaign.png.json": "af4b55e1e5c871e0e8432b49e0bdec7ced198c70c9620726e00568e3b96adadb",
+    "assets/recipes/town/structures_special1.json.json": "b0ef7489279b5b70c42e26b941be1a2b8a55bba5ff58279e5de9f071532f4b86",
+    "assets/recipes/town/structures_special1_area.png.json": "e969a7e1ea63431302badac05d50646bc46c076e594d970e62ebc74e77d1d0d2",
+    "assets/recipes/town/structures_special1_border.png.json": "475149ce434d19862105c84d9510744e0b016b730a6f196fc5b756ee3246ebe1",
+    "assets/recipes/town/structures_special1_campaign.png.json": "b0acb4d8dc1511bbdf65db2821d8f495bbbd112b4b3991d1c3c6569c58ef6287",
+    "assets/recipes/town/structures_special2.json.json": "8432212136588da67b58b3e84f65e3a6bb0ab73b0be07998dc36ac4bf558b884",
+    "assets/recipes/town/structures_special2_area.png.json": "f216f3048d0e94518c4fc3aafe027c486d3866c1655cd592f99cd08e4a6759d7",
+    "assets/recipes/town/structures_special2_border.png.json": "47eccfd37c1dcf9441e7650e7f41e887703b3c5a49876a5823120dd601595d07",
+    "assets/recipes/town/structures_special2_campaign.png.json": "36a15945e25f8c1546293f3e544d95c0fff0e4ea93778e0798f2703b18f4d77c",
+    "assets/recipes/town/structures_special3.json.json": "d1388f517ea89a12261d77af3419b628c8a41ec82006f754400ab513f6a179d5",
+    "assets/recipes/town/structures_special3_area.png.json": "20d7e51508f55467f735b4c8c3d55c18642173dc49633cc99fbec6c8ee15c2ab",
+    "assets/recipes/town/structures_special3_border.png.json": "03e6a7402d2458c2977d58350ee3fb4519e900e44b952aca7ddfe6691d6362e4",
+    "assets/recipes/town/structures_special3_campaign.png.json": "5dc82d4630f533cc5bda244c8b9184c87e4a4393ebf7514d087986543801e4f9",
+    "assets/recipes/town/structures_special4.json.json": "001fd709805ee6948b910d6ecf663e7fa77bbf57377ce23ec202db1d87b75ee5",
+    "assets/recipes/town/structures_special4_area.png.json": "6ac0b273f795d644fc9fa2df3529ca2be7bce9eb7716ed59040213e06209074f",
+    "assets/recipes/town/structures_special4_border.png.json": "83b619068ad6e924b2ca448e41cfe127bd8657eff5cb00d73839a19378d51e72",
+    "assets/recipes/town/structures_special4_campaign.png.json": "9a7fc75e15571dc334f735c02864d9b6faee51daedd360c294882bd66efb90ff",
+    "assets/recipes/town/structures_tavern.json.json": "970d65f732557b283934e0bb016ca8565f4d30ff98069eef58c8bdc67a3373be",
+    "assets/recipes/town/structures_tavern_area.png.json": "6cc7cf9a60536c653bc539bed9a319752875420f94c1a6126aaf0f60f805923a",
+    "assets/recipes/town/structures_tavern_border.png.json": "9d874161c4a85064a8fb2f738aa5840a5a21260c8a938d409c8b6592e7198e25",
+    "assets/recipes/town/structures_tavern_campaign.png.json": "a10878ea3b17c878dbdf85269e61809a3e43d4e32c102fa18ef15daeeda02016",
+    "assets/recipes/town/structures_townHall.json.json": "8ed15394d45bb555768568a53d634c77adbda33d7a54d23d4f17d3d4abd42dac",
+    "assets/recipes/town/structures_townHall_area.png.json": "2ff880159cd41111c74373d2394a2a83c4bcedd8accf2a6eb8920f7f16696ae3",
+    "assets/recipes/town/structures_townHall_border.png.json": "5f2e4d010b3b79abd16d0d7413cde2b6cca0d5112879c17dcd334e97a7037596",
+    "assets/recipes/town/structures_townHall_campaign.png.json": "40d38ffaf0fdc7a0b3f6e267a5bfe99bddfddd0ff5cd67f113ccef98fe5256dd",
+    "assets/recipes/town/structures_villageHall.json.json": "806ac0e33a43d5ae0d62aaaa0ba1fb395412d3d10996af4dc69dbc5ab460cbe9",
+    "assets/recipes/town/structures_villageHall_area.png.json": "b00026c3bf7caf8c787759a1da0195c04abedd95260e415410739335e821c05a",
+    "assets/recipes/town/structures_villageHall_border.png.json": "0bfdc2d3f437143cac560d35ea16cd91a94297af6d0348813b2c041c77a605a6",
+    "assets/recipes/town/structures_villageHall_campaign.png.json": "73894f0dcdcbea6c10c30cc0ebfd40d99737c2b2901666a92a4a3483fdfea0d7"
+  },
+  "original_site_state_families": {
+    "civic": {
+      "box": [
+        270,
+        57,
+        154,
+        74
+      ],
+      "z": 10,
+      "keys": [
+        "villageHall",
+        "townHall",
+        "cityHall",
+        "capitol"
+      ]
+    },
+    "defenses": {
+      "box": [
+        566,
+        14,
+        222,
+        74
+      ],
+      "z": 9,
+      "keys": [
+        "fort",
+        "citadel",
+        "castle"
+      ]
+    },
+    "guild": {
+      "box": [
+        512,
+        66,
+        80,
+        93
+      ],
+      "z": 11,
+      "keys": [
+        "mageGuild1",
+        "mageGuild2",
+        "mageGuild3"
+      ]
+    },
+    "leviathan": {
+      "box": [
+        10,
+        90,
+        154,
+        68
+      ],
+      "z": 12,
+      "keys": [
+        "dwellingLvl7",
+        "dwellingUpLvl7"
+      ]
+    },
+    "cliffwing": {
+      "box": [
+        652,
+        85,
+        140,
+        78
+      ],
+      "z": 20,
+      "keys": [
+        "dwellingLvl5",
+        "dwellingUpLvl5"
+      ]
+    },
+    "treasury": {
+      "box": [
+        355,
+        92,
+        83,
+        77
+      ],
+      "z": 21,
+      "keys": [
+        "special4"
+      ]
+    },
+    "slaughterDocks": {
+      "box": [
+        5,
+        165,
+        155,
+        90
+      ],
+      "z": 27,
+      "keys": [
+        "resourceSilo"
+      ]
+    },
+    "buhru": {
+      "box": [
+        540,
+        145,
+        128,
+        94
+      ],
+      "z": 28,
+      "keys": [
+        "special1",
+        "dwellingLvl4",
+        "dwellingUpLvl4"
+      ]
+    },
+    "cannon": {
+      "box": [
+        210,
+        132,
+        128,
+        95
+      ],
+      "z": 23,
+      "keys": [
+        "dwellingLvl3",
+        "dwellingUpLvl3"
+      ]
+    },
+    "corsair": {
+      "box": [
+        90,
+        173,
+        131,
+        82
+      ],
+      "z": 29,
+      "keys": [
+        "dwellingLvl2",
+        "dwellingUpLvl2"
+      ]
+    },
+    "captains": {
+      "box": [
+        646,
+        185,
+        150,
+        99
+      ],
+      "z": 30,
+      "keys": [
+        "special2",
+        "dwellingLvl6",
+        "dwellingUpLvl6"
+      ]
+    },
+    "sailors": {
+      "box": [
+        201,
+        233,
+        150,
+        85
+      ],
+      "z": 31,
+      "keys": [
+        "dwellingLvl1",
+        "dwellingUpLvl1"
+      ]
+    },
+    "blackMarket": {
+      "box": [
+        28,
+        236,
+        155,
+        97
+      ],
+      "z": 32,
+      "keys": [
+        "special3"
+      ]
+    },
+    "blacksmith": {
+      "box": [
+        2,
+        278,
+        196,
+        96
+      ],
+      "z": 41,
+      "keys": [
+        "blacksmith"
+      ]
+    },
+    "market": {
+      "box": [
+        185,
+        282,
+        190,
+        92
+      ],
+      "z": 42,
+      "keys": [
+        "marketplace"
+      ]
+    },
+    "tavern": {
+      "box": [
+        589,
+        273,
+        211,
+        101
+      ],
+      "z": 43,
+      "keys": [
+        "tavern"
+      ]
+    }
+  },
+  "complete_scene_program": {
+    "rear": [
+      "Harbor bastion",
+      "Captains civic council palace",
+      "Tide Archive",
+      "Cliffwing roost"
+    ],
+    "middle": [
+      "Leviathan basin",
+      "Treasure Vault",
+      "Buhru priest temple",
+      "Shellshot battery",
+      "Fleet Captains Hall"
+    ],
+    "lower_middle": [
+      "Corsair Deck",
+      "Sea Dog quarters",
+      "Slaughter Docks"
+    ],
+    "foreground": [
+      "Black Market",
+      "Shipwright Forge",
+      "Trading Market",
+      "Tavern"
+    ],
+    "coast": "Single optional supported slipway and compact moored boat, with ship replacing shipyard as dock-plus-boat composite.",
+    "grail": "Tiny separate civic ledge beacon ornament.",
+    "public_access": "A curved wide central street joins civic doorway to foreground, with dry supported branch lanes, stairs and landings to every site; no stairs under building roots.",
+    "material": "Tarred repurposed ship timber, rough ancient Buhru serpent stone, patched sails, brass/copper, limited ivory/red/navy/turquoise, warm amber lights and teal bay.",
+    "water": "Distant right bay and lower-right coastal pocket only. Ordinary plots are dry rock/stone or visibly braced supported timber; no accidental levitating or submerged building bases.",
+    "silhouettes": "Complete native painted master reviewed first. Actual full contours/roofs/poles/shadows and maximum family envelope traced afterward, never rectangles accepted as click masks."
+  },
+  "derivation": "After complete master source-composition review, genuine imagegen empty-scene and state variants preserve camera/light/site roots; deterministic alpha segmentation/crop/mask/icon conversion only. Existing generic raster/animation recipe consumers retained; new explicit silhouette-v2 contract proposed.",
+  "source_art_acceptance": false,
+  "native_verified": false,
+  "release_accepted": false
+}

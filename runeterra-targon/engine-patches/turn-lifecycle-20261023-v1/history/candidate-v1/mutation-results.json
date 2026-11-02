@@ -1,0 +1,35 @@
+{
+  "unscoped-ack": {
+    "compile_exit_code": 0,
+    "source_sha256": "471cb4c6bd6908ee1b0158b9d999b4d82f52e656b72e21c94145b8401c7d3607",
+    "mutation": {
+      "old": "if(accepted && request->second == turnGeneration)",
+      "new": "if(accepted)"
+    },
+    "run_exit_code": 1,
+    "output": "PASS accepted current request ends current turn\nPASS rejected request preserves turn\nFAIL old accepted ACK cannot clear new turn\nPASS duplicate ACK cannot clear new turn\nPASS unknown EndTurn ACK cannot clear active turn\nPASS old rejected ACK leaves new turn active\nPASS spell rejection retains its separate result and turn\nPASS rejected EndTurn retries until same generation accepted\nPASS defeated player waits for battle cleanup without requesting turn end\nFAIL same-player new turn before ACK neither retries old task nor clears new task\nPASS ACK followed by new turn before callback returns cannot trigger old retry\nPASS immediate transport ACK sees registered request before waiting caller resumes\nFAIL immediate new-turn transport reentry preserves new generation\nPASS observer path drops request without registering ownership\nRESULT 14 cases 3 failures\n",
+    "mutation_detected": true
+  },
+  "unscoped-retry": {
+    "compile_exit_code": 0,
+    "source_sha256": "dd077bd6f3c93a00aeaabf6b23918c5ef947fe9393badd9b26a1cba420e8a601",
+    "mutation": {
+      "old": "while(status.haveTurn(generation))",
+      "new": "while(status.haveTurn())"
+    },
+    "run_exit_code": 1,
+    "output": "PASS accepted current request ends current turn\nPASS rejected request preserves turn\nPASS old accepted ACK cannot clear new turn\nPASS duplicate ACK cannot clear new turn\nPASS unknown EndTurn ACK cannot clear active turn\nPASS old rejected ACK leaves new turn active\nPASS spell rejection retains its separate result and turn\nPASS rejected EndTurn retries until same generation accepted\nPASS defeated player waits for battle cleanup without requesting turn end\nFAIL same-player new turn before ACK must not loop\nFAIL ACK then new turn must not loop\nPASS immediate transport ACK sees registered request before waiting caller resumes\nPASS immediate new-turn transport reentry preserves new generation\nPASS observer path drops request without registering ownership\nRESULT 14 cases 2 failures\n",
+    "mutation_detected": true
+  },
+  "late-registration": {
+    "compile_exit_code": 0,
+    "source_sha256": "32c12181a2e053c78ee1815dd9b1f28645eca2ae6ad12af3c27bb0e9bac8ee7d",
+    "mutation": {
+      "old": "\t// Register request ownership before transport can deliver a reply or the next turn.\n\tif(vstd::contains(playerint, player))\n\t\tplayerint[player]->requestSent(&request, requestID);\n\tGAME->server().sendGamePack(request);",
+      "new": "\tGAME->server().sendGamePack(request);\n\tif(vstd::contains(playerint, player))\n\t\tplayerint[player]->requestSent(&request, requestID);"
+    },
+    "run_exit_code": 1,
+    "output": "PASS accepted current request ends current turn\nPASS rejected request preserves turn\nPASS old accepted ACK cannot clear new turn\nPASS duplicate ACK cannot clear new turn\nPASS unknown EndTurn ACK cannot clear active turn\nPASS old rejected ACK leaves new turn active\nPASS spell rejection retains its separate result and turn\nPASS rejected EndTurn retries until same generation accepted\nPASS defeated player waits for battle cleanup without requesting turn end\nPASS same-player new turn before ACK neither retries old task nor clears new task\nPASS ACK followed by new turn before callback returns cannot trigger old retry\nFAIL immediate transport ACK sees registered request before waiting caller resumes\nPASS immediate new-turn transport reentry preserves new generation\nPASS observer path drops request without registering ownership\nRESULT 14 cases 1 failures\n",
+    "mutation_detected": true
+  }
+}

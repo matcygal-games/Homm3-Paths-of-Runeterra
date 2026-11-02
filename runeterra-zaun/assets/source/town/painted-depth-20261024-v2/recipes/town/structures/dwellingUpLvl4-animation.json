@@ -1,0 +1,121 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "Independent Zaun architecture in Heroes III native painted language: corroded iron, wet concrete, industrial ruins. Never recolour Castle or Demacia art, import original pixels or invent an official crest.",
+  "building": "dwellingUpLvl4",
+  "building_contract": {
+    "full_canvas_placement": {
+      "x": 0,
+      "y": 0,
+      "z": 225
+    },
+    "name": "Cybernetic Guard Quarters",
+    "native_ground_contact": [
+      23,
+      129,
+      119,
+      96
+    ],
+    "upgrades": "dwellingLvl4"
+  },
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; prompted and technically assembled by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/dw4-master.png",
+      "sha256": "e833de56aa24b050b810ddedf690b05f4a340933c5a7c5f1a955a025d18d609b"
+    },
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/dw4-provenance.json",
+      "sha256": "3114dffbe279ec8486a192b5879512cba18e69bc44071c0e30b010d8ea163318"
+    },
+    {
+      "path": "assets/source/town/painted-community-20261024-v1/prepare.py",
+      "sha256": "570add080d42e1b17d7aec2939862119a175a664281e04050585cfb68138a835"
+    },
+    {
+      "path": "scripts/zaun_coastal_state_v1.py",
+      "sha256": "5aa45de45f59be66d393df44538743b1842db5ba5f1c4e48c1d83acaa13f3cf7"
+    },
+    {
+      "path": "assets/source/town/painted-depth-20261024-v2/prepare.py",
+      "sha256": "4338d2c3a5c9da1752c895765c49e198783a7ff5a233c8d629df2a0c7d62ccf3"
+    }
+  ],
+  "fit": "contain",
+  "generateOverlay": 0,
+  "generateShadow": 0,
+  "generation": {
+    "conversion": {
+      "composition_rectangle": [
+        23,
+        129,
+        119,
+        96
+      ],
+      "depth_direction": "Larger apparent foreground framing; smaller distant monuments; staggered connected dry terraces.",
+      "method": "Existing genuine painted source, uniform contain and full-canvas placement; alpha-derived masks. No new painting or camera projection.",
+      "native_z": 225,
+      "revision": "painted-depth-20261024-v2",
+      "source_crop": [
+        930,
+        0,
+        1920,
+        807
+      ]
+    },
+    "credits": {
+      "author": "OpenAI built-in imagegen; prompted by Codex",
+      "license": null,
+      "redistribution": "unresolved; release prohibited"
+    },
+    "edit_target": "assets/source/town/painted-v3/dw4-master.png",
+    "generation_date": "2026-10-21",
+    "image_generation_used": true,
+    "model": null,
+    "model_disclosed": false,
+    "painted_master": "assets/source/town/chemtech-v4-buildings/dw4-master.png",
+    "painted_master_sha256": "e833de56aa24b050b810ddedf690b05f4a340933c5a7c5f1a955a025d18d609b",
+    "prompt": "Usecase: precise-object-edit. OwnZaun ChemJuggernaut dwellingpair attached: preserve twoindependentwholebuildings side-by-side andthe trainingbarracks identity, cleaverracks, armorracks andstrikingpost. BaseLEFTlowbricktraininghall/ironfence; upgradeRIGHTtallerreinforcedindustrialhallwithuppercatwalk/moreequipment. ChangeartdirectionvisiblyCHEMTECH: chemicalGREENglasspressurefeed/tankonthebrickside, vividgreenreagentlampsconnectedcopperpipes, smallpurpleclothstandards andpurpleenamelroofbands; brownbrick/rustiron/leathermainmaterials. Baseshouldlookpoorer/simpler thanupgrade. OriginalHeroesIIIrichtexturedpainted/prerenderedtownstyle, lowfrontthreequartercamera/broadupperleftlight. Allchimneys/roof/fenceinsidecanvaswithwideexternalpaddingandgutter. Genuinetransparentalpha, nobackdrop orsharedgroundtile. Nopeople/text/neonoutlines/genericreactor.",
+    "provider": "OpenAI built-in image_gen.imagegen",
+    "returned_provenance": {
+      "output_hint": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-560d-7462-a9a5-3670486c088c as C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-560d-7462-a9a5-3670486c088c\\exec-d60527d6-e3d2-4595-9b59-e22628bdbc2a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "route": "Genuine image-generation edit of own Zaun buildings; technical crop/uniform scale/placement only",
+    "visual_approval_granted": false
+  },
+  "groups": [
+    {
+      "action": "own town building state, not a troop idle/action",
+      "frames": [
+        {
+          "sha256": "8d346605a26f796318053911c9d69ba5b0d6dcf84248a37d8d59218ae3d2deed",
+          "source": "assets/source/town/painted-depth-20261024-v2/structures/dwellingUpLvl4/layer.png"
+        }
+      ],
+      "group": 0
+    }
+  ],
+  "id": "zaun.town.structure.dwellingUpLvl4.animation",
+  "identity_review": "build/reports/town-depth-20261024-v2/source-pixel-review.json",
+  "native_visual_review": "pending",
+  "output_path": "Content/Sprites/runeterra/zaun/town/structures/dwellingUpLvl4.json",
+  "production_status": "delivered",
+  "recipe_type": "vcmi_animation",
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "source_sha256": "8d346605a26f796318053911c9d69ba5b0d6dcf84248a37d8d59218ae3d2deed",
+  "status": "built-unreviewed",
+  "title": "Cybernetic Guard Quarters town layer",
+  "visual_approval_granted": false
+}

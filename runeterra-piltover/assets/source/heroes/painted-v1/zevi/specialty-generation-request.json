@@ -1,0 +1,44 @@
+{
+  "provider": "OpenAI built-in imagegen, inherited own-creature and own-background sources",
+  "model": "not exposed",
+  "prompt": "No new imagegen call: fixed technical crop of own Academy Artificer head/upper torso and crossbow mechanism, composited over fixed own painted stone backing. Tighter troop framing improves creature-specialty recognition at44x44; no anatomy repaint or unique champion copy.",
+  "status": "painted-master-complete-unapproved",
+  "selected_painted_master": "assets/source/heroes/painted-v1/zevi/specialty-master.png",
+  "derivation": {
+    "method": "Fixed crop and alpha-composite of own painted subject on a fixed cropped region of own painted stone background.",
+    "subject": "assets/source/creatures/painted-v1/t1-t4/academyArtificer/master-v1.png",
+    "subject_sha256": "e10d8e0b5fc0f85ab803544e929e6d4607351e4e81040d19c91b02fa463b477e",
+    "subject_canvas": [
+      1330,
+      1182
+    ],
+    "subject_crop": [
+      220,
+      0,
+      880,
+      660
+    ],
+    "semantic_meaning": "Own Academy Artificer head/upper torso, field-tool harness and crafted-bolt bow mechanism; not the unique Zevi hero face.",
+    "background": "assets/source/heroes/painted-v1/uberti/specialty-master.png",
+    "background_sha256": "1245225aa89cad5315ec0db52afbdfa87c370e5d12e12449e8969bfd4973539f",
+    "background_crop": [
+      1104,
+      0,
+      1254,
+      150
+    ]
+  },
+  "reference_ancestry": [
+    {
+      "role": "Own independently generated painted creature subject",
+      "source": "assets/source/creatures/painted-v1/t1-t4/academyArtificer/master-v1.png",
+      "sha256": "e10d8e0b5fc0f85ab803544e929e6d4607351e4e81040d19c91b02fa463b477e",
+      "image_generation_used": true
+    },
+    {
+      "role": "Own painted stone backing crop",
+      "source": "assets/source/heroes/painted-v1/uberti/specialty-master.png",
+      "sha256": "1245225aa89cad5315ec0db52afbdfa87c370e5d12e12449e8969bfd4973539f"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "recipe_type": "vcmi_animation",
+  "canvas": [
+    96,
+    64
+  ],
+  "pivot": {
+    "x": 80,
+    "y": 60
+  },
+  "generateShadow": 1,
+  "generateOverlay": 0,
+  "output_path": "Content/Sprites/runeterra/ixtal/creatures/canopyGuide/map.json",
+  "groups": [
+    {
+      "group": 0,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t3/aux-v1/canopyGuide/map/pose-00.png",
+          "sha256": "0b266e5e294161b6c793108296ec5c0a3be89a8873a722a342e17c9a8cc60365",
+          "source_canvas": [
+            96,
+            64
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t3/aux-v1/canopyGuide/map/pose-01.png",
+          "sha256": "3695bbce9708bc697a0c399b519d0d383c0a6b2c0329d0e163d52b844b90bf26",
+          "source_canvas": [
+            96,
+            64
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t3/aux-v1/canopyGuide/map/pose-02.png",
+          "sha256": "97e9edc8d4e68c958488a46b80ee5ddbd88ef2fbc6051490d072ed3184010d9a",
+          "source_canvas": [
+            96,
+            64
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t3/aux-v1/canopyGuide/map/pose-03.png",
+          "sha256": "2dda488d3368a30dc01dfc76327e040402e5a151fa031944171d5b15de9e20d1",
+          "source_canvas": [
+            96,
+            64
+          ]
+        }
+      ]
+    }
+  ],
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in image_gen",
+    "model": "not exposed by built-in tool",
+    "prompt": "Usecase: identity-preserve. Assettype: ORIGINALHeroes3 IXTAL CANOPY GUIDE adventure/encounterpainted2Dposeatlas, notbattleframes. Image1exactownGuideidentity;image2actualnative64x64encounterframeisCAMERA/COMPACTPOSEreferenceonly,nocopyPikemanpixels;image3exactIxtalcrest. PaintEXACTLY8completeposes ofSAMEadultbrown-skinnedguide/wovenjadeearthtunic/headwrap/shortsingle-headedspear/woodshield/travelkit/watervessel, correctphysicalgoldIxtalcrestonshield. STRICT4columnsx2rowsequalcells transparentlandscape, no text/borders/scene. Entirefigure/weaponinsidecentral70percentofeachcellwithwidegutters. SlightlyhighernativeADVENTUREthreequarterviewthanbattle, upperplanesvisible, warmtop-leftlight, richtexturedpainted2DHoMM3materials/darkcontours, noBlender/3D/glossyplastic/anime/vector/pixelfilters. Constantbodyheight~270pxper384cell, anatomicalprojectedgroundroot(192,335)atmidpointofplantedbootsinallposes; doNOTzoom/moveactorbetweencells. SpearheldCLOSEANDUPRIGHTorSHORTDIAGONALINFRONTtofitcompact64x64reactionview, notlonghorizontallyextended. Nativefinal map96x64about42pxbodyroot80,60; reaction64x64about42pxbodyroot48,60, stablefootsupport. ROW1fourrealgentleMAPIDLE/FIDGETphasesallvisuallyRIGHT: relaxedready;inhalechestslightrise;smallheadlookandshieldsettle;exhalereturntowardready. Feetstayplanted; nofakewalkingtranslations. ROW2encounterposes: col1THREAT/readybraceshieldandshortspearvisuallyRIGHT;col2samekindgenuinelypaintedLEFTfacingthreatposewithanatomicalgear/surfaceperspectiveandplantedboots, notshiftedmirror;col3RIGHTfacingsettledguard;col4LEFTfacingsettledguard. Bothleftandrightcompletefiguresneedstableprojectedroot andfullshield/speartips,margins. Actualposearticulation, noextrapeople, ghost/weaponcopies. PhysicalIxtalcrestfollowsshieldangleandnaturalocclusion,nofloatingbadge. Truealpha,nohaze/pedestal/shadowmat/tiles/UI.",
+    "painted_master": "assets/source/creatures/painted-v1/t1-t3/canopyGuide/adventure-atlas-v1.png",
+    "painted_master_sha256": "1413ba98085fd52cc3155c5b4f37e5aa18222fd64f7f17278f760d0caa0c8a3f",
+    "method": "Genuine painted2D dedicated source poses/scenic portrait, technical isolation and fixed uniform registration only; no3D, bbox fitting or body warps."
+  },
+  "production_inputs": [
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/assemble_aux_roles_v1.py",
+      "sha256": "d16f8481e863a603d62da3bac0392e61f288472b2ce55ad38ec7eb2814bffb8e"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/components.py",
+      "sha256": "2c3bd6f800958b39cffa67d13edf7678c3eb460eb1f59dcfc8679b2e82833336"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/aux_registration.json",
+      "sha256": "d66b2c36bf8a119f5ecc4c67daeb03e8fb36e4b73742e98a929154e2ede41ef6"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/aux-v1/canopyGuide/role-placement.json",
+      "sha256": "78187db80c592b601da22c27d62eb0802d95177990f16ccb8e3b39bce6e0f904"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/canopyGuide/adventure-atlas-v1.png",
+      "sha256": "1413ba98085fd52cc3155c5b4f37e5aa18222fd64f7f17278f760d0caa0c8a3f"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/canopyGuide/adventure-atlas-v1.generation.json",
+      "sha256": "116a93cccb72f89efa99023d676aa3d2ba35f72c568c1cea294eeea7ce211736"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/canopyGuide/portrait-master-v1.png",
+      "sha256": "576f83de2a5f79e6c69c7e69da9ff79b0e19cb2f7e4de6922cdb6894c6e0865a"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/canopyGuide/portrait-master-v1.generation.json",
+      "sha256": "9b35cf92548d8a87b291e75e5a1f888931538bec80dfca61c0b082d7ec7327b6"
+    }
+  ],
+  "production_status": "painted-master-complete-unapproved",
+  "acceptance": "authored configuration; independent/native/fidget cadence/pixels/rights pending"
+}

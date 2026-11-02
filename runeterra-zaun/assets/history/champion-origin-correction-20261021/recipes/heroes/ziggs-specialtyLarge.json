@@ -1,0 +1,71 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "Independent Zaun character portrait in Heroes III native painted language. The portrait must match the authored biography and must not reuse official character art.",
+  "canvas": [
+    44,
+    44
+  ],
+  "credits": {
+    "author": "OpenAI built-in image_gen; independent portrait direction by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "delivery": {
+    "identity_review": "build/reports/art-implementation/20261021-champion-completion-v3/champions/REVIEW.md",
+    "sources": [
+      {
+        "path": "assets/source/heroes/ziggs/painted-v2/specialtyLarge-master.png",
+        "sha256": "c91402b8a45160db2b34f743807640a7c87a15bdb492b682b8726bc1f534b25f"
+      }
+    ],
+    "status": "built-unreviewed; native and final art acceptance pending",
+    "technical_crop_box": [
+      1020,
+      220,
+      1536,
+      850
+    ],
+    "visual_approval_granted": false
+  },
+  "dependencies": [],
+  "fit": "contain",
+  "generation": {
+    "image_generation_used": true,
+    "model": null,
+    "model_id_exposed": false,
+    "model_note": "Tool did not expose the model identifier.",
+    "painted_master": "assets/source/heroes/ziggs/painted-v2/portrait-and-specialty-master.png",
+    "painted_master_sha256": "755bd0fb7f31a087b6ee99b95439f991af3e5b81548b1ba963610de3ac9b84a2",
+    "prompt": "Use case: stylized-concept. Asset type: genuine production champion portrait and its separate specialty object for a Heroes of Might and Magic III expansion, Zaun. Independently draw the subject; do not copy official character artwork.\n\nComposition: landscape 1536 x 1024 image with TWO PANELS of ONE CHAMPION IDENTITY. LEFT two thirds x 0-1023: square close head-and-shoulders portrait, full head centered near x 512, top near y 60 and chin near y 730. RIGHT third x 1024-1535: one fully visible specialty OBJECT, centered within x 1070-1490, y 230-820, on a plain dark brown background. Straight vertical panel boundary x 1024. The specialty must not be a head, portrait crop, emblem or MOBA ability splash. No unrelated heroes, text, labels, frames or watermark.\n\nStyle: original 1999 Heroes III sculpted pre-rendered miniature portraits with a restrained oil-painted finishing pass. Strong three-dimensional facial/creature planes, rich tactile materials, directional upper-left light, crisp restrained eye highlights, readable silhouette. Natural anatomy, compact faces, rough cloth, worn leather, tarnished iron and brass. Background is real subordinate painted scenery with value separation. Must read at 58 x 64 and 48 x 32, with object readable at 44 x 44 and 32 x 32. No anime, mascot face, storybook softness, glossy modern 3D, modern splash-art layout, neon, flat vector, comic outline, mobile-game proportions, arbitrary pixel filter or painted text.\n\nChampion: ZIGGS.\nPortrait: A small male YORDLE demolition tinkerer, tawny brown facial fur, enormous pointed ears, blunt little muzzle with a tiny dark nose, lively amber eyes, broad delighted toothy grin, worn leather cap with heavy copper goggles pushed up on forehead. Clearly furry yordle head, not a short human or a generic goblin. Lean head toward left. Rough orange scarf and patched dark leather collar. Background: smoky ochre workshop with dark iron rafter and a caged amber lamp. Strong modeled fur/face planes, not a fluffy cute mascot.\nSpecialty object: One stout spherical dark iron demolition bomb with a broad brass band and a SHORT unlit hemp fuse, fully visible on dark brown. No explosion, fire or human hand.",
+    "provenance_record": "assets/source/heroes/ziggs/painted-v2/generation.json",
+    "provider": "OpenAI built-in image_gen tool",
+    "returned_provenance": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-1663-7df0-8ab7-dcf90bfe6162 as C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-1663-7df0-8ab7-dcf90bfe6162\\exec-b1731c3e-3171-4992-9a1b-9f8bcf7eea7e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "route": "Genuine built-in image generation. Technical crop, RGBA conversion, uniform LANCZOS resampling and canvas placement only; specialty object is a separate painted panel, never a face crop."
+  },
+  "hero": "ziggs",
+  "id": "zaun.hero.ziggs.specialtyLarge",
+  "output_path": "Content/Sprites/runeterra/zaun/heroes/ziggs/specialtyLarge.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    44,
+    44
+  ],
+  "source": "assets/source/heroes/ziggs/painted-v2/specialtyLarge-master.png",
+  "source_sha256": "c91402b8a45160db2b34f743807640a7c87a15bdb492b682b8726bc1f534b25f",
+  "specialty": {
+    "description": "The hero's ranged creatures keep their full damage when they shoot at defenders standing behind the walls of a defended town, instead of suffering the native wall penalty for shooting through fortifications.",
+    "name": "Demolition Crew",
+    "rule": "The specialty image shows the authored specialty. It is not a duplicate portrait."
+  },
+  "status": "built-unreviewed",
+  "title": "ziggs specialtyLarge",
+  "visual_approval_granted": false
+}

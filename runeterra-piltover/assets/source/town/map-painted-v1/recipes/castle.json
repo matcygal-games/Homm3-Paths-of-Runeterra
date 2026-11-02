@@ -1,0 +1,69 @@
+{
+  "animation_scope": "One painted static adventure-map pose, not creature motion",
+  "canvas": [
+    192,
+    160
+  ],
+  "generateOverlay": 0,
+  "generateShadow": 1,
+  "generation": {
+    "image_generation_used": true,
+    "model": "Exact model identifier not exposed by tool",
+    "painted_master": "assets/source/town/map-painted-v1/native/portable/castle-clean.png",
+    "painted_master_sha256": "b04d36e87eb46cf3c98d51c734a16af3651fae12beb5c274dab7781fffb886a6",
+    "prompt": "Edit the supplied original painted2D Piltover adventure-map settlement into ONE CASTLE state: Strong final defensive enclosure with TWO tall stout side towers and a fortified rear keep, warm ivory-stone parapets, navy roofs, practical brass fittings and richer navy city pennants. Retain recognizable central glass workshop/clock guildhouse, its crest and visible FRONT door/stairs in exact position. Stronger than citadel, not giant fantasy palace. Preserve exact camera, every shared building's source scale, central front door/stair-root position near(850,1100) and square1280canvas. Do NOT zoom to fit newly tall walls; grow only upward/backward into transparent margin. Front entry remains completely visible and clear, grass footprint compact. Exact Piltovan gold stem/orb/gear-flank civic crest remains engraved over front door, with separate plain navy ownership pennant. No modern3D, anime, photo, flatvector, text/watermark. Original HeroesIII compact richly textured painted realism, upper-left lighting, warm grey/ivory stone, dark navy slate, aged brass and timber, restrained turquoise glass. Complete uncropped architecture/shadow, TRANSPARENT background; NO red fringe, no surrounding scene or water.\n",
+    "provider": "OpenAI built-in imagegen"
+  },
+  "groups": [
+    {
+      "frames": [
+        {
+          "frame": 0,
+          "overlay_sha256": "c8f95321c6d9add07527996ea3614f350045b7ac43c7a16283be2336a5f5d4a3",
+          "overlay_source": "assets/source/town/map-painted-v1/native/masks/castle-OVERLAY.png",
+          "source": "assets/source/town/map-painted-v1/native/frames/castle.png",
+          "source_canvas": [
+            192,
+            160
+          ],
+          "source_sha256": "5b4d2da1b5063234f9b90d601ae77313e2d64964b424a310e340be9917fb492d"
+        }
+      ],
+      "group": 0
+    }
+  ],
+  "output_path": "Content/Sprites/runeterra/piltover/town/map/castle.json",
+  "pivot": {
+    "x": 112,
+    "y": 139
+  },
+  "production_inputs": [
+    {
+      "path": "assets/source/town/map-painted-v1/root-plan-v1.json",
+      "sha256": "e88a11d2e6142ee0d4425f538b53eae3a7cf0f4a2aa452f593b183d08e0249e1"
+    },
+    {
+      "path": "assets/source/town/map-painted-v1/produce-native.py",
+      "sha256": "dc6d4f03b905b0945b01d4393bb6752ef4f606873e386f77d49c7eed199dd4a0"
+    },
+    {
+      "path": "assets/source/town/map-painted-v1/castle_v1.png",
+      "sha256": "454159910e071e03a7a3e2ce69da470e6f52abf930fc323b79866152df0b9291"
+    },
+    {
+      "path": "assets/source/town/map-painted-v1/native/portable/castle-clean.png",
+      "sha256": "b04d36e87eb46cf3c98d51c734a16af3651fae12beb5c274dab7781fffb886a6"
+    },
+    {
+      "path": "assets/source/town/map-painted-v1/piltover_map_castle_v1-actual-prompt.txt",
+      "sha256": "ea13b33d889b341396460f7ad3531dde70e074838f7656ea957758621b09484c"
+    },
+    {
+      "path": "assets/source/town/map-painted-v1/native/masks/castle-flag-source.png",
+      "sha256": "6e15c146e057108ec0028cab178a244b66f478bbf8130a8a88c042946ba3e97b"
+    }
+  ],
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "vcmi_animation",
+  "visual_approval_granted": false
+}

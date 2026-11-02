@@ -1,0 +1,842 @@
+{
+  "active_assets_modified": false,
+  "coastal_candidate_visual_review": {
+    "actual_inspected_close_board": {
+      "path": "assets/reviews/town-current-v1/coast-current-proposed-close-native1x.png",
+      "sha256": "d5825aa0f42a97777016a8fee4cbe2d69d11d7f931f811fa3d5f800f36bcd082"
+    },
+    "actual_inspected_depth_board": {
+      "path": "assets/reviews/town-current-v1/coast-current-proposed-depth-comparison-1x.png",
+      "sha256": "1fd246c79e53b6b53d2487bdf2958c94341c7fb19c0a5766792586f4a7a8398c"
+    },
+    "actual_inspected_icon_board": {
+      "path": "assets/source/town/coastal-ship-state-v1/construction-campaign-icons-before-after-1x.png",
+      "sha256": "5263878751d6c09dc6e558d7b061663a7643a7de676cbf6acca9a4b7d91bf12e"
+    },
+    "actual_inspected_mask_board": {
+      "path": "assets/reviews/town-current-v1/coast-proposed-real-alpha-masks-1x.png",
+      "sha256": "982744725ad4ac949e62c644cdfad8ce5b1f548dcf92c0f27e7606b05fe1aa83"
+    },
+    "finding": "Dock-behind-vessel candidate retains roofed workshop/crane and a readable complete hull over river water. Reverse depth visibly draws the pier through the hull and is rejected. Exact source119x91plot contains allnonzeroalpha, alpha8bounds[2,1,117,87]; no visible dock or vessel tip reaches the crop edge. Construction150x70and campaign58x64retain boat/workshop identity at true native size.",
+    "native_runtime_tested": false,
+    "visual_approval_granted": false
+  },
+  "engine_source_hashes": [
+    {
+      "path": "vcmi-develop/vcmi-develop/client/windows/CCastleInterface.cpp",
+      "sha256": "8b8adf48f8119ed37cbd67dfa0325997ec189aad6919fea5edd3dcd71dd63d4c"
+    },
+    {
+      "path": "vcmi-develop/vcmi-develop/lib/entities/building/CBuilding.cpp",
+      "sha256": "61b7feb334bb8ba555fbe4f29c23fcf5e565d962b248de717693ddf938330537"
+    },
+    {
+      "path": "vcmi-develop/vcmi-develop/lib/entities/faction/CTownHandler.cpp",
+      "sha256": "2994c87c6d645a4da3ebccb8273d24326f696552e2a9889cae1747c9ecb13950"
+    },
+    {
+      "path": "vcmi-develop/vcmi-develop/clientsdl2/render/SDLImage.cpp",
+      "sha256": "ada8c4a7d463e273bc7e1b85637f57ba3376a86a55fdd31152ce3f536313705f"
+    },
+    {
+      "path": "vcmi-develop/vcmi-develop/config/buildingsLibrary.json",
+      "sha256": "6a0ceada7ae3619abf8a840b6a04265ad7a1b64b63a0233b2e5790b2e17528e4"
+    }
+  ],
+  "evidence": {
+    "path": "assets/reviews/town-current-v1/town-current-evidence.json",
+    "sha256": "6ab9d388228aefd914ed38fdaf374622d4957cad1b48360035a4bfc787c54ce5"
+  },
+  "findings": [
+    {
+      "correction": {
+        "all35coastal_contexts_rechecked": true,
+        "candidate": {
+          "path": "assets/source/town/coastal-ship-state-v1/coastal-replacement-candidate.json",
+          "sha256": "d3d30880a15a7abf5e17b4b8d22217a893f2e0ae569594f9d48c2787906b340a"
+        },
+        "five_actual_pipeline_outputs": [
+          {
+            "dimensions": [
+              800,
+              374
+            ],
+            "output_path": "Content/Sprites/runeterra/demacia/town/structures/ship-frame.png",
+            "sha256": "518bb9f19e116e87e6941908e32d2ea8b77a08bc88323247101d8fed3903c48d",
+            "source_candidate": {
+              "path": "assets/source/town/coastal-ship-state-v1/outputs/Content/Sprites/runeterra/demacia/town/structures/ship-frame.png",
+              "sha256": "518bb9f19e116e87e6941908e32d2ea8b77a08bc88323247101d8fed3903c48d"
+            }
+          },
+          {
+            "dimensions": [
+              800,
+              374
+            ],
+            "output_path": "Content/Sprites/runeterra/demacia/town/structures/ship_area.png",
+            "sha256": "6d45171541eeec3b443753f831d30890e07efbfbe235f48a63759d9a5472afaa",
+            "source_candidate": {
+              "path": "assets/source/town/coastal-ship-state-v1/outputs/Content/Sprites/runeterra/demacia/town/structures/ship_area.png",
+              "sha256": "6d45171541eeec3b443753f831d30890e07efbfbe235f48a63759d9a5472afaa"
+            }
+          },
+          {
+            "dimensions": [
+              800,
+              374
+            ],
+            "output_path": "Content/Sprites/runeterra/demacia/town/structures/ship_border.png",
+            "sha256": "4751712ca47596b2457349cbf3a5070ac4accd662b16bf48a37c54010b5669c0",
+            "source_candidate": {
+              "path": "assets/source/town/coastal-ship-state-v1/outputs/Content/Sprites/runeterra/demacia/town/structures/ship_border.png",
+              "sha256": "4751712ca47596b2457349cbf3a5070ac4accd662b16bf48a37c54010b5669c0"
+            }
+          },
+          {
+            "dimensions": [
+              800,
+              374
+            ],
+            "output_path": "Content/Sprites/runeterra/demacia/town/structures/ship-frames/g00-f000.png",
+            "sha256": "518bb9f19e116e87e6941908e32d2ea8b77a08bc88323247101d8fed3903c48d",
+            "source_candidate": {
+              "path": "assets/source/town/coastal-ship-state-v1/outputs/Content/Sprites/runeterra/demacia/town/structures/ship-frames/g00-f000.png",
+              "sha256": "518bb9f19e116e87e6941908e32d2ea8b77a08bc88323247101d8fed3903c48d"
+            }
+          },
+          {
+            "dimensions": null,
+            "output_path": "Content/Sprites/runeterra/demacia/town/structures/ship.json",
+            "sha256": "e9cf7465d0f3d6385a2d5877aae1cc04ed13ad34369d2ae840155c3961d17c77",
+            "source_candidate": {
+              "path": "assets/source/town/coastal-ship-state-v1/outputs/Content/Sprites/runeterra/demacia/town/structures/ship.json",
+              "sha256": "e9cf7465d0f3d6385a2d5877aae1cc04ed13ad34369d2ae840155c3961d17c77"
+            }
+          }
+        ],
+        "method": "Exact unchanged own dock behind vessel; existing raster/mask/animation converters; durable119x91technical selected-master option. No new painting or original pixels.",
+        "native_retest_required": [
+          "A coastal town with a valid boat output tile must retain dock/workshop/crane after boat creation.",
+          "Boat removal must restore ordinary dock appearance; occupied dock clicks must show the native cannot-build-another-boat response.",
+          "Check correct vessel-in-front depth, complete silhouette hit mask and restrained border at actual800x374town size."
+        ]
+      },
+      "evidence": [
+        {
+          "path": "assets/generated/Content/Sprites/runeterra/demacia/town/structures/ship-frame.png",
+          "sha256": "7b97efe77144736a94de4741d0fd77a8215dff625fe9e00fa1d41b9efbd963e7"
+        },
+        {
+          "path": "assets/generated/Content/Sprites/runeterra/demacia/town/structures/shipyard-frame.png",
+          "sha256": "4c85210e9baec772eb090bff537d58cf4b0abe7138e9d9a2b1f8ccfc5c173edb"
+        },
+        {
+          "path": "assets/reviews/town-current-v1/coast-current-proposed-close-native1x.png",
+          "sha256": "d5825aa0f42a97777016a8fee4cbe2d69d11d7f931f811fa3d5f800f36bcd082"
+        }
+      ],
+      "id": "boat-erases-dock",
+      "native_cause": "buildingsLibrary ship upgrades shipyard; CCastleBuildings::recreate keeps the deepest state when a boat is at the output. Current own ship image has only the vessel, so dock workshop/crane disappear.",
+      "original_reference": "Actual Castle TBCSBOAT retains the TBCSDOCK pier as part of its replacement image. Exact archive/resource/frame hashes are in evidence.original_castle.",
+      "severity": "medium",
+      "status": "source repair prepared and parent selected for development; active publication/native coastal retest pending"
+    },
+    {
+      "counterevidence_to_missing_buildings": "Neither is mechanically invisible or fully occluded in the measured contexts; do not report either as an established missing-click defect.",
+      "finding": "Grail has634visible opaque hit pixels and an11x11safe square, Aviary1608. The monument is small pale/gold architecture in front of pale civic masonry; hover/highlight legibility must be checked at native scale.",
+      "id": "smallest-clickable-markers",
+      "severity": "review-limit",
+      "status": "source evidence clear; native hovering still required"
+    },
+    {
+      "correction": "No arbitrary recolor or structural redesign proposed from static sheets. Review current pixels within actual town interface, especially Grail/upper skyline and tiny crests.",
+      "finding": "Lower-frontal roof/door planes, compact structures, pale stone, dark blue roofs, restrained gold and progressive scale make a coherent city with distinctive monumental skyline/terraces. Original Castle is darker/earthier and its painted detail is less uniformly sharp. The current Demacian masonry and small trim are brighter and finer; native interface comparison is still needed before final style approval.",
+      "id": "native-material-and-camera",
+      "severity": "review-limit",
+      "status": "actual static comparison completed; final in-game visual acceptance pending"
+    },
+    {
+      "correction": "Test one actual coastal town output, boat creation/removal and occupied-shipyard click using the repaired state after coordinated publication.",
+      "finding": "The painted river exists even for inland map towns, as a fixed town-scene abstraction. Only native adjacent-water/shipyard rules may allow boat production; a painted river does not create adventure water or prove a valid output tile.",
+      "id": "coastal-rules",
+      "severity": "review-limit",
+      "status": "intended HoMM3 scenery abstraction; actual map coast requires engine test"
+    }
+  ],
+  "limits": [
+    "No GUI was launched or controlled. A safe pixel witness is a source-derived clickability prediction, not a recorded mouse interaction.",
+    "Draw order among equal-zoverlapping structures would be ambiguous; none of the selected own contexts contains such a conflict.",
+    "Original Castle pixels are private comparisons outside mod/source packaging; candidate correction PNGs contain only own artwork."
+  ],
+  "mechanical_results": {
+    "all35maximal_compatible_state_contexts_have_visible_11x11click_patch": true,
+    "area_masks_compared": 35,
+    "area_silhouette_mismatch_pixels": 0,
+    "border_masks_compared": 35,
+    "border_outline_mismatch_pixels": 0,
+    "faction_source_stays_separate": true,
+    "lowest_area_state": "grail",
+    "minimum_visible_exposed_click_pixels": 634,
+    "native_group_replacement": "Deepest native upgrade replaces each shared site; Tower/HQ/Chapterhouse and Workshop/Forge/Awakening are each one family. Grail is a separate base despite sharing the civic review crop.",
+    "same_z_overlap_conflicts": 0
+  },
+  "native_runtime_tested": false,
+  "observer": "Codex town_creatures; actual native-pixel source inspection",
+  "per_site_visual_observations": [
+    {
+      "finding": "Village hall/city hall/Capitol progress from small roofed hall to tall gold/navy civic mass and dome; Grail remains a small separate foreground monument. No simultaneous hall-chain ghost layers are selected.",
+      "site": "civic"
+    },
+    {
+      "finding": "Fort/citadel/castle use the same terrace and gate axis with different central towers/wall detail. Native selected upgrade replaces earlier walls.",
+      "site": "defenses"
+    },
+    {
+      "finding": "Three tall narrow libraries have distinct tops/detail; selected LibraryIII uses master-v4. It is narrow enough to keep the civic/Colossus neighbors readable.",
+      "site": "guild"
+    },
+    {
+      "finding": "Recruit Barracks and selected VanguardHall-v5 are the smallest ordinary dwelling footprints. Upgraded arcade/crest is readable; over98%of opaque pixels remain exposed.",
+      "site": "recruit"
+    },
+    {
+      "finding": "Long firing lodge changes into more developed roof/turrets; near terrace and native doorway remain visible despite small overlaps with the Recruit site.",
+      "site": "ranger"
+    },
+    {
+      "finding": "Broad conservatory hall gains curved petricite buttresses/cathedral-like framing. Its blue roof reads as a large middle-terrace anchor, not a repeated tower.",
+      "site": "musicians"
+    },
+    {
+      "finding": "Open training arena/rail silhouette remains visible and gains expanded stone seating/tower detail. Both states retain a separate exposed foreground circle.",
+      "site": "duelist"
+    },
+    {
+      "finding": "Timber-backed barracks becomes a taller plated civic hall. Recruit arcade overlaps part of its lower wall, leaving6115of6906upgraded opaque hit pixels and a large clear doorway/roof packet.",
+      "site": "dragonguard"
+    },
+    {
+      "finding": "Narrow tower grows into headquarters/Chapterhouse at the same plot; each stage has a clear tall blue-banner silhouette. Original tower is intentionally replaced rather than a hidden sixth faction site.",
+      "site": "mageseeker"
+    },
+    {
+      "finding": "Workshop, open forge/scaffold and completed monumental guardian are distinct successive states on one rear-left plot. Completed upgrade has a different stone figure/shoulder silhouette, not a tint-only change.",
+      "site": "colossus"
+    },
+    {
+      "finding": "Exposed cut petricite ledge, crane and working yard make a distinctive resource site. Optional coast candidate overlaps some foreground yard but all source hit patches remain reachable.",
+      "site": "quarry"
+    },
+    {
+      "finding": "Small cliff-top winged silhouette and a tower identify the scouting site on the highest-right terrace. Tiny details remain limited by1608opaque pixels.",
+      "site": "aviary"
+    },
+    {
+      "finding": "Compact right-side refuge has a clear peaked roof and blue banner; its whole opaque hit silhouette remains exposed.",
+      "site": "sanctuary"
+    },
+    {
+      "finding": "Low foreground timber/stone workshop, chimney smoke and orange forge distinguish it from other service sites. Frame and outline do not touch the native canvas edge.",
+      "site": "blacksmith"
+    },
+    {
+      "finding": "Open stalls, cloth shades and central low hall distinguish recruitment/commerce shape from solid temples. Foreground scale and steps connect to the town terrace.",
+      "site": "market"
+    },
+    {
+      "finding": "Large foreground inn with timber upper floor, lit windows and barrels is distinct from the market/forge. Full opaque silhouette remains exposed.",
+      "site": "tavern"
+    },
+    {
+      "finding": "Original boat-only state is the concrete continuity failure. Source-only dock-behind-vessel repair restores the workshop/crane and maintains hull/water depth; alternate dock-in-front visibly cuts across the hull and is rejected.",
+      "site": "optional-coastal-dock"
+    }
+  ],
+  "review_date_utc": "2026-10-20T09:11:04.130165+00:00",
+  "schema_version": 1,
+  "scope": {
+    "actual_inspected_full_native_scenes": [
+      {
+        "path": "assets/reviews/town-current-v1/fully-developed-land.png",
+        "sha256": "3a86fbd034ec4edcf8e09a87541ddaf3ea12d2d04301e8cbc7a39847a3408456"
+      },
+      {
+        "path": "assets/reviews/town-current-v1/land-with-grail.png",
+        "sha256": "8903fd9f896eb3b290411c46ad32d09bee09505a7301da647afd3875593ac0c9"
+      },
+      {
+        "path": "assets/reviews/town-current-v1/coast-with-empty-dock.png",
+        "sha256": "e7d93eabf6da6fd1a5794be6df54d5139587cb36083f3b86f951595ffce42287"
+      },
+      {
+        "path": "assets/reviews/town-current-v1/coast-with-moored-boat.png",
+        "sha256": "3e84f96ac9bbcf98b63c756191933c43d54d1de065d41fa6db723d688b5f3287"
+      }
+    ],
+    "actual_visual_inspection": "All17standalone site sheets and all17maximal-compatible-neighbor contextual sheets were inspected at unchanged native size, covering all35states. Also inspected empty native terrain, all4full native town/coast/Grail scenes, original Castle side-by-side comparison and proposed coastal depth/mask/icon boards.",
+    "contextual_native_state_sheets": [
+      {
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-blacksmith-contextual-states-1x.png",
+        "sha256": "732a7cdbbc7892bce0717c7bb5fce8635a297a77b67c243b764d2c7787cca584",
+        "shared_crop": [
+          0,
+          238,
+          266,
+          374
+        ],
+        "site": "blacksmith",
+        "states": [
+          "blacksmith"
+        ]
+      },
+      {
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-civic-contextual-states-1x.png",
+        "sha256": "4099fbf056ece322af644c208d35b7e09dfcc1349853fb63af836e6cea386488",
+        "shared_crop": [
+          331,
+          0,
+          588,
+          188
+        ],
+        "site": "civic",
+        "states": [
+          "grail",
+          "villageHall",
+          "townHall",
+          "cityHall",
+          "capitol"
+        ]
+      },
+      {
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-defenses-contextual-states-1x.png",
+        "sha256": "89d170ceedb0f67658241a95cbe75fa0faa866af1724587392a3338557b41741",
+        "shared_crop": [
+          537,
+          33,
+          799,
+          166
+        ],
+        "site": "defenses",
+        "states": [
+          "fort",
+          "citadel",
+          "castle"
+        ]
+      },
+      {
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-recruit-contextual-states-1x.png",
+        "sha256": "c525584380dc11122e75d9881f8a916dd0ded019d4c3e65b7725903a583ea1e0",
+        "shared_crop": [
+          197,
+          181,
+          347,
+          265
+        ],
+        "site": "recruit",
+        "states": [
+          "dwellingLvl1",
+          "dwellingUpLvl1"
+        ]
+      },
+      {
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-ranger-contextual-states-1x.png",
+        "sha256": "e43a63a1d317e04455ce0b67cc4d345ad4fb866d6839570d58127d5a8b92d69d",
+        "shared_crop": [
+          45,
+          187,
+          292,
+          304
+        ],
+        "site": "ranger",
+        "states": [
+          "dwellingLvl2",
+          "dwellingUpLvl2"
+        ]
+      },
+      {
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-musicians-contextual-states-1x.png",
+        "sha256": "012f1a1b4765040fdf54de3ff507f8897fee7605842270da438fae5045bd2d0e",
+        "shared_crop": [
+          288,
+          139,
+          512,
+          256
+        ],
+        "site": "musicians",
+        "states": [
+          "dwellingLvl3",
+          "dwellingUpLvl3"
+        ]
+      },
+      {
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-duelist-contextual-states-1x.png",
+        "sha256": "ac43f80bceea9a2bcaa2117af013b660824fdcea61cc8473874b9e9ed445bf95",
+        "shared_crop": [
+          471,
+          159,
+          637,
+          260
+        ],
+        "site": "duelist",
+        "states": [
+          "dwellingLvl4",
+          "dwellingUpLvl4"
+        ]
+      },
+      {
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-dragonguard-contextual-states-1x.png",
+        "sha256": "cb12f2f2a0ae920b30b6d5c8e881c6a2027a2061004ef6d203865da06c381566",
+        "shared_crop": [
+          158,
+          122,
+          330,
+          246
+        ],
+        "site": "dragonguard",
+        "states": [
+          "dwellingLvl5",
+          "dwellingUpLvl5"
+        ]
+      },
+      {
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-mageseeker-contextual-states-1x.png",
+        "sha256": "73555919eb2ce9e75c1404ee19b4359452a3644e028874714e6046dadb1a68b3",
+        "shared_crop": [
+          556,
+          76,
+          747,
+          250
+        ],
+        "site": "mageseeker",
+        "states": [
+          "special1",
+          "dwellingLvl6",
+          "dwellingUpLvl6"
+        ]
+      },
+      {
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-colossus-contextual-states-1x.png",
+        "sha256": "b95eaf7b6331fa4307d872b2019458ec17b89696e955bf93733334ee7de369b8",
+        "shared_crop": [
+          126,
+          15,
+          320,
+          165
+        ],
+        "site": "colossus",
+        "states": [
+          "special4",
+          "dwellingLvl7",
+          "dwellingUpLvl7"
+        ]
+      },
+      {
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-guild-contextual-states-1x.png",
+        "sha256": "fca51071be33af931440d201dac91375f824129c9aae0896b4ca8a91625484f9",
+        "shared_crop": [
+          272,
+          26,
+          384,
+          172
+        ],
+        "site": "guild",
+        "states": [
+          "mageGuild1",
+          "mageGuild2",
+          "mageGuild3"
+        ]
+      },
+      {
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-market-contextual-states-1x.png",
+        "sha256": "c1268c6b919c0f8e0004fa1539814f1babed30c2f8f8722408c1456b3a2cb4f5",
+        "shared_crop": [
+          238,
+          232,
+          561,
+          374
+        ],
+        "site": "market",
+        "states": [
+          "marketplace"
+        ]
+      },
+      {
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-quarry-contextual-states-1x.png",
+        "sha256": "6e2102b2af6270fea1ecea325f2726273944859d5732fc1b69fad24d8235a9dc",
+        "shared_crop": [
+          0,
+          114,
+          179,
+          232
+        ],
+        "site": "quarry",
+        "states": [
+          "resourceSilo"
+        ]
+      },
+      {
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-optional-coastal-dock-contextual-states-1x.png",
+        "sha256": "8d26ecedf659edd0f27603e2d30f532a518ed6deaf4e852b4153b2e60017d28d",
+        "shared_crop": [
+          0,
+          145,
+          138,
+          272
+        ],
+        "site": "optional-coastal-dock",
+        "states": [
+          "shipyard",
+          "ship"
+        ]
+      },
+      {
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-aviary-contextual-states-1x.png",
+        "sha256": "e89ae0c4cd155275bc2d2dbd0d53aa702959e8f9a7fa199d97ba8995d5aa8a53",
+        "shared_crop": [
+          660,
+          0,
+          795,
+          73
+        ],
+        "site": "aviary",
+        "states": [
+          "special2"
+        ]
+      },
+      {
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-sanctuary-contextual-states-1x.png",
+        "sha256": "4b07fc92eb141539f186d31f6c536a56145a3dceb48a50a862a6bada8e0beed4",
+        "shared_crop": [
+          687,
+          126,
+          800,
+          228
+        ],
+        "site": "sanctuary",
+        "states": [
+          "special3"
+        ]
+      },
+      {
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-tavern-contextual-states-1x.png",
+        "sha256": "9e02659fd1d25ec9d0217c3575268e67ad721f6b754ec08f0d6765845533811c",
+        "shared_crop": [
+          547,
+          208,
+          800,
+          374
+        ],
+        "site": "tavern",
+        "states": [
+          "tavern"
+        ]
+      }
+    ],
+    "current_master_policy": "33master-v3 plus LibraryIII master-v4 and VanguardHall master-v5; historical first-pass reports are not the selected visual evidence.",
+    "empty_background": {
+      "path": "assets/generated/Content/Sprites/runeterra/demacia/town/background.png",
+      "sha256": "bc10223b6fb0ccc771cf0fee74af247e4b8179d8da345091238358d52b4bd4ac"
+    },
+    "native_castle_comparison": {
+      "path": "assets/reviews/town-current-v1/original-castle-vs-current-demacia-1x.png",
+      "sha256": "6aa51227617c7866bd68412e26d25d99a07c01f9e81be884c79eaae1b4fc1d7e"
+    },
+    "optional_grail_and_coastal_plot": true,
+    "ordinary_land_plots": 16,
+    "selected_source_states": 35,
+    "standalone_native_state_sheets": [
+      {
+        "crop": [
+          7,
+          258,
+          246,
+          367
+        ],
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-blacksmith-all-states-1x.png",
+        "sha256": "823a9d1c539c4e385333913f10f247e86f2218461cb55626a69be0ea38f9105e",
+        "site": "blacksmith",
+        "states": [
+          "blacksmith"
+        ]
+      },
+      {
+        "crop": [
+          351,
+          15,
+          568,
+          168
+        ],
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-civic-all-states-1x.png",
+        "sha256": "b2df6f06fdb73d8bd0c6325b325664967635bf086d2e6a1b29adde53c737986d",
+        "site": "civic",
+        "states": [
+          "grail",
+          "villageHall",
+          "townHall",
+          "cityHall",
+          "capitol"
+        ]
+      },
+      {
+        "crop": [
+          557,
+          53,
+          779,
+          146
+        ],
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-defenses-all-states-1x.png",
+        "sha256": "d0c35e830da2e2fdd5a5f8a027556db6856485e384dcc372b31851f31ec21565",
+        "site": "defenses",
+        "states": [
+          "fort",
+          "citadel",
+          "castle"
+        ]
+      },
+      {
+        "crop": [
+          217,
+          201,
+          327,
+          245
+        ],
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-recruit-all-states-1x.png",
+        "sha256": "5ad98ddbfc512ff3761ffe35a45d5db50dd11b097cb673c95ec395ee9528660a",
+        "site": "recruit",
+        "states": [
+          "dwellingLvl1",
+          "dwellingUpLvl1"
+        ]
+      },
+      {
+        "crop": [
+          65,
+          207,
+          272,
+          284
+        ],
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-ranger-all-states-1x.png",
+        "sha256": "116dcd591dad2deb61c7262e66839691d4d5cefbd63919eab77746c3b5952ffc",
+        "site": "ranger",
+        "states": [
+          "dwellingLvl2",
+          "dwellingUpLvl2"
+        ]
+      },
+      {
+        "crop": [
+          308,
+          159,
+          492,
+          236
+        ],
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-musicians-all-states-1x.png",
+        "sha256": "85bc9fae4c041e964979625d55674b9fc77ede6dc55161fb2f9508028d10e050",
+        "site": "musicians",
+        "states": [
+          "dwellingLvl3",
+          "dwellingUpLvl3"
+        ]
+      },
+      {
+        "crop": [
+          491,
+          179,
+          617,
+          240
+        ],
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-duelist-all-states-1x.png",
+        "sha256": "1aa9845f272dd52cd886fdd59b658e60d397c7c8c4532f986ee1319ac0cd4b6e",
+        "site": "duelist",
+        "states": [
+          "dwellingLvl4",
+          "dwellingUpLvl4"
+        ]
+      },
+      {
+        "crop": [
+          178,
+          142,
+          310,
+          226
+        ],
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-dragonguard-all-states-1x.png",
+        "sha256": "2fdb78547992993a870415aa839d8edb33ab484405bfa77b3aaf38b54fad99c2",
+        "site": "dragonguard",
+        "states": [
+          "dwellingLvl5",
+          "dwellingUpLvl5"
+        ]
+      },
+      {
+        "crop": [
+          576,
+          96,
+          727,
+          230
+        ],
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-mageseeker-all-states-1x.png",
+        "sha256": "0dc50edad77b25861827652a0a099feff20d8f8aa763106c580d9b06eef3547d",
+        "site": "mageseeker",
+        "states": [
+          "special1",
+          "dwellingLvl6",
+          "dwellingUpLvl6"
+        ]
+      },
+      {
+        "crop": [
+          146,
+          35,
+          300,
+          145
+        ],
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-colossus-all-states-1x.png",
+        "sha256": "9e75ea67a1acd85fd12c4eef809efae97d34ab339b1d681fed682e71333abe84",
+        "site": "colossus",
+        "states": [
+          "special4",
+          "dwellingLvl7",
+          "dwellingUpLvl7"
+        ]
+      },
+      {
+        "crop": [
+          292,
+          46,
+          364,
+          152
+        ],
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-guild-all-states-1x.png",
+        "sha256": "b746323e364b943291f8d014634467efb2500ad034adfb68f957e143921e34de",
+        "site": "guild",
+        "states": [
+          "mageGuild1",
+          "mageGuild2",
+          "mageGuild3"
+        ]
+      },
+      {
+        "crop": [
+          258,
+          252,
+          541,
+          372
+        ],
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-market-all-states-1x.png",
+        "sha256": "19de03a1c779d8bb2a6e00c3dddfd6ed423a1cc884918167c1be5d351971720a",
+        "site": "market",
+        "states": [
+          "marketplace"
+        ]
+      },
+      {
+        "crop": [
+          0,
+          134,
+          159,
+          212
+        ],
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-quarry-all-states-1x.png",
+        "sha256": "fd44d1f62602e02132a72c320cd7865492294f3dc13255be4a6814fe02bed290",
+        "site": "quarry",
+        "states": [
+          "resourceSilo"
+        ]
+      },
+      {
+        "crop": [
+          3,
+          165,
+          118,
+          252
+        ],
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-optional-coastal-dock-all-states-1x.png",
+        "sha256": "aaaeda457faed2b29de5d54ff32873da5ece395eec7da1a081b83ca9bf2a1bb1",
+        "site": "optional-coastal-dock",
+        "states": [
+          "shipyard",
+          "ship"
+        ]
+      },
+      {
+        "crop": [
+          680,
+          13,
+          775,
+          53
+        ],
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-aviary-all-states-1x.png",
+        "sha256": "4efb9b4b43cd2d2d9fd19527897832afb18e91cfbf62ff320f1a57680d251e54",
+        "site": "aviary",
+        "states": [
+          "special2"
+        ]
+      },
+      {
+        "crop": [
+          707,
+          146,
+          799,
+          208
+        ],
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-sanctuary-all-states-1x.png",
+        "sha256": "bd3f9b0ceec2baada2b583f3c3653fa2e8bf3f7e264d6bd4bd7d8025af9703ad",
+        "site": "sanctuary",
+        "states": [
+          "special3"
+        ]
+      },
+      {
+        "crop": [
+          567,
+          228,
+          800,
+          373
+        ],
+        "native_scale": 1,
+        "path": "assets/reviews/town-current-v1/site-tavern-all-states-1x.png",
+        "sha256": "e7b96d384e98a58e188688a8c1d7e6a9cc2d4035fa32ebdd47e213ba167b25b1",
+        "site": "tavern",
+        "states": [
+          "tavern"
+        ]
+      }
+    ]
+  },
+  "status": "Current source visual review complete; one coastal continuity defect has a checked source repair candidate; no final art acceptance",
+  "visual_approval_granted": false
+}

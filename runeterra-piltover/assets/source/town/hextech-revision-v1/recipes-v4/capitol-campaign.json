@@ -1,0 +1,66 @@
+{
+  "canvas": [
+    58,
+    64
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI builtin imagegen; deterministic technical2D conversion",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/hextech-revision-v1/assemble_v4.py",
+      "sha256": "e5a844d70fbba67bd96987e9a493ca584f87d54470773a83220fa1f10df9dbba"
+    },
+    {
+      "path": "assets/source/town/hextech-revision-v1/layout-plan-v4.json",
+      "sha256": "5b9b8f4cabd68ea10440b795122600ab3ce13beafa305cb2dc4b971dea5976b2"
+    },
+    {
+      "path": "assets/source/town/hextech-revision-v1/placement-calibration-v4.json",
+      "sha256": "5e61f7c7ee4b482bd972ca8ec801bca7744c24143fe32c8b9ca614077a2be407"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/capitol/master-v1.png",
+      "sha256": "f15f5cbb2b9ebd9a424d3fe740f728c85d474b9314468ce160c83931fcfea764"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/capitol/prompt-v1.txt",
+      "sha256": "197b9513f1852c17234206b14cf0e308b2a0c5c161879ce9edba1d37434fe6f1"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/capitol/source-generation.json",
+      "sha256": "554db37e748a87294057b7e5239d9af39f7482770fff82e33f1afb497fad6227"
+    }
+  ],
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": true,
+    "model": "not exposed by tool",
+    "painted_master": "assets/source/town/painted-v1/buildings/capitol/master-v1.png",
+    "painted_master_sha256": "f15f5cbb2b9ebd9a424d3fe740f728c85d474b9314468ce160c83931fcfea764",
+    "producer": "assets/source/town/hextech-revision-v1/assemble_v4.py",
+    "producer_sha256": "e5a844d70fbba67bd96987e9a493ca584f87d54470773a83220fa1f10df9dbba",
+    "prompt": "Paint a standalone transparent town-building layer for original Heroes of Might and Magic III / VCMI, not a concept poster.\n\nImage1 is our own empty Piltover town landscape context. Create the Grand Civic Assembly that belongs on its upper central terrace; final output contains ONLY the new building, not the landscape. Image2 is an extracted ORIGINAL Heroes III Castle building, rendering-language/texture/lighting reference only: do not copy its Castle silhouette, towers, troop pixels or heraldry. Image3 is the actual official Piltover region crest; reproduce its distinctive central vertical pillar, split circular upper ring/orb and broad curved gear-flanked lower arcs as painted/engraved physical heraldry, not wings and not an ordinary cog.\n\nOutput exactly one square transparent RGBA cutout, approximately1024x1024, full building plus subtle attached contact shadow, no background or surrounding terrain panel. All roof tips, eaves, stairs, foundations, cloth and shadow fit with generous transparent margins. Hold an explicit source ground-root at x512,y920; the front central entrance step is centred nearx512,y870. Fill a broad front-facing building silhouette about880pixels wide by680pixels tall above that root, so it can later be uniformly reduced into its complete native188x145 envelope. Do not write coordinates or labels.\n\nSubject: Grand Civic Assembly, the greatest state of Piltover's mercantile district hall. One coherent warm ivory/hewn-stone council building: a broad central front assembly chamber with an inviting deep public door and shallow semicircular steps; two substantial asymmetrical civic wings with tall brass-latticed glass windows and weathered bronze cornices; an elegant central square clock/instrument tower set slightly behind the entrance, with a dark navy/slate angular roof, compact gold-bronze crown and small glass observatory clerestory. Use distinctive Piltovan craft-city architecture, arched front windows, angular stepped gables, practical buttresses and restrained Art Nouveau bronze work. It is an assembly house of guilds/trade, not a royal palace, church, Demacian cathedral or Noxian war citadel. Avoid excessive tiny disconnected spikes or giant magical crystals.\n\nReadability: the frontal facade and entrance dominate. Camera slightly above ground in the same low three-quarter matte-painting view as the town; only a modest right-hand side wall and limited roof planes are visible. No strict isometric or bird's-eye view. Soft upper-left daylight and coherent rightward contact shadow. Opaque solid walls/windows with their own painted interiors/reflections; no see-through translucent building body.\n\nPalette/materials: original-Heroes-III richly textured painted stone and weathered bronze, muted timber, dark navy/teal cloth, dull slate, restrained glass blue. Compact stained-glass/hextech blue highlights limited to tiny practical instruments. No glossy plastic, shiny modern3D, bloom, neon, anime or League splash-art style. Preserve warm material occlusion and slightly worn working-city character. At native188x145 it must have a readable compact silhouette, firm facade edges and restrained light highlights, like an additional original HoMM3 town building.\n\nPut the correct Piltover crest visibly on two generous physical navy/teal civic banners beside the central facade, and a small engraved brass plaque above the entry. Emblems follow cloth perspective and plausible occlusion; do not float, paste a UI logo or use Demacian wing symbols. Keep the foundation/root and central public doorway suitable for weaker hall states later: added wings and tower can be removed while the core remains.\n\nNo people, units, vehicles, spare separate buildings, text, labels, watermarks, border, floor rectangle, scene, grassy base or backdrop. Only the complete new transparent painted building and its subtle contact shadow.\n",
+    "prompt_file": "assets/source/town/painted-v1/buildings/capitol/prompt-v1.txt",
+    "provider": "OpenAI builtin imagegen",
+    "source_generation_ledger": "assets/source/town/painted-v1/buildings/capitol/source-generation.json"
+  },
+  "output_path": "Content/Sprites/runeterra/piltover/town/structures/capitol_campaign.png",
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "size": [
+    58,
+    64
+  ],
+  "source": "assets/source/town/hextech-revision-v1/buildings/capitol/campaign-v4.png",
+  "source_canvas": [
+    58,
+    64
+  ],
+  "source_sha256": "229550d18e7b29f0ef02b593381d68b277eb4e84e67a6d8aa9b7efed3a3b0096",
+  "status": "painted-candidate",
+  "visual_approval_granted": false
+}

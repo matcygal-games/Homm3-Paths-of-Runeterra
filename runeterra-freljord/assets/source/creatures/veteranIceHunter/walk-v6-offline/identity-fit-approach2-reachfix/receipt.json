@@ -1,0 +1,585 @@
+{
+  "approach": 2,
+  "canvas": [
+    450,
+    400
+  ],
+  "execution_correction": true,
+  "holding_cell_camera": {
+    "alpha_threshold_for_analysis_only": 128,
+    "cell_boundary_max_alpha": 1,
+    "excluded_detached_native_projectiles": [],
+    "frame": 0,
+    "group": 2,
+    "master": "assets/source/creatures/veteranIceHunter/controlled-v1/action-atlas-v1.png",
+    "master_sha256": "974fb8c6f38673b0c8568eab7da3700b010e5704ee81193fd77620e433c446ca",
+    "opaque_component": 1654,
+    "painted_rgba_preserved": true,
+    "row_float_center": 254.13319522300756,
+    "row_ground_baseline": 331,
+    "source_bbox": [
+      712,
+      168,
+      867,
+      347
+    ],
+    "source_camera_anchor": [
+      768.0,
+      331
+    ],
+    "source_centroid": [
+      770.7795457165918,
+      252.75002882508934
+    ],
+    "source_column": 4,
+    "source_opaque_area": 8673,
+    "source_opaque_bbox": [
+      720,
+      180,
+      850,
+      334
+    ],
+    "source_row": 1,
+    "technical_selection": "nearest-opaque-body atlas cell, original RGBA retained inside cell",
+    "uniform_camera_scale": 0.49845703124999996
+  },
+  "human_visual_approval": false,
+  "independent_review_pass": false,
+  "inputs": {
+    "assets/source/creatures/iceHunter/walk-v6-offline/author_cohort.py": "af24b0d11bc8e7860e7b5f3c5bdbfa7bd02077f4d4d82d23e688e2a7accab3de",
+    "assets/source/creatures/iceHunter/walk-v6-offline/identity-fit-second-reachfix-landmarks.json": "79489d5cd4f348255483d45ba332efaeb65b14d8af61cd4a66991706b1610ab6",
+    "assets/source/creatures/iceHunter/walk-v6-offline/identity_fit.py": "374dc5b5dfef3a15ec83b698e4cffe2e726cb61bb698aabe30dfb12facc54246",
+    "assets/source/creatures/iceHunter/walk-v6-offline/identity_fit_second.py": "31b5ef17256789dae0f21caa66dea4c83018a46767bd1930b465fcd4b0452fbd",
+    "assets/source/creatures/veteranIceHunter/controlled-v1/action-atlas-v1.png": "974fb8c6f38673b0c8568eab7da3700b010e5704ee81193fd77620e433c446ca",
+    "assets/source/creatures/veteranIceHunter/registered-v3/native/g02-f000.png": "b712f10c1db89eee69a9db8b7c77259af0d8ad3257a7ea666d77342cd0a08aa3",
+    "assets/source/creatures/veteranIceHunter/registered-v3/production-evidence-v2.json": "6cb95e39bcdfd2261aeb7eacc94011be96e94237b3bcbba7403107bf9c622fa1"
+  },
+  "landmarks": {
+    "arrow_tips": [
+      [
+        184,
+        200
+      ],
+      [
+        185,
+        197
+      ],
+      [
+        187,
+        196
+      ],
+      [
+        189,
+        198
+      ],
+      [
+        191,
+        201
+      ]
+    ],
+    "boot_texture_patch": [
+      186,
+      247,
+      194,
+      264
+    ],
+    "bow": [
+      [
+        219,
+        239
+      ],
+      [
+        220,
+        235
+      ],
+      [
+        222,
+        231
+      ],
+      [
+        228,
+        225
+      ],
+      [
+        231,
+        217
+      ],
+      [
+        233,
+        209
+      ],
+      [
+        236,
+        204
+      ]
+    ],
+    "bow_grip_index": 2,
+    "cape": [
+      [
+        210,
+        184,
+        197
+      ],
+      [
+        218,
+        180,
+        196
+      ],
+      [
+        228,
+        176,
+        194
+      ],
+      [
+        237,
+        173,
+        192
+      ],
+      [
+        242,
+        178,
+        193
+      ]
+    ],
+    "far_arm": [
+      [
+        210,
+        216
+      ],
+      [
+        216,
+        227
+      ],
+      [
+        222,
+        231
+      ]
+    ],
+    "head": [
+      [
+        191,
+        203.5,
+        2
+      ],
+      [
+        194,
+        203.5,
+        5
+      ],
+      [
+        195,
+        204,
+        6.5
+      ],
+      [
+        200,
+        201,
+        8.5
+      ],
+      [
+        205,
+        199.5,
+        10
+      ],
+      [
+        210,
+        200,
+        11
+      ],
+      [
+        213,
+        201,
+        10
+      ]
+    ],
+    "near_arm": [
+      [
+        191,
+        215
+      ],
+      [
+        188,
+        227
+      ],
+      [
+        189,
+        235
+      ]
+    ],
+    "quiver": [
+      [
+        190,
+        216
+      ],
+      [
+        188,
+        204
+      ]
+    ],
+    "torso": [
+      [
+        212,
+        203,
+        5
+      ],
+      [
+        215,
+        201,
+        11
+      ],
+      [
+        220,
+        201,
+        9
+      ],
+      [
+        226,
+        200,
+        8
+      ],
+      [
+        232,
+        199,
+        8.5
+      ],
+      [
+        237,
+        198,
+        10
+      ],
+      [
+        242,
+        198,
+        11
+      ],
+      [
+        244,
+        197,
+        10
+      ]
+    ],
+    "upper_leg_texture_patch": [
+      190,
+      242,
+      201,
+      250
+    ]
+  },
+  "limits": [
+    "Second and final allowed contact-fit approach; no automatic cycle expansion or art acceptance",
+    "Baked one-view color transfer still needs native-scale independent identity and seam inspection",
+    "No native gameplay or both-facing validation"
+  ],
+  "method": "Revised measured hood/arm/mantle/equipment surfaces, actual selected master holding cell camera UV transfer at4x material resolution, own painted brown boot material on unchanged real v6 legs. No sprite cutout limbs or alpha-defined ground contacts.",
+  "only_contact_phases_rendered": [
+    0,
+    3
+  ],
+  "phases": [
+    {
+      "joints": {
+        "arms": {
+          "far": {
+            "elbow": [
+              0.49483651262154865,
+              0.5833486871735035,
+              1.4159654540496955
+            ],
+            "fore_length": 0.2651140643723521,
+            "shoulder": [
+              0.2561388052408034,
+              0.5313595602177525,
+              1.8065145292659275
+            ],
+            "upper_length": 0.46066044434344366,
+            "wrist": [
+              0.6964450536863744,
+              0.6638093332240285,
+              1.263763129051448
+            ]
+          },
+          "near": {
+            "elbow": [
+              -0.28117811977847607,
+              -0.1460096270605719,
+              1.4527829003600352
+            ],
+            "fore_length": 0.29640653486391744,
+            "shoulder": [
+              -0.23123139475183818,
+              -0.029961457319693408,
+              1.8896348404348629
+            ],
+            "upper_length": 0.4547542969431243,
+            "wrist": [
+              -0.20955325710582376,
+              -0.16752600744157237,
+              1.1659663068155566
+            ]
+          }
+        },
+        "bow": {
+          "attachment_error": 0.0,
+          "hand_side": "far",
+          "handle": [
+            0.6964450536863744,
+            0.6638093332240285,
+            1.263763129051448
+          ]
+        },
+        "fit_camera": {
+          "right": [
+            0.8848314556600162,
+            0.4659112523588334,
+            0.0
+          ],
+          "scale": 27.2,
+          "up": [
+            -0.08252234956080019,
+            0.15672162953070423,
+            0.9841892057222563
+          ],
+          "view": [
+            0.45854482539610203,
+            -0.8708415675440994,
+            0.17712031882252868
+          ]
+        },
+        "legs": {
+          "far": {
+            "ankle": [
+              -0.24415983235463518,
+              0.145,
+              0.21527220586513185
+            ],
+            "contact_toe": [
+              -0.16000000000000003,
+              0.145,
+              0.0
+            ],
+            "hip": [
+              0.0,
+              0.145,
+              1.01
+            ],
+            "knee": [
+              0.10733406096147363,
+              0.145,
+              0.5421545133727177
+            ],
+            "local_phase": 0.5,
+            "pitch": 0.52,
+            "shin_length": 0.48,
+            "sole_lift": 0.0,
+            "stance": true,
+            "thigh_length": 0.48,
+            "track_x": -0.34
+          },
+          "near": {
+            "ankle": [
+              0.34,
+              -0.145,
+              0.145
+            ],
+            "contact_toe": [
+              0.52,
+              -0.145,
+              0.0
+            ],
+            "hip": [
+              0.0,
+              -0.145,
+              1.01
+            ],
+            "knee": [
+              0.2818518584613263,
+              -0.145,
+              0.6214648923431803
+            ],
+            "local_phase": 0.0,
+            "pitch": 0.0,
+            "shin_length": 0.48,
+            "sole_lift": 0.0,
+            "stance": true,
+            "thigh_length": 0.48,
+            "track_x": 0.34
+          }
+        },
+        "old_leg_vertices_unchanged": true,
+        "pelvis_bob": -0.015,
+        "reference_root_world_x": 0.0,
+        "root_local": [
+          0,
+          0,
+          0
+        ],
+        "torso_yaw": -0.15
+      },
+      "mesh_sha256": "e5089c11c553dfd886d30f833b4235b0efe3ff4b69e188bbdced47d79dd4a9d8",
+      "phase": 0,
+      "png": "assets/source/creatures/veteranIceHunter/walk-v6-offline/identity-fit-approach2-reachfix/g00-f000.png",
+      "sha256": "5eb3307ea41d64a0149debbc770d4b0a0f144144576d14fa50e8785445764dab",
+      "triangles": 7076
+    },
+    {
+      "joints": {
+        "arms": {
+          "far": {
+            "elbow": [
+              0.49131576308902697,
+              0.5439413449058328,
+              1.4021824314322973
+            ],
+            "fore_length": 0.2651140643723521,
+            "shoulder": [
+              0.27234105970186223,
+              0.5161262604972245,
+              1.8065145292659275
+            ],
+            "upper_length": 0.46066044434344366,
+            "wrist": [
+              0.7035747906956167,
+              0.6218622603004276,
+              1.263763129051448
+            ]
+          },
+          "near": {
+            "elbow": [
+              -0.30822609461808903,
+              -0.14650680531624927,
+              1.4573821939893772
+            ],
+            "fore_length": 0.29640653486391744,
+            "shoulder": [
+              -0.23924759832664744,
+              -0.023214115839212734,
+              1.8896348404348629
+            ],
+            "upper_length": 0.4547542969431243,
+            "wrist": [
+              -0.26968949119435104,
+              -0.18456655845905445,
+              1.1659663068155566
+            ]
+          }
+        },
+        "bow": {
+          "attachment_error": 0.0,
+          "hand_side": "far",
+          "handle": [
+            0.7035747906956167,
+            0.6218622603004276,
+            1.263763129051448
+          ]
+        },
+        "fit_camera": {
+          "right": [
+            0.8848314556600162,
+            0.4659112523588334,
+            0.0
+          ],
+          "scale": 27.2,
+          "up": [
+            -0.08252234956080019,
+            0.15672162953070423,
+            0.9841892057222563
+          ],
+          "view": [
+            0.45854482539610203,
+            -0.8708415675440994,
+            0.17712031882252868
+          ]
+        },
+        "legs": {
+          "far": {
+            "ankle": [
+              0.34,
+              0.145,
+              0.145
+            ],
+            "contact_toe": [
+              0.52,
+              0.145,
+              0.0
+            ],
+            "hip": [
+              0.0,
+              0.145,
+              1.01
+            ],
+            "knee": [
+              0.2818518584613263,
+              0.145,
+              0.6214648923431803
+            ],
+            "local_phase": 0.0,
+            "pitch": 0.0,
+            "shin_length": 0.48,
+            "sole_lift": 0.0,
+            "stance": true,
+            "thigh_length": 0.48,
+            "track_x": 0.34
+          },
+          "near": {
+            "ankle": [
+              -0.24415983235463518,
+              -0.145,
+              0.21527220586513185
+            ],
+            "contact_toe": [
+              -0.16000000000000003,
+              -0.145,
+              0.0
+            ],
+            "hip": [
+              0.0,
+              -0.145,
+              1.01
+            ],
+            "knee": [
+              0.10733406096147363,
+              -0.145,
+              0.5421545133727177
+            ],
+            "local_phase": 0.5,
+            "pitch": 0.52,
+            "shin_length": 0.48,
+            "sole_lift": 0.0,
+            "stance": true,
+            "thigh_length": 0.48,
+            "track_x": -0.34
+          }
+        },
+        "old_leg_vertices_unchanged": true,
+        "pelvis_bob": -0.015,
+        "reference_root_world_x": 0.68,
+        "root_local": [
+          0,
+          0,
+          0
+        ],
+        "torso_yaw": -0.15
+      },
+      "mesh_sha256": "254d9f03eff854a47093687f33af61e3a91873a569962f95fa7b728c83d44b86",
+      "phase": 3,
+      "png": "assets/source/creatures/veteranIceHunter/walk-v6-offline/identity-fit-approach2-reachfix/g00-f003.png",
+      "sha256": "e70030bd620c5f2597a7bb08584220fcc0d0466ebb125f8b525170c6317b5a2a",
+      "triangles": 7076
+    }
+  ],
+  "pivot": [
+    197,
+    266
+  ],
+  "production_ready": false,
+  "seconds": 1.455030999990413,
+  "selected": false,
+  "source_texture_crop": [
+    165,
+    188,
+    240,
+    245
+  ],
+  "status": "built-unreviewed",
+  "unit": "veteranIceHunter"
+}

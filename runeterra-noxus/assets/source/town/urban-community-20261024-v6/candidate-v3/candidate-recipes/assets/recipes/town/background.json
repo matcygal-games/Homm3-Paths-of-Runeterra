@@ -1,0 +1,66 @@
+{
+  "acceptance": "Production requirements only. No rig/guide/primitive/reference may substitute for painted final art; this recipe must fail while its real master/hash is absent.",
+  "art_direction": "Independent Noxian iron/crimson/black subjects in Heroes III native painted language. Never recolour Castle or Demacia art, import original pixels or invent an official crest.",
+  "canvas": [
+    800,
+    374
+  ],
+  "composition_contract": "Independent Noxian town terrain/layout; no buildings baked into terrain. Ground planes,19-site/36-state composition,occlusion and all clicks need actual source/native review.",
+  "credits": {
+    "author": "Project-directed OpenAI built-in imagegen; deterministic project conversion",
+    "license": null,
+    "redistribution": "unresolved; no release or redistribution approval"
+  },
+  "dimensions_basis": {
+    "canvas": [
+      800,
+      374
+    ],
+    "mode": "RGB",
+    "reference_only": "runeterra-demacia/references/images/tbcsback.pcx.png",
+    "reference_sha256": "949012ea68999207934bc482f1552858474fe50cefddef17eaac00d4b98c2be9",
+    "use": "Dimensions/format only. No reference pixels, palette, source recipe, layout silhouette or licensed art copied."
+  },
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in imagegen",
+    "model": "Not exposed by the built-in tool",
+    "prompt": "Use case: precise-object-edit. LOCALIZED BACKGROUND TERRAIN REPAIR ONLY. Asset: original HeroesIII 800x374 panoramic painted2D town backingplate. Keep aspectratio and the target's painterly detail/scale.\n\nIMAGE1 is the actual EDIT TARGET: earlier richly inhabited Noxian backingplate with organicwindingstreets, variedlittlewalls/stairs and shopcontext. IMAGE2 is a technical LOCATION GUIDE over that same image: translucent MINT rectangles identify ONLY the needed supported frontground/landings. IMAGE3 is the matching BLACK/WHITE localizationguide: WHITE=repairterrain inside, BLACK=preserve originalurbancontext. IMAGE4 is the ACTUAL separatefunctionalbuilding placement onimage1: DO NOT repaint/move/resize or include any of those buildings in OUTPUT; they remain separate unchanged layers. IMAGE5 is a rejected overclearedimage used ONLY to show uninterrupted supportedstreetground. DO NOT copy its hugefeatureless parkingplaza.\n\nCritical invariant: PRESERVE IMAGE1's dense Noxian backcity, smoky darkREDsky, distantBastion, upperleftwarmlighting/localfires, its organicwindingmainstreet and smallincidentalshop/workyardcontext OUTSIDE the white/mint repairregions. DO NOT wipe every interior detail away. Do not turn the wholecenter into an emptyplaza. We need tightorganiccitylanes and locally variedsmallcourts, not 3 horizontal terraces or an isometriccatalogue.\n\nInside ONLY the white/mint repairregions, REMOVE the incorrect lowwall/fence/cliff-face/railing/stallroof/hedges directly below the corresponding ACTUAL building frontsteps and foundations inimage4. Paint REAL LEVEL SUPPORTED weatheredcobblestone frontaprons meeting the existingstreet; let localpaving gently grade and connect around retainedneighborhooddetails. The translucent color/rectangles/mask are technicalguide ONLY: no coloredareas/rectangles/labels/straightpatchseams in output. Matchthe area organically to surroundingpaving; no freshlyboundedplatforms, replacement retainingwalls, boxedplots or rebuilt fencealongtherepairborder.\n\nMost importantnative800x374 coordinates: foregroundfrontfeet(77,365),(218,342),(361,352),(515,367),(696,367) mustmeetreal continuouspavedground, not a verticalwall/stall/vegetationstrip. These fronts provide the screenframe so DO NOT addnewforegroundwall/barricade under them. LeftAcademy(64,136) andspiderpen(60,226), Guild(189,195), Market(274,104), fort(728,128), silo(628,195), minotaur(733,267), arena(572,271), Grail(639,139) need smallreal supportedlandings in the markedrepairregions. Keep any existingorganicconnection that alreadyworks. Harbor is only a tinyrightedgeinlet; fortfoundation/quay dryandsupported, clear giant baked ship/dock competingwith ourseparatetiny optionaldock atx754..798,y140..165, not a new moat.\n\nOverall cobbles should be cooler wornwarmgray/brown/charcoal matching existingdarkbuildingstone with localizedwarmfireaccents, not glowinguniformorangegrid. Keep image1paintedgrain and highcontrast compactHeroesIII materialreadability, theatrical lowthreequarter matteview/elevatedhorizon, fa\u00c3\u00a7ade-forwardbuildingcontext, no modern3D/lensdistortion/Blender/vector/anime. Output one clean BACKGROUND ONLY: preserveunmarked originalurbancontext, change markedgroundlocally, no functionalbuildings fromimage4, no text/UI/mask/marker.",
+    "painted_master": "assets/source/town/urban-community-20261024-v6/background-master-v3.png",
+    "painted_master_sha256": "18622e4db4a06c381a6322bd90a880cbb4779c7a9066217ce9eb3acc81aedcc2",
+    "generation_record": "assets/source/town/urban-community-20261024-v6/background-generation-v3.json",
+    "generation_record_sha256": "6b65e1b4b9d879e9be6d586e5d44b2c61ec3f3cafcdb3e1e745bcb0b9dc01e75",
+    "conversion": "Uniform cover-fit to native800x374; no artistic raster changes."
+  },
+  "inventory": {
+    "asset_id": "noxus.Sprites.runeterra.noxus.town.background.png",
+    "manifest": "assets/manifest.json",
+    "recipe_path": "assets/recipes/town/background.json"
+  },
+  "output_path": "Content/Sprites/runeterra/noxus/town/background.png",
+  "production_status": "painted-master-complete",
+  "recipe_type": "raster",
+  "require_alpha": false,
+  "required_before_conversion": [
+    "Real independent Noxus painted master and truthful provenance",
+    "Non-null SHA256 source pins",
+    "Official Noxus emblem provenance where used",
+    "Native-size silhouette/composition/alpha and role review",
+    "Explicit coordinator selection; no automatic acceptance"
+  ],
+  "role": "town-background",
+  "sha256": "086aef28def2914d1a83974541f5a1ad8bb70aa47de089627e6d3c052f744b15",
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/urban-community-20261024-v6/background-native-v3.png",
+  "source_sha256": "086aef28def2914d1a83974541f5a1ad8bb70aa47de089627e6d3c052f744b15",
+  "status": "built-unreviewed",
+  "visual_approval_granted": false,
+  "source_canvas": [
+    800,
+    374
+  ]
+}

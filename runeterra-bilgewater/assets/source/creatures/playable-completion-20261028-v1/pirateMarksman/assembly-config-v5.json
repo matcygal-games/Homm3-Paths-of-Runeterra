@@ -1,0 +1,996 @@
+{
+  "battle_canvas": [
+    450,
+    400
+  ],
+  "battle_root": [
+    197,
+    266
+  ],
+  "companions": {
+    "construction": "One registered96x64map raster;64x64 encounter is exact right64px crop, sharing decodedRGBA world anchor",
+    "encounter_root": [
+      44,
+      60
+    ],
+    "map_root": [
+      76,
+      60
+    ],
+    "portrait_crop": [
+      94,
+      84,
+      264,
+      268
+    ],
+    "pose": "ready",
+    "scale": 0.12
+  },
+  "excluded_source_keys": [
+    {
+      "pose": "turn0",
+      "reason": "Rearward three-quarter study preserved, not selected; native halfturn begins at identical HOLDING pose"
+    },
+    {
+      "plate": "walk-v1-raw.png",
+      "reason": "Earlier broad walk source retained as history; selected explicit opposed support halves replace it."
+    },
+    {
+      "pose": "turn3",
+      "reason": "Older asymmetric frontal study retained in source history; new centred-weapon frontal pose selected at facing boundary."
+    }
+  ],
+  "gait_contract": {
+    "camera": "One fixed plate scale per source; anatomical roots manually annotated",
+    "native_motion_approval": false,
+    "sequence": "Contact A, Passing A, Precontact B, Contact B, Passing B, Precontact A"
+  },
+  "generation_reference_inputs": [
+    {
+      "path": "assets/source/creatures/playable-completion-20261028-v1/pirateMarksman/assembly-config-v1.json",
+      "sha256": "b7944e35721d4029652448f90cef4827efb0750cfc10c820868bd8d29c835cce",
+      "use": "Preserved source key selection before timeline expansion"
+    },
+    {
+      "path": "assets/source/creatures/playable-completion-20261028-v1/author_native_cadence_v1.py",
+      "sha256": "38a8dc7b72ac88d8b1288873f2c45982a76bb8d5e17d954b21637d9703158f31",
+      "use": "Explicit deterministic whole-painted-key timeline authoring"
+    }
+  ],
+  "groups": {
+    "0": [
+      "near0",
+      "near0",
+      "near1",
+      "far2",
+      "far0",
+      "far0",
+      "far1",
+      "near2"
+    ],
+    "1": [
+      "ready",
+      "shootFrontDraw",
+      "shootFrontDraw",
+      "shootFrontDraw",
+      "ready"
+    ],
+    "11": [
+      "up0",
+      "up0",
+      "up1",
+      "up1",
+      "up2",
+      "up2",
+      "up3",
+      "up3"
+    ],
+    "12": [
+      "front0",
+      "front0",
+      "front1",
+      "front1",
+      "front2",
+      "front2",
+      "front3",
+      "front3"
+    ],
+    "13": [
+      "down0",
+      "down0",
+      "down1",
+      "down1",
+      "down2",
+      "down2",
+      "down3",
+      "down3"
+    ],
+    "14": [
+      "ready",
+      "shootUpDraw",
+      "shootUpAim",
+      "shootUpRelease",
+      "shootUpRecoil",
+      "shootUpRecoil",
+      "ready",
+      "ready"
+    ],
+    "15": [
+      "ready",
+      "shootFrontDraw",
+      "shootFrontAim",
+      "shootFrontRelease",
+      "shootFrontRecoil",
+      "shootFrontRecoil",
+      "ready",
+      "ready"
+    ],
+    "16": [
+      "ready",
+      "shootDownDraw",
+      "shootDownAim",
+      "shootDownRelease",
+      "shootDownRecoil",
+      "shootDownRecoil",
+      "ready",
+      "ready"
+    ],
+    "2": [
+      "ready"
+    ],
+    "20": [
+      "ready",
+      "near0"
+    ],
+    "21": [
+      "near2",
+      "ready"
+    ],
+    "22": [
+      "death3"
+    ],
+    "3": [
+      "hurt0",
+      "hurt0",
+      "hurt1",
+      "hurt1",
+      "ready"
+    ],
+    "4": [
+      "defend",
+      "defend",
+      "defend",
+      "ready",
+      "ready"
+    ],
+    "5": [
+      "death0",
+      "death0",
+      "death1",
+      "death1",
+      "death2",
+      "death2",
+      "death3",
+      "death3"
+    ],
+    "7": [
+      "ready",
+      "turn1",
+      "turn2",
+      "turnFront",
+      "turnFront"
+    ],
+    "8": [
+      "turnFrontNativeR",
+      "turnFrontNativeR",
+      "turn2",
+      "turn1",
+      "ready"
+    ]
+  },
+  "muzzle_measurements": {
+    "lower": {
+      "fixed_scale": 0.225,
+      "native_offset": [
+        38,
+        -29
+      ],
+      "pose": "shootDownRelease",
+      "source_barrel_end": [
+        994,
+        1025
+      ],
+      "source_root": [
+        825,
+        1152
+      ]
+    },
+    "middle": {
+      "fixed_scale": 0.225,
+      "native_offset": [
+        43,
+        -61
+      ],
+      "pose": "shootFrontRelease",
+      "source_barrel_end": [
+        1015,
+        512
+      ],
+      "source_root": [
+        825,
+        784
+      ]
+    },
+    "native_alignment": "not_run",
+    "native_attackClimaxFrame": 4,
+    "source_release_index": 3,
+    "status": "design proposal",
+    "upper": {
+      "fixed_scale": 0.225,
+      "native_offset": [
+        30,
+        -73
+      ],
+      "pose": "shootUpRelease",
+      "source_barrel_end": [
+        960,
+        75
+      ],
+      "source_root": [
+        825,
+        399
+      ]
+    }
+  },
+  "plates": {
+    "far-walk-v2-raw.png": {
+      "expected_islands": 3,
+      "poses": {
+        "far0": {
+          "island": 1,
+          "root": [
+            450,
+            675
+          ]
+        },
+        "far1": {
+          "island": 0,
+          "root": [
+            1120,
+            675
+          ]
+        },
+        "far2": {
+          "island": 2,
+          "root": [
+            1810,
+            675
+          ]
+        }
+      },
+      "scale": 0.129,
+      "source": "pirateMarksman/far-walk-v2-raw.png",
+      "source_sha256": "00f2e66b030e2d9534f1e444e58d14b17e7343196347e158b1897a94eec0b9d0"
+    },
+    "melee": {
+      "expected_islands": 12,
+      "poses": {
+        "down0": {
+          "island": 8,
+          "root": [
+            170,
+            1155
+          ]
+        },
+        "down1": {
+          "island": 11,
+          "root": [
+            510,
+            1157
+          ]
+        },
+        "down2": {
+          "island": 10,
+          "root": [
+            840,
+            1157
+          ]
+        },
+        "down3": {
+          "island": 9,
+          "root": [
+            1180,
+            1158
+          ]
+        },
+        "front0": {
+          "island": 4,
+          "root": [
+            180,
+            787
+          ]
+        },
+        "front1": {
+          "island": 6,
+          "root": [
+            510,
+            788
+          ]
+        },
+        "front2": {
+          "island": 5,
+          "root": [
+            840,
+            788
+          ]
+        },
+        "front3": {
+          "island": 7,
+          "root": [
+            1180,
+            791
+          ]
+        },
+        "up0": {
+          "island": 0,
+          "root": [
+            170,
+            400
+          ]
+        },
+        "up1": {
+          "island": 1,
+          "root": [
+            510,
+            403
+          ]
+        },
+        "up2": {
+          "island": 2,
+          "root": [
+            840,
+            403
+          ]
+        },
+        "up3": {
+          "island": 3,
+          "root": [
+            1180,
+            404
+          ]
+        }
+      },
+      "scale": 0.225,
+      "source": "pirateMarksman/melee-v1-raw.png",
+      "source_sha256": "762f1802c79a84547fac2a765dac7a65ef9db7f993513035c65aac0d97a1970a"
+    },
+    "near-walk-v2-raw.png": {
+      "expected_islands": 3,
+      "poses": {
+        "near0": {
+          "island": 0,
+          "root": [
+            320,
+            745
+          ]
+        },
+        "near1": {
+          "island": 1,
+          "root": [
+            930,
+            745
+          ]
+        },
+        "near2": {
+          "island": 2,
+          "root": [
+            1580,
+            745
+          ]
+        }
+      },
+      "scale": 0.12,
+      "source": "pirateMarksman/near-walk-v2-raw.png",
+      "source_sha256": "e6a7fe618ce9a9cf2af60a279b7826eea52cb8214bc330d8c6110800d84f79db"
+    },
+    "reactions": {
+      "expected_islands": 12,
+      "poses": {
+        "death0": {
+          "island": 8,
+          "root": [
+            175,
+            1142
+          ]
+        },
+        "death1": {
+          "island": 9,
+          "root": [
+            500,
+            1139
+          ]
+        },
+        "death2": {
+          "island": 10,
+          "root": [
+            825,
+            1137
+          ]
+        },
+        "death3": {
+          "island": 11,
+          "root": [
+            1140,
+            1133
+          ]
+        },
+        "defend": {
+          "island": 2,
+          "root": [
+            510,
+            449
+          ]
+        },
+        "hurt0": {
+          "island": 1,
+          "root": [
+            825,
+            449
+          ]
+        },
+        "hurt1": {
+          "island": 3,
+          "root": [
+            1175,
+            451
+          ]
+        },
+        "ready": {
+          "island": 0,
+          "root": [
+            165,
+            451
+          ]
+        },
+        "turn0": {
+          "island": 5,
+          "root": [
+            180,
+            850
+          ]
+        },
+        "turn1": {
+          "island": 6,
+          "root": [
+            510,
+            852
+          ]
+        },
+        "turn2": {
+          "island": 7,
+          "root": [
+            840,
+            852
+          ]
+        },
+        "turn3": {
+          "island": 4,
+          "root": [
+            1170,
+            852
+          ]
+        }
+      },
+      "scale": 0.225,
+      "source": "pirateMarksman/reactions-v1-raw.png",
+      "source_sha256": "0f4687e1559ff83b7b1229b2f3d831a548fa05c2f87956e895c01d26d8802760"
+    },
+    "shots": {
+      "expected_islands": 12,
+      "poses": {
+        "shootDownAim": {
+          "island": 10,
+          "root": [
+            500,
+            1150
+          ]
+        },
+        "shootDownDraw": {
+          "island": 8,
+          "root": [
+            165,
+            1151
+          ]
+        },
+        "shootDownRecoil": {
+          "island": 9,
+          "root": [
+            1175,
+            1154
+          ]
+        },
+        "shootDownRelease": {
+          "island": 11,
+          "root": [
+            825,
+            1152
+          ]
+        },
+        "shootFrontAim": {
+          "island": 5,
+          "root": [
+            500,
+            784
+          ]
+        },
+        "shootFrontDraw": {
+          "island": 4,
+          "root": [
+            165,
+            783
+          ]
+        },
+        "shootFrontRecoil": {
+          "island": 7,
+          "root": [
+            1175,
+            784
+          ]
+        },
+        "shootFrontRelease": {
+          "island": 6,
+          "root": [
+            825,
+            784
+          ]
+        },
+        "shootUpAim": {
+          "island": 2,
+          "root": [
+            500,
+            390
+          ]
+        },
+        "shootUpDraw": {
+          "island": 1,
+          "root": [
+            165,
+            386
+          ]
+        },
+        "shootUpRecoil": {
+          "island": 3,
+          "root": [
+            1175,
+            397
+          ]
+        },
+        "shootUpRelease": {
+          "island": 0,
+          "root": [
+            825,
+            399
+          ]
+        }
+      },
+      "scale": 0.225,
+      "source": "pirateMarksman/shots-v1-raw.png",
+      "source_sha256": "1a2ee57e569bdb18cceb89daa17fc9cb5bd53ab2fb6401f9cc990d0a52472b63"
+    },
+    "turn-front-centred-v1": {
+      "expected_islands": 2,
+      "poses": {
+        "turnFront": {
+          "island": 1,
+          "root": [
+            1170,
+            858
+          ]
+        }
+      },
+      "scale": 0.098,
+      "source": "turn-fronts-v1/t2-raw.png",
+      "source_sha256": "35a6e5d3cbc739d191317cd56758ea947dd6a7f26482b9155f4ac044c43b6b8f"
+    },
+    "walk": {
+      "expected_islands": 6,
+      "poses": {
+        "walk0": {
+          "island": 0,
+          "root": [
+            300,
+            499
+          ]
+        },
+        "walk1": {
+          "island": 1,
+          "root": [
+            785,
+            504
+          ]
+        },
+        "walk2": {
+          "island": 2,
+          "root": [
+            1300,
+            501
+          ]
+        },
+        "walk3": {
+          "island": 4,
+          "root": [
+            305,
+            983
+          ]
+        },
+        "walk4": {
+          "island": 3,
+          "root": [
+            785,
+            984
+          ]
+        },
+        "walk5": {
+          "island": 5,
+          "root": [
+            1300,
+            986
+          ]
+        }
+      },
+      "scale": 0.18,
+      "source": "pirateMarksman/walk-v1-raw.png",
+      "source_sha256": "0e5eeb8b09e8f67f17b0ae50abd980bf6246d049de8b6f10f5baa6bc4339aa32"
+    }
+  },
+  "projectile": {
+    "expected_islands": 5,
+    "frames": [
+      {
+        "island": 0,
+        "root": [
+          198,
+          386
+        ]
+      },
+      {
+        "island": 2,
+        "root": [
+          598,
+          405
+        ]
+      },
+      {
+        "island": 4,
+        "root": [
+          964,
+          453
+        ]
+      },
+      {
+        "island": 3,
+        "root": [
+          1283,
+          506
+        ]
+      },
+      {
+        "island": 1,
+        "root": [
+          1576,
+          527
+        ]
+      }
+    ],
+    "scale": 0.07,
+    "source": "pistol-projectile-v1-raw.png",
+    "source_sha256": "56498e5c0ad6cfcdcc147033de50cd2b40dcd00cc5d8e45f0e91ec4790599722"
+  },
+  "technical_pose_transforms": {
+    "turnFrontNativeR": {
+      "operation": "native_turn_full_canvas_mirror_translate",
+      "reason": "Native facing flip reflects full450px then stack x changes-58 for onehex; exact displayed endpoint compensation, no invented painted intermediate",
+      "source_pose": "turnFront",
+      "translation": [
+        -58,
+        0
+      ]
+    }
+  },
+  "timeline_contract": {
+    "battle_speed_factor": "Selected native engine setting; actual quantization and visual rhythm need runtime observation",
+    "climax_consumer": "vcmi-develop/vcmi-develop/client/battle/BattleAnimationClasses.cpp",
+    "climax_consumer_sha256": "32e58068ee148c3c56afd0c6755144eda0a819dbcb201747d5abf4edeee9a4b9",
+    "description": "Existing native8-tick melee/walk/death/shoot/cast and5-tick response/turn cadence, with explicit holds of genuine painted keys. Repeated timeline images are deliberate holds, never claimed as extra painted poses.",
+    "eight_tick_cast_release_source_index": 4,
+    "groups": [
+      {
+        "group": 0,
+        "native_ticks": 8,
+        "original_genuine_key_sequence": [
+          "walk0",
+          "walk1",
+          "walk2",
+          "walk3",
+          "walk4",
+          "walk5"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          0,
+          1,
+          2,
+          3,
+          3,
+          4,
+          5
+        ],
+        "unique_painted_keys": 6
+      },
+      {
+        "group": 1,
+        "native_ticks": 5,
+        "original_genuine_key_sequence": [
+          "ready",
+          "shootFrontDraw"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "unique_painted_keys": 2
+      },
+      {
+        "group": 11,
+        "native_ticks": 8,
+        "original_genuine_key_sequence": [
+          "up0",
+          "up1",
+          "up2",
+          "up3"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3
+        ],
+        "unique_painted_keys": 4
+      },
+      {
+        "group": 12,
+        "native_ticks": 8,
+        "original_genuine_key_sequence": [
+          "front0",
+          "front1",
+          "front2",
+          "front3"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3
+        ],
+        "unique_painted_keys": 4
+      },
+      {
+        "group": 13,
+        "native_ticks": 8,
+        "original_genuine_key_sequence": [
+          "down0",
+          "down1",
+          "down2",
+          "down3"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3
+        ],
+        "unique_painted_keys": 4
+      },
+      {
+        "group": 14,
+        "native_ticks": 8,
+        "original_genuine_key_sequence": [
+          "ready",
+          "shootUpDraw",
+          "shootUpAim",
+          "shootUpRelease",
+          "shootUpRecoil",
+          "ready"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          4,
+          5,
+          5
+        ],
+        "unique_painted_keys": 5
+      },
+      {
+        "group": 15,
+        "native_ticks": 8,
+        "original_genuine_key_sequence": [
+          "ready",
+          "shootFrontDraw",
+          "shootFrontAim",
+          "shootFrontRelease",
+          "shootFrontRecoil",
+          "ready"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          4,
+          5,
+          5
+        ],
+        "unique_painted_keys": 5
+      },
+      {
+        "group": 16,
+        "native_ticks": 8,
+        "original_genuine_key_sequence": [
+          "ready",
+          "shootDownDraw",
+          "shootDownAim",
+          "shootDownRelease",
+          "shootDownRecoil",
+          "ready"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          4,
+          5,
+          5
+        ],
+        "unique_painted_keys": 5
+      },
+      {
+        "group": 3,
+        "native_ticks": 5,
+        "original_genuine_key_sequence": [
+          "hurt0",
+          "hurt1",
+          "ready"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          0,
+          1,
+          1,
+          2
+        ],
+        "unique_painted_keys": 3
+      },
+      {
+        "group": 4,
+        "native_ticks": 5,
+        "original_genuine_key_sequence": [
+          "defend",
+          "ready"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "unique_painted_keys": 2
+      },
+      {
+        "group": 5,
+        "native_ticks": 8,
+        "original_genuine_key_sequence": [
+          "death0",
+          "death1",
+          "death2",
+          "death3"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3
+        ],
+        "unique_painted_keys": 4
+      },
+      {
+        "group": 7,
+        "native_ticks": 5,
+        "original_genuine_key_sequence": [
+          "ready",
+          "turn1",
+          "turn2",
+          "turn3"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          1,
+          2,
+          3,
+          3
+        ],
+        "unique_painted_keys": 4
+      },
+      {
+        "group": 8,
+        "native_ticks": 5,
+        "original_genuine_key_sequence": [
+          "turn3",
+          "turn2",
+          "turn1",
+          "ready"
+        ],
+        "timeline_source_key_indices": [
+          0,
+          0,
+          1,
+          2,
+          3
+        ],
+        "unique_painted_keys": 4
+      }
+    ],
+    "native_base_fps": 10,
+    "native_execution": false,
+    "native_shooter_attackClimaxFrame": 4,
+    "shooter_release_source_index": 3,
+    "source_consumer": "vcmi-develop/vcmi-develop/client/battle/CreatureAnimation.cpp",
+    "source_consumer_sha256": "ab43c236c791c6c7ecb6f60029b2026bc6dc5ff18c34cf1a0e7659fadc6e98ef",
+    "status": "authored configuration"
+  },
+  "turn_contract": {
+    "holding_join": "turn7first and turn8last reuse exact selected ready pose",
+    "limitation": "Native displayed endpoint algebra is independently checked; intermediate painted quarter continuity/handedness, tiny onehex pivot quantization and final visual acceptance still require in-game review.",
+    "native_execution": false,
+    "native_full_canvas_width": 450,
+    "one_hex_stack_position_delta": -58,
+    "status": "authored configuration",
+    "turn7_end": "New genuinely painted frontal centred-weapon pose",
+    "turn8_start": "Exact fullcanvas reflected turn7 endpoint translated-58"
+  },
+  "unit": "pirateMarksman",
+  "unresolved": [
+    "Opposite support and gait continuity require complete motion review",
+    "Native same-hex muzzle origins and both facings have not been observed",
+    "Exact crest legibility and face/head continuity require independent native-size review",
+    "Canonical integration and source-policy admission have not run",
+    "Actual native turn quarter continuity/handedness and full visual acceptance remain pending despite exact displayed endpoint match"
+  ],
+  "version": 5
+}

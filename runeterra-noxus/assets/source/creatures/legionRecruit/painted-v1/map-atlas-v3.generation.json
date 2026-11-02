@@ -1,0 +1,24 @@
+{
+  "status": "authored configuration",
+  "scope": "Controlled guide-based map-gait repair candidate; no native or visual acceptance",
+  "image_generation_used": true,
+  "provider": "OpenAI built-in imagegen",
+  "model": "not exposed by built-in tool",
+  "model_id_exposed": false,
+  "prompt": "Use case: identity-preserve. GAME ANIMATION MAP GAIT REPAIR. Image1 is the exact 3-column 2-row SIX WALK POSES layout target; preserve each distinct leg/body pose and relative cell position. Image2 is our OWN painted Recruit identity and material reference only. Replace every primitive mannequin in image1 with the complete painted Recruit from image2, retaining its plain ironcap/exposedface, leather/redtunic, round crestbuckler, broad falchion. CRITICAL WALK GEOMETRY: top-left phase1 knee bends with onefootpassing; top-middle phase2 legswappassing; top-right phase3 stridewithonefootforward; bottom-left phase4 oppositelegforward; bottom-middle phase5 highotherkneeswing; bottom-right phase6 oppositecontact. Follow exact knees/feet of guide image1, not the standing legs from image2. Six must describe one alternating left/right-leg walking cycle, not the same leadingfoot repeated six times. Fixed elevated3/4camera looking right, consistent proportions and size/light upperleft, compact textured originalHeroesIII prerendered-painted appearance. Allsix figures fullycontained in sixfixedsquarecells, generousmargin, samefloorbaseline perrow, no clipping, no neighboringoverlap. Keep backdrop genuinely transparent. No labels, grid, numbers or text in final. Do not paint primitives or change sword/buckler identity. Six independent painted walkingphases,3columns2rows,not one longrow. Keep projected torso/head steady, controlled smallbodybob and no motionblur.",
+  "painted_master": "assets/source/creatures/legionRecruit/painted-v1/map-atlas-v3.png",
+  "original_generated_path": "C:/Users/matcy/.codex/generated_images/01a159de-ed30-7bc2-98ee-79e3702cd7f9/exec-47471000-b9f5-4948-af50-1ff46cea6f00.png",
+  "references": [
+    {
+      "path": "assets/source/creatures/legionRecruit/painted-v1/map-repair-v3-guide-3x2.png",
+      "role": "own primitive pose/layout guide only; never final pixels"
+    },
+    {
+      "path": "assets/source/creatures/legionRecruit/painted-v1/standing-master-v3.png",
+      "role": "own painted identity reference"
+    }
+  ],
+  "selection": "native candidate only; earlier v1/v2 atlases retained",
+  "native_visual_review": "pending",
+  "release_accepted": false
+}

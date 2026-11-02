@@ -1,0 +1,2195 @@
+{
+  "candidate_only": true,
+  "limitations": [
+    "No current selection, recipe, click area, painted pixel or runtime changed.",
+    "Alpha-only candidates do not establish architectural accuracy. Explicit mask tracing and visual review are required for baked scenery.",
+    "Native hover occlusion and construction-state checks remain unobserved."
+  ],
+  "producer": {
+    "path": "scripts/town_hover_outlines.py",
+    "sha256": "7fd46e1384fa603e5090cd9429116a88a7ac6b1bf393a2d7db1621f35cc29e2c"
+  },
+  "source_mutations": 0,
+  "states": [
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/blacksmith-animation.json",
+        "sha256": "6b408320c4a770cba816a3ea12c4b3404c5656742e76fdb6fce4e09e9a11a49c"
+      },
+      "building": "blacksmith",
+      "candidate_border": {
+        "path": "freljord/blacksmith/border.png",
+        "sha256": "66c12cf94a092ca21fc97bdec9ac35edb77b278f310419f1e4fadcd55876bd97"
+      },
+      "candidate_mask": {
+        "path": "freljord/blacksmith/architecture-mask.png",
+        "sha256": "c3309ec0b00ece6ea8358942f6e23dbaf1b04bb09142026d59e182cdbd5a962d"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        563,
+        153,
+        721,
+        262
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/blacksmith/border.png",
+        "sha256": "58bfdf8aa0bd5dcb7423927208481cddecb3b05d911f37fd129746e9f2419908"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/blacksmith-border.json",
+        "sha256": "eb45c985135722769f88985edf3a57a5a9238be4f0ea0ca16dea01b215ef9b3b"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/blacksmith/layer.png",
+        "sha256": "3fe721d24177e9f6ea2a4590a798bc6d84f09bfbf2ac92a9179a3715dc80807a"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/blacksmith.png",
+        "sha256": "c3309ec0b00ece6ea8358942f6e23dbaf1b04bb09142026d59e182cdbd5a962d"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/blacksmith.json",
+        "area": "runeterra/freljord/town/structures/blacksmith_area.png",
+        "border": "runeterra/freljord/town/structures/blacksmith_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 261
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/capitol-animation.json",
+        "sha256": "c22f6417d3a8a1560258bdcfa2b2261747534174f2ff59035349058b828e00fe"
+      },
+      "building": "capitol",
+      "candidate_border": {
+        "path": "freljord/capitol/border.png",
+        "sha256": "dbdbe0eb123aafe824f2fd79274562ad932e10ade2c413953025e8478f13db7a"
+      },
+      "candidate_mask": {
+        "path": "freljord/capitol/architecture-mask.png",
+        "sha256": "4cf32a9f35abf0bd63626bee27ea6ccde1bd56a164d008087771f9618ffbf240"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        251,
+        22,
+        457,
+        150
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/capitol/border.png",
+        "sha256": "44dd1723964169e1dc46432a811dd34905bd0c6eb37c3050463cf84a026ff538"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/capitol-border.json",
+        "sha256": "a1c9fa3874e73384aca5e53eb6745a30e131c7eb80c654851243267a52962ae8"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/capitol/layer.png",
+        "sha256": "6eeb3686c4a84f7b5a260a96bfcd7e3a45a5663c30f8925b174dc5d9856b7d6c"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/capitol.png",
+        "sha256": "4cf32a9f35abf0bd63626bee27ea6ccde1bd56a164d008087771f9618ffbf240"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/capitol.json",
+        "area": "runeterra/freljord/town/structures/capitol_area.png",
+        "border": "runeterra/freljord/town/structures/capitol_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 149
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/castle-animation.json",
+        "sha256": "42b349d3635dbe73c05113bb77af66192a22e01ababe251d1af0d13ad090250f"
+      },
+      "building": "castle",
+      "candidate_border": {
+        "path": "freljord/castle/border.png",
+        "sha256": "8e74ed83ec8caf4667b18d93978e85041e00fb05988e5ebffc24f4bcf534bba2"
+      },
+      "candidate_mask": {
+        "path": "freljord/castle/architecture-mask.png",
+        "sha256": "9eb44ff51e2d2c3b87fc876d70322099726775bcb81378a753131c2230c68031"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        498,
+        40,
+        728,
+        150
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/castle/border.png",
+        "sha256": "36b40fcb15ca59a92219b6253895fb6392f1986ff3661bf05413f9c3128cf265"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/castle-border.json",
+        "sha256": "231b4a8752c9b6c96aecb46b58564547dcef66aa3fdd86a5ecb9d2b73d5a927f"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/castle/layer.png",
+        "sha256": "41436229a6106e77159e7833d1e70edca87cb5ba1fedb840103401cfbbf8f507"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/castle.png",
+        "sha256": "9eb44ff51e2d2c3b87fc876d70322099726775bcb81378a753131c2230c68031"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/castle.json",
+        "area": "runeterra/freljord/town/structures/castle_area.png",
+        "border": "runeterra/freljord/town/structures/castle_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 148
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/citadel-animation.json",
+        "sha256": "a159c69868d5af8fa3a1457673e8baf727b98e600868cdd059fff9bdf79d8a96"
+      },
+      "building": "citadel",
+      "candidate_border": {
+        "path": "freljord/citadel/border.png",
+        "sha256": "563175922a996c1f99554f93acbea3e553f42ac48d81902cfc37a210daf00a6d"
+      },
+      "candidate_mask": {
+        "path": "freljord/citadel/architecture-mask.png",
+        "sha256": "bdf0bdbf9aa9ef9feda28af132d8e0bfcedffc20d70c2b47619382c35129e82d"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        499,
+        46,
+        727,
+        150
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/citadel/border.png",
+        "sha256": "ec0d982518bd748b54fd55a35977d8f42fed22cd2ebb620e4629b13cf07884bc"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/citadel-border.json",
+        "sha256": "bca95e027fe5fc5a0699763af7af4f8d843f9edd8ff53cfa55e1fd997314bb28"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/citadel/layer.png",
+        "sha256": "47b716d65b6342b435bb2b769fe34c192a34b30f70b9451b1f4cf2a49a7b542c"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/citadel.png",
+        "sha256": "bdf0bdbf9aa9ef9feda28af132d8e0bfcedffc20d70c2b47619382c35129e82d"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/citadel.json",
+        "area": "runeterra/freljord/town/structures/citadel_area.png",
+        "border": "runeterra/freljord/town/structures/citadel_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 148
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/cityHall-animation.json",
+        "sha256": "2f7af13fb6a60f0ea4f6e74e8c6c1323c7fb7db4686d25cc97eb9794ca9225ea"
+      },
+      "building": "cityHall",
+      "candidate_border": {
+        "path": "freljord/cityHall/border.png",
+        "sha256": "1e335d0f92e105e9280be0368f9957bf43b4f0ffb138c7a91af8e816f90024c6"
+      },
+      "candidate_mask": {
+        "path": "freljord/cityHall/architecture-mask.png",
+        "sha256": "42d98d520eba982f66b51db6ae05fe82a436c62d56c1a87893060f0f836be803"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        254,
+        41,
+        455,
+        150
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/cityHall/border.png",
+        "sha256": "11ad752da57e611a99f751aa39eae6c2988c72803ac2b1bbbbe23ce6cbee03f2"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/cityHall-border.json",
+        "sha256": "7f28363b26e9ccbb9262e377d971773ac1c301c346019f6fa0c2bcab40a6a520"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/cityHall/layer.png",
+        "sha256": "155730102bc7f227a1fd265f87d1b3df40da9178556726f273ccaee5475952db"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/cityHall.png",
+        "sha256": "42d98d520eba982f66b51db6ae05fe82a436c62d56c1a87893060f0f836be803"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/cityHall.json",
+        "area": "runeterra/freljord/town/structures/cityHall_area.png",
+        "border": "runeterra/freljord/town/structures/cityHall_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 149
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingLvl1-animation.json",
+        "sha256": "67088039c05271f5abf7ad0298c82f38b4ab5d7a9259447ffc2ff76def8804a4"
+      },
+      "building": "dwellingLvl1",
+      "candidate_border": {
+        "path": "freljord/dwellingLvl1/border.png",
+        "sha256": "dff4faa9497e15500636b57f132753eec9f0a5c441af82342983187b6000f7a6"
+      },
+      "candidate_mask": {
+        "path": "freljord/dwellingLvl1/architecture-mask.png",
+        "sha256": "07993c90af8f196c8a06512dab5f156584170d812a667f9038d0fbbdb9c71767"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        424,
+        276,
+        605,
+        355
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingLvl1/border.png",
+        "sha256": "7f59191ec1ef58f5f1fd180a0510423ce6440a2c5fa701e5606af98c13ba3de6"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingLvl1-border.json",
+        "sha256": "084639ffeba41156d4373e9352542a5c0a379f8a02e8940ac6b275b1e2b07688"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingLvl1/layer.png",
+        "sha256": "50c6c3eb8cd3df305793b9e042d455373a3a64b81f1c8cf9450a8ed260a75c0e"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/dwellingLvl1.png",
+        "sha256": "07993c90af8f196c8a06512dab5f156584170d812a667f9038d0fbbdb9c71767"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/dwellingLvl1.json",
+        "area": "runeterra/freljord/town/structures/dwellingLvl1_area.png",
+        "border": "runeterra/freljord/town/structures/dwellingLvl1_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 355
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingLvl2-animation.json",
+        "sha256": "95ba41c06fad2499e61392d450384790deeaab08e570857f066a415c720747a9"
+      },
+      "building": "dwellingLvl2",
+      "candidate_border": {
+        "path": "freljord/dwellingLvl2/border.png",
+        "sha256": "98e29bc884fe7f642914414f290a834cd925279a1038d87e84fb953fd1b50f98"
+      },
+      "candidate_mask": {
+        "path": "freljord/dwellingLvl2/architecture-mask.png",
+        "sha256": "c927a826524ea1fa891743e126c9fdd03972c97037bce08ad0bec8f1487c5dde"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        112,
+        256,
+        310,
+        348
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingLvl2/border.png",
+        "sha256": "3199397747cfac327f6f0438423bdefd8c39b07275dbfccf369b79f4f8a422e2"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingLvl2-border.json",
+        "sha256": "8b385427952a7d50982bc09a821c2078505b5dc81c6fbcfdfee942d469bfe27c"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingLvl2/layer.png",
+        "sha256": "08a40f1e54486ed74f9f833d707463ce14ca4ed2883db0a3e10cad79605da6be"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/dwellingLvl2.png",
+        "sha256": "c927a826524ea1fa891743e126c9fdd03972c97037bce08ad0bec8f1487c5dde"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/dwellingLvl2.json",
+        "area": "runeterra/freljord/town/structures/dwellingLvl2_area.png",
+        "border": "runeterra/freljord/town/structures/dwellingLvl2_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 346
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingLvl3-animation.json",
+        "sha256": "2e3a7f7fe4febd1934e13e07fb5d1d244f5fae797fd6bf97707a429c9e4072f7"
+      },
+      "building": "dwellingLvl3",
+      "candidate_border": {
+        "path": "freljord/dwellingLvl3/border.png",
+        "sha256": "f9ba62e143aea6dfac1d5f56a50f9d7e158e7bb4caf82adba40f313c503badf4"
+      },
+      "candidate_mask": {
+        "path": "freljord/dwellingLvl3/architecture-mask.png",
+        "sha256": "2cfd6f2e339b6f28bdb40efcad0b7113c2ec5130b5ea2a1d6833393d3623a5ed"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        11,
+        102,
+        116,
+        184
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingLvl3/border.png",
+        "sha256": "7e2628e8a7e3c57e6697dcd9001b3ff1c0b23e833feaf550fc29718f1f115c8b"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingLvl3-border.json",
+        "sha256": "3b46e71c354e5597fe46d80544b77008b23b67786de8d4ecfe91b5a6b88b126c"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingLvl3/layer.png",
+        "sha256": "9e1228ba7db8f725a912e1a0908285b0f114559e8e517f4011ae88d4d0460c6d"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/dwellingLvl3.png",
+        "sha256": "2cfd6f2e339b6f28bdb40efcad0b7113c2ec5130b5ea2a1d6833393d3623a5ed"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/dwellingLvl3.json",
+        "area": "runeterra/freljord/town/structures/dwellingLvl3_area.png",
+        "border": "runeterra/freljord/town/structures/dwellingLvl3_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 184
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingLvl4-animation.json",
+        "sha256": "2737fd6535ec87705a009da4ab1b25e8c4a267f5a8c8b5857c8ba6effc34e662"
+      },
+      "building": "dwellingLvl4",
+      "candidate_border": {
+        "path": "freljord/dwellingLvl4/border.png",
+        "sha256": "5a31c498fa2b79680fb6e0989ee3f718b57705dbd63cf2408470fa1f185fa0d1"
+      },
+      "candidate_mask": {
+        "path": "freljord/dwellingLvl4/architecture-mask.png",
+        "sha256": "eafdf1f89de5f963437d8a2f1498793cad0e0f949b01454daac020c1eee8d0f2"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        514,
+        145,
+        648,
+        224
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingLvl4/border.png",
+        "sha256": "b54a88c821233991fb1aab9a9312af23d2364f84db18097110ff5a6faba9788b"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingLvl4-border.json",
+        "sha256": "e3840b5c15c70cf35ae1d258fc1bec9e1d035ac93393bd780509772c457d06a4"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingLvl4/layer.png",
+        "sha256": "b940722ff6f2127aa4f7dfb0e954f835fa6bc6c5149ca995f5104845c785f58e"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/dwellingLvl4.png",
+        "sha256": "eafdf1f89de5f963437d8a2f1498793cad0e0f949b01454daac020c1eee8d0f2"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/dwellingLvl4.json",
+        "area": "runeterra/freljord/town/structures/dwellingLvl4_area.png",
+        "border": "runeterra/freljord/town/structures/dwellingLvl4_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 222
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingLvl5-animation.json",
+        "sha256": "c4a28daa4ab4fddb38962c5f87c447fb24da4cecc5b90839c4e5ebb1c3e2387b"
+      },
+      "building": "dwellingLvl5",
+      "candidate_border": {
+        "path": "freljord/dwellingLvl5/border.png",
+        "sha256": "839e23264eba27e1a7f73a8a63ab698dcbb39d6528df52d5d8d0881fa7360e6e"
+      },
+      "candidate_mask": {
+        "path": "freljord/dwellingLvl5/architecture-mask.png",
+        "sha256": "b18fd5a4fd6ce133eb58272aa56b8d7d566f3a856fa8641502db31dd39a5b8fa"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        388,
+        167,
+        531,
+        248
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingLvl5/border.png",
+        "sha256": "a9804959a7240f6ebad9f6e940d491a916fef5825ab004d4a30bb402b7424927"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingLvl5-border.json",
+        "sha256": "9523441188fbc3e0678aa0785971e1395c2ed5ec3fd23bcbf677917af4a6b996"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingLvl5/layer.png",
+        "sha256": "ce3acb34d4cde84b14404a420ac80b15bd26e92a658aca7d363398d98012a82e"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/dwellingLvl5.png",
+        "sha256": "b18fd5a4fd6ce133eb58272aa56b8d7d566f3a856fa8641502db31dd39a5b8fa"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/dwellingLvl5.json",
+        "area": "runeterra/freljord/town/structures/dwellingLvl5_area.png",
+        "border": "runeterra/freljord/town/structures/dwellingLvl5_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 247
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingLvl6-animation.json",
+        "sha256": "d4fa098b47c916a66265ac60c0db902a575a4137a806b6ad1c3be2e495ce1546"
+      },
+      "building": "dwellingLvl6",
+      "candidate_border": {
+        "path": "freljord/dwellingLvl6/border.png",
+        "sha256": "df5cbde940fd2f439dc2a8a163f24297e57131395b914c917e173a4b902a2480"
+      },
+      "candidate_mask": {
+        "path": "freljord/dwellingLvl6/architecture-mask.png",
+        "sha256": "9f2734aa0e9b8e77cd3b0f876f79df90295597e788666509c62577b0d3df3c85"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        602,
+        253,
+        786,
+        334
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingLvl6/border.png",
+        "sha256": "c04e4611de98d7b60142b460bfb2f7a947d04c8976ccf7b98bb0610636881e3b"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingLvl6-border.json",
+        "sha256": "dbbad8423fc9cde9f85076ffbd78a0787c52bd94b63ac63c9d45c9ad29375f16"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingLvl6/layer.png",
+        "sha256": "cfc7b855dedea686ec664e4c49ad74278add78d1ea7207a625bcd5978e60e333"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/dwellingLvl6.png",
+        "sha256": "9f2734aa0e9b8e77cd3b0f876f79df90295597e788666509c62577b0d3df3c85"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/dwellingLvl6.json",
+        "area": "runeterra/freljord/town/structures/dwellingLvl6_area.png",
+        "border": "runeterra/freljord/town/structures/dwellingLvl6_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 334
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingLvl7-animation.json",
+        "sha256": "cc1b0ff76858afaa1b49d95376a2529fec9eb32898eb8e335179554d9a05f6b7"
+      },
+      "building": "dwellingLvl7",
+      "candidate_border": {
+        "path": "freljord/dwellingLvl7/border.png",
+        "sha256": "c5e356a2a06f14d7fe994752d8ca6ff041bda523d0234fdf8a6edb414c2be695"
+      },
+      "candidate_mask": {
+        "path": "freljord/dwellingLvl7/architecture-mask.png",
+        "sha256": "2d16d0dfdd1e3ee38bc0c37ca7af7f0524c8013804cb253c21c682cbf3d80a8f"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        43,
+        30,
+        116,
+        111
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingLvl7/border.png",
+        "sha256": "54fe913d75456ce02b45e5d1ac2dd28a3f52013ac13b01e8af1e081f524b31ae"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingLvl7-border.json",
+        "sha256": "7aa9e731f143bb5a81bfc2f92702f1395ecd8bb2510aa65178bc5b77698b1a69"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingLvl7/layer.png",
+        "sha256": "81742e901adc05e3135f8cb7014c13abc66b39cf614c559a306380a7b8cedae7"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/dwellingLvl7.png",
+        "sha256": "2d16d0dfdd1e3ee38bc0c37ca7af7f0524c8013804cb253c21c682cbf3d80a8f"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/dwellingLvl7.json",
+        "area": "runeterra/freljord/town/structures/dwellingLvl7_area.png",
+        "border": "runeterra/freljord/town/structures/dwellingLvl7_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 112
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingUpLvl1-animation.json",
+        "sha256": "5d1c6f8467810eaae2117160195969e32c72fe9e571aaf613273f970e09ac3ab"
+      },
+      "building": "dwellingUpLvl1",
+      "candidate_border": {
+        "path": "freljord/dwellingUpLvl1/border.png",
+        "sha256": "7323f895ae3af6234e0c661a60f0f318076567cad0ae152d81735003d88cd185"
+      },
+      "candidate_mask": {
+        "path": "freljord/dwellingUpLvl1/architecture-mask.png",
+        "sha256": "1bde3a2885a42aed911cf781dfbf5e85969b7aa9270bdea39a97a95e883d151b"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        424,
+        276,
+        605,
+        355
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingUpLvl1/border.png",
+        "sha256": "7f59191ec1ef58f5f1fd180a0510423ce6440a2c5fa701e5606af98c13ba3de6"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingUpLvl1-border.json",
+        "sha256": "a9d8cad57c7a923271d98c565fb0866a77dc54bd0b34612a1cc264281f857231"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingUpLvl1/layer.png",
+        "sha256": "47d49469c6e88586c0a0a7e432578c06768ceaadde7793affbfeb653d192963e"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/dwellingUpLvl1.png",
+        "sha256": "1bde3a2885a42aed911cf781dfbf5e85969b7aa9270bdea39a97a95e883d151b"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/dwellingUpLvl1.json",
+        "area": "runeterra/freljord/town/structures/dwellingUpLvl1_area.png",
+        "border": "runeterra/freljord/town/structures/dwellingUpLvl1_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 355
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingUpLvl2-animation.json",
+        "sha256": "758fcc0561498dca0406c459c421a04df67a0ab3b49190f33cc55aadfc599ea9"
+      },
+      "building": "dwellingUpLvl2",
+      "candidate_border": {
+        "path": "freljord/dwellingUpLvl2/border.png",
+        "sha256": "79cba52e60fa59f68b338e4f7670f8085e29a73a9e3a71f032a921a70c577bb8"
+      },
+      "candidate_mask": {
+        "path": "freljord/dwellingUpLvl2/architecture-mask.png",
+        "sha256": "194aa37c6fa5b8dd76501298637871758d08df427642b93341d9b9935e688d6a"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        112,
+        256,
+        310,
+        348
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingUpLvl2/border.png",
+        "sha256": "3199397747cfac327f6f0438423bdefd8c39b07275dbfccf369b79f4f8a422e2"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingUpLvl2-border.json",
+        "sha256": "0d3bc2169a42075105d249d3aed5681da8d188a11153961facb62e1a7c6d78b7"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingUpLvl2/layer.png",
+        "sha256": "a4cb9187e11e30ca515add7a7bf3e0458d3badbfaa37237086b15003eea1cbc9"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/dwellingUpLvl2.png",
+        "sha256": "194aa37c6fa5b8dd76501298637871758d08df427642b93341d9b9935e688d6a"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/dwellingUpLvl2.json",
+        "area": "runeterra/freljord/town/structures/dwellingUpLvl2_area.png",
+        "border": "runeterra/freljord/town/structures/dwellingUpLvl2_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 346
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingUpLvl3-animation.json",
+        "sha256": "d88a4dbdcd33e572b718111ccf96cc467bd09d1c95c99a38439120b68c94f6c2"
+      },
+      "building": "dwellingUpLvl3",
+      "candidate_border": {
+        "path": "freljord/dwellingUpLvl3/border.png",
+        "sha256": "1dbe898d7f4201774d8242fb18ab46b1d26f70dc6b1c04431c506bebd7b45d43"
+      },
+      "candidate_mask": {
+        "path": "freljord/dwellingUpLvl3/architecture-mask.png",
+        "sha256": "c50cbeb4be2701ea9bf0b1cff845692bbc5255a94f068e89b6b3a29e266f2a24"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        12,
+        102,
+        116,
+        184
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingUpLvl3/border.png",
+        "sha256": "7e2628e8a7e3c57e6697dcd9001b3ff1c0b23e833feaf550fc29718f1f115c8b"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingUpLvl3-border.json",
+        "sha256": "58a0e926ebb15386a04ee4b15e0be1cc8b680d57f2758444f9a41f89e4328458"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingUpLvl3/layer.png",
+        "sha256": "45d657dc81680c760e4834da7bfe34f42041ba943b909444773599f802c9c2b5"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/dwellingUpLvl3.png",
+        "sha256": "c50cbeb4be2701ea9bf0b1cff845692bbc5255a94f068e89b6b3a29e266f2a24"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/dwellingUpLvl3.json",
+        "area": "runeterra/freljord/town/structures/dwellingUpLvl3_area.png",
+        "border": "runeterra/freljord/town/structures/dwellingUpLvl3_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 184
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingUpLvl4-animation.json",
+        "sha256": "1448858fd9d90e37245a7c9386abffc530be10241882fffc8efc7b694aafa816"
+      },
+      "building": "dwellingUpLvl4",
+      "candidate_border": {
+        "path": "freljord/dwellingUpLvl4/border.png",
+        "sha256": "ea989c0081e698520c91b20b38f2dc82297cfc40a8bf33366d5fc5bc1229fd2c"
+      },
+      "candidate_mask": {
+        "path": "freljord/dwellingUpLvl4/architecture-mask.png",
+        "sha256": "8200672365af5d3a53e26b43c7e97c03c0158a1dc32917f59ffb0e89928b9f4a"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        514,
+        145,
+        648,
+        224
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingUpLvl4/border.png",
+        "sha256": "b54a88c821233991fb1aab9a9312af23d2364f84db18097110ff5a6faba9788b"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingUpLvl4-border.json",
+        "sha256": "1f493ef59b74333f98f4483257fe7e11f2e2f851f83f9c24af574d4209f6bd61"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingUpLvl4/layer.png",
+        "sha256": "9e466023087e7cc8b521fe51620f60fe05907698b3449c0959a398248b4f9ec2"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/dwellingUpLvl4.png",
+        "sha256": "8200672365af5d3a53e26b43c7e97c03c0158a1dc32917f59ffb0e89928b9f4a"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/dwellingUpLvl4.json",
+        "area": "runeterra/freljord/town/structures/dwellingUpLvl4_area.png",
+        "border": "runeterra/freljord/town/structures/dwellingUpLvl4_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 222
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingUpLvl5-animation.json",
+        "sha256": "9e13942e1c940b7cd785ad55510de06374835b1ee307b66cda8ea43b2c1bb1b2"
+      },
+      "building": "dwellingUpLvl5",
+      "candidate_border": {
+        "path": "freljord/dwellingUpLvl5/border.png",
+        "sha256": "fb707afd55789acf78238ad955778f934cc919e7a469908bc306bb96f30b2590"
+      },
+      "candidate_mask": {
+        "path": "freljord/dwellingUpLvl5/architecture-mask.png",
+        "sha256": "fe763bc4a37c4c0a2c46d40c416ca31cf3eb0f83eb4ba561ed3194d107a52809"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        388,
+        167,
+        531,
+        248
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingUpLvl5/border.png",
+        "sha256": "a9804959a7240f6ebad9f6e940d491a916fef5825ab004d4a30bb402b7424927"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingUpLvl5-border.json",
+        "sha256": "a706259b18bf7a2a8dcae20d163823ee003a2b4b2b7855c32885f9a4ac8daba1"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingUpLvl5/layer.png",
+        "sha256": "9257cdcdd00409a58ddea6f264b3b2ac53a3f3545319f9efd50e36b916391e07"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/dwellingUpLvl5.png",
+        "sha256": "fe763bc4a37c4c0a2c46d40c416ca31cf3eb0f83eb4ba561ed3194d107a52809"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/dwellingUpLvl5.json",
+        "area": "runeterra/freljord/town/structures/dwellingUpLvl5_area.png",
+        "border": "runeterra/freljord/town/structures/dwellingUpLvl5_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 247
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingUpLvl6-animation.json",
+        "sha256": "50cd796a524fe509cf5487ace6aeee54b35ae8d9690798d73862c0d5ead9f10d"
+      },
+      "building": "dwellingUpLvl6",
+      "candidate_border": {
+        "path": "freljord/dwellingUpLvl6/border.png",
+        "sha256": "f6744f94f65864a95c04b714eb91922fcd0037355ae3f66aa0ba4167ef67b880"
+      },
+      "candidate_mask": {
+        "path": "freljord/dwellingUpLvl6/architecture-mask.png",
+        "sha256": "ea224ede52c0d9cd99b0025127565f272e08284323357c8761741934100ba6bb"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        602,
+        252,
+        786,
+        334
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingUpLvl6/border.png",
+        "sha256": "c04e4611de98d7b60142b460bfb2f7a947d04c8976ccf7b98bb0610636881e3b"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingUpLvl6-border.json",
+        "sha256": "b07ae4b161dc973ac6e89aa9107d62c155bb5d5fc4f0532a2c236e57b11b40e8"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingUpLvl6/layer.png",
+        "sha256": "d485f45f5937f18a46fab5cbbb041e3b8563a36b5a4378082fe080d63bd5d0ad"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/dwellingUpLvl6.png",
+        "sha256": "ea224ede52c0d9cd99b0025127565f272e08284323357c8761741934100ba6bb"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/dwellingUpLvl6.json",
+        "area": "runeterra/freljord/town/structures/dwellingUpLvl6_area.png",
+        "border": "runeterra/freljord/town/structures/dwellingUpLvl6_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 334
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingUpLvl7-animation.json",
+        "sha256": "f66ac8eac0b2a419e183db1da1a3fb2a854cc46a7ffe31b2216c77173a9a5890"
+      },
+      "building": "dwellingUpLvl7",
+      "candidate_border": {
+        "path": "freljord/dwellingUpLvl7/border.png",
+        "sha256": "a53d348f1a098774edebb341bf016a952a6290dc7972f15eb5f63c678920bd2b"
+      },
+      "candidate_mask": {
+        "path": "freljord/dwellingUpLvl7/architecture-mask.png",
+        "sha256": "d2987118e8bd6e4add278fe57dfccdcceaa7342c2ee044c366bac414a66605ff"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        43,
+        30,
+        116,
+        111
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingUpLvl7/border.png",
+        "sha256": "54fe913d75456ce02b45e5d1ac2dd28a3f52013ac13b01e8af1e081f524b31ae"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/dwellingUpLvl7-border.json",
+        "sha256": "5143ff79af34d871d4510423f420f8ce1e27542188b69540a90859f6152ce3f9"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/dwellingUpLvl7/layer.png",
+        "sha256": "0e3cec9ee22b0e45805a400d43399f26e89598c8a99c00cc6c873c71532caf35"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/dwellingUpLvl7.png",
+        "sha256": "d2987118e8bd6e4add278fe57dfccdcceaa7342c2ee044c366bac414a66605ff"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/dwellingUpLvl7.json",
+        "area": "runeterra/freljord/town/structures/dwellingUpLvl7_area.png",
+        "border": "runeterra/freljord/town/structures/dwellingUpLvl7_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 112
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/fort-animation.json",
+        "sha256": "348c40c027fe4bb5dff498e774f2d960cc2179643cf3dd7627416ada7a26ec6a"
+      },
+      "building": "fort",
+      "candidate_border": {
+        "path": "freljord/fort/border.png",
+        "sha256": "7adc04257f775913f8db09fc9762732a7503e7a094e995168340156ed9b53ab9"
+      },
+      "candidate_mask": {
+        "path": "freljord/fort/architecture-mask.png",
+        "sha256": "4c59ccfc8c74d4d52e4f92e45bb24a8f578623bb20932cbc094677c9cdb34212"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        499,
+        57,
+        726,
+        150
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/fort/border.png",
+        "sha256": "9c1130bf8f3eaae3706a2792b36a6f902e69c52abc239ac3a5364a1eff9f3da1"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/fort-border.json",
+        "sha256": "d46ce075a89f71416afaee568af646575fbafbaa082f7ab3cbbeae7ae6d9d193"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/fort/layer.png",
+        "sha256": "58f19a6837d4341da876dc0395e44f8aae91a411e7b2a0beb60474d0587d1f95"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/fort.png",
+        "sha256": "4c59ccfc8c74d4d52e4f92e45bb24a8f578623bb20932cbc094677c9cdb34212"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/fort.json",
+        "area": "runeterra/freljord/town/structures/fort_area.png",
+        "border": "runeterra/freljord/town/structures/fort_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 148
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/grail-animation.json",
+        "sha256": "88bace2589f7d86aeed1c2a85cd82608a9e6ebd7ea87d5bd790e82dc8f6b22d8"
+      },
+      "building": "grail",
+      "candidate_border": {
+        "path": "freljord/grail/border.png",
+        "sha256": "7c884f8cc5c15b0574394741723bb3245ecebd6cc6240705083c0746550a3dc5"
+      },
+      "candidate_mask": {
+        "path": "freljord/grail/architecture-mask.png",
+        "sha256": "9ff54f25b1fe8b4da3b20de0c6b760c53578c98a567db8e0b26b3decf6280af7"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        275,
+        221,
+        333,
+        295
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/grail/border.png",
+        "sha256": "e185ed944c6fc6c5b8cbd2dc09ed9570c47ae48b634dfc7c0b8e99c8afa87b79"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/grail-border.json",
+        "sha256": "027fbb7390eba7f87cd67c378c5ff545883b6a5b666bedd8573cfe6b26f28166"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/grail/layer.png",
+        "sha256": "9c0fb5394c31907db4d1479cc404347621542c7ae49d4bc43cd030dd749335c3"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/grail.png",
+        "sha256": "9ff54f25b1fe8b4da3b20de0c6b760c53578c98a567db8e0b26b3decf6280af7"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/grail.json",
+        "area": "runeterra/freljord/town/structures/grail_area.png",
+        "border": "runeterra/freljord/town/structures/grail_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 310
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/mageGuild1-animation.json",
+        "sha256": "3df46b5ddf2bedce11dc11fae5764cc39c0de51a6239f3d193860a72a1b243c1"
+      },
+      "building": "mageGuild1",
+      "candidate_border": {
+        "path": "freljord/mageGuild1/border.png",
+        "sha256": "4180963b32f36dc02b2b874f5126d659e0252ce69d60ae5fae7f6995d95f5d9e"
+      },
+      "candidate_mask": {
+        "path": "freljord/mageGuild1/architecture-mask.png",
+        "sha256": "ee06fb68da1f50498e80f43062daaf485c1a0db062ec1ba690b56ca7c8bfca48"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        411,
+        107,
+        561,
+        179
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/mageGuild1/border.png",
+        "sha256": "6e396f8649d005479779a90bfea7551c015c9767a4bed05816aa09971407cec8"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/mageGuild1-border.json",
+        "sha256": "e9a5200b6486ee027c1af70294be1c41bf8d929b8830b283a11b35b9596dfad3"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/mageGuild1/layer.png",
+        "sha256": "eec2a8543a4cc510fe49ddc953951aecab045606b201427a38b17ded77faaac5"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/mageGuild1.png",
+        "sha256": "ee06fb68da1f50498e80f43062daaf485c1a0db062ec1ba690b56ca7c8bfca48"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/mageGuild1.json",
+        "area": "runeterra/freljord/town/structures/mageGuild1_area.png",
+        "border": "runeterra/freljord/town/structures/mageGuild1_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 187
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/mageGuild2-animation.json",
+        "sha256": "4e4ee18b07e9d98d8ec3d3959f6bf24985903d1363ca8ddbe8d6b16f8dacb8ef"
+      },
+      "building": "mageGuild2",
+      "candidate_border": {
+        "path": "freljord/mageGuild2/border.png",
+        "sha256": "b85bead31a2378fc346a7d1d6f231b0e6cedd91ad7c4ee588471d2a9a84dda90"
+      },
+      "candidate_mask": {
+        "path": "freljord/mageGuild2/architecture-mask.png",
+        "sha256": "915eed81fb1bdff0b8f98d75818827b59923d7edf71176bcda326cd0d8f069f5"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        411,
+        101,
+        562,
+        180
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/mageGuild2/border.png",
+        "sha256": "05c4f92339af8cee4027c219b899635390eb27e43c254c008e14d8dd4815cd15"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/mageGuild2-border.json",
+        "sha256": "b2dc589b906363a19e72b972a525479e312afce3ab8541da7422bf1d8e8dd107"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/mageGuild2/layer.png",
+        "sha256": "519713de4756e53f35aa05899535c26b58d2632520d1f57283a0b7071787bf6f"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/mageGuild2.png",
+        "sha256": "915eed81fb1bdff0b8f98d75818827b59923d7edf71176bcda326cd0d8f069f5"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/mageGuild2.json",
+        "area": "runeterra/freljord/town/structures/mageGuild2_area.png",
+        "border": "runeterra/freljord/town/structures/mageGuild2_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 187
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/mageGuild3-animation.json",
+        "sha256": "603b767f5608207455684dc9d2c75e24873435c85a990778d3ec96efcd13942e"
+      },
+      "building": "mageGuild3",
+      "candidate_border": {
+        "path": "freljord/mageGuild3/border.png",
+        "sha256": "3c02303963664922b00a3f6a19d9063b91e2a76b723f295775e27f668babcae9"
+      },
+      "candidate_mask": {
+        "path": "freljord/mageGuild3/architecture-mask.png",
+        "sha256": "1a14a130993db754366df858abf742dc0387efde1e1c2a1f22eaff560199fa13"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        411,
+        97,
+        562,
+        180
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/mageGuild3/border.png",
+        "sha256": "418f8f956e322b2049216a4bcd267d4e63ce288d7c4a7b9561286ade3d4561d7"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/mageGuild3-border.json",
+        "sha256": "7862167824fcc5cf01f117ddb8a36f5124d736bbb3bc2ae7a0bc972aa667fa36"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/mageGuild3/layer.png",
+        "sha256": "0188379083e793f7e9f7601ff14c387db3b3f09573a2ad895e733e61135b0855"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/mageGuild3.png",
+        "sha256": "1a14a130993db754366df858abf742dc0387efde1e1c2a1f22eaff560199fa13"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/mageGuild3.json",
+        "area": "runeterra/freljord/town/structures/mageGuild3_area.png",
+        "border": "runeterra/freljord/town/structures/mageGuild3_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 187
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/mageGuild4-animation.json",
+        "sha256": "957846d8d4ecd7f6708d2af355d30e94833ad72aedc152c70b92c3e77f206fa3"
+      },
+      "building": "mageGuild4",
+      "candidate_border": {
+        "path": "freljord/mageGuild4/border.png",
+        "sha256": "1b6ecbd6f88036e548f09c69bb31b220862c750601964cc2ab0862670eefd7e6"
+      },
+      "candidate_mask": {
+        "path": "freljord/mageGuild4/architecture-mask.png",
+        "sha256": "365b1403393d780b68848336ccbad68fd3c1ad889e2149575272b36df90707ac"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        408,
+        91,
+        563,
+        179
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/mageGuild4/border.png",
+        "sha256": "11666df0ff42c3b2b7f00d965d741cc4e8f10cfe1f82cffbe4a8643948a794a7"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/mageGuild4-border.json",
+        "sha256": "79071a604ebeac3ff23a400f783e216162866daf2c4ffd44b79c5dcdafa8ff2d"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/mageGuild4/layer.png",
+        "sha256": "9fdcd3ad95d14ade72220d626d40d050e5060c27311b3a37f37716655e4557d6"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/mageGuild4.png",
+        "sha256": "365b1403393d780b68848336ccbad68fd3c1ad889e2149575272b36df90707ac"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/mageGuild4.json",
+        "area": "runeterra/freljord/town/structures/mageGuild4_area.png",
+        "border": "runeterra/freljord/town/structures/mageGuild4_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 187
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/marketplace-animation.json",
+        "sha256": "58eade82d732066bf42a0f0c469867617dad6b9f4ccb8f37537bf73d685de546"
+      },
+      "building": "marketplace",
+      "candidate_border": {
+        "path": "freljord/marketplace/border.png",
+        "sha256": "12d8aa25d5900e73d62075cca01fcaaef6548c7260bd71910ed0782dc0ffa6ac"
+      },
+      "candidate_mask": {
+        "path": "freljord/marketplace/architecture-mask.png",
+        "sha256": "70bb810f08b29050ec7c98c1de47ca25ed3bd0ada961ab460567eadcceb09103"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        313,
+        223,
+        479,
+        300
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/marketplace/border.png",
+        "sha256": "69dc83885fc84e77a041e486eb3f8ec155d4cf399a1ad2f9665af7da0227dd0a"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/marketplace-border.json",
+        "sha256": "bb1120ec49e613c4d71ff9d6cf2ed737fa24befee6df274b6387102859e0dc28"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/marketplace/layer.png",
+        "sha256": "e0cf62876ec79c3c585bd4c6f1158f80bda7f95a15a7768af2c9265fb5d89363"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/marketplace.png",
+        "sha256": "70bb810f08b29050ec7c98c1de47ca25ed3bd0ada961ab460567eadcceb09103"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/marketplace.json",
+        "area": "runeterra/freljord/town/structures/marketplace_area.png",
+        "border": "runeterra/freljord/town/structures/marketplace_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 298
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/resourceSilo-animation.json",
+        "sha256": "f4003a1999d955757725024af1a40edae8dd0a2f34cf6d87761a84c20fe0c854"
+      },
+      "building": "resourceSilo",
+      "candidate_border": {
+        "path": "freljord/resourceSilo/border.png",
+        "sha256": "dff7a8431081bafd83ae27cbf13f283a85fa94245ea43c67c276e0aca1244083"
+      },
+      "candidate_mask": {
+        "path": "freljord/resourceSilo/architecture-mask.png",
+        "sha256": "072ea2ed0cb062cdeee17c090be204c6389067f562149a81a815716f56e2cb26"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        693,
+        109,
+        800,
+        221
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/resourceSilo/border.png",
+        "sha256": "e31c3b35cf4b02aa35ec8230795e08e2eb803e6eb4ca5cc5c56145b1691694f5"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/resourceSilo-border.json",
+        "sha256": "de1df111994f718243d4d1dd35d7a229a66d7c7d541ec93c057248b828954b0c"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/resourceSilo/layer.png",
+        "sha256": "44ca2fe0a30931dbe3a9d5567cf0a36f32c9cd7e42361569557c140a85ca4028"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/resourceSilo.png",
+        "sha256": "072ea2ed0cb062cdeee17c090be204c6389067f562149a81a815716f56e2cb26"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/resourceSilo.json",
+        "area": "runeterra/freljord/town/structures/resourceSilo_area.png",
+        "border": "runeterra/freljord/town/structures/resourceSilo_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 224
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/ship-animation.json",
+        "sha256": "ed8fee0d7c63d3cbd91f8d69cf4b1280c0ff23172d3745f2457d4ac7ad7b4cb8"
+      },
+      "building": "ship",
+      "candidate_border": {
+        "path": "freljord/ship/border.png",
+        "sha256": "520d503a5991bea281c70072000f61ae72ed0dd6d89a8ad853b06a1423f2988b"
+      },
+      "candidate_mask": {
+        "path": "freljord/ship/architecture-mask.png",
+        "sha256": "26a67caf59cd20360a789971f79e8c2a421904164c9f523bec9d0aa09722e3dc"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        700,
+        325,
+        800,
+        374
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/ship/border.png",
+        "sha256": "fce8225b4982055bc641cae5e09b7d66af01e4674cde5698e1532386bd29e536"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/ship-border.json",
+        "sha256": "cf4b42984831600c12cd7215e3a7a54fe6804dab1bfd1736ee396515c6d05fd0"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/ship/layer.png",
+        "sha256": "a221b2d6828a620ec0bc0742936dc0e52f33059e7ed22409694d62c7233b43e0"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/ship.png",
+        "sha256": "26a67caf59cd20360a789971f79e8c2a421904164c9f523bec9d0aa09722e3dc"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/ship.json",
+        "area": "runeterra/freljord/town/structures/ship_area.png",
+        "border": "runeterra/freljord/town/structures/ship_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 373
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/shipyard-animation.json",
+        "sha256": "7329621624455dcd8876284933c18d75f1c5058668ddf1f9928e51d4bdc5d28f"
+      },
+      "building": "shipyard",
+      "candidate_border": {
+        "path": "freljord/shipyard/border.png",
+        "sha256": "f5ce610f91e52e51af27d4c00afc710c116b5fd62037c25bfe05a263831c2062"
+      },
+      "candidate_mask": {
+        "path": "freljord/shipyard/architecture-mask.png",
+        "sha256": "8e138209973e8d4ded8db4ae6bbbe8e770a36d35f92ba2955f43e66e780d3ca7"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        701,
+        326,
+        798,
+        374
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/shipyard/border.png",
+        "sha256": "8eb4da1240bc0fb097442470a584bf1528a0261b4d494ad6f88828e580b47d6f"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/shipyard-border.json",
+        "sha256": "792e7dd381e829a79a1fbe0a75a706813541e209ef9ee74359bc490eec4f4482"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/shipyard/layer.png",
+        "sha256": "a613197d7624b002a5d41f9cb030ba4f78adb3f6738f7527afa565da586fe7bf"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/shipyard.png",
+        "sha256": "8e138209973e8d4ded8db4ae6bbbe8e770a36d35f92ba2955f43e66e780d3ca7"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/shipyard.json",
+        "area": "runeterra/freljord/town/structures/shipyard_area.png",
+        "border": "runeterra/freljord/town/structures/shipyard_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 373
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/special1-animation.json",
+        "sha256": "c22b107f5a2b5e4100bb131f985272749e877d5b52b1d70cb3590e62578c6bbc"
+      },
+      "building": "special1",
+      "candidate_border": {
+        "path": "freljord/special1/border.png",
+        "sha256": "66c12cf94a092ca21fc97bdec9ac35edb77b278f310419f1e4fadcd55876bd97"
+      },
+      "candidate_mask": {
+        "path": "freljord/special1/architecture-mask.png",
+        "sha256": "c3309ec0b00ece6ea8358942f6e23dbaf1b04bb09142026d59e182cdbd5a962d"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        563,
+        153,
+        721,
+        262
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/special1/border.png",
+        "sha256": "58bfdf8aa0bd5dcb7423927208481cddecb3b05d911f37fd129746e9f2419908"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/special1-border.json",
+        "sha256": "4e94cb90d32155b0f47e6b9b028a751e1a3bc84b86e7b32b9ca85f57fa069c7b"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/special1/layer.png",
+        "sha256": "45dc02afb4765c404f7d641206125e752958ce002fbf52405b4303a1dee1d0e6"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/special1.png",
+        "sha256": "c3309ec0b00ece6ea8358942f6e23dbaf1b04bb09142026d59e182cdbd5a962d"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/special1.json",
+        "area": "runeterra/freljord/town/structures/special1_area.png",
+        "border": "runeterra/freljord/town/structures/special1_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 261
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/special2-animation.json",
+        "sha256": "00aaa008f7cea381e04592ff57aba109a81f64c7976790f4dc581f8a8fe6ba86"
+      },
+      "building": "special2",
+      "candidate_border": {
+        "path": "freljord/special2/border.png",
+        "sha256": "ae4b2e14bb6561dd5d2686667557610da8c6a2b8e36410949ae46ceaebadabe1"
+      },
+      "candidate_mask": {
+        "path": "freljord/special2/architecture-mask.png",
+        "sha256": "87f3c5c15fc5a3c3abe73fe5a437e754853b1ab93047cc684f614a557a794daf"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        314,
+        140,
+        393,
+        223
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/special2/border.png",
+        "sha256": "81f7fde7aed1ba3927c3689d6b9146a5fae69e0dcb7b474c585d007b25feddd4"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/special2-border.json",
+        "sha256": "1d6a3d525e0e6e1a9e53fa07a2b2176dc7f9120c58355d33d3cd9854e4055f67"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/special2/layer.png",
+        "sha256": "c0523824697aa6abda95a8d389b1065f60deae394b811b757096749f7a796cc6"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/special2.png",
+        "sha256": "87f3c5c15fc5a3c3abe73fe5a437e754853b1ab93047cc684f614a557a794daf"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/special2.json",
+        "area": "runeterra/freljord/town/structures/special2_area.png",
+        "border": "runeterra/freljord/town/structures/special2_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 222
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/special3-animation.json",
+        "sha256": "51d5e3c82ddc21b729a85fdcb9c196be5f880f8ab78d70929fc3741bd90f1125"
+      },
+      "building": "special3",
+      "candidate_border": {
+        "path": "freljord/special3/border.png",
+        "sha256": "f1e1db50e675210d59105eaed6dde292f49b2ad84704cd3d5b1a321ac17147f8"
+      },
+      "candidate_mask": {
+        "path": "freljord/special3/architecture-mask.png",
+        "sha256": "9d01f1934971dd199f3e9ccf45f4bcd78f22f4c63d710f8f9f5347523e981d03"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        0,
+        181,
+        154,
+        283
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/special3/border.png",
+        "sha256": "1b1e739a91a09833d03f1ba2bfff3e6f8ee95217b44ed39b078e19c9707a30f0"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/special3-border.json",
+        "sha256": "bc891473136d296fba2bfee7f69755b8f0943170316c2dd4779f4c7bacc494a6"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/special3/layer.png",
+        "sha256": "1d5a1dbbd6bfbe70fe084ea8cdee18dfe508a05a53fd8faae6c5f0e4addd822b"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/special3.png",
+        "sha256": "9d01f1934971dd199f3e9ccf45f4bcd78f22f4c63d710f8f9f5347523e981d03"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/special3.json",
+        "area": "runeterra/freljord/town/structures/special3_area.png",
+        "border": "runeterra/freljord/town/structures/special3_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 283
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/special4-animation.json",
+        "sha256": "9730bdd3a8016da9981948a50b7ebab0c52e64685c9a1810dbb8fe5901da0e62"
+      },
+      "building": "special4",
+      "candidate_border": {
+        "path": "freljord/special4/border.png",
+        "sha256": "693b4a8fc03888db7ed2bae41516b94daadea924c3caad4ffd4c5e3994135a49"
+      },
+      "candidate_mask": {
+        "path": "freljord/special4/architecture-mask.png",
+        "sha256": "b6ec7ff91e12fe08616e05be158843f95b5ec5135de5d454bd49000a972df66f"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        135,
+        163,
+        313,
+        262
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/special4/border.png",
+        "sha256": "f8a2515c85aacee98092038e84076310e3a78149c9835e266e8ed10a85cdb63c"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/special4-border.json",
+        "sha256": "db6f49c790f0a98242a6818e11343ca8c4cd659c7c24f6776c880168716f31e5"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/special4/layer.png",
+        "sha256": "8607fdd15d18ff6b17c9857ff852bd06ced1bf276e2fa9deacc7241ed36873c0"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/special4.png",
+        "sha256": "b6ec7ff91e12fe08616e05be158843f95b5ec5135de5d454bd49000a972df66f"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/special4.json",
+        "area": "runeterra/freljord/town/structures/special4_area.png",
+        "border": "runeterra/freljord/town/structures/special4_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 261
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/tavern-animation.json",
+        "sha256": "50d301b9a2eaa2f4f282a30739f9ba38e318c6c0eaa71b88b8b95f88f84a8b3e"
+      },
+      "building": "tavern",
+      "candidate_border": {
+        "path": "freljord/tavern/border.png",
+        "sha256": "b88c947c8bf7ce4d7b1fe7283426a796181107315059b3ad746987edbaca2386"
+      },
+      "candidate_mask": {
+        "path": "freljord/tavern/architecture-mask.png",
+        "sha256": "6a04d20f41d1e31f9ce805b7d471b29f7017890fb6d101fbde219fc4776dc9fb"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        135,
+        163,
+        312,
+        262
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/tavern/border.png",
+        "sha256": "f8a2515c85aacee98092038e84076310e3a78149c9835e266e8ed10a85cdb63c"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/tavern-border.json",
+        "sha256": "932475b845815f65ec1e6e09835493efa50032f038acaf23acebf450dcfd67e0"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/tavern/layer.png",
+        "sha256": "3bc1fba303da3a54aea7687b96f61b1031e503c217aaed1f531541fc318f9f04"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/tavern.png",
+        "sha256": "6a04d20f41d1e31f9ce805b7d471b29f7017890fb6d101fbde219fc4776dc9fb"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/tavern.json",
+        "area": "runeterra/freljord/town/structures/tavern_area.png",
+        "border": "runeterra/freljord/town/structures/tavern_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 261
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/townHall-animation.json",
+        "sha256": "01f9ac8c28ef33747278c5232d8d36869e97d6be6d927704128ac1bcc41458f7"
+      },
+      "building": "townHall",
+      "candidate_border": {
+        "path": "freljord/townHall/border.png",
+        "sha256": "ecca6d377332b6712dc6cae88ecef5d488d13adb5ee0cf9d73a5fed6501eb7b4"
+      },
+      "candidate_mask": {
+        "path": "freljord/townHall/architecture-mask.png",
+        "sha256": "feb75c8e35ef2a428b3453a30ffd6e44f64bbc65389c8136f23480d9f205700e"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        254,
+        28,
+        455,
+        150
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/townHall/border.png",
+        "sha256": "d0b8c3d72dbc4413ffe890945506253f9add1f97a763e8d9eb53ec98e8039f97"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/townHall-border.json",
+        "sha256": "d87cd277d9a19c86668e61108b183c3047455f7d83760125d278feb8d05e7a2e"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/townHall/layer.png",
+        "sha256": "8e9063cde904cd0ed8d19a4b4e19bd8818c1f10021d917b87cfb4909ebaa0b10"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/townHall.png",
+        "sha256": "feb75c8e35ef2a428b3453a30ffd6e44f64bbc65389c8136f23480d9f205700e"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/townHall.json",
+        "area": "runeterra/freljord/town/structures/townHall_area.png",
+        "border": "runeterra/freljord/town/structures/townHall_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 149
+      },
+      "visual_approval_granted": false
+    },
+    {
+      "animation_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/villageHall-animation.json",
+        "sha256": "9fe86cf9b500d43c91d0d9d76b3b4eafc023a53b00c966bec7eee9a593a26cdf"
+      },
+      "building": "villageHall",
+      "candidate_border": {
+        "path": "freljord/villageHall/border.png",
+        "sha256": "b4cd98dc6a8429961318b597ca4811d80066e73239620fe2972bde98ff90d0e3"
+      },
+      "candidate_mask": {
+        "path": "freljord/villageHall/architecture-mask.png",
+        "sha256": "f37a8cef67823cf8d6a4fdf93fb62b3713b8fe8f35f866a75cec3521197d74ef"
+      },
+      "candidate_only": true,
+      "native_crop": [
+        254,
+        40,
+        455,
+        150
+      ],
+      "old_colours_rgba": [
+        [
+          255,
+          220,
+          90,
+          255
+        ]
+      ],
+      "old_is_exact_one_pixel_alpha128_edge": true,
+      "region": "freljord",
+      "runtime_observed": false,
+      "selected_border": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/villageHall/border.png",
+        "sha256": "1989c6ccef3f9fb385e50e4ceba0272fec246aefcc4fc98a98584e8ca64f26a5"
+      },
+      "selected_border_recipe": {
+        "path": "runeterra-freljord/assets/recipes/town/structures/villageHall-border.json",
+        "sha256": "dcbc90ae21d37930170c4dedf9f9634a0bbe716af33c360f888a719aa46d84ab"
+      },
+      "selected_layer": {
+        "path": "runeterra-freljord/assets/source/town/complete-town-20261027-v2/derivation-v1/candidate/states/villageHall/layer.png",
+        "sha256": "58485a6597f6c93025e0399ef34b6aec14da6ad4cb75c08178f408e16c866b39"
+      },
+      "silhouette_basis": {
+        "kind": "independently-authored-architecture-mask",
+        "path": "reports/freljord-hover-contours-20261030-v1/masks-v2/villageHall.png",
+        "sha256": "f37a8cef67823cf8d6a4fdf93fb62b3713b8fe8f35f866a75cec3521197d74ef"
+      },
+      "status": "design proposal",
+      "structure": {
+        "animation": "runeterra/freljord/town/structures/villageHall.json",
+        "area": "runeterra/freljord/town/structures/villageHall_area.png",
+        "border": "runeterra/freljord/town/structures/villageHall_border.png",
+        "x": 0,
+        "y": 0,
+        "z": 149
+      },
+      "visual_approval_granted": false
+    }
+  ],
+  "status": "design proposal",
+  "style": {
+    "alpha_threshold": 128,
+    "basis": "Native one-pixel gold edge with one further pixel of dark support; no interior tint.",
+    "connectivity": 8,
+    "gold": [
+      225,
+      190,
+      80,
+      255
+    ],
+    "gold_radius_pixels": 1,
+    "outer_shadow_radius_pixels": 2,
+    "shadow": [
+      38,
+      29,
+      15,
+      208
+    ]
+  }
+}

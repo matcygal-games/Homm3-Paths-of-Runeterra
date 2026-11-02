@@ -1,0 +1,108 @@
+{
+  "acceptance": "Complete source-action candidate; private technical conversion only. No production selection/native/human/release approval.",
+  "canvas": [
+    64,
+    64
+  ],
+  "generateOverlay": 1,
+  "generateShadow": 0,
+  "generation": {
+    "conversion_input_kind": "clean alreadycomposited native RGBA masters",
+    "full_source_pose_sha256": "99705485e55768f8e954556e78ce7595644c9e9b5df4cbdad86626c55c04a909",
+    "geometry_sha256": "ba1a5dd3ff1b14bd8fae710aabda57e1003adf60d5ec5e7f32a90ce52f6d97df",
+    "geometry_source": "assets/source/animals/crestedCrystalIbex/v4-source/crestedCrystalIbex-map-compact-v2-portable.blend",
+    "image_generation_used": true,
+    "map_requested_poses_sha256": "73ddc2f6551c2101d1f2f8502a0784789d76e403f9ca33dae9984253b79a2ded",
+    "model": "not exposed by preserved built-in atlas tool",
+    "native_alpha_policy": {
+      "battle_shadow": {
+        "center": [
+          218,
+          267
+        ],
+        "radii": [
+          110,
+          38
+        ]
+      },
+      "low_alpha_cutoff": 8,
+      "map_shadow": {
+        "center": [
+          48,
+          60
+        ],
+        "radii": [
+          12,
+          3.5
+        ]
+      },
+      "method": "Original RGBA preserved inside opaque200+ and its 3px square dilation; low alpha<8 zeroed. Outside that protected neighborhood, fixed root-relative ground ellipse has flat core and smoothstep feather. Portraits retain protected body neighborhood only. No position/scale/crop fit.",
+      "near_body_radius_pixels": 3,
+      "opaque_preserve_min": 200,
+      "revision": "alpha-v14",
+      "shadow_flat_core_radius": 0.65
+    },
+    "painted_master": "assets/source/animals/materials/painted-atlas-v1.png",
+    "parent_battle_geometry_sha256": "597af0516e23fd8d2e52201a8b7cf212deb13f3c9d12d2ba3f520259878c09e7",
+    "producer_sha256": "4145d018925e91448cd3227a908e7fe9f46d2b44df5caff770d91b30cee72fcd",
+    "producer_source": "assets/source/animals/authoring/compact_map_cohort_v2.py",
+    "prompt": "Original four-square painted animal material atlas: upper-left dark slate shaggy goat fur, upper-right warm ivory wool/feline mane, lower-left ochre/ivory raptor feathers, lower-right weathered bronze/silver fittings. Matte late-1990s fantasy prerender material detail, no copied Riot or game pixels, no text, glow, animal bodies or scenery. See preserved full built-in tool prompt in material-provenance.json.",
+    "provider": "Preserved original built-in atlas plus articulated Blender4.5.9 own animal sources",
+    "renderer_sha256": "85bc97d0e5c0b26b2c6ea6dcdcef74c913335d6c48993da729263092b0c2760a",
+    "source_generation_ledger": "assets/source/animals/crestedCrystalIbex/v4-source/source-generation.json",
+    "source_generation_ledger_sha256": "9867f8743b34c7333cce5ae09c303bd201e93c39306a009e28ceabbee8e90b2c",
+    "source_is_baked_map_only_scene": true
+  },
+  "groups": [
+    {
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/animals/crestedCrystalIbex/native/map/right/g02-f000-compact-v2.png",
+          "source_canvas": [
+            64,
+            64
+          ],
+          "source_sha256": "b4f77fd3a8ae2a7c779e2e66b01b332c070f5055d5f5e42f73085ce530b7fb73"
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/animals/crestedCrystalIbex/native/map/right/g02-f001-compact-v2.png",
+          "source_canvas": [
+            64,
+            64
+          ],
+          "source_sha256": "162f49043f9dc52b5e1f02560870b451849d1a7f7accf86e712ae7c1b782ca6e"
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/animals/crestedCrystalIbex/native/map/right/g02-f002-compact-v2.png",
+          "source_canvas": [
+            64,
+            64
+          ],
+          "source_sha256": "b4f77fd3a8ae2a7c779e2e66b01b332c070f5055d5f5e42f73085ce530b7fb73"
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/animals/crestedCrystalIbex/native/map/right/g02-f003-compact-v2.png",
+          "source_canvas": [
+            64,
+            64
+          ],
+          "source_sha256": "717eced11eca87d4e2c9226ecfff016d5893e9c4fcb1d0350c8da935ecd624ce"
+        }
+      ],
+      "group": 0
+    }
+  ],
+  "output_path": "Content/Sprites/runeterra/targon/creatures/crestedCrystalIbex/map.json",
+  "pivot": {
+    "x": 48,
+    "y": 60
+  },
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "vcmi_animation",
+  "status": "authored configuration",
+  "visual_approval_granted": false
+}

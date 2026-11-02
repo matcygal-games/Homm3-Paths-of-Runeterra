@@ -1,0 +1,190 @@
+{
+  "active_assets_modified": false,
+  "actual_atlas_metadata": {
+    "path": "assets/source/creatures/sentinelColossus/colossus-rig-v2/raw-action-g13-padded-atlas-v1.json",
+    "sha256": "6c5b0dd466732b2c6fda0ac6cc6e5d573b66b24af19ded7f8244f0f5c7b03ea8"
+  },
+  "actual_pose_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "actual_source_metadata": {
+    "path": "assets/source/creatures/sentinelColossus/colossus-rig-v2/colossus-production-v2.json",
+    "sha256": "d844bc8a9a7c9ef4387750bb0b12b6bfd4fb5e14bcfc035a9fe43026e158fddf"
+  },
+  "alpha_diagnostics": {
+    "alpha8_bbox": [
+      70,
+      0,
+      1470,
+      1004
+    ],
+    "faint_alpha1_to7_pixels": 57796,
+    "fully_transparent_pixels": 909186,
+    "note": "Colored RGB in alpha0pixels is invisible to a correct compositor; extrema do not establish clean interior/gutters or art acceptance.",
+    "requires_opaque_background_composite_visual_review": true
+  },
+  "alpha_extrema": [
+    0,
+    254
+  ],
+  "derivation": {
+    "basis": "Full opaque source review: lower-row feet/downward fists cross nominal cells into empty gutters. Partition covers every source pixel exactly once; shared64padding, no resizing, pixel painting or pose edits.",
+    "frames": [
+      {
+        "destination": [
+          64,
+          64
+        ],
+        "index": 0,
+        "rgba_pixels_identical": true,
+        "source_rectangle": [
+          0,
+          0,
+          512,
+          512
+        ]
+      },
+      {
+        "destination": [
+          832,
+          64
+        ],
+        "index": 1,
+        "rgba_pixels_identical": true,
+        "source_rectangle": [
+          512,
+          0,
+          1024,
+          512
+        ]
+      },
+      {
+        "destination": [
+          1600,
+          64
+        ],
+        "index": 2,
+        "rgba_pixels_identical": true,
+        "source_rectangle": [
+          1024,
+          0,
+          1536,
+          495
+        ]
+      },
+      {
+        "destination": [
+          64,
+          832
+        ],
+        "index": 3,
+        "rgba_pixels_identical": true,
+        "source_rectangle": [
+          0,
+          512,
+          600,
+          1024
+        ]
+      },
+      {
+        "destination": [
+          920,
+          832
+        ],
+        "index": 4,
+        "rgba_pixels_identical": true,
+        "source_rectangle": [
+          600,
+          512,
+          1024,
+          1024
+        ]
+      },
+      {
+        "destination": [
+          1600,
+          815
+        ],
+        "index": 5,
+        "rgba_pixels_identical": true,
+        "source_rectangle": [
+          1024,
+          495,
+          1536,
+          1024
+        ]
+      }
+    ],
+    "lower_row_boundaries": [
+      600,
+      1024
+    ],
+    "row_boundary": 512,
+    "source": {
+      "path": "assets/source/creatures/sentinelColossus/colossus-rig-v2/paint-action-g13-atlas-v1.png",
+      "sha256": "20beb9a50a44581f01611ca39ac27a360c07992a4621a60207fa0c9e051a2bb4"
+    }
+  },
+  "generated_original": "C:\\Users\\matcy\\.codex\\generated_images\\01a15555-c0fe-70e3-bea2-afc52c9cdb71\\exec-2d74804f-ae7b-42cc-ba1d-32fb34b9b0a1.png",
+  "generated_original_sha256": "20beb9a50a44581f01611ca39ac27a360c07992a4621a60207fa0c9e051a2bb4",
+  "grid_integer_aligned": true,
+  "grid_note": "Logical equal-cell extents may fall on half-pixels; export uses one fixed continuous source-box scale, without per-cell fitting.",
+  "group": 13,
+  "intentional_source_pose_holds": [],
+  "layout": [
+    3,
+    2
+  ],
+  "mode": "RGBA",
+  "output": "assets/source/creatures/sentinelColossus/colossus-rig-v2/paint-action-g13-atlas-repacked-v2.png",
+  "output_sha256": "13ec195de9881d97c1efe6b1da892cc5fbd82141a5442a157c758b539f82a91d",
+  "prompt": {
+    "path": "assets/source/creatures/sentinelColossus/colossus-rig-v2/paint-action-g13-executed-prompt-v1.txt",
+    "sha256": "5fda9ffa861c5e99ece70fd168a62c8437ff7320dff8b4ee8c64e71f61d66b0a"
+  },
+  "references": [
+    {
+      "path": "assets/source/creatures/sentinelColossus/colossus-rig-v2/raw-action-g13-padded-atlas-v1.png",
+      "sha256": "555a7675ff50275805626a8676ef0591b1fba561ea5ceb095e90631a5ca02796"
+    },
+    {
+      "path": "assets/source/creatures/sentinelColossus/master-v3.png",
+      "sha256": "7ca70c33d6e419a1cf45e589159900abaa40c20cb30dadc53a04a14cae4a970d"
+    },
+    {
+      "path": "references/prototypes/colossus-family-v2/original-and-raw-construct-native.png",
+      "sha256": "dc7795379a2d9ecd974072371ce671646f2cbb1d90567eac8efb2242e354d5ac"
+    },
+    {
+      "path": "references/riot/heraldry/demacia-official-region-icon.png",
+      "sha256": "d71bb021a49b704420f43c74f9dbfedb2bd89779bdafec1ea4be7bb8a172e734"
+    }
+  ],
+  "returned_cell": [
+    768,
+    768
+  ],
+  "returned_dimensions": [
+    2304,
+    1536
+  ],
+  "source_input_transform": {
+    "basis": "Same whole-cell downsample and transparent padding for every actual raw source pose; no per-frame fit.",
+    "offset": [
+      46,
+      46
+    ],
+    "scale": 0.8203125
+  },
+  "status": "generated source candidate; actual grid/camera/native motion review required",
+  "tool": "Pillow exact integer partition of visually reviewed empty gutters",
+  "unit": "sentinelColossus",
+  "validation_errors": [],
+  "version": 1,
+  "visual_approval_granted": false
+}

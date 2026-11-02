@@ -1,0 +1,130 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "One own building icon in the native Heroes III town icon language: the same building read at icon scale, with the same equipment and materials as the painted town layer. Never a borrowed icon.",
+  "building": "special4",
+  "canvas": [
+    150,
+    70
+  ],
+  "content_box": [
+    0,
+    0,
+    150,
+    70
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; prompted and technically assembled by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/specials-master.png",
+      "sha256": "0c7ef0668fe562363b5b1b0133782e7f0f6c057b2f01623f59b812cb1fb8d1b0"
+    },
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/special4.json",
+      "sha256": "2060953554a3d91cfc28e447d1475aa5a6e2fb4458727a29171297a29a03b8b6"
+    },
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v4/prepare.py",
+      "sha256": "a7b7e6160b50cff6fc87b097f5bc59f0e31648bf208edd0f42afbcc4b604d35f"
+    },
+    {
+      "path": "scripts/zaun_coastal_state_v1.py",
+      "sha256": "5aa45de45f59be66d393df44538743b1842db5ba5f1c4e48c1d83acaa13f3cf7"
+    },
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v4/structures/special4/body-opacity-mask.png",
+      "sha256": "dfde3a68ca9aa0684d2bf0b10bfdfb83a11e96bdf8999a9111e30f6d940fc043"
+    },
+    {
+      "kind": "historical_provenance",
+      "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/special4-original.json",
+      "sha256": "188562b8af9d372a13339400c7ed69b1ad8f79c2dd711aca91d99b22621e0429"
+    }
+  ],
+  "fit": "contain",
+  "generation": {
+    "body_opacity": {
+      "changed_alpha_pixels": 3835,
+      "mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/special4/body-opacity-mask.png",
+      "mask_sha256": "dfde3a68ca9aa0684d2bf0b10bfdfb83a11e96bdf8999a9111e30f6d940fc043",
+      "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/special4.png",
+      "original_native_layer_sha256": "4628112a7b1e845feaa5e9194c135b59dba016ecf7366b7691166391db8d1a05",
+      "policy": "Only originalalpha248..254 AND2px-eroded(alpha>=128) structural core becomes255; all RGB and outside-mask RGBA unchanged. No fill of holes, arches, lowalpha glass/glow/shadows or outer antialias."
+    },
+    "composition_rectangle": [
+      435,
+      271,
+      100,
+      77
+    ],
+    "credits": {
+      "author": "OpenAI built-in imagegen; original selected Zaun prompts and historical source retained",
+      "license": null,
+      "redistribution": "unresolved; release prohibited"
+    },
+    "generation_route": "Preserved selected own painted 2D master; whole-source uniform contain and native placement only.",
+    "historical_prompt": "Usecase: precise-object-edit. Edit ownZaun specialservice4-buildingatlas2x2. Keepallfourroles and positions, independentwholebuildings, lowfrontalcamera, originalHeroesIIIrichlypaintedtexturedprerenderedstyle. TOPLEFT augmentationworkshop: prostheticchair/hooktools remain, glasssidepressurecylinder vividCHEMICALGREEN, copperpipes,purplecanvas details. TOPRIGHT clinic: recognizablebeds/medicalchair/shelves/cleancreamlinen, purpleprivacycurtains, smallgreenmedicalreagentvials/lamp/dosingtank, NOTreactor. BOTTOMLEFT sumppumps: toxicGREENluminescentwaterpool/outflowandpressureglassinspectioncell, rustyconcrete/ironpump/bridge. BOTTOMRIGHT fightingpit: curvedarena/spectatorseats/centralfightingfloor, purplestandards/canopies, vividgreenfluidonlyoutside sumpchannels andfewgreenlamps, retainreadablearenafloor, notbigchemicalreactor. Stronggreen-purple-brownchemtechidentity, localreflections, upperleftdaylight. Allstructurescompleteinsideeachcellwithwidepadding/gutters. Realtransparentalpha, nobackdrop/sharedgroundtile/text/neonoutlines/glossymodern3D.",
+    "historical_provenance": {
+      "kind": "historical_provenance",
+      "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/special4-original.json",
+      "sha256": "188562b8af9d372a13339400c7ed69b1ad8f79c2dd711aca91d99b22621e0429"
+    },
+    "historical_receipt_note": "Unchanged prior provider receipt retained privately at original authored source; not rewritten or claimed as new generation.",
+    "historical_receipt_sha256": "188562b8af9d372a13339400c7ed69b1ad8f79c2dd711aca91d99b22621e0429",
+    "image_generation_used": true,
+    "mirror_x": false,
+    "model": null,
+    "model_disclosed": false,
+    "native_offset": [
+      437,
+      281
+    ],
+    "native_size": [
+      96,
+      65
+    ],
+    "new_image_generation_used": false,
+    "painted_master": "assets/source/town/chemtech-v4-buildings/specials-master.png",
+    "painted_master_sha256": "0c7ef0668fe562363b5b1b0133782e7f0f6c057b2f01623f59b812cb1fb8d1b0",
+    "placement_plan": "assets/source/town/industrial-neighborhood-20261025-v4/live-placement-plan.json",
+    "placement_plan_sha256": "ebc0f8ca5a08869bae5a7a3ad205bc5cab43a61832d85454e856f3febf292333",
+    "provider": "OpenAI built-in imagegen",
+    "release_accepted": false,
+    "runtime_verified": false,
+    "source_crop": [
+      782,
+      503,
+      1536,
+      1017
+    ],
+    "status": "authored configuration",
+    "technical_helper": "assets/source/town/industrial-neighborhood-20261025-v4/prepare.py",
+    "technical_helper_sha256": "a7b7e6160b50cff6fc87b097f5bc59f0e31648bf208edd0f42afbcc4b604d35f",
+    "visual_approval_granted": false
+  },
+  "id": "zaun.town.construction.special4",
+  "identity_review": "build/reports/industrial-neighborhood-20261025-v4/source-pixel-review.json",
+  "native_visual_review": "pending",
+  "output_path": "Content/Sprites/runeterra/zaun/town/construction/special4.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    150,
+    70
+  ],
+  "source": "assets/source/town/industrial-neighborhood-20261025-v4/structures/special4/construction.png",
+  "source_sha256": "dc5355f5226af0e737a41d6ac8452dcdc1f7c7c181eaf14844b1650c87dd1cc4",
+  "status": "built-unreviewed",
+  "title": "Fighting Pit building icon",
+  "visual_approval_granted": false
+}

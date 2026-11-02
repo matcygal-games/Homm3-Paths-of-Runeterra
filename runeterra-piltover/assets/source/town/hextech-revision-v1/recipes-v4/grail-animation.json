@@ -1,0 +1,75 @@
+{
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI builtin imagegen; deterministic technical2D conversion",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/hextech-revision-v1/assemble_v4.py",
+      "sha256": "e5a844d70fbba67bd96987e9a493ca584f87d54470773a83220fa1f10df9dbba"
+    },
+    {
+      "path": "assets/source/town/hextech-revision-v1/layout-plan-v4.json",
+      "sha256": "5b9b8f4cabd68ea10440b795122600ab3ce13beafa305cb2dc4b971dea5976b2"
+    },
+    {
+      "path": "assets/source/town/hextech-revision-v1/placement-calibration-v4.json",
+      "sha256": "5e61f7c7ee4b482bd972ca8ec801bca7744c24143fe32c8b9ca614077a2be407"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/grail/master-v1.png",
+      "sha256": "9677852d2f2a5659c873b08c9e9fc15b5731a9f56a11b88518d69b381914676c"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/grail/prompt-v1.txt",
+      "sha256": "afe1859cb8fbe6153a5f03b50c815c012e34748864b1d42ed74f829d9cd86437"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/grail/source-generation.json",
+      "sha256": "3ca2ea28b315e1c8ab6d160db0fbf50b877ad98b0578cad57e961ad312565b56"
+    }
+  ],
+  "generateOverlay": 0,
+  "generateShadow": 0,
+  "generation": {
+    "image_generation_used": true,
+    "model": "not exposed by tool",
+    "painted_master": "assets/source/town/painted-v1/buildings/grail/master-v1.png",
+    "painted_master_sha256": "9677852d2f2a5659c873b08c9e9fc15b5731a9f56a11b88518d69b381914676c",
+    "producer": "assets/source/town/hextech-revision-v1/assemble_v4.py",
+    "producer_sha256": "e5a844d70fbba67bd96987e9a493ca584f87d54470773a83220fa1f10df9dbba",
+    "prompt": "Standalone transparent painted2D town-building cutout for original Heroes of Might and Magic III/VCMI. Native target800x374 town, not a poster or modern game render.\nImage1 is our own empty painted Piltover town terrain context; create this new separate building, not a copy of the landscape. Image2 is the ORIGINAL Heroes III Castle building: rendering-language reference only, no copied Castle pixels/silhouette. Image3 is the actual PILTOVER crest shape reference: central vertical pillar, split-ring/orb upper end, broad curved gear-flanked lower arcs; never wings or generic cog. Fit the low-front camera and warm materials of the terrain, but output ONLY the building on transparent alpha.\nOutput a genuinely transparent RGBA square master, approximately1254x1254. Full building, roof, stairs, foundation, cloth and subtle own rightward contact shadow entirely visible with >=35pixels transparent margins. No solid backdrop/white matte/checkerboard/grass or floor rectangle, no red/yellow/chroma edge outline. Walls and windows remain opaque painted material, not translucent see-through buildings.\nSame soft upper-left daylight and LOW FRONTAL THREE-QUARTER camera as the new town. Front facade/door dominates; modest right-side wall, limited roof planes, not strict isometric/bird's-eye. Richly textured original-H3 small-scale painted masonry, timber, slate, aged bronze/brass and dull steel. Warm ivory/hewn stone, muted dark timber, navy/teal cloth, restrained cool-blue instruments. No shiny modern3D/plastic, anime, splash-art, bloom/neon or photographic lens finish. Working Piltovan trade/science/community architecture, not16generic temples or Demacian keeps. A physical navy/teal banner or engraved plaque carries the CORRECT Piltover region crest visibly at native downsampling, with natural perspective and occlusion.\nPlanned native envelope [493, 179, 30, 88]; tall narrow silhouette. For a new base, leave headroom for later extensions above the same frontal ground-root nearx627,y1130. For an edit, KEEP EXACT reference canvas, lower foundation and entrance source position/scale; never zoom the smaller state to fill the canvas. Only whole real painted architecture; no people, soldiers, animals, text, labels, UI, border or watermark.\nSTATE: Progress Orrery. Progress Orrery: a small slender civic cliff beacon sculpture on a narrow warm-stone stepped plinth. A tall aged-bronze central pillar supports a precise open circular/ring instrument enclosing a small orb, with broad curved gear-flanked lower arcs echoing the ACTUAL PILTOVER CREST, physically built as a dignified monument. Muted gold/bronze, dark teal cloth detail and tiny restrained cool-blue instrument core; no gigantic glowing Sun Disc, wings, magic beam or temple. Very slim tall silhouette for a30x88native site, full own base/shadow, no people, backdrop or ground rectangle.\n",
+    "prompt_file": "assets/source/town/painted-v1/buildings/grail/prompt-v1.txt",
+    "provider": "OpenAI builtin imagegen",
+    "source_generation_ledger": "assets/source/town/painted-v1/buildings/grail/source-generation.json"
+  },
+  "groups": [
+    {
+      "frames": [
+        {
+          "source": "assets/source/town/hextech-revision-v1/buildings/grail/native-frame.png",
+          "source_canvas": [
+            800,
+            374
+          ],
+          "source_sha256": "7674b02776f2a9c7bbe4d195993dab14ce2573b065c0ce76303d739707931995"
+        }
+      ],
+      "group": 0
+    }
+  ],
+  "output_path": "Content/Sprites/runeterra/piltover/town/structures/grail.json",
+  "pivot": {
+    "x": 524,
+    "y": 258
+  },
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "vcmi_animation",
+  "status": "painted-candidate",
+  "visual_approval_granted": false
+}

@@ -1,0 +1,3664 @@
+{
+  "adventureObjects": {
+    "icons": [
+      "fort_normal_large",
+      "fort_normal_small",
+      "fort_built_large",
+      "fort_built_small",
+      "village_normal_large",
+      "village_normal_small",
+      "village_built_large",
+      "village_built_small"
+    ],
+    "mapStateRule": "One animation per state in the own namespace, matching the five fortification and hall stages.",
+    "mapStates": [
+      "village",
+      "fort",
+      "citadel",
+      "castle",
+      "capitol"
+    ],
+    "puzzle": {
+      "paths": "runeterra/zaun/puzzle/piece00.png through piece47.png",
+      "pieceCount": 48,
+      "rule": "A 48-piece native puzzle map, each piece an own artwork in the Zaun namespace."
+    }
+  },
+  "artDirectionPolicy": "design/chemtech-art-direction.json",
+  "assetBinding": {
+    "rule": "Each of the 36 states needs a full-canvas layer, an area mask and a border mask in the own namespace; the masks define the click geometry and are derived from the painted layer.",
+    "status": "146 bounded town recipes prepared with the actual existing Zaun converter; technical execution does not grant art/native/rights approval."
+  },
+  "canvas": {
+    "currentState": "Reviewed complete town first; derived source candidate, native verification pending.",
+    "height": 374,
+    "layerModel": "Every structure is authored as a full-canvas layer with an area mask and a border mask. Masks, not hand-tuned rectangles, define the clickable geometry, so a painted layer can be replaced without editing configuration.",
+    "reference": "the native Heroes III town canvas used by the Castle faction",
+    "width": 800
+  },
+  "derivation": "Reviewed complete city first; actual visible master cuts, genuine painted hidden-face reconstruction/lower-state cohorts, matching painted empty plate. Exact all-state alpha silhouettes, foundation and public frontage masks replace rectangle-only placement.",
+  "layoutPolicy": {
+    "authority": "Latest27October user rejection: rebuild town coherently in painted2D HoMM3 aesthetics.",
+    "composition": "Silhouette-planned dark chempunk borough: huge rear civic/foundry institutions, practical winding lanes, supported entrances, inhabited facade edges, green/violet neon windows and weathered Zaun crest graffiti.",
+    "coordinatorPixelReview": "build/reports/town-rebuild-20261027-v1/pixel-review.json",
+    "functionalBoundary": "Eighteen ordinary visible institutions plus optional coast and Grail; all36 states preserved. Zaun preserves eighteen independently visible land institutions: seven tier dwellings, hall, fort, guild, tavern, market, forge, boiler silo, augmentation workshop, clinic, bounded Sump utility and fighting pit. Combining them would hide functional services and destroy the reviewed whole-city architecture; coast and Grail remain two optional sites.",
+    "geometryEvidence": "build/reports/complete-town-20261027-v2/geometry-checks.json",
+    "independentSourceReview": "pending coordinator independent review",
+    "nativeComposition": "build/reports/complete-town-20261027-v2/upgraded-native.png",
+    "nativeReview": "pending new fresh native stage",
+    "selectedSourcePlan": "assets/source/town/complete-town-20261027-v2/derived-state-plan.json",
+    "selectedSourcePlanSha256": "42399cef054b1c5b7a54808c0decae85ff5a7a44de4c83c58cd0bc14464818c7",
+    "siteGeometry": "Exact twenty composition rectangles/state render limits and dry support are merged into sites; full-canvas origins remain0,0; alpha-derived masks supply click geometry. No equal-scale grid or unintended solid-body overlap.",
+    "status": "authored configuration",
+    "supersedes": "The user-rejected sparse rocky town/foreground-to-background universal scaling quota; native hallSlots are a separate consumer."
+  },
+  "layout_contract": {
+    "path": "assets/source/town/complete-town-20261027-v2/town-layout.json",
+    "sha256": "9f9d4adfb8e5a379fde775291760baa993b4d664a08449f1e920727358d171ef"
+  },
+  "layout_geometry_mode": "silhouette-v2",
+  "schemaVersion": 1,
+  "selected_sources": {
+    "background": "assets/source/town/complete-town-20261027-v2/background/assembled-native.png",
+    "kind": "complete-town-first-painted2D",
+    "revision": "complete-town-20261027-v2",
+    "selection": "assets/source/town/complete-town-20261027-v2/selection.json"
+  },
+  "siege": {
+    "imageCount": 32,
+    "imagePrefix": "SGZA",
+    "images": [
+      "ARCH",
+      "BACK",
+      "DRW1",
+      "DRW2",
+      "DRW3",
+      "DRWC",
+      "MAN1",
+      "MAN2",
+      "MANC",
+      "MLIP",
+      "MOAT",
+      "TPWL",
+      "TW11",
+      "TW12",
+      "TW1C",
+      "TW21",
+      "TW22",
+      "TW2C",
+      "WA11",
+      "WA12",
+      "WA13",
+      "WA2",
+      "WA31",
+      "WA32",
+      "WA33",
+      "WA41",
+      "WA42",
+      "WA43",
+      "WA5",
+      "WA61",
+      "WA62",
+      "WA63"
+    ],
+    "shooter": "chemtechConstruct",
+    "shooterRule": "The tier three chemical construct is the siege shooter of the town, so the siege screen shows a construct on the walls. It is a machine, not a person, and it fires its own pressurised shot.",
+    "towerPortraits": [
+      "towerIconLarge",
+      "towerIconSmall"
+    ]
+  },
+  "siteAccounting": {
+    "chainSites": 3,
+    "chainStates": 11,
+    "dwellingSites": 7,
+    "dwellingStates": 14,
+    "serviceSites": 6,
+    "serviceStates": 7,
+    "specialSites": 4,
+    "specialStates": 4,
+    "totalSites": 20,
+    "totalStates": 36
+  },
+  "siteCount": 20,
+  "siteGroupingNote": "Twenty independent sites cover all 36 authored building states: three chain sites (the four hall states, the three fortification states and the four mage guild states), seven dwelling sites with two states each, six service sites (tavern, market, forge, shimmer factory, wharf with its moored barge, and the grail hall) and four special sites. The Fighting Pit is its own independent site: it is a fourth special building that pays a daily wage and is not a construction stage of the tier seven dwelling. State arithmetic: 4 + 3 + 4 + 14 + 7 + 4 = 36 states over 20 sites.",
+  "sites": [
+    {
+      "buildings": [
+        "villageHall",
+        "townHall",
+        "cityHall",
+        "capitol"
+      ],
+      "composition_rectangle": [
+        142,
+        7,
+        151,
+        117
+      ],
+      "construction": "One site, four successive construction states, each replacing the previous layer set.",
+      "id": "foundryHall",
+      "name": "Foundry Hall",
+      "native_z": 132,
+      "role": "town backbone: the four hall states carry the administrative core and the daily income curve.",
+      "source_states": {
+        "capitol": {
+          "actual_alpha128_bbox": [
+            142,
+            7,
+            293,
+            124
+          ],
+          "actual_alpha8_bbox": [
+            142,
+            7,
+            293,
+            124
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/capitol/layer.png",
+          "native_layer_sha256": "058e149141a66e2cfc15cbe104b4498bc760ad844749aea7d0e8d328f80e3674",
+          "native_visual_review": "pending",
+          "native_z": 132,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/foundryHall-occluded.png",
+          "occluded_master_mask_sha256": "b6e53314322f55ba066405adc869e19b2a870da54d1f41b9f9a85dcc113f11f7",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                56,
+                273,
+                585,
+                598
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/foundryHall/provider-atlas-v1.png",
+              "raw_atlas_sha256": "289ee830d5c097c2656355eb621b6838fd098455f11832ba3067db93571d54f0",
+              "registration": {
+                "native_offset": [
+                  160,
+                  53
+                ],
+                "native_size": [
+                  115,
+                  71
+                ],
+                "uniform_family_scale": 0.21706864564007422
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/foundryHall/isolated/villageHall.png",
+              "source_sha256": "ba21ba4572e9113cfa552db648e542d4ee65ecb84e22887b66ad10414404e7ff",
+              "state": "villageHall",
+              "structural_component_area": 108519
+            },
+            {
+              "object_bbox": [
+                648,
+                131,
+                1213,
+                602
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/foundryHall/provider-atlas-v1.png",
+              "raw_atlas_sha256": "289ee830d5c097c2656355eb621b6838fd098455f11832ba3067db93571d54f0",
+              "registration": {
+                "native_offset": [
+                  156,
+                  22
+                ],
+                "native_size": [
+                  123,
+                  102
+                ],
+                "uniform_family_scale": 0.21706864564007422
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/foundryHall/isolated/townHall.png",
+              "source_sha256": "0c4f66011440f531a4843a59e64f2a8233352276b1845051e6f11e55a279546c",
+              "state": "townHall",
+              "structural_component_area": 180581
+            },
+            {
+              "object_bbox": [
+                20,
+                762,
+                617,
+                1178
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/foundryHall/provider-atlas-v1.png",
+              "raw_atlas_sha256": "289ee830d5c097c2656355eb621b6838fd098455f11832ba3067db93571d54f0",
+              "registration": {
+                "native_offset": [
+                  152,
+                  34
+                ],
+                "native_size": [
+                  130,
+                  90
+                ],
+                "uniform_family_scale": 0.21706864564007422
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/foundryHall/isolated/cityHall.png",
+              "source_sha256": "e40532cda1ec967b085adee78c5813f8ccf1a5d23f00ecc71258bc023ef3bdc6",
+              "state": "cityHall",
+              "structural_component_area": 163539
+            },
+            {
+              "object_bbox": [
+                620,
+                646,
+                1241,
+                1185
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/foundryHall/provider-atlas-v1.png",
+              "raw_atlas_sha256": "289ee830d5c097c2656355eb621b6838fd098455f11832ba3067db93571d54f0",
+              "registration": {
+                "native_offset": [
+                  150,
+                  7
+                ],
+                "native_size": [
+                  135,
+                  117
+                ],
+                "uniform_family_scale": 0.21706864564007422
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/foundryHall/isolated/capitol.png",
+              "source_sha256": "934a464c3f5d04a536337e48ff0203802e38a244c831cb222c6095a93ae5374d",
+              "state": "capitol",
+              "structural_component_area": 211026
+            }
+          ],
+          "release_accepted": false,
+          "route": "Actual reviewed whole-master visible RGB cut, with genuine painted completion only where another selected institution occludes it.",
+          "site": "foundryHall",
+          "state": "capitol",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/foundryHall-visible.png",
+          "visible_master_mask_sha256": "9231f1414da2148eb0e306e01e4087e1e085a362a8dcde1ec4ffdb28957c5306",
+          "visible_master_rgb_restyled": false,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/foundryHall-complete-contour.png",
+          "whole_contour_sha256": "9231f1414da2148eb0e306e01e4087e1e085a362a8dcde1ec4ffdb28957c5306",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        },
+        "cityHall": {
+          "actual_alpha128_bbox": [
+            154,
+            34,
+            281,
+            124
+          ],
+          "actual_alpha8_bbox": [
+            154,
+            34,
+            282,
+            124
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/cityHall/layer.png",
+          "native_layer_sha256": "2f90cafba9919abfabfb7f26e889eef0835cace8eae1e6dcf0e6f5371da9faf5",
+          "native_visual_review": "pending",
+          "native_z": 132,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/foundryHall-occluded.png",
+          "occluded_master_mask_sha256": "b6e53314322f55ba066405adc869e19b2a870da54d1f41b9f9a85dcc113f11f7",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                56,
+                273,
+                585,
+                598
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/foundryHall/provider-atlas-v1.png",
+              "raw_atlas_sha256": "289ee830d5c097c2656355eb621b6838fd098455f11832ba3067db93571d54f0",
+              "registration": {
+                "native_offset": [
+                  160,
+                  53
+                ],
+                "native_size": [
+                  115,
+                  71
+                ],
+                "uniform_family_scale": 0.21706864564007422
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/foundryHall/isolated/villageHall.png",
+              "source_sha256": "ba21ba4572e9113cfa552db648e542d4ee65ecb84e22887b66ad10414404e7ff",
+              "state": "villageHall",
+              "structural_component_area": 108519
+            },
+            {
+              "object_bbox": [
+                648,
+                131,
+                1213,
+                602
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/foundryHall/provider-atlas-v1.png",
+              "raw_atlas_sha256": "289ee830d5c097c2656355eb621b6838fd098455f11832ba3067db93571d54f0",
+              "registration": {
+                "native_offset": [
+                  156,
+                  22
+                ],
+                "native_size": [
+                  123,
+                  102
+                ],
+                "uniform_family_scale": 0.21706864564007422
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/foundryHall/isolated/townHall.png",
+              "source_sha256": "0c4f66011440f531a4843a59e64f2a8233352276b1845051e6f11e55a279546c",
+              "state": "townHall",
+              "structural_component_area": 180581
+            },
+            {
+              "object_bbox": [
+                20,
+                762,
+                617,
+                1178
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/foundryHall/provider-atlas-v1.png",
+              "raw_atlas_sha256": "289ee830d5c097c2656355eb621b6838fd098455f11832ba3067db93571d54f0",
+              "registration": {
+                "native_offset": [
+                  152,
+                  34
+                ],
+                "native_size": [
+                  130,
+                  90
+                ],
+                "uniform_family_scale": 0.21706864564007422
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/foundryHall/isolated/cityHall.png",
+              "source_sha256": "e40532cda1ec967b085adee78c5813f8ccf1a5d23f00ecc71258bc023ef3bdc6",
+              "state": "cityHall",
+              "structural_component_area": 163539
+            },
+            {
+              "object_bbox": [
+                620,
+                646,
+                1241,
+                1185
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/foundryHall/provider-atlas-v1.png",
+              "raw_atlas_sha256": "289ee830d5c097c2656355eb621b6838fd098455f11832ba3067db93571d54f0",
+              "registration": {
+                "native_offset": [
+                  150,
+                  7
+                ],
+                "native_size": [
+                  135,
+                  117
+                ],
+                "uniform_family_scale": 0.21706864564007422
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/foundryHall/isolated/capitol.png",
+              "source_sha256": "934a464c3f5d04a536337e48ff0203802e38a244c831cb222c6095a93ae5374d",
+              "state": "capitol",
+              "structural_component_area": 211026
+            }
+          ],
+          "release_accepted": false,
+          "route": "Genuine painted lower construction state from this exact reviewed whole-town architectural family, one uniform family scale.",
+          "site": "foundryHall",
+          "state": "cityHall",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/foundryHall-visible.png",
+          "visible_master_mask_sha256": "9231f1414da2148eb0e306e01e4087e1e085a362a8dcde1ec4ffdb28957c5306",
+          "visible_master_rgb_restyled": null,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/foundryHall-complete-contour.png",
+          "whole_contour_sha256": "9231f1414da2148eb0e306e01e4087e1e085a362a8dcde1ec4ffdb28957c5306",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        },
+        "townHall": {
+          "actual_alpha128_bbox": [
+            156,
+            22,
+            278,
+            124
+          ],
+          "actual_alpha8_bbox": [
+            156,
+            22,
+            279,
+            124
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/townHall/layer.png",
+          "native_layer_sha256": "a7dfd1b5f7ca12ef832a63b2383196d911e4d9091d18a6363abebbe69b380348",
+          "native_visual_review": "pending",
+          "native_z": 132,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/foundryHall-occluded.png",
+          "occluded_master_mask_sha256": "b6e53314322f55ba066405adc869e19b2a870da54d1f41b9f9a85dcc113f11f7",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                56,
+                273,
+                585,
+                598
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/foundryHall/provider-atlas-v1.png",
+              "raw_atlas_sha256": "289ee830d5c097c2656355eb621b6838fd098455f11832ba3067db93571d54f0",
+              "registration": {
+                "native_offset": [
+                  160,
+                  53
+                ],
+                "native_size": [
+                  115,
+                  71
+                ],
+                "uniform_family_scale": 0.21706864564007422
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/foundryHall/isolated/villageHall.png",
+              "source_sha256": "ba21ba4572e9113cfa552db648e542d4ee65ecb84e22887b66ad10414404e7ff",
+              "state": "villageHall",
+              "structural_component_area": 108519
+            },
+            {
+              "object_bbox": [
+                648,
+                131,
+                1213,
+                602
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/foundryHall/provider-atlas-v1.png",
+              "raw_atlas_sha256": "289ee830d5c097c2656355eb621b6838fd098455f11832ba3067db93571d54f0",
+              "registration": {
+                "native_offset": [
+                  156,
+                  22
+                ],
+                "native_size": [
+                  123,
+                  102
+                ],
+                "uniform_family_scale": 0.21706864564007422
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/foundryHall/isolated/townHall.png",
+              "source_sha256": "0c4f66011440f531a4843a59e64f2a8233352276b1845051e6f11e55a279546c",
+              "state": "townHall",
+              "structural_component_area": 180581
+            },
+            {
+              "object_bbox": [
+                20,
+                762,
+                617,
+                1178
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/foundryHall/provider-atlas-v1.png",
+              "raw_atlas_sha256": "289ee830d5c097c2656355eb621b6838fd098455f11832ba3067db93571d54f0",
+              "registration": {
+                "native_offset": [
+                  152,
+                  34
+                ],
+                "native_size": [
+                  130,
+                  90
+                ],
+                "uniform_family_scale": 0.21706864564007422
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/foundryHall/isolated/cityHall.png",
+              "source_sha256": "e40532cda1ec967b085adee78c5813f8ccf1a5d23f00ecc71258bc023ef3bdc6",
+              "state": "cityHall",
+              "structural_component_area": 163539
+            },
+            {
+              "object_bbox": [
+                620,
+                646,
+                1241,
+                1185
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/foundryHall/provider-atlas-v1.png",
+              "raw_atlas_sha256": "289ee830d5c097c2656355eb621b6838fd098455f11832ba3067db93571d54f0",
+              "registration": {
+                "native_offset": [
+                  150,
+                  7
+                ],
+                "native_size": [
+                  135,
+                  117
+                ],
+                "uniform_family_scale": 0.21706864564007422
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/foundryHall/isolated/capitol.png",
+              "source_sha256": "934a464c3f5d04a536337e48ff0203802e38a244c831cb222c6095a93ae5374d",
+              "state": "capitol",
+              "structural_component_area": 211026
+            }
+          ],
+          "release_accepted": false,
+          "route": "Genuine painted lower construction state from this exact reviewed whole-town architectural family, one uniform family scale.",
+          "site": "foundryHall",
+          "state": "townHall",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/foundryHall-visible.png",
+          "visible_master_mask_sha256": "9231f1414da2148eb0e306e01e4087e1e085a362a8dcde1ec4ffdb28957c5306",
+          "visible_master_rgb_restyled": null,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/foundryHall-complete-contour.png",
+          "whole_contour_sha256": "9231f1414da2148eb0e306e01e4087e1e085a362a8dcde1ec4ffdb28957c5306",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        },
+        "villageHall": {
+          "actual_alpha128_bbox": [
+            161,
+            53,
+            274,
+            124
+          ],
+          "actual_alpha8_bbox": [
+            160,
+            53,
+            275,
+            124
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/villageHall/layer.png",
+          "native_layer_sha256": "43281cbbdfd0b399c22cfb9b3746085413530f04b778c3765cd66ace48b02c17",
+          "native_visual_review": "pending",
+          "native_z": 132,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/foundryHall-occluded.png",
+          "occluded_master_mask_sha256": "b6e53314322f55ba066405adc869e19b2a870da54d1f41b9f9a85dcc113f11f7",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                56,
+                273,
+                585,
+                598
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/foundryHall/provider-atlas-v1.png",
+              "raw_atlas_sha256": "289ee830d5c097c2656355eb621b6838fd098455f11832ba3067db93571d54f0",
+              "registration": {
+                "native_offset": [
+                  160,
+                  53
+                ],
+                "native_size": [
+                  115,
+                  71
+                ],
+                "uniform_family_scale": 0.21706864564007422
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/foundryHall/isolated/villageHall.png",
+              "source_sha256": "ba21ba4572e9113cfa552db648e542d4ee65ecb84e22887b66ad10414404e7ff",
+              "state": "villageHall",
+              "structural_component_area": 108519
+            },
+            {
+              "object_bbox": [
+                648,
+                131,
+                1213,
+                602
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/foundryHall/provider-atlas-v1.png",
+              "raw_atlas_sha256": "289ee830d5c097c2656355eb621b6838fd098455f11832ba3067db93571d54f0",
+              "registration": {
+                "native_offset": [
+                  156,
+                  22
+                ],
+                "native_size": [
+                  123,
+                  102
+                ],
+                "uniform_family_scale": 0.21706864564007422
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/foundryHall/isolated/townHall.png",
+              "source_sha256": "0c4f66011440f531a4843a59e64f2a8233352276b1845051e6f11e55a279546c",
+              "state": "townHall",
+              "structural_component_area": 180581
+            },
+            {
+              "object_bbox": [
+                20,
+                762,
+                617,
+                1178
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/foundryHall/provider-atlas-v1.png",
+              "raw_atlas_sha256": "289ee830d5c097c2656355eb621b6838fd098455f11832ba3067db93571d54f0",
+              "registration": {
+                "native_offset": [
+                  152,
+                  34
+                ],
+                "native_size": [
+                  130,
+                  90
+                ],
+                "uniform_family_scale": 0.21706864564007422
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/foundryHall/isolated/cityHall.png",
+              "source_sha256": "e40532cda1ec967b085adee78c5813f8ccf1a5d23f00ecc71258bc023ef3bdc6",
+              "state": "cityHall",
+              "structural_component_area": 163539
+            },
+            {
+              "object_bbox": [
+                620,
+                646,
+                1241,
+                1185
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/foundryHall/provider-atlas-v1.png",
+              "raw_atlas_sha256": "289ee830d5c097c2656355eb621b6838fd098455f11832ba3067db93571d54f0",
+              "registration": {
+                "native_offset": [
+                  150,
+                  7
+                ],
+                "native_size": [
+                  135,
+                  117
+                ],
+                "uniform_family_scale": 0.21706864564007422
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/foundryHall/isolated/capitol.png",
+              "source_sha256": "934a464c3f5d04a536337e48ff0203802e38a244c831cb222c6095a93ae5374d",
+              "state": "capitol",
+              "structural_component_area": 211026
+            }
+          ],
+          "release_accepted": false,
+          "route": "Genuine painted lower construction state from this exact reviewed whole-town architectural family, one uniform family scale.",
+          "site": "foundryHall",
+          "state": "villageHall",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/foundryHall-visible.png",
+          "visible_master_mask_sha256": "9231f1414da2148eb0e306e01e4087e1e085a362a8dcde1ec4ffdb28957c5306",
+          "visible_master_rgb_restyled": null,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/foundryHall-complete-contour.png",
+          "whole_contour_sha256": "9231f1414da2148eb0e306e01e4087e1e085a362a8dcde1ec4ffdb28957c5306",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        }
+      },
+      "states": 4,
+      "visual": "Zaunite civic architecture: brick over a wet foundation, pipework on the facade, soot-stained glass and a municipal notice board. Iron, not marble."
+    },
+    {
+      "buildings": [
+        "fort",
+        "citadel",
+        "castle"
+      ],
+      "composition_rectangle": [
+        403,
+        29,
+        128,
+        102
+      ],
+      "construction": "One site, three states.",
+      "id": "sumpRampart",
+      "name": "Sump Rampart",
+      "native_z": 138,
+      "role": "fortification chain and the site that carries the town fortification bonuses.",
+      "source_states": {
+        "castle": {
+          "actual_alpha128_bbox": [
+            403,
+            29,
+            531,
+            131
+          ],
+          "actual_alpha8_bbox": [
+            403,
+            29,
+            531,
+            131
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/castle/layer.png",
+          "native_layer_sha256": "a755e9d0a58eb6973a9f920a4e32ee905516959b0f9ad7fbc39e4d59f0cb573f",
+          "native_visual_review": "pending",
+          "native_z": 138,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/sumpRampart-occluded.png",
+          "occluded_master_mask_sha256": "b6e53314322f55ba066405adc869e19b2a870da54d1f41b9f9a85dcc113f11f7",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                43,
+                217,
+                587,
+                545
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/sumpRampart/provider-atlas-v1.png",
+              "raw_atlas_sha256": "3fa9a4f29564b69739231ee5dda5d5bcdbf6402ddbcbb4befa745ad00d116505",
+              "registration": {
+                "native_offset": [
+                  414,
+                  68
+                ],
+                "native_size": [
+                  105,
+                  63
+                ],
+                "uniform_family_scale": 0.19281663516068054
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/sumpRampart/isolated/fort.png",
+              "source_sha256": "7c2af51a1f67d1f47142b2bfe4369b3b3c5d06e8aa92ce6d82c02cfe26445a8a",
+              "state": "fort",
+              "structural_component_area": 115670
+            },
+            {
+              "object_bbox": [
+                652,
+                74,
+                1224,
+                551
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/sumpRampart/provider-atlas-v1.png",
+              "raw_atlas_sha256": "3fa9a4f29564b69739231ee5dda5d5bcdbf6402ddbcbb4befa745ad00d116505",
+              "registration": {
+                "native_offset": [
+                  412,
+                  39
+                ],
+                "native_size": [
+                  110,
+                  92
+                ],
+                "uniform_family_scale": 0.19281663516068054
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/sumpRampart/isolated/citadel.png",
+              "source_sha256": "02e1e3ab824c19633f92f4bd039eaef1d64ce4b3759aec0fd32aecee9d54fdbc",
+              "state": "citadel",
+              "structural_component_area": 193298
+            },
+            {
+              "object_bbox": [
+                24,
+                652,
+                660,
+                1181
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/sumpRampart/provider-atlas-v1.png",
+              "raw_atlas_sha256": "3fa9a4f29564b69739231ee5dda5d5bcdbf6402ddbcbb4befa745ad00d116505",
+              "registration": {
+                "native_offset": [
+                  406,
+                  29
+                ],
+                "native_size": [
+                  123,
+                  102
+                ],
+                "uniform_family_scale": 0.19281663516068054
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/sumpRampart/isolated/castle.png",
+              "source_sha256": "1e67bef6609c7f625b86362c111efd1805533e43c1c346c9c08ae2eff2733c50",
+              "state": "castle",
+              "structural_component_area": 241953
+            }
+          ],
+          "release_accepted": false,
+          "route": "Actual reviewed whole-master visible RGB cut, with genuine painted completion only where another selected institution occludes it.",
+          "site": "sumpRampart",
+          "state": "castle",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/sumpRampart-visible.png",
+          "visible_master_mask_sha256": "c1c4b2ef342ba120c440554aaa63e56bdaa9676764ce78b8310208b60b83c546",
+          "visible_master_rgb_restyled": false,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/sumpRampart-complete-contour.png",
+          "whole_contour_sha256": "c1c4b2ef342ba120c440554aaa63e56bdaa9676764ce78b8310208b60b83c546",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        },
+        "citadel": {
+          "actual_alpha128_bbox": [
+            412,
+            39,
+            522,
+            131
+          ],
+          "actual_alpha8_bbox": [
+            412,
+            39,
+            522,
+            131
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/citadel/layer.png",
+          "native_layer_sha256": "ca18fc3c89dd9cf6afed708b51bed2215fbb61f386a36269b3e607282a9b415e",
+          "native_visual_review": "pending",
+          "native_z": 138,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/sumpRampart-occluded.png",
+          "occluded_master_mask_sha256": "b6e53314322f55ba066405adc869e19b2a870da54d1f41b9f9a85dcc113f11f7",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                43,
+                217,
+                587,
+                545
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/sumpRampart/provider-atlas-v1.png",
+              "raw_atlas_sha256": "3fa9a4f29564b69739231ee5dda5d5bcdbf6402ddbcbb4befa745ad00d116505",
+              "registration": {
+                "native_offset": [
+                  414,
+                  68
+                ],
+                "native_size": [
+                  105,
+                  63
+                ],
+                "uniform_family_scale": 0.19281663516068054
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/sumpRampart/isolated/fort.png",
+              "source_sha256": "7c2af51a1f67d1f47142b2bfe4369b3b3c5d06e8aa92ce6d82c02cfe26445a8a",
+              "state": "fort",
+              "structural_component_area": 115670
+            },
+            {
+              "object_bbox": [
+                652,
+                74,
+                1224,
+                551
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/sumpRampart/provider-atlas-v1.png",
+              "raw_atlas_sha256": "3fa9a4f29564b69739231ee5dda5d5bcdbf6402ddbcbb4befa745ad00d116505",
+              "registration": {
+                "native_offset": [
+                  412,
+                  39
+                ],
+                "native_size": [
+                  110,
+                  92
+                ],
+                "uniform_family_scale": 0.19281663516068054
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/sumpRampart/isolated/citadel.png",
+              "source_sha256": "02e1e3ab824c19633f92f4bd039eaef1d64ce4b3759aec0fd32aecee9d54fdbc",
+              "state": "citadel",
+              "structural_component_area": 193298
+            },
+            {
+              "object_bbox": [
+                24,
+                652,
+                660,
+                1181
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/sumpRampart/provider-atlas-v1.png",
+              "raw_atlas_sha256": "3fa9a4f29564b69739231ee5dda5d5bcdbf6402ddbcbb4befa745ad00d116505",
+              "registration": {
+                "native_offset": [
+                  406,
+                  29
+                ],
+                "native_size": [
+                  123,
+                  102
+                ],
+                "uniform_family_scale": 0.19281663516068054
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/sumpRampart/isolated/castle.png",
+              "source_sha256": "1e67bef6609c7f625b86362c111efd1805533e43c1c346c9c08ae2eff2733c50",
+              "state": "castle",
+              "structural_component_area": 241953
+            }
+          ],
+          "release_accepted": false,
+          "route": "Genuine painted lower construction state from this exact reviewed whole-town architectural family, one uniform family scale.",
+          "site": "sumpRampart",
+          "state": "citadel",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/sumpRampart-visible.png",
+          "visible_master_mask_sha256": "c1c4b2ef342ba120c440554aaa63e56bdaa9676764ce78b8310208b60b83c546",
+          "visible_master_rgb_restyled": null,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/sumpRampart-complete-contour.png",
+          "whole_contour_sha256": "c1c4b2ef342ba120c440554aaa63e56bdaa9676764ce78b8310208b60b83c546",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        },
+        "fort": {
+          "actual_alpha128_bbox": [
+            414,
+            68,
+            518,
+            131
+          ],
+          "actual_alpha8_bbox": [
+            414,
+            68,
+            519,
+            131
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/fort/layer.png",
+          "native_layer_sha256": "f782a797065d14da4b974e443948196c55550cecee3f82e08c43d5ae81e424f6",
+          "native_visual_review": "pending",
+          "native_z": 138,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/sumpRampart-occluded.png",
+          "occluded_master_mask_sha256": "b6e53314322f55ba066405adc869e19b2a870da54d1f41b9f9a85dcc113f11f7",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                43,
+                217,
+                587,
+                545
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/sumpRampart/provider-atlas-v1.png",
+              "raw_atlas_sha256": "3fa9a4f29564b69739231ee5dda5d5bcdbf6402ddbcbb4befa745ad00d116505",
+              "registration": {
+                "native_offset": [
+                  414,
+                  68
+                ],
+                "native_size": [
+                  105,
+                  63
+                ],
+                "uniform_family_scale": 0.19281663516068054
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/sumpRampart/isolated/fort.png",
+              "source_sha256": "7c2af51a1f67d1f47142b2bfe4369b3b3c5d06e8aa92ce6d82c02cfe26445a8a",
+              "state": "fort",
+              "structural_component_area": 115670
+            },
+            {
+              "object_bbox": [
+                652,
+                74,
+                1224,
+                551
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/sumpRampart/provider-atlas-v1.png",
+              "raw_atlas_sha256": "3fa9a4f29564b69739231ee5dda5d5bcdbf6402ddbcbb4befa745ad00d116505",
+              "registration": {
+                "native_offset": [
+                  412,
+                  39
+                ],
+                "native_size": [
+                  110,
+                  92
+                ],
+                "uniform_family_scale": 0.19281663516068054
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/sumpRampart/isolated/citadel.png",
+              "source_sha256": "02e1e3ab824c19633f92f4bd039eaef1d64ce4b3759aec0fd32aecee9d54fdbc",
+              "state": "citadel",
+              "structural_component_area": 193298
+            },
+            {
+              "object_bbox": [
+                24,
+                652,
+                660,
+                1181
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/sumpRampart/provider-atlas-v1.png",
+              "raw_atlas_sha256": "3fa9a4f29564b69739231ee5dda5d5bcdbf6402ddbcbb4befa745ad00d116505",
+              "registration": {
+                "native_offset": [
+                  406,
+                  29
+                ],
+                "native_size": [
+                  123,
+                  102
+                ],
+                "uniform_family_scale": 0.19281663516068054
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/sumpRampart/isolated/castle.png",
+              "source_sha256": "1e67bef6609c7f625b86362c111efd1805533e43c1c346c9c08ae2eff2733c50",
+              "state": "castle",
+              "structural_component_area": 241953
+            }
+          ],
+          "release_accepted": false,
+          "route": "Genuine painted lower construction state from this exact reviewed whole-town architectural family, one uniform family scale.",
+          "site": "sumpRampart",
+          "state": "fort",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/sumpRampart-visible.png",
+          "visible_master_mask_sha256": "c1c4b2ef342ba120c440554aaa63e56bdaa9676764ce78b8310208b60b83c546",
+          "visible_master_rgb_restyled": null,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/sumpRampart-complete-contour.png",
+          "whole_contour_sha256": "c1c4b2ef342ba120c440554aaa63e56bdaa9676764ce78b8310208b60b83c546",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        }
+      },
+      "states": 3,
+      "visual": "Scavenged plate, poured concrete, welded scrap and cable anchors above a chemical moat. Bolts, clamps and rivets instead of banners."
+    },
+    {
+      "buildings": [
+        "mageGuild1",
+        "mageGuild2",
+        "mageGuild3",
+        "mageGuild4"
+      ],
+      "composition_rectangle": [
+        584,
+        7,
+        95,
+        120
+      ],
+      "construction": "One site, four states that grow upward in a single tower.",
+      "id": "shimmerInstitute",
+      "name": "Shimmer Institute",
+      "native_z": 140,
+      "role": "mage guild with four levels and the chemical spell weights.",
+      "source_states": {
+        "mageGuild1": {
+          "actual_alpha128_bbox": [
+            593,
+            65,
+            672,
+            126
+          ],
+          "actual_alpha8_bbox": [
+            592,
+            65,
+            672,
+            126
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/mageGuild1/layer.png",
+          "native_layer_sha256": "9cab89fef6b76856dd939ea34168d437a12183c5d62b65a95800f99877325657",
+          "native_visual_review": "pending",
+          "native_z": 140,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/shimmerInstitute-occluded.png",
+          "occluded_master_mask_sha256": "b6e53314322f55ba066405adc869e19b2a870da54d1f41b9f9a85dcc113f11f7",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                114,
+                178,
+                581,
+                541
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/provider-atlas-v1.png",
+              "raw_atlas_sha256": "794392d8983f4a339dbee92a63068fd298221fb3dbec6ebbc93274ecac45cdf7",
+              "registration": {
+                "native_offset": [
+                  592,
+                  65
+                ],
+                "native_size": [
+                  80,
+                  62
+                ],
+                "uniform_family_scale": 0.17148014440433212
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/isolated/mageGuild1.png",
+              "source_sha256": "5efcefa2a2096f873cecea247e607c8f5f4b657e73f1796bdc7b4442d21c0cd1",
+              "state": "mageGuild1",
+              "structural_component_area": 91499
+            },
+            {
+              "object_bbox": [
+                682,
+                93,
+                1176,
+                541
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/provider-atlas-v1.png",
+              "raw_atlas_sha256": "794392d8983f4a339dbee92a63068fd298221fb3dbec6ebbc93274ecac45cdf7",
+              "registration": {
+                "native_offset": [
+                  589,
+                  50
+                ],
+                "native_size": [
+                  85,
+                  77
+                ],
+                "uniform_family_scale": 0.17148014440433212
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/isolated/mageGuild2.png",
+              "source_sha256": "f32c4be5621e776b44de4ed8e74504651a65e47ec5abd2b2786ef6932ee05705",
+              "state": "mageGuild2",
+              "structural_component_area": 120182
+            },
+            {
+              "object_bbox": [
+                92,
+                655,
+                617,
+                1186
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/provider-atlas-v1.png",
+              "raw_atlas_sha256": "794392d8983f4a339dbee92a63068fd298221fb3dbec6ebbc93274ecac45cdf7",
+              "registration": {
+                "native_offset": [
+                  586,
+                  36
+                ],
+                "native_size": [
+                  90,
+                  91
+                ],
+                "uniform_family_scale": 0.17148014440433212
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/isolated/mageGuild3.png",
+              "source_sha256": "c4f42a2b54deb624c02625ed4ad97380eb1a09e4efafe6384b1d51bacd6c2520",
+              "state": "mageGuild3",
+              "structural_component_area": 153944
+            },
+            {
+              "object_bbox": [
+                640,
+                556,
+                1194,
+                1185
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/provider-atlas-v1.png",
+              "raw_atlas_sha256": "794392d8983f4a339dbee92a63068fd298221fb3dbec6ebbc93274ecac45cdf7",
+              "registration": {
+                "native_offset": [
+                  584,
+                  19
+                ],
+                "native_size": [
+                  95,
+                  108
+                ],
+                "uniform_family_scale": 0.17148014440433212
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/isolated/mageGuild4.png",
+              "source_sha256": "2cc2510ba341bcfc0ef52e99aa2f761813aba0a99aee456830dea40e70f86813",
+              "state": "mageGuild4",
+              "structural_component_area": 170664
+            }
+          ],
+          "release_accepted": false,
+          "route": "Genuine painted lower construction state from this exact reviewed whole-town architectural family, one uniform family scale.",
+          "site": "shimmerInstitute",
+          "state": "mageGuild1",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/shimmerInstitute-visible.png",
+          "visible_master_mask_sha256": "0324fa77cc7d152b1ea6cf2fc18d9103ace1bec9e42ff2c9417aa50607ffb1a2",
+          "visible_master_rgb_restyled": null,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/shimmerInstitute-complete-contour.png",
+          "whole_contour_sha256": "0324fa77cc7d152b1ea6cf2fc18d9103ace1bec9e42ff2c9417aa50607ffb1a2",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        },
+        "mageGuild2": {
+          "actual_alpha128_bbox": [
+            590,
+            50,
+            673,
+            127
+          ],
+          "actual_alpha8_bbox": [
+            589,
+            50,
+            674,
+            127
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/mageGuild2/layer.png",
+          "native_layer_sha256": "33de70766d2251cefd1fe3b37096114261971ac187247e763d57a98610338417",
+          "native_visual_review": "pending",
+          "native_z": 140,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/shimmerInstitute-occluded.png",
+          "occluded_master_mask_sha256": "b6e53314322f55ba066405adc869e19b2a870da54d1f41b9f9a85dcc113f11f7",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                114,
+                178,
+                581,
+                541
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/provider-atlas-v1.png",
+              "raw_atlas_sha256": "794392d8983f4a339dbee92a63068fd298221fb3dbec6ebbc93274ecac45cdf7",
+              "registration": {
+                "native_offset": [
+                  592,
+                  65
+                ],
+                "native_size": [
+                  80,
+                  62
+                ],
+                "uniform_family_scale": 0.17148014440433212
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/isolated/mageGuild1.png",
+              "source_sha256": "5efcefa2a2096f873cecea247e607c8f5f4b657e73f1796bdc7b4442d21c0cd1",
+              "state": "mageGuild1",
+              "structural_component_area": 91499
+            },
+            {
+              "object_bbox": [
+                682,
+                93,
+                1176,
+                541
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/provider-atlas-v1.png",
+              "raw_atlas_sha256": "794392d8983f4a339dbee92a63068fd298221fb3dbec6ebbc93274ecac45cdf7",
+              "registration": {
+                "native_offset": [
+                  589,
+                  50
+                ],
+                "native_size": [
+                  85,
+                  77
+                ],
+                "uniform_family_scale": 0.17148014440433212
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/isolated/mageGuild2.png",
+              "source_sha256": "f32c4be5621e776b44de4ed8e74504651a65e47ec5abd2b2786ef6932ee05705",
+              "state": "mageGuild2",
+              "structural_component_area": 120182
+            },
+            {
+              "object_bbox": [
+                92,
+                655,
+                617,
+                1186
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/provider-atlas-v1.png",
+              "raw_atlas_sha256": "794392d8983f4a339dbee92a63068fd298221fb3dbec6ebbc93274ecac45cdf7",
+              "registration": {
+                "native_offset": [
+                  586,
+                  36
+                ],
+                "native_size": [
+                  90,
+                  91
+                ],
+                "uniform_family_scale": 0.17148014440433212
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/isolated/mageGuild3.png",
+              "source_sha256": "c4f42a2b54deb624c02625ed4ad97380eb1a09e4efafe6384b1d51bacd6c2520",
+              "state": "mageGuild3",
+              "structural_component_area": 153944
+            },
+            {
+              "object_bbox": [
+                640,
+                556,
+                1194,
+                1185
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/provider-atlas-v1.png",
+              "raw_atlas_sha256": "794392d8983f4a339dbee92a63068fd298221fb3dbec6ebbc93274ecac45cdf7",
+              "registration": {
+                "native_offset": [
+                  584,
+                  19
+                ],
+                "native_size": [
+                  95,
+                  108
+                ],
+                "uniform_family_scale": 0.17148014440433212
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/isolated/mageGuild4.png",
+              "source_sha256": "2cc2510ba341bcfc0ef52e99aa2f761813aba0a99aee456830dea40e70f86813",
+              "state": "mageGuild4",
+              "structural_component_area": 170664
+            }
+          ],
+          "release_accepted": false,
+          "route": "Genuine painted lower construction state from this exact reviewed whole-town architectural family, one uniform family scale.",
+          "site": "shimmerInstitute",
+          "state": "mageGuild2",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/shimmerInstitute-visible.png",
+          "visible_master_mask_sha256": "0324fa77cc7d152b1ea6cf2fc18d9103ace1bec9e42ff2c9417aa50607ffb1a2",
+          "visible_master_rgb_restyled": null,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/shimmerInstitute-complete-contour.png",
+          "whole_contour_sha256": "0324fa77cc7d152b1ea6cf2fc18d9103ace1bec9e42ff2c9417aa50607ffb1a2",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        },
+        "mageGuild3": {
+          "actual_alpha128_bbox": [
+            586,
+            36,
+            676,
+            126
+          ],
+          "actual_alpha8_bbox": [
+            586,
+            36,
+            676,
+            126
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/mageGuild3/layer.png",
+          "native_layer_sha256": "96bab7d73ef17330a573bcf177c946ec9f121f7ecc4c9767aaa008dd19ed7a3b",
+          "native_visual_review": "pending",
+          "native_z": 140,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/shimmerInstitute-occluded.png",
+          "occluded_master_mask_sha256": "b6e53314322f55ba066405adc869e19b2a870da54d1f41b9f9a85dcc113f11f7",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                114,
+                178,
+                581,
+                541
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/provider-atlas-v1.png",
+              "raw_atlas_sha256": "794392d8983f4a339dbee92a63068fd298221fb3dbec6ebbc93274ecac45cdf7",
+              "registration": {
+                "native_offset": [
+                  592,
+                  65
+                ],
+                "native_size": [
+                  80,
+                  62
+                ],
+                "uniform_family_scale": 0.17148014440433212
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/isolated/mageGuild1.png",
+              "source_sha256": "5efcefa2a2096f873cecea247e607c8f5f4b657e73f1796bdc7b4442d21c0cd1",
+              "state": "mageGuild1",
+              "structural_component_area": 91499
+            },
+            {
+              "object_bbox": [
+                682,
+                93,
+                1176,
+                541
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/provider-atlas-v1.png",
+              "raw_atlas_sha256": "794392d8983f4a339dbee92a63068fd298221fb3dbec6ebbc93274ecac45cdf7",
+              "registration": {
+                "native_offset": [
+                  589,
+                  50
+                ],
+                "native_size": [
+                  85,
+                  77
+                ],
+                "uniform_family_scale": 0.17148014440433212
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/isolated/mageGuild2.png",
+              "source_sha256": "f32c4be5621e776b44de4ed8e74504651a65e47ec5abd2b2786ef6932ee05705",
+              "state": "mageGuild2",
+              "structural_component_area": 120182
+            },
+            {
+              "object_bbox": [
+                92,
+                655,
+                617,
+                1186
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/provider-atlas-v1.png",
+              "raw_atlas_sha256": "794392d8983f4a339dbee92a63068fd298221fb3dbec6ebbc93274ecac45cdf7",
+              "registration": {
+                "native_offset": [
+                  586,
+                  36
+                ],
+                "native_size": [
+                  90,
+                  91
+                ],
+                "uniform_family_scale": 0.17148014440433212
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/isolated/mageGuild3.png",
+              "source_sha256": "c4f42a2b54deb624c02625ed4ad97380eb1a09e4efafe6384b1d51bacd6c2520",
+              "state": "mageGuild3",
+              "structural_component_area": 153944
+            },
+            {
+              "object_bbox": [
+                640,
+                556,
+                1194,
+                1185
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/provider-atlas-v1.png",
+              "raw_atlas_sha256": "794392d8983f4a339dbee92a63068fd298221fb3dbec6ebbc93274ecac45cdf7",
+              "registration": {
+                "native_offset": [
+                  584,
+                  19
+                ],
+                "native_size": [
+                  95,
+                  108
+                ],
+                "uniform_family_scale": 0.17148014440433212
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/isolated/mageGuild4.png",
+              "source_sha256": "2cc2510ba341bcfc0ef52e99aa2f761813aba0a99aee456830dea40e70f86813",
+              "state": "mageGuild4",
+              "structural_component_area": 170664
+            }
+          ],
+          "release_accepted": false,
+          "route": "Genuine painted lower construction state from this exact reviewed whole-town architectural family, one uniform family scale.",
+          "site": "shimmerInstitute",
+          "state": "mageGuild3",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/shimmerInstitute-visible.png",
+          "visible_master_mask_sha256": "0324fa77cc7d152b1ea6cf2fc18d9103ace1bec9e42ff2c9417aa50607ffb1a2",
+          "visible_master_rgb_restyled": null,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/shimmerInstitute-complete-contour.png",
+          "whole_contour_sha256": "0324fa77cc7d152b1ea6cf2fc18d9103ace1bec9e42ff2c9417aa50607ffb1a2",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        },
+        "mageGuild4": {
+          "actual_alpha128_bbox": [
+            584,
+            7,
+            679,
+            127
+          ],
+          "actual_alpha8_bbox": [
+            584,
+            7,
+            679,
+            127
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/mageGuild4/layer.png",
+          "native_layer_sha256": "bb7343a79b90df5170c68e616465b75056bafd3bb512ac04a2e5f0033feeafe2",
+          "native_visual_review": "pending",
+          "native_z": 140,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/shimmerInstitute-occluded.png",
+          "occluded_master_mask_sha256": "b6e53314322f55ba066405adc869e19b2a870da54d1f41b9f9a85dcc113f11f7",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                114,
+                178,
+                581,
+                541
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/provider-atlas-v1.png",
+              "raw_atlas_sha256": "794392d8983f4a339dbee92a63068fd298221fb3dbec6ebbc93274ecac45cdf7",
+              "registration": {
+                "native_offset": [
+                  592,
+                  65
+                ],
+                "native_size": [
+                  80,
+                  62
+                ],
+                "uniform_family_scale": 0.17148014440433212
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/isolated/mageGuild1.png",
+              "source_sha256": "5efcefa2a2096f873cecea247e607c8f5f4b657e73f1796bdc7b4442d21c0cd1",
+              "state": "mageGuild1",
+              "structural_component_area": 91499
+            },
+            {
+              "object_bbox": [
+                682,
+                93,
+                1176,
+                541
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/provider-atlas-v1.png",
+              "raw_atlas_sha256": "794392d8983f4a339dbee92a63068fd298221fb3dbec6ebbc93274ecac45cdf7",
+              "registration": {
+                "native_offset": [
+                  589,
+                  50
+                ],
+                "native_size": [
+                  85,
+                  77
+                ],
+                "uniform_family_scale": 0.17148014440433212
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/isolated/mageGuild2.png",
+              "source_sha256": "f32c4be5621e776b44de4ed8e74504651a65e47ec5abd2b2786ef6932ee05705",
+              "state": "mageGuild2",
+              "structural_component_area": 120182
+            },
+            {
+              "object_bbox": [
+                92,
+                655,
+                617,
+                1186
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/provider-atlas-v1.png",
+              "raw_atlas_sha256": "794392d8983f4a339dbee92a63068fd298221fb3dbec6ebbc93274ecac45cdf7",
+              "registration": {
+                "native_offset": [
+                  586,
+                  36
+                ],
+                "native_size": [
+                  90,
+                  91
+                ],
+                "uniform_family_scale": 0.17148014440433212
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/isolated/mageGuild3.png",
+              "source_sha256": "c4f42a2b54deb624c02625ed4ad97380eb1a09e4efafe6384b1d51bacd6c2520",
+              "state": "mageGuild3",
+              "structural_component_area": 153944
+            },
+            {
+              "object_bbox": [
+                640,
+                556,
+                1194,
+                1185
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/provider-atlas-v1.png",
+              "raw_atlas_sha256": "794392d8983f4a339dbee92a63068fd298221fb3dbec6ebbc93274ecac45cdf7",
+              "registration": {
+                "native_offset": [
+                  584,
+                  19
+                ],
+                "native_size": [
+                  95,
+                  108
+                ],
+                "uniform_family_scale": 0.17148014440433212
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/shimmerInstitute/isolated/mageGuild4.png",
+              "source_sha256": "2cc2510ba341bcfc0ef52e99aa2f761813aba0a99aee456830dea40e70f86813",
+              "state": "mageGuild4",
+              "structural_component_area": 170664
+            }
+          ],
+          "release_accepted": false,
+          "route": "Actual reviewed whole-master visible RGB cut, with genuine painted completion only where another selected institution occludes it.",
+          "site": "shimmerInstitute",
+          "state": "mageGuild4",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/shimmerInstitute-visible.png",
+          "visible_master_mask_sha256": "0324fa77cc7d152b1ea6cf2fc18d9103ace1bec9e42ff2c9417aa50607ffb1a2",
+          "visible_master_rgb_restyled": false,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/shimmerInstitute-complete-contour.png",
+          "whole_contour_sha256": "0324fa77cc7d152b1ea6cf2fc18d9103ace1bec9e42ff2c9417aa50607ffb1a2",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        }
+      },
+      "states": 4,
+      "visual": "A distillation tower with pressure gauges, luminous green reagent glass columns, purple secondary vessels and brown/corroded supporting machinery. Upgrade states increase controlled apparatus, not a holy wizard spire."
+    },
+    {
+      "buildings": [
+        "dwellingLvl1",
+        "dwellingUpLvl1"
+      ],
+      "composition_rectangle": [
+        178,
+        174,
+        100,
+        42
+      ],
+      "construction": "One site, two states.",
+      "id": "dwellingThug",
+      "name": "Thug Quarter",
+      "native_z": 232,
+      "role": "tier one recruitment site.",
+      "source_states": {
+        "dwellingLvl1": {
+          "actual_alpha128_bbox": [
+            198,
+            182,
+            259,
+            215
+          ],
+          "actual_alpha8_bbox": [
+            198,
+            182,
+            259,
+            216
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/dwellingLvl1/layer.png",
+          "native_layer_sha256": "65ecdd8ebe5161a9bd6cf6ac3dfc7eaad46a82a2bc99a17ae281cef396d29cbc",
+          "native_visual_review": "pending",
+          "native_z": 232,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingThug-occluded.png",
+          "occluded_master_mask_sha256": "b6e53314322f55ba066405adc869e19b2a870da54d1f41b9f9a85dcc113f11f7",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                35,
+                402,
+                729,
+                793
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingThug/provider-atlas-v1.png",
+              "raw_atlas_sha256": "f334d3e343f2b1bbdab2346fc30e04579bed3fa82848059ce743f939c3b4b243",
+              "registration": {
+                "native_offset": [
+                  198,
+                  182
+                ],
+                "native_size": [
+                  61,
+                  34
+                ],
+                "uniform_family_scale": 0.08786610878661087
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingThug/isolated/dwellingLvl1.png",
+              "source_sha256": "7f5929de4945ccfd7dbda7269f5baa90b6e786b17890f806c91a789578e37bfe",
+              "state": "dwellingLvl1",
+              "structural_component_area": 180767
+            },
+            {
+              "object_bbox": [
+                768,
+                311,
+                1511,
+                789
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingThug/provider-atlas-v1.png",
+              "raw_atlas_sha256": "f334d3e343f2b1bbdab2346fc30e04579bed3fa82848059ce743f939c3b4b243",
+              "registration": {
+                "native_offset": [
+                  196,
+                  174
+                ],
+                "native_size": [
+                  65,
+                  42
+                ],
+                "uniform_family_scale": 0.08786610878661087
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingThug/isolated/dwellingUpLvl1.png",
+              "source_sha256": "5da271b1e9a537159f9c67ca9a9ab017b8da5c26ac99b164892e5ed55a16f5a8",
+              "state": "dwellingUpLvl1",
+              "structural_component_area": 257265
+            }
+          ],
+          "release_accepted": false,
+          "route": "Genuine painted lower construction state from this exact reviewed whole-town architectural family, one uniform family scale.",
+          "site": "dwellingThug",
+          "state": "dwellingLvl1",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingThug-visible.png",
+          "visible_master_mask_sha256": "d04ae8672e9028fd591d40004f48c5b8eeaa605926320ca9929d9505104fada7",
+          "visible_master_rgb_restyled": null,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingThug-complete-contour.png",
+          "whole_contour_sha256": "d04ae8672e9028fd591d40004f48c5b8eeaa605926320ca9929d9505104fada7",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        },
+        "dwellingUpLvl1": {
+          "actual_alpha128_bbox": [
+            178,
+            174,
+            278,
+            216
+          ],
+          "actual_alpha8_bbox": [
+            178,
+            174,
+            278,
+            216
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/dwellingUpLvl1/layer.png",
+          "native_layer_sha256": "6a48c46ee16750af7d5d95600299e0ca1b7fe641276d12165491d905ad3881d7",
+          "native_visual_review": "pending",
+          "native_z": 232,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingThug-occluded.png",
+          "occluded_master_mask_sha256": "b6e53314322f55ba066405adc869e19b2a870da54d1f41b9f9a85dcc113f11f7",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                35,
+                402,
+                729,
+                793
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingThug/provider-atlas-v1.png",
+              "raw_atlas_sha256": "f334d3e343f2b1bbdab2346fc30e04579bed3fa82848059ce743f939c3b4b243",
+              "registration": {
+                "native_offset": [
+                  198,
+                  182
+                ],
+                "native_size": [
+                  61,
+                  34
+                ],
+                "uniform_family_scale": 0.08786610878661087
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingThug/isolated/dwellingLvl1.png",
+              "source_sha256": "7f5929de4945ccfd7dbda7269f5baa90b6e786b17890f806c91a789578e37bfe",
+              "state": "dwellingLvl1",
+              "structural_component_area": 180767
+            },
+            {
+              "object_bbox": [
+                768,
+                311,
+                1511,
+                789
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingThug/provider-atlas-v1.png",
+              "raw_atlas_sha256": "f334d3e343f2b1bbdab2346fc30e04579bed3fa82848059ce743f939c3b4b243",
+              "registration": {
+                "native_offset": [
+                  196,
+                  174
+                ],
+                "native_size": [
+                  65,
+                  42
+                ],
+                "uniform_family_scale": 0.08786610878661087
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingThug/isolated/dwellingUpLvl1.png",
+              "source_sha256": "5da271b1e9a537159f9c67ca9a9ab017b8da5c26ac99b164892e5ed55a16f5a8",
+              "state": "dwellingUpLvl1",
+              "structural_component_area": 257265
+            }
+          ],
+          "release_accepted": false,
+          "route": "Actual reviewed whole-master visible RGB cut, with genuine painted completion only where another selected institution occludes it.",
+          "site": "dwellingThug",
+          "state": "dwellingUpLvl1",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingThug-visible.png",
+          "visible_master_mask_sha256": "d04ae8672e9028fd591d40004f48c5b8eeaa605926320ca9929d9505104fada7",
+          "visible_master_rgb_restyled": false,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingThug-complete-contour.png",
+          "whole_contour_sha256": "d04ae8672e9028fd591d40004f48c5b8eeaa605926320ca9929d9505104fada7",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        }
+      },
+      "states": 2,
+      "visual": "A rented back room behind a market stall, then a fenced yard with scrap training gear."
+    },
+    {
+      "buildings": [
+        "dwellingLvl2",
+        "dwellingUpLvl2"
+      ],
+      "composition_rectangle": [
+        539,
+        130,
+        106,
+        70
+      ],
+      "construction": "One site, two states.",
+      "id": "dwellingRavager",
+      "name": "Chem-Jack Yard",
+      "native_z": 209,
+      "role": "tier two recruitment site.",
+      "source_states": {
+        "dwellingLvl2": {
+          "actual_alpha128_bbox": [
+            565,
+            150,
+            645,
+            200
+          ],
+          "actual_alpha8_bbox": [
+            565,
+            150,
+            645,
+            200
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/dwellingLvl2/layer.png",
+          "native_layer_sha256": "bf1e97880e53bcad2dbb0e8a90064c7ed9b8948c9ddfd30670d5b2076bde72d6",
+          "native_visual_review": "pending",
+          "native_z": 209,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingRavager-occluded.png",
+          "occluded_master_mask_sha256": "bdf343c28dca6ffc2d9d8fee09c4c1bdb1c491c1d1f2131e3e85cf5fb6a17b75",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                21,
+                386,
+                700,
+                814
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingRavager/provider-atlas-v1.png",
+              "raw_atlas_sha256": "4b613882b732b7ecda7b8e4b39f678b747af28fc2fff06515c95e9cf1b0aaafa",
+              "registration": {
+                "native_offset": [
+                  550,
+                  150
+                ],
+                "native_size": [
+                  80,
+                  51
+                ],
+                "uniform_family_scale": 0.11833333333333333
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingRavager/isolated/dwellingLvl2.png",
+              "source_sha256": "87e108c2e285eaca11f767741cd30be5ab2fd98bf0845bece0fd4e02ff02c2f0",
+              "state": "dwellingLvl2",
+              "structural_component_area": 209464
+            },
+            {
+              "object_bbox": [
+                720,
+                222,
+                1519,
+                822
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingRavager/provider-atlas-v1.png",
+              "raw_atlas_sha256": "4b613882b732b7ecda7b8e4b39f678b747af28fc2fff06515c95e9cf1b0aaafa",
+              "registration": {
+                "native_offset": [
+                  542,
+                  130
+                ],
+                "native_size": [
+                  95,
+                  71
+                ],
+                "uniform_family_scale": 0.11833333333333333
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingRavager/isolated/dwellingUpLvl2.png",
+              "source_sha256": "1b640ef5bd5e1f82fcbc1574fcc3fe0b2c195d81be7aab65ad974667c451684d",
+              "state": "dwellingUpLvl2",
+              "structural_component_area": 331457
+            }
+          ],
+          "release_accepted": false,
+          "route": "Genuine painted lower construction state from this exact reviewed whole-town architectural family, one uniform family scale.",
+          "site": "dwellingRavager",
+          "state": "dwellingLvl2",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingRavager-visible.png",
+          "visible_master_mask_sha256": "e403b2a9d6c1fb833acd04f231fd9b380d08b895379b5da2b4a3a40b4d76dd00",
+          "visible_master_rgb_restyled": null,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingRavager-complete-contour.png",
+          "whole_contour_sha256": "8dc5b681154edc4cbfb3f259f8aad9bb2f44164565bcadb401db06ac7239f43b",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        },
+        "dwellingUpLvl2": {
+          "actual_alpha128_bbox": [
+            539,
+            130,
+            645,
+            200
+          ],
+          "actual_alpha8_bbox": [
+            539,
+            130,
+            645,
+            200
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/dwellingUpLvl2/layer.png",
+          "native_layer_sha256": "a6a4aa25db35eee4cf3f3e92a3ac667cb8e6678c02711a804ba89b354989035a",
+          "native_visual_review": "pending",
+          "native_z": 209,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingRavager-occluded.png",
+          "occluded_master_mask_sha256": "bdf343c28dca6ffc2d9d8fee09c4c1bdb1c491c1d1f2131e3e85cf5fb6a17b75",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                21,
+                386,
+                700,
+                814
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingRavager/provider-atlas-v1.png",
+              "raw_atlas_sha256": "4b613882b732b7ecda7b8e4b39f678b747af28fc2fff06515c95e9cf1b0aaafa",
+              "registration": {
+                "native_offset": [
+                  550,
+                  150
+                ],
+                "native_size": [
+                  80,
+                  51
+                ],
+                "uniform_family_scale": 0.11833333333333333
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingRavager/isolated/dwellingLvl2.png",
+              "source_sha256": "87e108c2e285eaca11f767741cd30be5ab2fd98bf0845bece0fd4e02ff02c2f0",
+              "state": "dwellingLvl2",
+              "structural_component_area": 209464
+            },
+            {
+              "object_bbox": [
+                720,
+                222,
+                1519,
+                822
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingRavager/provider-atlas-v1.png",
+              "raw_atlas_sha256": "4b613882b732b7ecda7b8e4b39f678b747af28fc2fff06515c95e9cf1b0aaafa",
+              "registration": {
+                "native_offset": [
+                  542,
+                  130
+                ],
+                "native_size": [
+                  95,
+                  71
+                ],
+                "uniform_family_scale": 0.11833333333333333
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingRavager/isolated/dwellingUpLvl2.png",
+              "source_sha256": "1b640ef5bd5e1f82fcbc1574fcc3fe0b2c195d81be7aab65ad974667c451684d",
+              "state": "dwellingUpLvl2",
+              "structural_component_area": 331457
+            }
+          ],
+          "release_accepted": false,
+          "route": "Actual reviewed whole-master visible RGB cut, with genuine painted completion only where another selected institution occludes it.",
+          "site": "dwellingRavager",
+          "state": "dwellingUpLvl2",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingRavager-visible.png",
+          "visible_master_mask_sha256": "e403b2a9d6c1fb833acd04f231fd9b380d08b895379b5da2b4a3a40b4d76dd00",
+          "visible_master_rgb_restyled": false,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingRavager-complete-contour.png",
+          "whole_contour_sha256": "8dc5b681154edc4cbfb3f259f8aad9bb2f44164565bcadb401db06ac7239f43b",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        }
+      },
+      "states": 2,
+      "visual": "Living protected industrial workers; practical tools and pressure-assisted reinforced yard upgrade."
+    },
+    {
+      "buildings": [
+        "dwellingLvl3",
+        "dwellingUpLvl3"
+      ],
+      "composition_rectangle": [
+        283,
+        212,
+        80,
+        123
+      ],
+      "construction": "One site, two states.",
+      "id": "dwellingConstruct",
+      "name": "Construct Workshop",
+      "native_z": 333,
+      "role": "tier three recruitment site.",
+      "source_states": {
+        "dwellingLvl3": {
+          "actual_alpha128_bbox": [
+            292,
+            264,
+            356,
+            334
+          ],
+          "actual_alpha8_bbox": [
+            291,
+            264,
+            356,
+            334
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/dwellingLvl3/layer.png",
+          "native_layer_sha256": "1aefdf16dd84e61419a524de966f88d91c7e7e894a7b8cb9fcae6f5664593e41",
+          "native_visual_review": "pending",
+          "native_z": 333,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingConstruct-occluded.png",
+          "occluded_master_mask_sha256": "db72b621e50b931cb6a5de08b4200d4dcae9f7acdf2f0ac1c2a0103134d47a70",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                47,
+                265,
+                676,
+                939
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingConstruct/provider-atlas-v1.png",
+              "raw_atlas_sha256": "a2c6fdb269173229202ef3cc13acc9b8b1e4a160e703ba317caacbb21e63bf3c",
+              "registration": {
+                "native_offset": [
+                  290,
+                  264
+                ],
+                "native_size": [
+                  66,
+                  71
+                ],
+                "uniform_family_scale": 0.10471204188481675
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingConstruct/isolated/dwellingLvl3.png",
+              "source_sha256": "5cd2b6ca42796f053f7f6c48c3d9ddd8a06dd821a8f9a2fcc772b64d1df38bb2",
+              "state": "dwellingLvl3",
+              "structural_component_area": 280792
+            },
+            {
+              "object_bbox": [
+                739,
+                47,
+                1503,
+                943
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingConstruct/provider-atlas-v1.png",
+              "raw_atlas_sha256": "a2c6fdb269173229202ef3cc13acc9b8b1e4a160e703ba317caacbb21e63bf3c",
+              "registration": {
+                "native_offset": [
+                  283,
+                  241
+                ],
+                "native_size": [
+                  80,
+                  94
+                ],
+                "uniform_family_scale": 0.10471204188481675
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingConstruct/isolated/dwellingUpLvl3.png",
+              "source_sha256": "6c6224d77635ce8d50c6959766f1d13f4c0015190e28fc5d823914028a299275",
+              "state": "dwellingUpLvl3",
+              "structural_component_area": 520759
+            }
+          ],
+          "release_accepted": false,
+          "route": "Genuine painted lower construction state from this exact reviewed whole-town architectural family, one uniform family scale.",
+          "site": "dwellingConstruct",
+          "state": "dwellingLvl3",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingConstruct-visible.png",
+          "visible_master_mask_sha256": "06487dbccb75d453fb183fe6f2806ba1c2270a2df23f9cf2641375baed32af60",
+          "visible_master_rgb_restyled": null,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingConstruct-complete-contour.png",
+          "whole_contour_sha256": "92bdda44b35cbd649259d5f50dbc667eac1c7d58a688ac6ddcebbadd5eb356dc",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        },
+        "dwellingUpLvl3": {
+          "actual_alpha128_bbox": [
+            283,
+            212,
+            362,
+            335
+          ],
+          "actual_alpha8_bbox": [
+            283,
+            212,
+            363,
+            335
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/dwellingUpLvl3/layer.png",
+          "native_layer_sha256": "c43cd73b3bcda2056e14b982f51d2c243946a7a3ae7955dc17f7f6e71c33f175",
+          "native_visual_review": "pending",
+          "native_z": 333,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingConstruct-occluded.png",
+          "occluded_master_mask_sha256": "db72b621e50b931cb6a5de08b4200d4dcae9f7acdf2f0ac1c2a0103134d47a70",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                47,
+                265,
+                676,
+                939
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingConstruct/provider-atlas-v1.png",
+              "raw_atlas_sha256": "a2c6fdb269173229202ef3cc13acc9b8b1e4a160e703ba317caacbb21e63bf3c",
+              "registration": {
+                "native_offset": [
+                  290,
+                  264
+                ],
+                "native_size": [
+                  66,
+                  71
+                ],
+                "uniform_family_scale": 0.10471204188481675
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingConstruct/isolated/dwellingLvl3.png",
+              "source_sha256": "5cd2b6ca42796f053f7f6c48c3d9ddd8a06dd821a8f9a2fcc772b64d1df38bb2",
+              "state": "dwellingLvl3",
+              "structural_component_area": 280792
+            },
+            {
+              "object_bbox": [
+                739,
+                47,
+                1503,
+                943
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingConstruct/provider-atlas-v1.png",
+              "raw_atlas_sha256": "a2c6fdb269173229202ef3cc13acc9b8b1e4a160e703ba317caacbb21e63bf3c",
+              "registration": {
+                "native_offset": [
+                  283,
+                  241
+                ],
+                "native_size": [
+                  80,
+                  94
+                ],
+                "uniform_family_scale": 0.10471204188481675
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingConstruct/isolated/dwellingUpLvl3.png",
+              "source_sha256": "6c6224d77635ce8d50c6959766f1d13f4c0015190e28fc5d823914028a299275",
+              "state": "dwellingUpLvl3",
+              "structural_component_area": 520759
+            }
+          ],
+          "release_accepted": false,
+          "route": "Actual reviewed whole-master visible RGB cut, with genuine painted completion only where another selected institution occludes it.",
+          "site": "dwellingConstruct",
+          "state": "dwellingUpLvl3",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingConstruct-visible.png",
+          "visible_master_mask_sha256": "06487dbccb75d453fb183fe6f2806ba1c2270a2df23f9cf2641375baed32af60",
+          "visible_master_rgb_restyled": false,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingConstruct-complete-contour.png",
+          "whole_contour_sha256": "92bdda44b35cbd649259d5f50dbc667eac1c7d58a688ac6ddcebbadd5eb356dc",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        }
+      },
+      "states": 2,
+      "visual": "A fabrication bay with a gantry, a pressure rig and half-built frames on stands."
+    },
+    {
+      "buildings": [
+        "dwellingLvl4",
+        "dwellingUpLvl4"
+      ],
+      "composition_rectangle": [
+        10,
+        99,
+        123,
+        83
+      ],
+      "construction": "One site, two states.",
+      "id": "dwellingEnforcer",
+      "name": "Enforcer Yard",
+      "native_z": 186,
+      "role": "tier four recruitment site.",
+      "source_states": {
+        "dwellingLvl4": {
+          "actual_alpha128_bbox": [
+            26,
+            116,
+            116,
+            182
+          ],
+          "actual_alpha8_bbox": [
+            26,
+            116,
+            116,
+            182
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/dwellingLvl4/layer.png",
+          "native_layer_sha256": "5d3f46befb7149a1d73a1fc30fad9103e287b6eb184a1afe694f0c03c3d2ac5d",
+          "native_visual_review": "pending",
+          "native_z": 186,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingEnforcer-occluded.png",
+          "occluded_master_mask_sha256": "b6e53314322f55ba066405adc869e19b2a870da54d1f41b9f9a85dcc113f11f7",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                68,
+                359,
+                716,
+                833
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingEnforcer/provider-atlas-v1.png",
+              "raw_atlas_sha256": "0c8037b78ab92ae2c45f7fb3664435cda79d8942624b302b797b847edc0cdc38",
+              "registration": {
+                "native_offset": [
+                  26,
+                  116
+                ],
+                "native_size": [
+                  90,
+                  66
+                ],
+                "uniform_family_scale": 0.1390284757118928
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingEnforcer/isolated/dwellingLvl4.png",
+              "source_sha256": "d35b0fa2f5b457e74989396a0e6784e2b775464f55a404d7fc9f75f0292df2ee",
+              "state": "dwellingLvl4",
+              "structural_component_area": 201811
+            },
+            {
+              "object_bbox": [
+                769,
+                240,
+                1513,
+                837
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingEnforcer/provider-atlas-v1.png",
+              "raw_atlas_sha256": "0c8037b78ab92ae2c45f7fb3664435cda79d8942624b302b797b847edc0cdc38",
+              "registration": {
+                "native_offset": [
+                  20,
+                  99
+                ],
+                "native_size": [
+                  103,
+                  83
+                ],
+                "uniform_family_scale": 0.1390284757118928
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingEnforcer/isolated/dwellingUpLvl4.png",
+              "source_sha256": "8ef7f7dcc5c0fd91c7ddda76bf5c59fe4a78cb83919a1ec9852af706bf8c075f",
+              "state": "dwellingUpLvl4",
+              "structural_component_area": 310277
+            }
+          ],
+          "release_accepted": false,
+          "route": "Genuine painted lower construction state from this exact reviewed whole-town architectural family, one uniform family scale.",
+          "site": "dwellingEnforcer",
+          "state": "dwellingLvl4",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingEnforcer-visible.png",
+          "visible_master_mask_sha256": "3604bb0e86e728c6185294e3a624555320f5d7dc34f247b1d552008639857e0d",
+          "visible_master_rgb_restyled": null,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingEnforcer-complete-contour.png",
+          "whole_contour_sha256": "3604bb0e86e728c6185294e3a624555320f5d7dc34f247b1d552008639857e0d",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        },
+        "dwellingUpLvl4": {
+          "actual_alpha128_bbox": [
+            10,
+            99,
+            133,
+            182
+          ],
+          "actual_alpha8_bbox": [
+            10,
+            99,
+            133,
+            182
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/dwellingUpLvl4/layer.png",
+          "native_layer_sha256": "e61d35c5b1d5f74c4edba251b1bf396bfbb4cb40f29bd020ff22b4c11d2930ad",
+          "native_visual_review": "pending",
+          "native_z": 186,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingEnforcer-occluded.png",
+          "occluded_master_mask_sha256": "b6e53314322f55ba066405adc869e19b2a870da54d1f41b9f9a85dcc113f11f7",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                68,
+                359,
+                716,
+                833
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingEnforcer/provider-atlas-v1.png",
+              "raw_atlas_sha256": "0c8037b78ab92ae2c45f7fb3664435cda79d8942624b302b797b847edc0cdc38",
+              "registration": {
+                "native_offset": [
+                  26,
+                  116
+                ],
+                "native_size": [
+                  90,
+                  66
+                ],
+                "uniform_family_scale": 0.1390284757118928
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingEnforcer/isolated/dwellingLvl4.png",
+              "source_sha256": "d35b0fa2f5b457e74989396a0e6784e2b775464f55a404d7fc9f75f0292df2ee",
+              "state": "dwellingLvl4",
+              "structural_component_area": 201811
+            },
+            {
+              "object_bbox": [
+                769,
+                240,
+                1513,
+                837
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingEnforcer/provider-atlas-v1.png",
+              "raw_atlas_sha256": "0c8037b78ab92ae2c45f7fb3664435cda79d8942624b302b797b847edc0cdc38",
+              "registration": {
+                "native_offset": [
+                  20,
+                  99
+                ],
+                "native_size": [
+                  103,
+                  83
+                ],
+                "uniform_family_scale": 0.1390284757118928
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingEnforcer/isolated/dwellingUpLvl4.png",
+              "source_sha256": "8ef7f7dcc5c0fd91c7ddda76bf5c59fe4a78cb83919a1ec9852af706bf8c075f",
+              "state": "dwellingUpLvl4",
+              "structural_component_area": 310277
+            }
+          ],
+          "release_accepted": false,
+          "route": "Actual reviewed whole-master visible RGB cut, with genuine painted completion only where another selected institution occludes it.",
+          "site": "dwellingEnforcer",
+          "state": "dwellingUpLvl4",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingEnforcer-visible.png",
+          "visible_master_mask_sha256": "3604bb0e86e728c6185294e3a624555320f5d7dc34f247b1d552008639857e0d",
+          "visible_master_rgb_restyled": false,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingEnforcer-complete-contour.png",
+          "whole_contour_sha256": "3604bb0e86e728c6185294e3a624555320f5d7dc34f247b1d552008639857e0d",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        }
+      },
+      "states": 2,
+      "visual": "A fenced drill yard with brace racks and cleaver racks."
+    },
+    {
+      "buildings": [
+        "dwellingLvl5",
+        "dwellingUpLvl5"
+      ],
+      "composition_rectangle": [
+        679,
+        116,
+        111,
+        98
+      ],
+      "construction": "One site, two states.",
+      "id": "dwellingAgent",
+      "name": "Reagent Store",
+      "native_z": 220,
+      "role": "tier five recruitment site.",
+      "source_states": {
+        "dwellingLvl5": {
+          "actual_alpha128_bbox": [
+            700,
+            139,
+            770,
+            213
+          ],
+          "actual_alpha8_bbox": [
+            700,
+            139,
+            770,
+            214
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/dwellingLvl5/layer.png",
+          "native_layer_sha256": "f7541ed50fdb46e4fd0ea6d76282d64aa6a40b8c3743b352c0186ed6c2a5422b",
+          "native_visual_review": "pending",
+          "native_z": 220,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingAgent-occluded.png",
+          "occluded_master_mask_sha256": "b6e53314322f55ba066405adc869e19b2a870da54d1f41b9f9a85dcc113f11f7",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                68,
+                281,
+                663,
+                917
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingAgent/provider-atlas-v1.png",
+              "raw_atlas_sha256": "3fafe8c33ee12d5f0a552dc489bf082ee9bb80c91db245c721e7b9e7162915cc",
+              "registration": {
+                "native_offset": [
+                  700,
+                  139
+                ],
+                "native_size": [
+                  70,
+                  75
+                ],
+                "uniform_family_scale": 0.11722488038277512
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingAgent/isolated/dwellingLvl5.png",
+              "source_sha256": "10adcc5ef0776a8fdf914a4378aca6c0bd801b54feb6e8e2298560e533e27ed5",
+              "state": "dwellingLvl5",
+              "structural_component_area": 244034
+            },
+            {
+              "object_bbox": [
+                704,
+                78,
+                1500,
+                914
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingAgent/provider-atlas-v1.png",
+              "raw_atlas_sha256": "3fafe8c33ee12d5f0a552dc489bf082ee9bb80c91db245c721e7b9e7162915cc",
+              "registration": {
+                "native_offset": [
+                  688,
+                  116
+                ],
+                "native_size": [
+                  93,
+                  98
+                ],
+                "uniform_family_scale": 0.11722488038277512
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingAgent/isolated/dwellingUpLvl5.png",
+              "source_sha256": "fc7ee3acc51ea37e05468df193934c7d886374180405a3ee029eedc740bb78ee",
+              "state": "dwellingUpLvl5",
+              "structural_component_area": 445011
+            }
+          ],
+          "release_accepted": false,
+          "route": "Genuine painted lower construction state from this exact reviewed whole-town architectural family, one uniform family scale.",
+          "site": "dwellingAgent",
+          "state": "dwellingLvl5",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingAgent-visible.png",
+          "visible_master_mask_sha256": "691c489b85c63cb6ba33489b5f7c50656da35fa47cec6c8b1e69970135947e01",
+          "visible_master_rgb_restyled": null,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingAgent-complete-contour.png",
+          "whole_contour_sha256": "691c489b85c63cb6ba33489b5f7c50656da35fa47cec6c8b1e69970135947e01",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        },
+        "dwellingUpLvl5": {
+          "actual_alpha128_bbox": [
+            679,
+            116,
+            790,
+            214
+          ],
+          "actual_alpha8_bbox": [
+            679,
+            116,
+            790,
+            214
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/dwellingUpLvl5/layer.png",
+          "native_layer_sha256": "457e6f0ed3f9eaa846c25c1f58f7874a8b67621c1bc6a0ceefc532b864b8934e",
+          "native_visual_review": "pending",
+          "native_z": 220,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingAgent-occluded.png",
+          "occluded_master_mask_sha256": "b6e53314322f55ba066405adc869e19b2a870da54d1f41b9f9a85dcc113f11f7",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                68,
+                281,
+                663,
+                917
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingAgent/provider-atlas-v1.png",
+              "raw_atlas_sha256": "3fafe8c33ee12d5f0a552dc489bf082ee9bb80c91db245c721e7b9e7162915cc",
+              "registration": {
+                "native_offset": [
+                  700,
+                  139
+                ],
+                "native_size": [
+                  70,
+                  75
+                ],
+                "uniform_family_scale": 0.11722488038277512
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingAgent/isolated/dwellingLvl5.png",
+              "source_sha256": "10adcc5ef0776a8fdf914a4378aca6c0bd801b54feb6e8e2298560e533e27ed5",
+              "state": "dwellingLvl5",
+              "structural_component_area": 244034
+            },
+            {
+              "object_bbox": [
+                704,
+                78,
+                1500,
+                914
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingAgent/provider-atlas-v1.png",
+              "raw_atlas_sha256": "3fafe8c33ee12d5f0a552dc489bf082ee9bb80c91db245c721e7b9e7162915cc",
+              "registration": {
+                "native_offset": [
+                  688,
+                  116
+                ],
+                "native_size": [
+                  93,
+                  98
+                ],
+                "uniform_family_scale": 0.11722488038277512
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingAgent/isolated/dwellingUpLvl5.png",
+              "source_sha256": "fc7ee3acc51ea37e05468df193934c7d886374180405a3ee029eedc740bb78ee",
+              "state": "dwellingUpLvl5",
+              "structural_component_area": 445011
+            }
+          ],
+          "release_accepted": false,
+          "route": "Actual reviewed whole-master visible RGB cut, with genuine painted completion only where another selected institution occludes it.",
+          "site": "dwellingAgent",
+          "state": "dwellingUpLvl5",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingAgent-visible.png",
+          "visible_master_mask_sha256": "691c489b85c63cb6ba33489b5f7c50656da35fa47cec6c8b1e69970135947e01",
+          "visible_master_rgb_restyled": false,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingAgent-complete-contour.png",
+          "whole_contour_sha256": "691c489b85c63cb6ba33489b5f7c50656da35fa47cec6c8b1e69970135947e01",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        }
+      },
+      "states": 2,
+      "visual": "Shelved reagent jars, a mixing bench and a fume hood over the door."
+    },
+    {
+      "buildings": [
+        "dwellingLvl6",
+        "dwellingUpLvl6"
+      ],
+      "composition_rectangle": [
+        649,
+        215,
+        149,
+        73
+      ],
+      "construction": "One site, two states.",
+      "id": "dwellingVeteran",
+      "name": "Sump Reclaimer Depot",
+      "native_z": 303,
+      "role": "tier six recruitment site.",
+      "source_states": {
+        "dwellingLvl6": {
+          "actual_alpha128_bbox": [
+            665,
+            228,
+            780,
+            286
+          ],
+          "actual_alpha8_bbox": [
+            665,
+            228,
+            781,
+            287
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/dwellingLvl6/layer.png",
+          "native_layer_sha256": "9d1510c1e42d0506ce9b1fc13d691f237b69370755db00cae12056994b1c53ac",
+          "native_visual_review": "pending",
+          "native_z": 303,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingVeteran-occluded.png",
+          "occluded_master_mask_sha256": "b6e53314322f55ba066405adc869e19b2a870da54d1f41b9f9a85dcc113f11f7",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                51,
+                194,
+                948,
+                650
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingVeteran/provider-atlas-v1.png",
+              "raw_atlas_sha256": "76238ff8102924a20ab54596436373d5bc178bbb959f73747a9242bd48045225",
+              "registration": {
+                "native_offset": [
+                  665,
+                  228
+                ],
+                "native_size": [
+                  117,
+                  60
+                ],
+                "uniform_family_scale": 0.13058720420683612
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingVeteran/isolated/dwellingLvl6.png",
+              "source_sha256": "6cabb04e696ff676d8531f61a0a67efbcd3c0767b33f8ed501269cf82319beeb",
+              "state": "dwellingLvl6",
+              "structural_component_area": 264804
+            },
+            {
+              "object_bbox": [
+                996,
+                105,
+                2137,
+                648
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingVeteran/provider-atlas-v1.png",
+              "raw_atlas_sha256": "76238ff8102924a20ab54596436373d5bc178bbb959f73747a9242bd48045225",
+              "registration": {
+                "native_offset": [
+                  649,
+                  217
+                ],
+                "native_size": [
+                  149,
+                  71
+                ],
+                "uniform_family_scale": 0.13058720420683612
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingVeteran/isolated/dwellingUpLvl6.png",
+              "source_sha256": "469fb465a407732c9134708ce3c552bb23f050007b8059e43a98f4e1de660017",
+              "state": "dwellingUpLvl6",
+              "structural_component_area": 440100
+            }
+          ],
+          "release_accepted": false,
+          "route": "Genuine painted lower construction state from this exact reviewed whole-town architectural family, one uniform family scale.",
+          "site": "dwellingVeteran",
+          "state": "dwellingLvl6",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingVeteran-visible.png",
+          "visible_master_mask_sha256": "5e814ee7ea6e6889ab153eb5233edaab8cf47392f0e0bf2333196907ddf530b3",
+          "visible_master_rgb_restyled": null,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingVeteran-complete-contour.png",
+          "whole_contour_sha256": "5e814ee7ea6e6889ab153eb5233edaab8cf47392f0e0bf2333196907ddf530b3",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        },
+        "dwellingUpLvl6": {
+          "actual_alpha128_bbox": [
+            649,
+            215,
+            798,
+            288
+          ],
+          "actual_alpha8_bbox": [
+            649,
+            215,
+            798,
+            288
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/dwellingUpLvl6/layer.png",
+          "native_layer_sha256": "0c424ebfecd9be104eae6c2bcc48477c95497cd3bc0713339878f3586316ec7f",
+          "native_visual_review": "pending",
+          "native_z": 303,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingVeteran-occluded.png",
+          "occluded_master_mask_sha256": "b6e53314322f55ba066405adc869e19b2a870da54d1f41b9f9a85dcc113f11f7",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                51,
+                194,
+                948,
+                650
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingVeteran/provider-atlas-v1.png",
+              "raw_atlas_sha256": "76238ff8102924a20ab54596436373d5bc178bbb959f73747a9242bd48045225",
+              "registration": {
+                "native_offset": [
+                  665,
+                  228
+                ],
+                "native_size": [
+                  117,
+                  60
+                ],
+                "uniform_family_scale": 0.13058720420683612
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingVeteran/isolated/dwellingLvl6.png",
+              "source_sha256": "6cabb04e696ff676d8531f61a0a67efbcd3c0767b33f8ed501269cf82319beeb",
+              "state": "dwellingLvl6",
+              "structural_component_area": 264804
+            },
+            {
+              "object_bbox": [
+                996,
+                105,
+                2137,
+                648
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingVeteran/provider-atlas-v1.png",
+              "raw_atlas_sha256": "76238ff8102924a20ab54596436373d5bc178bbb959f73747a9242bd48045225",
+              "registration": {
+                "native_offset": [
+                  649,
+                  217
+                ],
+                "native_size": [
+                  149,
+                  71
+                ],
+                "uniform_family_scale": 0.13058720420683612
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingVeteran/isolated/dwellingUpLvl6.png",
+              "source_sha256": "469fb465a407732c9134708ce3c552bb23f050007b8059e43a98f4e1de660017",
+              "state": "dwellingUpLvl6",
+              "structural_component_area": 440100
+            }
+          ],
+          "release_accepted": false,
+          "route": "Actual reviewed whole-master visible RGB cut, with genuine painted completion only where another selected institution occludes it.",
+          "site": "dwellingVeteran",
+          "state": "dwellingUpLvl6",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingVeteran-visible.png",
+          "visible_master_mask_sha256": "5e814ee7ea6e6889ab153eb5233edaab8cf47392f0e0bf2333196907ddf530b3",
+          "visible_master_rgb_restyled": false,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingVeteran-complete-contour.png",
+          "whole_contour_sha256": "5e814ee7ea6e6889ab153eb5233edaab8cf47392f0e0bf2333196907ddf530b3",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        }
+      },
+      "states": 2,
+      "visual": "Living salvage workers; extended hydraulic clamp and reinforced gantry upgrade."
+    },
+    {
+      "buildings": [
+        "dwellingLvl7",
+        "dwellingUpLvl7"
+      ],
+      "composition_rectangle": [
+        276,
+        7,
+        145,
+        113
+      ],
+      "construction": "One site, two states: the pens of the Apex Predator line, then the perfected strain.",
+      "id": "dwellingPredator",
+      "name": "Chem-Golem Foundry",
+      "native_z": 126,
+      "role": "tier seven creature quarters for the two-hex laboratory beast line.",
+      "source_states": {
+        "dwellingLvl7": {
+          "actual_alpha128_bbox": [
+            288,
+            31,
+            409,
+            117
+          ],
+          "actual_alpha8_bbox": [
+            288,
+            31,
+            410,
+            118
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/dwellingLvl7/layer.png",
+          "native_layer_sha256": "948150a48e7d37ba6cb85444fcff7a21abb9465c81cc21012584351fecb1bed4",
+          "native_visual_review": "pending",
+          "native_z": 126,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingPredator-occluded.png",
+          "occluded_master_mask_sha256": "170fa6a2208bf33cf3ac942c5e9e161ac8203e7c243a0e10c761b05e676daca2",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                6,
+                415,
+                700,
+                917
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingPredator/provider-atlas-v1.png",
+              "raw_atlas_sha256": "c1faf7386a9f4f0e3cd7279c82109bc8f04ab47d6bdf521c35e98d468dd64852",
+              "registration": {
+                "native_offset": [
+                  288,
+                  31
+                ],
+                "native_size": [
+                  122,
+                  89
+                ],
+                "uniform_family_scale": 0.17639902676399027
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingPredator/isolated/dwellingLvl7.png",
+              "source_sha256": "8a4242c90d5a128d6c308bc2c90eeddd5876f52c6e340129caf32a9b13f5b509",
+              "state": "dwellingLvl7",
+              "structural_component_area": 242303
+            },
+            {
+              "object_bbox": [
+                714,
+                286,
+                1536,
+                913
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingPredator/provider-atlas-v1.png",
+              "raw_atlas_sha256": "c1faf7386a9f4f0e3cd7279c82109bc8f04ab47d6bdf521c35e98d468dd64852",
+              "registration": {
+                "native_offset": [
+                  276,
+                  9
+                ],
+                "native_size": [
+                  145,
+                  111
+                ],
+                "uniform_family_scale": 0.17639902676399027
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingPredator/isolated/dwellingUpLvl7.png",
+              "source_sha256": "0190b6c294137536d6d16d99418934e1ccd7cb3b2c4a61f5b9a8b310dbd85ea9",
+              "state": "dwellingUpLvl7",
+              "structural_component_area": 382765
+            }
+          ],
+          "release_accepted": false,
+          "route": "Genuine painted lower construction state from this exact reviewed whole-town architectural family, one uniform family scale.",
+          "site": "dwellingPredator",
+          "state": "dwellingLvl7",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingPredator-visible.png",
+          "visible_master_mask_sha256": "1e553b8c96b17bd90c4aaf606cabfb868b8e8246569e008779f277c472ba2b57",
+          "visible_master_rgb_restyled": null,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingPredator-complete-contour.png",
+          "whole_contour_sha256": "39073d4e115524153d937c9e461ecd868fdec3cdfa14b447bb409f49eca17212",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        },
+        "dwellingUpLvl7": {
+          "actual_alpha128_bbox": [
+            277,
+            7,
+            420,
+            120
+          ],
+          "actual_alpha8_bbox": [
+            276,
+            7,
+            421,
+            120
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/dwellingUpLvl7/layer.png",
+          "native_layer_sha256": "ab52d463045e2971fe92fb137be6547f25478eb6b78ea6e8c20fe52c888819ff",
+          "native_visual_review": "pending",
+          "native_z": 126,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingPredator-occluded.png",
+          "occluded_master_mask_sha256": "170fa6a2208bf33cf3ac942c5e9e161ac8203e7c243a0e10c761b05e676daca2",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                6,
+                415,
+                700,
+                917
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingPredator/provider-atlas-v1.png",
+              "raw_atlas_sha256": "c1faf7386a9f4f0e3cd7279c82109bc8f04ab47d6bdf521c35e98d468dd64852",
+              "registration": {
+                "native_offset": [
+                  288,
+                  31
+                ],
+                "native_size": [
+                  122,
+                  89
+                ],
+                "uniform_family_scale": 0.17639902676399027
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingPredator/isolated/dwellingLvl7.png",
+              "source_sha256": "8a4242c90d5a128d6c308bc2c90eeddd5876f52c6e340129caf32a9b13f5b509",
+              "state": "dwellingLvl7",
+              "structural_component_area": 242303
+            },
+            {
+              "object_bbox": [
+                714,
+                286,
+                1536,
+                913
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/dwellingPredator/provider-atlas-v1.png",
+              "raw_atlas_sha256": "c1faf7386a9f4f0e3cd7279c82109bc8f04ab47d6bdf521c35e98d468dd64852",
+              "registration": {
+                "native_offset": [
+                  276,
+                  9
+                ],
+                "native_size": [
+                  145,
+                  111
+                ],
+                "uniform_family_scale": 0.17639902676399027
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/dwellingPredator/isolated/dwellingUpLvl7.png",
+              "source_sha256": "0190b6c294137536d6d16d99418934e1ccd7cb3b2c4a61f5b9a8b310dbd85ea9",
+              "state": "dwellingUpLvl7",
+              "structural_component_area": 382765
+            }
+          ],
+          "release_accepted": false,
+          "route": "Actual reviewed whole-master visible RGB cut, with genuine painted completion only where another selected institution occludes it.",
+          "site": "dwellingPredator",
+          "state": "dwellingUpLvl7",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingPredator-visible.png",
+          "visible_master_mask_sha256": "1e553b8c96b17bd90c4aaf606cabfb868b8e8246569e008779f277c472ba2b57",
+          "visible_master_rgb_restyled": false,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/dwellingPredator-complete-contour.png",
+          "whole_contour_sha256": "39073d4e115524153d937c9e461ecd868fdec3cdfa14b447bb409f49eca17212",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        }
+      },
+      "states": 2,
+      "visual": "Unmanned industrial golem casting institution; rear multi-storey pressure foundry landmark."
+    },
+    {
+      "buildings": [
+        "tavern"
+      ],
+      "composition_rectangle": [
+        293,
+        130,
+        120,
+        68
+      ],
+      "construction": "One site, one state.",
+      "id": "grog",
+      "name": "The Grog",
+      "native_z": 210,
+      "role": "tavern and hero recruitment.",
+      "source_states": {
+        "tavern": {
+          "actual_alpha128_bbox": [
+            293,
+            130,
+            413,
+            198
+          ],
+          "actual_alpha8_bbox": [
+            293,
+            130,
+            413,
+            198
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/tavern/layer.png",
+          "native_layer_sha256": "5848e8e1371b3041a7fc706efe430e7138a4cd2cd7d16c41cfc9423ad9c4c946",
+          "native_visual_review": "pending",
+          "native_z": 210,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/grog-occluded.png",
+          "occluded_master_mask_sha256": "62be75a10783b213ffaa449cd022adc704be00f5dbfb9026dd923656851108b2",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                22,
+                143,
+                1231,
+                1089
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/grog/provider-atlas-v1.png",
+              "raw_atlas_sha256": "f301d1cf170d986fb00a9a2843a3819ff1b50a288426653731829107728f4d77",
+              "registration": {
+                "native_offset": [
+                  310,
+                  130
+                ],
+                "native_size": [
+                  87,
+                  68
+                ],
+                "uniform_family_scale": 0.07188160676532769
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/grog/isolated/tavern.png",
+              "source_sha256": "14cd32d324f02c30f59069bbe022a89843a5c79a0c47093ef13ced1a02ba8f88",
+              "state": "tavern",
+              "structural_component_area": 706421
+            }
+          ],
+          "release_accepted": false,
+          "route": "Actual reviewed whole-master visible RGB cut, with genuine painted completion only where another selected institution occludes it.",
+          "site": "grog",
+          "state": "tavern",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/grog-visible.png",
+          "visible_master_mask_sha256": "5f5af14cf4013b2c98013731fb29e968849483326f0fe272cb00f8e0aec70e70",
+          "visible_master_rgb_restyled": false,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/grog-complete-contour.png",
+          "whole_contour_sha256": "960b312c6116b13c701c6f06afd29154ebec07ea194206e07163b2b011d6a574",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        }
+      },
+      "states": 1,
+      "visual": "A low-ceilinged bar built into a wall, with a warm light in one corner and the rest in shadow."
+    },
+    {
+      "buildings": [
+        "marketplace"
+      ],
+      "composition_rectangle": [
+        466,
+        164,
+        164,
+        51
+      ],
+      "construction": "One site, one state.",
+      "id": "scrapExchange",
+      "name": "Scrap Exchange",
+      "native_z": 235,
+      "role": "marketplace and resource trade.",
+      "source_states": {
+        "marketplace": {
+          "actual_alpha128_bbox": [
+            466,
+            164,
+            630,
+            215
+          ],
+          "actual_alpha8_bbox": [
+            466,
+            164,
+            630,
+            215
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/marketplace/layer.png",
+          "native_layer_sha256": "6205a4e6801098b92288ec3dad64fcfc63cbe87081e57feb15097add092fb9ee",
+          "native_visual_review": "pending",
+          "native_z": 235,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/scrapExchange-occluded.png",
+          "occluded_master_mask_sha256": "b6e53314322f55ba066405adc869e19b2a870da54d1f41b9f9a85dcc113f11f7",
+          "provider_inputs": [],
+          "release_accepted": false,
+          "route": "Actual reviewed whole-master visible RGB cut, with genuine painted completion only where another selected institution occludes it.",
+          "site": "scrapExchange",
+          "state": "marketplace",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/scrapExchange-visible.png",
+          "visible_master_mask_sha256": "f5fd485e1929455706ffbdef638b758716bb36e55f32a2212e9109ad89b2d3ff",
+          "visible_master_rgb_restyled": false,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/scrapExchange-complete-contour.png",
+          "whole_contour_sha256": "f5fd485e1929455706ffbdef638b758716bb36e55f32a2212e9109ad89b2d3ff",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        }
+      },
+      "states": 1,
+      "visual": "Open trestles of salvage, weighed on a crane scale."
+    },
+    {
+      "buildings": [
+        "blacksmith"
+      ],
+      "composition_rectangle": [
+        0,
+        190,
+        191,
+        135
+      ],
+      "construction": "One site, one state.",
+      "id": "ammoFoundry",
+      "name": "Ammo Foundry",
+      "native_z": 337,
+      "role": "blacksmith and the native Ammo Cart.",
+      "source_states": {
+        "blacksmith": {
+          "actual_alpha128_bbox": [
+            0,
+            190,
+            191,
+            325
+          ],
+          "actual_alpha8_bbox": [
+            0,
+            190,
+            191,
+            325
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/blacksmith/layer.png",
+          "native_layer_sha256": "dae9b81d54606d535a43c02aa94fcc99f0eb02ff32b8e07ec85b30db9dde1a58",
+          "native_visual_review": "pending",
+          "native_z": 337,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/ammoFoundry-occluded.png",
+          "occluded_master_mask_sha256": "b6e53314322f55ba066405adc869e19b2a870da54d1f41b9f9a85dcc113f11f7",
+          "provider_inputs": [],
+          "release_accepted": false,
+          "route": "Actual reviewed whole-master visible RGB cut, with genuine painted completion only where another selected institution occludes it.",
+          "site": "ammoFoundry",
+          "state": "blacksmith",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/ammoFoundry-visible.png",
+          "visible_master_mask_sha256": "f385202a4c2d9ce06d39d169074a4f737718db47f426eee640c2c1253967a58e",
+          "visible_master_rgb_restyled": false,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/ammoFoundry-complete-contour.png",
+          "whole_contour_sha256": "f385202a4c2d9ce06d39d169074a4f737718db47f426eee640c2c1253967a58e",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        }
+      },
+      "states": 1,
+      "visual": "A shell shop: a casting bench, a rack of casings and a heat glow from the forge slit."
+    },
+    {
+      "buildings": [
+        "resourceSilo"
+      ],
+      "composition_rectangle": [
+        144,
+        161,
+        42,
+        68
+      ],
+      "construction": "One site, one state.",
+      "id": "shimmerFactory",
+      "name": "Shimmer Factory",
+      "native_z": 231,
+      "role": "rare resource silo producing one sulfur per day.",
+      "source_states": {
+        "resourceSilo": {
+          "actual_alpha128_bbox": [
+            144,
+            161,
+            186,
+            229
+          ],
+          "actual_alpha8_bbox": [
+            144,
+            161,
+            186,
+            229
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/resourceSilo/layer.png",
+          "native_layer_sha256": "4521d5456a21afd10e7c9f796632d9da66ce9d7d53b95aaa2d9c047a26ef55ce",
+          "native_visual_review": "pending",
+          "native_z": 231,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/shimmerFactory-occluded.png",
+          "occluded_master_mask_sha256": "19a85c4b7abbd94d18878f76c2ea8966d7569ca0e0b56d94cbe5c16965a1dcfb",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                242,
+                58,
+                1076,
+                1171
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/shimmerFactory/provider-atlas-v1.png",
+              "raw_atlas_sha256": "8c91a8cd83b25cd9dd45a171f3cb80137b5707fa33dbb84c6352e58cdb3a6722",
+              "registration": {
+                "native_offset": [
+                  144,
+                  173
+                ],
+                "native_size": [
+                  42,
+                  56
+                ],
+                "uniform_family_scale": 0.050359712230215826
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/shimmerFactory/isolated/resourceSilo.png",
+              "source_sha256": "538d47b5aa718c58b5789fcf74aeebf4cd62795f529766010904efb62861f435",
+              "state": "resourceSilo",
+              "structural_component_area": 616403
+            }
+          ],
+          "release_accepted": false,
+          "route": "Actual reviewed whole-master visible RGB cut, with genuine painted completion only where another selected institution occludes it.",
+          "site": "shimmerFactory",
+          "state": "resourceSilo",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/shimmerFactory-visible.png",
+          "visible_master_mask_sha256": "c38e247ce6fa73a8dc9d23bd16af375a544924a81f111b55b7196b60ee294bcb",
+          "visible_master_rgb_restyled": false,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/shimmerFactory-complete-contour.png",
+          "whole_contour_sha256": "83fc3bac74237540a1a254ba52361e632dc95496a57c4183b8213e6211bf1ce7",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        }
+      },
+      "states": 1,
+      "visual": "A refinery block with condenser towers, green reagent reservoirs and inspection windows, purple-glass accents and brown/rusted pressure pipes. Amber remains secondary furnace heat."
+    },
+    {
+      "buildings": [
+        "special1"
+      ],
+      "composition_rectangle": [
+        181,
+        234,
+        121,
+        95
+      ],
+      "construction": "One site, one state.",
+      "id": "augmentationWorkshop",
+      "name": "Augmentation Workshop",
+      "native_z": 330,
+      "role": "special one: the fabrication prerequisite of the tier six upgrade.",
+      "source_states": {
+        "special1": {
+          "actual_alpha128_bbox": [
+            182,
+            234,
+            302,
+            329
+          ],
+          "actual_alpha8_bbox": [
+            181,
+            234,
+            302,
+            329
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/special1/layer.png",
+          "native_layer_sha256": "25190155f424eb34141eb9ce6244782b02d2ddbd6c1d984bdf8407c1274a7449",
+          "native_visual_review": "pending",
+          "native_z": 330,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/augmentationWorkshop-occluded.png",
+          "occluded_master_mask_sha256": "6f9e961d7cd73c1378a9170a1b36a3a60e970be7499649f75b878e538426a279",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                64,
+                71,
+                1503,
+                965
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/augmentationWorkshop/provider-atlas-v1.png",
+              "raw_atlas_sha256": "54cdcc3c52929ede5edfc2cf31946bd930bab71208eccfffcefa5aa1c6ec168e",
+              "registration": {
+                "native_offset": [
+                  179,
+                  251
+                ],
+                "native_size": [
+                  125,
+                  78
+                ],
+                "uniform_family_scale": 0.08686587908269632
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/augmentationWorkshop/isolated/special1.png",
+              "source_sha256": "28e9092a3526000c703e719ebfd254ea65b25f0bcd652d99e352bf23fee823aa",
+              "state": "special1",
+              "structural_component_area": 851880
+            }
+          ],
+          "release_accepted": false,
+          "route": "Actual reviewed whole-master visible RGB cut, with genuine painted completion only where another selected institution occludes it.",
+          "site": "augmentationWorkshop",
+          "state": "special1",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/augmentationWorkshop-visible.png",
+          "visible_master_mask_sha256": "752680595be86699fa50a4cff7bd2fc13fe196c2a5331b606ea27723ac8d6924",
+          "visible_master_rgb_restyled": false,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/augmentationWorkshop-complete-contour.png",
+          "whole_contour_sha256": "b9bf66dc0ed790f346d48ab2ea9e4717423547e4c6f0368a97d644b0a3bb0d87",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        }
+      },
+      "states": 1,
+      "visual": "A clean workshop with brace tooling on the wall and a workbench lamp."
+    },
+    {
+      "buildings": [
+        "special2"
+      ],
+      "composition_rectangle": [
+        350,
+        250,
+        65,
+        83
+      ],
+      "construction": "One site, one state.",
+      "id": "augmentationClinic",
+      "name": "Augmentation Clinic",
+      "native_z": 335,
+      "role": "special two: the weekly mana top-up visit.",
+      "source_states": {
+        "special2": {
+          "actual_alpha128_bbox": [
+            350,
+            250,
+            415,
+            333
+          ],
+          "actual_alpha8_bbox": [
+            350,
+            250,
+            415,
+            333
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/special2/layer.png",
+          "native_layer_sha256": "e4e0c78296f369982f377433c98299dcc3820ea356df83c54d834b4a15b9a247",
+          "native_visual_review": "pending",
+          "native_z": 335,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/augmentationClinic-occluded.png",
+          "occluded_master_mask_sha256": "70f13259896a6ffce3ef7eb86af49b17a36621b291fcd194d3e1a7a3a9b5eb40",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                93,
+                56,
+                1176,
+                1163
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/augmentationClinic/provider-atlas-v1.png",
+              "raw_atlas_sha256": "781957f1b132740b29e7abfb6ae39694357cbe54879c08f12c2cda27e4da6814",
+              "registration": {
+                "native_offset": [
+                  350,
+                  267
+                ],
+                "native_size": [
+                  65,
+                  66
+                ],
+                "uniform_family_scale": 0.06001846722068329
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/augmentationClinic/isolated/special2.png",
+              "source_sha256": "4244a545e13c00225cbe9a6678623400a8e18a212378bfb8262ba575208ef77f",
+              "state": "special2",
+              "structural_component_area": 819902
+            }
+          ],
+          "release_accepted": false,
+          "route": "Actual reviewed whole-master visible RGB cut, with genuine painted completion only where another selected institution occludes it.",
+          "site": "augmentationClinic",
+          "state": "special2",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/augmentationClinic-visible.png",
+          "visible_master_mask_sha256": "0d838cb70bf9df88d8e698c9a05c9479e8ace589943c957061eea62f1ee93228",
+          "visible_master_rgb_restyled": false,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/augmentationClinic-complete-contour.png",
+          "whole_contour_sha256": "daeaf7b2c85d41a0acc7d95738b11e85931ed33104b1e965514207bc076812d5",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        }
+      },
+      "states": 1,
+      "visual": "A quiet clinic room with cots, a saline stand and a wall of numbered cabinets."
+    },
+    {
+      "buildings": [
+        "special3"
+      ],
+      "composition_rectangle": [
+        1,
+        6,
+        137,
+        73
+      ],
+      "construction": "One site, one state.",
+      "id": "theSump",
+      "name": "The Sump",
+      "native_z": 80,
+      "role": "special three: the siege Defense bonus.",
+      "source_states": {
+        "special3": {
+          "actual_alpha128_bbox": [
+            1,
+            6,
+            138,
+            79
+          ],
+          "actual_alpha8_bbox": [
+            1,
+            6,
+            138,
+            79
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/special3/layer.png",
+          "native_layer_sha256": "4b01dd09f182d6c7e7dc9820ba02a8ea5a88d33fefa129cbdc29d0b119c8c0f4",
+          "native_visual_review": "pending",
+          "native_z": 80,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/theSump-occluded.png",
+          "occluded_master_mask_sha256": "b6e53314322f55ba066405adc869e19b2a870da54d1f41b9f9a85dcc113f11f7",
+          "provider_inputs": [],
+          "release_accepted": false,
+          "route": "Actual reviewed whole-master visible RGB cut, with genuine painted completion only where another selected institution occludes it.",
+          "site": "theSump",
+          "state": "special3",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/theSump-visible.png",
+          "visible_master_mask_sha256": "bb76c4ff4e84073c1a327f3f17a5ebfbdd5f3bc240e85e3732c60db6d6cacd9b",
+          "visible_master_rgb_restyled": false,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/theSump-complete-contour.png",
+          "whole_contour_sha256": "bb76c4ff4e84073c1a327f3f17a5ebfbdd5f3bc240e85e3732c60db6d6cacd9b",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        }
+      },
+      "states": 1,
+      "visual": "A fenced outflow basin with a heavy grating, a settling tank and vapour over the water."
+    },
+    {
+      "buildings": [
+        "special4"
+      ],
+      "composition_rectangle": [
+        403,
+        226,
+        159,
+        115
+      ],
+      "construction": "One site, one state; it is built and stays built.",
+      "id": "fightingPit",
+      "name": "Fighting Pit",
+      "native_z": 349,
+      "role": "fourth special building: the pit that pays a daily wage to the town.",
+      "source_states": {
+        "special4": {
+          "actual_alpha128_bbox": [
+            403,
+            226,
+            562,
+            341
+          ],
+          "actual_alpha8_bbox": [
+            403,
+            226,
+            562,
+            341
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/special4/layer.png",
+          "native_layer_sha256": "12d8c275c2f6be62a589b245f641c7a657694103ce3cef6561a480b1cbb045ea",
+          "native_visual_review": "pending",
+          "native_z": 349,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/fightingPit-occluded.png",
+          "occluded_master_mask_sha256": "b6e53314322f55ba066405adc869e19b2a870da54d1f41b9f9a85dcc113f11f7",
+          "provider_inputs": [],
+          "release_accepted": false,
+          "route": "Actual reviewed whole-master visible RGB cut, with genuine painted completion only where another selected institution occludes it.",
+          "site": "fightingPit",
+          "state": "special4",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/fightingPit-visible.png",
+          "visible_master_mask_sha256": "fa49badb427cb4a0fabbfb6c15f7f96f2e66a3209248c637bacb6455ce04b058",
+          "visible_master_rgb_restyled": false,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/fightingPit-complete-contour.png",
+          "whole_contour_sha256": "fa49badb427cb4a0fabbfb6c15f7f96f2e66a3209248c637bacb6455ce04b058",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        }
+      },
+      "states": 1,
+      "visual": "A sunken chemical pit ringed by scaffold and pipework, with a grimy gallery of onlookers above it. The crowd is silhouettes and gloved hands, not readable faces."
+    },
+    {
+      "buildings": [
+        "shipyard",
+        "ship"
+      ],
+      "composition_rectangle": [
+        646,
+        282,
+        149,
+        76
+      ],
+      "construction": "One site, two states.",
+      "id": "shipyard",
+      "name": "Sump Dock",
+      "native_z": 372,
+      "role": "coastal shipyard and the moored vessel display.",
+      "source_states": {
+        "ship": {
+          "actual_alpha128_bbox": [
+            646,
+            282,
+            795,
+            358
+          ],
+          "actual_alpha8_bbox": [
+            646,
+            282,
+            795,
+            358
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/ship/layer.png",
+          "native_layer_sha256": "babe7d5016b57ed1427d857b5c4e310d2a5d59eca48c9cc59653622eb3cd7b73",
+          "native_visual_review": "pending",
+          "native_z": 372,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/shipyard-occluded.png",
+          "occluded_master_mask_sha256": "b6e53314322f55ba066405adc869e19b2a870da54d1f41b9f9a85dcc113f11f7",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                88,
+                190,
+                936,
+                607
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/shipyard/provider-atlas-v1.png",
+              "raw_atlas_sha256": "6b9f455429f79d3de1232cdf46442546edfc2b69ede6e8a33d8935017d36dce4",
+              "registration": {
+                "native_offset": [
+                  690,
+                  282
+                ],
+                "native_size": [
+                  88,
+                  43
+                ],
+                "uniform_family_scale": 0.10377358490566038
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/shipyard/isolated/shipyard.png",
+              "source_sha256": "9a5f81aba3bdafc0460eec96b29dd4bc393f22e558d09dd4fa10cf43f871d307",
+              "state": "shipyard",
+              "structural_component_area": 158164
+            },
+            {
+              "object_bbox": [
+                1102,
+                175,
+                2089,
+                644
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/shipyard/provider-atlas-v1.png",
+              "raw_atlas_sha256": "6b9f455429f79d3de1232cdf46442546edfc2b69ede6e8a33d8935017d36dce4",
+              "registration": {
+                "native_offset": [
+                  646,
+                  287
+                ],
+                "native_size": [
+                  149,
+                  71
+                ],
+                "uniform_family_scale": 0.15096251266464034
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/shipyard/isolated/ship.png",
+              "source_sha256": "33c5e734f2441e60cb9f9227ea218f37b504853b18f4482186b486f1764aec50",
+              "state": "ship",
+              "structural_component_area": 270627
+            }
+          ],
+          "release_accepted": false,
+          "route": "Actual reviewed whole-master visible RGB cut, with genuine painted completion only where another selected institution occludes it.",
+          "site": "shipyard",
+          "state": "ship",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/shipyard-visible.png",
+          "visible_master_mask_sha256": "93f5e1b500d98c1fdb99da83e18bc417e292be57d56b54daa5f56c5b62d2ef21",
+          "visible_master_rgb_restyled": false,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/shipyard-complete-contour.png",
+          "whole_contour_sha256": "93f5e1b500d98c1fdb99da83e18bc417e292be57d56b54daa5f56c5b62d2ef21",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        },
+        "shipyard": {
+          "actual_alpha128_bbox": [
+            690,
+            282,
+            778,
+            325
+          ],
+          "actual_alpha8_bbox": [
+            690,
+            282,
+            778,
+            325
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/shipyard/layer.png",
+          "native_layer_sha256": "ea4edf1906e73dbaad5d95da6373a9e0c84edc4b3619249848694cb62ab0921e",
+          "native_visual_review": "pending",
+          "native_z": 372,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/shipyard-occluded.png",
+          "occluded_master_mask_sha256": "b6e53314322f55ba066405adc869e19b2a870da54d1f41b9f9a85dcc113f11f7",
+          "provider_inputs": [
+            {
+              "object_bbox": [
+                88,
+                190,
+                936,
+                607
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/shipyard/provider-atlas-v1.png",
+              "raw_atlas_sha256": "6b9f455429f79d3de1232cdf46442546edfc2b69ede6e8a33d8935017d36dce4",
+              "registration": {
+                "native_offset": [
+                  690,
+                  282
+                ],
+                "native_size": [
+                  88,
+                  43
+                ],
+                "uniform_family_scale": 0.10377358490566038
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/shipyard/isolated/shipyard.png",
+              "source_sha256": "9a5f81aba3bdafc0460eec96b29dd4bc393f22e558d09dd4fa10cf43f871d307",
+              "state": "shipyard",
+              "structural_component_area": 158164
+            },
+            {
+              "object_bbox": [
+                1102,
+                175,
+                2089,
+                644
+              ],
+              "raw_atlas": "assets/source/town/complete-town-20261027-v2/families/shipyard/provider-atlas-v1.png",
+              "raw_atlas_sha256": "6b9f455429f79d3de1232cdf46442546edfc2b69ede6e8a33d8935017d36dce4",
+              "registration": {
+                "native_offset": [
+                  646,
+                  287
+                ],
+                "native_size": [
+                  149,
+                  71
+                ],
+                "uniform_family_scale": 0.15096251266464034
+              },
+              "source": "assets/source/town/complete-town-20261027-v2/families/shipyard/isolated/ship.png",
+              "source_sha256": "33c5e734f2441e60cb9f9227ea218f37b504853b18f4482186b486f1764aec50",
+              "state": "ship",
+              "structural_component_area": 270627
+            }
+          ],
+          "release_accepted": false,
+          "route": "Genuine painted lower construction state from this exact reviewed whole-town architectural family, one uniform family scale.",
+          "site": "shipyard",
+          "state": "shipyard",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/shipyard-visible.png",
+          "visible_master_mask_sha256": "93f5e1b500d98c1fdb99da83e18bc417e292be57d56b54daa5f56c5b62d2ef21",
+          "visible_master_rgb_restyled": null,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/shipyard-complete-contour.png",
+          "whole_contour_sha256": "93f5e1b500d98c1fdb99da83e18bc417e292be57d56b54daa5f56c5b62d2ef21",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        }
+      },
+      "states": 2,
+      "visual": "A sloped slipway with a tarred barge and crane poles."
+    },
+    {
+      "buildings": [
+        "grail"
+      ],
+      "composition_rectangle": [
+        407,
+        138,
+        41,
+        63
+      ],
+      "construction": "One site, one state.",
+      "id": "codeOfProgress",
+      "name": "Code of Progress",
+      "native_z": 236,
+      "role": "Grail monument in native Grail mode.",
+      "source_states": {
+        "grail": {
+          "actual_alpha128_bbox": [
+            407,
+            138,
+            448,
+            201
+          ],
+          "actual_alpha8_bbox": [
+            407,
+            138,
+            448,
+            201
+          ],
+          "native_layer": "assets/source/town/complete-town-20261027-v2/structures/grail/layer.png",
+          "native_layer_sha256": "37fd99fbf2ab2a4b406c4b35869394abab7e6e06f07c80533f40a88de164493b",
+          "native_visual_review": "pending",
+          "native_z": 236,
+          "occluded_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/codeOfProgress-occluded.png",
+          "occluded_master_mask_sha256": "b6e53314322f55ba066405adc869e19b2a870da54d1f41b9f9a85dcc113f11f7",
+          "provider_inputs": [],
+          "release_accepted": false,
+          "route": "Actual reviewed whole-master visible RGB cut, with genuine painted completion only where another selected institution occludes it.",
+          "site": "codeOfProgress",
+          "state": "grail",
+          "visible_master_mask": "assets/source/town/complete-town-20261027-v2/master-masks/codeOfProgress-visible.png",
+          "visible_master_mask_sha256": "cd671a70e6681e289c19732ebf51594b72b509cc5b6054966fabfd1baad2bf1b",
+          "visible_master_rgb_restyled": false,
+          "whole_contour": "assets/source/town/complete-town-20261027-v2/master-masks/codeOfProgress-complete-contour.png",
+          "whole_contour_sha256": "cd671a70e6681e289c19732ebf51594b72b509cc5b6054966fabfd1baad2bf1b",
+          "whole_master": "assets/source/town/complete-town-20261027-v2/complete-design/native-v2.png",
+          "whole_master_sha256": "14d5942fe3d7d157f29d13e086352c14c0c9cde63424b496a0ef26c3f52dee86"
+        }
+      },
+      "states": 1,
+      "visual": "A project-fiction monument: a plate-metal stele with a ledger slab and a single lamp. It is a city decree, not a relic."
+    }
+  ],
+  "stateAccounting": {
+    "dwellingChains": 14,
+    "fortChain": 3,
+    "hallChain": 4,
+    "mageGuild": 4,
+    "singleServiceBuildings": 7,
+    "specialBuildings": 4,
+    "total": 36
+  },
+  "stateCount": 36,
+  "status": "authored configuration",
+  "subject": "Zaun town visual contract: site plan, construction states, click geometry, adventure objects, siege and visual direction.",
+  "visualDirection": "One dark chempunk Zaun iron-and-glass neighborhood, organic streets/alleys/industrial platforms and inhabited edges; toxic low light, local vivid chemical green, deep violet shadow and rust-brown masonry. Much larger physically grand rear institutions; readable front fa\u00e7ades. Neon chemical green is localized glass/lamps, with purple Shimmer/cloth and brown rust. No universal near/far size ratio, plot-grid or three horizontal terrace bands."
+}

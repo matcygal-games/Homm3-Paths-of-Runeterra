@@ -1,0 +1,69 @@
+{
+  "animation_scope": "One painted static adventure-map pose, not creature motion",
+  "canvas": [
+    192,
+    160
+  ],
+  "generateOverlay": 0,
+  "generateShadow": 1,
+  "generation": {
+    "image_generation_used": true,
+    "model": "Exact model identifier not exposed by tool",
+    "painted_master": "assets/source/town/map-painted-v1/native/portable/village-clean.png",
+    "painted_master_sha256": "8875f2add696b42dd9f4a207c279c3dc3cfe9ce38ae7a00a87d298b8e142dfe8",
+    "prompt": "Edit this painted2D original-HeroesIII Piltover adventure settlement ONLY to repair the bright red fringe along the extreme lower right grass outline. Remove every red matte pixel, replace with naturally painted dark moss/earth and clean transparent contour. Preserve all architecture, camera, source scale, canvas1280square, front door/root, correct gold Piltover crest, plain navy ownership pennant, warm ivory/brass/glass/slate palette and all other pixels as closely as possible. Entire background transparent. No newly cropped shadow, no text, no extra buildings. Genuine painted2D, no3D.\n",
+    "provider": "OpenAI built-in imagegen"
+  },
+  "groups": [
+    {
+      "frames": [
+        {
+          "frame": 0,
+          "overlay_sha256": "8d781774ece1d281344bd09223cee23779819d3b19db5dd9969c5df223f7a506",
+          "overlay_source": "assets/source/town/map-painted-v1/native/masks/village-OVERLAY.png",
+          "source": "assets/source/town/map-painted-v1/native/frames/village.png",
+          "source_canvas": [
+            192,
+            160
+          ],
+          "source_sha256": "fdb4a3df6ac26149902f9035674b55c278d4738928e0ac765d01670e87ef6d8a"
+        }
+      ],
+      "group": 0
+    }
+  ],
+  "output_path": "Content/Sprites/runeterra/piltover/town/map/village.json",
+  "pivot": {
+    "x": 112,
+    "y": 139
+  },
+  "production_inputs": [
+    {
+      "path": "assets/source/town/map-painted-v1/root-plan-v1.json",
+      "sha256": "e88a11d2e6142ee0d4425f538b53eae3a7cf0f4a2aa452f593b183d08e0249e1"
+    },
+    {
+      "path": "assets/source/town/map-painted-v1/produce-native.py",
+      "sha256": "dc6d4f03b905b0945b01d4393bb6752ef4f606873e386f77d49c7eed199dd4a0"
+    },
+    {
+      "path": "assets/source/town/map-painted-v1/village_v2.png",
+      "sha256": "e2b1293283f55cdffc5ea70d3f670cb67e8c9ae693940049ac725715310b9450"
+    },
+    {
+      "path": "assets/source/town/map-painted-v1/native/portable/village-clean.png",
+      "sha256": "8875f2add696b42dd9f4a207c279c3dc3cfe9ce38ae7a00a87d298b8e142dfe8"
+    },
+    {
+      "path": "assets/source/town/map-painted-v1/piltover_map_village_v2-actual-prompt.txt",
+      "sha256": "7899c791b6fd80408367029d1e57735f62f0152f5bbf73f9e27b42f9594bd958"
+    },
+    {
+      "path": "assets/source/town/map-painted-v1/native/masks/village-flag-source.png",
+      "sha256": "3c90529d77fb20414196bbf3080069dcea13bcadd8afd8c2665669442522397c"
+    }
+  ],
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "vcmi_animation",
+  "visual_approval_granted": false
+}

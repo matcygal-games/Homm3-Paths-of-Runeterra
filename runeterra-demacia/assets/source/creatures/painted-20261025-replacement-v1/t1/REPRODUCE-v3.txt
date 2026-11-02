@@ -1,0 +1,27 @@
+DemaciaT1 bounded attack-group correction, version3.
+Status: authored configuration; unselected source candidate, native/rights pending.
+
+Run python assets/source/creatures/painted-20261025-replacement-v1/t1/assemble_attack_groups_v3.py
+
+V1/V2 source snapshots, producers, recipes, freezes and withdrawn review evidence
+remain unchanged. V3 reads the frozen V2selection and copies complete genuine
+painted contact poses into the correct native slots for both badgerbear variants.
+Inspected client/battle/BattleConstants.h has ATTACK_UP11,ATTACK_FRONT12,DOWN13.
+The original art plan labels up0..up3 as upright/rearing upward claw actions;
+level0..level3 are horizontal/front claw actions. V1/V2 mistakenly bound these
+two cohorts in reverse. V3 corrects11→up and12→level; it does not repaint or warp.
+
+Actual expected runtime delta:16contactPNGs change (four up+four front perunit).
+The four holding recovery frames remain identical, as do both battle JSON byte
+definitions, all movement/fidget/hurt/defend/death/turn/down attacks,64pxencounters,
+96pxmap and scenic portraits. Exactly100of116compiledfiles should remain stable.
+
+Nativeconstants are sourced from the readonly matching checkout, not invented
+metadata. The finite local regression re-reads those actual enum values, and
+replays each semantic pose directly through the original painted atlas/root/matte
+producer before comparing selected group11/12 pixels. Manual native-size action
+boards independently establish that the artwork depicts the named direction.
+Portable ZIP replay needs no engine checkout, private licensed pixels or generator.
+
+Only the coordinator may select, stage or publish. Source/compiler proof does
+not establish native timing, combat, final visual acceptance or redistribution.

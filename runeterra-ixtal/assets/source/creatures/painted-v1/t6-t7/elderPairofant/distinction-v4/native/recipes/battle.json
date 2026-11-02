@@ -1,0 +1,580 @@
+{
+  "production_status": "painted-master-complete-unapproved",
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in imagegen",
+    "model": "not exposed by tool",
+    "prompt": "Use case: precise-object-edit. This is our approved-direction ELDER PAIROFANT4pose sheet with distinctive HIGH THREE-SCALLOP mane ridge, broad steppedbrowplates and hugeforefeet. It has ONE measured nativefit defect: in neutralposewidth611px/height651px, tail projecting LEFT makes it too wide. Edit ONLY the SHORTTAIL in ALL4poses: curl/tuck it TIGHT DOWN against the hindleg/hip so NOtail sticks left outside the living body's leg/hip silhouette. Preserve the rest of EVERYactor exactly: same positions/canvas/camera/proportions/pose/largeouterneckscallops, heavy shoulder/forefeet, steppednaturalbrowplates, tusks, fourfacialtendrils, exactgoldIxtalcrestcloth, lighting and texture. Do not move/rescale actors, narrowbody, shortenheight or change face. Tail should remain anatomically visible as a small down-curvedtail close to hindleg, not be amputated. Need compact roughly0.88width-to-height whole neutralanimal so native107pxheight fits\u00c3\u00a2\u00e2\u20ac\u00b0\u00c2\u00a496pxwidth. Keep wholeallfourbodyactorsinsideportrait2x2sheet withgenerousmargins. Genuinepainted2D transparentRGBA, no background/shadow/ground/grid/text. Preserve every correction except tuckingtails.",
+    "painted_master": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/holding-v2.png",
+    "painted_master_sha256": "57eaabd8497cf5368f2710ed9265494a9ad85c59363b07e57b0ec94e274b8a41",
+    "action_source_ledger": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/generation-ledger-v1.json",
+    "action_source_ledger_sha256": "c8018c047db19eb5cae424188b7ec15863f26dc6f526ab0e5617024735740986",
+    "method": "Manual projected body/ground roots inspected in full genuine painted source coordinates. One constant uniform scale per whole cohort, no per-frame bbox fit, pose warping or hidden recruitment rescale. Same more-frontal right-facing camera throughout."
+  },
+  "production_inputs": [
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/combat-attempt-v1.png",
+      "sha256": "3cb286e16f851dba1d5a2946de4836fc2ebf54da1db7ee02b7f9e0d8ed471e21"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/combat-attempt-v1.prompt.txt",
+      "sha256": "9c4cf7ef674c70bff47bbfc46fb652382d4fab7c6704d02f64775ea9f8accc53"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/extract-cohorts.py",
+      "sha256": "12b3c8299cf1deaa7eacffd37ccee6a082bc057cf1c3b7bfea4164fd88e744de"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/generation-ledger-v1.json",
+      "sha256": "c8018c047db19eb5cae424188b7ec15863f26dc6f526ab0e5617024735740986"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/holding-attempt-v1.png",
+      "sha256": "5bb20b8dac247f7203efa5807d153236fb3cd363b38048a46889f0c5131ad910"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/holding-attempt-v1.prompt.txt",
+      "sha256": "ba8563280f6c46d83bd94f84016501cb2f7c39651f1a3b4da466199ca1d0aeed"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/holding-v2.png",
+      "sha256": "57eaabd8497cf5368f2710ed9265494a9ad85c59363b07e57b0ec94e274b8a41"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/holding-v2.prompt.txt",
+      "sha256": "6bc55fe56facf58726d5a9d4aceabbf8401e6ac4601ba62420acd95da5b54731"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/isolated-source-map-v1.json",
+      "sha256": "c90b193eecc346e5c01d0b259b9ede8320cf686adf42b6adb86f9bf182b7c28f"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/movement-v1.png",
+      "sha256": "ec8cec088b6a61489ecf63b0660603b4a2d7a6fde805122605b7b43f7e8d779f"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/movement-v1.prompt.txt",
+      "sha256": "9a082638e1c6d47bcceddaeec6b712a85df461f0ac487791f084012d35424fc4"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/pose-roots-v1.json",
+      "sha256": "5e34fadde13cf047f1495c0c8cb59159d9027d60a0ee70d69eaf1cb99bccbb18"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/produce-native.py",
+      "sha256": "695c4866158bfed3b125b1e1da13001d88561a95d936194bd50544380665652d"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/holding-v3.png",
+      "sha256": "daa1a63d235170557ab25a6b658a7aa4685f005dbc906ad430e5a4e08860a122"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/extract_sources.py",
+      "sha256": "6b9609f1ad3d8f3094496e44e5ca1f4e6170d137149001bdb165bf7d0ecbf540"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/pairofant/holding-v2.png",
+      "sha256": "be99797e994d02f85ea47b590c08b00a647a3b516a02aa7b3476c3f519fc6a73"
+    },
+    {
+      "path": "assets/source/ui/recruit-painted-v1/master-v1.png",
+      "sha256": "62597a1972521275e80b555d2aefb2e6b916ba53685400663b4cc03704235f75"
+    }
+  ],
+  "recipe_type": "vcmi_animation",
+  "output_path": "Content/Sprites/runeterra/ixtal/creatures/elderPairofant/battle.json",
+  "canvas": [
+    450,
+    400
+  ],
+  "pivot": {
+    "x": 220,
+    "y": 266
+  },
+  "groups": [
+    {
+      "group": 0,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g00-f000.png",
+          "source_sha256": "3d0d8c0e191824ced3f269c0fb2bb7f73dd59690b969db8f8218d96604ccf93f",
+          "sha256": "3d0d8c0e191824ced3f269c0fb2bb7f73dd59690b969db8f8218d96604ccf93f",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g00-f001.png",
+          "source_sha256": "021675feab918059317e2f4058123fb57f25a751db3eb5e030aec2c3edae178e",
+          "sha256": "021675feab918059317e2f4058123fb57f25a751db3eb5e030aec2c3edae178e",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g00-f002.png",
+          "source_sha256": "057ec06a2d004cb78b0d494ff5611d7548f45fa3a27e25d191db3542ec55d54f",
+          "sha256": "057ec06a2d004cb78b0d494ff5611d7548f45fa3a27e25d191db3542ec55d54f",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g00-f003.png",
+          "source_sha256": "753cf1f2c346600cd479ba65197f6c2ccb1a6fa86876684e59c58e27ba8da4f7",
+          "sha256": "753cf1f2c346600cd479ba65197f6c2ccb1a6fa86876684e59c58e27ba8da4f7",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g00-f004.png",
+          "source_sha256": "c4fe4c1dbd70110251e8ee81c221cc2cdab235b72ac50b0828c923e20e3e0ddc",
+          "sha256": "c4fe4c1dbd70110251e8ee81c221cc2cdab235b72ac50b0828c923e20e3e0ddc",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g00-f005.png",
+          "source_sha256": "17a4d3edf987ec3228e5df2b92643d1140903f198185cc048e29d637cfe358c5",
+          "sha256": "17a4d3edf987ec3228e5df2b92643d1140903f198185cc048e29d637cfe358c5",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 1,
+      "generateOverlay": 0
+    },
+    {
+      "group": 1,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g01-f000.png",
+          "source_sha256": "a8e67e1d6f121118157779f860c87e6a6db201dda6562582ef1a987989f2c8f3",
+          "sha256": "a8e67e1d6f121118157779f860c87e6a6db201dda6562582ef1a987989f2c8f3",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g01-f001.png",
+          "source_sha256": "1835aed3125fe88f2458d38b97e0825a79a1da6c08aa6bc092bd311328d9d92f",
+          "sha256": "1835aed3125fe88f2458d38b97e0825a79a1da6c08aa6bc092bd311328d9d92f",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g01-f002.png",
+          "source_sha256": "1835aed3125fe88f2458d38b97e0825a79a1da6c08aa6bc092bd311328d9d92f",
+          "sha256": "1835aed3125fe88f2458d38b97e0825a79a1da6c08aa6bc092bd311328d9d92f",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g01-f003.png",
+          "source_sha256": "1a0dc318bdbefc653bfdfaa873d9a8de1a73f895ca586e78e4d2624a76e472fc",
+          "sha256": "1a0dc318bdbefc653bfdfaa873d9a8de1a73f895ca586e78e4d2624a76e472fc",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g01-f004.png",
+          "source_sha256": "1a0dc318bdbefc653bfdfaa873d9a8de1a73f895ca586e78e4d2624a76e472fc",
+          "sha256": "1a0dc318bdbefc653bfdfaa873d9a8de1a73f895ca586e78e4d2624a76e472fc",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g01-f005.png",
+          "source_sha256": "a8e67e1d6f121118157779f860c87e6a6db201dda6562582ef1a987989f2c8f3",
+          "sha256": "a8e67e1d6f121118157779f860c87e6a6db201dda6562582ef1a987989f2c8f3",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 6,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g01-f006.png",
+          "source_sha256": "a8e67e1d6f121118157779f860c87e6a6db201dda6562582ef1a987989f2c8f3",
+          "sha256": "a8e67e1d6f121118157779f860c87e6a6db201dda6562582ef1a987989f2c8f3",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 1,
+      "generateOverlay": 0
+    },
+    {
+      "group": 2,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g02-f000.png",
+          "source_sha256": "a8e67e1d6f121118157779f860c87e6a6db201dda6562582ef1a987989f2c8f3",
+          "sha256": "a8e67e1d6f121118157779f860c87e6a6db201dda6562582ef1a987989f2c8f3",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 1,
+      "generateOverlay": 0
+    },
+    {
+      "group": 3,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g03-f000.png",
+          "source_sha256": "f9251cbd3e40b769c4b1f809c9fac484759a6850768f30645f8a91d36e2196a5",
+          "sha256": "f9251cbd3e40b769c4b1f809c9fac484759a6850768f30645f8a91d36e2196a5",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g03-f001.png",
+          "source_sha256": "a8e67e1d6f121118157779f860c87e6a6db201dda6562582ef1a987989f2c8f3",
+          "sha256": "a8e67e1d6f121118157779f860c87e6a6db201dda6562582ef1a987989f2c8f3",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 1,
+      "generateOverlay": 0
+    },
+    {
+      "group": 4,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g04-f000.png",
+          "source_sha256": "37bccfe9202e715551f4729c7f5d5920c033097099105a6419d8aaf780bc9563",
+          "sha256": "37bccfe9202e715551f4729c7f5d5920c033097099105a6419d8aaf780bc9563",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 1,
+      "generateOverlay": 0
+    },
+    {
+      "group": 5,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g05-f000.png",
+          "source_sha256": "0e13fc857ffd337df1a9322e839aa7571d610e5d0c092a0c6e25bd0f5dddc43f",
+          "sha256": "0e13fc857ffd337df1a9322e839aa7571d610e5d0c092a0c6e25bd0f5dddc43f",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g05-f001.png",
+          "source_sha256": "46b837ac231e30532e28d8d08a06607e754960de8f8e1d21870d58c375ecb19c",
+          "sha256": "46b837ac231e30532e28d8d08a06607e754960de8f8e1d21870d58c375ecb19c",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g05-f002.png",
+          "source_sha256": "55cd5f9112017efcdd524b10ebed255595fd2ee0f7dae09282934a9e8fd479f8",
+          "sha256": "55cd5f9112017efcdd524b10ebed255595fd2ee0f7dae09282934a9e8fd479f8",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g05-f003.png",
+          "source_sha256": "e959dda7888b91d5d11eeabab791dad201043dc0d2e5cd00088a75b8dd450e1b",
+          "sha256": "e959dda7888b91d5d11eeabab791dad201043dc0d2e5cd00088a75b8dd450e1b",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 1,
+      "generateOverlay": 0
+    },
+    {
+      "group": 7,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g07-f000.png",
+          "source_sha256": "a8e67e1d6f121118157779f860c87e6a6db201dda6562582ef1a987989f2c8f3",
+          "sha256": "a8e67e1d6f121118157779f860c87e6a6db201dda6562582ef1a987989f2c8f3",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g07-f001.png",
+          "source_sha256": "263981115a7c938be9c7ca4dc82538ed33454bd4e72415239e8f73c8c72df3df",
+          "sha256": "263981115a7c938be9c7ca4dc82538ed33454bd4e72415239e8f73c8c72df3df",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g07-f002.png",
+          "source_sha256": "50e81c35b6bf3fc7e47e7ae3210bf854c461ed8b35b3165d0bd95f07c730bf60",
+          "sha256": "50e81c35b6bf3fc7e47e7ae3210bf854c461ed8b35b3165d0bd95f07c730bf60",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 1,
+      "generateOverlay": 0
+    },
+    {
+      "group": 8,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g08-f000.png",
+          "source_sha256": "50e81c35b6bf3fc7e47e7ae3210bf854c461ed8b35b3165d0bd95f07c730bf60",
+          "sha256": "50e81c35b6bf3fc7e47e7ae3210bf854c461ed8b35b3165d0bd95f07c730bf60",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g08-f001.png",
+          "source_sha256": "263981115a7c938be9c7ca4dc82538ed33454bd4e72415239e8f73c8c72df3df",
+          "sha256": "263981115a7c938be9c7ca4dc82538ed33454bd4e72415239e8f73c8c72df3df",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g08-f002.png",
+          "source_sha256": "a8e67e1d6f121118157779f860c87e6a6db201dda6562582ef1a987989f2c8f3",
+          "sha256": "a8e67e1d6f121118157779f860c87e6a6db201dda6562582ef1a987989f2c8f3",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 1,
+      "generateOverlay": 0
+    },
+    {
+      "group": 11,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g11-f000.png",
+          "source_sha256": "fbfe0f2c28c4945ffee10cc1e55ce752ca7127dd75a7ceb554eed6442f6f3d93",
+          "sha256": "fbfe0f2c28c4945ffee10cc1e55ce752ca7127dd75a7ceb554eed6442f6f3d93",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g11-f001.png",
+          "source_sha256": "4f6ab71c52d032778d96c9d118288941aa09f2484701dbef95db6bcfce62b4db",
+          "sha256": "4f6ab71c52d032778d96c9d118288941aa09f2484701dbef95db6bcfce62b4db",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g11-f002.png",
+          "source_sha256": "36af1480a0c55ee6eec1b81aa08f4d68e27ae2709b8db52eca291928f4f432dd",
+          "sha256": "36af1480a0c55ee6eec1b81aa08f4d68e27ae2709b8db52eca291928f4f432dd",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g11-f003.png",
+          "source_sha256": "32763c59da558355614d649537fe2fa97eb55bddefcaa31ef4b608fb7b239d82",
+          "sha256": "32763c59da558355614d649537fe2fa97eb55bddefcaa31ef4b608fb7b239d82",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 1,
+      "generateOverlay": 0
+    },
+    {
+      "group": 12,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g12-f000.png",
+          "source_sha256": "80d67dcd1553c18c05d7ef3f34219fa6f6b24a28bd4cd7c63474cfd0078e65d6",
+          "sha256": "80d67dcd1553c18c05d7ef3f34219fa6f6b24a28bd4cd7c63474cfd0078e65d6",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g12-f001.png",
+          "source_sha256": "b656b4207e5c5dab09cd4b0072905d1a4491407e3afb9c42535ba434e876b673",
+          "sha256": "b656b4207e5c5dab09cd4b0072905d1a4491407e3afb9c42535ba434e876b673",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g12-f002.png",
+          "source_sha256": "c990eaabbb39f2dbc476f8aca1acba30d7a6197bcd607430a124ae5753534b04",
+          "sha256": "c990eaabbb39f2dbc476f8aca1acba30d7a6197bcd607430a124ae5753534b04",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g12-f003.png",
+          "source_sha256": "5d342df8ff7475037c53cd7028afef9ce048b1f94139b2a4471cb45a61552a71",
+          "sha256": "5d342df8ff7475037c53cd7028afef9ce048b1f94139b2a4471cb45a61552a71",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 1,
+      "generateOverlay": 0
+    },
+    {
+      "group": 13,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g13-f000.png",
+          "source_sha256": "50ac97bd1a454758a0ee73f04810a0a8f7f20358f031651f43de532fe17a3f30",
+          "sha256": "50ac97bd1a454758a0ee73f04810a0a8f7f20358f031651f43de532fe17a3f30",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g13-f001.png",
+          "source_sha256": "5cafaa2313f8af6229721b12fe4449ff27cee47254140d33bba521a267aec4ea",
+          "sha256": "5cafaa2313f8af6229721b12fe4449ff27cee47254140d33bba521a267aec4ea",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g13-f002.png",
+          "source_sha256": "0aecf4763ce30015c41cb355b2047cca5e3639d2dc09a94bc0c5ab52d88d421e",
+          "sha256": "0aecf4763ce30015c41cb355b2047cca5e3639d2dc09a94bc0c5ab52d88d421e",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g13-f003.png",
+          "source_sha256": "e86a883071ee0afd13c917c98d75eed21f7dc33226e74376440ba811864c0879",
+          "sha256": "e86a883071ee0afd13c917c98d75eed21f7dc33226e74376440ba811864c0879",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 1,
+      "generateOverlay": 0
+    },
+    {
+      "group": 22,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t6-t7/elderPairofant/distinction-v4/native/battle/g22-f000.png",
+          "source_sha256": "e959dda7888b91d5d11eeabab791dad201043dc0d2e5cd00088a75b8dd450e1b",
+          "sha256": "e959dda7888b91d5d11eeabab791dad201043dc0d2e5cd00088a75b8dd450e1b",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 1,
+      "generateOverlay": 0
+    }
+  ]
+}

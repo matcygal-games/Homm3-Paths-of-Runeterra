@@ -1,0 +1,115 @@
+{
+  "schema": 1,
+  "utc": "2026-10-23T12:18:36.490632+00:00",
+  "status": "authored configuration",
+  "source_commit": "66fa496c6328a276c4eb14c0011b3a9d751dfac3",
+  "official_commit_returned_sha": "66fa496c6328a276c4eb14c0011b3a9d751dfac3",
+  "patch_sha256": "9a909f847702be39864b6fbb7676df73191402721151fe52b0739e6992a6561b",
+  "patch_applies_cleanly": true,
+  "patch_check_exit": 0,
+  "traced_consumers": [
+    {
+      "path": "AI/Nullkiller2/AIGateway.cpp",
+      "sha256": "f2bf6a11b7bc75724b7a50afb000345f6c36676bc50d47d42e3eda2e16704e22",
+      "symbols": {
+        "void AIGateway::requestRealized": 418,
+        "void AIGateway::yourTurn": 608,
+        "void AIGateway::endTurn": 1496,
+        "void AIGateway::requestSent": 1583,
+        "void AIStatus::startedTurn": 1677,
+        "void AIStatus::madeTurn": 1684,
+        "void AIGateway::finish": 1532
+      }
+    },
+    {
+      "path": "client/Client.cpp",
+      "sha256": "c0812894e8c539ca4b92b4d2764b3fea3fcd2baf2f85a6ca4b0b7a015d27f22a",
+      "symbols": {
+        "int CClient::sendRequest": 503
+      }
+    },
+    {
+      "path": "client/NetPacksClient.cpp",
+      "sha256": "45169b763d15b50f0b37042f73dad0e31d42a579cd7e899d65a384a1ca53e084",
+      "symbols": {
+        "void ApplyClientNetPackVisitor::visitPackageApplied": 979,
+        "void ApplyClientNetPackVisitor::visitPlayerStartsTurn": 1004
+      }
+    },
+    {
+      "path": "server/CGameHandler.cpp",
+      "sha256": "28ba0b3cee891b61cf9660c70e2e20fee940885bd732904410064e2905124f4d",
+      "symbols": {
+        "void CGameHandler::handleReceivedPack": 428
+      }
+    },
+    {
+      "path": "server/processors/TurnOrderProcessor.cpp",
+      "sha256": "6ced104116acc2130c3b27b52a8ad0a5af4cb60b82fc76cce1069710dceee059",
+      "symbols": {
+        "void TurnOrderProcessor::doEndPlayerTurn": 359,
+        "void TurnOrderProcessor::resumeTurnOrder": 388,
+        "void TurnOrderProcessor::doStartPlayerTurn": 299
+      }
+    },
+    {
+      "path": "server/CVCMIServer.cpp",
+      "sha256": "1ebb8f1c50d85ebb786c9008e8444440ce7f0eb68ca53663b27042f781ca2719",
+      "symbols": {
+        "void CVCMIServer::onDisconnected": 407,
+        "void CVCMIServer::clientDisconnected": 542
+      }
+    },
+    {
+      "path": "lib/network/NetworkConnection.cpp",
+      "sha256": "404153fe58df31e9609cfc51bc55240c53de3c5c0d9dd70d2d26dc088a7618ee",
+      "symbols": {
+        "void InternalConnection::disconnect": 223,
+        "void InternalConnection::close": 251,
+        "void NetworkConnection::onError": 190
+      }
+    }
+  ],
+  "decision": {
+    "problem": "A successful EndTurn acknowledgement unconditionally clears one global havingTurn bool, including when PlayerStartsTurn has already opened the same AI next turn. The old retry loop can also resend into a newly opened turn.",
+    "correction": "Track monotonic local turn generation and EndTurn request ID ownership under the existing AIStatus mutex. Only an accepted acknowledgement for the current generation clears current havingTurn. EndTurn retries stop on completion or generation replacement; same-generation PackageApplied.result==false acknowledgements still permit retry. Some official server applier rejections are incorrectly ACKed true; this separate server issue is not repaired here. Register requestSent before handing a request to transport.",
+    "gameplay_reason": "Exactly one task owns each turn; a prior-turn reply cannot end the next turn or trigger duplicate next-turn requests. No army, map, timer or error-filter change.",
+    "implementation": [
+      "patched/AI/Nullkiller2/AIGateway.cpp",
+      "patched/AI/Nullkiller2/AIGateway.h",
+      "patched/client/Client.cpp"
+    ],
+    "state_scope": "Transient AI status only, not serialized authoritative game state. No packet format, server legality rule, public virtual interface, Lua, saved-game layout or RNG change. Pending ownership entries are erased on accepted or rejected matched ACK; destruction releases remaining entries after existing finish task cleanup.",
+    "behavioral_expectations": [
+      "Accepted current ACK closes current turn.",
+      "A current ACK with result==false retains current turn and allows retry; this does not cover applier rejection incorrectly ACKed true.",
+      "Old, duplicate or unknown ACK cannot clear the current generation.",
+      "New turn arriving before ACK or callback return cannot make the old endTurn task submit again.",
+      "Request ownership is registered before a transport can synchronously reenter reply handling.",
+      "Defeated player still waits for completion and sends no EndTurn.",
+      "Existing invariant ERROR remains; unrelated spell/question request branches remain."
+    ]
+  },
+  "test_results": {
+    "actual_copied_consumer_fixture": {
+      "cases": 15,
+      "upstream_failures": 7,
+      "patched_failures": 0,
+      "receipt": "regression-result.json"
+    },
+    "mutation_controls": {
+      "count": 3,
+      "detected": 3,
+      "receipt": "mutation-results.json"
+    },
+    "initial_fixture_failures": "history/ preserves initial missing fixture type and linker-symbol diagnostics; these were harness failures, not engine failures."
+  },
+  "network_scope": "Official CVCMIServer::onDisconnected logs ERROR before finding an active GameConnection; clientDisconnected removes it first. InternalConnection::close posts a peer disconnect. This explains a source-level ordinary-close diagnostic path but does not prove the exact Targon callback identity. Neither matched original-only control reproduced this shutdown ERROR. No network logging or lifecycle patch is bundled here; earlier isolated shutdown patches remain separate coordinator work.",
+  "limitations": [
+    "The source commit is authoritatively resolved through official GitHub API and raw commit URLs. Runtime version reports that commit, but no bit-for-bit reproducible binary build or publisher build attestation was obtained.",
+    "This patch is not applied to protected checkout or runtime. No full translation unit, complete engine link, native single-survivor/Targon run, save/network/gameplay or release acceptance was executed.",
+    "Consumer tests compile verbatim selected actual source methods and AIStatus declaration against minimal dependency fixtures. They validate ordering/state consumers, not actual TBB scheduling, sockets or AI workloads.",
+    "Changing CClient callback ordering affects every request callback; independent review and complete client build/control runs are required before selecting a runtime.",
+    "Original-only controls contain separate hero-exchange diagnostics; this turn repair does not address them."
+  ]
+}

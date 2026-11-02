@@ -1,0 +1,75 @@
+{
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI builtin imagegen; deterministic technical 2D conversion",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/painted-v1/assemble.py",
+      "sha256": "69586f88b723643690c2867b1c50f24ca3443e92120c0b43e4cf5597b8fdab66"
+    },
+    {
+      "path": "assets/source/town/painted-v1/layout-plan-v3.json",
+      "sha256": "3b9498f7cfb179c67742f073454facc95144f357158aa99c1fa80a457abd9b38"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/castle/master-v1.png",
+      "sha256": "2b3bd683d6d76602500dd3f1fbcd4ab7862df1743b6d1fe408fdb864bee9074e"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/castle/source-generation.json",
+      "sha256": "8c4bedbcf949004cb297e76792af0b0bd8f5e60df50c6478eb0568d99814030a"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/castle/prompt-v1.txt",
+      "sha256": "74c6564d93347ccb0e2530e69bbcd6ed27e49b02983bb82713e1888c3fd5e7d8"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/castle/padded-edit-reference.png",
+      "sha256": "75e6e1f056995474610eb3af25ebe88202c11e2390794655dca2477157277e60"
+    }
+  ],
+  "generateOverlay": 0,
+  "generateShadow": 0,
+  "generation": {
+    "image_generation_used": true,
+    "model": "not exposed by tool",
+    "painted_master": "assets/source/town/painted-v1/buildings/castle/master-v1.png",
+    "painted_master_sha256": "2b3bd683d6d76602500dd3f1fbcd4ab7862df1743b6d1fe408fdb864bee9074e",
+    "producer": "assets/source/town/painted-v1/assemble.py",
+    "producer_sha256": "69586f88b723643690c2867b1c50f24ca3443e92120c0b43e4cf5597b8fdab66",
+    "prompt": "Standalone transparent painted2D town-building cutout for original Heroes of Might and Magic III/VCMI. Native target800x374 town, not a poster or modern game render.\nImage1 is EDIT TARGET: our own existing citadel building; preserve its canvas/camera/root/lower core. Image2 is the ORIGINAL Heroes III Castle building: rendering-language reference only, no copied Castle pixels/silhouette. Image3 is the actual PILTOVER crest shape reference: central vertical pillar, split-ring/orb upper end, broad curved gear-flanked lower arcs; never wings or generic cog. Follow the same institutional/material family; additions/removals must be genuinely painted. The reference has technical transparent padding [0, 300, 0, 0] (left,top,right,bottom), whole-image translation only, not resized architecture. Use that spare headroom for new upper construction without moving or shrinking the existing lower door/foundation.\nOutput genuinely transparent RGBA with EXACT reference Image1 canvas dimensions and existing core scale/position; do not recenter, zoom or shrink the lower building to fill the frame. Full building, roof, stairs, foundation, cloth and subtle own rightward contact shadow entirely visible with >=35pixels transparent margins. No solid backdrop/white matte/checkerboard/grass or floor rectangle, no red/yellow/chroma edge outline. Walls and windows remain opaque painted material, not translucent see-through buildings.\nSame soft upper-left daylight and LOW FRONTAL THREE-QUARTER camera as the new town. Front facade/door dominates; modest right-side wall, limited roof planes, not strict isometric/bird's-eye. Richly textured original-H3 small-scale painted masonry, timber, slate, aged bronze/brass and dull steel. Warm ivory/hewn stone, muted dark timber, navy/teal cloth, restrained cool-blue instruments. No shiny modern3D/plastic, anime, splash-art, bloom/neon or photographic lens finish. Working Piltovan trade/science/community architecture, not16generic temples or Demacian keeps. A physical navy/teal banner or engraved plaque carries the CORRECT Piltover region crest visibly at native downsampling, with natural perspective and occlusion.\nPlanned native envelope [601, 41, 199, 145]; compact readable architectural silhouette. For a new base, leave headroom for later extensions above the same frontal ground-root nearx627,y1130. For an edit, KEEP EXACT reference canvas, lower foundation and entrance source position/scale; never zoom the smaller state to fill the canvas. Only whole real painted architecture; no people, soldiers, animals, text, labels, UI, border or watermark.\nSTATE: Cliffside Bastion. Upgrade the SAME Bridgewatch Citadel into Cliffside Bastion, retaining central gate, base walls, buttresses, stairs, root/camera/light. Add an elevated rear civic-watch keep, substantial asymmetric stone watch towers, brass-roofed instrument turrets and a high enclosed patrol bridge connecting the two strongest towers. Bronze structural fittings and navy crest banners, weathered urban stone; rich defended Piltovan trade-city architecture, no Demacian royal-wing symbols or generic white fantasy castle copy. Strong largest skyline silhouette, whole architecture uncropped.\n",
+    "prompt_file": "assets/source/town/painted-v1/buildings/castle/prompt-v1.txt",
+    "provider": "OpenAI builtin imagegen",
+    "source_generation_ledger": "assets/source/town/painted-v1/buildings/castle/source-generation.json"
+  },
+  "groups": [
+    {
+      "frames": [
+        {
+          "source": "assets/source/town/painted-v1/buildings/castle/native-frame.png",
+          "source_canvas": [
+            800,
+            374
+          ],
+          "source_sha256": "2bfe1efae50bb0521cf38a831e2b4db2f1ece1b371b43c25908a2f1f47f59d20"
+        }
+      ],
+      "group": 0
+    }
+  ],
+  "output_path": "Content/Sprites/runeterra/piltover/town/structures/castle.json",
+  "pivot": {
+    "x": 693,
+    "y": 178
+  },
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "vcmi_animation",
+  "status": "painted-candidate",
+  "visual_approval_granted": false
+}

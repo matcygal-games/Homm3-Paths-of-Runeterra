@@ -1,0 +1,452 @@
+{
+  "active_recipe_modified": false,
+  "atlas_cell_normalization": 1.0,
+  "calibration": {
+    "basis": "One finished painted standing identity measured once; same global scale/origin across every group. Generator framing preservation is not assumed.",
+    "calibration_version": 2,
+    "native_canvas": [
+      450,
+      400
+    ],
+    "original_rig_world_origin": [
+      255.99998474121094,
+      440.7154083251953
+    ],
+    "per_frame_fit": false,
+    "per_group_fit": false,
+    "raw_origin": [
+      256.0,
+      505.36231487810437
+    ],
+    "raw_pixels_to_native": 0.17357449294681426,
+    "reference": "assets/source/creatures/dauntlessVanguard/rig-pilot-v4/paint-action-g02-atlas-v1.png",
+    "reference_bounds": [
+      226,
+      101,
+      468,
+      564
+    ],
+    "reference_cell_size": [
+      627,
+      627
+    ],
+    "reference_frame": 0,
+    "reference_group": 2,
+    "reference_sha256": "57c95b89537956b39ef91b013001092b9ae87e6ac9ee9fc7e1edf5a180e78622",
+    "reference_standing_version": 1,
+    "revision": 4,
+    "source_padding": {
+      "basis": "deterministically pre-padded raw cells; original input transform only, not a claim imagegen retained positions",
+      "offset": [
+        46,
+        46
+      ],
+      "scale": 0.8203125
+    },
+    "source_return_scale": 1.224609375,
+    "standing_anchor": [
+      313.5,
+      564.0
+    ],
+    "standing_anchor_basis": "Grid horizontal center and first standing figure alpha-bottom; support placement requires visual review.",
+    "target_origin": [
+      197.0,
+      267.0
+    ],
+    "target_standing_height": 80,
+    "unit": "dauntlessVanguard",
+    "visual_approval_granted": false
+  },
+  "calibration_version": 2,
+  "camera_normalization": {
+    "basis": "One measured source camera zoom/origin for the entire separately generated action atlas; no frame fits or limb warps.",
+    "calibration": "assets/source/creatures/dauntlessVanguard/rig-pilot-v4/action-calibration-v2.json",
+    "calibration_sha256": "95250e8a586b63ff4fefdd28641104c0e49959d3ee77427818a292c684291d14",
+    "calibration_version": 2,
+    "camera_version": 1,
+    "camera_zoom_correction": 0.8401772107035265,
+    "group": 5,
+    "landmarks": {
+      "basis": "Root inspected actual upright first pose in full source atlas and native contact. Helmet top and planted boot-support establish one source-camera zoom for every pose in this action. Deathf0 uses inspected heel/support[256,508], not foretoe extension throughy517. This is measured camera normalization; source generator camera preservation is not claimed.",
+      "comparable_upright_ready": true,
+      "frame": 0,
+      "ground_anchor": [
+        256.0,
+        508.0
+      ],
+      "helmet_top": [
+        256.0,
+        58.0
+      ],
+      "reviewed": true
+    },
+    "per_frame_fit": false,
+    "per_frame_stretch": false,
+    "raw_camera_preservation_claimed": false,
+    "source": "assets/source/creatures/dauntlessVanguard/rig-pilot-v4/paint-action-g05-atlas-v2.png",
+    "source_camera_zoom_relative_to_standing": 1.1902250944924406,
+    "source_cell_size": [
+      512,
+      512
+    ],
+    "source_origin": [
+      256.0,
+      508.0
+    ],
+    "source_pixels_to_native": 0.17777777777777778,
+    "source_sha256": "45dfce4996f35864cc38a0258b885ce39985ef1b802b24d0d306fc19bf92161e",
+    "source_version": 2,
+    "target_origin": [
+      197.0,
+      267.0
+    ],
+    "target_standing_height": 80,
+    "unit": "dauntlessVanguard",
+    "visual_approval_granted": false
+  },
+  "common_scale_within_action": true,
+  "contact": "assets/source/creatures/dauntlessVanguard/rig-pilot-v4/paint-action-g05-native-contact-v4-calibration-v2-camera-v1-placement-v1.png",
+  "contact_sha256": "8522d30e528f0dbb98c46b6de601c2775bf4249068e6e6465956683785ed8cd5",
+  "frames": [
+    {
+      "frame": 0,
+      "group": 5,
+      "native_bounds": [
+        177,
+        182,
+        224,
+        269
+      ],
+      "output": "assets/source/creatures/dauntlessVanguard/rig-pilot-v4/native-actions/g05-v4-calibration-v2-camera-v1-placement-v1/g05-f000.png",
+      "packing_inverse_native_translation": [
+        0,
+        6
+      ],
+      "sha256": "491983adc5c0559d9f52a2e07429eab1ad1ccdb3e73c8979f3cae9ef1d4a2906",
+      "source_atlas": "assets/source/creatures/dauntlessVanguard/rig-pilot-v4/paint-action-g05-atlas-v4.png",
+      "source_bounds": [
+        159,
+        26,
+        399,
+        485
+      ],
+      "source_cell": [
+        0,
+        0
+      ],
+      "source_cell_sha256": "c58b8c4d5d730bc308cc17425063c40d5ad5f4edccb8a3bc26a47aabf9f09124",
+      "source_return_scale": 1.0,
+      "translation": {
+        "basis": "Reviewed whole-frame vertical placement against this genuinely articulated raw pose lowest projected geometry, relative to standing452px/source and native267px; camera normalized once per atlas. No scale/limb geometry changed. Horizontal action displacement preserved.",
+        "expected_lowest_native_y": 267,
+        "native_before_bounds_alpha8": [
+          179,
+          187,
+          222,
+          270
+        ],
+        "native_translation": [
+          0,
+          -3
+        ],
+        "raw_bounds_alpha8": [
+          182,
+          50,
+          389,
+          450
+        ],
+        "raw_pose": "assets/source/creatures/dauntlessVanguard/rig-pilot-v4/raw-actions/g05/g05-f000.png",
+        "raw_pose_sha256": "1296c4ae2c453cec6814d0c258f5161e8087e2df2f8f3b8f1a83fe9aea3461c1",
+        "reviewed": true
+      }
+    },
+    {
+      "frame": 1,
+      "group": 5,
+      "native_bounds": [
+        179,
+        190,
+        226,
+        268
+      ],
+      "output": "assets/source/creatures/dauntlessVanguard/rig-pilot-v4/native-actions/g05-v4-calibration-v2-camera-v1-placement-v1/g05-f001.png",
+      "packing_inverse_native_translation": [
+        0,
+        6
+      ],
+      "sha256": "67956495aa362d0b8052e9510060d64ce8143030baa8fe1d6f3e81245bec0cfa",
+      "source_atlas": "assets/source/creatures/dauntlessVanguard/rig-pilot-v4/paint-action-g05-atlas-v4.png",
+      "source_bounds": [
+        172,
+        75,
+        409,
+        485
+      ],
+      "source_cell": [
+        1,
+        0
+      ],
+      "source_cell_sha256": "59d4c7709f6c41909afee1b6ad91e3aeda0436673e10ed14ee3dccf0adb982f1",
+      "source_return_scale": 1.0,
+      "translation": {
+        "basis": "Reviewed whole-frame vertical placement against this genuinely articulated raw pose lowest projected geometry, relative to standing452px/source and native267px; camera normalized once per atlas. No scale/limb geometry changed. Horizontal action displacement preserved.",
+        "expected_lowest_native_y": 266,
+        "native_before_bounds_alpha8": [
+          181,
+          196,
+          224,
+          270
+        ],
+        "native_translation": [
+          0,
+          -4
+        ],
+        "raw_bounds_alpha8": [
+          177,
+          81,
+          385,
+          448
+        ],
+        "raw_pose": "assets/source/creatures/dauntlessVanguard/rig-pilot-v4/raw-actions/g05/g05-f001.png",
+        "raw_pose_sha256": "91511cbdfc4055f119c98fdc5ef4d385cf8179a5c8dfbf2f54e39a86ed34f462",
+        "reviewed": true
+      }
+    },
+    {
+      "frame": 2,
+      "group": 5,
+      "native_bounds": [
+        184,
+        206,
+        231,
+        270
+      ],
+      "output": "assets/source/creatures/dauntlessVanguard/rig-pilot-v4/native-actions/g05-v4-calibration-v2-camera-v1-placement-v1/g05-f002.png",
+      "packing_inverse_native_translation": [
+        0,
+        6
+      ],
+      "sha256": "d848fb652893d16f6be63d706a3c84d28c5ab579110f3a5ec153d0e4b8987dbc",
+      "source_atlas": "assets/source/creatures/dauntlessVanguard/rig-pilot-v4/paint-action-g05-atlas-v4.png",
+      "source_bounds": [
+        198,
+        157,
+        435,
+        493
+      ],
+      "source_cell": [
+        2,
+        0
+      ],
+      "source_cell_sha256": "e15f62bf4fe3f0aabfd5ad4d86272f5d934ce216950bcaa43554c9adfe670cad",
+      "source_return_scale": 1.0,
+      "translation": {
+        "basis": "Reviewed whole-frame vertical placement against this genuinely articulated raw pose lowest projected geometry, relative to standing452px/source and native267px; camera normalized once per atlas. No scale/limb geometry changed. Horizontal action displacement preserved.",
+        "expected_lowest_native_y": 268,
+        "native_before_bounds_alpha8": [
+          186,
+          211,
+          229,
+          271
+        ],
+        "native_translation": [
+          0,
+          -3
+        ],
+        "raw_bounds_alpha8": [
+          207,
+          131,
+          417,
+          459
+        ],
+        "raw_pose": "assets/source/creatures/dauntlessVanguard/rig-pilot-v4/raw-actions/g05/g05-f002.png",
+        "raw_pose_sha256": "451abc53887acf26ece78226680293b76fc54c4517221e309c5c2bb64e588f41",
+        "reviewed": true
+      }
+    },
+    {
+      "frame": 3,
+      "group": 5,
+      "native_bounds": [
+        170,
+        216,
+        232,
+        273
+      ],
+      "output": "assets/source/creatures/dauntlessVanguard/rig-pilot-v4/native-actions/g05-v4-calibration-v2-camera-v1-placement-v1/g05-f003.png",
+      "packing_inverse_native_translation": [
+        0,
+        0
+      ],
+      "sha256": "3b8048e2d2f78ccb2af45eb71175b86fb3fbbdb6543501424899e053ffc96724",
+      "source_atlas": "assets/source/creatures/dauntlessVanguard/rig-pilot-v4/paint-action-g05-atlas-v4.png",
+      "source_bounds": [
+        118,
+        167,
+        445,
+        462
+      ],
+      "source_cell": [
+        0,
+        1
+      ],
+      "source_cell_sha256": "25703d678929d10fd48ae69612f65b85c34ff3c685291be09fa10159b532167f",
+      "source_return_scale": 1.0,
+      "translation": {
+        "basis": "Reviewed whole-frame vertical placement against this genuinely articulated raw pose lowest projected geometry, relative to standing452px/source and native267px; camera normalized once per atlas. No scale/limb geometry changed. Horizontal action displacement preserved.",
+        "expected_lowest_native_y": 271,
+        "native_before_bounds_alpha8": [
+          172,
+          206,
+          230,
+          259
+        ],
+        "native_translation": [
+          0,
+          12
+        ],
+        "raw_bounds_alpha8": [
+          188,
+          214,
+          438,
+          474
+        ],
+        "raw_pose": "assets/source/creatures/dauntlessVanguard/rig-pilot-v4/raw-actions/g05/g05-f003.png",
+        "raw_pose_sha256": "c7ec93b6fc52661d0c9d694536a3b40e3442f03dec7fc1c162cca8b31980c878",
+        "reviewed": true
+      }
+    },
+    {
+      "frame": 4,
+      "group": 5,
+      "native_bounds": [
+        159,
+        236,
+        238,
+        276
+      ],
+      "output": "assets/source/creatures/dauntlessVanguard/rig-pilot-v4/native-actions/g05-v4-calibration-v2-camera-v1-placement-v1/g05-f004.png",
+      "packing_inverse_native_translation": [
+        0,
+        0
+      ],
+      "sha256": "e17a70d2ac23b853ad5cc9c48f78b2162a2d359305b9d41e07be52f2c29d5edd",
+      "source_atlas": "assets/source/creatures/dauntlessVanguard/rig-pilot-v4/paint-action-g05-atlas-v4.png",
+      "source_bounds": [
+        61,
+        245,
+        476,
+        440
+      ],
+      "source_cell": [
+        1,
+        1
+      ],
+      "source_cell_sha256": "8e334c1b19d9762130939e5b4f64a60a379bd60352e5cf9375d57d03d01641fe",
+      "source_return_scale": 1.0,
+      "translation": {
+        "basis": "Reviewed whole-frame vertical placement against this genuinely articulated raw pose lowest projected geometry, relative to standing452px/source and native267px; camera normalized once per atlas. No scale/limb geometry changed. Horizontal action displacement preserved.",
+        "expected_lowest_native_y": 274,
+        "native_before_bounds_alpha8": [
+          161,
+          220,
+          236,
+          256
+        ],
+        "native_translation": [
+          0,
+          18
+        ],
+        "raw_bounds_alpha8": [
+          167,
+          314,
+          461,
+          487
+        ],
+        "raw_pose": "assets/source/creatures/dauntlessVanguard/rig-pilot-v4/raw-actions/g05/g05-f004.png",
+        "raw_pose_sha256": "99f8c6c34b44ec93874f1cb418f5f611caa6c1fb85459e1d58f0e580889d06c4",
+        "reviewed": true
+      }
+    },
+    {
+      "frame": 5,
+      "group": 5,
+      "native_bounds": [
+        160,
+        243,
+        236,
+        277
+      ],
+      "output": "assets/source/creatures/dauntlessVanguard/rig-pilot-v4/native-actions/g05-v4-calibration-v2-camera-v1-placement-v1/g05-f005.png",
+      "packing_inverse_native_translation": [
+        0,
+        0
+      ],
+      "sha256": "11ce793919848f871a809ceb359d1a422471c41df2e322ca2da9930f00053ed4",
+      "source_atlas": "assets/source/creatures/dauntlessVanguard/rig-pilot-v4/paint-action-g05-atlas-v4.png",
+      "source_bounds": [
+        67,
+        291,
+        465,
+        455
+      ],
+      "source_cell": [
+        2,
+        1
+      ],
+      "source_cell_sha256": "4d3e6b12d767ef79b7b2f96535655e9ff22a91dbce6d6520d65f1b82680b9615",
+      "source_return_scale": 1.0,
+      "translation": {
+        "basis": "Reviewed whole-frame vertical placement against this genuinely articulated raw pose lowest projected geometry, relative to standing452px/source and native267px; camera normalized once per atlas. No scale/limb geometry changed. Horizontal action displacement preserved.",
+        "expected_lowest_native_y": 275,
+        "native_before_bounds_alpha8": [
+          162,
+          228,
+          234,
+          258
+        ],
+        "native_translation": [
+          0,
+          17
+        ],
+        "raw_bounds_alpha8": [
+          158,
+          337,
+          466,
+          490
+        ],
+        "raw_pose": "assets/source/creatures/dauntlessVanguard/rig-pilot-v4/raw-actions/g05/g05-f005.png",
+        "raw_pose_sha256": "d058d0b11f0f7036b18960e82643c464058657386836bd0cfca603b53e559cca",
+        "reviewed": true
+      }
+    }
+  ],
+  "generateShadow": 1,
+  "gif": "assets/source/creatures/dauntlessVanguard/rig-pilot-v4/paint-action-g05-native-review-v4-calibration-v2-camera-v1-placement-v1.gif",
+  "gif_sha256": "533c261559d0173a06413c076bb714a73c0a16813801e538c562e02ee3249197",
+  "group": 5,
+  "kind": "death",
+  "native_canvas": [
+    450,
+    400
+  ],
+  "padding_inverted": {
+    "basis": "deterministically pre-padded raw cells; original input transform only, not a claim imagegen retained positions",
+    "offset": [
+      46,
+      46
+    ],
+    "scale": 0.8203125
+  },
+  "per_frame_stretch": false,
+  "placement_version": 1,
+  "same_target_native_camera": true,
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "status": "calibrated technical export; generator framing/identity/motion/native review still required",
+  "unit": "dauntlessVanguard",
+  "version": 4,
+  "visual_approval_granted": false
+}

@@ -1,0 +1,27 @@
+--- a/client/ClientCommandManager.cpp
++++ b/client/ClientCommandManager.cpp
+@@ -140,14 +140,22 @@
+ 		}
+ 
+ 		// A headless client owns adventure AI interfaces instead of CPlayerInterface.
+-		// Keep the server's activity/ownership checks; never impersonate a foreign or neutral player.
++		// Match interface startup's connection ownership, including host-managed AI; never use foreign or neutral players.
+ 		// AI request producers hold a shared game-state lock and release it while awaiting replies.
+ 		// Serialize this new producer without waiting for a response on the network thread.
+ 		std::unique_lock stateLock(CGameState::mutex);
++		const auto connection = server.logicConnection;
++		const auto transport = connection->getConnection();
++		if(connection->connectionID == GameConnectionID::INVALID || !transport)
++		{
++			output.printCommandMessage("No owned player interface can save this game");
++			return;
++		}
++		const auto ownedPlayers = server.getAllClientPlayers(connection->connectionID);
+ 		for(const auto & entry : client.playerint)
+ 		{
+ 			const auto & player = entry.first;
+-			if(!player.isValidPlayer() || !entry.second || !server.isMyColor(player))
++			if(!player.isValidPlayer() || !entry.second || !ownedPlayers.count(player))
+ 				continue;
+ 			const auto state = client.gameState().players.find(player);
+ 			if(state == client.gameState().players.end() || state->second.status != EPlayerStatus::INGAME)

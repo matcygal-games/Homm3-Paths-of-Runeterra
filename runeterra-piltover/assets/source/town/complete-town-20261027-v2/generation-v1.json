@@ -1,0 +1,66 @@
+{
+  "status": "design proposal",
+  "workflow": "Complete whole settlement painted together first; not a background populated after placement.",
+  "provider": "OpenAI built-in image_gen",
+  "prompt": "runeterra-piltover/assets/source/town/complete-town-20261027-v2/prompt-v1.txt",
+  "prompt_sha256": "1a577a4a6baccbc231bfa80f41d0e693eaf05fc34ac4d785a3444dec8b1c0736",
+  "design_brief": "runeterra-piltover/assets/source/town/complete-town-20261027-v2/DESIGN-BRIEF.txt",
+  "design_brief_sha256": "23b8c406bbb70b2df84bedd298fe7e38a6b92d03e31e38d10fed75ca52a1ac89",
+  "master": "runeterra-piltover/assets/source/town/complete-town-20261027-v2/complete-town-master-v1.png",
+  "master_sha256": "15fc3295fa701d172085099bb4584e5b9ad679db1afbc06676feab390126e3b5",
+  "master_canvas": [
+    1836,
+    857
+  ],
+  "native": "runeterra-piltover/assets/source/town/complete-town-20261027-v2/complete-town-native-v1.png",
+  "native_sha256": "e3b87054fd824598a14875f2f14e05b9723d2f6a0e351dd76fba7e3dbc042923",
+  "native_canvas": [
+    800,
+    374
+  ],
+  "technical_conversion": {
+    "uniform_cover_factor": 0.4364060676779463,
+    "rounded_size": [
+      801,
+      374
+    ],
+    "crop": [
+      0,
+      0,
+      800,
+      374
+    ],
+    "method": "Uniform LANCZOS resample then native-canvas registration crop; no artwork painted by code."
+  },
+  "references": [
+    {
+      "path": "build/reports/piltover-implementation-20261025-v1/hextech-revision-v1/town/all35-native-contact-v4.png",
+      "sha256": "743f34cf4dace0a68969fe4de90b6797237162ac0a5413570a91ce657f0192bb"
+    },
+    {
+      "path": "runeterra-piltover/assets/references/ancillary/tbcsback.pcx.png",
+      "sha256": "0b8444f0a57b974f0931b9f0c56a2b0fb6f4b9fc71a67396441ca862406d1dc8"
+    },
+    {
+      "path": "build/reports/piltover-implementation-20261025-v1/creatures-high/private-references-v1/official-piltover-crest.png",
+      "sha256": "791562b71b37607dc4067d6643d04473f55fa16104713ec13490d67c5baf59a2"
+    },
+    {
+      "path": "build/playtests/paths-of-runeterra-20261027-v4/proofs/native-human-v4/town-5.png",
+      "sha256": "d5f779b371ce91618bb1cb20391c79b2bf5830d7f6e14b07558af605d9b746e2"
+    }
+  ],
+  "previous_native_reference_is_rejected": true,
+  "functional_family_count_requested": 16,
+  "optional_sites_requested": [
+    "coast/shipyard/boat",
+    "Progress Orrery/Grail"
+  ],
+  "sliced_layers_created": false,
+  "canonical_sources_changed": false,
+  "native_executed": false,
+  "external_art_accepted": false,
+  "release_accepted": false,
+  "root_review": "pending",
+  "observed_design_limit": "Optional right-edge boat is partly cut by frame; root must review this and sixteen-family readability before any slicing."
+}

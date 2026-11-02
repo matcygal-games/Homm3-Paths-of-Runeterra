@@ -1,0 +1,165 @@
+{
+  "adventure_projection": "Exact existing fixed affine project() with actual battle pivot, anchor80,60 and canvas96,64; select one uniform per-unit scale only after checking all-frame alpha8 bounds in both facings. No per-pose fit/crop or changed anchor.",
+  "battle_groups": {
+    "0": 6,
+    "1": 7,
+    "11": 6,
+    "12": 6,
+    "13": 6,
+    "2": 2,
+    "20": 3,
+    "21": 3,
+    "22": 1,
+    "3": 3,
+    "4": 3,
+    "5": 6,
+    "7": 3,
+    "8": 3
+  },
+  "candidate_only": true,
+  "canonical_roles": [
+    "battle",
+    "map",
+    "large",
+    "small",
+    "attackLeft",
+    "attackRight"
+  ],
+  "canvases": {
+    "attackLeft": [
+      96,
+      64
+    ],
+    "attackRight": [
+      96,
+      64
+    ],
+    "battle": [
+      450,
+      400
+    ],
+    "large": [
+      58,
+      64
+    ],
+    "map": [
+      96,
+      64
+    ],
+    "small": [
+      32,
+      32
+    ]
+  },
+  "group_semantics": {
+    "0": "genuine wingbeats T5 / wingless coil flight T7",
+    "1": "occasional genuine fidget",
+    "11": "melee upper right",
+    "12": "melee level right",
+    "13": "melee lower right",
+    "2": "static quiet ordinary holding",
+    "20": "takeoff",
+    "21": "landing",
+    "22": "native DEAD terminal grounded corpse; exact final group5 frame",
+    "3": "hit",
+    "4": "defend",
+    "5": "grounded death",
+    "7": "turn toward front",
+    "8": "turn toward rear"
+  },
+  "heraldry": "Correct single-region Ionia circular flowing crest and isolated teardrop, physically on voluntary harness/cloth ornament. Not branded on fur/scales, no implied national ownership. Natural occlusion required.",
+  "map_groups": {
+    "0": 6
+  },
+  "map_semantics": "Six actual animated ordinary monster idle frames; not directions. Separate encounter attacks have both facings.",
+  "native_execution": false,
+  "palette": "Opaque ivory/soft skyblue, plum/indigo cloth and restrained dusty pink. OriginalHeroesIII compact painted values/light/materials remain visual authority.",
+  "primary_subjects": [
+    {
+      "artist": "SIXMOREVODKA",
+      "boundary": "Particular ancient female Autumn Valley guardian. Generic voluntary recruitment, sustained flight and upgrade are explicit adaptations; no automatic LoR hand buff.",
+      "card": "01IO023",
+      "image_sha256": "1324ad73de87f31cb0c4ee612991efad4cc2964d69cb27d94802874851cfa5a2",
+      "url": "https://dd.b.pvp.net/7_10_0/set1/en_us/img/cards/01IO023-full.png"
+    },
+    {
+      "artist": "SIXMOREVODKA",
+      "boundary": "Official DRAGON+Elusive, wingless long scaled cloud serpent. Living flying two-hex melee, recruitment and elder rank adapted. No western wings, LeeSin spirit, NON_LIVING, breath, shot, cast or keyword-derived immunity.",
+      "card": "01IO030",
+      "image_sha256": "d45f8984da003364d676647530d561c2a2e35c8844f0dce33b8d70e32c9144c9",
+      "url": "https://dd.b.pvp.net/7_10_0/set1/en_us/img/cards/01IO030-full.png"
+    }
+  ],
+  "production": "Built-in imagegen fresh painted masters and actual articulated2D action atlases from own clean identities, official subject and original native HeroesIII references only. No oldproject3D render, pose guide, Blender/equivalent, code-created anatomy or vector crest.",
+  "redistribution_accepted": false,
+  "regional_crest": {
+    "image_sha256": "0b7f25f903d6aab3c54981197bd703789bd41ec68521820a55cfab58078bf48f",
+    "private_reference_not_bundled": true,
+    "url": "https://dd.b.pvp.net/7_10_0/core/en_us/img/regions/icon-ionia.png"
+  },
+  "release_accepted": false,
+  "revision": "V2 corrects DEAD22 semantics; original V1 contract and source preserved",
+  "scope": "Fresh painted2D Ionia tier5 and tier7 source candidates; no live recipes, manifest or stage changes",
+  "status": "authored configuration",
+  "timing_owned_by_content": {
+    "animationTime": {
+      "attack": 1,
+      "idle": 10,
+      "walk": 1
+    },
+    "timeBetweenFidgets": 0.1
+  },
+  "units": {
+    "crestboundProtector": {
+      "battle_pivot": [
+        197,
+        266
+      ],
+      "casting": false,
+      "double_wide": false,
+      "living": true,
+      "nature": "fictional experienced guardian with distinct protective equipment and crystal crown",
+      "shooting": false,
+      "tier": 5
+    },
+    "elderEmpyrean": {
+      "battle_pivot": [
+        218,
+        266
+      ],
+      "casting": false,
+      "double_wide": true,
+      "living": true,
+      "nature": "fictional elder of same living wingless cloud dragon identity",
+      "shooting": false,
+      "tier": 7
+    },
+    "empyrean": {
+      "battle_pivot": [
+        218,
+        266
+      ],
+      "casting": false,
+      "double_wide": true,
+      "living": true,
+      "nature": "living wingless four-limbed coiling dragon; native flight and recruitment adapted",
+      "shooting": false,
+      "tier": 7,
+      "upgrade": "elderEmpyrean"
+    },
+    "jeweledProtector": {
+      "battle_pivot": [
+        197,
+        266
+      ],
+      "casting": false,
+      "double_wide": false,
+      "living": true,
+      "nature": "living female-inspired voluntary winged guardian adaptation",
+      "shooting": false,
+      "tier": 5,
+      "upgrade": "crestboundProtector"
+    }
+  },
+  "visual_approval_granted": false
+}

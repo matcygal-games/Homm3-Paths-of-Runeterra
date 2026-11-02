@@ -1,0 +1,100 @@
+{
+  "acceptance": "Production requirements only. No rig/guide/primitive/reference may substitute for painted final art; this recipe must fail while its real master/hash is absent.",
+  "animation_contract": "Minimum static architectural g0 is valid; real torch/banner frames may extend the painted cohort, never duplicated fake motion",
+  "art_direction": "Independent Noxian iron/crimson/black subjects in Heroes III native painted language. Never recolour Castle or Demacia art, import original pixels or invent an official crest.",
+  "building": "dwellingUpLvl1",
+  "building_contract": {
+    "full_canvas_placement": {
+      "x": 0,
+      "y": 0,
+      "z": 249
+    },
+    "name": "Veterans' Barracks",
+    "native_ground_contact": [
+      145,
+      235,
+      238,
+      252
+    ],
+    "upgrades": "dwellingLvl1"
+  },
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI built-in imagegen; deterministic project conversion",
+    "license": null,
+    "redistribution": "unresolved; no release or redistribution approval"
+  },
+  "dimensions_basis": {
+    "canvas": [
+      800,
+      374
+    ],
+    "mode": "RGB",
+    "reference_only": "runeterra-demacia/references/images/tbcsback.pcx.png",
+    "reference_sha256": "949012ea68999207934bc482f1552858474fe50cefddef17eaac00d4b98c2be9",
+    "use": "Dimensions/format only. No reference pixels, palette, source recipe, layout silhouette or licensed art copied."
+  },
+  "fit": "exact",
+  "generateOverlay": 0,
+  "generateShadow": 0,
+  "generation": {
+    "assembly_script": "assets/source/town/approved-nx1-finish-20261030-v1/assemble.py",
+    "assembly_script_sha256": "afea250b2300d0b902c2145825866089004b5c84bb049413f4146b1ead52a668",
+    "candidate_only": true,
+    "image_generation_used": true,
+    "method": "Painted2D master with exact approved pixels; technical contour isolation and native registration. Hidden wall patches and coast derive from separately preserved imagegen paintings.",
+    "model": "Not exposed by built-in tool",
+    "painted_master": "assets/source/town/approved-nx1-20261029-v1/approved-master.png",
+    "painted_master_sha256": "e37cfa2aff3c7764806772d57ccc5d5b547f10b8a3e4a0954645d90ecbd22241",
+    "prompt": "Use case: precise-object-edit. Image1 is the target full Noxian city painting, image2 is PRIVATE heraldry reference only. Preserve the entire city composition, all building bodies, placement, dark reddish sky, roads, paving, stairs, lighting and canvas exactly as image1. Change ONLY the false trident/fleur-de-lis symbols painted on the crimson civic/military banners. Replace each with an independently painted warm ivory or worn pale gold adaptation of the actual Noxus crest from image2: broad paired hooked outer axe lobes, two rounded upper negative-space openings, sharp central upright point and split tapering blades below. Keep recognizable silhouette and cutouts, materially painted into cloth with existing folds/perspective/light, do not simply paste reference PNG pixels. Keep the existing Black Rose flower marks on the clandestine left buildings unchanged. No other changes, no words, no new buildings, no cropping. This remains a complete painted2D Heroes3 town concept, not accepted game art.\n",
+    "provider": "OpenAI built-in image_gen",
+    "source_ledger": "assets/source/town/approved-nx1-finish-20261030-v1/source-ledger.json",
+    "source_ledger_sha256": "f0f6946bedf8dcd0d7460d8b763a01ce5bcbc1567a3703b66b4d77aab17f5216"
+  },
+  "groups": [
+    {
+      "action": "own town building state, not a troop idle/action",
+      "frames": [
+        {
+          "sha256": "3f2968704c1217a20409a0b9ca044bb5e7f4442b5fcef57c7de1c44f8947f125",
+          "source": "assets/source/town/approved-nx1-finish-20261030-v1/structures/dwellingUpLvl1/layer.png",
+          "source_sha256": "3f2968704c1217a20409a0b9ca044bb5e7f4442b5fcef57c7de1c44f8947f125"
+        }
+      ],
+      "group": 0
+    }
+  ],
+  "inventory": {
+    "asset_id": "noxus.Sprites.runeterra.noxus.town.structures.dwellingUpLvl1.json",
+    "manifest": "assets/manifest.json",
+    "recipe_path": "assets/recipes/town/structures/dwellingUpLvl1-animation.json"
+  },
+  "output_path": "Content/Sprites/runeterra/noxus/town/structures/dwellingUpLvl1.json",
+  "pivot": {
+    "basis": "Full town canvas; content declares x0/y0; no Castle/Demacia building placement copied",
+    "x": 0,
+    "y": 0
+  },
+  "production_status": "painted-master-complete",
+  "recipe_type": "vcmi_animation",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "Real independent Noxus painted master and truthful provenance",
+    "Non-null SHA256 source pins",
+    "Official Noxus emblem provenance where used",
+    "Native-size silhouette/composition/alpha and role review",
+    "Explicit coordinator selection; no automatic acceptance"
+  ],
+  "role": "town-structure-animation",
+  "sha256": "3f2968704c1217a20409a0b9ca044bb5e7f4442b5fcef57c7de1c44f8947f125",
+  "source_canvas": [
+    800,
+    374
+  ],
+  "source_sha256": "3f2968704c1217a20409a0b9ca044bb5e7f4442b5fcef57c7de1c44f8947f125",
+  "status": "candidate-unselected",
+  "visual_approval_granted": false
+}

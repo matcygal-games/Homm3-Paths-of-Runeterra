@@ -1,0 +1,118 @@
+{
+  "acceptance": "Technical mask derived from the painted layer: the area mask defines the clickable footprint and the border mask the highlight outline. Both must be derived from the own painted layer, never copied from another faction or from the original game.",
+  "building": "fort",
+  "canvas": [
+    800,
+    374
+  ],
+  "content_box": [
+    0,
+    0,
+    800,
+    374
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; prompted and technically assembled by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/rampart-master.png",
+      "sha256": "1464f4b5bdd1b0baf21789b46db46bdba15dce8edcffed4c85e047f6ec2a2bd2"
+    },
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v3/provenance/fort.json",
+      "sha256": "9f9353934d285494a7c632a5d0b617c98eca56f2e7dd951f6cb59ca737bdfc48"
+    },
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v3/prepare.py",
+      "sha256": "820e604e675f6e6c5882374f6dbba3e252821682498fc53ac32445e9bf5f6393"
+    },
+    {
+      "path": "scripts/zaun_coastal_state_v1.py",
+      "sha256": "5aa45de45f59be66d393df44538743b1842db5ba5f1c4e48c1d83acaa13f3cf7"
+    },
+    {
+      "kind": "historical_provenance",
+      "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/fort-original.json",
+      "sha256": "cc50ac347243f36a3ffda55dc5ae3668c0cc4dc8d36dc8a2df66170a25becb10"
+    }
+  ],
+  "fit": "contain",
+  "generation": {
+    "composition_rectangle": [
+      5,
+      19,
+      155,
+      133
+    ],
+    "credits": {
+      "author": "OpenAI built-in imagegen; original selected Zaun prompts and historical source retained",
+      "license": null,
+      "redistribution": "unresolved; release prohibited"
+    },
+    "generation_route": "Preserved selected own painted 2D master; whole-source uniform contain and native placement only.",
+    "historical_prompt": "Use case: precise-object-edit. Edit own Zaun fortification atlas: three stages left-to-right, lowfront three-quarter towncamera, fort/citadel/castle allcompletelyinsidecanvas withclear gutters. Preserve heavy rustediron andconcrete curvedwalls, singlefrontgate andincreasingwatchtowerreinforcement across3upgrades. Make visibly CHEMTECH: luminous toxic GREEN narrow protective glass gauge columns/pumps beside gate and inside tower windows, connected copper pressurepipes andpurple fabric/enamelmarkers, browns/rust/soot remain solidmaterial. Strongest castle has two green-lit reinforcedtowercontrolbanks and hangingpurplestandard, basic fort onlysimplepipe+lamp. Not medievalCastle shapes, no fantasycrystals, no scifineonoutlines. Rich painted originalHeroesIIIprerenderedmaterialtreatment, upperleftdaylight andlocalgreenreflection. Preserve horizontalframing, fullfloorcontact andtiny flags. Real transparentalpha with no backdrop or sharedgroundtile, no text.",
+    "historical_provenance": {
+      "kind": "historical_provenance",
+      "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/fort-original.json",
+      "sha256": "cc50ac347243f36a3ffda55dc5ae3668c0cc4dc8d36dc8a2df66170a25becb10"
+    },
+    "historical_receipt_note": "Unchanged prior provider receipt retained privately at original authored source; not rewritten or claimed as new generation.",
+    "historical_receipt_sha256": "cc50ac347243f36a3ffda55dc5ae3668c0cc4dc8d36dc8a2df66170a25becb10",
+    "image_generation_used": true,
+    "mirror_x": false,
+    "model": null,
+    "model_disclosed": false,
+    "native_offset": [
+      7,
+      71
+    ],
+    "native_size": [
+      151,
+      79
+    ],
+    "new_image_generation_used": false,
+    "painted_master": "assets/source/town/chemtech-v4-buildings/rampart-master.png",
+    "painted_master_sha256": "1464f4b5bdd1b0baf21789b46db46bdba15dce8edcffed4c85e047f6ec2a2bd2",
+    "placement_plan": "assets/source/town/industrial-neighborhood-20261025-v3/live-placement-plan.json",
+    "placement_plan_sha256": "ebc0f8ca5a08869bae5a7a3ad205bc5cab43a61832d85454e856f3febf292333",
+    "provider": "OpenAI built-in imagegen",
+    "release_accepted": false,
+    "runtime_verified": false,
+    "source_crop": [
+      0,
+      280,
+      700,
+      645
+    ],
+    "status": "authored configuration",
+    "technical_helper": "assets/source/town/industrial-neighborhood-20261025-v3/prepare.py",
+    "technical_helper_sha256": "820e604e675f6e6c5882374f6dbba3e252821682498fc53ac32445e9bf5f6393",
+    "visual_approval_granted": false
+  },
+  "id": "zaun.town.structure.fort.border",
+  "identity_review": "build/reports/industrial-neighborhood-20261025-v3/source-pixel-review.json",
+  "native_visual_review": "pending",
+  "output_path": "Content/Sprites/runeterra/zaun/town/structures/fort_border.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/industrial-neighborhood-20261025-v3/structures/fort/border.png",
+  "source_sha256": "8a90e035f3a32f64aca329c139c0220b1d5c2124db3a83b566ae0d7169564f35",
+  "status": "built-unreviewed",
+  "technical": true,
+  "title": "Sump Rampart border mask",
+  "visual_approval_granted": false
+}

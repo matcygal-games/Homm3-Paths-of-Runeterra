@@ -1,0 +1,9 @@
+consumer_regression.cpp
+C:\Users\matcy\Documents\code\Homm3\runeterra-targon\engine-patches\turn-lifecycle-20261023-v1\tests\patched\consumer_regression.cpp(243): warning C4189: 'gsUnlocker': local variable is initialized but not referenced
+C:\Users\matcy\Documents\code\Homm3\runeterra-targon\engine-patches\turn-lifecycle-20261023-v1\tests\patched\consumer_regression.cpp(270): warning C4101: 'e': unreferenced local variable
+C:\Users\matcy\Documents\code\Homm3\runeterra-targon\engine-patches\turn-lifecycle-20261023-v1\tests\patched\consumer_regression.cpp(271): warning C4101: 'e': unreferenced local variable
+C:\Users\matcy\Documents\code\Homm3\runeterra-targon\engine-patches\turn-lifecycle-20261023-v1\tests\patched\consumer_regression.cpp(68) : warning C4702: unreachable code
+C:\Users\matcy\Documents\code\Homm3\runeterra-targon\engine-patches\turn-lifecycle-20261023-v1\tests\patched\consumer_regression.cpp(68) : warning C4702: unreachable code
+consumer_regression.obj : error LNK2019: unresolved external symbol "public: void __cdecl AIStatus::attemptedAnsweringQuestion(int,int)" (?attemptedAnsweringQuestion@AIStatus@@QEAAXHH@Z) referenced in function "public: void __cdecl AIGateway::requestSent(struct CPackForServer const *,int)" (?requestSent@AIGateway@@QEAAXPEBUCPackForServer@@H@Z)
+consumer_regression.obj : error LNK2019: unresolved external symbol "public: void __cdecl IGameEventsReceiver::requestRealized(struct PackageApplied *)" (?requestRealized@IGameEventsReceiver@@QEAAXPEAUPackageApplied@@@Z) referenced in function "public: void __cdecl ApplyClientNetPackVisitor::visitPackageApplied(struct PackageApplied &)" (?visitPackageApplied@ApplyClientNetPackVisitor@@QEAAXAEAUPackageApplied@@@Z)
+C:\Users\matcy\Documents\code\Homm3\runeterra-targon\engine-patches\turn-lifecycle-20261023-v1\tests\patched\consumer_regression.exe : fatal error LNK1120: 2 unresolved externals

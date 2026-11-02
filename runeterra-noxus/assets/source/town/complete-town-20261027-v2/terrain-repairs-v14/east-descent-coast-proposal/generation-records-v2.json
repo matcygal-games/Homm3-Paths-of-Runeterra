@@ -1,0 +1,40 @@
+{
+  "status": "design proposal",
+  "provider": "OpenAI built-in imagegen",
+  "model": "Not exposed by the built-in tool",
+  "generations": [
+    {
+      "name": "coast-v2",
+      "master": "coast-master-v2.png",
+      "prompt": "Use case: precise-object-edit. Painta genuine2D originalHeroesIII-style smallcoastpublicSTEPS connector. Input1 is exactemptytarget native11x21pixels enlarged16x. Input2 marks pinkprotectedfuturebuildingpixels, cyanaxiswherepublicstairsneeded. Input3futuretowncontextonly. Need obvious WALKABLE HORIZONTAL TREAD TOPS, NOTa ladder orverticalpier. Nativeglobalcropx742..752,y155..175. Keepupperquayrows155..157fixed. Withinx744..748,y158..172(localx2..6,y3..17), paint FOUR SHORT BROAD WOODEN STEPS with sunny flat topplanes seenfromabove, eachtoproughlyfivepixelswide andtwopixelsdeepatnative, separatedbydarkshortonepixelriserfronts. Theydescendfromdryupperquay157through158..169 toaflatwide rectangularHORIZONTAL WOODENBOTTOMLANDING atx744..748,y170..172. Thisbottomlanding MUSTreachx748172 besideactualboatdeckat749172, withNOwatergap. Show credible timberstringers/shortpile support BENEATH landing175, darkbrownwood/blackiron, warmupperleftlight. VerylowangledHeroesIIIpaintedobliquecamera, readablehorizontalplankstairtopplanes; no longverticalrail/ladderform. Keepwaterblueunchangedaroundconstruction. Protectedpinkbodies mustremain untouchedtargetpixels. NOmast,sail,buildings,boat,flags,letters,borders,cyan/pinkmarks ornewshoreline. Genuinepainted2Dmatchednativecompacttexture. Focus readable4wide horizontalstepplatforms+supportedrectangularlowerlanding, ratherthantoomanythinrungs. Outputsame11:21framing.",
+      "inputs": [
+        "coast-target-native16x-v1.png",
+        "coast-source-guide-v1.png",
+        "coast-architecture-context-v1.png"
+      ],
+      "output_hint": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a17eb3-9450-78b1-9d99-8dc606e762d9 as C:\\Users\\matcy\\.codex\\generated_images\\01a17eb3-9450-78b1-9d99-8dc606e762d9\\exec-b9a2a339-3ad1-4c46-ba5f-89d0a2d3bc66.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "name": "market-rift-v1",
+      "master": "market-rift-master-v1.png",
+      "prompt": "Usecase:precise-object-edit. Asset: tinygenuine2D originalHeroesIII town public stoneflight connecting two adjacentstreetlevels, nativecrop26x15. Input1 is exactemptyterrain edit target enlarged16x. Input2 pinkPROTECTEDfuturebuildingbody/rootpixels and cyan desiredcrossingaxis; image3 futurebuildingcontextONLY. Need a SMALL REAL publicstoneflight crossing the obstructing diagonal retainingface/pier, fromrightMarketpaversnear579233 (croplocal25,11) toleftRiftpaversnear559233(local5,11). Allactualpaintingmustbeinthe freeBOTTOMbandnativey231..236(localy9..14), widthx554..579. Upperrightpinktriangleprotectedentirelyunchanged. Paint3or4readablewidehorizontal stoneTREADTOPplanes obliquelyseen descending gentlyRIGHTtoLEFT acrosspierx565..574, witheachshortdarkriser BELOWthead andflatpavedlandingsatbothends. Native6pixeldepthonly; scaledtinyarchitecture,matchnativewarmgreystone/mortar/upperleftlight and compactoriginalHeroesIIItheatricalcamera. Removetheobstructingverticalfaceonlythroughthissmallpubliccrossing; retainotherwall/rock/veg aroundit. NOnewbuildings, roofs, props, text, flags, borders, cyan/pinkmarks. Do notjustputapavingtextureoverwall: genuinephysicallyreadablesteps withtreadfronts andtwolevelendlandings. No3D/filters. Same26:15framing; seamlesspaintedterraincontext.",
+      "inputs": [
+        "market-rift-target-native16x-v1.png",
+        "market-rift-source-guide-v1.png",
+        "market-rift-architecture-context-v1.png"
+      ],
+      "selection": "Rejected crop: steps mostly above authorized bottom strip",
+      "output_hint": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a17eb3-9450-78b1-9d99-8dc606e762d9 as C:\\Users\\matcy\\.codex\\generated_images\\01a17eb3-9450-78b1-9d99-8dc606e762d9\\exec-1482c4b3-9cb3-4e2c-97e6-3aea07a2eb3d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "name": "market-rift-v2",
+      "master": "market-rift-master-v2.png",
+      "prompt": "Usecase:precise-object-edit. Native26x6 extremelyWIDE tinyterrainstrip, enlarged32x. Image1 is EXACTtarget ONLY, lowerpubliccrossingstripglobalx554..579,y231..236. Image2 nearbyfuturebuildingscontextONLY. Replace the central verticalwallface/stonepier with a REALSHORT THREE-STEP weathered stonePUBLICFLIGHT across ENTIREstrip, a low wide walkway fromleftpavingx559233 to rightpavingx579233. Clear flat oblique stone tread TOPS in the center, each smallwide level tread separatedbyshortdarkriserfronts below; seamlessflatpavingatbothends. Route gentlydescendsRIGHTtoLEFT. CropONLY6nativepixelsdeep: thewholewalkingcrossing must fit thisstripandreachitsrightedge andleftpavers. Do NOTputstepsaboveorbelowcrop orretainwallacrosscenter. Preservecompact originalHeroesIIIpainted2D warmgreystone and blackmortar/upperleftlight matchingtarget andimage2, nativegrain. Allfeaturesverysmall. A physicallycoherent lowpublicstairbridge throughwall, genuinepaintedhorizontalplanes. No building, vegetation acrosswalkway, pillars acrosspath, labels, borders, blackletterbox, watermark. Outputfullbleed sameextremelywide26:6framing. No3D/geometricfilters.",
+      "inputs": [
+        "market-rift-target-native32x-v2.png",
+        "market-rift-architecture-context-v1.png"
+      ],
+      "output_hint": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a17eb3-9450-78b1-9d99-8dc606e762d9 as C:\\Users\\matcy\\.codex\\generated_images\\01a17eb3-9450-78b1-9d99-8dc606e762d9\\exec-10932e10-7b8d-4fa1-b46d-474721c8e198.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  ]
+}

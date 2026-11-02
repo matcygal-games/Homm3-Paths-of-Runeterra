@@ -1,0 +1,204 @@
+{
+  "definition": {
+    "category": "flying-melee",
+    "chain_links": 19,
+    "chain_radius": 0.032,
+    "comparison": [
+      "core:goldDragon",
+      "core:ghostDragon",
+      "core:archangel"
+    ],
+    "definitions_path": "assets/source/creatures/ruin-flight-definitions-v2.json",
+    "equipment": [
+      "completed-thorn-vine-wing-frames",
+      "heavy-double-chain-harness",
+      "hanging-chain-loops",
+      "scapular-thorns",
+      "deep-split-shadow-mantle"
+    ],
+    "family": "ruin",
+    "fissure_color": [
+      0.68,
+      0.027,
+      0.04,
+      1
+    ],
+    "flight": true,
+    "height": 2.85,
+    "lore": "Stronger invented bound manifestation, not canonical species, Atakhan clone or his Thornbound identity",
+    "native_height": 160,
+    "nature": "NON_LIVING",
+    "rig_revision": "flight-rig-v2",
+    "silhouette": "Larger wider predatory body, extended scapular thorns, wider asymmetric vine wing crown, completed diagonal double-chain harness and hanging heavy chain loops, deeper split mantle and brighter restrained fissures; material body/binding/silhouette changes, not recolour or robot armour",
+    "tier": 7,
+    "two_hex": true,
+    "upgrade": true,
+    "vine_radius": 0.065,
+    "weakness": "Two-hex physical landing, ordinary single-target attack and retaliation; no teleport, cleave, shot or morale buff",
+    "weapon": "long-claws",
+    "width": 0.67,
+    "wing_span": 1.72
+  },
+  "image_generation_calls": 0,
+  "native": {
+    "attack_semantics": "One ordinary single-target clawed strike with ordinary retaliation. No breath/line cleave, shot, spell, teleport, extra action or fake flight.",
+    "battle_footprint": {
+      "body_center": [
+        175,
+        266
+      ],
+      "doubleWide": true,
+      "front_center": [
+        197,
+        266
+      ],
+      "hex_height": 42,
+      "hex_width": 44,
+      "rear_center": [
+        153,
+        266
+      ],
+      "semantics": "Two adjacent battle hexes derived from doubleWide, NOT from the adventure mapMask. Mask PNG is a technical source guide only, not a game asset.",
+      "source_mask": "battle-footprint-guide-mask.png"
+    },
+    "canvas": [
+      450,
+      400
+    ],
+    "excluded_groups": [
+      14,
+      15,
+      16,
+      30,
+      31,
+      32,
+      40,
+      41,
+      42,
+      50,
+      51
+    ],
+    "groups": {
+      "0": {
+        "action": "bound-magic-flight-loop",
+        "frames": 8
+      },
+      "1": {
+        "action": "binding-tension-fidget",
+        "frames": 4
+      },
+      "11": {
+        "action": "single-target-clawed-strike-up",
+        "frames": 8
+      },
+      "12": {
+        "action": "single-target-clawed-strike-front",
+        "frames": 8
+      },
+      "13": {
+        "action": "single-target-clawed-strike-down",
+        "frames": 8
+      },
+      "2": {
+        "action": "low-hover-holding-loop",
+        "frames": 6
+      },
+      "20": {
+        "action": "bound-rise-before-flight",
+        "frames": 6
+      },
+      "21": {
+        "action": "bound-descent-to-low-hover",
+        "frames": 6
+      },
+      "22": {
+        "action": "actual-final-collapse-corpse",
+        "frames": 1
+      },
+      "3": {
+        "action": "airborne-hit-recoil",
+        "frames": 4
+      },
+      "4": {
+        "action": "clawed-airborne-guard",
+        "frames": 4
+      },
+      "5": {
+        "action": "demonic-collapse-wing-binding-fold",
+        "frames": 8
+      },
+      "7": {
+        "action": "airborne-turn-toward-viewer",
+        "frames": 4
+      },
+      "8": {
+        "action": "airborne-turn-back",
+        "frames": 4
+      }
+    },
+    "map": {
+      "activatable_cell": [
+        1,
+        1
+      ],
+      "canvas": [
+        96,
+        64
+      ],
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "native_placement_review": "Canvas/pivot need actual painted adventure sprite and native loader review; mapMask is already present in the content dictionary, which this task does not edit.",
+      "pivot": {
+        "x": 64,
+        "y": 58
+      },
+      "visible_columns": 2
+    },
+    "native_group_source": "vcmi-develop/vcmi-develop/client/battle/BattleConstants.h:59-100; MovementStart/EndAnimation selects20/21 for physical FLYING, 50/51 only for movementTeleporting",
+    "pivot": {
+      "x": 197,
+      "y": 266
+    }
+  },
+  "painted_master": null,
+  "placeholder_game_art": 0,
+  "recipes": [
+    {
+      "output_path": "Content/Sprites/runeterra/noxus/creatures/greaterRuinBringer/battle.json",
+      "recipe": "assets/recipes/creatures/greaterRuinBringer-battle.json",
+      "sha256": "ee49f3070b86b322e02e658037a42a735a1d82ae4b77d9ac70d109d0f34dfe03"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/noxus/creatures/greaterRuinBringer/map.json",
+      "recipe": "assets/recipes/creatures/greaterRuinBringer-map.json",
+      "sha256": "11be90655558fc6d505a87db4e6e2c8c46ffef4c1dc4b46648f745ea33c35919"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/noxus/creatures/greaterRuinBringer/large.png",
+      "recipe": "assets/recipes/creatures/greaterRuinBringer-large.json",
+      "sha256": "6726257f3173b9a51ac0ff9b5ecda9cd1681a56196d5e280d8bcb637bac1f6f5"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/noxus/creatures/greaterRuinBringer/small.png",
+      "recipe": "assets/recipes/creatures/greaterRuinBringer-small.json",
+      "sha256": "e673b6c093309819a51ec91674a9bc598ef0bc0885ec53b3026b0ec819365833"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/noxus/creatures/greaterRuinBringer/attackLeft.png",
+      "recipe": "assets/recipes/creatures/greaterRuinBringer-attackLeft.json",
+      "sha256": "ec24818c1edfb843034d3e74e1343ce0cafa497e49eba6a229d5dde1d0ba3356"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/noxus/creatures/greaterRuinBringer/attackRight.png",
+      "recipe": "assets/recipes/creatures/greaterRuinBringer-attackRight.json",
+      "sha256": "f32262c1a0808c2767f8bf3ac0553b8cda509dbb13e4c0c923aa2ccf2874828a"
+    }
+  ],
+  "rig_path_pattern": "assets/source/creatures/greaterRuinBringer/flight-rig-v2/<run>/greaterRuinBringer-guide.blend",
+  "runtime_verified": false,
+  "status": "authored configuration",
+  "unit": "greaterRuinBringer",
+  "visual_approval_granted": false
+}

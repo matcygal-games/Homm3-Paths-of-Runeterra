@@ -1,0 +1,61 @@
+{
+  "recipe_type": "raster",
+  "canvas": [
+    64,
+    64
+  ],
+  "fit": "exact",
+  "source": "assets/source/creatures/painted-v1/t1-t3/aux-v1/canopyTracker/encounters/pose-05.png",
+  "source_sha256": "6c2d8bf0a96798f9211e644e55ed94d36b8cfe0685bef1afd7752d354ca94283",
+  "source_canvas": [
+    64,
+    64
+  ],
+  "output_path": "Content/Sprites/runeterra/ixtal/creatures/canopyTracker/attackRight.png",
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in image_gen",
+    "model": "not exposed by built-in tool",
+    "prompt": "Usecase: identity-preserve. Assettype: ORIGINALHeroes3 IXTAL CANOPY TRACKER adventure/encounterpainted2Dposeatlas. Image1exactUPGRADEDTrackeridentity;image2actualnative64x64encounterframeCAMERA/COMPACTPOSEreferenceonly,nocopyoriginalpixels;image3exactIxtalcrest. EXACTLY8completeSAMEadultTrackerposes, STRICT4columnsx2rowsequalcellstransparentlandscape,no text/borders/scene. InEVERYpose retainFULLSQUARELAMELLARCHESTTORSOARMOR, broadlayeredSHOULDERPROTECTION/heavybracers/shinguards, reinforcedsingle-headedspear, LARGE metal/mineralRIMMEDfacedshieldEXACTgoldIxtalcrest, jadeheadwrap,brownadultface,heavytravelkit/watervessel. DoNOTdowngradetoGuideclothorlosearmorincells. Sameanatomicalscale/gear/palette/top-leftwarmlight. Entirefigure/spearinsidecentral70percentofcellwithwideemptygutters. SlightlyhighernativeADVENTUREthreequarterviewthanbattle, upperplanesvisible, compactrichpainted2DHoMM3materials/darkcontours,noBlender/3D/glossyplastic/anime/vector/pixelfilters. Plantedbootprojectedrootfixedaroundcell(192,335)in384cells; nozoom/rootdrift. SpearheldCLOSEUPRIGHTorSHORTDIAGONALACROSSCHESTsofullactorfitsnative64x64reaction, notlonghorizontalattack. Finalnativehumanabout44pxbody,map96x64root80,60/reaction64x64root48,60. ROW1fourgentleRIGHTfacingMAPIDLE/FIDGETphases: relaxedready;inhale/chestslightrise;smallheadlook/shieldsettle;exhale/returntowardready. Feetstayplanted, nofakewalkingtranslations. ROW2genuinelypaintedencounterposes: col1RIGHTfacingthreat/braceshieldandspear;col2LEFTfacingthreatwithanatomicalgear/perspectiveandplantedboots;col3RIGHTfacingsettledguard;col4LEFTfacingsettledguard. Bothfacingfiguresfullyinsidetheircells, stableprojectedfootroot, no shiftedmirrors, ghostweaponsorbodycopies. Physicalcrestfollowsshieldsurface/foreshortening/naturalocclusion,nofloatingbadge. Truealpha,nohaze/shadowmat/pedestal/tiles/UI.",
+    "painted_master": "assets/source/creatures/painted-v1/t1-t3/canopyTracker/adventure-atlas-v1.png",
+    "painted_master_sha256": "b226847871c5dcb99c47edf3eb4e5ca61878c87b17c306d203cb7b659a0a7d07",
+    "method": "Genuine painted2D dedicated source poses/scenic portrait, technical isolation and fixed uniform registration only; no3D, bbox fitting or body warps."
+  },
+  "production_inputs": [
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/assemble_aux_roles_v1.py",
+      "sha256": "d16f8481e863a603d62da3bac0392e61f288472b2ce55ad38ec7eb2814bffb8e"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/components.py",
+      "sha256": "2c3bd6f800958b39cffa67d13edf7678c3eb460eb1f59dcfc8679b2e82833336"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/aux_registration.json",
+      "sha256": "d66b2c36bf8a119f5ecc4c67daeb03e8fb36e4b73742e98a929154e2ede41ef6"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/aux-v1/canopyTracker/role-placement.json",
+      "sha256": "adf2ddba32b9b95fdf01b76d1b440f83c51ca0f8abf2f05c4c51dda808f5da28"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/canopyTracker/adventure-atlas-v1.png",
+      "sha256": "b226847871c5dcb99c47edf3eb4e5ca61878c87b17c306d203cb7b659a0a7d07"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/canopyTracker/adventure-atlas-v1.generation.json",
+      "sha256": "4af37020ee4e5fc8dc525e6a470f8294d48d912cd1c1401ab9378fe6f954e956"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/canopyTracker/portrait-master-v1.png",
+      "sha256": "860ffc2817a92ce07ec939e798710ad636206f72c325d58887db359ea270e286"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/canopyTracker/portrait-master-v1.generation.json",
+      "sha256": "191baceccfcf9e37efa44dd97eb0076bd71a2b0cf66d1b4a6d206393c88190dd"
+    }
+  ],
+  "production_status": "painted-master-complete-unapproved",
+  "acceptance": "authored configuration; independent/native/pixels/rights pending",
+  "visual_facing": "left"
+}

@@ -1,0 +1,151 @@
+{
+  "credits": {
+    "author": "OpenAI image generation directed by Runeterra project",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "generation": {
+    "image_generation_used": true,
+    "model": null,
+    "model_disclosure": "The callable tool did not disclose a model identifier.",
+    "painted_master": "assets/source/creatures/chemtechConstruct/painted-v2/auxiliary-master.png",
+    "painted_master_sha256": "c5ffc49ff26796903b1d0fb5307784fb8c9fbc3d426eac4db1be26d85c8d1f6a",
+    "prompt": "Use case: stylized-concept. Asset type: small game-creature art sheet on TRANSPARENT ALPHA background. SIX distinct paintings, in EXACT 3 columns x 2 rows, clean wide empty transparent gutters; no other marks. NO COLORED BACKGROUND, no floor, no shadow, no text. One same ZAUN CHEMTECH CONSTRUCT workshop pressure-pumping machine, original 1999 Heroes III painted/prerendered miniature rendering with compact silhouette, richly painted corroded texture and subdued highlights. This is NOT a humanoid robot or iron golem: it has NO head or eyes; a squat dark riveted rectangular pump casing on two short visibly articulated metal piston legs with wide work-feet, large oxidized copper cylindrical pressure tank strapped across its back, mechanical inspection hatch above front, a protruding amber dial gauge on chest, RIGHT arm a thick flexible hose ending in a single heavy rusty NOZZLE, LEFT arm a short industrial clamp. Clearly asymmetrical handmade workshop appliance with patchwork iron and copper. NO blue light, hextech, sleek sci-fi styling, magic or aura. Lit from upper left. Row1 column1 full body battlefield neutral stance facing right in near side three-quarter view; column2 a separately redrawn simpler full-body adventure map miniature facing right in more overhead camera; column3 a separately drawn full body stance facing LEFT showing the far side and clamp silhouette, NOT horizontal mirror of right-facing. Row2 column1 tight head-and-shoulders portrait: hood hatch, brass gauge, tank straps, nozzle collar visible in a 58:64 composition; column2 a NEW more horizontal portrait of upper casing and tank in 48:32 composition; column3 another full body right-facing stance in more overhead adventure camera. Paint every figure independently but keep the exact same individual machine and materials. Leave generous transparent space around all six figures. Keep each image separate within its equal rectangular cell. True transparency, not a painted checkerboard.",
+    "provider": "OpenAI built-in image_gen tool",
+    "returned_provenance": {
+      "generated_file": "C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-da23-7872-b9d7-26cd44e2d4c0\\exec-42fb3463-39b3-46bc-89d5-1198006c0240.png",
+      "output_hint": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-da23-7872-b9d7-26cd44e2d4c0 as C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-da23-7872-b9d7-26cd44e2d4c0\\exec-42fb3463-39b3-46bc-89d5-1198006c0240.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "route": "genuine built-in image generation; technical alpha-preserving crops and uniform resampling only"
+  },
+  "recipes": [
+    {
+      "recipe": "assets/recipes/creatures/chemtechConstruct-map.json",
+      "recipe_sha256": "4a8224eb9025da2007e503e0124a596603690cbfd03cdbe63aeb9b80ab31eebb",
+      "source": "assets/source/creatures/chemtechConstruct/painted-v2/native-map/g00/g00-f000.png",
+      "source_sha256": "357bf260fe262f8b887cc187d8d7eda9c1fdaeec6c069254f8e720788078a1bc"
+    },
+    {
+      "recipe": "assets/recipes/creatures/chemtechConstruct-large.json",
+      "recipe_sha256": "1086b587da24f75d9d192765bdff882ba80e057e5942344bbf912822cb2e9920",
+      "source": "assets/source/creatures/chemtechConstruct/painted-v2/large-master.png",
+      "source_sha256": "7fc68be10fe2aff59d6b2492af8033871439e538d986b8cdb31e6f553017af8c"
+    },
+    {
+      "recipe": "assets/recipes/creatures/chemtechConstruct-small.json",
+      "recipe_sha256": "e8cbf0ee14a2a68f11a9d827bb6f4aab3a607b97e29422378d7bf73586885ffb",
+      "source": "assets/source/creatures/chemtechConstruct/painted-v2/small-master.png",
+      "source_sha256": "f15047a949336944d7d1704bd3bac71f001c430b3440de8ffb34ca4d250a615d"
+    },
+    {
+      "recipe": "assets/recipes/creatures/chemtechConstruct-attackLeft.json",
+      "recipe_sha256": "925de41b85a074d814bde3bf164ee17757160969401f5c1733ba067781e86923",
+      "source": "assets/source/creatures/chemtechConstruct/painted-v2/attackLeft-master.png",
+      "source_sha256": "61872e4ffcb7a59d9674e842e92ac0874183731ae1dd1ba642593b050a5a2de5"
+    },
+    {
+      "recipe": "assets/recipes/creatures/chemtechConstruct-attackRight.json",
+      "recipe_sha256": "b821dcf86a7c1adcefd65b3f75d38b43c3bad60ac2c7afd27460b892e1b82eb6",
+      "source": "assets/source/creatures/chemtechConstruct/painted-v2/attackRight-master.png",
+      "source_sha256": "3742d4addd5536e1ea2fd9e3fd708130895510e5803672e6f46066ff2f27b1aa"
+    }
+  ],
+  "status": "authored configuration; final approval pending",
+  "technical_transforms": {
+    "attackLeft": {
+      "offset": [
+        0,
+        1
+      ],
+      "panel": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "scale": 0.13882863340563992,
+      "source_alpha_box": [
+        39,
+        29,
+        500,
+        466
+      ]
+    },
+    "attackRight": {
+      "offset": [
+        0,
+        0
+      ],
+      "panel": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "scale": 0.14512471655328799,
+      "source_alpha_box": [
+        34,
+        26,
+        465,
+        467
+      ]
+    },
+    "large": {
+      "offset": [
+        0,
+        2
+      ],
+      "panel": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "scale": 0.12159329140461216,
+      "source_alpha_box": [
+        32,
+        0,
+        509,
+        487
+      ]
+    },
+    "map": {
+      "offset": [
+        41,
+        16
+      ],
+      "panel": [
+        570,
+        0,
+        1024,
+        512
+      ],
+      "scale": 0.13150684931506848,
+      "source_alpha_box": [
+        61,
+        76,
+        411,
+        441
+      ]
+    },
+    "small": {
+      "offset": [
+        0,
+        5
+      ],
+      "panel": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "scale": 0.065439672801636,
+      "source_alpha_box": [
+        23,
+        64,
+        512,
+        405
+      ]
+    }
+  }
+}

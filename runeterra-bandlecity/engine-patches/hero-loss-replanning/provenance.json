@@ -1,0 +1,149 @@
+{
+  "schema": 1,
+  "status": "authored configuration",
+  "locally_modified_engine": true,
+  "release_accepted": false,
+  "baseline_source_zip_sha256": "ecf04d296dcd02fc26219eae26749165fb2890022e4ae7454beb032945751346",
+  "fourth_patch_sha256": "2cc42f37d47c6c688eaa1b0e270dae04e08e4a5641d47dca1359829bcc56eb3a",
+  "incremental_patch_sha256": "8d68b29eb585e1078f0a5f4d9a11c3364566754d46ed4f2268a64df0c131cb21",
+  "changes_sha256": "c70543a17a41fe5d530fa57443628223c3af919875de62d140d1dceb0093f60b",
+  "ordered_reconstruction": [
+    {
+      "family": "ai-turn-lifecycle",
+      "files": 4074,
+      "signature": "6b1aebe017d3f0f4cfa100ca4fb165682c5738cdf74aa5f990f5b945091703f0"
+    },
+    {
+      "family": "hero-loss-replanning",
+      "files": 4075,
+      "signature": "4f084d2beeccdd5d728175e3a28f9f077c6c90d54d91b527365d80602c6c6542"
+    },
+    {
+      "family": "creature-previews",
+      "files": 4076,
+      "signature": "4de4b351774bac29ed4424d327cccae9eef5ae54e504ae2eeac830806cab487d"
+    }
+  ],
+  "combined_source_inventory_sha256": "4de4b351774bac29ed4424d327cccae9eef5ae54e504ae2eeac830806cab487d",
+  "combined_source_files": 4076,
+  "source_reconstruction_equals_final_build_and_green_receipts": true,
+  "receipts": {
+    "build": {
+      "path": "runeterra-bandlecity/build/reports/engine-ai-lifecycle/hero-loss-combined/build-1792684863999709900",
+      "result_sha256": "259d5c72019f6f25760e2da30ac0512494b589223d05037c1c99593f3571fa8e",
+      "output_sha256": "81e84606ce734b8f1699880675184d50145febf0b845cc6d680626a59032fa86",
+      "exit_code": 0
+    },
+    "targeted": {
+      "path": "runeterra-bandlecity/build/reports/engine-ai-lifecycle/hero-loss-combined/test-1792685039467382000",
+      "result_sha256": "2a894a5caab17c30c232e1b87a025247f8b2f5ed86b616cbdc3a81762e72587c",
+      "output_sha256": "2672bb9283d752ecc5d308c6de6742ed205d5110735a50e6ef4384a7f072e74e",
+      "exit_code": 0,
+      "tests": 21,
+      "failures": 0,
+      "errors": 0,
+      "gtest_sha256": "e47b5d267c90b390944204bc99e2bec6e8eca74df222ee6cdc3b09e040cf50d5"
+    },
+    "broader": {
+      "path": "runeterra-bandlecity/build/reports/engine-ai-lifecycle/hero-loss-combined/test-1792685054094537400",
+      "result_sha256": "320d888c6ac1f5c4e37f6aec4a3bb451ca6ea5d6fe4a7473fc35c0e5d392638c",
+      "output_sha256": "973a64803661003aad25a19a65ba02ba6399e1b4eeb264cae4d387203fcc04c0",
+      "exit_code": 0,
+      "tests": 93,
+      "failures": 0,
+      "errors": 0,
+      "gtest_sha256": "96132e94dda66c6933093a3ca3a00ffd19878c0fbf660dce159d258062c4f867"
+    },
+    "red": {
+      "path": "runeterra-bandlecity/build/reports/engine-ai-lifecycle/hero-loss-combined/test-1792684777376773400",
+      "result_sha256": "acffcb8e3c07ae91d4ba56497d9c5b34f5fedca5035162fa6f37f204e65cf51f",
+      "output_sha256": "19e499f14cce91c8335754151f925d623f124a46e6abe12ec5837ce8bedd5178",
+      "exit_code": 1,
+      "tests": 14,
+      "failures": 4,
+      "errors": 0,
+      "gtest_sha256": "c3e41c86a2671354947d2fb575dd7c27f718178ff6be4b973000f374bce66757"
+    }
+  },
+  "red_failed_cases": [
+    "HeroLossReplanning.realNormalDefeatCancelsMovingHeroTaskAndReplansWithoutErrors",
+    "HeroLossReplanning.realNormalDefeatProducesTypedCancellationAtMovementBoundary",
+    "HeroLossReplanning.realRetreatActionProducesEscapeAndCancelsTaskWithoutErrors",
+    "HeroLossReplanning.realSurrenderActionCancelsTaskWithoutErrors"
+  ],
+  "red_scope": "Exact fourth AIGateway.cpp consumer bodies plus inert new bookkeeping-method definitions, exact fourth Nullkiller.cpp; candidate headers and identical tests retained for linkage.",
+  "red_source_differences": [
+    "AI/Nullkiller2/AIGateway.cpp",
+    "AI/Nullkiller2/Engine/Nullkiller.cpp"
+  ],
+  "identical_native_test_sources_red_green": true,
+  "red_control_path": "runeterra-bandlecity/build/reports/engine-ai-lifecycle/hero-loss-combined/red-control-1792684743029218400/control.json",
+  "red_control_sha256": "b9cd9cd439ba3220b3e23b27e60a285f7aae98c7a965dcd8cc2f577811cdf4f4",
+  "runtime_handoff": "runeterra-bandlecity/build/reports/engine-ai-lifecycle/hero-loss-handoff-1792685142825316800/runtime-overlay.json",
+  "runtime_handoff_sha256": "2994d00997b55e89319e7da86605c71dc9e3f49d39d4a41a9b1062d274e6dc0f",
+  "link_proof": "runeterra-bandlecity/build/reports/engine-ai-lifecycle/hero-loss-handoff-1792685142825316800/link-proof.json",
+  "link_proof_sha256": "7d9dc429053174d159b5c549f9db3f589a729c5050daa7890fac4e8b29e07061",
+  "runtime_configuration_changes_required": [
+    {
+      "path": "config/schemas/creature.json",
+      "sha256": "db30fe3ed60c71a1df2a2440ee3bac558d3ac84210685a83ade012d892c42d29",
+      "fourth_sha256": "483890416bd675b7d2206c7b68d4dc1f3b2120dccfd41b5cfffc288ca69bfc4e",
+      "source": "runeterra-bandlecity/engine-patches/creature-previews/overlay/config/schemas/creature.json"
+    }
+  ],
+  "runtime_binary_delta": [
+    {
+      "path": "VCMI_client.exe",
+      "sha256": "0f690ea7297859c561369ff04a2e3c39d7d575d59e3ab0be74b99b40ec8867de",
+      "bytes": 7540736,
+      "fourth_sha256": "690e3c534b4877b9bb5b7441d6834f27cd334e182bc5feb0c8ec7bf612c75602"
+    },
+    {
+      "path": "VCMI_lib.dll",
+      "sha256": "31164446e3205bd6d36b5d8e62291fd35fbd3ea29fdc640efffeea4eda532254",
+      "bytes": 9583104,
+      "fourth_sha256": "61ca3b40dc8070ac57707d2c49d973bf2945227bdbf2919c8d6bfa17efea3c70"
+    },
+    {
+      "path": "VCMI_server.exe",
+      "sha256": "f812b96a0ed53af1dca9fb9dbf9278380f8abdc30c1707b8c40b96d068d6bb4b",
+      "bytes": 1097216,
+      "fourth_sha256": "eba68ecfd95635fdd5f925982c8a5a85aac473ddf06306a9eb8d2178c69500e6"
+    }
+  ],
+  "additional_dependency_delta": [],
+  "toolchain": {
+    "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+    "msvc": "14.51.36231",
+    "windows_sdk": "10.0.26100.0\\",
+    "msvc_cl_sha256": "e6d57100c82ae0310c18b16abfe52bc0df8fbb272ca6c5fb287d485807cfce91",
+    "cmake_sha256": "8e30b660920a328bcc62c4b6de1b86f0de7a178aca8ec5dbb6924fd05b4eb683",
+    "ninja_sha256": "4a641b1a404e390cf869b79782fecea9bc6cd9e5d2e0f97163cf4582c93bc843",
+    "external_conan_tree": "runeterra-freljord/.tools/engine-shutdown-fix/conan-home",
+    "conan_toolchain_sha256": "37cf18cb9a12f3f6a740c6074e87e58fbcd25d8d9f609e26f5074812d77ff6b1",
+    "conan_runtime_list_sha256": "20fd8639d594b26f325e8aefbbaae9c8e16a30648809e7ca0a135b883d6422a5",
+    "requirements_tools_lock_sha256": "ff2285e14875978c3c3a2ede6e7fbacac1634c922936d065eb2fb0ea181df797",
+    "build_flags": "Release;2/4jobs;SDL3 ON;launcher/editor/MMAI/LTO/ccache/GITVERSION/COPY_CONFIG_ON_BUILD OFF"
+  },
+  "compatibility": {
+    "serialized_or_network_fields_added": false,
+    "save_protocol_version_change": false,
+    "RNG_changes": false,
+    "bit_identical_async_gameplay_asserted": false
+  },
+  "fixture_limits": "In-process server-finalization/task adapter: passive battle interface/statusONGOING substitute; no HeroVisit/PlayerBlocked/battleResultsApplied routing, full CClient lifecycle, network concurrency or tactical strength claim.",
+  "diagnosis_correction": "Preserved v1 inferred NORMAL incorrectly; actual captured native actionType2 RETREAT maps to ESCAPE. Corrected authoritative known-result+opposite-winner classification is exercised by real MakeAction retreat/surrender.",
+  "remaining": [
+    "independent final source/runtime audit",
+    "coordinator runtime preparation/selection",
+    "fresh exact-stage native frontier and human UI",
+    "external human and rights approvals"
+  ],
+  "payload_excludes": [
+    "working src/b/reconstruction",
+    "licensed Data/references",
+    "native binaries",
+    "private config/cache/user",
+    "dependency/source ZIP caches"
+  ]
+}

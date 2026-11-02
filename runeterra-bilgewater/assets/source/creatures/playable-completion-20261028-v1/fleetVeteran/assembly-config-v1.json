@@ -1,0 +1,354 @@
+{
+  "battle_canvas": [
+    450,
+    400
+  ],
+  "battle_root": [
+    197,
+    266
+  ],
+  "companions": {
+    "encounter_root": [
+      44,
+      60
+    ],
+    "map_root": [
+      76,
+      60
+    ],
+    "portrait_crop": [
+      130,
+      5,
+      240,
+      140
+    ],
+    "pose": "ready",
+    "scale": 0.145
+  },
+  "excluded_source_keys": [
+    {
+      "pose": "turn2",
+      "reason": "Preserved near-front pose study; turn phase consumer review pending."
+    },
+    {
+      "islands": [
+        10
+      ],
+      "plate": "reactions-v1-raw.png",
+      "reason": "Two fallen bodies touch; combined island excluded and independent two-row corpse source used."
+    }
+  ],
+  "groups": {
+    "0": [
+      "near0",
+      "near1",
+      "near2",
+      "far0",
+      "far1",
+      "far2"
+    ],
+    "1": [
+      "ready",
+      "turn0"
+    ],
+    "11": [
+      "up0",
+      "up1",
+      "up2",
+      "ready"
+    ],
+    "12": [
+      "front0",
+      "front1",
+      "front2",
+      "ready"
+    ],
+    "13": [
+      "down0",
+      "down1",
+      "down2",
+      "ready"
+    ],
+    "2": [
+      "ready"
+    ],
+    "20": [
+      "ready",
+      "near0"
+    ],
+    "21": [
+      "far2",
+      "ready"
+    ],
+    "22": [
+      "death3"
+    ],
+    "3": [
+      "hurt0",
+      "hurt1",
+      "ready"
+    ],
+    "4": [
+      "defend",
+      "ready"
+    ],
+    "5": [
+      "death0",
+      "death1",
+      "death2",
+      "death3"
+    ],
+    "7": [
+      "ready",
+      "turn0",
+      "turn1",
+      "turn3"
+    ],
+    "8": [
+      "turn3",
+      "turn1",
+      "turn0",
+      "ready"
+    ]
+  },
+  "plates": {
+    "corpse-repair-v1-raw.png": {
+      "expected_islands": 2,
+      "poses": {
+        "death2": {
+          "island": 0,
+          "root": [
+            750,
+            539
+          ]
+        },
+        "death3": {
+          "island": 1,
+          "root": [
+            750,
+            1001
+          ]
+        }
+      },
+      "scale": 0.09,
+      "source": "fleetVeteran/corpse-repair-v1-raw.png",
+      "source_sha256": "cbb2f1c23d1b803664c3bc2e039f80f99eaa79f582e18bf2b34fd787df5544e5"
+    },
+    "far-walk-v1-raw.png": {
+      "expected_islands": 3,
+      "poses": {
+        "far0": {
+          "island": 1,
+          "root": [
+            380,
+            675
+          ]
+        },
+        "far1": {
+          "island": 0,
+          "root": [
+            1120,
+            675
+          ]
+        },
+        "far2": {
+          "island": 2,
+          "root": [
+            1810,
+            675
+          ]
+        }
+      },
+      "scale": 0.142,
+      "source": "fleetVeteran/far-walk-v1-raw.png",
+      "source_sha256": "40e783eae81cfab378187623a16b2072f6a7f90a61032a2fb11feac30a3c891d"
+    },
+    "melee-v1-raw.png": {
+      "expected_islands": 9,
+      "poses": {
+        "down0": {
+          "island": 6,
+          "root": [
+            240,
+            1071
+          ]
+        },
+        "down1": {
+          "island": 8,
+          "root": [
+            750,
+            1071
+          ]
+        },
+        "down2": {
+          "island": 7,
+          "root": [
+            1250,
+            1071
+          ]
+        },
+        "front0": {
+          "island": 3,
+          "root": [
+            240,
+            746
+          ]
+        },
+        "front1": {
+          "island": 5,
+          "root": [
+            750,
+            746
+          ]
+        },
+        "front2": {
+          "island": 4,
+          "root": [
+            1250,
+            746
+          ]
+        },
+        "up0": {
+          "island": 2,
+          "root": [
+            240,
+            392
+          ]
+        },
+        "up1": {
+          "island": 1,
+          "root": [
+            750,
+            392
+          ]
+        },
+        "up2": {
+          "island": 0,
+          "root": [
+            1250,
+            392
+          ]
+        }
+      },
+      "scale": 0.293,
+      "source": "fleetVeteran/melee-v1-raw.png",
+      "source_sha256": "7e24df6b125b2ceb781d20e84d49f8dd1f0d45a7c14f9661e4839f96b1350729"
+    },
+    "near-walk-v1-raw.png": {
+      "expected_islands": 3,
+      "poses": {
+        "near0": {
+          "island": 1,
+          "root": [
+            380,
+            690
+          ]
+        },
+        "near1": {
+          "island": 2,
+          "root": [
+            1120,
+            690
+          ]
+        },
+        "near2": {
+          "island": 0,
+          "root": [
+            1810,
+            690
+          ]
+        }
+      },
+      "scale": 0.131,
+      "source": "fleetVeteran/near-walk-v1-raw.png",
+      "source_sha256": "96307cf62c7e691f9d6162bc0a99493052e5ed3cd60c5ecc259431bd19309e1c"
+    },
+    "reactions-v1-raw.png": {
+      "expected_islands": 11,
+      "poses": {
+        "death0": {
+          "island": 8,
+          "root": [
+            180,
+            1051
+          ]
+        },
+        "death1": {
+          "island": 9,
+          "root": [
+            550,
+            1051
+          ]
+        },
+        "defend": {
+          "island": 2,
+          "root": [
+            550,
+            385
+          ]
+        },
+        "hurt0": {
+          "island": 1,
+          "root": [
+            910,
+            385
+          ]
+        },
+        "hurt1": {
+          "island": 3,
+          "root": [
+            1290,
+            385
+          ]
+        },
+        "ready": {
+          "island": 0,
+          "root": [
+            180,
+            385
+          ]
+        },
+        "turn0": {
+          "island": 4,
+          "root": [
+            180,
+            778
+          ]
+        },
+        "turn1": {
+          "island": 5,
+          "root": [
+            550,
+            778
+          ]
+        },
+        "turn2": {
+          "island": 6,
+          "root": [
+            910,
+            778
+          ]
+        },
+        "turn3": {
+          "island": 7,
+          "root": [
+            1260,
+            778
+          ]
+        }
+      },
+      "scale": 0.24,
+      "source": "fleetVeteran/reactions-v1-raw.png",
+      "source_sha256": "ab2bf4fd42110b8ca18bd1ad059b7b1548baa70a1f88c6a9b73a75bc4de79b36"
+    }
+  },
+  "unit": "fleetVeteran",
+  "unresolved": [
+    "Independent actual1x gait/leg-ownership and costume/root continuity review pending",
+    "Displayed native paired-turn facing/reposition continuity not yet verified",
+    "Stock body preview/companions require bounded pixel inspection",
+    "Regional crest native1x legibility and artistic acceptance remain pending",
+    "Canonical source/archive admission and native gameplay not run"
+  ],
+  "version": 1
+}

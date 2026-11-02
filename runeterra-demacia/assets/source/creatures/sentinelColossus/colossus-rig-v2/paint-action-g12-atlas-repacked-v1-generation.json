@@ -1,0 +1,185 @@
+{
+  "active_assets_modified": false,
+  "actual_atlas_metadata": {
+    "path": "assets/source/creatures/sentinelColossus/colossus-rig-v2/raw-action-g12-padded-atlas-v1.json",
+    "sha256": "9d051e62dee6ab75cdfe671895957bf04d3a4dd23c1bd31c53f8fc397c74509b"
+  },
+  "actual_pose_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "actual_source_metadata": {
+    "path": "assets/source/creatures/sentinelColossus/colossus-rig-v2/colossus-production-v2.json",
+    "sha256": "d844bc8a9a7c9ef4387750bb0b12b6bfd4fb5e14bcfc035a9fe43026e158fddf"
+  },
+  "alpha_diagnostics": {
+    "alpha8_bbox": [
+      121,
+      92,
+      1431,
+      943
+    ],
+    "faint_alpha1_to7_pixels": 64052,
+    "fully_transparent_pixels": 1096675,
+    "note": "Colored RGB in alpha0pixels is invisible to a correct compositor; extrema do not establish clean interior/gutters or art acceptance.",
+    "requires_opaque_background_composite_visual_review": true
+  },
+  "alpha_extrema": [
+    0,
+    254
+  ],
+  "derivation": {
+    "basis": "Actual fourth-pose fists end at sourceX522/530, beyond nominal512cell; next body beginsX638/634. Extended580boundary recovers full fists and removes false fragments from pose5. Shared64padding; no rescale or pose edits.",
+    "frames": [
+      {
+        "destination": [
+          64,
+          64
+        ],
+        "index": 0,
+        "rgba_pixels_identical": true,
+        "source_rectangle": [
+          0,
+          0,
+          512,
+          512
+        ]
+      },
+      {
+        "destination": [
+          832,
+          64
+        ],
+        "index": 1,
+        "rgba_pixels_identical": true,
+        "source_rectangle": [
+          512,
+          0,
+          1024,
+          512
+        ]
+      },
+      {
+        "destination": [
+          1600,
+          64
+        ],
+        "index": 2,
+        "rgba_pixels_identical": true,
+        "source_rectangle": [
+          1024,
+          0,
+          1536,
+          512
+        ]
+      },
+      {
+        "destination": [
+          64,
+          832
+        ],
+        "index": 3,
+        "rgba_pixels_identical": true,
+        "source_rectangle": [
+          0,
+          512,
+          580,
+          1024
+        ]
+      },
+      {
+        "destination": [
+          900,
+          832
+        ],
+        "index": 4,
+        "rgba_pixels_identical": true,
+        "source_rectangle": [
+          580,
+          512,
+          1024,
+          1024
+        ]
+      },
+      {
+        "destination": [
+          1600,
+          832
+        ],
+        "index": 5,
+        "rgba_pixels_identical": true,
+        "source_rectangle": [
+          1024,
+          512,
+          1536,
+          1024
+        ]
+      }
+    ],
+    "source": {
+      "path": "assets/source/creatures/sentinelColossus/colossus-rig-v2/paint-action-g12-atlas-v1.png",
+      "sha256": "6508832595b19757de978efcd9c9c54b184673c93bfd55d2552ce2d89a8a8526"
+    }
+  },
+  "generated_original": "C:\\Users\\matcy\\.codex\\generated_images\\01a15555-c0fe-70e3-bea2-afc52c9cdb71\\exec-603f7b61-0460-4e47-9fef-5b2398ff5212.png",
+  "generated_original_sha256": "6508832595b19757de978efcd9c9c54b184673c93bfd55d2552ce2d89a8a8526",
+  "grid_integer_aligned": true,
+  "grid_note": "Logical equal-cell extents may fall on half-pixels; export uses one fixed continuous source-box scale, without per-cell fitting.",
+  "group": 12,
+  "intentional_source_pose_holds": [],
+  "layout": [
+    3,
+    2
+  ],
+  "mode": "RGBA",
+  "output": "assets/source/creatures/sentinelColossus/colossus-rig-v2/paint-action-g12-atlas-repacked-v1.png",
+  "output_sha256": "6a27818a400fbf4c11a6b3429ed07171c911f8a1a2035b0b25bd32471eef57e0",
+  "prompt": {
+    "path": "assets/source/creatures/sentinelColossus/colossus-rig-v2/paint-action-g12-executed-prompt-v1.txt",
+    "sha256": "65ed790ea4a9b286543dd3be12a43ff2022558a679e26365065a48a8ae2cbdeb"
+  },
+  "references": [
+    {
+      "path": "assets/source/creatures/sentinelColossus/colossus-rig-v2/raw-action-g12-padded-atlas-v1.png",
+      "sha256": "b334e1683d1f0f89eef07f3a7c6c026b7baec2136555e32dac5f70eeb556aabc"
+    },
+    {
+      "path": "assets/source/creatures/sentinelColossus/master-v3.png",
+      "sha256": "7ca70c33d6e419a1cf45e589159900abaa40c20cb30dadc53a04a14cae4a970d"
+    },
+    {
+      "path": "references/prototypes/colossus-family-v2/original-and-raw-construct-native.png",
+      "sha256": "dc7795379a2d9ecd974072371ce671646f2cbb1d90567eac8efb2242e354d5ac"
+    },
+    {
+      "path": "references/riot/heraldry/demacia-official-region-icon.png",
+      "sha256": "d71bb021a49b704420f43c74f9dbfedb2bd89779bdafec1ea4be7bb8a172e734"
+    }
+  ],
+  "returned_cell": [
+    768,
+    768
+  ],
+  "returned_dimensions": [
+    2304,
+    1536
+  ],
+  "source_input_transform": {
+    "basis": "Same whole-cell downsample and transparent padding for every actual raw source pose; no per-frame fit.",
+    "offset": [
+      46,
+      46
+    ],
+    "scale": 0.8203125
+  },
+  "status": "generated source candidate; actual grid/camera/native motion review required",
+  "tool": "Pillow exact integer ROI repack of preserved creative original",
+  "unit": "sentinelColossus",
+  "validation_errors": [],
+  "version": 1,
+  "visual_approval_granted": false
+}

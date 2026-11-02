@@ -1,0 +1,69 @@
+{
+  "animation_scope": "One painted static adventure-map pose, not creature motion",
+  "canvas": [
+    192,
+    160
+  ],
+  "generateOverlay": 0,
+  "generateShadow": 1,
+  "generation": {
+    "image_generation_used": true,
+    "model": "Exact model identifier not exposed by tool",
+    "painted_master": "assets/source/town/map-painted-v1/native/portable/fort-clean.png",
+    "painted_master_sha256": "7b4a4fea1ee219373e347aa9bed63ccbb1a71e04e9504a50074dffbfd1de28d6",
+    "prompt": "Edit the supplied painted2D Piltover unfortified adventure settlement into its FORT construction state, for an original HeroesIII mod. Preserve exactly the central glass/clock civic house, its source scale, camera, front door and stairs position, grass-root placement, square1280canvas, navy/gold/ivory/brass palette and exact existing Piltovan crest. Add a low sturdy warm-grey/ivory perimeter defensive rampart with TWO small simple square watch posts and a wide clear gate approach leading to EXISTING main stairs. Rampart stays on own compact grass footprint, draws around sides/back without hiding the central crest or door. Grow walls upward inside existing transparent margins without zooming subject or moving entrance. Preserve crane and plain navy ownership pennant. This is moderate fort, no huge castle, no moat. Remove all red matte fringe; properly painted dark-earth/grass alpha edge, no red. Same richly textured compact original HeroesIII matte-painted materials, no photoreal/glossy3D/anime, no borders/lettering. Transparent background, complete building/shadow/grass bounds.\n",
+    "provider": "OpenAI built-in imagegen"
+  },
+  "groups": [
+    {
+      "frames": [
+        {
+          "frame": 0,
+          "overlay_sha256": "85775439eb9ce8211655b20ce1d3c54b6b18f570414cf8d2741dde212fa27951",
+          "overlay_source": "assets/source/town/map-painted-v1/native/masks/fort-OVERLAY.png",
+          "source": "assets/source/town/map-painted-v1/native/frames/fort.png",
+          "source_canvas": [
+            192,
+            160
+          ],
+          "source_sha256": "3c2d645ca97aff78771012b00b19635b8d626399a16e47b2877776cd5707bcb4"
+        }
+      ],
+      "group": 0
+    }
+  ],
+  "output_path": "Content/Sprites/runeterra/piltover/town/map/fort.json",
+  "pivot": {
+    "x": 112,
+    "y": 139
+  },
+  "production_inputs": [
+    {
+      "path": "assets/source/town/map-painted-v1/root-plan-v1.json",
+      "sha256": "e88a11d2e6142ee0d4425f538b53eae3a7cf0f4a2aa452f593b183d08e0249e1"
+    },
+    {
+      "path": "assets/source/town/map-painted-v1/produce-native.py",
+      "sha256": "dc6d4f03b905b0945b01d4393bb6752ef4f606873e386f77d49c7eed199dd4a0"
+    },
+    {
+      "path": "assets/source/town/map-painted-v1/fort_v1.png",
+      "sha256": "e7f97a98e1fa02feb3177e996ceb90d2c54665f1f1987963267c32cfc628ab43"
+    },
+    {
+      "path": "assets/source/town/map-painted-v1/native/portable/fort-clean.png",
+      "sha256": "7b4a4fea1ee219373e347aa9bed63ccbb1a71e04e9504a50074dffbfd1de28d6"
+    },
+    {
+      "path": "assets/source/town/map-painted-v1/piltover_map_fort_v1-actual-prompt.txt",
+      "sha256": "b155b0a5d9349e083bb9812244fbaf7323b212571adab0249eb99927ed3ff8ba"
+    },
+    {
+      "path": "assets/source/town/map-painted-v1/native/masks/fort-flag-source.png",
+      "sha256": "3399477e98a73f38f65453fd1b6b5c356da4e0b015fd0fb50edb5d3d384bf3aa"
+    }
+  ],
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "vcmi_animation",
+  "visual_approval_granted": false
+}

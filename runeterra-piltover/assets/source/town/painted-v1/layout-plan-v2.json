@@ -1,0 +1,699 @@
+{
+  "schema_version": 1,
+  "status": "design proposal",
+  "canvas": [
+    800,
+    374
+  ],
+  "ordinary_land_sites": 16,
+  "optional_coastal_sites": 1,
+  "camera": "Theatrical low three-quarter matte-painting composition, elevated horizon, readable frontal doors. Architecture uses forced depth rather than a strict isometric grid.",
+  "palette": "Warm ivory and weathered hewn stone, aged bronze/brass, muted timber brown, navy/teal cloth, restrained cool-blue hextech. No acid-green Zaun smog or royal Demacian wing heraldry.",
+  "lighting": "Soft upper-left daylight; warm southwest-facing stone, coherent rightward contact shadows, cool harbor distance.",
+  "region": "Piltover cliffside trade-and-workshop quarter; compressed playable community is project fiction, not a canonical street map.",
+  "envelope_rule": "Each box includes the largest state, full roof, stairs, foundations and contact shadow, plus four pixels of internal padding. Complete structural silhouettes must stay inside; masks derive from painted alpha, not these planning boxes.",
+  "topology": "Four upper-city skyline masses descend through an irregular craft terrace to five larger foreground framing services. The central stepped civic route links lateral terrace streets and every door. Foreground apparent size and physical landmark size are distinct.",
+  "water_polygons": [
+    [
+      [
+        0,
+        70
+      ],
+      [
+        112,
+        105
+      ],
+      [
+        109,
+        184
+      ],
+      [
+        0,
+        184
+      ]
+    ]
+  ],
+  "coastal_site": {
+    "id": "coast",
+    "keys": [
+      "shipyard",
+      "ship"
+    ],
+    "box": [
+      0,
+      110,
+      109,
+      74
+    ],
+    "door": [
+      101,
+      179
+    ],
+    "approach": [
+      111,
+      188
+    ],
+    "water_contact": "Intentional quay and moored-ship family only; landward door is on the dry front quay."
+  },
+  "optional_grail": {
+    "key": "grail",
+    "id": "beacon",
+    "box": [
+      493,
+      179,
+      30,
+      88
+    ],
+    "depth": 267,
+    "subject": "Small tall Progress Beacon with bronze Piltover crest/orbit sculpture, on its own dry civic landing beside the narrow eastern stair. Explicit optional seventeenth site; no hall-state dependency.",
+    "water_contact": false
+  },
+  "sites": [
+    {
+      "id": "aerial",
+      "keys": [
+        "dwellingLvl6",
+        "dwellingUpLvl6"
+      ],
+      "box": [
+        122,
+        71,
+        116,
+        119
+      ],
+      "door": [
+        197,
+        183
+      ],
+      "approach": [
+        200,
+        196
+      ],
+      "depth": 190,
+      "subject": "Personal-flight workshop, landing platform and narrow survey mast; modest skywatch upgrade, not a Corki hangar or mass airship fleet."
+    },
+    {
+      "id": "guild",
+      "keys": [
+        "mageGuild1",
+        "mageGuild2",
+        "mageGuild3"
+      ],
+      "box": [
+        250,
+        26,
+        133,
+        124
+      ],
+      "door": [
+        321,
+        143
+      ],
+      "approach": [
+        321,
+        157
+      ],
+      "depth": 150,
+      "subject": "Civic academy lecture observatory; one low teaching hall develops into a glass-and-brass instrument tower."
+    },
+    {
+      "id": "hall",
+      "keys": [
+        "villageHall",
+        "townHall",
+        "cityHall",
+        "capitol"
+      ],
+      "box": [
+        397,
+        29,
+        188,
+        145
+      ],
+      "door": [
+        490,
+        166
+      ],
+      "approach": [
+        491,
+        181
+      ],
+      "depth": 174,
+      "subject": "Trade council lodge developing into a grand mercantile assembly hall and civic clock tower; strong physical size at distance."
+    },
+    {
+      "id": "fort",
+      "keys": [
+        "fort",
+        "citadel",
+        "castle"
+      ],
+      "box": [
+        601,
+        41,
+        199,
+        145
+      ],
+      "door": [
+        693,
+        178
+      ],
+      "approach": [
+        690,
+        195
+      ],
+      "depth": 186,
+      "subject": "Terraced city gate and Warden walls with bronze-trimmed watch towers; fortified civic architecture rather than a Noxian war keep."
+    },
+    {
+      "id": "museum",
+      "keys": [
+        "special4"
+      ],
+      "box": [
+        2,
+        197,
+        98,
+        58
+      ],
+      "door": [
+        56,
+        248
+      ],
+      "approach": [
+        59,
+        264
+      ],
+      "depth": 255,
+      "subject": "Small public museum portico at the quayside stair; civic banners and public display windows."
+    },
+    {
+      "id": "handlers",
+      "keys": [
+        "dwellingLvl3",
+        "special2",
+        "dwellingUpLvl3"
+      ],
+      "box": [
+        112,
+        211,
+        88,
+        59
+      ],
+      "door": [
+        169,
+        263
+      ],
+      "approach": [
+        176,
+        279
+      ],
+      "depth": 270,
+      "subject": "Compact freight-machine dispatch yard; Inventor Guild office and reinforced handler service bay develop the same site."
+    },
+    {
+      "id": "wardens",
+      "keys": [
+        "dwellingLvl1",
+        "special1",
+        "dwellingUpLvl1"
+      ],
+      "box": [
+        212,
+        190,
+        98,
+        76
+      ],
+      "door": [
+        263,
+        258
+      ],
+      "approach": [
+        268,
+        278
+      ],
+      "depth": 266,
+      "subject": "Cadet civic patrol lodge; Academy drill gallery and senior Warden barracks extend the same building."
+    },
+    {
+      "id": "rifles",
+      "keys": [
+        "dwellingLvl2",
+        "dwellingUpLvl2"
+      ],
+      "box": [
+        322,
+        176,
+        98,
+        80
+      ],
+      "door": [
+        372,
+        248
+      ],
+      "approach": [
+        375,
+        267
+      ],
+      "depth": 256,
+      "subject": "Warden rifle depot and enclosed training gallery; upgraded arsenal adds a readable upper gallery."
+    },
+    {
+      "id": "silo",
+      "keys": [
+        "resourceSilo"
+      ],
+      "box": [
+        432,
+        183,
+        60,
+        76
+      ],
+      "door": [
+        464,
+        251
+      ],
+      "approach": [
+        475,
+        266
+      ],
+      "depth": 259,
+      "subject": "Narrow hextech materials workshop with an opaque stone base and a small protected blue-crystal reservoir."
+    },
+    {
+      "id": "artificers",
+      "keys": [
+        "dwellingLvl4",
+        "dwellingUpLvl4"
+      ],
+      "box": [
+        528,
+        190,
+        97,
+        83
+      ],
+      "door": [
+        577,
+        265
+      ],
+      "approach": [
+        580,
+        282
+      ],
+      "depth": 273,
+      "subject": "Academy craft hall and engineered crossbow testing gallery; scholarly tools and brass lattice windows."
+    },
+    {
+      "id": "lifters",
+      "keys": [
+        "dwellingLvl7",
+        "dwellingUpLvl7"
+      ],
+      "box": [
+        637,
+        198,
+        163,
+        79
+      ],
+      "door": [
+        717,
+        269
+      ],
+      "approach": [
+        713,
+        282
+      ],
+      "depth": 277,
+      "subject": "Heavy living-operated dockyard work-suit fitting hall, gantry and reinforced industrial assembly bay; no autonomous Hexcore Titan."
+    },
+    {
+      "id": "smith",
+      "keys": [
+        "blacksmith"
+      ],
+      "box": [
+        0,
+        278,
+        172,
+        96
+      ],
+      "door": [
+        100,
+        360
+      ],
+      "approach": [
+        112,
+        368
+      ],
+      "depth": 374,
+      "subject": "Large foreground framing street forge, weathered timber work roof and restrained orange furnace light."
+    },
+    {
+      "id": "engineers",
+      "keys": [
+        "dwellingLvl5",
+        "dwellingUpLvl5"
+      ],
+      "box": [
+        187,
+        287,
+        144,
+        87
+      ],
+      "door": [
+        269,
+        360
+      ],
+      "approach": [
+        273,
+        369
+      ],
+      "depth": 374,
+      "subject": "Practical forge-engineer cooperative and master instrument works; visible tools and blue precision device, no extra turret army."
+    },
+    {
+      "id": "tavern",
+      "keys": [
+        "tavern"
+      ],
+      "box": [
+        349,
+        269,
+        170,
+        105
+      ],
+      "door": [
+        437,
+        358
+      ],
+      "approach": [
+        440,
+        370
+      ],
+      "depth": 374,
+      "subject": "Large welcoming timber-and-stone craftworkers' inn, hanging sign and teal awning; part of the same street."
+    },
+    {
+      "id": "market",
+      "keys": [
+        "marketplace"
+      ],
+      "box": [
+        531,
+        294,
+        78,
+        80
+      ],
+      "door": [
+        571,
+        362
+      ],
+      "approach": [
+        572,
+        369
+      ],
+      "depth": 374,
+      "subject": "Narrow foreground guild shop with varied cloth awnings, trade goods and a small civic seal; not a duplicate house."
+    },
+    {
+      "id": "exchange",
+      "keys": [
+        "special3"
+      ],
+      "box": [
+        619,
+        285,
+        181,
+        89
+      ],
+      "door": [
+        704,
+        360
+      ],
+      "approach": [
+        701,
+        369
+      ],
+      "depth": 374,
+      "subject": "Large foreground cargo exchange and coach-service warehouse, painted shipping marks and side loading porch."
+    }
+  ],
+  "roads": [
+    {
+      "id": "upper-civic-promenade",
+      "width": 10,
+      "points": [
+        [
+          111,
+          188
+        ],
+        [
+          200,
+          196
+        ],
+        [
+          241,
+          172
+        ],
+        [
+          321,
+          157
+        ],
+        [
+          391,
+          183
+        ],
+        [
+          491,
+          184
+        ],
+        [
+          588,
+          189
+        ],
+        [
+          690,
+          195
+        ],
+        [
+          795,
+          190
+        ]
+      ]
+    },
+    {
+      "id": "terrace-street",
+      "width": 10,
+      "points": [
+        [
+          59,
+          264
+        ],
+        [
+          102,
+          270
+        ],
+        [
+          176,
+          279
+        ],
+        [
+          268,
+          278
+        ],
+        [
+          334,
+          269
+        ],
+        [
+          375,
+          267
+        ],
+        [
+          475,
+          266
+        ],
+        [
+          522,
+          280
+        ],
+        [
+          580,
+          282
+        ],
+        [
+          713,
+          282
+        ],
+        [
+          795,
+          280
+        ]
+      ]
+    },
+    {
+      "id": "civic-stairs",
+      "width": 6,
+      "points": [
+        [
+          525,
+          184
+        ],
+        [
+          525,
+          205
+        ],
+        [
+          525,
+          239
+        ],
+        [
+          525,
+          267
+        ],
+        [
+          524,
+          284
+        ],
+        [
+          523,
+          305
+        ],
+        [
+          522,
+          338
+        ],
+        [
+          520,
+          370
+        ]
+      ]
+    },
+    {
+      "id": "western-stairs",
+      "width": 7,
+      "points": [
+        [
+          111,
+          188
+        ],
+        [
+          105,
+          214
+        ],
+        [
+          104,
+          247
+        ],
+        [
+          103,
+          267
+        ],
+        [
+          178,
+          279
+        ],
+        [
+          180,
+          315
+        ],
+        [
+          180,
+          370
+        ]
+      ]
+    },
+    {
+      "id": "academy-stairs",
+      "width": 7,
+      "points": [
+        [
+          321,
+          157
+        ],
+        [
+          320,
+          167
+        ],
+        [
+          317,
+          190
+        ],
+        [
+          315,
+          210
+        ],
+        [
+          315,
+          248
+        ],
+        [
+          315,
+          272
+        ]
+      ]
+    },
+    {
+      "id": "front-street",
+      "width": 8,
+      "points": [
+        [
+          0,
+          370
+        ],
+        [
+          112,
+          368
+        ],
+        [
+          185,
+          373
+        ],
+        [
+          273,
+          369
+        ],
+        [
+          350,
+          372
+        ],
+        [
+          440,
+          370
+        ],
+        [
+          521,
+          373
+        ],
+        [
+          572,
+          369
+        ],
+        [
+          620,
+          372
+        ],
+        [
+          701,
+          369
+        ],
+        [
+          800,
+          372
+        ]
+      ]
+    }
+  ],
+  "state_review": [
+    "empty",
+    "early",
+    "partial",
+    "all-base",
+    "all-upgraded",
+    "coastal",
+    "grail"
+  ],
+  "native_observed": false,
+  "final_art_accepted": false,
+  "revision": "V2 applies coordinator-requested staggered terrace levels, varied roof/baseline depths and a curving branching street; optional Grail has its own dry civic beacon landing."
+}

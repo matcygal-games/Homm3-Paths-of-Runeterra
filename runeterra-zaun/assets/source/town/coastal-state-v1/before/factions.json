@@ -1,0 +1,1590 @@
+{
+  "zaun": {
+    "name": "Zaun",
+    "description": "An industrial undercity of augments, shimmering refineries and pit fighting. Neutral alignment is a game rule, not absolution of the city's pollution, and augmentation in this town never removes a character's agency.",
+    "alignment": "neutral",
+    "nativeTerrain": [
+      "swamp"
+    ],
+    "boat": "core:boatCastle",
+    "creatureBackground": {
+      "120px": "runeterra/zaun/ui/creatureBackground120.png",
+      "130px": "runeterra/zaun/ui/creatureBackground130.png"
+    },
+    "puzzleMap": {
+      "prefix": "runeterra/zaun/puzzle/piece",
+      "pieces": [
+        {
+          "index": 1,
+          "x": 7,
+          "y": 8
+        },
+        {
+          "index": 18,
+          "x": 81,
+          "y": 8
+        },
+        {
+          "index": 35,
+          "x": 155,
+          "y": 8
+        },
+        {
+          "index": 4,
+          "x": 229,
+          "y": 8
+        },
+        {
+          "index": 21,
+          "x": 303,
+          "y": 8
+        },
+        {
+          "index": 38,
+          "x": 377,
+          "y": 8
+        },
+        {
+          "index": 7,
+          "x": 451,
+          "y": 8
+        },
+        {
+          "index": 24,
+          "x": 525,
+          "y": 8
+        },
+        {
+          "index": 41,
+          "x": 7,
+          "y": 99
+        },
+        {
+          "index": 10,
+          "x": 81,
+          "y": 99
+        },
+        {
+          "index": 27,
+          "x": 155,
+          "y": 99
+        },
+        {
+          "index": 44,
+          "x": 229,
+          "y": 99
+        },
+        {
+          "index": 13,
+          "x": 303,
+          "y": 99
+        },
+        {
+          "index": 30,
+          "x": 377,
+          "y": 99
+        },
+        {
+          "index": 47,
+          "x": 451,
+          "y": 99
+        },
+        {
+          "index": 16,
+          "x": 525,
+          "y": 99
+        },
+        {
+          "index": 33,
+          "x": 7,
+          "y": 190
+        },
+        {
+          "index": 2,
+          "x": 81,
+          "y": 190
+        },
+        {
+          "index": 19,
+          "x": 155,
+          "y": 190
+        },
+        {
+          "index": 36,
+          "x": 229,
+          "y": 190
+        },
+        {
+          "index": 5,
+          "x": 303,
+          "y": 190
+        },
+        {
+          "index": 22,
+          "x": 377,
+          "y": 190
+        },
+        {
+          "index": 39,
+          "x": 451,
+          "y": 190
+        },
+        {
+          "index": 8,
+          "x": 525,
+          "y": 190
+        },
+        {
+          "index": 25,
+          "x": 7,
+          "y": 281
+        },
+        {
+          "index": 42,
+          "x": 81,
+          "y": 281
+        },
+        {
+          "index": 11,
+          "x": 155,
+          "y": 281
+        },
+        {
+          "index": 28,
+          "x": 229,
+          "y": 281
+        },
+        {
+          "index": 45,
+          "x": 303,
+          "y": 281
+        },
+        {
+          "index": 14,
+          "x": 377,
+          "y": 281
+        },
+        {
+          "index": 31,
+          "x": 451,
+          "y": 281
+        },
+        {
+          "index": 48,
+          "x": 525,
+          "y": 281
+        },
+        {
+          "index": 17,
+          "x": 7,
+          "y": 372
+        },
+        {
+          "index": 34,
+          "x": 81,
+          "y": 372
+        },
+        {
+          "index": 3,
+          "x": 155,
+          "y": 372
+        },
+        {
+          "index": 20,
+          "x": 229,
+          "y": 372
+        },
+        {
+          "index": 37,
+          "x": 303,
+          "y": 372
+        },
+        {
+          "index": 6,
+          "x": 377,
+          "y": 372
+        },
+        {
+          "index": 23,
+          "x": 451,
+          "y": 372
+        },
+        {
+          "index": 40,
+          "x": 525,
+          "y": 372
+        },
+        {
+          "index": 9,
+          "x": 7,
+          "y": 463
+        },
+        {
+          "index": 26,
+          "x": 81,
+          "y": 463
+        },
+        {
+          "index": 43,
+          "x": 155,
+          "y": 463
+        },
+        {
+          "index": 12,
+          "x": 229,
+          "y": 463
+        },
+        {
+          "index": 29,
+          "x": 303,
+          "y": 463
+        },
+        {
+          "index": 46,
+          "x": 377,
+          "y": 463
+        },
+        {
+          "index": 15,
+          "x": 451,
+          "y": 463
+        },
+        {
+          "index": 32,
+          "x": 525,
+          "y": 463
+        }
+      ]
+    },
+    "town": {
+      "defaultTavern": 5,
+      "names": [
+        "Sumpgate",
+        "Greyfoundry",
+        "Tarnhall",
+        "Cinderbank",
+        "Fumehall",
+        "Brinewatch",
+        "Ashford",
+        "Slagmoor"
+      ],
+      "primaryResource": "sulfur",
+      "horde": [
+        -1,
+        -1
+      ],
+      "mageGuild": 4,
+      "guildSpells": {
+        "core:magicArrow": 20,
+        "core:bloodlust": 15,
+        "core:curse": 25,
+        "core:haste": 15,
+        "core:shield": 10,
+        "core:weakness": 25,
+        "core:dispel": 20,
+        "core:precision": 15,
+        "core:blind": 20,
+        "core:fireball": 20,
+        "core:misfortune": 15,
+        "core:berserk": 10,
+        "core:lightningBolt": 15,
+        "core:resurrection": 0,
+        "core:animateDead": 0,
+        "core:armageddon": 0
+      },
+      "musicTheme": [
+        "music/EvilTheme"
+      ],
+      "tavernVideo": "TAVERN.BIK",
+      "guildBackground": [
+        "TPMAGE.bmp"
+      ],
+      "guildWindow": [
+        "runeterra/zaun/ui/guildWindow.png"
+      ],
+      "guildWindowPosition": {
+        "x": 332,
+        "y": 76
+      },
+      "guildSpellPositions": [
+        [
+          {
+            "x": 222,
+            "y": 445
+          },
+          {
+            "x": 312,
+            "y": 445
+          },
+          {
+            "x": 402,
+            "y": 445
+          },
+          {
+            "x": 520,
+            "y": 445
+          },
+          {
+            "x": 610,
+            "y": 445
+          },
+          {
+            "x": 700,
+            "y": 445
+          }
+        ],
+        [
+          {
+            "x": 48,
+            "y": 53
+          },
+          {
+            "x": 48,
+            "y": 147
+          },
+          {
+            "x": 48,
+            "y": 241
+          },
+          {
+            "x": 48,
+            "y": 335
+          },
+          {
+            "x": 48,
+            "y": 429
+          }
+        ],
+        [
+          {
+            "x": 570,
+            "y": 82
+          },
+          {
+            "x": 672,
+            "y": 82
+          },
+          {
+            "x": 570,
+            "y": 157
+          },
+          {
+            "x": 672,
+            "y": 157
+          }
+        ],
+        [
+          {
+            "x": 183,
+            "y": 42
+          },
+          {
+            "x": 183,
+            "y": 148
+          },
+          {
+            "x": 183,
+            "y": 253
+          }
+        ]
+      ],
+      "hallBackground": "TPTHBKCS.bmp",
+      "townBackground": "runeterra/zaun/town/background.png",
+      "buildingsIcons": "runeterra/zaun/town/buildingIcons.json",
+      "hallSlots": [
+        [
+          [
+            "villageHall",
+            "townHall",
+            "cityHall",
+            "capitol"
+          ],
+          [
+            "fort",
+            "citadel",
+            "castle"
+          ],
+          [
+            "tavern"
+          ],
+          [
+            "blacksmith"
+          ]
+        ],
+        [
+          [
+            "marketplace"
+          ],
+          [
+            "resourceSilo"
+          ],
+          [
+            "mageGuild1",
+            "mageGuild2",
+            "mageGuild3",
+            "mageGuild4"
+          ],
+          [
+            "shipyard"
+          ]
+        ],
+        [
+          [
+            "special1"
+          ],
+          [
+            "special2"
+          ],
+          [
+            "special3"
+          ],
+          [
+            "grail"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl1",
+            "dwellingUpLvl1"
+          ],
+          [
+            "dwellingLvl2",
+            "dwellingUpLvl2"
+          ],
+          [
+            "dwellingLvl3",
+            "dwellingUpLvl3"
+          ],
+          [
+            "dwellingLvl4",
+            "dwellingUpLvl4"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl5",
+            "dwellingUpLvl5"
+          ],
+          [
+            "dwellingLvl6",
+            "dwellingUpLvl6"
+          ],
+          [
+            "dwellingLvl7",
+            "dwellingUpLvl7"
+          ],
+          [
+            "special4"
+          ]
+        ]
+      ],
+      "creatures": [
+        [
+          "zaunThug",
+          "chemPunk"
+        ],
+        [
+          "chemRavager",
+          "mutantBerserker"
+        ],
+        [
+          "chemtechConstruct",
+          "reinforcedConstruct"
+        ],
+        [
+          "chemBaronEnforcer",
+          "cyberneticGuard"
+        ],
+        [
+          "chemBaronAgent",
+          "masterAlchemist"
+        ],
+        [
+          "augmentationVeteran",
+          "chemtechVanguard"
+        ],
+        [
+          "apexPredator",
+          "perfectMutation"
+        ]
+      ],
+      "buildings": {
+        "villageHall": {
+          "name": "Sumpgate Hall",
+          "description": "Produces 500 gold per day. A rough municipal hall over a wet foundation; it is replaced, not added to, by the higher halls.",
+          "cost": {},
+          "mode": "auto",
+          "produce": {
+            "gold": 500
+          }
+        },
+        "townHall": {
+          "name": "Foundry Hall",
+          "description": "Produces 1000 gold per day.",
+          "cost": {
+            "gold": 2500
+          },
+          "requires": [
+            "tavern"
+          ],
+          "upgrades": "villageHall",
+          "produce": {
+            "gold": 1000
+          }
+        },
+        "cityHall": {
+          "name": "Castboard Hall",
+          "description": "Produces 2000 gold per day.",
+          "cost": {
+            "gold": 5000
+          },
+          "requires": [
+            "allOf",
+            [
+              "mageGuild1"
+            ],
+            [
+              "marketplace"
+            ],
+            [
+              "blacksmith"
+            ]
+          ],
+          "upgrades": "townHall",
+          "produce": {
+            "gold": 2000
+          }
+        },
+        "capitol": {
+          "name": "Chancellor's Hall",
+          "description": "Produces 4000 gold per day; normal native Capitol ownership restrictions apply.",
+          "cost": {
+            "gold": 10000
+          },
+          "requires": [
+            "castle"
+          ],
+          "upgrades": "cityHall",
+          "produce": {
+            "gold": 4000
+          }
+        },
+        "fort": {
+          "name": "Sump Rampart",
+          "description": "Adds siege walls built from scavenged plate and poured concrete.",
+          "cost": {
+            "gold": 5000,
+            "wood": 20,
+            "ore": 20
+          }
+        },
+        "citadel": {
+          "name": "Fume Keep",
+          "description": "Adds native citadel growth, keep and moat.",
+          "cost": {
+            "gold": 2500,
+            "ore": 5
+          },
+          "upgrades": "fort"
+        },
+        "castle": {
+          "name": "Hexworks Bastion",
+          "description": "Adds native castle growth, towers and stronger walls. The name is a project fiction: Zaun's engineers work with chemtech, not Piltover hextech.",
+          "cost": {
+            "gold": 5000,
+            "wood": 10,
+            "ore": 10
+          },
+          "upgrades": "citadel"
+        },
+        "tavern": {
+          "name": "The Grog",
+          "description": "Native hero recruitment; the special scenario heroes remain excluded from the tavern pool.",
+          "cost": {
+            "gold": 500,
+            "wood": 5
+          }
+        },
+        "marketplace": {
+          "name": "Scrap Exchange",
+          "description": "Native resource trade with other markets.",
+          "cost": {
+            "gold": 500,
+            "wood": 5
+          }
+        },
+        "blacksmith": {
+          "name": "Ammo Foundry",
+          "description": "Sells the native Ammo Cart. It supports finite ranged ammunition, not extra attacks.",
+          "cost": {
+            "gold": 1000,
+            "wood": 5
+          },
+          "warMachine": "core:ammoCart"
+        },
+        "resourceSilo": {
+          "name": "Shimmer Factory",
+          "description": "Produces one sulfur per day. The shimmering refinery and its yield are project fiction modelled on the canonical resource silo slot.",
+          "cost": {
+            "gold": 6000,
+            "ore": 10,
+            "wood": 5
+          },
+          "requires": [
+            "allOf",
+            [
+              "marketplace"
+            ],
+            [
+              "mageGuild2"
+            ]
+          ],
+          "produce": {
+            "sulfur": 1
+          }
+        },
+        "mageGuild1": {
+          "name": "Shimmer Institute I",
+          "description": "Teaches native first-circle spells.",
+          "cost": {
+            "gold": 2000,
+            "wood": 5,
+            "ore": 5
+          }
+        },
+        "mageGuild2": {
+          "name": "Shimmer Institute II",
+          "description": "Teaches native second-circle spells.",
+          "cost": {
+            "gold": 1000,
+            "wood": 5,
+            "ore": 5,
+            "mercury": 4,
+            "sulfur": 4,
+            "crystal": 4,
+            "gems": 4
+          },
+          "upgrades": "mageGuild1"
+        },
+        "mageGuild3": {
+          "name": "Shimmer Institute III",
+          "description": "Teaches native third-circle spells.",
+          "cost": {
+            "gold": 1000,
+            "wood": 5,
+            "ore": 5,
+            "mercury": 6,
+            "sulfur": 6,
+            "crystal": 6,
+            "gems": 6
+          },
+          "upgrades": "mageGuild2"
+        },
+        "mageGuild4": {
+          "name": "Shimmer Institute IV",
+          "description": "Teaches native fourth-circle spells. Fifth-circle access is deliberately omitted.",
+          "cost": {
+            "gold": 1000,
+            "wood": 5,
+            "ore": 5,
+            "mercury": 8,
+            "sulfur": 8,
+            "crystal": 8,
+            "gems": 8
+          },
+          "upgrades": "mageGuild3"
+        },
+        "special1": {
+          "name": "Augmentation Workshop",
+          "description": "Prerequisite for the Chemtech Vanguard quarters. It is a fabrication workshop, not an emotion-removal chamber: augmentation in this town never takes away a character's agency or identity.",
+          "cost": {
+            "gold": 5000,
+            "ore": 10,
+            "sulfur": 3
+          },
+          "requires": [
+            "allOf",
+            [
+              "dwellingLvl6"
+            ],
+            [
+              "mageGuild2"
+            ]
+          ]
+        },
+        "special2": {
+          "name": "Augmentation Clinic",
+          "description": "Click with a visiting hero to receive a ten point mana top-up, limited to the mana the hero is missing. The native visit mode records the claiming hero, so each hero may take the treatment once and the weekly reset clears those records: several heroes may each claim it in the same week. The clinic is a bounded logistical service; it grants no combat stats and no implant slots.",
+          "cost": {
+            "gold": 4500,
+            "ore": 8,
+            "wood": 5
+          },
+          "requires": [
+            "allOf",
+            [
+              "tavern"
+            ],
+            [
+              "mageGuild2"
+            ]
+          ],
+          "manualHeroVisit": true,
+          "configuration": {
+            "visitMode": "hero",
+            "resetParameters": {
+              "weeks": 1,
+              "visitors": true
+            },
+            "rewards": [
+              {
+                "message": "The clinic tops your hero's mana back up by up to ten points. Each hero may be treated once; the treatment becomes available again next week.",
+                "manaPoints": 10
+              }
+            ]
+          }
+        },
+        "special3": {
+          "name": "The Sump",
+          "description": "Defenders of this town gain 1 additional Defense in siege. The sump is the city's waste sink; the defensive bonus does not imply that Zaunites are immune to its fumes.",
+          "cost": {
+            "gold": 5000,
+            "ore": 10,
+            "sulfur": 5
+          },
+          "requires": [
+            "allOf",
+            [
+              "fort"
+            ],
+            [
+              "dwellingLvl3"
+            ]
+          ],
+          "bonuses": [
+            {
+              "type": "PRIMARY_SKILL",
+              "subtype": "primarySkill.defence",
+              "val": 1
+            }
+          ]
+        },
+        "special4": {
+          "name": "Fighting Pit",
+          "description": "Produces 100 gold per day while owned. A brutal local arena; it adds no creature line and no extra initiative.",
+          "cost": {
+            "gold": 4000,
+            "wood": 8,
+            "ore": 8
+          },
+          "requires": [
+            "allOf",
+            [
+              "tavern"
+            ],
+            [
+              "dwellingLvl1"
+            ]
+          ],
+          "produce": {
+            "gold": 100
+          }
+        },
+        "dwellingLvl1": {
+          "name": "Zaun Thug Quarters",
+          "description": "Recruits Zaun Thugs.",
+          "cost": {
+            "gold": 500,
+            "wood": 5
+          },
+          "requires": [
+            "fort"
+          ]
+        },
+        "dwellingUpLvl1": {
+          "name": "Chem-Punk Quarters",
+          "description": "Recruits Chem-Punks.",
+          "cost": {
+            "gold": 1000,
+            "wood": 5
+          },
+          "requires": [
+            "dwellingLvl1"
+          ],
+          "upgrades": "dwellingLvl1"
+        },
+        "dwellingLvl2": {
+          "name": "Chem Ravager Quarters",
+          "description": "Recruits Chem Ravagers.",
+          "cost": {
+            "gold": 1000,
+            "wood": 5,
+            "ore": 5
+          },
+          "requires": [
+            "dwellingLvl1"
+          ]
+        },
+        "dwellingUpLvl2": {
+          "name": "Mutant Berserker Quarters",
+          "description": "Recruits Mutant Berserkers.",
+          "cost": {
+            "gold": 1500,
+            "wood": 5,
+            "ore": 5
+          },
+          "requires": [
+            "dwellingLvl2"
+          ],
+          "upgrades": "dwellingLvl2"
+        },
+        "dwellingLvl3": {
+          "name": "Chemtech Construct Quarters",
+          "description": "Recruits Chemtech Constructs.",
+          "cost": {
+            "gold": 1500,
+            "ore": 10
+          },
+          "requires": [
+            "allOf",
+            [
+              "dwellingLvl1"
+            ],
+            [
+              "blacksmith"
+            ]
+          ]
+        },
+        "dwellingUpLvl3": {
+          "name": "Reinforced Construct Quarters",
+          "description": "Recruits Reinforced Chemtech Constructs.",
+          "cost": {
+            "gold": 2000,
+            "ore": 10
+          },
+          "requires": [
+            "dwellingLvl3"
+          ],
+          "upgrades": "dwellingLvl3"
+        },
+        "dwellingLvl4": {
+          "name": "Chem-Baron Enforcer Quarters",
+          "description": "Recruits Chem-Baron Enforcers.",
+          "cost": {
+            "gold": 2500,
+            "wood": 5,
+            "ore": 5
+          },
+          "requires": [
+            "dwellingLvl3"
+          ]
+        },
+        "dwellingUpLvl4": {
+          "name": "Cybernetic Guard Quarters",
+          "description": "Recruits Cybernetic Guards.",
+          "cost": {
+            "gold": 3000,
+            "wood": 5,
+            "ore": 5
+          },
+          "requires": [
+            "dwellingLvl4"
+          ],
+          "upgrades": "dwellingLvl4"
+        },
+        "dwellingLvl5": {
+          "name": "Chem-Baron Agent Quarters",
+          "description": "Recruits Chem-Baron Agents.",
+          "cost": {
+            "gold": 3500,
+            "wood": 5,
+            "ore": 10
+          },
+          "requires": [
+            "allOf",
+            [
+              "dwellingLvl3"
+            ],
+            [
+              "mageGuild1"
+            ]
+          ]
+        },
+        "dwellingUpLvl5": {
+          "name": "Master Alchemist Quarters",
+          "description": "Recruits Master Alchemists.",
+          "cost": {
+            "gold": 4500,
+            "wood": 5,
+            "ore": 10,
+            "sulfur": 2
+          },
+          "requires": [
+            "dwellingLvl5"
+          ],
+          "upgrades": "dwellingLvl5"
+        },
+        "dwellingLvl6": {
+          "name": "Augmentation Veteran Quarters",
+          "description": "Recruits Augmentation Veterans.",
+          "cost": {
+            "gold": 6000,
+            "wood": 10,
+            "ore": 10
+          },
+          "requires": [
+            "allOf",
+            [
+              "dwellingLvl4"
+            ],
+            [
+              "blacksmith"
+            ]
+          ]
+        },
+        "dwellingUpLvl6": {
+          "name": "Chemtech Vanguard Quarters",
+          "description": "Recruits Chemtech Vanguards. The Augmentation Workshop is required before this upgrade can be built.",
+          "cost": {
+            "gold": 7500,
+            "wood": 10,
+            "ore": 10,
+            "sulfur": 3
+          },
+          "requires": [
+            "allOf",
+            [
+              "dwellingLvl6"
+            ],
+            [
+              "special1"
+            ]
+          ],
+          "upgrades": "dwellingLvl6"
+        },
+        "dwellingLvl7": {
+          "name": "Apex Predator Quarters",
+          "description": "Recruits Apex Predators.",
+          "cost": {
+            "gold": 12000,
+            "wood": 10,
+            "ore": 15,
+            "sulfur": 8
+          },
+          "requires": [
+            "allOf",
+            [
+              "dwellingLvl5"
+            ],
+            [
+              "mageGuild3"
+            ]
+          ]
+        },
+        "dwellingUpLvl7": {
+          "name": "Perfect Mutation Quarters",
+          "description": "Recruits Perfect Mutations.",
+          "cost": {
+            "gold": 15000,
+            "wood": 10,
+            "ore": 15,
+            "sulfur": 10
+          },
+          "requires": [
+            "allOf",
+            [
+              "dwellingLvl7"
+            ],
+            [
+              "castle"
+            ]
+          ],
+          "upgrades": "dwellingLvl7"
+        },
+        "shipyard": {
+          "name": "Sump Dock",
+          "description": "Native coastal shipyard only where the adventure-map location permits boats.",
+          "cost": {
+            "gold": 2000,
+            "wood": 20
+          }
+        },
+        "ship": {
+          "name": "Moored Barge",
+          "description": "Automatic native vessel display, not a separate construction or income source.",
+          "cost": {},
+          "mode": "auto",
+          "upgrades": "shipyard"
+        },
+        "grail": {
+          "name": "Code of Progress",
+          "description": "A fictional local Grail monument: native Grail mode, 5000 daily gold and 50% growth. It asserts no canon for any champion.",
+          "cost": {},
+          "mode": "grail",
+          "produce": {
+            "gold": 5000
+          },
+          "bonuses": [
+            {
+              "type": "CREATURE_GROWTH_PERCENT",
+              "val": 50
+            }
+          ]
+        }
+      },
+      "mapObject": {
+        "filters": {
+          "capitol": [
+            "capitol"
+          ],
+          "castle": [
+            "allOf",
+            [
+              "castle"
+            ],
+            [
+              "noneOf",
+              [
+                "capitol"
+              ]
+            ]
+          ],
+          "citadel": [
+            "allOf",
+            [
+              "citadel"
+            ],
+            [
+              "noneOf",
+              [
+                "castle"
+              ]
+            ],
+            [
+              "noneOf",
+              [
+                "capitol"
+              ]
+            ]
+          ],
+          "fort": [
+            "allOf",
+            [
+              "fort"
+            ],
+            [
+              "noneOf",
+              [
+                "citadel"
+              ]
+            ],
+            [
+              "noneOf",
+              [
+                "capitol"
+              ]
+            ]
+          ],
+          "village": [
+            "noneOf",
+            [
+              "fort"
+            ]
+          ]
+        },
+        "templates": {
+          "village": {
+            "animation": "runeterra/zaun/town/map/village.json",
+            "mask": [
+              "VVVVVV",
+              "VVVVVV",
+              "VVVVVV",
+              "VVBBBV",
+              "VBBABB"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ]
+          },
+          "fort": {
+            "animation": "runeterra/zaun/town/map/fort.json",
+            "mask": [
+              "VVVVVV",
+              "VVVVVV",
+              "VVVVVV",
+              "VVBBBV",
+              "VBBABB"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ]
+          },
+          "citadel": {
+            "animation": "runeterra/zaun/town/map/citadel.json",
+            "mask": [
+              "VVVVVV",
+              "VVVVVV",
+              "VVVVVV",
+              "VVBBBV",
+              "VBBABB"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ]
+          },
+          "castle": {
+            "animation": "runeterra/zaun/town/map/castle.json",
+            "mask": [
+              "VVVVVV",
+              "VVVVVV",
+              "VVVVVV",
+              "VVBBBV",
+              "VBBABB"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ]
+          },
+          "capitol": {
+            "animation": "runeterra/zaun/town/map/capitol.json",
+            "mask": [
+              "VVVVVV",
+              "VVVVVV",
+              "VVVVVV",
+              "VVBBBV",
+              "VBBABB"
+            ],
+            "visitableFrom": [
+              "---",
+              "---",
+              "+++"
+            ]
+          }
+        }
+      },
+      "icons": {
+        "fort": {
+          "normal": {
+            "large": "runeterra/zaun/town/icons/fort_normal_large.png",
+            "small": "runeterra/zaun/town/icons/fort_normal_small.png"
+          },
+          "built": {
+            "large": "runeterra/zaun/town/icons/fort_built_large.png",
+            "small": "runeterra/zaun/town/icons/fort_built_small.png"
+          }
+        },
+        "village": {
+          "normal": {
+            "large": "runeterra/zaun/town/icons/village_normal_large.png",
+            "small": "runeterra/zaun/town/icons/village_normal_small.png"
+          },
+          "built": {
+            "large": "runeterra/zaun/town/icons/village_built_large.png",
+            "small": "runeterra/zaun/town/icons/village_built_small.png"
+          }
+        }
+      },
+      "moatAbility": "core:castleMoat",
+      "siege": {
+        "imagePrefix": "runeterra/zaun/siege/SGZA",
+        "shooter": "chemtechConstruct",
+        "towerIconLarge": "runeterra/zaun/siege/towerLarge.png",
+        "towerIconSmall": "runeterra/zaun/siege/towerSmall.png",
+        "gate": {
+          "arch": {
+            "x": 477,
+            "y": 238
+          },
+          "gate": {
+            "x": 399,
+            "y": 274
+          }
+        },
+        "moat": {
+          "bank": {
+            "x": 403,
+            "y": 80
+          },
+          "moat": {
+            "x": 410,
+            "y": 90
+          }
+        },
+        "static": {
+          "background": {
+            "x": 600,
+            "y": 49
+          },
+          "bottom": {
+            "x": 512,
+            "y": 347
+          },
+          "top": {
+            "x": 489,
+            "y": 79
+          }
+        },
+        "towers": {
+          "bottom": {
+            "battlement": {
+              "x": 602,
+              "y": 500
+            },
+            "creature": {
+              "x": 394,
+              "y": 299
+            },
+            "tower": {
+              "x": 602,
+              "y": 500
+            }
+          },
+          "keep": {
+            "battlement": {
+              "x": 720,
+              "y": 158
+            },
+            "creature": {
+              "x": 526,
+              "y": -29
+            },
+            "tower": {
+              "x": 720,
+              "y": 158
+            }
+          },
+          "top": {
+            "battlement": {
+              "x": 557,
+              "y": 24
+            },
+            "creature": {
+              "x": 342,
+              "y": -187
+            },
+            "tower": {
+              "x": 569,
+              "y": 35
+            }
+          }
+        },
+        "walls": {
+          "bottom": {
+            "x": 528,
+            "y": 350
+          },
+          "bottomMid": {
+            "x": 469,
+            "y": 291
+          },
+          "upper": {
+            "x": 524,
+            "y": 32
+          },
+          "upperMid": {
+            "x": 470,
+            "y": 127
+          }
+        }
+      },
+      "structures": {
+        "villageHall": {
+          "animation": "runeterra/zaun/town/structures/villageHall.json",
+          "area": "runeterra/zaun/town/structures/villageHall_area.png",
+          "border": "runeterra/zaun/town/structures/villageHall_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 8
+        },
+        "townHall": {
+          "animation": "runeterra/zaun/town/structures/townHall.json",
+          "area": "runeterra/zaun/town/structures/townHall_area.png",
+          "border": "runeterra/zaun/town/structures/townHall_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 8
+        },
+        "cityHall": {
+          "animation": "runeterra/zaun/town/structures/cityHall.json",
+          "area": "runeterra/zaun/town/structures/cityHall_area.png",
+          "border": "runeterra/zaun/town/structures/cityHall_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 8
+        },
+        "capitol": {
+          "animation": "runeterra/zaun/town/structures/capitol.json",
+          "area": "runeterra/zaun/town/structures/capitol_area.png",
+          "border": "runeterra/zaun/town/structures/capitol_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 8
+        },
+        "fort": {
+          "animation": "runeterra/zaun/town/structures/fort.json",
+          "area": "runeterra/zaun/town/structures/fort_area.png",
+          "border": "runeterra/zaun/town/structures/fort_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 6
+        },
+        "citadel": {
+          "animation": "runeterra/zaun/town/structures/citadel.json",
+          "area": "runeterra/zaun/town/structures/citadel_area.png",
+          "border": "runeterra/zaun/town/structures/citadel_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 6
+        },
+        "castle": {
+          "animation": "runeterra/zaun/town/structures/castle.json",
+          "area": "runeterra/zaun/town/structures/castle_area.png",
+          "border": "runeterra/zaun/town/structures/castle_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 6
+        },
+        "mageGuild1": {
+          "animation": "runeterra/zaun/town/structures/mageGuild1.json",
+          "area": "runeterra/zaun/town/structures/mageGuild1_area.png",
+          "border": "runeterra/zaun/town/structures/mageGuild1_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 15
+        },
+        "mageGuild2": {
+          "animation": "runeterra/zaun/town/structures/mageGuild2.json",
+          "area": "runeterra/zaun/town/structures/mageGuild2_area.png",
+          "border": "runeterra/zaun/town/structures/mageGuild2_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 15
+        },
+        "mageGuild3": {
+          "animation": "runeterra/zaun/town/structures/mageGuild3.json",
+          "area": "runeterra/zaun/town/structures/mageGuild3_area.png",
+          "border": "runeterra/zaun/town/structures/mageGuild3_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 15
+        },
+        "mageGuild4": {
+          "animation": "runeterra/zaun/town/structures/mageGuild4.json",
+          "area": "runeterra/zaun/town/structures/mageGuild4_area.png",
+          "border": "runeterra/zaun/town/structures/mageGuild4_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 15
+        },
+        "tavern": {
+          "animation": "runeterra/zaun/town/structures/tavern.json",
+          "area": "runeterra/zaun/town/structures/tavern_area.png",
+          "border": "runeterra/zaun/town/structures/tavern_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 38
+        },
+        "marketplace": {
+          "animation": "runeterra/zaun/town/structures/marketplace.json",
+          "area": "runeterra/zaun/town/structures/marketplace_area.png",
+          "border": "runeterra/zaun/town/structures/marketplace_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 32
+        },
+        "blacksmith": {
+          "animation": "runeterra/zaun/town/structures/blacksmith.json",
+          "area": "runeterra/zaun/town/structures/blacksmith_area.png",
+          "border": "runeterra/zaun/town/structures/blacksmith_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 40
+        },
+        "resourceSilo": {
+          "animation": "runeterra/zaun/town/structures/resourceSilo.json",
+          "area": "runeterra/zaun/town/structures/resourceSilo_area.png",
+          "border": "runeterra/zaun/town/structures/resourceSilo_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 28
+        },
+        "special1": {
+          "animation": "runeterra/zaun/town/structures/special1.json",
+          "area": "runeterra/zaun/town/structures/special1_area.png",
+          "border": "runeterra/zaun/town/structures/special1_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 18
+        },
+        "special2": {
+          "animation": "runeterra/zaun/town/structures/special2.json",
+          "area": "runeterra/zaun/town/structures/special2_area.png",
+          "border": "runeterra/zaun/town/structures/special2_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 20
+        },
+        "special3": {
+          "animation": "runeterra/zaun/town/structures/special3.json",
+          "area": "runeterra/zaun/town/structures/special3_area.png",
+          "border": "runeterra/zaun/town/structures/special3_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 36
+        },
+        "special4": {
+          "animation": "runeterra/zaun/town/structures/special4.json",
+          "area": "runeterra/zaun/town/structures/special4_area.png",
+          "border": "runeterra/zaun/town/structures/special4_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 12
+        },
+        "dwellingLvl1": {
+          "animation": "runeterra/zaun/town/structures/dwellingLvl1.json",
+          "area": "runeterra/zaun/town/structures/dwellingLvl1_area.png",
+          "border": "runeterra/zaun/town/structures/dwellingLvl1_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 30
+        },
+        "dwellingUpLvl1": {
+          "animation": "runeterra/zaun/town/structures/dwellingUpLvl1.json",
+          "area": "runeterra/zaun/town/structures/dwellingUpLvl1_area.png",
+          "border": "runeterra/zaun/town/structures/dwellingUpLvl1_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 30
+        },
+        "dwellingLvl2": {
+          "animation": "runeterra/zaun/town/structures/dwellingLvl2.json",
+          "area": "runeterra/zaun/town/structures/dwellingLvl2_area.png",
+          "border": "runeterra/zaun/town/structures/dwellingLvl2_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 34
+        },
+        "dwellingUpLvl2": {
+          "animation": "runeterra/zaun/town/structures/dwellingUpLvl2.json",
+          "area": "runeterra/zaun/town/structures/dwellingUpLvl2_area.png",
+          "border": "runeterra/zaun/town/structures/dwellingUpLvl2_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 34
+        },
+        "dwellingLvl3": {
+          "animation": "runeterra/zaun/town/structures/dwellingLvl3.json",
+          "area": "runeterra/zaun/town/structures/dwellingLvl3_area.png",
+          "border": "runeterra/zaun/town/structures/dwellingLvl3_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 39
+        },
+        "dwellingUpLvl3": {
+          "animation": "runeterra/zaun/town/structures/dwellingUpLvl3.json",
+          "area": "runeterra/zaun/town/structures/dwellingUpLvl3_area.png",
+          "border": "runeterra/zaun/town/structures/dwellingUpLvl3_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 39
+        },
+        "dwellingLvl4": {
+          "animation": "runeterra/zaun/town/structures/dwellingLvl4.json",
+          "area": "runeterra/zaun/town/structures/dwellingLvl4_area.png",
+          "border": "runeterra/zaun/town/structures/dwellingLvl4_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 22
+        },
+        "dwellingUpLvl4": {
+          "animation": "runeterra/zaun/town/structures/dwellingUpLvl4.json",
+          "area": "runeterra/zaun/town/structures/dwellingUpLvl4_area.png",
+          "border": "runeterra/zaun/town/structures/dwellingUpLvl4_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 22
+        },
+        "dwellingLvl5": {
+          "animation": "runeterra/zaun/town/structures/dwellingLvl5.json",
+          "area": "runeterra/zaun/town/structures/dwellingLvl5_area.png",
+          "border": "runeterra/zaun/town/structures/dwellingLvl5_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 25
+        },
+        "dwellingUpLvl5": {
+          "animation": "runeterra/zaun/town/structures/dwellingUpLvl5.json",
+          "area": "runeterra/zaun/town/structures/dwellingUpLvl5_area.png",
+          "border": "runeterra/zaun/town/structures/dwellingUpLvl5_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 25
+        },
+        "dwellingLvl6": {
+          "animation": "runeterra/zaun/town/structures/dwellingLvl6.json",
+          "area": "runeterra/zaun/town/structures/dwellingLvl6_area.png",
+          "border": "runeterra/zaun/town/structures/dwellingLvl6_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 29
+        },
+        "dwellingUpLvl6": {
+          "animation": "runeterra/zaun/town/structures/dwellingUpLvl6.json",
+          "area": "runeterra/zaun/town/structures/dwellingUpLvl6_area.png",
+          "border": "runeterra/zaun/town/structures/dwellingUpLvl6_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 29
+        },
+        "dwellingLvl7": {
+          "animation": "runeterra/zaun/town/structures/dwellingLvl7.json",
+          "area": "runeterra/zaun/town/structures/dwellingLvl7_area.png",
+          "border": "runeterra/zaun/town/structures/dwellingLvl7_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 12
+        },
+        "dwellingUpLvl7": {
+          "animation": "runeterra/zaun/town/structures/dwellingUpLvl7.json",
+          "area": "runeterra/zaun/town/structures/dwellingUpLvl7_area.png",
+          "border": "runeterra/zaun/town/structures/dwellingUpLvl7_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 12
+        },
+        "shipyard": {
+          "animation": "runeterra/zaun/town/structures/shipyard.json",
+          "area": "runeterra/zaun/town/structures/shipyard_area.png",
+          "border": "runeterra/zaun/town/structures/shipyard_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 45
+        },
+        "ship": {
+          "animation": "runeterra/zaun/town/structures/ship.json",
+          "area": "runeterra/zaun/town/structures/ship_area.png",
+          "border": "runeterra/zaun/town/structures/ship_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 46
+        },
+        "grail": {
+          "animation": "runeterra/zaun/town/structures/grail.json",
+          "area": "runeterra/zaun/town/structures/grail_area.png",
+          "border": "runeterra/zaun/town/structures/grail_border.png",
+          "x": 0,
+          "y": 0,
+          "z": 48
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "One own building icon in the native Heroes III town icon language: the same building read at icon scale, with the same equipment and materials as the painted town layer. Never a borrowed icon.",
+  "building": "dwellingLvl7",
+  "canvas": [
+    150,
+    70
+  ],
+  "content_box": [
+    0,
+    0,
+    150,
+    70
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; prompted and technically assembled by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/painted-community-20261024-v1/dwellingLvl7/master.png",
+      "sha256": "f79e950f9ce3070ffcbfeca6e9bf39fbd6295456ae21d70bcb69f11edf666fa9"
+    },
+    {
+      "path": "assets/source/town/painted-community-20261024-v1/dwellingLvl7/generation.json",
+      "sha256": "a8b9a1699868985c831180989076175d7653161abd3c079674d65d9f17da22d1"
+    },
+    {
+      "path": "assets/source/town/painted-community-20261024-v1/prepare.py",
+      "sha256": "570add080d42e1b17d7aec2939862119a175a664281e04050585cfb68138a835"
+    },
+    {
+      "path": "scripts/zaun_coastal_state_v1.py",
+      "sha256": "5aa45de45f59be66d393df44538743b1842db5ba5f1c4e48c1d83acaa13f3cf7"
+    }
+  ],
+  "fit": "contain",
+  "generation": {
+    "canvas": [
+      1416,
+      1111
+    ],
+    "conversion": {
+      "composition_rectangle": [
+        605,
+        0,
+        186,
+        146
+      ],
+      "method": "Original painted2D source crop; uniform contain; full800x374 placement; native alpha-derived area/one-pixel outward border",
+      "native_z": 146,
+      "revision": "painted-community-20261024-v1",
+      "source_crop": [
+        73,
+        1,
+        1405,
+        1058
+      ]
+    },
+    "created": "2026-10-24",
+    "image_generation_used": true,
+    "master": "dwellingLvl7/master.png",
+    "master_sha256": "f79e950f9ce3070ffcbfeca6e9bf39fbd6295456ae21d70bcb69f11edf666fa9",
+    "method": "Genuine painted2D image generation, no3D render or procedural painting",
+    "model": null,
+    "model_note": "Built-in tool did not expose a concrete model identifier",
+    "painted_master": "assets/source/town/painted-community-20261024-v1/dwellingLvl7/master.png",
+    "painted_master_sha256": "f79e950f9ce3070ffcbfeca6e9bf39fbd6295456ae21d70bcb69f11edf666fa9",
+    "prompt": "Use case: stylized-concept. Asset type ONE isolated transparent painted2D ZAUN townbuilding CHEM-GOLEM FOUNDRY, a largeREARarchitecturalmonument inORIGINAL1999HeroesIIIadditional town, final186x146pixels. Subject industrialmachine-castinginstitution, NOTbeastpen. Tallbrickandscavengedrivetedironfoundryhall, threestoreysandmanyTINYindustrialwindows/one tinyhumansizedsidedoor(one-twelfthbuildingheight) toestablishlargerealarchitectureatreardepth. Mainarchedcastingbaywithoverheadgantry andemptyhangingchainclamps, heavyliddedcrucible, visibleworktables/toolformsinside, broadroundedplum-purplecorrugatedroofs, twostoutchimneysintegratedatrighthall, oneverticalGREENglasspressurecolumnattachedtosidewithcopperpipesandsmallgauges. Brownweatheredbrick/rustediron/wetconcretefooting,localizedchemicalgreenfluidlight, coppervalves. Largearchitecturalmass ratherthanforegroundtoy; BASEhasclearcompacthallandmodestapparatus,humblerthanlaterupgradewithbiggerpressureengine. No actualgolem,people,creatures,giantface,giantsculpture,runicmagic. Lowfrontal slightlyelevatedHeroesIII3quartertowncamera frontplusrightsidevisible,upperleftdaylight,paintedminiaturematerialrichness,notsmoothmodern3D. Fullbuildingallchimneys/cranes/footingsinsidecanvaswith10percentgenuinetransparentalphamarginsallaround;ONLYslimcontactfoundation,nogroundtile,backdrop,sky,haze,UI,letters,labels,neonoutlines,greenwash,vectorcartoon,isometric,pixelfilter. Distinctfromcivicclockhallandchemicalguildtower; massiveindustrialcastinghallwithsmallscaleindicators.\n",
+    "prompt_file": "dwellingLvl7/prompt.txt",
+    "prompt_sha256": "9e7fe241c03cf19b9ab25616c1d61215685bdde6d8f78819f7b01adb9d78a040",
+    "provider": "OpenAI built-in imagegen",
+    "references_note": "Original HoMM3 native references and official Riot Zaun environment researched as style/identity guidance; no source reference pixels composited",
+    "rights_review": "pending external review",
+    "runtime_verified": false,
+    "status": "authored configuration",
+    "visual_approval_granted": false
+  },
+  "id": "zaun.town.construction.dwellingLvl7",
+  "identity_review": "build/reports/painted-town-community-20261024-v1/source-pixel-review.json",
+  "native_visual_review": "pending",
+  "output_path": "Content/Sprites/runeterra/zaun/town/construction/dwellingLvl7.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    150,
+    70
+  ],
+  "source": "assets/source/town/painted-community-20261024-v1/structures/dwellingLvl7/construction.png",
+  "source_sha256": "a427811dea617a46313d44e777e679d17529a5b69cf841d0d61e633761918c32",
+  "status": "built-unreviewed",
+  "title": "Chem-Golem Foundry construction icon",
+  "visual_approval_granted": false
+}

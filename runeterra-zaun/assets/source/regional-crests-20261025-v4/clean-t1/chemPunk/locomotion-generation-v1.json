@@ -1,0 +1,68 @@
+{
+  "dependencies": [
+    {
+      "path": "assets/source/regional-crests-20261025-v4/clean-t1/chemPunk/locomotion-v1.png",
+      "sha256": "b7f1de69b197f19608bdc4673cbe55fc4aa528adde49b9c96f5f85dbe78e83be"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v4/clean-t1/chemPunk/locomotion-prompt-v1.txt",
+      "sha256": "cfad560e4ed1640faf10467d52341eee033f3f0a127e366aad7d07a674ab6f8e"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v4/clean-t1/chemPunk/identity-v1.png",
+      "sha256": "471299c4b738e3ee73acc86ac45dbf814267509511347b11deee343760fdade5"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v4/clean-t1/chemPunk/identity-generation-v1.json",
+      "sha256": "7081cff7d46de3dd1881c468c2b2a4c18f0900a1c9316baca3fcfb5f28de8096"
+    }
+  ],
+  "generation": {
+    "image_generation_used": true,
+    "inputs": [
+      {
+        "original_request_reference": "runeterra-zaun/assets/source/regional-crests-20261025-v4/clean-t1/chemPunk/identity-v1.png",
+        "role": "Clean own2D identity/action reference",
+        "sha256": "471299c4b738e3ee73acc86ac45dbf814267509511347b11deee343760fdade5"
+      },
+      {
+        "original_request_reference": "runeterra-zaun/build/reports/industrial-neighborhood-20261025-v3/lore/official-zaun-regional-crest.png",
+        "role": "Original region/native reference or clean old independent standing identity",
+        "sha256": "dd05b89e1a82934ec4585811ae4b7a20ef64d359f6ae0bde8cb25c4f3658ec14"
+      },
+      {
+        "original_request_reference": "build/reports/regional-crests-20261025-v1/zaun-material-proof/private-original-native-only.png",
+        "role": "Original region/native reference or clean old independent standing identity",
+        "sha256": "267dcb4711546612eace9f9f717a4ce8457e98d0abc4aaad3ac69c63bc2e22ea"
+      },
+      {
+        "original_request_reference": "build/reports/regional-crests-20261025-v1/zaun-clean-t1-newactions/private-original-turns-only.png",
+        "role": "Original region/native reference or clean old independent standing identity",
+        "sha256": "d12fb095b3406d03c3e56a56543edc8a1c19b72c934c763b4557d69d323bdfbd"
+      }
+    ],
+    "model": null,
+    "model_disclosure": "The built-in tool did not expose an exact backend model identifier.",
+    "no_3d_guide_or_render_ancestors": true,
+    "original_reference_pixels_stamped": false,
+    "prompt": "Use case: identity-preserve. Production painted2D ACTION ATLAS, same exact single Zaun man in image1; do not create a new identity or show oldguides. Image1 CLEAN standingidentity controls face/body, raggedworkcoat, right-handSHORTIRONPIPE, wrappedleftfist, actualZauncrest, palette andequipment. Image2 officialZauncrest SHAPEONLY; never copy PNGpixels. Image3 nativeoriginalCastle painting gives miniaturematerial/camera only, no troopcopy. Image4 actualoriginalPikeman HALF-TURN reference is animationsemantics only: turn towardfront and return, not complete180degree/back-facing figures. No3D/render/rigguideinput. Genuine hand-painted original1999HeroesIII miniature, richmattecoarsecloth/leather/rust/skin, upperleftwarmlight, restrainedhighlights. NOglossy3D, vector, cartoon, anime, splashart, blur or arbitrarypixelfilter. One coherent man/equipment/light/scale inALLcells.\nEXACT6COLUMNS6ROWS square1536x1536,36equal256x256cells on genuinealpha0background. WholefigureandpipeinsideEACHcell with18%clear emptygutters. Figureordinaryheightabout170pixels source/82native, identicalhead/body scaleallcells. Fixed RIGHT-facing slightlyelevated3/4battlecamera exceptspecifiedhalfturns. Sourcefeetgroundbaseline85%cellheight, stancecentre50%cellwidth; samegroundplane. No floor, shadowdisk, grid, labels, UI or text. Longraggedcoat must not hide every knee/boot; walkinganatomyvisiblyarticulates. SHORTPIPE remains a low, one-handed blunt tool in anatomical RIGHT hand, never gun/spear/twohandedstaff. Left fistwrapped. Crest physicallyattached to nearuppercoat/plate, moveswithshoulder, naturallyoccludedwhereappropriate, no pastedfloatingglyph or genericcircles.\nROW1: SIX actual successive GROUNDED WALK phases: leftfootlongforward/rightback; rightknee passes; rightfootlongforward/leftback; leftknee passes; leftfootforwardagain; passingclosure. Real knee/ankle/hip articulation and restrainedcounterarm swing; no six translatedstandingstamps or duplicatedboots. PipecarriedlownearRIGHTthigh, no battleattack whilewalking.\nROW2: cells1-4 FOUR quiet FIDGET poses with feetplanted: glanceattool, adjustrightgrip, flexwrappedleftwrist, settleguard. Cells5-6 quietHOLDING stances: ordinarybalancedready, pipeatrightthigh. No bounce/shuffle.\nROW3: firstFOUR real HITRECOIL poses: shoulderimpact, torsobendsback, kneesbrace, recover. Last2 settledguards. No gore, mutation or newprops.\nROW4: firstFOUR actual DEFEND/PARRY: raiseSHORTPIPEdiagonally, bracebehindpipewithwrappedleftfistclose, holdparry, lowerrecover. Bothfeetplanted, no shield. Last2 settledguards.\nROW5: firstFOUR TURN_L HALF-TURN phases from RIGHT3/4towardFRONT: initialright3/4, softerrightquarter, almostfront, clearnearFRONT. SAME anatomicalright handkeepspipe; nofullback or leftfacing endpoint. Last2 frontrests.\nROW6: firstFOUR TURN_R HALF-TURN phases from nearFRONT backtoRIGHT3/4: front, almostfront, rightquarter, originalright3/4guard. It is the reversehalfturnneededAFTERenginechangesfacing. No complete180rotation/backview; no opposite-handed mirror. Last2 rightguardrests. All36cellsintact andsamephysicalidentity, no cropping or crosscellprops. UPGRADE invariant: batteredscrapnearshoulderplate withpaleivoryZauncrest, smallOPENFACEforeheadcap, strongerleatherharness, ONEsmallcappedgreenbeltvial, shortpipewithboltedconnectorhead. Same leanworker, not newarmoredsoldier. Purplecloth/brownleather/rust, containedgreenonly.",
+    "provider": "OpenAI built-in imagegen",
+    "returned_provenance": {
+      "portable_note": "Exact raw provider locator and actual supplied reference list are retained in private receipt; no machine path is a replay dependency.",
+      "private_raw_receipt_sha256": "bffb20ddb50293de8c18f129b2eba5117335a57812276f52d28313baec820a8c",
+      "provider_file_basename": "exec-2829b2b9-1927-447a-9d68-650cbdbd4a0a.png",
+      "returned_png_sha256": "b7f1de69b197f19608bdc4673cbe55fc4aa528adde49b9c96f5f85dbe78e83be"
+    },
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": true
+  },
+  "identity_parent_only": false,
+  "painted_master": "assets/source/regional-crests-20261025-v4/clean-t1/chemPunk/locomotion-v1.png",
+  "painted_master_sha256": "b7f1de69b197f19608bdc4673cbe55fc4aa528adde49b9c96f5f85dbe78e83be",
+  "release_accepted": false,
+  "rights": "unresolved; release prohibited",
+  "runtime_master_selected_in_candidate": true,
+  "runtime_verified": false,
+  "selected_or_staged": false,
+  "status": "authored configuration"
+}

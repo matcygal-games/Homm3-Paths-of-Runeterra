@@ -1,0 +1,1011 @@
+{
+  "archer_review": {
+    "limitation": "Projectile start point/event timing, both engine facings and actual native map-anchor/UI placement still require runtime observation.",
+    "observed": "Both final87-frame sets retain left-hand bow carry through hold/walk/turn/hit/defence and separate compact secondary contact. Three shooting rows visibly aim at different heights; drawn frame2, arrow-absent release frame3 and recovery/carry are present. Corpses remain horizontal and gear stays with bearer. All map left/right reactions and UI crops viewed; no additional source-level defect found."
+  },
+  "asset_state": "built-unreviewed",
+  "conclusion": "HV-01/HV-02 are closed for their bounded native-size static source/action identity gaps. Final corrected candidates are released for coordinator integration; all wider runtime, final human visual and rights gates remain unchanged.",
+  "delta_inventory": {
+    "sha256": "5c0a3efda5ff76abb88cdbc8b9d18f765754a6a64565b89f9c72ba6800537cda",
+    "source": "delta-inventory.json"
+  },
+  "engine_modified": false,
+  "evidence_files": [
+    {
+      "path": "all8-turn-native-consumer1x.png",
+      "sha256": "c1653af9590695e258798b46a76b17359250d298a2cf9ba637a490af409e66d3"
+    },
+    {
+      "path": "identity-initial-final-actions-native1x.png",
+      "sha256": "35559e57ec0c65cfd01b200016259309ed6fea709f8d2d2025ae9987d360f268"
+    },
+    {
+      "path": "lunariPriestess-native-part1.png",
+      "sha256": "569ff98e459a2b216ec1cb2d04565a60ab655354feeb66c8bfc821202977e5e9"
+    },
+    {
+      "path": "lunariPriestess-native-part2.png",
+      "sha256": "80ec369617e8f691580b2d7051133dc97f6bd95aaf0a205845c7c32f89af44f1"
+    },
+    {
+      "path": "mountainArcher-native-part1.png",
+      "sha256": "ed308566677ffac3afae995b7349662f2f22fe955231082894c76390187f9a14"
+    },
+    {
+      "path": "mountainArcher-native-part2.png",
+      "sha256": "039aa74f50ddf620142db9319eef1495d44d7c0808147640eee4b5c23f816554"
+    },
+    {
+      "path": "peakMarksman-native-part1.png",
+      "sha256": "b3c3475a05f9227e6f6809871703fdc07f4d380fe5889fe7a4dd2721a21e01fc"
+    },
+    {
+      "path": "peakMarksman-native-part2.png",
+      "sha256": "092eac6049ac9684e60aec772ba4ff252594564a05ced2c3fb5bf1868ea69027"
+    },
+    {
+      "path": "solariDawnforger-native-part1.png",
+      "sha256": "f86bc1e6759981b50b2771604711cbacf6e93d4c4be064aa7aceea975cb56927"
+    },
+    {
+      "path": "solariDawnforger-native-part2.png",
+      "sha256": "1c25c97c5aca26dad1d51ff10f4d20d533ffad1edcb0bc6883dc859a436cb482"
+    },
+    {
+      "path": "solariSunforger-native-part1.png",
+      "sha256": "840fa4a0552697fc9d88ac78ce1000f9324907654a60ab3b421eb3509717c25b"
+    },
+    {
+      "path": "solariSunforger-native-part2.png",
+      "sha256": "f2ecbf254087c024b688657e50e12f48ff71af7f8c873a34af92f231d71f65ac"
+    }
+  ],
+  "findings": [
+    {
+      "closure_basis": "Actual new pixels compared against sealed initial1x evidence; not JSON metadata, frame hashes or only a holding pilot.",
+      "disposition": "closed for bounded static source/action upgrade-identity gap",
+      "id": "HV-01",
+      "observed": "Broader dark mantle/outer skirt, silver front panels and forearm protection visibly distinguish Priestess from initial upgrade and Acolyte at native1x. The altered cloth/armor read persists through all87 frames: six-phase walk, hold/fidget, hit/defence, all turns, upper/level/lower staff contacts, cast reaches, start/stop, death and final corpse. Staff/hands remain attached and foot/robe contact remains coherent in static poses. New map reactions and portraits retain silver/cloth identity.",
+      "remaining_outside_closure": "Native timing, generated shadows, moving foot contact, exact UI crop/placement, human material/motion approval and rights remain pending.",
+      "unit": "lunariPriestess"
+    },
+    {
+      "closure_basis": "Entire regenerated two-unit action cohorts and derivatives visually inspected; direct initial/final native1x action board shows genuine silhouette/material changes.",
+      "disposition": "closed for bounded static source/action heavy-family and upgrade-identity gap",
+      "id": "HV-02",
+      "observed": "Both now carry broader chest/shoulder/arm volumes, substantial bronze collar/bracers and dark work-apron body read, distinct from the old light-tunic silhouettes. Dawn further retains materially greater bronze cuirass/pauldron/tasset coverage and reinforced double-crescent head. All126 frames preserve this mass/armor distinction, including raised/contact/recovery polearm arcs, walking supports, tucked quarter turns and final collapsed bodies. No detached polearm/focus, missing hand, gross clipping or standing final corpse observed. Map and portrait derivatives retain heavy identity.",
+      "remaining_outside_closure": "Native timing/shadows/collision/perceptual clutter and final human art/rights review remain pending.",
+      "units": [
+        "solariSunforger",
+        "solariDawnforger"
+      ]
+    }
+  ],
+  "human_visual_approval": false,
+  "initial_review": {
+    "sha256": "77860917fb87f54d63107a1229203c21a168a151b914f3af770548a6416b94cb",
+    "source": "assets/reviews/creatures/humanoids/independent-visual-20261023/initial-review.json"
+  },
+  "native_execution": false,
+  "new_actionable_visual_findings": [],
+  "owner_recipe_pins_verified": [
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/lunariAcolyte/attackLeft.png",
+      "sha256": "5c2c75b74a8309bb8d22a6e83d4d135861bc4c166816d97bc9dfc0415ff831c7",
+      "source": "assets/recipes/creatures/humanoids/lunariAcolyte-attackLeft.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/lunariAcolyte/attackRight.png",
+      "sha256": "cff881194f8ba747ac88219362c950904655d0cc3be8704760e01b56397055f8",
+      "source": "assets/recipes/creatures/humanoids/lunariAcolyte-attackRight.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/lunariAcolyte/battle.json",
+      "sha256": "c7009bcc2746f5a9696ed8f307835a3a1c933e4aa8960ad886640ae5b93b0e0b",
+      "source": "assets/recipes/creatures/humanoids/lunariAcolyte-battle.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/lunariAcolyte/large.png",
+      "sha256": "88eaa5a39f1b85d3d8584d42645aa995508c0ad0244ab801d6541071fde617ef",
+      "source": "assets/recipes/creatures/humanoids/lunariAcolyte-large.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/lunariAcolyte/map.json",
+      "sha256": "aef63b812d66776d86c0f2fc1009f5067288a0ee3d92d267dce295fc56643c86",
+      "source": "assets/recipes/creatures/humanoids/lunariAcolyte-map.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/lunariAcolyte/small.png",
+      "sha256": "031fdf3a1a3997e861ce9eaebe522c7207d98288b2d60427f580d4c53f09ce3b",
+      "source": "assets/recipes/creatures/humanoids/lunariAcolyte-small.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/lunariPriestess/attackLeft.png",
+      "sha256": "a152d9bab221b3595ed59e29063f8585dcc5e505db56ae4dad0ba7e22b5ef8b3",
+      "source": "assets/recipes/creatures/humanoids/lunariPriestess-attackLeft.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/lunariPriestess/attackRight.png",
+      "sha256": "f9294a133c918aa74200a20bf8e4661496402e25fb18f9852a016d44c6925fb6",
+      "source": "assets/recipes/creatures/humanoids/lunariPriestess-attackRight.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/lunariPriestess/battle.json",
+      "sha256": "0e50ac7d7d1611dc01526b5b6412433a237a1012626df69c8d376ee7601d1706",
+      "source": "assets/recipes/creatures/humanoids/lunariPriestess-battle.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/lunariPriestess/large.png",
+      "sha256": "a669e5a36dd5bdf8f49f473a94e74e52180023b63b4587f6fb75d0f78549de90",
+      "source": "assets/recipes/creatures/humanoids/lunariPriestess-large.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/lunariPriestess/map.json",
+      "sha256": "ef32ffa9a4c36679905e7852a927134c13af9c3f27a1b1d400105a9ea550f7e1",
+      "source": "assets/recipes/creatures/humanoids/lunariPriestess-map.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/lunariPriestess/small.png",
+      "sha256": "b1075972428ca9b37caede8c103ddc27c3f3f9e1cda494f493b5cfaa07108613",
+      "source": "assets/recipes/creatures/humanoids/lunariPriestess-small.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/mountainArcher/attackLeft.png",
+      "sha256": "17095ed38aa96b5b3bb00e4d26d765a85c5710d0608a50800ee63761995642a6",
+      "source": "assets/recipes/creatures/humanoids/mountainArcher-attackLeft.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/mountainArcher/attackRight.png",
+      "sha256": "150be0b8f5cb6b4e40517ccbba9f56d3ecd5ef0f264d9030e0ed0197323426af",
+      "source": "assets/recipes/creatures/humanoids/mountainArcher-attackRight.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/mountainArcher/battle.json",
+      "sha256": "1ad1c8dbc7a454d701096e8ea68dd51de7a568f33e3f593941873c477be19bd6",
+      "source": "assets/recipes/creatures/humanoids/mountainArcher-battle.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/mountainArcher/large.png",
+      "sha256": "bfd4ba0d3acade535c923de64f6480bd7828867f6055e7478e126359273106a5",
+      "source": "assets/recipes/creatures/humanoids/mountainArcher-large.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/mountainArcher/map.json",
+      "sha256": "60dbc3286fe91c03c88a5e7f80a27917e55a30559d62a3d59100257f9518c27b",
+      "source": "assets/recipes/creatures/humanoids/mountainArcher-map.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/projectiles/mountainArcher.json",
+      "sha256": "5a2d776d9a6e14be7a33fde76d59117628b95cd3ab84fd76a55c411987bff365",
+      "source": "assets/recipes/creatures/humanoids/mountainArcher-projectile.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/mountainArcher/small.png",
+      "sha256": "0b3efb82892a57e595f898f28d9e1e63772e844f987222f6aff921f2a2f42e96",
+      "source": "assets/recipes/creatures/humanoids/mountainArcher-small.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/peakMarksman/attackLeft.png",
+      "sha256": "985b91a2dd73e986c95bfee4e10c243c4ade3dbddd4b1c933cc47fd979e0430a",
+      "source": "assets/recipes/creatures/humanoids/peakMarksman-attackLeft.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/peakMarksman/attackRight.png",
+      "sha256": "b55aab6c7bfea5d34268145d01f18566b1926ac3f74df1019d751d133dcc789e",
+      "source": "assets/recipes/creatures/humanoids/peakMarksman-attackRight.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/peakMarksman/battle.json",
+      "sha256": "05a549dfd984a3ba86ec0c7f95f0d1c28e9850f8348b5ec0b827f2936ae74d1b",
+      "source": "assets/recipes/creatures/humanoids/peakMarksman-battle.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/peakMarksman/large.png",
+      "sha256": "3da75acbd82cb048a78521813da98e9ce4fe7481238c303a027438980d96c89e",
+      "source": "assets/recipes/creatures/humanoids/peakMarksman-large.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/peakMarksman/map.json",
+      "sha256": "c8a0261e1a19016129c23d064066ea2721f8867d27325ca7bb8c97925167ae8c",
+      "source": "assets/recipes/creatures/humanoids/peakMarksman-map.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/projectiles/peakMarksman.json",
+      "sha256": "fd077a9579d70905e5386468dd16aa50414399ce83108ee540a4e5d39165c214",
+      "source": "assets/recipes/creatures/humanoids/peakMarksman-projectile.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/peakMarksman/small.png",
+      "sha256": "40b6f151b7229d7aac4cdd4179f6ce35f40a035c943b2870f425c267ac0ca5e3",
+      "source": "assets/recipes/creatures/humanoids/peakMarksman-small.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/rakkorPassguard/attackLeft.png",
+      "sha256": "3bc681d4d442ec951dc81c8d30b3e71a88001e0bbd75472ca2128f8496349c7a",
+      "source": "assets/recipes/creatures/humanoids/rakkorPassguard-attackLeft.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/rakkorPassguard/attackRight.png",
+      "sha256": "5cd27c91234674fc71541715537b3d6ff146f4119d29a9e1624b0f4e914fd60e",
+      "source": "assets/recipes/creatures/humanoids/rakkorPassguard-attackRight.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/rakkorPassguard/battle.json",
+      "sha256": "1f63cd6399fcfcca9b24f01ebe82ff14c34f871a7235074865f6602c46850572",
+      "source": "assets/recipes/creatures/humanoids/rakkorPassguard-battle.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/rakkorPassguard/large.png",
+      "sha256": "85086d6b3da11577882ec04f04003459b762f33b7cde5f39899c1d7925750e03",
+      "source": "assets/recipes/creatures/humanoids/rakkorPassguard-large.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/rakkorPassguard/map.json",
+      "sha256": "05a77882e141a9873816bc4188a2d2ed0dc63db7e7619434c66a433ab2b5fb35",
+      "source": "assets/recipes/creatures/humanoids/rakkorPassguard-map.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/rakkorPassguard/small.png",
+      "sha256": "8eb456f3a60db921470004029bb911cd0761a36fd9bf463d4137fc1f287e184a",
+      "source": "assets/recipes/creatures/humanoids/rakkorPassguard-small.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/rakkorTrailguard/attackLeft.png",
+      "sha256": "d28e939902b9a6fcdaec5f5288b9526be41ab2e4911a44cd102319e3ee111c28",
+      "source": "assets/recipes/creatures/humanoids/rakkorTrailguard-attackLeft.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/rakkorTrailguard/attackRight.png",
+      "sha256": "a321e50536481f65c4590736a5b172ec4351bcd9ff8605b03337f9a71f00bce6",
+      "source": "assets/recipes/creatures/humanoids/rakkorTrailguard-attackRight.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/rakkorTrailguard/battle.json",
+      "sha256": "d94b5c4802bf22866086ece96f02b2ea33979e5e5a7b4e0927ec83e09a6749b1",
+      "source": "assets/recipes/creatures/humanoids/rakkorTrailguard-battle.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/rakkorTrailguard/large.png",
+      "sha256": "773932b748e08679c4c9b801d7271fc83e535fdbcb49261445ee3c328cabfd41",
+      "source": "assets/recipes/creatures/humanoids/rakkorTrailguard-large.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/rakkorTrailguard/map.json",
+      "sha256": "9f9161e76c68cd22b7e7e940923acd977244234343f6f41776f1edc43d520428",
+      "source": "assets/recipes/creatures/humanoids/rakkorTrailguard-map.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/rakkorTrailguard/small.png",
+      "sha256": "2b6f548337af3aa71b0e41175a99423961c4d43f41e61460b5cf23efbb38e5cc",
+      "source": "assets/recipes/creatures/humanoids/rakkorTrailguard-small.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/solariDawnforger/attackLeft.png",
+      "sha256": "f3d4ec5631a77672a1784c2c43be0703406ede18205eb3ad1cd0682da6c78d74",
+      "source": "assets/recipes/creatures/humanoids/solariDawnforger-attackLeft.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/solariDawnforger/attackRight.png",
+      "sha256": "ccda52130bb08bf8b06de97cd928c7bb49670d16bc57fd6ca46026081e7d8f48",
+      "source": "assets/recipes/creatures/humanoids/solariDawnforger-attackRight.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/solariDawnforger/battle.json",
+      "sha256": "e3e97907b00b92a76e73aeea0f181ac97a77b9e98dc4e220369b46c8869494c5",
+      "source": "assets/recipes/creatures/humanoids/solariDawnforger-battle.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/solariDawnforger/large.png",
+      "sha256": "fa2654d6bede78bf950c6c8ab642d470bf77aef2f4fa5d4dfd8ad2b242f74fa9",
+      "source": "assets/recipes/creatures/humanoids/solariDawnforger-large.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/solariDawnforger/map.json",
+      "sha256": "24d8c909e85ee3f81cb0458b5f65c16744ce86d9dbea0ddd638c97c5da03c483",
+      "source": "assets/recipes/creatures/humanoids/solariDawnforger-map.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/solariDawnforger/small.png",
+      "sha256": "91748c7c471078e1831e87dc3e5d7f13f3ec10a81aac58b6b72a89e4176aabc5",
+      "source": "assets/recipes/creatures/humanoids/solariDawnforger-small.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/solariSunforger/attackLeft.png",
+      "sha256": "8c8b210b7541cef2efa9750b42d8afd86670d841df44136c040d73c2d9733093",
+      "source": "assets/recipes/creatures/humanoids/solariSunforger-attackLeft.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/solariSunforger/attackRight.png",
+      "sha256": "bfa4e807151cca7920d9422a8474dc4a3383ffd7b9c6601fc3f4dd11a470ecc0",
+      "source": "assets/recipes/creatures/humanoids/solariSunforger-attackRight.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/solariSunforger/battle.json",
+      "sha256": "94c462601e3c1bc6c316032f0a458e0a11f5706ed34d74d3e6c4c599bd324952",
+      "source": "assets/recipes/creatures/humanoids/solariSunforger-battle.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/solariSunforger/large.png",
+      "sha256": "60334ae9dea8a39de8f230447cb5a37b964c8d8c6f68a26e843d1cf36e96634d",
+      "source": "assets/recipes/creatures/humanoids/solariSunforger-large.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/solariSunforger/map.json",
+      "sha256": "004305f4ea93485850355821dfef933a0b975056f27672846a56097ff4e039c3",
+      "source": "assets/recipes/creatures/humanoids/solariSunforger-map.json"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/targon/creatures/solariSunforger/small.png",
+      "sha256": "77cd0d7893d7746399291d01d84b639ebbb47cba6717f94b6cabc43a942f970d",
+      "source": "assets/recipes/creatures/humanoids/solariSunforger-small.json"
+    }
+  ],
+  "owner_source_release": {
+    "sha256": "2dde79d4bc4d3ac5b3ff718bbbf3a99d4168932e07a04fa4bd4593c907d6150d",
+    "source": "assets/reviews/creatures/humanoids/humanoid-source-release-20261023-2dde79d4bc4d.json"
+  },
+  "pilot_addendum": {
+    "sha256": "90bab528263840f765cf00bb10deae926f70ee722d111713feb4d4a486f8cba9",
+    "source": "assets/reviews/creatures/humanoids/independent-visual-20261023/identity-v2-pilot-addendum.json"
+  },
+  "pixel_review_coverage": {
+    "corrected_identity_frame_count": 213,
+    "corrected_identity_units": [
+      "lunariPriestess",
+      "solariSunforger",
+      "solariDawnforger"
+    ],
+    "derivatives_viewed": "Each of5 full cohorts: map hold0,attackLeft,attackRight,portrait-large,portrait-small (25 source images). Turn sheet includes all8 units. No other unchanged full cohort repeated.",
+    "final_archer_frame_count": 174,
+    "final_archer_units": [
+      "mountainArcher",
+      "peakMarksman"
+    ],
+    "initial_to_final_changed_battle_sources_by_unit": {
+      "lunariAcolyte": 8,
+      "lunariPriestess": 87,
+      "mountainArcher": 8,
+      "peakMarksman": 8,
+      "rakkorPassguard": 8,
+      "rakkorTrailguard": 8,
+      "solariDawnforger": 63,
+      "solariSunforger": 63
+    },
+    "review_basis": "Every listed action frame is visible in split raw1x sheets below2048px; fixed shared crop(130,146,272,282), no source resampling or bbox fit. Original native controls remain privately viewed/pinned in initial report.",
+    "turn_frame_count_all8": 64,
+    "unique_battle_sources_viewed": 411
+  },
+  "portable_source_addendum": {
+    "review_boundary": "Owner-provided independent SDNA result recorded, not rerun or reinterpreted as visual evidence.",
+    "sha256": "c2176d071f9a1624fd8cf570cc8ba108ac52a17efb540e522f0299a0049b946a",
+    "source": "assets/reviews/creatures/humanoids/portable-source-release-addendum-20261023-c2176d071f9a.json"
+  },
+  "production_modified": false,
+  "release_accepted": false,
+  "released_unit_pins": {
+    "lunariAcolyte": {
+      "battle_frames": 87,
+      "editable_scene": {
+        "sha256": "1ed3e7720be4b4aa3f7676254f3bb5e01f6b84ef634ea1b15dfa1e4a7d2550b1",
+        "source": "assets/source/creatures/humanoids/lunariAcolyte/lunariAcolyte-portable-ce17b0507f77.blend",
+        "source_pose_frame_formula": "1+group*12+frame; supplemental map/UI keys only in full-render scenes",
+        "timeline": [
+          1,
+          620
+        ]
+      },
+      "index": {
+        "sha256": "46b5e7387b96c27de97bfc023f7149a786e21d0fb5af50a3b5e4c66f2083b1db",
+        "source": "assets/source/creatures/humanoids/lunariAcolyte/render-index.json"
+      }
+    },
+    "lunariPriestess": {
+      "battle_frames": 87,
+      "editable_scene": {
+        "sha256": "e43dce0e049a7c6fa1bc9808022080794cef26ded2a43aab1545d5bee7f61b88",
+        "source": "assets/source/creatures/humanoids/lunariPriestess/lunariPriestess-portable-1c08d7526cc9.blend",
+        "source_pose_frame_formula": "1+group*12+frame; supplemental map/UI keys only in full-render scenes",
+        "timeline": [
+          1,
+          620
+        ]
+      },
+      "index": {
+        "sha256": "f6782fccfebfdb6b18e793fe9dca05333fd66cedc74e199fceb5661c7d6067f1",
+        "source": "assets/source/creatures/humanoids/lunariPriestess/render-index.json"
+      }
+    },
+    "mountainArcher": {
+      "battle_frames": 87,
+      "editable_scene": {
+        "sha256": "a64d233322ff2a6fd2c6286ce44ec47e5d5d54dc482eb70fabc5f46802b2d957",
+        "source": "assets/source/creatures/humanoids/mountainArcher/mountainArcher-portable-2ca354fc0ebb.blend",
+        "source_pose_frame_formula": "1+group*12+frame; supplemental map/UI keys only in full-render scenes",
+        "timeline": [
+          1,
+          620
+        ]
+      },
+      "index": {
+        "sha256": "4d2d98b5cdea696e04e1873be3a63867343f43f90cf385f13ea41e0a2a82e9b2",
+        "source": "assets/source/creatures/humanoids/mountainArcher/render-index.json"
+      }
+    },
+    "peakMarksman": {
+      "battle_frames": 87,
+      "editable_scene": {
+        "sha256": "72f3f81d2bf66efa8026a9dea0751812e2205614595343995bbcaa947e628148",
+        "source": "assets/source/creatures/humanoids/peakMarksman/peakMarksman-portable-1f56a27e2dbd.blend",
+        "source_pose_frame_formula": "1+group*12+frame; supplemental map/UI keys only in full-render scenes",
+        "timeline": [
+          1,
+          620
+        ]
+      },
+      "index": {
+        "sha256": "de8ff387df0092e562e218518fe8b55ebe64ed82a3ca1c5e0fa04c351fe369de",
+        "source": "assets/source/creatures/humanoids/peakMarksman/render-index.json"
+      }
+    },
+    "rakkorPassguard": {
+      "battle_frames": 63,
+      "editable_scene": {
+        "sha256": "04358eeb203e35823182526e3111edab814ed041490450d4e4b1af6793a56844",
+        "source": "assets/source/creatures/humanoids/rakkorPassguard/rakkorPassguard-portable-3ba2d4d128be.blend",
+        "source_pose_frame_formula": "1+group*12+frame; supplemental map/UI keys only in full-render scenes",
+        "timeline": [
+          1,
+          620
+        ]
+      },
+      "index": {
+        "sha256": "869bbd2ff91ca046c6478ebee7135aa1671fbdbc7bbe0e23fb6d7ea632896147",
+        "source": "assets/source/creatures/humanoids/rakkorPassguard/render-index.json"
+      }
+    },
+    "rakkorTrailguard": {
+      "battle_frames": 63,
+      "editable_scene": {
+        "sha256": "552659a209b2bd771afe86bfc8e9690a2bfb4523a299e6a687bb84315804f546",
+        "source": "assets/source/creatures/humanoids/rakkorTrailguard/rakkorTrailguard-portable-368e0525ab98.blend",
+        "source_pose_frame_formula": "1+group*12+frame; supplemental map/UI keys only in full-render scenes",
+        "timeline": [
+          1,
+          620
+        ]
+      },
+      "index": {
+        "sha256": "9873f68878acc96fc2725a9435c2fdf21ef21da88debecf1a72982c5dbcf3913",
+        "source": "assets/source/creatures/humanoids/rakkorTrailguard/render-index.json"
+      }
+    },
+    "solariDawnforger": {
+      "battle_frames": 63,
+      "editable_scene": {
+        "sha256": "f6870421f1a7f177904d1c4ad115e7383c492e76d0e1615c0deea02441b273da",
+        "source": "assets/source/creatures/humanoids/solariDawnforger/solariDawnforger-portable-d9651ef749d1.blend",
+        "source_pose_frame_formula": "1+group*12+frame; supplemental map/UI keys only in full-render scenes",
+        "timeline": [
+          1,
+          620
+        ]
+      },
+      "index": {
+        "sha256": "5ea31c91fdc56c838efbbc6d68e149c986b67c378c706c7ac2d0907e5913789c",
+        "source": "assets/source/creatures/humanoids/solariDawnforger/render-index.json"
+      }
+    },
+    "solariSunforger": {
+      "battle_frames": 63,
+      "editable_scene": {
+        "sha256": "fb88f4fee3ce67cb88cb97c98df6ed74376844b5c0bb1c0074d6c88dd71a232d",
+        "source": "assets/source/creatures/humanoids/solariSunforger/solariSunforger-portable-bcea42b13a38.blend",
+        "source_pose_frame_formula": "1+group*12+frame; supplemental map/UI keys only in full-render scenes",
+        "timeline": [
+          1,
+          620
+        ]
+      },
+      "index": {
+        "sha256": "42792cac271f03a739e6e7652c3cef99585c72ff8299c960d8fee130310c6fec",
+        "source": "assets/source/creatures/humanoids/solariSunforger/render-index.json"
+      }
+    }
+  },
+  "remaining_acceptance": [
+    "Native playback of walk/turn/melee/cast/shoot/death with actual scene clocks and generated shadows.",
+    "Adventure root/reaction placement, hero/town/recruitment UI crops and both-facing projectile release in native engine.",
+    "Human final material/motion/art judgment, rights clearance and complete release gates."
+  ],
+  "rights_approval": false,
+  "runtime_verified": false,
+  "schema_version": 1,
+  "scope": "Final bounded independent static visual delta review. New reports/contact sheets only. No production/source/art mutation, renderer launch, generic conversion or native window. Scoped local findings may close without granting final human art or runtime acceptance.",
+  "status": "authored configuration",
+  "technical_checks_executed": {
+    "all600_raw_canvases_rgba_and_nonclipped_alpha": true,
+    "battle_frame_source_pins_checked": 600,
+    "recipe_pins_match": 50,
+    "release_indices_scenes_match": 8,
+    "scope": "These are exact source integrity/decoded-pixel checks, not reruns of source/full/native test suites and not substitute visual evidence.",
+    "source_pin_drift_after_review": 0
+  },
+  "turn_review": {
+    "actual_consumer": "ReverseAnimation plays TURN_L(group7), toggles facing and repositions via getStackPositionAtHex, then plays TURN_R(group8). Position helper uses +29/-29 for these one-hex units; switch difference is58 pixels. Source450-wide discrete mirror maps x to449-x.",
+    "assembly_observation": "Eight rows show holding-to-front3D quarter poses, an aligned flip boundary, then opposite-facing front-to-holding poses. Tucked central kit avoids the previous sideways pose snap. No visible root jump at the assembled midpoint; face/hands/shield/staff/bow/fork remain attached.",
+    "boundary_count": 8,
+    "consumer_source_pins": [
+      {
+        "path": "vcmi-develop/vcmi-develop/client/battle/BattleAnimationClasses.cpp",
+        "sha256": "32e58068ee148c3c56afd0c6755144eda0a819dbcb201747d5abf4edeee9a4b9"
+      },
+      {
+        "path": "vcmi-develop/vcmi-develop/client/battle/BattleStacksController.cpp",
+        "sha256": "c12c369cdebeca2d94cdeb2351f5d53ec572d6a9ce2b727f79da4aa76da18682"
+      }
+    ],
+    "decoded_independent_check": "For each unit, visible RGBA(g07-f03) equals visible RGBA(FLIP_LEFT_RIGHT(g08-f00) translated-58px), after ignoring RGB only where alpha0. All8 comparisons exact. g07-f00 and g08-f03 bytes equal own g02-f00.",
+    "derived_frame_provenance": [
+      {
+        "frame": "7:0",
+        "preserved_render": {
+          "sha256": "3cd37ce2178c80a93585f9117edc6b9abc394742c9ae071e83e2e24f430221f8",
+          "source": "assets/source/creatures/humanoids/lunariAcolyte/turns/g07-f00-rendered-3cd37ce2178c.png"
+        },
+        "source": "assets/source/creatures/humanoids/lunariAcolyte/g07-f00.png",
+        "source_derivation": {
+          "method": "Reuse exact same authored holding endpoint; quarter pose parameters equalholding0",
+          "source": "assets/source/creatures/humanoids/lunariAcolyte/g02-f00.png",
+          "source_sha256": "7153710102037ee8e158864107f12cbbe4f4a260d91ce831b08c0feb4dcac229"
+        },
+        "source_sha256": "7153710102037ee8e158864107f12cbbe4f4a260d91ce831b08c0feb4dcac229",
+        "unit": "lunariAcolyte"
+      },
+      {
+        "frame": "8:3",
+        "preserved_render": {
+          "sha256": "e351063ca842db2937fb94adfcd9d8e72996107dcf325cc20e2f0f45ffcec134",
+          "source": "assets/source/creatures/humanoids/lunariAcolyte/turns/g08-f03-rendered-e351063ca842.png"
+        },
+        "source": "assets/source/creatures/humanoids/lunariAcolyte/g08-f03.png",
+        "source_derivation": {
+          "method": "Reuse exact same authored holding endpoint; quarter pose parameters equalholding0",
+          "source": "assets/source/creatures/humanoids/lunariAcolyte/g02-f00.png",
+          "source_sha256": "7153710102037ee8e158864107f12cbbe4f4a260d91ce831b08c0feb4dcac229"
+        },
+        "source_sha256": "7153710102037ee8e158864107f12cbbe4f4a260d91ce831b08c0feb4dcac229",
+        "unit": "lunariAcolyte"
+      },
+      {
+        "frame": "8:0",
+        "preserved_render": {
+          "sha256": "e52ed517d6c7ea2fc1bf66ae569b8b5c53605af7bff79641ab33bec695ef7f34",
+          "source": "assets/source/creatures/humanoids/lunariAcolyte/turns/g08-f00-rendered-e52ed517d6c7.png"
+        },
+        "source": "assets/source/creatures/humanoids/lunariAcolyte/g08-f00.png",
+        "source_derivation": {
+          "continuous_root": [
+            196,
+            267
+          ],
+          "inverse_affine": [
+            -1,
+            0,
+            392,
+            0,
+            1,
+            0
+          ],
+          "method": "Root reflection of genuine camera-front quarter pose for native7->flip/reposition->8 boundary",
+          "source": "assets/source/creatures/humanoids/lunariAcolyte/g07-f03.png",
+          "source_sha256": "b8ce9b5f3b59216b6f74e6ab269f0a27796b010d03aaeba1524d80e209373a25"
+        },
+        "source_sha256": "8e946692bdc2475e8583966c52f0f3c43dddad786a584accf3fbc7102d190cd6",
+        "unit": "lunariAcolyte"
+      },
+      {
+        "frame": "7:0",
+        "preserved_render": {
+          "sha256": "4e387ccc847b87d105f139aa076168fc1e497406d1c40a2f0092b539af27a95b",
+          "source": "assets/source/creatures/humanoids/lunariPriestess/turns/g07-f00-rendered-4e387ccc847b.png"
+        },
+        "source": "assets/source/creatures/humanoids/lunariPriestess/g07-f00.png",
+        "source_derivation": {
+          "method": "Reuse exact same authored holding endpoint; quarter pose parameters equalholding0",
+          "source": "assets/source/creatures/humanoids/lunariPriestess/g02-f00.png",
+          "source_sha256": "c63aac64f6e62e725e23ab2be833a15a7178882e04eee8e696ba737b87e0f3dd"
+        },
+        "source_sha256": "c63aac64f6e62e725e23ab2be833a15a7178882e04eee8e696ba737b87e0f3dd",
+        "unit": "lunariPriestess"
+      },
+      {
+        "frame": "8:3",
+        "preserved_render": {
+          "sha256": "6f0043b4aaded74f93f01ac1f315649f783e6ab5f50980551b175d47c013605e",
+          "source": "assets/source/creatures/humanoids/lunariPriestess/turns/g08-f03-rendered-6f0043b4aade.png"
+        },
+        "source": "assets/source/creatures/humanoids/lunariPriestess/g08-f03.png",
+        "source_derivation": {
+          "method": "Reuse exact same authored holding endpoint; quarter pose parameters equalholding0",
+          "source": "assets/source/creatures/humanoids/lunariPriestess/g02-f00.png",
+          "source_sha256": "c63aac64f6e62e725e23ab2be833a15a7178882e04eee8e696ba737b87e0f3dd"
+        },
+        "source_sha256": "c63aac64f6e62e725e23ab2be833a15a7178882e04eee8e696ba737b87e0f3dd",
+        "unit": "lunariPriestess"
+      },
+      {
+        "frame": "8:0",
+        "preserved_render": {
+          "sha256": "c5c0e4e39ba7fd810d5171514007098817da4589ce4297c8e19767e44f88dc50",
+          "source": "assets/source/creatures/humanoids/lunariPriestess/turns/g08-f00-rendered-c5c0e4e39ba7.png"
+        },
+        "source": "assets/source/creatures/humanoids/lunariPriestess/g08-f00.png",
+        "source_derivation": {
+          "continuous_root": [
+            196,
+            267
+          ],
+          "inverse_affine": [
+            -1,
+            0,
+            392,
+            0,
+            1,
+            0
+          ],
+          "method": "Root reflection of genuine camera-front quarter pose for native7->flip/reposition->8 boundary",
+          "source": "assets/source/creatures/humanoids/lunariPriestess/g07-f03.png",
+          "source_sha256": "08cf8396dd3ff869c796c2dfa25bb1a55e5147ecee304940431a83df6a1a7582"
+        },
+        "source_sha256": "3fd3575cf5f5c399e5a17df04e0958887b44f29519dfa187afd80a96e32aa302",
+        "unit": "lunariPriestess"
+      },
+      {
+        "frame": "7:0",
+        "preserved_render": {
+          "sha256": "67c0a5ec543b502241a10abf738ecde883a7ba13ef533576bb6bfca30aab72b7",
+          "source": "assets/source/creatures/humanoids/mountainArcher/turns/g07-f00-rendered-67c0a5ec543b.png"
+        },
+        "source": "assets/source/creatures/humanoids/mountainArcher/g07-f00.png",
+        "source_derivation": {
+          "method": "Reuse exact same authored holding endpoint; quarter pose parameters equalholding0",
+          "source": "assets/source/creatures/humanoids/mountainArcher/g02-f00.png",
+          "source_sha256": "2a8d60eec699050f3ef3c3ad450b12b520438ad477b38ac81dc0ea9253b3ee55"
+        },
+        "source_sha256": "2a8d60eec699050f3ef3c3ad450b12b520438ad477b38ac81dc0ea9253b3ee55",
+        "unit": "mountainArcher"
+      },
+      {
+        "frame": "8:3",
+        "preserved_render": {
+          "sha256": "7d99364e4d6b5c3b418cfd71447ce71fbe0473271cef0788e332f33026c324e3",
+          "source": "assets/source/creatures/humanoids/mountainArcher/turns/g08-f03-rendered-7d99364e4d6b.png"
+        },
+        "source": "assets/source/creatures/humanoids/mountainArcher/g08-f03.png",
+        "source_derivation": {
+          "method": "Reuse exact same authored holding endpoint; quarter pose parameters equalholding0",
+          "source": "assets/source/creatures/humanoids/mountainArcher/g02-f00.png",
+          "source_sha256": "2a8d60eec699050f3ef3c3ad450b12b520438ad477b38ac81dc0ea9253b3ee55"
+        },
+        "source_sha256": "2a8d60eec699050f3ef3c3ad450b12b520438ad477b38ac81dc0ea9253b3ee55",
+        "unit": "mountainArcher"
+      },
+      {
+        "frame": "8:0",
+        "preserved_render": {
+          "sha256": "55a4745e42954567c7a3c98486dc69eee8e8979ee300ad153af7f0afcd6a76bb",
+          "source": "assets/source/creatures/humanoids/mountainArcher/turns/g08-f00-rendered-55a4745e4295.png"
+        },
+        "source": "assets/source/creatures/humanoids/mountainArcher/g08-f00.png",
+        "source_derivation": {
+          "continuous_root": [
+            196,
+            267
+          ],
+          "inverse_affine": [
+            -1,
+            0,
+            392,
+            0,
+            1,
+            0
+          ],
+          "method": "Root reflection of genuine camera-front quarter pose for native7->flip/reposition->8 boundary",
+          "source": "assets/source/creatures/humanoids/mountainArcher/g07-f03.png",
+          "source_sha256": "13addfb7513222fd28b44905e74e07da9290feecc5ebc0c6a1739d261b7add4f"
+        },
+        "source_sha256": "cff32af8e60f5a6733342529bd4e0d2cf66077158737958399f9a52635ea7cb3",
+        "unit": "mountainArcher"
+      },
+      {
+        "frame": "7:0",
+        "preserved_render": {
+          "sha256": "c6fb48ce39df7249a55788d4ff00f9dcfaf430a808e1069b29ce15e2d15479d0",
+          "source": "assets/source/creatures/humanoids/peakMarksman/turns/g07-f00-rendered-c6fb48ce39df.png"
+        },
+        "source": "assets/source/creatures/humanoids/peakMarksman/g07-f00.png",
+        "source_derivation": {
+          "method": "Reuse exact same authored holding endpoint; quarter pose parameters equalholding0",
+          "source": "assets/source/creatures/humanoids/peakMarksman/g02-f00.png",
+          "source_sha256": "c32c668c6362f87bf4fefc7389b23ade99516e7b217b4db4cc76289dce79c4f9"
+        },
+        "source_sha256": "c32c668c6362f87bf4fefc7389b23ade99516e7b217b4db4cc76289dce79c4f9",
+        "unit": "peakMarksman"
+      },
+      {
+        "frame": "8:3",
+        "preserved_render": {
+          "sha256": "9d7e7a0137d050d7330b4b0fb364c762e1417ef1266707e736616997188a9138",
+          "source": "assets/source/creatures/humanoids/peakMarksman/turns/g08-f03-rendered-9d7e7a0137d0.png"
+        },
+        "source": "assets/source/creatures/humanoids/peakMarksman/g08-f03.png",
+        "source_derivation": {
+          "method": "Reuse exact same authored holding endpoint; quarter pose parameters equalholding0",
+          "source": "assets/source/creatures/humanoids/peakMarksman/g02-f00.png",
+          "source_sha256": "c32c668c6362f87bf4fefc7389b23ade99516e7b217b4db4cc76289dce79c4f9"
+        },
+        "source_sha256": "c32c668c6362f87bf4fefc7389b23ade99516e7b217b4db4cc76289dce79c4f9",
+        "unit": "peakMarksman"
+      },
+      {
+        "frame": "8:0",
+        "preserved_render": {
+          "sha256": "0dbff752961a0eafd90e76a1a9faf351665764d70b894944ecf7c811d4f19eee",
+          "source": "assets/source/creatures/humanoids/peakMarksman/turns/g08-f00-rendered-0dbff752961a.png"
+        },
+        "source": "assets/source/creatures/humanoids/peakMarksman/g08-f00.png",
+        "source_derivation": {
+          "continuous_root": [
+            196,
+            267
+          ],
+          "inverse_affine": [
+            -1,
+            0,
+            392,
+            0,
+            1,
+            0
+          ],
+          "method": "Root reflection of genuine camera-front quarter pose for native7->flip/reposition->8 boundary",
+          "source": "assets/source/creatures/humanoids/peakMarksman/g07-f03.png",
+          "source_sha256": "7a47e5062ab2aa389214d7bf1faba1b12e4cd309d6dae304149ba7827b5f6c7c"
+        },
+        "source_sha256": "7328d219ba89cfe3987f7ed8f0502469e01a364223dc9b24ca83edb2e0c9191a",
+        "unit": "peakMarksman"
+      },
+      {
+        "frame": "7:0",
+        "preserved_render": {
+          "sha256": "41e77f392b241696185f0465dd6cb2b680e258f9622ce74a436da6faeda24c3e",
+          "source": "assets/source/creatures/humanoids/rakkorPassguard/turns/g07-f00-rendered-41e77f392b24.png"
+        },
+        "source": "assets/source/creatures/humanoids/rakkorPassguard/g07-f00.png",
+        "source_derivation": {
+          "method": "Reuse exact same authored holding endpoint; quarter pose parameters equalholding0",
+          "source": "assets/source/creatures/humanoids/rakkorPassguard/g02-f00.png",
+          "source_sha256": "4ebb4680c15c8a2dc4c894c29d36babd3188e47325dab0364781c21df20e4509"
+        },
+        "source_sha256": "4ebb4680c15c8a2dc4c894c29d36babd3188e47325dab0364781c21df20e4509",
+        "unit": "rakkorPassguard"
+      },
+      {
+        "frame": "8:3",
+        "preserved_render": {
+          "sha256": "d607894bed8f08f34ff5e8f1684fed4e464fb9c77cd4c8c18b4ac660f6fbe113",
+          "source": "assets/source/creatures/humanoids/rakkorPassguard/turns/g08-f03-rendered-d607894bed8f.png"
+        },
+        "source": "assets/source/creatures/humanoids/rakkorPassguard/g08-f03.png",
+        "source_derivation": {
+          "method": "Reuse exact same authored holding endpoint; quarter pose parameters equalholding0",
+          "source": "assets/source/creatures/humanoids/rakkorPassguard/g02-f00.png",
+          "source_sha256": "4ebb4680c15c8a2dc4c894c29d36babd3188e47325dab0364781c21df20e4509"
+        },
+        "source_sha256": "4ebb4680c15c8a2dc4c894c29d36babd3188e47325dab0364781c21df20e4509",
+        "unit": "rakkorPassguard"
+      },
+      {
+        "frame": "8:0",
+        "preserved_render": {
+          "sha256": "3817e0b495610b6bc55b4aa3a0a3a3f0d12abddebb487d0c9e980f51a6e35e0b",
+          "source": "assets/source/creatures/humanoids/rakkorPassguard/turns/g08-f00-rendered-3817e0b49561.png"
+        },
+        "source": "assets/source/creatures/humanoids/rakkorPassguard/g08-f00.png",
+        "source_derivation": {
+          "continuous_root": [
+            196,
+            267
+          ],
+          "inverse_affine": [
+            -1,
+            0,
+            392,
+            0,
+            1,
+            0
+          ],
+          "method": "Root reflection of genuine camera-front quarter pose for native7->flip/reposition->8 boundary",
+          "source": "assets/source/creatures/humanoids/rakkorPassguard/g07-f03.png",
+          "source_sha256": "296df78953ac935e382ac46b56b23161fad1a525a0ba82b9dc7016745e5e77cd"
+        },
+        "source_sha256": "c9a198059e2156ae3d6bef8c0b807a34a51a6d8b612a71ab2c3b024e5f328574",
+        "unit": "rakkorPassguard"
+      },
+      {
+        "frame": "7:0",
+        "preserved_render": {
+          "sha256": "478be4c3edc43efd1925b926e75003f42e1d161c37d67a1b6c89605cea59db67",
+          "source": "assets/source/creatures/humanoids/rakkorTrailguard/turns/g07-f00-rendered-478be4c3edc4.png"
+        },
+        "source": "assets/source/creatures/humanoids/rakkorTrailguard/g07-f00.png",
+        "source_derivation": {
+          "method": "Reuse exact same authored holding endpoint; quarter pose parameters equalholding0",
+          "source": "assets/source/creatures/humanoids/rakkorTrailguard/g02-f00.png",
+          "source_sha256": "0de29bf8b57c89084fef0c64d7b23fdb327a81da87438dbbcb2eedf6914c9ac4"
+        },
+        "source_sha256": "0de29bf8b57c89084fef0c64d7b23fdb327a81da87438dbbcb2eedf6914c9ac4",
+        "unit": "rakkorTrailguard"
+      },
+      {
+        "frame": "8:3",
+        "preserved_render": {
+          "sha256": "faadd527c22505a711e05d577474f86b07dc7cd6491d66d347dc23f408672b5a",
+          "source": "assets/source/creatures/humanoids/rakkorTrailguard/turns/g08-f03-rendered-faadd527c225.png"
+        },
+        "source": "assets/source/creatures/humanoids/rakkorTrailguard/g08-f03.png",
+        "source_derivation": {
+          "method": "Reuse exact same authored holding endpoint; quarter pose parameters equalholding0",
+          "source": "assets/source/creatures/humanoids/rakkorTrailguard/g02-f00.png",
+          "source_sha256": "0de29bf8b57c89084fef0c64d7b23fdb327a81da87438dbbcb2eedf6914c9ac4"
+        },
+        "source_sha256": "0de29bf8b57c89084fef0c64d7b23fdb327a81da87438dbbcb2eedf6914c9ac4",
+        "unit": "rakkorTrailguard"
+      },
+      {
+        "frame": "8:0",
+        "preserved_render": {
+          "sha256": "476a7fd58dbaf1b721cbdcf5b4fbc4482a5fe7b21b976f592bd6ce46b984e165",
+          "source": "assets/source/creatures/humanoids/rakkorTrailguard/turns/g08-f00-rendered-476a7fd58dba.png"
+        },
+        "source": "assets/source/creatures/humanoids/rakkorTrailguard/g08-f00.png",
+        "source_derivation": {
+          "continuous_root": [
+            196,
+            267
+          ],
+          "inverse_affine": [
+            -1,
+            0,
+            392,
+            0,
+            1,
+            0
+          ],
+          "method": "Root reflection of genuine camera-front quarter pose for native7->flip/reposition->8 boundary",
+          "source": "assets/source/creatures/humanoids/rakkorTrailguard/g07-f03.png",
+          "source_sha256": "0e8fe698a5b199a5d9fadd732913165363361a79868e9db1dd7d48db6282988b"
+        },
+        "source_sha256": "eda36b11073876568ff357b6a472d3d0d0518c7fa686fe0047977403954af3ff",
+        "unit": "rakkorTrailguard"
+      },
+      {
+        "frame": "7:0",
+        "preserved_render": {
+          "sha256": "57b1a597ca67c115dfb2b17c90b0550925845a53c25b76b420e8cbcdbe7154dc",
+          "source": "assets/source/creatures/humanoids/solariDawnforger/turns/g07-f00-rendered-57b1a597ca67.png"
+        },
+        "source": "assets/source/creatures/humanoids/solariDawnforger/g07-f00.png",
+        "source_derivation": {
+          "method": "Reuse exact same authored holding endpoint; quarter pose parameters equalholding0",
+          "source": "assets/source/creatures/humanoids/solariDawnforger/g02-f00.png",
+          "source_sha256": "4e766265a6cabb8d86e23cbc5a39e9f2a33dca205f9e56bb5890941f71aa268e"
+        },
+        "source_sha256": "4e766265a6cabb8d86e23cbc5a39e9f2a33dca205f9e56bb5890941f71aa268e",
+        "unit": "solariDawnforger"
+      },
+      {
+        "frame": "8:3",
+        "preserved_render": {
+          "sha256": "0f8404d40fc0dfb6823f15d99ba0968849d2ac6e688e42300ba9f6968f26ca5a",
+          "source": "assets/source/creatures/humanoids/solariDawnforger/turns/g08-f03-rendered-0f8404d40fc0.png"
+        },
+        "source": "assets/source/creatures/humanoids/solariDawnforger/g08-f03.png",
+        "source_derivation": {
+          "method": "Reuse exact same authored holding endpoint; quarter pose parameters equalholding0",
+          "source": "assets/source/creatures/humanoids/solariDawnforger/g02-f00.png",
+          "source_sha256": "4e766265a6cabb8d86e23cbc5a39e9f2a33dca205f9e56bb5890941f71aa268e"
+        },
+        "source_sha256": "4e766265a6cabb8d86e23cbc5a39e9f2a33dca205f9e56bb5890941f71aa268e",
+        "unit": "solariDawnforger"
+      },
+      {
+        "frame": "8:0",
+        "preserved_render": {
+          "sha256": "e64e51ca7924817b6658143f3f49231c2ed85172cda58c4583be8c6b7ea55892",
+          "source": "assets/source/creatures/humanoids/solariDawnforger/turns/g08-f00-rendered-e64e51ca7924.png"
+        },
+        "source": "assets/source/creatures/humanoids/solariDawnforger/g08-f00.png",
+        "source_derivation": {
+          "continuous_root": [
+            196,
+            267
+          ],
+          "inverse_affine": [
+            -1,
+            0,
+            392,
+            0,
+            1,
+            0
+          ],
+          "method": "Root reflection of genuine camera-front quarter pose for native7->flip/reposition->8 boundary",
+          "source": "assets/source/creatures/humanoids/solariDawnforger/g07-f03.png",
+          "source_sha256": "935cba254a892f6dab8e225de32cb31c38e3af120c9274f2ee9f6270e63414e0"
+        },
+        "source_sha256": "ca66faa38332e125d0fba805a9d48d9eee5a9c10223e884d72be8096e65ca5cd",
+        "unit": "solariDawnforger"
+      },
+      {
+        "frame": "7:0",
+        "preserved_render": {
+          "sha256": "56fdc8678f41afcbd8aaad95b1fb1c8a6fb5bbc0338e8209427e38c2f6a2e2bc",
+          "source": "assets/source/creatures/humanoids/solariSunforger/turns/g07-f00-rendered-56fdc8678f41.png"
+        },
+        "source": "assets/source/creatures/humanoids/solariSunforger/g07-f00.png",
+        "source_derivation": {
+          "method": "Reuse exact same authored holding endpoint; quarter pose parameters equalholding0",
+          "source": "assets/source/creatures/humanoids/solariSunforger/g02-f00.png",
+          "source_sha256": "55819e18418863e57bdb3b44876f5bfec6a2342f708377f1c734d380d6ebe5fa"
+        },
+        "source_sha256": "55819e18418863e57bdb3b44876f5bfec6a2342f708377f1c734d380d6ebe5fa",
+        "unit": "solariSunforger"
+      },
+      {
+        "frame": "8:3",
+        "preserved_render": {
+          "sha256": "b028621d7275f657ca42851fe314cc9e41daa92baa455ea0b7c2fe46f609ca04",
+          "source": "assets/source/creatures/humanoids/solariSunforger/turns/g08-f03-rendered-b028621d7275.png"
+        },
+        "source": "assets/source/creatures/humanoids/solariSunforger/g08-f03.png",
+        "source_derivation": {
+          "method": "Reuse exact same authored holding endpoint; quarter pose parameters equalholding0",
+          "source": "assets/source/creatures/humanoids/solariSunforger/g02-f00.png",
+          "source_sha256": "55819e18418863e57bdb3b44876f5bfec6a2342f708377f1c734d380d6ebe5fa"
+        },
+        "source_sha256": "55819e18418863e57bdb3b44876f5bfec6a2342f708377f1c734d380d6ebe5fa",
+        "unit": "solariSunforger"
+      },
+      {
+        "frame": "8:0",
+        "preserved_render": {
+          "sha256": "4c2e9b01deb4db94444f6bb37a5fbe6727ec4a7882e1b5424be7183accd8c26a",
+          "source": "assets/source/creatures/humanoids/solariSunforger/turns/g08-f00-rendered-4c2e9b01deb4.png"
+        },
+        "source": "assets/source/creatures/humanoids/solariSunforger/g08-f00.png",
+        "source_derivation": {
+          "continuous_root": [
+            196,
+            267
+          ],
+          "inverse_affine": [
+            -1,
+            0,
+            392,
+            0,
+            1,
+            0
+          ],
+          "method": "Root reflection of genuine camera-front quarter pose for native7->flip/reposition->8 boundary",
+          "source": "assets/source/creatures/humanoids/solariSunforger/g07-f03.png",
+          "source_sha256": "19c3294eafaffb042d0ee86aa4a023813a109a358566bae4d7ebb43cb10652d5"
+        },
+        "source_sha256": "d080f96cd68f78f61e6cd5b4fa894acca8182d75f6325c568e83c7a116afb308",
+        "unit": "solariSunforger"
+      }
+    ],
+    "honest_derivation": "Each source index explicitly declares g07-f00 and g08-f03 as reuse of exact holding, and g08-f00 as root reflection of genuine camera-front g07-f03. Preserved raw renders are hash-verified. Remaining five nonderived frames per unit are articulated quarter poses; this review does not claim64 unique independent3D renders.",
+    "limitation": "Source assembly and arithmetic are verified; actual native animation event timing/playback/flip reset/generated shadows are unobserved.",
+    "midpoint_visible_rgba_differences": 0
+  },
+  "visual_approval": false
+}

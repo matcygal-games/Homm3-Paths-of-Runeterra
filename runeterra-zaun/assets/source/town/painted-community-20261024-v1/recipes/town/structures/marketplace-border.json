@@ -1,0 +1,99 @@
+{
+  "acceptance": "Technical mask derived from the painted layer: the area mask defines the clickable footprint and the border mask the highlight outline. Both must be derived from the own painted layer, never copied from another faction or from the original game.",
+  "building": "marketplace",
+  "canvas": [
+    800,
+    374
+  ],
+  "content_box": [
+    0,
+    0,
+    800,
+    374
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; prompted and technically assembled by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/services-master.png",
+      "sha256": "0183fb1d96a6f2a0b0980cad6810ae319028244c746761abfa62f61f3d78dea6"
+    },
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/services-provenance.json",
+      "sha256": "2176c4b4d631e32282f770cdb53f8684e9303d167def2dc66cfbd5572b820771"
+    },
+    {
+      "path": "assets/source/town/painted-community-20261024-v1/prepare.py",
+      "sha256": "570add080d42e1b17d7aec2939862119a175a664281e04050585cfb68138a835"
+    },
+    {
+      "path": "scripts/zaun_coastal_state_v1.py",
+      "sha256": "5aa45de45f59be66d393df44538743b1842db5ba5f1c4e48c1d83acaa13f3cf7"
+    }
+  ],
+  "fit": "contain",
+  "generation": {
+    "conversion": {
+      "composition_rectangle": [
+        363,
+        286,
+        111,
+        71
+      ],
+      "method": "Original painted2D source crop; uniform contain; full800x374 placement; native alpha-derived area/one-pixel outward border",
+      "native_z": 357,
+      "revision": "painted-community-20261024-v1",
+      "source_crop": [
+        778,
+        25,
+        1530,
+        470
+      ]
+    },
+    "credits": {
+      "author": "OpenAI built-in imagegen; prompted by Codex",
+      "license": null,
+      "redistribution": "unresolved; release prohibited"
+    },
+    "edit_target": "assets/source/town/painted-v3/services-master.png",
+    "generation_date": "2026-10-21",
+    "image_generation_used": true,
+    "model": null,
+    "model_disclosed": false,
+    "painted_master": "assets/source/town/chemtech-v4-buildings/services-master.png",
+    "painted_master_sha256": "0183fb1d96a6f2a0b0980cad6810ae319028244c746761abfa62f61f3d78dea6",
+    "prompt": "Use case: precise-object-edit. Edit target: the attached own Zaun service-building atlas. Keep the four distinct buildings, front three-quarter low town camera, readable silhouette, roof shape, material texture and 2x2 cell positions. Return four independent complete cutout sprites on REAL TRANSPARENT ALPHA, no painted backdrop, with clean gutters and padding. New user direction: visibly CHEMTECH, luminous toxic chemical GREEN with purple and browns, chempunk, still richly textured original Heroes III painted/prerendered building art. TOP LEFT tavern: keep pub and barrels, purple patched awning, two green glass pipe lamps and a small green brewing gauge/reservoir beside the entry. TOP RIGHT scrap marketplace: keep open canopy, scales and sorted scrap, plum-purple patched canvas and green glass lamps/chemical trade vessels, not a reactor. BOTTOM LEFT ammo foundry: keep orange hot furnace and physical shell racks, add a clearly visible green-glass coolant pressure tank with rusty pipe links, violet enamel accents; furnace stays orange. BOTTOM RIGHT Shimmer factory: large vivid green reagent cylinders and coil pipes, green liquid remains behind textured glass, violet observation windows and valve markings. Brown soot brick, tarred wood, oxidized copper and rusty iron remain dominant solid materials; green light has only localized reflections. Keep all chimneys, poles, floor contact and equipment fully inside each cell, avoid clipping. No text, no flat neon outlines, no modern glossy science fiction, no recolor filter. Match fixed camera and top-left light across all four.",
+    "provider": "OpenAI built-in image_gen.imagegen",
+    "returned_provenance": {
+      "output_hint": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-560d-7462-a9a5-3670486c088c as C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-560d-7462-a9a5-3670486c088c\\exec-7ed59964-7a95-4a3a-b6c6-b0ca52c8a01e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "route": "Genuine image-generation edit of own painted Zaun service masters; technical crops, uniform scale and placement only",
+    "visual_approval_granted": false
+  },
+  "id": "zaun.town.structure.marketplace.border",
+  "identity_review": "build/reports/painted-town-community-20261024-v1/source-pixel-review.json",
+  "native_visual_review": "pending",
+  "output_path": "Content/Sprites/runeterra/zaun/town/structures/marketplace_border.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/painted-community-20261024-v1/structures/marketplace/border.png",
+  "source_sha256": "304bfeeaf2fd471aea89b7a935c634c836c39c33fd0491caa99e46b0452b2323",
+  "status": "built-unreviewed",
+  "technical": true,
+  "title": "Scrap Exchange border mask",
+  "visual_approval_granted": false
+}

@@ -1,0 +1,110 @@
+{
+  "exclude_from_all_source_and_release_bundles": true,
+  "limits": "Static compositing on the actual original battle background. Not native Targon gameplay or clock playback. No opaque/near-body AA loss; manual native-size comparison still required for unprotected thin translucent features.",
+  "private_reference_only": true,
+  "rows": [
+    {
+      "alpha_proof": {
+        "context": "battle",
+        "limits": "Unprotected thin low-alpha features outside3px neighborhood may be removed; native-size comparison required. Fixed ellipse retains source near-contact shadow, not a newly painted shadow.",
+        "native_border_alpha_max": 0,
+        "near_body_3px_rgba_preserved_except_alpha_below8": true,
+        "opaque_pixels": 3255,
+        "opaque_rgba_preserved": true,
+        "protected_aa_pixels": 4417,
+        "raw_border_alpha_max": 22,
+        "removed_unprotected_low_alpha_pixels": 8986
+      },
+      "comparisons": [
+        {
+          "image": "crystalIbex-right-raw.png",
+          "sha256": "31af6d451f38addffb0ae24d97f1bef8c2e0ead515b0a1c866b9aade0a97fe65"
+        },
+        {
+          "image": "crystalIbex-right-native.png",
+          "sha256": "88d1d76e4c694cbe48f70586a715d9138a9b537cdd13850a4d5c0a935d7c76f8"
+        },
+        {
+          "image": "crystalIbex-left-raw.png",
+          "sha256": "10cd506a2f5755ac24a88581d358481922f17216cb8794cf74e0b96ce52f2525"
+        },
+        {
+          "image": "crystalIbex-left-native.png",
+          "sha256": "f83d944c3c7bf0aa27cbff250ac9d8c6b74d6bf92fa90bf8870e5ac681125b48"
+        }
+      ],
+      "frame": 2,
+      "group": 0,
+      "unit": "crystalIbex"
+    },
+    {
+      "alpha_proof": {
+        "context": "battle",
+        "limits": "Unprotected thin low-alpha features outside3px neighborhood may be removed; native-size comparison required. Fixed ellipse retains source near-contact shadow, not a newly painted shadow.",
+        "native_border_alpha_max": 0,
+        "near_body_3px_rgba_preserved_except_alpha_below8": true,
+        "opaque_pixels": 3823,
+        "opaque_rgba_preserved": true,
+        "protected_aa_pixels": 4906,
+        "raw_border_alpha_max": 49,
+        "removed_unprotected_low_alpha_pixels": 18324
+      },
+      "comparisons": [
+        {
+          "image": "solariSunhawk-right-raw.png",
+          "sha256": "41641bb90cfe477d2996dfd6afc65b12eff1c2a142a05afdc7b1e3f3e8cf0f27"
+        },
+        {
+          "image": "solariSunhawk-right-native.png",
+          "sha256": "f406cafba06065cd2f143e348ee69e78797c8df697e75084d3f49799f45db80f"
+        },
+        {
+          "image": "solariSunhawk-left-raw.png",
+          "sha256": "1f3d1480ce52299d536fbb7b63f13ed2b8c73811777b239b735bc8995329eb62"
+        },
+        {
+          "image": "solariSunhawk-left-native.png",
+          "sha256": "994656b9437504218232b29534db20e8a5954eef21bf94f3b71ad7bba2f5f196"
+        }
+      ],
+      "frame": 2,
+      "group": 0,
+      "unit": "solariSunhawk"
+    },
+    {
+      "alpha_proof": {
+        "context": "battle",
+        "limits": "Unprotected thin low-alpha features outside3px neighborhood may be removed; native-size comparison required. Fixed ellipse retains source near-contact shadow, not a newly painted shadow.",
+        "native_border_alpha_max": 0,
+        "near_body_3px_rgba_preserved_except_alpha_below8": true,
+        "opaque_pixels": 5842,
+        "opaque_rgba_preserved": true,
+        "protected_aa_pixels": 7541,
+        "raw_border_alpha_max": 45,
+        "removed_unprotected_low_alpha_pixels": 25141
+      },
+      "comparisons": [
+        {
+          "image": "stellacorn-right-raw.png",
+          "sha256": "2c5af6fcd9da0aff38a91d7ab44f78408c946a9db571c3f6e9360ac3fbc1eb67"
+        },
+        {
+          "image": "stellacorn-right-native.png",
+          "sha256": "b0f94d1a4cd0a304367ce10e9763ba439025bb3b84702053851819514d1576d1"
+        },
+        {
+          "image": "stellacorn-left-raw.png",
+          "sha256": "b0d03816e7feddbbb1f6f89ffa794cd0bce6843eb4b1ba749268824c06308c3d"
+        },
+        {
+          "image": "stellacorn-left-native.png",
+          "sha256": "e51414609ecf60d444f4531ad794c69f4781703b5cee72c2bb0bb3507c09a702"
+        }
+      ],
+      "frame": 2,
+      "group": 0,
+      "unit": "stellacorn"
+    }
+  ],
+  "status": "authored configuration"
+}

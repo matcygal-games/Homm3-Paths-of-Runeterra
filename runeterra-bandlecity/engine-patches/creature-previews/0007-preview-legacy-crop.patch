@@ -1,0 +1,186 @@
+--- a/lib/CCreatureHandler.h
++++ b/lib/CCreatureHandler.h
+@@ -71,6 +71,8 @@
+ 	AnimationPath animDefName; // creature animation used during battles
+ 	// Optional UI-only animation. Reloaded from mod graphics, never serialized.
+ 	AnimationPath previewAnimDefName;
++	// Opt-in UI-only legacy viewport for retimed full battle-canvas previews.
++	bool previewAnimationLegacyCrop = false;
+ 	const AnimationPath & getPreviewAnimation() const;
+ 	Rect getPreviewAnimationCrop(const Point & canvasSize, const Point & viewportSize) const;
+ 	ImagePath mapAttackFromLeft; // adventure map creature image when attacked from left
+--- a/lib/CCreatureHandler.cpp
++++ b/lib/CCreatureHandler.cpp
+@@ -338,6 +338,14 @@
+ 	if (viewportSize.x <= 0 || viewportSize.y <= 0 || canvasSize.x < viewportSize.x || canvasSize.y < viewportSize.y)
+ 		throw std::invalid_argument("Creature preview animation canvas is smaller than its UI viewport");
+ 
++	if (previewAnimationLegacyCrop)
++	{
++		const Rect crop(isDoubleWide() ? 170 : 150, 155, viewportSize.x, viewportSize.y);
++		if (canvasSize.x < crop.x + crop.w || canvasSize.y < crop.y + crop.h)
++			throw std::invalid_argument("Legacy creature preview canvas does not contain its UI viewport");
++		return crop;
++	}
++
+ 	return Rect((canvasSize.x - viewportSize.x) / 2, (canvasSize.y - viewportSize.y) / 2, viewportSize.x, viewportSize.y);
+ }
+ 
+@@ -664,6 +672,9 @@
+ 		!CResourceHandler::get()->existsResource(cre->animDefName.addPrefix("SPRITES/")) &&
+ 		!CResourceHandler::get()->existsResource(cre->animDefName.addPrefix("SPRITES/").toType<EResType::JSON>()))
+ 		throw ModLoadingException(scope, "creature " + cre->getJsonKey() + " has no combat animation but is not marked as special!" );
++
++	if (cre->previewAnimationLegacyCrop && cre->previewAnimDefName.empty())
++		throw ModLoadingException(scope, "creature " + cre->getJsonKey() + " uses graphics.animationPreviewLegacyCrop without graphics.animationPreview" );
+ 
+ 	if (!node["disabled"].Bool() && !cre->previewAnimDefName.empty() &&
+ 		!CResourceHandler::get()->existsResource(cre->previewAnimDefName) &&
+@@ -935,6 +946,7 @@
+ {
+ 	creature->animDefName = AnimationPath::fromJson(config["graphics"]["animation"]);
+ 	creature->previewAnimDefName = AnimationPath::fromJson(config["graphics"]["animationPreview"]);
++	creature->previewAnimationLegacyCrop = config["graphics"]["animationPreviewLegacyCrop"].Bool();
+ 	creature->mapAttackFromLeft = ImagePath::fromJson(config["graphics"]["mapAttackFromLeft"]);
+ 	creature->mapAttackFromRight = ImagePath::fromJson(config["graphics"]["mapAttackFromRight"]);
+ 
+--- a/config/schemas/creature.json
++++ b/config/schemas/creature.json
+@@ -188,6 +188,10 @@
+ 					"minLength" : 1,
+ 					"description" : "Optional UI-only animation with a fixed shared frame canvas. Center-cropped to the recruitment or creature-info background; battle and adventure animations are unchanged.",
+ 					"format" : "animationFile"
++				},
++				"animationPreviewLegacyCrop" : {
++					"type" : "boolean",
++					"description" : "Optional UI-only full battle-canvas preview crop. Requires animationPreview when true. Uses original x150/x170,y155 viewport instead of centering; battle and existing custom previews remain unchanged."
+ 				},
+ 				"map" : {
+ 					"type" : "string",
+--- a/test/entity/CreaturePreviewTest.cpp
++++ b/test/entity/CreaturePreviewTest.cpp
+@@ -62,6 +62,7 @@
+ 			return;
+ 		++originalTownCreatures;
+ 		EXPECT_TRUE(creature->previewAnimDefName.empty()) << creature->getJsonKey();
++		EXPECT_FALSE(creature->previewAnimationLegacyCrop) << creature->getJsonKey();
+ 		EXPECT_EQ(creature->getPreviewAnimation(), creature->animDefName);
+ 		const int x = creature->isDoubleWide() ? 170 : 150;
+ 		expectRect(creature->getPreviewAnimationCrop(Point(450, 400), Point(100, 120)), x, 155, 100, 120);
+@@ -107,6 +108,7 @@
+ 	beforeBinary.oser & creature;
+ 	auto beforeBytes = beforeBinary.extractBuffer();
+ 	creature.previewAnimDefName = AnimationPath::builtin("own/preview.json");
++	creature.previewAnimationLegacyCrop = true;
+ 	JsonNode afterJson;
+ 	JsonSerializer afterWriter(nullptr, afterJson);
+ 	creature.serializeJson(afterWriter);
+@@ -116,6 +118,7 @@
+ 	EXPECT_EQ(beforeBytes, afterBinary.extractBuffer());
+ 	EXPECT_TRUE(afterJson["graphics"].isNull());
+ 	EXPECT_TRUE(afterJson["animationPreview"].isNull());
++	EXPECT_TRUE(afterJson["animationPreviewLegacyCrop"].isNull());
+ }
+ 
+ TEST(CreaturePreview, NativeGraphicsSchemaAcceptsOptionalPathAndRejectsWrongTypes)
+@@ -159,3 +162,82 @@
+ 		EXPECT_NE(std::string(error.what()).find("animationPreview"), std::string::npos);
+ 	}
+ }
++
++
++TEST(CreaturePreview, ExplicitLegacyPreviewRetainsBothOriginalCropsAndBattlePath)
++{
++	CCreature creature;
++	creature.animDefName = AnimationPath::builtin("CPKMAN.DEF");
++	creature.previewAnimDefName = AnimationPath::builtin("own/retimed-preview.json");
++	creature.previewAnimationLegacyCrop = true;
++	for (bool doubleWide : {false, true})
++	{
++		setDoubleWide(creature, doubleWide);
++		const int x = doubleWide ? 170 : 150;
++		expectRect(creature.getPreviewAnimationCrop(Point(450, 400), Point(100, 120)), x, 155, 100, 120);
++		expectRect(creature.getPreviewAnimationCrop(Point(450, 400), Point(100, 130)), x, 155, 100, 130);
++		EXPECT_EQ(creature.getPreviewAnimation(), creature.previewAnimDefName);
++		EXPECT_EQ(creature.animDefName, AnimationPath::builtin("CPKMAN.DEF"));
++	}
++}
++
++TEST(CreaturePreview, LegacyPreviewCropIsOptInAndChecksItsEntireViewport)
++{
++	CCreature creature;
++	creature.previewAnimDefName = AnimationPath::builtin("own/retimed-preview.json");
++	// Existing compact/custom resources keep the exact centered route by default.
++	expectRect(creature.getPreviewAnimationCrop(Point(450, 400), Point(100, 130)), 175, 135, 100, 130);
++	expectRect(creature.getPreviewAnimationCrop(Point(100, 130), Point(100, 120)), 0, 5, 100, 120);
++	creature.previewAnimationLegacyCrop = true;
++	setDoubleWide(creature, false);
++	expectRect(creature.getPreviewAnimationCrop(Point(250, 285), Point(100, 130)), 150, 155, 100, 130);
++	EXPECT_THROW(creature.getPreviewAnimationCrop(Point(249, 285), Point(100, 130)), std::invalid_argument);
++	EXPECT_THROW(creature.getPreviewAnimationCrop(Point(250, 284), Point(100, 130)), std::invalid_argument);
++	EXPECT_THROW(creature.getPreviewAnimationCrop(Point(450, 400), Point(0, 130)), std::invalid_argument);
++	setDoubleWide(creature, true);
++	expectRect(creature.getPreviewAnimationCrop(Point(270, 285), Point(100, 130)), 170, 155, 100, 130);
++	EXPECT_THROW(creature.getPreviewAnimationCrop(Point(269, 285), Point(100, 130)), std::invalid_argument);
++}
++
++TEST(CreaturePreview, LegacyCropSchemaAcceptsOnlyBooleanValues)
++{
++	const JsonNode schema(JsonPath::builtin("config/schemas/creature.json"));
++	const std::string text = R"({"animation":"CPKMAN.DEF","animationPreview":"CPKMAN.DEF","animationTime":{"attack":1,"walk":1,"idle":10},"timeBetweenFidgets":1})";
++	JsonNode graphics(text.data(), text.size(), "CreaturePreviewLegacyCropSchema");
++	JsonValidator validator;
++	for (bool value : {false, true})
++	{
++		graphics["animationPreviewLegacyCrop"].Bool() = value;
++		graphics.setModScope("core", true);
++		EXPECT_TRUE(validator.check(schema["properties"]["graphics"], graphics).empty());
++	}
++	graphics["animationPreviewLegacyCrop"].String() = "true";
++	graphics.setModScope("core", true);
++	EXPECT_FALSE(validator.check(schema["properties"]["graphics"], graphics).empty());
++	graphics["animationPreviewLegacyCrop"].Integer() = 1;
++	graphics.setModScope("core", true);
++	EXPECT_FALSE(validator.check(schema["properties"]["graphics"], graphics).empty());
++}
++
++TEST(CreaturePreview, LegacyCropWithoutExplicitPreviewFailsNativeLoader)
++{
++	const std::string text = R"({
++		"name":{"singular":"Legacy preview crop probe","plural":"Legacy preview crop probes"},
++		"faction":"core:castle","special":true,"disabled":false,"growth":1,"level":1,
++		"hitPoints":1,"speed":1,"attack":1,"defense":1,"damage":{"min":1,"max":1},
++		"graphics":{"animation":"CPKMAN.DEF","animationPreviewLegacyCrop":true,
++		"animationTime":{"attack":1,"walk":1,"idle":10},"timeBetweenFidgets":1}
++	})";
++	JsonNode node(text.data(), text.size(), "CreaturePreviewLegacyCropMissing");
++	node.setModScope("core");
++	PreviewLoader handler;
++	try
++	{
++		handler.loadFromJson("core", node, "previewLegacyCropMissing", 100001);
++		FAIL() << "A legacy crop request requires an explicit UI-only animation resource";
++	}
++	catch (const ModLoadingException & error)
++	{
++		EXPECT_NE(std::string(error.what()).find("animationPreviewLegacyCrop"), std::string::npos);
++	}
++}
+--- a/test/CMakeLists.txt
++++ b/test/CMakeLists.txt
+@@ -29,6 +29,7 @@
+ 
+ 		entity/CArtifactTest.cpp
+ 		entity/CCreatureTest.cpp
++		entity/CreaturePreviewTest.cpp
+ 		entity/StackExperienceBonusesTest.cpp
+ 		entity/CFactionTest.cpp
+ 		entity/CHeroClassTest.cpp
+@@ -206,7 +207,6 @@
+ if(ENABLE_NULLKILLER2_AI)
+ 	list(APPEND test_SRCS
+ 		nullkiller2/AIGatewayDialogTest.cpp
+-		entity/CreaturePreviewTest.cpp
+ 		nullkiller2/HeroLossReplanningTest.cpp
+ 		nullkiller2/AIGatewayTurnLifecycleTest.cpp
+ 		server/TerminalMoveCancellationTest.cpp

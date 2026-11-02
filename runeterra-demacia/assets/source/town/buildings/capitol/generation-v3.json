@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "tool": "built-in image_gen",
+  "mode": "local image edit; genuine transparent background requested",
+  "output": "master-v3.png",
+  "prompt_file": "prompt-v3.txt",
+  "original_generation_path": "C:\\Users\\matcy\\.codex\\generated_images\\01a15556-579f-7041-8958-a88e131375be\\exec-64a73ef9-05c5-421b-922b-7a02b5580ad4.png",
+  "reference_roles": [
+    {
+      "path": "assets/source/town/layout-v3/pilot-reference-crops/capitol.png",
+      "role": "edit target: padded technical crop from own composition guide",
+      "sha256": "856b6015eabdf80e8b6c7360f90b57b32489c7a546184f9b44d8f5875b780189"
+    },
+    {
+      "path": "assets/source/town/layout-v3/built-study-v2.png",
+      "role": "own complete camera/depth/material reference, no neighboring architecture to carry into output",
+      "sha256": "3d24669ffadcdee6678459ca9bb3e23903f037c4babd2cf85a34a8a1d17cfcb4"
+    },
+    {
+      "path": "references/riot/heraldry/demacia-official-region-icon.png",
+      "role": "private official emblem shape reference only",
+      "sha256": "d71bb021a49b704420f43c74f9dbfedb2bd89779bdafec1ea4be7bb8a172e734"
+    }
+  ],
+  "rights": "Project-generated construction master. No original-game or official Riot pixels copied into output; references remain private.",
+  "status": "three-pilot production candidate; native preview inspected; parent review and in-game construction acceptance pending",
+  "preserved_history": "Earlier master versions and metadata remain unchanged; v3 does not update production recipe or manifest.",
+  "validation_scope": "Source alpha/dimension/hash and native-size visual review only; no functional building, click/highlight, runtime or release acceptance.",
+  "source_sha256": "0e5975b98f73b8362c4ac950aec041e316829dd87bce9ce49cedcd03996e7fdb",
+  "dimensions": [
+    1510,
+    1041
+  ],
+  "prompt_sha256": "7c4414e9731e1654851e8baa8ca54ca017af2da2a46c9fb730f27041e8088ed3",
+  "prompt": "Use-case: background-extraction with careful hidden-edge reconstruction for a game construction layer.\nReference image 1 is the EDIT TARGET: a crop from our project-owned new Demacian town composition. Reference image 2 is the complete project-owned composition, used ONLY to keep the exact LOWER FRONTAL camera, depth, lighting and painted material family. Reference image 3 is the official Demacia emblem, used ONLY to redraw the correct winged-blade shape on existing small blue cloth when cloth is present; no imported original pixels.\nOutput ONE complete, isolated construction object with a genuinely transparent RGBA background, soft short alpha ground contact shadow, comfortable transparent margins, no background rectangle. Keep the exact architectural complex from the crop, NOT a redesigned replacement. Preserve its asymmetry, volumes, roof angles, weathered pale stone, muted blue-gray slate, restrained old gold, dark openings, upper-left light and richly textured original-Heroes-III painted/prerendered treatment. Low frontal perspective with natural depth, NOT a high isometric dollhouse, orthographic icon, glossy modern 3D or League splash illustration. Architectural shape must read compactly at the specified native size. Remove all sky, mountains, river, trees, shrubs, roads, cliffs, neighboring structures and urban scenery. Keep only the building's own very shallow base/threshold and indispensable attached architectural elements. Reconstruct any cropped/occluded roof or wall edges naturally. No people, captions, labels, text, UI, frame, checkerboard or baked opaque background. Do not turn a functional building into part of a larger town painting. Do not add new structures.\n\nTarget: Capitol, the ONE distant monumental domed civic-palace complex in reference1, with its central ribbed blue-gray hemispherical dome, gold top finial, immense shadowed central portal, symmetrical draped guardian-figure buttresses framing it, low blue domed attached front wings, pale rear side wings and the building's own short broad entrance steps. Keep its photographed near-frontal balance, scale and original silhouette, without turning it into a taller new cathedral. Remove the separate thin tower at the far LEFT edge, neighboring fortress at RIGHT edge, top sky/mountains, bottom terrace walls/foreground music-hall roof, shrubs and trees. Retain only the palace itself and compact entrance stair. A distant world-scale vast landmark, compressed into approximately219x151nativepixels; keep atmospheric restrained contrast versus the foreground smithy, but dark legible central arch. If small blue banners are visible, use the correct central pointed blade/leaf with paired mirrored feather wings from reference3, not trident. These are carved architectural figures, not new living creature stacks. Preserve the palace complex from the crop exactly.\n",
+  "alpha_evidence": {
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixel_count": 718539,
+    "opaque_pixel_count": 201,
+    "intermediate_alpha_pixel_count": 853170,
+    "alpha_at_least_250_pixel_count": 786739,
+    "treatment": "Generated RGBA preserved unchanged; no alpha was synthesized or color-keyed. Intermediate alpha includes antialiasing/shadows and near-opaque painted body pixels."
+  },
+  "native_review": {
+    "native_readability": "Dome, guardian buttresses, central arch and short front stair read at219x151. Thin neighboring tower and fortress removed.",
+    "camera": "Near-frontal monumental complex follows guide; rendered widths fill assigned site.",
+    "open_issues": [
+      "Central cloth crest is only a few pixels wide at native size; exact feather detail cannot be claimed.",
+      "Contrast/depth must be judged over the parent terrain plate beside foreground buildings.",
+      "The generator reconstructs complete hidden rear/side edges; alignment with other civic replacement states is still pending."
+    ],
+    "preview": "references/town-comparisons/pilot-v3/capitol-native.png",
+    "preview_sha256": "483d4e4d89adc006e5ee0cf7081c182ca66b90cc17d308c1a67d934be1421d83",
+    "comparison_sheet": "references/town-comparisons/pilot-v3/native-comparison.png",
+    "comparison_sheet_sha256": "b13b0737804fbb68068b80f4e016dc67bac84cad1794675d6f5245509ea8f9be",
+    "approval": "not granted"
+  },
+  "native_candidate_export": {
+    "source": "assets/source/town/buildings/capitol/master-v3.png",
+    "source_sha256": "0e5975b98f73b8362c4ac950aec041e316829dd87bce9ce49cedcd03996e7fdb",
+    "source_size": [
+      1510,
+      1041
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 718539,
+    "near_opaque_pixels": 786739,
+    "nonzero_pixels": 853371,
+    "crop_alpha_threshold": 8,
+    "crop_xyxy": [
+      19,
+      43,
+      1492,
+      1003
+    ],
+    "native_box_xywh": [
+      350,
+      10,
+      219,
+      151
+    ],
+    "native_preview": "references/town-comparisons/source-v3/capitol-native.png",
+    "native_sha256": "8bd2ca3de2e451b00d5bafc544c793f8931ffebdc67a845678e9db076a6f63aa",
+    "approval": "not granted"
+  },
+  "alpha_treatment": "Generated RGBA preserved; technical alpha>=8 bounds crop only, no color-keying, opacity synthesis or background substitution."
+}

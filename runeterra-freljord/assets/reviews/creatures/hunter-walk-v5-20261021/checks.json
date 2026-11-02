@@ -1,0 +1,333 @@
+{
+  "status": "authored configuration; unselected candidates",
+  "actual_builtin_image_generation_calls": 3,
+  "blender_version": "4.5.9 LTS; hash 8bf95cbd38d1",
+  "active_recipes_unchanged": {
+    "assets/recipes/creatures/iceHunter-attackLeft.json": "2b1393bf2dfc4aae81499669c61808175a5caf24a79ddf65f56b7ea445aa79b4",
+    "assets/recipes/creatures/iceHunter-attackRight.json": "833184aa442649f85e742a452effcb8fec10b35db05d8262972d630c5a57ad6e",
+    "assets/recipes/creatures/iceHunter-battle.json": "b973f787e3e8e5d1f382da23468aff6591903d95f96bc8d9ac2877070f27cf45",
+    "assets/recipes/creatures/iceHunter-large.json": "73a4387370565f3173a09a06233e9ec8a037f74f6761108fba397598cd3822d2",
+    "assets/recipes/creatures/iceHunter-map.json": "8457bcda434120bcd591082f209ece4be00f9466696e78129a8f51893d0b7665",
+    "assets/recipes/creatures/iceHunter-small.json": "cc13a57df81f967acad183c4b6b845d25eb52fe15367823d92f711e23bf31ab7",
+    "assets/recipes/creatures/veteranIceHunter-attackLeft.json": "956ec15929d877c08276699a8c705ad1e9cf4d4bc1c1d8f004bc5b13ff22f021",
+    "assets/recipes/creatures/veteranIceHunter-attackRight.json": "0ecffe289d0d53e01c23295a0c5c10903a85a639b38284d1f98b274b4be4e2e1",
+    "assets/recipes/creatures/veteranIceHunter-battle.json": "dbe8ea676196169f45c3fbc688ee1410c76723649839ce19e210985221fe1490",
+    "assets/recipes/creatures/veteranIceHunter-large.json": "87bf464a0afeeb716a652d13dddbea7ba822ec253b09b996df79e625934c59ab",
+    "assets/recipes/creatures/veteranIceHunter-map.json": "4b43bf59b41705a4d5f2359cf045fa8cbbf2b9f7caced90a7e65d48e87aaf1e9",
+    "assets/recipes/creatures/veteranIceHunter-small.json": "eaee0cc8417bb4b396e8d7e5437c1235d3418de581ec3763a2e22fc05b971eb9"
+  },
+  "commands": [
+    "blender.exe --background --python scripts/hunter_walk_v5_pose_guide.py",
+    "blender.exe --background --python scripts/hunter_walk_v5_pose_guide.py -- <0..5>",
+    "python -B scripts/hunter_walk_v5_native.py iceHunter",
+    "python -B scripts/hunter_walk_v5_native.py veteranIceHunter"
+  ],
+  "units": {
+    "iceHunter": {
+      "master_sha256": "8f46b58b0fa7d0f5fd3929daaf524effabc563ecb72670ec132c157be4b9b66c",
+      "native_assembly_sha256": "31114fff0db786e763c1e7c3385364df1572228a8f76dcee118dce27020f8ab7",
+      "frames": [
+        {
+          "path": "assets/source/creatures/iceHunter/walk-v5/painted-cycle-v1/native-candidates/g00-f000.png",
+          "sha256": "af3bf8eeb52dcd8b0ddd783e8cbaef372f0d7773192b36adef581ba93621068c",
+          "cell_crop": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "source_alpha_box": [
+            126,
+            36,
+            407,
+            469
+          ],
+          "native_alpha_box": [
+            174,
+            191,
+            223,
+            266
+          ]
+        },
+        {
+          "path": "assets/source/creatures/iceHunter/walk-v5/painted-cycle-v1/native-candidates/g00-f001.png",
+          "sha256": "3e89adc0da3263b05aea69077cd5d63e62a007f124f339632ae5856ad8dbb764",
+          "cell_crop": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "source_alpha_box": [
+            136,
+            35,
+            354,
+            471
+          ],
+          "native_alpha_box": [
+            176,
+            191,
+            214,
+            266
+          ]
+        },
+        {
+          "path": "assets/source/creatures/iceHunter/walk-v5/painted-cycle-v1/native-candidates/g00-f002.png",
+          "sha256": "9a3280bdf3af3b00752dbc136e79851a0703b01369e678c447853f7b4f1c3112",
+          "cell_crop": [
+            1024,
+            0,
+            1536,
+            512
+          ],
+          "source_alpha_box": [
+            129,
+            35,
+            429,
+            456
+          ],
+          "native_alpha_box": [
+            175,
+            191,
+            227,
+            264
+          ]
+        },
+        {
+          "path": "assets/source/creatures/iceHunter/walk-v5/painted-cycle-v1/native-candidates/g00-f003.png",
+          "sha256": "6cf3373505dca0b298cf36f255f9c97a63835e7282c47f37d2d8f525180da53a",
+          "cell_crop": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "source_alpha_box": [
+            111,
+            36,
+            431,
+            449
+          ],
+          "native_alpha_box": [
+            172,
+            191,
+            228,
+            263
+          ]
+        },
+        {
+          "path": "assets/source/creatures/iceHunter/walk-v5/painted-cycle-v1/native-candidates/g00-f004.png",
+          "sha256": "0efc235a49080ca924f29835ccf74fa8a7e2df1452d916e501c7e03e92e6e179",
+          "cell_crop": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "source_alpha_box": [
+            140,
+            36,
+            356,
+            449
+          ],
+          "native_alpha_box": [
+            177,
+            191,
+            215,
+            263
+          ]
+        },
+        {
+          "path": "assets/source/creatures/iceHunter/walk-v5/painted-cycle-v1/native-candidates/g00-f005.png",
+          "sha256": "40307c1e83fb1235182526842219e476e6e4fc084553aabc9ae4d451fd778fbc",
+          "cell_crop": [
+            1024,
+            512,
+            1536,
+            1024
+          ],
+          "source_alpha_box": [
+            131,
+            36,
+            409,
+            461
+          ],
+          "native_alpha_box": [
+            175,
+            191,
+            224,
+            265
+          ]
+        }
+      ],
+      "native_loop_sha256": "eec87d6f1f4f32b29331f47e631982125c6c111cd231cf87d5c1510e6e51e484",
+      "native_contact_sha256": "54c156422b2cb53773ba4e406ba96d41e70cc66abd733af2fe808b46fc64eceb"
+    },
+    "veteranIceHunter": {
+      "master_sha256": "b081054ad165ebae70b75d1c927d4b2d9de6fad1756a6d4b58371522df9fa0a4",
+      "native_assembly_sha256": "9119498070bc06bf841065805fecb19bef967a323296cf6266cb3a639769ef33",
+      "frames": [
+        {
+          "path": "assets/source/creatures/veteranIceHunter/walk-v5/painted-cycle-v1/native-candidates/g00-f000.png",
+          "sha256": "ed9d4efdf76f3eda303dfd7fec362007c4eae198ab3b4d747d869a1e6af4652d",
+          "cell_crop": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "source_alpha_box": [
+            115,
+            35,
+            411,
+            470
+          ],
+          "native_alpha_box": [
+            173,
+            191,
+            224,
+            266
+          ]
+        },
+        {
+          "path": "assets/source/creatures/veteranIceHunter/walk-v5/painted-cycle-v1/native-candidates/g00-f001.png",
+          "sha256": "8e84e2adfe72ce0affb73999dcb1d067586510da1c4cfa7ba3200ddb86f2d58c",
+          "cell_crop": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "source_alpha_box": [
+            120,
+            35,
+            370,
+            474
+          ],
+          "native_alpha_box": [
+            173,
+            191,
+            217,
+            267
+          ]
+        },
+        {
+          "path": "assets/source/creatures/veteranIceHunter/walk-v5/painted-cycle-v1/native-candidates/g00-f002.png",
+          "sha256": "685f847ee0ac0e22490d7602c59d56b2cc93ea717ca74b15b1febc76aa521e2d",
+          "cell_crop": [
+            1024,
+            0,
+            1536,
+            512
+          ],
+          "source_alpha_box": [
+            115,
+            35,
+            441,
+            460
+          ],
+          "native_alpha_box": [
+            173,
+            191,
+            229,
+            264
+          ]
+        },
+        {
+          "path": "assets/source/creatures/veteranIceHunter/walk-v5/painted-cycle-v1/native-candidates/g00-f003.png",
+          "sha256": "47734bacbf540ab5946cdc5a78f4f9505b5dd69504576bce6e5cc8f4003a247a",
+          "cell_crop": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "source_alpha_box": [
+            104,
+            32,
+            440,
+            451
+          ],
+          "native_alpha_box": [
+            170,
+            190,
+            229,
+            263
+          ]
+        },
+        {
+          "path": "assets/source/creatures/veteranIceHunter/walk-v5/painted-cycle-v1/native-candidates/g00-f004.png",
+          "sha256": "2a9a0b6483bce0d3059e2ee68f509fbbc44e257f1530cf9b984f952be2e51a40",
+          "cell_crop": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "source_alpha_box": [
+            114,
+            32,
+            370,
+            453
+          ],
+          "native_alpha_box": [
+            172,
+            190,
+            217,
+            263
+          ]
+        },
+        {
+          "path": "assets/source/creatures/veteranIceHunter/walk-v5/painted-cycle-v1/native-candidates/g00-f005.png",
+          "sha256": "6e8d38577ba9edd595f102df83d4963797912d33825245235d80ec28b5f7a719",
+          "cell_crop": [
+            1024,
+            512,
+            1536,
+            1024
+          ],
+          "source_alpha_box": [
+            114,
+            32,
+            417,
+            463
+          ],
+          "native_alpha_box": [
+            172,
+            190,
+            225,
+            265
+          ]
+        }
+      ],
+      "native_loop_sha256": "5570539ab122c2a2d4ee22a21cc06f9b9d5ac5346213c4615bed5e901501e704",
+      "native_contact_sha256": "2bed38d042cfc5666d5dfd7d16ad1822fe7b9652b4e56524c84c42273c36aa61"
+    }
+  },
+  "pillow_version": "12.3.0",
+  "repeat_technical_assembly_identical": true,
+  "repeat_assembly_outputs": {
+    "iceHunter": {
+      "assets/source/creatures/iceHunter/walk-v5/painted-cycle-v1/native-candidates/g00-f000.png": "af3bf8eeb52dcd8b0ddd783e8cbaef372f0d7773192b36adef581ba93621068c",
+      "assets/source/creatures/iceHunter/walk-v5/painted-cycle-v1/native-candidates/g00-f001.png": "3e89adc0da3263b05aea69077cd5d63e62a007f124f339632ae5856ad8dbb764",
+      "assets/source/creatures/iceHunter/walk-v5/painted-cycle-v1/native-candidates/g00-f002.png": "9a3280bdf3af3b00752dbc136e79851a0703b01369e678c447853f7b4f1c3112",
+      "assets/source/creatures/iceHunter/walk-v5/painted-cycle-v1/native-candidates/g00-f003.png": "6cf3373505dca0b298cf36f255f9c97a63835e7282c47f37d2d8f525180da53a",
+      "assets/source/creatures/iceHunter/walk-v5/painted-cycle-v1/native-candidates/g00-f004.png": "0efc235a49080ca924f29835ccf74fa8a7e2df1452d916e501c7e03e92e6e179",
+      "assets/source/creatures/iceHunter/walk-v5/painted-cycle-v1/native-candidates/g00-f005.png": "40307c1e83fb1235182526842219e476e6e4fc084553aabc9ae4d451fd778fbc",
+      "assets/source/creatures/iceHunter/walk-v5/painted-cycle-v1/native-contact-sheet.png": "54c156422b2cb53773ba4e406ba96d41e70cc66abd733af2fe808b46fc64eceb",
+      "assets/source/creatures/iceHunter/walk-v5/painted-cycle-v1/native-loop.webp": "eec87d6f1f4f32b29331f47e631982125c6c111cd231cf87d5c1510e6e51e484",
+      "assets/source/creatures/iceHunter/walk-v5/painted-cycle-v1/native-assembly.json": "31114fff0db786e763c1e7c3385364df1572228a8f76dcee118dce27020f8ab7"
+    },
+    "veteranIceHunter": {
+      "assets/source/creatures/veteranIceHunter/walk-v5/painted-cycle-v1/native-candidates/g00-f000.png": "ed9d4efdf76f3eda303dfd7fec362007c4eae198ab3b4d747d869a1e6af4652d",
+      "assets/source/creatures/veteranIceHunter/walk-v5/painted-cycle-v1/native-candidates/g00-f001.png": "8e84e2adfe72ce0affb73999dcb1d067586510da1c4cfa7ba3200ddb86f2d58c",
+      "assets/source/creatures/veteranIceHunter/walk-v5/painted-cycle-v1/native-candidates/g00-f002.png": "685f847ee0ac0e22490d7602c59d56b2cc93ea717ca74b15b1febc76aa521e2d",
+      "assets/source/creatures/veteranIceHunter/walk-v5/painted-cycle-v1/native-candidates/g00-f003.png": "47734bacbf540ab5946cdc5a78f4f9505b5dd69504576bce6e5cc8f4003a247a",
+      "assets/source/creatures/veteranIceHunter/walk-v5/painted-cycle-v1/native-candidates/g00-f004.png": "2a9a0b6483bce0d3059e2ee68f509fbbc44e257f1530cf9b984f952be2e51a40",
+      "assets/source/creatures/veteranIceHunter/walk-v5/painted-cycle-v1/native-candidates/g00-f005.png": "6e8d38577ba9edd595f102df83d4963797912d33825245235d80ec28b5f7a719",
+      "assets/source/creatures/veteranIceHunter/walk-v5/painted-cycle-v1/native-contact-sheet.png": "2bed38d042cfc5666d5dfd7d16ad1822fe7b9652b4e56524c84c42273c36aa61",
+      "assets/source/creatures/veteranIceHunter/walk-v5/painted-cycle-v1/native-loop.webp": "5570539ab122c2a2d4ee22a21cc06f9b9d5ac5346213c4615bed5e901501e704",
+      "assets/source/creatures/veteranIceHunter/walk-v5/painted-cycle-v1/native-assembly.json": "9119498070bc06bf841065805fecb19bef967a323296cf6266cb3a639769ef33"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "global-shutdown-suppression": {
+    "compile_command": [
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe",
+      "/nologo",
+      "/std:c++17",
+      "/EHsc",
+      "/W4",
+      "/Od",
+      "C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\intentional-network-close-20261023-v1\\mutation-tests\\global-shutdown-suppression\\consumer_regression.cpp",
+      "/Fe:C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\intentional-network-close-20261023-v1\\mutation-tests\\global-shutdown-suppression\\consumer_regression.exe",
+      "/Fo:C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\intentional-network-close-20261023-v1\\mutation-tests\\global-shutdown-suppression\\consumer_regression.obj"
+    ],
+    "compile_exit_code": 0,
+    "source_sha256": "884b13698416182b3441ca7db858543d5100b30f414bef2e358a4651b5c12292",
+    "case": "unknown-loss-after-shutdown-remains-error",
+    "run_exit_code": 1,
+    "output": "FAIL unknown-loss-after-shutdown-remains-error: unknown ERROR hidden by global shutdown\nRESULT 0 passed 1 failed\n",
+    "rejected": true
+  },
+  "mark-after-close": {
+    "compile_command": [
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe",
+      "/nologo",
+      "/std:c++17",
+      "/EHsc",
+      "/W4",
+      "/Od",
+      "C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\intentional-network-close-20261023-v1\\mutation-tests\\mark-after-close\\consumer_regression.cpp",
+      "/Fe:C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\intentional-network-close-20261023-v1\\mutation-tests\\mark-after-close\\consumer_regression.exe",
+      "/Fo:C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-targon\\engine-patches\\intentional-network-close-20261023-v1\\mutation-tests\\mark-after-close\\consumer_regression.obj"
+    ],
+    "compile_exit_code": 0,
+    "source_sha256": "39761e579ef0216f6db3d857932e398f9d07a3396a507c363c59f17a1a5175f1",
+    "case": "synchronous-close-before-removal",
+    "run_exit_code": 1,
+    "output": "FAIL synchronous-close-before-removal: consumer assertion: vstd::contains(activeConnections, connection)\nRESULT 0 passed 1 failed\n",
+    "rejected": true
+  }
+}

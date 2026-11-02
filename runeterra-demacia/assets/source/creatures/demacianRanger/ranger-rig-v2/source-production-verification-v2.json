@@ -1,0 +1,648 @@
+{
+  "active_recipes_modified": false,
+  "arm_forearm_length_range": [
+    0.27313014864921553,
+    0.27313020825386053
+  ],
+  "arm_upper_length_range": [
+    0.2976994812488554,
+    0.29769948124885576
+  ],
+  "climax": {
+    "authored_zero_based_release": 4,
+    "authority": "client/battle/BattleAnimationClasses.cpp ShootingAnimation::getAttackClimaxFrame returns selectedFrame-1; RangedAttackAnimation::tick emits at that current frame.",
+    "configured_one_based": 5,
+    "frames_per_direction": 8
+  },
+  "command": [
+    ".tools/blender45/blender-4.5.9-windows-x64/blender.exe",
+    "--background",
+    "--factory-startup",
+    "--python-exit-code",
+    "2",
+    "--python",
+    "runeterra-demacia/scripts/creature_ranger_rig.py",
+    "--",
+    "--project",
+    "C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-demacia",
+    "--unit",
+    "demacianRanger",
+    "--revision",
+    "2"
+  ],
+  "cwd": "C:\\Users\\matcy\\Documents\\code\\Homm3",
+  "duplicate_explanation": "Steady idle, settled reload-ready and pre-trigger aim holds. They express deliberate timing holds, not extra distinct movement. Required combat actions contain genuine articulated geometry.",
+  "executed_generator": "assets/source/creatures/demacianRanger/ranger-rig-v2/generator-executed-v2.py",
+  "executed_generator_sha256": "be595bffd0808d16cd51026a7d250de081534070788b1c157eabdd0ac6e23670",
+  "exit_code": 0,
+  "frames": [
+    {
+      "frame": 0,
+      "group": 0,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g00/g00-f000.png",
+      "rgba_sha256": "d2384752bcc70a120bd62d7af71698fecee755c0885684bce0c672c549c9229c",
+      "sha256": "bb958d8d69acf432c9e30cf976f659d13764bfcd1bbdef7ec157d4c8ee4ea9c0"
+    },
+    {
+      "frame": 1,
+      "group": 0,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g00/g00-f001.png",
+      "rgba_sha256": "d11be083c524663df0bc9ee1041205aef7118a0133b279f11b64d64f7e49d9c8",
+      "sha256": "723d41320394898493855b35aefc0062c6e84fd6fb1e2955e45b58e302220809"
+    },
+    {
+      "frame": 2,
+      "group": 0,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g00/g00-f002.png",
+      "rgba_sha256": "15f79c5e1eadda8d72a22ad2f0fb43710173091c974d11e3632c288b56df9bbf",
+      "sha256": "82d825233ef082305a572825d8f9c2117462e79c044f4f747e0336356f51b82b"
+    },
+    {
+      "frame": 3,
+      "group": 0,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g00/g00-f003.png",
+      "rgba_sha256": "c23496221bd3d2128aa449816220a64c011cc8fec699f8b71f095633003ae28e",
+      "sha256": "e9189309668e8cafeea4345b12a19ec52558e9cf04e01a3c8e835378ac466a5e"
+    },
+    {
+      "frame": 4,
+      "group": 0,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g00/g00-f004.png",
+      "rgba_sha256": "4db6629fc9960062211a2b8f080ffeb67a616d71c0f096d1dbfc5a27573338c8",
+      "sha256": "0d6a3e5dd304f84a75e0ad91c74da80498341551ef72c5e8d6091025db740c4f"
+    },
+    {
+      "frame": 5,
+      "group": 0,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g00/g00-f005.png",
+      "rgba_sha256": "e3688afbffcacc3dd38aaf4956628daccdea350b987f6fc53531441e078045aa",
+      "sha256": "340b551e49b7d433493f40a3b113f6aad2f64511460f4cda97651ba9f7ebee65"
+    },
+    {
+      "frame": 0,
+      "group": 1,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g01/g01-f000.png",
+      "rgba_sha256": "bb1a5be9b4142d650fcd96e41b7f015b50afea3f68ab39aa09564a075375f3a4",
+      "sha256": "5a3943a9253a1cf42b5a10495ef82084f2a1ee74f2613bfd7695910b9aed5f41"
+    },
+    {
+      "frame": 1,
+      "group": 1,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g01/g01-f001.png",
+      "rgba_sha256": "1479286f164a1f93b5d66550a342c6d75edd724b7cf2a18f3fa94fff7bd1fdb0",
+      "sha256": "ab21d9dc998c22e8684e55e342c9b87e0201a6d0d0c0fcbd0ce1e3601d515c2d"
+    },
+    {
+      "frame": 2,
+      "group": 1,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g01/g01-f002.png",
+      "rgba_sha256": "fc138c23e8d2f1975e9cbde01ac4941086974a9da44fb4a6602c32721c93841a",
+      "sha256": "1574d3c1d90f708a3360f3e98a477207ce8e89ed059b0e8d6822c1df7a006837"
+    },
+    {
+      "frame": 3,
+      "group": 1,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g01/g01-f003.png",
+      "rgba_sha256": "45090faf7384313d95e252b36eae6de4fd602e26ce01caea76a3e9a78308df24",
+      "sha256": "67a56404f04fa2c2ff3ba4719e7717e0d162ac2d673793efeb7befed4a1f739d"
+    },
+    {
+      "frame": 0,
+      "group": 2,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g02/g02-f000.png",
+      "rgba_sha256": "45090faf7384313d95e252b36eae6de4fd602e26ce01caea76a3e9a78308df24",
+      "sha256": "67695d8b5046a9d908f52aeaa3639723950b89b1068d74b0127337e32490a87d"
+    },
+    {
+      "frame": 1,
+      "group": 2,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g02/g02-f001.png",
+      "rgba_sha256": "f06836d05262293ab5426ec64c7ca28ede57279762fc47c4e37c04e76ea5eecb",
+      "sha256": "37cdf379a150275f532baa3e8edb11038d6c261b953c110232f5cfa0222062b2"
+    },
+    {
+      "frame": 2,
+      "group": 2,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g02/g02-f002.png",
+      "rgba_sha256": "45090faf7384313d95e252b36eae6de4fd602e26ce01caea76a3e9a78308df24",
+      "sha256": "bc8cc796bec0fe89544f14d89d81397629f22b32f3ce66ef9ac8dcd38f1d8b0e"
+    },
+    {
+      "frame": 3,
+      "group": 2,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g02/g02-f003.png",
+      "rgba_sha256": "627d152dd146f7cc1a98fb4d2e19188ef8331578d11703303ef4bb686319cb8f",
+      "sha256": "6a2d31a673870cbb7e77e2d0fd9fac63b8d25e6bc9d4e9f18d81055525de7df1"
+    },
+    {
+      "frame": 0,
+      "group": 3,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g03/g03-f000.png",
+      "rgba_sha256": "cc41f32ec6e99e741e239d0c60f753903f4b10cd47ed49a562ff6599e01c64d4",
+      "sha256": "e824b0e2a19076872587022ea76b82d1bc6603a18bfee06854039e3668dc57ed"
+    },
+    {
+      "frame": 1,
+      "group": 3,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g03/g03-f001.png",
+      "rgba_sha256": "4c814218c04004c7a1a3bb4dd845210bc5435ceec0a442e4e43421f04ca3b84a",
+      "sha256": "3b6b7f258609b95e711e14bbde1e3f717fd80c17d6f822e62bbe1769b71c975a"
+    },
+    {
+      "frame": 2,
+      "group": 3,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g03/g03-f002.png",
+      "rgba_sha256": "8c63923bab12382ff6f5ef55b3cd3c2484a77fb507513b12e9da99eea169e553",
+      "sha256": "272c7347636aa2263943cc04aa69895db7f14f96a69dea0b3ece65bb12358eef"
+    },
+    {
+      "frame": 3,
+      "group": 3,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g03/g03-f003.png",
+      "rgba_sha256": "45090faf7384313d95e252b36eae6de4fd602e26ce01caea76a3e9a78308df24",
+      "sha256": "92db403a3f4967d3441dccd6f776c5d056fb708bbc803b8c5532ba571362c7e3"
+    },
+    {
+      "frame": 0,
+      "group": 4,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g04/g04-f000.png",
+      "rgba_sha256": "a77ca1c45ab896b320b66305c806250f7a6c0e6883917b407f537deef4d02f48",
+      "sha256": "30a665c61df42e16bda4b4e53e700a68a511a971b41eda9c8fadf18bd08b52f9"
+    },
+    {
+      "frame": 1,
+      "group": 4,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g04/g04-f001.png",
+      "rgba_sha256": "26e400cefd60c8e8ef587ece8f82dfb1dbbab92c67de7dabfcb99b4d6cad59ec",
+      "sha256": "f15d42a7e53c4321b6400be7505ec7cb4122f47f6414b7627cb9bf4518281765"
+    },
+    {
+      "frame": 2,
+      "group": 4,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g04/g04-f002.png",
+      "rgba_sha256": "ee73a618ebabc325f07e04c77f8c98f6a0620d03e50162552ed9d42881534222",
+      "sha256": "52ba3d45ca98d8fc2f25d6c04fdf5296413892b359e97fd9f6fa3d342b034200"
+    },
+    {
+      "frame": 3,
+      "group": 4,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g04/g04-f003.png",
+      "rgba_sha256": "45090faf7384313d95e252b36eae6de4fd602e26ce01caea76a3e9a78308df24",
+      "sha256": "2ea1e8044172719afa95a157b768439ba30aad3bf8684a7c25a3f1e8bb55b5d8"
+    },
+    {
+      "frame": 0,
+      "group": 5,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g05/g05-f000.png",
+      "rgba_sha256": "359b424a3000f1e63cb71d49dddfbbb513620a8f839e5f9a4d43e87d101794bb",
+      "sha256": "0a90a57d313677ca5b1ff41c21ce3dff59eef628105c7d43e080884e6c8214dd"
+    },
+    {
+      "frame": 1,
+      "group": 5,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g05/g05-f001.png",
+      "rgba_sha256": "825a8631b157511844ff68d84f8c36862d853edfb4d60231649804e04ffbe6ef",
+      "sha256": "af0b7b791509f386c4e7f784da8d856344075054bc8c8f8aef2557748d5d23ee"
+    },
+    {
+      "frame": 2,
+      "group": 5,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g05/g05-f002.png",
+      "rgba_sha256": "42ce4b9a75a7d56e0b53e4b087f6cf84814dc3b8194c4e5fbb92c7dc85f32c12",
+      "sha256": "cbd737830dc60c629121ed50ea31682666c5b5a7bb1faa3ff1cdb72465828e5c"
+    },
+    {
+      "frame": 3,
+      "group": 5,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g05/g05-f003.png",
+      "rgba_sha256": "a99fe720586324636f4cd3d6bb22bd4e6967aa1861d7c564ffb77b7cbe271888",
+      "sha256": "c74aa76b836d79c63b3297ee912c1ca4b1175aa3307ae2fe0a598f977dd1ffa8"
+    },
+    {
+      "frame": 4,
+      "group": 5,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g05/g05-f004.png",
+      "rgba_sha256": "275ba48c7ed822e9dacdbd3d2833f9d8079a02d36e5f9b2330f11efa747c5ab4",
+      "sha256": "d3e5585e118ec58b7fedb0218fe03b961bc36f1a3076a306434e8b19e80be459"
+    },
+    {
+      "frame": 5,
+      "group": 5,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g05/g05-f005.png",
+      "rgba_sha256": "4b14768eec9be2408226adf572a808a87996dbc7ff13dea9c8a946377761be15",
+      "sha256": "86482292018270d49b48183bf835918b718a3bbbb53a6ce38d241267fa2ec695"
+    },
+    {
+      "frame": 0,
+      "group": 7,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g07/g07-f000.png",
+      "rgba_sha256": "f88df5c0bfb056b727a690b08b2b84c1b0b1496402ff9a49ff4fe9e94f3b5bf2",
+      "sha256": "1414e03481759102b407318e4049426a294931a7c6d537f385374530ead24e06"
+    },
+    {
+      "frame": 1,
+      "group": 7,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g07/g07-f001.png",
+      "rgba_sha256": "d26a318e83781cb086922687618876738d2dffd53dd9ab997374a9b161b4bb11",
+      "sha256": "b55012b6186d1b2caafe875d71355657c820b676d7241b2e960dcd6e08e2c7fb"
+    },
+    {
+      "frame": 2,
+      "group": 7,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g07/g07-f002.png",
+      "rgba_sha256": "109c28e4f4db0c9169d212d8428eae400baa8515a4275b7c797466c0dbfe55cb",
+      "sha256": "a34868edbb4323c6ea2eef3fcbee473f15e86300e22cba9e528533174f944cc0"
+    },
+    {
+      "frame": 3,
+      "group": 7,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g07/g07-f003.png",
+      "rgba_sha256": "d99979e1a625b42a3f7e32baa20851d8f233199bebdd1d2b6e302f90d59aa8b1",
+      "sha256": "c6dd4d3f4b7ad9d975e81e6b96fd93bd7560ddffa0bcb56d143418dc4266f7a3"
+    },
+    {
+      "frame": 0,
+      "group": 8,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g08/g08-f000.png",
+      "rgba_sha256": "d99979e1a625b42a3f7e32baa20851d8f233199bebdd1d2b6e302f90d59aa8b1",
+      "sha256": "dd8adad447c3e77f4525e4d13fe81948418858b23a0246b02cfd1e50e26e4908"
+    },
+    {
+      "frame": 1,
+      "group": 8,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g08/g08-f001.png",
+      "rgba_sha256": "109c28e4f4db0c9169d212d8428eae400baa8515a4275b7c797466c0dbfe55cb",
+      "sha256": "06897d1860672fd219df5bc79ff6d19bdb5e3626cb7cb3940f3d3f0c9674f656"
+    },
+    {
+      "frame": 2,
+      "group": 8,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g08/g08-f002.png",
+      "rgba_sha256": "d26a318e83781cb086922687618876738d2dffd53dd9ab997374a9b161b4bb11",
+      "sha256": "75de06f2319cc3a7f9f94e51b581c8825ab11daf830ec60353c3e049680ae29d"
+    },
+    {
+      "frame": 3,
+      "group": 8,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g08/g08-f003.png",
+      "rgba_sha256": "f88df5c0bfb056b727a690b08b2b84c1b0b1496402ff9a49ff4fe9e94f3b5bf2",
+      "sha256": "fc91e17b795ef23caab058664a8f7527d71026146754be10fcb4fbbb2d1d9a10"
+    },
+    {
+      "frame": 0,
+      "group": 11,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g11/g11-f000.png",
+      "rgba_sha256": "c2ad26d676d3d74b4b27d893bc7b9b05c6a4aed15c52f29e99a4f8108b26c754",
+      "sha256": "9def2df9a10f654c33efb164e9f007e03a4a07bdc7bd2f4561eefa58cca83914"
+    },
+    {
+      "frame": 1,
+      "group": 11,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g11/g11-f001.png",
+      "rgba_sha256": "221985950f46c62b97a0ee57a3637ff1c8430150dbe158eadd8f18311c729d8a",
+      "sha256": "0b449c02e2f010f4d4c8f95c186462759d83a71123a3590022c290563e476af7"
+    },
+    {
+      "frame": 2,
+      "group": 11,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g11/g11-f002.png",
+      "rgba_sha256": "7ee95195dd0cedfc8f06606ce7e153ec9219101a4646c644198ef380185640c2",
+      "sha256": "4a32c6fb389e923221e2d5ccf50a2d9ccb27da5ce8c7d5d5269de6a99a61bc3a"
+    },
+    {
+      "frame": 3,
+      "group": 11,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g11/g11-f003.png",
+      "rgba_sha256": "e9b01d2527c0b662a7da1f0a155c40dc691c76e24f5255ba94d29cb55fc9f2c1",
+      "sha256": "e3b024758f520c52b048a39d96d29f0483a8908672e3d1df1055b0c51486f76f"
+    },
+    {
+      "frame": 4,
+      "group": 11,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g11/g11-f004.png",
+      "rgba_sha256": "c372c24afa57c106f863576d4b0d55b6846568a8b8423056720f91267456ddb1",
+      "sha256": "b0d16490c4288824d26d647e4f860f9c963963c20c11efa3e33b68e825891061"
+    },
+    {
+      "frame": 5,
+      "group": 11,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g11/g11-f005.png",
+      "rgba_sha256": "c2ad26d676d3d74b4b27d893bc7b9b05c6a4aed15c52f29e99a4f8108b26c754",
+      "sha256": "03f94d32508b46e03cf3f98ad5b251a57308e230f1a6b47869fae9ed85c5bc0b"
+    },
+    {
+      "frame": 0,
+      "group": 12,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g12/g12-f000.png",
+      "rgba_sha256": "c2ad26d676d3d74b4b27d893bc7b9b05c6a4aed15c52f29e99a4f8108b26c754",
+      "sha256": "faf96e8a8a826c5c6a99bdc7fcbad305749fbfd7fa4801690d4fa6a98e08d3ba"
+    },
+    {
+      "frame": 1,
+      "group": 12,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g12/g12-f001.png",
+      "rgba_sha256": "221985950f46c62b97a0ee57a3637ff1c8430150dbe158eadd8f18311c729d8a",
+      "sha256": "f4d28b4efb03b63f13b41c79d7aeb38bf3a82fcf279a367e73594f46ff349857"
+    },
+    {
+      "frame": 2,
+      "group": 12,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g12/g12-f002.png",
+      "rgba_sha256": "7ee95195dd0cedfc8f06606ce7e153ec9219101a4646c644198ef380185640c2",
+      "sha256": "158b1a636ca6d7e0b71d7fa57d4285c4fc2ac652925106a10c0685d6c2f1e793"
+    },
+    {
+      "frame": 3,
+      "group": 12,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g12/g12-f003.png",
+      "rgba_sha256": "b51a4d665e1fc4b35024a62b428155be8be46687a142e3b984ea1f8965bd8cc1",
+      "sha256": "1204f557fb74a01e9a78e27291fe8bdd96871aab61cadc9b69a699bf4fce168d"
+    },
+    {
+      "frame": 4,
+      "group": 12,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g12/g12-f004.png",
+      "rgba_sha256": "9cefea60227a03342ae3a657ba458ba546debb09a1bf63118a7de21c3718c52e",
+      "sha256": "4e8cb8a96b84b53dd44e377a43ca8d709487e3e2765734ddcc1c0af318f098ed"
+    },
+    {
+      "frame": 5,
+      "group": 12,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g12/g12-f005.png",
+      "rgba_sha256": "c2ad26d676d3d74b4b27d893bc7b9b05c6a4aed15c52f29e99a4f8108b26c754",
+      "sha256": "45a00c615e616817b12cd2067b2086cf956052844049a7ece6c3213af25f6333"
+    },
+    {
+      "frame": 0,
+      "group": 13,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g13/g13-f000.png",
+      "rgba_sha256": "c2ad26d676d3d74b4b27d893bc7b9b05c6a4aed15c52f29e99a4f8108b26c754",
+      "sha256": "7ee22df96eca8aeaceb1a8c495f47ef80d0f73c0fb1d004768391cfe87f61e3a"
+    },
+    {
+      "frame": 1,
+      "group": 13,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g13/g13-f001.png",
+      "rgba_sha256": "221985950f46c62b97a0ee57a3637ff1c8430150dbe158eadd8f18311c729d8a",
+      "sha256": "62cb337e684c363ee228a347efb037af604ea8369041323f76209fae2a50eae1"
+    },
+    {
+      "frame": 2,
+      "group": 13,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g13/g13-f002.png",
+      "rgba_sha256": "7ee95195dd0cedfc8f06606ce7e153ec9219101a4646c644198ef380185640c2",
+      "sha256": "bf5f3a6c3fcebe37051fdec41b04e350dc50ab3d16de7382bfdbabaed4639f73"
+    },
+    {
+      "frame": 3,
+      "group": 13,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g13/g13-f003.png",
+      "rgba_sha256": "04328160b899cd1d6a4492f8b777c51af2f8fd141bed1c805a2d27c3a86e01c8",
+      "sha256": "64fc8bb1915e50f438c663133d317af8cbb88edc75213879ec959f993b85b0bc"
+    },
+    {
+      "frame": 4,
+      "group": 13,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g13/g13-f004.png",
+      "rgba_sha256": "1ea663d37c1b9231d2ffd004dac95f8822c7906c0e0c549ea4817952f74f6f17",
+      "sha256": "447b7691c29a51be82b1c1d1661efe8dd81cbaa2e96f4d7161fe1e3554d70b79"
+    },
+    {
+      "frame": 5,
+      "group": 13,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g13/g13-f005.png",
+      "rgba_sha256": "c2ad26d676d3d74b4b27d893bc7b9b05c6a4aed15c52f29e99a4f8108b26c754",
+      "sha256": "87e617232e79ea234b0434ff3c39982fb5c65b4241ce9868411125848916e533"
+    },
+    {
+      "frame": 0,
+      "group": 14,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g14/g14-f000.png",
+      "rgba_sha256": "45090faf7384313d95e252b36eae6de4fd602e26ce01caea76a3e9a78308df24",
+      "sha256": "3b3a5ebbba6d911dccff50281f4a0780fe13e75bdda64bbb3e9ccafac80c3896"
+    },
+    {
+      "frame": 1,
+      "group": 14,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g14/g14-f001.png",
+      "rgba_sha256": "68cc7fcc66aa5c4f919244795dd1612ef54130470f3b865838abc43c9d75c426",
+      "sha256": "1a349b6d09e2b677ca8c2aaa9ea5d1083ed380f24d73b415bd655b627f185aed"
+    },
+    {
+      "frame": 2,
+      "group": 14,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g14/g14-f002.png",
+      "rgba_sha256": "e01bbebb60f680d4b4f2fda0b5390530d6d1d7d0edb29efe151f58abaab97ee3",
+      "sha256": "89cc6ed1e1f5ea6bf6c1aa4b776af1649d692237fffde40f067f212bc7936805"
+    },
+    {
+      "frame": 3,
+      "group": 14,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g14/g14-f003.png",
+      "rgba_sha256": "e01bbebb60f680d4b4f2fda0b5390530d6d1d7d0edb29efe151f58abaab97ee3",
+      "sha256": "35a78939f9fe66b3ab7815d6ba8bac55475ed221dd0196c3b8535abdae6db988"
+    },
+    {
+      "frame": 4,
+      "group": 14,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g14/g14-f004.png",
+      "rgba_sha256": "c89d19c789f9fadfd639f8fd659bd19acff195de2e3901e2c05c53961b9b77af",
+      "sha256": "0c923f16b64ef71c03e6768aea0371710d471eb56d0d7f49138ef3e46fe2c7dc"
+    },
+    {
+      "frame": 5,
+      "group": 14,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g14/g14-f005.png",
+      "rgba_sha256": "1eb2bb1e7c65e3f1ef204c03e760ee353dbc5b309c5059793e07325ababd6657",
+      "sha256": "df3c4f2e1ca4b0ee81a716abc4d863bc69d1fcd6c6dbbbd73e8d2772a1b324f6"
+    },
+    {
+      "frame": 6,
+      "group": 14,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g14/g14-f006.png",
+      "rgba_sha256": "7a08358081d8bec5922dbc8385e4d561d344446c00845ff8118fe31da9443581",
+      "sha256": "3f7a14617176b4e3fae7e343a2b0393eb6fd57ff914320879c417fac0fffcef6"
+    },
+    {
+      "frame": 7,
+      "group": 14,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g14/g14-f007.png",
+      "rgba_sha256": "98e2f3598de3223ec50bbb5a1c9ee7440ddb8ac7e2edbbb836644e77339a5d1a",
+      "sha256": "373146827ae6b66ea37815b8709112e63374115a4b87cc5135399705054881fa"
+    },
+    {
+      "frame": 0,
+      "group": 15,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g15/g15-f000.png",
+      "rgba_sha256": "45090faf7384313d95e252b36eae6de4fd602e26ce01caea76a3e9a78308df24",
+      "sha256": "e3385076154cb56349560826445b3ef59f363eecb19c4e5bbce7aa7e3118f39e"
+    },
+    {
+      "frame": 1,
+      "group": 15,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g15/g15-f001.png",
+      "rgba_sha256": "969d3c5cf6fa44c42cb555e9c16645d1e84731e24cb7317c5573ba37c4433f8a",
+      "sha256": "03da480264aa768c4b8b59af21ee31437a0748265e4f2486b306b8ede5812ea0"
+    },
+    {
+      "frame": 2,
+      "group": 15,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g15/g15-f002.png",
+      "rgba_sha256": "c7918067ec3778a277ee1c00ec0fbd735db34081e8658764c5ad0c5ba2e741bb",
+      "sha256": "d81ad0e2d60e830e2104714cc05b8b5d6a483cae4d46ac5889385dafe361e7fe"
+    },
+    {
+      "frame": 3,
+      "group": 15,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g15/g15-f003.png",
+      "rgba_sha256": "c7918067ec3778a277ee1c00ec0fbd735db34081e8658764c5ad0c5ba2e741bb",
+      "sha256": "b6d2939e2fc4680665d85bbbdc2b2daaf5af89b76c4d16b99601547fc201c8a3"
+    },
+    {
+      "frame": 4,
+      "group": 15,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g15/g15-f004.png",
+      "rgba_sha256": "8cee52a143e0c2485f04874113468c1dd018fc42cf2a3fb94e5a971271fcddb4",
+      "sha256": "cfa1be01e5470f56a78881c33540e84572390fbd30605b024eb4be15acfa914d"
+    },
+    {
+      "frame": 5,
+      "group": 15,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g15/g15-f005.png",
+      "rgba_sha256": "fc19c597490b355d3520140d5d9b142a86af7df67bee6b64e7aef94e7f0ed408",
+      "sha256": "5810542461aad85105f8172c9f9440bd92a1898b83bfa541ab6e7becc6d436ea"
+    },
+    {
+      "frame": 6,
+      "group": 15,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g15/g15-f006.png",
+      "rgba_sha256": "dda317118a503ab7d43ca53ea028597195035066c4d06c5ea2dc9c8486cb7da4",
+      "sha256": "92718f4144c47449eb9ff82e7fdb7773ad27706532fbc422cca624a428814002"
+    },
+    {
+      "frame": 7,
+      "group": 15,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g15/g15-f007.png",
+      "rgba_sha256": "98e2f3598de3223ec50bbb5a1c9ee7440ddb8ac7e2edbbb836644e77339a5d1a",
+      "sha256": "2d5ee4893484b72353b397e8a0d76c461368672b423c02a8a8f93891c5b45107"
+    },
+    {
+      "frame": 0,
+      "group": 16,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g16/g16-f000.png",
+      "rgba_sha256": "45090faf7384313d95e252b36eae6de4fd602e26ce01caea76a3e9a78308df24",
+      "sha256": "0f4d1d3f7cdc7eab53420b58caa87f694daa97f6eeefb284490506d2b473813f"
+    },
+    {
+      "frame": 1,
+      "group": 16,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g16/g16-f001.png",
+      "rgba_sha256": "5cc60b2df8e2ffe60fab4823f78ee16c9ab174dd17e4eec92446028de3958864",
+      "sha256": "a070f3e022c333a3aa22620ee5c635a7c81e3f65accf8c980ecc8a0e0eadbe1b"
+    },
+    {
+      "frame": 2,
+      "group": 16,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g16/g16-f002.png",
+      "rgba_sha256": "3cea2adf5bf032e8f1bcfa882684f979a80590858b7cacba539143f46e6bc52e",
+      "sha256": "29034d32bab01defe6003d996d4fc0f40304f3448f40f947c464a90f3e3b0c46"
+    },
+    {
+      "frame": 3,
+      "group": 16,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g16/g16-f003.png",
+      "rgba_sha256": "3cea2adf5bf032e8f1bcfa882684f979a80590858b7cacba539143f46e6bc52e",
+      "sha256": "ef5fa1db596ca0e49952f3e245536d5059b4ff74faedc2c117be357e986575ae"
+    },
+    {
+      "frame": 4,
+      "group": 16,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g16/g16-f004.png",
+      "rgba_sha256": "cdc5873da2475441867e6271cd9d429ec80f0e7e6f6d9e4dd796e278d14a8978",
+      "sha256": "c74a8f4063bddc7eb41dd91de012202a50949545cb2fdedb1370cc152429d8b2"
+    },
+    {
+      "frame": 5,
+      "group": 16,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g16/g16-f005.png",
+      "rgba_sha256": "ddbe9eae3812635e2014652878df69b731e7e330faac9fcb17bcfef955aed28b",
+      "sha256": "c211e4be16d252bca8f0437f58c38c89b6e9988d196c2844cbe5d587c211639a"
+    },
+    {
+      "frame": 6,
+      "group": 16,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g16/g16-f006.png",
+      "rgba_sha256": "707148513cf9a31dbb408459c368b939099169f1de5020de301a41713dd1a908",
+      "sha256": "8ec0a503d6008dd8bc68d519104f16f0260f148bf176c6a8457ba29fceaac5b0"
+    },
+    {
+      "frame": 7,
+      "group": 16,
+      "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/raw-actions/g16/g16-f007.png",
+      "rgba_sha256": "98e2f3598de3223ec50bbb5a1c9ee7440ddb8ac7e2edbbb836644e77339a5d1a",
+      "sha256": "cb919b5f385164d33178fe168408bd2889afcaca309f2c44028a014f53f38865"
+    }
+  ],
+  "intentional_duplicate_pose_renders": {
+    "11": [
+      [
+        0,
+        5
+      ]
+    ],
+    "12": [
+      [
+        0,
+        5
+      ]
+    ],
+    "13": [
+      [
+        0,
+        5
+      ]
+    ],
+    "14": [
+      [
+        2,
+        3
+      ]
+    ],
+    "15": [
+      [
+        2,
+        3
+      ]
+    ],
+    "16": [
+      [
+        2,
+        3
+      ]
+    ],
+    "2": [
+      [
+        0,
+        2
+      ]
+    ]
+  },
+  "metadata": {
+    "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/ranger-production-v2.json",
+    "sha256": "3a88a82f69cdff06f096ba31f3bd529a97955b400dbf848a9ae69b0772a29558"
+  },
+  "rendered_png_count": 78,
+  "selected_source_revision": 2,
+  "source_blend": {
+    "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/demacianRanger-ranger-rig-v2.blend",
+    "sha256": "c79d35a93ebbb0b485987419dd7556ab1230b4c25548369c3fd6f71fa04788ef"
+  },
+  "status": "actual source renders verified; final animation assets incomplete",
+  "unit": "demacianRanger",
+  "visual_approval_granted": false,
+  "visual_limits": [
+    "Raw guide has plain/cylindrical sleeve and hood-edge forms; no professional native art approval.",
+    "Painted action finish and its native temporal/camera review remain unproduced.",
+    "Native shadow, targeting projectile origin, selection and action playback have not been tested for this pair."
+  ]
+}

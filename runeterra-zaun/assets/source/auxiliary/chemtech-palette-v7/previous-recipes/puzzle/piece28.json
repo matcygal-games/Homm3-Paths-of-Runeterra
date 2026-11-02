@@ -1,0 +1,80 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "Own Zaun puzzle master: the undercity skyline, refinery stacks and a lit pit arena.",
+  "canvas": [
+    74,
+    91
+  ],
+  "composition": {
+    "crop": {
+      "height": 91,
+      "width": 74,
+      "x": 296,
+      "y": 273
+    },
+    "grid": {
+      "columns": 8,
+      "rows": 6
+    },
+    "master": "assets/source/puzzle/painted-v2/master-592x544.png",
+    "master_sha256": "7244bc8d4e05f45b102a3064f308bcc9a1bbdd09749e305981a25e7577cac748",
+    "master_size": [
+      592,
+      544
+    ],
+    "rule": "One own 592x544 Zaun master is sliced into 48 pieces of 74 pixels wide; the first five rows are 91 pixels high and the last row is 89 pixels high. The crop origin is the top left corner of the piece inside the master. The reveal order comes from the authored puzzle map, not from the art."
+  },
+  "credits": {
+    "author": "Runeterra Zaun project using OpenAI built-in image_gen",
+    "license": "No redistribution permission asserted; project-internal review only",
+    "redistribution": "unresolved; release prohibited"
+  },
+  "delivery": {
+    "authored_by": "OpenAI built-in image_gen",
+    "composed_by": "scripts/zaun_aux_painted.py",
+    "sources": [
+      {
+        "path": "assets/source/puzzle/painted-v2/piece28.png",
+        "sha256": "f4d6f594007bdbb6b8afadadf0c9986a2ed986d43b808f5902b65cf9d59f0d6c"
+      },
+      {
+        "path": "assets/source/puzzle/painted-v2/master-generated.png",
+        "sha256": "ba5dab4f8c4258a61c34b6732f351bb6c1c009a35a4bb1e00bb1668a4671605e"
+      }
+    ],
+    "status": "built-unreviewed; no game rendering or final acceptance claimed",
+    "visual_approval_granted": false
+  },
+  "dependencies": [],
+  "fit": "contain",
+  "generation": {
+    "image_generation_used": true,
+    "model": null,
+    "model_disclosure": "The built-in tool did not expose a model identifier.",
+    "painted_master": "assets/source/puzzle/painted-v2/master-generated.png",
+    "prompt": "assets/source/puzzle/painted-v2/prompt.txt",
+    "provider": "OpenAI built-in image_gen",
+    "returned_provenance": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a15daf-dfea-7600-bbfa-72115facede7 as C:\\Users\\matcy\\.codex\\generated_images\\01a15daf-dfea-7600-bbfa-72115facede7\\exec-54149c1b-4072-42ef-8f65-6ca6f4587403.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "route": "genuine painted image_gen master; uniform resampling and technical crop only"
+  },
+  "id": "zaun.puzzle.piece28",
+  "output_path": "Content/Sprites/runeterra/zaun/puzzle/piece28.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    74,
+    91
+  ],
+  "source": "assets/source/puzzle/painted-v2/piece28.png",
+  "source_sha256": "f4d6f594007bdbb6b8afadadf0c9986a2ed986d43b808f5902b65cf9d59f0d6c",
+  "status": "built-unreviewed",
+  "title": "puzzle piece 28",
+  "visual_approval_granted": false
+}

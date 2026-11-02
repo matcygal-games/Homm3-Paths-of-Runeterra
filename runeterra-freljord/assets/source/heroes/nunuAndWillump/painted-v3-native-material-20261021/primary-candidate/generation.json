@@ -1,0 +1,39 @@
+{
+  "prompt": "Use case: identity-preserve style correction for a production Heroes of Might and Magic III hero portrait. Image1 is our OWN Nunu and Willump painting to edit. Image2 contains PRIVATE ORIGINAL GAME portrait rendering examples only. Never copy a reference person's identity, clothing, pixels, panel layout, border or palette pattern. Output ONE opaque square portrait, no layout, no grid, no text or UI.\n\nCorrect the rendering medium while preserving the affectionate Nunu-and-Willump pair and present framing. Match the physical sculpted, pre-rendered then oil-glazed painted miniatures of the ORIGINAL1999 HeroesIII hero portraits, not a contemporary illustrated storybook. Readable geometrical light/shadow planes first, restrained tactile texture second. No overall speckle, false pixelation, coarse paint blobs, flat posterization or sharpening filter. Native58x64/48x32 portrait use is critical.\n\nNunu remains a real human child with brown hair, natural brown eyes, warm skin, a worn red hood and blue wool/hide coat. Repaint his face as a natural child portrait with believable small eyes, a subtle bridge of the nose, slightly uneven cheeks, firm jaw/nose light planes, small unglossy eye highlights, and a slight warm smile. He is NOT an adult or a grim soldier. Remove the oversized sparkling cartoon eyes, button-like baby nose, doll-smooth peach cheeks and inflated toy face. Use concise warm top-left key light and cool cheek/under-brow shadow, like a miniature old-game portrait.\n\nWillump remains the unique kindly magical yeti: broad matte blue nose, coarse white/blue-gray fur, clearly readable brow tufts and two brown curved horns. Keep the blue muzzle and friendly gentle gaze, but give the muzzle a believable substantial structure with broad planar light/shadow, deeper eye sockets, smaller brown irises and a tiny single eye highlight. Fur is coarse compact clumps over modeled form, not plush cotton or smooth animated-film fur. No teeth-baring monster, no angry predator, no humanized face. The nose is matte and rough, never a shiny toy.\n\nBoth heads stay close side by side, child on left and yeti on right; both faces complete and unobscured, both eyes in a common central band. Preserve the visible horn/brow silhouette and hood in a48x32 landscape crop. Subordinate snowy mountain scenery with muted golden dawn left and darker blue-gray middle-distance behind white fur. Darker simple background values separate both faces. Clothing has rough muted woven wool and worn hide, not metallic gold decorative sparkle.\n\nNo new character, weapon, aura, extra eye, modern splash composition, cute mascot style, anime, glossy3D, fake retro filter, arbitrary colored pixels, canvas-border or text. This is a freshly repainted production portrait with the original pair's identity, not a trace of original game art.",
+  "returned_provenance": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-1663-7df0-8ab7-dcf90bfe6162 as C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-1663-7df0-8ab7-dcf90bfe6162\\exec-4c12ef4c-e6f3-4ee4-9904-b75038af9c87.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "builtin_default_output": "C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-1663-7df0-8ab7-dcf90bfe6162\\exec-4c12ef4c-e6f3-4ee4-9904-b75038af9c87.png",
+  "provider": "OpenAI",
+  "tool": "built-in image_gen.imagegen",
+  "model": "not exposed by built-in tool",
+  "model_id_exposed": false,
+  "image_generation_used": true,
+  "selected": false,
+  "visual_approval_granted": false,
+  "redistribution": "unresolved; release prohibited",
+  "original_sha256": "39c2216caabd3aac07c7737419617d94ae632813dfa621f509487ac4f0631762",
+  "source_dimensions": [
+    1254,
+    1254
+  ],
+  "status": "authored configuration",
+  "release_accepted": false,
+  "painted_master": "assets/source/heroes/nunuAndWillump/painted-v3-native-material-20261021/primary-candidate/portrait-master.png",
+  "master_sha256": "02f444405d30f7cc5b62a6e61a313aa15aa9282cce4c1d69c26c8fa1675884e2",
+  "generated_original": "assets/source/heroes/nunuAndWillump/painted-v3-native-material-20261021/primary-candidate/generated-original.png",
+  "generated_original_sha256": "39c2216caabd3aac07c7737419617d94ae632813dfa621f509487ac4f0631762",
+  "input_references": [
+    {
+      "path": "assets/source/heroes/nunuAndWillump/painted-v2/portrait-master.png",
+      "sha256": "0fb9657fdd91ded5de91dddf731bb49e6bc802a483b2f002c645b17807435baa",
+      "role": "own edit target"
+    },
+    {
+      "path": "build/art-candidates/nunu-portrait-v2/private-original-portrait-style-board.png",
+      "sha256": "5cb42bfd0243d4b48db669b6207a5bad22dc81c111d5d211c4eb902386d8f61d",
+      "role": "private original game rendering reference only"
+    }
+  ],
+  "private_reference_rule": "Original reference pixels remain in build/references only and are never copied into assets/source or release. Exact paths/hashes document the reference, not redistribution permission.",
+  "technical_conversion": "Only lossless RGBA PNG re-encoding before existing deterministic raster compiler previews. No paint, warp, sharpening or pixel filters.",
+  "selection_reason": "Not selected: bounded source-pixel improvement does not decisively resolve P2 storybook rendering at native portrait sizes."
+}

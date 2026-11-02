@@ -1,0 +1,33 @@
+{
+  "status": "design proposal",
+  "provider": "OpenAI built-in imagegen",
+  "model": "Not exposed by the built-in tool",
+  "credits": {
+    "author": "Project-directed OpenAI built-in imagegen; deterministic project conversion",
+    "redistribution": "unresolved; no release or redistribution approval"
+  },
+  "generations": [
+    {
+      "name": "descent-v1",
+      "master": "descent-master-v1.png",
+      "prompt": "Use case: precise-object-edit. Asset: tiny original HeroesIII-style painted2D town terrain crop, native57x55. Image1 is ONLY edit target(empty terrain); image2 is diagnostic reference: pink areas are PROTECTED future building bodies/root footprints, cyan line is the desired winding stair axis; image3 shows future buildingcontext only. Paint ONE believable public weathered stone stairway descending through the rock/vegetation hollow along the cyan axis. Nativecoordinates ofcrop: x654..710,y160..214. Preserve all rows160..165 byte-close, the upper court/root edge is fixed. Starttheflight at666166, runnear669180, turn/rightdownthrough680190 and689198, and finish a SMALL HORIZONTAL PAVED LANDING at692210meetingthelowerMarketcourt. Corridor narrows to x684..699 at y198..210; stairmustfit here. Carve through the rock/vegetation into one coherent winding public stone flight with readable horizontal treads and two modest turninglandings, no abrupt wall across route. About8-11nativepixels wide, upperleftwarm light, charcoal-grey weathered masonry/softcontactshadows and compacttiny pavers matchingtarget. Keep all pink regions fromimage2 unchangedtargetpixels, do notpaint stairs under them. Replace onlya narrowwinding rockcorridor, retain rock/vegetation on bothsides and darkNoxianmood. NO functional buildings, people, banners, rails that block steps, oversize masonry, floating pieces, text, watermarks, borders, pink orcyan marks. Genuine compact richlypainted2D matteHeroesIIItexture, no3D orfilters. Outputsame framing/aspect57:55. The structure is A WALKABLE PUBLIC STAIR with continuous horizontal treads allwayfrom uppercourt tolowercourt, not a smoothvertical retainingwall.",
+      "inputs": [
+        "descent-target-native8x-v1.png",
+        "descent-source-guide-v1.png",
+        "descent-architecture-context-v1.png"
+      ],
+      "output_hint": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a17eb3-9450-78b1-9d99-8dc606e762d9 as C:\\Users\\matcy\\.codex\\generated_images\\01a17eb3-9450-78b1-9d99-8dc606e762d9\\exec-11dfcc0f-6414-4795-a831-d5d21c498bfb.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "name": "coast-v1",
+      "master": "coast-master-v1.png",
+      "prompt": "Use case: precise-object-edit. Asset: originalHeroesIII native painted2D coastal town connector, tinycrop11x21pixels, enlarged16x for reference. Image1 is exact emptyterrain edit target; image2 hotpink protected sourcebuilding pixels and cyan suggested pedestrianaxis; image3 future buildingcontext only. Paint a SMALL SUPPORTED public weathered timber stair/gangway from dry upper stonequay to the low existing coastdeck. Crop nativecoordinatesx742..752,y155..175. Preserve top3rows y155..157 dryupperquay. The stairwalkingcore mustfit x744..748,y158..172 (localx2..6,localy3..17), descendstraight downnearx746, then a tinybottomlanding reachx748172, so it touches existingrealshipyarddeck at749172 whenframecomposited. CRITICAL authentic HORIZONTAL weathered wood planktreads supportedby stout dark timberstringers/shortpilings and a believable stoneheadmount belowupperquay; NO floatingwood, no waterpretendingto be floor. Newopaquewoodmaycoverbluewateronlyinsidethisnarrowconstruction. Preservewaterandrockoutsideit; keepallpinkprotectedfuturebodyareasunchangedtargetpixels. Keepstairsfreeof obstructingrails/masts. Addno ships, sails, buildings, flags, writing, props, borders orcyan/pink marks. Compact originalHeroesIIIpainted2Dweathered darkbrownwood and blackironfastenings,warmupperleftlight; mattecolourandtiny scale consistentwith image3. The entire crop is only11pixelswideatnative; stair isfivepixelswideatnative, withreadablefewhorizontalplanktreadsand tinyvisiblepile support, not a newharborplatform. Sameframingaspect11:21, fullbleed output, genuine2Dpaint, no3D/filter.",
+      "inputs": [
+        "coast-target-native16x-v1.png",
+        "coast-source-guide-v1.png",
+        "coast-architecture-context-v1.png"
+      ],
+      "output_hint": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a17eb3-9450-78b1-9d99-8dc606e762d9 as C:\\Users\\matcy\\.codex\\generated_images\\01a17eb3-9450-78b1-9d99-8dc606e762d9\\exec-9804707c-5560-434a-9710-38713314c223.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  ]
+}

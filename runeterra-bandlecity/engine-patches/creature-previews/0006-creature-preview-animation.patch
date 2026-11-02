@@ -1,0 +1,280 @@
+--- a/client/widgets/MiscWidgets.cpp
++++ b/client/widgets/MiscWidgets.cpp
+@@ -700,8 +700,9 @@
+ 		bg = std::make_shared<CPicture>((*LIBRARY->townh)[faction]->creatureBg130);
+ 	else
+ 		bg = std::make_shared<CPicture>((*LIBRARY->townh)[faction]->creatureBg120);
+-	anim = std::make_shared<CCreatureAnim>(0, 0, cre->animDefName);
+-	anim->clipRect(cre->isDoubleWide()?170:150, 155, bg->pos.w, bg->pos.h);
++	anim = std::make_shared<CCreatureAnim>(0, 0, cre->getPreviewAnimation());
++	const Rect previewCrop = cre->getPreviewAnimationCrop(anim->pos.dimensions(), bg->pos.dimensions());
++	anim->clipRect(previewCrop.x, previewCrop.y, previewCrop.w, previewCrop.h);
+ 	anim->startPreview(cre->hasBonusOfType(BonusType::SIEGE_WEAPON));
+ 
+ 	amount = std::make_shared<CLabel>(bg->pos.w, bg->pos.h, FONT_MEDIUM, ETextAlignment::BOTTOMRIGHT, Colors::WHITE);
+--- a/lib/CCreatureHandler.h
++++ b/lib/CCreatureHandler.h
+@@ -30,6 +30,8 @@
+ class CCreature;
+ class CombatValue;
+ class JsonSerializeFormat;
++class Point;
++class Rect;
+ 
+ class DLL_LINKAGE CCreature : public Creature, public CBonusSystemNode
+ {
+@@ -67,6 +69,10 @@
+ 	std::set<CreatureID> upgrades; // IDs of creatures to which this creature can be upgraded
+ 
+ 	AnimationPath animDefName; // creature animation used during battles
++	// Optional UI-only animation. Reloaded from mod graphics, never serialized.
++	AnimationPath previewAnimDefName;
++	const AnimationPath & getPreviewAnimation() const;
++	Rect getPreviewAnimationCrop(const Point & canvasSize, const Point & viewportSize) const;
+ 	ImagePath mapAttackFromLeft; // adventure map creature image when attacked from left
+ 	ImagePath mapAttackFromRight; // adventure map creature image when attacked from right
+ 
+--- a/lib/CCreatureHandler.cpp
++++ b/lib/CCreatureHandler.cpp
+@@ -9,6 +9,7 @@
+  */
+ #include "StdInc.h"
+ #include "CCreatureHandler.h"
++#include "Rect.h"
+ 
+ #include "CBonusTypeHandler.h"
+ #include "ResourceSet.h"
+@@ -324,6 +325,22 @@
+ 	fightValue = AIValue = growth = hordeGrowth = ammMin = ammMax = 0;
+ }
+ 
++const AnimationPath & CCreature::getPreviewAnimation() const
++{
++	return previewAnimDefName.empty() ? animDefName : previewAnimDefName;
++}
++
++Rect CCreature::getPreviewAnimationCrop(const Point & canvasSize, const Point & viewportSize) const
++{
++	if (previewAnimDefName.empty())
++		return Rect(isDoubleWide() ? 170 : 150, 155, viewportSize.x, viewportSize.y);
++
++	if (viewportSize.x <= 0 || viewportSize.y <= 0 || canvasSize.x < viewportSize.x || canvasSize.y < viewportSize.y)
++		throw std::invalid_argument("Creature preview animation canvas is smaller than its UI viewport");
++
++	return Rect((canvasSize.x - viewportSize.x) / 2, (canvasSize.y - viewportSize.y) / 2, viewportSize.x, viewportSize.y);
++}
++
+ void CCreature::addBonus(int val, BonusType type)
+ {
+ 	addBonus(val, type, BonusSubtypeID());
+@@ -647,6 +664,13 @@
+ 		!CResourceHandler::get()->existsResource(cre->animDefName.addPrefix("SPRITES/")) &&
+ 		!CResourceHandler::get()->existsResource(cre->animDefName.addPrefix("SPRITES/").toType<EResType::JSON>()))
+ 		throw ModLoadingException(scope, "creature " + cre->getJsonKey() + " has no combat animation but is not marked as special!" );
++
++	if (!node["disabled"].Bool() && !cre->previewAnimDefName.empty() &&
++		!CResourceHandler::get()->existsResource(cre->previewAnimDefName) &&
++		!CResourceHandler::get()->existsResource(cre->previewAnimDefName.toType<EResType::JSON>()) &&
++		!CResourceHandler::get()->existsResource(cre->previewAnimDefName.addPrefix("SPRITES/")) &&
++		!CResourceHandler::get()->existsResource(cre->previewAnimDefName.addPrefix("SPRITES/").toType<EResType::JSON>()))
++		throw ModLoadingException(scope, "creature " + cre->getJsonKey() + " has an unavailable graphics.animationPreview resource" );
+ 
+ 	JsonNode advMapFile = node["graphics"]["map"];
+ 	JsonNode advMapMask = node["graphics"]["mapMask"];
+@@ -910,6 +934,7 @@
+ void CCreatureHandler::loadCreatureJson(CCreature * creature, const JsonNode & config) const
+ {
+ 	creature->animDefName = AnimationPath::fromJson(config["graphics"]["animation"]);
++	creature->previewAnimDefName = AnimationPath::fromJson(config["graphics"]["animationPreview"]);
+ 	creature->mapAttackFromLeft = ImagePath::fromJson(config["graphics"]["mapAttackFromLeft"]);
+ 	creature->mapAttackFromRight = ImagePath::fromJson(config["graphics"]["mapAttackFromRight"]);
+ 
+--- a/config/schemas/creature.json
++++ b/config/schemas/creature.json
+@@ -181,6 +181,12 @@
+ 				"animation" : {
+ 					"type" : "string",
+ 					"description" : "File with animation of this creature in battles",
++					"format" : "animationFile"
++				},
++				"animationPreview" : {
++					"type" : "string",
++					"minLength" : 1,
++					"description" : "Optional UI-only animation with a fixed shared frame canvas. Center-cropped to the recruitment or creature-info background; battle and adventure animations are unchanged.",
+ 					"format" : "animationFile"
+ 				},
+ 				"map" : {
+--- /dev/null
++++ b/test/entity/CreaturePreviewTest.cpp
+@@ -0,0 +1,161 @@
++/* Optional creature preview resources: real native selection, geometry and persistence controls. */
++#include "StdInc.h"
++
++#include "lib/CCreatureHandler.h"
++#include "lib/ExceptionsCommon.h"
++#include "lib/GameLibrary.h"
++#include "lib/Rect.h"
++#include "lib/bonuses/BonusParameters.h"
++#include "lib/bonuses/Propagators.h"
++#include "lib/bonuses/Updaters.h"
++#include "lib/json/JsonNode.h"
++#include "lib/json/JsonValidator.h"
++#include "lib/serializer/CMemorySerializer.h"
++#include "lib/serializer/JsonDeserializer.h"
++#include "lib/serializer/JsonSerializer.h"
++
++namespace
++{
++void expectRect(const Rect & actual, int x, int y, int w, int h)
++{
++	EXPECT_EQ(actual.x, x);
++	EXPECT_EQ(actual.y, y);
++	EXPECT_EQ(actual.w, w);
++	EXPECT_EQ(actual.h, h);
++}
++
++void setDoubleWide(CCreature & creature, bool value)
++{
++	JsonNode node;
++	node["doubleWide"].Bool() = value;
++	JsonDeserializer loader(nullptr, node);
++	creature.serializeJson(loader);
++}
++
++class PreviewLoader : public CCreatureHandler
++{
++public:
++	using CCreatureHandler::loadFromJson;
++};
++}
++
++TEST(CreaturePreview, OptionalPathSelectionNeverChangesBattlePath)
++{
++	CCreature creature;
++	creature.animDefName = AnimationPath::builtin("CPKMAN.DEF");
++	EXPECT_TRUE(creature.previewAnimDefName.empty());
++	EXPECT_EQ(creature.getPreviewAnimation(), creature.animDefName);
++	creature.previewAnimDefName = AnimationPath::builtin("own/preview.json");
++	EXPECT_EQ(creature.getPreviewAnimation(), creature.previewAnimDefName);
++	EXPECT_EQ(creature.animDefName, AnimationPath::builtin("CPKMAN.DEF"));
++}
++
++TEST(CreaturePreview, EveryLoadedOriginalTownCreatureRetainsLegacyPathAndBothCrops)
++{
++	size_t originalTownCreatures = 0;
++	LIBRARY->creh->forEach([&](const Creature * base, bool &)
++	{
++		const auto * creature = dynamic_cast<const CCreature *>(base);
++		ASSERT_NE(creature, nullptr);
++		if (creature->getModScope() != "core" || creature->getFactionID().getNum() < 0
++			|| creature->getFactionID().getNum() >= 9)
++			return;
++		++originalTownCreatures;
++		EXPECT_TRUE(creature->previewAnimDefName.empty()) << creature->getJsonKey();
++		EXPECT_EQ(creature->getPreviewAnimation(), creature->animDefName);
++		const int x = creature->isDoubleWide() ? 170 : 150;
++		expectRect(creature->getPreviewAnimationCrop(Point(450, 400), Point(100, 120)), x, 155, 100, 120);
++		expectRect(creature->getPreviewAnimationCrop(Point(450, 400), Point(100, 130)), x, 155, 100, 130);
++	});
++	EXPECT_GE(originalTownCreatures, 126U);
++}
++
++TEST(CreaturePreview, OneCompactCanvasCentersBothFootprintsInFortAndLargePanels)
++{
++	CCreature creature;
++	creature.previewAnimDefName = AnimationPath::builtin("own/preview.json");
++	for (bool doubleWide : {false, true})
++	{
++		setDoubleWide(creature, doubleWide);
++		expectRect(creature.getPreviewAnimationCrop(Point(100, 130), Point(100, 120)), 0, 5, 100, 120);
++		expectRect(creature.getPreviewAnimationCrop(Point(100, 130), Point(100, 130)), 0, 0, 100, 130);
++		// An authored center at50,65 projects to50,60 or50,65 respectively.
++		auto crop = creature.getPreviewAnimationCrop(Point(100, 130), Point(100, 120));
++		EXPECT_EQ(50 - crop.x, 50);
++		EXPECT_EQ(65 - crop.y, 60);
++	}
++}
++
++TEST(CreaturePreview, CustomCanvasCropUsesOneFixedCameraAndRejectsTooSmallResources)
++{
++	CCreature creature;
++	creature.previewAnimDefName = AnimationPath::builtin("own/preview.json");
++	expectRect(creature.getPreviewAnimationCrop(Point(104, 134), Point(100, 120)), 2, 7, 100, 120);
++	EXPECT_THROW(creature.getPreviewAnimationCrop(Point(99, 130), Point(100, 120)), std::invalid_argument);
++	EXPECT_THROW(creature.getPreviewAnimationCrop(Point(100, 119), Point(100, 120)), std::invalid_argument);
++	EXPECT_THROW(creature.getPreviewAnimationCrop(Point(100, 129), Point(100, 130)), std::invalid_argument);
++	EXPECT_THROW(creature.getPreviewAnimationCrop(Point(100, 130), Point(0, 120)), std::invalid_argument);
++}
++
++TEST(CreaturePreview, PresentationFieldDoesNotChangeJsonOrBinarySavedState)
++{
++	CCreature creature;
++	JsonNode beforeJson;
++	JsonSerializer beforeWriter(nullptr, beforeJson);
++	creature.serializeJson(beforeWriter);
++	CMemorySerializer beforeBinary;
++	beforeBinary.oser & creature;
++	auto beforeBytes = beforeBinary.extractBuffer();
++	creature.previewAnimDefName = AnimationPath::builtin("own/preview.json");
++	JsonNode afterJson;
++	JsonSerializer afterWriter(nullptr, afterJson);
++	creature.serializeJson(afterWriter);
++	CMemorySerializer afterBinary;
++	afterBinary.oser & creature;
++	EXPECT_EQ(beforeJson, afterJson);
++	EXPECT_EQ(beforeBytes, afterBinary.extractBuffer());
++	EXPECT_TRUE(afterJson["graphics"].isNull());
++	EXPECT_TRUE(afterJson["animationPreview"].isNull());
++}
++
++TEST(CreaturePreview, NativeGraphicsSchemaAcceptsOptionalPathAndRejectsWrongTypes)
++{
++	const JsonNode schema(JsonPath::builtin("config/schemas/creature.json"));
++	const std::string text = R"({"animation":"CPKMAN.DEF","animationTime":{"attack":1,"walk":1,"idle":10},"timeBetweenFidgets":1})";
++	JsonNode graphics(text.data(), text.size(), "CreaturePreviewSchema");
++	graphics.setModScope("core", true);
++	JsonValidator validator;
++	EXPECT_TRUE(validator.check(schema["properties"]["graphics"], graphics).empty());
++	graphics["animationPreview"].String() = "CPKMAN.DEF";
++	graphics.setModScope("core", true);
++	EXPECT_TRUE(validator.check(schema["properties"]["graphics"], graphics).empty());
++	graphics["animationPreview"].String() = "";
++	graphics.setModScope("core", true);
++	EXPECT_FALSE(validator.check(schema["properties"]["graphics"], graphics).empty());
++	graphics["animationPreview"].Bool() = true;
++	graphics.setModScope("core", true);
++	EXPECT_FALSE(validator.check(schema["properties"]["graphics"], graphics).empty());
++}
++
++TEST(CreaturePreview, MissingExplicitPreviewFailsTheRealNativeLoader)
++{
++	const std::string text = R"({
++		"name":{"singular":"Preview missing resource probe","plural":"Preview missing resource probes"},
++		"faction":"core:castle","special":true,"disabled":false,"growth":1,"level":1,
++		"hitPoints":1,"speed":1,"attack":1,"defense":1,"damage":{"min":1,"max":1},
++		"graphics":{"animation":"CPKMAN.DEF","animationPreview":"nonexistent-preview-probe.json",
++		"animationTime":{"attack":1,"walk":1,"idle":10},"timeBetweenFidgets":1}
++	})";
++	JsonNode node(text.data(), text.size(), "CreaturePreviewMissing");
++	node.setModScope("core");
++	PreviewLoader handler;
++	try
++	{
++		handler.loadFromJson("core", node, "previewMissingResourceProbe", 100000);
++		FAIL() << "An explicit unavailable preview must fail before object registration";
++	}
++	catch (const ModLoadingException & error)
++	{
++		EXPECT_NE(std::string(error.what()).find("animationPreview"), std::string::npos);
++	}
++}
+--- a/test/CMakeLists.txt
++++ b/test/CMakeLists.txt
+@@ -206,6 +206,7 @@
+ if(ENABLE_NULLKILLER2_AI)
+ 	list(APPEND test_SRCS
+ 		nullkiller2/AIGatewayDialogTest.cpp
++		entity/CreaturePreviewTest.cpp
+ 		nullkiller2/HeroLossReplanningTest.cpp
+ 		nullkiller2/AIGatewayTurnLifecycleTest.cpp
+ 		server/TerminalMoveCancellationTest.cpp

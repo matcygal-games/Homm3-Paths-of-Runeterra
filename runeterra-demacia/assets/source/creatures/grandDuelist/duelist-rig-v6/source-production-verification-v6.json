@@ -1,0 +1,833 @@
+{
+  "active_recipe_modified": false,
+  "actual_evaluated_mesh_floor_z_range": [
+    0.012999971397221088,
+    0.013000033795833588
+  ],
+  "arm_forearm_length_range": [
+    0.2731301486492156,
+    0.27313020825386053
+  ],
+  "arm_upper_length_range": [
+    0.2976994812488555,
+    0.2976994812488557
+  ],
+  "blend": {
+    "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/grandDuelist-duelist-rig-v6.blend",
+    "sha256": "feea6d5f2a59eeb90e78d5e37344270641fea093d4749bc501b1b02a796dc394"
+  },
+  "command": [
+    ".tools/blender45/blender-4.5.9-windows-x64/blender.exe",
+    "--background",
+    "--factory-startup",
+    "--python-exit-code",
+    "2",
+    "--python",
+    "runeterra-demacia/scripts/creature_duelist_rig.py",
+    "--",
+    "--project",
+    "C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-demacia",
+    "--unit",
+    "grandDuelist",
+    "--revision",
+    "6"
+  ],
+  "cwd": "C:\\Users\\matcy\\Documents\\code\\Homm3",
+  "dependencies": [
+    {
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/creature_rig_pilot.py",
+      "sha256": "fc73fef2ee3389e231389dd95b9bc75053e9b4c071e9859005663f12147e3778"
+    },
+    {
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/creature_ranger_rig.py",
+      "sha256": "af9a830d83b682e9ba9c254aa87a6efe215964c1442868091e1ec3be737fcab7"
+    }
+  ],
+  "executed_generator": "assets/source/creatures/grandDuelist/duelist-rig-v6/generator-executed-v6.py",
+  "executed_generator_sha256": "4faab9c5c0f8b485090b1e9b695464b2fa4bad1efd1b95b9e768a6278634347b",
+  "exit_code": 0,
+  "floor_constraint": "Actual3D whole-body non-penetration before render, with legs relaxing/straightening into a prone pose. No raster per-frame fit.",
+  "foot_bone_length_range": [
+    0.188215236757082,
+    0.18821533163545937
+  ],
+  "frames": [
+    {
+      "alpha8_bounds": [
+        180,
+        65,
+        386,
+        455
+      ],
+      "frame": 0,
+      "group": 0,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g00/g00-f000.png",
+      "rgba_sha256": "18ef60a5b5f0f02f20089c421a107430bd9f43bde49cc4a538862eb1b3d7d764",
+      "sha256": "a6b8c774413b0446871ec63c5a984b07ccce2870ab061850c47d10b5bb159092"
+    },
+    {
+      "alpha8_bounds": [
+        182,
+        63,
+        387,
+        451
+      ],
+      "frame": 1,
+      "group": 0,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g00/g00-f001.png",
+      "rgba_sha256": "1f737a48f079f8df3dc31f159627383850aadb236c4923f12f1940e995d8516b",
+      "sha256": "b641267d1dc587b423bbc4ccabe303fb0b159285d36125cca0b117a818e8c878"
+    },
+    {
+      "alpha8_bounds": [
+        182,
+        66,
+        387,
+        444
+      ],
+      "frame": 2,
+      "group": 0,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g00/g00-f002.png",
+      "rgba_sha256": "212f6b2b23309b6a4047bbc443e10701b2af41d6918f23340aa4950a224f167f",
+      "sha256": "c0f32d6e0bd477abe8e5627808001620b4c1126fb28b53f0e50e661e1b89cdef"
+    },
+    {
+      "alpha8_bounds": [
+        180,
+        65,
+        386,
+        446
+      ],
+      "frame": 3,
+      "group": 0,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g00/g00-f003.png",
+      "rgba_sha256": "126a9f5171a11bba8c99f2a199e91d7e9fc1e9ebce0a5d06b515827181fbd780",
+      "sha256": "2269c6657d0987ee850c3992da39acb36800fb149d11e519c5d7810f5f21007b"
+    },
+    {
+      "alpha8_bounds": [
+        178,
+        63,
+        387,
+        443
+      ],
+      "frame": 4,
+      "group": 0,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g00/g00-f004.png",
+      "rgba_sha256": "b7651b464c7f113879da8a9b39e27a6adb3ced8023a227c2dafa10c759360dc7",
+      "sha256": "e0d6768966bab8048bed3c62d8bb1f64e2691c734c20e54521f9ae993e02c5ae"
+    },
+    {
+      "alpha8_bounds": [
+        179,
+        66,
+        387,
+        436
+      ],
+      "frame": 5,
+      "group": 0,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g00/g00-f005.png",
+      "rgba_sha256": "04026a75396cb00085f3da0173c31fbf398771cfe865d0577ae75d05f00b1ec8",
+      "sha256": "33a138c3e3283b1f61154c12e5b249ebe0da7f0dbee4963bae02624e89b76dcf"
+    },
+    {
+      "alpha8_bounds": [
+        180,
+        65,
+        386,
+        457
+      ],
+      "frame": 0,
+      "group": 1,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g01/g01-f000.png",
+      "rgba_sha256": "615c6c2018f96f0e989ba9f4f8bdf9d464bb0a669ba899f857a787b45e0ae2a8",
+      "sha256": "e64959c8d6a9410762f9f4cbc353a35e9feabf3b89c5aa6abaf160e58d165995"
+    },
+    {
+      "alpha8_bounds": [
+        181,
+        64,
+        369,
+        457
+      ],
+      "frame": 1,
+      "group": 1,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g01/g01-f001.png",
+      "rgba_sha256": "5c40b021e9538684d2ac74fa521b6dc4a4c2665b3b414f896ed377c89e1b6c31",
+      "sha256": "8d09bf20b39864a7b2313d7392f6ea63e5a805559c37053dfeb67ffbff3583fd"
+    },
+    {
+      "alpha8_bounds": [
+        182,
+        65,
+        365,
+        457
+      ],
+      "frame": 2,
+      "group": 1,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g01/g01-f002.png",
+      "rgba_sha256": "8804a45b76c7495a4749e7086b0c8b848c1abec2d39c5ca5ce73d5cab8e2c316",
+      "sha256": "d8a01ab99e6b3f1175e13fde45567618a7f56c4269af05a4860418a8eca17f6b"
+    },
+    {
+      "alpha8_bounds": [
+        182,
+        65,
+        386,
+        457
+      ],
+      "frame": 3,
+      "group": 1,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g01/g01-f003.png",
+      "rgba_sha256": "1e3c56e6966b775dc6c063ab4697e779ea66adb4c813f5df27d0bfbca98a6d30",
+      "sha256": "f17f1a4356bdb7fac9cee9992cde4007d664980d62f78633ba19cca4d94dfcce"
+    },
+    {
+      "alpha8_bounds": [
+        180,
+        65,
+        386,
+        457
+      ],
+      "frame": 0,
+      "group": 2,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g02/g02-f000.png",
+      "rgba_sha256": "615c6c2018f96f0e989ba9f4f8bdf9d464bb0a669ba899f857a787b45e0ae2a8",
+      "sha256": "ef08c26956b0f435e91c09a3c7ba070bb95ed706c96e4a8d85913d2bb1d65c1f"
+    },
+    {
+      "alpha8_bounds": [
+        181,
+        65,
+        386,
+        457
+      ],
+      "frame": 1,
+      "group": 2,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g02/g02-f001.png",
+      "rgba_sha256": "95a18d3686c1e5368644d649bf3b619bea3f19456e1a19d9d87fe1e90939389b",
+      "sha256": "8897346e59c5399c3f54177c4a527799f8f647bf2e8a8f38dbd258c7f03ab36f"
+    },
+    {
+      "alpha8_bounds": [
+        182,
+        65,
+        386,
+        457
+      ],
+      "frame": 2,
+      "group": 2,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g02/g02-f002.png",
+      "rgba_sha256": "d9f2a398cbf1108ed997b8a112f47c7ac30e3436e6b7afed24f84e5499ccdf46",
+      "sha256": "3de35bd32c33c37d845273993aff5297a5ffb560f28b88fdaf8725ae2e5a5881"
+    },
+    {
+      "alpha8_bounds": [
+        182,
+        65,
+        386,
+        457
+      ],
+      "frame": 3,
+      "group": 2,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g02/g02-f003.png",
+      "rgba_sha256": "8b09e96495673dae8cd9ef536d5c8bb4fb8da143b1027c178f652aa51cca48cc",
+      "sha256": "4813b783bfe5bf6a1c46645d4ded41001b63fa6c31746d96ce156c460009ee5e"
+    },
+    {
+      "alpha8_bounds": [
+        181,
+        64,
+        374,
+        457
+      ],
+      "frame": 0,
+      "group": 3,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g03/g03-f000.png",
+      "rgba_sha256": "6f80b2b54a8a1ab974e951b3b840751b10624eddc889499b96ea0ee675387efa",
+      "sha256": "e8eecd84d8f71e9c3005912902f5b39f40e8111395f6771cd0977b9ebc0a0e92"
+    },
+    {
+      "alpha8_bounds": [
+        174,
+        65,
+        333,
+        457
+      ],
+      "frame": 1,
+      "group": 3,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g03/g03-f001.png",
+      "rgba_sha256": "16e7b58a951289e3f08dd8bd5cca49ddb3a95c9e21e0ef35caceb7ec014f0952",
+      "sha256": "5c9975522a73e41e118f0e67d1b17d3fb222d6306a31c91e2d9bd5f41ba5a880"
+    },
+    {
+      "alpha8_bounds": [
+        184,
+        64,
+        375,
+        457
+      ],
+      "frame": 2,
+      "group": 3,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g03/g03-f002.png",
+      "rgba_sha256": "c92b56c5209d8588c81442febe809b915df36bdfa5f1c87e9b79a478a90ed946",
+      "sha256": "38c9ea5e600148b7deebf62f23b6652ea5107ca3ac8303f7943218ee07e60651"
+    },
+    {
+      "alpha8_bounds": [
+        182,
+        65,
+        386,
+        457
+      ],
+      "frame": 3,
+      "group": 3,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g03/g03-f003.png",
+      "rgba_sha256": "1e3c56e6966b775dc6c063ab4697e779ea66adb4c813f5df27d0bfbca98a6d30",
+      "sha256": "24ed4fabeab75225fda9130a0a3c2b2f4e4cbe1e81c4e7151588fb686edfc89b"
+    },
+    {
+      "alpha8_bounds": [
+        180,
+        58,
+        320,
+        457
+      ],
+      "frame": 0,
+      "group": 4,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g04/g04-f000.png",
+      "rgba_sha256": "05feaf83e8bd3dfe2f32481ab378456ac5d20e6a962587b1f93c80c1ca50258b",
+      "sha256": "48911396e0850b36f376dd26a54a26ae0d4b13840ba2f41bb9c0ac7dd178cd8a"
+    },
+    {
+      "alpha8_bounds": [
+        182,
+        36,
+        314,
+        457
+      ],
+      "frame": 1,
+      "group": 4,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g04/g04-f001.png",
+      "rgba_sha256": "f5596a0a8642061620e13d6e2e04c0c5099cb5670ff87d82afa1c5785139d0fd",
+      "sha256": "d8c5ff29b9edd196ac4989696324e7a1b1d7843f74558737e96416230b0d26f9"
+    },
+    {
+      "alpha8_bounds": [
+        183,
+        68,
+        338,
+        457
+      ],
+      "frame": 2,
+      "group": 4,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g04/g04-f002.png",
+      "rgba_sha256": "fe2df4b5aaa012d7c88ee47f764a9617c851cdf800e63e2a3357113b88a721eb",
+      "sha256": "ee8871e70bcabd5b9a4a2337501d2f8f8bee733d464c5faed5228c6f1e65b27e"
+    },
+    {
+      "alpha8_bounds": [
+        182,
+        65,
+        386,
+        457
+      ],
+      "frame": 3,
+      "group": 4,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g04/g04-f003.png",
+      "rgba_sha256": "d9ecd866a833b2c13194aabbe529a1cd3b71d5fd2833b5a128c32d96ade57236",
+      "sha256": "592fd1b70a12acb978a84cd036f3610740820b9df5e7a195b56ecf2bd0de6043"
+    },
+    {
+      "alpha8_bounds": [
+        180,
+        59,
+        380,
+        447
+      ],
+      "frame": 0,
+      "group": 5,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g05/g05-f000.png",
+      "rgba_sha256": "442e06e1bb8f2c830641c49748e188135217f383067b61f924e2123a92ba7269",
+      "sha256": "2cf3e1305fda89807b8d967d32543c051e437e0161eae4e2be293514e5954662"
+    },
+    {
+      "alpha8_bounds": [
+        173,
+        83,
+        380,
+        439
+      ],
+      "frame": 1,
+      "group": 5,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g05/g05-f001.png",
+      "rgba_sha256": "62a3e07375744afbbf755a2c892982aabd4f3434753d2f6b02979d71849ceaf4",
+      "sha256": "3b823d15be0536ca4737133effc0fa5484bb0095c6a60508dd8e99a9bc4964d0"
+    },
+    {
+      "alpha8_bounds": [
+        183,
+        111,
+        373,
+        455
+      ],
+      "frame": 2,
+      "group": 5,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g05/g05-f002.png",
+      "rgba_sha256": "85272edceefd200b2237675924cd226624eedfb401ceba2fa7cb241db2ae37fc",
+      "sha256": "b17dccb14c8d00b39d33dea6b87cffcdfda98378a7f5a76bc9893374fe371042"
+    },
+    {
+      "alpha8_bounds": [
+        183,
+        139,
+        396,
+        434
+      ],
+      "frame": 3,
+      "group": 5,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g05/g05-f003.png",
+      "rgba_sha256": "90f46d73d2a4c07dc28db750ebf1a6e969c12f5ddefdd6d17b5913fbe50f6f1a",
+      "sha256": "e6bd3cb407ff27b4470af5e247897e23a9e1bec7221ffcf6936ff039ba5fceef"
+    },
+    {
+      "alpha8_bounds": [
+        139,
+        233,
+        402,
+        434
+      ],
+      "frame": 4,
+      "group": 5,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g05/g05-f004.png",
+      "rgba_sha256": "2a5a429e8eed68349a04bc85c31a3528e06be0c5cde3f28ecac5958226cd2b7d",
+      "sha256": "45329bc23b5a5d1c505cac079ab1cdc3924ed1b14729ef7a0bec5b743407e039"
+    },
+    {
+      "alpha8_bounds": [
+        93,
+        314,
+        413,
+        453
+      ],
+      "frame": 5,
+      "group": 5,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g05/g05-f005.png",
+      "rgba_sha256": "e565e2498e2952ddaeb272f8e3824283555458f3a1cf9f3c9cf7507c35983fdb",
+      "sha256": "d12f7e36e29187bcd51e1d213290df39948432365c7f06bc2dc918ae56b92a38"
+    },
+    {
+      "alpha8_bounds": [
+        181,
+        64,
+        348,
+        458
+      ],
+      "frame": 0,
+      "group": 7,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g07/g07-f000.png",
+      "rgba_sha256": "7dd2d2ef63f13da73846450d47596581bb9db8100b6ed732c733c21d3a6cc432",
+      "sha256": "de95a0863c24d994ad2c40be8960240ac0176dbac38b588e783b731c2e05a200"
+    },
+    {
+      "alpha8_bounds": [
+        176,
+        63,
+        322,
+        459
+      ],
+      "frame": 1,
+      "group": 7,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g07/g07-f001.png",
+      "rgba_sha256": "a22d5e50263d8871b8ede4ab28ab9e2b9dff19d4a2cbf0dcfa46e0fcbcfd695d",
+      "sha256": "7b15988101f1096717a4027efc11447f555df9d61988cddc1e4b7afcd21221a1"
+    },
+    {
+      "alpha8_bounds": [
+        168,
+        63,
+        324,
+        460
+      ],
+      "frame": 2,
+      "group": 7,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g07/g07-f002.png",
+      "rgba_sha256": "a043ba6ca93d3d31cfbfe229a5d5f6c21a1156e01559a23321a9b016c95831e8",
+      "sha256": "d71d211f18ab2819282d9c4a512c3ce0af6566740d6580467cb03853d3e455ec"
+    },
+    {
+      "alpha8_bounds": [
+        164,
+        62,
+        327,
+        459
+      ],
+      "frame": 3,
+      "group": 7,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g07/g07-f003.png",
+      "rgba_sha256": "87e55991a366cfe88e45f33105e777c0041d8302ec82d9c2c4a910760e2f7b9f",
+      "sha256": "8512fd92e74d1bcf937f99da5a21b9602a0b6eff5c5d77a5f9a2a245b7e3d1b9"
+    },
+    {
+      "alpha8_bounds": [
+        164,
+        62,
+        327,
+        459
+      ],
+      "frame": 0,
+      "group": 8,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g08/g08-f000.png",
+      "rgba_sha256": "3c6eded0a54805a3a104875bc9456409373febf41ccf8a7b76afcbb0145073fd",
+      "sha256": "1e710acc763188fadc1da7a88995f6fd42e76394dc2c1e618e504ee68e2ad32d"
+    },
+    {
+      "alpha8_bounds": [
+        168,
+        63,
+        324,
+        460
+      ],
+      "frame": 1,
+      "group": 8,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g08/g08-f001.png",
+      "rgba_sha256": "47d3c3ab35fee2a359482e22723834afdc010760d3f7815f04cab76f540c37cc",
+      "sha256": "85fb2c681a8448c26a3efc484106f31c3cfa05d5c3f95796618bf6cd7d9ff9fd"
+    },
+    {
+      "alpha8_bounds": [
+        176,
+        63,
+        322,
+        459
+      ],
+      "frame": 2,
+      "group": 8,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g08/g08-f002.png",
+      "rgba_sha256": "a4f0df266a35e6a09ca0a8f29b748e2cd23ce08f7b69c09bc267bd08beede31a",
+      "sha256": "c0743b8f54729072adb24a15de7d6ba57e53ed203314511f7526b7f3145b9273"
+    },
+    {
+      "alpha8_bounds": [
+        183,
+        64,
+        348,
+        458
+      ],
+      "frame": 3,
+      "group": 8,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g08/g08-f003.png",
+      "rgba_sha256": "787e4588fc107e12c16bf68f9e5020cde5a1eba8cb60c1f136f4f7df7429afed",
+      "sha256": "7e9387c423620a01aca0a94cf17228db96695d87253e61acb95209c27153e473"
+    },
+    {
+      "alpha8_bounds": [
+        180,
+        65,
+        386,
+        457
+      ],
+      "frame": 0,
+      "group": 11,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g11/g11-f000.png",
+      "rgba_sha256": "615c6c2018f96f0e989ba9f4f8bdf9d464bb0a669ba899f857a787b45e0ae2a8",
+      "sha256": "cd360d25a6af6491a583382d167a6278c25ac5b6e9dc1f45f9f24e037ad5ef69"
+    },
+    {
+      "alpha8_bounds": [
+        179,
+        64,
+        372,
+        456
+      ],
+      "frame": 1,
+      "group": 11,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g11/g11-f001.png",
+      "rgba_sha256": "e8991e1959fc4a3ca1f89bede8b532d83e9d4b67954da8369e94e2c3f71abbbf",
+      "sha256": "a484154d21c68af6162b4851925b18f552ed4863819879b796b8175e8da072ae"
+    },
+    {
+      "alpha8_bounds": [
+        179,
+        68,
+        356,
+        456
+      ],
+      "frame": 2,
+      "group": 11,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g11/g11-f002.png",
+      "rgba_sha256": "487961581bac345df00c62657b135dc98d7b0b18f09d33f2d057c483fb3e4372",
+      "sha256": "78e2b9c684c6c32e827c1733d676132a36f2747351cd2ec902fd94a8edffc2a6"
+    },
+    {
+      "alpha8_bounds": [
+        194,
+        81,
+        432,
+        463
+      ],
+      "frame": 3,
+      "group": 11,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g11/g11-f003.png",
+      "rgba_sha256": "b2c19a6a1e0870cf17c58138e2eb364150563ac7f766d3295b103685b77a0ffd",
+      "sha256": "d537a959d5403f4c250d7d68b64d973892ea3afb1734e8500d34f8849feda33b"
+    },
+    {
+      "alpha8_bounds": [
+        187,
+        71,
+        409,
+        460
+      ],
+      "frame": 4,
+      "group": 11,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g11/g11-f004.png",
+      "rgba_sha256": "b08f4ada400fd47567798afb2d4aed28cccab903ab7425afbf2d6f599a8bb7a0",
+      "sha256": "1481990c5da854a094229b7c094833a0bc45d17f4bc3ffc4d0adb8bef91f50f5"
+    },
+    {
+      "alpha8_bounds": [
+        180,
+        65,
+        386,
+        457
+      ],
+      "frame": 5,
+      "group": 11,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g11/g11-f005.png",
+      "rgba_sha256": "00deaee064c81acd2218456a64a04eeed39d3a5fa74d91ba006e273a9ce6e68d",
+      "sha256": "01326d5355bb10a9df63812fa61f1e7460503fe725a8bf14fbcdee73d6d33403"
+    },
+    {
+      "alpha8_bounds": [
+        180,
+        65,
+        386,
+        457
+      ],
+      "frame": 0,
+      "group": 12,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g12/g12-f000.png",
+      "rgba_sha256": "615c6c2018f96f0e989ba9f4f8bdf9d464bb0a669ba899f857a787b45e0ae2a8",
+      "sha256": "b0b61ae944e64092bf9d72b549c48b46aeffe0b96b5d534bdadf05def72e17be"
+    },
+    {
+      "alpha8_bounds": [
+        179,
+        64,
+        374,
+        456
+      ],
+      "frame": 1,
+      "group": 12,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g12/g12-f001.png",
+      "rgba_sha256": "b6522ceb352e5b05e0db73e08ba20a91a5ca6bf5f2c80d6f5ee4f1e27e9b4979",
+      "sha256": "00bda03cf1a623896189cab0f2b5d929acdf26b822b5c8cabf00c33534e4019b"
+    },
+    {
+      "alpha8_bounds": [
+        179,
+        68,
+        361,
+        456
+      ],
+      "frame": 2,
+      "group": 12,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g12/g12-f002.png",
+      "rgba_sha256": "64f0df2a73032770d509f5f06f5180356d0d64606bc2b45490cd606b34b2c327",
+      "sha256": "dc43d6ff9f8d49228c7988adb7f604efd33b7b9e9cb30363646613f3abd064f4"
+    },
+    {
+      "alpha8_bounds": [
+        194,
+        81,
+        435,
+        463
+      ],
+      "frame": 3,
+      "group": 12,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g12/g12-f003.png",
+      "rgba_sha256": "3b95041a406fb807fc51aedbb9eafeae4ef24e9c480421092c697a74cd95a3ef",
+      "sha256": "bdb056913fff9f8984ca2d1335642344b52b4e5808e1b7430238b46093bf9d06"
+    },
+    {
+      "alpha8_bounds": [
+        187,
+        71,
+        409,
+        460
+      ],
+      "frame": 4,
+      "group": 12,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g12/g12-f004.png",
+      "rgba_sha256": "8488f874a67753208d38b8019f4d3a9ffebfd7766413c9c9c74ec47bbfc4602b",
+      "sha256": "fb441cd54514b89ef540243058b799d6cd62909a627bcbdc42f5b0a18ae8fb88"
+    },
+    {
+      "alpha8_bounds": [
+        180,
+        65,
+        386,
+        457
+      ],
+      "frame": 5,
+      "group": 12,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g12/g12-f005.png",
+      "rgba_sha256": "00deaee064c81acd2218456a64a04eeed39d3a5fa74d91ba006e273a9ce6e68d",
+      "sha256": "bbdb0bcdef4732c99904e2caa655d175844274a45ce27e7090d8b83d98e06220"
+    },
+    {
+      "alpha8_bounds": [
+        180,
+        65,
+        386,
+        457
+      ],
+      "frame": 0,
+      "group": 13,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g13/g13-f000.png",
+      "rgba_sha256": "615c6c2018f96f0e989ba9f4f8bdf9d464bb0a669ba899f857a787b45e0ae2a8",
+      "sha256": "b938139a34f7f2862f17b15329b6bc29a689b9ab26bc85081bb685ce2d0a6141"
+    },
+    {
+      "alpha8_bounds": [
+        179,
+        64,
+        374,
+        456
+      ],
+      "frame": 1,
+      "group": 13,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g13/g13-f001.png",
+      "rgba_sha256": "067c51a9384130f66dd907418fbdbdbfaf33793e201506e9fb8f634f1bf61725",
+      "sha256": "ed4bf5967ae8ac7eb63617879f4ac12d5d30fbd382689374eee40062e4d7a1c2"
+    },
+    {
+      "alpha8_bounds": [
+        179,
+        68,
+        364,
+        456
+      ],
+      "frame": 2,
+      "group": 13,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g13/g13-f002.png",
+      "rgba_sha256": "6d533931f923623239e395cd6db319026032c28807ec777b204df92bdfdd2569",
+      "sha256": "f1cad23a85ff395df2b78fe4db72db1df73536aa00ba804a59c8a384b2633606"
+    },
+    {
+      "alpha8_bounds": [
+        194,
+        81,
+        433,
+        463
+      ],
+      "frame": 3,
+      "group": 13,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g13/g13-f003.png",
+      "rgba_sha256": "5d499bcb358ce15090609fbd3ccc3cf705eec0d4b6f35795551a170c50d38246",
+      "sha256": "5d8b72a133c8de6e471290cf7b1c746d360d63053b232b282bea9e7dc38decb1"
+    },
+    {
+      "alpha8_bounds": [
+        187,
+        71,
+        406,
+        460
+      ],
+      "frame": 4,
+      "group": 13,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g13/g13-f004.png",
+      "rgba_sha256": "68ce46638e7511f15f7c12789f8163c7201df4462b11e774285a793ac464c387",
+      "sha256": "ec1fd1f4250f2d8b1cd8fed3b2405bfc820cf7dc74788ce776df036fc2285966"
+    },
+    {
+      "alpha8_bounds": [
+        180,
+        65,
+        386,
+        457
+      ],
+      "frame": 5,
+      "group": 13,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-actions/g13/g13-f005.png",
+      "rgba_sha256": "00deaee064c81acd2218456a64a04eeed39d3a5fa74d91ba006e273a9ce6e68d",
+      "sha256": "1baff2564a8063275b631c65859cd698bd37017cc96b2d2f844bd9c52764c0b6"
+    }
+  ],
+  "intentional_within_group_holds": {},
+  "leg_lower_length_range": [
+    0.4049999418782224,
+    0.40500008069146476
+  ],
+  "leg_upper_length_range": [
+    0.41499994975553195,
+    0.41500003136089514
+  ],
+  "melee_timing": {
+    "authority": "client/battle/BattleAnimationClasses.cpp MeleeAttackAnimation::tick: currentFrame*2>=totalFrames fires HIT.",
+    "frames": 6,
+    "impact_zero_based": 3
+  },
+  "metadata": {
+    "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/duelist-production-v6.json",
+    "sha256": "cde9e2418226b82a7dd85d89fe7dab727ae794ca68156da64534d1b80da48b51"
+  },
+  "previews": [
+    {
+      "group": 0,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-native-review/g00-source-motion-v1.gif",
+      "sha256": "db4c7a76856ca08e167e53b64c752cb7e182b822c5a5811157fec989ee8129c1"
+    },
+    {
+      "group": 4,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-native-review/g04-source-motion-v1.gif",
+      "sha256": "cdec8512647e8518331208fb857ecd9c058e49db8dd56d1102089e6ffb304d61"
+    },
+    {
+      "group": 5,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-native-review/g05-source-motion-v1.gif",
+      "sha256": "b7f6a428c162b2992c5761a6d76cbc82ecf52c305aa1d91713139533bd300459"
+    },
+    {
+      "group": 11,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-native-review/g11-source-motion-v1.gif",
+      "sha256": "8dc4a3fec6b635ed428ebf9d5cb3ba312ba91027e9fb95d723688ec202938957"
+    },
+    {
+      "group": 12,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-native-review/g12-source-motion-v1.gif",
+      "sha256": "3fc7a8c990a657456f1b5732ad0d4a6eea55a76ad60686a52f62e7459a09c4bd"
+    },
+    {
+      "group": 13,
+      "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/raw-native-review/g13-source-motion-v1.gif",
+      "sha256": "37d66a92217155d294f487d19ad3539b97aa9a558838eff59882bd2d9624f271"
+    }
+  ],
+  "rendered_png_count": 54,
+  "selected_source_revision": 6,
+  "shared_genuine_ready_transition_frames": {
+    "1": [
+      0
+    ],
+    "11": [
+      0
+    ],
+    "12": [
+      0
+    ],
+    "13": [
+      0
+    ]
+  },
+  "status": "actual source renders verified; final animation assets incomplete",
+  "timing_hold_explanation": "Stable holding, quiet readiness/recovery and closed-cycle endpoints may reuse the same actual source pose. The attack middle frames contain one genuine windup/lunge/impact/recovery; no entire required action is an idle substitute. These repeats are not counted as extra distinct motion.",
+  "unit": "grandDuelist",
+  "visual_approval_granted": false,
+  "visual_limits": [
+    "Plain/rounded sleeve, knee and helmet forms remain raw guide geometry, not professional final creature art.",
+    "Thin rapier contrast, cloth folds, face identity, crest legibility and coherent painted finish need native visual review.",
+    "No VCMI Duelist action/shadow/selection/battle playback has been tested."
+  ]
+}

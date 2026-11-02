@@ -1,0 +1,102 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "Empty 800x374 town ground in the native Heroes III town canvas: wet concrete and swamp ground, no buildings baked in. The buildings arrive as separate layers.",
+  "canvas": [
+    800,
+    374
+  ],
+  "content_box": [
+    0,
+    0,
+    800,
+    374
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; prompted and technically assembled by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/background/generation-v2.json",
+      "sha256": "8eec85e642c530fc2cf73821319eb1893812b3f008dd7b3f302bc60fc9b0a982"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/background/provider-empty-v1.png",
+      "sha256": "624e2cf76b03361fe4a1dcdc0a3c3932211bf167db5643ec8638c84d30108737"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/background/provider-pit-cleanup-v2.png",
+      "sha256": "e470a7494784dc8cfbe72ac34c8b41c78b3b6bd560918af3a566352f42d67dd5"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/background/prompt-v1.txt",
+      "sha256": "810ed06259d56145c13bd5dd302dd4ba8b1d4ab64d4beea62d988351aab0c1b1"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/background/pit-removal-prompt.txt",
+      "sha256": "39ae211e5454dd42adfa790630b5b7865bc327dfd37785455513fdb5f22fc5ed"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261027-v2/town-layout.json",
+      "sha256": "9f9d4adfb8e5a379fde775291760baa993b4d664a08449f1e920727358d171ef"
+    }
+  ],
+  "fit": "contain",
+  "generation": {
+    "image_generation_used": true,
+    "inputs": [
+      {
+        "source": "assets/source/town/complete-town-20261027-v2/background/provider-empty-v1.png",
+        "source_sha256": "624e2cf76b03361fe4a1dcdc0a3c3932211bf167db5643ec8638c84d30108737"
+      },
+      {
+        "source": "assets/source/town/complete-town-20261027-v2/background/provider-pit-cleanup-v2.png",
+        "source_sha256": "e470a7494784dc8cfbe72ac34c8b41c78b3b6bd560918af3a566352f42d67dd5"
+      }
+    ],
+    "master": "assets/source/town/complete-town-20261027-v2/background/native-empty-v2.png",
+    "master_sha256": "5d48fbbd5547dd69a67828d8bac7a2b53d1f9dcbab23ff87894293dbcac7b270",
+    "model": null,
+    "model_disclosed": false,
+    "native_visual_review": "pending",
+    "prompts": [
+      {
+        "source": "assets/source/town/complete-town-20261027-v2/background/prompt-v1.txt",
+        "source_sha256": "810ed06259d56145c13bd5dd302dd4ba8b1d4ab64d4beea62d988351aab0c1b1"
+      },
+      {
+        "source": "assets/source/town/complete-town-20261027-v2/background/pit-removal-prompt.txt",
+        "source_sha256": "39ae211e5454dd42adfa790630b5b7865bc327dfd37785455513fdb5f22fc5ed"
+      }
+    ],
+    "provider": "OpenAI built-in image_gen",
+    "release_accepted": false,
+    "route": "Matching empty city imagegen extraction from root-reviewed complete master, with genuinely painted bounded functional-arena removal pasted atnative390,217,183,143. Further actual-master source-preserving masked assembly/inspection remains.",
+    "status": "authored configuration",
+    "whole_town_master": "assets/source/town/complete-town-20261027-v2/complete-design/provider-master-v2.png",
+    "whole_town_master_sha256": "924a9fd1980a55d8e6b2914088029e42472e82abf126986cbce8f490b9cafa34"
+  },
+  "id": "zaun.town.background",
+  "identity_review": "build/reports/complete-town-20261027-v2/SOURCE_REVIEW.json",
+  "native_visual_review": "pending",
+  "output_path": "Content/Sprites/runeterra/zaun/town/background.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": false,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/complete-town-20261027-v2/background/assembled-native.png",
+  "source_sha256": "8b8d541d6f7111d8ab2f7253ae6a34ed802d3ae9d4b8ee4b008b2825927107ab",
+  "status": "built-unreviewed",
+  "title": "town background",
+  "visual_approval_granted": false
+}

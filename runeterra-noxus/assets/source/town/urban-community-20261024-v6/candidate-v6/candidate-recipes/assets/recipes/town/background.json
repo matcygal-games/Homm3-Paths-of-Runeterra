@@ -1,0 +1,66 @@
+{
+  "acceptance": "Production requirements only. No rig/guide/primitive/reference may substitute for painted final art; this recipe must fail while its real master/hash is absent.",
+  "art_direction": "Independent Noxian iron/crimson/black subjects in Heroes III native painted language. Never recolour Castle or Demacia art, import original pixels or invent an official crest.",
+  "canvas": [
+    800,
+    374
+  ],
+  "composition_contract": "Independent Noxian town terrain/layout; no buildings baked into terrain. Ground planes,19-site/36-state composition,occlusion and all clicks need actual source/native review.",
+  "credits": {
+    "author": "Project-directed OpenAI built-in imagegen; deterministic project conversion",
+    "license": null,
+    "redistribution": "unresolved; no release or redistribution approval"
+  },
+  "dimensions_basis": {
+    "canvas": [
+      800,
+      374
+    ],
+    "mode": "RGB",
+    "reference_only": "runeterra-demacia/references/images/tbcsback.pcx.png",
+    "reference_sha256": "949012ea68999207934bc482f1552858474fe50cefddef17eaac00d4b98c2be9",
+    "use": "Dimensions/format only. No reference pixels, palette, source recipe, layout silhouette or licensed art copied."
+  },
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in imagegen",
+    "model": "Not exposed by the built-in tool",
+    "prompt": "Use case: precise-object-edit. EDIT THIS CLOSE-UP BACKGROUND PATCH ONLY. It is a 6\u00c3\u2014 nearest-neighbor enlarged 150\u00c3\u201490 native pixel crop from an ORIGINAL HeroesIII painted2D Noxian city. Keep the SAME 5:3 canvas, preferably900\u00c3\u2014540. We will downsample back to150\u00c3\u201490 and place it at EXACT originalposition. Do NOT add anycastle/building.\n\nImage1 is target backgroundpatch. Image2 shows GREEN area that MUST BECOME DRY LEVEL COBBLED GROUND. Yellowhorizontalguide is where separatebuildingbases will end; CYAN horizontal line is the LOWEST allowed shorelineedge. Image3 white/blackregionmask: WHITE=painttheleveldryground; BLACK=preserveoutsidecontext. Image4 yellow irregularcontactlines mark ACTUAL lowest stonebases ofallthreeexistingfortifications, for diagnosisONLY. They are NOT architecturetoinsert and mustnotappear inoutput.\n\nCRITICAL: Present target has WATER and littleROOFS UNDER the yellowbasecontactlines. This is WRONG. REMOVE THE WATER, LITTLE HOUSES, POSTS, RAILINGS AND VERTICAL STONEWALLFACE through the ENTIRE GREEN/WHITE AREA. Replace all of it with ONE CONTINUOUS LEVEL SUPPORTED WALKABLE BASALT/COBBLESTONE COURTYARD SURFACE, connecting naturally to the pavedground atLEFT. The TOP SURFACE must remain actualdryfloor fromnear TOP ofcrop all the way down to the CYANline about76%down thecrop. The separatebuilding's fullbasecontacts around49%down must stand comfortablyonfloor, with moredrypaving BELOW them. Do NOT put a cliff/wall/waterlineat50%down like currenttarget. Any quaysideVERTICALFACE or WATER must start ONLY IN THEBOTTOMQUARTER BELOW thecyanline. Keep the bottomstrip's quietwater/boatcontext and the topmostedge context wherepossible. Do not fill the oceanbelowthecyanline.\n\nMatch existing originalHeroesIII PAINTED2D stonegrain, native cobblestonescale, perspective/upperleftwarm lighting, darkcharcoal/warmgray/brownstone and restrainedamberfirelight. The floor must be a genuinely painted believablegroundplane with no rectangularpatchseams or floatingplatform. NO newbattlement/fence alongyellowlines/greenregionedges. No code/vector/3D/Blender/gloss/photo; no text, guidecolors/lines, UI or labels. OUTPUT clean150\u00c3\u201490proportionedbackgroundpatch paintedat900\u00c3\u2014540: DRY GROUND ACROSSUPPER76%, intentionalquaywateronlyBOTTOM24%, nofunctionalbuilding.",
+    "painted_master": "assets/source/town/urban-community-20261024-v6/background-master-v6.png",
+    "painted_master_sha256": "23c40b323af27bc87000e8b3e72fbdd7f51a8a9a90777023eda4909ffb083eb0",
+    "generation_record": "assets/source/town/urban-community-20261024-v6/background-generation-v6.json",
+    "generation_record_sha256": "f116a5fb145228d634be9a3eae5bbac4e921daa6fd1fccefd3c5369a1174a526",
+    "conversion": "Uniform cover-fit to native800x374; no artistic raster changes."
+  },
+  "inventory": {
+    "asset_id": "noxus.Sprites.runeterra.noxus.town.background.png",
+    "manifest": "assets/manifest.json",
+    "recipe_path": "assets/recipes/town/background.json"
+  },
+  "output_path": "Content/Sprites/runeterra/noxus/town/background.png",
+  "production_status": "painted-master-complete",
+  "recipe_type": "raster",
+  "require_alpha": false,
+  "required_before_conversion": [
+    "Real independent Noxus painted master and truthful provenance",
+    "Non-null SHA256 source pins",
+    "Official Noxus emblem provenance where used",
+    "Native-size silhouette/composition/alpha and role review",
+    "Explicit coordinator selection; no automatic acceptance"
+  ],
+  "role": "town-background",
+  "sha256": "23c40b323af27bc87000e8b3e72fbdd7f51a8a9a90777023eda4909ffb083eb0",
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/urban-community-20261024-v6/background-native-v6.png",
+  "source_sha256": "23c40b323af27bc87000e8b3e72fbdd7f51a8a9a90777023eda4909ffb083eb0",
+  "status": "built-unreviewed",
+  "visual_approval_granted": false,
+  "source_canvas": [
+    800,
+    374
+  ]
+}

@@ -1,0 +1,494 @@
+diff --git a/AI/Nullkiller2/Behaviors/EscapeBehavior.cpp b/AI/Nullkiller2/Behaviors/EscapeBehavior.cpp
+index e419e3d0a..90b97cc21 100644
+--- a/AI/Nullkiller2/Behaviors/EscapeBehavior.cpp
++++ b/AI/Nullkiller2/Behaviors/EscapeBehavior.cpp
+@@ -115,6 +115,17 @@ void considerEscapePath(
+ 		return;
+ 
+ 	const auto destination = path.targetTile();
++	for(const auto * object : aiNk->cc->getVisitableObjs(destination))
++	{
++		if(object->ID != Obj::HERO)
++			continue;
++
++		const auto * occupyingHero = dynamic_cast<const CGHeroInstance *>(object);
++		if(occupyingHero && occupyingHero != path.targetHero && !occupyingHero->isGarrisoned()
++			&& aiNk->cc->getPlayerRelations(path.targetHero->getOwner(), occupyingHero->getOwner()) != PlayerRelations::ENEMIES)
++			return;
++	}
++
+ 	const auto & currentThreat = threatenedHero->second;
+ 	const auto & destinationThreat = aiNk->dangerHitMap->getTileThreat(destination).fastestDanger;
+ 	const uint64_t immediateDestinationDanger = destinationThreat.turn < 1 ? destinationThreat.danger : 0;
+diff --git a/AI/Nullkiller2/Goals/ExecuteHeroChain.cpp b/AI/Nullkiller2/Goals/ExecuteHeroChain.cpp
+index a0c5dc0d1..f71a02ce6 100644
+--- a/AI/Nullkiller2/Goals/ExecuteHeroChain.cpp
++++ b/AI/Nullkiller2/Goals/ExecuteHeroChain.cpp
+@@ -58,6 +58,9 @@ bool executeSpecialAction(
+ 	const auto parts = action->getParts();
+ 	for(const auto & part : parts)
+ 	{
++		if(aiGw->cc->getPlayerStatus(aiGw->playerID) != EPlayerStatus::INGAME)
++			return false;
++
+ 		if(!executeSpecialAction(aiGw, hero, heroPtr, destination, part))
+ 			return false;
+ 	}
+@@ -146,6 +149,9 @@ bool ExecuteHeroChain::isObjectAffected(ObjectInstanceID id) const
+ 
+ void ExecuteHeroChain::accept(AIGateway * aiGw)
+ {
++	if(aiGw->cc->getPlayerStatus(aiGw->playerID) != EPlayerStatus::INGAME)
++		return;
++
+ 	logAi->debug("Executing hero chain towards %s. Path %s", targetName, chainPath.toString());
+ 
+ 	aiGw->nullkiller->setActive(chainPath.targetHero, tile);
+@@ -194,6 +200,9 @@ void ExecuteHeroChain::accept(AIGateway * aiGw)
+ 
+ 	for(int i = chainPath.nodes.size() - 1; i >= 0; i--)
+ 	{
++		if(aiGw->cc->getPlayerStatus(aiGw->playerID) != EPlayerStatus::INGAME)
++			return;
++
+ 		auto  * node = &chainPath.nodes[i];
+ 
+ 		const CGHeroInstance * hero = node->targetHero;
+@@ -237,6 +246,9 @@ void ExecuteHeroChain::accept(AIGateway * aiGw)
+ 					if(!executeSpecialAction(aiGw, hero, heroPtr, node->coord, node->specialAction))
+ 						return;
+ 
++					if(aiGw->cc->getPlayerStatus(aiGw->playerID) != EPlayerStatus::INGAME)
++						return;
++
+ 					if(!heroPtr.isVerified())
+ 					{
+ 						logAi->error("Hero %s was lost trying to execute special action. Exit hero chain.", heroPtr.nameOrDefault());
+@@ -257,6 +269,12 @@ void ExecuteHeroChain::accept(AIGateway * aiGw)
+ 					// hero can be already on the target tile after move in specialAction->execute()
+ 					if(node->coord == heroPtr->visitablePos())
+ 						continue;
++
++					if(!hero->movementPointsRemaining())
++					{
++						aiGw->nullkiller->lockHero(hero, HeroLockedReason::HERO_CHAIN);
++						return;
++					}
+ 				}
+ 				else if(i > 0 && aiGw->nullkiller->isObjectGraphAllowed())
+ 				{
+@@ -343,6 +361,9 @@ void ExecuteHeroChain::accept(AIGateway * aiGw)
+ 					try
+ 					{
+ 						const auto movementResult = moveHeroToTile(aiGw, hero, node->coord);
++						if(aiGw->cc->getPlayerStatus(aiGw->playerID) != EPlayerStatus::INGAME)
++							return;
++
+ 						if(movementResult == HeroMovementResult::COMPLETE)
+ 						{
+ 							if(!heroPtr.isVerified())
+diff --git a/test/nullkiller2/AIGatewayMovementTest.cpp b/test/nullkiller2/AIGatewayMovementTest.cpp
+index b68321354..6d3138ab2 100644
+--- a/test/nullkiller2/AIGatewayMovementTest.cpp
++++ b/test/nullkiller2/AIGatewayMovementTest.cpp
+@@ -45,6 +45,7 @@ protected:
+ 
+ 	NK2AI::HeroMovementResult moveHeroTo(const int3 & destination)
+ 	{
++		std::shared_lock gameStateLock(CGameState::mutex);
+ 		return gateway->moveHeroToTile(destination, NK2AI::HeroPtr(hero, callback.get()));
+ 	}
+ 
+diff --git a/test/nullkiller2/Engine/TaskFailureTest.cpp b/test/nullkiller2/Engine/TaskFailureTest.cpp
+index 3f7c946a6..ad1d4662d 100644
+--- a/test/nullkiller2/Engine/TaskFailureTest.cpp
++++ b/test/nullkiller2/Engine/TaskFailureTest.cpp
+@@ -19,6 +19,8 @@
+ 
+ #include "lib/callback/CCallback.h"
+ #include "lib/mapObjects/CGHeroInstance.h"
++#include "lib/mapObjects/CGTownInstance.h"
++#include "lib/networkPacks/PacksForClient.h"
+ 
+ #include <tbb/global_control.h>
+ 
+@@ -99,6 +101,20 @@ protected:
+ 
+ 		startWithMap(std::move(builder));
+ 	}
++
++	void onlySafeDestination(NK2AI::Nullkiller & ai, const int3 & destination)
++	{
++		// Keep real map paths and object interactions while isolating the escape scorer.
++		for(int y = 0; y < 36; ++y)
++			for(int x = 0; x < 36; ++x)
++			{
++				auto & threat = const_cast<NK2AI::HitMapNode &>(ai.dangerHitMap->getTileThreat(int3(x, y, 0))).fastestDanger;
++				threat.turn = 0;
++				threat.danger = 1000000;
++				threat.threat = 1000000;
++			}
++		const_cast<NK2AI::HitMapNode &>(ai.dangerHitMap->getTileThreat(destination)).fastestDanger = NK2AI::HitMapInfo::NoThreat;
++	}
+ };
+ }
+ 
+@@ -165,6 +181,7 @@ TEST_F(FailedEscapeRouteTest, replanningAvoidsFailedMultiNodeEscapeRoute)
+ 		*escapingHero,
+ 		failedDestination,
+ 		escapingHero->visitablePos()));
++	std::shared_lock gameStateLock(CGameState::mutex);
+ 	ASSERT_FALSE(NK2AI::NullkillerTestAccess::executeTask(ai, failedTask));
+ 
+ 	const auto replannedGoals = escape.decompose(&ai);
+@@ -173,3 +190,72 @@ TEST_F(FailedEscapeRouteTest, replanningAvoidsFailedMultiNodeEscapeRoute)
+ 	EXPECT_NE(replannedChain->getPath().targetTile(), failedDestination)
+ 		<< "the failed final destination must not be selected again";
+ }
++
++TEST_F(FailedEscapeRouteTest, friendlyHeroEndpointIsNotAnEscapeButFreeEndpointIs)
++{
++	tbb::global_control singleThread(tbb::global_control::max_allowed_parallelism, 1);
++	TinyH3M::TinyH3MBuilder builder(EMapFormat::SOD);
++	builder.size(36, false).playerActive(PLAYER).playerActive(ENEMY)
++		.hero({5, 5, 0}, HeroTypeID(0), PLAYER).heroGarrison({{CreatureID(0), 1}})
++		.hero({9, 5, 0}, HeroTypeID(2), PLAYER).heroGarrison({{CreatureID(0), 1}})
++		.hero({7, 5, 0}, HeroTypeID(1), ENEMY).heroGarrison({{CreatureID(13), 20}});
++	startWithMap(std::move(builder));
++	revealMap(PLAYER);
++	auto * escapingHero = findHeroAt(int3(5, 5, 0));
++	auto * partner = findHeroAt(int3(9, 5, 0));
++	ASSERT_NE(escapingHero, nullptr);
++	ASSERT_NE(partner, nullptr);
++	escapingHero->setMovementPoints(2000);
++	auto gateway = makeGateway(PLAYER);
++	auto & ai = *gateway->nullkiller;
++	NK2AI::NullkillerTestAccess::prepareState(ai);
++	const auto meetingPaths = ai.pathfinder->getPathInfo(partner->visitablePos());
++	ASSERT_TRUE(std::any_of(meetingPaths.begin(), meetingPaths.end(), [&](const auto & path)
++	{
++		return path.targetHero == escapingHero && path.turn() == 0;
++	})) << "a real same-day friendly meeting must be pathfindable";
++	onlySafeDestination(ai, partner->visitablePos());
++	NK2AI::Goals::EscapeBehavior escape;
++	EXPECT_EQ(findHeroChain(escape.decompose(&ai), escapingHero), nullptr);
++
++	const int3 freeDestination(8, 6, 0);
++	onlySafeDestination(ai, freeDestination);
++	const auto freeGoals = escape.decompose(&ai);
++	const auto * freeChain = findHeroChain(freeGoals, escapingHero);
++	ASSERT_NE(freeChain, nullptr);
++	EXPECT_EQ(freeChain->getPath().targetTile(), freeDestination);
++}
++
++TEST_F(FailedEscapeRouteTest, townGarrisonDoesNotBlockEscapeDestination)
++{
++	tbb::global_control singleThread(tbb::global_control::max_allowed_parallelism, 1);
++	TinyH3M::TinyH3MBuilder builder(EMapFormat::SOD);
++	builder.size(36, false).playerActive(PLAYER).playerActive(ENEMY)
++		.hero({5, 5, 0}, HeroTypeID(0), PLAYER).heroGarrison({{CreatureID(0), 1}})
++		.town({14, 8, 0}, FactionID(0), PLAYER)
++		.hero({13, 8, 0}, HeroTypeID(2), PLAYER).heroGarrison({{CreatureID(0), 1}})
++		.hero({7, 5, 0}, HeroTypeID(1), ENEMY).heroGarrison({{CreatureID(13), 20}});
++	startWithMap(std::move(builder));
++	revealMap(PLAYER);
++	auto * escapingHero = findHeroAt(int3(5, 5, 0));
++	auto * garrisonHero = findHeroAt(int3(13, 8, 0));
++	auto * town = findFirst<CGTownInstance>();
++	ASSERT_NE(escapingHero, nullptr);
++	ASSERT_NE(garrisonHero, nullptr);
++	ASSERT_NE(town, nullptr);
++	SetHeroesInTown garrison;
++	garrison.tid = town->id;
++	garrison.garrison = garrisonHero->id;
++	gameState()->apply(garrison);
++	ASSERT_TRUE(garrisonHero->isGarrisoned());
++	ASSERT_EQ(town->getGarrisonHero(), garrisonHero);
++	escapingHero->setMovementPoints(2000);
++	auto gateway = makeGateway(PLAYER);
++	auto & ai = *gateway->nullkiller;
++	NK2AI::NullkillerTestAccess::prepareState(ai);
++	onlySafeDestination(ai, town->visitablePos());
++	const auto goals = NK2AI::Goals::EscapeBehavior().decompose(&ai);
++	const auto * chain = findHeroChain(goals, escapingHero);
++	ASSERT_NE(chain, nullptr);
++	EXPECT_EQ(chain->getPath().targetTile(), town->visitablePos());
++}
+diff --git a/test/nullkiller2/Goals/ExecuteHeroChainTest.cpp b/test/nullkiller2/Goals/ExecuteHeroChainTest.cpp
+index 159174d62..2a2edb44d 100644
+--- a/test/nullkiller2/Goals/ExecuteHeroChainTest.cpp
++++ b/test/nullkiller2/Goals/ExecuteHeroChainTest.cpp
+@@ -10,15 +10,18 @@
+ 
+ #include "AI/Nullkiller2/AIGateway.h"
+ #include "AI/Nullkiller2/Goals/ExecuteHeroChain.h"
++#include "AI/Nullkiller2/Pathfinding/Actions/BattleAction.h"
+ 
+ #include "mock/GameHandlerTestClient.h"
+ #include "mock/TinyH3MBuilder.h"
+ #include "nullkiller2/NullkillerTest.h"
++#include "nullkiller2/ScriptedMovementClient.h"
+ 
+ #include "lib/gameState/CGameState.h"
+ #include "lib/mapObjects/CGHeroInstance.h"
+ #include "lib/mapObjects/MiscObjects.h"
+ #include "lib/networkPacks/PacksForServer.h"
++#include "lib/serializer/CMemorySerializer.h"
+ 
+ namespace
+ {
+@@ -48,21 +51,98 @@ public:
+ class ExecuteHeroChainMovementTest : public NullkillerTest
+ {
+ protected:
+-	void startGame()
++	void startGame(bool withScroll = true)
+ 	{
+ 		TinyH3M::TinyH3MBuilder builder(EMapFormat::SOD);
+ 		builder
+ 			.size(36, false)
+ 			.playerActive(PLAYER)
+ 			.hero(HERO_ANCHOR_POS, HeroTypeID(0), PLAYER)
+-			.heroGarrison({{CreatureID(0), 1}})
+-			.scroll(SCROLL_POS, SpellID(0))
++			.heroGarrison({{CreatureID(0), 1}});
++		if(withScroll)
++			builder.scroll(SCROLL_POS, SpellID(0));
++		builder
+ 			.playerActive(ENEMY)
+ 			.hero({30, 30, 0}, HeroTypeID(1), ENEMY);
+ 
+ 		startWithMap(std::move(builder));
+ 	}
+ };
++
++class RecordingAiLogger : public vstd::CLoggerBase
++{
++	vstd::CLoggerBase * previous = logAi;
++public:
++	RecordingAiLogger() { logAi = this; }
++	~RecordingAiLogger() override { logAi = previous; }
++	mutable std::vector<std::string> errors;
++	void log(ELogLevel::ELogLevel level, const std::string & text) const override
++	{
++		if(level == ELogLevel::ERROR)
++			errors.push_back(text);
++	}
++	void log(ELogLevel::ELogLevel level, const boost::format & text) const override { log(level, text.str()); }
++	bool isDebugEnabled() const override { return true; }
++	bool isTraceEnabled() const override { return true; }
++	ELogLevel::ELogLevel getEffectiveLevel() const override { return ELogLevel::TRACE; }
++};
++
++class MeetingServer : public GameHandlerTestServer
++{
++public:
++	using GameHandlerTestServer::GameHandlerTestServer;
++	std::optional<QuestionID> exchangeQuestion;
++	int meetings = 0;
++	void applyPack(CPackForClient & pack) override
++	{
++		if(const auto * exchange = dynamic_cast<const ExchangeDialog *>(&pack))
++		{
++			exchangeQuestion = exchange->questionID;
++			++meetings;
++		}
++		GameHandlerTestServer::applyPack(pack);
++	}
++};
++
++class MeetingClient : public IClient
++{
++public:
++	MeetingServer server;
++private:
++	CGameHandler handler;
++	int requestID = 0;
++public:
++	int movementRequests = 0;
++	MeetingClient(const std::shared_ptr<CGameState> & state)
++		: server(state, PLAYER), handler(server, state)
++	{
++		state->actingPlayers.insert(PLAYER);
++	}
++	std::optional<BattleAction> makeSurrenderRetreatDecision(PlayerColor, const BattleID &, const BattleStateInfoForRetreat &) override
++	{
++		return std::nullopt;
++	}
++	int sendRequest(const CPackForServer & request, PlayerColor player, bool) override
++	{
++		request.player = player;
++		request.requestID = ++requestID;
++		if(dynamic_cast<const MoveHero *>(&request))
++			++movementRequests;
++		auto copy = CMemorySerializer::deepCopy(request);
++		handler.handleReceivedPack(GameConnectionID::FIRST_CONNECTION, *copy);
++		if(server.exchangeQuestion)
++		{
++			QuestionAnswer reply;
++			reply.player = player;
++			reply.requestID = ++requestID;
++			reply.questionID = *server.exchangeQuestion;
++			reply.reply = 0;
++			server.exchangeQuestion.reset();
++			handler.handleReceivedPack(GameConnectionID::FIRST_CONNECTION, reply);
++		}
++		return requestID;
++	}
++};
+ }
+ 
+ TEST_F(ExecuteHeroChainMovementTest, blockingVisitOnRouteStopsChainForReplanning)
+@@ -90,6 +170,7 @@ TEST_F(ExecuteHeroChainMovementTest, blockingVisitOnRouteStopsChainForReplanning
+ 	path.nodes.push_back(pathNode(*hero, SCROLL_POS));
+ 	path.nodes.push_back(pathNode(*hero, HERO_POS));
+ 
++	std::shared_lock gameStateLock(CGameState::mutex);
+ 	EXPECT_NO_THROW(NK2AI::Goals::ExecuteHeroChain(path).accept(gateway.get()));
+ 	EXPECT_EQ(gameState()->getObjInstance(scrollID), nullptr) << "the hero must pick up the scroll";
+ 	EXPECT_EQ(hero->visitablePos(), HERO_POS) << "picking up a scroll does not move the hero";
+@@ -113,6 +194,7 @@ TEST_F(ExecuteHeroChainMovementTest, repeatedIdleChainFailsForReplanning)
+ 	path.chainMask = 1;
+ 	path.nodes.push_back(pathNode(*hero, HERO_POS));
+ 
++	std::shared_lock gameStateLock(CGameState::mutex);
+ 	EXPECT_NO_THROW(NK2AI::Goals::ExecuteHeroChain(path).accept(gateway.get()));
+ 	EXPECT_THROW(NK2AI::Goals::ExecuteHeroChain(path).accept(gateway.get()), NK2AI::cannotFulfillGoalException)
+ 		<< "an idle chain counted as success would be selected again on every pass";
+@@ -140,7 +222,136 @@ TEST_F(ExecuteHeroChainMovementTest, multiTurnNodeLocksHeroWithoutMovementPoints
+ 	path.chainMask = 1;
+ 	path.nodes.push_back(node);
+ 
++	std::shared_lock gameStateLock(CGameState::mutex);
+ 	EXPECT_NO_THROW(NK2AI::Goals::ExecuteHeroChain(path).accept(gateway.get()));
+ 	EXPECT_TRUE(gateway->nullkiller->isHeroLocked(hero)) << "the hero must wait for the next turn instead of failing the route";
+ 	EXPECT_EQ(client.movementRequests, 0);
+ }
++
++TEST_F(ExecuteHeroChainMovementTest, battleActionExhaustionPausesBeforeLiveImmediatePathCheck)
++{
++	startGame(false);
++	revealMap(PLAYER);
++	auto * hero = findHeroByOwner(PLAYER);
++	ASSERT_NE(hero, nullptr);
++	hero->setMovementPoints(2000);
++	ScriptedMovementClient client(gameState());
++	auto gateway = makeGateway(PLAYER, &client);
++	client.notify(*gateway);
++	client.drainMovement(0);
++	client.afterMovement = [&] { gateway->invalidatePaths(); };
++	const int3 destination(15, 5, 0);
++	auto node = pathNode(*hero, destination);
++	node.specialAction = std::make_shared<NK2AI::AIPathfinding::BattleAction>(destination);
++	NK2AI::AIPath path;
++	path.targetHero = hero;
++	path.heroArmy = hero;
++	path.chainMask = 1;
++	path.nodes.push_back(node);
++	RecordingAiLogger logger;
++	std::shared_lock gameStateLock(CGameState::mutex);
++	EXPECT_NO_THROW(NK2AI::Goals::ExecuteHeroChain(path).accept(gateway.get()));
++	EXPECT_EQ(hero->movementPointsRemaining(), 0);
++	EXPECT_NE(hero->visitablePos(), destination);
++	EXPECT_GT(gateway->nullkiller->getPathsInfo(hero)->getPathInfo(destination)->turns, 0);
++	EXPECT_EQ(client.movementRequests, 1);
++	EXPECT_TRUE(gateway->nullkiller->isHeroLocked(hero));
++	EXPECT_TRUE(logger.errors.empty());
++}
++
++TEST_F(ExecuteHeroChainMovementTest, actualPlayerVictoryStopsRemainingCompositeActions)
++{
++	startGame(false);
++	revealMap(PLAYER);
++	auto * hero = findHeroByOwner(PLAYER);
++	ASSERT_NE(hero, nullptr);
++	hero->setMovementPoints(2000);
++	ScriptedMovementClient client(gameState());
++	auto gateway = makeGateway(PLAYER, &client);
++	client.notify(*gateway);
++	client.afterMovement = [&]
++	{
++		PlayerEndsGame ended;
++		ended.player = PLAYER;
++		ended.victoryLossCheckResult = EVictoryLossCheckResult::victory({}, {});
++		gameState()->apply(ended);
++	};
++	auto node = pathNode(*hero, int3(15, 5, 0));
++	node.specialAction = std::make_shared<NK2AI::CompositeAction>(std::vector<std::shared_ptr<const NK2AI::SpecialAction>>{
++		std::make_shared<NK2AI::AIPathfinding::BattleAction>(int3(6, 5, 0)),
++		std::make_shared<NK2AI::AIPathfinding::BattleAction>(int3(7, 5, 0))});
++	NK2AI::AIPath path;
++	path.targetHero = hero;
++	path.heroArmy = hero;
++	path.chainMask = 1;
++	path.nodes.push_back(pathNode(*hero, int3(16, 5, 0)));
++	path.nodes.push_back(node);
++	RecordingAiLogger logger;
++	std::shared_lock gameStateLock(CGameState::mutex);
++	EXPECT_NO_THROW(NK2AI::Goals::ExecuteHeroChain(path).accept(gateway.get()));
++	EXPECT_EQ(gateway->cc->getPlayerStatus(PLAYER), EPlayerStatus::WINNER);
++	EXPECT_EQ(client.movementRequests, 1);
++	EXPECT_EQ(hero->visitablePos(), int3(6, 5, 0));
++	EXPECT_TRUE(logger.errors.empty());
++}
++
++TEST_F(ExecuteHeroChainMovementTest, activeFailedMovementStillReportsErrors)
++{
++	startGame(false);
++	revealMap(PLAYER);
++	auto * hero = findHeroByOwner(PLAYER);
++	ASSERT_NE(hero, nullptr);
++	hero->setMovementPoints(2000);
++	ScriptedMovementClient client(gameState());
++	auto gateway = makeGateway(PLAYER, &client);
++	client.notify(*gateway);
++	client.failMovement();
++	NK2AI::AIPath path;
++	path.targetHero = hero;
++	path.heroArmy = hero;
++	path.chainMask = 1;
++	path.nodes.push_back(pathNode(*hero, int3(8, 5, 0)));
++	RecordingAiLogger logger;
++	std::shared_lock gameStateLock(CGameState::mutex);
++	EXPECT_FALSE(NK2AI::NullkillerTestAccess::executeTask(*gateway->nullkiller, NK2AI::Goals::taskptr(NK2AI::Goals::ExecuteHeroChain(path))));
++	EXPECT_EQ(gateway->cc->getPlayerStatus(PLAYER), EPlayerStatus::INGAME);
++	EXPECT_EQ(client.movementRequests, 1);
++	EXPECT_EQ(hero->visitablePos(), HERO_POS);
++	EXPECT_GE(logger.errors.size(), 2);
++	EXPECT_TRUE(std::any_of(logger.errors.begin(), logger.errors.end(), [](const auto & text)
++	{
++		return text.find("Failed to realize subgoal") != std::string::npos;
++	}));
++}
++
++TEST_F(ExecuteHeroChainMovementTest, intentionalFriendlyMeetingCompletesOnceWithoutOccupyingTile)
++{
++	TinyH3M::TinyH3MBuilder builder(EMapFormat::SOD);
++	builder.size(36, false).playerActive(PLAYER)
++		.hero(HERO_ANCHOR_POS, HeroTypeID(0), PLAYER).heroGarrison({{CreatureID(0), 1}})
++		.hero({7, 5, 0}, HeroTypeID(2), PLAYER).heroGarrison({{CreatureID(0), 1}})
++		.playerActive(ENEMY).hero({30, 30, 0}, HeroTypeID(1), ENEMY);
++	startWithMap(std::move(builder));
++	revealMap(PLAYER);
++	auto * hero = findHeroAt(HERO_ANCHOR_POS);
++	auto * partner = findHeroAt(int3(7, 5, 0));
++	ASSERT_NE(hero, nullptr);
++	ASSERT_NE(partner, nullptr);
++	hero->setMovementPoints(2000);
++	MeetingClient client(gameState());
++	auto gateway = makeGateway(PLAYER, &client);
++	NK2AI::AIPath path;
++	path.targetHero = hero;
++	path.heroArmy = hero;
++	path.chainMask = 1;
++	path.nodes.push_back(pathNode(*hero, partner->visitablePos()));
++	RecordingAiLogger logger;
++	std::shared_lock gameStateLock(CGameState::mutex);
++	EXPECT_TRUE(NK2AI::NullkillerTestAccess::executeTask(*gateway->nullkiller, NK2AI::Goals::taskptr(NK2AI::Goals::ExecuteHeroChain(path, partner))));
++	EXPECT_EQ(client.movementRequests, 1);
++	EXPECT_EQ(client.server.meetings, 1);
++	EXPECT_EQ(client.server.resolvedQuestionIDs.size(), 1);
++	EXPECT_EQ(hero->visitablePos(), HERO_POS);
++	EXPECT_NE(hero->visitablePos(), partner->visitablePos());
++	EXPECT_TRUE(logger.errors.empty());
++}

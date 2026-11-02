@@ -1,0 +1,58 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "Native portrait language of the same subject: readable silhouette at native size, visible equipment, no details below one pixel. attackLeft and attackRight must be two real directional attacks, not mirrored copies of one image.",
+  "canvas": [
+    64,
+    64
+  ],
+  "credits": {
+    "author": "OpenAI built-in image_gen; project-directed prompts and technical extraction",
+    "license": "unresolved; no redistribution grant inferred",
+    "redistribution": "unresolved; release prohibited"
+  },
+  "delivery": {
+    "cohort": "assets/source/creatures/chemBaronEnforcer/painted-imagegen-v3/attackLeft-cohort-v4.json",
+    "cohort_sha256": "e15f96824cf470f5ea0c13406541918b3138ce43ff4ca91cc39d3858aaa9c0cb",
+    "sources": [
+      {
+        "path": "assets/source/creatures/chemBaronEnforcer/painted-imagegen-v3/native/attackLeft-contained-v4.png",
+        "sha256": "08d6149a361307d74301871c8db5fc78016045fbf9f0ba836614f388e3179289"
+      }
+    ],
+    "status": "built-unreviewed; native visual review pending",
+    "visual_approval_granted": false
+  },
+  "dependencies": [],
+  "fit": "contain",
+  "generation": {
+    "image_generation_used": true,
+    "model": "not exposed by tool",
+    "painted_master": "assets/source/creatures/chemBaronEnforcer/painted-imagegen-v3/attackLeft-master.png",
+    "painted_master_sha256": "8defca13a6d0e2b1b79d7b8e213dbb454c4d9e72c0ed50b4a286f878dfee0ec6",
+    "prompt": "Use case: precise-object-edit. Create ONE new MAP ENCOUNTER ATTACK view of the BASE Chem-Baron Enforcer from this reference. The reference has four views; all are IDENTITY/material references only. Paint a fresh full-body figure which faces LEFT completely, with its nose pointing to LEFT EDGE, back/right side visible to camera, leftward-facing eyes, torso and knees aimed LEFT. His rectangular breaker-cleaver must extend LEFT in a two-handed low horizontal contact stroke. Do not retain the reference's incorrectly rightward-facing overhead attack.\nSame mature brown-skinned man with close cropped black hair and visible human face, bare forearms in oxidised hydraulic braces, stained brown leather apron and dark workclothes, basic modest industrial spine brace. This is BASE ENFORCER: no ribbed chest armor, no shoulder plates or upgrade knee plates. Both hands grip ONE broad heavy work breaker, no shield. Full original Heroes III prerendered-painted style, three-quarter SIDE facing LEFT, compact anatomy and textured worn metal/leather, same muted upper-left lighting and tiny amber staining/crimson apron brand. Not a robot, knight or Noxian axe fighter.\nOne figure only, no portrait, no other views, no text. Genuinely transparent background, no ground or paintedshadow. Entire body and tool fit with generous margins, feet contact a horizontal baseline. Native final encounter canvas is64x64 so make equipment and LEFT-facing silhouette clear. No mirror/flipped copy, independently paint the left back/side anatomy and hardware.\n",
+    "provenance": "assets/source/creatures/chemBaronEnforcer/painted-imagegen-v3/attackLeft-provenance.json",
+    "provider": "OpenAI built-in image_gen",
+    "route": "genuine painted auxiliary cohort; technical alpha isolation, crop, uniform resampling and placement"
+  },
+  "id": "zaun.creature.chemBaronEnforcer.attackLeft",
+  "output_path": "Content/Sprites/runeterra/zaun/creatures/chemBaronEnforcer/attackLeft.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    64,
+    64
+  ],
+  "source": "assets/source/creatures/chemBaronEnforcer/painted-imagegen-v3/native/attackLeft-contained-v4.png",
+  "source_sha256": "08d6149a361307d74301871c8db5fc78016045fbf9f0ba836614f388e3179289",
+  "status": "built-unreviewed",
+  "title": "Chem-Baron Enforcer attackLeft",
+  "unit": "chemBaronEnforcer",
+  "visual_approval_granted": false
+}

@@ -1,0 +1,20 @@
+{
+  "tool": "image_gen.imagegen",
+  "provider": "OpenAI built-in imagegen",
+  "model": "Not exposed by the built-in tool",
+  "prompt": "Use case: precise-object-edit. Make ONLY TWO SMALL LOCAL CORRECTIONS to this painted2D panoramic town backdrop. Image1 is edit target. Image2 marks TWO rectangles as technical guide; image3 is their black/white region mask. Preserve EVERY OTHER PART of image1: originalHeroesIII paintedgrain, darkcrimsonsky, Noxianneighborhood, windingroads, foreground details and lighting. Do not repaint/reimagine the whole scene. Output cleanpaintedBACKGROUND only, no guide/text.\n\n1. Upperleft-center marked rectangle (native800x374 coordinates x236..327,y54..124): REMOVE the red-and-white MARKETTENT/CANOPY and all of its posts/stallgoods from this small area. It was accidentally copiedinto an EMPTYbackingplate. Restore a small plain dryGROUNDLEVEL cobbledstreetcourt that blends naturally into surroundingurbanpaving. Do not replace it with another tent, house, roof, stall, raisedplatform or functionalbuilding. This plot MUST BE EMPTY because the actualmarket is a separatebuildable layer. Retain neighboring houses outside that small markedregion.\n\n2. UpperRIGHT markedrectangle native x650..800,y95..152: The existing elevatedstonewall and water/house-roofs below it are WRONG. A later separatecastle's towerbases will end on the CYAN horizontalguide line atnativey129. They need to stand on a broad LEVEL DRY PAVED GROUND SURFACE here, NOT water, roofs, a cliff or the VERTICAL SIDE OF A WALL. REMOVE the present highstonequay wallface plus water/roofs within thisrectangle. EXTEND the existing pavedstreet atnative(x650,y142) horizontally all the way to the RIGHT EDGE(x800), so the ENTIRE rectangle fromnativey110 THROUGH y151 is a supportedLEVEL basalt/cobblestone stonequay FLOOR. Its real walkable top should be visibly below the laterbases aty118..129 and continue in front to151. Do NOT put a newwallface/balustrade/plinth edge anywhere insidey110..151. The shore/quay's verticaledge must be FURTHER DOWN AT OR BELOWnativey153. WATER canremainBELOWnativey153 towardrightedge, supporting the existing tiny separateoptional dock atx754..798,y145..165. Do not add a castle or tower to thisemptyground. No floating patch: connectthisdryland toexistingstreet onleft and its actualsupportedouterbank below152.\n\nNo other scenechanges, no hugeclearedplaza, no 3terracebands, no buildingredesign. Both two tiny regions should blend as genuine painted roughworncharcoal/warmgraycobbles with restrainedamberlight; no rectangularpatchseams, guidecolors, cyanline, labels, frame or UI. Genuine2Dpaint only, no Blender/3D/vector/photosplash. Keep panoramic800x374 aspectratio.",
+  "edit_target": "assets/source/town/urban-community-20261024-v6/background-master-v4.png",
+  "reference_paths": [
+    "assets/source/town/urban-community-20261024-v6/background-master-v4.png",
+    "build/reports/urban-town-community-20261024-v6/terrain-v5-market-and-quay-guide.png",
+    "build/reports/urban-town-community-20261024-v6/terrain-v5-market-and-quay-mask.png"
+  ],
+  "visual_approval_granted": false,
+  "record_kind": "Portable producer generation metadata, not raw tool receipt",
+  "private_original_receipt_sha256": "36c0a452a41da497543473d6b38225c07eec310f600112c441cb43d56a268dc6",
+  "painted_master": "assets/source/town/urban-community-20261024-v6/background-master-v5.png",
+  "painted_master_sha256": "ca193d3c9bb75ed51873323b285e93d6c0e05519d1e4337f157cc758890b2aac",
+  "frozen_placement_plan_sha256": "93097eded68b7c275dd689c0fe344684b0e439102d4acf5c0549ba0b0c0b88c0",
+  "edit_target_sha256": "bb5f2bf023a8a8bbf8fea181b79db689c42782a0342237aa0bda8915ecd40f8b",
+  "rights": "Unresolved; attribution and tool access do not grant release approval"
+}

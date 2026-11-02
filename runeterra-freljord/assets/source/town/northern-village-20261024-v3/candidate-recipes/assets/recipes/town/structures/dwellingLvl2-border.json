@@ -1,0 +1,110 @@
+{
+  "acceptance": "Technical candidate only; current native/art/rights acceptance remains separate.",
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed built-in OpenAI imagegen painted sources and deterministic technical assembly",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": false,
+    "method": "Existing canonical alpha128 silhouette area or one-native-pixel outward MaxFilter3-minus-silhouette border.",
+    "painted_source_provenance": {
+      "conversion": {
+        "alpha_bbox": [
+          0,
+          0,
+          1434,
+          1097
+        ],
+        "alpha_treatment": "Preserved painted RGBA, including any soft halo; no threshold erasure/background removal",
+        "canvas": [
+          800,
+          374
+        ],
+        "mirror_x": false,
+        "placed_origin": [
+          653,
+          269
+        ],
+        "placed_size": [
+          116,
+          89
+        ],
+        "rect": [
+          627,
+          269,
+          169,
+          89
+        ],
+        "source_canvas": [
+          1434,
+          1097
+        ],
+        "source_coordinate_basis": "original master",
+        "uniform_scale": 0.08113035551504102,
+        "upscaled": false
+      },
+      "generation_record": "assets/source/town/northern-village-20261024-v3/provenance/dwellingLvl2/generation.json",
+      "image_generation_used": true,
+      "model": "not exposed by built-in tool",
+      "model_id_exposed": false,
+      "painted_master": "assets/source/town/buildings-v1/dwellingLvl2/master.png",
+      "painted_master_sha256": "2c2cc87c689be9738c234569a9fe5662ef577285ddbd3e9405d8906dae624b1f",
+      "prompt": "Use case: stylized-concept. Asset type: INDIVIDUAL transparent building layer for original Heroes of Might and Magic III Freljord town, eventual native roofheight70-100pixels. One complete building only centered with 8percentclearalpha margin. Subject: A modest northern bow-hunters lodge of darktimber, worn hide awning, hanging drying pelts and simple bow rack, small shed; ordinary basic equipment, no icepalace or eagle. Low frontal 3/4town camera, slight downward look and right wallvisible, closer doorreadable, no isometric board-game topdown. Richly painted prerendered1999HoMM3 miniature style, rough fur/timber/stone textures, compact credible proportions, warm brown/ochre and darkwood against light snow on roofedges, upper-left daylight, soft small darkgroundcontactshadow. A small irregular snowcovered foundation underbuilding, no rectangular groundtile. Transparentbackground, no scene/sky/backdrop, no adjacentbuildings, people, text, labels, crest, modern3D shine, neonblue, icepalace, vectorart, anime or pixel filter. This is a playable independent original building sprite, not a conceptpresentation.",
+      "provider": "OpenAI built-in imagegen",
+      "references": [
+        {
+          "path": "assets/source/town/buildings-v1/dwellingLvl2/master.png",
+          "sha256": "2c2cc87c689be9738c234569a9fe5662ef577285ddbd3e9405d8906dae624b1f"
+        },
+        {
+          "path": "assets/source/town/northern-village-20261024-v3/provenance/dwellingLvl2/generation.json",
+          "sha256": "ce721c336eaee9f2866c8b5353ae4d1678f425ca258b3b216ae513135971605c"
+        }
+      ],
+      "technical_producer": {
+        "path": "assets/source/town/northern-village-20261024-v3/prepare_candidate.py",
+        "sha256": "5c79a631c542104c95ba473b355557f65e2f8b214faf07f66a5024e3b0c21a85"
+      },
+      "tool": "image_gen.imagegen",
+      "visual_approval_granted": false
+    },
+    "references": [
+      {
+        "path": "assets/source/town/northern-village-20261024-v3/prepared/dwellingLvl2/layer.png",
+        "sha256": "c52c090e6febf38e7ea8dd1fc74d6ef4569cb09c95f799e568613970d2906bb0"
+      }
+    ]
+  },
+  "inputs": [
+    {
+      "path": "assets/source/town/northern-village-20261024-v3/layout-v3.json",
+      "sha256": "5760fa4c000093b10b50e8fcaaddec4a23897dd03f56b5ac9e2258db4c88a153"
+    },
+    {
+      "path": "scripts/prepare_town_art.py",
+      "sha256": "71476dbf913919f5cc07bab81b87236c4601ef3fe0b38d627fff88c7fe91fa46"
+    },
+    {
+      "path": "assets/source/town/northern-village-20261024-v3/prepare_candidate.py",
+      "sha256": "5c79a631c542104c95ba473b355557f65e2f8b214faf07f66a5024e3b0c21a85"
+    }
+  ],
+  "output_path": "Content/Sprites/runeterra/freljord/town/structures/dwellingLvl2_border.png",
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "source": "assets/source/town/northern-village-20261024-v3/prepared/dwellingLvl2/border.png",
+  "source_canvas": [
+    800,
+    374
+  ],
+  "source_sha256": "a268427c8e364f06cbfa70b8699addcbcc5c3c3d7a3cccd403b569604832f675",
+  "status": "authored configuration",
+  "visual_approval_granted": false
+}

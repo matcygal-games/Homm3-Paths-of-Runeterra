@@ -1,0 +1,108 @@
+{
+  "adventure_anchor": {
+    "encounter": [
+      32,
+      60
+    ],
+    "map": [
+      80,
+      60
+    ]
+  },
+  "adventure_facing_convention": "Actual Castle mapAttackFromRight=AvWattak0 LEFTfacing?attackRight mirroredtrue; FromLeft=AvWattak1 RIGHTfacing?attackLeft false. Staticencounterauthoredcenter32,60 is intentionalreactioncontactoffset vs map80,60; not an engineconstant.",
+  "adventure_projection": "One fixeduniformperunit scale aroundbattlepivot, actualaffine contract+bothfacings+alpha8no loss; no perposefit.",
+  "battle_canvas": [
+    450,
+    400
+  ],
+  "battle_pivot": [
+    220,
+    266
+  ],
+  "candidate_only": true,
+  "canonical_roles": {
+    "attackLeft": [
+      64,
+      64
+    ],
+    "attackRight": [
+      64,
+      64
+    ],
+    "battle": [
+      450,
+      400
+    ],
+    "large": [
+      58,
+      64
+    ],
+    "map": [
+      96,
+      64
+    ],
+    "small": [
+      32,
+      32
+    ]
+  },
+  "groups": {
+    "0": 6,
+    "1": 7,
+    "11": 6,
+    "12": 6,
+    "13": 6,
+    "2": 1,
+    "20": 3,
+    "21": 3,
+    "22": 1,
+    "3": 2,
+    "4": 1,
+    "5": 6,
+    "7": 3,
+    "8": 3
+  },
+  "heraldry": "CorrectprimaryDemaciawingedsword/raisedwings physicallypaintedonnearblue shield/harness; native~14pxreadability, naturalocclusion not floatinglogo.",
+  "map_groups": {
+    "0": 4
+  },
+  "map_semantics": "Four genuinely painted neutral mapmonster poses, from own support8?11. No battleflight incorrectlyinherited asmap idle.",
+  "native_execution": false,
+  "nature": "Living human bonded with feathered twolegged/twowinged silverwing raptor. Flying twohex melee game adaptation; no construct/nonliving/breath/spell/projectile art.",
+  "no_active_changes": true,
+  "portraits": "Bothportraitrecipes same ownfreshpaintedscenicportraitmaster/hash under assets/source/creatures/<id>/; fullhead/neck/crestshield upperbody nativecrop, not wholebattleminiature. No specialty icons owned.",
+  "primary_card": "01DE010 is officially Swiftwing Lancer (not SilverwingVanguard), ELITE+BIRD, SIXMOREVODKA; Silverwing/Elder names, weekly recruitment andrankfiction explicit",
+  "registration": "V2 replaces lower-claw/wing extrema by annotated rider belt/saddle projected ground axes for aerialposes. Source coordinates +declared8px torsohover; wholepose rigidplacement only, no bodywarp/perposefit. QuietnativeHOLDING uses samepaintedactioncohort support11; highresholding retained as identityhistory.",
+  "release_accepted": false,
+  "root_reason": "Preserve measured current Demacia twohex recipe convention220,266, versus native original Pegasus/Griffin actual450x400floorends265/266. Do not inherit retired constructpixels/anatomy. Nativeground/frame measurements private report. No arbitrary2pxshift to otherregion218 convention.",
+  "semantics": {
+    "0": "genuine fullwing flight cycle",
+    "1": "genuine occasional neck/gear fidget, ordinaryholdingquiet",
+    "11": "upward lance melee",
+    "12": "level lance melee",
+    "13": "downward lance melee",
+    "2": "quietstatic groundedmountedpose",
+    "20": "nativeMOVE_STARTtakeoff",
+    "21": "nativeMOVE_ENDlanding",
+    "22": "exact sameoriginalsource/crop/mask/root/scale/nativeRGBA asfinal5corpse",
+    "3": "genuine painted hit flinch followed by actual holding recovery endpoint; twoframes meetsnativeBASE_ACTION_GROUPS",
+    "4": "defend",
+    "5": "genuine grounded collapse endingflat bird+rider corpse",
+    "7": "holding?quartertowardviewer?truefront halfturn only",
+    "8": "same genuine front?quarter?holding poses in reverse source order, engineflip occurs BEFOREthisgroup; neverfullback"
+  },
+  "status": "authored configuration",
+  "timing": "Actual four genuine fidget poses held1,2,2,2 =>7native10fps ticks; quiet probability.1 unchanged by source",
+  "turn_native_evidence": {
+    "consumer": "ReverseAnimation::init plays7, setupSecondPart rotatesfacing thenplays8",
+    "originals": "Nativecgriff/cpegas group8 is reversegroup7, startingtruefront andendingholding; private contactinspected",
+    "source": "vcmi-develop/vcmi-develop/client/battle/BattleAnimationClasses.cpp"
+  },
+  "units": [
+    "silverwingLancer",
+    "elderSilverwingLancer"
+  ],
+  "unused_groups": "9/10 are nativecommentedunusedTURN_L2/R2, nottakeoff/landing. No shooter14?16 orcasts30?32.",
+  "upgrade": "Maturelargerbirdneck/crown featherlayer; strongerclearblue/steel riderhelmet,barding,shield,caparison without changing species/role orjustoversizedcrest.",
+  "visual_approval_granted": false
+}

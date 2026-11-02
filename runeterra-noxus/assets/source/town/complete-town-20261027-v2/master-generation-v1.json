@@ -1,0 +1,38 @@
+{
+  "status": "design proposal",
+  "tool": "OpenAI built-in image_gen",
+  "workflow": "single holistic painted2D complete fully built city master before any slicing",
+  "no_blender_or_3d_used": true,
+  "master": "assets/source/town/complete-town-20261027-v2/complete-city-master-v1.png",
+  "master_sha256": "bde87959f0f9e28933ac0073dea13e983af0f1a8e921024337110b92cf236eb7",
+  "exact_prompt": "assets/source/town/complete-town-20261027-v2/prompt-master-v1.txt",
+  "prompt_sha256": "5cd996022bb6b0e88e57f173887def3a5d65767f5fc14cb618e7b69f4f100679",
+  "native_target": [
+    800,
+    374
+  ],
+  "coordinator_master_checkpoint": "pending root pixel review; no segmentation, clean plate, state conversion, active source selection, publication or runtime performed",
+  "references": [
+    {
+      "role": "architecture subject identity only, not layout",
+      "path": "build/reports/complete-town-20261027-v2/architecture-subject-reference-only.png",
+      "sha256": "9bebd2a025008356b71875e1c9d35efd8a83e1d0073586eb627994739cef0d70"
+    },
+    {
+      "role": "native original HoMM3 material/rendering reference, no copied pixels",
+      "path": "../runeterra-demacia/references/town-comparisons/source-v3/castle-native.png"
+    },
+    {
+      "role": "official private Noxus crest shape, no copied pixels",
+      "path": "../.tools/lore-reference-cache/noxus-heraldry/noxus-official-region-icon.png",
+      "sha256": "2faba5bd37e64f8babfac8006341b9545b45b0914eb25e8f0491c85402d2b392"
+    },
+    {
+      "role": "USER-REJECTED composition, negative example only",
+      "path": "../build/playtests/paths-of-runeterra-20261027-v4/proofs/native-human-v4/town-1.png",
+      "sha256": "a010aecd467460c51007b5f53d1afd1eddad0f5be876ee9103600b204c12aceb"
+    }
+  ],
+  "native_verified": false,
+  "release_accepted": false
+}

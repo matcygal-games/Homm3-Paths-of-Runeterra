@@ -1,0 +1,61 @@
+{
+  "recipe_type": "raster",
+  "canvas": [
+    64,
+    64
+  ],
+  "fit": "exact",
+  "source": "assets/source/creatures/painted-v1/t1-t3/aux-v1/bristlehog/encounters/pose-04.png",
+  "source_sha256": "4439f141675d8e3f4f6c3397ffa8a11bee3fa826910ab498b9a5178ca60328eb",
+  "source_canvas": [
+    64,
+    64
+  ],
+  "output_path": "Content/Sprites/runeterra/ixtal/creatures/bristlehog/attackLeft.png",
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in image_gen",
+    "model": "not exposed by built-in tool",
+    "prompt": "Usecase: identity-preserve. Assettype: ORIGINALHeroes3 IXTAL BRISTLEHOG dedicatedADVENTURE/ENCOUNTERpainted2Dposeatlas. Image1exactownadultBristlehogidentity;image2actualnative64x64HellHoundencounterisCOMPACTANIMALPOSE/CAMERA/SIZEreferenceonly, donotcopyitsbody/pixels;image3exactIxtalcrest. EXACTLY8completeposes ofSAMEadultlivinglowquilledmammal, STRICT4columnsx2rowsequalcellstransparentlandscape,noborders/text/scene. Tanbroadcatlikeface/tinyears,4shortpawedlegs,warmbrownfur,largephysicaldarkbrownquillfanwithochretips,ONEbarbedtail, jadechestbinding/physicalsideflapEXACTgoldIxtalcrest. Noarmor/rider/crown/hooves/horns/crystal/plant. DedicatedslightlyHIGHERnativeADVENTUREthreequarterSIDEcamera,upperbodyplanesvisible, top-leftwarmlight,richtextured2DHoMM3darkcontours,noBlender/3D/glossyplastic/anime/vector/pixelfilters. Allfiguresfullanatomicalsizewithcompactpose: CURLtailnaturallyCLOSEaroundhindquarters, keepquillfanattached/compact, noextendedhorizontalspines orprojectiles. Donotshrinkbodytosmalltoy; nativefaunafinalabout42pxwide/30pxtall,map96x64andencounter64x64. Fore/hindpawsplantedoncommonprojectedgroundline; torso-groundrootaroundcell(200,335)in384cells,constantbodyanatomicalscale, NOzoom/rootdrift. Entirequilltips/tail/nose/pawsinsidecentral70percentofeachcellwithwideEMPTYGUTTERS. ROW1fourRIGHTfacinggentleMAPIDLEphases: relaxedready;inhale/slightbackrise;smallhead/snifffidget;exhale/settletowardready. Feetstayplanted,nofakewalkingtranslations. ROW2genuinelypaintedencounterposes:col1RIGHTfacingthreatheadlower/quillsraised/pawsbraced;col2LEFTfacingthreatwithcoherentphysicalflanks/feet/equipment,noshiftedmirror;col3RIGHTfacingsettledguard;col4LEFTfacingsettledguard. TailcurlsclosetobodyinBOTHfacingssoentireanimalfits64x64. Physicalcrestfollowscloth/perspectiveandnaturalocclusion,nofloatingbadge. Truealpha,nohaze/shadowmat/pedestal/tiles/UI.",
+    "painted_master": "assets/source/creatures/painted-v1/t1-t3/bristlehog/adventure-atlas-v1.png",
+    "painted_master_sha256": "8b270d8abbd1c4d0aede558e57df1580bfa79db46364b0fb54a8000a8679f408",
+    "method": "Genuine painted2D dedicated source poses/scenic portrait, technical isolation and fixed uniform registration only; no3D, bbox fitting or body warps."
+  },
+  "production_inputs": [
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/assemble_aux_roles_v1.py",
+      "sha256": "d16f8481e863a603d62da3bac0392e61f288472b2ce55ad38ec7eb2814bffb8e"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/components.py",
+      "sha256": "2c3bd6f800958b39cffa67d13edf7678c3eb460eb1f59dcfc8679b2e82833336"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/aux_registration.json",
+      "sha256": "d66b2c36bf8a119f5ecc4c67daeb03e8fb36e4b73742e98a929154e2ede41ef6"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/aux-v1/bristlehog/role-placement.json",
+      "sha256": "7a1f53ffd1102e94b93926e91ee22991c10d6811c5ee9b6dd60d217b6f151579"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/bristlehog/adventure-atlas-v1.png",
+      "sha256": "8b270d8abbd1c4d0aede558e57df1580bfa79db46364b0fb54a8000a8679f408"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/bristlehog/adventure-atlas-v1.generation.json",
+      "sha256": "22de30bc2f5c64f9b64496e4fc5e6d5c3054a3bab346fb9c87964172fe19d22a"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/bristlehog/portrait-master-v1.png",
+      "sha256": "398365e5889643a3e29bba505a8bd3b6357c15d339119029312f0d81f90ba4ef"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/bristlehog/portrait-master-v1.generation.json",
+      "sha256": "33489eb550ead7056e986e6112c99634ebb10e8eb1e14ca86563125a4808c09d"
+    }
+  ],
+  "production_status": "painted-master-complete-unapproved",
+  "acceptance": "authored configuration; independent/native/pixels/rights pending",
+  "visual_facing": "right"
+}

@@ -1,0 +1,61 @@
+{
+  "recipe_type": "raster",
+  "canvas": [
+    64,
+    64
+  ],
+  "fit": "exact",
+  "source": "assets/source/creatures/painted-v1/t1-t3/aux-v1/pakaaGuardian/encounters/pose-05.png",
+  "source_sha256": "f3e83584205a9258c019eadfaab5ccf1957e35411e7fe7f9b1c8f3cc994c1ee6",
+  "source_canvas": [
+    64,
+    64
+  ],
+  "output_path": "Content/Sprites/runeterra/ixtal/creatures/pakaaGuardian/attackRight.png",
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in image_gen",
+    "model": "not exposed by built-in tool",
+    "prompt": "Usecase: identity-preserve. Assettype: ORIGINALHeroes3 IXTAL ADULT PAKAA GUARDIAN dedicatedADVENTURE/ENCOUNTERpainted2Dposeatlas. Image1exactUPGRADEDadultforestfelineidentity;image2actualnative64x64HellHoundencounterCOMPACTQUADRUPEDCAMERA/SIZEreferenceonly,nocopyoriginalbody/pixels;image3exactIxtalcrest. EXACTLY8completeSAMEadultGuardianposes, STRICT4columnsx2rowsequalcellstransparentlandscape,no text/borders/scene. InEVERYposekeepMUCHBROADERdeepCHEST/NECK/SHOULDERS,HEAVIERPAWS/JAWandSUBSTANTIALLONGEROUTERMANEfromimage1, notslimProwler. Chocolate/smokebrownfurbody, distinctPALEivorybluegrayANGULARFACEwithdarknose/foreheadstripe,yelloweyes, pointedears/headtufts,4largepawedlegs,ONEcontinuouslongtail. NoRengar/humanoid/weapon/eyepatch/shapeshift/wolf/antlers/wings/juvenile. Exactloosejadewovenshoulderband/clothsideflapwithEXACTgoldphysicalIxtalcrest, noarmor/rider/saddle/crown. SlightlyHIGHERnativeADVENTUREthreequarterSIDEviewthanbattle,upperplanesvisible/top-leftwarmlight,richtexturedpainted2DHoMM3darkcontours,noBlender/3D/glossyplastic/anime/vector/pixelfilters. Compactnaturalstance,CURLlongtailCLOSEaroundhindquarters/towardsbodysoentireanimalfits64x64,nobodyshrinking/warps. Nativefinalabout50pxwide/35pxtall,map96x64andencounter64x64,constantscale/projectedtorso-groundrootaroundcell(200,335)in384cells,pawsplantedcommonline,NOzoom/rootdrift. Wholefigureinsidecentral70percentwithwideEMPTYGUTTERS. ROW1fourRIGHTfacinggentleMAPIDLE/FIDGETphases:relaxedalert;inhale/slightshoulderrise;smallhead/earlook;exhale/settletowardready. Feetplanted,nofakewalkingtranslations. ROW2genuinelypaintedencounters:col1RIGHTfacinglowthreatforepawsbraced/jawslightlyopen;col2LEFTfacinglowthreatwithcoherentphysicalflanks/perspective/feet/marker,notshiftedmirror;col3RIGHTfacingsettledguard;col4LEFTfacingsettledguard. CurltailclosetobodyBOTHfacings, allpaws/nose/earsinsidetheircells. Crestfollowsclothsurface/naturalocclusion,nofloatingbadge. Truealpha,nohaze/shadowmat/pedestal/tiles/UI.",
+    "painted_master": "assets/source/creatures/painted-v1/t1-t3/pakaaGuardian/adventure-atlas-v1.png",
+    "painted_master_sha256": "0b4091bd101713bcdfffc6c2720f3cabde109a6bce9b75789f817345ebb653bc",
+    "method": "Genuine painted2D dedicated source poses/scenic portrait, technical isolation and fixed uniform registration only; no3D, bbox fitting or body warps."
+  },
+  "production_inputs": [
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/assemble_aux_roles_v1.py",
+      "sha256": "d16f8481e863a603d62da3bac0392e61f288472b2ce55ad38ec7eb2814bffb8e"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/components.py",
+      "sha256": "2c3bd6f800958b39cffa67d13edf7678c3eb460eb1f59dcfc8679b2e82833336"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/aux_registration.json",
+      "sha256": "d66b2c36bf8a119f5ecc4c67daeb03e8fb36e4b73742e98a929154e2ede41ef6"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/aux-v1/pakaaGuardian/role-placement.json",
+      "sha256": "3658dc2f2d83421a8a332a13f10f325ca26960023fecbe2ccf236e2c4daeb99c"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/pakaaGuardian/adventure-atlas-v1.png",
+      "sha256": "0b4091bd101713bcdfffc6c2720f3cabde109a6bce9b75789f817345ebb653bc"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/pakaaGuardian/adventure-atlas-v1.generation.json",
+      "sha256": "38e062e8fae2617f0ff2dc7bbaed3525dcca1c398cddefdcb813010a9986555c"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/pakaaGuardian/portrait-master-v1.png",
+      "sha256": "3a7cf7499a6e2cbfb333d2e5f16a62e7d79017c7ffb1ee4f49a41949b23255b4"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t3/pakaaGuardian/portrait-master-v1.generation.json",
+      "sha256": "8160e2ba4d1e71baee5620adbd08dc31ab9e199fde71059983e543853119f484"
+    }
+  ],
+  "production_status": "painted-master-complete-unapproved",
+  "acceptance": "authored configuration; independent/native/pixels/rights pending",
+  "visual_facing": "left"
+}

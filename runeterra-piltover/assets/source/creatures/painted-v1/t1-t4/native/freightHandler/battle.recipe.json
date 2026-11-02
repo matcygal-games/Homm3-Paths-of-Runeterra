@@ -1,0 +1,552 @@
+{
+  "production_status": "painted-master-complete-unapproved",
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in imagegen",
+    "model": "Not exposed by the tool",
+    "prompt": "Original1999HeroesofMightandMagicIII richlytextured painted2D creatureart, compactbelievableanatomyandreadableequipment, upperleftlight,warmocclusion, restrainedhighlights,noplastic3D, noanime/vector/modernLeagueplash. CreateONEoriginalPiltovan FREIGHTHANDLER mechanicalcreaturemaster inspiredbythematerialtransportinstitutioninreference1, NOTcopyNuggetoritsuniquehat/balloons/personality. Smallroundedbrass-and-darksteel FREIGHTCART, TWO LARGEsideWHEELS, lowcenterofmass, squatcompactchassis, exposedgearingbetweenwheels, two shortarticulatedgripper/LOADINGFORKarms, one SMALLcoolbluepowerlens nothumanoidface. No legs/nohumanoidsoldier/no largeexosuit/no livingoperator/no gun. Ordinarybasetier3machinewithmodestcargo guards, smallwoodencratecounterweight, brushedwornbrassivorypanelsandnavyservicemarking. PaintcorrectPiltoverregionalcrestfromreference2onphysicalfrontorvisiblecargoguardplate. Reference3isONLYoriginalHoMM3compactmechanicalpaintedmaterial/camerascale notgolemanatomy. RIGHTthreequarterbattlefieldprofile, wheelsgroundcontactvisible, whollyisolatedontRANSPARENTbackgroundwithgenerouspadding, nofloor/scenery/text. DesignauniquegenericcartnotmasscopiesofnamedNugget, smallfriendlypracticalmachinebutbelievablemeleegrippers, no modernplasticrobot.",
+    "action_source_ledger": "assets/source/creatures/painted-v1/t1-t4/generation-ledger-v1.json",
+    "action_source_ledger_sha256": "9da66a550c881d7dc4b0f3e473fa50f7fdcb25905352c0e536cdbbbf2dcad322",
+    "painted_master": "assets/source/creatures/painted-v1/t1-t4/freightHandler/master-v1.png",
+    "painted_master_sha256": "75ee73ae580a1d7a61e8622e93c804f85e0963146d6fca6c5493151ce571a028",
+    "method": "Whole-source uniform cohort resampling and root registration only; no rigging, rendering, limb warping or invented poses"
+  },
+  "production_inputs": [
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/freightHandler/master-v1.png",
+      "sha256": "75ee73ae580a1d7a61e8622e93c804f85e0963146d6fca6c5493151ce571a028"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/freightHandler/portrait-v1.png",
+      "sha256": "ad3598c2c911f168c81f5e2ebc07eb2f6edca0c102e6a47cca69a2b95d56fd97"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/freightHandler/isolated-source-map-v1.json",
+      "sha256": "65a095eb46221b08409ea269560d0976c9552354fa074876f4ac115ac03948d4"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/pose-roots-v1.json",
+      "sha256": "756e77614e53335d3625b84499e4409860e4cf8cce7ef6d0c05da08078ee1355"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/producer_v1.py",
+      "sha256": "a097e5a05400368c5740004cca6225a50730a18c2440af0c13d2ba676e7d58ad"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/extract_sources.py",
+      "sha256": "0338c4026998ef34834a4c76c400c177f51777dc686da70858373fc3a9eefd7b"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/generation-ledger-v1.json",
+      "sha256": "9da66a550c881d7dc4b0f3e473fa50f7fdcb25905352c0e536cdbbbf2dcad322"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/selected-cohorts-v1.json",
+      "sha256": "d6c313a901a77675cc068ae609a0296c14c9824c8c6852e67a4c8058d8238c30"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/freightHandler/combat-v1.png",
+      "sha256": "4405262a2d00f57efb947beb14de4aa05c8485a0092b5787fd5e01fe196f434c"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t1-t4/freightHandler/movement-v1.png",
+      "sha256": "d1cd082970d171c0f3097be3712ed562fefeea2497369294c67c38647979c61a"
+    }
+  ],
+  "recipe_type": "vcmi_animation",
+  "output_path": "Content/Sprites/runeterra/piltover/creatures/freightHandler/battle.json",
+  "canvas": [
+    450,
+    400
+  ],
+  "pivot": {
+    "x": 197,
+    "y": 265
+  },
+  "groups": [
+    {
+      "group": 0,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g00-f000.png",
+          "sha256": "efe9aa254ffebc16cd3cb55e949ced2c25117e03b70f477fb1143c2736d3174c",
+          "source_sha256": "efe9aa254ffebc16cd3cb55e949ced2c25117e03b70f477fb1143c2736d3174c",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g00-f001.png",
+          "sha256": "80391ec2e921a63f204b825e67eab93bfec46b30499c0876de9425cf21cd5d21",
+          "source_sha256": "80391ec2e921a63f204b825e67eab93bfec46b30499c0876de9425cf21cd5d21",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g00-f002.png",
+          "sha256": "a8750f7e997d9ad12d932a167e2a15565c4096b11c25d81fb08c34ab50c1c4e2",
+          "source_sha256": "a8750f7e997d9ad12d932a167e2a15565c4096b11c25d81fb08c34ab50c1c4e2",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g00-f003.png",
+          "sha256": "b98b09d756ddcac9704c53c0b7915e50e0dd1fb0fd5da49a313331c8fde4b466",
+          "source_sha256": "b98b09d756ddcac9704c53c0b7915e50e0dd1fb0fd5da49a313331c8fde4b466",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g00-f004.png",
+          "sha256": "e936e498d90da51bb17fb3c71fb9d925784cfd63ffe350740f1b5e723c9ff697",
+          "source_sha256": "e936e498d90da51bb17fb3c71fb9d925784cfd63ffe350740f1b5e723c9ff697",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g00-f005.png",
+          "sha256": "433e0a1bf99869b963c0ad127d93f70fdd93f95c7b76cada1335dd2941e453fc",
+          "source_sha256": "433e0a1bf99869b963c0ad127d93f70fdd93f95c7b76cada1335dd2941e453fc",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 1,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g01-f000.png",
+          "sha256": "3d7ff46ead81b74d13d58a081bd7f573f507485e67d35a46776cebc1bc6d98e7",
+          "source_sha256": "3d7ff46ead81b74d13d58a081bd7f573f507485e67d35a46776cebc1bc6d98e7",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g01-f001.png",
+          "sha256": "edd3dd8552db4ffe9c1fe0cc0ed0b5a3a815d9f0535d92b945935adece190723",
+          "source_sha256": "edd3dd8552db4ffe9c1fe0cc0ed0b5a3a815d9f0535d92b945935adece190723",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g01-f002.png",
+          "sha256": "edd3dd8552db4ffe9c1fe0cc0ed0b5a3a815d9f0535d92b945935adece190723",
+          "source_sha256": "edd3dd8552db4ffe9c1fe0cc0ed0b5a3a815d9f0535d92b945935adece190723",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g01-f003.png",
+          "sha256": "4d5bd5e723f5b0b98fbfa581b08488047b6040bb474009994a4ed5d385d5cb09",
+          "source_sha256": "4d5bd5e723f5b0b98fbfa581b08488047b6040bb474009994a4ed5d385d5cb09",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g01-f004.png",
+          "sha256": "4d5bd5e723f5b0b98fbfa581b08488047b6040bb474009994a4ed5d385d5cb09",
+          "source_sha256": "4d5bd5e723f5b0b98fbfa581b08488047b6040bb474009994a4ed5d385d5cb09",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g01-f005.png",
+          "sha256": "d4471f9f2423c3f372725a6d41af7387393d89eea50045a17ecb15d342930821",
+          "source_sha256": "d4471f9f2423c3f372725a6d41af7387393d89eea50045a17ecb15d342930821",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 6,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g01-f006.png",
+          "sha256": "d4471f9f2423c3f372725a6d41af7387393d89eea50045a17ecb15d342930821",
+          "source_sha256": "d4471f9f2423c3f372725a6d41af7387393d89eea50045a17ecb15d342930821",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 2,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g02-f000.png",
+          "sha256": "3d7ff46ead81b74d13d58a081bd7f573f507485e67d35a46776cebc1bc6d98e7",
+          "source_sha256": "3d7ff46ead81b74d13d58a081bd7f573f507485e67d35a46776cebc1bc6d98e7",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 3,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g03-f000.png",
+          "sha256": "927dcbea45f5790c0b5f360b99c18a15f34b073414aaaed63a00227a8e18a5ae",
+          "source_sha256": "927dcbea45f5790c0b5f360b99c18a15f34b073414aaaed63a00227a8e18a5ae",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g03-f001.png",
+          "sha256": "3d7ff46ead81b74d13d58a081bd7f573f507485e67d35a46776cebc1bc6d98e7",
+          "source_sha256": "3d7ff46ead81b74d13d58a081bd7f573f507485e67d35a46776cebc1bc6d98e7",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 4,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g04-f000.png",
+          "sha256": "b7d131bbc354be81afaf766b6fad21b1ce1f56904ce6663b8a826948cbcceaca",
+          "source_sha256": "b7d131bbc354be81afaf766b6fad21b1ce1f56904ce6663b8a826948cbcceaca",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 5,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g05-f000.png",
+          "sha256": "8c218830dd81a44532284afce9f4748afe0baea62ce8d1efd3c3dfe2321c57ab",
+          "source_sha256": "8c218830dd81a44532284afce9f4748afe0baea62ce8d1efd3c3dfe2321c57ab",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g05-f001.png",
+          "sha256": "42ce9d0efc7e9367605e2ec9fc4fce7f8bcdda95560a6541c434958e1567e288",
+          "source_sha256": "42ce9d0efc7e9367605e2ec9fc4fce7f8bcdda95560a6541c434958e1567e288",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g05-f002.png",
+          "sha256": "59178378809bc2f3f9387be5e94e0d43304e5288cafd0b251e5fdd86453b92cd",
+          "source_sha256": "59178378809bc2f3f9387be5e94e0d43304e5288cafd0b251e5fdd86453b92cd",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g05-f003.png",
+          "sha256": "cf23df76909c47cf4aa369b44554d67dbc76ac715da5870f114e3066148dd531",
+          "source_sha256": "cf23df76909c47cf4aa369b44554d67dbc76ac715da5870f114e3066148dd531",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 7,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g07-f000.png",
+          "sha256": "3d7ff46ead81b74d13d58a081bd7f573f507485e67d35a46776cebc1bc6d98e7",
+          "source_sha256": "3d7ff46ead81b74d13d58a081bd7f573f507485e67d35a46776cebc1bc6d98e7",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g07-f001.png",
+          "sha256": "0860a79a59be7e02252c9bcf6bb7dbbbd375718335db7f5ce83be8d71906c467",
+          "source_sha256": "0860a79a59be7e02252c9bcf6bb7dbbbd375718335db7f5ce83be8d71906c467",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g07-f002.png",
+          "sha256": "cad5351e5a937ff3cf24c42783f9d5f533ddbcc3230943463c722c659d58d011",
+          "source_sha256": "cad5351e5a937ff3cf24c42783f9d5f533ddbcc3230943463c722c659d58d011",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 8,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g08-f000.png",
+          "sha256": "cad5351e5a937ff3cf24c42783f9d5f533ddbcc3230943463c722c659d58d011",
+          "source_sha256": "cad5351e5a937ff3cf24c42783f9d5f533ddbcc3230943463c722c659d58d011",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g08-f001.png",
+          "sha256": "0860a79a59be7e02252c9bcf6bb7dbbbd375718335db7f5ce83be8d71906c467",
+          "source_sha256": "0860a79a59be7e02252c9bcf6bb7dbbbd375718335db7f5ce83be8d71906c467",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g08-f002.png",
+          "sha256": "3d7ff46ead81b74d13d58a081bd7f573f507485e67d35a46776cebc1bc6d98e7",
+          "source_sha256": "3d7ff46ead81b74d13d58a081bd7f573f507485e67d35a46776cebc1bc6d98e7",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 11,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g11-f000.png",
+          "sha256": "b845ad686474c1a7c82ec4b3e2d70b57a6a33709a599612d39cf1fe48b2c63ce",
+          "source_sha256": "b845ad686474c1a7c82ec4b3e2d70b57a6a33709a599612d39cf1fe48b2c63ce",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g11-f001.png",
+          "sha256": "9a9c0ab006f8acc8349687dc813f52e3505cd751082b999bdae070ef78dfb1cf",
+          "source_sha256": "9a9c0ab006f8acc8349687dc813f52e3505cd751082b999bdae070ef78dfb1cf",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g11-f002.png",
+          "sha256": "a58862eb6d08027e194c6ebdf9a0b21584a4608173a10ea4276b180abbac2217",
+          "source_sha256": "a58862eb6d08027e194c6ebdf9a0b21584a4608173a10ea4276b180abbac2217",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g11-f003.png",
+          "sha256": "6baa1c4fc80fc8b04d767be5d9a3e74d74f6f825e9e0c08f3aaea1cb86f0574a",
+          "source_sha256": "6baa1c4fc80fc8b04d767be5d9a3e74d74f6f825e9e0c08f3aaea1cb86f0574a",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 12,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g12-f000.png",
+          "sha256": "68009ee41e033ad436daef893a37a423321f064ea734743ef49e5295059cf989",
+          "source_sha256": "68009ee41e033ad436daef893a37a423321f064ea734743ef49e5295059cf989",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g12-f001.png",
+          "sha256": "98f46f298d045f76b7a027a68292db5d815a6cadc42fcc48b6518a30c5bff9a8",
+          "source_sha256": "98f46f298d045f76b7a027a68292db5d815a6cadc42fcc48b6518a30c5bff9a8",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g12-f002.png",
+          "sha256": "d408cfecbb28aea3772f15c4b103285f223d62bb7e9e5836272e32df1bba8157",
+          "source_sha256": "d408cfecbb28aea3772f15c4b103285f223d62bb7e9e5836272e32df1bba8157",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g12-f003.png",
+          "sha256": "2b9f54e82c3ed33c332a204ae135c3b827604bf08823b482d4c5ac93657927dc",
+          "source_sha256": "2b9f54e82c3ed33c332a204ae135c3b827604bf08823b482d4c5ac93657927dc",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 13,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g13-f000.png",
+          "sha256": "e9517937efb945c8e06061b40f58d96033f4c674a36cb5a6cfd25dae7f0eea3e",
+          "source_sha256": "e9517937efb945c8e06061b40f58d96033f4c674a36cb5a6cfd25dae7f0eea3e",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g13-f001.png",
+          "sha256": "b4a4da5fe88e4a9bb313562151efe17a95cccdd38a1ee15b88e3638e487b38ce",
+          "source_sha256": "b4a4da5fe88e4a9bb313562151efe17a95cccdd38a1ee15b88e3638e487b38ce",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g13-f002.png",
+          "sha256": "d2e33bcfc182c82766b0ce26d799c4a1d252609586f9233972034a14e8b1686e",
+          "source_sha256": "d2e33bcfc182c82766b0ce26d799c4a1d252609586f9233972034a14e8b1686e",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g13-f003.png",
+          "sha256": "7445425ba3219f099fa2173d11a4a1d10b306976bfaeee1af184653ba427ada2",
+          "source_sha256": "7445425ba3219f099fa2173d11a4a1d10b306976bfaeee1af184653ba427ada2",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 22,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t1-t4/native/freightHandler/battle/g22-f000.png",
+          "sha256": "cf23df76909c47cf4aa369b44554d67dbc76ac715da5870f114e3066148dd531",
+          "source_sha256": "cf23df76909c47cf4aa369b44554d67dbc76ac715da5870f114e3066148dd531",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    }
+  ]
+}

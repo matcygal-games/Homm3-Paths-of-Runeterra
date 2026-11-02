@@ -1,0 +1,614 @@
+{
+  "acceptance": "Authored candidate; no native/art/rights approval",
+  "attack_semantics": "Unmanned grounded twohex mechanical chassis; ordinary single-target melee11/12/13. No regeneration, widegrab, artillery, cast, projectile, rider or freeaction.",
+  "canvas": [
+    450,
+    400
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; Codex technical source assembly",
+    "license": "unresolved",
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/source-selection-v2.json",
+      "sha256": "5eb11a87d8be0c1c929c33c9363683d8afc908a90de2ec57331418370df15e79"
+    },
+    {
+      "path": "build/reports/humanoid-golem-20261025-v1/creatures/assemble.py",
+      "sha256": "3b8c9028be4d78925118771c20ace48df0b53edb0b5ab42eb4363f05cb6929e5"
+    },
+    {
+      "path": "build/reports/humanoid-golem-20261025-v1/creatures/components.py",
+      "sha256": "cce7a00bd13cbfa225a5f59507fe970015bb590617bfead0af6226bb40217862"
+    },
+    {
+      "path": "build/reports/humanoid-golem-20261025-v1/creatures/metadata_closure.py",
+      "sha256": "cf915f0cd2a5a7c86695eaec5263e5e7a13d22780f781925a95a4dbbf8459773"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/chemGolem/auxiliary-v1/master.png",
+      "sha256": "7cbd3ccdfcfbbff151d3cb906523f14db626c7d642cf1bde1f8605f201724691"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/chemGolem/auxiliary-v1/registration-v1.json",
+      "sha256": "06e3af1ee4462fcb287760cbbaa345d68c584c7b6419231ce6d6b9b2d447c1f4"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/chemGolem/auxiliary-v1/prompt.txt",
+      "sha256": "00d582eed408419757114214df75a20a093b06ce0eb0678fc7bcf3bc0addbbf1"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/chemGolem/auxiliary-v1/prompt-as-sent.json",
+      "sha256": "c34c85d3176eed0f64b94581d70eb6628e730667ed06329d5712f493d97b35b1"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/chemGolem/defend-death-v1/master.png",
+      "sha256": "723d42e44ceb26e3cbd0c10acea1b9e3476f74452d5d20b531e9b92d2096a851"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/chemGolem/defend-death-v1/registration-v1.json",
+      "sha256": "40d78ac6160d04b6bd51ae9c25586bacada0a67015ee48b11fb89c8b178e1f86"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/chemGolem/defend-death-v1/prompt.txt",
+      "sha256": "354359e862e3af4f8920a55ed4b146bc9db1c30bd7b7cccea185952aaa9e7390"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/chemGolem/defend-death-v1/prompt-as-sent.json",
+      "sha256": "010b073934ea204dccf15b10aeb1189dfc1380dd8571475c0f39c1db7d9e9f4d"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/chemGolem/general-v1/master.png",
+      "sha256": "f2aa6ef0bc4863bc4426f334648f74edbfdff977b5e594df3728eefaf9808c5c"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/chemGolem/general-v1/registration-v1.json",
+      "sha256": "812b3aef9913290369b774bf74b59e4ce05114d63e90dfcf2170468be3dbf668"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/chemGolem/general-v1/prompt.txt",
+      "sha256": "652c4e514efe69383cca5d44d57a12958b80f20646d4871dfa5b5a5d041c498f"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/chemGolem/general-v1/prompt-as-sent.json",
+      "sha256": "d61f8573bf884a581c04b4d1e240b126782babab07f06547803bde37bac62df1"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/chemGolem/melee-v1/master.png",
+      "sha256": "987c2a70815009b3b54c9bc446be9dc61d6d628197d387df464daee53aad8ef0"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/chemGolem/melee-v1/registration-v1.json",
+      "sha256": "9f01be0e82d1fb3e32b660e0fa274df007a343d80698b68a0527a4d8078fc060"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/chemGolem/melee-v1/prompt.txt",
+      "sha256": "eca357dab0f4a232e287ab02b523f2080435aeb3c758232d0eacc371f8010a36"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/chemGolem/melee-v1/prompt-as-sent.json",
+      "sha256": "2c10daf55e161148881922a745f01e4d84fd5a8ba13068ef5251013511f9fec5"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/auxiliary-v1/master.png",
+      "sha256": "a3fe790dc04f2b481374f866c04b42a3320bde034d8891b99947157d79f14c9c"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/auxiliary-v1/registration-v1.json",
+      "sha256": "14c3b7935dbd6fac1e2a19cbbe4aeb42590f08c22e2b6fcce592ae6e8734a920"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/auxiliary-v1/prompt.txt",
+      "sha256": "e28f48fe7147b32cf42e6639ed2d19e7aaf4b35d48cde1278489f410ecab8f7c"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/auxiliary-v1/prompt-as-sent.json",
+      "sha256": "9c39694be769bb8ef0fb5d71a0d701f44877410fa160a4b57dc1b0283c2e4ba0"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/defend-death-v3/master.png",
+      "sha256": "9c564aa6f4313872aff72cf8589b854c7c8b25e59c20606786c2b924e7f24b54"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/defend-death-v3/registration-v1.json",
+      "sha256": "95a9c02ee5cc65e85752000b04e39e0ea7f93402b6d25dacce7bbe8286eb0f5e"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/defend-death-v3/prompt.txt",
+      "sha256": "dffea2e0ccc0dc8bf3fdedd1656b11948ad28b2b4192d0f15c970af7ecd9bf06"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/defend-death-v3/prompt-as-sent.json",
+      "sha256": "53f0a835f54338d0989abc4b4e99eeb9beb7dc2b0016c43e884071f1f406895e"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/general-v1/master.png",
+      "sha256": "85d04fd12df47ff23f9ba877c5b015a967f2d14b5af2c106b8e1eea741b63ecd"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/general-v1/registration-v1.json",
+      "sha256": "37c423b1035a24a2c69b1c9174e4d171a40c8649ca7fc5c15c38d7cd90e63f59"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/general-v1/prompt.txt",
+      "sha256": "2936090dfaad0e220779dc49d4f5aca8ca89980f586cccce1d4af6ca633b0e34"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/general-v1/prompt-as-sent.json",
+      "sha256": "7d43d7bb97c49ce444122abcb35115f1f7d8e01d5bf43732c2f3123e1a96e149"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/melee-v2/master.png",
+      "sha256": "26e5a4fbcb24c7588f112f1cfabb6c41ba4c7cfc90d70a2f58058a71b1d98fb7"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/melee-v2/registration-v1.json",
+      "sha256": "88f9e550bd19cbde9f84082c9e98c9044e20cbda184d9b2d554b7cc4ecbc61aa"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/melee-v2/prompt.txt",
+      "sha256": "052016fbbd49f476832325a52b11a45cd5f45113815029b89385aca39ba89614"
+    },
+    {
+      "path": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/melee-v2/prompt-as-sent.json",
+      "sha256": "9a942cc25b0b9173a1700be8ee5a9fd2a411a78f418f7d4c083720fe14130073"
+    },
+    {
+      "kind": "historical_provenance",
+      "path": "assets/history/humanoid-golem-20261025-v1/chemGolem--auxiliary-v1--generation.json",
+      "sha256": "605f7a3beab65281e215cc966fcdb598e0f010a14297d71e424a40ec372fba20"
+    },
+    {
+      "kind": "historical_provenance",
+      "path": "assets/history/humanoid-golem-20261025-v1/chemGolem--defend-death-v1--generation.json",
+      "sha256": "1be601fe1dbd12f6dd42af7f3bafeba772aa7da3721dc163cdd2fb97673aa01e"
+    },
+    {
+      "kind": "historical_provenance",
+      "path": "assets/history/humanoid-golem-20261025-v1/chemGolem--general-v1--generation.json",
+      "sha256": "04ad2e64764b9f55012904c11cd3cdaae85681181043edfcef601c3c5074843b"
+    },
+    {
+      "kind": "historical_provenance",
+      "path": "assets/history/humanoid-golem-20261025-v1/chemGolem--melee-v1--generation.json",
+      "sha256": "aff6cea69a4de3ec172fa082c1b706200881b949e5cf61ae5c1a11f2c0424eaa"
+    },
+    {
+      "kind": "historical_provenance",
+      "path": "assets/history/humanoid-golem-20261025-v1/pressureColossus--auxiliary-v1--generation.json",
+      "sha256": "4f2bc81dcfb57b8b6843f327bebb279bb2cf622ea9f37b6a4c6dc326e00765d4"
+    },
+    {
+      "kind": "historical_provenance",
+      "path": "assets/history/humanoid-golem-20261025-v1/pressureColossus--defend-death-v3--generation.json",
+      "sha256": "a4a2c9495d2614c9b4d640b2be51e69a938ce251a03a33869ed664b29d8d507a"
+    },
+    {
+      "kind": "historical_provenance",
+      "path": "assets/history/humanoid-golem-20261025-v1/pressureColossus--general-v1--generation.json",
+      "sha256": "db6812a88ec873f8e683a4fdfbcaeed3ba286475f680b9ae8eb31eef6ae65d00"
+    },
+    {
+      "kind": "historical_provenance",
+      "path": "assets/history/humanoid-golem-20261025-v1/pressureColossus--melee-v2--generation.json",
+      "sha256": "992cc5abccd3568fbc988c57ba0d2f1871b7c4eeb5cd3149918fc943c3540913"
+    }
+  ],
+  "footprint": {
+    "battle": {
+      "body_center": [
+        218,
+        266
+      ],
+      "front_center": [
+        240,
+        266
+      ],
+      "hex_width": 44,
+      "rear_center": [
+        196,
+        266
+      ]
+    },
+    "doubleWide": true
+  },
+  "generateOverlay": 1,
+  "generateShadow": 1,
+  "generation": {
+    "alpha_preserved": true,
+    "image_generation_used": true,
+    "model": null,
+    "native_execution": false,
+    "painted_master": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/general-v1/master.png",
+    "painted_master_sha256": "85d04fd12df47ff23f9ba877c5b015a967f2d14b5af2c106b8e1eea741b63ecd",
+    "prompt": "Use case: illustration-story.\nAsset type: genuine painted 2D game creature action sprites for original 1999 Heroes III, transparent RGBA.\nSubject: Pressure Colossus, a POWERFUL HUMANOID BIPED unmanned Zaun industrial combat machine. TWO sturdy articulated legs and TWO broad flat feet, broad upright riveted tank-chest, TWO massive piston HAMMER forearms attached to shoulders, very small sealed sensor-head with narrow inspection slit, no face/person inside. Threatening braced heavyweight, wide shoulders, low strong waist, knee pistons. Brown rusted iron and blackened steel, dark brass joints, two local luminous toxic GREEN glass pressure-cells behind shoulders, purple hose wraps. UPGRADE of the supplied Chem-Golem: visibly stronger, MUCH BROADER armored shoulders with thick overlapping dark plum iron pauldrons, thicker shin/hip protection and wide heavy boots, enlarged pistonhammerforearms with reinforced rib bands, reinforced big tank-chest/waist and protected THREE tall toxicGREEN pressuretanks with heavy cages. Keep the same small sealed sensor-head and humanoid family, do not enlarge the head. Upgrade remains rustbrown/brass/darkiron with deepPURPLE armor and local GREEN glass; metal itself doesnotglow. A small etched metal plaque on chest bears the correct Zaun regional RESPIRATOR crest from supplied reference (rounded mask lower loop and broad curled side-filters); NOT a cog, pipes icon or face.\nReferences: native original HoMM3 iron golem and cavalier ONLY for compact painted rendering, fixed slightly elevated three-quarter battlefield camera and upper-left light, NEVER copy original troop pixels. Lenare image ONLY for articulated brass linkages and protected chemical glass, NEVER her human face/body. Crest reference ONLY for the engraving.\nStyle: compact richly textured painted miniature pixels with strong silhouette and restrained short highlights, matte opaque weathered metal, original HoMM3 visual grammar. No glossy CGI, no 3D render, no anime, no vector, no cinematic framing. All poses same exact machine, limbs, equipment, scale, camera, lighting. RIGHT-facing 3/4 in all non-turn poses, feet planted at consistent baseline. Physically broad two-hex combat humanoid, not lanky; has only TWO legs. No four-leg boiler, wheels, treads, rider, operator, human face, Blitzcrank, cannon, gun, ranged shot, projectiles, magic, skin, living hands.\nComposition: EXACT equal cells, transparent gutters, every complete pose in its cell with at least15% empty margin on every side and no overlapping neighboring sprites. No text, labels, grids, floor, shadow disk, smoke or checkerboard. Real alpha transparency.\n\nInput1 new baseChemGolem general sheet: reference for same machine family, humanoidanatomy, poseprogram/renderlanguage ONLY. Paint a visibly STRONGER new upgrade as specified.\nSheet: EXACT SIX COLUMNS FOUR ROWS, 1536x1024 transparent atlas. Same figure scale in every cell, each figure about70% cell height, feet baseline83% cellheight. Read left to right.\nROW1: SIX consecutive genuine WALKING phases.1 leftfootforwardplant/rightlegback;2 weightonleftfoot rightkneeandtoelift;3 rightlegpassesleft with knee flexion;4 rightfootforwardplant leftlegback;5 weightonright leftknee/toelift;6 leftlegpasses with knee flexion. Visible changing ankle/knee/hip articulation and opposed heavy arm counterbalance. Grounded weight, not idle copies.\nROW2: first FOUR small FIDGET frames: initial raisedhammer inspection, shoulderpistonsettle, headslitglancetowardarm, return arm; FIFTH calm planted rightfacing IDLE bothfeet/bracedarms, SIXTH same idle supplemental.\nROW3: first FOUR actual HIT RECOIL phases: sharp chesthit recoils torso back with elbows drawn, deeper recoil bent knee, forward weight recovery, almost recovered guard. LASTTWO unused calm idle.\nROW4: first FOUR TURN half-turn poses:1 RIGHT-facing3/4 idle,2 body begins rotating towardcamera feetpivot,3 nearfront shoulders open,4 FRONT-facing symmetric plantedmachine. LASTTWO unused frontidle. NO backview anywhere.\n",
+    "provider": "OpenAI built-in imagegen",
+    "supplemental_masters": [
+      {
+        "path": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/defend-death-v3/master.png",
+        "sha256": "9c564aa6f4313872aff72cf8589b854c7c8b25e59c20606786c2b924e7f24b54"
+      },
+      {
+        "path": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/melee-v2/master.png",
+        "sha256": "26e5a4fbcb24c7588f112f1cfabb6c41ba4c7cfc90d70a2f58058a71b1d98fb7"
+      },
+      {
+        "path": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/auxiliary-v1/master.png",
+        "sha256": "a3fe790dc04f2b481374f866c04b42a3320bde034d8891b99947157d79f14c9c"
+      }
+    ]
+  },
+  "groups": [
+    {
+      "action": "MOVING",
+      "frames": [
+        {
+          "sha256": "e07aa95a0bbfe11442b28fa40028486d501ff15c2acca28bd835be85328bda47",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/general-v1/r00-c00.png",
+          "source_sha256": "e07aa95a0bbfe11442b28fa40028486d501ff15c2acca28bd835be85328bda47"
+        },
+        {
+          "sha256": "64283ff10ebc510138055dadce3c43a25ad328b1ce084bb755b0a4497db15588",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/general-v1/r00-c01.png",
+          "source_sha256": "64283ff10ebc510138055dadce3c43a25ad328b1ce084bb755b0a4497db15588"
+        },
+        {
+          "sha256": "cacb10e6e11c573e89635fed34136af1c8957c7bc448266b959c8b52b06e049d",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/general-v1/r00-c02.png",
+          "source_sha256": "cacb10e6e11c573e89635fed34136af1c8957c7bc448266b959c8b52b06e049d"
+        },
+        {
+          "sha256": "ad1c1aa0830526872c7f21fe07b071117d8f41bdf5906ea34a9bb5f36a8f51fe",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/general-v1/r00-c03.png",
+          "source_sha256": "ad1c1aa0830526872c7f21fe07b071117d8f41bdf5906ea34a9bb5f36a8f51fe"
+        },
+        {
+          "sha256": "2b3c85f18cd9bede632bd49206994ff21bb0a61d905ebcefffb0ed69fd04e319",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/general-v1/r00-c04.png",
+          "source_sha256": "2b3c85f18cd9bede632bd49206994ff21bb0a61d905ebcefffb0ed69fd04e319"
+        },
+        {
+          "sha256": "aabee2e7b15d31e13672d409a24da660fff1cb68197537f1e24fd96c85410b63",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/general-v1/r00-c05.png",
+          "source_sha256": "aabee2e7b15d31e13672d409a24da660fff1cb68197537f1e24fd96c85410b63"
+        }
+      ],
+      "group": 0
+    },
+    {
+      "action": "MOUSEON",
+      "frames": [
+        {
+          "sha256": "ab346a3f7699582591bb93e27b362aebdd5712ad07861a98a5fe72bb9a8766ea",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/general-v1/r01-c00.png",
+          "source_sha256": "ab346a3f7699582591bb93e27b362aebdd5712ad07861a98a5fe72bb9a8766ea"
+        },
+        {
+          "sha256": "bafafba575d2036e5490bb1bd8d0dcc37069b5e9c89507896c19e63b6f0fcace",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/general-v1/r01-c01.png",
+          "source_sha256": "bafafba575d2036e5490bb1bd8d0dcc37069b5e9c89507896c19e63b6f0fcace"
+        },
+        {
+          "sha256": "752b3bce2d10864e3083818ceb050dee5ac5a0ed55696735b548afe1e122c423",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/general-v1/r01-c02.png",
+          "source_sha256": "752b3bce2d10864e3083818ceb050dee5ac5a0ed55696735b548afe1e122c423"
+        },
+        {
+          "sha256": "fefd57dcee103610852ae7d88a488eaccc19b221f7711a10a2503565f1738878",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/general-v1/r01-c03.png",
+          "source_sha256": "fefd57dcee103610852ae7d88a488eaccc19b221f7711a10a2503565f1738878"
+        }
+      ],
+      "group": 1
+    },
+    {
+      "action": "HOLDING",
+      "frames": [
+        {
+          "sha256": "88425759a7475ee80f2a988aeaf64f4b5fd2a94387f740b881de007f7e8bf096",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/general-v1/r01-c04.png",
+          "source_sha256": "88425759a7475ee80f2a988aeaf64f4b5fd2a94387f740b881de007f7e8bf096"
+        }
+      ],
+      "group": 2
+    },
+    {
+      "action": "HITTED",
+      "frames": [
+        {
+          "sha256": "441c38c60b29b77ecf6b55d547f0d495222cfae4211d9d63f5a6f24e17dadbbe",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/general-v1/r02-c00.png",
+          "source_sha256": "441c38c60b29b77ecf6b55d547f0d495222cfae4211d9d63f5a6f24e17dadbbe"
+        },
+        {
+          "sha256": "9687f7b40648209ee394189af3c54a7d0d8457f8f6f48cf28ea7c7bf658dbd89",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/general-v1/r02-c01.png",
+          "source_sha256": "9687f7b40648209ee394189af3c54a7d0d8457f8f6f48cf28ea7c7bf658dbd89"
+        },
+        {
+          "sha256": "494c7b855a5e645597268fd347fb5d083dac5f6e878d67f01c53358e0ffaf382",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/general-v1/r02-c02.png",
+          "source_sha256": "494c7b855a5e645597268fd347fb5d083dac5f6e878d67f01c53358e0ffaf382"
+        },
+        {
+          "sha256": "d083f27b815a065c7ba41e927ea27331318606d48b8a4c00f3993b74de0e64fa",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/general-v1/r02-c03.png",
+          "source_sha256": "d083f27b815a065c7ba41e927ea27331318606d48b8a4c00f3993b74de0e64fa"
+        }
+      ],
+      "group": 3
+    },
+    {
+      "action": "DEFENCE",
+      "frames": [
+        {
+          "sha256": "304c6dc032e48523ea8df29aae79ae5f5ff95cc4407d48a972740bfd4df831bc",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/defend-death-v3/r00-c01.png",
+          "source_sha256": "304c6dc032e48523ea8df29aae79ae5f5ff95cc4407d48a972740bfd4df831bc"
+        },
+        {
+          "sha256": "f7fb2674e49f924e9de895236025964678555b8631c863b4f08dc88a9a780430",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/defend-death-v3/r00-c02.png",
+          "source_sha256": "f7fb2674e49f924e9de895236025964678555b8631c863b4f08dc88a9a780430"
+        },
+        {
+          "sha256": "6747977ce3124ec53107da268633d0982154e100b96d87600c904cad35f8670f",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/defend-death-v3/r00-c03.png",
+          "source_sha256": "6747977ce3124ec53107da268633d0982154e100b96d87600c904cad35f8670f"
+        },
+        {
+          "sha256": "c26afd9451c6df3873b315e8ff28a4baa65e349e95bbda52f263c7eb9ebc7f6f",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/defend-death-v3/r00-c04.png",
+          "source_sha256": "c26afd9451c6df3873b315e8ff28a4baa65e349e95bbda52f263c7eb9ebc7f6f"
+        }
+      ],
+      "group": 4
+    },
+    {
+      "action": "DEATH",
+      "frames": [
+        {
+          "sha256": "839e35fe63b816ee7427f0ff913cf13c0b8d4d3536cb48dbb33b6c8299edf011",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/defend-death-v3/r01-c00.png",
+          "source_sha256": "839e35fe63b816ee7427f0ff913cf13c0b8d4d3536cb48dbb33b6c8299edf011"
+        },
+        {
+          "sha256": "b7db6fe951a416293e14d253ec8ecf65a427757b8e242e557e1521d9ac9ff6b5",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/defend-death-v3/r01-c01.png",
+          "source_sha256": "b7db6fe951a416293e14d253ec8ecf65a427757b8e242e557e1521d9ac9ff6b5"
+        },
+        {
+          "sha256": "40dc3cc0b05341d1daa3dd5d738f063ba52f4e77ab9b83e89f3a720a1d90bb95",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/defend-death-v3/r01-c02.png",
+          "source_sha256": "40dc3cc0b05341d1daa3dd5d738f063ba52f4e77ab9b83e89f3a720a1d90bb95"
+        },
+        {
+          "sha256": "e6ec550090e62fdf9ea851117d96570e12f51134d60823b6259542db0795e722",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/defend-death-v3/r01-c03.png",
+          "source_sha256": "e6ec550090e62fdf9ea851117d96570e12f51134d60823b6259542db0795e722"
+        },
+        {
+          "sha256": "e3e91374743c3aee77f54fcdb9b6150764f19787da87cccb69107ab48d9b7f38",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/defend-death-v3/r01-c04.png",
+          "source_sha256": "e3e91374743c3aee77f54fcdb9b6150764f19787da87cccb69107ab48d9b7f38"
+        },
+        {
+          "sha256": "b3a4f557049222817532b7b718be23eb53a338ef47331e4281796e54aad38f61",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/defend-death-v3/r01-c05.png",
+          "source_sha256": "b3a4f557049222817532b7b718be23eb53a338ef47331e4281796e54aad38f61"
+        }
+      ],
+      "group": 5
+    },
+    {
+      "action": "TURN_L",
+      "frames": [
+        {
+          "sha256": "88425759a7475ee80f2a988aeaf64f4b5fd2a94387f740b881de007f7e8bf096",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/general-v1/r01-c04.png",
+          "source_sha256": "88425759a7475ee80f2a988aeaf64f4b5fd2a94387f740b881de007f7e8bf096"
+        },
+        {
+          "sha256": "48cf7198132cd5ee8002f998f1b7c8bf67331073f22b2f4a26956516b93d57f5",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/general-v1/r03-c01.png",
+          "source_sha256": "48cf7198132cd5ee8002f998f1b7c8bf67331073f22b2f4a26956516b93d57f5"
+        },
+        {
+          "sha256": "7706bdbd9249a2ec53b88a9894734cbd5ed1a6590d43fda5e855a8c7f105085a",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/general-v1/r03-c02.png",
+          "source_sha256": "7706bdbd9249a2ec53b88a9894734cbd5ed1a6590d43fda5e855a8c7f105085a"
+        },
+        {
+          "sha256": "48ecc675f4a5e36b8209d03f7f91e143fcbed3f2c1d92e6907c56e57cad185c7",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/general-v1/r03-c03.png",
+          "source_sha256": "48ecc675f4a5e36b8209d03f7f91e143fcbed3f2c1d92e6907c56e57cad185c7"
+        }
+      ],
+      "group": 7
+    },
+    {
+      "action": "TURN_R",
+      "frames": [
+        {
+          "sha256": "48ecc675f4a5e36b8209d03f7f91e143fcbed3f2c1d92e6907c56e57cad185c7",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/general-v1/r03-c03.png",
+          "source_sha256": "48ecc675f4a5e36b8209d03f7f91e143fcbed3f2c1d92e6907c56e57cad185c7"
+        },
+        {
+          "sha256": "7706bdbd9249a2ec53b88a9894734cbd5ed1a6590d43fda5e855a8c7f105085a",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/general-v1/r03-c02.png",
+          "source_sha256": "7706bdbd9249a2ec53b88a9894734cbd5ed1a6590d43fda5e855a8c7f105085a"
+        },
+        {
+          "sha256": "48cf7198132cd5ee8002f998f1b7c8bf67331073f22b2f4a26956516b93d57f5",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/general-v1/r03-c01.png",
+          "source_sha256": "48cf7198132cd5ee8002f998f1b7c8bf67331073f22b2f4a26956516b93d57f5"
+        },
+        {
+          "sha256": "88425759a7475ee80f2a988aeaf64f4b5fd2a94387f740b881de007f7e8bf096",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/general-v1/r01-c04.png",
+          "source_sha256": "88425759a7475ee80f2a988aeaf64f4b5fd2a94387f740b881de007f7e8bf096"
+        }
+      ],
+      "group": 8
+    },
+    {
+      "action": "ATTACK_UP",
+      "frames": [
+        {
+          "sha256": "16048afc1f84d1266dea1726b781c1d1d5ae8c30a351d9b6a23e32a7f616bce8",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/melee-v2/r00-c00.png",
+          "source_sha256": "16048afc1f84d1266dea1726b781c1d1d5ae8c30a351d9b6a23e32a7f616bce8"
+        },
+        {
+          "sha256": "dad4f758a21418a098681fb4434dd1a84ff9049be45f09f4d873a5a28724b22f",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/melee-v2/r00-c01.png",
+          "source_sha256": "dad4f758a21418a098681fb4434dd1a84ff9049be45f09f4d873a5a28724b22f"
+        },
+        {
+          "sha256": "8598e1ee7b0336ca3d49d4d33f427886dea44c63327af7e75c39d7ac20b299a4",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/melee-v2/r00-c02.png",
+          "source_sha256": "8598e1ee7b0336ca3d49d4d33f427886dea44c63327af7e75c39d7ac20b299a4"
+        },
+        {
+          "sha256": "04452a77710f82134e823ff5ab16b0b79f6ed246e41899fbbb6520a689de97a7",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/melee-v2/r00-c03.png",
+          "source_sha256": "04452a77710f82134e823ff5ab16b0b79f6ed246e41899fbbb6520a689de97a7"
+        },
+        {
+          "sha256": "2ebf2058392d6401c1c1bb02a1b2ac861bd83a4fb7127a32669aa4c419f0fa03",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/melee-v2/r00-c04.png",
+          "source_sha256": "2ebf2058392d6401c1c1bb02a1b2ac861bd83a4fb7127a32669aa4c419f0fa03"
+        },
+        {
+          "sha256": "fa8d7e95c6351a17a46c4601b9aa13b807dd6f6818c17c07626e67307abcb477",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/melee-v2/r00-c05.png",
+          "source_sha256": "fa8d7e95c6351a17a46c4601b9aa13b807dd6f6818c17c07626e67307abcb477"
+        }
+      ],
+      "group": 11
+    },
+    {
+      "action": "ATTACK_FRONT",
+      "frames": [
+        {
+          "sha256": "a39584fbcd9ee6b1ffd1b6e4779d1faf293388e083b21e7889b4359e359b996d",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/melee-v2/r01-c00.png",
+          "source_sha256": "a39584fbcd9ee6b1ffd1b6e4779d1faf293388e083b21e7889b4359e359b996d"
+        },
+        {
+          "sha256": "2cfd82490959692ab29b0b355041542dfd3a449267bcd3ac943c4dae2e4ff8da",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/melee-v2/r01-c01.png",
+          "source_sha256": "2cfd82490959692ab29b0b355041542dfd3a449267bcd3ac943c4dae2e4ff8da"
+        },
+        {
+          "sha256": "ac7bd7858584743d61dcd15adaf67c6038cb2000f19757b577fdff49396f98c1",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/melee-v2/r01-c02.png",
+          "source_sha256": "ac7bd7858584743d61dcd15adaf67c6038cb2000f19757b577fdff49396f98c1"
+        },
+        {
+          "sha256": "53af16284878598104ab7e7fe8b2929b3ed8cf943d79f2817f6e8e5014584202",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/melee-v2/r01-c03.png",
+          "source_sha256": "53af16284878598104ab7e7fe8b2929b3ed8cf943d79f2817f6e8e5014584202"
+        },
+        {
+          "sha256": "dec3a17466817de38e5de6dd22faa2a0b184671ba207b9881df65af5b217bc0d",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/melee-v2/r01-c04.png",
+          "source_sha256": "dec3a17466817de38e5de6dd22faa2a0b184671ba207b9881df65af5b217bc0d"
+        },
+        {
+          "sha256": "4833e33eeb9552309191846d81d3ad32b1bba1fbf2c41cc5035021cd51612bf2",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/melee-v2/r01-c05.png",
+          "source_sha256": "4833e33eeb9552309191846d81d3ad32b1bba1fbf2c41cc5035021cd51612bf2"
+        }
+      ],
+      "group": 12
+    },
+    {
+      "action": "ATTACK_DOWN",
+      "frames": [
+        {
+          "sha256": "11c745eceec5e7445d4065694a9b954fd3bf33197268917c761093593fcb03e6",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/melee-v2/r02-c00.png",
+          "source_sha256": "11c745eceec5e7445d4065694a9b954fd3bf33197268917c761093593fcb03e6"
+        },
+        {
+          "sha256": "66f07638f1b677d7a7a85b2d527de7ec5af3805cc9e6da836f1e6d00ba6945db",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/melee-v2/r02-c01.png",
+          "source_sha256": "66f07638f1b677d7a7a85b2d527de7ec5af3805cc9e6da836f1e6d00ba6945db"
+        },
+        {
+          "sha256": "fc4efb984e295649c82123ef434284c74a9d809ceaa32a5de9d3a0de181b8ee6",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/melee-v2/r02-c02.png",
+          "source_sha256": "fc4efb984e295649c82123ef434284c74a9d809ceaa32a5de9d3a0de181b8ee6"
+        },
+        {
+          "sha256": "a189a89d0fbd49555e100431d2edf4cadeb515e6be948cd83d4f48552970484e",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/melee-v2/r02-c03.png",
+          "source_sha256": "a189a89d0fbd49555e100431d2edf4cadeb515e6be948cd83d4f48552970484e"
+        },
+        {
+          "sha256": "c6db3e476580415777db95cc4269ed59afb0c15494f85e22389ffd34f524eed9",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/melee-v2/r02-c04.png",
+          "source_sha256": "c6db3e476580415777db95cc4269ed59afb0c15494f85e22389ffd34f524eed9"
+        },
+        {
+          "sha256": "7c919f0749cd2b23ad9d0fbe5792d199dfc8863c607d894cc2f6ef56861263c6",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/melee-v2/r02-c05.png",
+          "source_sha256": "7c919f0749cd2b23ad9d0fbe5792d199dfc8863c607d894cc2f6ef56861263c6"
+        }
+      ],
+      "group": 13
+    },
+    {
+      "action": "DEAD",
+      "frames": [
+        {
+          "sha256": "b3a4f557049222817532b7b718be23eb53a338ef47331e4281796e54aad38f61",
+          "source": "assets/source/creatures/humanoid-20261025-v1/pressureColossus/native-v1/defend-death-v3/r01-c05.png",
+          "source_sha256": "b3a4f557049222817532b7b718be23eb53a338ef47331e4281796e54aad38f61"
+        }
+      ],
+      "group": 22
+    }
+  ],
+  "id": "zaun.creature.pressureColossus.battle",
+  "output_path": "Content/Sprites/runeterra/zaun/creatures/pressureColossus/battle.json",
+  "pivot": {
+    "x": 218,
+    "y": 266
+  },
+  "production_status": "delivered",
+  "recipe_type": "vcmi_animation",
+  "required_groups": {
+    "0": 6,
+    "1": 4,
+    "11": 6,
+    "12": 6,
+    "13": 6,
+    "2": 1,
+    "22": 1,
+    "3": 4,
+    "4": 4,
+    "5": 6,
+    "7": 4,
+    "8": 4
+  },
+  "source_registration": {
+    "logical_battle_pivot": [
+      218,
+      266
+    ],
+    "selection": {
+      "path": "assets/source/creatures/humanoid-20261025-v1/source-selection-v2.json",
+      "sha256": "5eb11a87d8be0c1c929c33c9363683d8afc908a90de2ec57331418370df15e79"
+    },
+    "unchanged_runtime_bytes": true,
+    "whole_unit_camera_offset_x": 6
+  },
+  "status": "built-unreviewed",
+  "unit": "pressureColossus",
+  "visual_approval_granted": false
+}

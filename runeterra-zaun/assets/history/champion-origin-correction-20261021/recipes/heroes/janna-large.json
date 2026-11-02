@@ -1,0 +1,66 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "Independent Zaun character portrait in Heroes III native painted language. The portrait must match the authored biography and must not reuse official character art.",
+  "canvas": [
+    58,
+    64
+  ],
+  "credits": {
+    "author": "OpenAI built-in image generation; bounded portrait polish direction by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "delivery": {
+    "identity_review": "build/reports/art-implementation/20261021-champion-polish-v4/REVIEW.md",
+    "sources": [
+      {
+        "path": "assets/source/heroes/janna/painted-v3-polish/large-master.png",
+        "sha256": "20c7ee995705b88c9cc48c7215e1812dbcc767678409541b6131a4799ca43147"
+      }
+    ],
+    "status": "built-unreviewed; native and final art acceptance pending",
+    "technical_crop_box": [
+      30,
+      0,
+      958,
+      1024
+    ],
+    "visual_approval_granted": false
+  },
+  "dependencies": [],
+  "fit": "contain",
+  "generation": {
+    "image_generation_used": true,
+    "model": null,
+    "model_id_exposed": false,
+    "model_note": "Tool did not expose the model identifier.",
+    "painted_master": "assets/source/heroes/janna/painted-v3-polish/portrait-and-specialty-master.png",
+    "painted_master_sha256": "80ee4793360a6b2de28c1afa4f488c116110c01c3e5f13fed4ac0d08a2952b0b",
+    "prompt": "Use case: lighting-weather precise local background edit. Image1 is our OWN Janna portrait/object master. Change ONLY the small portion of BACKGROUND directly behind the upper-left outer ivory hair mass in the LEFT portrait panel. Keep Janna's exact face, eye direction, skin, pale hair, all strand shapes, flowing blue-gray drapery, pose, light and expression. Preserve all right-panel bird pendant imagery.\nOne targeted correction: the upper-left ivory hair currently merges into pale cloud/roof values. Lower the background clouds and distant roof values there to a natural medium cool slate blue-gray, producing clear gentle edge separation behind the white hair. Keep atmospheric coastal dawn scenery, varied cloud forms and visible industrial architecture. This is a subtle local value correction, NOT a flat black fill, vignette, dark void, new hair color or altered face illumination. Preserve warm dawn light in the distant right horizon and the subject's wind-spirit brightness.\nOriginal HeroesIII painted portrait rendering. No modern gloss, neon aura, line outline, hard halo, artificial sharpening, filter, pixelation, new prop, character, text, border or altered panel layout. Same landscape1536x1024 two panels; only portrait crops will be consumed.",
+    "provenance_record": "assets/source/heroes/janna/painted-v3-polish/generation.json",
+    "provider": "OpenAI built-in image_gen tool",
+    "returned_provenance": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-1663-7df0-8ab7-dcf90bfe6162 as C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-1663-7df0-8ab7-dcf90bfe6162\\exec-7d52035d-240a-41c4-af83-7d3fc91e97d5.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "route": "One genuine imagegen portrait polish. Same technical crop, RGBA conversion and uniform LANCZOS resampling. Specialty recipes and pixels remain on their frozen prior sources."
+  },
+  "hero": "janna",
+  "id": "zaun.hero.janna.large",
+  "output_path": "Content/Sprites/runeterra/zaun/heroes/janna/large.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    58,
+    64
+  ],
+  "source": "assets/source/heroes/janna/painted-v3-polish/large-master.png",
+  "source_sha256": "20c7ee995705b88c9cc48c7215e1812dbcc767678409541b6131a4799ca43147",
+  "status": "built-unreviewed",
+  "title": "janna large",
+  "visual_approval_granted": false
+}

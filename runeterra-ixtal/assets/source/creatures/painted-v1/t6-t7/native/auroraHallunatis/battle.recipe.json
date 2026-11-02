@@ -1,0 +1,670 @@
+{
+  "production_status": "painted-master-complete-unapproved",
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in imagegen",
+    "model": "not exposed by tool",
+    "prompt": "Use case: identity-preserve. HeroesIII Aurora Hallunatis COMPACT GROUNDED HOLD/FIDGET source correction. SAME living owl as reference: charcoal umber layered feathers, teal/violetwingcoverts, amber eyes, slender backward filaments, jadebreastyoke exactgold Ixtalcrest, two wings/twofeet. Correct ONLY stance/camera: more FRONTAL THREEQUARTER body facingRIGHT, foldedwings snugVERTICALLY down the flanks and LONGTAILFOLDED DOWN behindbody instead of sticking leftback horizontally. Upright powerful OWL posture, tallcompact whole silhouette about0.65WIDTH to1HEIGHT. HeadlookingRIGHT, bothfeet directly UNDERbodycenter, balancedankles/nocrouch, no horizontal tailfan. Delicatefilaments curvebackUP within compactbodywidth, not lateralstreamers. Keep maturepredatoryanatomy andsamebodytexture, do notminiaturize. Fourcoherent FULLBODY fidgetposes in2columns x2rows, allsamecameraandscale, wide transparentgutters.1neutralgroundedalert;2smallheadturntowardviewer;3beakpreensshoulder/wingliftsSLIGHTLY stayingcompact;4ruffshake/rightreturn. Fullplumeheightandfeet visiblewithamplemargins, genuineRGBAtransparent. RichpaintedoriginalHeroesIII smallspriteaesthetic/top-leftdaylight. Keep BASE slimfilamentcrown restrainedruff, no broadgoldhornsupgrade. No shadows, ground, aura, particles, labels, grid or background.",
+    "painted_master": "assets/source/creatures/painted-v1/t6-t7/auroraHallunatis/holding-v2.png",
+    "painted_master_sha256": "6faf21a0a73150c261f3f83e6c6c088ce89e717a02ee36033712b6e1b7ae637f",
+    "action_source_ledger": "assets/source/creatures/painted-v1/t6-t7/generation-ledger-v1.json",
+    "action_source_ledger_sha256": "66a1ac38e698e277cf652f7188bb299daef8ab73c44c3c49a3d5e44a95d96370",
+    "method": "Whole painted source actors, uniformly resampled per coherent cohort and registered with manual anatomical roots. No limb warp, rig, render, code-drawn actor, per-frame zoom or approval implied."
+  },
+  "production_inputs": [
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/generation-ledger-v1.json",
+      "sha256": "66a1ac38e698e277cf652f7188bb299daef8ab73c44c3c49a3d5e44a95d96370"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/pose-roots-v1.json",
+      "sha256": "596c3bf2c8b8d71b05bcde8d29d4a18181822d45a9175c62cd66135367c7229f"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/auroraHallunatis/isolated-source-map-v1.json",
+      "sha256": "ce46ea52e9ab80c95b9e9b8c22e3853e787576bc184fee8db3bd39f8776c2315"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/generation-reference-map-v1.json",
+      "sha256": "4e2dca4f0c6ff18e557f9e1310af3ff0ec0f563e3fc37ecf9165f5de939ba9c3"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/extract_sources.py",
+      "sha256": "6b9609f1ad3d8f3094496e44e5ca1f4e6170d137149001bdb165bf7d0ecbf540"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/produce-native.py",
+      "sha256": "42a62809f91d5d5c99672a8823b12b80e80d01d7888ad65115b83aa67c212046"
+    },
+    {
+      "path": "assets/source/ui/recruit-painted-v1/master-v1.png",
+      "sha256": "62597a1972521275e80b555d2aefb2e6b916ba53685400663b4cc03704235f75"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/auroraHallunatis/combat-v1.png",
+      "sha256": "cb6887f6ffe4300e3ec0a0da48964de6a9d68fb541196ea2b4e6f7c14ff797b7"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/auroraHallunatis/flight-v1.png",
+      "sha256": "b8f89571b31cc272ba9e3d5630473c1c020f2208eb2ad552658e8734157254a5"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/auroraHallunatis/holding-v2.png",
+      "sha256": "6faf21a0a73150c261f3f83e6c6c088ce89e717a02ee36033712b6e1b7ae637f"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/auroraHallunatis/movement-v1.png",
+      "sha256": "6491db7379eb38f78d3f84de2c1d85218e6098a07ef9e68b181a9d4b9f6554f8"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/auroraHallunatis/combat-v1.prompt.txt",
+      "sha256": "256b7794066a8d250df215170116dd839d57a4371c133ca628b9c3b8fcb5b78c"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/auroraHallunatis/flight-v1.prompt.txt",
+      "sha256": "64e6c161ad0d450bb0753a21b636dfa864b253b4a683c5e363070350af7425ee"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/auroraHallunatis/holding-v2.prompt.txt",
+      "sha256": "c1615362f01eb02cc9861b47842484635fe78ff8c56f9455e94f958766a31c27"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/auroraHallunatis/master-v1.prompt.txt",
+      "sha256": "b3087b49395c7d0aaaf771a8436526a80c4a0427a16bf7e2d09cab95edf7f781"
+    },
+    {
+      "path": "assets/source/creatures/painted-v1/t6-t7/auroraHallunatis/movement-v1.prompt.txt",
+      "sha256": "a6f10838e7c381311e62c535c685db028e1eb476670420351d09a80006e967c7"
+    }
+  ],
+  "recipe_type": "vcmi_animation",
+  "output_path": "Content/Sprites/runeterra/ixtal/creatures/auroraHallunatis/battle.json",
+  "canvas": [
+    450,
+    400
+  ],
+  "pivot": {
+    "x": 220,
+    "y": 266
+  },
+  "groups": [
+    {
+      "group": 0,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g00-f000.png",
+          "sha256": "365722081bd20a23fbb9605e6598ddbdacab0fc707eceff654c9bed5082b26c6",
+          "source_sha256": "365722081bd20a23fbb9605e6598ddbdacab0fc707eceff654c9bed5082b26c6",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g00-f001.png",
+          "sha256": "f5d3d6b0c61f82ee7e6761f7f9e213b3d6571d645d36e97a063cb75107dcf886",
+          "source_sha256": "f5d3d6b0c61f82ee7e6761f7f9e213b3d6571d645d36e97a063cb75107dcf886",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g00-f002.png",
+          "sha256": "f4d8fb7286b58f72fabcee4426132c95ee797d8a90bf73acd8eb6c634795f055",
+          "source_sha256": "f4d8fb7286b58f72fabcee4426132c95ee797d8a90bf73acd8eb6c634795f055",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g00-f003.png",
+          "sha256": "593b7463aede74411269ad28a0af74a5c48f2f0df1d6a1cb92799b8b3823a91f",
+          "source_sha256": "593b7463aede74411269ad28a0af74a5c48f2f0df1d6a1cb92799b8b3823a91f",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g00-f004.png",
+          "sha256": "244440bbec6286be85ead46e1c52033b3ee1944e982b9e10933de9e3762483bf",
+          "source_sha256": "244440bbec6286be85ead46e1c52033b3ee1944e982b9e10933de9e3762483bf",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g00-f005.png",
+          "sha256": "fdb536572aa226d7a860df1cc777854120912975cd5a965b5528147a54952b8a",
+          "source_sha256": "fdb536572aa226d7a860df1cc777854120912975cd5a965b5528147a54952b8a",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 1,
+      "generateOverlay": 0
+    },
+    {
+      "group": 1,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g01-f000.png",
+          "sha256": "6525e2e1b6451fe596df37e01f61520210abe3aea7e2747267c733f93408bb55",
+          "source_sha256": "6525e2e1b6451fe596df37e01f61520210abe3aea7e2747267c733f93408bb55",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g01-f001.png",
+          "sha256": "eb94f0de84edd15302efe28dd1982ddf3ec7913e27eaf7ee781f16fed491c1c1",
+          "source_sha256": "eb94f0de84edd15302efe28dd1982ddf3ec7913e27eaf7ee781f16fed491c1c1",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g01-f002.png",
+          "sha256": "eb94f0de84edd15302efe28dd1982ddf3ec7913e27eaf7ee781f16fed491c1c1",
+          "source_sha256": "eb94f0de84edd15302efe28dd1982ddf3ec7913e27eaf7ee781f16fed491c1c1",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g01-f003.png",
+          "sha256": "0e2cc4b81402f00d3626461e1b142505c568b157e99c76246e5353193565e08e",
+          "source_sha256": "0e2cc4b81402f00d3626461e1b142505c568b157e99c76246e5353193565e08e",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g01-f004.png",
+          "sha256": "0e2cc4b81402f00d3626461e1b142505c568b157e99c76246e5353193565e08e",
+          "source_sha256": "0e2cc4b81402f00d3626461e1b142505c568b157e99c76246e5353193565e08e",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g01-f005.png",
+          "sha256": "123c09c7ed85064541833835600e75f73bc6b4c8a9f22082b2fee58e866b996c",
+          "source_sha256": "123c09c7ed85064541833835600e75f73bc6b4c8a9f22082b2fee58e866b996c",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 6,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g01-f006.png",
+          "sha256": "123c09c7ed85064541833835600e75f73bc6b4c8a9f22082b2fee58e866b996c",
+          "source_sha256": "123c09c7ed85064541833835600e75f73bc6b4c8a9f22082b2fee58e866b996c",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 1,
+      "generateOverlay": 0
+    },
+    {
+      "group": 2,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g02-f000.png",
+          "sha256": "6525e2e1b6451fe596df37e01f61520210abe3aea7e2747267c733f93408bb55",
+          "source_sha256": "6525e2e1b6451fe596df37e01f61520210abe3aea7e2747267c733f93408bb55",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 1,
+      "generateOverlay": 0
+    },
+    {
+      "group": 3,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g03-f000.png",
+          "sha256": "9e4783bf1e30d899014d1a28282511c5299764f30c6f729402714bb0b04aae24",
+          "source_sha256": "9e4783bf1e30d899014d1a28282511c5299764f30c6f729402714bb0b04aae24",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g03-f001.png",
+          "sha256": "6525e2e1b6451fe596df37e01f61520210abe3aea7e2747267c733f93408bb55",
+          "source_sha256": "6525e2e1b6451fe596df37e01f61520210abe3aea7e2747267c733f93408bb55",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 1,
+      "generateOverlay": 0
+    },
+    {
+      "group": 4,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g04-f000.png",
+          "sha256": "2597e9d3beb388f13de700820ebee877bc6feaf41527fa0a7f1cf29b0b516ee8",
+          "source_sha256": "2597e9d3beb388f13de700820ebee877bc6feaf41527fa0a7f1cf29b0b516ee8",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 1,
+      "generateOverlay": 0
+    },
+    {
+      "group": 5,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g05-f000.png",
+          "sha256": "4d9756f89076ef41aa20c2323e9225b9a92d7fb7fdc84273d9b92c9414ee920b",
+          "source_sha256": "4d9756f89076ef41aa20c2323e9225b9a92d7fb7fdc84273d9b92c9414ee920b",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g05-f001.png",
+          "sha256": "3326f706f991ce975629c057a478ac5eacba649a7a748e8e6792c12a8ea9547d",
+          "source_sha256": "3326f706f991ce975629c057a478ac5eacba649a7a748e8e6792c12a8ea9547d",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g05-f002.png",
+          "sha256": "b380ecb6a573261b54419dd13861bbbc9bc55481b003d0bbbf2b09cda786d120",
+          "source_sha256": "b380ecb6a573261b54419dd13861bbbc9bc55481b003d0bbbf2b09cda786d120",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g05-f003.png",
+          "sha256": "4ec1ced3c49376a5978813a48a3297504f1219dbc20bf55e1ff6d5123208416c",
+          "source_sha256": "4ec1ced3c49376a5978813a48a3297504f1219dbc20bf55e1ff6d5123208416c",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 1,
+      "generateOverlay": 0
+    },
+    {
+      "group": 7,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g07-f000.png",
+          "sha256": "6525e2e1b6451fe596df37e01f61520210abe3aea7e2747267c733f93408bb55",
+          "source_sha256": "6525e2e1b6451fe596df37e01f61520210abe3aea7e2747267c733f93408bb55",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g07-f001.png",
+          "sha256": "46d47eb8f045e8e56c3c5c597489618c8403f4b5be3f35cc18cb6976b37c7de5",
+          "source_sha256": "46d47eb8f045e8e56c3c5c597489618c8403f4b5be3f35cc18cb6976b37c7de5",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g07-f002.png",
+          "sha256": "5be064568d346d341a2f84b5b7e1a174007d9e68027aecf99a8a9f65618443b6",
+          "source_sha256": "5be064568d346d341a2f84b5b7e1a174007d9e68027aecf99a8a9f65618443b6",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 1,
+      "generateOverlay": 0
+    },
+    {
+      "group": 8,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g08-f000.png",
+          "sha256": "5be064568d346d341a2f84b5b7e1a174007d9e68027aecf99a8a9f65618443b6",
+          "source_sha256": "5be064568d346d341a2f84b5b7e1a174007d9e68027aecf99a8a9f65618443b6",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g08-f001.png",
+          "sha256": "46d47eb8f045e8e56c3c5c597489618c8403f4b5be3f35cc18cb6976b37c7de5",
+          "source_sha256": "46d47eb8f045e8e56c3c5c597489618c8403f4b5be3f35cc18cb6976b37c7de5",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g08-f002.png",
+          "sha256": "6525e2e1b6451fe596df37e01f61520210abe3aea7e2747267c733f93408bb55",
+          "source_sha256": "6525e2e1b6451fe596df37e01f61520210abe3aea7e2747267c733f93408bb55",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 1,
+      "generateOverlay": 0
+    },
+    {
+      "group": 11,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g11-f000.png",
+          "sha256": "8ecdc0c6ea5126221e00da6ab4a0487b348a8e10973b3af093b7befbeccaf045",
+          "source_sha256": "8ecdc0c6ea5126221e00da6ab4a0487b348a8e10973b3af093b7befbeccaf045",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g11-f001.png",
+          "sha256": "ea6e181e554efa4ca6f577cccd68fa5fe3ea88681927b997a5d60b91eab77375",
+          "source_sha256": "ea6e181e554efa4ca6f577cccd68fa5fe3ea88681927b997a5d60b91eab77375",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g11-f002.png",
+          "sha256": "29342a513a65f2c4f2592a0123a34c60b8af16bf9e53569524196dd26f283e69",
+          "source_sha256": "29342a513a65f2c4f2592a0123a34c60b8af16bf9e53569524196dd26f283e69",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g11-f003.png",
+          "sha256": "747a0f682fe88545c4097cc775c24c1dfea2991bbb2d8084b49947384e210fe3",
+          "source_sha256": "747a0f682fe88545c4097cc775c24c1dfea2991bbb2d8084b49947384e210fe3",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 1,
+      "generateOverlay": 0
+    },
+    {
+      "group": 12,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g12-f000.png",
+          "sha256": "d99a45595ceed6b4bac9cfb645e5fe6659c43403cd81c112eee90f74fed121c7",
+          "source_sha256": "d99a45595ceed6b4bac9cfb645e5fe6659c43403cd81c112eee90f74fed121c7",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g12-f001.png",
+          "sha256": "8ce5a4f7a67f4d25d2e33c5c87c7dc06c254d69d235607cc1b86c8f1e7151029",
+          "source_sha256": "8ce5a4f7a67f4d25d2e33c5c87c7dc06c254d69d235607cc1b86c8f1e7151029",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g12-f002.png",
+          "sha256": "4c1410a37d3f1ce147f45dbae33e864a962cb2f537d606853cfa02cce79eb941",
+          "source_sha256": "4c1410a37d3f1ce147f45dbae33e864a962cb2f537d606853cfa02cce79eb941",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g12-f003.png",
+          "sha256": "ad7605b56000a30a8f000c0079a3b89c50347b39c176c0090a964c8dfc4f2a9c",
+          "source_sha256": "ad7605b56000a30a8f000c0079a3b89c50347b39c176c0090a964c8dfc4f2a9c",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 1,
+      "generateOverlay": 0
+    },
+    {
+      "group": 13,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g13-f000.png",
+          "sha256": "0f7416734d648cf705b5874a1bd16688334dadc4cd35f113ce7065a502870c58",
+          "source_sha256": "0f7416734d648cf705b5874a1bd16688334dadc4cd35f113ce7065a502870c58",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g13-f001.png",
+          "sha256": "1229faaa986a2d3366303527ee387ceb1cdde696d46489bfba9f2fe1e64611b5",
+          "source_sha256": "1229faaa986a2d3366303527ee387ceb1cdde696d46489bfba9f2fe1e64611b5",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g13-f002.png",
+          "sha256": "7f080f2806f9c380c7ea4c72ed1b53dc79379b81113ba6e497c7f3504768d3df",
+          "source_sha256": "7f080f2806f9c380c7ea4c72ed1b53dc79379b81113ba6e497c7f3504768d3df",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g13-f003.png",
+          "sha256": "edac681a42290d79135dfd74ac0fc78291c44ace0324e477405e671601e26981",
+          "source_sha256": "edac681a42290d79135dfd74ac0fc78291c44ace0324e477405e671601e26981",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 1,
+      "generateOverlay": 0
+    },
+    {
+      "group": 20,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g20-f000.png",
+          "sha256": "e7ad064e8d2dd11c83d6606bfc70f50664e101c508565dd45580e7fd4d179843",
+          "source_sha256": "e7ad064e8d2dd11c83d6606bfc70f50664e101c508565dd45580e7fd4d179843",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g20-f001.png",
+          "sha256": "9be1884b0baa5e2ee5d3035c9184bf0f2a94a2062c296bbcd573cf257de73bf2",
+          "source_sha256": "9be1884b0baa5e2ee5d3035c9184bf0f2a94a2062c296bbcd573cf257de73bf2",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g20-f002.png",
+          "sha256": "0ca0ab24c5604b10f27ed9baa38ec89cd068cb65e2ee96453fab2caad2e9ee02",
+          "source_sha256": "0ca0ab24c5604b10f27ed9baa38ec89cd068cb65e2ee96453fab2caad2e9ee02",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g20-f003.png",
+          "sha256": "e248869a5b1c88b73913121712e7df132de0f6fe43b836db81faadf2269d2a9a",
+          "source_sha256": "e248869a5b1c88b73913121712e7df132de0f6fe43b836db81faadf2269d2a9a",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 1,
+      "generateOverlay": 0
+    },
+    {
+      "group": 21,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g21-f000.png",
+          "sha256": "992b3699aaa6f22db517d5f896faf096737c9b39ec1608e14741933a7e0ee8d0",
+          "source_sha256": "992b3699aaa6f22db517d5f896faf096737c9b39ec1608e14741933a7e0ee8d0",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g21-f001.png",
+          "sha256": "ddd2d5fb7a2b61ebcf5f6fd84c6a7ec5ab544930cb691ed681bda704949cc602",
+          "source_sha256": "ddd2d5fb7a2b61ebcf5f6fd84c6a7ec5ab544930cb691ed681bda704949cc602",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g21-f002.png",
+          "sha256": "0e72ec1b8982739f421ae2263081b48aeb8315d94af924451a7e57a717262cce",
+          "source_sha256": "0e72ec1b8982739f421ae2263081b48aeb8315d94af924451a7e57a717262cce",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g21-f003.png",
+          "sha256": "fde5c248e326b19ee74a6f51cc3c002a4fb07088c46645fc7d9fec7273e54ce8",
+          "source_sha256": "fde5c248e326b19ee74a6f51cc3c002a4fb07088c46645fc7d9fec7273e54ce8",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 1,
+      "generateOverlay": 0
+    },
+    {
+      "group": 22,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-v1/t6-t7/native/auroraHallunatis/battle/g22-f000.png",
+          "sha256": "4ec1ced3c49376a5978813a48a3297504f1219dbc20bf55e1ff6d5123208416c",
+          "source_sha256": "4ec1ced3c49376a5978813a48a3297504f1219dbc20bf55e1ff6d5123208416c",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 1,
+      "generateOverlay": 0
+    }
+  ]
+}

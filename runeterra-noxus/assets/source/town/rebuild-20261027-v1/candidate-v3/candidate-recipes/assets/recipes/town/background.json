@@ -1,0 +1,66 @@
+{
+  "acceptance": "Production requirements only. No rig/guide/primitive/reference may substitute for painted final art; this recipe must fail while its real master/hash is absent.",
+  "art_direction": "Independent Noxian iron/crimson/black subjects in Heroes III native painted language. Never recolour Castle or Demacia art, import original pixels or invent an official crest.",
+  "canvas": [
+    800,
+    374
+  ],
+  "composition_contract": "Independent Noxian town terrain/layout; no buildings baked into terrain. Ground planes,19-site/36-state composition,occlusion and all clicks need actual source/native review.",
+  "credits": {
+    "author": "Project-directed OpenAI built-in imagegen; deterministic project conversion",
+    "license": null,
+    "redistribution": "unresolved; no release or redistribution approval"
+  },
+  "dimensions_basis": {
+    "canvas": [
+      800,
+      374
+    ],
+    "mode": "RGB",
+    "reference_only": "runeterra-demacia/references/images/tbcsback.pcx.png",
+    "reference_sha256": "949012ea68999207934bc482f1552858474fe50cefddef17eaac00d4b98c2be9",
+    "use": "Dimensions/format only. No reference pixels, palette, source recipe, layout silhouette or licensed art copied."
+  },
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in imagegen",
+    "model": "Not exposed by the built-in tool",
+    "prompt": "Precise-object-edit of image1 ONLY, a painted2D HeroesIII Noxus town empty background plate. Make ONE localized correction to the RIGHTMOST EDGE: all water outside the tiny dock inlet must become DRY cobbled stone streets. The native target is800x374. Keep water only inside the extreme last 8 pixels of the right edge (x792..800) between y155 and y203. Everything from native x735..800 and y205..374 must be completely dry dark cobblestone street and level supported stone, with no canal, ditch, seawall, retaining wall, pond or wet reflection. Also the existing water inlet around native x760..800,y155..203 is too broad: extend coherent dry street pavement to x792, leaving ONLY the last8px as quiet dockwater. Paint naturally continuous paving, do not draw a rectangle or a visible cut-paste patch. Keep all other sky, distant silhouette, architecture, dry cobbled roads, curved central lane, native HoMM3 painted grain, localized firelight, palette and perspective exactly as close as possible. Do not add buildings, labels, banners, crests, new props, cliffs or UI. No 3D/Blender, no filters. Output the SAME 800:374 ratio EMPTY terrain background. The two water areas at middle-right and lower-right must be removed except the specified tiny upper inlet; all functional building bases including the rightmost middle hall and lower forge will stand on dry land.\n",
+    "painted_master": "assets/source/town/rebuild-20261027-v1/background-master-v3.png",
+    "painted_master_sha256": "5e25c2dc5aedb185170932e335ec3ac796ca0f372681ca4c162e1143a182c816",
+    "generation_record": "assets/source/town/rebuild-20261027-v1/background-generation-v3.json",
+    "generation_record_sha256": "6270a458baaaec39837d1fa53f401ffa667c2d2512ad129535d2c69117b047bf",
+    "conversion": "Uniform cover-fit to native800x374; no artistic raster changes."
+  },
+  "inventory": {
+    "asset_id": "noxus.Sprites.runeterra.noxus.town.background.png",
+    "manifest": "assets/manifest.json",
+    "recipe_path": "assets/recipes/town/background.json"
+  },
+  "output_path": "Content/Sprites/runeterra/noxus/town/background.png",
+  "production_status": "painted-master-complete",
+  "recipe_type": "raster",
+  "require_alpha": false,
+  "required_before_conversion": [
+    "Real independent Noxus painted master and truthful provenance",
+    "Non-null SHA256 source pins",
+    "Official Noxus emblem provenance where used",
+    "Native-size silhouette/composition/alpha and role review",
+    "Explicit coordinator selection; no automatic acceptance"
+  ],
+  "role": "town-background",
+  "sha256": "c5966f4df98c5540c196581271898ff14fa8f9c8eaf7470a827d26de7df9958a",
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/rebuild-20261027-v1/background-native-v3.png",
+  "source_sha256": "c5966f4df98c5540c196581271898ff14fa8f9c8eaf7470a827d26de7df9958a",
+  "status": "built-unreviewed",
+  "visual_approval_granted": false,
+  "source_canvas": [
+    800,
+    374
+  ]
+}

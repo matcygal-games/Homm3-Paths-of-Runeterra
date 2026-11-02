@@ -1,0 +1,69 @@
+{
+  "animation_scope": "One painted static adventure-map pose, not creature motion",
+  "canvas": [
+    192,
+    160
+  ],
+  "generateOverlay": 0,
+  "generateShadow": 1,
+  "generation": {
+    "image_generation_used": true,
+    "model": "Exact model identifier not exposed by tool",
+    "painted_master": "assets/source/town/map-painted-v1/native/portable/citadel-clean.png",
+    "painted_master_sha256": "26cedf26f03ad36b3b39d99a9d234737228707bf4406f99119c16397965ae131",
+    "prompt": "Edit the supplied original painted2D Piltover adventure-map settlement into ONE CITADEL state: Replace low watchposts with TWO taller stout square defensive towers, higher rampart and one stronger gatehouse adjoining the existing visible front entrance. Modest reinforced parapets and brass railings. Keep the main guildhouse and crane recognizable; no cathedral/castle sprawl. Preserve exact camera, every shared building's source scale, central front door/stair-root position near(850,1100) and square1280canvas. Do NOT zoom to fit newly tall walls; grow only upward/backward into transparent margin. Front entry remains completely visible and clear, grass footprint compact. Exact Piltovan gold stem/orb/gear-flank civic crest remains engraved over front door, with separate plain navy ownership pennant. No modern3D, anime, photo, flatvector, text/watermark. Original HeroesIII compact richly textured painted realism, upper-left lighting, warm grey/ivory stone, dark navy slate, aged brass and timber, restrained turquoise glass. Complete uncropped architecture/shadow, TRANSPARENT background; NO red fringe, no surrounding scene or water.\n",
+    "provider": "OpenAI built-in imagegen"
+  },
+  "groups": [
+    {
+      "frames": [
+        {
+          "frame": 0,
+          "overlay_sha256": "a67a16a15f66e8232f0accb0f48f9134422e68949116d3e80a6506b96d6d262b",
+          "overlay_source": "assets/source/town/map-painted-v1/native/masks/citadel-OVERLAY.png",
+          "source": "assets/source/town/map-painted-v1/native/frames/citadel.png",
+          "source_canvas": [
+            192,
+            160
+          ],
+          "source_sha256": "e61e1fd46349e44fc70ab4dac142e30fea43bca6bf961adf53f952b0724740c1"
+        }
+      ],
+      "group": 0
+    }
+  ],
+  "output_path": "Content/Sprites/runeterra/piltover/town/map/citadel.json",
+  "pivot": {
+    "x": 112,
+    "y": 139
+  },
+  "production_inputs": [
+    {
+      "path": "assets/source/town/map-painted-v1/root-plan-v1.json",
+      "sha256": "e88a11d2e6142ee0d4425f538b53eae3a7cf0f4a2aa452f593b183d08e0249e1"
+    },
+    {
+      "path": "assets/source/town/map-painted-v1/produce-native.py",
+      "sha256": "dc6d4f03b905b0945b01d4393bb6752ef4f606873e386f77d49c7eed199dd4a0"
+    },
+    {
+      "path": "assets/source/town/map-painted-v1/citadel_v1.png",
+      "sha256": "f1c5572c1f3145bd8de2f2f89f772056c4ab126cea9a6906b7662aab46103d61"
+    },
+    {
+      "path": "assets/source/town/map-painted-v1/native/portable/citadel-clean.png",
+      "sha256": "26cedf26f03ad36b3b39d99a9d234737228707bf4406f99119c16397965ae131"
+    },
+    {
+      "path": "assets/source/town/map-painted-v1/piltover_map_citadel_v1-actual-prompt.txt",
+      "sha256": "84c47e4dfe5d1bc596f90298d66bb3bd9a1985b1a6fb09d69778b3824bbe84c5"
+    },
+    {
+      "path": "assets/source/town/map-painted-v1/native/masks/citadel-flag-source.png",
+      "sha256": "67c18cbfb1f1f68d66c3a264d683835ee898731696460a5b543531408f3667ed"
+    }
+  ],
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "vcmi_animation",
+  "visual_approval_granted": false
+}

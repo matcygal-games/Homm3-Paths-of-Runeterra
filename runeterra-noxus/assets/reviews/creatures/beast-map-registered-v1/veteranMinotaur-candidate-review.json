@@ -1,0 +1,52 @@
+{
+  "asset_sha256": "052f5890a14b28b7a2422c5680d8e84cfcadc56743521e302643a1c9ee6f15d7",
+  "checks": {
+    "distinct_equipment": true,
+    "distinct_silhouette": true,
+    "native_scale": true,
+    "not_recolored_original": true,
+    "upgrade_readability": true
+  },
+  "comparison_sha256": "c283a76f125843e3ce8a234ac110ebfd5b4cf1d61c53369164678ee025ce3741",
+  "comparison_sheet": "assets/reviews/creatures/beast-map-registered-v1/native-comparison.png",
+  "credits": {
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "findings": [
+    "Viewed six actual alpha-composited map atlases, explicit registration references and all40native frames at1:1.",
+    "Actual walking phases or thorn-wing flight poses, not copied idle silhouettes; all native RGBA frame hashes are distinct within their own unit.",
+    "Exactly one fixed global scale per unit and integer translation from explicit common row/column ground-plane or sternum landmarks.",
+    "No per-pose bbox normalization, body warping or world-foot snap; source foot bob and wing arcs remain in the native images.",
+    "Separate strong-alpha connected figures permit complete flying poses despite overlapping rectangular row bands; detached near-transparent atlas noise is not imported.",
+    "No strong-alpha pixel touches a native canvas edge; no whole figure is clipped by an atlas rectangle."
+  ],
+  "frame_sha256": {
+    "Content/Sprites/runeterra/noxus/creatures/veteranMinotaur/map-frames/g00-f000.png": "2908a557ffe70b88289c92aaf373f7ebf9eb654f846b47d652a93849f8590dce",
+    "Content/Sprites/runeterra/noxus/creatures/veteranMinotaur/map-frames/g00-f001.png": "a5e1ed2f10ae83a5667038b3943dfbb19ea76d1a80d8c87288edfa6a17d36d80",
+    "Content/Sprites/runeterra/noxus/creatures/veteranMinotaur/map-frames/g00-f002.png": "130e3aa98239eda53d106d51997660138d5cef7dfa2bf1b31195c1b2dafd652b",
+    "Content/Sprites/runeterra/noxus/creatures/veteranMinotaur/map-frames/g00-f003.png": "1fd143565c80110481d6a3138e46080f226db4daba2443ee96e996ad6044435c",
+    "Content/Sprites/runeterra/noxus/creatures/veteranMinotaur/map-frames/g00-f004.png": "22e5ca4690bd0af81a3709fedf48c514e00f51508d318dd1ce8d11bfe9e61876",
+    "Content/Sprites/runeterra/noxus/creatures/veteranMinotaur/map-frames/g00-f005.png": "b0f502d12cec6ff67d0b9ee852e01e10ff478d7debe18838a56665e91c419065"
+  },
+  "output_path": "Content/Sprites/runeterra/noxus/creatures/veteranMinotaur/map.json",
+  "pending": [
+    "Native VCMI adventure footprint, facing, player ownership tint/shadow, scale, timing and positional stability review.",
+    "Source pose/anatomy/camera continuity, including relative demon body size across base/upgrade cohorts.",
+    "The demon upgrade is not yet distinct enough at small map scale to affirm upgrade readability.",
+    "Official regional crest evidence and redistribution licence clearance remain unresolved."
+  ],
+  "recipe_sha256": "298976dd790a0a9dc96ae41f98bb4b78183fd29eb28a82af8ed54efef462fd69",
+  "registration_evidence": "build/reports/art-start-20261020/beast-maps/veteranMinotaur-registration.json",
+  "registration_sha256": "840408f1a4218ee1b1bf6fc1806a8f55d343461956005413584b9677f2cb9321",
+  "release_accepted": false,
+  "review_status": "candidate native-sheet review; not accepted",
+  "reviewer": "Codex /root/noxus_portraits",
+  "runtime_verified": false,
+  "source_atlas": "assets/source/creatures/veteranMinotaur/painted-imagegen-v1/map-atlas-v1.png",
+  "source_atlas_sha256": "02cd724fef18d67c158e1bce3cc5161469c7856b0d9188c30e101312938734c1",
+  "status": "authored configuration",
+  "uniform_scale": 0.1,
+  "unit_id": "veteranMinotaur",
+  "visual_approval_granted": false
+}

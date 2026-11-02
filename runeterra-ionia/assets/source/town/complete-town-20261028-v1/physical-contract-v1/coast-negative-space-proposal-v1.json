@@ -1,0 +1,16 @@
+{
+  "status": "design proposal",
+  "scope": "Correct inherited opaque river/air gaps in technical coast mattes. No RGB painting or held frame changes.",
+  "source_visible_coast": "FRAME-FREEZE-v1.json exact Ship/Shipyard RGB",
+  "visible_masks": "contour-proposal-v2 Ship/Shipyard masks, already excluding foreground Workshop roof",
+  "hidden_pier_source": "assets/source/town/complete-town-20261028-v1/workshop-absent-coast-native-v1.png",
+  "hidden_pier_source_sha256": "2d18a2e793f476cde8786689aaaea685bacc9726039c0220fb7ea98cdc17d5dc",
+  "hidden_mask": "coast-underlap-proposal-v3/hidden-main-pier-mask.png",
+  "hidden_mask_sha256": "27a6928167fb0e53758be94302922cdecdae114fa94cabd7f5cf6dc0152f03ef",
+  "bounds": [0, 155, 200, 275],
+  "background_key": "Within the hand-bounded actual coast region only, remove alpha for blue/cyan river/air pixels where G>R+12 and B>R+12 and B>G-8. Actual wood, cream sail, warm lamp, dark rigging and neutral contact edges remain selected source pixels. Inspect before adoption; never use on teal town roofs.",
+  "art_owner_review_required": true,
+  "complete_contacts_must_be_preserved": true,
+  "frame_writes": false,
+  "release_accepted": false
+}

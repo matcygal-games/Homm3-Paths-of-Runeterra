@@ -1,0 +1,1362 @@
+{
+  "acceptance": "authored configuration; native action playback, human visual and redistribution approval pending",
+  "canvas": [
+    58,
+    64
+  ],
+  "credits": {
+    "author": "Original painted2D source: OpenAI built-in imagegen; technical assembly: Codex",
+    "license": "not reviewed",
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/compose-v1.py",
+      "sha256": "40acf6853d48da904b402c828d46456e12d8885c9660aedbcee31bc59509cf75"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/inputs-paper-v1.json",
+      "sha256": "b4fe04ac9d5925cb945fb4f0c971a39c3e34774b075208e4819e40a5b0c5189f"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/lineage-audit-v1.json",
+      "sha256": "6a972e2a7031fcf859d4b98b6da75cbf8b1aac6c1d1a264f6a2a49eed63d7943"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/before-recipes/papercraftDragon-attackLeft.json",
+      "sha256": "1fb765195f3f22b6eb70eeadc94b7f31288d20aa14f2be7b5b1b0f11fdc3a6c2"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/before-recipes/papercraftDragon-attackRight.json",
+      "sha256": "44a4af5f18a7717a786ce1cba43c6335239757cb20eda3da2d2582d249db1586"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/before-recipes/papercraftDragon-battle.json",
+      "sha256": "e0fe06ca4a4f380cfd0355e4664e18fd0625903702bc1b1db5a073c25f78809f"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/before-recipes/papercraftDragon-large.json",
+      "sha256": "8efb0f1a762de59b5fd48f7467a950361dc8c888365519ead692277b574dcae3"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/before-recipes/papercraftDragon-map.json",
+      "sha256": "af0028085194f7f8adb55ceb1557992c9d4fb312e3095042c38c45a3f7186a04"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/before-recipes/papercraftDragon-small.json",
+      "sha256": "0368e705aaef9fe5f6a99bee853e1418a726e5326b15108308ecf479ee7b7108"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-000.png",
+      "sha256": "6ac3c678ee6cd30005fdcca47cacd23b981eb03b6ab829b83631036f9dc8e082"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-001.png",
+      "sha256": "b8129a2a1e1deccba94e0a38b2961f1a19848683d830fdd61c8b5c4aa2aa6af2"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-002.png",
+      "sha256": "299d4e3fde3c897e668615e0da8d3a9691269dc1e1f2fae21be6cce914ebfe10"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-003.png",
+      "sha256": "353f85f849e37b05e505ab93b2a7f2905a01b8a433cc3ba870700db9b938f1b8"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-004.png",
+      "sha256": "52000c49806774451f0fcfe0c6023e15b7ec165fecef36fdec6bc4bb65d08cfb"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-005.png",
+      "sha256": "ceacf860ad977cb536dfe3c7b472d45f786a4c506974b67338374035c9579367"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-006.png",
+      "sha256": "4ca252db230f92b5d5574c12b80293f7ce7e63b7e7557e7d8385082b6fc34a50"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-007.png",
+      "sha256": "27ab22b70f9fbda790df5a7db818cbd5da2f09caccd7d63ddfec47ad54010b2e"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-008.png",
+      "sha256": "3ca11b7b50868f42a4dec429104e79bb1e101d8035363a860178339f02ddd0eb"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-009.png",
+      "sha256": "8b99d98328164c6b61463e0c498dd7a4474c0f443f5d6583dd20a14a02b1d3b7"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-010.png",
+      "sha256": "cf10d23a791ed37a8d8e1c11a2d694ed92b29ac6eaf6c03d9e322827668da12b"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-011.png",
+      "sha256": "fe4c6f28e21a38182167c3ff806af5a62fa2e8a352c31d724f3b707f559012fc"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-012.png",
+      "sha256": "d03a2b4614877f5c7812e879f7a074c044e45145b4c237cf63c70d2885d607f2"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-013.png",
+      "sha256": "db61168fb08a20f825b3df20f3de4e0344117acc9150291d2e5a05542786ab7c"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-014.png",
+      "sha256": "daf764f645b2dbcfd73d113b7a901b76f7931fccea3e5d903ac08ff654aa0d2c"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-015.png",
+      "sha256": "0ffb55e9ee8e01b82a24ca96ac588a1785af1577cf03885695e13b9078f441f0"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-016.png",
+      "sha256": "4049022332a99f2737dff629216eaf0956d5e65655adeb44c595f26662a09316"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-017.png",
+      "sha256": "081f6c197463a118f70bf295d1b0340830f7c5770c12a7af2f2fb8b2de5ce389"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-018.png",
+      "sha256": "616e0a8d6a426a32982b9f172e1637e4ac281e309bad05d439b865392fce548c"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-019.png",
+      "sha256": "5c0071ca0b6d25d0015a71f5ebc03e45a1dd919d5887dcca233fec71c502fb75"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-020.png",
+      "sha256": "a34f85dd375ff10de85f67fabb84773daa34b41f5029ebc8e930706d1eb0e47b"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-021.png",
+      "sha256": "71e0a83c133b6e645f0852d7bebe05221abaaa83e666db753fc06a07c10415dc"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-022.png",
+      "sha256": "547b98c5c1f77b7963dc8ed914bc3c3015a4d05c27fb1e0d0202b841c1b6d803"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-023.png",
+      "sha256": "7c4af03fa5aa3b52f0b041e997a6d98d6139349a23c43807bfa7fb7aa6b805a6"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-024.png",
+      "sha256": "d8b25f98a7fc3a4425df3038b959e5a9ce55661186b9e46ffeaea32168039869"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-025.png",
+      "sha256": "d5908e442bbe64a67c0e885787b9dbb9d8aed7344f7ac63c839a192446ddb0d5"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-026.png",
+      "sha256": "b896aa042ed5f620781cb3acc76c33463960046ef6715c612f49875b37f6e89a"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-027.png",
+      "sha256": "3800b98493a59915f1afc775afe295ad5cd7bb1a5a1c7d6da2b8329691a8b43f"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-028.png",
+      "sha256": "0361967fd8efb5d53a8dbe6d3e9f84c4270f0a054f0cb41904f70e892d5110ae"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-029.png",
+      "sha256": "298ee4e273730e0b6904374b3a0240ef03337c9e7fed33aa9dde87687c620804"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-030.png",
+      "sha256": "c825b862c9c6e7bb7f786ea723e548c82daa6dc2cf78cd5fdbf130ecd4fed478"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-031.png",
+      "sha256": "cb238b83e67f599cba7c394d18a5b8608d8f001b5d37b9400cd72ef233b21bb1"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-032.png",
+      "sha256": "7b03840a32236fea08657c25f0d844d6422228e30711f8e8505994ce1089ba9e"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-033.png",
+      "sha256": "818716e90786cfb5eaca5dffc4252362aca7ff8f9b3170aeb1e214fb01f356ef"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-034.png",
+      "sha256": "004c2abb3025daf3197f9bcdf42ea2cadc2827077e872dd1e2ccfe4a0b4c4be0"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-035.png",
+      "sha256": "170d31f4ff6861bf2854da985e2d9036998bc37426f79a878fc4e22a9c04d63e"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-036.png",
+      "sha256": "02f3b2e804ff4d8520cd52e15f9fb120591085c7292df7bd37cdd982df877699"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-037.png",
+      "sha256": "002cc7b9b66ee7cda246f5f85ed088f534c72e16ef44e679195d962bde8e9372"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-038.png",
+      "sha256": "1c9401c520e7259864f21a4a56d86d13d86be6685786d9e70da4141458bb9475"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-039.png",
+      "sha256": "040d1e71836b14a4cab959c03924a88ea7da0e908160b871239076c1f2b32d52"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-040.png",
+      "sha256": "64f397b0f35c505331b366c2fa5874f0e39980505cd8329ca8e4d1dfa3c08e63"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-041.png",
+      "sha256": "7710fac51f558d3199df212e8b64e6d29d746cf477e71f069e1066a3ea4162a8"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-042.png",
+      "sha256": "16b5d376ee20bc3adc0af246179e83dd63f04991bf91ff7c6c2da4c0656b9f72"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-043.png",
+      "sha256": "d50cc36f87ff79d4246aa5f5f33b6b0778f52000bfd461b34479c9f15ed12c6a"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-044.png",
+      "sha256": "d31f72e87ca7295426ed9d9cbf581d21acb3420d9c6e01ef5126cd1c4704fc09"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-045.png",
+      "sha256": "5353de5ce37f6aad5ab97a846c4c936f50204d53700895ed49b7d48396b94aac"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-046.png",
+      "sha256": "625852d18d69b208da8f54bb9d9f8bc38449056b55db74e000e6de41d07ae343"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-047.png",
+      "sha256": "b0ca35abc41b77cceb00112d87dbba0aa33f1e6a7631a892254d5fd543d154ee"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-048.png",
+      "sha256": "b9ef54992985d253ea56017e97b57a428351b5c61421b91886174688159bc8a2"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-049.png",
+      "sha256": "bc469c816a33d07c26cb95092feb0926c13a3ca54d7cc5bae0128f17098dd6fe"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-050.png",
+      "sha256": "e509efd00b8f2f6426b4c39bffe6dd6def0ecc6d792faac39694ca436bfbaec7"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-051.png",
+      "sha256": "2fcb5a4e1db0f40a0825965c82a2162302acba61522a42db849d4aaa8168cd72"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-052.png",
+      "sha256": "275fad294cff5abf31b0ba52b748b5bbdab08f4a80731a39aa61e38211431265"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-053.png",
+      "sha256": "ace43395aa01647cd61d7d3401e04379bf4336e9f0b28f92d217339815b82c13"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-054.png",
+      "sha256": "4268d928e37c888074a938bd55537db3caf13304805cd4e295747fd21922a7dd"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-055.png",
+      "sha256": "e0aaa2d1809cdc7a8b4b64f70fc72ba3db67f7f9498d4450aaac7bbe9abed601"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-056.png",
+      "sha256": "973658454d3c8499ab712909af2f07941e15e8458477ecb9a2ea144ba0af10e8"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-057.png",
+      "sha256": "ce413fdeca81737217943f237bc0578e050445481b7d61272ef87c459d20c197"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-058.png",
+      "sha256": "3362278765741372eefd58f0cf79d3fd0be0434eab945a6975c2e75bfe71761c"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-059.png",
+      "sha256": "3094482605f35ea71b8de56fa222f794847fd1d1a98cd2ee4309a984a55e41cd"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-060.png",
+      "sha256": "e900c7afeabbf1e17905c5a134b797faa4ab3bdf9bd5242206ac3517638553b4"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-061.png",
+      "sha256": "7d53b81108167e7a44e21220f613c0f6108e4a439f6d6ced610b7feb282694d9"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-062.png",
+      "sha256": "62f4f196b03e37deb5fd578bad3b92e6fe08e9286a5e240015faa14a047f63b9"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-063.png",
+      "sha256": "1c6c9da3da1b04dd06197fb9a9167782b91dfdb9ed3a341c769e1473b9a535bb"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-064.png",
+      "sha256": "af07574736ccf3346277db5b80ea8161963fda0726eb97dc10045d3b94acc3ad"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-065.png",
+      "sha256": "dd690bc982073e52900242525b25c83b5b976566705c9afd031ebaac6e764f1a"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-066.png",
+      "sha256": "b9120f5d91a3eab53b82f00dc9bd2838b91f1ef12b5a54dcaf515623202ea094"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-067.png",
+      "sha256": "9b528a0cf071dc153570b1f895245038d9c6df717aa607a290813ffa321497cc"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-068.png",
+      "sha256": "87a5e4612969d17b672f1ec84ee37f129da782885075a0af0744dd40cb64486c"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-069.png",
+      "sha256": "fd67f3f9f88979c4d95529a77d211937d9569d1a94cbae2becd8bb43c7cec2c2"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-070.png",
+      "sha256": "2536cfd9ff59d8e6b68e1368854b6805640bcfd032b4b6bf7a93d303c4e2b457"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-071.png",
+      "sha256": "42e4114ecf9113beee5782fa3971728550e25f45cbede1a6dc190fee36db5e7e"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-072.png",
+      "sha256": "0109f310d62254dfa396f0ae4d4270648f556f3f2ee9f5d66fd4b7ce4328b7fd"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-073.png",
+      "sha256": "88e59fcb0cdb5b9aaab2622d8e3c3a4d64d3127aa91eddef97ea81701f0f88a9"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/masks-v2/pose-074.png",
+      "sha256": "e594fd1f332c1b994db67b33cfc9fae1f3437f42a97821a2eebb607f13411364"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-000.png",
+      "sha256": "4bf83a1a13407ab0b9397c4628f7195f951c2894d1b0308ea18c0fbab14e6ce5"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-001.png",
+      "sha256": "945b39a23550520cf6c7da604e9ed81376a6cd0c2c2bc33a1a1bc7038dee5337"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-002.png",
+      "sha256": "17524fa7f5e66203a30716b3eab0c137fe9e58edda1f70fd96d7c7cf6597f5ba"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-003.png",
+      "sha256": "283a05d09656236e7c64d6de07f7c52b8604ca62d8842aff53c5a15de382bdc7"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-004.png",
+      "sha256": "28c58912f97a12b66ef02960a006b5ac2392503eb284a381608d883eef85cdd9"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-005.png",
+      "sha256": "53665b47791537af92aaf9344af9295ee9a6e29176561e42a75426a67560e44f"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-006.png",
+      "sha256": "9c783f7e88d094a3f552cf4fb04b0d97ada17331b3fe728f3d82459403f8cc84"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-007.png",
+      "sha256": "f453ec8515b2d30c818ab7bccdbf138b70c082ded57e537d5786d116c286f943"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-008.png",
+      "sha256": "82d6b432ecb3a62b02ffda5737b53c4cc259866be53ad8000c642057561b5b28"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-009.png",
+      "sha256": "77bb6b81bb36786405920193223c5803d703fe176ad06b02d7905345fd71678e"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-010.png",
+      "sha256": "f493efdc9b6b9ee32696c48d563898819d28f8ffd9762fd6e29249f186073945"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-011.png",
+      "sha256": "f6bbc9c0a189c9bb99a0f637a0d8ad9a5ae934c32f3eb74759864c1daa010fe2"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-012.png",
+      "sha256": "dbf14a63b5d5b50db48470d5ad4a08f2e4be1d0196fe4654a7e77a9c9604ba5c"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-013.png",
+      "sha256": "9dc50b5a0abd1733f2cbb99ffff0aa9879b429e456d60386b56c2db5d8885a13"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-014.png",
+      "sha256": "5e493f6e94be05d13fd00014bf72dfabfded010b612ae72c6e59c9ef2e2c8952"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-015.png",
+      "sha256": "12b1539bc2fed489e3dd0fe1889ef1dd8c6caae04be80739f0e7c7cbf519dbcd"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-016.png",
+      "sha256": "8e41b3baa9b23e91cff9bcb811bbe5bd1689051bbe9c63539d9c3ee49c6395d1"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-017.png",
+      "sha256": "62fd8fc10031ce0b8cd8bb7a25801400c692096bfde974e69a07e0af684d45e1"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-018.png",
+      "sha256": "6b2ef94a81ab3163dc294e36186e4d18f8385cb54b0d5aa47af6b5db38e65d92"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-019.png",
+      "sha256": "2d266cc4efe5915c87ce404b83d88912d4b6b96e228c5aea19cff1f42131c042"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-020.png",
+      "sha256": "103779ad3aba2c36f4362695d45a6c55d4bf0351a23270913782160784912f2e"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-021.png",
+      "sha256": "4f1472f5100eaaea03ee4fda1c393d64f7aab9daf3b4600c165e9e1084674dd4"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-022.png",
+      "sha256": "74340475e6c522594f42e0ed152be846ebb08a50fd8ae8df026524e884e7c448"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-023.png",
+      "sha256": "662b47f9487e81eea5d58fea7ff1277a1ebe8206a9b35b21ae8edb430021f14f"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-024.png",
+      "sha256": "0765a41a12bbf43ee759de4763227435ad7bb236b3e35a736f4fcd22dcf61bc7"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-025.png",
+      "sha256": "3ec35f7c871d5160baddda4d93cbb6a41b86e3faf7383141994d2ad39edcff68"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-026.png",
+      "sha256": "7a92de3f1ed4985e5ee8962a6e8c4b212cbb9d568f851030dca3b30ed3a3e9ba"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-027.png",
+      "sha256": "f7dfa9a160bb6071fa0b40b2553f19d1dbb76d0389b5e2b2ee98f4278ec85f2e"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-028.png",
+      "sha256": "88e448932d147950882247087c8c75cb3eb5d5ed09f93299df501c471a831795"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-029.png",
+      "sha256": "f2365dbc0916e62d4ddf5f1f66f897b19522f7cfa8946ca3f1a52c6d5433d333"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-030.png",
+      "sha256": "fbb1a26b7c96c9df4f7dbc56b479c895414b722b3e66f8e3664fbf6f592aa14b"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-031.png",
+      "sha256": "a4a1fd6a5af7e18f5fb6e5ad2b3e4cf1fa7ffe1ce86a2e80fb4aeae2c4c536b6"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-032.png",
+      "sha256": "b53447d2a4ba3395dc8fc4e2762bda177d04681afca76a7d334c402d98a9979c"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-033.png",
+      "sha256": "30f4a2df94eff2d730d6fa69028dbe6a1abf9984df4d5f6f49eb8d5b8951e630"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-034.png",
+      "sha256": "17c640f853a60c482efeeed26cafaf084f2d86bbe8f48ba6291e3f0f83e7db6c"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-035.png",
+      "sha256": "8d7235584d3567c2157e5ca4dbf27a849d785b2d509d2d68ecdf926829e73f94"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-036.png",
+      "sha256": "9c1f37d8ba946b347429b1cc88ee9306c19868999269eaf31eadb11c1271199f"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-037.png",
+      "sha256": "1430312272277c9cd9ad31f58c0999c74db0028ced2a09f8f583b5e8a25a7238"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-038.png",
+      "sha256": "208293f41014d3a34f751d13b145d1d5ac94bcc0b07136137a9e65850a0200cf"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-039.png",
+      "sha256": "ece8b8b72ae91fe4b045265f7d1e8a9b67ae9f789ecb381b0f1a162aba3b468c"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-040.png",
+      "sha256": "e92c0d46cb79d1d88f17890593446207746f27cacfe2c213f6af34ffa9972689"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-041.png",
+      "sha256": "fe3ca1452f45e1cca51903277d299a4d638837351d9702d05914a6deeac6ae38"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-042.png",
+      "sha256": "b8e561a062b9eddaaf252c23cb8bd9d6d3f13f2e6f1522aee6627bc51179c95b"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-043.png",
+      "sha256": "d1d2bf67782e67885f3ecad031b80ecd6bc0e2fe9e00a8f60f553ff37e54838c"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-044.png",
+      "sha256": "29c4213ceb0eb3e0f05d9855d5c1710403f8fd044d513fe01e457c477a875efd"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-045.png",
+      "sha256": "c56a15fbb58296f229e5c19ed41bc07113c55d3c9b4426f2cee20be666d253f3"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-046.png",
+      "sha256": "258401876c4be08796ba0d59651487725a0e6b006303222557b2df999eda7058"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-047.png",
+      "sha256": "28d98fbfe064928569b38149057d368a1b5c6e57811538a4728fc81dd63a84fd"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-048.png",
+      "sha256": "6b84b740135c1d01a1212cd7d1d63046aee2c91e4ed8a1dd395826b72fa5945e"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-049.png",
+      "sha256": "737d27e7567cf38b929968c951aa1ae1f539aafdc21a041df90e5de2b3cc7119"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-050.png",
+      "sha256": "434105802fa072db0b4f61716004f7a90f65265a395cfddfad41039201898db1"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-051.png",
+      "sha256": "58bf2ea7ec4373c109ae47ee71520b245adc7b29e2c67deea0668460fb79f6db"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-052.png",
+      "sha256": "e45333115bedd6c30de11bba81097ff368510a7ea2e1dda96d6791194192277f"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-053.png",
+      "sha256": "37e5b351af8198f131e716140e3c4275e2af9bb17c598e209e288f13ab4b720e"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-054.png",
+      "sha256": "ca9fecb573610e30927fcfd484f4c79a0da2b86dcee286ce964f6e5c7f8c9c34"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-055.png",
+      "sha256": "609e84b7285ceae78c26174093c0c3bf2aa4036ebfc117f4b5334d1c6cd604d3"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-056.png",
+      "sha256": "8b69fcae5472d56d42cab18277ab687ed0721d970322d79b1f8d0ecf3aefcd53"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-057.png",
+      "sha256": "2d9ae110a96f9c5412a7efc76a3eb2223949e6987a163af003e18d3bba60989e"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-058.png",
+      "sha256": "e196c0fa5ec159d36ac9c6e2ba783f19d2396fcafd127d85faaf1a4224083a7b"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-059.png",
+      "sha256": "bc93ed035011cafbd1b275200c525e8b15feed7e537dd68bf61f8c840acf8194"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-060.png",
+      "sha256": "f010301ef18eb48e7a810654e9c09b5e6185ae5c280d117a98e47bc6b777c3ce"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-061.png",
+      "sha256": "66a38cbf0d9486a7ba6777bd40085c1477ddc8302c670e72996d89e8165b4e4c"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-062.png",
+      "sha256": "3ac65cd74852b731a3bf6c44c37354d0b491c2d0a106c49ff5cec54969038cdb"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-063.png",
+      "sha256": "e6bf8006626ec43d459b07f855034ee483697c5483dc2ce0e9ccfb238d02bed1"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-064.png",
+      "sha256": "4926588a474c969c6283a932a3b84ec78500c61e7b2cea7d34775bb18b64f51f"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-065.png",
+      "sha256": "f897b11adbfecd8a1baaa2936553345c3b1dec631426ca8fd663aeb9ead9780d"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-066.png",
+      "sha256": "2a4105080508482e626ef81902698bd680b42506e8c507cc48b6360be01f99bd"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-067.png",
+      "sha256": "7756b18c061aa5af127891b9028c15ab47b13145e2fec05c448e0979f213292c"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-068.png",
+      "sha256": "1044e7c2eecfd32bcdcc9b6d42fff6e0f2b28230a98c03f9ecb04d3179477e75"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-069.png",
+      "sha256": "1e5cd5e533cb9f4084ae47c43ca83ff7fbc7bfd713d8638f56e8809e76a64792"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-070.png",
+      "sha256": "a34401dd2da1775ef80964bddf0ca305cd3546472813299bc2d40fc1790c4856"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-071.png",
+      "sha256": "856937415b4e5b3d9193653d32d49b7057b9690369ce2b6a0df3745080d399fd"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-072.png",
+      "sha256": "c3586832b53f919fa813e54e2281c9a6e5f2bd762aba8a13f741305103ce5dc1"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-073.png",
+      "sha256": "aa5c917d0c605c9fc48684cc3a1890ac1aa4774e2bb9c6b59c8f0e3a46710565"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/original-native/pose-074.png",
+      "sha256": "99b59aab316a56efa7857ce4d7a77fcea5e8e5278f69032f74ea7955190dfa5c"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/painted-map-ui-v2.png",
+      "sha256": "eeb2c52ba023587b7a4d13f266081223f338bec2745a5d1fbc1372889358d8e6"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/painted-page0-v1.png",
+      "sha256": "2bed98f9c1399d9755c72f34060d8bc7bc5cbf639c0eceb132d668f30b7f0d7f"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/prompt-map-ui-v2.txt",
+      "sha256": "cfe99dbb897782c49dd6d1170d68a75a2b2c48a2926f02d389075fa3015c93bf"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/prompt-page0-v1.txt",
+      "sha256": "92018adcc157992aac89466af62c9d7e18ece8433aacf32e243d1baf5fa84f7c"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/papercraftDragon/prompt-page1-v1.txt",
+      "sha256": "92018adcc157992aac89466af62c9d7e18ece8433aacf32e243d1baf5fa84f7c"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/before-recipes/spellfoldDragon-attackLeft.json",
+      "sha256": "a7af5d1d0da9b422feaaa747c44d8de16b70f16e06d9b87608391d375e0eab5a"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/before-recipes/spellfoldDragon-attackRight.json",
+      "sha256": "710984c8a68a1d9e64ba1ad68dbd95ef5211eabf56178d6b6f72d9cc0cd80018"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/before-recipes/spellfoldDragon-battle.json",
+      "sha256": "5b7c7bb456b33d387119a8dac66747139be43f8ee5cc5b7dbb621af0f4b02bad"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/before-recipes/spellfoldDragon-large.json",
+      "sha256": "d4565a4ee9d769adfd727617d3bccbc4aae9b7a0ebe2bd3eb727de53f671cf3e"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/before-recipes/spellfoldDragon-map.json",
+      "sha256": "2894bd843b0544d9c81fabd8de3c466174c36d0c6de03c77512cd5e00d400f92"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/before-recipes/spellfoldDragon-small.json",
+      "sha256": "273b73cda37091f3c0cd3b564a492b7b2b2261c44b295e8ef8effe70d2eff6d7"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-000.png",
+      "sha256": "6ea1b013717e0d6cfca2f91db95dc0514eeb2a153ff085515a42047e2e39ad7a"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-001.png",
+      "sha256": "32d2105cf16418be5965c75977a92710cbc8857a71d8101a7d7e707063513a79"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-002.png",
+      "sha256": "a12d17d842564f4cdc976584b66fdcfa9a9fac0bacb5dcc90d1ab7fdc707e4f7"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-003.png",
+      "sha256": "ac82dca73d4e93788fb86efe3019d294637ebeab656909fb4022a4bc934533fd"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-004.png",
+      "sha256": "546d0f988272e9b24d994090832aab791b0059abe5d4f6064640342f23eb8ed5"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-005.png",
+      "sha256": "0a2ecbe2c9e37662a4254c7099d73ee3ef67bfb20ddd0b28a01a118ea45ae69a"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-006.png",
+      "sha256": "85e7198f548e4059d027814a7d2af8d4c837ba1fd1dc1bedec8d21ca06f7b87e"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-007.png",
+      "sha256": "1b6218dfc224f0a215c70837e8139d7f33b245bf1ecedc845b2572d146f9fe2d"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-008.png",
+      "sha256": "b6487bdd8b758b913cd5ddd664e73eb2dacf9da0a421bb4298488b08752d3628"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-009.png",
+      "sha256": "5e74cabf46fedf1d1ecae44a48521347eab827833b0070f93ad30fa06afd3e21"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-010.png",
+      "sha256": "3b68182b9b5b0d422b503c483dd1bd290436c2621ab216229f473538c04ab0af"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-011.png",
+      "sha256": "ea3a01f7194db7efbd875168e51afdb558aebb0a65a15ec51dfabc96c0762d38"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-012.png",
+      "sha256": "a31479817944af5180f7f2d12c03c2a52cb7a22c634a3ded255faf5f6239f29c"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-013.png",
+      "sha256": "2bf7de625a0998cd92d438ba7d5c7b5b2eaf7d8aa98122973ec105fa4af3b60b"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-014.png",
+      "sha256": "9cb54659990ffc2cf8ead3e8f5bb860845564b992a11131e0e5c7b88570a857b"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-015.png",
+      "sha256": "ee64275facfbe7a8611d95fb71937ac93a35e90320ab409456ed5de9178dbf25"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-016.png",
+      "sha256": "7b1d428c630e343133c6b98f3efa2cd74bf0b49077beab28df7b2f897d3c0ae3"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-017.png",
+      "sha256": "a3e5f8987267c5150cd74b761004b74db14dfc346b1245fa2ab3cae99948e5e5"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-018.png",
+      "sha256": "54af665f7fad6ee14615034c4955bdbae779eefd4a21ac2a6f60bb07118219f3"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-019.png",
+      "sha256": "2424cee22776fef556537f5fedb7c03f725f2258418e55ad3689d2e7bfd76d05"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-020.png",
+      "sha256": "1f87c5c9851157e9a9205f0702373b012d4cd950245876aabe3033bdb1f8241a"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-021.png",
+      "sha256": "6cc22255252878ba52353861ee6cca6df0300657a0d6c4a5693aa16b58bf3fbc"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-022.png",
+      "sha256": "1000d7c978dbf4b378e000ef9387daced1c7110d995d266d1c48b97f35244705"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-023.png",
+      "sha256": "864e39be55fbf55efe356512939250e547d399b9ad5b1e66fe4988cbb01b9679"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-024.png",
+      "sha256": "8fef4808f35dc027a963a449c13ed219e908d5e6cc19ae5d01528fa510ff5e6c"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-025.png",
+      "sha256": "7a74554fdb286b5356b5cbaf4d5efc6e7504f442e7a93d226c19c243035405ae"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-026.png",
+      "sha256": "ce7a4538e42175b33a8caed1c0c198f4b3f56bd2a71cec4801eb7e555ce53d5b"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-027.png",
+      "sha256": "3137f1742f01ea693bbb9678936b02ea3760ae41fdfb9d44b23302879a1bd3dd"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-028.png",
+      "sha256": "5291dd25bace40146be6493be04f4198a83e2b27db674d3830c1de2ddccf7d37"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-029.png",
+      "sha256": "1b66399e81de2b23e2eaae08c31805b21353e28be90aaecec4538a090d028a9b"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-030.png",
+      "sha256": "91448e702b9264c8ffcb3e5023aebc00c98d10b53056e940fd5335b4a42e6f02"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-031.png",
+      "sha256": "22e791f7e567b385c5a82d08172c0b6e4f1d3677d8a9f99d2b9e59b27a022fc3"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-032.png",
+      "sha256": "664aece5f0407c5e6e8c9f295d17df9be7f27b75640fad7b7a14d1a904fdfb10"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-033.png",
+      "sha256": "dc3d576562a28fe3db25264662aac983cce958d2c43665e43dbdb18d36a2e623"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-034.png",
+      "sha256": "a9fa1bf19bb010e9a313f450aea4d454bc9d23ebc4b9a0387e64c272b1522760"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-035.png",
+      "sha256": "09d570714c4792aa49f593a3a6d788ea5c8dafdd4416c69c51df2ec1cf2cf809"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-036.png",
+      "sha256": "b0efc9ff909b7790a4c3a1ebc53f3ae8c2bd876e8f587628e0a95e367354a18d"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-037.png",
+      "sha256": "ed9bece333f12e2bc6d0099fd2d924e801294f01d8d176d696091fe3da14dac2"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-038.png",
+      "sha256": "cf958eb9e988757b6603a0ab0d4f422836cc8047f336ebfb2a2e848820b93ece"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-039.png",
+      "sha256": "9b98089061b25a6840a54c8c10bec5845ad8fe983260eafa0d1d25ac70008fc7"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-040.png",
+      "sha256": "d8bd224bc4890ac4e2dd709bc42bc8cbe224a241bf00c740aff8035c64155d04"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-041.png",
+      "sha256": "a917a28c826c7ca3d0fd81e80ad03cab03a623d15d9056fdea4d6b7311f3828b"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-042.png",
+      "sha256": "43096616ea37616a2a8757595f80cd017f5641ef55d2d990352cdc4a0b75dd49"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-043.png",
+      "sha256": "c873b3a6b16f23ed9cf8a57f42f3297bb85bd36208950e1d12ad1ddeeb7baf4c"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-044.png",
+      "sha256": "1a7bf3f15f1522d565ade689543429f141a3b0a43d1a5d811bfc3db831a7cd8c"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-045.png",
+      "sha256": "4f7eacf13febabf63d6471a04825970f746f1ffd48bf3617dadf7edfd038d528"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-046.png",
+      "sha256": "632d4d8f06f5a14a36c7d663d715bd24bb29259951c945237a6249209b594ad2"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-047.png",
+      "sha256": "4d77b504e7bc9a826b984120bbde26b0e3cf83c62fe78ec7ee65b67f2aebedb4"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-048.png",
+      "sha256": "2f9e35ef061a353ef1bf31de88ea9ca14d541d6f08d78545f4160233e415454b"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-049.png",
+      "sha256": "69014e5cfca15884e73c34d850871d69170cfbdce4446314b5749d9b7e95a16f"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-050.png",
+      "sha256": "2e0f0ffcf7dd8dc34193b46f4c06ff53c2e39214c2eecbc0aaf74f56b462beb6"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-051.png",
+      "sha256": "252ffe4926f70b2ceb39adc2168367bd68ca310de628a92ec3fc8f280dfaf674"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-052.png",
+      "sha256": "9ef81d575730fbcd1d450033c82b154056ef2ee2a9a1100d4c88d4b11aaf5d7c"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-053.png",
+      "sha256": "0028afbdc53e0ca2ae47acc13efed38d6b7dac7e7e52ff7f16abbb5b2f5d5be7"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-054.png",
+      "sha256": "c9da3843e90089c8db70f49af0db2def4c99c356a203176c4ce3284bb9828122"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-055.png",
+      "sha256": "4a0a3b39cf9f146e5946e48bc96df12ca00bfe2f096c67f823a8aeb5383e25ec"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-056.png",
+      "sha256": "bd95038b9ee4d7e21eb62e497582dae1bea2a1643c873c57087978eb5eb04fb7"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-057.png",
+      "sha256": "778f44cc3d177a0cde305eb1602ee9e8d8927543dcfe7d48d27fb5b00f7ecc00"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-058.png",
+      "sha256": "d9534ff2d67aec9ee3c76ac73974d274f0114b348830e4eafaf85bdbebcee6d8"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-059.png",
+      "sha256": "43a172e07709b44a9ce605056e98970c4ede6149b3b060aa47a8caf226bc4b1d"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-060.png",
+      "sha256": "7038cf2621e38886f1d6696e5d1aaa4556473c3c590648123d2cd4ef39bbb64e"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-061.png",
+      "sha256": "3cc6b70df929c3516e215321da3fa81e23dad5c5ab40bf12114b285f52f232b3"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-062.png",
+      "sha256": "2919fd0a28bdcec9d77af55b80846d672cbe1e4281b60e2af644f1a48f853d5e"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-063.png",
+      "sha256": "a6711f0518d31952159f662138f7e19c6cec26ef47d52d04a0e87821290e0ef4"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-064.png",
+      "sha256": "aadf34e0ba7584221466f67b4745b95b7b22b7d961c447273fe45fd5d26f39c1"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-065.png",
+      "sha256": "ccbde21b7af17f426f9d669967fee1f37e3a23e421eab12934c87c9fc8887ae1"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-066.png",
+      "sha256": "96473ce95e48dd6d64b6820820204aa05266ca64ecd5fd0a6ae29665bf5414bc"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-067.png",
+      "sha256": "6882d6e06c877c4b253c56011083d8a942c6e01b5460f5a33172b11de57d5fd0"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-068.png",
+      "sha256": "8468ec47f072ebf300fe1b9266ee365b38908f6ccb79ede5c31a13ff54511ae6"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-069.png",
+      "sha256": "fa7baff42bffb4bdb03a1b988880073923d6c2238eeae5626ed1ac71ee717070"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-070.png",
+      "sha256": "54ad6dd1c8f2c6fca8e2af6a09117f1244afeb70dad1876bdfc3fc3ade9c3f21"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-071.png",
+      "sha256": "aa73d70fa1a41ba7d3d1db9445a2f92723ee560ce14b9eda6cd9976af3c407a7"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-072.png",
+      "sha256": "878a997ad138f9e09620162527d1c1559368d6d705e0aa5364eaaf714577ca6c"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-073.png",
+      "sha256": "9512e884892c535a3d11722af73d51092a5f6ca230a6e339dc38ebb88700c8fb"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/masks-v2/pose-074.png",
+      "sha256": "56203dce4bc1795bc493bc20539dd91760bd0dc5182a6c73dedf462ffdea4c50"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-000.png",
+      "sha256": "d94e8e3c3e9f50b119ed38e7cb1d0900d01132ac66a0a9f00a698421a9e2b2d4"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-001.png",
+      "sha256": "175dceebaf01cd4183119cb5bf568cdbc9445af29bd3b25441cffa68850b43a7"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-002.png",
+      "sha256": "e84a91eb315854d44dd7af9188e809d2e8be781a9829a16e6d937cbf90a10e66"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-003.png",
+      "sha256": "0fd6d7526c3905333ce3b61b7bfd0b3005f07559e421403bdb25083df1e1c88e"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-004.png",
+      "sha256": "0d3949dffddc40a2f8dfed8d54966007697bee006940692a5f091b9cbe6d2bfa"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-005.png",
+      "sha256": "2c8476251c934dd70d7d62d3e7054ac6de60c9a4220cb4d20bac3480f4027457"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-006.png",
+      "sha256": "8ec9986e9d7025895eda0d4e42a4c313900951d8c688bc33941ba2048d87c6db"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-007.png",
+      "sha256": "afc64965a85ca159ee0f932c0d5945c5d50c8dbef8c1b109cfa98fa2d081d779"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-008.png",
+      "sha256": "0bcbcd227b7768e5202407e55f353db7c3cc7b6c80e26a18ece9b4fb5b919cd2"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-009.png",
+      "sha256": "0247f8b222b401b932db86581f8ff8dcb153eb8c0f2fe034024997b9b6fe6d71"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-010.png",
+      "sha256": "1ebcb8b22ad909e383285f56a7e3aad37aaad8043365044435c3de6e9f956e22"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-011.png",
+      "sha256": "1bf2972acce115cebb0275a3cc7a93e50afbcf64c40fa9ad629adc460eb17f56"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-012.png",
+      "sha256": "759b88afe0ef7a28e49711870d67d94f8776bfd800ee817614caf9875d239cd2"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-013.png",
+      "sha256": "14fa85d71acfb780720ff050e3f026ba49a4914ce2da1df19932f4276229c6ad"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-014.png",
+      "sha256": "be0412682daaae40554269f31955f1a3e6c8fd3dbc690d40416c88ff183bfe54"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-015.png",
+      "sha256": "b4c98e8bb167ae300947330d897e66b7465ccfd89b96cc030545e690b02d7cab"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-016.png",
+      "sha256": "138892c1d9d1000de949b9589bbec07940688cbd9b3b07fc49df15f8872b7f58"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-017.png",
+      "sha256": "6294a6403d8287f277d905a47f36da577b85b0dc6e771bee10cd502e892de645"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-018.png",
+      "sha256": "7e5384a09f0d96eaebb35e05acd94dd9cbf80297c1c128676807e47ce77ca49e"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-019.png",
+      "sha256": "6a063f4bd7ddf46136c6d3b2ab56836ccb6f6fc0f9a8b205de7ff3a552245b21"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-020.png",
+      "sha256": "7e5d6992194928a24beeaa9db57f8a925af94c9a39e08fbbdc5653e4515c09c7"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-021.png",
+      "sha256": "aceda980bba3fb6625d58656bd6625563b6b6712cdf4dbc17ac4762b13d313b5"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-022.png",
+      "sha256": "ad0b6195be47dfd3992eabba6ba36e0c9165bf4e39b50b1d331ff082885ac52f"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-023.png",
+      "sha256": "d990e71998a954fb5962498680ed2dfa146020cb3975bc63f005636297c9ed52"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-024.png",
+      "sha256": "346c0258f0d78e05b207f868523890b410c1f698baf53f506c4081c3bd6f3822"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-025.png",
+      "sha256": "d1078a0302c5a0539532e1c9ff197912a36af4acbf99e2a1a85856fbee49ab08"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-026.png",
+      "sha256": "5ed76b81c27ddc481ee66455e61976a6c970fdc2571c5d0afb4f1aa67478567b"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-027.png",
+      "sha256": "012f6689bd8bcfffd12ab29c3b92a44d442525ba39171e75efe0fdfa61d668b1"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-028.png",
+      "sha256": "98823c27be4ea0c9652b30bac1295999859891dfbcff8c10c1ff70f3a34f2e71"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-029.png",
+      "sha256": "a4939ecbaa90771734215089500ab24ab7480b9aac3d0d5f250284822a4f93ff"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-030.png",
+      "sha256": "b46d0f9eedeeadb241d466067b5f87f883ad6ec46572c20ffede077dcb9e39a5"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-031.png",
+      "sha256": "4676a6f727fb44fc9da8f72d6da8b9749d0a5b76c63040c47ed93ee54af68399"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-032.png",
+      "sha256": "e47dab69768b201ab4d44ad062bf0c77a5a69a7bd25ed6086a0acec7ae9bf57f"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-033.png",
+      "sha256": "dd170883841158cef0be1a39b2740daeb91346f08cc6321f673e85013f4c22a8"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-034.png",
+      "sha256": "31d3bcc84a09dbd454e0c53b427418f0a0c086426911b60ed761df3a751822e4"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-035.png",
+      "sha256": "b2fbc4fa33c90d43ae5b4ebda9f1ef4397b7fcc1065aeb108eb149ba36e31714"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-036.png",
+      "sha256": "8cc7960d336cd96eea1c6842cb3a31f0e8b7023cefe002e55b1e237f8cc1a2d5"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-037.png",
+      "sha256": "52485ea2a67e1d436e1e56b860d8496ea47f691b6f31215587d62c1fc869e042"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-038.png",
+      "sha256": "339023fc57edb4851d969ae44b406ae2f881abce58c3f40fde68940e603f49c4"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-039.png",
+      "sha256": "11ecb2d9d9512c7cc84c57e0c966c9238a12928c04a06a988cc7f30ff317881f"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-040.png",
+      "sha256": "c05b4f195e7f27787816a7ed50d97d76687ba2ce8127a82af5f7c7c74d6b4eb2"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-041.png",
+      "sha256": "33979ed445f4c87247242c7e4428d73759be732674c160be10bed6dca9c3f369"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-042.png",
+      "sha256": "642846fb8dccdb7cea3d3b51acb8c54f44545aaab83cbbf41a6f2beb88881cfc"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-043.png",
+      "sha256": "6b4a596de7175446238a45d915450505f507e01b03583a7e4bc7f89db1b70b91"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-044.png",
+      "sha256": "444aa1be4e63e4a76ced2af680501e3f8cbda24238b81bbdc807fb2e31a51dbe"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-045.png",
+      "sha256": "7ca33ae8e8ca0568da14ebd7c8ccfe40f6c73013d44a4d47ac5e0bb9d92b23eb"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-046.png",
+      "sha256": "c3d8a5827e985b6a3b1d12c257edb93332074c0d014fba9265ecb5985bc11426"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-047.png",
+      "sha256": "d410f665b9f90c42194d196e2b026696bfea24bb70b08b74ac9f96acba632dd6"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-048.png",
+      "sha256": "329add995ea9db0318dfd0252ed4e43c6d6a743bd556c18bca6f8c368c0c06b2"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-049.png",
+      "sha256": "262722016765552e0c5c85b28117a1447d10c5884ef086bb23bc1447f427392c"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-050.png",
+      "sha256": "b3260468ec4fdd52b358d9575cb981448152f5860f168b351f7220cf9a236d1b"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-051.png",
+      "sha256": "bbc53928357a8eca205c0b4943db08221bd524caa4a832288f843e223ae74a5b"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-052.png",
+      "sha256": "3c43187f8edee4eecedb9a7ca23c4c0ea40616a6a1cbb191b05b2ca35bbc8627"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-053.png",
+      "sha256": "4aa5ca44e60ef612a2d0feddb8fbe66880ffccafec9fee4ce256aa63494771de"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-054.png",
+      "sha256": "ea157ff78f2aea002197bc4cc4aea0dabde03cfe774b127d54bd560df7e6e393"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-055.png",
+      "sha256": "ba5ff9168c0709b9ff0895cc3a6f0b7fc2b9b329a5e67fb7aff85e9bc537cb35"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-056.png",
+      "sha256": "d7f2038a1819aca89fef2d3d6448f9b64f5d96ba5e8e2673fc8aa4629db67766"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-057.png",
+      "sha256": "cf5fdbc7cbd9d9fe388c94ac5deee24bdf7bd1c6689242b99b9998340d26dac7"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-058.png",
+      "sha256": "c5f3b97e8848356de1682c25a7640c5f2375f8547a2692bb6b754fbb66f06a4e"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-059.png",
+      "sha256": "ce9dcfcabdcd6a5d60c978ad628a6f832217ea0a7f3d5fc2545c55e87a0d5ee9"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-060.png",
+      "sha256": "a3279bbd1e2f77123dc4fb4501d0a79ce78c1d5179036d52a1e9cd4f846b56af"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-061.png",
+      "sha256": "ac7ac922a9d52c60630af4de5de3da8d0db84b29ac1b6958a96c427b3a12211f"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-062.png",
+      "sha256": "a24ae982b73e11106d28905bd6a34bf51f01637092e88382254caa5540e958f1"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-063.png",
+      "sha256": "042715a91ecaf94fb5130867b96a4f51e57c78a48f625ce39a5ecfaf96faa8e0"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-064.png",
+      "sha256": "06074a19849a8f0208e7ea017a25e0fe48edc705ab5998bd88612a9f98716b9f"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-065.png",
+      "sha256": "fe39e7d7d30041943c720ba66093f55d6dd73dba08b540ed6a0038bab6adfd08"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-066.png",
+      "sha256": "19ffbfb4d5808b7afe14eacd3f54542ebd2526e21fa7ab86bd922b24690cc2ab"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-067.png",
+      "sha256": "0bf4b68ee06193f7b14761ae7adad91d506d89408ce3e77c54a9e17d2b99c064"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-068.png",
+      "sha256": "edba239e00303acaf534ec0354627fa2539a25361214bc64947aa3548c44d3ff"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-069.png",
+      "sha256": "889b8452c86ea991f8ff2cd08f5f2ad09ce246abc8528402617f1edcdd063fe6"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-070.png",
+      "sha256": "9f325c78aac4671f31c9d55aacb05e4fb5df61736e41d84cf3cc1c345d67c1d9"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-071.png",
+      "sha256": "4b05853355c985f62e780e4dfb4441c182ba77f48a794a80072b59ffccc6794b"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-072.png",
+      "sha256": "326e4819735506e88994063398993921a501e2dcc84ce02287559c2aee503fac"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-073.png",
+      "sha256": "2f1841098e6bf690bf6d653ba1caa6b66cd911e29ca3e16714874ba9ea872d38"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/original-native/pose-074.png",
+      "sha256": "a96ab00849fc9e6d6eac7fabef4523cc26d3327f17cebd7f180ff45d9685a7cb"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/painted-map-ui-v2.png",
+      "sha256": "2e1114aa265436a8b599726220d2da06c89609ad4ba7395c6d6ae75b865615be"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/painted-page0-v1.png",
+      "sha256": "01b80c34dafed208816c678c38d30960eb0f92f4b4bde17b28595484dca3c65d"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/prompt-map-ui-v2.txt",
+      "sha256": "3df3c67094e5f07c2da78336f48279877e60cb64ec944bbfdaee544520dad317"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/prompt-page0-v1.txt",
+      "sha256": "ef7de69fc518bab31af33671969e0f882322ef7a73a75cd47bf3d523dda6c69b"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/prompt-page1-v1.txt",
+      "sha256": "ef7de69fc518bab31af33671969e0f882322ef7a73a75cd47bf3d523dda6c69b"
+    }
+  ],
+  "fit": "exact",
+  "generation": {
+    "assembly_plan": {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/inputs-paper-v1.json",
+      "sha256": "b4fe04ac9d5925cb945fb4f0c971a39c3e34774b075208e4819e40a5b0c5189f"
+    },
+    "image_generation_used": true,
+    "lineage_audit": {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/lineage-audit-v1.json",
+      "sha256": "6a972e2a7031fcf859d4b98b6da75cbf8b1aac6c1d1a264f6a2a49eed63d7943"
+    },
+    "method": "Actual imagegen-painted regional crest ink on preserved native painted2D pose contexts. Explicit per-pose masks; exact old alpha/body/root and outside-mask RGBA. No new pose or generated anatomy copied.",
+    "model": "not exposed by built-in tool",
+    "native_playback": "not_run",
+    "native_visual_review": "pending",
+    "painted_master": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/painted-map-ui-v2.png",
+    "painted_master_sha256": "2e1114aa265436a8b599726220d2da06c89609ad4ba7395c6d6ae75b865615be",
+    "painted_sources": [
+      {
+        "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/painted-map-ui-v2.png",
+        "sha256": "2e1114aa265436a8b599726220d2da06c89609ad4ba7395c6d6ae75b865615be"
+      },
+      {
+        "path": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/painted-page0-v1.png",
+        "sha256": "01b80c34dafed208816c678c38d30960eb0f92f4b4bde17b28595484dca3c65d"
+      }
+    ],
+    "prompt": "Use case: precise-object-edit. CREST-ONLY EDIT of image1 exact 4x4 contact atlas1536x1024. Image2 is the ONLY regional Bandle City crest reference: spiral in tall curling round-tipped arms, leaf sprigs and tapering stem. Paint dark forest-green ink maker's crest physically on each dragon's largest visible paper wing panel. Keep pose/whole body outline/paper folds/color/position/cell boundaries EXACT. No new geometry. Flat wing side views use compressed ink following fold angle, do not put ink on tail or empty air. In bottom row closer portrait/encounter views use broad wing plane not neck; stamp still attached to paper. Crest can simplify at tiny native gameplay size but central spiral and tree arms must remain recognizable at reference scale. About one quarter of visible wing surface, never enormous circular badge. This is magnified exact native sprite context, NOT permission to repaint/resculpt anatomy or pixels outside crest. Return EXACT original atlas canvas, all16 original posed subjects in exact original position, no labels/grid/watermark. Transparent background. Original HoMM3 painted sprite appearance. This is spellfoldDragon; preserve cream paper or upgraded indigo edges/gold crest entirely.\n\nCREST-ONLY EDIT. FIRSTIMAGE is an exact contact atlas of EXISTING genuinepainted2D HoMM3 BandleCity spellfoldDragon frames. Keep exact1536x1024canvas, grid8columns\u00c3\u20148rows, allactorposes, anatomy, creasedpapertexture,wing/tailshape, camera, lighting, nativebody/pivot,transparentalpha and everypixel outside newlypaintedmarks. Do not redraw, relocate, resize or inventactors, never fill blankcells. SECONDIMAGE is correct officialSINGLE BandleCity regionalcrest SHAPE only: CENTRALSPIRAL with two tallcurvingupwardarms endingroundedtips, pairedleafsprigs nearbase and taperinglowerstem. NOT a genericleaf/circle or anotherregionlogo.\nReplace existing tinyPROJECTswirls with clearlyrecognizable darkBOTTLEGREEN INK regionalspiral-tree maker'sstamp on the LARGEST VISIBLE NEAR-WING PAPERFOLD plane of each existingpaperdragon (or upperchest/neckpaperfold if wingnotvisible in closeportrait). InkprintedONTHEPAPER, followingexactfoldperspective, matteagedpigment, no physicalbadge/newgear/no paperresculpture. The mark is about8\u00e2\u20ac\u201c12nativepixels across onbattlefigures, ~16\u00e2\u20ac\u201c24pixels onthese2xsourcecontexts; sourcecontextscalesvary, keepitproportional. Keepbackgroundandfigurealphaexact. For back-facing/crumpled/death poses wherethe markedpaperplaneisnaturallyhidden, do not force an alwaysfrontal orfloatingstamp through otherwings: keep naturalocclusion andusevisible reversepaperplane onlyifappropriate. No newmagicglow/extraattacks/cast effects. Basecreamcolor and upgradeindigo/gold foldedpapertrim remainexact. OriginalHoMM3painted miniature materials; noBlender/3Dproduction, vectorrestyle, glossyplastic, anime, outlines, text, labels, checkerboard, floor orscene. Only actualinked regionalcrestpainting, everywholeactionandemptycellpreserved.\n\nCREST-ONLY EDIT. FIRSTIMAGE is an exact contact atlas of EXISTING genuinepainted2D HoMM3 BandleCity spellfoldDragon frames. Keep exact1536x1024canvas, grid8columns\u00c3\u20148rows, allactorposes, anatomy, creasedpapertexture,wing/tailshape, camera, lighting, nativebody/pivot,transparentalpha and everypixel outside newlypaintedmarks. Do not redraw, relocate, resize or inventactors, never fill blankcells. SECONDIMAGE is correct officialSINGLE BandleCity regionalcrest SHAPE only: CENTRALSPIRAL with two tallcurvingupwardarms endingroundedtips, pairedleafsprigs nearbase and taperinglowerstem. NOT a genericleaf/circle or anotherregionlogo.\nReplace existing tinyPROJECTswirls with clearlyrecognizable darkBOTTLEGREEN INK regionalspiral-tree maker'sstamp on the LARGEST VISIBLE NEAR-WING PAPERFOLD plane of each existingpaperdragon (or upperchest/neckpaperfold if wingnotvisible in closeportrait). InkprintedONTHEPAPER, followingexactfoldperspective, matteagedpigment, no physicalbadge/newgear/no paperresculpture. The mark is about8\u00e2\u20ac\u201c12nativepixels across onbattlefigures, ~16\u00e2\u20ac\u201c24pixels onthese2xsourcecontexts; sourcecontextscalesvary, keepitproportional. Keepbackgroundandfigurealphaexact. For back-facing/crumpled/death poses wherethe markedpaperplaneisnaturallyhidden, do not force an alwaysfrontal orfloatingstamp through otherwings: keep naturalocclusion andusevisible reversepaperplane onlyifappropriate. No newmagicglow/extraattacks/cast effects. Basecreamcolor and upgradeindigo/gold foldedpapertrim remainexact. OriginalHoMM3painted miniature materials; noBlender/3Dproduction, vectorrestyle, glossyplastic, anime, outlines, text, labels, checkerboard, floor orscene. Only actualinked regionalcrestpainting, everywholeactionandemptycellpreserved.",
+    "provider": "OpenAI built-in imagegen",
+    "release_accepted": false,
+    "technical_producer": {
+      "path": "assets/source/regional-crests-20261025-v1/creatures/compose-v1.py",
+      "sha256": "40acf6853d48da904b402c828d46456e12d8885c9660aedbcee31bc59509cf75"
+    }
+  },
+  "output_path": "Content/Sprites/runeterra/bandlecity/creatures/spellfoldDragon/large.png",
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "raster",
+  "sha256": "10fbe099b34e09b0d053cfdc3b2062bc56911cd1c03384aaf2604d3b1128d8ac",
+  "source": "assets/source/regional-crests-20261025-v1/creatures/spellfoldDragon/candidate-v1/pose-071.png",
+  "source_canvas": [
+    58,
+    64
+  ],
+  "source_sha256": "10fbe099b34e09b0d053cfdc3b2062bc56911cd1c03384aaf2604d3b1128d8ac",
+  "status": "built-unreviewed",
+  "unit": "spellfoldDragon",
+  "visual_approval_granted": false
+}

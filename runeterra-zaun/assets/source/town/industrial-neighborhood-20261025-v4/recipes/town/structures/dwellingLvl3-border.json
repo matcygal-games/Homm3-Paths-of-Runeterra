@@ -1,0 +1,130 @@
+{
+  "acceptance": "Technical mask derived from the painted layer: the area mask defines the clickable footprint and the border mask the highlight outline. Both must be derived from the own painted layer, never copied from another faction or from the original game.",
+  "building": "dwellingLvl3",
+  "canvas": [
+    800,
+    374
+  ],
+  "content_box": [
+    0,
+    0,
+    800,
+    374
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; prompted and technically assembled by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/dw3-master.png",
+      "sha256": "2aa098ed8108c48ea94d218e8604692d678e4bd9122587005d6c9c250f14a709"
+    },
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/dwellingLvl3.json",
+      "sha256": "a8a939fde5d90290f7caf27fd3c9fbf4348a5507fd9828b4cf1eaf3c9c5f19b5"
+    },
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v4/prepare.py",
+      "sha256": "a7b7e6160b50cff6fc87b097f5bc59f0e31648bf208edd0f42afbcc4b604d35f"
+    },
+    {
+      "path": "scripts/zaun_coastal_state_v1.py",
+      "sha256": "5aa45de45f59be66d393df44538743b1842db5ba5f1c4e48c1d83acaa13f3cf7"
+    },
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingLvl3/body-opacity-mask.png",
+      "sha256": "d5b12fb9234a2e6ab954e99e72b5a9b32d081caa042e6ba57f9845f2d224ffe8"
+    },
+    {
+      "kind": "historical_provenance",
+      "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/dwellingLvl3-original.json",
+      "sha256": "3429ac4dd5897a4dc1fc1aba947cc8a53171247e15b4e0c26e613397cc710bf4"
+    }
+  ],
+  "fit": "contain",
+  "generation": {
+    "body_opacity": {
+      "changed_alpha_pixels": 3632,
+      "mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingLvl3/body-opacity-mask.png",
+      "mask_sha256": "d5b12fb9234a2e6ab954e99e72b5a9b32d081caa042e6ba57f9845f2d224ffe8",
+      "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/dwellingLvl3.png",
+      "original_native_layer_sha256": "5b5acf248e84de880119a7c334ee83db7b223fa29cfad899545c740eeb0e51cd",
+      "policy": "Only originalalpha248..254 AND2px-eroded(alpha>=128) structural core becomes255; all RGB and outside-mask RGBA unchanged. No fill of holes, arches, lowalpha glass/glow/shadows or outer antialias."
+    },
+    "composition_rectangle": [
+      543,
+      291,
+      110,
+      69
+    ],
+    "credits": {
+      "author": "OpenAI built-in imagegen; original selected Zaun prompts and historical source retained",
+      "license": null,
+      "redistribution": "unresolved; release prohibited"
+    },
+    "generation_route": "Preserved selected own painted 2D master; whole-source uniform contain and native placement only.",
+    "historical_prompt": "Use case: precise-object-edit. Edit own Zaun Chemthrower Workshop base/upgraded dwellingpair. Keep two wholebuildings side-by-side, exactlowfrontal3quartercamera, brownbrickopenworkshop, visiblebronzeshortnozzlebenchmachines, tallsidefluidtank, upgradehasuppergantryandtwo tanks, basecheaper/simpler. MakeCHEMTECHobvious: largebrighttoxicGREENglassfluidwindows onsidepressuretanks andgreenreagentjarsonbenches, violetglass/paintedpurplemetalroofbands, connectedcoppercoolingandpressurepipes. Mainmetal/brickstaybrown/rustwithtexturedhighlights. Localgreenillumination,broadupperleftlight; richlypaintedoriginalHeroesIIIprerenderedbuildings. Generousouterpadding: allchimneys/cranes/roofcornersandfloorbasesclearofcanvas, wideemptygutter. Genuinetransparentalpha,no backdrop orcommongroundtile. Not a scifireactor, nopeople/text/neonoutlines.",
+    "historical_provenance": {
+      "kind": "historical_provenance",
+      "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/dwellingLvl3-original.json",
+      "sha256": "3429ac4dd5897a4dc1fc1aba947cc8a53171247e15b4e0c26e613397cc710bf4"
+    },
+    "historical_receipt_note": "Unchanged prior provider receipt retained privately at original authored source; not rewritten or claimed as new generation.",
+    "historical_receipt_sha256": "3429ac4dd5897a4dc1fc1aba947cc8a53171247e15b4e0c26e613397cc710bf4",
+    "image_generation_used": true,
+    "mirror_x": false,
+    "model": null,
+    "model_disclosed": false,
+    "native_offset": [
+      546,
+      293
+    ],
+    "native_size": [
+      104,
+      65
+    ],
+    "new_image_generation_used": false,
+    "painted_master": "assets/source/town/chemtech-v4-buildings/dw3-master.png",
+    "painted_master_sha256": "2aa098ed8108c48ea94d218e8604692d678e4bd9122587005d6c9c250f14a709",
+    "placement_plan": "assets/source/town/industrial-neighborhood-20261025-v4/live-placement-plan.json",
+    "placement_plan_sha256": "ebc0f8ca5a08869bae5a7a3ad205bc5cab43a61832d85454e856f3febf292333",
+    "provider": "OpenAI built-in imagegen",
+    "release_accepted": false,
+    "runtime_verified": false,
+    "source_crop": [
+      4,
+      85,
+      947,
+      675
+    ],
+    "status": "authored configuration",
+    "technical_helper": "assets/source/town/industrial-neighborhood-20261025-v4/prepare.py",
+    "technical_helper_sha256": "a7b7e6160b50cff6fc87b097f5bc59f0e31648bf208edd0f42afbcc4b604d35f",
+    "visual_approval_granted": false
+  },
+  "id": "zaun.town.structure.dwellingLvl3.border",
+  "identity_review": "build/reports/industrial-neighborhood-20261025-v4/source-pixel-review.json",
+  "native_visual_review": "pending",
+  "output_path": "Content/Sprites/runeterra/zaun/town/structures/dwellingLvl3_border.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/industrial-neighborhood-20261025-v4/structures/dwellingLvl3/border.png",
+  "source_sha256": "fa88b6aa41eda0348693d6006f103963d14320282e8b31228a86b8a1fadeaf21",
+  "status": "built-unreviewed",
+  "technical": true,
+  "title": "Chemtech Construct Quarters border mask",
+  "visual_approval_granted": false
+}

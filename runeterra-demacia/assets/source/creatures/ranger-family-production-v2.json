@@ -1,0 +1,199 @@
+{
+  "active_recipe_modified": false,
+  "authority": [
+    "client/battle/BattleConstants.h ECreatureAnimType groups",
+    "client/battle/BattleAnimationClasses.cpp ShootingAnimation::getAttackClimaxFrame (one-based -> zero-based) and RangedAttackAnimation::tick",
+    "actual config/creatures/castle.json + extracted CLCBOW/CHCBOW references viewed at native resolution"
+  ],
+  "painted_generation_held_until_native_infantry_pilot": true,
+  "status": "editable source family only; no new active battle recipes or final acceptance",
+  "tool_provenance": "assets/source/creatures/rig-production-tools-v1.json",
+  "tool_provenance_sha256": "c6d4c8489f3fb1981e2c927c9d14b7ca5ca54316875c4519a00f72283580164a",
+  "units": [
+    {
+      "arm_forearm_length_range": [
+        0.27313014864921553,
+        0.27313020825386053
+      ],
+      "arm_upper_length_range": [
+        0.2976994812488554,
+        0.29769948124885576
+      ],
+      "climax": {
+        "authored_zero_based_release": 4,
+        "authority": "client/battle/BattleAnimationClasses.cpp ShootingAnimation::getAttackClimaxFrame returns selectedFrame-1; RangedAttackAnimation::tick emits at that current frame.",
+        "configured_one_based": 5,
+        "frames_per_direction": 8
+      },
+      "command": [
+        ".tools/blender45/blender-4.5.9-windows-x64/blender.exe",
+        "--background",
+        "--factory-startup",
+        "--python-exit-code",
+        "2",
+        "--python",
+        "runeterra-demacia/scripts/creature_ranger_rig.py",
+        "--",
+        "--project",
+        "C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-demacia",
+        "--unit",
+        "demacianRanger",
+        "--revision",
+        "2"
+      ],
+      "cwd": "C:\\Users\\matcy\\Documents\\code\\Homm3",
+      "executed_generator": "assets/source/creatures/demacianRanger/ranger-rig-v2/generator-executed-v2.py",
+      "executed_generator_sha256": "be595bffd0808d16cd51026a7d250de081534070788b1c157eabdd0ac6e23670",
+      "exit_code": 0,
+      "intentional_duplicate_pose_renders": {
+        "11": [
+          [
+            0,
+            5
+          ]
+        ],
+        "12": [
+          [
+            0,
+            5
+          ]
+        ],
+        "13": [
+          [
+            0,
+            5
+          ]
+        ],
+        "14": [
+          [
+            2,
+            3
+          ]
+        ],
+        "15": [
+          [
+            2,
+            3
+          ]
+        ],
+        "16": [
+          [
+            2,
+            3
+          ]
+        ],
+        "2": [
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "metadata": {
+        "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/ranger-production-v2.json",
+        "sha256": "3a88a82f69cdff06f096ba31f3bd529a97955b400dbf848a9ae69b0772a29558"
+      },
+      "rendered_png_count": 78,
+      "selected_source_revision": 2,
+      "source_blend": {
+        "path": "assets/source/creatures/demacianRanger/ranger-rig-v2/demacianRanger-ranger-rig-v2.blend",
+        "sha256": "c79d35a93ebbb0b485987419dd7556ab1230b4c25548369c3fd6f71fa04788ef"
+      },
+      "status": "actual source renders verified; final animation assets incomplete",
+      "unit": "demacianRanger"
+    },
+    {
+      "arm_forearm_length_range": [
+        0.27313014864921553,
+        0.27313020825386053
+      ],
+      "arm_upper_length_range": [
+        0.2976994812488554,
+        0.29769948124885576
+      ],
+      "climax": {
+        "authored_zero_based_release": 4,
+        "authority": "client/battle/BattleAnimationClasses.cpp ShootingAnimation::getAttackClimaxFrame returns selectedFrame-1; RangedAttackAnimation::tick emits at that current frame.",
+        "configured_one_based": 5,
+        "frames_per_direction": 8
+      },
+      "command": [
+        ".tools/blender45/blender-4.5.9-windows-x64/blender.exe",
+        "--background",
+        "--factory-startup",
+        "--python-exit-code",
+        "2",
+        "--python",
+        "runeterra-demacia/scripts/creature_ranger_rig.py",
+        "--",
+        "--project",
+        "C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-demacia",
+        "--unit",
+        "veteranRanger",
+        "--revision",
+        "2"
+      ],
+      "cwd": "C:\\Users\\matcy\\Documents\\code\\Homm3",
+      "executed_generator": "assets/source/creatures/veteranRanger/ranger-rig-v2/generator-executed-v2.py",
+      "executed_generator_sha256": "be595bffd0808d16cd51026a7d250de081534070788b1c157eabdd0ac6e23670",
+      "exit_code": 0,
+      "intentional_duplicate_pose_renders": {
+        "11": [
+          [
+            0,
+            5
+          ]
+        ],
+        "12": [
+          [
+            0,
+            5
+          ]
+        ],
+        "13": [
+          [
+            0,
+            5
+          ]
+        ],
+        "14": [
+          [
+            2,
+            3
+          ]
+        ],
+        "15": [
+          [
+            2,
+            3
+          ]
+        ],
+        "16": [
+          [
+            2,
+            3
+          ]
+        ],
+        "2": [
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "metadata": {
+        "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/ranger-production-v2.json",
+        "sha256": "bcb3b8c7efa5af34430f8a654af73c32bb3d5efd55488ecb7f3ff06d71a39def"
+      },
+      "rendered_png_count": 78,
+      "selected_source_revision": 2,
+      "source_blend": {
+        "path": "assets/source/creatures/veteranRanger/ranger-rig-v2/veteranRanger-ranger-rig-v2.blend",
+        "sha256": "1339003157ad33c53e379a184cdfd38280f1ae93fc9da9dec3dd7a9d35124354"
+      },
+      "status": "actual source renders verified; final animation assets incomplete",
+      "unit": "veteranRanger"
+    }
+  ],
+  "visual_approval_granted": false
+}

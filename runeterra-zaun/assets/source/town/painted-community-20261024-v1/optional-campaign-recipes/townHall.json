@@ -1,0 +1,100 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "One own building icon in the native Heroes III town icon language: the same building read at icon scale, with the same equipment and materials as the painted town layer. Never a borrowed icon.",
+  "building": "townHall",
+  "canvas": [
+    58,
+    64
+  ],
+  "content_box": [
+    0,
+    0,
+    58,
+    64
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; prompted and technically assembled by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/townhall-master.png",
+      "sha256": "96342152fae9f50ff8080e65f0de51f5042a76b0da3ba1e04d5416d5d002a8ae"
+    },
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/townhall-provenance.json",
+      "sha256": "cbacca7c904a6f9f197d8087ad892a72b3144e1df1f1ebf888eb9ee5f78721dc"
+    },
+    {
+      "path": "assets/source/town/painted-community-20261024-v1/prepare.py",
+      "sha256": "570add080d42e1b17d7aec2939862119a175a664281e04050585cfb68138a835"
+    },
+    {
+      "path": "scripts/zaun_coastal_state_v1.py",
+      "sha256": "5aa45de45f59be66d393df44538743b1842db5ba5f1c4e48c1d83acaa13f3cf7"
+    }
+  ],
+  "fit": "contain",
+  "generation": {
+    "conversion": {
+      "composition_rectangle": [
+        164,
+        4,
+        151,
+        122
+      ],
+      "method": "Original painted2D source crop; uniform contain; full800x374 placement; native alpha-derived area/one-pixel outward border",
+      "native_z": 126,
+      "revision": "painted-community-20261024-v1",
+      "source_crop": [
+        156,
+        52,
+        1500,
+        978
+      ]
+    },
+    "credits": {
+      "author": "OpenAI built-in imagegen; prompted by Codex",
+      "license": null,
+      "redistribution": "unresolved; release prohibited"
+    },
+    "edit_target": "assets/source/town/chemtech-v4-buildings/halls-master.png",
+    "generation_date": "2026-10-21",
+    "image_generation_used": true,
+    "model": null,
+    "model_disclosed": false,
+    "painted_master": "assets/source/town/chemtech-v4-buildings/townhall-master.png",
+    "painted_master_sha256": "96342152fae9f50ff8080e65f0de51f5042a76b0da3ba1e04d5416d5d002a8ae",
+    "prompt": "Usecase: precise-object-edit. EditownZaunhallatlas intoONE SINGLEbuildingonly: theTOPRIGHT TOWN HALL, omitother3buildingsentirely. Two-storeymodestbrickmunicipalhallwithnoticeboard/frontstairs/rustironframe andwoodcrates, violetweatheredroofenamel, smallbrightchemicalGREENglasspressuregauges/lamps andconnectedcopperpipes, amberordinarywindows. Keepidentityandexactlowfrontal3quartercamera/materialtexture. Richpainted/prerenderedOriginalHeroesIIIgamebuildingstyle, upperleftlight/localgreenreflections. Centerwholebuildingwith15percentrealtransparentmarginallaround, fullexposedroofchimney/feet/sidewingwithnocropping, nootherbuildingattipsorbottomedges. Genuinealpha,nobackdrop/text/people/flatneonoutlines.",
+    "provider": "OpenAI built-in image_gen.imagegen",
+    "returned_provenance": {
+      "output_hint": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-560d-7462-a9a5-3670486c088c as C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-560d-7462-a9a5-3670486c088c\\exec-7828b2dc-864c-441c-8a1f-cec060a04ac6.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "route": "Genuine image-generation edit of own Zaun buildings; technical crop/uniform scale/placement only",
+    "visual_approval_granted": false
+  },
+  "id": "zaun.town.optionalCampaign.townHall",
+  "identity_review": "build/reports/painted-town-community-20261024-v1/source-pixel-review.json",
+  "native_visual_review": "pending",
+  "optional_unselected": true,
+  "output_path": "Content/Sprites/runeterra/zaun/town/structures/townHall_campaign.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    58,
+    64
+  ],
+  "source": "assets/source/town/painted-community-20261024-v1/structures/townHall/campaign.png",
+  "source_sha256": "dd096b20da1e1e16cd5df5e3e50fd3d90e31b833ac06fdf18fed97759aac714b",
+  "status": "built-unreviewed",
+  "title": "Foundry Hall building icon",
+  "visual_approval_granted": false
+}

@@ -1,0 +1,62 @@
+{
+  "canvas": [
+    58,
+    64
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI builtin imagegen; deterministic technical 2D conversion",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/painted-v1/assemble.py",
+      "sha256": "69586f88b723643690c2867b1c50f24ca3443e92120c0b43e4cf5597b8fdab66"
+    },
+    {
+      "path": "assets/source/town/painted-v1/layout-plan-v3.json",
+      "sha256": "3b9498f7cfb179c67742f073454facc95144f357158aa99c1fa80a457abd9b38"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl7/master-v1.png",
+      "sha256": "2824a85a659db1311e2f7f148d120f2242737aa42415abfcd5af3be88450a066"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl7/source-generation.json",
+      "sha256": "2aca995fd787f9993bad030c1c0da5a804efbba0e8464111c05fd906c94f0af3"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl7/prompt-v1.txt",
+      "sha256": "be080ccc45522a3fcc1bc6c1b16d12d0882ee7e948b25e2f442bbcdb53aa83aa"
+    }
+  ],
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": true,
+    "model": "not exposed by tool",
+    "painted_master": "assets/source/town/painted-v1/buildings/dwellingLvl7/master-v1.png",
+    "painted_master_sha256": "2824a85a659db1311e2f7f148d120f2242737aa42415abfcd5af3be88450a066",
+    "producer": "assets/source/town/painted-v1/assemble.py",
+    "producer_sha256": "69586f88b723643690c2867b1c50f24ca3443e92120c0b43e4cf5597b8fdab66",
+    "prompt": "Standalone transparent painted2D town-building cutout for original Heroes of Might and Magic III/VCMI. Native target800x374 town, not a poster or modern game render.\nImage1 is our own empty painted Piltover town terrain context; create this new separate building, not a copy of the landscape. Image2 is the ORIGINAL Heroes III Castle building: rendering-language reference only, no copied Castle pixels/silhouette. Image3 is the actual PILTOVER crest shape reference: central vertical pillar, split-ring/orb upper end, broad curved gear-flanked lower arcs; never wings or generic cog. Fit the low-front camera and warm materials of the terrain, but output ONLY the building on transparent alpha.\nOutput a genuinely transparent RGBA square master, approximately1254x1254. Full building, roof, stairs, foundation, cloth and subtle own rightward contact shadow entirely visible with >=35pixels transparent margins. No solid backdrop/white matte/checkerboard/grass or floor rectangle, no red/yellow/chroma edge outline. Walls and windows remain opaque painted material, not translucent see-through buildings.\nSame soft upper-left daylight and LOW FRONTAL THREE-QUARTER camera as the new town. Front facade/door dominates; modest right-side wall, limited roof planes, not strict isometric/bird's-eye. Richly textured original-H3 small-scale painted masonry, timber, slate, aged bronze/brass and dull steel. Warm ivory/hewn stone, muted dark timber, navy/teal cloth, restrained cool-blue instruments. No shiny modern3D/plastic, anime, splash-art, bloom/neon or photographic lens finish. Working Piltovan trade/science/community architecture, not16generic temples or Demacian keeps. A physical navy/teal banner or engraved plaque carries the CORRECT Piltover region crest visibly at native downsampling, with natural perspective and occlusion.\nPlanned native envelope [637, 198, 163, 79]; broad low silhouette. For a new base, leave headroom for later extensions above the same frontal ground-root nearx627,y1130. For an edit, KEEP EXACT reference canvas, lower foundation and entrance source position/scale; never zoom the smaller state to fill the canvas. Only whole real painted architecture; no people, soldiers, animals, text, labels, UI, border or watermark.\nSTATE: Dockyard Workframe Gantry. Dockyard Workframe Gantry: a broad low Piltovan heavy-work-suit fitting hall, weathered warm stone and sturdy timber, large frontal service arch, dark slate industrial roof, exposed bronze/steel load-bearing gantry and a plainly visible EMPTY living-operator construction frame/harness suspended for maintenance. Realistic heavy cargo craft, not an autonomous Hexcore Titan, golem factory or generic sci-fi hangar. Navy Piltover crest cloth on the front and crane beam. Full own foundation/steps, no operators/people or oversized champion hammer.\n",
+    "prompt_file": "assets/source/town/painted-v1/buildings/dwellingLvl7/prompt-v1.txt",
+    "provider": "OpenAI builtin imagegen",
+    "source_generation_ledger": "assets/source/town/painted-v1/buildings/dwellingLvl7/source-generation.json"
+  },
+  "output_path": "Content/Sprites/runeterra/piltover/town/structures/dwellingLvl7_campaign.png",
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "size": [
+    58,
+    64
+  ],
+  "source": "assets/source/town/painted-v1/buildings/dwellingLvl7/campaign.png",
+  "source_canvas": [
+    58,
+    64
+  ],
+  "source_sha256": "854a5a45398e146b8dd3631f60543fb23478492dda7633a7f0ed09f5bd2a9081",
+  "status": "painted-candidate",
+  "visual_approval_granted": false
+}

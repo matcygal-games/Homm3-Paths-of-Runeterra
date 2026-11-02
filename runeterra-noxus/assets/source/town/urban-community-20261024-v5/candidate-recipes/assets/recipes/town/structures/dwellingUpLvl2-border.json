@@ -1,0 +1,117 @@
+{
+  "acceptance": "Production requirements only. No rig/guide/primitive/reference may substitute for painted final art; this recipe must fail while its real master/hash is absent.",
+  "art_direction": "Independent Noxian iron/crimson/black subjects in Heroes III native painted language. Never recolour Castle or Demacia art, import original pixels or invent an official crest.",
+  "building": "dwellingUpLvl2",
+  "building_contract": {
+    "full_canvas_placement": {
+      "x": 0,
+      "y": 0,
+      "z": 335
+    },
+    "name": "Armored Pens",
+    "native_ground_contact": [
+      153,
+      220,
+      117,
+      115
+    ],
+    "upgrades": "dwellingLvl2"
+  },
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI built-in imagegen; deterministic project conversion",
+    "license": null,
+    "redistribution": "unresolved; no release or redistribution approval"
+  },
+  "dimensions_basis": {
+    "canvas": [
+      800,
+      374
+    ],
+    "mode": "RGB",
+    "reference_only": "runeterra-demacia/references/images/tbcsback.pcx.png",
+    "reference_sha256": "949012ea68999207934bc482f1552858474fe50cefddef17eaac00d4b98c2be9",
+    "use": "Dimensions/format only. No reference pixels, palette, source recipe, layout silhouette or licensed art copied."
+  },
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": false,
+    "provider": "OpenAI built-in imagegen",
+    "model": "Not exposed by the built-in tool",
+    "model_disclosure": "Not exposed by the builtin tool.",
+    "prompt": "ONE genuinely painted2D architectural layer for originalHeroesIII NOXUS town. Use supplied ownapprovedNoxianpalace ONLYasrichpaintedmaterial/light/camerareference. DarkVOLCANICcoursedmasonry weatheredwarmgreyedgevariation, heavyblackironbuttresses/rivets, copper/ironroofweathering, deepcrimsonplaincloth, largelegiblewood/ironfrontdoor andwarmlitnarrowwindows. NOcreamwhitewalls, Tudor timbercrosses, GermanicCastlehouse, featurelessblackkit, repeatedidenticalcolumns, glossyBlender3D/vector/anime, readabletext/logo/emblem. Lowthreequarterfaçade-first viewwithslightroofview, upperleftwarmdaylight, compactcompletefoundation/contactshadow, genuinealphaoutsidebuilding, no landscapebackdrop. Richstonegrain/metalweathering/clothfoldshighcontrastjustenoughat110x95native.\nSubject: UPGRADE DARKE-HOUND ARMORED KENNELS from supplied basekeeperkennels: visiblyheavier reinforcedblackironmesh/securegates andthickerstonepartitions, two connectedroofedkeeperbays, guardedupperfeedingbalcony withmetalroof, smallleather/steelarmor-harnessrepairrack underattachedawning, cleancopperwatertroughs andfeedequipment. RiderlessdrakehoundsNOhorses/saddles oractualanimalbody. Moresecure/resourcedthanthebase; notindependentcivichallorpalace. Deepcrimsoncloth, warmkeeperwindowlight, completecompactfoundation.",
+    "painted_master": "assets/source/town/painted-community-20261024-v2/dwellingUpLvl2/master.png",
+    "painted_master_sha256": "51050f20d1c93225e6d2ff0364c50155d8f101a71f1e80592d0fb4da3a700f0c",
+    "generation_record": "assets/source/town/urban-community-20261024-v5/provenance/dwellingUpLvl2.json",
+    "generation_record_sha256": "91547e0be3a80408ab0e0bcbe0ebacc9c010dd6529a78c94b3255db13a9e691c",
+    "conversion": {
+      "method": "Uniform alpha-crop/contain of genuine painted 2D source; forced-depth site placement, no perspective warping or artificial art.",
+      "source_crop": [
+        0,
+        0,
+        1350,
+        1165
+      ],
+      "placement_box": [
+        153,
+        220,
+        117,
+        115
+      ],
+      "native_position": [
+        155,
+        235
+      ],
+      "native_size": [
+        113,
+        98
+      ],
+      "site": "dwellingHound",
+      "assembly_script": "assets/source/town/urban-community-20261024-v5/prepare.py",
+      "assembly_script_sha256": "88eaa034765373806ee767ab27818ab9d310c1538b7673d254bc55f2f15c4de6",
+      "mirror_x": false,
+      "crop_coordinate_basis": "after complete master mirror when mirror_x=true",
+      "mask_method": "Exact alpha128 silhouette; area is binary silhouette, border is two-pixel outward MaxFilter5 minus silhouette."
+    },
+    "method": "Alpha128 area mask or two-pixel outward MaxFilter5 border of exact painted native layer."
+  },
+  "inventory": {
+    "asset_id": "noxus.Sprites.runeterra.noxus.town.structures.dwellingUpLvl2_border.png",
+    "manifest": "assets/manifest.json",
+    "recipe_path": "assets/recipes/town/structures/dwellingUpLvl2-border.json"
+  },
+  "mask_contract": "Same800x374 silhouette/camera as own building. Area must isolate actual clickable painted shape; border must follow it. No rectangular/opaque placeholder mask or masks copied from native/Demacia structures.",
+  "output_path": "Content/Sprites/runeterra/noxus/town/structures/dwellingUpLvl2_border.png",
+  "pivot": {
+    "basis": "Full town canvas; content declares x0/y0; no Castle/Demacia building placement copied",
+    "x": 0,
+    "y": 0
+  },
+  "production_status": "derived-technical-mask-complete",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "Real independent Noxus painted master and truthful provenance",
+    "Non-null SHA256 source pins",
+    "Official Noxus emblem provenance where used",
+    "Native-size silhouette/composition/alpha and role review",
+    "Explicit coordinator selection; no automatic acceptance"
+  ],
+  "role": "town-structure-border",
+  "sha256": "89c91082003ba38c811cfb8aa1ede22f77a06782f3483a3eb145d2156b5b23c1",
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/urban-community-20261024-v5/structures/dwellingUpLvl2/border.png",
+  "source_sha256": "89c91082003ba38c811cfb8aa1ede22f77a06782f3483a3eb145d2156b5b23c1",
+  "status": "built-unreviewed",
+  "visual_approval_granted": false,
+  "source_canvas": [
+    800,
+    374
+  ]
+}

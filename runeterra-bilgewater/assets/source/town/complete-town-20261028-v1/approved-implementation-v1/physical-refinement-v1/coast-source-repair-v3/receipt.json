@@ -1,0 +1,39 @@
+{
+  "coast": {
+    "actual_ship_RGBA_pixels_changed": 642,
+    "all1845_dock_opaque_retained_and_clickable": true,
+    "dock_actual_opaque_pixels": 1845,
+    "other34_state_records_identical": true,
+    "prior_fully_opaque_ship_RGBA_changed_pixels": 0,
+    "prior_missing_dock_opaque_pixels": 642,
+    "repaired_dock_opaque_pixels_missing_from_click": 0,
+    "repaired_missing_dock_opaque_pixels": 0,
+    "scale_or_position_changed": false,
+    "separate_dock_ship_resource_paths": true,
+    "zero_new_painted_pixels": true
+  },
+  "inputs": [
+    {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v1/physical-refinement-v1/ownership-separation-v5/states/shipyard/frame.png",
+      "sha256": "31dd6a5734d5874ba64479ef14cbfc633f4795c26c2503a61f1c043421a2895c"
+    },
+    {
+      "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v1/physical-refinement-v1/ownership-separation-v5/states/ship/frame.png",
+      "sha256": "c5d5ff8d97149260293aa59721121d8395bbdc9d72ffad083ac755a064bf8449"
+    }
+  ],
+  "method": "Image.alpha_composite(actual painted dock, actual painted selected ship) on dock-alpha support only; preserve old ship RGBA elsewhere. No transform or repaint. Area threshold8 and existing Max/Min3 contour convention.",
+  "producer": {
+    "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v1/physical-refinement-v1/coast_composite_replay_v1.py",
+    "sha256": "12dedd89695fe016d68b19e6a7eb137f323589021334d27f6c50369d91015af7"
+  },
+  "proof": {
+    "path": "reports/four-town-playable-20261028-v1/bilgewater-town-design-z-consistency-v1/v5/proof.json",
+    "sha256": "409772b53ba99a2c2a16fc5130eefbe5e264a96d293efb71bf82f7ebb7ced0c2"
+  },
+  "states": {
+    "path": "assets/source/town/complete-town-20261028-v1/approved-implementation-v1/physical-refinement-v1/coast-source-repair-v3/states.json",
+    "sha256": "1955417c55b6f4988a7c589c2a069907cba57cbc1574949fcdfbf3d6c739e58b"
+  },
+  "status": "authored configuration"
+}

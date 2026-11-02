@@ -1,0 +1,61 @@
+{
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI builtin imagegen; deterministic technical 2D conversion",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/painted-v1/landscape/master-v2.png",
+      "sha256": "c8662202be2d6053bb86f2c9397e914f02b891ca313a3beb9e99d27acea64204"
+    },
+    {
+      "path": "assets/source/town/painted-v1/landscape/prompt-v2.txt",
+      "sha256": "b27b91dfd3b677a8ac8047be6ba65a6f2f9c98aad58b03fd6b221da59e723ab8"
+    },
+    {
+      "path": "assets/source/town/painted-v1/landscape/master-v1.png",
+      "sha256": "8dd8090bb9aeda943abdee5b5af588853f0c521858704ddb85efe62b0d6b5c1a"
+    },
+    {
+      "path": "assets/source/town/painted-v1/landscape/prompt-v1.txt",
+      "sha256": "005aeb4934e1cc394c849251a9e15de99f9c2a0fb4786f8ef3cbe60512e38776"
+    },
+    {
+      "path": "assets/source/town/painted-v1/assemble.py",
+      "sha256": "69586f88b723643690c2867b1c50f24ca3443e92120c0b43e4cf5597b8fdab66"
+    }
+  ],
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": true,
+    "model": "not exposed by tool",
+    "painted_master": "assets/source/town/painted-v1/landscape/master-v2.png",
+    "painted_master_sha256": "c8662202be2d6053bb86f2c9397e914f02b891ca313a3beb9e99d27acea64204",
+    "producer": "assets/source/town/painted-v1/assemble.py",
+    "producer_sha256": "69586f88b723643690c2867b1c50f24ca3443e92120c0b43e4cf5597b8fdab66",
+    "prompt": "Precise edit of our own painted Piltover empty terrain. Image1 is the EDIT TARGET, our current landscape. Image2 is the technical placement plan, geometry guide only: never copy rectangles, labels, circles or diagram lines. Image3 is the ORIGINAL Heroes III Castle native terrain, rendering-language reference only, not subject matter. Image4 is the official Piltover regional crest, shape reference only for any incidental civic cloth already present; no pasted logo or wing emblem.\n\nKeep the target's full-bleed wide2.139:1 aspect, soft upper-left daylight, small-scale richly textured original-Heroes-III matte-painting finish, warm ivory/weathered stone and bronze, clean sky, blue harbor distance and coherent stone urban terraces. Native output target800x374; coordinates below are in that native frame and scale proportionally. No glossy3D look, photograph, anime, blur, poster composition, neon or isometric tile board.\n\nMake only these coordinated landscape corrections:\n\n1. REMOVE the completed monumental wall, gatehouses, towers and giant arched viaduct on the distant UPPER RIGHT inside nativex601..800,y41..186. This is the future functional fort/citadel/castle site; its architecture must not already be baked into the empty terrain. Replace it with quiet clean sky, distant atmospheric natural coastline/cliff and a dry stone terrace at ground-contacty186. Keep subtle far-away tiny harbor/shoreline detail elsewhere; do not paint a second functional city gate behind the reserved site. Also remove any completed architectural tower rising through the hallx397..585,y29..174 or academyx250..383,y26..150 envelopes. Their future building layers will supply the skyline.\n\n2. Make the requested physical foundation surfaces unambiguously dry and walkable, connected to the street in front, without drawing rectangular plots or flat catalogue tiles. Ground-contact bands (not entire roof envelopes) are:\n aerialworkshopx126..234,y180..186; academyx254..379,y140..146; councilhallx401..581,y164..170; fortifiedgatex605..796,y176..182;\n museumx6..96,y245..251; freighthandlerx116..196,y260..266; patrolx216..306,y256..262; riflehallx326..416,y246..252; materialssilox436..488,y249..255; academycraftx532..621,y263..269; heavylifterhallx641..796,y267..273;\n optionalnarrowbeaconx497..519,y257..263;\n foregroundsmithx4..168,y364..370; forgecooperativex191..327,y364..370; innx353..515,y364..370; narrowshopx535..605,y364..370; cargoexchangex623..796,y364..370.\n Where the current terrace retaining wall, fence, railing, stair, crates or ivy would run directly through these foundation bands or their door front, adjust that small terrain feature out of the future solid body. New buildings must stand on their own shared paved street, not on a vertical retaining face or in water. Do not level all terraces to one baseline.\n\n3. Keep the harbor water confined to the back-left opening aroundx0..112,y70..184. The optional dock/ship site staysopenx0..109,y110..184, with its landward quay approacharound101,179 leadingto111,188. Ordinary buildings do not touch water. Aerial foundation around197,183 is dry elevated stone, with visible support wall below if needed, not a floating paving slab.\n\n4. Preserve the curved, branching public routes, but make the FRONT street gently bend with small door forecourts, not a strong straight horizontal stripe. Foreground side buildings will frame the view, so leave unobstructed dry ground inside their silhouette areas and sufficient footings/contact-shadow space. Western stairs curve nearx105,y214..267 thenx180,y279..370; the central eastern alley/stair is narrow nearx525,y184..370; a smaller academy stair nearx317 links upper and middle street. Natural urban slopes and stone seams should connect these as one district. Avoid three repeated elevated rectangular platform rows.\n\nAll future functional architecture is forbidden in the final terrain: no new houses, halls, towers, depots, guilds, shops, fortifications, cranes, warehouses, dock, boat, awning or statue. Keep incidental retaining walls/support arches, a few low rails/lamps and restrained ivy only where they do not collide with planned building bodies/door landings. No people, troops, animals, signs, text, bounding boxes, planning marks, UI or borders. Return only the corrected empty painted landscape. All future buildings remain separate transparent layers.\n",
+    "prompt_file": "assets/source/town/painted-v1/landscape/prompt-v2.txt",
+    "provider": "OpenAI builtin imagegen"
+  },
+  "output_path": "Content/Sprites/runeterra/piltover/town/background.png",
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "raster",
+  "require_alpha": false,
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/painted-v1/landscape/native-rgba.png",
+  "source_canvas": [
+    800,
+    374
+  ],
+  "source_sha256": "172451b80f69466083992acdcbfbeeaac7d2ac73f3fedce4c8631aea20a354eb",
+  "status": "painted-candidate",
+  "visual_approval_granted": false
+}

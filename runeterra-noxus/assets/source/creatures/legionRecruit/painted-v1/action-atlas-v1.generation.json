@@ -1,0 +1,23 @@
+{
+  "status": "authored configuration",
+  "scope": "Generated 52-pose painted action-atlas candidate; no visual or runtime acceptance",
+  "image_generation_used": true,
+  "provider": "OpenAI built-in imagegen",
+  "model": "not exposed by built-in tool",
+  "model_id_exposed": false,
+  "prompt": "Use case: identity-preserve / game-sprite animation production. Image 1 is the OWN painted Legion Recruit identity and material reference. Image 2 is the OWN exact pose-and-placement edit target, an RGBA action atlas 1440 by 2040 containing 8 columns and 12 rows of 180 by 170 cells. Replace ONLY each tiny primitive figure in image 2 with an independently painted version of image 1 IN THAT EXACT FIGURE POSE, at the same scale, ground contact and cell position. Do not reproduce the primitives; paint detailed aged iron cap, worn crimson cloth, leather boots, broad single-edged falchion and round crest buckler. Keep the reference1 face, consistent bodily proportions, weapon shape and colors in ALL cells. Heroes III native low-resolution richly textured prerendered-painted appearance, compact silhouettes, light from upper left, restrained highlights. EXACT action-row order and occupied cell counts: row1 SIX right-facing walking-cycle poses alternating feet; row2 FOUR small equipment-check fidget poses; row3 ONE planted standing pose; row4 FOUR genuine hit-recoil poses; row5 FOUR genuine shield-defend/bracing poses; row6 SIX progressive falling-death poses ending collapsed; row7 FOUR progressive turning-toward-viewer poses; row8 FOUR turning-back poses; row9 SIX directional diagonal-up sword attack poses anticipation/backswing/contact/follow-through/recovery; row10 SIX front-level sword attack poses; row11 SIX diagonal-down sword attack poses; row12 ONE actual prone corpse matching final row6 pose. Leave all other cells genuinely TRANSPARENT. Preserve the guide's planted feet anchor, camera and family scale across poses; no individual auto-fit, no enlarging figures to fill cells. Each attack must actually move sword and arms and each fall must actually collapse, not repeated standing. Keep all sprites separate inside their original 180x170 cells with no touching or clipping. No text, no gridlines, no background, no scenery, no pedestals, no new logos, no copied other-faction content. The official-looking mark is already independently painted on the own round buckler; preserve it only as part of that same armor. Most important: match image2 arrangement and pose semantics exactly while painting image1 consistent appearance.",
+  "painted_master": "assets/source/creatures/legionRecruit/painted-v1/action-atlas-v1.png",
+  "original_generated_path": "C:/Users/matcy/.codex/generated_images/01a159de-ed30-7bc2-98ee-79e3702cd7f9/exec-0d0b2124-e8f7-48ad-85ad-0bd92be1ce61.png",
+  "references": [
+    {
+      "path": "assets/source/creatures/legionRecruit/painted-v1/standing-master-v3.png",
+      "role": "own painted identity reference"
+    },
+    {
+      "path": "assets/source/creatures/legionRecruit/rig-v1/run-f/transparent-action-atlas-guide-v2.png",
+      "role": "own pose and layout target; primitive guide not selected as final pixels"
+    }
+  ],
+  "native_visual_review": "pending",
+  "release_accepted": false
+}

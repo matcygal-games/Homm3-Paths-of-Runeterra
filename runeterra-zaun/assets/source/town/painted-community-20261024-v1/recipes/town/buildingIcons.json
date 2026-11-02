@@ -1,0 +1,370 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "One icon per native building id, drawn in the own Zaun style. No borrowed icons, no unused fillers and no fifth mage guild icon: Zaun has four guild levels.",
+  "canvas": [
+    150,
+    70
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; technical assembly by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [],
+  "depends_on": [
+    "assets/recipes/town/construction/villageHall.json",
+    "assets/recipes/town/construction/townHall.json",
+    "assets/recipes/town/construction/cityHall.json",
+    "assets/recipes/town/construction/capitol.json",
+    "assets/recipes/town/construction/fort.json",
+    "assets/recipes/town/construction/citadel.json",
+    "assets/recipes/town/construction/castle.json",
+    "assets/recipes/town/construction/tavern.json",
+    "assets/recipes/town/construction/marketplace.json",
+    "assets/recipes/town/construction/blacksmith.json",
+    "assets/recipes/town/construction/resourceSilo.json",
+    "assets/recipes/town/construction/mageGuild1.json",
+    "assets/recipes/town/construction/mageGuild2.json",
+    "assets/recipes/town/construction/mageGuild3.json",
+    "assets/recipes/town/construction/mageGuild4.json",
+    "assets/recipes/town/construction/special1.json",
+    "assets/recipes/town/construction/special2.json",
+    "assets/recipes/town/construction/special3.json",
+    "assets/recipes/town/construction/special4.json",
+    "assets/recipes/town/construction/dwellingLvl1.json",
+    "assets/recipes/town/construction/dwellingUpLvl1.json",
+    "assets/recipes/town/construction/dwellingLvl2.json",
+    "assets/recipes/town/construction/dwellingUpLvl2.json",
+    "assets/recipes/town/construction/dwellingLvl3.json",
+    "assets/recipes/town/construction/dwellingUpLvl3.json",
+    "assets/recipes/town/construction/dwellingLvl4.json",
+    "assets/recipes/town/construction/dwellingUpLvl4.json",
+    "assets/recipes/town/construction/dwellingLvl5.json",
+    "assets/recipes/town/construction/dwellingUpLvl5.json",
+    "assets/recipes/town/construction/dwellingLvl6.json",
+    "assets/recipes/town/construction/dwellingUpLvl6.json",
+    "assets/recipes/town/construction/dwellingLvl7.json",
+    "assets/recipes/town/construction/dwellingUpLvl7.json",
+    "assets/recipes/town/construction/shipyard.json",
+    "assets/recipes/town/construction/ship.json",
+    "assets/recipes/town/construction/grail.json"
+  ],
+  "frame_contract": {
+    "count": 36,
+    "nativeBuildingIds": "explicit per building id; the frame index is the native building id from the engine's building library, so the order may not be changed and the ids the town does not use stay empty",
+    "rule": "Every icon is own artwork; a missing icon blocks the town, it is never borrowed."
+  },
+  "frames": [
+    {
+      "building": "villageHall",
+      "frame": 10,
+      "generated_by": "assets/recipes/town/construction/villageHall.json",
+      "producer_sha256": "47dfe3369062c953ecc35ee3186d51eb82cdbee34eac90dd48e93b1f313339c9",
+      "sha256": "00bf63fbb46c9bd1635a845d09c1636ae1ef8657f49d47388da0503d5926839d",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/villageHall.png"
+    },
+    {
+      "building": "townHall",
+      "frame": 11,
+      "generated_by": "assets/recipes/town/construction/townHall.json",
+      "producer_sha256": "46ca7fe129d5c1e2aeae38aaf7dad8daf8c40bd1bd81f725a0748246fd1f017c",
+      "sha256": "431275c6dd47eb672adddcb4ba5390f61b560f567a635d727f7ba34a9f269912",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/townHall.png"
+    },
+    {
+      "building": "cityHall",
+      "frame": 12,
+      "generated_by": "assets/recipes/town/construction/cityHall.json",
+      "producer_sha256": "41cfab951b8c8609b88cf603d8e15c24d3379acba65ed193b26b5b2f08fb651a",
+      "sha256": "2c5862e1283dc4873e73587f29206bec59cb90c9140426b4551b5ad4efffaffd",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/cityHall.png"
+    },
+    {
+      "building": "capitol",
+      "frame": 13,
+      "generated_by": "assets/recipes/town/construction/capitol.json",
+      "producer_sha256": "495988e1f63db84fb444d38e7abf4eda39d279cdce080eaa902999cdf75dea3a",
+      "sha256": "34878d647e9215faa2ec368af81d9e91efeb0dad481585eab269f47abe0053e1",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/capitol.png"
+    },
+    {
+      "building": "fort",
+      "frame": 7,
+      "generated_by": "assets/recipes/town/construction/fort.json",
+      "producer_sha256": "cbe7496fcc7bd00fce05ad51f0103eb26a285976419854aa59ab122e22c64be7",
+      "sha256": "aa733d97ea69fe4790f0ca6554b831abb6d3fcd60d9af63593d900c76fe6e49e",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/fort.png"
+    },
+    {
+      "building": "citadel",
+      "frame": 8,
+      "generated_by": "assets/recipes/town/construction/citadel.json",
+      "producer_sha256": "cfb2ae76c8a4be03f5b3fd8d91e5d2d4e9c77cf7d5a2824b20811167aa6225e0",
+      "sha256": "3de76002478b1c647ab4b46af0db534efc81bbce78809d44b299216581095d30",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/citadel.png"
+    },
+    {
+      "building": "castle",
+      "frame": 9,
+      "generated_by": "assets/recipes/town/construction/castle.json",
+      "producer_sha256": "b124d4c7730741be1f97fb597e4bf81654e42610afbd387dc78e6f31fd6738e0",
+      "sha256": "219edf4375964f9c9d7ec80de1b76045a28544601a03ef1fd1dd634bc5a3716f",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/castle.png"
+    },
+    {
+      "building": "tavern",
+      "frame": 5,
+      "generated_by": "assets/recipes/town/construction/tavern.json",
+      "producer_sha256": "2373b58ebdabd12baec13447041c57ea736851dd9b3a1d6508ee4816613f450b",
+      "sha256": "8cdaee5b76399dfa5d1b22313417c34eb58c54c0c263e68bccfa8967735e883d",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/tavern.png"
+    },
+    {
+      "building": "marketplace",
+      "frame": 14,
+      "generated_by": "assets/recipes/town/construction/marketplace.json",
+      "producer_sha256": "15ad1942b5446ad7aa0c3ca484f9690a358cb6b153f8f1454f8f40e2443afa48",
+      "sha256": "77bd23e34327c7c11b932c41efd63b316a17f40c96efe08c26cb2bc99d0d6e7c",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/marketplace.png"
+    },
+    {
+      "building": "blacksmith",
+      "frame": 16,
+      "generated_by": "assets/recipes/town/construction/blacksmith.json",
+      "producer_sha256": "d433361d83db8f59637da094d760968184d8b5311d773d60021258d72a417e32",
+      "sha256": "1b4e90f5fb8774a07b59a85c7a3588ee2143c52a0dcf2b1c210c3c2d4494a0ce",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/blacksmith.png"
+    },
+    {
+      "building": "resourceSilo",
+      "frame": 15,
+      "generated_by": "assets/recipes/town/construction/resourceSilo.json",
+      "producer_sha256": "aa600f4638cb0003079806bf290dba07bc398d8c6cea12af6ebf17d07d1aec59",
+      "sha256": "74af51eb27fd359aa1ac7c410ca3c572257e7c51b9faf05927751a7a4f07b333",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/resourceSilo.png"
+    },
+    {
+      "building": "mageGuild1",
+      "frame": 0,
+      "generated_by": "assets/recipes/town/construction/mageGuild1.json",
+      "producer_sha256": "29e81fc3a75d2765253595f5fb24f4b2229a02faed386bf7e2c3ac18003bd339",
+      "sha256": "d01556e61f8b2d310e9dc0c707c02f1d17fa3d3997393ae329d81dc5d78a11b2",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/mageGuild1.png"
+    },
+    {
+      "building": "mageGuild2",
+      "frame": 1,
+      "generated_by": "assets/recipes/town/construction/mageGuild2.json",
+      "producer_sha256": "1e925ec67200bb369bc880155452219174268f8a7bed8a8d541dbe565df66715",
+      "sha256": "8da476213abefba2e954fc1372aed531f8e1e5c1056e5db061b522228b16d2ff",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/mageGuild2.png"
+    },
+    {
+      "building": "mageGuild3",
+      "frame": 2,
+      "generated_by": "assets/recipes/town/construction/mageGuild3.json",
+      "producer_sha256": "3953c0d37d8c54b78c3632b99d971d0f74447062f79f9d316956ee5ed4589e1d",
+      "sha256": "4da060987439065b214d66065f6a5e80b8245056e29edb7a2d3363d0d2c985f7",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/mageGuild3.png"
+    },
+    {
+      "building": "mageGuild4",
+      "frame": 3,
+      "generated_by": "assets/recipes/town/construction/mageGuild4.json",
+      "producer_sha256": "b02cffb52244bb91206f3581f7f1614e421331adebb413493b6db777a9293f0d",
+      "sha256": "ddef80646a481eb8362ba397766aa1a97ec5c4a1ea370f1b4800520352c5273d",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/mageGuild4.png"
+    },
+    {
+      "building": "special1",
+      "frame": 17,
+      "generated_by": "assets/recipes/town/construction/special1.json",
+      "producer_sha256": "32f150dc9f1e3f3a3cda515ab007e317328ad2c29934ea161814c528a95301b4",
+      "sha256": "ef282c58d644aea65e0611c970993f47b9a1f0d4d214c13204da758563362872",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/special1.png"
+    },
+    {
+      "building": "special2",
+      "frame": 21,
+      "generated_by": "assets/recipes/town/construction/special2.json",
+      "producer_sha256": "4cb7cfdf2be021d0f6d5999056b0b55188ffdf048c3e87367728f100dd3347e3",
+      "sha256": "8aa529ba26e62c29f899258d1abe9f0da9504c5f7f7277045aed566026d42282",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/special2.png"
+    },
+    {
+      "building": "special3",
+      "frame": 22,
+      "generated_by": "assets/recipes/town/construction/special3.json",
+      "producer_sha256": "e3822ad75e214f56ec32fc151c851b292bbc6e6c048a99399e5318eb06859fee",
+      "sha256": "aade1c37b8d584b830baafcc3b95ed7025002e4ab56bfab4e1aad6961498041b",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/special3.png"
+    },
+    {
+      "building": "special4",
+      "frame": 23,
+      "generated_by": "assets/recipes/town/construction/special4.json",
+      "producer_sha256": "7f2f736abd616a1bec0377b8142e70cd132e6a323eb34794034852c26769ef90",
+      "sha256": "cfd6f33ce9ee4c0935e9317cb85faf17bf2b87865d79c5281e62ff0fe15b3451",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/special4.png"
+    },
+    {
+      "building": "dwellingLvl1",
+      "frame": 30,
+      "generated_by": "assets/recipes/town/construction/dwellingLvl1.json",
+      "producer_sha256": "8e6831ee7de465ac7b3ff79492e2cce841cb430c2e6fcc271d2e5997e09c249f",
+      "sha256": "c190b93107b1a98395d3b0b372a27c2f1b3fb44d9a3f523d2e74cee86b966fc8",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/dwellingLvl1.png"
+    },
+    {
+      "building": "dwellingUpLvl1",
+      "frame": 37,
+      "generated_by": "assets/recipes/town/construction/dwellingUpLvl1.json",
+      "producer_sha256": "77b335455cc3696221f01b930314a4d6754e2ee81ca3e17f0664ee923aaf47b4",
+      "sha256": "e6f6dc60d5e0b3790949a025859363ff6edea9f060dfeed904a6bc65bed905cf",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/dwellingUpLvl1.png"
+    },
+    {
+      "building": "dwellingLvl2",
+      "frame": 31,
+      "generated_by": "assets/recipes/town/construction/dwellingLvl2.json",
+      "producer_sha256": "3b4a2163e004266599af4b3f8f90f8de13c8be61ff3a545de1b994ad54f73bbb",
+      "sha256": "eb6650a58aca3778e7b274832eb9d1df8806f5042ea1b79f6607714cc0bb99cb",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/dwellingLvl2.png"
+    },
+    {
+      "building": "dwellingUpLvl2",
+      "frame": 38,
+      "generated_by": "assets/recipes/town/construction/dwellingUpLvl2.json",
+      "producer_sha256": "348913fbc4368e79805120b7a885c338d8b3856fd63255d021dffe1d56b93482",
+      "sha256": "5369faf4cb8ab856e97f63f367c1a04750d1ef6dde62c084b8eb85f07b1431f9",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/dwellingUpLvl2.png"
+    },
+    {
+      "building": "dwellingLvl3",
+      "frame": 32,
+      "generated_by": "assets/recipes/town/construction/dwellingLvl3.json",
+      "producer_sha256": "db2e9f794221534e56edafd9fb933794c21cf0cc1c40f4816e4d27df9c73c6ab",
+      "sha256": "c5caed3c14f00e586055266d624876b7af0c2085c5102e74f8ceee75f3e2d48f",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/dwellingLvl3.png"
+    },
+    {
+      "building": "dwellingUpLvl3",
+      "frame": 39,
+      "generated_by": "assets/recipes/town/construction/dwellingUpLvl3.json",
+      "producer_sha256": "d4bcbe99e1626bf58a5f75ea8f609972a51f7db0b474da55622766c31d4ebda2",
+      "sha256": "614556d2c034764cdb45d044ff59b8c5a3e0d778fa566e816293498f9d11e730",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/dwellingUpLvl3.png"
+    },
+    {
+      "building": "dwellingLvl4",
+      "frame": 33,
+      "generated_by": "assets/recipes/town/construction/dwellingLvl4.json",
+      "producer_sha256": "a02f3168e7e9ee90b91b993742f309f124fb7d995ef253a1f411f44514961607",
+      "sha256": "8516426a7abd6f7e0f536b0813daf13ea5a21fd683080add7159a37e3a13827e",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/dwellingLvl4.png"
+    },
+    {
+      "building": "dwellingUpLvl4",
+      "frame": 40,
+      "generated_by": "assets/recipes/town/construction/dwellingUpLvl4.json",
+      "producer_sha256": "4335254b266145412ac156e60ff200ec608f39edc039e905691abc55ce372a0a",
+      "sha256": "e4b35da18d81c73e758c7e175ce0bf5d57427d6db3c8847968af70dbc42c336c",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/dwellingUpLvl4.png"
+    },
+    {
+      "building": "dwellingLvl5",
+      "frame": 34,
+      "generated_by": "assets/recipes/town/construction/dwellingLvl5.json",
+      "producer_sha256": "402f33204183a70da529045cd8e51550c5e11bb3ad77b9074761bf3228188a1e",
+      "sha256": "a102f63801833272a27b621e2ba0cb3ed9f1807ee2b56944a7c7013f1a77a0b0",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/dwellingLvl5.png"
+    },
+    {
+      "building": "dwellingUpLvl5",
+      "frame": 41,
+      "generated_by": "assets/recipes/town/construction/dwellingUpLvl5.json",
+      "producer_sha256": "983dbaf25ee4361ac650d821e51f90a3c9044b58ec204997c58679a600287308",
+      "sha256": "053debac377b9844772e7a9f9aa09e99175881efdcbbc017946a831d427d8702",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/dwellingUpLvl5.png"
+    },
+    {
+      "building": "dwellingLvl6",
+      "frame": 35,
+      "generated_by": "assets/recipes/town/construction/dwellingLvl6.json",
+      "producer_sha256": "f691b55459f05d0580847400a4f1ba933f8c269244c87e17cfbe348f26671dcc",
+      "sha256": "0fcd1fb3f593046700bb501e2dd5524cf2f1c4e7c0cd1dc0ffd9b90345908855",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/dwellingLvl6.png"
+    },
+    {
+      "building": "dwellingUpLvl6",
+      "frame": 42,
+      "generated_by": "assets/recipes/town/construction/dwellingUpLvl6.json",
+      "producer_sha256": "c2b6bb06b36217b38d435c716623f218b4a374312154beee0156f23ddcfe4db1",
+      "sha256": "5b97407d2a5cacce339bf2fcce85c0ef9ca8d412740281b9b6b0eecb989b9ec3",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/dwellingUpLvl6.png"
+    },
+    {
+      "building": "dwellingLvl7",
+      "frame": 36,
+      "generated_by": "assets/recipes/town/construction/dwellingLvl7.json",
+      "producer_sha256": "127e2522d0d3f1fd4f9e79687e3c597ef536942b4229f51ae7a660ed7073b337",
+      "sha256": "8da68afe722030f1f15f715c3533a0e243e43f829dae6ca8cc240ac3bd45c961",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/dwellingLvl7.png"
+    },
+    {
+      "building": "dwellingUpLvl7",
+      "frame": 43,
+      "generated_by": "assets/recipes/town/construction/dwellingUpLvl7.json",
+      "producer_sha256": "6e53bb04a3ff14db0c07530e023f4569098bd02104a9849ed5101af13cd0db0b",
+      "sha256": "7bfc8f3f3d2cb20de794d2ef116d1af20c07be5dd38c0ebb4b65ef82606696ff",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/dwellingUpLvl7.png"
+    },
+    {
+      "building": "shipyard",
+      "frame": 6,
+      "generated_by": "assets/recipes/town/construction/shipyard.json",
+      "producer_sha256": "d9b32302afe3f593aa5f452fbeeecd9c290c27d3f0f594b4e48890e99458a153",
+      "sha256": "5f5ec98c140c3121863bdb2355f3c60638fb81d403accb3fc0ae7dd0c081a402",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/shipyard.png"
+    },
+    {
+      "building": "ship",
+      "frame": 20,
+      "generated_by": "assets/recipes/town/construction/ship.json",
+      "producer_sha256": "0766b34f9f15fffd57c8b1e143a32532ce06b02b75ca79c9a7469570e08b644e",
+      "sha256": "679412ddc2f46170bef218ae8e7e494d8ae5f43371bf6f6dd038cdc9d0cd7ee9",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/ship.png"
+    },
+    {
+      "building": "grail",
+      "frame": 26,
+      "generated_by": "assets/recipes/town/construction/grail.json",
+      "producer_sha256": "ddf8b7791fa8fa7780c7e02798eb7552d4ad36ca38cc1c64b5ebc790b4880af0",
+      "sha256": "66e39698f0a2b6fbe8f0442730cfe15828e685d5cd3d0418fbd643c1ea9c52b3",
+      "source": "assets/generated/Content/Sprites/runeterra/zaun/town/construction/grail.png"
+    }
+  ],
+  "generation": {
+    "image_generation_used": true,
+    "model": null,
+    "painted_master": "assets/source/town/painted-community-20261024-v1/background/master-v3.png",
+    "prompt": "Native-indexed assembly of36 separately pinned own painted2D building icons; see exact candidate state provenance",
+    "provider": "OpenAI built-in imagegen"
+  },
+  "id": "zaun.town.buildingIcons",
+  "identity_review": "build/reports/painted-town-community-20261024-v1/source-pixel-review.json",
+  "native_visual_review": "pending",
+  "output_path": "Content/Sprites/runeterra/zaun/town/buildingIcons.json",
+  "production_status": "delivered",
+  "recipe_type": "indexed_animation",
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "source_sha256": "632028c11f5905685b3f23cd03f187e59089101bf2d3ff9c109171c1b3ec2d25",
+  "status": "built-unreviewed",
+  "title": "building icon sheet",
+  "visual_approval_granted": false
+}

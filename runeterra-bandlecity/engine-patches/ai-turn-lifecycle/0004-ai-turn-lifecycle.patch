@@ -1,0 +1,850 @@
+--- a/AI/Nullkiller2/AIGateway.cpp
++++ b/AI/Nullkiller2/AIGateway.cpp
+@@ -418,14 +418,8 @@
+ void AIGateway::requestRealized(PackageApplied * pa)
+ {
+ 	LOG_TRACE(logAi);
+-	if(status.haveTurn())
+-	{
+-		if(pa->packType == CTypeList::getInstance().getTypeID<EndTurn>(nullptr))
+-		{
+-			if(pa->result)
+-				status.madeTurn();
+-		}
+-	}
++	if(pa->packType == CTypeList::getInstance().getTypeID<EndTurn>(nullptr))
++		status.receivedEndTurnConfirmation(pa->requestID, pa->result);
+ 
+ 	if(pa->packType == CTypeList::getInstance().getTypeID<CastAdvSpell>(nullptr))
+ 		lastAdventureCastSucceeded = pa->result;
+@@ -611,15 +605,21 @@
+ 	nullkiller->invalidatePathfinderData();
+ 	status.addQuestion(questionID, "YourTurn");
+ 	executeActionAsync("yourTurn", [this, questionID](){ answerQuestion(questionID, 0); });
+-	status.startedTurn();
++	// Capture before queuing work: an old task can resume after NewTurn
++	// was applied and before the next startedTurn callback is delivered.
++	TurnOrigin origin;
++	{
++		std::shared_lock gsLock(CGameState::mutex);
++		origin = { status.startedTurn(), cc->getCalendar().getCurrentDay() };
++	}
+ 
+ 	nullkiller->makingTurnInterruption.reset();
+ 
+-	asyncTasks->run([this]()
++	asyncTasks->run([this, origin]()
+ 	{
+ 		ScopedThreadName guard("NK2AI::AIGateway::makingTurn");
+ 		status.waitTillFree();
+-		makeTurn();
++		makeTurn(origin);
+ 	});
+ }
+ 
+@@ -865,12 +865,25 @@
+ 
+ void AIGateway::makeTurn()
+ {
++	TurnOrigin origin;
++	{
++		std::shared_lock gsLock(CGameState::mutex);
++		origin = { status.getTurnGeneration(), cc->getCalendar().getCurrentDay() };
++	}
++	makeTurn(origin);
++}
++
++void AIGateway::makeTurn(TurnOrigin origin)
++{
+ 	try
+ 	{
+-		auto day = cc->getCalendar().getCurrentDay();
+-		logAi->info("Player %d (%s) starting turn, day %d", playerID, playerID.toString(), day);
+-
+ 		std::shared_lock gsLock(CGameState::mutex);
++		if(cc->getCalendar().getCurrentDay() != origin.day || !status.haveTurn(origin.generation))
++		{
++			logAi->debug("Discarding superseded makeTurn invocation for day %d", origin.day);
++			return;
++		}
++		logAi->info("Player %d (%s) starting turn, day %d", playerID, playerID.toString(), origin.day);
+ 		cheatMapReveal(nullkiller);
+ 		memorizeVisitableObjs(nullkiller->memory, nullkiller->dangerHitMap, playerID, cc);
+ 		memorizeRevisitableObjs(nullkiller->memory, playerID, cc);
+@@ -890,7 +903,7 @@
+ 				logAi->warn("Hero %s has %d MP left", h->getNameTextID(), h->movementPointsRemaining());
+ 		}
+ 
+-		endTurn();
++		endTurn(origin);
+ 	}
+ 	catch (const InterruptionRequestedException &)
+ 	{
+@@ -1506,6 +1519,17 @@
+ 
+ void AIGateway::endTurn()
+ {
++	// Existing direct callers hold the game-state shared lock, as makeTurn does.
++	endTurn({ status.getTurnGeneration(), cc->getCalendar().getCurrentDay() });
++}
++
++void AIGateway::endTurn(TurnOrigin origin)
++{
++	if(cc->getCalendar().getCurrentDay() != origin.day || status.getTurnGeneration() != origin.generation)
++	{
++		logAi->debug("Discarding superseded endTurn invocation for day %d", origin.day);
++		return;
++	}
+ 	logAi->info("Player %d (%s) ends turn", playerID, playerID.toString());
+ 	if(!status.haveTurn())
+ 	{
+@@ -1523,11 +1547,15 @@
+ 		return;
+ 	}
+ 
+-	do
++	// The caller owns the GS shared lock again after waitTillFree and after
++	// each request wait. A normal next turn for this player requires NewTurn
++	// before TurnOrderProcessor recycles acted -> awaiting. The unique GS
++	// apply lock prevents a day change between this guard and actual send,
++	// even though the startedTurn callback itself runs outside that lock.
++	while(cc->getCalendar().getCurrentDay() == origin.day && status.haveTurn(origin.generation))
+ 	{
+ 		cc->endTurn();
+-	}
+-	while(status.haveTurn()); //for some reasons, our request may fail -> stop requesting end of turn only after we've received a confirmation that it's over
++	} // Retry only while the originating day and generation remain current.
+ 
+ 	logGlobal->info("Player %d (%s) ended turn", playerID, playerID.toString());
+ }
+@@ -1593,7 +1621,10 @@
+ 
+ void AIGateway::requestSent(const CPackForServer * pack, int requestID)
+ {
+-	//BNLOG("I have sent request of type %s", typeid(*pack).name());
++	// CClient calls this before releasing its game-state read lock to wait.
++	// Register the actual request ID before the network thread can apply its ack.
++	if(dynamic_cast<const EndTurn *>(pack))
++		status.attemptedEndTurn(requestID);
+ 	if(auto reply = dynamic_cast<const QuestionAnswer *>(pack))
+ 	{
+ 		status.attemptedAnsweringQuestion(reply->questionID, requestID);
+@@ -1685,18 +1716,48 @@
+ 	return static_cast<int>(remainingQuestions.size());
+ }
+ 
+-void AIStatus::startedTurn()
++uint64_t AIStatus::startedTurn()
+ {
+ 	std::unique_lock<std::mutex> lock(mx);
++	++turnGeneration;
++	endTurnRequests.clear(); // Previous generations can never finish this turn.
+ 	havingTurn = true;
+ 	cv.notify_all();
+-}
+-
+-void AIStatus::madeTurn()
++	return turnGeneration;
++}
++
++uint64_t AIStatus::getTurnGeneration()
+ {
+ 	std::unique_lock<std::mutex> lock(mx);
+-	havingTurn = false;
+-	cv.notify_all();
++	return turnGeneration;
++}
++
++bool AIStatus::haveTurn(uint64_t generation)
++{
++	std::unique_lock<std::mutex> lock(mx);
++	return havingTurn && turnGeneration == generation;
++}
++
++void AIStatus::attemptedEndTurn(int requestID)
++{
++	std::unique_lock<std::mutex> lock(mx);
++	if(havingTurn)
++		endTurnRequests.emplace(requestID, turnGeneration);
++}
++
++void AIStatus::receivedEndTurnConfirmation(int requestID, bool success)
++{
++	std::unique_lock<std::mutex> lock(mx);
++	const auto pending = endTurnRequests.find(requestID);
++	if(pending == endTurnRequests.end())
++		return; // Unknown, duplicate or already superseded request.
++	const auto requestGeneration = pending->second;
++	endTurnRequests.erase(pending);
++	if(success && requestGeneration == turnGeneration)
++	{
++		havingTurn = false;
++		cv.notify_all();
++	}
+ }
+ 
+ void AIStatus::waitTillFree()
+--- a/AI/Nullkiller2/AIGateway.h
++++ b/AI/Nullkiller2/AIGateway.h
+@@ -48,6 +48,8 @@
+ 	bool ongoingChannelProbing; // true if AI currently explore bidirectional teleport channel exits
+ 
+ 	bool havingTurn;
++	uint64_t turnGeneration = 0;
++	std::map<int, uint64_t> endTurnRequests;
+ 
+ public:
+ 	AIStatus(AIGateway * aiGw);
+@@ -60,8 +62,11 @@
+ 	void addQuestion(QuestionID ID, std::string description);
+ 	void removeQuestion(QuestionID ID);
+ 	int getQuestionsCount();
+-	void startedTurn();
+-	void madeTurn();
++	uint64_t startedTurn();
++	uint64_t getTurnGeneration();
++	bool haveTurn(uint64_t generation);
++	void attemptedEndTurn(int requestID);
++	void receivedEndTurnConfirmation(int requestID, bool success);
+ 	void waitTillFree();
+ 	bool haveTurn();
+ 	void attemptedAnsweringQuestion(QuestionID questionID, int answerRequestID);
+@@ -77,6 +82,14 @@
+ // Probably we can use concept of hooks to handle event in their related goals
+ class DLL_EXPORT AIGateway : public CAdventureAI
+ {
++	struct TurnOrigin
++	{
++		uint64_t generation;
++		int day; // authoritative absolute day, not weekday
++	};
++	void makeTurn(TurnOrigin origin);
++	void endTurn(TurnOrigin origin);
++
+ public:
+ 	ObjectInstanceID destinationTeleport;
+ 	int3 destinationTeleportPos;
+--- a/AI/Nullkiller2/Engine/Nullkiller.cpp
++++ b/AI/Nullkiller2/Engine/Nullkiller.cpp
+@@ -959,12 +959,21 @@
+ 	return true;
+ }
+ 
+-bool Nullkiller::repeatsIdleInteraction(const CGHeroInstance * hero, const int3 & tile)
+-{
+-	const FailedHeroPath interaction{ hero->id, tile };
+-	const auto sameInteraction = [&interaction](const FailedHeroPath & other)
+-	{
+-		return other.hero == interaction.hero && other.destination == interaction.destination;
++IdleInteraction Nullkiller::captureIdleInteraction(const CGHeroInstance * hero, const int3 & tile) const
++{
++	IdleInteraction interaction{ hero->id, tile, {} };
++	for(const auto * object : cc->getVisitableObjs(tile))
++		interaction.objects.push_back({ object->id.getNum(), object->ID.getNum(), object->subID.getNum(), object->tempOwner.getNum() });
++	std::sort(interaction.objects.begin(), interaction.objects.end());
++	return interaction;
++}
++
++bool Nullkiller::repeatsIdleInteraction(const IdleInteraction & interaction)
++{
++	const auto sameInteraction = [&interaction](const IdleInteraction & other)
++	{
++		return other.hero == interaction.hero && other.destination == interaction.destination
++			&& other.objects == interaction.objects;
+ 	};
+ 
+ 	if(vstd::contains_if(idleInteractions, sameInteraction))
+--- a/AI/Nullkiller2/Engine/Nullkiller.h
++++ b/AI/Nullkiller2/Engine/Nullkiller.h
+@@ -78,6 +78,14 @@
+ 
+ TaskFailureAction chooseTaskFailureAction(bool hasAnySuccess, bool hasRemainingTasks, bool canReplan);
+ 
++// Captured before the request: a prison can become a hero with the same instance ID.
++struct IdleInteraction
++{
++	ObjectInstanceID hero;
++	int3 destination;
++	std::vector<std::array<int32_t, 4>> objects; // instance, type, subtype, owner
++};
++
+ class NullkillerTestAccess;
+ 
+ class Nullkiller
+@@ -100,7 +108,7 @@
+ 	ObjectInstanceID targetObject;
+ 	HeroMap<HeroLockedReason> lockedHeroes;
+ 	std::vector<FailedHeroPath> failedHeroPaths;
+-	std::vector<FailedHeroPath> idleInteractions;
++	std::vector<IdleInteraction> idleInteractions;
+ 	std::unique_ptr<PathfinderCache> pathfinderCache;
+ 	ScanDepth scanDepth;
+ 	TResources lockedResources;
+@@ -165,7 +173,8 @@
+ 	bool canReleaseDefenderForTownCapture(const CGHeroInstance * hero, const CGObjectInstance * target, const AIPath & path) const;
+ 	bool arePathHeroesLocked(const AIPath & path, const CGHeroInstance * releasedDefender = nullptr) const;
+ 	/// Records an interaction that left the hero in place; true if it already happened this turn
+-	bool repeatsIdleInteraction(const CGHeroInstance * hero, const int3 & tile);
++	IdleInteraction captureIdleInteraction(const CGHeroInstance * hero, const int3 & tile) const;
++	bool repeatsIdleInteraction(const IdleInteraction & interaction);
+ 	TResources getFreeResources() const;
+ 	int32_t getFreeGold() const { return getFreeResources()[EGameResID::GOLD]; }
+ 	void lockResources(const TResources & res);
+--- a/AI/Nullkiller2/Goals/ExecuteHeroChain.cpp
++++ b/AI/Nullkiller2/Goals/ExecuteHeroChain.cpp
+@@ -360,6 +360,7 @@
+ 				{
+ 					try
+ 					{
++						const auto interaction = aiGw->nullkiller->captureIdleInteraction(hero, node->coord);
+ 						const auto movementResult = moveHeroToTile(aiGw, hero, node->coord);
+ 						if(aiGw->cc->getPlayerStatus(aiGw->playerID) != EPlayerStatus::INGAME)
+ 							return;
+@@ -377,7 +378,7 @@
+ 									node->coord.toString());
+ 
+ 								// e.g. quest guard that is still closed or own hero standing on a teleport exit
+-								if(aiGw->nullkiller->repeatsIdleInteraction(hero, node->coord))
++								if(aiGw->nullkiller->repeatsIdleInteraction(interaction))
+ 									throw cannotFulfillGoalException("Repeated interaction did not move the hero.");
+ 
+ 								return;
+@@ -484,7 +485,7 @@
+ 	{
+ 		logAi->warn("Why do I want to move hero %s to tile %s? Already standing on that tile! ", hero->getNameTextID(), tile.toString());
+ 
+-		if(aiGw->nullkiller->repeatsIdleInteraction(hero, tile))
++		if(aiGw->nullkiller->repeatsIdleInteraction(aiGw->nullkiller->captureIdleInteraction(hero, tile)))
+ 			throw cannotFulfillGoalException("Hero keeps targeting the tile it stands on.");
+ 
+ 		return HeroMovementResult::COMPLETE;
+--- a/server/CGameHandler.cpp
++++ b/server/CGameHandler.cpp
+@@ -454,11 +454,13 @@
+ 	else
+ 	{
+ 		bool result;
++		bool cancelledAfterPlayerEnded = false;
+ 		try
+ 		{
+ 			ApplyGhNetPackVisitor applier(*this, connection);
+ 			pack.visit(applier);
+ 			result = applier.getResult();
++			cancelledAfterPlayerEnded = applier.wasCancelledAfterPlayerEnded();
+ 		}
+ 		catch(ExceptionNotAllowedAction &)
+ 		{
+@@ -467,11 +469,13 @@
+ 
+ 		if(result)
+ 			logGlobal->trace("Message %s successfully applied!", typeid(pack).name());
+-		else
++		else if(!cancelledAfterPlayerEnded)
+ 			complain((boost::format("Got false in applying %s... that request must have been fishy!")
+ 				% typeid(pack).name()).str());
+ 
+-		sendPackageResponse(true);
++		// Preserve existing responses for other actions; terminal cancellation is
++		// explicitly unsuccessful and lets a waiting client stop, not execute again.
++		sendPackageResponse(!cancelledAfterPlayerEnded);
+ 	}
+ }
+ 
+--- a/server/NetPacksServer.cpp
++++ b/server/NetPacksServer.cpp
+@@ -60,7 +60,16 @@
+ 
+ void ApplyGhNetPackVisitor::visitMoveHero(MoveHero & pack)
+ {
+-	gh.throwIfWrongOwner(connection, &pack, pack.hid);
++	// Authenticate both the connection and current hero owner before classifying
++	// a queued movement request as cancelled by an authoritative terminal event.
++	gh.throwIfWrongOwner(connection, &pack, pack.hid);
++	const auto status = gh.gameState().getPlayerState(pack.player)->status;
++	if((status == EPlayerStatus::WINNER || status == EPlayerStatus::LOSER) && gh.gameState().getHero(pack.hid))
++	{
++		logGlobal->info("Cancelled queued MoveHero request %d for player %s after that player ended the game", pack.requestID, pack.player.toString());
++		cancelledAfterPlayerEnded = true;
++		return; // result remains false: no movement and no successful-action ack.
++	}
+ 	gh.throwIfPlayerNotActive(connection, &pack);
+ 
+ 	for (auto const & dest : pack.path)
+--- a/server/ServerNetPackVisitors.h
++++ b/server/ServerNetPackVisitors.h
+@@ -17,6 +17,7 @@
+ 	GameConnectionID connection;
+ 	CGameHandler & gh;
+ 	bool result;
++	bool cancelledAfterPlayerEnded = false;
+ 
+ public:
+ 	ApplyGhNetPackVisitor(CGameHandler & gh, GameConnectionID connection)
+@@ -30,6 +31,8 @@
+ 	{
+ 		return result;
+ 	}
++
++	bool wasCancelledAfterPlayerEnded() const { return cancelledAfterPlayerEnded; }
+ 
+ 	void visitSaveGame(SaveGame & pack) override;
+ 	void visitGamePause(GamePause & pack) override;
+--- a/test/CMakeLists.txt
++++ b/test/CMakeLists.txt
+@@ -206,6 +206,8 @@
+ if(ENABLE_NULLKILLER2_AI)
+ 	list(APPEND test_SRCS
+ 		nullkiller2/AIGatewayDialogTest.cpp
++		nullkiller2/AIGatewayTurnLifecycleTest.cpp
++		server/TerminalMoveCancellationTest.cpp
+ 		nullkiller2/AIGatewayMovementTest.cpp
+ 		nullkiller2/AIUtilityTest.cpp
+ 		nullkiller2/Analyzers/ArmyManagerTest.cpp
+--- a/test/mock/TinyH3MBuilder.cpp
++++ b/test/mock/TinyH3MBuilder.cpp
+@@ -278,6 +278,19 @@
+ 	spec.position      = pos;
+ 	spec.owner         = owner;
+ 	spec.heroType      = type;
++	spec.templateIndex = registerTemplate(spec.id, spec.subid);
++	registerObject(std::move(spec));
++	return *this;
++}
++
++TinyH3MBuilder & TinyH3MBuilder::prison(const int3 & pos, HeroTypeID type)
++{
++	ObjectSpec spec;
++	spec.id = Obj::PRISON;
++	spec.subid = MapObjectSubID(0);
++	spec.position = pos;
++	spec.owner = PlayerColor::NEUTRAL;
++	spec.heroType = type;
+ 	spec.templateIndex = registerTemplate(spec.id, spec.subid);
+ 	registerObject(std::move(spec));
+ 	return *this;
+@@ -1175,6 +1188,7 @@
+ 
+ 			case Obj::HERO:
+ 			case Obj::RANDOM_HERO:
++			case Obj::PRISON:
+ 				writeHeroBody(w, obj);
+ 				break;
+ 
+--- a/test/mock/TinyH3MBuilder.h
++++ b/test/mock/TinyH3MBuilder.h
+@@ -149,6 +149,7 @@
+ 	/// are emitted as "default" unless the matching `hero*(...)` setter below is
+ 	/// chained immediately after.
+ 	TinyH3MBuilder & hero(const int3 & pos, HeroTypeID type, PlayerColor owner);
++	TinyH3MBuilder & prison(const int3 & pos, HeroTypeID type);
+ 
+ 	/// Place a random hero owned by `owner`. Type is resolved at game start.
+ 	TinyH3MBuilder & randomHero(const int3 & pos, PlayerColor owner);
+--- /dev/null
++++ b/test/nullkiller2/AIGatewayTurnLifecycleTest.cpp
+@@ -0,0 +1,181 @@
++/* Native consumer regressions for local request/turn ownership. GPL-2.0-or-later. */
++#include "StdInc.h"
++#include "nullkiller2/NullkillerTest.h"
++#include "lib/callback/CCallback.h"
++#include "lib/callback/IClient.h"
++#include "lib/networkPacks/PacksForClient.h"
++#include "lib/networkPacks/PacksForServer.h"
++#include "lib/serializer/CTypeList.h"
++#include "lib/callback/Calendar.h"
++#include "lib/UnlockGuard.h"
++
++namespace
++{
++const PlayerColor PLAYER(0);
++class EndTurnClient : public IClient
++{
++public:
++	NK2AI::AIGateway * gateway = nullptr;
++	int requests = 0;
++	bool startNextTurnBeforeFirstAck = false;
++	bool rejectFirst = false;
++	std::optional<BattleAction> makeSurrenderRetreatDecision(PlayerColor, const BattleID &, const BattleStateInfoForRetreat &) override { return std::nullopt; }
++	int sendRequest(const CPackForServer & pack, PlayerColor player, bool) override
++	{
++		if(!dynamic_cast<const EndTurn *>(&pack))
++			return 0;
++		const int id = ++requests;
++		gateway->requestSent(&pack, id); // Real CClient registration callback.
++		if(id == 1 && startNextTurnBeforeFirstAck)
++			gateway->status.startedTurn(); // The yourTurn consumer starts the next generation.
++		PackageApplied applied(player, id, CTypeList::getInstance().getTypeID<EndTurn>(nullptr), !(id == 1 && rejectFirst));
++		gateway->requestRealized(&applied); // Real acknowledgement consumer.
++		return id;
++	}
++};
++
++class PlanningActionNullkiller : public NK2AI::Nullkiller
++{
++public:
++	std::function<void()> action;
++	void makeTurn() override { action(); }
++};
++
++class Nullkiller2_TurnLifecycle : public NullkillerTest
++{
++protected:
++	std::unique_ptr<NK2AI::AIGateway> start(EndTurnClient & client)
++	{
++		TinyH3M::TinyH3MBuilder builder(EMapFormat::SOD);
++		builder.size(36, false).playerActive(PLAYER).hero({5, 5, 0}, HeroTypeID(0), PLAYER);
++		startWithMap(std::move(builder));
++		auto gateway = makeGateway(PLAYER, &client);
++		client.gateway = gateway.get();
++		gateway->status.startedTurn();
++		return gateway;
++	}
++	void planningAction(NK2AI::AIGateway & gateway, std::function<void()> action)
++	{
++		auto planner = std::make_unique<PlanningActionNullkiller>();
++		planner->init(gateway.cc, &gateway);
++		planner->action = std::move(action);
++		gateway.nullkiller = std::move(planner);
++	}
++	void applyNextDay(NK2AI::AIGateway & gateway, bool deliverStartedTurn)
++	{
++		// Model CClient's exact boundary: unique GS apply, then callback outside GS.
++		auto unlock = vstd::makeUnlockSharedGuard(CGameState::mutex);
++		{
++			std::unique_lock writer(CGameState::mutex);
++			NewTurn nextDay;
++			nextDay.day = gateway.cc->getCalendar().getCurrentDay() + 1;
++			gameState()->apply(nextDay);
++			PlayerStartsTurn started;
++			started.player = PLAYER;
++			gameState()->apply(started);
++		}
++		if(deliverStartedTurn)
++			gateway.status.startedTurn();
++	}
++	void sent(NK2AI::AIGateway & gateway, int id)
++	{
++		EndTurn request;
++		gateway.requestSent(&request, id);
++	}
++	void ack(NK2AI::AIGateway & gateway, int id, bool success = true)
++	{
++		PackageApplied applied(PLAYER, id, CTypeList::getInstance().getTypeID<EndTurn>(nullptr), success);
++		gateway.requestRealized(&applied);
++	}
++};
++}
++
++TEST_F(Nullkiller2_TurnLifecycle, matchingAcknowledgementFinishesOnlyItsTurn)
++{
++	EndTurnClient client; auto gateway = start(client);
++	sent(*gateway, 41); ack(*gateway, 41);
++	EXPECT_FALSE(gateway->status.haveTurn());
++}
++
++TEST_F(Nullkiller2_TurnLifecycle, nextTurnBeforeOldAcknowledgementRemainsActive)
++{
++	EndTurnClient client; auto gateway = start(client);
++	sent(*gateway, 41); gateway->status.startedTurn(); ack(*gateway, 41);
++	EXPECT_TRUE(gateway->status.haveTurn());
++}
++
++TEST_F(Nullkiller2_TurnLifecycle, duplicateOldAcknowledgementCannotFinishNewPendingTurn)
++{
++	EndTurnClient client; auto gateway = start(client);
++	sent(*gateway, 41); ack(*gateway, 41); gateway->status.startedTurn(); sent(*gateway, 42);
++	ack(*gateway, 41); EXPECT_TRUE(gateway->status.haveTurn());
++	ack(*gateway, 42); EXPECT_FALSE(gateway->status.haveTurn());
++}
++
++TEST_F(Nullkiller2_TurnLifecycle, unknownAcknowledgementCannotFinishCurrentTurn)
++{
++	EndTurnClient client; auto gateway = start(client);
++	ack(*gateway, 999); EXPECT_TRUE(gateway->status.haveTurn());
++}
++
++TEST_F(Nullkiller2_TurnLifecycle, failedAndDuplicateAcknowledgementsCannotFinishCurrentTurn)
++{
++	EndTurnClient client; auto gateway = start(client);
++	sent(*gateway, 41); ack(*gateway, 41, false); ack(*gateway, 41);
++	EXPECT_TRUE(gateway->status.haveTurn());
++	sent(*gateway, 42); ack(*gateway, 42); EXPECT_FALSE(gateway->status.haveTurn());
++}
++
++TEST_F(Nullkiller2_TurnLifecycle, acknowledgementAfterMultipleGenerationsCannotFinishLatest)
++{
++	EndTurnClient client; auto gateway = start(client);
++	sent(*gateway, 41); gateway->status.startedTurn(); gateway->status.startedTurn(); ack(*gateway, 41);
++	EXPECT_TRUE(gateway->status.haveTurn());
++}
++
++TEST_F(Nullkiller2_TurnLifecycle, staleEndTurnInvocationNeverRetriesAgainstTheNextTurn)
++{
++	EndTurnClient client; auto gateway = start(client);
++	client.startNextTurnBeforeFirstAck = true;
++	std::shared_lock gameStateLock(CGameState::mutex);
++	gateway->endTurn();
++	EXPECT_EQ(client.requests, 1);
++	EXPECT_TRUE(gateway->status.haveTurn());
++}
++
++TEST_F(Nullkiller2_TurnLifecycle, currentTurnRetriesOneRejectedRequestThenFinishes)
++{
++	EndTurnClient client; auto gateway = start(client);
++	client.rejectFirst = true;
++	std::shared_lock gameStateLock(CGameState::mutex);
++	gateway->endTurn();
++	EXPECT_EQ(client.requests, 2);
++	EXPECT_FALSE(gateway->status.haveTurn());
++}
++
++TEST_F(Nullkiller2_TurnLifecycle, appliedNextDayWithDelayedStartedTurnCannotSubmitOldTaskEndTurn)
++{
++	EndTurnClient client; auto gateway = start(client);
++	planningAction(*gateway, [this, &gateway]() { applyNextDay(*gateway, false); });
++	gateway->makeTurn(); // Real consumer resumes after its wait with an old invocation origin.
++	EXPECT_EQ(client.requests, 0) << "a stale task must not even enter IClient EndTurn submission";
++	EXPECT_TRUE(gateway->status.haveTurn());
++}
++
++TEST_F(Nullkiller2_TurnLifecycle, nextDayCallbackBeforeSubmissionCannotEndTheNewTurn)
++{
++	EndTurnClient client; auto gateway = start(client);
++	planningAction(*gateway, [this, &gateway]() { applyNextDay(*gateway, true); });
++	gateway->makeTurn();
++	EXPECT_EQ(client.requests, 0) << "registration is too late to cancel an already sent EndTurn";
++	EXPECT_TRUE(gateway->status.haveTurn());
++}
++
++TEST_F(Nullkiller2_TurnLifecycle, unchangedDayMakeTurnStillSubmitsOneValidEndTurn)
++{
++	EndTurnClient client; auto gateway = start(client);
++	planningAction(*gateway, []() {});
++	gateway->makeTurn();
++	EXPECT_EQ(client.requests, 1);
++	EXPECT_FALSE(gateway->status.haveTurn());
++}
+--- a/test/nullkiller2/Goals/ExecuteHeroChainTest.cpp
++++ b/test/nullkiller2/Goals/ExecuteHeroChainTest.cpp
+@@ -355,3 +355,40 @@
+ 	EXPECT_NE(hero->visitablePos(), partner->visitablePos());
+ 	EXPECT_TRUE(logger.errors.empty());
+ }
++
++// Native H3M prison -> native GiveHero/SetObjectProperty -> native friendly meeting.
++// The object instance and visitable tile stay the same while type and owner change.
++TEST_F(ExecuteHeroChainMovementTest, rescuedPrisonAndNewHeroExchangeAreDistinctInteractions)
++{
++	TinyH3M::TinyH3MBuilder builder(EMapFormat::SOD);
++	builder.size(36, false).playerActive(PLAYER)
++		.hero(HERO_ANCHOR_POS, HeroTypeID(0), PLAYER).heroGarrison({{CreatureID(0), 1}})
++		.prison({7, 5, 0}, HeroTypeID(2))
++		.playerActive(ENEMY).hero({30, 30, 0}, HeroTypeID(1), ENEMY);
++	startWithMap(std::move(builder)); revealMap(PLAYER);
++	auto * hero = findHeroAt(HERO_ANCHOR_POS);
++	auto * partner = findHeroAt(int3(7, 5, 0));
++	ASSERT_NE(hero, nullptr); ASSERT_NE(partner, nullptr);
++	ASSERT_EQ(partner->ID, Obj::PRISON);
++	const auto targetID = partner->id;
++	const auto tile = partner->visitablePos();
++	hero->setMovementPoints(2000);
++	MeetingClient client(gameState()); auto gateway = makeGateway(PLAYER, &client);
++	NK2AI::AIPath path;
++	path.targetHero = hero; path.heroArmy = hero; path.chainMask = 1;
++	path.nodes.push_back(pathNode(*hero, tile));
++	RecordingAiLogger logger;
++	std::shared_lock gameStateLock(CGameState::mutex);
++	EXPECT_NO_THROW(NK2AI::Goals::ExecuteHeroChain(path, partner).accept(gateway.get()));
++	ASSERT_EQ(partner->ID, Obj::HERO); ASSERT_EQ(partner->getOwner(), PLAYER);
++	ASSERT_EQ(partner->id, targetID); ASSERT_EQ(partner->visitablePos(), tile);
++	const auto positionAfterRescue = hero->visitablePos();
++	ASSERT_NE(positionAfterRescue, tile);
++	EXPECT_NO_THROW(NK2AI::Goals::ExecuteHeroChain(path, partner).accept(gateway.get()));
++	EXPECT_EQ(hero->visitablePos(), positionAfterRescue);
++	EXPECT_EQ(client.server.meetings, 1);
++	EXPECT_EQ(client.server.resolvedQuestionIDs.size(), 1);
++	EXPECT_TRUE(logger.errors.empty());
++	// A third identical friendly interaction has no new semantic transition.
++	EXPECT_THROW(NK2AI::Goals::ExecuteHeroChain(path, partner).accept(gateway.get()), NK2AI::cannotFulfillGoalException);
++}
+--- /dev/null
++++ b/test/server/TerminalMoveCancellationTest.cpp
+@@ -0,0 +1,178 @@
++/* Actual server visitor/handler authority regressions. GPL-2.0-or-later. */
++#include "StdInc.h"
++#include "mock/TinyMapGameTest.h"
++#include "mock/GameHandlerTestServer.h"
++#include "server/CGameHandler.h"
++#include "server/ServerNetPackVisitors.h"
++#include "lib/CPlayerState.h"
++#include "lib/gameState/EVictoryLossCheckResult.h"
++#include "lib/mapObjects/CGHeroInstance.h"
++#include "lib/networkPacks/PacksForServer.h"
++
++namespace
++{
++const PlayerColor RED(0), BLUE(1);
++class RecordingServer : public GameHandlerTestServer
++{
++public:
++	using GameHandlerTestServer::GameHandlerTestServer;
++	std::vector<PackageApplied> acknowledgements;
++	void sendPack(CPackForClient & pack, GameConnectionID connection) override
++	{
++		if(const auto * applied = dynamic_cast<const PackageApplied *>(&pack))
++			acknowledgements.push_back(*applied);
++		GameHandlerTestServer::sendPack(pack, connection);
++	}
++};
++class RecordingAuthorityLogger final : public vstd::CLoggerBase
++{
++public:
++	mutable std::vector<std::pair<ELogLevel::ELogLevel, std::string>> records;
++	void log(ELogLevel::ELogLevel level, const std::string & text) const override { records.emplace_back(level, text); }
++	void log(ELogLevel::ELogLevel level, const boost::format & text) const override { log(level, text.str()); }
++	bool isDebugEnabled() const override { return true; }
++	bool isTraceEnabled() const override { return true; }
++	ELogLevel::ELogLevel getEffectiveLevel() const override { return ELogLevel::TRACE; }
++	size_t errors() const { return std::count_if(records.begin(), records.end(), [](const auto & r) { return r.first == ELogLevel::ERROR; }); }
++	bool cancellation() const { return std::any_of(records.begin(), records.end(), [](const auto & r) { return r.first == ELogLevel::INFO && r.second.find("Cancelled queued MoveHero request 1184") != std::string::npos; }); }
++};
++class TerminalMoveCancellation : public TinyMapGameTest
++{
++protected:
++	CGHeroInstance * hero = nullptr;
++	RecordingAuthorityLogger logger;
++	vstd::CLoggerBase * previousLogger = nullptr;
++	vstd::CLoggerBase * previousNetworkLogger = nullptr;
++	std::unique_ptr<RecordingServer> server;
++	std::unique_ptr<CGameHandler> handler;
++	void start(EPlayerStatus status)
++	{
++		TinyH3M::TinyH3MBuilder builder(EMapFormat::SOD);
++		builder.size(36, false).playerActive(RED).playerActive(BLUE)
++			.hero({5, 5, 0}, HeroTypeID(0), RED).hero({15, 15, 0}, HeroTypeID(16), BLUE)
++			.garrison({10, 10, 0}, RED, {{CreatureID(0), 1}}, true);
++		startWithMap(std::move(builder));
++		hero = findHeroByOwner(RED); ASSERT_NE(hero, nullptr);
++		hero->setMovementPoints(2000);
++		gameState()->actingPlayers.insert(RED);
++		if(status == EPlayerStatus::WINNER || status == EPlayerStatus::LOSER)
++		{
++			PlayerEndsGame ended;
++			ended.player = RED;
++			ended.victoryLossCheckResult = status == EPlayerStatus::WINNER
++				? EVictoryLossCheckResult::victory({}, {}) : EVictoryLossCheckResult::defeat({}, {});
++			gameState()->apply(ended); // Actual authoritative terminal consumer removes acting player.
++			ASSERT_EQ(gameState()->getPlayerState(RED)->status, status);
++			ASSERT_EQ(gameState()->actingPlayers.count(RED), 0);
++		}
++		else
++			gameState()->actingPlayers.erase(RED);
++		server = std::make_unique<RecordingServer>(gameState(), RED);
++		handler = std::make_unique<CGameHandler>(*server, gameState());
++		previousLogger = logGlobal; previousNetworkLogger = logNetwork;
++		logGlobal = &logger; logNetwork = &logger;
++	}
++	MoveHero request()
++	{
++		MoveHero pack({hero->pos + int3(1, 0, 0)}, EPathfindingLayer::LAND, hero->id, false);
++		pack.player = RED; pack.requestID = 1184;
++		return pack;
++	}
++	void TearDown() override
++	{
++		handler.reset(); server.reset();
++		if(previousLogger) logGlobal = previousLogger;
++		if(previousNetworkLogger) logNetwork = previousNetworkLogger;
++		TinyMapGameTest::TearDown();
++	}
++};
++}
++
++TEST_F(TerminalMoveCancellation, winnerQueuedMoveIsCancelledWithFalseAcknowledgementAndNoMutation)
++{
++	start(EPlayerStatus::WINNER); auto pack = request();
++	const auto position = hero->pos; const auto movement = hero->movementPointsRemaining();
++	handler->handleReceivedPack(GameConnectionID::FIRST_CONNECTION, pack);
++	ASSERT_EQ(server->acknowledgements.size(), 1);
++	EXPECT_FALSE(server->acknowledgements[0].result);
++	EXPECT_EQ(server->acknowledgements[0].requestID, 1184);
++	EXPECT_EQ(hero->pos, position); EXPECT_EQ(hero->movementPointsRemaining(), movement);
++	EXPECT_EQ(gameState()->getHero(hero->id), hero);
++	EXPECT_EQ(logger.errors(), 0); EXPECT_TRUE(logger.cancellation());
++}
++
++TEST_F(TerminalMoveCancellation, loserQueuedMoveIsCancelledOnlyAfterOwnerAuthentication)
++{
++	start(EPlayerStatus::LOSER); auto pack = request();
++	const auto position = hero->pos; const auto movement = hero->movementPointsRemaining();
++	ApplyGhNetPackVisitor visitor(*handler, GameConnectionID::FIRST_CONNECTION);
++	pack.visit(visitor);
++	EXPECT_FALSE(visitor.getResult());
++	EXPECT_EQ(hero->pos, position); EXPECT_EQ(hero->movementPointsRemaining(), movement);
++}
++
++TEST_F(TerminalMoveCancellation, inactiveIngameMoveRetainsAuthorityRejection)
++{
++	start(EPlayerStatus::INGAME); auto pack = request();
++	ApplyGhNetPackVisitor visitor(*handler, GameConnectionID::FIRST_CONNECTION);
++	EXPECT_THROW(pack.visit(visitor), ExceptionNotAllowedAction);
++	EXPECT_GT(logger.errors(), 0); EXPECT_FALSE(logger.cancellation());
++}
++
++TEST_F(TerminalMoveCancellation, activeIngameMoveStillExecutesNormally)
++{
++	start(EPlayerStatus::INGAME); auto pack = request();
++	gameState()->actingPlayers.insert(RED);
++	const auto position = hero->pos;
++	ApplyGhNetPackVisitor visitor(*handler, GameConnectionID::FIRST_CONNECTION);
++	pack.visit(visitor);
++	EXPECT_TRUE(visitor.getResult());
++	EXPECT_NE(hero->pos, position);
++}
++
++TEST_F(TerminalMoveCancellation, terminalPlayerCannotCancelSpoofedForeignHeroRequest)
++{
++	start(EPlayerStatus::WINNER); auto pack = request();
++	pack.hid = findHeroByOwner(BLUE)->id;
++	ApplyGhNetPackVisitor visitor(*handler, GameConnectionID::FIRST_CONNECTION);
++	EXPECT_THROW(pack.visit(visitor), ExceptionNotAllowedAction);
++	EXPECT_GT(logger.errors(), 0); EXPECT_FALSE(logger.cancellation());
++}
++
++TEST_F(TerminalMoveCancellation, unknownConnectionCannotCancelTerminalRequest)
++{
++	start(EPlayerStatus::WINNER); auto pack = request();
++	ApplyGhNetPackVisitor visitor(*handler, GameConnectionID(999));
++	EXPECT_THROW(pack.visit(visitor), ExceptionNotAllowedAction);
++	EXPECT_GT(logger.errors(), 0); EXPECT_FALSE(logger.cancellation());
++}
++
++TEST_F(TerminalMoveCancellation, unknownHeroCannotUseTerminalCancellation)
++{
++	start(EPlayerStatus::LOSER); auto pack = request();
++	pack.hid = ObjectInstanceID(99999);
++	ApplyGhNetPackVisitor visitor(*handler, GameConnectionID::FIRST_CONNECTION);
++	EXPECT_THROW(pack.visit(visitor), ExceptionNotAllowedAction);
++	EXPECT_GT(logger.errors(), 0); EXPECT_FALSE(logger.cancellation());
++}
++
++TEST_F(TerminalMoveCancellation, ownedNonHeroCannotUseTerminalCancellation)
++{
++	start(EPlayerStatus::WINNER); auto pack = request();
++	auto * object = findObjectAt(int3(10, 10, 0)); ASSERT_NE(object, nullptr);
++	pack.hid = object->id;
++	ApplyGhNetPackVisitor visitor(*handler, GameConnectionID::FIRST_CONNECTION);
++	EXPECT_THROW(pack.visit(visitor), ExceptionNotAllowedAction);
++	EXPECT_GT(logger.errors(), 0); EXPECT_FALSE(logger.cancellation());
++}
++
++TEST_F(TerminalMoveCancellation, actualRemovedHeroCannotUseTerminalCancellation)
++{
++	start(EPlayerStatus::LOSER); auto pack = request();
++	RemoveObject remove(hero->id, PlayerColor::NEUTRAL);
++	gameState()->apply(remove);
++	ASSERT_EQ(gameState()->getHero(pack.hid), nullptr);
++	ApplyGhNetPackVisitor visitor(*handler, GameConnectionID::FIRST_CONNECTION);
++	EXPECT_THROW(pack.visit(visitor), ExceptionNotAllowedAction);
++	EXPECT_GT(logger.errors(), 0); EXPECT_FALSE(logger.cancellation());
++}

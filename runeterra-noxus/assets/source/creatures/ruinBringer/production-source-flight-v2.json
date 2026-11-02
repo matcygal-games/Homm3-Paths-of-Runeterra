@@ -1,0 +1,202 @@
+{
+  "definition": {
+    "category": "flying-melee",
+    "chain_links": 13,
+    "chain_radius": 0.018,
+    "comparison": [
+      "core:greenDragon",
+      "core:boneDragon",
+      "core:angel"
+    ],
+    "definitions_path": "assets/source/creatures/ruin-flight-definitions-v2.json",
+    "equipment": [
+      "thorn-vine-bound-wing-frames",
+      "open-chain-binding",
+      "torn-shadow-mantle"
+    ],
+    "family": "ruin",
+    "fissure_color": [
+      0.34,
+      0.018,
+      0.025,
+      1
+    ],
+    "flight": true,
+    "height": 2.45,
+    "lore": "Invented Atakhan-inspired bound-demon troop; bound-magic flight is project fiction, not a claim about Atakhan",
+    "native_height": 142,
+    "nature": "NON_LIVING",
+    "rig_revision": "flight-rig-v2",
+    "silhouette": "Predatory hunched shadow frame with small low forward head, elongated forelimbs and long claws; ragged black mantle, restrained crimson fissures; thorn-and-vine wing frames held by visible iron chains, no feather/drake wings, stone or robot plates",
+    "tier": 7,
+    "two_hex": true,
+    "upgrade": false,
+    "vine_radius": 0.045,
+    "weakness": "Two-hex legal landing footprint, ordinary retaliation, low-hover physical flight; NON_LIVING never benefits from morale",
+    "weapon": "long-claws",
+    "width": 0.5,
+    "wing_span": 1.32
+  },
+  "image_generation_calls": 0,
+  "native": {
+    "attack_semantics": "One ordinary single-target clawed strike with ordinary retaliation. No breath/line cleave, shot, spell, teleport, extra action or fake flight.",
+    "battle_footprint": {
+      "body_center": [
+        175,
+        266
+      ],
+      "doubleWide": true,
+      "front_center": [
+        197,
+        266
+      ],
+      "hex_height": 42,
+      "hex_width": 44,
+      "rear_center": [
+        153,
+        266
+      ],
+      "semantics": "Two adjacent battle hexes derived from doubleWide, NOT from the adventure mapMask. Mask PNG is a technical source guide only, not a game asset.",
+      "source_mask": "battle-footprint-guide-mask.png"
+    },
+    "canvas": [
+      450,
+      400
+    ],
+    "excluded_groups": [
+      14,
+      15,
+      16,
+      30,
+      31,
+      32,
+      40,
+      41,
+      42,
+      50,
+      51
+    ],
+    "groups": {
+      "0": {
+        "action": "bound-magic-flight-loop",
+        "frames": 8
+      },
+      "1": {
+        "action": "binding-tension-fidget",
+        "frames": 4
+      },
+      "11": {
+        "action": "single-target-clawed-strike-up",
+        "frames": 8
+      },
+      "12": {
+        "action": "single-target-clawed-strike-front",
+        "frames": 8
+      },
+      "13": {
+        "action": "single-target-clawed-strike-down",
+        "frames": 8
+      },
+      "2": {
+        "action": "low-hover-holding-loop",
+        "frames": 6
+      },
+      "20": {
+        "action": "bound-rise-before-flight",
+        "frames": 6
+      },
+      "21": {
+        "action": "bound-descent-to-low-hover",
+        "frames": 6
+      },
+      "22": {
+        "action": "actual-final-collapse-corpse",
+        "frames": 1
+      },
+      "3": {
+        "action": "airborne-hit-recoil",
+        "frames": 4
+      },
+      "4": {
+        "action": "clawed-airborne-guard",
+        "frames": 4
+      },
+      "5": {
+        "action": "demonic-collapse-wing-binding-fold",
+        "frames": 8
+      },
+      "7": {
+        "action": "airborne-turn-toward-viewer",
+        "frames": 4
+      },
+      "8": {
+        "action": "airborne-turn-back",
+        "frames": 4
+      }
+    },
+    "map": {
+      "activatable_cell": [
+        1,
+        1
+      ],
+      "canvas": [
+        96,
+        64
+      ],
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "native_placement_review": "Canvas/pivot need actual painted adventure sprite and native loader review; mapMask is already present in the content dictionary, which this task does not edit.",
+      "pivot": {
+        "x": 64,
+        "y": 58
+      },
+      "visible_columns": 2
+    },
+    "native_group_source": "vcmi-develop/vcmi-develop/client/battle/BattleConstants.h:59-100; MovementStart/EndAnimation selects20/21 for physical FLYING, 50/51 only for movementTeleporting",
+    "pivot": {
+      "x": 197,
+      "y": 266
+    }
+  },
+  "painted_master": null,
+  "placeholder_game_art": 0,
+  "recipes": [
+    {
+      "output_path": "Content/Sprites/runeterra/noxus/creatures/ruinBringer/battle.json",
+      "recipe": "assets/recipes/creatures/ruinBringer-battle.json",
+      "sha256": "548422af0e549f7f8f727567b6d5db8672ed16017802a99bd453640cb7f5df9e"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/noxus/creatures/ruinBringer/map.json",
+      "recipe": "assets/recipes/creatures/ruinBringer-map.json",
+      "sha256": "a3db5f66b1f0953004bbec26338c2ef63b3dd2fae5f2f5f87828b9d35221b360"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/noxus/creatures/ruinBringer/large.png",
+      "recipe": "assets/recipes/creatures/ruinBringer-large.json",
+      "sha256": "d01ceadd074f3dee0e00bde298f5ceced128c72ec1d261498701dd5c70744a9c"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/noxus/creatures/ruinBringer/small.png",
+      "recipe": "assets/recipes/creatures/ruinBringer-small.json",
+      "sha256": "bb5f53a36913eb2701a5553d139bc3793cf14aaa3b1e4a092079ea36e8196c3b"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/noxus/creatures/ruinBringer/attackLeft.png",
+      "recipe": "assets/recipes/creatures/ruinBringer-attackLeft.json",
+      "sha256": "18f3acdce4be4df70d2f085cdce2eb53da6fa4981ab4cb48133ed86e61d8e66f"
+    },
+    {
+      "output_path": "Content/Sprites/runeterra/noxus/creatures/ruinBringer/attackRight.png",
+      "recipe": "assets/recipes/creatures/ruinBringer-attackRight.json",
+      "sha256": "9739aab265f51cc72965378e7ac75e57d2365535b323f3091e8a4f75a75f5f2f"
+    }
+  ],
+  "rig_path_pattern": "assets/source/creatures/ruinBringer/flight-rig-v2/<run>/ruinBringer-guide.blend",
+  "runtime_verified": false,
+  "status": "authored configuration",
+  "unit": "ruinBringer",
+  "visual_approval_granted": false
+}

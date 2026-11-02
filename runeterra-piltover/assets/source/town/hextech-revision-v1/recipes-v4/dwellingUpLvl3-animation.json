@@ -1,0 +1,75 @@
+{
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI builtin imagegen; deterministic technical2D conversion",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/hextech-revision-v1/assemble_v4.py",
+      "sha256": "e5a844d70fbba67bd96987e9a493ca584f87d54470773a83220fa1f10df9dbba"
+    },
+    {
+      "path": "assets/source/town/hextech-revision-v1/layout-plan-v4.json",
+      "sha256": "5b9b8f4cabd68ea10440b795122600ab3ce13beafa305cb2dc4b971dea5976b2"
+    },
+    {
+      "path": "assets/source/town/hextech-revision-v1/placement-calibration-v4.json",
+      "sha256": "5e61f7c7ee4b482bd972ca8ec801bca7744c24143fe32c8b9ca614077a2be407"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl3/master-v1.png",
+      "sha256": "23f7aa08358bcf11bbbf7b1688b11487eb57756bb8724c68409f81427a62423b"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl3/prompt-v1.txt",
+      "sha256": "17056620c0bb066450a61592c6c48f4af0eb5ad4cc35e728aa7fcf04eb15271f"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl3/source-generation.json",
+      "sha256": "abd1fcf8750fff53d008d0596363a4170f72e3030dd1506e6a337e6d1916cd62"
+    }
+  ],
+  "generateOverlay": 0,
+  "generateShadow": 0,
+  "generation": {
+    "image_generation_used": true,
+    "model": "not exposed by tool",
+    "painted_master": "assets/source/town/painted-v1/buildings/dwellingUpLvl3/master-v1.png",
+    "painted_master_sha256": "23f7aa08358bcf11bbbf7b1688b11487eb57756bb8724c68409f81427a62423b",
+    "producer": "assets/source/town/hextech-revision-v1/assemble_v4.py",
+    "producer_sha256": "e5a844d70fbba67bd96987e9a493ca584f87d54470773a83220fa1f10df9dbba",
+    "prompt": "Standalone transparent painted2D town-building cutout for original Heroes of Might and Magic III/VCMI. Native target800x374 town, not a poster or modern game render.\nImage1 is EDIT TARGET: our own existing special2 building; preserve its canvas/camera/root/lower core. Image2 is the ORIGINAL Heroes III Castle building: rendering-language reference only, no copied Castle pixels/silhouette. Image3 is the actual PILTOVER crest shape reference: central vertical pillar, split-ring/orb upper end, broad curved gear-flanked lower arcs; never wings or generic cog. Follow the same institutional/material family; additions/removals must be genuinely painted. The reference has technical transparent padding [0, 180, 0, 0] (left,top,right,bottom), whole-image translation only, not resized architecture. Use that spare headroom for new upper construction without moving or shrinking the existing lower door/foundation.\nOutput genuinely transparent RGBA with EXACT reference Image1 canvas dimensions and existing core scale/position; do not recenter, zoom or shrink the lower building to fill the frame. Full building, roof, stairs, foundation, cloth and subtle own rightward contact shadow entirely visible with >=35pixels transparent margins. No solid backdrop/white matte/checkerboard/grass or floor rectangle, no red/yellow/chroma edge outline. Walls and windows remain opaque painted material, not translucent see-through buildings.\nSame soft upper-left daylight and LOW FRONTAL THREE-QUARTER camera as the new town. Front facade/door dominates; modest right-side wall, limited roof planes, not strict isometric/bird's-eye. Richly textured original-H3 small-scale painted masonry, timber, slate, aged bronze/brass and dull steel. Warm ivory/hewn stone, muted dark timber, navy/teal cloth, restrained cool-blue instruments. No shiny modern3D/plastic, anime, splash-art, bloom/neon or photographic lens finish. Working Piltovan trade/science/community architecture, not16generic temples or Demacian keeps. A physical navy/teal banner or engraved plaque carries the CORRECT Piltover region crest visibly at native downsampling, with natural perspective and occlusion.\nPlanned native envelope [112, 211, 88, 59]; compact readable architectural silhouette. For a new base, leave headroom for later extensions above the same frontal ground-root nearx627,y1130. For an edit, KEEP EXACT reference canvas, lower foundation and entrance source position/scale; never zoom the smaller state to fill the canvas. Only whole real painted architecture; no people, soldiers, animals, text, labels, UI, border or watermark.\nSTATE: Armoured Freight Depot. Upgrade the SAME Inventor's Guild/Freight Depot into Armoured Freight Depot. Preserve the freight loading door/foundation, guild office, source root/camera/light. Reinforce the low maintenance bay with sturdy bronze struts, add a protected machine-fitting canopy and a visibly stronger compact crane/hoist; one small wheeled chassis has practical armor plates. Correct navy Piltover flag. Clearly more capable than the base, no autonomous titan/huge new site or modern sci-fi factory.\n",
+    "prompt_file": "assets/source/town/painted-v1/buildings/dwellingUpLvl3/prompt-v1.txt",
+    "provider": "OpenAI builtin imagegen",
+    "source_generation_ledger": "assets/source/town/painted-v1/buildings/dwellingUpLvl3/source-generation.json"
+  },
+  "groups": [
+    {
+      "frames": [
+        {
+          "source": "assets/source/town/hextech-revision-v1/buildings/dwellingUpLvl3/native-frame.png",
+          "source_canvas": [
+            800,
+            374
+          ],
+          "source_sha256": "7933170e5c8f9d26a43981f48af76ab1296c6eb3e27f4a9d4e9a2d553f182a4a"
+        }
+      ],
+      "group": 0
+    }
+  ],
+  "output_path": "Content/Sprites/runeterra/piltover/town/structures/dwellingUpLvl3.json",
+  "pivot": {
+    "x": 171,
+    "y": 251
+  },
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "vcmi_animation",
+  "status": "painted-candidate",
+  "visual_approval_granted": false
+}

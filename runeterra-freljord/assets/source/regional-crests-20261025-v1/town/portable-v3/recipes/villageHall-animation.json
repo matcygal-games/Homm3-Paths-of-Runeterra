@@ -1,0 +1,369 @@
+{
+  "acceptance": "Technical candidate only; current native/art/rights acceptance remains separate.",
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed built-in OpenAI imagegen painted sources and deterministic technical assembly",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "generation": {
+    "family_replay_dependencies": {
+      "direct_input_record": {
+        "path": "assets/source/regional-crests-20261025-v1/town/portable-v3/direct-inputs.json",
+        "sha256": "872f51259dfa51bdbf8765f6c8501de6e6f6daa6443596936f28897fc5083c0b"
+      },
+      "producer_reads_declared_directly": true,
+      "source_records": [
+        {
+          "path": "assets/source/regional-crests-20261025-v1/town/portable-v3/villageHall/generation.json",
+          "sha256": "a8da1f9cfff4b503a3fe0f0438ed2deb0a7d63ec9f28895bd4bb3dc4f767b1c1"
+        },
+        {
+          "path": "assets/source/regional-crests-20261025-v1/town/portable-v3/townHall/generation.json",
+          "sha256": "48d715d8aa4e0c889d743369dce2be13204b2cc6d2d4a5f5cbcd4b9fc4c165a8"
+        },
+        {
+          "path": "assets/source/regional-crests-20261025-v1/town/portable-v3/cityHall/generation.json",
+          "sha256": "43bd1f563f8a374ab5aea4dc5ceb89d93da0b120e47976b1363591387eb11ee0"
+        },
+        {
+          "path": "assets/source/regional-crests-20261025-v1/town/portable-v3/capitol/generation.json",
+          "sha256": "1890dfa61523eb317e22387e799addad97927afb458e020aa3e1d45ff97305d7"
+        }
+      ],
+      "version": 3
+    },
+    "generation_record": "assets/source/regional-crests-20261025-v1/town/portable-v3/villageHall/generation.json",
+    "generation_record_sha256": "a8da1f9cfff4b503a3fe0f0438ed2deb0a7d63ec9f28895bd4bb3dc4f767b1c1",
+    "image_generation_used": true,
+    "model": "not exposed by built-in tool",
+    "model_id_exposed": false,
+    "painted_master": "assets/source/regional-crests-20261025-v1/town/villageHall/master.png",
+    "painted_master_sha256": "51a3af0a5166b5cb01a7a0685ed2477dae54db593616a392d915866c6fbe2a6c",
+    "preparation_helper": {
+      "path": "scripts/prepare_town_art.py",
+      "sha256": "71476dbf913919f5cc07bab81b87236c4601ef3fe0b38d627fff88c7fe91fa46"
+    },
+    "prompt": "Use case: precise-object-edit. Asset: FRELJORD villageHall civic hall painted 2D town layer, original Heroes of Might and Magic III, final town scene800x374. Image1 is EDIT TARGET, current own1536x1024 painted master. Image2 is correct official FRELJORD REGIONAL CREST DESIGN reference only. Image3 is original HoMM3 native material/contrast reference only; copy no game pixels. Change ONLY the ALREADY EXISTING small carved crest in the triangular FRONT GABLE plaque immediately above main entrance, approximately x480..580,y260..375 in image1. This is a visibility repair of an already correct intended crest, not new heraldry or architecture. Repaint that same regional angular interlocked upper-arm silhouette and long descending central point as aged pale IVORY/very light weathered carved wood inlay, with sparse dark recessed separations. Fewer bolder painted facets should remain recognizable after native downsampling. Retain same crest position and entire existing footprint; fit existing wood gable, never enlarge panel or add a floating shield/banner. Material must be hand-painted muted ivory wood against existing dark brown timber, matte and subtly worn, not glowing gold or flat vector sticker. Preserve all other pixels conceptually: architecture, full silhouette, snowy roof, knot posts, frontdoor, stairs, all windows, timber grain, camera, upperleft light, alpha/background, and canvas exactly1536x1024. Preserve any existing institution marks and Capitol blue cloth banners; change only ONE front-gable crest, no secondary edits. Painted2D original1999HoMM3 native texture/scale, NOT Blender/3D/render, glossyCGI, neon, splash art or geometric placeholder. No text. Output one exact-canvas edited master with existing transparency preserved. A later strict technical mask will retain only this local crest paint.",
+    "provider": "OpenAI built-in imagegen",
+    "references": [
+      {
+        "path": "assets/source/regional-crests-20261025-v1/town/villageHall/master.png",
+        "sha256": "51a3af0a5166b5cb01a7a0685ed2477dae54db593616a392d915866c6fbe2a6c"
+      },
+      {
+        "path": "assets/source/regional-crests-20261025-v1/town/villageHall/prompt.txt",
+        "sha256": "f52e5b6c708cfa744bedefc70906ef1c563db191d6bd99d7dcd9a3adc2ebee22"
+      },
+      {
+        "path": "assets/source/regional-crests-20261025-v1/town/villageHall/generation.json",
+        "sha256": "785d18d882992f3e8803a8b3e56c0872369b35bebb0acec14760de98e837b873"
+      },
+      {
+        "path": "assets/source/regional-crests-20261025-v1/town/villageHall/raw-imagegen.png",
+        "sha256": "543ea58694be54a7a35f649e5a6d544e0f5e461f73374a7c3ac265572992db74"
+      },
+      {
+        "path": "assets/source/town/buildings-v6/villageHall/master.png",
+        "sha256": "0f566299280f590c1573edfec2e17f13a7ab406ce1f47af328c086bb3b00a35e"
+      },
+      {
+        "path": "assets/source/town/northern-village-20261024-v3/prepared/villageHall/preparation.json",
+        "sha256": "76fd4e5d46b2119232e681f280f1571c6c83d938f3b528248ffb92763e629835"
+      }
+    ],
+    "regional_crest_visibility_repair": {
+      "all_family_reads_directly_declared": true,
+      "direct_input_record": {
+        "path": "assets/source/regional-crests-20261025-v1/town/portable-v3/direct-inputs.json",
+        "sha256": "872f51259dfa51bdbf8765f6c8501de6e6f6daa6443596936f28897fc5083c0b"
+      },
+      "runtime_bytes_unchanged": true,
+      "technical_producer": {
+        "path": "assets/source/regional-crests-20261025-v1/town/portable-v3/compose.py",
+        "sha256": "0abdcc0f4cd009a8d9f729ff8aadbd9bb5f44b9ec9c5aa1d93eb019018ed15fc"
+      },
+      "version": 3
+    },
+    "technical_producer": {
+      "path": "assets/source/regional-crests-20261025-v1/town/portable-v3/compose.py",
+      "sha256": "0abdcc0f4cd009a8d9f729ff8aadbd9bb5f44b9ec9c5aa1d93eb019018ed15fc"
+    },
+    "tool": "image_gen.imagegen",
+    "upstream_original_generation": {
+      "conversion": {
+        "alpha_bbox": [
+          0,
+          0,
+          1517,
+          982
+        ],
+        "alpha_treatment": "Preserved painted RGBA, including any soft halo; no threshold erasure/background removal",
+        "canvas": [
+          800,
+          374
+        ],
+        "mirror_x": false,
+        "placed_origin": [
+          262,
+          97
+        ],
+        "placed_size": [
+          124,
+          80
+        ],
+        "rect": [
+          262,
+          93,
+          124,
+          84
+        ],
+        "source_canvas": [
+          1536,
+          1024
+        ],
+        "source_coordinate_basis": "original master",
+        "uniform_scale": 0.08174027686222808,
+        "upscaled": false
+      },
+      "generation_record": "assets/source/town/northern-village-20261024-v3/provenance/villageHall/generation.json",
+      "image_generation_used": true,
+      "model": "Not exposed by the built-in tool",
+      "model_id_exposed": false,
+      "painted_master": "assets/source/town/buildings-v6/villageHall/master.png",
+      "painted_master_sha256": "0f566299280f590c1573edfec2e17f13a7ab406ce1f47af328c086bb3b00a35e",
+      "prompt": "Edit image 1, the existing painted Freljord village hall building master. Preserve its EXACT architecture, complete silhouette, frontal three-quarter view, canvas proportions 1536x1024, snowy roof, doorway, stairs, timber grain, lighting and background. Change ONLY the decorative knot carving in the triangular front gable directly above the entrance: replace the generic triquetra knot with a faithful hand-carved version of the official FRELJORD REGIONAL CREST shown in image 2. Image 2 is a design reference ONLY, not a pasted logo or a flat sticker. Keep the recognizable angular interlocked upper arms and long central downward point of this exact crest, in aged carved pale-gold/brown timber relief against dark wood. Fit the entire emblem within the existing triangular panel. No extra banners, no text, no giant emblem, no other region crest, no new building features. Art style must remain original Heroes of Might and Magic III compatible richly textured painted 2D building artwork at final native scale, restrained contrast, not shiny modern 3D, no Blender, no vector look, no neon, no splash art. This is a local heraldry repair, not a building redesign.",
+      "provider": "OpenAI built-in imagegen",
+      "references": [
+        {
+          "path": "assets/source/town/buildings-v6/villageHall/master.png",
+          "sha256": "0f566299280f590c1573edfec2e17f13a7ab406ce1f47af328c086bb3b00a35e"
+        },
+        {
+          "path": "assets/source/town/northern-village-20261024-v3/provenance/villageHall/generation.json",
+          "sha256": "acac10cc4084509156a3e8c054da8c7d5ca816c8e9401ffc343a2d37d2295944"
+        }
+      ],
+      "technical_producer": {
+        "path": "assets/source/town/northern-village-20261024-v3/prepare_candidate.py",
+        "sha256": "5c79a631c542104c95ba473b355557f65e2f8b214faf07f66a5024e3b0c21a85"
+      },
+      "tool": "image_gen.imagegen",
+      "visual_approval_granted": false
+    },
+    "upstream_regional_crest_visibility_repair": {
+      "consumed_inputs": {
+        "path": "assets/source/regional-crests-20261025-v1/town/portable-v2/consumed-inputs.json",
+        "sha256": "d8ac1cd63b7c061826d0f209b11f2c27f784b71deadbeadc5e2376052ae5fed9"
+      },
+      "method": "Metadata-only portable successor; all version1 painted/native/runtime bytes preserved",
+      "version": 2
+    },
+    "visual_approval_granted": false
+  },
+  "groups": [
+    {
+      "frames": [
+        {
+          "sha256": "82c6f007c5b2f16ab39697a2b86305613863be1f411af5937eb2ec8b0e239eaf",
+          "source": "assets/source/regional-crests-20261025-v1/town/villageHall/layer.png",
+          "source_canvas": [
+            800,
+            374
+          ],
+          "source_sha256": "82c6f007c5b2f16ab39697a2b86305613863be1f411af5937eb2ec8b0e239eaf"
+        }
+      ],
+      "generateOverlay": 0,
+      "generateShadow": 0,
+      "group": 0
+    }
+  ],
+  "inputs": [
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/capitol/crest-mask.png",
+      "sha256": "30ac0d2113d6c90639d514a6e295758ca868e6128262bb6a174c9c0bbd0c1874"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/capitol/icon.png",
+      "sha256": "1c8f49630934bf11ec4b897d9952f6c53b7d97fd78cb258605a357bd3f738d4b"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/capitol/layer.png",
+      "sha256": "3adb1dece08a87875313633afb4acbf80a3f2d69930f6d69afaf2fc5af379f6f"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/capitol/master.png",
+      "sha256": "cb1beddb7271b3243d1fa5d4fef1ef6c7f29abdea0471b2eeecddef3991a81a2"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/capitol/prompt.txt",
+      "sha256": "65a1fb5089f4768ce0e3120da2f6424beb2e7a4283c99f0942ad1d37fb344c06"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/capitol/raw-imagegen.png",
+      "sha256": "c424e1157355571ed2816a03a0c88a9e5ccb63e5332ba75ce8793991cc227706"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/cityHall/crest-mask.png",
+      "sha256": "73258b050148c6114282ccaf333895ad5ff0f44ae511acd0a5bf797e4266ccdd"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/cityHall/icon.png",
+      "sha256": "3a8ff6bbc0ac810cad0ada9adfd147deb6c42bbb508651361e1212e902a9af3b"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/cityHall/layer.png",
+      "sha256": "eba6583662f2523e871e851c4eb2fd820d82a4079d9cef91890e4cef0caabe03"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/cityHall/master.png",
+      "sha256": "160ac0bd27809c2a8b77017e29c1a8b47d06fe8214ab6363e3b920440615cd1b"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/cityHall/prompt.txt",
+      "sha256": "1a7807b414e57f56bfc24faab8c51e4902e68d1c7bc73b4a933ccd4247ca4ced"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/cityHall/raw-imagegen.png",
+      "sha256": "5406b47052977c02bdfd7c249c47ebd194ac48f6d5f5d121b482b91d8d05685a"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/portable-v2/compose.py",
+      "sha256": "d5fef35c5529f9121ef62a4bdeb4ade739ab4beb3ccf7309a63fe11bd744272c"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/portable-v2/consumed-inputs.json",
+      "sha256": "d8ac1cd63b7c061826d0f209b11f2c27f784b71deadbeadc5e2376052ae5fed9"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/portable-v3/capitol/generation.json",
+      "sha256": "1890dfa61523eb317e22387e799addad97927afb458e020aa3e1d45ff97305d7"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/portable-v3/cityHall/generation.json",
+      "sha256": "43bd1f563f8a374ab5aea4dc5ceb89d93da0b120e47976b1363591387eb11ee0"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/portable-v3/compose.py",
+      "sha256": "0abdcc0f4cd009a8d9f729ff8aadbd9bb5f44b9ec9c5aa1d93eb019018ed15fc"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/portable-v3/direct-inputs.json",
+      "sha256": "872f51259dfa51bdbf8765f6c8501de6e6f6daa6443596936f28897fc5083c0b"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/portable-v3/townHall/generation.json",
+      "sha256": "48d715d8aa4e0c889d743369dce2be13204b2cc6d2d4a5f5cbcd4b9fc4c165a8"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/portable-v3/villageHall/generation.json",
+      "sha256": "a8da1f9cfff4b503a3fe0f0438ed2deb0a7d63ec9f28895bd4bb3dc4f767b1c1"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/townHall/crest-mask.png",
+      "sha256": "5fdf48bef3719aa0e7224b2785adb15441d649bbd032474fe91843a576f86395"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/townHall/icon.png",
+      "sha256": "cfc8940cf6d7d3603cf36e7ada8b3957e536910202db9be703a5a8684ffa5e72"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/townHall/layer.png",
+      "sha256": "201ef8098bbcd880f82f1f00dfde7b6fb06850e118bef11411fce68026e17352"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/townHall/master.png",
+      "sha256": "fb0fc7a16da316398686123dc1a75f3bb35628570d69cb8184a86af2413fc10b"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/townHall/prompt.txt",
+      "sha256": "f135dc47d2cbb8b491ff6ae2228a4aa49bdb190292c1773af96af2f5e78f751a"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/townHall/raw-imagegen.png",
+      "sha256": "47e06dcc92eaba549341730a608bf35125cadc153a16b16d36c4ef4e04aecfcb"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/villageHall/crest-mask.png",
+      "sha256": "68c44f351470e080d70ab9b2c2fdc04e72cbd7bef3ca9920e2f9c825ab4e98d6"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/villageHall/icon.png",
+      "sha256": "a92cce32ccf61952243e98f68d563b7ecc1627b262cc90cf1a293b289b94d1ee"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/villageHall/layer.png",
+      "sha256": "82c6f007c5b2f16ab39697a2b86305613863be1f411af5937eb2ec8b0e239eaf"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/villageHall/master.png",
+      "sha256": "51a3af0a5166b5cb01a7a0685ed2477dae54db593616a392d915866c6fbe2a6c"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/villageHall/prompt.txt",
+      "sha256": "f52e5b6c708cfa744bedefc70906ef1c563db191d6bd99d7dcd9a3adc2ebee22"
+    },
+    {
+      "path": "assets/source/regional-crests-20261025-v1/town/villageHall/raw-imagegen.png",
+      "sha256": "543ea58694be54a7a35f649e5a6d544e0f5e461f73374a7c3ac265572992db74"
+    },
+    {
+      "path": "assets/source/town/buildings-v6/capitol/master.png",
+      "sha256": "d25eb3728169ced9bb0c33d51b7d11957f76f56731ad5f1a62833e2209110b45"
+    },
+    {
+      "path": "assets/source/town/buildings-v6/cityHall/master.png",
+      "sha256": "eb3543e8700586a068fbbecfb3f952c0ccea36f25b0b90f9a9c84249359208cb"
+    },
+    {
+      "path": "assets/source/town/buildings-v6/townHall/master.png",
+      "sha256": "a7862a03d09ff7f0bc9c56d2aba9c346377ed354c370c6216c073431794d0433"
+    },
+    {
+      "path": "assets/source/town/buildings-v6/villageHall/master.png",
+      "sha256": "0f566299280f590c1573edfec2e17f13a7ab406ce1f47af328c086bb3b00a35e"
+    },
+    {
+      "path": "assets/source/town/northern-village-20261024-v3/layout-v3.json",
+      "sha256": "5760fa4c000093b10b50e8fcaaddec4a23897dd03f56b5ac9e2258db4c88a153"
+    },
+    {
+      "path": "assets/source/town/northern-village-20261024-v3/prepare_candidate.py",
+      "sha256": "5c79a631c542104c95ba473b355557f65e2f8b214faf07f66a5024e3b0c21a85"
+    },
+    {
+      "path": "assets/source/town/northern-village-20261024-v3/prepared/capitol/preparation.json",
+      "sha256": "6b3531836e868528eed4da73e8c4cbbf02ab6b0c4b760d2da6784fcb590cbfb0"
+    },
+    {
+      "path": "assets/source/town/northern-village-20261024-v3/prepared/cityHall/preparation.json",
+      "sha256": "9a7819539baf1333379efc69f583b33fe3f5fba3feafeeb1835f6adc75411a77"
+    },
+    {
+      "path": "assets/source/town/northern-village-20261024-v3/prepared/townHall/preparation.json",
+      "sha256": "5a4b72b23670bd2b04dbd9f6810b32443efdf41317b1aa757dd96153c6b53515"
+    },
+    {
+      "path": "assets/source/town/northern-village-20261024-v3/prepared/villageHall/preparation.json",
+      "sha256": "76fd4e5d46b2119232e681f280f1571c6c83d938f3b528248ffb92763e629835"
+    },
+    {
+      "path": "scripts/prepare_town_art.py",
+      "sha256": "71476dbf913919f5cc07bab81b87236c4601ef3fe0b38d627fff88c7fe91fa46"
+    }
+  ],
+  "output_path": "Content/Sprites/runeterra/freljord/town/structures/villageHall.json",
+  "pivot": {
+    "x": 0,
+    "y": 0
+  },
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "vcmi_animation",
+  "require_alpha": true,
+  "status": "authored configuration",
+  "visual_approval_granted": false
+}

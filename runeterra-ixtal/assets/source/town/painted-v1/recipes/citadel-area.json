@@ -1,0 +1,530 @@
+{
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI builtin imagegen; deterministic technical2D conversion",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/painted-v1/assemble.py",
+      "sha256": "125b8448e6c9bd917a3b4c95291b1c23a61910aca209c5959a54e9f3d985456e"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/blacksmith/master-v1.png",
+      "sha256": "6eb9a537927518da5713b83457b70402a810c45d4f03dccf7f55e0cd52be5af0"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/blacksmith/prompt-v2.txt",
+      "sha256": "8abe26f9099dc56e8c36f1eea583a387cfb5d8c3f7251986aabd3302944b1775"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/blacksmith/source-generation-v1.json",
+      "sha256": "6c3eb40aadde03a8c7d89840bf05792275ce3fcbc22b496e18fc6dab82938c51"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/capitol/master-v1.png",
+      "sha256": "26039aea9c85753cb253ffc7b7026e2b8bd444ae3bc5cd2240749490f63ff63f"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/capitol/prompt-v2.txt",
+      "sha256": "86124819a34118f7e2d62da4d917ffb6d7fdde930fbddbc09aef4600d9300482"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/capitol/source-generation-v1.json",
+      "sha256": "2dcb3a42c7ccd80f84e4afb462fba4c0f0d2dc810eb571fa64946178223422d7"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/castle/master-v1.png",
+      "sha256": "c52694b73ff1c9ba85af4212c16493774d9ca9c1f388121cbe71ca414bdd3382"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/castle/prompt-v2.txt",
+      "sha256": "697519e3e0fe3be78a0bc6cc41c4ee9b8b510155cbbd3f7a01a7f36bacd396d3"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/castle/source-generation-v1.json",
+      "sha256": "45ca50d7424d53e119b0a89497d06ae69d62a171f961c4821f7f51a01f14da0b"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/citadel/master-v1.png",
+      "sha256": "ecc0b55ffd7409148e5d2608aed5d3dd301d8626ef9a18c11946d3dd40de68cc"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/citadel/prompt-call-v1.txt",
+      "sha256": "f030fae214b1b15ff2d312cde7a87d50e2eed910c04f4d78f0448c192299f048"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/citadel/source-generation-v1.json",
+      "sha256": "18f948cd0d40950eb81c7cdedcc54d3649c115945f1c2aa30dcbc39022d624ae"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/cityHall/master-v1.png",
+      "sha256": "8335dab2bf7794e4af806a1e0afb8b908d6ff3db2afee4a349b43a999cf291f4"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/cityHall/prompt-call-v1.txt",
+      "sha256": "3c54b69e24f3008397bd6e6c33a30c144ba798f1dcba46103324c40afc57e16e"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/cityHall/source-generation-v1.json",
+      "sha256": "c1e62b80af5c7cc641e931564f4aa3258e12ba4c8033e55e091c1b4a34f6881b"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl1/master-v1.png",
+      "sha256": "22b0f52815548ff46b613bbea2f8f4bc8eead582941a9022f7b26098a9b45ce8"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl1/prompt-call-v1.txt",
+      "sha256": "cedef6b6d13f34136d9fef1db2b33cf1471c3566bcd5a58d115181089b76e8f9"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl1/source-generation-v1.json",
+      "sha256": "9a081f36080b232d480ba0dfaf7a0147ea81cc17af8ddf0775a0a2dbd0db1c22"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl2/master-v1.png",
+      "sha256": "a8b2fff391a278ac9edccfb74844332c159ccc29c4a3838b64a9188e5c6fd94d"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl2/prompt-call-v1.txt",
+      "sha256": "6350b16009de47543f8fec44c8cf2f8ba50647d69d4c66a80401977b24becc8b"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl2/source-generation-v1.json",
+      "sha256": "84226228b73bf59d42478a77f6edb457fb6899c28a4638f4bca1fea8fb73bebb"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl3/master-v1.png",
+      "sha256": "bda6249e2583675527f3fa8e6d75dd4b9110c80fe28bfbac0be8df5bd8d1515d"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl3/prompt-call-v1.txt",
+      "sha256": "bb4d747bcd245eb95740664a3a2830cac8ce77d0bc7df715eac98d835a0f1cda"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl3/source-generation-v1.json",
+      "sha256": "4baff6760e502daa0ed9fb9b8fc817a42675048f5218f3453b70e20785316556"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl4/master-v1.png",
+      "sha256": "ac926346ff4f788cc7cb100a4057a9050e74be61b44f8f1eb39a2699262af5a4"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl4/prompt-call-v1.txt",
+      "sha256": "64b984377d1d1691c0590bff4684b6913767aa9c003341e0ee03d08c3bf945d5"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl4/source-generation-v1.json",
+      "sha256": "1a7a9c7198465381a76353016699e1826695e4a44c9a3943aff167bf893863ef"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl5/master-v1.png",
+      "sha256": "e80d093b9dd20cfa28cdf5d91ee406c9a979cb5d70eac1d564ac58d892cb50b9"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl5/prompt-call-v1.txt",
+      "sha256": "88e7c6fbf769dad128608341d5c4afb1d32549201711f5fb5f0bb5eb467a06b9"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl5/source-generation-v1.json",
+      "sha256": "d63775b688679c7527db448890e9b4db6ab06db9716a977bbc1cb7b94a98a6f0"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl6/master-v1.png",
+      "sha256": "456baefcf25b58a28df39cb2c69c038955c24169b57f1106e431f00a815ddad9"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl6/prompt-call-v1.txt",
+      "sha256": "92e42db33e144912826c95632b0905969073db4491cd28a0d1d1eacca7f8f234"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl6/source-generation-v1.json",
+      "sha256": "6747fbab1fce3cf9b107a7d6ebb642d3e1822c043e7c89abac1b388b4bc28ba5"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl7/master-v1.png",
+      "sha256": "5d126b99d2ad8e725a8f459f9ef6180fe6fa0990391ad21de8ba521f19a8a3eb"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl7/prompt-call-v1.txt",
+      "sha256": "b208598d2730284222b4ed5997ca45d19c96b1ea3e7be201d4fc85d668e422c9"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingLvl7/source-generation-v1.json",
+      "sha256": "bf9b9601a8c83997f480635783c746f9416df09728e6232537142a2457c9fb48"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl1/master-v1.png",
+      "sha256": "0f70611c1e1816e29cc1ba92c8d781859958181271a786bc817351a52dc16e01"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl1/prompt-call-v1.txt",
+      "sha256": "cc99d7fa54235246784e67765d37618ea67726944ac59c22643cab90eb731ffc"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl1/source-generation-v1.json",
+      "sha256": "31fb6ed9c7de30490e3c05c4999377347aed19b655eaac11969d5e66ee6808ce"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl2/master-v1.png",
+      "sha256": "eb50c08f60c435697fc6e75e0d03c7beac7dd6370db6925347f6ffc86987030b"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl2/master-v2.png",
+      "sha256": "46b0e02a457a32c757214007a024cd2e0462c54e5c6615729c3c321b93645ece"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl2/prompt-boundary-v2.txt",
+      "sha256": "23174aa3e2a25e932d36e82ef9bf19df433ab4d214b76afe1e9323d8e18cd87b"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl2/prompt-call-v1.txt",
+      "sha256": "c9a820eadb4cce0b9665db58d2a6bb8fcabbe22cc66d4f7f9783194e41992011"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl2/source-generation-v1.json",
+      "sha256": "859749c243cb686d237db8fa62e838e3ac9539b1d08287d91607bb459d294a1e"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl2/source-generation-v2.json",
+      "sha256": "bab4b6b1d18083d3498a995398458e69fa62affd93c84dd7be2b24f0513eeb2f"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl3/master-v1.png",
+      "sha256": "8d2b223cfdafcbc97865f1a68afba1b7f54a1c2b1aabd345e1c7ab54b68d9511"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl3/prompt-call-v1.txt",
+      "sha256": "81b6060d8f289df2dfa38ee54c24b5e699b1a4f809dadcf0e38acd40d0d3453f"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl3/source-generation-v1.json",
+      "sha256": "eaa965828fd467ba8aa49a60772afc67911f67c6c91afe36ecd5a4860f707590"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl4/master-v1.png",
+      "sha256": "d178b4da557ced9114e48c73d2174e6ffef5bfdb21c3350ce3baeb21b71492f9"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl4/prompt-call-v1.txt",
+      "sha256": "f4daf45e4f4c8d399b311fd0e308795c5a1efa639e81bf23b9fa31b5dcf3d50a"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl4/source-generation-v1.json",
+      "sha256": "1bef326bf9a4521a9e04a2507d29860c04e549fa81754352a4d7032b5f3d8cbe"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl5/master-v1.png",
+      "sha256": "4c19cd7e6c348698aa35a9c2767cae9dac4d0de2566b483a39ac36fa5e81e785"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl5/prompt-v2.txt",
+      "sha256": "474397b36c2e92ca2b7d5a959c20c37a7cea1a30c06bb6f27f1e99285d9533a7"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl5/source-generation-v1.json",
+      "sha256": "57c0e8db36e317335196d2ed98161a8797dc05264ff311a55d522a09aef4c658"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl6/master-v1.png",
+      "sha256": "dac421f8ce96a89d55f0764c2091f53fbd9d022f350bdd15fe664f8a85f687a5"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl6/prompt-v2.txt",
+      "sha256": "e5b46893dff375a7fce38f109886c81935cc7ed398b93a4c648e98e003d63921"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl6/source-generation-v1.json",
+      "sha256": "ec9447837dd7628ce4d8c87ca09b326661f1c1f43ad9fd59c3ce5ec30cbac793"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl7/master-v1.png",
+      "sha256": "8963e812c937b8769f7f31876a92d8e087c4edc90eef08ebab0773c1d9632ee8"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl7/master-v2.png",
+      "sha256": "165106028c6e2838448bf312cf71d5b3c5aadaa3409f5c5ef8e687ea6e4e586c"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl7/master-v3.png",
+      "sha256": "040c65680da0f283846b620c89a36365b43ffb24aa6c17d15976789b95ff7e5b"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl7/prompt-boundary-v3.txt",
+      "sha256": "e550383de32e1cef0892e8baff3aa039c5d0077b032481959104562c14fe8838"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl7/prompt-v2.txt",
+      "sha256": "c11120f2106bb2f10392fe337de4a50274762fd2c5ec26fa7eb64a37163c291a"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl7/prompt-v3.txt",
+      "sha256": "93b27d8c1aae830d1466f8099fc10c7648b5c4d1c2e70a20cb68c05500bb333e"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl7/source-generation-v1.json",
+      "sha256": "cb115ad289cc51b5b7b2dbf5c4ef2bb08b4fb9ce998a98517737071bc02fef98"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl7/source-generation-v2.json",
+      "sha256": "40a4a5156ec56dc9bfc5af104830620342b6ae364db218a681e3207ea1fcf140"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl7/source-generation-v3.json",
+      "sha256": "5c44793089891976a57d91cfe5b661a6676ea13e2c4dc29a5f89317c7f64f68a"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/dwellingUpLvl7/uncrop-target-v2.png",
+      "sha256": "2f0e57a0c7f86e59542d78e48357f1aa01c1ad56265d3426f19e33ee913ec8f0"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/fort/master-v1.png",
+      "sha256": "5df10eab3ef95ac5cafca6bae68108a0f037c4ee679358606a9f0398197e69a8"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/fort/prompt-call-v1.txt",
+      "sha256": "fbffd2a882b7badf00faaf9c9af4edb10d3e5f2138eaaba59b57479e194880a0"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/fort/source-generation-v1.json",
+      "sha256": "e8bbe984f183fe83c3397d1ce88ed24173fbd5673bbe31105f81dd43c3834e03"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/grail/master-v1.png",
+      "sha256": "adfc8d06411891d57d3a9428cd10097dc7043aa6e6b2c278dc138bbc4718a50f"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/grail/prompt-call-v1.txt",
+      "sha256": "11b0ce8ed37587f10855b191586ef2a38d1ffc5279013ca1a472bb6cf1657be1"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/grail/source-generation-v1.json",
+      "sha256": "ae1bc47b5bf6bebbe4adc512a0c0ff6bc3fd25205bd6167aee06828c08455938"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/mageGuild1/master-v1.png",
+      "sha256": "504c6329d83e36aec4c2a70e9d871016dbc7a34978dcdfa2367a719b1cd30295"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/mageGuild1/prompt-call-v1.txt",
+      "sha256": "d6a3208925c97398defd8aae0daf012ab84eaef739a35b87c27e8595fb72e58d"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/mageGuild1/source-generation-v1.json",
+      "sha256": "e859f76ecdd6d622fda249ca1f07d5e625ac9c962c9ca9037653b9c1de0dbdd0"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/mageGuild2/master-v1.png",
+      "sha256": "d8ba0e147036fdf2ee0eaeef9fd2138c067340ec31319bcee56deede5b8c3ec5"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/mageGuild2/prompt-call-v1.txt",
+      "sha256": "0767950de65b03bbd3bc502df2af336fef506d0240efffd1821a4a035ffb17f0"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/mageGuild2/source-generation-v1.json",
+      "sha256": "0bd0e3aecc13e341c127221d79399c2832ebee55a40347575a987ce4d199ecab"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/mageGuild3/master-v1.png",
+      "sha256": "62e3b0ab2c89a52c29bedce34b0ec6be131761fe74e19467635df4a68852a93d"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/mageGuild3/prompt-call-v1.txt",
+      "sha256": "d977bfd4da8e9bcf847d663788a154cc23da0de9338c5d36c7bd017b34c4a62a"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/mageGuild3/source-generation-v1.json",
+      "sha256": "24c18c88af0fba7c027c8c671634d43f45cf31aa851e8f660dfd33d6eb0a9704"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/mageGuild4/master-v1.png",
+      "sha256": "ab7d606d39230346bab2949ede04da53960afa40bdbfcc3696ad4db21e27d46c"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/mageGuild4/prompt-call-v1.txt",
+      "sha256": "c8c5213dec96f9de175780074ef3991c021ad8cf7d3d737678a96fee9e09cea8"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/mageGuild4/source-generation-v1.json",
+      "sha256": "9c628b82b6ca2d4afbba6824d57e100591cf217689107ac2376e9ca032fe0e09"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/mageGuild5/master-v1.png",
+      "sha256": "7928599c82f2025d8ac33fef439c502d72a88b6ff76bee51dc9e240e1796e73f"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/mageGuild5/prompt-v2.txt",
+      "sha256": "fe8db466d8fc623c5888464c2dfc14d19e4a89d1ad1c8402d50749b0ffeb423f"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/mageGuild5/source-generation-v1.json",
+      "sha256": "6f282914d72f5a618f5fd2d720ec76e75c4fec3e12491c99db32170e8eeb910e"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/marketplace/master-v1.png",
+      "sha256": "8b8947b4400e251effe25cd16b7ba86ce2437f2234e2969c4d67aadf252ecb73"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/marketplace/prompt-v2.txt",
+      "sha256": "a16774423538cfdbb4d3cce42643b2e65b35d16095749001e7249b01a54a3b82"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/marketplace/source-generation-v1.json",
+      "sha256": "ff4e275fc18aaab5a5b2907b7c9c8bcd343133c897cdb109b767c5657485f809"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/resourceSilo/master-v1.png",
+      "sha256": "063b28abcae1796ce326dbd35078ef7c40b424cc740e71a314850157846b5737"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/resourceSilo/prompt-v2.txt",
+      "sha256": "0e9bd8c46e7f1098fe7d288c4947f445074b8f74bdc44b0fc976f278bf414c3f"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/resourceSilo/source-generation-v1.json",
+      "sha256": "59ba355ee60a130a295eba18fe5b34adf6f00e507a13b2b37bdbceb8d3c30901"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/ship/master-v1.png",
+      "sha256": "db8cddba67e62942ea6bad16eda172194be8ff0b8d44e4910bf97ba2797293b6"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/ship/prompt-call-v1.txt",
+      "sha256": "bdffe309d73834e6a30407a3c9a5744fc69ffcc335aa3cc58eb2ed145674295e"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/ship/source-generation-v1.json",
+      "sha256": "88654e74f02af6f0cdc03ad47c629622661e31d6a2a1d7dbcbdae2f271fd1964"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/shipyard/master-v1.png",
+      "sha256": "3b9e5fec97a4a2ca98727696821de754673d0f2486fe6c383ea576d95836c03c"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/shipyard/prompt-call-v1.txt",
+      "sha256": "cc289029575043016f42d468d6343dae0fbc969b3a7cbb0c876a51da9d304486"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/shipyard/source-generation-v1.json",
+      "sha256": "bdd16cd99f3fbc60799885ab16e2c5361e4f67fca6453565dc13aaf977a4fa6c"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/special1/master-v1.png",
+      "sha256": "4464d111f2f68eb4b1f16b4d6cc7cc642c334b39e5d052cc00c1ee5e25bf3ff7"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/special1/prompt-call-v1.txt",
+      "sha256": "7f53f5d76ed01a2bbdec729540d8046661e65549d899d7cfe10dbc5292cb5771"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/special1/source-generation-v1.json",
+      "sha256": "8cb5ba3234b9203bc84708dd0297a6fb4fa53de7dda99f1ead5afc814d9cb83f"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/special2/master-v1.png",
+      "sha256": "86c252a244bad342a611da09130c01bf73ca071a7c4aae3dedd9695018e3177d"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/special2/prompt-v2.txt",
+      "sha256": "f0a50d5fdb26974ada2f1e8c4705ce935223dc6f5df3773b2c0237d2e663da3e"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/special2/source-generation-v1.json",
+      "sha256": "cad1e446ea5d46c8b73a4cc5ddbedd64ba3b5f57d00d53d9e6081dd03849282b"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/tavern/master-v1.png",
+      "sha256": "a4e87572f9654f688fa1d57ed0b34c071816e7033ceca74c18c1a8fce8c78048"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/tavern/prompt-v2.txt",
+      "sha256": "d34d9410b4ee233d88690e7df4dc44ae359c46bda437da075a0a6eea199d5722"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/tavern/source-generation-v1.json",
+      "sha256": "8cb0676972dae09ea8acf5fb74081f5cc53346817259a16f2c0bbedadef301e6"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/townHall/master-v1.png",
+      "sha256": "c786abc6cb79746d641184cc117e1c3da40e5495eb5e1141a8d0bdb8bf960f62"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/townHall/prompt-call-v1.txt",
+      "sha256": "79847658f765949754829c2034ff53accab2600251c75b68fa2add76f26ad636"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/townHall/source-generation-v1.json",
+      "sha256": "20cb58172c005ac55fab8f35ca764dc5568a6628c57f4ae5f6c42d1b83f7a6bf"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/villageHall/master-v1.png",
+      "sha256": "88195a6d8e5795e6841a01edd921c0891d9bbf395530c6514fd4274daa9c1b4d"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/villageHall/prompt-call-v1.txt",
+      "sha256": "33de47a6e5863ced5acb6797fa25fe1a5f8ca28c284de5d12b510fc4030a50d4"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/villageHall/source-generation-v1.json",
+      "sha256": "b246ba724bda4fc7380f763b1769b4d1f3e1f52cc5fcd1675b6642afc6c6ba75"
+    },
+    {
+      "path": "assets/source/town/painted-v1/composition/master-v1.png",
+      "sha256": "30031aba234db25d0901c33254f60fc50c02fb30b16c05ec4aa7d184b2d94d41"
+    },
+    {
+      "path": "assets/source/town/painted-v1/composition/prompt-v1.txt",
+      "sha256": "e97b2a6442dac1df7de50e47c97c77643950147669014abf62d420b421cba5b9"
+    },
+    {
+      "path": "assets/source/town/painted-v1/composition/source-generation-v1.json",
+      "sha256": "9915ec87a0a83bd8f79be535572f8aed6119442de713b76cdf83a3d41c8f8890"
+    },
+    {
+      "path": "assets/source/town/painted-v1/layout-plan-v6.json",
+      "sha256": "af7fce425f7ac8ca6dd90894fb45f813c38f61a2c955dc77a60698fa499a2a7d"
+    },
+    {
+      "path": "assets/source/town/painted-v1/placement-calibration-v1.json",
+      "sha256": "39a64d27ef5a1077d14319e8d3180a1b6006b19bd46cd1d72d4f789dabc8bd58"
+    },
+    {
+      "path": "assets/source/town/painted-v1/placement-inputs-v1.json",
+      "sha256": "dc2195c53338cdf1f5d6ce62aa891f5550e55628fdd7c2466e6c1067bdb116aa"
+    }
+  ],
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": true,
+    "model": "not exposed by tool",
+    "painted_master": "assets/source/town/painted-v1/buildings/citadel/master-v1.png",
+    "painted_master_sha256": "ecc0b55ffd7409148e5d2608aed5d3dd301d8626ef9a18c11946d3dd40de68cc",
+    "producer": "assets/source/town/painted-v1/assemble.py",
+    "producer_sha256": "125b8448e6c9bd917a3b4c95291b1c23a61910aca209c5959a54e9f3d985456e",
+    "prompt": "Use case: stylized-concept, painted2D game architecture.\nAsset type: one genuine transparent RGBA original Heroes III / VCMI Ixtal town-building layer. Native final scene800x374; this complete state's maximum envelope is 135x157 pixels. Technical conversion will use a fixed root, not crop features or fit each state independently.\nReference1 is our OWN complete painted Ixtal town source composition: preserve its regional architectural identity, curved ivory buttresses, jade cloth and grounded connected construction. Extract/interpret exactly the requested functional family only, never neighboring stairs, flowerbeds or other constructible buildings. Reference2 is extracted original Heroes III Castle building, compact textured material/light/shadow authority only; never copy its medieval silhouette or heraldry. Reference3 is the actual official Ixtal regional crest. If a fourth image is provided, it is our OWN stronger state of the same site; preserve its core door, foundations and perspective while reducing only the specified state additions.\nPrimary request: Developed arcology gate with a strong curved stone gate canopy and two stepped asymmetric defensive piers with deep apertures. Higher parapets and substantial gate braces, not medieval battlements.\nOne complete connected building, every roof/eave/fin/step/foundation/contact shadow fully inside the image with broad transparent margins. Output ONLY the building, subtle attached contact shadow and physical attached props. No scenery/floor rectangle/background; no spare buildings, people or troop actors. Maintain opaque walls, roof and glass interior; no translucent structural body.\nStyle refinement REQUIRED: reference1 is brighter/crisper than final desired native HoMM3. Make surfaces more MATTE, subtly rough mineral grain, modest material patina and broken painted edges. Temper ivory highlights toward warm weathered stone, soften microcontrast and glossy smoothness WITHOUT blur or a postprocessing filter. Rich compact ORIGINAL Heroes III painted material authority is reference2. Warm pale ivory/hewn stone, deep jade and forest-green cloth/roof accents, muted gold/ochre geometric inlay, dark natural timber; small restrained turquoise/violet elemental accents only. No glossy plastic, clean vector, modern archviz or LoL splash illustration.\nCamera: theatrical lower three-quarter view, slightly above ground looking forward/slightly down, readable front doors, modest roof planes and limited right side. Matte-painting forced depth, not strict isometric, birdseye or realistic lens. Soft upper-left daylight, short coherent rightward/down contact shadow. Distant/middle district mass: imposing physical architecture stays readable; no toy miniature or tiny functional door.\nSource layout: aim one square transparent image around1024x1024, central front entrance/root near x512,y900; keep at least60pixels outside all material/shadow. Overall building width-to-height should suit the native 135:157 envelope, but never stretch architecture to exact boxes. A 18-pixel native entry cue must remain readable after whole-family uniform reduction.\nCorrect Ixtal crest visibly painted gold on generous physical jade cloth or carved as an ivory/gold stone door plaque. Glyph is tall tapered central stem capped by a small flared fan with branch cutouts, broad upswept crescent lower arms and a central interlaced elongated diamond lattice/downward point. No Demacian wings, gear, generic leaf or individual champion symbol. Follow cloth perspective and physical occlusion.\nAvoid: Blender, any3D artwork/render/paintover, isometric board, equally tiled pyramid houses, generic Aztec huts, European Castle recolor, pagodas/cherry blossoms, Piltover machinery, neon Zaun chemicals, bloom haze, glassy toys, flat vector, text, coordinate labels, captions, watermark or border.\n\n\nEDIT FAMILY REFERENCE4, our own castle stronger state, into this visibly weaker construction state. Keep its core physical doorway/steps/root, camera, Ixtal heraldry, solid foundations and local materials; REMOVE meaningful upper structures/extra wings specified in subject. Do not just recolor it and do not reproduce the stronger full tower. Use only the resulting complete weaker building on genuine transparent alpha, no whole surrounding street.\n",
+    "prompt_file": "assets/source/town/painted-v1/buildings/citadel/prompt-call-v1.txt",
+    "provider": "OpenAI builtin imagegen",
+    "source_generation_ledger": "assets/source/town/painted-v1/buildings/citadel/source-generation-v1.json"
+  },
+  "output_path": "Content/Sprites/runeterra/ixtal/town/structures/citadel_area.png",
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/painted-v1/buildings/citadel/area.png",
+  "source_canvas": [
+    800,
+    374
+  ],
+  "source_sha256": "fe85d0199ff5260e58202a91b918564e7424d101f92ee112e2627042904b0f5a",
+  "status": "painted-candidate",
+  "visual_approval_granted": false
+}

@@ -1,0 +1,55 @@
+"""Portable painted-2D whole-object registration for these two static props only.
+
+Default checks existing exact native PNGs/recipes. --write regenerates only the
+two native PNG sources and their two recipes. No content/stage/runtime changes.
+"""
+from io import BytesIO
+from pathlib import Path
+import argparse
+import hashlib
+import json
+from PIL import Image
+
+HERE=Path(__file__).resolve().parent
+PROJECT=next(p for p in HERE.parents if p.name=='runeterra-world')
+IDS=('targonianStarwayCairn','voidscarOutcrop')
+
+def sha(raw):return hashlib.sha256(raw).hexdigest()
+def relative(path):return path.relative_to(PROJECT).as_posix()
+def encoded(value):return (json.dumps(value,indent=2,sort_keys=True,ensure_ascii=False)+'\n').encode('utf-8')
+
+def plan():
+ config=json.loads((HERE/'native-plan-v2.json').read_text(encoding='utf-8'))
+ if not set(IDS)<=set(config['objects'])or config['canvas']!=[96,96]or config['root']!=[48,94]:raise ValueError('Unexpected source cohort/registration')
+ if config.get('versions')!={'targonianStarwayCairn':2,'voidscarOutcrop':1}:raise ValueError('Only reviewed TargonV2 and VoidV1 are active; retired source versions cannot be regenerated')
+ outputs={}
+ for key in IDS:
+  spec=config['objects'][key];folder=HERE/key;version=config['versions'][key];master=folder/('master-v'+str(version)+'.png');prompt=folder/('prompt-v'+str(version)+'.txt');record=folder/('generation-v'+str(version)+'.json')
+  generation=json.loads(record.read_text(encoding='utf-8'))
+  if sha(master.read_bytes())!=generation['master_sha256']or sha(prompt.read_bytes())!=generation['prompt_sha256']:raise ValueError('Changed painted source/provenance')
+  image=Image.open(master).convert('RGBA');box=image.getchannel('A').point(lambda a:255 if a>=8 else 0).getbbox()
+  if not box or box[0]<=0 or box[1]<=0 or box[2]>=image.width or box[3]>=image.height:raise ValueError('Source lacks whole visible margins')
+  sprite=image.crop(box);scale=spec['uniform_scale'];size=tuple(round(n*scale)for n in sprite.size);sprite=sprite.resize(size,Image.Resampling.LANCZOS)
+  offset=tuple(config['root'][a]-round((spec['source_root'][a]-box[a])*scale)for a in [0,1])
+  if not (0<=offset[0]and 0<=offset[1]and offset[0]+size[0]<=96 and offset[1]+size[1]<=96):raise ValueError('Whole native sprite clips')
+  native=Image.new('RGBA',(96,96),(0,0,0,0));native.alpha_composite(sprite,offset);buffer=BytesIO();native.save(buffer,format='PNG',compress_level=9);raw=buffer.getvalue()
+  native_path=folder/('native-v'+str(version)+'.png');outputs[native_path]=raw
+  recipe={'recipe_type':'vcmi_animation','production_status':'painted-master-complete-unapproved',
+   'output_path':'Content/Sprites/runeterra/world/scenery/'+key+'/map.json','canvas':[96,96],'pivot':{'x':48,'y':94},
+   'generation':{'image_generation_used':True,'provider':'OpenAI built-in imagegen','model':'not exposed by tool','prompt':prompt.read_text(encoding='utf-8').strip(),
+    'painted_master':relative(master),'painted_master_sha256':sha(master.read_bytes()),
+    'method':'Painted2D master, whole-object uniform LANCZOS native resize and manually annotated fixed ground contact. Native alpha and shadow need actual review.'},
+   'groups':[{'group':0,'generateShadow':1,'generateOverlay':0,'frames':[{'frame':0,'source':relative(native_path),'source_sha256':sha(raw),'sha256':sha(raw),'source_canvas':[96,96]}]}],
+   'production_inputs':[{'path':relative(path),'sha256':sha(path.read_bytes())}for path in [master,prompt,record,HERE/'native-plan-v2.json',Path(__file__)]+([folder/'master-v1.png',folder/'provider-edit-v2.png']if version==2 else [])],
+   'credits':{'author':'Runeterra project-directed original painted image generation','license':'pending','redistribution':'unresolved'}}
+  outputs[PROJECT/'assets/recipes/environments'/str(key+'.json')]=encoded(recipe)
+ return outputs
+
+def main():
+ parser=argparse.ArgumentParser();parser.add_argument('--write',action='store_true');args=parser.parse_args();outputs=plan()
+ for path,raw in outputs.items():
+  if args.write:path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(raw)
+  elif not path.is_file()or path.read_bytes()!=raw:raise ValueError('Native source/recipe differs from deterministic plan: '+relative(path))
+ print(json.dumps({'ok':True,'scope':'Canonical reviewed TargonV2 and VoidV1 only; no retired selection','write':args.write,'files':{relative(p):sha(raw)for p,raw in outputs.items()}},indent=2))
+
+if __name__=='__main__':main()

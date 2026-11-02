@@ -1,0 +1,918 @@
+{
+  "active_assets_modified": false,
+  "findings": [
+    {
+      "correction": "Prepare source-only square head/upper-body crops, preserving transparency like native CPRSMALL.",
+      "evidence": "All seven portraits-map sheets: own32x32 shows most of a standing body; original CPRSMALL shows a head/upper-body crop.",
+      "finding": "Current small creature portraits lose face/equipment identity at native size.",
+      "id": "small-crop",
+      "severity": "high",
+      "units": "all14"
+    },
+    {
+      "correction": "Keep current bust crops and composite an authored Demacian wall/landscape behind them through existing raster recipes.",
+      "evidence": "All seven portraits-map sheets: TWCRPORT includes painted scenery; own58x64 busts have transparent empty surroundings.",
+      "finding": "Current large portraits lack the faction scenery treatment visible in original recruitment cards.",
+      "id": "large-background",
+      "severity": "high",
+      "units": "all14"
+    },
+    {
+      "correction": "Bind to exact source and losslessly recover any adjacent-pose blade into its proper frame; do not delete legitimate blade pixels.",
+      "evidence": {
+        "native_pixels": [
+          [
+            152,
+            189,
+            40
+          ],
+          [
+            153,
+            189,
+            20
+          ],
+          [
+            152,
+            190,
+            58
+          ],
+          [
+            153,
+            190,
+            6
+          ],
+          [
+            154,
+            190,
+            1
+          ],
+          [
+            152,
+            192,
+            2
+          ]
+        ],
+        "path": "assets/source/creatures/grandDuelist/duelist-rig-v6/native-battle-candidate-v1/g11-f004.png",
+        "sha256": "7700a679c3aee27f0becf660b6d40ea450b49ef414e5fccedc0c292964b2f8a0"
+      },
+      "finding": "Detached dark pixels above-left of the body survive alpha8 technical padding. Source atlas/camera/placement investigation is required before correction.",
+      "id": "grand-duelist-neighbor-fragment",
+      "severity": "medium",
+      "units": [
+        "grandDuelist"
+      ]
+    },
+    {
+      "correction": "Native rendered comparison remains necessary for grounding, shadow softness and contact.",
+      "finding": "Original extracted RGBA includes baked projected shadows; own source frames request engine generateShadow=1. Raw sheets do not display the resulting own runtime shadow.",
+      "id": "runtime-shadows",
+      "severity": "review-limit",
+      "units": "all14"
+    },
+    {
+      "correction": "Retain exact official reference provenance; do not grant blanket heraldry acceptance from enlarged masters.",
+      "finding": "Central blade/wing outline can be read on broad shields and construct chests. Tiny chest emblems cannot establish detailed feather accuracy in every pose.",
+      "id": "small-heraldry",
+      "severity": "review-limit",
+      "units": [
+        "demacianRanger",
+        "veteranRanger",
+        "duelist",
+        "grandDuelist"
+      ]
+    }
+  ],
+  "inspected": {
+    "all_own_frame_pages": 33,
+    "comparison_sheets": 21,
+    "pairs": 7,
+    "registered_own_entries": 842,
+    "scale": 1,
+    "units": 14
+  },
+  "limits": [
+    "Source frame contact sheets do not prove timing/interpolation, projectile contact, runtime shadows, sound, siege behavior or save compatibility.",
+    "All recipes and frames are bound to the review input snapshot. Later publication or source correction requires checking that changed evidence separately."
+  ],
+  "method": "Actual native PNG/crop pixels, original resources decoded from read-only licensed archives and selected own recipe frames. No image enlargement or novelty score.",
+  "original_reference_pixels_in_release": false,
+  "pairs": [
+    {
+      "comparison_and_full_frame_sheets": [
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/tier1-demacianRecruit-ready-walk-1x.png",
+          "private_original_reference_pixels": true,
+          "roles": [
+            "ready",
+            "walkA",
+            "walkB"
+          ],
+          "sha256": "a50b4b037e395fc57f6619a8fbcd42c3bfc3a8de7e4d5d42a2430abf9cfaf7e1",
+          "shared_crop": [
+            82,
+            129,
+            340,
+            296
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/tier1-demacianRecruit-combat-actions-1x.png",
+          "private_original_reference_pixels": true,
+          "roles": [
+            "defend",
+            "upper",
+            "front",
+            "lower",
+            "corpse"
+          ],
+          "sha256": "0a9a77bdd227c73977b241bd915072c41806b011b5e09110e52d71d9585add42",
+          "shared_crop": [
+            82,
+            129,
+            340,
+            296
+          ]
+        },
+        {
+          "crest_reference": {
+            "path": "references/riot/heraldry/demacia-official-region-icon.png",
+            "sha256": "d71bb021a49b704420f43c74f9dbfedb2bd89779bdafec1ea4be7bb8a172e734"
+          },
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/tier1-demacianRecruit-portraits-map-1x.png",
+          "private_original_reference_pixels": true,
+          "sha256": "9aec398999e009c330094cab4aea8d64b64dd64643cf3560841eb642b3c6ed51"
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/demacianRecruit-all-native-frames-page01.png",
+          "private_original_reference_pixels": false,
+          "sha256": "aa0d4cb26cca321be75097874e883135d201816565bf170e17e2bf4384719221",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/demacianRecruit-all-native-frames-page02.png",
+          "private_original_reference_pixels": false,
+          "sha256": "a48815bf311bc4dfd5902aecb566d00e5d8d085d25721819a505450a35f9ecac",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/dauntlessVanguard-all-native-frames-page01.png",
+          "private_original_reference_pixels": false,
+          "sha256": "16ed5cde86d05093a5d5511ca843661a819247edfc0737f589bd9f5ceb5d0f21",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/dauntlessVanguard-all-native-frames-page02.png",
+          "private_original_reference_pixels": false,
+          "sha256": "a207260de74ee543ffa283b2b679c83d2d26452e5a6029e75ccb7d5b9a48b6c4",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        }
+      ],
+      "finding": "Shield/blue cloth versus heavier closed helmet and cuirass is readable; the upright/downward sword blends into the body in ready/walk poses. Actual attack blades remain visible.",
+      "inspection": "Actual unchanged native pixels inspected on all three comparison sheets and every registered-own-frame page.",
+      "remaining_review": "Native dark-field weapon readability needs a final rendered pass.",
+      "tier": 1,
+      "units": [
+        "demacianRecruit",
+        "dauntlessVanguard"
+      ],
+      "visual_approval_granted": false
+    },
+    {
+      "comparison_and_full_frame_sheets": [
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/tier2-demacianRanger-ready-walk-1x.png",
+          "private_original_reference_pixels": true,
+          "roles": [
+            "ready",
+            "walkA",
+            "walkB"
+          ],
+          "sha256": "9e0992a8430e454e7ad70628715529b0864dbb0c33aa1943454722e6ebde7c5f",
+          "shared_crop": [
+            82,
+            129,
+            340,
+            296
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/tier2-demacianRanger-combat-actions-1x.png",
+          "private_original_reference_pixels": true,
+          "roles": [
+            "defend",
+            "upper",
+            "front",
+            "lower",
+            "corpse"
+          ],
+          "sha256": "1d2860ea6441877f2070fdd611cdcff06f7cda69712e99f9195d6bd8723b24b5",
+          "shared_crop": [
+            82,
+            129,
+            340,
+            296
+          ]
+        },
+        {
+          "crest_reference": {
+            "path": "references/riot/heraldry/demacia-official-region-icon.png",
+            "sha256": "d71bb021a49b704420f43c74f9dbfedb2bd89779bdafec1ea4be7bb8a172e734"
+          },
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/tier2-demacianRanger-portraits-map-1x.png",
+          "private_original_reference_pixels": true,
+          "sha256": "69d0c0c414738552b246e8a7dbe2e84af2f1b49e3a8a7a00477202573d1a6557"
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/demacianRanger-all-native-frames-page01.png",
+          "private_original_reference_pixels": false,
+          "sha256": "c9e783a1de300bba12c9928c0ff4889f31c33eb352eaa15040cfe8314375c8a6",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/demacianRanger-all-native-frames-page02.png",
+          "private_original_reference_pixels": false,
+          "sha256": "27bdcfb52e98ffe52768a056014c1668625f7209e2f3032d2897e174e3f2d53a",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/demacianRanger-all-native-frames-page03.png",
+          "private_original_reference_pixels": false,
+          "sha256": "14da478ac6a3b999a5e15908b692fecd31170c289aea41424329ee2e57aa601e",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/veteranRanger-all-native-frames-page01.png",
+          "private_original_reference_pixels": false,
+          "sha256": "9d82c74d3c2791649e006082eb8451faa979ceb078db815713aa0c6edc0c0f48",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/veteranRanger-all-native-frames-page02.png",
+          "private_original_reference_pixels": false,
+          "sha256": "3d7b640ebc849d299b906883c1898058cb8cfb8da2dd58c32d52f2285b2ab266",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/veteranRanger-all-native-frames-page03.png",
+          "private_original_reference_pixels": false,
+          "sha256": "12e528a431d921b8883b2494ff7036c777820c5d500c336e082769eac748a6e1",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        }
+      ],
+      "finding": "Female hood/leather scouts and open-helmet/steel/cuirass veterans differ clearly from the male Archer/Marksman originals. Crossbows, distinct aim/release/reload and directional shooting read at native scale.",
+      "inspection": "Actual unchanged native pixels inspected on all three comparison sheets and every registered-own-frame page.",
+      "remaining_review": "Drawn-knife actions can retain a tiny hip hilt. Final native projectile alignment and small chest heraldry remain separate checks.",
+      "tier": 2,
+      "units": [
+        "demacianRanger",
+        "veteranRanger"
+      ],
+      "visual_approval_granted": false
+    },
+    {
+      "comparison_and_full_frame_sheets": [
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/tier3-resonanceAdept-ready-walk-1x.png",
+          "private_original_reference_pixels": true,
+          "roles": [
+            "ready",
+            "walkA",
+            "walkB"
+          ],
+          "sha256": "bff7438cd5eabcb12491364a7246ff1e55cddcbc5a913d6a77965f7bdc253e72",
+          "shared_crop": [
+            82,
+            129,
+            340,
+            296
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/tier3-resonanceAdept-combat-actions-1x.png",
+          "private_original_reference_pixels": true,
+          "roles": [
+            "defend",
+            "upper",
+            "front",
+            "lower",
+            "corpse"
+          ],
+          "sha256": "a7b1634274f00b40daca9906454cd52f30c1190cc06d973997f3787882b58a21",
+          "shared_crop": [
+            82,
+            129,
+            340,
+            296
+          ]
+        },
+        {
+          "crest_reference": {
+            "path": "references/riot/heraldry/demacia-official-region-icon.png",
+            "sha256": "d71bb021a49b704420f43c74f9dbfedb2bd89779bdafec1ea4be7bb8a172e734"
+          },
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/tier3-resonanceAdept-portraits-map-1x.png",
+          "private_original_reference_pixels": true,
+          "sha256": "0a81f0939028c48d57ba063bb9d4e5c1cfc3a1e2fb28e4dd18985b09a48c918e"
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/resonanceAdept-all-native-frames-page01.png",
+          "private_original_reference_pixels": false,
+          "sha256": "446c52ffa4fa69c81857f52204265d1698861e1d8f7cbdbbebd0c0b8c9331745",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/resonanceAdept-all-native-frames-page02.png",
+          "private_original_reference_pixels": false,
+          "sha256": "ad337165f9c75dfb38b6ec644fc17ff5e71d9aed06def6ff2977670a32d6fda6",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/resonanceAdept-all-native-frames-page03.png",
+          "private_original_reference_pixels": false,
+          "sha256": "3e2a10c4e7f5570a57384544b234a6d5d5fe7ebc5646c12a62bd5eadc0df153c",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/harmonicWarden-all-native-frames-page01.png",
+          "private_original_reference_pixels": false,
+          "sha256": "c54aa87954a160dc7c24b4c5c96247a4ea6baf9efcdadd2e44199b1bd3c0cada",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/harmonicWarden-all-native-frames-page02.png",
+          "private_original_reference_pixels": false,
+          "sha256": "fc5ba8364ae676b0f9bd9649aed26866b1fb07b2de99214cf1fbae03a9e29375",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/harmonicWarden-all-native-frames-page03.png",
+          "private_original_reference_pixels": false,
+          "sha256": "ea201e517f7c21357146915ff3e9226f7fd2469a831dd51f80736a7a192910cc",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        }
+      ],
+      "finding": "Waist-held resonator, open-handed gestures and blue cloth provide a distinct silhouette from staff Mages and Castle Griffins. The upgraded metal framing/cape is visible.",
+      "inspection": "Actual unchanged native pixels inspected on all three comparison sheets and every registered-own-frame page.",
+      "remaining_review": "Hand gestures are restrained at native scale; projectile playback, casting and effects require the actual engine view.",
+      "tier": 3,
+      "units": [
+        "resonanceAdept",
+        "harmonicWarden"
+      ],
+      "visual_approval_granted": false
+    },
+    {
+      "comparison_and_full_frame_sheets": [
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/tier4-duelist-ready-walk-1x.png",
+          "private_original_reference_pixels": true,
+          "roles": [
+            "ready",
+            "walkA",
+            "walkB"
+          ],
+          "sha256": "9f4245deb40f4cddf5db4759bd8758d24a9ff399e36a8d38521353a20582b8da",
+          "shared_crop": [
+            82,
+            129,
+            340,
+            296
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/tier4-duelist-combat-actions-1x.png",
+          "private_original_reference_pixels": true,
+          "roles": [
+            "defend",
+            "upper",
+            "front",
+            "lower",
+            "corpse"
+          ],
+          "sha256": "4c2153b66c857cf01cce6ffc1bed4b3b5caf1c559dda1a5ce670de0ce54d9fc0",
+          "shared_crop": [
+            82,
+            129,
+            340,
+            296
+          ]
+        },
+        {
+          "crest_reference": {
+            "path": "references/riot/heraldry/demacia-official-region-icon.png",
+            "sha256": "d71bb021a49b704420f43c74f9dbfedb2bd89779bdafec1ea4be7bb8a172e734"
+          },
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/tier4-duelist-portraits-map-1x.png",
+          "private_original_reference_pixels": true,
+          "sha256": "31e7e72085992c6ad655278fc82d6bb49e02464901b2858b69eb4585858775f6"
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/duelist-all-native-frames-page01.png",
+          "private_original_reference_pixels": false,
+          "sha256": "0088059e07a9985435b54a326570dc0a4587ce67c8ed8f43bbd1e4b01db496d7",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/duelist-all-native-frames-page02.png",
+          "private_original_reference_pixels": false,
+          "sha256": "01140cf26b7188ee526acb185eb1964641533ac8e5594336c264b4ec368c13ed",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/grandDuelist-all-native-frames-page01.png",
+          "private_original_reference_pixels": false,
+          "sha256": "0cb74d1e4cc496c5f4f5229942bee8fd83f5140a6b8e8c50fa48f441bef8d513",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/grandDuelist-all-native-frames-page02.png",
+          "private_original_reference_pixels": false,
+          "sha256": "4c1633f1b6ca482944d006e58b33b1b56b7b90eacd29bf04cfd88bffdc080ed8",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        }
+      ],
+      "finding": "Plain cap/leather/rapier versus plumed open helmet/cuirass/short cape is a clear upgrade. Slim fencing poses, parry and three thrust directions differ from original sword-and-shield troops.",
+      "inspection": "Actual unchanged native pixels inspected on all three comparison sheets and every registered-own-frame page.",
+      "remaining_review": "Thin rapier edges need rendered contrast review; Grand Duelist g11f4 contains a detached source-cell fragment under investigation.",
+      "tier": 4,
+      "units": [
+        "duelist",
+        "grandDuelist"
+      ],
+      "visual_approval_granted": false
+    },
+    {
+      "comparison_and_full_frame_sheets": [
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/tier5-dragonguard-ready-walk-1x.png",
+          "private_original_reference_pixels": true,
+          "roles": [
+            "ready",
+            "walkA",
+            "walkB"
+          ],
+          "sha256": "1911a6535e03d3ef94b4835b27f9b54818b7d62ae98b257e10add39bb47660bd",
+          "shared_crop": [
+            82,
+            129,
+            340,
+            296
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/tier5-dragonguard-combat-actions-1x.png",
+          "private_original_reference_pixels": true,
+          "roles": [
+            "defend",
+            "upper",
+            "front",
+            "lower",
+            "corpse"
+          ],
+          "sha256": "b67e41cdd70ab29e4a2f7b3d78d000fae5d330eac94f01b186bb66a2e088eb19",
+          "shared_crop": [
+            82,
+            129,
+            340,
+            296
+          ]
+        },
+        {
+          "crest_reference": {
+            "path": "references/riot/heraldry/demacia-official-region-icon.png",
+            "sha256": "d71bb021a49b704420f43c74f9dbfedb2bd89779bdafec1ea4be7bb8a172e734"
+          },
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/tier5-dragonguard-portraits-map-1x.png",
+          "private_original_reference_pixels": true,
+          "sha256": "a2e6c3636c92774caa51cb8300f7e7f3bfb016a0d27cc85ae1a46f684b85e89f"
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/dragonguard-all-native-frames-page01.png",
+          "private_original_reference_pixels": false,
+          "sha256": "8302f6c4c40aaa5256909fad4e5a78d676582644291565071341775ddcc60c4a",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/dragonguard-all-native-frames-page02.png",
+          "private_original_reference_pixels": false,
+          "sha256": "2cf0a38cc7190a609cbb9d222741b88757b305b622a637bf369d1cce5f289460",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/veteranDragonguard-all-native-frames-page01.png",
+          "private_original_reference_pixels": false,
+          "sha256": "6bef62ba9dba904dd3a39a17f53dd0c406203f1bc087f4bfdbc598393005e9a7",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/veteranDragonguard-all-native-frames-page02.png",
+          "private_original_reference_pixels": false,
+          "sha256": "1865c7016ad65ed59a96abfa049b1a56ec3e3c8bd46a4ff3a98f13d4721ffeae",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        }
+      ],
+      "finding": "Open kettle helmet/chain/leather versus closed wing helmet/full plate/scaled mantle is a clear gap. Both long polearms have coherent grips, brace, three thrusts and grounded falls. Final v2 death-source neighbor fragments are corrected.",
+      "inspection": "Actual unchanged native pixels inspected on all three comparison sheets and every registered-own-frame page.",
+      "remaining_review": "Painted shaft length differs from the rig and is assessed from actual pixels; native combat and long-weapon overlap remain runtime checks.",
+      "tier": 5,
+      "units": [
+        "dragonguard",
+        "veteranDragonguard"
+      ],
+      "visual_approval_granted": false
+    },
+    {
+      "comparison_and_full_frame_sheets": [
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/tier6-mageseeker-ready-walk-1x.png",
+          "private_original_reference_pixels": true,
+          "roles": [
+            "ready",
+            "walkA",
+            "walkB"
+          ],
+          "sha256": "5a883c00356f385f94550aa380518278f1a77fd99034d614e6a01148bf3aedb5",
+          "shared_crop": [
+            82,
+            129,
+            340,
+            296
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/tier6-mageseeker-combat-actions-1x.png",
+          "private_original_reference_pixels": true,
+          "roles": [
+            "defend",
+            "upper",
+            "front",
+            "lower",
+            "corpse"
+          ],
+          "sha256": "24aa9eb6b0fcedd3bc375eafac17eae74888afe0987b63ad181708a26210f21b",
+          "shared_crop": [
+            82,
+            129,
+            340,
+            296
+          ]
+        },
+        {
+          "crest_reference": {
+            "path": "references/riot/heraldry/demacia-official-region-icon.png",
+            "sha256": "d71bb021a49b704420f43c74f9dbfedb2bd89779bdafec1ea4be7bb8a172e734"
+          },
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/tier6-mageseeker-portraits-map-1x.png",
+          "private_original_reference_pixels": true,
+          "sha256": "e422cea5436f5465aa75c88d7ee43c4f309fd777bf5f3b93a542ec398eca38d3"
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/mageseeker-all-native-frames-page01.png",
+          "private_original_reference_pixels": false,
+          "sha256": "c60166e5d05b6cb1b436555bb9d626355a0b670d9e97956d2695156f6008d1bf",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/mageseeker-all-native-frames-page02.png",
+          "private_original_reference_pixels": false,
+          "sha256": "4f33e4d32195e7baad9ee8f47d3caa8d96de4fa8a7f01fd1de23482bcd0a1b91",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/mageseekerInquisitor-all-native-frames-page01.png",
+          "private_original_reference_pixels": false,
+          "sha256": "bcfb06a7d8a9bbcf33db4ea95e0f518bb83ed6bcb7896f8a21c2ac81778ce214",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/mageseekerInquisitor-all-native-frames-page02.png",
+          "private_original_reference_pixels": false,
+          "sha256": "d2a188ad14e04407f776128609948c63a137c0cc2bdb7e876b106ee743e74e20",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        }
+      ],
+      "finding": "Pale hood/navy robes, one mace and solid grounded poses distinguish these melee troops from original ranged Monks and mounted Castle tier six. Upgrade armor/cape/petricite mace head is clear.",
+      "inspection": "Actual unchanged native pixels inspected on all three comparison sheets and every registered-own-frame page.",
+      "remaining_review": "Final melee contact and petricite readability require native battlefield comparison, not animation-file presence alone.",
+      "tier": 6,
+      "units": [
+        "mageseeker",
+        "mageseekerInquisitor"
+      ],
+      "visual_approval_granted": false
+    },
+    {
+      "comparison_and_full_frame_sheets": [
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/tier7-sentinelColossus-ready-walk-1x.png",
+          "private_original_reference_pixels": true,
+          "roles": [
+            "ready",
+            "walkA",
+            "walkB"
+          ],
+          "sha256": "4948ebf08c7daa9139346c70f907e2da47279b4af34b2da22494dbaf719a5246",
+          "shared_crop": [
+            82,
+            129,
+            340,
+            296
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/tier7-sentinelColossus-combat-actions-1x.png",
+          "private_original_reference_pixels": true,
+          "roles": [
+            "defend",
+            "upper",
+            "front",
+            "lower",
+            "corpse"
+          ],
+          "sha256": "cb353b9052b76fd5b1893e97cb3feda562ba6c704b29034aa8fcf5e3bbf757d1",
+          "shared_crop": [
+            82,
+            129,
+            340,
+            296
+          ]
+        },
+        {
+          "crest_reference": {
+            "path": "references/riot/heraldry/demacia-official-region-icon.png",
+            "sha256": "d71bb021a49b704420f43c74f9dbfedb2bd89779bdafec1ea4be7bb8a172e734"
+          },
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/tier7-sentinelColossus-portraits-map-1x.png",
+          "private_original_reference_pixels": true,
+          "sha256": "22d28aec333af3d8f4b57b21e5876685f65909c2bf3b1fb9c8be50ba8c2f4bc1"
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/sentinelColossus-all-native-frames-page01.png",
+          "private_original_reference_pixels": false,
+          "sha256": "7d861ddce29d9d0595cc1076607809cb30991af4e31eb2722ece0c2a774773cc",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/sentinelColossus-all-native-frames-page02.png",
+          "private_original_reference_pixels": false,
+          "sha256": "460e4fc2c6c3fa5eb195749b95c0a0fc2147244a87f83caf017117712fcb0bb0",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/awakenedColossus-all-native-frames-page01.png",
+          "private_original_reference_pixels": false,
+          "sha256": "f1be0853145626e886f09b219b190c8d7f1bcb6d7ea511fd672f124956d0f6a2",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/awakenedColossus-all-native-frames-page02.png",
+          "private_original_reference_pixels": false,
+          "sha256": "2b0fb0ff711e3fda0cd255b509179fb1ef8ed48f50b26ca61736a16b4e0563e4",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        },
+        {
+          "native_scale": 1,
+          "path": "assets/reviews/creature-pairs-v1/awakenedColossus-all-native-frames-page03.png",
+          "private_original_reference_pixels": false,
+          "sha256": "4fb15877eac088dcd704e477b137444617c0c5069d0264cfd0cd39533e3f47a2",
+          "shared_crop": [
+            136,
+            129,
+            321,
+            283
+          ]
+        }
+      ],
+      "finding": "Broad pale constructed bodies differ from compact original Tower Golems and winged human Castle tier seven. Upgrade sculpted shoulders, gold ornament and hanging tabard are visible; actual punch, brace, fall and inert corpse read clearly.",
+      "inspection": "Actual unchanged native pixels inspected on all three comparison sheets and every registered-own-frame page.",
+      "remaining_review": "Own stone surfaces are cleaner and less granular than original Golems. Final two-hex proportions, shadows, light and hit contact need the real battlefield.",
+      "tier": 7,
+      "units": [
+        "sentinelColossus",
+        "awakenedColossus"
+      ],
+      "visual_approval_granted": false
+    }
+  ],
+  "runtime_test_performed": false,
+  "schema_version": 1,
+  "source_review": {
+    "path": "assets/reviews/creature-pairs-v1/review-inputs-and-sheets.json",
+    "sha256": "9de08532b535a892045623222e0e7db619f1a19fd69c663eae70dbebccd4f8b6"
+  },
+  "status": "completed native-pixel source review; corrections and rendered acceptance remain pending",
+  "visual_approval_granted": false
+}

@@ -1,0 +1,98 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "attack_semantics": "Physical projectile only; no poison, splash, persistent cloud, beam or explosion effect",
+  "canvas": [
+    64,
+    64
+  ],
+  "credits": {
+    "author": "OpenAI built-in image_gen; Codex technical conversion",
+    "license": "unresolved",
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/creatures/t5-ranged-20261028-v1/projectile/master.png",
+      "sha256": "5a92f93c47c789faca16d8ba1750911624186db14a737e7a39af8a6ec5899b0f"
+    },
+    {
+      "path": "assets/source/creatures/t5-ranged-20261028-v1/projectile/prompt.txt",
+      "sha256": "23b480fa10c4d2a5bd1814c482efa6e8d5b094206c66eec155a65e24496a3fee"
+    },
+    {
+      "path": "assets/source/creatures/t5-ranged-20261028-v1/projectile/generation.json",
+      "sha256": "d6d9faedf2f0673a4a6d84e8e6a6edab6949b160d315251d131a264f2e6b4d1c"
+    },
+    {
+      "path": "scripts/prepare_t5_ranged_20261028.py",
+      "sha256": "f700471c44d096560cf8fa34b5153c11d440a247acf6e102c873f34549c01b26"
+    }
+  ],
+  "frameAngles": [
+    90,
+    45,
+    0,
+    -45,
+    -90
+  ],
+  "generateOverlay": 0,
+  "generateShadow": 0,
+  "generation": {
+    "image_generation_used": true,
+    "model": "not exposed by tool",
+    "painted_master": "assets/source/creatures/t5-ranged-20261028-v1/projectile/master.png",
+    "painted_master_sha256": "5a92f93c47c789faca16d8ba1750911624186db14a737e7a39af8a6ec5899b0f",
+    "prompt": "assets/source/creatures/t5-ranged-20261028-v1/projectile/prompt.txt",
+    "provider": "OpenAI built-in image_gen",
+    "route": "Fresh painted physical bottle; uniform atlas resampling and 64px registration only"
+  },
+  "groups": [
+    {
+      "action": "five-painted-direction-views",
+      "frames": [
+        {
+          "sha256": "2409fdb1a6d8630a09b411566ec8fb4a59ebbca967048df6a9196ddf94552a8c",
+          "source": "assets/source/creatures/t5-ranged-20261028-v1/projectile/native/g00-f000.png",
+          "source_sha256": "2409fdb1a6d8630a09b411566ec8fb4a59ebbca967048df6a9196ddf94552a8c"
+        },
+        {
+          "sha256": "02b05b74f0e16ec2851d696146675c92353e48b23663dae5347029de3c56690e",
+          "source": "assets/source/creatures/t5-ranged-20261028-v1/projectile/native/g00-f001.png",
+          "source_sha256": "02b05b74f0e16ec2851d696146675c92353e48b23663dae5347029de3c56690e"
+        },
+        {
+          "sha256": "4b6980b2c63c9b76bb9e7baf71532a620adc96371f6e865c526c0dea469fa058",
+          "source": "assets/source/creatures/t5-ranged-20261028-v1/projectile/native/g00-f002.png",
+          "source_sha256": "4b6980b2c63c9b76bb9e7baf71532a620adc96371f6e865c526c0dea469fa058"
+        },
+        {
+          "sha256": "79fb987d4a3b69d5ccb7e89fdcc0853670285546e0da22d1f436a17cefb2e4c9",
+          "source": "assets/source/creatures/t5-ranged-20261028-v1/projectile/native/g00-f003.png",
+          "source_sha256": "79fb987d4a3b69d5ccb7e89fdcc0853670285546e0da22d1f436a17cefb2e4c9"
+        },
+        {
+          "sha256": "cd8058c889229eb32c5cfdb22ec1b0155904ac92a13cca3ca4037ba567eda0b8",
+          "source": "assets/source/creatures/t5-ranged-20261028-v1/projectile/native/g00-f004.png",
+          "source_sha256": "cd8058c889229eb32c5cfdb22ec1b0155904ac92a13cca3ca4037ba567eda0b8"
+        }
+      ],
+      "group": 0
+    }
+  ],
+  "id": "zaun.projectile.chemBaronShot",
+  "output_path": "Content/Sprites/runeterra/zaun/projectiles/chemBaronShot.json",
+  "production_status": "delivered",
+  "recipe_type": "vcmi_animation",
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "source": "assets/source/creatures/t5-ranged-20261028-v1/projectile/generation.json",
+  "source_sha256": "d6d9faedf2f0673a4a6d84e8e6a6edab6949b160d315251d131a264f2e6b4d1c",
+  "status": "built-unreviewed",
+  "title": "Chem-Baron physical chemical flask",
+  "unit": "chemBaronAgent",
+  "visual_approval_granted": false
+}

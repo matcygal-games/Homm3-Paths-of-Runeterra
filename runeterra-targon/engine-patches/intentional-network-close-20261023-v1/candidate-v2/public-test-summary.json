@@ -1,0 +1,216 @@
+{
+  "status": "authored configuration",
+  "scope": "Compiled extracted actual official66fa consumer bodies with minimal dependency fixtures and actual InternalConnection methods; not full engine/native gameplay",
+  "compiler_sha256": "e6d57100c82ae0310c18b16abfe52bc0df8fbb272ca6c5fb287d485807cfce91",
+  "original_receipts_sha256": {
+    "regression-result-v3.json": "6273aec42378ae6feeb4e633bea0d857797aab04893efdd05cc559f47fb8fd2e",
+    "mutation-results.json": "8448921a5e2c58b765b1c010570907affc3e403c3512bbfb1954269736008cfa",
+    "patch-apply-check-v2.json": "7fee89be488f22fc3db04a098a0d5528d0da477ec15606b87453432fb73f4667",
+    "extracted-consumers-v3.json": "891321eeac7e916bd9b1ec41c4f9398ac6cf530a2f4d8a0e3985da4d27ac6f1f"
+  },
+  "variants": {
+    "upstream": {
+      "compile_exit_code": 0,
+      "passed": 6,
+      "failed": 8,
+      "raw_cpp_sha256": "dddc93690813d53ac3f8f4dc88cda0780da1de42c47c864c3a1d46d69a0a6726",
+      "LF_normalized_generation_sha256": "4f613d64f5e759772c7b0dbda027db71894a702fe4a6333422547792ca359877",
+      "binary_sha256": "0d0ba7b5ba99f432a063c786f14b40d2e213908148b4a9af77c2944de9427460",
+      "compile_log_sha256": "b4891278ec64f6d78774b08b0a1db8a7f716b40d16abf1d3915f2af0ac3cde11",
+      "cases": {
+        "authorized-request-late-and-duplicate": {
+          "exit_code": 1,
+          "output": "FAIL authorized-request-late-and-duplicate: intentional callback ERROR\nRESULT 0 passed 1 failed\n",
+          "raw_log_sha256": "832d4dc43e84a56a22f7afe69b61f8b04f273d468ecc425418c8e1362608de81"
+        },
+        "synchronous-close-before-removal": {
+          "exit_code": 1,
+          "output": "FAIL synchronous-close-before-removal: consumer assertion: vstd::contains(activeConnections, connection)\nRESULT 0 passed 1 failed\n",
+          "raw_log_sha256": "2c70c709c780c96f66ff5ffe1ae5b32ffc7b3cc136f06c5a8797029850cdf76f"
+        },
+        "unexpected-active-loss-cleanup-once": {
+          "exit_code": 1,
+          "output": "FAIL unexpected-active-loss-cleanup-once: duplicate local-close error\nRESULT 0 passed 1 failed\n",
+          "raw_log_sha256": "e7b63120fc908aa6dab5302a8243d2335600d23a8c1436c42f7ac8bc6870b677"
+        },
+        "unknown-loss-after-shutdown-remains-error": {
+          "exit_code": 0,
+          "output": "PASS unknown-loss-after-shutdown-remains-error\nRESULT 1 passed 0 failed\n",
+          "raw_log_sha256": "95a7ff497440abf7a6a02f201645cefa8feba42da484f7e205b9d8497a2a870c"
+        },
+        "rejected-wrong-client-cannot-mark": {
+          "exit_code": 0,
+          "output": "PASS rejected-wrong-client-cannot-mark\nRESULT 1 passed 0 failed\n",
+          "raw_log_sha256": "2b68d26cd36352f0d2f73c65a6f98e629858e17a0cf32355f279b58e83ead9d6"
+        },
+        "rejected-nonhost-shutdown-cannot-mark": {
+          "exit_code": 0,
+          "output": "PASS rejected-nonhost-shutdown-cannot-mark\nRESULT 1 passed 0 failed\n",
+          "raw_log_sha256": "718b414f6bec039a15640201a0bb59b1d37ba4902693a39ac7d8edec32b2eee9"
+        },
+        "rejected-dedicated-shutdown-cannot-mark": {
+          "exit_code": 0,
+          "output": "PASS rejected-dedicated-shutdown-cannot-mark\nRESULT 1 passed 0 failed\n",
+          "raw_log_sha256": "e14b61946b2dd3bdf17e8de66090d7637bff5ad53603df997b0dae8c06117c87"
+        },
+        "one-peer-close-other-peer-failure": {
+          "exit_code": 1,
+          "output": "FAIL one-peer-close-other-peer-failure: first intentional peer ERROR\nRESULT 0 passed 1 failed\n",
+          "raw_log_sha256": "e604fb5010f2594f392352001998c0f8e30127f34ba47f4c2e67585707d89a0d"
+        },
+        "other-peer-failure-before-local-completion": {
+          "exit_code": 1,
+          "output": "FAIL other-peer-failure-before-local-completion: completion ordering lost failure\nRESULT 0 passed 1 failed\n",
+          "raw_log_sha256": "539c68d1ca6dd1b4af2dcbe86ca00f048acc5f69e01c66ba4c9f0c9c0ef79e02"
+        },
+        "rejected-new-connection-owned-close": {
+          "exit_code": 1,
+          "output": "FAIL rejected-new-connection-owned-close: known rejected transport ERROR\nRESULT 0 passed 1 failed\n",
+          "raw_log_sha256": "dcd9d91ddbf45a71f95f34db31932019500a835401e0061600b607d75a1f8c6c"
+        },
+        "weak-lifetime-and-address-reuse": {
+          "exit_code": 0,
+          "output": "PASS weak-lifetime-and-address-reuse\nRESULT 1 passed 0 failed\n",
+          "raw_log_sha256": "befaa968eff072adb51302fe43bea3065b4d4fe76866469bc186eb2c962fcb87"
+        },
+        "same-address-different-shared-ownership-remains-error": {
+          "exit_code": 0,
+          "output": "PASS same-address-different-shared-ownership-remains-error\nRESULT 1 passed 0 failed\n",
+          "raw_log_sha256": "fdf3496cb31b3512f55455a80be1ad1e90df21cfe0db9f013a3aa99afb493f41"
+        },
+        "valid-host-shutdown-cleanup": {
+          "exit_code": 1,
+          "output": "FAIL valid-host-shutdown-cleanup: valid host shutdown lifecycle changed\nRESULT 0 passed 1 failed\n",
+          "raw_log_sha256": "f113e0dfe59cd53f01568507ba006ca39894048a45deeaffb720e0e3ad9c3760"
+        },
+        "actual-internal-queued-requested-completion": {
+          "exit_code": 1,
+          "output": "FAIL actual-internal-queued-requested-completion: actual queued intentional close ERROR\nRESULT 0 passed 1 failed\n",
+          "raw_log_sha256": "496771a3362d29ca12ebcd0a6d4f4d898cb5223a5188688b4a6c538aa34384ba"
+        }
+      }
+    },
+    "patched": {
+      "compile_exit_code": 0,
+      "passed": 16,
+      "failed": 0,
+      "raw_cpp_sha256": "7097180b06a46c9a00ef6d72878e3b426b4aeb42ec54dbeecc4fcdf4773a39c4",
+      "LF_normalized_generation_sha256": "65e92e3c1029ac9cd17ef8e261d43d1f2ae23e0d5db78c549fd5324bb733245c",
+      "binary_sha256": "1cebe66f66cf0e0add118686630cee1c3a638e198d9a48a25fd828425087b5d0",
+      "compile_log_sha256": "2e814b268ed1d618a7cf1017a3e57323e91efd5dee017f8ee6f7e75d5d089c9e",
+      "cases": {
+        "authorized-request-late-and-duplicate": {
+          "exit_code": 0,
+          "output": "PASS authorized-request-late-and-duplicate\nRESULT 1 passed 0 failed\n",
+          "raw_log_sha256": "d41c6f89205385d34fed4c79e2a2f685ef28bc9537348596cbb8eb7597f13a58"
+        },
+        "synchronous-close-before-removal": {
+          "exit_code": 0,
+          "output": "PASS synchronous-close-before-removal\nRESULT 1 passed 0 failed\n",
+          "raw_log_sha256": "30755935f394c007e5cd108a4f8405c74b6c90008ba03c855aca2c22c14e2697"
+        },
+        "unexpected-active-loss-cleanup-once": {
+          "exit_code": 0,
+          "output": "PASS unexpected-active-loss-cleanup-once\nRESULT 1 passed 0 failed\n",
+          "raw_log_sha256": "a186e307dd1ce66eff65755d98f39239dc1d1a14833c7d75a2c7f8ed0624e3ab"
+        },
+        "unknown-loss-after-shutdown-remains-error": {
+          "exit_code": 0,
+          "output": "PASS unknown-loss-after-shutdown-remains-error\nRESULT 1 passed 0 failed\n",
+          "raw_log_sha256": "95a7ff497440abf7a6a02f201645cefa8feba42da484f7e205b9d8497a2a870c"
+        },
+        "rejected-wrong-client-cannot-mark": {
+          "exit_code": 0,
+          "output": "PASS rejected-wrong-client-cannot-mark\nRESULT 1 passed 0 failed\n",
+          "raw_log_sha256": "2b68d26cd36352f0d2f73c65a6f98e629858e17a0cf32355f279b58e83ead9d6"
+        },
+        "rejected-nonhost-shutdown-cannot-mark": {
+          "exit_code": 0,
+          "output": "PASS rejected-nonhost-shutdown-cannot-mark\nRESULT 1 passed 0 failed\n",
+          "raw_log_sha256": "718b414f6bec039a15640201a0bb59b1d37ba4902693a39ac7d8edec32b2eee9"
+        },
+        "rejected-dedicated-shutdown-cannot-mark": {
+          "exit_code": 0,
+          "output": "PASS rejected-dedicated-shutdown-cannot-mark\nRESULT 1 passed 0 failed\n",
+          "raw_log_sha256": "e14b61946b2dd3bdf17e8de66090d7637bff5ad53603df997b0dae8c06117c87"
+        },
+        "one-peer-close-other-peer-failure": {
+          "exit_code": 0,
+          "output": "PASS one-peer-close-other-peer-failure\nRESULT 1 passed 0 failed\n",
+          "raw_log_sha256": "8c4bde311723ee3f50186ff3514ffbeae0507a0c0fe3a9ebfa37fbca03fd8b66"
+        },
+        "other-peer-failure-before-local-completion": {
+          "exit_code": 0,
+          "output": "PASS other-peer-failure-before-local-completion\nRESULT 1 passed 0 failed\n",
+          "raw_log_sha256": "cbac56bf0dd60f865ed5f2785bd811b35045ba6a9cf66946c1b45889c4acf901"
+        },
+        "rejected-new-connection-owned-close": {
+          "exit_code": 0,
+          "output": "PASS rejected-new-connection-owned-close\nRESULT 1 passed 0 failed\n",
+          "raw_log_sha256": "b036510135a191d1c9757a9acb18eda734d15f0279abd29cd7457340eec1944c"
+        },
+        "weak-lifetime-and-address-reuse": {
+          "exit_code": 0,
+          "output": "PASS weak-lifetime-and-address-reuse\nRESULT 1 passed 0 failed\n",
+          "raw_log_sha256": "befaa968eff072adb51302fe43bea3065b4d4fe76866469bc186eb2c962fcb87"
+        },
+        "same-address-different-shared-ownership-remains-error": {
+          "exit_code": 0,
+          "output": "PASS same-address-different-shared-ownership-remains-error\nRESULT 1 passed 0 failed\n",
+          "raw_log_sha256": "fdf3496cb31b3512f55455a80be1ad1e90df21cfe0db9f013a3aa99afb493f41"
+        },
+        "valid-host-shutdown-cleanup": {
+          "exit_code": 0,
+          "output": "PASS valid-host-shutdown-cleanup\nRESULT 1 passed 0 failed\n",
+          "raw_log_sha256": "6402019920c63b0b690b2ad7089296df57e134b746a637df8123d71801cd7f86"
+        },
+        "actual-internal-queued-requested-completion": {
+          "exit_code": 0,
+          "output": "PASS actual-internal-queued-requested-completion\nRESULT 1 passed 0 failed\n",
+          "raw_log_sha256": "022a25ca3b502c0409553a4224481c0e7ea68f3be044747205e060ae61a678e3"
+        },
+        "concurrent-registry-prune-find-and-close": {
+          "exit_code": 0,
+          "output": "PASS concurrent-registry-prune-find-and-close\nRESULT 1 passed 0 failed\n",
+          "raw_log_sha256": "70ba5ad042223646fbca0ea739f8a2ea015b9002de10f7ab17530aa7d89a48a5"
+        },
+        "registry-lock-blocks-writer-and-reader": {
+          "exit_code": 0,
+          "output": "PASS registry-lock-blocks-writer-and-reader\nRESULT 1 passed 0 failed\n",
+          "raw_log_sha256": "b9f2ef49027d5f6eda80b693503ea0b89d5f4ad5ade0f09a9767ce287a5d11e9"
+        }
+      }
+    }
+  },
+  "mutations": {
+    "missing-writer-lock": {
+      "compile_exit_code": 0,
+      "case": "registry-lock-blocks-writer-and-reader",
+      "rejected": true,
+      "run_exit_code": 1,
+      "output": "FAIL registry-lock-blocks-writer-and-reader: registry access escaped held mutex\nRESULT 0 passed 1 failed\n",
+      "raw_log_sha256": "391ada52aab0a7549cdd59f3caf143c7e2b68418d289344af44f6edf01b57cd1",
+      "compile_log_sha256": "1c5e3f7ccf2bd9bba074c44dedb4fb2550030b28066cb6d744217fa3c00cc94e"
+    },
+    "missing-reader-lock": {
+      "compile_exit_code": 0,
+      "case": "registry-lock-blocks-writer-and-reader",
+      "rejected": true,
+      "run_exit_code": 1,
+      "output": "FAIL registry-lock-blocks-writer-and-reader: registry access escaped held mutex\nRESULT 0 passed 1 failed\n",
+      "raw_log_sha256": "391ada52aab0a7549cdd59f3caf143c7e2b68418d289344af44f6edf01b57cd1",
+      "compile_log_sha256": "fc5f7e309956028ea95c4c51334549f6a301221159f5c66f6f5359835626f20a"
+    },
+    "lock-across-reentrant-close": {
+      "compile_exit_code": 0,
+      "case": "synchronous-close-before-removal",
+      "rejected": true,
+      "run_exit_code": 1,
+      "output": "FAIL synchronous-close-before-removal: resource deadlock would occur: resource deadlock would occur\nRESULT 0 passed 1 failed\n",
+      "raw_log_sha256": "c95136daa28ad90133986c94c235af483e4b6aba9d0bd2dec1dd7e6194bc38b9",
+      "compile_log_sha256": "bb52429d9005ce76464109f1918582827d0f492d61e78e525cf457a2e9658347"
+    }
+  },
+  "native_engine_verified": false,
+  "thread_safety_limit": "Only the newly introduced weak transport-close registry is synchronized; broader server scheduling is unchanged."
+}

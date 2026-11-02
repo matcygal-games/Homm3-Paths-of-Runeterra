@@ -1,0 +1,282 @@
+{
+  "unit": "mageseekerInquisitor",
+  "group": 13,
+  "version": 3,
+  "tool": "built-in image_gen.imagegen",
+  "generated_original": "C:\\Users\\matcy\\.codex\\generated_images\\01a15556-579f-7041-8958-a88e131375be\\exec-2b4d06c3-5773-411f-99ed-82338f39a855.png",
+  "generated_original_sha256": "18fc7703884e89f9f5ca207731e771d0e22d60a8446c1f22b01e3f755a4496b0",
+  "output": "assets/source/creatures/mageseekerInquisitor/mageseeker-rig-v3/paint-action-g13-atlas-v3.png",
+  "output_sha256": "e7b0bd592a5fe567da637de3a14b615258681febc101eb8a034c5fa5c997b0be",
+  "prompt": {
+    "path": "assets/source/creatures/mageseekerInquisitor/mageseeker-rig-v3/paint-action-g13-prompt-v1.txt",
+    "sha256": "7c8b7865d3f46ed76bb3c001fbac6fda1c15c6a7897dbdbc25b7b64ad48ce357"
+  },
+  "references": [
+    {
+      "path": "assets/source/creatures/mageseekerInquisitor/mageseeker-rig-v3/raw-action-atlases/rig-action-g13-atlas-padded-v1.png",
+      "sha256": "a9b0d1e8e472710800b5a648c83ce8f79006c55a96c606336dac9d3267f62b39"
+    },
+    {
+      "path": "assets/source/creatures/mageseekerInquisitor/master-v4.png",
+      "sha256": "3f9536720426228f59636f202f5842c49f9d1fd4daf6d735f77f235c272ff532"
+    },
+    {
+      "path": "references/prototypes/rig-pilot-v4/castle-and-recruit-comparison-native.png",
+      "sha256": "e1ac9e0aa5da8556728c0c52683a2222559684795e13eb8c90ff2f68429ef8f3"
+    },
+    {
+      "path": "references/riot/heraldry/demacia-official-region-icon.png",
+      "sha256": "d71bb021a49b704420f43c74f9dbfedb2bd89779bdafec1ea4be7bb8a172e734"
+    }
+  ],
+  "actual_source_metadata": {
+    "path": "assets/source/creatures/mageseekerInquisitor/mageseeker-rig-v3/mageseeker-production-v3.json",
+    "sha256": "44df5105d40ebba2b4e960fd2c8119d1ad4aac836d2e5ea1b018d2af6224784d"
+  },
+  "actual_atlas_metadata": {
+    "path": "assets/source/creatures/mageseekerInquisitor/mageseeker-rig-v3/raw-action-atlases/rig-action-g13-atlas-v1.json",
+    "sha256": "a378a26f2b329b097b0e2ef539a861fdc03a07e767081ed6b08ca8922ef9a765"
+  },
+  "layout": [
+    3,
+    2
+  ],
+  "returned_dimensions": [
+    1920,
+    1280
+  ],
+  "returned_cell": [
+    640.0,
+    640.0
+  ],
+  "grid_integer_aligned": true,
+  "grid_note": "Logical equal-cell extents may fall on half-pixels; export uses one fixed continuous source-box scale, without per-cell fitting.",
+  "mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    254
+  ],
+  "alpha_diagnostics": {
+    "requires_opaque_background_composite_visual_review": true,
+    "alpha8_bbox": [
+      81,
+      12,
+      1508,
+      992
+    ],
+    "fully_transparent_pixels": 1162803,
+    "faint_alpha1_to7_pixels": 64602,
+    "note": "Colored RGB in alpha0pixels is invisible to a correct compositor; extrema do not establish clean interior/gutters or art acceptance."
+  },
+  "source_input_transform": {
+    "source_canvas": [
+      512,
+      512
+    ],
+    "uniform_render_size": [
+      420,
+      420
+    ],
+    "offset": [
+      46,
+      46
+    ],
+    "scale": 0.8203125,
+    "operation": "Declared whole-cell uniform reference padding; allposes use same transform, not finalnative frame fit."
+  },
+  "actual_pose_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "intentional_source_pose_holds": [
+    {
+      "index": 5,
+      "matches_index": 0,
+      "basis": "Actual identical authored ready/recovery/fidget render; never additional motion"
+    }
+  ],
+  "validation_errors": [],
+  "status": "generated source candidate; actual grid/camera/native motion review required",
+  "visual_approval_granted": false,
+  "active_assets_modified": false,
+  "atlas_repack": {
+    "source_generation_record": {
+      "path": "assets/source/creatures/mageseekerInquisitor/mageseeker-rig-v3/paint-action-g13-atlas-v1-generation.json",
+      "sha256": "a9f3f96674ba1c46f40689482cc51358900ab208a56a0604d7104b840f5644f3"
+    },
+    "source": {
+      "path": "assets/source/creatures/mageseekerInquisitor/mageseeker-rig-v3/paint-action-g13-atlas-v1.png",
+      "sha256": "18fc7703884e89f9f5ca207731e771d0e22d60a8446c1f22b01e3f755a4496b0"
+    },
+    "frames": [
+      {
+        "index": 0,
+        "owner_rectangle": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "source_rectangle": [
+          123,
+          75,
+          463,
+          483
+        ],
+        "destination_offset": [
+          150,
+          116
+        ],
+        "source_to_repacked_translation": [
+          27,
+          41
+        ],
+        "retained_rgba_identical": true,
+        "maximum_discarded_alpha": 3,
+        "crop_pixel_sha256": "a5b99267b083e7f0507514539e252c6f6428d9da7086db9ba042e74ee98325df",
+        "basis": "Actual original atlas viewed. Reviewed row/column cuts lie in empty gutters between complete figures and weapon tips; integer crop/paste only, no resizing or synthesis."
+      },
+      {
+        "index": 1,
+        "owner_rectangle": [
+          512,
+          0,
+          1024,
+          512
+        ],
+        "source_rectangle": [
+          632,
+          75,
+          1006,
+          483
+        ],
+        "destination_offset": [
+          133,
+          116
+        ],
+        "source_to_repacked_translation": [
+          13,
+          41
+        ],
+        "retained_rgba_identical": true,
+        "maximum_discarded_alpha": 3,
+        "crop_pixel_sha256": "eec5334bbb52151d90fd47b2652afedb27926dd14c5877e15092ba6b921636e4",
+        "basis": "Actual original atlas viewed. Reviewed row/column cuts lie in empty gutters between complete figures and weapon tips; integer crop/paste only, no resizing or synthesis."
+      },
+      {
+        "index": 2,
+        "owner_rectangle": [
+          1024,
+          0,
+          1536,
+          512
+        ],
+        "source_rectangle": [
+          1145,
+          11,
+          1503,
+          483
+        ],
+        "destination_offset": [
+          141,
+          84
+        ],
+        "source_to_repacked_translation": [
+          20,
+          73
+        ],
+        "retained_rgba_identical": true,
+        "maximum_discarded_alpha": 3,
+        "crop_pixel_sha256": "48eef715725c3e607e5ac7cc0df6e54deb9fdd66c759fecfe099d7da8ee58308",
+        "basis": "Actual original atlas viewed. Reviewed row/column cuts lie in empty gutters between complete figures and weapon tips; integer crop/paste only, no resizing or synthesis."
+      },
+      {
+        "index": 3,
+        "owner_rectangle": [
+          0,
+          512,
+          570,
+          1024
+        ],
+        "source_rectangle": [
+          80,
+          596,
+          499,
+          984
+        ],
+        "destination_offset": [
+          110,
+          126
+        ],
+        "source_to_repacked_translation": [
+          30,
+          42
+        ],
+        "retained_rgba_identical": true,
+        "maximum_discarded_alpha": 5,
+        "crop_pixel_sha256": "e52825478673aaf1d210ca37d6dfc961eb7f2908c005929af85020909078e761",
+        "basis": "Actual original atlas viewed. Reviewed row/column cuts lie in empty gutters between complete figures and weapon tips; integer crop/paste only, no resizing or synthesis."
+      },
+      {
+        "index": 4,
+        "owner_rectangle": [
+          570,
+          512,
+          1100,
+          1024
+        ],
+        "source_rectangle": [
+          641,
+          586,
+          1038,
+          984
+        ],
+        "destination_offset": [
+          121,
+          121
+        ],
+        "source_to_repacked_translation": [
+          -8,
+          47
+        ],
+        "retained_rgba_identical": true,
+        "maximum_discarded_alpha": 5,
+        "crop_pixel_sha256": "c2a6dfa1db03f5a47a841a0af194ef1eb12d70ff97ab510a2ab90a4d3511007a",
+        "basis": "Actual original atlas viewed. Reviewed row/column cuts lie in empty gutters between complete figures and weapon tips; integer crop/paste only, no resizing or synthesis."
+      },
+      {
+        "index": 5,
+        "owner_rectangle": [
+          1100,
+          512,
+          1536,
+          1024
+        ],
+        "source_rectangle": [
+          1165,
+          585,
+          1509,
+          993
+        ],
+        "destination_offset": [
+          148,
+          116
+        ],
+        "source_to_repacked_translation": [
+          7,
+          43
+        ],
+        "retained_rgba_identical": true,
+        "maximum_discarded_alpha": 3,
+        "crop_pixel_sha256": "c74dcd33487197e6a488e51fae23f55726e7818ed026f9ba023c0e9f4cf9b70b",
+        "basis": "Actual original atlas viewed. Reviewed row/column cuts lie in empty gutters between complete figures and weapon tips; integer crop/paste only, no resizing or synthesis."
+      }
+    ],
+    "inverse_translation_required": true,
+    "operation": "Exact RGBA crop/paste of full reviewed subjects into640square cells; original creative source retained."
+  }
+}

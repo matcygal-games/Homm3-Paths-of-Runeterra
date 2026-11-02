@@ -1,0 +1,362 @@
+{
+  "battle_canvas": [
+    450,
+    400
+  ],
+  "battle_root": [
+    197,
+    266
+  ],
+  "companions": {
+    "encounter_root": [
+      44,
+      60
+    ],
+    "map_root": [
+      76,
+      60
+    ],
+    "portrait_crop": [
+      90,
+      96,
+      265,
+      270
+    ],
+    "pose": "idle",
+    "scale": 0.13
+  },
+  "excluded_source_keys": [
+    {
+      "index": 10,
+      "master": "assets/source/creatures/playable-completion-20261028-v1/seaDog/attacks-v1-raw.png",
+      "reason": "Two lower attack silhouettes touched; complete independent painted repair poses replace both"
+    },
+    {
+      "plate": "walk-v1-raw.png",
+      "reason": "Earlier broad walk source retained as history; selected explicit opposed support halves replace it."
+    }
+  ],
+  "gait_contract": {
+    "camera": "One fixed plate scale per source; anatomical roots manually annotated",
+    "native_motion_approval": false,
+    "sequence": "Contact A, Passing A, Precontact B, Contact B, Passing B, Precontact A"
+  },
+  "groups": {
+    "0": [
+      "near0",
+      "near1",
+      "far2",
+      "far0",
+      "far1",
+      "near2"
+    ],
+    "1": [
+      "ready",
+      "idle"
+    ],
+    "11": [
+      "up0",
+      "up1",
+      "up2",
+      "ready"
+    ],
+    "12": [
+      "front0",
+      "front1",
+      "front2",
+      "ready"
+    ],
+    "13": [
+      "down0",
+      "down1",
+      "down2",
+      "ready"
+    ],
+    "2": [
+      "ready"
+    ],
+    "20": [
+      "ready",
+      "near0"
+    ],
+    "21": [
+      "near2",
+      "ready"
+    ],
+    "22": [
+      "death3"
+    ],
+    "3": [
+      "hurt0",
+      "hurt1",
+      "ready"
+    ],
+    "4": [
+      "defend",
+      "ready"
+    ],
+    "5": [
+      "death0",
+      "death1",
+      "death2",
+      "death3"
+    ],
+    "7": [
+      "ready",
+      "turn0",
+      "turn1",
+      "turn3"
+    ],
+    "8": [
+      "turn3",
+      "turn1",
+      "turn0",
+      "ready"
+    ]
+  },
+  "plates": {
+    "attacks-v1-raw.png": {
+      "expected_islands": 11,
+      "poses": {
+        "down0": {
+          "island": 8,
+          "root": [
+            175,
+            1065
+          ]
+        },
+        "front0": {
+          "island": 5,
+          "root": [
+            190,
+            726
+          ]
+        },
+        "front1": {
+          "island": 6,
+          "root": [
+            535,
+            726
+          ]
+        },
+        "front2": {
+          "island": 7,
+          "root": [
+            925,
+            731
+          ]
+        },
+        "ready": {
+          "island": 3,
+          "root": [
+            1305,
+            395
+          ]
+        },
+        "up0": {
+          "island": 2,
+          "root": [
+            170,
+            389
+          ]
+        },
+        "up1": {
+          "island": 0,
+          "root": [
+            535,
+            389
+          ]
+        },
+        "up2": {
+          "island": 1,
+          "root": [
+            925,
+            393
+          ]
+        }
+      },
+      "scale": 0.25,
+      "source": "seaDog/attacks-v1-raw.png",
+      "source_sha256": "c6aba745d45b359d20b92933722c667ee63e87c14b206ed9b51790ecbdd63a3a"
+    },
+    "down-repair-v1-raw.png": {
+      "expected_islands": 2,
+      "poses": {
+        "down1": {
+          "island": 1,
+          "root": [
+            510,
+            719
+          ]
+        },
+        "down2": {
+          "island": 0,
+          "root": [
+            1475,
+            721
+          ]
+        }
+      },
+      "scale": 0.12,
+      "source": "seaDog/down-repair-v1-raw.png",
+      "source_sha256": "521309550bd21dbbb140e3f9a8f7fba4cbc591017c7bdc25a15ebadb487c1efc"
+    },
+    "far-walk-v2-raw.png": {
+      "expected_islands": 3,
+      "poses": {
+        "far0": {
+          "island": 0,
+          "root": [
+            285,
+            901
+          ]
+        },
+        "far1": {
+          "island": 1,
+          "root": [
+            800,
+            901
+          ]
+        },
+        "far2": {
+          "island": 2,
+          "root": [
+            1300,
+            901
+          ]
+        }
+      },
+      "scale": 0.108,
+      "source": "seaDog/far-walk-v2-raw.png",
+      "source_sha256": "81ca7c1882c5d46e3f6759b0fdcc0275e38d3b9100368bd0672e6c46792e4195"
+    },
+    "near-walk-v2-raw.png": {
+      "expected_islands": 3,
+      "poses": {
+        "near0": {
+          "island": 0,
+          "root": [
+            305,
+            781
+          ]
+        },
+        "near1": {
+          "island": 1,
+          "root": [
+            930,
+            781
+          ]
+        },
+        "near2": {
+          "island": 2,
+          "root": [
+            1580,
+            781
+          ]
+        }
+      },
+      "scale": 0.116,
+      "source": "seaDog/near-walk-v2-raw.png",
+      "source_sha256": "b0f06f660c0a30b058c3d1b3fb7e14fa2cb801e4c32d26b3b4c414a5779727cb"
+    },
+    "reactions-v1-raw.png": {
+      "expected_islands": 12,
+      "poses": {
+        "death0": {
+          "island": 8,
+          "root": [
+            170,
+            1111
+          ]
+        },
+        "death1": {
+          "island": 9,
+          "root": [
+            495,
+            1118
+          ]
+        },
+        "death2": {
+          "island": 10,
+          "root": [
+            825,
+            1118
+          ]
+        },
+        "death3": {
+          "island": 11,
+          "root": [
+            1135,
+            1121
+          ]
+        },
+        "defend": {
+          "island": 1,
+          "root": [
+            495,
+            423
+          ]
+        },
+        "hurt0": {
+          "island": 2,
+          "root": [
+            825,
+            423
+          ]
+        },
+        "hurt1": {
+          "island": 3,
+          "root": [
+            1165,
+            423
+          ]
+        },
+        "idle": {
+          "island": 0,
+          "root": [
+            167,
+            423
+          ]
+        },
+        "turn0": {
+          "island": 7,
+          "root": [
+            175,
+            821
+          ]
+        },
+        "turn1": {
+          "island": 6,
+          "root": [
+            500,
+            821
+          ]
+        },
+        "turn2": {
+          "island": 4,
+          "root": [
+            835,
+            821
+          ]
+        },
+        "turn3": {
+          "island": 5,
+          "root": [
+            1165,
+            818
+          ]
+        }
+      },
+      "scale": 0.25,
+      "source": "seaDog/reactions-v1-raw.png",
+      "source_sha256": "e92d87bcd67aae9cddf9b32e84e465d3ad93c3a52ae218e8c949dfb6c290179e"
+    }
+  },
+  "unit": "seaDog",
+  "unresolved": [
+    "Independent native1x opposed gait/root/costume review pending",
+    "Displayed paired-turn facing/reposition continuity pending",
+    "Native game/crest/artistic/rights acceptance not run"
+  ],
+  "version": 2
+}

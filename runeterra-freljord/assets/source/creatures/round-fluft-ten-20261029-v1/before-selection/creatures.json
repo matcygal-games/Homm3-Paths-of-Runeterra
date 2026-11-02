@@ -1,0 +1,1050 @@
+{
+  "overgrownPoro": {
+    "name": {
+      "singular": "Overgrown Poro",
+      "plural": "Overgrown Poros"
+    },
+    "description": "A living, oversized northern poro walks and bounds on the ground, fighting once with horns and a body bump. One hex, ordinary retaliation and morale. This recruitable size is a Heroes III adaptation; no flight, free Poro creation, merging, card-stat inheritance, extra attack or adventure vision.",
+    "faction": "freljord",
+    "level": 1,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": false,
+    "attack": 3,
+    "defense": 2,
+    "hitPoints": 8,
+    "damage": {
+      "min": 1,
+      "max": 2
+    },
+    "speed": 4,
+    "shots": 0,
+    "cost": {
+      "gold": 45
+    },
+    "growth": 14,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 20,
+      "max": 50
+    },
+    "fightValue": 55,
+    "aiValue": 50,
+    "upgrades": [
+      "fluftOfPoros"
+    ],
+    "abilities": {},
+    "graphics": {
+      "animation": "runeterra/freljord/creatures/overgrownPoro/battle.json",
+      "map": "runeterra/freljord/creatures/overgrownPoro/map.json",
+      "iconLarge": "runeterra/freljord/creatures/overgrownPoro/large.png",
+      "iconSmall": "runeterra/freljord/creatures/overgrownPoro/small.png",
+      "mapAttackFromLeft": "runeterra/freljord/creatures/overgrownPoro/attackLeft.png",
+      "mapAttackFromRight": "runeterra/freljord/creatures/overgrownPoro/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1
+    },
+    "sound": {
+      "attack": "BOARATTK.wav",
+      "defend": "BOARDFND.wav",
+      "killed": "BOARKILL.wav",
+      "move": "BOARMOVE.wav",
+      "wince": "BOARWNCE.wav"
+    }
+  },
+  "fluftOfPoros": {
+    "name": {
+      "singular": "Fluft of Poros",
+      "plural": "Flufts of Poros"
+    },
+    "description": "A compact connected Fluft of Poros rolls and jumps across battlefield obstacles using native FLYING movement, then lands at a legal one-hex destination. It rests grounded and makes one ordinary melee bump with normal retaliation. Recruitment and obstacle-clearing hops are explicit game adaptations, not sustained bird flight, card merging, Last Breath summons, free growth or an adventure movement bonus.",
+    "faction": "freljord",
+    "level": 1,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": false,
+    "attack": 4,
+    "defense": 3,
+    "hitPoints": 10,
+    "damage": {
+      "min": 1,
+      "max": 3
+    },
+    "speed": 6,
+    "shots": 0,
+    "cost": {
+      "gold": 85
+    },
+    "growth": 14,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 11,
+      "max": 28
+    },
+    "fightValue": 80,
+    "aiValue": 90,
+    "abilities": {
+      "canFly": {
+        "type": "FLYING"
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/freljord/creatures/fluftOfPoros/battle.json",
+      "map": "runeterra/freljord/creatures/fluftOfPoros/map.json",
+      "iconLarge": "runeterra/freljord/creatures/fluftOfPoros/large.png",
+      "iconSmall": "runeterra/freljord/creatures/fluftOfPoros/small.png",
+      "mapAttackFromLeft": "runeterra/freljord/creatures/fluftOfPoros/attackLeft.png",
+      "mapAttackFromRight": "runeterra/freljord/creatures/fluftOfPoros/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1
+    },
+    "sound": {
+      "attack": "BOARATTK.wav",
+      "defend": "BOARDFND.wav",
+      "killed": "BOARKILL.wav",
+      "move": "BOARMOVE.wav",
+      "wince": "BOARWNCE.wav"
+    }
+  },
+  "iceHunter": {
+    "name": {
+      "singular": "Ice Hunter",
+      "plural": "Ice Hunters"
+    },
+    "description": "Female hunters with ordinary wood-and-bone bows fire one physical arrow per action from sixteen arrows. Adjacent enemies block shooting; ordinary melee, distance and wall penalties apply. No True Ice, slowing arrow, eagle or double shot.",
+    "faction": "freljord",
+    "level": 2,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": false,
+    "attack": 5,
+    "defense": 3,
+    "hitPoints": 12,
+    "damage": {
+      "min": 2,
+      "max": 4
+    },
+    "speed": 5,
+    "shots": 16,
+    "cost": {
+      "gold": 125
+    },
+    "growth": 9,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 16,
+      "max": 30
+    },
+    "fightValue": 110,
+    "aiValue": 130,
+    "upgrades": [
+      "veteranIceHunter"
+    ],
+    "abilities": {
+      "shooter": {
+        "type": "SHOOTER"
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/freljord/creatures/iceHunter/battle.json",
+      "map": "runeterra/freljord/creatures/iceHunter/map.json",
+      "iconLarge": "runeterra/freljord/creatures/iceHunter/large.png",
+      "iconSmall": "runeterra/freljord/creatures/iceHunter/small.png",
+      "mapAttackFromLeft": "runeterra/freljord/creatures/iceHunter/attackLeft.png",
+      "mapAttackFromRight": "runeterra/freljord/creatures/iceHunter/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1,
+      "missile": {
+        "projectile": "runeterra/freljord/projectiles/hunterArrow.json",
+        "frameAngles": [
+          90,
+          45,
+          0,
+          -45,
+          -90
+        ],
+        "attackClimaxFrame": 4,
+        "offset": {
+          "lowerX": 15,
+          "lowerY": -33,
+          "middleX": 22,
+          "middleY": -55,
+          "upperX": 20,
+          "upperY": -67
+        }
+      }
+    },
+    "sound": {
+      "attack": "LCRSATTK.wav",
+      "shoot": "LCRSSHOT.wav",
+      "defend": "LCRSDFND.wav",
+      "killed": "LCRSKILL.wav",
+      "move": "LCRSMOVE.wav",
+      "wince": "LCRSWNCE.wav"
+    }
+  },
+  "veteranIceHunter": {
+    "name": {
+      "singular": "Veteran Ice Hunter",
+      "plural": "Veteran Ice Hunters"
+    },
+    "description": "Veteran female hunters carry a stronger laminated bow, substantial quiver, fitted protection and shoulder mantle. One physical arrow per action, twenty-four arrows, no melee damage penalty. Native shooting block, distance and wall penalties remain.",
+    "faction": "freljord",
+    "level": 2,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": false,
+    "attack": 6,
+    "defense": 4,
+    "hitPoints": 15,
+    "damage": {
+      "min": 3,
+      "max": 5
+    },
+    "speed": 6,
+    "shots": 24,
+    "cost": {
+      "gold": 170
+    },
+    "growth": 9,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 11,
+      "max": 20
+    },
+    "fightValue": 150,
+    "aiValue": 195,
+    "abilities": {
+      "shooter": {
+        "type": "SHOOTER"
+      },
+      "knifeTraining": {
+        "type": "NO_MELEE_PENALTY"
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/freljord/creatures/veteranIceHunter/battle.json",
+      "map": "runeterra/freljord/creatures/veteranIceHunter/map.json",
+      "iconLarge": "runeterra/freljord/creatures/veteranIceHunter/large.png",
+      "iconSmall": "runeterra/freljord/creatures/veteranIceHunter/small.png",
+      "mapAttackFromLeft": "runeterra/freljord/creatures/veteranIceHunter/attackLeft.png",
+      "mapAttackFromRight": "runeterra/freljord/creatures/veteranIceHunter/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1,
+      "missile": {
+        "projectile": "runeterra/freljord/projectiles/hunterArrow.json",
+        "frameAngles": [
+          90,
+          45,
+          0,
+          -45,
+          -90
+        ],
+        "attackClimaxFrame": 4,
+        "offset": {
+          "lowerX": 20,
+          "lowerY": -29,
+          "middleX": 26,
+          "middleY": -55,
+          "upperX": 26,
+          "upperY": -71
+        }
+      }
+    },
+    "sound": {
+      "attack": "HCRSATTK.wav",
+      "shoot": "HCRSSHOT.wav",
+      "defend": "HCRSDFND.wav",
+      "killed": "HCRSKILL.wav",
+      "move": "HCRSMOVE.wav",
+      "wince": "HCRSWNCE.wav"
+    }
+  },
+  "frostTroll": {
+    "name": {
+      "singular": "Frost Troll",
+      "plural": "Frost Trolls"
+    },
+    "description": "Slow living northern trolls fight with blunt clubs. At the first eligible turn attempt of each round, regeneration repairs up to three missing HP on the surviving top creature. It never restores dead creatures or multiplies healing by stack size.",
+    "faction": "freljord",
+    "level": 3,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": false,
+    "attack": 8,
+    "defense": 6,
+    "hitPoints": 30,
+    "damage": {
+      "min": 5,
+      "max": 8
+    },
+    "speed": 3,
+    "shots": 0,
+    "cost": {
+      "gold": 200
+    },
+    "growth": 7,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 10,
+      "max": 20
+    },
+    "fightValue": 310,
+    "aiValue": 285,
+    "upgrades": [
+      "rimeTroll"
+    ],
+    "abilities": {
+      "smallRecovery": {
+        "type": "HP_REGENERATION",
+        "val": 3
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/freljord/creatures/frostTroll/battle.json",
+      "map": "runeterra/freljord/creatures/frostTroll/map.json",
+      "iconLarge": "runeterra/freljord/creatures/frostTroll/large.png",
+      "iconSmall": "runeterra/freljord/creatures/frostTroll/small.png",
+      "mapAttackFromLeft": "runeterra/freljord/creatures/frostTroll/attackLeft.png",
+      "mapAttackFromRight": "runeterra/freljord/creatures/frostTroll/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1
+    },
+    "sound": {
+      "attack": "OGREATTK.wav",
+      "defend": "OGREDFND.wav",
+      "killed": "OGREKILL.wav",
+      "move": "OGREMOVE.wav",
+      "wince": "OGREWNCE.wav"
+    }
+  },
+  "rimeTroll": {
+    "name": {
+      "singular": "Rime Troll",
+      "plural": "Rime Trolls"
+    },
+    "description": "Shaggy living trolls carry iron-bound clubs and reinforced hide wraps. Up to six missing HP on the surviving top creature regenerate at the native round trigger, including while blinded. Waiting does not grant another heal; dead creatures remain dead.",
+    "faction": "freljord",
+    "level": 3,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": false,
+    "attack": 10,
+    "defense": 8,
+    "hitPoints": 40,
+    "damage": {
+      "min": 7,
+      "max": 11
+    },
+    "speed": 3,
+    "shots": 0,
+    "cost": {
+      "gold": 270
+    },
+    "growth": 7,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 6,
+      "max": 13
+    },
+    "fightValue": 470,
+    "aiValue": 440,
+    "abilities": {
+      "smallRecovery": {
+        "type": "HP_REGENERATION",
+        "val": 6
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/freljord/creatures/rimeTroll/battle.json",
+      "map": "runeterra/freljord/creatures/rimeTroll/map.json",
+      "iconLarge": "runeterra/freljord/creatures/rimeTroll/large.png",
+      "iconSmall": "runeterra/freljord/creatures/rimeTroll/small.png",
+      "mapAttackFromLeft": "runeterra/freljord/creatures/rimeTroll/attackLeft.png",
+      "mapAttackFromRight": "runeterra/freljord/creatures/rimeTroll/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1
+    },
+    "sound": {
+      "attack": "OGREATTK.wav",
+      "defend": "OGREDFND.wav",
+      "killed": "OGREKILL.wav",
+      "move": "OGREMOVE.wav",
+      "wince": "OGREWNCE.wav"
+    }
+  },
+  "draklornAttendant": {
+    "name": {
+      "singular": "Draklorn Attendant",
+      "plural": "Draklorn Attendants"
+    },
+    "description": "A living Frostguard attendant walks into melee with a physical ritual pole-blade. One normal attack with normal retaliation; ordinary Defend spends the action to screen an approach. This recruited rank is a project adaptation. No bear transformation, chance burst, shooter, spell, ally aura or free Frozen Thrall.",
+    "faction": "freljord",
+    "level": 4,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": false,
+    "attack": 11,
+    "defense": 9,
+    "hitPoints": 40,
+    "damage": {
+      "min": 7,
+      "max": 11
+    },
+    "speed": 5,
+    "shots": 0,
+    "cost": {
+      "gold": 350
+    },
+    "growth": 4,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 8,
+      "max": 16
+    },
+    "fightValue": 495,
+    "aiValue": 495,
+    "upgrades": [
+      "draklornInquisitor"
+    ],
+    "abilities": {},
+    "graphics": {
+      "animation": "runeterra/freljord/creatures/draklornAttendant/battle.json",
+      "map": "runeterra/freljord/creatures/draklornAttendant/map.json",
+      "iconLarge": "runeterra/freljord/creatures/draklornAttendant/large.png",
+      "iconSmall": "runeterra/freljord/creatures/draklornAttendant/small.png",
+      "mapAttackFromLeft": "runeterra/freljord/creatures/draklornAttendant/attackLeft.png",
+      "mapAttackFromRight": "runeterra/freljord/creatures/draklornAttendant/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1
+    },
+    "sound": {
+      "attack": "SWRDATTK.wav",
+      "defend": "SWRDDFND.wav",
+      "killed": "SWRDKILL.wav",
+      "move": "SWRDMOVE.wav",
+      "wince": "SWRDWNCE.wav"
+    }
+  },
+  "draklornInquisitor": {
+    "name": {
+      "singular": "Draklorn Inquisitor",
+      "plural": "Draklorn Inquisitors"
+    },
+    "description": "A living Frostguard inquisitor carries stronger layered protection and a bifurcated ritual blade. One ordinary melee strike; normal action-cost Defend provides screening without a bonus cast or attack. The official subject does not transfer its card summon/countdown effects: no free Thralls, random double damage, SHOOTER, mind immunity or undead status.",
+    "faction": "freljord",
+    "level": 4,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": false,
+    "attack": 14,
+    "defense": 12,
+    "hitPoints": 50,
+    "damage": {
+      "min": 10,
+      "max": 15
+    },
+    "speed": 6,
+    "shots": 0,
+    "cost": {
+      "gold": 475
+    },
+    "growth": 4,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 5,
+      "max": 10
+    },
+    "fightValue": 750,
+    "aiValue": 790,
+    "abilities": {},
+    "graphics": {
+      "animation": "runeterra/freljord/creatures/draklornInquisitor/battle.json",
+      "map": "runeterra/freljord/creatures/draklornInquisitor/map.json",
+      "iconLarge": "runeterra/freljord/creatures/draklornInquisitor/large.png",
+      "iconSmall": "runeterra/freljord/creatures/draklornInquisitor/small.png",
+      "mapAttackFromLeft": "runeterra/freljord/creatures/draklornInquisitor/attackLeft.png",
+      "mapAttackFromRight": "runeterra/freljord/creatures/draklornInquisitor/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1
+    },
+    "sound": {
+      "attack": "CRUSATTK.wav",
+      "defend": "CRUSDFND.wav",
+      "killed": "CRUSKILL.wav",
+      "move": "CRUSMOVE.wav",
+      "wince": "CRUSWNCE.wav"
+    }
+  },
+  "starlitSeer": {
+    "name": {
+      "singular": "Starlit Seer",
+      "plural": "Starlit Seers"
+    },
+    "description": "A living Starlit Seer walks and projects one physical prepared ritual splinter per shooting action: eight ammunition, six-hex maximum and full-damage range. Normal adjacent blocking, melee and wall penalties apply. Once per stack per battle, spend the action instead on Basic Protection from Water for three rounds. The ammunition and spell are bounded Heroes III adaptations, not canonical card growth, Udyr forms or an inexhaustible magic attack. Splits retain separate charges at army-slot and action costs.",
+    "faction": "freljord",
+    "level": 5,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": false,
+    "attack": 12,
+    "defense": 10,
+    "hitPoints": 55,
+    "damage": {
+      "min": 9,
+      "max": 14
+    },
+    "speed": 5,
+    "shots": 8,
+    "cost": {
+      "gold": 650
+    },
+    "growth": 3,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 4,
+      "max": 10
+    },
+    "fightValue": 690,
+    "aiValue": 865,
+    "upgrades": [
+      "winterVeilSeer"
+    ],
+    "abilities": {
+      "shooter": {
+        "type": "SHOOTER"
+      },
+      "nearRitual": {
+        "type": "LIMITED_SHOOTING_RANGE",
+        "val": 6,
+        "addInfo": 6
+      },
+      "ward": {
+        "type": "SPELLCASTER",
+        "subtype": "core:protectWater",
+        "val": 1
+      },
+      "casts": {
+        "type": "CASTS",
+        "val": 1
+      },
+      "duration": {
+        "type": "CREATURE_ENCHANT_POWER",
+        "val": 3
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/freljord/creatures/starlitSeer/battle.json",
+      "map": "runeterra/freljord/creatures/starlitSeer/map.json",
+      "iconLarge": "runeterra/freljord/creatures/starlitSeer/large.png",
+      "iconSmall": "runeterra/freljord/creatures/starlitSeer/small.png",
+      "mapAttackFromLeft": "runeterra/freljord/creatures/starlitSeer/attackLeft.png",
+      "mapAttackFromRight": "runeterra/freljord/creatures/starlitSeer/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1,
+      "missile": {
+        "projectile": "runeterra/freljord/projectiles/seerRitual.json",
+        "frameAngles": [
+          90,
+          45,
+          0,
+          -45,
+          -90
+        ],
+        "attackClimaxFrame": 5,
+        "offset": {
+          "upperX": 38,
+          "upperY": -90,
+          "middleX": 41,
+          "middleY": -76,
+          "lowerX": 40,
+          "lowerY": -44
+        }
+      }
+    },
+    "sound": {
+      "attack": "MAGEATTK.wav",
+      "defend": "MAGEDFND.wav",
+      "killed": "MAGEKILL.wav",
+      "move": "MAGEMOVE.wav",
+      "shoot": "MAGESHOT.wav",
+      "wince": "MAGEWNCE.wav"
+    }
+  },
+  "winterVeilSeer": {
+    "name": {
+      "singular": "Winter Veil Seer",
+      "plural": "Winter Veil Seers"
+    },
+    "description": "A living Winter Veil Seer carries improved ritual bindings and layered protection. Twelve physical prepared ritual splinters, one per action, six-hex maximum/full-damage range and normal shooting penalties. Once per stack per battle, spend its action on Advanced Protection from Water for three rounds. No mass cast, free shot after casting, healing, resurrection, Udyr repertoire or card-stat economy; this upgrade title is a project adaptation.",
+    "faction": "freljord",
+    "level": 5,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": false,
+    "attack": 15,
+    "defense": 13,
+    "hitPoints": 70,
+    "damage": {
+      "min": 12,
+      "max": 18
+    },
+    "speed": 6,
+    "shots": 12,
+    "cost": {
+      "gold": 875
+    },
+    "growth": 3,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 2,
+      "max": 6
+    },
+    "fightValue": 1015,
+    "aiValue": 1385,
+    "abilities": {
+      "shooter": {
+        "type": "SHOOTER"
+      },
+      "nearRitual": {
+        "type": "LIMITED_SHOOTING_RANGE",
+        "val": 6,
+        "addInfo": 6
+      },
+      "ward": {
+        "type": "SPELLCASTER",
+        "subtype": "core:protectWater",
+        "val": 2
+      },
+      "casts": {
+        "type": "CASTS",
+        "val": 1
+      },
+      "duration": {
+        "type": "CREATURE_ENCHANT_POWER",
+        "val": 3
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/freljord/creatures/winterVeilSeer/battle.json",
+      "map": "runeterra/freljord/creatures/winterVeilSeer/map.json",
+      "iconLarge": "runeterra/freljord/creatures/winterVeilSeer/large.png",
+      "iconSmall": "runeterra/freljord/creatures/winterVeilSeer/small.png",
+      "mapAttackFromLeft": "runeterra/freljord/creatures/winterVeilSeer/attackLeft.png",
+      "mapAttackFromRight": "runeterra/freljord/creatures/winterVeilSeer/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1,
+      "missile": {
+        "projectile": "runeterra/freljord/projectiles/seerRitual.json",
+        "frameAngles": [
+          90,
+          45,
+          0,
+          -45,
+          -90
+        ],
+        "attackClimaxFrame": 5,
+        "offset": {
+          "upperX": 37,
+          "upperY": -86,
+          "middleX": 41,
+          "middleY": -69,
+          "lowerX": 35,
+          "lowerY": -40
+        }
+      }
+    },
+    "sound": {
+      "attack": "MAGEATTK.wav",
+      "defend": "MAGEDFND.wav",
+      "killed": "MAGEKILL.wav",
+      "move": "MAGEMOVE.wav",
+      "shoot": "MAGESHOT.wav",
+      "wince": "MAGEWNCE.wav"
+    }
+  },
+  "druvaskRider": {
+    "name": {
+      "singular": "Drüvask Rider",
+      "plural": "Drüvask Riders"
+    },
+    "description": "A rider guides a squat shaggy tusked drüvask. This living two-hex cavalry makes one ordinary melee strike with normal retaliation. It has no jousting, additional attack, cold proc or obstacle bypass; Bristle remains Sejuani's unique companion.",
+    "faction": "freljord",
+    "level": 6,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": true,
+    "attack": 18,
+    "defense": 16,
+    "hitPoints": 95,
+    "damage": {
+      "min": 16,
+      "max": 26
+    },
+    "speed": 7,
+    "shots": 0,
+    "cost": {
+      "gold": 1350
+    },
+    "growth": 2,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 3,
+      "max": 8
+    },
+    "fightValue": 1575,
+    "aiValue": 1735,
+    "upgrades": [
+      "winterOutrider"
+    ],
+    "abilities": {},
+    "graphics": {
+      "animation": "runeterra/freljord/creatures/druvaskRider/battle.json",
+      "map": "runeterra/freljord/creatures/druvaskRider/map.json",
+      "iconLarge": "runeterra/freljord/creatures/druvaskRider/large.png",
+      "iconSmall": "runeterra/freljord/creatures/druvaskRider/small.png",
+      "mapAttackFromLeft": "runeterra/freljord/creatures/druvaskRider/attackLeft.png",
+      "mapAttackFromRight": "runeterra/freljord/creatures/druvaskRider/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1
+    },
+    "sound": {
+      "attack": "GWRDATTK.wav",
+      "defend": "GWRDDFND.wav",
+      "killed": "GWRDKILL.wav",
+      "move": "GWRDMOVE.wav",
+      "wince": "GWRDWNCE.wav"
+    }
+  },
+  "winterOutrider": {
+    "name": {
+      "singular": "Winter Outrider",
+      "plural": "Winter Outriders"
+    },
+    "description": "Segmented mount barding, stronger rider equipment and a heavier shaggy drüvask mark this elite cavalry. One ordinary strike and normal retaliation; no charge bonus or extra attack. Two-hex landings and intact siege walls constrain it.",
+    "faction": "freljord",
+    "level": 6,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": true,
+    "attack": 22,
+    "defense": 20,
+    "hitPoints": 120,
+    "damage": {
+      "min": 22,
+      "max": 35
+    },
+    "speed": 8,
+    "shots": 0,
+    "cost": {
+      "gold": 1825
+    },
+    "growth": 2,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 2,
+      "max": 5
+    },
+    "fightValue": 2370,
+    "aiValue": 2725,
+    "abilities": {},
+    "graphics": {
+      "animation": "runeterra/freljord/creatures/winterOutrider/battle.json",
+      "map": "runeterra/freljord/creatures/winterOutrider/map.json",
+      "iconLarge": "runeterra/freljord/creatures/winterOutrider/large.png",
+      "iconSmall": "runeterra/freljord/creatures/winterOutrider/small.png",
+      "mapAttackFromLeft": "runeterra/freljord/creatures/winterOutrider/attackLeft.png",
+      "mapAttackFromRight": "runeterra/freljord/creatures/winterOutrider/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1
+    },
+    "sound": {
+      "attack": "GWRDATTK.wav",
+      "defend": "GWRDDFND.wav",
+      "killed": "GWRDKILL.wav",
+      "move": "GWRDMOVE.wav",
+      "wince": "GWRDWNCE.wav"
+    }
+  },
+  "harbingerOfThralls": {
+    "name": {
+      "singular": "Harbinger of Thralls",
+      "plural": "Harbingers of Thralls"
+    },
+    "description": "A large living Freljord bird crosses battlefield obstacles with native flight and lands in a legal two-hex space to strike once in melee. Ordinary retaliation, morale and control apply. The official bird subject is distinct from a Yeti, Titan, dragon or undead Thrall. No ranged attack, summon, countdown economy, magical immunity or adventure-map flight.",
+    "faction": "freljord",
+    "level": 7,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": true,
+    "attack": 24,
+    "defense": 20,
+    "hitPoints": 210,
+    "damage": {
+      "min": 32,
+      "max": 46
+    },
+    "speed": 7,
+    "shots": 0,
+    "cost": {
+      "gold": 3500,
+      "crystal": 1
+    },
+    "growth": 1,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 2,
+      "max": 5
+    },
+    "fightValue": 3790,
+    "aiValue": 4585,
+    "upgrades": [
+      "rimewakeHarbinger"
+    ],
+    "abilities": {
+      "canFly": {
+        "type": "FLYING"
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/freljord/creatures/harbingerOfThralls/battle.json",
+      "map": "runeterra/freljord/creatures/harbingerOfThralls/map.json",
+      "iconLarge": "runeterra/freljord/creatures/harbingerOfThralls/large.png",
+      "iconSmall": "runeterra/freljord/creatures/harbingerOfThralls/small.png",
+      "mapAttackFromLeft": "runeterra/freljord/creatures/harbingerOfThralls/attackLeft.png",
+      "mapAttackFromRight": "runeterra/freljord/creatures/harbingerOfThralls/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1
+    },
+    "sound": {
+      "attack": "ROCCATTK.wav",
+      "defend": "ROCCDFND.wav",
+      "killed": "ROCCKILL.wav",
+      "move": "ROCCMOVE.wav",
+      "wince": "ROCCWNCE.wav"
+    }
+  },
+  "rimewakeHarbinger": {
+    "name": {
+      "singular": "Rimewake Harbinger",
+      "plural": "Rimewake Harbingers"
+    },
+    "description": "A larger protected living Harbinger remains a two-hex flyer and gains six finite single-target physical ritual calls with seven-hex maximum/full-damage range. The visible pressure/sound-call carrier is a Heroes III attack-fiction adaptation, not a canonical Titan lightning spell or elemental damage school. One action and ammunition per shot; adjacent blocking, normal melee and wall penalties remain. No area damage, freeze, free Thralls, chain lightning, extra attack or control immunity.",
+    "faction": "freljord",
+    "level": 7,
+    "disabled": false,
+    "special": false,
+    "excludeFromRandomization": false,
+    "doubleWide": true,
+    "attack": 27,
+    "defense": 23,
+    "hitPoints": 240,
+    "damage": {
+      "min": 40,
+      "max": 58
+    },
+    "speed": 8,
+    "shots": 6,
+    "cost": {
+      "gold": 5200,
+      "crystal": 2
+    },
+    "growth": 1,
+    "horde": 0,
+    "hasDoubleWeek": true,
+    "advMapAmount": {
+      "min": 1,
+      "max": 3
+    },
+    "fightValue": 4965,
+    "aiValue": 7425,
+    "abilities": {
+      "canFly": {
+        "type": "FLYING"
+      },
+      "shooter": {
+        "type": "SHOOTER"
+      },
+      "ritualCallRange": {
+        "type": "LIMITED_SHOOTING_RANGE",
+        "val": 7,
+        "addInfo": 7
+      }
+    },
+    "graphics": {
+      "animation": "runeterra/freljord/creatures/rimewakeHarbinger/battle.json",
+      "map": "runeterra/freljord/creatures/rimewakeHarbinger/map.json",
+      "iconLarge": "runeterra/freljord/creatures/rimewakeHarbinger/large.png",
+      "iconSmall": "runeterra/freljord/creatures/rimewakeHarbinger/small.png",
+      "mapAttackFromLeft": "runeterra/freljord/creatures/rimewakeHarbinger/attackLeft.png",
+      "mapAttackFromRight": "runeterra/freljord/creatures/rimewakeHarbinger/attackRight.png",
+      "mapMask": [
+        "VV",
+        "VA"
+      ],
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 0.1,
+      "missile": {
+        "projectile": "runeterra/freljord/projectiles/rimewakeCall.json",
+        "frameAngles": [
+          90,
+          45,
+          0,
+          -45,
+          -90
+        ],
+        "attackClimaxFrame": 3,
+        "offset": {
+          "upperX": 58,
+          "upperY": -87,
+          "middleX": 64,
+          "middleY": -61,
+          "lowerX": 69,
+          "lowerY": -50
+        }
+      }
+    },
+    "sound": {
+      "attack": "ROCCATTK.wav",
+      "defend": "ROCCDFND.wav",
+      "killed": "ROCCKILL.wav",
+      "move": "ROCCMOVE.wav",
+      "wince": "ROCCWNCE.wav",
+      "shoot": "STORSHOT.wav"
+    }
+  }
+}

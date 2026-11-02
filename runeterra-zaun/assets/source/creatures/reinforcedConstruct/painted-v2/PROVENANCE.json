@@ -1,0 +1,151 @@
+{
+  "credits": {
+    "author": "OpenAI image generation directed by Runeterra project",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "generation": {
+    "image_generation_used": true,
+    "model": null,
+    "model_disclosure": "The callable tool did not disclose a model identifier.",
+    "painted_master": "assets/source/creatures/reinforcedConstruct/painted-v2/auxiliary-master.png",
+    "painted_master_sha256": "ab8f7baf4c1d8fbca1cea420f8c34a87fa0ba4e30ec6607d43b388f9da713b16",
+    "prompt": "Use case: identity-preserve. Image1 reference is own Chemtech Construct subject: preserve headless workshop pumping-machine identity and original 1999 Heroes III painted/prerendered texture, perspective and upper-left lighting. Paint its UPGRADE named Reinforced Construct. Exactly six separately framed paintings in3 columns by2rows, generous true transparent-alpha gutters, NO text, floor or decorative frame. Upgrade: larger riveted overlapping BLACKENED IRON plates strapped over same squat box pump torso, reinforced corner braces, TWO smaller oxidized copper secondary pressure cylinders strapped either side of the large transverse tank behind, wider planted riveted work feet, thicker flexible hose single nozzle arm and opposite clamp. Same front amber pressure dial and round top inspection hatch, no head or eyes. Clearly bigger heavier armoured silhouette and larger ammunition capacity, never just changed color. NOT sleek robot, blue hextech, golem, tank vehicle, humanoidface or magic. Row1col1 fullbody right-facing battlefield stance; row1col2 separately painted fullbody right-facing adventure miniature with overhead angle; row1col3 separately painted left-facing reverse side standing view NOT mirror. Row2col1 tight large upper-casing portrait; row2col2 separate horizontal upper-casing portrait; row2col3 fullbody right-facing adventure standing. Every panel same exact upgraded machine. Oily copper rust, soot-black iron, warm amber gauge, realistic worn materials and restrained miniature detail.",
+    "provider": "OpenAI built-in image_gen tool",
+    "returned_provenance": {
+      "generated_file": "C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-da23-7872-b9d7-26cd44e2d4c0\\exec-700cdd9f-33d7-465a-a67e-ae94d0facf37.png",
+      "output_hint": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-da23-7872-b9d7-26cd44e2d4c0 as C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-da23-7872-b9d7-26cd44e2d4c0\\exec-700cdd9f-33d7-465a-a67e-ae94d0facf37.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "route": "genuine built-in image generation; technical alpha-preserving crops and uniform resampling only"
+  },
+  "recipes": [
+    {
+      "recipe": "assets/recipes/creatures/reinforcedConstruct-map.json",
+      "recipe_sha256": "d38e5a9c76d57a7c9307cb26c8fa893543fc7da8ce164caa83518bbde7aa7742",
+      "source": "assets/source/creatures/reinforcedConstruct/painted-v2/native-map/g00/g00-f000.png",
+      "source_sha256": "84d5db97482e4cfb60c5859d044cbdccb5a20cb88f07778a130e0fc47dff5db9"
+    },
+    {
+      "recipe": "assets/recipes/creatures/reinforcedConstruct-large.json",
+      "recipe_sha256": "95b18f1d70e541f247d7d238b56598e064bf06f060ada60d121e8c8a937fe82b",
+      "source": "assets/source/creatures/reinforcedConstruct/painted-v2/large-master.png",
+      "source_sha256": "ed3892d939e38721699a5810cbae1a9cff9dd8fb5d28fc66e7247c84debb46fb"
+    },
+    {
+      "recipe": "assets/recipes/creatures/reinforcedConstruct-small.json",
+      "recipe_sha256": "53cee1e8d9bf33dd54efe167ac066da48a31010044d6a70d749ba022979bb8ce",
+      "source": "assets/source/creatures/reinforcedConstruct/painted-v2/small-master.png",
+      "source_sha256": "a91eede4a2d7d82754048a6ba1d816e6f9c9ce840f3761812d9fe09972d9de26"
+    },
+    {
+      "recipe": "assets/recipes/creatures/reinforcedConstruct-attackLeft.json",
+      "recipe_sha256": "63d0825ef77c51bc8b663ce3371ea964751ad1ae7f409d5c80ebb26ed7d714e0",
+      "source": "assets/source/creatures/reinforcedConstruct/painted-v2/attackLeft-master.png",
+      "source_sha256": "fce1062c2d78c4ae807003274abf2911bae7464588c688099107d6e615bc938d"
+    },
+    {
+      "recipe": "assets/recipes/creatures/reinforcedConstruct-attackRight.json",
+      "recipe_sha256": "354c16f50b4eee276b7d07901f9dc0da831457c5440cd4831de3003e837b0b40",
+      "source": "assets/source/creatures/reinforcedConstruct/painted-v2/attackRight-master.png",
+      "source_sha256": "b664dddbeb8733701f960b24e3d25ac88e6b68b0faf438693244ce51c9ed9890"
+    }
+  ],
+  "status": "authored configuration; final approval pending",
+  "technical_transforms": {
+    "attackLeft": {
+      "offset": [
+        1,
+        0
+      ],
+      "panel": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "scale": 0.1285140562248996,
+      "source_alpha_box": [
+        30,
+        14,
+        512,
+        512
+      ]
+    },
+    "attackRight": {
+      "offset": [
+        1,
+        0
+      ],
+      "panel": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "scale": 0.12955465587044535,
+      "source_alpha_box": [
+        10,
+        16,
+        491,
+        510
+      ]
+    },
+    "large": {
+      "offset": [
+        0,
+        3
+      ],
+      "panel": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "scale": 0.11530815109343936,
+      "source_alpha_box": [
+        9,
+        0,
+        512,
+        498
+      ]
+    },
+    "map": {
+      "offset": [
+        41,
+        16
+      ],
+      "panel": [
+        570,
+        0,
+        1024,
+        512
+      ],
+      "scale": 0.11455847255369929,
+      "source_alpha_box": [
+        21,
+        40,
+        430,
+        459
+      ]
+    },
+    "small": {
+      "offset": [
+        0,
+        2
+      ],
+      "panel": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "scale": 0.0625,
+      "source_alpha_box": [
+        0,
+        35,
+        512,
+        467
+      ]
+    }
+  }
+}

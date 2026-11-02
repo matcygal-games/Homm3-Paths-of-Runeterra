@@ -1,0 +1,50 @@
+{
+  "checks": {
+    "all_opaque_dock_and_boat_pixels_preserved_by_actual_converter": true,
+    "alpha_derived_area_and_highlight": true,
+    "correct_private_native_paths": true,
+    "exactly_four_changed_compiled_pngs_in_temporary_conversion": true,
+    "full_canvas_size_800x374": true,
+    "historical_v5_selection_and_all_585_prior_town_source_files_unchanged": true,
+    "lossless_original_positions": true,
+    "new_painting_or_recolor": false
+  },
+  "comparison_sha256": "d5e26e6c51e34a569a10c31fbee261f1a5e2db6333ab6a57680d015c559fdd86",
+  "comparison_sheet": "assets/reviews/town/coastal-state-v1/native-coastal-components.png",
+  "final_art_acceptance": false,
+  "findings": [
+    "Native replacement now includes both dock cranes/stores and the whole barge, purple tarp/flag and local green reagent details. No clipping, source movement or layer recolor was introduced.",
+    "The construction icon depicts the same combined state through standard uniform contain assembly. It is not a separate newly painted icon.",
+    "The selected v5 dock/barge spacing is preserved: dock bbox [701,208,797,272], boat bbox [739,318,797,361]. The visible gap still needs coastal in-game composition review; no claim of a physically connected berth is made.",
+    "hidden:true follows the inspected original native interaction convention and does not suppress drawing. Native coastal hover/click/boat creation was not run."
+  ],
+  "independent_review": false,
+  "inputs": {
+    "assets/source/town/chemtech-v4-buildings/native/ship/layer.png": "b09bd1f113cf1b18e70e5a9cd55462e7d6d9be444a9aecb821fb3da4ab94df7b",
+    "assets/source/town/chemtech-v4-buildings/native/shipyard/layer.png": "1975ac5445fc0e42f4dfb9c83d1eed3fb806d830dabf4dc30f97701ef7325d64",
+    "assets/source/town/chemtech-v4-buildings/port-master.png": "bd0674cf0338491b7a070601d82f5d2ce401b9e3a295e38751812e1f49828704",
+    "assets/source/town/chemtech-v4-buildings/port-provenance.json": "28fb7bdaa304ee3159397c943b43ee3ed884c1eb9af5bae84ee0b11bae94a804",
+    "assets/source/town/chemtech-v4-buildings/selection.json": "7f5f6168779eae0bef917194c0713758ac5459a83b1bb44e3b3218c57e0b5f8d"
+  },
+  "provenance": {
+    "path": "assets/source/town/coastal-state-v1/provenance.json",
+    "sha256": "98e85eb570e3ddb6475db72ba96802575960b89e8acca65d39958442d4a49f0d"
+  },
+  "quoted_contract_rules": [
+    "Render each active state with correct clicks/overlap/replacement behavior.",
+    "Protected inputs: the licensed game installation; vcmi-develop/; runeterra-demacia/references/extracted/, frames/ and boards/; review/source-before-review.zip and preserved baseline inputs."
+  ],
+  "release_accepted": false,
+  "reviewer": "Codex /root/zaun_coastal_state, technical alpha and pixel review",
+  "runtime_verified": false,
+  "scope": "Source-only review of the existing own dock/boat alpha assembly and derived native masks/icon; not a final art, gameplay or runtime acceptance.",
+  "source_ready": true,
+  "sources": {
+    "assets/source/town/coastal-state-v1/area.png": "8efccf49408b8798a858b12b856a48f9c0b6de8a4720c2f597e507f4fb495151",
+    "assets/source/town/coastal-state-v1/border.png": "6549f19dd56431f2f218d92a3bf26149cb81dd24dca072ad95330a611e857ae3",
+    "assets/source/town/coastal-state-v1/construction.png": "2b145d8a67ab298d502db682af59828ade2bcba4ac1df3d35a0977c22ffb3872",
+    "assets/source/town/coastal-state-v1/layer.png": "f3430e8b4328239bd2140c0b493272486cc550460b1fca41dd7c8f4c0380a875"
+  },
+  "status": "authored configuration",
+  "visual_approval_granted": false
+}

@@ -1,0 +1,761 @@
+{
+  "production_status": "painted-master-complete-unapproved",
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in imagegen",
+    "model": "Not exposed by the tool",
+    "prompt": "CreateONEUPGRADEmaster PiltoverACADEMYARBALIST ofexactreferencedadultbrown-skinnedmaleArtificer. Samematureface/darkhair/gogglesaboveeyes/navyivoryworkwear identity, butnoticeablystrongerprotectedleathertorso/dullsteelbracersandshoulderguards, enlargedclosedboltcase, substantialcraftedarbalestwithBROADERCROSSBOWLIMBSandprotectedbronzecoilhousing, astronggroundedshoulderstock. Preservephysicalboltvisibleonguide, bowstringandwoodgrip; weaponisCROSSBOWnotrifle/cannon, noenergybeam, nochampionweaponcopy. ExactPiltovercog-spirecrestonphysicalshoulderplateandboltcase. Twohandsnaturallyoperateweapon, completehands/feet/wholecrossbowfullyvisible, RIGHTthreequarterbattleprofilewithstablegroundedstance, generouspadding. OriginalHoMM31999 richlytexturedpainted2D characterfinish, dullcloth/leather/wornbronze/steel,lightupperleftwarmocclusion, compactbelievableanatomy. NOT3D/plastic/anime/vector/Leagueplash. GenuinelyTRANSPARENTbackground,nohaze/floor/text.",
+    "action_source_ledger": "assets/source/creatures/painted-preview-fit-v1/t3-t4/generation-ledger-v1.json",
+    "action_source_ledger_sha256": "537841b13625ea001aee2c9900bda06307d6624fe8e8267ecfe81ff6eeb4eb99",
+    "painted_master": "assets/source/creatures/painted-preview-fit-v1/t3-t4/academyArbalist/master-v1.png",
+    "painted_master_sha256": "11866519d4095b7987bfc776166f8d7f6c11e1c439bc48d2be852e7aa8bc1fe1",
+    "method": "Whole-source uniform cohort resampling and root registration only; no rigging, rendering, limb warping or invented poses"
+  },
+  "production_inputs": [
+    {
+      "path": "assets/source/creatures/painted-preview-fit-v1/t3-t4/academyArbalist/master-v1.png",
+      "sha256": "11866519d4095b7987bfc776166f8d7f6c11e1c439bc48d2be852e7aa8bc1fe1"
+    },
+    {
+      "path": "assets/source/creatures/painted-preview-fit-v1/t3-t4/academyArbalist/portrait-v1.png",
+      "sha256": "545dcee09a1df6236ee96f5cd486e6d794a3c0d5d0d09f2496097288c8a4b196"
+    },
+    {
+      "path": "assets/source/creatures/painted-preview-fit-v1/t3-t4/academyArbalist/isolated-source-map-v1.json",
+      "sha256": "86d5b43822c50c704f3156d6af5f53b1f1f7f2c2eb947e3126546334d485a484"
+    },
+    {
+      "path": "assets/source/creatures/painted-preview-fit-v1/t3-t4/pose-roots-v2.json",
+      "sha256": "b784a804c0a3b4510e655696594f779a2bfc63a8c528d5e4421c21fe86510630"
+    },
+    {
+      "path": "assets/source/creatures/painted-preview-fit-v1/t3-t4/producer_v2.py",
+      "sha256": "21292967164d5544ce029a73a287ccf60f4272ee4198420e0c6dcfbd7a3982d2"
+    },
+    {
+      "path": "assets/source/creatures/painted-preview-fit-v1/t3-t4/extract_sources.py",
+      "sha256": "263e59e17166f5642e8dec77c3e0cc03bcbafebf98a451b447486c6f6c9519eb"
+    },
+    {
+      "path": "assets/source/creatures/painted-preview-fit-v1/t3-t4/generation-ledger-v1.json",
+      "sha256": "537841b13625ea001aee2c9900bda06307d6624fe8e8267ecfe81ff6eeb4eb99"
+    },
+    {
+      "path": "assets/source/creatures/painted-preview-fit-v1/t3-t4/selected-cohorts-v1.json",
+      "sha256": "7ef765da499a33a3a6e29f76140fe435406ac06a7d99a5a48c620829f8ddf118"
+    },
+    {
+      "path": "assets/source/creatures/painted-preview-fit-v1/t3-t4/generation-prompts-v1.json",
+      "sha256": "81e476fe678c2597fbc43ab702201c7b1d6b6b2064b4975d6b3a8bdefdade246"
+    },
+    {
+      "path": "assets/source/creatures/painted-preview-fit-v1/t3-t4/academyArbalist/combat-v1.png",
+      "sha256": "2a991dcbdcfc69395ab52188dc5455dd52428b1080150a05008be3fd2ae71f62"
+    },
+    {
+      "path": "assets/source/creatures/painted-preview-fit-v1/t3-t4/academyArbalist/movement-v1.png",
+      "sha256": "9b43ec57a446b0fd7eb4f5682005dcc9b5b31f24e22302daf610f27dee9f4cf7"
+    },
+    {
+      "path": "assets/source/creatures/painted-preview-fit-v1/t3-t4/academyArbalist/shoot-v1.png",
+      "sha256": "045725898e2032b7406c6ed9a83b2a30d99fe166ee42dafd215474361e754676"
+    }
+  ],
+  "recipe_type": "vcmi_animation",
+  "output_path": "Content/Sprites/runeterra/piltover/creatures/academyArbalist/battle.json",
+  "canvas": [
+    450,
+    400
+  ],
+  "pivot": {
+    "x": 197,
+    "y": 265
+  },
+  "groups": [
+    {
+      "group": 0,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g00-f000.png",
+          "sha256": "7cdc3959b29e7147bcb3a6f2cff8032a9bf72ae0133d7d64935cb4d5d157bbf6",
+          "source_sha256": "7cdc3959b29e7147bcb3a6f2cff8032a9bf72ae0133d7d64935cb4d5d157bbf6",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g00-f001.png",
+          "sha256": "4f8e61b46085660e11da4ffc8821c3ef5ef5ee2b11ce04ff6e4a6449c1779b72",
+          "source_sha256": "4f8e61b46085660e11da4ffc8821c3ef5ef5ee2b11ce04ff6e4a6449c1779b72",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g00-f002.png",
+          "sha256": "827f318305dde2bbf75971deddc0533a4c525d82a306058979b29912de8c6706",
+          "source_sha256": "827f318305dde2bbf75971deddc0533a4c525d82a306058979b29912de8c6706",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g00-f003.png",
+          "sha256": "1b9140fa4595685903bb10556c4de9d7f8cf2832f95f20b5aa8f2d2a685cca4b",
+          "source_sha256": "1b9140fa4595685903bb10556c4de9d7f8cf2832f95f20b5aa8f2d2a685cca4b",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g00-f004.png",
+          "sha256": "10330fa64c74494d425f2b9350b7de33f53aaa0a2d7fb4ec3625cb09c3efd95a",
+          "source_sha256": "10330fa64c74494d425f2b9350b7de33f53aaa0a2d7fb4ec3625cb09c3efd95a",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g00-f005.png",
+          "sha256": "9d2ec6a609615bb3ffc44babef2ab274d5fe296d6327d361d4adaaceeee2c9d7",
+          "source_sha256": "9d2ec6a609615bb3ffc44babef2ab274d5fe296d6327d361d4adaaceeee2c9d7",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 1,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g01-f000.png",
+          "sha256": "169f9c1ecb2818caf3fafada6c4a745440bae0dd6f05bc80c24a49b536822e6c",
+          "source_sha256": "169f9c1ecb2818caf3fafada6c4a745440bae0dd6f05bc80c24a49b536822e6c",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g01-f001.png",
+          "sha256": "d4fc0989eb0d48380db0566fe1dd19ba11f5bad6c30219c192ca66a1f4d78bcc",
+          "source_sha256": "d4fc0989eb0d48380db0566fe1dd19ba11f5bad6c30219c192ca66a1f4d78bcc",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g01-f002.png",
+          "sha256": "d4fc0989eb0d48380db0566fe1dd19ba11f5bad6c30219c192ca66a1f4d78bcc",
+          "source_sha256": "d4fc0989eb0d48380db0566fe1dd19ba11f5bad6c30219c192ca66a1f4d78bcc",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g01-f003.png",
+          "sha256": "30dfcb93428a3f315dc437d21fc0474d32264fbcec0049f142e300560db59ceb",
+          "source_sha256": "30dfcb93428a3f315dc437d21fc0474d32264fbcec0049f142e300560db59ceb",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g01-f004.png",
+          "sha256": "30dfcb93428a3f315dc437d21fc0474d32264fbcec0049f142e300560db59ceb",
+          "source_sha256": "30dfcb93428a3f315dc437d21fc0474d32264fbcec0049f142e300560db59ceb",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g01-f005.png",
+          "sha256": "2ac29ecc06dad9f5491cba0f522a36f9d4bc1db20bb5d83ea47ea6ece9ed2f9b",
+          "source_sha256": "2ac29ecc06dad9f5491cba0f522a36f9d4bc1db20bb5d83ea47ea6ece9ed2f9b",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 6,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g01-f006.png",
+          "sha256": "2ac29ecc06dad9f5491cba0f522a36f9d4bc1db20bb5d83ea47ea6ece9ed2f9b",
+          "source_sha256": "2ac29ecc06dad9f5491cba0f522a36f9d4bc1db20bb5d83ea47ea6ece9ed2f9b",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 2,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g02-f000.png",
+          "sha256": "169f9c1ecb2818caf3fafada6c4a745440bae0dd6f05bc80c24a49b536822e6c",
+          "source_sha256": "169f9c1ecb2818caf3fafada6c4a745440bae0dd6f05bc80c24a49b536822e6c",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 3,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g03-f000.png",
+          "sha256": "dba34ce996b3532eea48555c1b0bc3bdff4a99157681fa1a6a07a0dc44efa141",
+          "source_sha256": "dba34ce996b3532eea48555c1b0bc3bdff4a99157681fa1a6a07a0dc44efa141",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g03-f001.png",
+          "sha256": "169f9c1ecb2818caf3fafada6c4a745440bae0dd6f05bc80c24a49b536822e6c",
+          "source_sha256": "169f9c1ecb2818caf3fafada6c4a745440bae0dd6f05bc80c24a49b536822e6c",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 4,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g04-f000.png",
+          "sha256": "76c8a7fc2abb4ad0a56f6b8e2bd34fcc5f1987b1851d68b75532f71ee36d142b",
+          "source_sha256": "76c8a7fc2abb4ad0a56f6b8e2bd34fcc5f1987b1851d68b75532f71ee36d142b",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 5,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g05-f000.png",
+          "sha256": "c841d0032666de1491ebb12f0c6e1b827dde12f5790bda1cae535265d9853507",
+          "source_sha256": "c841d0032666de1491ebb12f0c6e1b827dde12f5790bda1cae535265d9853507",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g05-f001.png",
+          "sha256": "561456ff58e375d1e7ce056386cd3a69dcf7201f65ce3327a66d36d1b84e3000",
+          "source_sha256": "561456ff58e375d1e7ce056386cd3a69dcf7201f65ce3327a66d36d1b84e3000",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g05-f002.png",
+          "sha256": "1b6a67d74b51bd918eaf6a91ed71c01bbe201555ae54002d48aea87f90775853",
+          "source_sha256": "1b6a67d74b51bd918eaf6a91ed71c01bbe201555ae54002d48aea87f90775853",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g05-f003.png",
+          "sha256": "99eccc308d573325557dccb9d73c5c2b8d7d260f28eff1c7319f3152e143e5ac",
+          "source_sha256": "99eccc308d573325557dccb9d73c5c2b8d7d260f28eff1c7319f3152e143e5ac",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 7,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g07-f000.png",
+          "sha256": "169f9c1ecb2818caf3fafada6c4a745440bae0dd6f05bc80c24a49b536822e6c",
+          "source_sha256": "169f9c1ecb2818caf3fafada6c4a745440bae0dd6f05bc80c24a49b536822e6c",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g07-f001.png",
+          "sha256": "321cbea507b2d45571addd574a998f8930279e97d147fa096dd4f69f0569f134",
+          "source_sha256": "321cbea507b2d45571addd574a998f8930279e97d147fa096dd4f69f0569f134",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g07-f002.png",
+          "sha256": "be02826bf713c8e6bdee432659935dd3ce331547c99864dacf5f2c958e3a695d",
+          "source_sha256": "be02826bf713c8e6bdee432659935dd3ce331547c99864dacf5f2c958e3a695d",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 8,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g08-f000.png",
+          "sha256": "be02826bf713c8e6bdee432659935dd3ce331547c99864dacf5f2c958e3a695d",
+          "source_sha256": "be02826bf713c8e6bdee432659935dd3ce331547c99864dacf5f2c958e3a695d",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g08-f001.png",
+          "sha256": "321cbea507b2d45571addd574a998f8930279e97d147fa096dd4f69f0569f134",
+          "source_sha256": "321cbea507b2d45571addd574a998f8930279e97d147fa096dd4f69f0569f134",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g08-f002.png",
+          "sha256": "169f9c1ecb2818caf3fafada6c4a745440bae0dd6f05bc80c24a49b536822e6c",
+          "source_sha256": "169f9c1ecb2818caf3fafada6c4a745440bae0dd6f05bc80c24a49b536822e6c",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 11,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g11-f000.png",
+          "sha256": "8794ed5e0a516ad6f1c6bd91d2491b67eec1367eb530f312964bd01c70572184",
+          "source_sha256": "8794ed5e0a516ad6f1c6bd91d2491b67eec1367eb530f312964bd01c70572184",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g11-f001.png",
+          "sha256": "13e7bfee25bb494661070463bdba3c3be3a47d10675dbce4d5d66adc41509c90",
+          "source_sha256": "13e7bfee25bb494661070463bdba3c3be3a47d10675dbce4d5d66adc41509c90",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g11-f002.png",
+          "sha256": "4021a0da68606872c71ca8ce33aa32afa4cd656639ab100086dada172a22075c",
+          "source_sha256": "4021a0da68606872c71ca8ce33aa32afa4cd656639ab100086dada172a22075c",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g11-f003.png",
+          "sha256": "218f1c21f27dafcbce94cd465eda5149d0dabaa5c41e1f75bb3abf53b635c4eb",
+          "source_sha256": "218f1c21f27dafcbce94cd465eda5149d0dabaa5c41e1f75bb3abf53b635c4eb",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 12,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g12-f000.png",
+          "sha256": "d5b4280b9ca1b3cbf1dcd0abbaf161d1aa2cb1f63203f8410b95b43e15fb9c85",
+          "source_sha256": "d5b4280b9ca1b3cbf1dcd0abbaf161d1aa2cb1f63203f8410b95b43e15fb9c85",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g12-f001.png",
+          "sha256": "cee161bfe4ac906cacce125e8d65cc97abe643a728f7e1837d3b12536e0a6415",
+          "source_sha256": "cee161bfe4ac906cacce125e8d65cc97abe643a728f7e1837d3b12536e0a6415",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g12-f002.png",
+          "sha256": "b1986d9416ab48cb8d1c13687fa62bb6fa910221981c892cd29f2692f55fd5a8",
+          "source_sha256": "b1986d9416ab48cb8d1c13687fa62bb6fa910221981c892cd29f2692f55fd5a8",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g12-f003.png",
+          "sha256": "cd13c3f1270815e1e0d5cdb7e97f7caaa2cce5053903ab1eae49602fe931cb51",
+          "source_sha256": "cd13c3f1270815e1e0d5cdb7e97f7caaa2cce5053903ab1eae49602fe931cb51",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 13,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g13-f000.png",
+          "sha256": "b7e80dc2cb0092d96bf334bfa3277012f4bc7abddd149da4d415d1346bc9bb2a",
+          "source_sha256": "b7e80dc2cb0092d96bf334bfa3277012f4bc7abddd149da4d415d1346bc9bb2a",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g13-f001.png",
+          "sha256": "f98b117e82638c4378968058a7a6a8dcde7db0686b8554bb44be74873983cc74",
+          "source_sha256": "f98b117e82638c4378968058a7a6a8dcde7db0686b8554bb44be74873983cc74",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g13-f002.png",
+          "sha256": "7f24ff748541b617ce47826eca3550121a99242184ba4711d5745ae4e87d7fe3",
+          "source_sha256": "7f24ff748541b617ce47826eca3550121a99242184ba4711d5745ae4e87d7fe3",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g13-f003.png",
+          "sha256": "8eb44cdc4312170f5ccf10f3c8e8496aec9c3109477ad4337aaa9b88de35412f",
+          "source_sha256": "8eb44cdc4312170f5ccf10f3c8e8496aec9c3109477ad4337aaa9b88de35412f",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 14,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g14-f000.png",
+          "sha256": "a0473a8b21b5659ed8c44516309bc536f1bf0a9cee663f3d7e5886c36dd7e825",
+          "source_sha256": "a0473a8b21b5659ed8c44516309bc536f1bf0a9cee663f3d7e5886c36dd7e825",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g14-f001.png",
+          "sha256": "2e52b794718fb0e8a59909182bc483737e326d28dfbea41d6cade148f3de99cd",
+          "source_sha256": "2e52b794718fb0e8a59909182bc483737e326d28dfbea41d6cade148f3de99cd",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g14-f002.png",
+          "sha256": "5f5f7278a5f455338503c61f280bc2bfe337020cfdf7c54cd6d117f4861ccd62",
+          "source_sha256": "5f5f7278a5f455338503c61f280bc2bfe337020cfdf7c54cd6d117f4861ccd62",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g14-f003.png",
+          "sha256": "152cc5455070bf0c01996062c89c03b60ca3e205b323ae670a47f7fc20949b5c",
+          "source_sha256": "152cc5455070bf0c01996062c89c03b60ca3e205b323ae670a47f7fc20949b5c",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g14-f004.png",
+          "sha256": "5bbc1cbdc70dd7586c5cf67b99aa159bce8625f74de25e9fbb69ae91c5c5f2f6",
+          "source_sha256": "5bbc1cbdc70dd7586c5cf67b99aa159bce8625f74de25e9fbb69ae91c5c5f2f6",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g14-f005.png",
+          "sha256": "59f009910edbb7057f1117dd30ecdc100d298fafcf3bf2c8e74e25a25d35baa0",
+          "source_sha256": "59f009910edbb7057f1117dd30ecdc100d298fafcf3bf2c8e74e25a25d35baa0",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 15,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g15-f000.png",
+          "sha256": "56e9ff37b9d2e93073662f75c0442ba18e56da7bfc4f800f3cd544cd2f4f71ee",
+          "source_sha256": "56e9ff37b9d2e93073662f75c0442ba18e56da7bfc4f800f3cd544cd2f4f71ee",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g15-f001.png",
+          "sha256": "ed0f51cbf7183c4004d4c065200464f73aafc4421dc1f6daef31ec7ef461cdd4",
+          "source_sha256": "ed0f51cbf7183c4004d4c065200464f73aafc4421dc1f6daef31ec7ef461cdd4",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g15-f002.png",
+          "sha256": "99ae1dfd3942b7c752d3274813405db82111105d796271b314316536b4939859",
+          "source_sha256": "99ae1dfd3942b7c752d3274813405db82111105d796271b314316536b4939859",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g15-f003.png",
+          "sha256": "7c05e3984e8a56e0266b76dd2a4d713f96cce4645400bfa089f22af24237b5dc",
+          "source_sha256": "7c05e3984e8a56e0266b76dd2a4d713f96cce4645400bfa089f22af24237b5dc",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g15-f004.png",
+          "sha256": "d39e7b5068651d78ebef7221d3f3b83e8c91833ae982afa21a1a81d14edf2eac",
+          "source_sha256": "d39e7b5068651d78ebef7221d3f3b83e8c91833ae982afa21a1a81d14edf2eac",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g15-f005.png",
+          "sha256": "97fcf9ced922462bf2abe5ea3c518f1bcc98942abc80a7641c1e3f3a15375b2e",
+          "source_sha256": "97fcf9ced922462bf2abe5ea3c518f1bcc98942abc80a7641c1e3f3a15375b2e",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 16,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g16-f000.png",
+          "sha256": "e8088af7de61f07e8c73d14f4d53f7633b5187df3a7dcc7e694efca804f074a1",
+          "source_sha256": "e8088af7de61f07e8c73d14f4d53f7633b5187df3a7dcc7e694efca804f074a1",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 1,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g16-f001.png",
+          "sha256": "b02b2e27959fba0bd02b58186523d7bd5be3c62ca975ff7ef8d1b1f076506048",
+          "source_sha256": "b02b2e27959fba0bd02b58186523d7bd5be3c62ca975ff7ef8d1b1f076506048",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 2,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g16-f002.png",
+          "sha256": "8070b8c0ece93c5d77279f1d37fc61dd1e311b0389ef1e735d9acd7f4edb3ab4",
+          "source_sha256": "8070b8c0ece93c5d77279f1d37fc61dd1e311b0389ef1e735d9acd7f4edb3ab4",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 3,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g16-f003.png",
+          "sha256": "7eaa29a702dd8d4806fc3174fd3a32d8966a0d4ee4c4db42856af478c8195aea",
+          "source_sha256": "7eaa29a702dd8d4806fc3174fd3a32d8966a0d4ee4c4db42856af478c8195aea",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 4,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g16-f004.png",
+          "sha256": "2a3521d2623f503c61227585ac4fa67f4bd3ea306a01df6ed94ea2a2104eb8be",
+          "source_sha256": "2a3521d2623f503c61227585ac4fa67f4bd3ea306a01df6ed94ea2a2104eb8be",
+          "source_canvas": [
+            450,
+            400
+          ]
+        },
+        {
+          "frame": 5,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g16-f005.png",
+          "sha256": "e3ed85e4dddb3f6ad47c686e62608b75a8de0227ec5041a5a88209c078895f81",
+          "source_sha256": "e3ed85e4dddb3f6ad47c686e62608b75a8de0227ec5041a5a88209c078895f81",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    },
+    {
+      "group": 22,
+      "frames": [
+        {
+          "frame": 0,
+          "source": "assets/source/creatures/painted-preview-fit-v1/t3-t4/native-v2/academyArbalist/battle/g22-f000.png",
+          "sha256": "99eccc308d573325557dccb9d73c5c2b8d7d260f28eff1c7319f3152e143e5ac",
+          "source_sha256": "99eccc308d573325557dccb9d73c5c2b8d7d260f28eff1c7319f3152e143e5ac",
+          "source_canvas": [
+            450,
+            400
+          ]
+        }
+      ],
+      "generateShadow": 2,
+      "generateOverlay": 0
+    }
+  ]
+}

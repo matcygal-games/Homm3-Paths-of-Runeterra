@@ -1,0 +1,505 @@
+{
+  "helper_sha256": "9244b8e0109d40de74eab4b9716d43ac7cb170f6aaebdda3daa96b045d4eb56f",
+  "native_execution": false,
+  "old_sources_unchanged": true,
+  "producer": "assets/source/town/painted-resume-v3/derive_cohorts.py",
+  "producer_sha256": "73d4944b5e5f1d89aab26d956262d031e510b32b00150eb908cf796163f2f174",
+  "registration_sha256": "ffaff7a048eb968ef6fe71c247ea40f8a8a6ea77f782114bdb75ed9bc495af4b",
+  "states": [
+    {
+      "derived_sources": {
+        "area": {
+          "path": "assets/source/town/painted-resume-v3/cityHall/area.png",
+          "sha256": "337ea36f40c1fa736e782defc88a3be39ffb963e5a36d241606d2d3513210ff6"
+        },
+        "border": {
+          "path": "assets/source/town/painted-resume-v3/cityHall/border.png",
+          "sha256": "fac64d666affbb2f2d997bc306f476e63553a0277f1eeb274e865d6d3ad0da81"
+        },
+        "campaign": {
+          "path": "assets/source/town/painted-resume-v3/cityHall/campaign.png",
+          "sha256": "616dd2bc3366da045b7a371a66475d597b7deeef797dab9d7620f30a83717d65"
+        },
+        "frame": {
+          "path": "assets/source/town/painted-resume-v3/cityHall/frame.png",
+          "sha256": "53235998445e8751aaa71a244e3fc652f30d422b0b17663576a3ca4e9fbdf9ff"
+        }
+      },
+      "job": {
+        "base_site": "villageHall",
+        "comparison_parent_frame": "assets/source/town/painted-resume-v2/townHall/frame.png",
+        "decision": "New civic cohort includes the entire new987pixel-high source canvas from y0, rather than the VillageHall crop startingy9. One extra canonical source column accounts for1593pixel child versus1594pixel parent. Native width166 and source scale retain the prior civic registration, rounded height103 and top26 preserve bottom129. No opaque-fit or old-state rewrite. Added storey and pylons are retained; a larger physical foundation is not inferred from generated framing.",
+        "ground_anchor": [
+          420,
+          129
+        ],
+        "key": "cityHall",
+        "registration": {
+          "native_site_box": [
+            335,
+            24,
+            170,
+            105
+          ],
+          "placement": [
+            337,
+            26
+          ],
+          "resampled_size": [
+            166,
+            103
+          ],
+          "source_canvas": [
+            1594,
+            987
+          ],
+          "source_crop": [
+            0,
+            0,
+            1594,
+            987
+          ],
+          "uniform_scale": 0.10414052697616061
+        },
+        "replacement": "townHall"
+      },
+      "native_body_alpha_bbox": [
+        338,
+        27,
+        502,
+        127
+      ],
+      "native_click_pixels": 12591,
+      "observed_registration": {
+        "fixed_base_crop": [
+          0,
+          0,
+          1594,
+          987
+        ],
+        "fixed_placement": [
+          337,
+          26
+        ],
+        "fixed_resampled_size": [
+          166,
+          103
+        ],
+        "source_canvas_offset": [
+          0,
+          0
+        ],
+        "translated_nonzero_alpha_bbox": [
+          0,
+          0,
+          1593,
+          987
+        ],
+        "uniform_base_scale": 0.10414052697616061
+      },
+      "parent_frame_sha256": "61625a4fae55aa66611da148157304dc1f49c84eceb4d0582c47f0357df70c30",
+      "required_output_mapping": [
+        {
+          "dimensions": [
+            800,
+            374
+          ],
+          "output_path": "Content/Sprites/runeterra/shurima/town/structures/cityHall.json",
+          "recipe_path": "assets/recipes/town/painted-resume-v3/cityHall-animation.json",
+          "recipe_sha256": "d79226ff770726fb01e520bbb938a3869108e8c9588ef0dd55d689a726522def",
+          "sha256": "9d439ee231434e4f8e41953b90e96e3bb8f7ac47f08747095fdee26b60af40f5"
+        },
+        {
+          "dimensions": [
+            800,
+            374
+          ],
+          "output_path": "Content/Sprites/runeterra/shurima/town/structures/cityHall_area.png",
+          "recipe_path": "assets/recipes/town/painted-resume-v3/cityHall-area.json",
+          "recipe_sha256": "97a4222599a8aa85c93c7b5968fb76952c88c9acf085f23d6e193a7f8bfa0634",
+          "sha256": "337ea36f40c1fa736e782defc88a3be39ffb963e5a36d241606d2d3513210ff6"
+        },
+        {
+          "dimensions": [
+            800,
+            374
+          ],
+          "output_path": "Content/Sprites/runeterra/shurima/town/structures/cityHall_border.png",
+          "recipe_path": "assets/recipes/town/painted-resume-v3/cityHall-border.json",
+          "recipe_sha256": "01d8ca47dbe0e1600c6f74d1215f79a504e139f11f6ead19d8573aecde63f5ca",
+          "sha256": "fac64d666affbb2f2d997bc306f476e63553a0277f1eeb274e865d6d3ad0da81"
+        },
+        {
+          "dimensions": [
+            58,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/shurima/town/structures/cityHall_campaign.png",
+          "recipe_path": "assets/recipes/town/painted-resume-v3/cityHall-campaign.json",
+          "recipe_sha256": "2ffe10a343f410add73ec3200ced1e187417263b84daf23cd8cb28920bb5d0df",
+          "sha256": "616dd2bc3366da045b7a371a66475d597b7deeef797dab9d7620f30a83717d65"
+        }
+      ],
+      "source_inspection": {
+        "body_alpha128_bbox": [
+          5,
+          6,
+          1587,
+          967
+        ],
+        "canvas": [
+          1593,
+          987
+        ],
+        "key": "cityHall",
+        "master": "assets\\source\\town\\buildings-v2\\cityHall\\master.png",
+        "master_sha256": "5e7aa983d111f13101ab5eec0c629c6f69e1ea65d3f443e668f370e9571b9c95",
+        "metadata": "assets\\source\\town\\buildings-v2\\cityHall\\master-generation.json",
+        "metadata_sha256": "aba4105e5cdef93db21ecbbd3fb0485188b9ecc1bdb1894b4b27952cab60f03c",
+        "nonzero_alpha_bbox": [
+          0,
+          0,
+          1593,
+          987
+        ],
+        "opaque_top_edge_pixels": 0,
+        "opaque_top_edge_runs": [],
+        "parent": "assets/source/town/buildings-v2/townHall/master.png",
+        "parent_sha256": "fbfabcee199d4d5b4e6c37854baa860fb9aacf1ab93a463bfe7bd008d7ef7e03",
+        "prompt_sha256": "5810c4b9241ac9f3fe29063f947e1fc1dab2b35ddd9c9ebdf87f9bf17684bca4"
+      }
+    },
+    {
+      "derived_sources": {
+        "area": {
+          "path": "assets/source/town/painted-resume-v3/citadel/area.png",
+          "sha256": "9c057f88db132144c6f3c6250dd83cb7300bb907049406ca207e58bf0fe28279"
+        },
+        "border": {
+          "path": "assets/source/town/painted-resume-v3/citadel/border.png",
+          "sha256": "5681bf78a2275b2aa21d8d34201a52aea699c9f2c4489f4c4f0727f5fc6e1764"
+        },
+        "campaign": {
+          "path": "assets/source/town/painted-resume-v3/citadel/campaign.png",
+          "sha256": "06846764aac54fe590cff1a4275043b649fd2b43afd60dbc562ef5806772c621"
+        },
+        "frame": {
+          "path": "assets/source/town/painted-resume-v3/citadel/frame.png",
+          "sha256": "4a14f78b8096e1d2cb78c9133f058381e937fc8a03b0609575eb642654e122c8"
+        }
+      },
+      "job": {
+        "base_site": "fort",
+        "comparison_parent_frame": "assets/source/town/painted-resume-v1/fort/frame.png",
+        "decision": "Explicit defense cohort retains full1781x883 source bounds shared by real Fort/Citadel generation. Do not crop to new871pixel alpha bottom or refit the changed gatehouse. Fixed204x101 render and bottom120 preserve defense-site scale; new portcullis/pylons stay intact.",
+        "ground_anchor": [
+          695,
+          120
+        ],
+        "key": "citadel",
+        "registration": {
+          "native_site_box": [
+            590,
+            16,
+            210,
+            104
+          ],
+          "placement": [
+            593,
+            19
+          ],
+          "resampled_size": [
+            204,
+            101
+          ],
+          "source_canvas": [
+            1781,
+            883
+          ],
+          "source_crop": [
+            0,
+            0,
+            1781,
+            883
+          ],
+          "uniform_scale": 0.1143827859569649
+        },
+        "replacement": "fort"
+      },
+      "native_body_alpha_bbox": [
+        594,
+        21,
+        797,
+        118
+      ],
+      "native_click_pixels": 14023,
+      "observed_registration": {
+        "fixed_base_crop": [
+          0,
+          0,
+          1781,
+          883
+        ],
+        "fixed_placement": [
+          593,
+          19
+        ],
+        "fixed_resampled_size": [
+          204,
+          101
+        ],
+        "source_canvas_offset": [
+          0,
+          0
+        ],
+        "translated_nonzero_alpha_bbox": [
+          0,
+          0,
+          1781,
+          871
+        ],
+        "uniform_base_scale": 0.1143827859569649
+      },
+      "parent_frame_sha256": "d8b2303d38fb14c154f8bee750aca30aaf93e1949049dc4041c89d1ca3ce84f2",
+      "required_output_mapping": [
+        {
+          "dimensions": [
+            800,
+            374
+          ],
+          "output_path": "Content/Sprites/runeterra/shurima/town/structures/citadel.json",
+          "recipe_path": "assets/recipes/town/painted-resume-v3/citadel-animation.json",
+          "recipe_sha256": "97b4de2187b3f0d70f588f8eb77e123739efba6e875411c9890aac9ba13bec44",
+          "sha256": "8df865681c5a7ca4a9bbedef13e51bde569ac3695145ce2392e828e87b051e62"
+        },
+        {
+          "dimensions": [
+            800,
+            374
+          ],
+          "output_path": "Content/Sprites/runeterra/shurima/town/structures/citadel_area.png",
+          "recipe_path": "assets/recipes/town/painted-resume-v3/citadel-area.json",
+          "recipe_sha256": "17c2b04892d31684de6e9d545fe4857c7846b6430b73fb691d960f1ac94b3a39",
+          "sha256": "9c057f88db132144c6f3c6250dd83cb7300bb907049406ca207e58bf0fe28279"
+        },
+        {
+          "dimensions": [
+            800,
+            374
+          ],
+          "output_path": "Content/Sprites/runeterra/shurima/town/structures/citadel_border.png",
+          "recipe_path": "assets/recipes/town/painted-resume-v3/citadel-border.json",
+          "recipe_sha256": "9c5a0b6d01b9a55bf740609f1e4d6e0f4158a3a6b6a5f019b936f48c37cbee79",
+          "sha256": "5681bf78a2275b2aa21d8d34201a52aea699c9f2c4489f4c4f0727f5fc6e1764"
+        },
+        {
+          "dimensions": [
+            58,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/shurima/town/structures/citadel_campaign.png",
+          "recipe_path": "assets/recipes/town/painted-resume-v3/citadel-campaign.json",
+          "recipe_sha256": "73d7492e8284e8be522cd86b115c626d5cbd0a9014845f6c93524493406a6e78",
+          "sha256": "06846764aac54fe590cff1a4275043b649fd2b43afd60dbc562ef5806772c621"
+        }
+      ],
+      "source_inspection": {
+        "body_alpha128_bbox": [
+          4,
+          10,
+          1778,
+          868
+        ],
+        "canvas": [
+          1781,
+          883
+        ],
+        "key": "citadel",
+        "master": "assets\\source\\town\\buildings-v2\\citadel\\master.png",
+        "master_sha256": "f64328c34b8ecbb0d94a2223fb0914ad9cf07cb95b0f6b39c5e76aff385a48c1",
+        "metadata": "assets\\source\\town\\buildings-v2\\citadel\\master-generation.json",
+        "metadata_sha256": "b56420bec2fe9b7103f3a32e792c43638e4939e0e6a419c31d08fea5dfb19d45",
+        "nonzero_alpha_bbox": [
+          0,
+          0,
+          1781,
+          871
+        ],
+        "opaque_top_edge_pixels": 0,
+        "opaque_top_edge_runs": [],
+        "parent": "assets/source/town/buildings-v1/fort/master.png",
+        "parent_sha256": "34892dcde7566a4bdc1f7dcf3b84296fbf3841975f291f8bda1c322ca28dcbb3",
+        "prompt_sha256": "b26eee056dbf888781ea24bc71f4032992175fb80952a4f60b6da3bc6fb5bfb1"
+      }
+    },
+    {
+      "derived_sources": {
+        "area": {
+          "path": "assets/source/town/painted-resume-v3/mageGuild2/area.png",
+          "sha256": "d1a8b95b21e1fbcfcedb645c0e2acd45fa906b23c8bcb07d8f3533402f5bfa54"
+        },
+        "border": {
+          "path": "assets/source/town/painted-resume-v3/mageGuild2/border.png",
+          "sha256": "37bc7d6753a0c406399e0e673e18f58fc1de33136721cb072b6b9fecc620029d"
+        },
+        "campaign": {
+          "path": "assets/source/town/painted-resume-v3/mageGuild2/campaign.png",
+          "sha256": "822744d28e2d4516a8073c4b6c4924c9fe5cbe45d4364953504e9e82a2d68794"
+        },
+        "frame": {
+          "path": "assets/source/town/painted-resume-v3/mageGuild2/frame.png",
+          "sha256": "adf439d87f48df3a69224f0137291c7e93bcae59f8ab12b39ab6ad3efc4913b7"
+        }
+      },
+      "job": {
+        "base_site": "mageGuild1",
+        "comparison_parent_frame": "assets/source/town/painted-resume-v1/mageGuild1/frame.png",
+        "decision": "Explicit archive cohort includes all1086x1448 source pixels, including finial and new archive/armillary architecture. Fixed101x135 source-to-native registration preserves bottom200. Topfinial has one alpha>=128 pixel at source edge; preserve as tight-margin caveat, never clip or invent missing cap. Native tier distinction must be judged in the comparison.",
+        "ground_anchor": [
+          552,
+          200
+        ],
+        "key": "mageGuild2",
+        "registration": {
+          "native_site_box": [
+            500,
+            60,
+            105,
+            140
+          ],
+          "placement": [
+            502,
+            65
+          ],
+          "resampled_size": [
+            101,
+            135
+          ],
+          "source_canvas": [
+            1086,
+            1448
+          ],
+          "source_crop": [
+            0,
+            0,
+            1086,
+            1448
+          ],
+          "uniform_scale": 0.09300184162062615
+        },
+        "replacement": "mageGuild1"
+      },
+      "native_body_alpha_bbox": [
+        503,
+        65,
+        602,
+        200
+      ],
+      "native_click_pixels": 8913,
+      "observed_registration": {
+        "fixed_base_crop": [
+          0,
+          0,
+          1086,
+          1448
+        ],
+        "fixed_placement": [
+          502,
+          65
+        ],
+        "fixed_resampled_size": [
+          101,
+          135
+        ],
+        "source_canvas_offset": [
+          0,
+          0
+        ],
+        "translated_nonzero_alpha_bbox": [
+          0,
+          0,
+          1086,
+          1448
+        ],
+        "uniform_base_scale": 0.09300184162062615
+      },
+      "parent_frame_sha256": "c3ce181d2e9859de4e7217ab816484f6ff6799743d0440a2081adea95b3246ef",
+      "required_output_mapping": [
+        {
+          "dimensions": [
+            800,
+            374
+          ],
+          "output_path": "Content/Sprites/runeterra/shurima/town/structures/mageGuild2.json",
+          "recipe_path": "assets/recipes/town/painted-resume-v3/mageGuild2-animation.json",
+          "recipe_sha256": "fe12f5f31c877c1cd4e6de4c0a122c72fdf4ba798e4a38ff583d2708ee2712cb",
+          "sha256": "efee1f77bcf82dbbf066413aeea1849a7ecd020219b861f54e9be7c31ed7890c"
+        },
+        {
+          "dimensions": [
+            800,
+            374
+          ],
+          "output_path": "Content/Sprites/runeterra/shurima/town/structures/mageGuild2_area.png",
+          "recipe_path": "assets/recipes/town/painted-resume-v3/mageGuild2-area.json",
+          "recipe_sha256": "ac79a174aa295d7c973f8a33852030f98adb69dcd6e0934ae8ed1c4d290d48a2",
+          "sha256": "d1a8b95b21e1fbcfcedb645c0e2acd45fa906b23c8bcb07d8f3533402f5bfa54"
+        },
+        {
+          "dimensions": [
+            800,
+            374
+          ],
+          "output_path": "Content/Sprites/runeterra/shurima/town/structures/mageGuild2_border.png",
+          "recipe_path": "assets/recipes/town/painted-resume-v3/mageGuild2-border.json",
+          "recipe_sha256": "960fed9a83a7027157a1f223df2a65626221c7a44278cfee7bb8adc917aede02",
+          "sha256": "37bc7d6753a0c406399e0e673e18f58fc1de33136721cb072b6b9fecc620029d"
+        },
+        {
+          "dimensions": [
+            58,
+            64
+          ],
+          "output_path": "Content/Sprites/runeterra/shurima/town/structures/mageGuild2_campaign.png",
+          "recipe_path": "assets/recipes/town/painted-resume-v3/mageGuild2-campaign.json",
+          "recipe_sha256": "32bdd18a911c30e71b21c5b617b1de27a14f072b93f80b0095732b15a961734e",
+          "sha256": "822744d28e2d4516a8073c4b6c4924c9fe5cbe45d4364953504e9e82a2d68794"
+        }
+      ],
+      "source_inspection": {
+        "body_alpha128_bbox": [
+          15,
+          0,
+          1079,
+          1447
+        ],
+        "canvas": [
+          1086,
+          1448
+        ],
+        "key": "mageGuild2",
+        "master": "assets\\source\\town\\buildings-v2\\mageGuild2\\master.png",
+        "master_sha256": "d3f00db0c6f90d55d375a174d0895a658e8a7e5d2a51f1cf24091b70e4397293",
+        "metadata": "assets\\source\\town\\buildings-v2\\mageGuild2\\master-generation.json",
+        "metadata_sha256": "bf01129cd552d751ec871e15a2a60ab423f37b875cd3277c3d95d1b1ffdca01e",
+        "nonzero_alpha_bbox": [
+          0,
+          0,
+          1086,
+          1448
+        ],
+        "opaque_top_edge_pixels": 1,
+        "opaque_top_edge_runs": [
+          [
+            296,
+            297
+          ]
+        ],
+        "parent": "assets/source/town/buildings-v1/mageGuild1/master.png",
+        "parent_sha256": "ebb75b396baea4ca3f06d56c2c15190709a08a5d10e6c6767b667d25debf0e15",
+        "prompt_sha256": "aa59c03d90531bf25d532d9a7f57af787c20ca1ad76f109627746af47f1ee520"
+      }
+    }
+  ],
+  "visual_approval_granted": false
+}

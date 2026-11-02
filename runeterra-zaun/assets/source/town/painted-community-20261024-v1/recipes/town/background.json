@@ -1,0 +1,86 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "Empty 800x374 town ground in the native Heroes III town canvas: wet concrete and swamp ground, no buildings baked in. The buildings arrive as separate layers.",
+  "canvas": [
+    800,
+    374
+  ],
+  "content_box": [
+    0,
+    0,
+    800,
+    374
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; prompted and technically assembled by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/painted-community-20261024-v1/background/master-v3.png",
+      "sha256": "632028c11f5905685b3f23cd03f187e59089101bf2d3ff9c109171c1b3ec2d25"
+    },
+    {
+      "path": "assets/source/town/painted-community-20261024-v1/background/generation-v3.json",
+      "sha256": "e38f4ef90e5ce1cbe52beaf9fb8351f8cbd91efd262506fe950a778d14445042"
+    },
+    {
+      "path": "assets/source/town/painted-community-20261024-v1/background/prompt-v3.txt",
+      "sha256": "67ba6130ba80fa2be2f1ed151b47e925b58d58f50a1663be0bdfe5f998b7db26"
+    },
+    {
+      "path": "assets/source/town/painted-community-20261024-v1/background/site-keep-clear-guide.png",
+      "sha256": "b960659c715bd5dfad1afc396ab758bb900db609e37049fe66a4238e6b4359c0"
+    }
+  ],
+  "fit": "contain",
+  "generation": {
+    "canvas": [
+      1832,
+      858
+    ],
+    "created": "2026-10-24",
+    "edit_reference": {
+      "path": "background/master-v2.png",
+      "sha256": "b39fc7d44373269e046846ca0b3a0f96ece3b8c0853f05d1f8fa342985b52c2d"
+    },
+    "image_generation_used": true,
+    "master": "background/master-v3.png",
+    "master_sha256": "632028c11f5905685b3f23cd03f187e59089101bf2d3ff9c109171c1b3ec2d25",
+    "method": "Genuine painted2D image generation, no3D render or procedural painting",
+    "model": null,
+    "model_note": "Built-in tool did not expose a concrete model identifier",
+    "prompt": "Use case: precise-object-edit. Edit ONLY the first image, an original Heroes III native-town background painting, preserving its exact camera, canvas aspect ratio, terrain heights, flat dry foundation ground, shoreline and remote canyon. The second image is a technical keep-clear guide: red rectangles are twenty separate functional building sites, with labels; DO NOT draw the guide, rectangles, labels or any buildings in those sites in final output. Treat all dry ground foundation surfaces in those marked sites as geometrically locked, including bottom edges and ground height. The current empty scene is too barren/quarry-like and has broad horizontal rows. Improve it into ZAUN inhabited industrial community environment by adding subtle DISTANT NONFUNCTIONAL iron-and-glass tenement facades embedded on the FAR CANYON WALLS ONLY, tiny yellow/green windows at least 4x smaller than foreground human doors, catwalks, oxidized pipe galleries, restrained low green chemical haze in far void, irregular wrought iron connections. These must be background city fabric at a distance, not selectable monuments or large buildings. Keep existing bridge network visible. On the open dry ground BETWEEN the red site rectangles only, add a few thin meandering dark worn lanes and narrow CLOSED utility channels/metal drain grates following the existing flat ground, interconnected irregularly to reduce horizontal row impression. Keep existing flat cobble foundation sites and every shoreline coordinate intact; no new water, no trenches cutting footings, no steps/cliffs across sites, no foreground buildings/tenements, no added cranes/docks/boats, no people/letters/symbols. Palette dusty brown brick/rust iron/olive chemical haze, small muted green lights and purple-brown distant roofs; original Heroes III textured matte painterly 2D at native800x374, no neon outlines/poster/renders/3D. Fill entire canvas. Output the edited empty terrain only with NO guide markings and NO selectable building bodies.\n",
+    "prompt_file": "background/prompt-v3.txt",
+    "prompt_sha256": "67ba6130ba80fa2be2f1ed151b47e925b58d58f50a1663be0bdfe5f998b7db26",
+    "provider": "OpenAI built-in imagegen",
+    "references_note": "Original HoMM3 native references and official Riot Zaun environment researched as style/identity guidance; no source reference pixels composited",
+    "rights_review": "pending external review",
+    "runtime_verified": false,
+    "status": "authored configuration",
+    "visual_approval_granted": false
+  },
+  "id": "zaun.town.background",
+  "identity_review": "build/reports/painted-town-community-20261024-v1/source-pixel-review.json",
+  "native_visual_review": "pending",
+  "output_path": "Content/Sprites/runeterra/zaun/town/background.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": false,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/painted-community-20261024-v1/background/native-v3.png",
+  "source_sha256": "8589e97c2d19996b550354bfc67b0a2c871710668f919c31184c4bdad24a8029",
+  "status": "built-unreviewed",
+  "title": "town background",
+  "visual_approval_granted": false
+}

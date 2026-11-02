@@ -1,0 +1,130 @@
+{
+  "acceptance": "Technical mask derived from the painted layer: the area mask defines the clickable footprint and the border mask the highlight outline. Both must be derived from the own painted layer, never copied from another faction or from the original game.",
+  "building": "townHall",
+  "canvas": [
+    800,
+    374
+  ],
+  "content_box": [
+    0,
+    0,
+    800,
+    374
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; prompted and technically assembled by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/townhall-master.png",
+      "sha256": "96342152fae9f50ff8080e65f0de51f5042a76b0da3ba1e04d5416d5d002a8ae"
+    },
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v4/provenance/townHall.json",
+      "sha256": "98b2ce1b37ea493c10dd88888b9ee9b6a9a4086d7d46f3ba3a6df08838ab9e69"
+    },
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v4/prepare.py",
+      "sha256": "a7b7e6160b50cff6fc87b097f5bc59f0e31648bf208edd0f42afbcc4b604d35f"
+    },
+    {
+      "path": "scripts/zaun_coastal_state_v1.py",
+      "sha256": "5aa45de45f59be66d393df44538743b1842db5ba5f1c4e48c1d83acaa13f3cf7"
+    },
+    {
+      "path": "assets/source/town/industrial-neighborhood-20261025-v4/structures/townHall/body-opacity-mask.png",
+      "sha256": "391f4300e64c9705a7393dbbbd91f0b71c1da1fd39c5638296b3b2d2e0a25be1"
+    },
+    {
+      "kind": "historical_provenance",
+      "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/townHall-original.json",
+      "sha256": "cbacca7c904a6f9f197d8087ad892a72b3144e1df1f1ebf888eb9ee5f78721dc"
+    }
+  ],
+  "fit": "contain",
+  "generation": {
+    "body_opacity": {
+      "changed_alpha_pixels": 10684,
+      "mask": "assets/source/town/industrial-neighborhood-20261025-v4/structures/townHall/body-opacity-mask.png",
+      "mask_sha256": "391f4300e64c9705a7393dbbbd91f0b71c1da1fd39c5638296b3b2d2e0a25be1",
+      "original_native_layer": "assets/source/town/industrial-neighborhood-20261025-v3/layers/townHall.png",
+      "original_native_layer_sha256": "6538d71b17bc52dcf18759f0e5d8163fba8d2b7fa87dc027b81cb0251ce87eb2",
+      "policy": "Only originalalpha248..254 AND2px-eroded(alpha>=128) structural core becomes255; all RGB and outside-mask RGBA unchanged. No fill of holes, arches, lowalpha glass/glow/shadows or outer antialias."
+    },
+    "composition_rectangle": [
+      195,
+      7,
+      170,
+      133
+    ],
+    "credits": {
+      "author": "OpenAI built-in imagegen; original selected Zaun prompts and historical source retained",
+      "license": null,
+      "redistribution": "unresolved; release prohibited"
+    },
+    "generation_route": "Preserved selected own painted 2D master; whole-source uniform contain and native placement only.",
+    "historical_prompt": "Usecase: precise-object-edit. EditownZaunhallatlas intoONE SINGLEbuildingonly: theTOPRIGHT TOWN HALL, omitother3buildingsentirely. Two-storeymodestbrickmunicipalhallwithnoticeboard/frontstairs/rustironframe andwoodcrates, violetweatheredroofenamel, smallbrightchemicalGREENglasspressuregauges/lamps andconnectedcopperpipes, amberordinarywindows. Keepidentityandexactlowfrontal3quartercamera/materialtexture. Richpainted/prerenderedOriginalHeroesIIIgamebuildingstyle, upperleftlight/localgreenreflections. Centerwholebuildingwith15percentrealtransparentmarginallaround, fullexposedroofchimney/feet/sidewingwithnocropping, nootherbuildingattipsorbottomedges. Genuinealpha,nobackdrop/text/people/flatneonoutlines.",
+    "historical_provenance": {
+      "kind": "historical_provenance",
+      "path": "assets/history/industrial-neighborhood-20261025-v3/raw-provenance/townHall-original.json",
+      "sha256": "cbacca7c904a6f9f197d8087ad892a72b3144e1df1f1ebf888eb9ee5f78721dc"
+    },
+    "historical_receipt_note": "Unchanged prior provider receipt retained privately at original authored source; not rewritten or claimed as new generation.",
+    "historical_receipt_sha256": "cbacca7c904a6f9f197d8087ad892a72b3144e1df1f1ebf888eb9ee5f78721dc",
+    "image_generation_used": true,
+    "mirror_x": false,
+    "model": null,
+    "model_disclosed": false,
+    "native_offset": [
+      197,
+      24
+    ],
+    "native_size": [
+      166,
+      114
+    ],
+    "new_image_generation_used": false,
+    "painted_master": "assets/source/town/chemtech-v4-buildings/townhall-master.png",
+    "painted_master_sha256": "96342152fae9f50ff8080e65f0de51f5042a76b0da3ba1e04d5416d5d002a8ae",
+    "placement_plan": "assets/source/town/industrial-neighborhood-20261025-v4/live-placement-plan.json",
+    "placement_plan_sha256": "ebc0f8ca5a08869bae5a7a3ad205bc5cab43a61832d85454e856f3febf292333",
+    "provider": "OpenAI built-in imagegen",
+    "release_accepted": false,
+    "runtime_verified": false,
+    "source_crop": [
+      156,
+      52,
+      1500,
+      978
+    ],
+    "status": "authored configuration",
+    "technical_helper": "assets/source/town/industrial-neighborhood-20261025-v4/prepare.py",
+    "technical_helper_sha256": "a7b7e6160b50cff6fc87b097f5bc59f0e31648bf208edd0f42afbcc4b604d35f",
+    "visual_approval_granted": false
+  },
+  "id": "zaun.town.structure.townHall.area",
+  "identity_review": "build/reports/industrial-neighborhood-20261025-v4/source-pixel-review.json",
+  "native_visual_review": "pending",
+  "output_path": "Content/Sprites/runeterra/zaun/town/structures/townHall_area.png",
+  "production_status": "delivered",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/industrial-neighborhood-20261025-v4/structures/townHall/area.png",
+  "source_sha256": "95fc8e99549f2ead714f2a3e1ef9794f46683eb9c4a5c281cc5cfcbcb881116c",
+  "status": "built-unreviewed",
+  "technical": true,
+  "title": "Foundry Hall area mask",
+  "visual_approval_granted": false
+}

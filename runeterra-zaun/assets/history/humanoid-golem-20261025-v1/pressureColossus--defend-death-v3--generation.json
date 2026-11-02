@@ -1,0 +1,29 @@
+{
+  "exact_tool_prompt": "Use case: precise-object-edit. Asset type: painted2D creature action atlas.\nEdit input1 PressureColossus defense/death atlas. PRESERVE every machine identity, armor, tanks, crest, anatomy, action and pose. Fix ONLY crowded atlas spacing: repaint EXACT SIX COLUMNS TWO ROWS on a wide2048x1024 transparentRGBA canvas, each full figure SMALLER to fit central60% of its own equalcell, with WIDE clear transparent gutters minimum30px between everytwofigures. Figure standingheight240px in this sheet. No touching/overlap between bodies, tools, feet or neighboring frames. No text or grids. Exactsame scaleallcells.\nFirstrow six defense poses unchanged: guard,bend/armsin,raisebothforearmsacrosschest,fullbrace,release,guard.\nSecondrow six deathposes unchanged: recoil,buckle,kneel,fallontoside,fallen,inertlyingmachine. Make third/fourth/fifth/sixth corpsesindependent, fullyvisible andwellseparated; DO NOT clip anyarm/foot/tank. Keep fixedgroundplane in eachrow, nofloat. Allfinishedpainted originalHoMM3 texture, no3D.\nInput1 is editTARGET. TrulyTRANSPARENT background alpha0, opaque metal, cleanedges.",
+  "input_images": [
+    {
+      "path": "C:\\Users\\matcy\\Documents\\code\\Homm3\\runeterra-zaun\\assets\\source\\creatures\\humanoid-20261025-v1\\pressureColossus\\defend-death-v2\\master.png",
+      "sha256": "d0f6ce9a6e054455adbbd570ec6849e55dc679fc169042612ffe57fb13fa36eb"
+    }
+  ],
+  "master_sha256": "9c564aa6f4313872aff72cf8589b854c7c8b25e59c20606786c2b924e7f24b54",
+  "model": null,
+  "native_execution": false,
+  "prompt_as_sent_utf8_sha256": "2b3c4567e96129d2d3fb39fe9496539eee88e0551b42c0ba152b72b565721eac",
+  "prompt_sha256": "dffea2e0ccc0dc8bf3fdedd1656b11948ad28b2b4192d0f15c970af7ecd9bf06",
+  "provider": "OpenAI built-in imagegen",
+  "raw_result_preservation": "The tool returned exactly image_url and output_hint. Image data is preserved losslessly in master.png, without duplicating megabytes of base64 in JSON. Reconstruct those two fields as documented to recover the exact returned values.",
+  "raw_tool_result": {
+    "image_url": {
+      "file": "master.png",
+      "lossless_encoding": "data:image/png;base64, + base64(master.png bytes)",
+      "sha256": "9c564aa6f4313872aff72cf8589b854c7c8b25e59c20606786c2b924e7f24b54"
+    },
+    "output_hint": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a17104-a127-7fa2-8006-0d604b8a20cd as C:\\Users\\matcy\\.codex\\generated_images\\01a17104-a127-7fa2-8006-0d604b8a20cd\\exec-ddd1bdd6-cb6e-4983-9fab-1572e157a7c9.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  "reconstructed_tool_result_json_sha256": "31b5f76741a46463ab86546de18129fc1a9b17fff0180f143f00cc66bc551362",
+  "rights": "unresolved",
+  "status": "authored configuration",
+  "transparent_background_requested": true,
+  "visual_approval_granted": false
+}

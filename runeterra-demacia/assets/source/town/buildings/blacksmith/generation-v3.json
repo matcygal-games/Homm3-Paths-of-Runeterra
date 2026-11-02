@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "tool": "built-in image_gen",
+  "mode": "local image edit; genuine transparent background requested",
+  "output": "master-v3.png",
+  "prompt_file": "prompt-v3.txt",
+  "original_generation_path": "C:\\Users\\matcy\\.codex\\generated_images\\01a15556-579f-7041-8958-a88e131375be\\exec-734238e1-66f8-4bf2-a92d-56df9ab777a4.png",
+  "reference_roles": [
+    {
+      "path": "assets/source/town/layout-v3/pilot-reference-crops/blacksmith.png",
+      "role": "edit target: padded technical crop from own composition guide",
+      "sha256": "3ee5bebac988c5c678fb78b6040a07d02dbb9f5ae5115d6fe4b052df9249e817"
+    },
+    {
+      "path": "assets/source/town/layout-v3/built-study-v2.png",
+      "role": "own complete camera/depth/material reference, no neighboring architecture to carry into output",
+      "sha256": "3d24669ffadcdee6678459ca9bb3e23903f037c4babd2cf85a34a8a1d17cfcb4"
+    },
+    {
+      "path": "references/riot/heraldry/demacia-official-region-icon.png",
+      "role": "private official emblem shape reference only",
+      "sha256": "d71bb021a49b704420f43c74f9dbfedb2bd89779bdafec1ea4be7bb8a172e734"
+    }
+  ],
+  "rights": "Project-generated construction master. No original-game or official Riot pixels copied into output; references remain private.",
+  "status": "three-pilot production candidate; native preview inspected; parent review and in-game construction acceptance pending",
+  "preserved_history": "Earlier master versions and metadata remain unchanged; v3 does not update production recipe or manifest.",
+  "validation_scope": "Source alpha/dimension/hash and native-size visual review only; no functional building, click/highlight, runtime or release acceptance.",
+  "source_sha256": "67ac293c74c98140e3a3831c4a506ac86d28916cd85158c3c54bc9fa727c9281",
+  "dimensions": [
+    1791,
+    878
+  ],
+  "prompt_sha256": "b8dc3d88549d5dea8358d6a194ec21017097426f5377e70865ba569fed083bf7",
+  "prompt": "Use-case: background-extraction with careful hidden-edge reconstruction for a game construction layer.\nReference image 1 is the EDIT TARGET: a crop from our project-owned new Demacian town composition. Reference image 2 is the complete project-owned composition, used ONLY to keep the exact LOWER FRONTAL camera, depth, lighting and painted material family. Reference image 3 is the official Demacia emblem, used ONLY to redraw the correct winged-blade shape on existing small blue cloth when cloth is present; no imported original pixels.\nOutput ONE complete, isolated construction object with a genuinely transparent RGBA background, soft short alpha ground contact shadow, comfortable transparent margins, no background rectangle. Keep the exact architectural complex from the crop, NOT a redesigned replacement. Preserve its asymmetry, volumes, roof angles, weathered pale stone, muted blue-gray slate, restrained old gold, dark openings, upper-left light and richly textured original-Heroes-III painted/prerendered treatment. Low frontal perspective with natural depth, NOT a high isometric dollhouse, orthographic icon, glossy modern 3D or League splash illustration. Architectural shape must read compactly at the specified native size. Remove all sky, mountains, river, trees, shrubs, roads, cliffs, neighboring structures and urban scenery. Keep only the building's own very shallow base/threshold and indispensable attached architectural elements. Reconstruct any cropped/occluded roof or wall edges naturally. No people, captions, labels, text, UI, frame, checkerboard or baked opaque background. Do not turn a functional building into part of a larger town painting. Do not add new structures.\n\nTarget: Royal Blacksmith, the foreground L-shaped smithy in reference1. Retain the long low blue-slate main workshop, left attached timber lean-to, large arched front forge entrance, short smoking stone forge/chimney, restrained orange coals, exposed sidewheel/workstation and compact racks/anvils/tools. The pale training building at the TOP of reference1 is a NEIGHBOR: remove it completely. No river, steps leading out of frame, broad paving courtyard, cliff or vegetation. Complete the leftmost eave and building edges so none are cut off. This near-camera human-scale workshop is intentionally broad and large on screen; retain its lower front view and shallow visible roof. Final native footprint approximately250x123pixels; select bold door/roof/forge values rather than tiny added clutter. Preserve the workshop from the crop exactly.\n",
+  "alpha_evidence": {
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixel_count": 671057,
+    "opaque_pixel_count": 91,
+    "intermediate_alpha_pixel_count": 901350,
+    "alpha_at_least_250_pixel_count": 792454,
+    "treatment": "Generated RGBA preserved unchanged; no alpha was synthesized or color-keyed. Intermediate alpha includes antialiasing/shadows and near-opaque painted body pixels."
+  },
+  "native_review": {
+    "native_readability": "Broad workshop roof, orange forge and chimney read at250x123. Distinct foreground service silhouette; neighboring training hall removed.",
+    "camera": "Shallow front-facing workshop matches guide depth; foreground contrast remains strongest.",
+    "open_issues": [
+      "Fine tools collapse into texture at native size; no gameplay impact claimed.",
+      "Small baked contact-shadow outline needs evaluation over the new terrain plate.",
+      "No banner was present on this service target; no new large crest panel was invented."
+    ],
+    "preview": "references/town-comparisons/pilot-v3/blacksmith-native.png",
+    "preview_sha256": "9e7a38775494fae2e315e0a650c5e718f0c38af583e34efaf51dbe7ac7ac2ef0",
+    "comparison_sheet": "references/town-comparisons/pilot-v3/native-comparison.png",
+    "comparison_sheet_sha256": "b13b0737804fbb68068b80f4e016dc67bac84cad1794675d6f5245509ea8f9be",
+    "approval": "not granted"
+  },
+  "native_candidate_export": {
+    "source": "assets/source/town/buildings/blacksmith/master-v3.png",
+    "source_sha256": "67ac293c74c98140e3a3831c4a506ac86d28916cd85158c3c54bc9fa727c9281",
+    "source_size": [
+      1791,
+      878
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 671057,
+    "near_opaque_pixels": 792454,
+    "nonzero_pixels": 901441,
+    "crop_alpha_threshold": 8,
+    "crop_xyxy": [
+      27,
+      62,
+      1771,
+      825
+    ],
+    "native_box_xywh": [
+      0,
+      251,
+      250,
+      123
+    ],
+    "native_preview": "references/town-comparisons/source-v3/blacksmith-native.png",
+    "native_sha256": "ff3db50e52ae74130c8e9e6469e1e3d929550b4ffedbc58fb0423004e3ea67a6",
+    "approval": "not granted"
+  },
+  "alpha_treatment": "Generated RGBA preserved; technical alpha>=8 bounds crop only, no color-keying, opacity synthesis or background substitution."
+}

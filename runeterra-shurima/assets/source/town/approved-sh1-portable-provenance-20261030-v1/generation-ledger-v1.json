@@ -1,0 +1,319 @@
+{
+  "approved_code": "SH1",
+  "derived_from_blender": false,
+  "hidden_face_completion": {
+    "generated_original": "assets/source/town/approved-sh1-integration-20261030-v4/hidden-face-completion-raw-v1.png",
+    "input": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/approved-full-raw.png",
+      "sha256": "6f97d9a1020c073db9dcc6132546254278a1ee68a21550395b931f4204d2489f"
+    },
+    "model": "Not exposed by tool",
+    "native_conversion": "Uniform whole-scene Lanczos conversion to800x374; only recorded foreground-occluded rear pixels enter the candidate layers.",
+    "prompt": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/hidden-face-completion-prompt-v1.txt",
+      "sha256": "4052381a91d8db1b5a4775426043c6ef4e4c955a22e688937531a60a88b4dcee"
+    },
+    "provider": "OpenAI",
+    "tool": "built-in image_gen.imagegen",
+    "use_case": "precise-object-edit",
+    "generated_original_sha256": "57655bc519412bad437dcf272c6ad15c2d2b800878ad57f1f077030d1f2946f1"
+  },
+  "occluded_sky_completion": {
+    "final_application_mask": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/geometry/sky-recovery-budget.png",
+      "sha256": "7deac59ee1b46fba897a287cc94a0fee15eb1d4a48e2cb59621850c237645bdb"
+    },
+    "generated_original": "assets/source/town/approved-sh1-integration-20261030-v4/sky-inpaint-raw-v2.png",
+    "guide_conversion": "Approved native crop (70,0,196,56), nearest 4x technical editing guide; frozen guide mask separately preserved.",
+    "guide_mask": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/sky-inpaint-removal-mask-v2.png",
+      "sha256": "05221550918de67cc81459da31f634a35ac6f2f537760b207add0509ceaba3bb"
+    },
+    "input": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/sky-inpaint-input-crop-v2.png",
+      "sha256": "f658e1cbc7b3f0c7592fba1dcdc54dc2e737249d9f7a4cc34a87f23f48c9879f"
+    },
+    "model": "Not exposed by tool",
+    "native_conversion": "Ancestral painted ridge/lower-sky source: whole generated crop Lanczos126x56. Final v3 uses the bounded gradient-domain composition receipt, not the historical hard cut.",
+    "prompt": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/sky-inpaint-prompt-v2.txt",
+      "sha256": "fe695944845e73a041d12e974f5b0e2b6dfb5f355a1bd2551a43829824d15d78"
+    },
+    "provider": "OpenAI",
+    "residual": "Historical hard-cut boundary is the v2 rejected defect; v3 has a separate reproducible bounded gradient-domain composition. No final visual acceptance granted.",
+    "tool": "built-in image_gen.imagegen",
+    "generated_original_sha256": "d96c35ca226d893ccb969f7436306b9fa89b97e12b0e4a51c6b7d9a68eee6809"
+  },
+  "policy_quotes": [
+    "Derive click masks/highlights from selected visible silhouettes.",
+    "Rear buildings need level landings supporting their complete root, foundation and contact-shadow profiles.",
+    "The terrain plate must not contain completed functional architecture."
+  ],
+  "preserved_parent_ledger": {
+    "path": "assets/source/town/approved-sh1-integration-20261030-v4/generation-ledger.json",
+    "sha256": "e782ffaff1071e6c5f76bad1300a2216485e859f2609876943ee769eec4b88a3"
+  },
+  "producers": {
+    "blend_painted_recovery.py": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/blend_painted_recovery.py",
+      "sha256": "424be7eac435cbfa94560677f37bfb2812a428f7c8feee8743a467b1b5c6df68"
+    },
+    "build_candidate.py": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/build_candidate.py",
+      "sha256": "2d197ae60ba7b43f9148af892dd2b80dd250157775cba4438608af432bd4d5bc"
+    },
+    "compile_candidate.py": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/compile_candidate.py",
+      "sha256": "4e0e9011bcd29fd2c715303d4840447a03e21eb875fd23530677793086484ea2",
+      "role": "immutable-generation-history",
+      "bundled": false,
+      "required_for_source_execution": false
+    },
+    "prepare_contract.py": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/prepare_contract.py",
+      "sha256": "d73e9020805ba98876ecd519212479a9847dd937ff18adeeb0ff2b4607f4b1e1"
+    },
+    "verify_candidate.py": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/verify_candidate.py",
+      "sha256": "987133fe0b31be718c62472f40b2574b4a1a5f4dfdc5e4fc7932f58d5552f8e1"
+    }
+  },
+  "scope": "Painted source and deterministic technical annotation/assembly only; no native or final art/rights acceptance.",
+  "selected_v3_painted_recovery": {
+    "finial_generation": {
+      "guide": {
+        "path": "assets/source/town/approved-sh1-integration-20261030-v4/civic-finial-removal-guide-v1.png",
+        "sha256": "e6dd55a2e804b5eb61e266da896b8adea843e624752ef9c8588b87625b56941b"
+      },
+      "input": {
+        "path": "assets/source/town/approved-sh1-integration-20261030-v4/civic-finial-removal-input-v1.png",
+        "sha256": "82f67ba210a55bb2929b03bb29ed9a3e0e2ba9edcb0721abd61e99f9b3d9855b"
+      },
+      "original": "assets/source/town/approved-sh1-integration-20261030-v4/civic-finial-removal-raw-v1.png",
+      "prompt": {
+        "path": "assets/source/town/approved-sh1-integration-20261030-v4/civic-finial-removal-prompt-v1.txt",
+        "sha256": "f2651294e22f7cf5ca42e49f983ca8dc3f7e4e419d50bd4013f10fc885eb76b0"
+      },
+      "raw": {
+        "path": "assets/source/town/approved-sh1-integration-20261030-v4/civic-finial-removal-raw-v1.png",
+        "sha256": "f4ff9649033ca9911f93af18d21656849704bc07bd7f76ddd5993a223ebc2fe7"
+      },
+      "original_sha256": "f4ff9649033ca9911f93af18d21656849704bc07bd7f76ddd5993a223ebc2fe7"
+    },
+    "model": "Not exposed by tool",
+    "output": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/painted-recovery-seamless-native-v5.png",
+      "sha256": "39ef504809ee0ac535ac06beed762b6105142af6e6c99e3d04fd89546d5ef945"
+    },
+    "provider": "OpenAI",
+    "rejected_technical_attempt": "sky-repair-palette-conversion-v4.json (whole-crop palette matching alone did not solve the boundary; preserved, unselected)",
+    "sky_generation": {
+      "guide": {
+        "path": "assets/source/town/approved-sh1-integration-20261030-v4/sky-repair-guide-mask-v4.png",
+        "sha256": "4130f08eb59ee171d4b64d5b0a7e51fb9abf3554ec37cd726f682be8665354ca"
+      },
+      "input": {
+        "path": "assets/source/town/approved-sh1-integration-20261030-v4/sky-repair-input-crop-v4.png",
+        "sha256": "14ec5804bc57afb79c03636b9a0622cc28d20856991bb87c09642429e53778e3"
+      },
+      "original": "assets/source/town/approved-sh1-integration-20261030-v4/sky-repair-raw-v4.png",
+      "prompt": {
+        "path": "assets/source/town/approved-sh1-integration-20261030-v4/sky-repair-prompt-v4.txt",
+        "sha256": "0bf63bfa54d0cc0a737eb771d6dac8bc43fed0e2197597694b70e73c0892923f"
+      },
+      "raw": {
+        "path": "assets/source/town/approved-sh1-integration-20261030-v4/sky-repair-raw-v4.png",
+        "sha256": "bfaa58863202ef4c291c8e88cd1a975853ca9f7cd3d77ee1e1e23ee95f4d8d88"
+      },
+      "original_sha256": "bfaa58863202ef4c291c8e88cd1a975853ca9f7cd3d77ee1e1e23ee95f4d8d88"
+    },
+    "technical_composition": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/painted-recovery-seamless-conversion-v5.json",
+      "sha256": "3f2eb02d09f88f1153a963d5427b4f8ae0d86024abd5a591905e2b87d5ec13dc"
+    },
+    "tool": "built-in image_gen.imagegen",
+    "workflow": "Painted2D sources plus standard bounded gradient-domain raster composition; no scenery geometry generation."
+  },
+  "sources": {
+    "approved-full-native.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/approved-full-native.png",
+      "sha256": "7848452633d0bf49c32e08caa00a436aaa71d3ce810bacec6bdae322c3db349b"
+    },
+    "approved-full-raw.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/approved-full-raw.png",
+      "sha256": "6f97d9a1020c073db9dcc6132546254278a1ee68a21550395b931f4204d2489f"
+    },
+    "early-states-native.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/early-states-native.png",
+      "sha256": "d285f2546770796fbee709969022eadfbdf79112e00d310fe3ec818689f1b9cb"
+    },
+    "early-states-raw.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/early-states-raw.png",
+      "sha256": "10d90c3fb538630de54939ee79ab6b5ed4405418115908e2a1f001d702b77f18"
+    },
+    "empty-recovery-native.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/empty-recovery-native.png",
+      "sha256": "298e559d50b3e767623cf4e33847679bf0acfbfa2fae2d3111d386be016254c2"
+    },
+    "empty-recovery-raw.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/empty-recovery-raw.png",
+      "sha256": "7f7f2161fab15e6a8814ad17132d968d30185362e5f5ad088176c6b5a97dff13"
+    },
+    "hidden-face-completion-native-v1.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/hidden-face-completion-native-v1.png",
+      "sha256": "7c8882430590dd983258b9b3cafa87af7f288b9f2b03f54dd9c3c28fd1d40393"
+    },
+    "hidden-face-completion-raw-v1.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/hidden-face-completion-raw-v1.png",
+      "sha256": "57655bc519412bad437dcf272c6ad15c2d2b800878ad57f1f077030d1f2946f1"
+    },
+    "late-states-native.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/late-states-native.png",
+      "sha256": "fb7d7e6f9a9bdbda38178dbefd26884619d4a22d9e0c40af38ca65722849fe29"
+    },
+    "late-states-raw.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/late-states-raw.png",
+      "sha256": "687fa1bd81d21927cdebf6ffe2ac4a9a1a251bf5d858455d6ae3491c2e9d20e9"
+    },
+    "middle-states-native.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/middle-states-native.png",
+      "sha256": "eb1128aaf42eb28a6e60cfb9d3f914212dfde5a535dbc63ddd2cca46433a611c"
+    },
+    "middle-states-raw.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/middle-states-raw.png",
+      "sha256": "d7fc0a31e1b45dc37aa5881284f97058ae5947f9dc2fca2fa35f84878c6d00dd"
+    },
+    "sky-inpaint-input-crop-v2.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/sky-inpaint-input-crop-v2.png",
+      "sha256": "f658e1cbc7b3f0c7592fba1dcdc54dc2e737249d9f7a4cc34a87f23f48c9879f"
+    },
+    "sky-inpaint-native-crop-v2.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/sky-inpaint-native-crop-v2.png",
+      "sha256": "ed777956dd3f64bb9bc1d41a89d3d4dcfb51f7c4dd0f518bc2635cf299d74231"
+    },
+    "sky-inpaint-raw-v2.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/sky-inpaint-raw-v2.png",
+      "sha256": "d96c35ca226d893ccb969f7436306b9fa89b97e12b0e4a51c6b7d9a68eee6809"
+    },
+    "sky-inpaint-removal-mask-v2.png": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/sky-inpaint-removal-mask-v2.png",
+      "sha256": "05221550918de67cc81459da31f634a35ac6f2f537760b207add0509ceaba3bb"
+    }
+  },
+  "status": "authored configuration",
+  "unselected_bounded_sky_repair_v3": {
+    "generated_original": "assets/source/town/approved-sh1-integration-20261030-v4/sky-repair-raw-v3.png",
+    "guide": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/sky-repair-guide-mask-v3.png",
+      "sha256": "a17be789f38cb31de9e50173e64517da07f8676a832998c8de14a403dcf2a8e8"
+    },
+    "input": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/sky-repair-input-crop-v3.png",
+      "sha256": "c7df014e95c3449ac8aeb567f8c3e7f9bd045fc947881baacef3f7140fd76d7a"
+    },
+    "model": "Not exposed by tool",
+    "native": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/sky-repair-native-crop-v3.png",
+      "sha256": "68698ec6c47de890e1729c3cc9514ce184e3447f77d5fa912dabe6d5e227e75f"
+    },
+    "native_conversion": "Whole generated crop Lanczos to150x65, placed at60,0; attempted composite confined to the frozen recovery budget; proposed background is unselected.",
+    "prompt": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/sky-repair-prompt-v3.txt",
+      "sha256": "1c66c1cffcce851fa65cad92f7f870cfe5582bac4e5438af01d7f7adcf96762a"
+    },
+    "provider": "OpenAI",
+    "raw": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/sky-repair-raw-v3.png",
+      "sha256": "57346f26d0e7cbacdd6f2868fa3bbab49150452e2e8c6ce475e765cb10076ce8"
+    },
+    "reason": "Actual constrained composite still shows an angled colour transition at immutable original sky. No clear visual improvement over v2; retained as failed bounded repair history, not selected.",
+    "selected": false,
+    "tool": "built-in image_gen.imagegen",
+    "generated_original_sha256": "57346f26d0e7cbacdd6f2868fa3bbab49150452e2e8c6ce475e765cb10076ce8"
+  },
+  "unselected_preserved_sky_attempt": {
+    "prompt": "sky-recovery-prompt-v1.txt",
+    "reason": "Whole-scene sky recovery insufficiently matched the approved sky; superseded by bounded crop recovery. Historical edit input was not frozen byte-exact and is not claimed reproducible.",
+    "selected": false,
+    "sources": [
+      "sky-recovery-raw-v1.png",
+      "sky-recovery-native-v1.png"
+    ]
+  },
+  "v4_tip_ownership_repair": {
+    "conversion": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/painted-recovery-seamless-conversion-v5.json",
+      "sha256": "3f2eb02d09f88f1153a963d5427b4f8ae0d86024abd5a591905e2b87d5ec13dc"
+    },
+    "painted_fill_reused": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/empty-recovery-native.png",
+      "sha256": "298e559d50b3e767623cf4e33847679bf0acfbfa2fae2d3111d386be016254c2"
+    },
+    "scope": "Whole native solar-spire and grey-metal guild-crown tips/edges. Existing genuine painted empty sky is reused only under newly owned architecture; original full RGB is unchanged.",
+    "source_trace": {
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/finial-ownership-source-v4.json",
+      "sha256": "5b52f065675a6c61ab9d11dc9e336c3c1543c9b7d1c93d0bf198724443b19813"
+    }
+  },
+  "workflow": "image-based-painted-2d",
+  "portable_derivative": {
+    "status": "authored configuration",
+    "historical_ledger": {
+      "role": "immutable-generation-history",
+      "path": "assets/source/town/approved-sh1-integration-20261030-v4/generation-ledger-v2.json",
+      "sha256": "ae835804f34dd03457b4a3e621fd948e47487e49d2d510937927aa17037c161e",
+      "bundled": false,
+      "required_for_source_execution": false
+    },
+    "method": "Five original machine-local imagegen transport locators are replaced by their exact already-preserved workspace raw-image copies and SHA256 values. All other provenance/events/prompts/tool attribution and failed history are retained. The original recipe-metadata author script embeds those same local locators, so its exact path/hash remains descriptive non-bundled history; the shared raster converter is the bundled reproduction consumer. No historical input is overwritten, no cache output is invented and no art/rights approval is granted.",
+    "verified_rebindings": [
+      {
+        "field_tokens": [
+          "hidden_face_completion",
+          "generated_original"
+        ],
+        "workspace_raw_copy": "assets/source/town/approved-sh1-integration-20261030-v4/hidden-face-completion-raw-v1.png",
+        "sha256": "57655bc519412bad437dcf272c6ad15c2d2b800878ad57f1f077030d1f2946f1",
+        "original_tool_output_and_workspace_copy_bytes_equal": true
+      },
+      {
+        "field_tokens": [
+          "occluded_sky_completion",
+          "generated_original"
+        ],
+        "workspace_raw_copy": "assets/source/town/approved-sh1-integration-20261030-v4/sky-inpaint-raw-v2.png",
+        "sha256": "d96c35ca226d893ccb969f7436306b9fa89b97e12b0e4a51c6b7d9a68eee6809",
+        "original_tool_output_and_workspace_copy_bytes_equal": true
+      },
+      {
+        "field_tokens": [
+          "selected_v3_painted_recovery",
+          "finial_generation",
+          "original"
+        ],
+        "workspace_raw_copy": "assets/source/town/approved-sh1-integration-20261030-v4/civic-finial-removal-raw-v1.png",
+        "sha256": "f4ff9649033ca9911f93af18d21656849704bc07bd7f76ddd5993a223ebc2fe7",
+        "original_tool_output_and_workspace_copy_bytes_equal": true
+      },
+      {
+        "field_tokens": [
+          "selected_v3_painted_recovery",
+          "sky_generation",
+          "original"
+        ],
+        "workspace_raw_copy": "assets/source/town/approved-sh1-integration-20261030-v4/sky-repair-raw-v4.png",
+        "sha256": "bfaa58863202ef4c291c8e88cd1a975853ca9f7cd3d77ee1e1e23ee95f4d8d88",
+        "original_tool_output_and_workspace_copy_bytes_equal": true
+      },
+      {
+        "field_tokens": [
+          "unselected_bounded_sky_repair_v3",
+          "generated_original"
+        ],
+        "workspace_raw_copy": "assets/source/town/approved-sh1-integration-20261030-v4/sky-repair-raw-v3.png",
+        "sha256": "57346f26d0e7cbacdd6f2868fa3bbab49150452e2e8c6ce475e765cb10076ce8",
+        "original_tool_output_and_workspace_copy_bytes_equal": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "acceptance": "Production requirements only. No rig/guide/primitive/reference may substitute for painted final art; this recipe must fail while its real master/hash is absent.",
+  "animation_contract": "Minimum static architectural g0 is valid; real torch/banner frames may extend the painted cohort, never duplicated fake motion",
+  "art_direction": "Independent Noxian iron/crimson/black subjects in Heroes III native painted language. Never recolour Castle or Demacia art, import original pixels or invent an official crest.",
+  "building": "special1",
+  "building_contract": {
+    "full_canvas_placement": {
+      "x": 0,
+      "y": 0,
+      "z": 128
+    },
+    "name": "Black Rose Academy",
+    "native_ground_contact": [
+      2,
+      23,
+      98,
+      105
+    ],
+    "upgrades": null
+  },
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI built-in imagegen; deterministic project conversion",
+    "license": null,
+    "redistribution": "unresolved; no release or redistribution approval"
+  },
+  "dimensions_basis": {
+    "canvas": [
+      800,
+      374
+    ],
+    "mode": "RGB",
+    "reference_only": "runeterra-demacia/references/images/tbcsback.pcx.png",
+    "reference_sha256": "949012ea68999207934bc482f1552858474fe50cefddef17eaac00d4b98c2be9",
+    "use": "Dimensions/format only. No reference pixels, palette, source recipe, layout silhouette or licensed art copied."
+  },
+  "fit": "exact",
+  "generateOverlay": 0,
+  "generateShadow": 0,
+  "generation": {
+    "image_generation_used": true,
+    "provider": "OpenAI built-in imagegen",
+    "model": "Not exposed by the built-in tool",
+    "model_disclosure": "Not exposed by the builtin tool.",
+    "prompt": "Create ONE original Black Rose Academy building cutout for a Noxus town in original Heroes of Might and Magic III. The two supplied images are PAINTED MATERIAL/CAMERA/PALETTE STYLE CONTROLS ONLY, do not reproduce their hall/fort buildings. New subject: compact covert academic manor and library, rich dark volcanic coursed masonry, black iron rivets, layered angular weathered slate/iron roofs, a broad readable library facade, tall narrow muted crimson window panels, iron thorn tracery around an inhabited discreet front door with two small warm guard lamps. Silhouette is a scholarly roofed manor with an asymmetrical small library turret, not another castle or blank column kit. Subtle institutional thornwork, no letters, no floating rose, no characters, no LeBlanc, no spider cages, no purple neon, no Tudor timber crosses, no pale Castle walls. Genuine richly textured PAINTED 2D game sprite: original HoMM3 miniature painted/prerendered appearance, restrained warm upper-left light and shadows, compact readable mass for final native104x103px. Low three-quarter frontal view looking gently downward: doors/windows plainly readable, only modest visible roofs. Entire single complete building and continuous dry stone foundation are visible with a transparent margin, no cropped extremities. No terrain plate or scenery background or grid or text. TRUE transparent background; preserve soft contact shadows only under the foundation. Use the supplied painted style language, not glossy contemporary 3D, photorealistic camera or vector shapes. Deliver one high-quality source painting, no composite sheet.",
+    "painted_master": "assets/source/town/painted-community-20261024-v2/special1/master.png",
+    "painted_master_sha256": "ef3cb9a5fc7f6caebd072a15c6c6604f33d919f2b05fadec8630f6e83c2fd824",
+    "generation_record": "assets/source/town/painted-community-20261024-v2/special1/generation.json",
+    "generation_record_sha256": "a87a4deff5ca9dd589b63e67e0d7fc3be006ec51c5cb3dd24f23031aa573345e",
+    "conversion": {
+      "method": "Uniform alpha-crop/contain of genuine painted 2D source; forced-depth site placement, no perspective warping or artificial art.",
+      "source_crop": [
+        16,
+        29,
+        1247,
+        1186
+      ],
+      "placement_box": [
+        2,
+        23,
+        98,
+        105
+      ],
+      "native_position": [
+        4,
+        38
+      ],
+      "native_size": [
+        94,
+        88
+      ],
+      "site": "blackRoseAcademy",
+      "assembly_script": "assets/source/town/urban-community-20261024-v4/prepare.py",
+      "assembly_script_sha256": "b8c70f29e50d9036f76d86d3dea27235f85ed2d37b71b10a054208bdd121d42c",
+      "mirror_x": false,
+      "crop_coordinate_basis": "after complete master mirror when mirror_x=true"
+    }
+  },
+  "groups": [
+    {
+      "action": "own town building state, not a troop idle/action",
+      "frames": [
+        {
+          "sha256": "76706feb58606f82b27594810a5e35cc8094d405cf4c64e54d7acd5819968e8c",
+          "source": "assets/source/town/urban-community-20261024-v4/structures/special1/layer.png",
+          "source_sha256": "76706feb58606f82b27594810a5e35cc8094d405cf4c64e54d7acd5819968e8c"
+        }
+      ],
+      "group": 0
+    }
+  ],
+  "inventory": {
+    "asset_id": "noxus.Sprites.runeterra.noxus.town.structures.special1.json",
+    "manifest": "assets/manifest.json",
+    "recipe_path": "assets/recipes/town/structures/special1-animation.json"
+  },
+  "output_path": "Content/Sprites/runeterra/noxus/town/structures/special1.json",
+  "pivot": {
+    "basis": "Full town canvas; content declares x0/y0; no Castle/Demacia building placement copied",
+    "x": 0,
+    "y": 0
+  },
+  "production_status": "painted-master-complete",
+  "recipe_type": "vcmi_animation",
+  "require_alpha": true,
+  "required_before_conversion": [
+    "Real independent Noxus painted master and truthful provenance",
+    "Non-null SHA256 source pins",
+    "Official Noxus emblem provenance where used",
+    "Native-size silhouette/composition/alpha and role review",
+    "Explicit coordinator selection; no automatic acceptance"
+  ],
+  "role": "town-structure-animation",
+  "sha256": "76706feb58606f82b27594810a5e35cc8094d405cf4c64e54d7acd5819968e8c",
+  "source_sha256": "76706feb58606f82b27594810a5e35cc8094d405cf4c64e54d7acd5819968e8c",
+  "status": "built-unreviewed",
+  "visual_approval_granted": false,
+  "source_canvas": [
+    800,
+    374
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "derived_from_blender": false,
+  "image_generation_used": true,
+  "master_sha256": "731591464cddbf73819bf32b86e252d547b62f526c21366560908380d7134b57",
+  "mode": "RGB",
+  "model": "not exposed by built-in tool",
+  "model_id_exposed": false,
+  "native_execution": false,
+  "prompt": "Use case: precise-object-edit. Asset type: ACTUAL UNBUILT painted2D FRELJORD terrain800x374 for original HeroesIII. Input1 is exact own unbuilt painted terrain edit target. Input2 is a TECHNICAL CONSTRAINT MASK made from that same terrain at native800x374: red rectangles/name labels show complete reserved future building volumes. It is NOT artistic content, not a primitive building guide and must never appear in the output. Preserve input1's low frontal camera, mountains/sky, upper-left daylight, compact1999painted texture, snow/ochreearth/charcoalbasalt, irregular neighborhoods and shared paths. No zoom/camera change.\nCorrect these ACTUAL context collisions: REMOVE the tiny cabin in the far-left roost volume aroundx22..62,y119..145; REMOVE any cabin/roof within civic volumex240..414,y42..168; REMOVE both tiny cabins/granaries aroundx477..553,y132..172 inside guild volume; REMOVE the little quarry-area hut aroundx600..651,y183..213. Also remove any pine/tree/trunk/large loose rock sitting directly on the lower ninepixels of ANY red site's base/foundation strip. Replace removed subjects genuinely with matching buildable packed-earth/snow or natural connected rock, extending existing paths. Do NOT simply paint more rocks over buildings, smear them or leave doors/roofs/plinths visible.\nAll16 ordinary functional construction footprints must have clear dry land at their base. Red rectangles show upper building HEIGHT as well as width: upper parts may still show sky and mountains, do not flatten mountains into rectangles! Just ensure ground along their loweredges is one natural usable dry terrain plane, with natural retaining walls ONLY BEHIND the future foundations. Preserve scenic slopes elsewhere. No rigid rows of level display platforms.\nImportant actual water correction: ONLY the OPTIONAL-COAST rectanglex692..794,y174..225 may intersect WATER. Narrow the existing inlet so the rearfortress whole lowerfootline x589..784,y154..163 is DRY connected rock/soil. Keep water BELOWy169, at the outerright x708..799,y174..230. Bring the shoreline back into dryland BELOWy236 so ALL foregroundright terrainx695..799,y242..374 is DRY; no water, wateryice or lake under the smithy or hunters' lodge. The dock's LANDWARD APPROACHx692..704,y195..205 is dry shoreline connected to the quarry/road; rightward pier/boat may later extend over actual water. A very narrow distant seahorizon outside these sites is okay, never through the fortress.\nKeep the small domestic cabin ALREADY in the clear gapx512..559,y246..272 between the institutions: it is harmless village background, not functional. Add only TWO small humble nonfunctional timber familycottages nearx147..175,y92..112 andx190..219,y94..113 on the distant open slope ABOVE the vigil site; modest warmwindows and firewood. They do not overlap ANY red volume or foundation. Those domestic cabins, shared paths, woodpiles, mundane low retainingwalls and sparse trees BETWEEN plots give community texture. No additional purchasable hall/lodge/shrine/guild/tower/market/fort/dock/boat/animal is painted into the terrain. No finished functional architecture baked into an unbuilt state.\nRemove all red outlines, yellowlabels/text and any technical mask marks. Return only the corrected fully painted nativeproportion terrain, no UI/borders/letters/labels, no alpha, no primitive/vector/3D/cartoon style. Keep complete800:374framing with no clipped canvas.",
+  "provider": "OpenAI built-in imagegen",
+  "redistribution": "unresolved; release prohibited",
+  "references": [
+    {
+      "path": "assets/source/town/community-v4/terrain/master.png",
+      "role": "Inspected subject, composition or native rendering reference as explicitly specified in exact prompt; no bundled original pixels",
+      "sha256": "7e309e4b86bbe1a4268b2f0d368b9cef333d336f2ae1064098c738cb5e22403a"
+    },
+    {
+      "path": "assets/source/town/community-v4/terrain-v2/technical-site-mask.png",
+      "role": "Inspected subject, composition or native rendering reference as explicitly specified in exact prompt; no bundled original pixels",
+      "sha256": "868c5add070cd56c4c3bef5fb49f196ff3771377cd374135e9d976e467e818b8"
+    }
+  ],
+  "selected_for_build": false,
+  "size": [
+    1833,
+    858
+  ],
+  "status": "authored configuration",
+  "tool": "image_gen.imagegen",
+  "visual_approval_granted": false
+}

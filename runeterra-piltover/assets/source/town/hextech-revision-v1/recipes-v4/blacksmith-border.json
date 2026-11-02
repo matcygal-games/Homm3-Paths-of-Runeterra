@@ -1,0 +1,78 @@
+{
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "Project-directed OpenAI builtin imagegen; deterministic technical2D conversion",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/hextech-revision-v1/assemble_v4.py",
+      "sha256": "e5a844d70fbba67bd96987e9a493ca584f87d54470773a83220fa1f10df9dbba"
+    },
+    {
+      "path": "assets/source/town/hextech-revision-v1/buildings/blacksmith/master-v4.png",
+      "sha256": "031d53f88135e47c57dff50f77beb1fd0386676671aa3041ae79f45655168db4"
+    },
+    {
+      "path": "assets/source/town/hextech-revision-v1/buildings/blacksmith/prompt-v4.txt",
+      "sha256": "7e262e7b61fd4cb01cafedabc3ddb416e304b39806e0761613086bfaf1bd9cff"
+    },
+    {
+      "path": "assets/source/town/hextech-revision-v1/buildings/blacksmith/source-generation-v4.json",
+      "sha256": "094fe1204f341e0e96d42a13a267308542670f23a8429df525b3f76f2a66d4b0"
+    },
+    {
+      "path": "assets/source/town/hextech-revision-v1/layout-plan-v4.json",
+      "sha256": "5b9b8f4cabd68ea10440b795122600ab3ce13beafa305cb2dc4b971dea5976b2"
+    },
+    {
+      "path": "assets/source/town/hextech-revision-v1/placement-calibration-v4.json",
+      "sha256": "5e61f7c7ee4b482bd972ca8ec801bca7744c24143fe32c8b9ca614077a2be407"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/blacksmith/master-v1.png",
+      "sha256": "7fec021912b6a9d92cda8d3c94a1c5d5baa3f42bccfeefb1cdcc10338648ef14"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/blacksmith/prompt-v1.txt",
+      "sha256": "b6e89193e7df8912ebe10dd44ce94dbe4f343f42b5568190534feb2b785a55ff"
+    },
+    {
+      "path": "assets/source/town/painted-v1/buildings/blacksmith/source-generation.json",
+      "sha256": "47f430eb7be154ff4aa7fe9de4bb905fe853f53e7e6ce1f8846787a130e95026"
+    }
+  ],
+  "fit": "exact",
+  "generation": {
+    "image_generation_used": true,
+    "model": "not exposed by tool",
+    "painted_master": "assets/source/town/hextech-revision-v1/buildings/blacksmith/master-v4.png",
+    "painted_master_sha256": "031d53f88135e47c57dff50f77beb1fd0386676671aa3041ae79f45655168db4",
+    "producer": "assets/source/town/hextech-revision-v1/assemble_v4.py",
+    "producer_sha256": "e5a844d70fbba67bd96987e9a493ca584f87d54470773a83220fa1f10df9dbba",
+    "prompt": "Use case: precise-object-edit. Asset: independent original Heroes III800x374-town building layer, painted2D RGBA cutout.\nImage1 is the EDIT TARGET, our own existing painted building. Preserve its original exact source canvas, architectural scale, lower foundation and front stair/door position, frontal three-quarter perspective, upper-left daylight, entire roof/shadow and natural opaque masonry. No global smoothing, camera change, recenter, zoom, stretch or larger footprint. The next image is actual original Heroes III Castle rendering-language reference only, never copy its subject; the final image is the exact PILTOVER crest shape reference (vertical stem, split orb/ring, gear-flanked arcs; NOT wings).\nEnhance ONLY this existing Civic Foundry with visible PILTOVER HEXTECH INNOVATION: keep building camera, full foundation/steps, wide forge entrance, anvils, furnace, crest banners and entire source silhouette. Install one large grounded aged-bronze induction COIL around a visibly CYAN-BLUE glass power cell on the existing right work veranda; a thick brass conduit runs from its collar into the furnace wall. A second small blue insulated gauge is set into the masonry above the entry. Keep orange forge fire and mundane working tools, mechanical craftsmanship, navy/gold/cyan color identity. Technology reads clearly after native downsampling but remains painted/weathered, no Zaun green, no levitating building, no actor. Outer roof/objects/shadow stay fully visible and alpha outside stays genuine transparent.\nMaintain textured painted2D original-Heroes-III material treatment, compact readable forms, warm weathered ivory stone, brown timber, aged bronze/brass, navy cloth, restrained distinctly CYAN-blue hextech lights/coils/conduits. No Blender/3D renders or underpainting, no photoreal/modern gloss, anime, flat vectors, bloom, orange yellow outline, neon-green Zaun theme, text, UI, border, people or watermark. Painted building interiors/materials stay fully opaque. Genuine zero-alpha transparency outside all architecture/shadow, no black/white/brown studio matte or floor vignette. Every complete object/shadow within existing maximal silhouette; use internal blank facade/porch areas for new engineering detail. All ground-access doors/stairs physically touch foundation; no floating props or unsupported platforms.",
+    "prompt_file": "assets/source/town/hextech-revision-v1/buildings/blacksmith/prompt-v4.txt",
+    "provider": "OpenAI builtin imagegen",
+    "source_generation_ledger": "assets/source/town/hextech-revision-v1/buildings/blacksmith/source-generation-v4.json"
+  },
+  "output_path": "Content/Sprites/runeterra/piltover/town/structures/blacksmith_border.png",
+  "production_status": "painted-master-complete-unapproved",
+  "recipe_type": "raster",
+  "require_alpha": true,
+  "size": [
+    800,
+    374
+  ],
+  "source": "assets/source/town/hextech-revision-v1/buildings/blacksmith/border-v4.png",
+  "source_canvas": [
+    800,
+    374
+  ],
+  "source_sha256": "978315884012edc4e72d064a36ea3301032f934e07aaedce6e371a87f006d3a0",
+  "status": "painted-candidate",
+  "visual_approval_granted": false
+}

@@ -1,0 +1,23 @@
+{
+  "missing-writer-lock": {
+    "compile_exit_code": 0,
+    "case": "registry-lock-blocks-writer-and-reader",
+    "rejected": true,
+    "run_exit_code": 1,
+    "output": "FAIL registry-lock-blocks-writer-and-reader: registry access escaped held mutex\nRESULT 0 passed 1 failed\n"
+  },
+  "missing-reader-lock": {
+    "compile_exit_code": 0,
+    "case": "registry-lock-blocks-writer-and-reader",
+    "rejected": true,
+    "run_exit_code": 1,
+    "output": "FAIL registry-lock-blocks-writer-and-reader: registry access escaped held mutex\nRESULT 0 passed 1 failed\n"
+  },
+  "lock-across-reentrant-close": {
+    "compile_exit_code": 0,
+    "case": "synchronous-close-before-removal",
+    "rejected": true,
+    "run_exit_code": 1,
+    "output": "FAIL synchronous-close-before-removal: resource deadlock would occur: resource deadlock would occur\nRESULT 0 passed 1 failed\n"
+  }
+}

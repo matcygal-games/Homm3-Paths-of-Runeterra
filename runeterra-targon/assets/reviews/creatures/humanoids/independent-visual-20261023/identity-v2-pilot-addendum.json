@@ -1,0 +1,161 @@
+{
+  "archer_derivative_recheck": {
+    "comparison": "archer-map-left-final-comparison.png",
+    "comparison_sha256": "3eb139e29b7cdc8bd50be4097a24b4823b4e66f1c143c1c00831669786292c48",
+    "measurements": "archer-map-left-final-comparison.json",
+    "observed_pixels": "Changes are localized to upper-body/bow; native1x visible body and feet stay in the same region. No additional mandatory archer rerender finding. Actual native map-anchor behavior remains pending.",
+    "scope": "Two attackLeft hashes changed after initial snapshot. Owner explains deliberate rederivation from corrected final attackRight with unchanged reflection around worldroot48 on64canvas. Actual pixel changes, not metadata-only."
+  },
+  "findings": [
+    {
+      "id": "HV-01",
+      "observed_pixels": "Silver chest/forearm surfaces, darker outer mantle and layered skirt panels visibly alter native1x clothing/material silhouette relative to Acolyte and original upgrade. Face, staff and visible boots remain readable. This is an actual artwork change beyond the existing head crescent.",
+      "pilot_disposition": "holding-pose visual gap addressed; full-cohort verification pending",
+      "remaining": "Verify mantle/armor across walk/turn/melee/cast/defence/death and all map/portrait derivatives; no clipping, wrist detachment, floating robe, crop regressions or inappropriate glow. Then refresh source/recipe/compiler pins.",
+      "unit": "lunariPriestess"
+    },
+    {
+      "id": "HV-02",
+      "observed_pixels": "Forgers now show stronger shoulder/chest/arm mass, bronze collar/bracer coverage and a dark work-apron silhouette that separates body from light Rakkor. Dawn further adds substantial bronze cuirass/pauldrons/tassets and reinforced weapon read. Human face, grip, focus hand and boots remain visible.",
+      "pilot_disposition": "holding-pose heavy-family and upgrade gap addressed; full-cohort verification pending",
+      "remaining": "Verify wider body armor and polearm throughout walk/turn/attack arc/hit/defence/death and all derivatives. Retain readable base/upgrade separation and supported hands; refresh source/recipe/compiler pins.",
+      "units": [
+        "solariSunforger",
+        "solariDawnforger"
+      ]
+    }
+  ],
+  "full_findings_closed": false,
+  "geometry_inspection_sheet": "identity-v2-pilots-geometry-inspection.png",
+  "geometry_inspection_sheet_sha256": "d703f84c0d1cd5bc563bf16042c8b91ebf34350eba32a50fe1a2e94e8f8f250e",
+  "holding_geometry": {
+    "measurements": [
+      {
+        "body_region_has_actual_pixel_changes": true,
+        "foot_region_rgba_identical": false,
+        "old_alpha_bounds": [
+          182,
+          186,
+          211,
+          271
+        ],
+        "pilot_alpha_bounds": [
+          181,
+          186,
+          211,
+          271
+        ],
+        "pilot_source_sha256": "bed791782b7cdf3a91bf0312c1b2892f6d392230cb5e79da679f4bd0a77ece63",
+        "unit": "lunariPriestess"
+      },
+      {
+        "body_region_has_actual_pixel_changes": true,
+        "foot_region_rgba_identical": false,
+        "old_alpha_bounds": [
+          182,
+          175,
+          221,
+          271
+        ],
+        "pilot_alpha_bounds": [
+          183,
+          177,
+          221,
+          271
+        ],
+        "pilot_source_sha256": "a0f5ffad2ed2bdcd83c322bb9ba8086734232922ae5a83c2d1bb9048a4d85441",
+        "unit": "solariSunforger"
+      },
+      {
+        "body_region_has_actual_pixel_changes": true,
+        "foot_region_rgba_identical": false,
+        "old_alpha_bounds": [
+          182,
+          175,
+          221,
+          271
+        ],
+        "pilot_alpha_bounds": [
+          180,
+          175,
+          221,
+          271
+        ],
+        "pilot_source_sha256": "9679115efd086ca6c21e1f12609cd7e7ea7ecbaf08bfdbaeeef44812c2f6c6db",
+        "unit": "solariDawnforger"
+      }
+    ],
+    "observations": "All pilot opaque content stays safely inside450x400. New and old holding sole lower bound remains271 for each unit. Face/eyes, gripping hand, focus/staff hand and boots are not visibly clipped; no detached implement, full-body glow or giant halo was introduced. These static observations cannot establish runtime contact/shadow/registration. Foot-region RGBA is not asserted identical, because new garments/lighting can change pixels."
+  },
+  "human_visual_approval": false,
+  "initial_review": "initial-review.json",
+  "initial_review_sha256": "77860917fb87f54d63107a1229203c21a168a151b914f3af770548a6416b94cb",
+  "method": "Compare original and new holds beside base Acolyte or light Rakkor peer using identical raw1x crop(130,146,272,282). Native1x comparison decides readability; nearest-neighbor enlarged fixed crop is only a geometry inspection aid. Original H3 pikeman/crossbow/monk/nativecanvas controls and their hashes remain recorded in initial review; no licensed pixels copied.",
+  "native_execution": false,
+  "native_sheet": "identity-v2-pilots-native1x.png",
+  "native_sheet_sha256": "874c402044cc35d1d7241a9cc72255ef71dc6ab77bc5b07a2ae4847e06feff46",
+  "pilot_inventory": "identity-v2-pilots-inventory.json",
+  "pilot_inventory_sha256": "922c59ced932292d2bd109e39aebac08bfc29fac8fc05fd9af90cf3a7b6e8cd8",
+  "recommendation": "Proceed with the coordinator-authorized three full corrective rerenders from these exact pilots; retain initial candidates and pilot sources. Do not fully close HV-01/HV-02 until full regenerated cohorts/derivatives are reviewed.",
+  "release_accepted": false,
+  "rights_approval": false,
+  "schema_version": 1,
+  "scope": "Bounded independent static review of three isolated identity-v2 holding pilots, following initial HV-01/HV-02 findings. No source mutation, generic conversion, native window or final approval.",
+  "sources": [
+    {
+      "role": "old",
+      "sha256": "68e52b2f7df9a34183fb1e16177f6214aeacd0f9aab9ed34cef69fb7b15be962",
+      "source": "assets/source/creatures/humanoids/lunariPriestess/g02-f00.png",
+      "unit": "lunariPriestess"
+    },
+    {
+      "role": "pilot",
+      "sha256": "bed791782b7cdf3a91bf0312c1b2892f6d392230cb5e79da679f4bd0a77ece63",
+      "source": "assets/source/creatures/humanoids/lunariPriestess/candidates/identity-v2-pilot/g02-f00.png",
+      "unit": "lunariPriestess"
+    },
+    {
+      "role": "peer",
+      "sha256": "7153710102037ee8e158864107f12cbbe4f4a260d91ce831b08c0feb4dcac229",
+      "source": "assets/source/creatures/humanoids/lunariAcolyte/g02-f00.png",
+      "unit": "lunariPriestess"
+    },
+    {
+      "role": "old",
+      "sha256": "1a32ac50690e3b1332cfaa8af1e9c740999344d543993ee7cb3f2bde5de4705c",
+      "source": "assets/source/creatures/humanoids/solariSunforger/g02-f00.png",
+      "unit": "solariSunforger"
+    },
+    {
+      "role": "pilot",
+      "sha256": "a0f5ffad2ed2bdcd83c322bb9ba8086734232922ae5a83c2d1bb9048a4d85441",
+      "source": "assets/source/creatures/humanoids/solariSunforger/candidates/identity-v2-pilot/g02-f00.png",
+      "unit": "solariSunforger"
+    },
+    {
+      "role": "peer",
+      "sha256": "0de29bf8b57c89084fef0c64d7b23fdb327a81da87438dbbcb2eedf6914c9ac4",
+      "source": "assets/source/creatures/humanoids/rakkorTrailguard/g02-f00.png",
+      "unit": "solariSunforger"
+    },
+    {
+      "role": "old",
+      "sha256": "141d8c13815e272e1aea08baf00f7185afd2b126879c9b869f70efd9a488034f",
+      "source": "assets/source/creatures/humanoids/solariDawnforger/g02-f00.png",
+      "unit": "solariDawnforger"
+    },
+    {
+      "role": "pilot",
+      "sha256": "9679115efd086ca6c21e1f12609cd7e7ea7ecbaf08bfdbaeeef44812c2f6c6db",
+      "source": "assets/source/creatures/humanoids/solariDawnforger/candidates/identity-v2-pilot/g02-f00.png",
+      "unit": "solariDawnforger"
+    },
+    {
+      "role": "peer",
+      "sha256": "0de29bf8b57c89084fef0c64d7b23fdb327a81da87438dbbcb2eedf6914c9ac4",
+      "source": "assets/source/creatures/humanoids/rakkorTrailguard/g02-f00.png",
+      "unit": "solariDawnforger"
+    }
+  ],
+  "status": "authored configuration"
+}

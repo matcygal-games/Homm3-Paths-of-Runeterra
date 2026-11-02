@@ -1,0 +1,20 @@
+"""Source-body/root guide for genuine background artwork; never support."""
+from pathlib import Path
+import json,hashlib
+from PIL import Image,ImageChops,ImageDraw
+H=Path(__file__).resolve().parent;R=H.parents[4];c=json.loads((H/'town-layout.json').read_text());p=c['silhouette_plan'];out=H/'connector-source-guide-v12-v2';out.mkdir(exist_ok=False)
+def sha(f):return hashlib.sha256(f.read_bytes()).hexdigest()
+body=Image.new('L',(800,374));root=body.copy();records=[]
+for s,row in p['states'].items():
+ b=Image.open(R/row['body_mask']['path']).convert('L');f=Image.open(R/row['foundation_mask']['path']).convert('L');body=ImageChops.lighter(body,b);root=ImageChops.lighter(root,f)
+ hit=b.crop((414,168,445,190));rh=f.crop((414,168,445,190));records.append({'state':s,'body_pixels_in_context':hit.histogram()[255],'structural_root_pixels_in_context':rh.histogram()[255],'actual_body_source':row['body_mask'],'actual_structural_source':row['foundation_mask']})
+body.save(out/'all36-actual-body.png');root.save(out/'all36-actual-structural-contact.png');im=Image.open(R/c['background']['path']).convert('RGBA');o=Image.new('RGBA',im.size,(255,0,100,0));o.putalpha(body.point(lambda a:170 if a else 0));im.alpha_composite(o);crop=im.crop((404,158,455,201)).resize((714,602));d=ImageDraw.Draw(crop)
+for x in range(405,455,5):d.line((14*(x-404),0,14*(x-404),602),fill=(100,130,255));d.text((14*(x-404),0),str(x),fill='white')
+for y in range(160,201,5):d.line((0,14*(y-158),714,14*(y-158)),fill=(100,130,255));d.text((0,14*(y-158)),str(y),fill='white')
+crop.save(out/'actual-body-context-coordinate14x.png')
+west=im.crop((0,115,35,158)).resize((490,602));dw=ImageDraw.Draw(west)
+for x in range(0,35,5):dw.line((14*x,0,14*x,602),fill=(100,130,255));dw.text((14*x,0),str(x),fill='white')
+for y in range(115,158,5):dw.line((0,14*(y-115),490,14*(y-115)),fill=(100,130,255));dw.text((0,14*(y-115)),str(y),fill='white')
+west.save(out/'west-actual-body-context-coordinate14x.png')
+west_record={'status':'design proposal','source_background':c['background'],'whole_art_context':[0,130,24,148],'strict_all36_body_and_structural_free_walking_core':[0,130,14,148],'core_actual_body_pixels':body.crop((0,130,14,148)).histogram()[255],'core_structural_contact_pixels':root.crop((0,130,14,148)).histogram()[255],'avoid':'UpKnife genuine roof/body beginsx14,y134+ inwidercontext; never routeunderit.','floor_endpoints':'UpperactualAcademywestlandingx0..24 ends131. LoweractualCivicpavingx0..24 starts145. Current intervening132..144 is nonlevelretainingface; needsactualpublicstairart.','source_architecture_remains_unchanged':True};(out/'west-guide.json').write_text(json.dumps(west_record,indent=2)+'\n')
+v={'status':'design proposal','purpose':'Exact source geometry guide ONLY. No new pixels authorized as walking/support. Actual source artwork and final independent plane trace required.','background':c['background'],'contract_sha256':sha(H/'town-layout.json'),'context':[414,168,445,190],'all_body_free_core':[414,168,445,186],'proposed_actual_artwork_flight_envelope':[[415,181],[438,172],[444,172],[444,180],[421,189],[415,187]],'avoid_actual_upRift_body':'Any source pink pixels nearx441..444,y186+, all actual structural contacts remainunchanged.','endpoint_source_truth':'Left publicavenue boundarynear416183; right actual Menacourt pavement begins440174. Current intervening425..438 is actual retainingface/wall, requiring genuinepublicstairs, not maskrelaxation.','per_state_occupied_context':records,'all_body_mask':{'path':(out/'all36-actual-body.png').relative_to(R).as_posix(),'sha256':sha(out/'all36-actual-body.png')},'all_structural_mask':{'path':(out/'all36-actual-structural-contact.png').relative_to(R).as_posix(),'sha256':sha(out/'all36-actual-structural-contact.png')}};(out/'index.json').write_text(json.dumps(v,indent=2)+'\n');print(json.dumps({'guide':str(out),'index_sha256':sha(out/'index.json'),'occupied_context':[r for r in records if r['body_pixels_in_context']or r['structural_root_pixels_in_context']]}))

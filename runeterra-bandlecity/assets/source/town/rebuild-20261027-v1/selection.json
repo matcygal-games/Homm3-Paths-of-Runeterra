@@ -1,0 +1,3063 @@
+{
+  "files": {
+    "assets/source/town/rebuild-20261027-v1/background/generation.json": "7d2078452dd182b7ea65f4b773bab41291f0a59d24d00f39f196541abbfafd0f",
+    "assets/source/town/rebuild-20261027-v1/background/master.png": "72ac1ab1cecfef81310022cabbc329acd1638201c08fe791d78dfa06d1c13670",
+    "assets/source/town/rebuild-20261027-v1/background/native.png": "d9175faac5d0ea985cd8b91d54fa80ad62fcc4a82d0191815819fa540322de97",
+    "assets/source/town/rebuild-20261027-v1/background/placement-guide-generation-input.png": "a4ffb9ba265b1ee0e1f1ae2e96510d22f4078c3b93288a70bdc65ae7652ec587",
+    "assets/source/town/rebuild-20261027-v1/background/prompt.txt": "2b937ac0d1f13c7c223dc94e96d1bf55cf9462e24d16430c11496226a330e711",
+    "assets/source/town/rebuild-20261027-v1/background/water-annotation.png": "9975167f81d9a8d3addc9f9b2680f576ba83ca07cada60b34854c96aa0ab7a33",
+    "assets/source/town/rebuild-20261027-v1/inputs/current-town-visuals.json": "ab52d27ca39b5bcafdf220f602956d2e301a5cd61147a6da48b401aac3ba0e21",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/blacksmith-animation.json": "796f4ab10d9965686655bfd8a03713164410594037b66408172a3d4b279993f0",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/blacksmith-area.json": "349ae41889a66dbfea698df48efc90e4473b9a69d5756301de04b348b3ff5d98",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/blacksmith-border.json": "9c77a2b0921725599953ccf33e35963221e3c72011fa62d7cb7b2c275b77e8a8",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/blacksmith-campaign.json": "195e5c5880a9272881d939608374f1db863a26ab16f2065c13d0e4a2d977784b",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/capitol-animation.json": "d102ccb74d8f8c2e9e0fa9e58cc81a93fab3662393241f6ddbd0209f5fe0644c",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/capitol-area.json": "08910ceddc9d376b7552a7dd839cb1233b5ffd4d446ee378ad7bea963ca8ccf6",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/capitol-border.json": "1625a02ee52722c596c6313ce2135ffd5f082a7a040d0a3dde7c2cbc03ebb33f",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/capitol-campaign.json": "16b93898fc5a4e45712d837b7236c901944e5b31ef23b4c999ffd9f407ebf9e3",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/castle-animation.json": "06c74ac517084ac538f480ba6cdbb958ab8ae60be541e619e19fdc49c31264d4",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/castle-area.json": "7023507ee79bcf34b8ebfa100bc33c08a586f6603c553f8b3819002c3e87c40c",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/castle-border.json": "f1767107b5733b6737242d9013ebc345db14511f6f38eda792560e65d4ed1f58",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/castle-campaign.json": "f06c23aaecac224df99bb73d2c087cf64a98f3a619615ca524874c5d881f26fe",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/citadel-animation.json": "57623faee710cb3111bb539edf3e80ba9e99e2cca3bb4c31b6f0c82a25d2a9ba",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/citadel-area.json": "63b34d2e3656fa791681b39fa4feb00d97f89945ba071bad26977f60d98a21ba",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/citadel-border.json": "3ecfcaed848ea3916263c2635433623213dfc162f6af540fb9765c812c47e862",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/citadel-campaign.json": "287b09790cabd34aa1fc1b705df8e9052959bd654e54c0e83279b5edc16f822b",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/cityHall-animation.json": "9659242a829739afcb34cebb6aba1646ba4f6921dba4dbe6d4a0f3a4a41a3e35",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/cityHall-area.json": "86741bcdcd6cc913083bbb25eb865ad7cf746d6b742cd88c3fb9f96cfd5133a0",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/cityHall-border.json": "6413029bd9bc1705d56f31b65c7ad674447552c496a7881beed8e1570a5243ca",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/cityHall-campaign.json": "1aea5d76ea3d8afc36bae7e987026357c92fb89de2426747d34ff4874b4aca07",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl1-animation.json": "438a7613e39e0bc3af2a490ee797eca726934247be3ae8d031fad2020d26cdbb",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl1-area.json": "e54e06b297c66df671804bf51dba9bcec00c0e619220f19d16ed5de44757feab",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl1-border.json": "e9570fd5237120b2237f447091e089b050bf7a6e52b9cac0aa23725b21a759a0",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl1-campaign.json": "a533b58d71f093415468d579f86d3e9394720bad366cb0d8af3c398f2e38568d",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl2-animation.json": "4243b0960645f7a319a10cbabd278e270f2ea4a0c76e77daf76fd76e18e9f447",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl2-area.json": "728651e922c49e31e953cee85e7111ea51ca2b85bbdd5ca136a39a68a7fbcfaf",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl2-border.json": "439349ae036e2bf674e68f84718d555bfe36855555ea87ff681a3f6fc79388a2",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl2-campaign.json": "86528a2b80c20da4f63b3eecbae587c88b175ff78a1f5a414dcf638840b7df98",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl3-animation.json": "ab4273fbd1f45b41a233385536bf5521b45088a5e2da044a4776b3aff3e4c4bf",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl3-area.json": "e9030c516122ab8b2d39d4cf967a01ca4ecbd5a2aa0f17341e0406265a186cbd",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl3-border.json": "7a92d52037d488f46a509a261c80ac9c8fb49bb128cecdfe423273ee9e06388d",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl3-campaign.json": "b3791a7ef7ca03e62eba220cb5ce48d9a01c162a37ffbf502b16b1c579004a59",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl4-animation.json": "7196f884a644798338b0cc7b9e0294f92525d7266d55934c751c5aeb6bb8ba9a",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl4-area.json": "69876f7edfedb8499bb1f3e0874bd85328f19b89ee2af5b692f173fe39c58991",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl4-border.json": "2867427f658fb4730370a6f875bd7e367cf5ee694025d398b4193be6a7042aaa",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl4-campaign.json": "1f0112134a0f5fa4d266a7f588adbc8af5b7ad5abaa71cc95e77ac2e1d540b01",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl5-animation.json": "eab96adc434d6cf70526c81a19155ea5305d40d3765fb777457e46ee30e1ca7f",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl5-area.json": "3b9ecf6989bb47bfa2da09132294f2ec03749c4024a68ba1122318b27768bbec",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl5-border.json": "50053bcc36432c1683142607c89f6694f3950942aa41efd763ccea02241667ed",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl5-campaign.json": "1cc45b7a108149be05618317f5888d0e90be6311c18acabdd6290f7a1756a537",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl6-animation.json": "a847a3cd56e0d30ed84040b66cc111328c236a9bc8780ae9936b78b89783d8cf",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl6-area.json": "0acf904c8f962b7c0a65119b6028232dac2f46e4287a47d4bd143457419ebbf1",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl6-border.json": "bacdf80710882bf6741545c4d74f0f532be5eaf2054595256874465c9380d777",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl6-campaign.json": "c50422f0ded9bcf6c45ed99da7494e168e4d8c1046260402abec7d60854ece2b",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl7-animation.json": "81599f8ed62c7f2f4dae314d5d523f49b418dd3f0a166a01392fdf30ee82f92b",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl7-area.json": "1a918b3589a02dad755bfe7dc87c33b49856f0d3017691d08a5e936f06124e7e",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl7-border.json": "4e419ee1ba867ee5c3acb76683ec677fa7f32de4aa94dc4dfb684f353a5ae63b",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingLvl7-campaign.json": "5c65e73e651f308b461777ef6dbf3e58d0525480175fe673cbec38ac71c800f5",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl1-animation.json": "67df96164e4dc11fa87116a56771152a0630e8de968f0487de030527b8306dd7",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl1-area.json": "4dca714295e76076349cef65875d445146754fab72a0d35b82bb8c7fac0afce5",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl1-border.json": "6e4f76a3c8824ecaff3d942aa4b0a62a20767808afc3e2c0739ab49866be74cf",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl1-campaign.json": "1e7a764a50aae946995e74206f15b0feb6133ef2a4fea5e9ede03634e36a6690",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl2-animation.json": "86d42e0365f7eef5f73ea1b919c057c127d53da9b8e04fc09982841bbc7e9ad1",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl2-area.json": "dbc4fcaabd977a592e85eae2629be26529e136d8cae01fa719483479d7b082fc",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl2-border.json": "0097fb919c1bc8895395064c6c3611559077d1a95fbfe0dec2ff6bbe0d3ab2b7",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl2-campaign.json": "603801b0e0ebe04310271b1326afb9a55ebebd8de261c04c6011e8905cee568e",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl3-animation.json": "13002a54e587c2e2984d0f34d12697b0d8c0c8ecc7b9e7a74e1228b64a250be0",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl3-area.json": "ec9ffecfc1b2cb73873634fa0f89f16744dc383dc7dfa67f346f1d7ff096a6f7",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl3-border.json": "32d875df08c1435f4b718d6ea623e389527f564a654395568786bdb74d95d0b5",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl3-campaign.json": "a3d27553065ae2dfb66a9db60e597a92cd9af035b8b52d02ef0c96f09385aa84",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl4-animation.json": "8a6d0a3fdbb51cf7da47e56d1a350e1c72df7c44c691d7fc5025b510b1c62f7e",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl4-area.json": "9dd07144d13f94beeb7437d4a3aab9bef816a66b1e74187891d81afefe8151f2",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl4-border.json": "13295675367c22587d136df164c94280dbbe9f48f39ec59eb97a4da17cfbaf6e",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl4-campaign.json": "c472af9dae67cc31289242627ca59b5d98689ba8a6d9f02132113c81eb7fa68c",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl5-animation.json": "83156d2504196ca5b6d147c7af974b5d6c87802e332fe56bb99c37925d692c99",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl5-area.json": "84097d881549e43967a2f278bec44a61a73d6cfe172a1f5dc9a25f6c000a6585",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl5-border.json": "cdad75bb7f1795234fb2722e4d24d7ec1e6420397196ca3d1f5019655444bb5e",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl5-campaign.json": "524bfdc8132f1d3c307214cc163f15138a442b04ba9c8ad324d5952f2b052d18",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl6-animation.json": "d589b8db2f5ac893957bfcc444e3a521f6c880db0dc795ee4155f05a69e56587",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl6-area.json": "787bf37f22ab0e001fb4f1b92299fea20666095dc45a20f9d24694a77a952596",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl6-border.json": "87f3ef729b99e21f2f5e834ed936c4a2ab2331c25a4728f90f50c2ff677209a5",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl6-campaign.json": "d1b98bc47e9baad9a6e21d45ea924272de0199f94adaea502173aba92ed34d5c",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl7-animation.json": "3e73ecd9841d1b9e85f60ee91cf32fa95074c715b5d407a2268e53e0e5dd7a0b",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl7-area.json": "e0f0e95a9417efea3f790e69b2dc0133070c4c143ffd2a3d775d13f55b0c4d3b",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl7-border.json": "8106d4a5d792054160f887b379cb847ceb5588611027eb6ba8b10d71e2420d13",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/dwellingUpLvl7-campaign.json": "b4d6861661e9491992081d9e901e71d93be127412534dac224331fc763af3e30",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/fort-animation.json": "1acab5eb090cc75155dcced20b93061fb313bab0bab74db33c831845d4082ccf",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/fort-area.json": "ec10c5f8121e9cccd0444bb7ce895ff25aa5c34e4a4b76ceb513e52c80239157",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/fort-border.json": "72c75481fbcfc147bfd28ec26f74995e5a19441339c127d2fce21aed84f3fd88",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/fort-campaign.json": "e0450fc680b6fffa128626dbf07efbae337c588946ccd82ecf5ede2ec0eee5b1",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/grail-animation.json": "eac22394435b4ca938bc5c3b251056a8fb82ec2d9bc7a83f59b6f11f118074b9",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/grail-area.json": "8df08e687d48fde29e17ad8835d411b7e306735029b858741645724f19d8d155",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/grail-border.json": "47eba9f9d8c142bce80a675c9c744da314698062f3cb3354ddcd83391622d55a",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/grail-campaign.json": "1bf78a2aa5f7f5ec3bdee6335f8448f5bc6040513d1ff0cf7084f3b7a5a20ec7",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/mageGuild1-animation.json": "83802f2c20324f89b6f0a5a3cbe911d3261d368dabb037fcbb58ad29419229ee",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/mageGuild1-area.json": "204f42f1bc4eb7d834d065be75d4afedecd0c37b46932cbf3c341dc7fd355088",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/mageGuild1-border.json": "dbbdd19575669099238935de068ab79edbc86ec552bab57d10d12ce2d501e66b",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/mageGuild1-campaign.json": "728de551bfc953c16bebd83dcd19ad61b0a2df51230dd8798b8a2fdb94b520c1",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/mageGuild2-animation.json": "b83d702738e5537f3918b80fcdc07065f5181ea4ad6e34701df84925e3d9ba50",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/mageGuild2-area.json": "4199eb83b79446da44564a51420c27029607d661449e50b082b3604b659b6ffb",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/mageGuild2-border.json": "ee6676786ae631715222b7454f0798609426a94714db7bcfdb64218b7c1fe21f",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/mageGuild2-campaign.json": "d8bd8f2a5de4774322a8eb18b4698c8849bb949bc781bffa3e80a8f97270f28b",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/mageGuild3-animation.json": "52133af740ea57d97807dd91f43ceeefd7302667326cfa2c66e5a0fd9441a2b7",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/mageGuild3-area.json": "f5ae1acdee8e3cf032611d9637b329681fc6a61fd43487988cba9195511b045e",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/mageGuild3-border.json": "64308499a824fc6aa175da93851ab38ab1f6e2c33a4880e75925cae751099d41",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/mageGuild3-campaign.json": "83a6e601e4c7925541c6670835a9a117b58cd509817123ea7d39ad1b2abe7a00",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/marketplace-animation.json": "b9052c42e12dfa80f1aaaa6a688a99a3f37a7deaac0ef39599345bd65e629dc6",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/marketplace-area.json": "8933e16978c2247391997e3c4b9d8d0edc365c212bb79b1a330eefd2ca153185",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/marketplace-border.json": "fd0536213ea54ae374aaab2e1929889b794b3e65ecb9f9cde41893c49e877218",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/marketplace-campaign.json": "544eddb4b7ed3e20e2ef35ca401a0c7996fa41abe1a86ea6458061ad8ef8bfdc",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/resourceSilo-animation.json": "da6c779bd9ee0d2d2e4556444ae6f8089eee713ca206cddd81133e68bfc2fb2b",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/resourceSilo-area.json": "e61b9764574cb8a5cea57c3d5c8314cc572dac212d63e95897b4a5ff187a24b8",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/resourceSilo-border.json": "b17fc4516e0de6cd1be3961586f7343e087bef82b8bb54b243941bd484434285",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/resourceSilo-campaign.json": "61c660917baee3da2bbdcb00923920c0f0f9911b770839aefaae0f20e2887701",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/ship-animation.json": "796625b703d2965de4c7a8da39b4ddb7036ad3f478929cadb49b9beb576f67e3",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/ship-area.json": "6d19b7bfd0e1a017e1f52a1248cc94feb027d27688603488f69353b1fa59f0e1",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/ship-border.json": "b51697194161981bcbb36ea0b9f4c7085b7a8c53ec30182b3420e4fe801890d2",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/ship-campaign.json": "80a18c444f21f0c40741f064bd2f077d8510bb4e79a711e6c036e8dd462d01bd",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/shipyard-animation.json": "8b56dfabd835eaadc57cf08ecf92d959db888695a12c1f05f11e1f5e82415bd4",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/shipyard-area.json": "ae63e7f2bede8b5108a22d4531d656af7923abead79053e59a4baea234af3ae1",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/shipyard-border.json": "c71b9d1486fb1189504618c23e3c093528d64091d6593cb999e83175e4c7c450",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/shipyard-campaign.json": "6b04eb1b028c7513faf9aa16ea96d36506651e8af605cc8e13a3467ec3fc5618",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/special1-animation.json": "4f9c2100ac2ad17124de154d3f8e4de34a7706aca10d62e06e95b96e23175780",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/special1-area.json": "63c56fd6b7fd43821f13b3b8e38e63479560c6d6d63bd9e386b054c1ecc2856f",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/special1-border.json": "62b7197af38b09e46602b906c5dfe33f1ea54765f2e05c4b0a9f3477baf9a97f",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/special1-campaign.json": "587d40bc217ac3577d8aef763ca358c110f5ffa74d70188afe6ab6b89d6880dc",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/special2-animation.json": "699075555d09547991d722e8dc5d67112d375abe7605f508f9b8f5bbd18e5482",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/special2-area.json": "3c3f790f5c99aeba8a6828273f8d861cf1840b262788f29ac46e6426ace92b1a",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/special2-border.json": "1db32705013cfcab19e65c4d1236d6ebbd1b8b406e07d9ad39e99d08ee1a90cc",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/special2-campaign.json": "91aad1718ac4597d73571969682e5c34f0434a514931e6eef92cea145d7fefff",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/special3-animation.json": "0cedb3ecb05734543b358e8760e622903eba420e403ebea01660862f20374ed3",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/special3-area.json": "5c4c04d8cd211f63e06f012de7a1a9a5c142cc852f12145975746765b5cf6ea9",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/special3-border.json": "6b808bb768333ba56c4a117fc80c46a126996f82a57f182a5c6f0a0f473fc8ce",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/special3-campaign.json": "8e30bcb9adf8b2d9d885652c609292d4d44e91033f5d777916df3e43fe6eef09",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/special4-animation.json": "b92fcda3438c15697de08878a20a26b3a204ba7c241b629b592d665d16f0e421",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/special4-area.json": "3523dfe7d9ac6e9be650fea37625da1d909e7e6e6efc615b502b334d1d9f8843",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/special4-border.json": "1fcd2b836d7ef6732ff18a243449c3d727a7623798d737e626a1b55df63c02d4",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/special4-campaign.json": "e1fd9ffdad2b7d87d8d370d5e434470960748697e0cae108c81882ff32132f2e",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/tavern-animation.json": "a3057cd5c59511bfb57c17846ba6d967961ab54dcc22e9a4958748a7b9e5c91e",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/tavern-area.json": "eb7719de0d1f6874056f0d597a5e3e13941a49d2a63e1f721d7f26ef1c12e549",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/tavern-border.json": "0fa8ccdf4ccc55ad9c455b156ac8e14d1040ab6c982b12ccd8f70bc3c2c0b7f6",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/tavern-campaign.json": "df9befbc29eb8011d032c1f0e446b9f67f4070fc32c0460b5147b5b13be61ac3",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/townHall-animation.json": "42c135c93c8f9ab80682a8766987b48a2ba149761c83f7d53931a8b2ed41d32a",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/townHall-area.json": "b61b526c54b45c936f2fa4ecf9bf986c1d94231016cecde78f62f1e5c5d02757",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/townHall-border.json": "e9b3a0c6e55282aaec677d1fc172d19bf96ad26108e77c659a83fbbfc7ba16e7",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/townHall-campaign.json": "67d92b86c1e10d5445a1a6352e4e793578f0f3483b70606740783496d1e17b73",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/villageHall-animation.json": "45c68237b94fbaf6e23b53249d290a047c4c38478959367772926ddd3488fb36",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/villageHall-area.json": "580c77ba081fba15efad5561b2f57ce2f241a05489c7939250f8264843353ab9",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/villageHall-border.json": "9a383b755c26fa3d9938a0e4bfdd172bc32692a980cc26878b09d73114de27f6",
+    "assets/source/town/rebuild-20261027-v1/inputs/recipes/villageHall-campaign.json": "c0f48f8a3c00d4eae96516d4d5ff6c709609a10012f33ba66e485778186f924c",
+    "assets/source/town/rebuild-20261027-v1/placement-plan.json": "e20921bfe26dba32e4164a26b65fa14e7c0eb59ec1a55dc45b4117e51922f84f",
+    "assets/source/town/rebuild-20261027-v1/prepare.py": "f3020c231c014215aeccfca0d41084a02757119edf55828f671fa9277cee781e",
+    "assets/source/town/rebuild-20261027-v1/recipes/background.json": "b683dc742adbac555d5fc0fb8cb07e4eb362a2cfb8fc833953161788426b7d28",
+    "assets/source/town/rebuild-20261027-v1/recipes/buildingIcons.json": "20659c6726828a1920edef0e001574c539da03041dc2464ca31a0f05037db3a6",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/blacksmith-animation.json": "c562cfab3f42053df3cc1d0ca5be92fc608a11ba9ca47b065910c7eaa743b0c1",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/blacksmith-area.json": "51a0b95ba9be306a64f40f647da103d5f8eadd6cd2800d572de4089074f587f3",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/blacksmith-border.json": "9f97e19840d3fb89c2f128d0592cc8689d1c47f4a46f0cecbd6103b32fdb718f",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/blacksmith-campaign.json": "11ed89340036fdb4ab2d0c4025844b6b533358471b07f39932acbbde6194995b",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/capitol-animation.json": "21aa2561097094e17fad5a66cf0aa6792ed6311e2fd82030fe33974b7a0fc76f",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/capitol-area.json": "e832de98699f0eecb0f3ba7dfe57e6124b73ac757b23f3fe19ff10d986cb54f7",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/capitol-border.json": "245e85d62cc201ace9e60aac6ad292fbb1cab0a2cac7aa0bbbfa4bae0d9114d8",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/capitol-campaign.json": "06e459b10bad51680645238c3266cde772a3d6363928b78a7ae0162fd58afca2",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/castle-animation.json": "941de2aed615ff6e530bc7d53b95c16ed5f141e6a1bd801899429c224320dcc1",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/castle-area.json": "bde7a72fc43c98f5d22980309132423e30f78837a2b6439bcf0aa712fb2ed684",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/castle-border.json": "273cb430fe4a21c0a41f3af33ee43a89a7686981988e06d048292399fa18c4c2",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/castle-campaign.json": "b1ab64b1355cb84bde5c1e72737c6162c6f3f63d80c858fcce151bd9d1dc848a",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/citadel-animation.json": "8808146f9aecc7f7502d89b851d25968a0b189d3843565ce57bae5d128f98b24",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/citadel-area.json": "2f08ae31ca9582ccf40ff02695b42860c41ebd6b9469071be2d6b93687324133",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/citadel-border.json": "850657de4560d4716cf03f65d57e5e5997f2e97e927aa2cb9da7d17f6b401b3d",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/citadel-campaign.json": "98494ce7e70db84a2495b1fb3904dfb4394a29441dad1ecd624c902c9ed9c20f",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/cityHall-animation.json": "69fc4160e8d9bbebaadbaf1509c206ffa705f286f3c97cda44e6db97a2640333",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/cityHall-area.json": "06cb9a61a9a1c7add3b443da3c7a2c962ac07e044c1caa7dfcf9a08f2d97ad9c",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/cityHall-border.json": "e6ef076a5fa80ec1abcee36c1808d4bcd4beddc7cc9f9d3dcbb956bd3ca445f5",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/cityHall-campaign.json": "40150fb0f562425abf232238dad976a387db10dde85f8010cac0b881c2de88d8",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl1-animation.json": "e32c18787322a591ba10848e1cebf493e579c4913780f215562b73455b9d00d1",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl1-area.json": "56257efe40694d66f505320aebf8f5149fa81b5112e1d80b9ea3a81315a75ad5",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl1-border.json": "848700b8385be809d92cb52eda201da1f5b9c5be090ffe7d445574d31928d65e",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl1-campaign.json": "7ecf759ab29c4c90574d800e15d233afcebf0d90cc5b11caf431c31c63f76d1c",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl2-animation.json": "1f2e90b2eb2d193414a358746cf06f26d6278c99fd53555f8e4054b16a461e30",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl2-area.json": "e22166a76606ca020889fc2db6134d70fb6445ce971e2b384d4da4b0d420a9f5",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl2-border.json": "49592c750c82e7fa6d166a9274fb6a9faf79964e9572315c77243ec2720adf30",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl2-campaign.json": "8254f3dd5bdba4ddeefa58dce02fc173acad0fcd3d8cbb21fbd57d077a97b7ed",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl3-animation.json": "7f96014a8b0c925618ca670552ec0ec78317cee798957897327f57ec0db92965",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl3-area.json": "709db358d52cf7e28361fef3ad73a75f5201bd0e4933884327697aaf68f020d4",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl3-border.json": "c09810f54aa80f4f89234a574bb3a061f8110c9781cb6dd9fc2cf4a06d1ee771",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl3-campaign.json": "c03672e53cd51dff7816d8ba5ad50a0650b64e12d4e9d7e462477ef327c1e1d2",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl4-animation.json": "be9ce9eb60e239b93540000438831e56d9e6ab5c21b8794c089b00e96d6183d8",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl4-area.json": "b5468670f26115225386475d54fe99856c600827489e1248abb94b563fe4a546",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl4-border.json": "c57fe9cb268d68d7860a231ec98db85586e530397c54827fdb8407cb8098f3c9",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl4-campaign.json": "3d8381907e57bfaac0a94c99e3f81ff4f6258467e66c04ddb90b710d6e7321f2",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl5-animation.json": "1dc87315c49bb528a24ad6f0f9da571249ffc003fd09d9ec2c51415da7bffc35",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl5-area.json": "d0fb353e76d4e5e8f701bde9ac8ad735f6f382021b4d33381550171890c01205",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl5-border.json": "59e2117bbe7b6125acb0cfa646ee0515456693a755688475e5230088b1f36964",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl5-campaign.json": "a324c937419c57b6d074445833415d958980e7fe3b7375b760648c1bd8c80869",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl6-animation.json": "f6837064c1412b15d3011cdbc1d368090c70367c25a14ecc931df442c242e5fb",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl6-area.json": "0745f941188382afa4b9a5b23d4c4b3ad4ed58905ba26ce13401590712ab4023",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl6-border.json": "22d31c3be6c0c2c13e8844aeea924a06f89b4975fd736364d57e3a20372b5fe8",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl6-campaign.json": "00aeca387938867d65774266b1bd6af80c14543dca1ddce3ed15995b95f7f963",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl7-animation.json": "38daa3e94262fac4c9b0826dbe721ac03abbfba11cf2e4e61c441de72d0c753f",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl7-area.json": "a9fdf38762dd45ec3a56e902f86146b8a6c9d3973ed44923b7d0f274fa228adf",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl7-border.json": "b644957fb025db742acbc9285f89c97165b011ef550e8615c9fc6419e807a745",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl7-campaign.json": "cdc04c6c1c937b33bc615ddbd71f8d89d18e26e83e73a1901cc0b8b70a41917e",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl1-animation.json": "82811af3cbf0f6be60aa54d6ba96651560411cd7f48404b59fa23721a632153c",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl1-area.json": "59c260350609e00653453fda7ef8f24e58fe72546116de5e0aa4b6ae5f7cf344",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl1-border.json": "0468cca3b7932d2089b9dc973257ab3e2a10610552a47ccd7796dfdff971a97c",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl1-campaign.json": "4954553b5500214d5692369fa5c5c17b74d98467b62f7954a822ee1bf39684ba",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl2-animation.json": "a7467f08353dbea9a76c2f93d6948a9b15415cfecbc16785b10a32528ea11083",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl2-area.json": "c4d95dcb070f154e96cd40de028d217b6551fbbf87154c11ba5e6739542c68ea",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl2-border.json": "e5ee980f8936f0ce1a9000335945f58173c1a5671fb7150376373c01fe42df5b",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl2-campaign.json": "230d12c28b432a45f4e7784b7e74528551da02f48ff7e146c46c32253862d5ad",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl3-animation.json": "3f4730e6b58f14fa117d773abacacb3fd849a32416427f207c8b03e9041d56ed",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl3-area.json": "fb58218f2d7a5ad6d55b25f669eab2641b333d611926f81cdc922a61f8127988",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl3-border.json": "85a1e11443774918d7c01b906a363e5b18e051d1cc12eff856ed78a8ed7309fc",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl3-campaign.json": "b323d79867d27723690a827a4673f1841b86331d843c276e3c3bc42a89ba2cc2",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl4-animation.json": "d40a8dae498de6ba9fbed4c1e6d7253aec3464f952dde4da126483de32a24912",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl4-area.json": "3c18018c6d52d5a4e4e92e5d9789e2328262388562d2a4ae9673d91ebd9060e6",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl4-border.json": "e84bd0d583a8faa739e4245c85ade7c74be0f439a42be8cc0587b3785ad15e4f",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl4-campaign.json": "4636f5f1d387fb3945002660287982a6ae888de25d048721e044b434ce9b4275",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl5-animation.json": "e5c581b06163c4dd15397e2d7cd6c151730389f5caee80ca3767032abc696c7e",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl5-area.json": "0dd03ae83540f66bb9f62794344307c85494497eaa60d95afb99851c9ea48c55",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl5-border.json": "886b9a6fc9bfb4657c4027d70b0455d85c25e2b2e1adbb1d49fff7ef52688f5e",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl5-campaign.json": "22ac9fe2e7e2e3cfea3aa00eddbb2e1aead91f04c920e1bfb72937568fd80538",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl6-animation.json": "d27d358333aa2f5e158e54f11f7109789e05cb8200cbd2c83cbed40d49a0eb14",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl6-area.json": "422ca875bb54684574f83b5dc2428e448584b381730d95143081a2f7adcf49db",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl6-border.json": "98ac5d4367d7f04a15352f9d37dad54979a9b3e9b2e3d6bc61790240493ec2e6",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl6-campaign.json": "114196ec36890f37f89a983cc26971eb0842a273e8389803487c33757f8c62a0",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl7-animation.json": "31e5f6c4fd835741d3d795203ef751472c248ac8ac4061c561f242b67df454c6",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl7-area.json": "0d8dd1152e8a19db73fec83138c99e52b03a1af924c05f394646a3b3516d33f0",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl7-border.json": "23b3c4c0cdb3d318c68ddeb555da42dcf1b959144f73589b89942c84bb48253f",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl7-campaign.json": "3b5236bb18e9254e16e153e70e6c9c8c66609d403750e981dee0046c2328f2f3",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/fort-animation.json": "98e62bef07d9dcea344a8762ad253ef6a4c4f950420a344da3b29bfdbc0954c1",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/fort-area.json": "0a9a7a12af7114585367b6158791a92d70c5a620e03647ea541e3217f760b0bb",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/fort-border.json": "e5406e201169e8e4adc0a3019c9f507d4940e12f935e4d049782835ebdbe83f3",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/fort-campaign.json": "afdc167210fce065a46ae04dc4585ba1f41a50f3c768e5912535d5b24ce3ec3a",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/grail-animation.json": "3ad884d7b5851e59113e5d47a722e63ec166273338f1fa6480636177cbcd1969",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/grail-area.json": "64f9c3582138c6c587655c7ebf90041d19b50981ab6217af3b69cda40d5a89fc",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/grail-border.json": "41a8d763aa267bbc791b81160db2f00c3b78d3b9eba85f4f380466f13eee23a7",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/grail-campaign.json": "781084742a6baa85046cef51e76ac1bf0a4f6042677c2d8452033122e4830eae",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/mageGuild1-animation.json": "61f25b4c3948db7907c409c0e42e0feadc0b531f5834d0f30b601e34a5caa43a",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/mageGuild1-area.json": "5b8c1e901231fc862ac7030b7501e1905733a2375031b59ce8b9200ce0638ac5",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/mageGuild1-border.json": "d2532abbb8ec9a595bece0b8febbe99654acef2197f353e4251954b4b1cd5fc7",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/mageGuild1-campaign.json": "9565344fd8fd70f36e016e67dddf219189c966ed9a7d7b092d7c3e0fa5e56c3c",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/mageGuild2-animation.json": "781cd8bec9c29d932bc6db5625b76d0c5ce83ad9700c40ed77db39980afd6fbe",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/mageGuild2-area.json": "bb7a4ed8fb100d66dee855427400b4168bd2d082bd2d92a05bf5d44566c16ba5",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/mageGuild2-border.json": "442e36e70a717ffdcffb0f6e58078833ab045ffd185a50ce468c6c7045fc8083",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/mageGuild2-campaign.json": "eebb9154a72d30bc4de226d146ca0ecd3ba75363ecc2feac158c8256c8e0eb11",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/mageGuild3-animation.json": "778872d8f9d841ac424c6054c1c3f6fe5547532a5a37b3f58e86662c47a0a834",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/mageGuild3-area.json": "333afc5990425b698843b15a5a0a064d7f0624617c38ba0eb8e52ac529309960",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/mageGuild3-border.json": "13290f45eca5884994e921f89dcea7e14de62c6d9e31fd0451d4310643e8d3f4",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/mageGuild3-campaign.json": "500bd3541a34909e904d1ca8b311e0a581afe60179b4be11181fdd7a8d186825",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/marketplace-animation.json": "c636265763e3a1d8ada3508d5b20a780d79e36576492deaf51e2b8a6e4006916",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/marketplace-area.json": "2bfc2e92a96edb7dfdf0888351f1788f1844a06d23c11cb40fa136ac8e1b9e0b",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/marketplace-border.json": "8fd84cfa8bc085928cc3c344767af3ca920e552646d33caf1b1e26d68be9e0ee",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/marketplace-campaign.json": "816b02aceaa7142130642172d6e21d8d366740ece769de70d7d68950c79111a3",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/resourceSilo-animation.json": "bcbebe3e703ed05ddf7d0511700dd2f91c5f4e5b6f1a9a082a0149089c27d17a",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/resourceSilo-area.json": "566a8c3f2c34c01f85b910ceccd4365dca9b8103c2c825e303ffd57f11de77c4",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/resourceSilo-border.json": "a5f9a987685610f9c0ec2d454fd1a475f8ef79b7d2107e95e11332f8421deebb",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/resourceSilo-campaign.json": "3b63886248c78f8214ab3923af252e0f67c7ba3c7df5b9329d09a3885cfa910e",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/ship-animation.json": "a92e2ab8e95ee8950cd53a7538c701280f76d7788bd03adda059665b4fe7a192",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/ship-area.json": "ac9fed50bb345eb4429ed7311f526f419fda09dd4ee5da3d303e43fe7c3b794e",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/ship-border.json": "e42562de6f06d8dae6f4af3b5941879704672629de335aa3ea3eaaf46e32201a",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/ship-campaign.json": "cf12b65406ab0fb64a7425e7b85d8322ee8d1945a11bf5d09f3281bd1857f315",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/shipyard-animation.json": "07cbd86dd0cf3998cd8f6a38f285d63032b1f716b8333263f4bdaa86a374883e",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/shipyard-area.json": "8f1d36b00ad3008b7a44e97913bc30c40ef39da32aafaeea3f67763474ed7a7c",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/shipyard-border.json": "59d679ea67b8f17a675067a9c3411019f54031352d857c35f4366e77f9979a1b",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/shipyard-campaign.json": "3cc969d218d909694568834813e9fcdf55c137f381c15777ae6c36ee7488af06",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/special1-animation.json": "4fec1111b594f0528e9ce086192ab023bcb1827c389f3b942668c6da8b54620b",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/special1-area.json": "6c7ffcec015de53329353f3de37b5392bc466424246191f7abb58800465746aa",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/special1-border.json": "82dc5c235120f78f141d2071957c343420b1808b6d8eb6af959760bb9788115b",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/special1-campaign.json": "801536b6b571fbb6861b6551793daccb093bdc004895ca2349a0a9216bb0d5a7",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/special2-animation.json": "76763e061197846204206e80913565983ceaef9afd3bec5d884d27af380cbc9d",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/special2-area.json": "cf4bdc9fe015f7a263f13c6d05f0627b77484a5152d56bfa70eed253fb255387",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/special2-border.json": "350fd640a46d97af2173fe1f82dd6376c2ddd99f4f583357efa001f5316e0ba6",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/special2-campaign.json": "e24e17179098d8381fd9aa6cfd8e1d6ad2c7fc17c90c42e819c37bbea793c358",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/special3-animation.json": "f32b0e260f8d726d9877184d72eb9065fff5b609ee2229a8ff8ffdaee6179141",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/special3-area.json": "34b6a34e0de77f8237d98d25fd017753c6a2d75e58bec940ae6112a046366253",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/special3-border.json": "ec408d7f91afd443dfd3e746ad2e1f01dc551c4925c5223ffc9fea467738fe97",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/special3-campaign.json": "869a4f8dde3633246f330b3457c2bec38f2d3fcf954b7d0a524ebe70606cc1ff",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/special4-animation.json": "499894ff290b7d9b4ebf7fc85006544d32b4c8962d2ce97ba4467b1b1deea235",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/special4-area.json": "f549aac6382504ce66c2fd056dd0cbc995f1108c1f574be448c7f41c2e7ef9bb",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/special4-border.json": "e67a762d698a1d86466f3e2a20087df7cd9658dfa6caf18cff79e9a8e1273d81",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/special4-campaign.json": "5f5a8f095c3268f5797193572dcb5219e44e758077218c3c5845891fce26126c",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/tavern-animation.json": "130a914c5dfbd0a13bd9ef581342cad1f1bb7a8cfc2bb0659089aa3b2704c745",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/tavern-area.json": "0c696eefde979960ae5f8b2dd583af12d96769a2dc301d71b196beda6600c16e",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/tavern-border.json": "56d1bee0456440a3b8469a2d27ba4c00480f60dcd94a8aff8a76cce5e58caa7d",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/tavern-campaign.json": "f6b063d5c1ced9072fc071d1898a2b407107116c9da4f9c3ed1fd6131b824b70",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/townHall-animation.json": "4488c524f750c5b77445b377415ae06fe0e40bf88d17aa800dcf4298c10c07f2",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/townHall-area.json": "38b9c2f62d0086cc1025a781dc5c3ae717d57ab8fd555e80fa2e024a913a1d5d",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/townHall-border.json": "d9b1a64c45ab1e28b44ad0f9abdea7597149b366cbf38f6797be8f73049855b8",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/townHall-campaign.json": "75554acff329def6f92837984e94d0eb1aa1535414bdc256929c5b7ede7adef7",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/villageHall-animation.json": "67c202c8a50e0c6ec7e982040e189b58737b2a64eb0e380fdf3baff05e2a3012",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/villageHall-area.json": "b49b11d66b29164139213a42f6b44f9f4f7476c72831bec290b81ae7a197e2ec",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/villageHall-border.json": "0e8a463f12601670ab1942012da96271dae8976c8b09fd1186ec56f1f1643e87",
+    "assets/source/town/rebuild-20261027-v1/recipes/structures/villageHall-campaign.json": "6d64eceff9efb5d701ccc25db1ec4ce0d5a17e6263c5fa58e6a32ac74668f9b3",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/blacksmith/lineage.json": "ac104871cc2c5ec7c9587daf6af8739293cc7d92eed4bcb7547648470feab9d1",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/blacksmith/master.png": "8786b09ef6313a6f84bf1dc3c252fd88ba713100872c0aec5aeb9403184b9888",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/capitol/lineage.json": "1e19742161c05d57653f5ab9f5f14de6f6f31b75ed01e34132c9ed0dd59f0e1f",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/capitol/master.png": "06164fe248a3776ad956eab3c123601423bdce6254a836ec6d45ba6db034851a",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/castle/lineage.json": "2771b1f10cc49257c1b0a0f569c8a6b050154901569bcaecb9ffab05ad2175a0",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/castle/master.png": "feac9c3f6dc5b13323c1be74b4a9a7766d4a535f9b42f33cee0ba45a48a1e34d",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/citadel/lineage.json": "0ce22f429e14c4ee44b38ffdd7960a4debd6abe95348ba72b6c6b922e532b1ec",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/citadel/master.png": "ec76ba6b810125b6dc54ebb12be9b5a68db4983f4e0ef9fece78c737c331cddd",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/cityHall/lineage.json": "a86fad6d06d9aee6ea1cb225fda0fb9b3747a35390af24f6033edfc65acfa652",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/cityHall/master.png": "2002669b062ac34378fb3b8ebb20ec9253332992e598f6fe7527136de4185fa4",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl1/lineage.json": "4ec7f51bc683f7b8faeeddbde1b0a53ecfcd740088e841177cc1d39edab5b68a",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl1/master.png": "e9ec0316f23a37cd26fd600edb88afb66189a1a7bd7cc439afcf932e73ab733a",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl2/lineage.json": "e0c3bdf9ac17341e27f54801e6c18e040987262fe5bdf9a17c0c068d40fcb430",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl2/master.png": "c6144018c9a9f7f8d0ca94d07077a8961084c39a3c726831751517c799d59ef9",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl3/lineage.json": "f8b775dda3a1285bb97b2cca7c25dcf0eca4b0fa7a78ddf2443ff72b09c3dff0",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl3/master.png": "e8bf93a29c3d362ca9a3947ee3d081ff5a3629a8610e7a9c402014eca204e85c",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl4/lineage.json": "1a7ae0848c3268cfb2244c5aa9fd75985f2195387e508601fa53b7dc903316fd",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl4/master.png": "27ecaaa0cb14c8174276a440dd78e852989b14c4f6b9af76cf5b37861e72162b",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl5/lineage.json": "de15a29944618df5609fda17899bc8a1eb1b42ce91382e47937dfe2e0706374b",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl5/master.png": "e4b4d8b47a7e8224aed6ff7e08e62632b487a485edd728185048ff3087b2687d",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl6/lineage.json": "b5655c8c4ed335188b9cc7e620bdec3fa0f5ae1a34799adbd5b232092a1b5f65",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl6/master.png": "1452ba7fedb10a2347fe3f5603669466dfaa66e11c8ce1d3a9c7220c06a375f1",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl7/lineage.json": "246b4bd6ac280b4f6f4810c2ab85fe2c2596d5d20051c632ddbb295e74922221",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl7/master.png": "266b9b7ed73cb446191982afd9857af539af4e9c1f6ec4c14a42bf7c665d0bd5",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl1/lineage.json": "0a84f691a83fff27941416cdb5eb902f019607cbc3dfaf8521f01e0b63c2eb82",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl1/master.png": "0e4d77fe750d87b51108575a8646df65a9d3c0ecf0cb0a49e8bf4d6f5b2a4c09",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl2/lineage.json": "fd10c3c8b2c0c9a2cc6f575f9a8d851e9c6148f533094360734951514c385607",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl2/master.png": "eb09328f6a428bb4a2b92a00536d600cb32c43f0f9877675fb0d7e373f3a5733",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl3/lineage.json": "94f64d83ea95652e700008c023a6c6eb2efcbed258ca128f16f36e186fb94fb0",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl3/master.png": "e65f20e09850cf97e2b0d404e88d9a0e8c42b2cc5119911d2ceb75e39ede648e",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl4/lineage.json": "5f3389eae833d1c1d8129d0eba87548815db274827357f9b2cbca65aa5ac565e",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl4/master.png": "3aae7a00b32f61edbb6d58c356cd67ae48fb76e7abeb36c03ec8509fe66ca68d",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl5/lineage.json": "5545f20e48eeb4ee85b9005000ce8b5b5464922563da5aeb00d6aa0b253f639b",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl5/master.png": "bf2b814d849e944135c03472039241e8727c7ad90b3446d1338f409d327dc27d",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl6/lineage.json": "006f2d2bf36f6eae3f9ef4dbc1319e433e73f2d5b187cf8fd1d7ba9cdd4d6370",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl6/master.png": "d8762791dd61189357c4f8560e9d0acd58230f8c45a6d66bb8806dd40947a74d",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl7/lineage.json": "1d66913fdb93184f2945982d36702debdae38c5bd84113c1b12619fe9960dffa",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl7/master.png": "5131e801716a119d40d45c074194ae780394a179f53d8a816c561e8e06e61c00",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/fort/lineage.json": "bc1469d5086dd5b3f3a38807f6b5fcedcc60f4008121682f4e89f1e9cb4b87f8",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/fort/master.png": "cd34f79367440a45dde758e946afc0c62202cb8087d95b535d391407623a5455",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/grail/lineage.json": "57a4bc7a3c88674e6cda136abefed2a6fcebfac8e5c5f183aa52cf5d709772e3",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/grail/master.png": "7abba770f50e2c7852b05c4e85cc7ad4f58b0e03a6eb5de193c56cf3cf7e14a1",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/mageGuild1/lineage.json": "4e42cc3318c59b3cb4e895ec3ee8bcb28d6da2853f5248b59d36336860e86bba",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/mageGuild1/master.png": "e9fc25fbe169285bc4dd38e4f24da9a6fa3856ca81e88febb0aaebc1d4914b7c",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/mageGuild2/lineage.json": "0019a981786c1e94ce963b67b5ffd53f825002f9b20e893d1661472250f7c0c3",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/mageGuild2/master.png": "96536afbbaade63ae0f16057ad5eaa092bf31dabdd1113ffb3c8e3696554beb3",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/mageGuild3/lineage.json": "3482a9dd9305bdddd0d2f6c0d5b6445a4105dfd3c5ac9b33d70f69472ecae814",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/mageGuild3/master.png": "a5c092bf830946d39db4ef9b47a03c88365ad8ece2533436e5f0832e24fb2f49",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/marketplace/lineage.json": "65a759a9947e5115a011256979482c9923fc14ecac08ee33d629f353f2e7fcb9",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/marketplace/master.png": "dc21d2c7094e20cee90d831bbf469c2a5f7a8faaba1c157426e35ddfa3cf0b4f",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/resourceSilo/lineage.json": "5e976faae1f20bf9592e5edf64e2a8136abc5155de6aff446e268165321f03d6",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/resourceSilo/master.png": "369f65d604c65c4cf022bf50c537e2c827ba557083a7f8341215f229498a5d2d",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/ship/lineage.json": "1d406aa0ddf11454f7ca07330523f960372bdaa2dff500217c4cbbd61200269e",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/ship/master.png": "6510d79034f92bd131956eb1ebe1cb4734eebed67ae1d2e318f9060e2b5f2a6c",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/shipyard/lineage.json": "397f4ef0693d30c7a05389b375bd555dbdd0e9361bace842b7fad5b3fc2b893f",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/shipyard/master.png": "dd9dcec649f666618d7607d9b0d35b65a71df16e28e46d1c75d689c8f42cced1",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/special1/lineage.json": "9d49629dc59f63115246ba14d039aa31913249fac704a277bbc7aeb5de86b1f4",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/special1/master.png": "319e4b66e2834ebb910249de973e8203fc3d43cd632664f49a4a5ec8b1032959",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/special2/lineage.json": "ee4c328a099ee35b803bbf4bf2354ee8e944b266dd91ecccc5c210d2e6f3896f",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/special2/master.png": "3494a7f7c8c4d69e09b8a511fa2497e985d6d4ffcc1025b014946f5599544a3d",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/special3/lineage.json": "e43de49fa2bd2947a8f5d292e92ff29f32b71a01a1115b7f090fc06b3c075828",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/special3/master.png": "5f59f6d417300a37319ea4b570bcce157107c1a3d31ded27c1665f4b7cd5c466",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/special4/lineage.json": "f4c51ec7a94f605833856a1474583514b5f9093afe9a7abf3e4ee03ccc68afde",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/special4/master.png": "0d23de12554da2f232c1b57bae9eaadcba9e77dd1502ce701d5f030922fdce47",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/tavern/lineage.json": "62dd701489c27d248c67e5c7c54af79eb2bd05f386fe4d3df811e28ab0330ff7",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/tavern/master.png": "abb907928e10780a4a79402c4d48f7765843212c06ed3ec7b02a0d8485b9e21e",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/townHall/lineage.json": "826fc70a3574fbb53e976028545e28a3c61b2fc3f03b6498332b59ce75a0e1a4",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/townHall/master.png": "23d943dbcd21801531fefd9efbbbc0b18402dca97c9499566212b56910cdb3d7",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/villageHall/lineage.json": "a0375a45a5ad0a32f40b8b9ff658b2187e74e6403c04635c2f8a3fd06ee366a3",
+    "assets/source/town/rebuild-20261027-v1/retained-masters/villageHall/master.png": "f9fe0d902501945953bbcfb8dc40e0383120a21121d449f6481eec2a8c566209",
+    "assets/source/town/rebuild-20261027-v1/structures/blacksmith/area.png": "2a9913a481cb52822048c35d38a9832f17c216bded508d2dd8345380c72fd97c",
+    "assets/source/town/rebuild-20261027-v1/structures/blacksmith/border.png": "0508143f916a05da7e8a3f618601c8ad77d44ee3d1a2058690287462ec8b7f12",
+    "assets/source/town/rebuild-20261027-v1/structures/blacksmith/campaign.png": "57735635dcdc4ed4cf8bce6222368e54680a73152b37876d339311ee6f7ef242",
+    "assets/source/town/rebuild-20261027-v1/structures/blacksmith/hall-icon.png": "68f5bdddc917998eaa654caa731abf723a6a520d6fc03ccd6375ef94c5b195b8",
+    "assets/source/town/rebuild-20261027-v1/structures/blacksmith/layer.png": "066769ab1ad9af8cfdc262a27978250ce1b93ee1ace0fafce1437640dcbba3d4",
+    "assets/source/town/rebuild-20261027-v1/structures/capitol/area.png": "f465ef41db27e7c33d87058d0a728acb5927234e5f7767b2e8e9797c94e6a872",
+    "assets/source/town/rebuild-20261027-v1/structures/capitol/border.png": "9df158ee99b2f8f3f9f9043d4ed36bb5151b40c67756b4372e75fb9bdf7423b1",
+    "assets/source/town/rebuild-20261027-v1/structures/capitol/campaign.png": "ff6672e9384a05e5b31fd8b27f0d45ceea6a64a1509a70aa4896509a0fdbdc8a",
+    "assets/source/town/rebuild-20261027-v1/structures/capitol/hall-icon.png": "21cf58afcc8bf6e31e5479e2421708a9d66f47763ca9493629aa6a769391940a",
+    "assets/source/town/rebuild-20261027-v1/structures/capitol/layer.png": "4f97ef24780656292cd9dbb26c37c7e06c929e9e9e3694af16f412682c35196b",
+    "assets/source/town/rebuild-20261027-v1/structures/castle/area.png": "22ed8cb76405cabbda188f8bc48b0082699aebbe195cf72e18456b0208b09d91",
+    "assets/source/town/rebuild-20261027-v1/structures/castle/border.png": "b3f2f3ea5aa5634f61a0724c179f394f45caefc9f65a43844ef3c743b2be0fde",
+    "assets/source/town/rebuild-20261027-v1/structures/castle/campaign.png": "e8ad4ef4340cfd3ca540fc143c51c510ea135ed65da8b95dfb28c2e809653a5b",
+    "assets/source/town/rebuild-20261027-v1/structures/castle/hall-icon.png": "a484898ec0fa43e72e3e67c4638fdefb20e9e7e39adbeb1195286820ac7cea9b",
+    "assets/source/town/rebuild-20261027-v1/structures/castle/layer.png": "bdef08bd94e1ccc9b1d06ee1b8b4b8d299286e712dd02ac76018db8cf56485dd",
+    "assets/source/town/rebuild-20261027-v1/structures/citadel/area.png": "0cc312bb309b2745d7167731d10745109ee3cf1c7b96359f76ec44cb7fcc9a4c",
+    "assets/source/town/rebuild-20261027-v1/structures/citadel/border.png": "55d06148d772faf978fa036656b82525a9386241209dd579ef6a8babcc9f6f99",
+    "assets/source/town/rebuild-20261027-v1/structures/citadel/campaign.png": "2d1fb7b31e9ae6ff553e5455625ea1f72504e7aa704a87abbf5eb0cd3223f3e7",
+    "assets/source/town/rebuild-20261027-v1/structures/citadel/hall-icon.png": "a4cc93473ee706d8c976935948004514ce7988c918d3eb2342b555d56abb46a7",
+    "assets/source/town/rebuild-20261027-v1/structures/citadel/layer.png": "d88ddf40e3179b87f7a19f7296b42e4b940236604f513567f0145f4f9fcfb939",
+    "assets/source/town/rebuild-20261027-v1/structures/cityHall/area.png": "af1ee8c8b4ca04ff5f2211ed6a1a5e465473c01d2ec68391f9704a3bff8ac1d2",
+    "assets/source/town/rebuild-20261027-v1/structures/cityHall/border.png": "9be2b03854f0d83ad171cfe7d5ca8265ac36bb2093132152f307fc4e02eb53d0",
+    "assets/source/town/rebuild-20261027-v1/structures/cityHall/campaign.png": "5aec9a66ac566e99d9401a6fd41bbefedebf318e40fd95604d1beb3392a516a6",
+    "assets/source/town/rebuild-20261027-v1/structures/cityHall/hall-icon.png": "99862e671f0834c2ac0869256cc467269f12467481ad8f5d84788f2c0bcd53b2",
+    "assets/source/town/rebuild-20261027-v1/structures/cityHall/layer.png": "cb1476877dac097346e1384d7a1660b8e084a962d3109aa26df5c369ad4f735f",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl1/area.png": "17f86951594114d75ca7aed25fc19f4e7914e17e3a7e61f9102ebd3aa4b4af57",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl1/border.png": "2b0850cfc7e2a22e014d27a39b43df8ee2679499af14f6d085250435bc4419f6",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl1/campaign.png": "00839ceffdf8370b7ce3d7edc8f98f5776693585e57fa8d0d20106d631004311",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl1/hall-icon.png": "d48a6071a3b671712e1a9aa53aab64fe1b1560617b088346b5154d413bf7db02",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl1/layer.png": "58dab722312ab5a91200856b1994fd3bd1cad968de6db396b7c86cac5241a4be",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl2/area.png": "ff744f1c5408930192bfd6132a42aead4034f6878f08cbf50536c84bfaf52730",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl2/border.png": "91056126f080070415f5ae3204b331cead0109ea223ce9dfc1949deecaf20e61",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl2/campaign.png": "7890be1dc849d7544f4ff4530c5af3a2b8b6e3b3a6993a78094726b8e9039e0e",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl2/hall-icon.png": "94ca8ad87e31462969ae6231ed2284135f073ad4d190ecc9cbbccfd57dad49f8",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl2/layer.png": "c2f1e408717637e7da5a1de7532e261de511d29c58a1b1127012dc6bc2e242aa",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl3/area.png": "1c42d91f1601974d7e29095a46b7f0f919429ef31708b746a8e16c09c128daf1",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl3/border.png": "5d770210b1c0f71ed51dcf64ee234ede2035045effe9b98244b6787596ee51a1",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl3/campaign.png": "f33d4991795185120ec7f38834858efc434d495f451bc58ee292b271970dd20e",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl3/hall-icon.png": "0483feb69590ddbf6780d248c0a987aafdfc0c90bd1e9b5038fe59bccb964f73",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl3/layer.png": "c6318c68a2d1641f363a288eefe3665c9e8d81046ef0b73f26642d06907cdae8",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl4/area.png": "2138739b0278c74ce59eca71c1d1ed01d8526769d04afb0742168d9aed377122",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl4/border.png": "657e4d986c54785468588f2d116aca558389ae7b3a0c891716f0ed5c872fb877",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl4/campaign.png": "4098c427e7bc268283fb930abba7fad67b70b04879a359af46c1ab482a5cfa95",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl4/hall-icon.png": "1f73848341c6a825c16aa5b9d0078b10f3f3cf4e8b4f8d78f4de7661d4c62c56",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl4/layer.png": "b2dff282c2f827fbc06537ac3f7719a908ca499f8d4861b392ea59c97eed4e2c",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl5/area.png": "de59427622aa8bb646b3ca7c2129b1ae3f9764b34bedae15ed92760f8e8b5bbf",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl5/border.png": "209b105bb85c84030fe06a10a2285d2444bead96fe4231039cf5b7848a4b1ac7",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl5/campaign.png": "9cb94f0f229b7ef3042afb5cf29ed1709a0ecba5b64646b1caee7bf3c654c155",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl5/hall-icon.png": "67bacfcd009a72292438782f86443d026ebef9df388553dfb9950d46a0d6dd69",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl5/layer.png": "f25272e20e2aec924a26916dc2fda8ce3ac407b28bf8a18f9822bc48cf302ebc",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl6/area.png": "e876a5a3550b1bdaea0832940a34395a620735acc8df550ae5277e92ff50f51c",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl6/border.png": "a72380e04d72720b0cc10fb5228a97e4a7badbc6d7c0e29fdb99a29feba5539b",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl6/campaign.png": "eee1cc351ecb0b17a77417e2df742f94036124ac3727d19cca9003f086c6b9f3",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl6/hall-icon.png": "3036efbb2f81423c2c58ad387e2a2c58e3bbfb7516b268733454edc9defdfefd",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl6/layer.png": "6e720ecae9605613295fe516c4c14fe79a200e1df248f00aac477560801ec702",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl7/area.png": "f05e892ce944bc4fe4048517d3542f2ca8de9038ca83056178bf0824ff77297d",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl7/border.png": "6e794edcf09e890f36463a3c11d3d5b83326fcd188b700399896aba1c8faeb92",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl7/campaign.png": "e0e87eed9814805b75d3b5b7417828f646b04aea170b656790b9355c54da5d8f",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl7/hall-icon.png": "afb6685e94376bdaa8b57ade500c56c210ca4d22beae5f0ed8f5405dc1cc2399",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl7/layer.png": "54030aad4472bf189e7002d66950050a700909604f746989f0d153750961c0cd",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl1/area.png": "a8e4bf9cc393597c7b98fc0c9a98bd0f03307369ebeb814ca7d3ba338514b75a",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl1/border.png": "0663f7d46627f688097cee6b4cb6275d88e529e57f2caca76a4e7c1c98ee89e1",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl1/campaign.png": "0a2e8e1d8de7c43b16a311a9d2d6325f57f7e126e79482d7b8a2f135727d9f2a",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl1/hall-icon.png": "1e258b2969e0ac2d35b454821ecc79d75fe3de1005ff88435adc37c84f886018",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl1/layer.png": "fc7b49fff4f4311119167d130e115df21d9be602c6888aaa8f04c857583601f4",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl2/area.png": "f3ad8dcb638a4d3297fd5df5f84f31d9ab3c688c74fad52374695f4c0a83deca",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl2/border.png": "4a73b326117db51ab1ba96513fe10a7f39bea4b3e31fc92966e52a54c3514a04",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl2/campaign.png": "31a53e7959f03800ff55b16ab25afc3071e7ec5ad9d32b5757e6f82907813976",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl2/hall-icon.png": "870df8fc5436bdf0a7fee7f9be439a94353fb84bef1585fc7e148b5474936d80",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl2/layer.png": "e9f612af3a8004ce9c6af2daaa9d501ff803e4d0cb969bf9c457734296d22ce2",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl3/area.png": "9b5843aac17cca1d502725915523f62874c4e5c5a59bf3bfbb3ace198c4079d6",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl3/border.png": "d2135e0e827327955fe624ab8f6af62d33ce29ecb7a4e3ba1f2ceb197d656212",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl3/campaign.png": "a0ef0ad13cacf559a6d3eaba13872545a12b90fdf56ea885d1724778f626b817",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl3/hall-icon.png": "5cb5c39919e89e0857214159781fa7e890c4b8d606d3edbffc1846995f0d83f4",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl3/layer.png": "734e1c41dbac2319ff03154a5c1f3a927d4b2793d9fdd809c244cbcbb9844ecc",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl4/area.png": "381303a271b5903b7e3ecd7dd338a9e389277d7c58aa5b07ab61536ea4d35fe8",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl4/border.png": "23a1d42c842dcadd4a8aea3249c93244c1fc86ee5d1506c5365a30b8162a1453",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl4/campaign.png": "9a56e8b12b72904ca16d0cb6f34f40c1f44e2c5ffb69e1683a70880d5b71feaa",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl4/hall-icon.png": "e6943b8c6532ed6081a60a8d1219acd8533ae8a0549d6ad54bed96b5b12546a2",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl4/layer.png": "ddc0f423ceaea97b83d79769dbadd350103d7849f2130b01d5b92bc09207e7ff",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl5/area.png": "2a14d590b396c11821ea83e8cce4f2f26a2dc27369ec0083d4a702f3bda7766c",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl5/border.png": "79908a653b8afaeb40ba23248cbc90f27f2e1d0c45c1fe6f98a8d85377d35138",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl5/campaign.png": "23796630d5bd381839146e7025da60bf87c095b58655f9327d3f2fe38e6300b6",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl5/hall-icon.png": "bc328e6f09ce53a200aeb1d61ae3f1e18f27fe033ec909de578b47f43b177559",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl5/layer.png": "14434fb31ceb607b4f01be051fe8018c20b8e4caf720ec01800744d163abf523",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl6/area.png": "cba970a0def8acdd787283109ddc6797173d02372d857ad38091025b4eaaa0f5",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl6/border.png": "ef1c425e1ebda2d2742d38d93afc13088a431b2f78d1d4e11480ce18a64f81ad",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl6/campaign.png": "42698173423896515e8946cb99fb73e1b5be26e329efaaaeb1c388a7391941a2",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl6/hall-icon.png": "24c059f3ed529d3b31450197900ff0cec1eb6a48cc03d54d63882d450b5f6fee",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl6/layer.png": "64af5d99cc8abf8863afcf804ca24b419cd4a9330c7de402713f8e2bdfd85571",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl7/area.png": "3ffdbccbcf9df17680e12e35beecfbb300c7e5a2ae70fa76704ca6c62149f02d",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl7/border.png": "a7fb98494f4b982877b0b259f40ccfc70e78a62f67db7ff03a6e5c9c53e11f42",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl7/campaign.png": "c3c8af141369a6871ce088d374e2eb7a71ba2f2a9ff2539adb6d21d4a97b264a",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl7/hall-icon.png": "5014f19dcd12bf0f9f1fa50c0eab23315d231094ee08db0e574eb91bbd758b66",
+    "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl7/layer.png": "3d096323471a256c5744f9ba6e39728925ea5a355a5509b6d2df1bc74cc72122",
+    "assets/source/town/rebuild-20261027-v1/structures/fort/area.png": "4bbd5189ad14bad74d7cc38300792819cbe374062a283189bc3f140c982c1224",
+    "assets/source/town/rebuild-20261027-v1/structures/fort/border.png": "5193bcfc5228df0c6c75eb167389d2cabf0317cb68f45ae29af2324b7dc4a35b",
+    "assets/source/town/rebuild-20261027-v1/structures/fort/campaign.png": "1dfa6806255b4cedc503b2e3370030b0e3f747da413d1eaa592f357d3335c2a6",
+    "assets/source/town/rebuild-20261027-v1/structures/fort/hall-icon.png": "ed7c205ddf8413badddfff8e8ffb7f0db675097f494d24912ba1a8c5c891bf76",
+    "assets/source/town/rebuild-20261027-v1/structures/fort/layer.png": "7c2c913e408791b8b8f9d02d9a66df39736975d51f7576a87c1d052a78d63ea1",
+    "assets/source/town/rebuild-20261027-v1/structures/grail/area.png": "073bf416471138870f35de1728f2219920db521a0c2330a7c385f849cabfacdb",
+    "assets/source/town/rebuild-20261027-v1/structures/grail/border.png": "0b535a51e3f0a1758001dc52efd078ca3cf687941c054dcdcc4585bae0387e20",
+    "assets/source/town/rebuild-20261027-v1/structures/grail/campaign.png": "3f5166137d4551038f9e6424b3856f9f81c78e816e315d3d75ff43f028061976",
+    "assets/source/town/rebuild-20261027-v1/structures/grail/hall-icon.png": "26bd65d662a25d03445fcff09b3057a5947b1ebf8438a850162d524adbc7c440",
+    "assets/source/town/rebuild-20261027-v1/structures/grail/layer.png": "c35ee800ca2fe61b46996a64f1c4b6bba92df4c973c35cc1cad721a6db8ce711",
+    "assets/source/town/rebuild-20261027-v1/structures/mageGuild1/area.png": "ce01a1254b73530127515668b180752ff58a937dbec513d0b0927114d340d541",
+    "assets/source/town/rebuild-20261027-v1/structures/mageGuild1/border.png": "c89c1990e8a8fe6538fae93365f53996ddf16438f229fc96194ae05d707b842d",
+    "assets/source/town/rebuild-20261027-v1/structures/mageGuild1/campaign.png": "5b90380cfe501227367d2a2674b1ce42619c9e12a35bb555ba507f8fb5822aac",
+    "assets/source/town/rebuild-20261027-v1/structures/mageGuild1/hall-icon.png": "8a3fbfa597ee5050a9f3028064dd74646970fe1ede4c96c9889cb26f2e3ea3dd",
+    "assets/source/town/rebuild-20261027-v1/structures/mageGuild1/layer.png": "443d45a79d334df7109e027442a90bf170141de62bf8dc170a861ec7a8e126aa",
+    "assets/source/town/rebuild-20261027-v1/structures/mageGuild2/area.png": "d81bbaca8630cc05e7a71aa52086468ae22dd288ef1ba27decc20feced63b467",
+    "assets/source/town/rebuild-20261027-v1/structures/mageGuild2/border.png": "782370b98e2b2effa5bbb4630b2c5330b1bd5149f5b36b686be61c5596fac605",
+    "assets/source/town/rebuild-20261027-v1/structures/mageGuild2/campaign.png": "670d699c3d5895133d2953edcdedfbb78c3ab966b0ac9f8bfb0383f7537ea3e4",
+    "assets/source/town/rebuild-20261027-v1/structures/mageGuild2/hall-icon.png": "523a337ef1efda7f1eca135cfec0c5651539174c0396f20fb2cf31f44e4696f1",
+    "assets/source/town/rebuild-20261027-v1/structures/mageGuild2/layer.png": "cb883cf7ac2d1941283d34c9295015e35574f8597aecbd552817716248260b26",
+    "assets/source/town/rebuild-20261027-v1/structures/mageGuild3/area.png": "ca283b9429b6ffafdffd61f539a8dee55f7b322bc6e577e78f63ec0f488aa458",
+    "assets/source/town/rebuild-20261027-v1/structures/mageGuild3/border.png": "c75e0e1661d9c2e890dd58d1b81d251d528bbf493ef5d5734933f394248f29d1",
+    "assets/source/town/rebuild-20261027-v1/structures/mageGuild3/campaign.png": "10b1eb1ccddc9373fa52ca64f5fbfdecf56f42580efbb864b89c8b9bcbcbb2ea",
+    "assets/source/town/rebuild-20261027-v1/structures/mageGuild3/hall-icon.png": "6e388c7ffe3f48bc15ee32e90bac96659464c55069bf46fb70a81526719d966f",
+    "assets/source/town/rebuild-20261027-v1/structures/mageGuild3/layer.png": "8f8a77aa05d783440c85e63f4b1dcbab700072cbccace9d0ed99e7a5cb9429f7",
+    "assets/source/town/rebuild-20261027-v1/structures/marketplace/area.png": "e690c1eeb8bff39cd1db3fcbb1159b2ad433301ae5ac92b1d776772379d8d599",
+    "assets/source/town/rebuild-20261027-v1/structures/marketplace/border.png": "666e7a29ad1514621b3177f03931d7781b912460bcb525a20f81962ceebe39f5",
+    "assets/source/town/rebuild-20261027-v1/structures/marketplace/campaign.png": "c22f98c1d9cfc7d12c2e9092b5e05df49f832e44f1cf5191f14702af39fd5021",
+    "assets/source/town/rebuild-20261027-v1/structures/marketplace/hall-icon.png": "089026a48fbe1aedba83f6c27ee1904eb65c6d1a0e3dd45267336d4ff4521aee",
+    "assets/source/town/rebuild-20261027-v1/structures/marketplace/layer.png": "91346fe9c5380638af781f660496f655c4dafb81a6ff6691894af956c25ba6ba",
+    "assets/source/town/rebuild-20261027-v1/structures/resourceSilo/area.png": "eac9d8da880d07a878adaba95ae1b117cfff420d716b1759c9c023b9d40bf1b6",
+    "assets/source/town/rebuild-20261027-v1/structures/resourceSilo/border.png": "66b767e3e9a9e1f3e2f49a049d567addb5709d7094eb2226dce455d02baa8386",
+    "assets/source/town/rebuild-20261027-v1/structures/resourceSilo/campaign.png": "2b72941c8ab6aa10deab1f392b3522580f3524613e0e54bf2fe7e026ecbd6810",
+    "assets/source/town/rebuild-20261027-v1/structures/resourceSilo/hall-icon.png": "1c8b95a215c3e67d366abd08c711bde6823ef09f71c5cb8a96180b2c12857373",
+    "assets/source/town/rebuild-20261027-v1/structures/resourceSilo/layer.png": "2f68ec895dec5183ca5195a344eab9e87117bce6bc04d138d02af3c1d84845eb",
+    "assets/source/town/rebuild-20261027-v1/structures/ship/area.png": "ba698ae619d63540172e50cffd9774c9c7f78891e7de025bd4066a10447a358b",
+    "assets/source/town/rebuild-20261027-v1/structures/ship/border.png": "c2cee3c41664b00244fc9b6f7c02e3eb7f1b955c1411bd66e8aaf5366d277a51",
+    "assets/source/town/rebuild-20261027-v1/structures/ship/campaign.png": "b8f6338af2adbb5cd9e86de296c4e4980900124aafbce0c1a2d4edfd52b4901b",
+    "assets/source/town/rebuild-20261027-v1/structures/ship/hall-icon.png": "280d2b29af1835bf02ed1ae71826291fa40e10af88af92f44e2bb12543999d44",
+    "assets/source/town/rebuild-20261027-v1/structures/ship/layer.png": "53fa8e9d4335c565fd063f812174d2f5075ac4c6126c2a63a6e0576f54893ddd",
+    "assets/source/town/rebuild-20261027-v1/structures/shipyard/area.png": "c5768062221cce9e1f5c2a64a102c145dce9d635d9e9fd3fc09dccde0740c8ff",
+    "assets/source/town/rebuild-20261027-v1/structures/shipyard/border.png": "f3181a69c01e7dce4606683b3f2935fecd34e866ee623a3a0e48ec09b5d7b070",
+    "assets/source/town/rebuild-20261027-v1/structures/shipyard/campaign.png": "124d415852da548b0ed542f7b1825ebf810e7d1d75c6dd30145290786ba6ed77",
+    "assets/source/town/rebuild-20261027-v1/structures/shipyard/hall-icon.png": "b77f5c56242823f536f9db809f7a864e19b6d1f4377c6775dd112a32da2cb6fb",
+    "assets/source/town/rebuild-20261027-v1/structures/shipyard/layer.png": "7a942dc84c3a6b870858c574aef5471432f60ea4ffa7dc76a36fd4ec80c91e04",
+    "assets/source/town/rebuild-20261027-v1/structures/special1/area.png": "d0d0605265f4b977663fe5a6f809102fed4727838e44494460d4c2bd1923d2b8",
+    "assets/source/town/rebuild-20261027-v1/structures/special1/border.png": "7d52fd53f825ab065c13050e0a4cc914e4fb9be96d5ac20b08c4704bb1e9c53e",
+    "assets/source/town/rebuild-20261027-v1/structures/special1/campaign.png": "da139e69db53813efcece3f3824420debbcd6d4f00bcfc7aad3967d7be3ecf8a",
+    "assets/source/town/rebuild-20261027-v1/structures/special1/hall-icon.png": "36419241f99d96378853b7610e9d43fbdf2e6169e5dfd9d3d22eef6c4acbc4d8",
+    "assets/source/town/rebuild-20261027-v1/structures/special1/layer.png": "031badc1452ae220978cf4d119106122e1e4087bd4c20abef9c29d1c0e3e52c1",
+    "assets/source/town/rebuild-20261027-v1/structures/special2/area.png": "63ece7e17681f38b887bcd8e8e1bde35a4b7633984801a5bf43e5dd0e0e9af04",
+    "assets/source/town/rebuild-20261027-v1/structures/special2/border.png": "86dc02d0d28fc59e968f3ce7cbaf932bb4c0ff639406c91c213b18bffd97c2cd",
+    "assets/source/town/rebuild-20261027-v1/structures/special2/campaign.png": "10b59a216f613f4ce73e481679fc441925c3dd0273a3886cac81d206d3395991",
+    "assets/source/town/rebuild-20261027-v1/structures/special2/hall-icon.png": "2855324de800e8d1ca80fbcd950a8654e0d8fc924b11406bb064e2859d7bc2af",
+    "assets/source/town/rebuild-20261027-v1/structures/special2/layer.png": "896c5a44ddf86368aaf5dba21cd02667d5dd0b8b7825e95f444d14515656e823",
+    "assets/source/town/rebuild-20261027-v1/structures/special3/area.png": "fedeed44156c1d61cc803a26ac8ad6566b655f8284f2cf9483365ec849b746b8",
+    "assets/source/town/rebuild-20261027-v1/structures/special3/border.png": "945da022995f325820d8985943c1c105b9eabf98e91adfb6b2ea4ba00cc16d5f",
+    "assets/source/town/rebuild-20261027-v1/structures/special3/campaign.png": "59b750df8d3b67824f43339648b65f94c044ebae25e64a98f9392e284ec38bfa",
+    "assets/source/town/rebuild-20261027-v1/structures/special3/hall-icon.png": "8cbcafdd38b1c7a5fdec3908e713fe8f75f108b1330504911cc8175c240a976a",
+    "assets/source/town/rebuild-20261027-v1/structures/special3/layer.png": "52e6ec9a195007084e4fbda11073da2dadbae9e42204f49fb8a3f7c52b315b5d",
+    "assets/source/town/rebuild-20261027-v1/structures/special4/area.png": "23aa1f5774a64862579f1adbe7bdeb8c56edf8dad66efa99d8f3946a5718df7d",
+    "assets/source/town/rebuild-20261027-v1/structures/special4/border.png": "2a9cda0d18e5514b85c4b0c96a16980d27f9037d7655189b8b97539d94f26df6",
+    "assets/source/town/rebuild-20261027-v1/structures/special4/campaign.png": "769bead3668fcc65d9da16939b41ae7b240fc5328c33d6221f2d00e4a9550cb8",
+    "assets/source/town/rebuild-20261027-v1/structures/special4/hall-icon.png": "4cca5b2dc60e60aacdc431ed72a070a18fe3b011fba763006c12da85f9815e9d",
+    "assets/source/town/rebuild-20261027-v1/structures/special4/layer.png": "9badaace9cf59c8e06c396debee37662550e5948ce70be03dc6813d5b6c08f48",
+    "assets/source/town/rebuild-20261027-v1/structures/tavern/area.png": "c5762e241e4eae08e5b08d5ae83eb6468748ebb3b9534288a7ed332170d330b2",
+    "assets/source/town/rebuild-20261027-v1/structures/tavern/border.png": "5dc85513f910b72866ff66c48dd3a02bb6e2c4352c74641814d863f20d0cd81a",
+    "assets/source/town/rebuild-20261027-v1/structures/tavern/campaign.png": "e282e91bdf2580ec95c511d5d1022448a3e59a75c6bd6e60fcdfbe07aced5172",
+    "assets/source/town/rebuild-20261027-v1/structures/tavern/hall-icon.png": "8c149c3089650b952d8aae1ca548d7e5825858d2d835002431459cbc58b803b2",
+    "assets/source/town/rebuild-20261027-v1/structures/tavern/layer.png": "eafaa3a47f8baf771e4ffd824b969a35dc32f57e9e7dfa166fad7a1dd5549d46",
+    "assets/source/town/rebuild-20261027-v1/structures/townHall/area.png": "a733f999fda755175a7f6dfb08dc1ee74a89965e404846c228077c2af9258ee6",
+    "assets/source/town/rebuild-20261027-v1/structures/townHall/border.png": "6865d65185c685f15deed0a2e700149a3c0f492e0deab6da118cba70f8315741",
+    "assets/source/town/rebuild-20261027-v1/structures/townHall/campaign.png": "ecfedf535fb562c4fba9f200f914a9952176d7f15d70ee34c6aa5412d2f8df88",
+    "assets/source/town/rebuild-20261027-v1/structures/townHall/hall-icon.png": "94a9e9a69a120d1dafcd15c12bfd7b4be32098c36fcebeb54fb5d6eb94e2218e",
+    "assets/source/town/rebuild-20261027-v1/structures/townHall/layer.png": "07afb488743b6da9fb73800d2e9e0b5a2407c32c0fd9728670dbbbbd95dfcc1a",
+    "assets/source/town/rebuild-20261027-v1/structures/villageHall/area.png": "55342c599ae10157b59bbe41fd6a9b8c85cefc4dd51448902e02833b0871c9cc",
+    "assets/source/town/rebuild-20261027-v1/structures/villageHall/border.png": "faafd089863cba2a20b236efde2027a8fe7efc7f3bade61fcac0d84487fc0194",
+    "assets/source/town/rebuild-20261027-v1/structures/villageHall/campaign.png": "83987f214c7e44806333838c53085e2de99c793c2d10d2253b2565562c608c7d",
+    "assets/source/town/rebuild-20261027-v1/structures/villageHall/hall-icon.png": "3309c7513d7232d306e24e3acdf70917249ad487798552ba29213fa47571cdd2",
+    "assets/source/town/rebuild-20261027-v1/structures/villageHall/layer.png": "b19c16f2e6f74b5d53a628c12deb53861ab4df0b12ed07e8cc171d71ff0625a0"
+  },
+  "preparation_policy": "Candidate only. Validate exact source closure before coordinator integration; no active writes.",
+  "recipe_bindings": [
+    {
+      "active": "assets/recipes/town/structures/villageHall-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/villageHall-animation.json",
+      "sha256": "67c202c8a50e0c6ec7e982040e189b58737b2a64eb0e380fdf3baff05e2a3012"
+    },
+    {
+      "active": "assets/recipes/town/structures/villageHall-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/villageHall-area.json",
+      "sha256": "b49b11d66b29164139213a42f6b44f9f4f7476c72831bec290b81ae7a197e2ec"
+    },
+    {
+      "active": "assets/recipes/town/structures/villageHall-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/villageHall-border.json",
+      "sha256": "0e8a463f12601670ab1942012da96271dae8976c8b09fd1186ec56f1f1643e87"
+    },
+    {
+      "active": "assets/recipes/town/structures/villageHall-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/villageHall-campaign.json",
+      "sha256": "6d64eceff9efb5d701ccc25db1ec4ce0d5a17e6263c5fa58e6a32ac74668f9b3"
+    },
+    {
+      "active": "assets/recipes/town/structures/townHall-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/townHall-animation.json",
+      "sha256": "4488c524f750c5b77445b377415ae06fe0e40bf88d17aa800dcf4298c10c07f2"
+    },
+    {
+      "active": "assets/recipes/town/structures/townHall-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/townHall-area.json",
+      "sha256": "38b9c2f62d0086cc1025a781dc5c3ae717d57ab8fd555e80fa2e024a913a1d5d"
+    },
+    {
+      "active": "assets/recipes/town/structures/townHall-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/townHall-border.json",
+      "sha256": "d9b1a64c45ab1e28b44ad0f9abdea7597149b366cbf38f6797be8f73049855b8"
+    },
+    {
+      "active": "assets/recipes/town/structures/townHall-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/townHall-campaign.json",
+      "sha256": "75554acff329def6f92837984e94d0eb1aa1535414bdc256929c5b7ede7adef7"
+    },
+    {
+      "active": "assets/recipes/town/structures/cityHall-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/cityHall-animation.json",
+      "sha256": "69fc4160e8d9bbebaadbaf1509c206ffa705f286f3c97cda44e6db97a2640333"
+    },
+    {
+      "active": "assets/recipes/town/structures/cityHall-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/cityHall-area.json",
+      "sha256": "06cb9a61a9a1c7add3b443da3c7a2c962ac07e044c1caa7dfcf9a08f2d97ad9c"
+    },
+    {
+      "active": "assets/recipes/town/structures/cityHall-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/cityHall-border.json",
+      "sha256": "e6ef076a5fa80ec1abcee36c1808d4bcd4beddc7cc9f9d3dcbb956bd3ca445f5"
+    },
+    {
+      "active": "assets/recipes/town/structures/cityHall-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/cityHall-campaign.json",
+      "sha256": "40150fb0f562425abf232238dad976a387db10dde85f8010cac0b881c2de88d8"
+    },
+    {
+      "active": "assets/recipes/town/structures/capitol-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/capitol-animation.json",
+      "sha256": "21aa2561097094e17fad5a66cf0aa6792ed6311e2fd82030fe33974b7a0fc76f"
+    },
+    {
+      "active": "assets/recipes/town/structures/capitol-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/capitol-area.json",
+      "sha256": "e832de98699f0eecb0f3ba7dfe57e6124b73ac757b23f3fe19ff10d986cb54f7"
+    },
+    {
+      "active": "assets/recipes/town/structures/capitol-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/capitol-border.json",
+      "sha256": "245e85d62cc201ace9e60aac6ad292fbb1cab0a2cac7aa0bbbfa4bae0d9114d8"
+    },
+    {
+      "active": "assets/recipes/town/structures/capitol-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/capitol-campaign.json",
+      "sha256": "06e459b10bad51680645238c3266cde772a3d6363928b78a7ae0162fd58afca2"
+    },
+    {
+      "active": "assets/recipes/town/structures/fort-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/fort-animation.json",
+      "sha256": "98e62bef07d9dcea344a8762ad253ef6a4c4f950420a344da3b29bfdbc0954c1"
+    },
+    {
+      "active": "assets/recipes/town/structures/fort-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/fort-area.json",
+      "sha256": "0a9a7a12af7114585367b6158791a92d70c5a620e03647ea541e3217f760b0bb"
+    },
+    {
+      "active": "assets/recipes/town/structures/fort-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/fort-border.json",
+      "sha256": "e5406e201169e8e4adc0a3019c9f507d4940e12f935e4d049782835ebdbe83f3"
+    },
+    {
+      "active": "assets/recipes/town/structures/fort-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/fort-campaign.json",
+      "sha256": "afdc167210fce065a46ae04dc4585ba1f41a50f3c768e5912535d5b24ce3ec3a"
+    },
+    {
+      "active": "assets/recipes/town/structures/citadel-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/citadel-animation.json",
+      "sha256": "8808146f9aecc7f7502d89b851d25968a0b189d3843565ce57bae5d128f98b24"
+    },
+    {
+      "active": "assets/recipes/town/structures/citadel-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/citadel-area.json",
+      "sha256": "2f08ae31ca9582ccf40ff02695b42860c41ebd6b9469071be2d6b93687324133"
+    },
+    {
+      "active": "assets/recipes/town/structures/citadel-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/citadel-border.json",
+      "sha256": "850657de4560d4716cf03f65d57e5e5997f2e97e927aa2cb9da7d17f6b401b3d"
+    },
+    {
+      "active": "assets/recipes/town/structures/citadel-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/citadel-campaign.json",
+      "sha256": "98494ce7e70db84a2495b1fb3904dfb4394a29441dad1ecd624c902c9ed9c20f"
+    },
+    {
+      "active": "assets/recipes/town/structures/castle-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/castle-animation.json",
+      "sha256": "941de2aed615ff6e530bc7d53b95c16ed5f141e6a1bd801899429c224320dcc1"
+    },
+    {
+      "active": "assets/recipes/town/structures/castle-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/castle-area.json",
+      "sha256": "bde7a72fc43c98f5d22980309132423e30f78837a2b6439bcf0aa712fb2ed684"
+    },
+    {
+      "active": "assets/recipes/town/structures/castle-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/castle-border.json",
+      "sha256": "273cb430fe4a21c0a41f3af33ee43a89a7686981988e06d048292399fa18c4c2"
+    },
+    {
+      "active": "assets/recipes/town/structures/castle-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/castle-campaign.json",
+      "sha256": "b1ab64b1355cb84bde5c1e72737c6162c6f3f63d80c858fcce151bd9d1dc848a"
+    },
+    {
+      "active": "assets/recipes/town/structures/mageGuild1-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/mageGuild1-animation.json",
+      "sha256": "61f25b4c3948db7907c409c0e42e0feadc0b531f5834d0f30b601e34a5caa43a"
+    },
+    {
+      "active": "assets/recipes/town/structures/mageGuild1-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/mageGuild1-area.json",
+      "sha256": "5b8c1e901231fc862ac7030b7501e1905733a2375031b59ce8b9200ce0638ac5"
+    },
+    {
+      "active": "assets/recipes/town/structures/mageGuild1-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/mageGuild1-border.json",
+      "sha256": "d2532abbb8ec9a595bece0b8febbe99654acef2197f353e4251954b4b1cd5fc7"
+    },
+    {
+      "active": "assets/recipes/town/structures/mageGuild1-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/mageGuild1-campaign.json",
+      "sha256": "9565344fd8fd70f36e016e67dddf219189c966ed9a7d7b092d7c3e0fa5e56c3c"
+    },
+    {
+      "active": "assets/recipes/town/structures/mageGuild2-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/mageGuild2-animation.json",
+      "sha256": "781cd8bec9c29d932bc6db5625b76d0c5ce83ad9700c40ed77db39980afd6fbe"
+    },
+    {
+      "active": "assets/recipes/town/structures/mageGuild2-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/mageGuild2-area.json",
+      "sha256": "bb7a4ed8fb100d66dee855427400b4168bd2d082bd2d92a05bf5d44566c16ba5"
+    },
+    {
+      "active": "assets/recipes/town/structures/mageGuild2-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/mageGuild2-border.json",
+      "sha256": "442e36e70a717ffdcffb0f6e58078833ab045ffd185a50ce468c6c7045fc8083"
+    },
+    {
+      "active": "assets/recipes/town/structures/mageGuild2-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/mageGuild2-campaign.json",
+      "sha256": "eebb9154a72d30bc4de226d146ca0ecd3ba75363ecc2feac158c8256c8e0eb11"
+    },
+    {
+      "active": "assets/recipes/town/structures/mageGuild3-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/mageGuild3-animation.json",
+      "sha256": "778872d8f9d841ac424c6054c1c3f6fe5547532a5a37b3f58e86662c47a0a834"
+    },
+    {
+      "active": "assets/recipes/town/structures/mageGuild3-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/mageGuild3-area.json",
+      "sha256": "333afc5990425b698843b15a5a0a064d7f0624617c38ba0eb8e52ac529309960"
+    },
+    {
+      "active": "assets/recipes/town/structures/mageGuild3-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/mageGuild3-border.json",
+      "sha256": "13290f45eca5884994e921f89dcea7e14de62c6d9e31fd0451d4310643e8d3f4"
+    },
+    {
+      "active": "assets/recipes/town/structures/mageGuild3-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/mageGuild3-campaign.json",
+      "sha256": "500bd3541a34909e904d1ca8b311e0a581afe60179b4be11181fdd7a8d186825"
+    },
+    {
+      "active": "assets/recipes/town/structures/tavern-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/tavern-animation.json",
+      "sha256": "130a914c5dfbd0a13bd9ef581342cad1f1bb7a8cfc2bb0659089aa3b2704c745"
+    },
+    {
+      "active": "assets/recipes/town/structures/tavern-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/tavern-area.json",
+      "sha256": "0c696eefde979960ae5f8b2dd583af12d96769a2dc301d71b196beda6600c16e"
+    },
+    {
+      "active": "assets/recipes/town/structures/tavern-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/tavern-border.json",
+      "sha256": "56d1bee0456440a3b8469a2d27ba4c00480f60dcd94a8aff8a76cce5e58caa7d"
+    },
+    {
+      "active": "assets/recipes/town/structures/tavern-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/tavern-campaign.json",
+      "sha256": "f6b063d5c1ced9072fc071d1898a2b407107116c9da4f9c3ed1fd6131b824b70"
+    },
+    {
+      "active": "assets/recipes/town/structures/special3-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/special3-animation.json",
+      "sha256": "f32b0e260f8d726d9877184d72eb9065fff5b609ee2229a8ff8ffdaee6179141"
+    },
+    {
+      "active": "assets/recipes/town/structures/special3-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/special3-area.json",
+      "sha256": "34b6a34e0de77f8237d98d25fd017753c6a2d75e58bec940ae6112a046366253"
+    },
+    {
+      "active": "assets/recipes/town/structures/special3-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/special3-border.json",
+      "sha256": "ec408d7f91afd443dfd3e746ad2e1f01dc551c4925c5223ffc9fea467738fe97"
+    },
+    {
+      "active": "assets/recipes/town/structures/special3-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/special3-campaign.json",
+      "sha256": "869a4f8dde3633246f330b3457c2bec38f2d3fcf954b7d0a524ebe70606cc1ff"
+    },
+    {
+      "active": "assets/recipes/town/structures/marketplace-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/marketplace-animation.json",
+      "sha256": "c636265763e3a1d8ada3508d5b20a780d79e36576492deaf51e2b8a6e4006916"
+    },
+    {
+      "active": "assets/recipes/town/structures/marketplace-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/marketplace-area.json",
+      "sha256": "2bfc2e92a96edb7dfdf0888351f1788f1844a06d23c11cb40fa136ac8e1b9e0b"
+    },
+    {
+      "active": "assets/recipes/town/structures/marketplace-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/marketplace-border.json",
+      "sha256": "8fd84cfa8bc085928cc3c344767af3ca920e552646d33caf1b1e26d68be9e0ee"
+    },
+    {
+      "active": "assets/recipes/town/structures/marketplace-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/marketplace-campaign.json",
+      "sha256": "816b02aceaa7142130642172d6e21d8d366740ece769de70d7d68950c79111a3"
+    },
+    {
+      "active": "assets/recipes/town/structures/blacksmith-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/blacksmith-animation.json",
+      "sha256": "c562cfab3f42053df3cc1d0ca5be92fc608a11ba9ca47b065910c7eaa743b0c1"
+    },
+    {
+      "active": "assets/recipes/town/structures/blacksmith-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/blacksmith-area.json",
+      "sha256": "51a0b95ba9be306a64f40f647da103d5f8eadd6cd2800d572de4089074f587f3"
+    },
+    {
+      "active": "assets/recipes/town/structures/blacksmith-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/blacksmith-border.json",
+      "sha256": "9f97e19840d3fb89c2f128d0592cc8689d1c47f4a46f0cecbd6103b32fdb718f"
+    },
+    {
+      "active": "assets/recipes/town/structures/blacksmith-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/blacksmith-campaign.json",
+      "sha256": "11ed89340036fdb4ab2d0c4025844b6b533358471b07f39932acbbde6194995b"
+    },
+    {
+      "active": "assets/recipes/town/structures/resourceSilo-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/resourceSilo-animation.json",
+      "sha256": "bcbebe3e703ed05ddf7d0511700dd2f91c5f4e5b6f1a9a082a0149089c27d17a"
+    },
+    {
+      "active": "assets/recipes/town/structures/resourceSilo-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/resourceSilo-area.json",
+      "sha256": "566a8c3f2c34c01f85b910ceccd4365dca9b8103c2c825e303ffd57f11de77c4"
+    },
+    {
+      "active": "assets/recipes/town/structures/resourceSilo-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/resourceSilo-border.json",
+      "sha256": "a5f9a987685610f9c0ec2d454fd1a475f8ef79b7d2107e95e11332f8421deebb"
+    },
+    {
+      "active": "assets/recipes/town/structures/resourceSilo-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/resourceSilo-campaign.json",
+      "sha256": "3b63886248c78f8214ab3923af252e0f67c7ba3c7df5b9329d09a3885cfa910e"
+    },
+    {
+      "active": "assets/recipes/town/structures/special1-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/special1-animation.json",
+      "sha256": "4fec1111b594f0528e9ce086192ab023bcb1827c389f3b942668c6da8b54620b"
+    },
+    {
+      "active": "assets/recipes/town/structures/special1-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/special1-area.json",
+      "sha256": "6c7ffcec015de53329353f3de37b5392bc466424246191f7abb58800465746aa"
+    },
+    {
+      "active": "assets/recipes/town/structures/special1-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/special1-border.json",
+      "sha256": "82dc5c235120f78f141d2071957c343420b1808b6d8eb6af959760bb9788115b"
+    },
+    {
+      "active": "assets/recipes/town/structures/special1-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/special1-campaign.json",
+      "sha256": "801536b6b571fbb6861b6551793daccb093bdc004895ca2349a0a9216bb0d5a7"
+    },
+    {
+      "active": "assets/recipes/town/structures/special2-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/special2-animation.json",
+      "sha256": "76763e061197846204206e80913565983ceaef9afd3bec5d884d27af380cbc9d"
+    },
+    {
+      "active": "assets/recipes/town/structures/special2-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/special2-area.json",
+      "sha256": "cf4bdc9fe015f7a263f13c6d05f0627b77484a5152d56bfa70eed253fb255387"
+    },
+    {
+      "active": "assets/recipes/town/structures/special2-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/special2-border.json",
+      "sha256": "350fd640a46d97af2173fe1f82dd6376c2ddd99f4f583357efa001f5316e0ba6"
+    },
+    {
+      "active": "assets/recipes/town/structures/special2-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/special2-campaign.json",
+      "sha256": "e24e17179098d8381fd9aa6cfd8e1d6ad2c7fc17c90c42e819c37bbea793c358"
+    },
+    {
+      "active": "assets/recipes/town/structures/special4-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/special4-animation.json",
+      "sha256": "499894ff290b7d9b4ebf7fc85006544d32b4c8962d2ce97ba4467b1b1deea235"
+    },
+    {
+      "active": "assets/recipes/town/structures/special4-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/special4-area.json",
+      "sha256": "f549aac6382504ce66c2fd056dd0cbc995f1108c1f574be448c7f41c2e7ef9bb"
+    },
+    {
+      "active": "assets/recipes/town/structures/special4-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/special4-border.json",
+      "sha256": "e67a762d698a1d86466f3e2a20087df7cd9658dfa6caf18cff79e9a8e1273d81"
+    },
+    {
+      "active": "assets/recipes/town/structures/special4-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/special4-campaign.json",
+      "sha256": "5f5a8f095c3268f5797193572dcb5219e44e758077218c3c5845891fce26126c"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl1-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl1-animation.json",
+      "sha256": "e32c18787322a591ba10848e1cebf493e579c4913780f215562b73455b9d00d1"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl1-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl1-area.json",
+      "sha256": "56257efe40694d66f505320aebf8f5149fa81b5112e1d80b9ea3a81315a75ad5"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl1-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl1-border.json",
+      "sha256": "848700b8385be809d92cb52eda201da1f5b9c5be090ffe7d445574d31928d65e"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl1-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl1-campaign.json",
+      "sha256": "7ecf759ab29c4c90574d800e15d233afcebf0d90cc5b11caf431c31c63f76d1c"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl1-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl1-animation.json",
+      "sha256": "82811af3cbf0f6be60aa54d6ba96651560411cd7f48404b59fa23721a632153c"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl1-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl1-area.json",
+      "sha256": "59c260350609e00653453fda7ef8f24e58fe72546116de5e0aa4b6ae5f7cf344"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl1-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl1-border.json",
+      "sha256": "0468cca3b7932d2089b9dc973257ab3e2a10610552a47ccd7796dfdff971a97c"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl1-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl1-campaign.json",
+      "sha256": "4954553b5500214d5692369fa5c5c17b74d98467b62f7954a822ee1bf39684ba"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl2-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl2-animation.json",
+      "sha256": "1f2e90b2eb2d193414a358746cf06f26d6278c99fd53555f8e4054b16a461e30"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl2-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl2-area.json",
+      "sha256": "e22166a76606ca020889fc2db6134d70fb6445ce971e2b384d4da4b0d420a9f5"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl2-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl2-border.json",
+      "sha256": "49592c750c82e7fa6d166a9274fb6a9faf79964e9572315c77243ec2720adf30"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl2-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl2-campaign.json",
+      "sha256": "8254f3dd5bdba4ddeefa58dce02fc173acad0fcd3d8cbb21fbd57d077a97b7ed"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl2-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl2-animation.json",
+      "sha256": "a7467f08353dbea9a76c2f93d6948a9b15415cfecbc16785b10a32528ea11083"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl2-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl2-area.json",
+      "sha256": "c4d95dcb070f154e96cd40de028d217b6551fbbf87154c11ba5e6739542c68ea"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl2-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl2-border.json",
+      "sha256": "e5ee980f8936f0ce1a9000335945f58173c1a5671fb7150376373c01fe42df5b"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl2-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl2-campaign.json",
+      "sha256": "230d12c28b432a45f4e7784b7e74528551da02f48ff7e146c46c32253862d5ad"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl3-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl3-animation.json",
+      "sha256": "7f96014a8b0c925618ca670552ec0ec78317cee798957897327f57ec0db92965"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl3-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl3-area.json",
+      "sha256": "709db358d52cf7e28361fef3ad73a75f5201bd0e4933884327697aaf68f020d4"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl3-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl3-border.json",
+      "sha256": "c09810f54aa80f4f89234a574bb3a061f8110c9781cb6dd9fc2cf4a06d1ee771"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl3-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl3-campaign.json",
+      "sha256": "c03672e53cd51dff7816d8ba5ad50a0650b64e12d4e9d7e462477ef327c1e1d2"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl3-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl3-animation.json",
+      "sha256": "3f4730e6b58f14fa117d773abacacb3fd849a32416427f207c8b03e9041d56ed"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl3-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl3-area.json",
+      "sha256": "fb58218f2d7a5ad6d55b25f669eab2641b333d611926f81cdc922a61f8127988"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl3-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl3-border.json",
+      "sha256": "85a1e11443774918d7c01b906a363e5b18e051d1cc12eff856ed78a8ed7309fc"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl3-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl3-campaign.json",
+      "sha256": "b323d79867d27723690a827a4673f1841b86331d843c276e3c3bc42a89ba2cc2"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl4-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl4-animation.json",
+      "sha256": "be9ce9eb60e239b93540000438831e56d9e6ab5c21b8794c089b00e96d6183d8"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl4-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl4-area.json",
+      "sha256": "b5468670f26115225386475d54fe99856c600827489e1248abb94b563fe4a546"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl4-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl4-border.json",
+      "sha256": "c57fe9cb268d68d7860a231ec98db85586e530397c54827fdb8407cb8098f3c9"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl4-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl4-campaign.json",
+      "sha256": "3d8381907e57bfaac0a94c99e3f81ff4f6258467e66c04ddb90b710d6e7321f2"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl4-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl4-animation.json",
+      "sha256": "d40a8dae498de6ba9fbed4c1e6d7253aec3464f952dde4da126483de32a24912"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl4-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl4-area.json",
+      "sha256": "3c18018c6d52d5a4e4e92e5d9789e2328262388562d2a4ae9673d91ebd9060e6"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl4-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl4-border.json",
+      "sha256": "e84bd0d583a8faa739e4245c85ade7c74be0f439a42be8cc0587b3785ad15e4f"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl4-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl4-campaign.json",
+      "sha256": "4636f5f1d387fb3945002660287982a6ae888de25d048721e044b434ce9b4275"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl5-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl5-animation.json",
+      "sha256": "1dc87315c49bb528a24ad6f0f9da571249ffc003fd09d9ec2c51415da7bffc35"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl5-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl5-area.json",
+      "sha256": "d0fb353e76d4e5e8f701bde9ac8ad735f6f382021b4d33381550171890c01205"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl5-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl5-border.json",
+      "sha256": "59e2117bbe7b6125acb0cfa646ee0515456693a755688475e5230088b1f36964"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl5-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl5-campaign.json",
+      "sha256": "a324c937419c57b6d074445833415d958980e7fe3b7375b760648c1bd8c80869"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl5-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl5-animation.json",
+      "sha256": "e5c581b06163c4dd15397e2d7cd6c151730389f5caee80ca3767032abc696c7e"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl5-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl5-area.json",
+      "sha256": "0dd03ae83540f66bb9f62794344307c85494497eaa60d95afb99851c9ea48c55"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl5-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl5-border.json",
+      "sha256": "886b9a6fc9bfb4657c4027d70b0455d85c25e2b2e1adbb1d49fff7ef52688f5e"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl5-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl5-campaign.json",
+      "sha256": "22ac9fe2e7e2e3cfea3aa00eddbb2e1aead91f04c920e1bfb72937568fd80538"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl6-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl6-animation.json",
+      "sha256": "f6837064c1412b15d3011cdbc1d368090c70367c25a14ecc931df442c242e5fb"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl6-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl6-area.json",
+      "sha256": "0745f941188382afa4b9a5b23d4c4b3ad4ed58905ba26ce13401590712ab4023"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl6-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl6-border.json",
+      "sha256": "22d31c3be6c0c2c13e8844aeea924a06f89b4975fd736364d57e3a20372b5fe8"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl6-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl6-campaign.json",
+      "sha256": "00aeca387938867d65774266b1bd6af80c14543dca1ddce3ed15995b95f7f963"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl6-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl6-animation.json",
+      "sha256": "d27d358333aa2f5e158e54f11f7109789e05cb8200cbd2c83cbed40d49a0eb14"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl6-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl6-area.json",
+      "sha256": "422ca875bb54684574f83b5dc2428e448584b381730d95143081a2f7adcf49db"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl6-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl6-border.json",
+      "sha256": "98ac5d4367d7f04a15352f9d37dad54979a9b3e9b2e3d6bc61790240493ec2e6"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl6-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl6-campaign.json",
+      "sha256": "114196ec36890f37f89a983cc26971eb0842a273e8389803487c33757f8c62a0"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl7-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl7-animation.json",
+      "sha256": "38daa3e94262fac4c9b0826dbe721ac03abbfba11cf2e4e61c441de72d0c753f"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl7-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl7-area.json",
+      "sha256": "a9fdf38762dd45ec3a56e902f86146b8a6c9d3973ed44923b7d0f274fa228adf"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl7-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl7-border.json",
+      "sha256": "b644957fb025db742acbc9285f89c97165b011ef550e8615c9fc6419e807a745"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingLvl7-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingLvl7-campaign.json",
+      "sha256": "cdc04c6c1c937b33bc615ddbd71f8d89d18e26e83e73a1901cc0b8b70a41917e"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl7-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl7-animation.json",
+      "sha256": "31e5f6c4fd835741d3d795203ef751472c248ac8ac4061c561f242b67df454c6"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl7-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl7-area.json",
+      "sha256": "0d8dd1152e8a19db73fec83138c99e52b03a1af924c05f394646a3b3516d33f0"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl7-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl7-border.json",
+      "sha256": "23b3c4c0cdb3d318c68ddeb555da42dcf1b959144f73589b89942c84bb48253f"
+    },
+    {
+      "active": "assets/recipes/town/structures/dwellingUpLvl7-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/dwellingUpLvl7-campaign.json",
+      "sha256": "3b5236bb18e9254e16e153e70e6c9c8c66609d403750e981dee0046c2328f2f3"
+    },
+    {
+      "active": "assets/recipes/town/structures/shipyard-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/shipyard-animation.json",
+      "sha256": "07cbd86dd0cf3998cd8f6a38f285d63032b1f716b8333263f4bdaa86a374883e"
+    },
+    {
+      "active": "assets/recipes/town/structures/shipyard-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/shipyard-area.json",
+      "sha256": "8f1d36b00ad3008b7a44e97913bc30c40ef39da32aafaeea3f67763474ed7a7c"
+    },
+    {
+      "active": "assets/recipes/town/structures/shipyard-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/shipyard-border.json",
+      "sha256": "59d679ea67b8f17a675067a9c3411019f54031352d857c35f4366e77f9979a1b"
+    },
+    {
+      "active": "assets/recipes/town/structures/shipyard-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/shipyard-campaign.json",
+      "sha256": "3cc969d218d909694568834813e9fcdf55c137f381c15777ae6c36ee7488af06"
+    },
+    {
+      "active": "assets/recipes/town/structures/ship-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/ship-animation.json",
+      "sha256": "a92e2ab8e95ee8950cd53a7538c701280f76d7788bd03adda059665b4fe7a192"
+    },
+    {
+      "active": "assets/recipes/town/structures/ship-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/ship-area.json",
+      "sha256": "ac9fed50bb345eb4429ed7311f526f419fda09dd4ee5da3d303e43fe7c3b794e"
+    },
+    {
+      "active": "assets/recipes/town/structures/ship-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/ship-border.json",
+      "sha256": "e42562de6f06d8dae6f4af3b5941879704672629de335aa3ea3eaaf46e32201a"
+    },
+    {
+      "active": "assets/recipes/town/structures/ship-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/ship-campaign.json",
+      "sha256": "cf12b65406ab0fb64a7425e7b85d8322ee8d1945a11bf5d09f3281bd1857f315"
+    },
+    {
+      "active": "assets/recipes/town/structures/grail-animation.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/grail-animation.json",
+      "sha256": "3ad884d7b5851e59113e5d47a722e63ec166273338f1fa6480636177cbcd1969"
+    },
+    {
+      "active": "assets/recipes/town/structures/grail-area.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/grail-area.json",
+      "sha256": "64f9c3582138c6c587655c7ebf90041d19b50981ab6217af3b69cda40d5a89fc"
+    },
+    {
+      "active": "assets/recipes/town/structures/grail-border.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/grail-border.json",
+      "sha256": "41a8d763aa267bbc791b81160db2f00c3b78d3b9eba85f4f380466f13eee23a7"
+    },
+    {
+      "active": "assets/recipes/town/structures/grail-campaign.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/structures/grail-campaign.json",
+      "sha256": "781084742a6baa85046cef51e76ac1bf0a4f6042677c2d8452033122e4830eae"
+    },
+    {
+      "active": "assets/recipes/town/background.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/background.json",
+      "sha256": "b683dc742adbac555d5fc0fb8cb07e4eb362a2cfb8fc833953161788426b7d28"
+    },
+    {
+      "active": "assets/recipes/town/buildingIcons.json",
+      "candidate": "assets/source/town/rebuild-20261027-v1/recipes/buildingIcons.json",
+      "sha256": "20659c6726828a1920edef0e001574c539da03041dc2464ca31a0f05037db3a6"
+    }
+  ],
+  "revision": "rebuild-20261027-v1",
+  "schema_version": 1,
+  "sites": [
+    {
+      "center": [
+        232,
+        84
+      ],
+      "composition_rectangle": [
+        151,
+        20,
+        163,
+        129
+      ],
+      "id": "hall",
+      "layer_origin": [
+        0,
+        0
+      ],
+      "native_z": 149,
+      "selected_state_art": {
+        "capitol": {
+          "click_bbox": [
+            152,
+            21,
+            313,
+            148
+          ],
+          "click_pixels": 11772,
+          "composition_rectangle": [
+            151,
+            20,
+            163,
+            129
+          ],
+          "fit_size": [
+            163,
+            129
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/capitol/master.png",
+          "master_sha256": "06164fe248a3776ad956eab3c123601423bdce6254a836ec6d45ba6db034851a",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/capitol/layer.png",
+          "native_layer_sha256": "4f97ef24780656292cd9dbb26c37c7e06c929e9e9e3694af16f412682c35196b",
+          "native_z": 149,
+          "site": "hall",
+          "source_crop_xyxy": [
+            52,
+            1,
+            1415,
+            1082
+          ],
+          "state": "capitol",
+          "visual_approval_granted": false
+        },
+        "cityHall": {
+          "click_bbox": [
+            152,
+            34,
+            313,
+            148
+          ],
+          "click_pixels": 12284,
+          "composition_rectangle": [
+            151,
+            20,
+            163,
+            129
+          ],
+          "fit_size": [
+            163,
+            116
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/cityHall/master.png",
+          "master_sha256": "2002669b062ac34378fb3b8ebb20ec9253332992e598f6fe7527136de4185fa4",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/cityHall/layer.png",
+          "native_layer_sha256": "cb1476877dac097346e1384d7a1660b8e084a962d3109aa26df5c369ad4f735f",
+          "native_z": 149,
+          "site": "hall",
+          "source_crop_xyxy": [
+            107,
+            7,
+            1452,
+            962
+          ],
+          "state": "cityHall",
+          "visual_approval_granted": false
+        },
+        "townHall": {
+          "click_bbox": [
+            153,
+            25,
+            312,
+            148
+          ],
+          "click_pixels": 10649,
+          "composition_rectangle": [
+            151,
+            20,
+            163,
+            129
+          ],
+          "fit_size": [
+            163,
+            125
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/townHall/master.png",
+          "master_sha256": "23d943dbcd21801531fefd9efbbbc0b18402dca97c9499566212b56910cdb3d7",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/townHall/layer.png",
+          "native_layer_sha256": "07afb488743b6da9fb73800d2e9e0b5a2407c32c0fd9728670dbbbbd95dfcc1a",
+          "native_z": 149,
+          "site": "hall",
+          "source_crop_xyxy": [
+            151,
+            16,
+            1382,
+            957
+          ],
+          "state": "townHall",
+          "visual_approval_granted": false
+        },
+        "villageHall": {
+          "click_bbox": [
+            153,
+            21,
+            312,
+            148
+          ],
+          "click_pixels": 12687,
+          "composition_rectangle": [
+            151,
+            20,
+            163,
+            129
+          ],
+          "fit_size": [
+            161,
+            129
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/villageHall/master.png",
+          "master_sha256": "f9fe0d902501945953bbcfb8dc40e0383120a21121d449f6481eec2a8c566209",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/villageHall/layer.png",
+          "native_layer_sha256": "b19c16f2e6f74b5d53a628c12deb53861ab4df0b12ed07e8cc171d71ff0625a0",
+          "native_z": 149,
+          "site": "hall",
+          "source_crop_xyxy": [
+            34,
+            23,
+            1347,
+            1076
+          ],
+          "state": "villageHall",
+          "visual_approval_granted": false
+        }
+      },
+      "sha256": {
+        "capitol": "06164fe248a3776ad956eab3c123601423bdce6254a836ec6d45ba6db034851a",
+        "cityHall": "2002669b062ac34378fb3b8ebb20ec9253332992e598f6fe7527136de4185fa4",
+        "townHall": "23d943dbcd21801531fefd9efbbbc0b18402dca97c9499566212b56910cdb3d7",
+        "villageHall": "f9fe0d902501945953bbcfb8dc40e0383120a21121d449f6481eec2a8c566209"
+      },
+      "source": {
+        "capitol": "assets/source/town/rebuild-20261027-v1/retained-masters/capitol/master.png",
+        "cityHall": "assets/source/town/rebuild-20261027-v1/retained-masters/cityHall/master.png",
+        "townHall": "assets/source/town/rebuild-20261027-v1/retained-masters/townHall/master.png",
+        "villageHall": "assets/source/town/rebuild-20261027-v1/retained-masters/villageHall/master.png"
+      },
+      "states": [
+        "villageHall",
+        "townHall",
+        "cityHall",
+        "capitol"
+      ]
+    },
+    {
+      "center": [
+        430,
+        78
+      ],
+      "composition_rectangle": [
+        325,
+        7,
+        210,
+        142
+      ],
+      "id": "fortification",
+      "layer_origin": [
+        0,
+        0
+      ],
+      "native_z": 149,
+      "selected_state_art": {
+        "castle": {
+          "click_bbox": [
+            326,
+            11,
+            534,
+            148
+          ],
+          "click_pixels": 14359,
+          "composition_rectangle": [
+            325,
+            7,
+            210,
+            142
+          ],
+          "fit_size": [
+            210,
+            140
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/castle/master.png",
+          "master_sha256": "feac9c3f6dc5b13323c1be74b4a9a7766d4a535f9b42f33cee0ba45a48a1e34d",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/castle/layer.png",
+          "native_layer_sha256": "bdef08bd94e1ccc9b1d06ee1b8b4b8d299286e712dd02ac76018db8cf56485dd",
+          "native_z": 149,
+          "site": "fortification",
+          "source_crop_xyxy": [
+            6,
+            0,
+            1532,
+            1016
+          ],
+          "state": "castle",
+          "visual_approval_granted": false
+        },
+        "citadel": {
+          "click_bbox": [
+            327,
+            17,
+            533,
+            147
+          ],
+          "click_pixels": 15745,
+          "composition_rectangle": [
+            325,
+            7,
+            210,
+            142
+          ],
+          "fit_size": [
+            210,
+            134
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/citadel/master.png",
+          "master_sha256": "ec76ba6b810125b6dc54ebb12be9b5a68db4983f4e0ef9fece78c737c331cddd",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/citadel/layer.png",
+          "native_layer_sha256": "d88ddf40e3179b87f7a19f7296b42e4b940236604f513567f0145f4f9fcfb939",
+          "native_z": 149,
+          "site": "fortification",
+          "source_crop_xyxy": [
+            57,
+            39,
+            1486,
+            950
+          ],
+          "state": "citadel",
+          "visual_approval_granted": false
+        },
+        "fort": {
+          "click_bbox": [
+            327,
+            54,
+            534,
+            148
+          ],
+          "click_pixels": 10750,
+          "composition_rectangle": [
+            325,
+            7,
+            210,
+            142
+          ],
+          "fit_size": [
+            210,
+            96
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/fort/master.png",
+          "master_sha256": "cd34f79367440a45dde758e946afc0c62202cb8087d95b535d391407623a5455",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/fort/layer.png",
+          "native_layer_sha256": "7c2c913e408791b8b8f9d02d9a66df39736975d51f7576a87c1d052a78d63ea1",
+          "native_z": 149,
+          "site": "fortification",
+          "source_crop_xyxy": [
+            13,
+            140,
+            1526,
+            833
+          ],
+          "state": "fort",
+          "visual_approval_granted": false
+        }
+      },
+      "sha256": {
+        "castle": "feac9c3f6dc5b13323c1be74b4a9a7766d4a535f9b42f33cee0ba45a48a1e34d",
+        "citadel": "ec76ba6b810125b6dc54ebb12be9b5a68db4983f4e0ef9fece78c737c331cddd",
+        "fort": "cd34f79367440a45dde758e946afc0c62202cb8087d95b535d391407623a5455"
+      },
+      "source": {
+        "castle": "assets/source/town/rebuild-20261027-v1/retained-masters/castle/master.png",
+        "citadel": "assets/source/town/rebuild-20261027-v1/retained-masters/citadel/master.png",
+        "fort": "assets/source/town/rebuild-20261027-v1/retained-masters/fort/master.png"
+      },
+      "states": [
+        "fort",
+        "citadel",
+        "castle"
+      ]
+    },
+    {
+      "center": [
+        71,
+        79
+      ],
+      "composition_rectangle": [
+        14,
+        15,
+        115,
+        128
+      ],
+      "id": "guild",
+      "layer_origin": [
+        0,
+        0
+      ],
+      "native_z": 143,
+      "selected_state_art": {
+        "mageGuild1": {
+          "click_bbox": [
+            15,
+            31,
+            128,
+            142
+          ],
+          "click_pixels": 7115,
+          "composition_rectangle": [
+            14,
+            15,
+            115,
+            128
+          ],
+          "fit_size": [
+            115,
+            113
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/mageGuild1/master.png",
+          "master_sha256": "e9fc25fbe169285bc4dd38e4f24da9a6fa3856ca81e88febb0aaebc1d4914b7c",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/mageGuild1/layer.png",
+          "native_layer_sha256": "443d45a79d334df7109e027442a90bf170141de62bf8dc170a861ec7a8e126aa",
+          "native_z": 143,
+          "site": "guild",
+          "source_crop_xyxy": [
+            344,
+            11,
+            1320,
+            974
+          ],
+          "state": "mageGuild1",
+          "visual_approval_granted": false
+        },
+        "mageGuild2": {
+          "click_bbox": [
+            20,
+            16,
+            123,
+            142
+          ],
+          "click_pixels": 7735,
+          "composition_rectangle": [
+            14,
+            15,
+            115,
+            128
+          ],
+          "fit_size": [
+            106,
+            128
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/mageGuild2/master.png",
+          "master_sha256": "96536afbbaade63ae0f16057ad5eaa092bf31dabdd1113ffb3c8e3696554beb3",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/mageGuild2/layer.png",
+          "native_layer_sha256": "cb883cf7ac2d1941283d34c9295015e35574f8597aecbd552817716248260b26",
+          "native_z": 143,
+          "site": "guild",
+          "source_crop_xyxy": [
+            218,
+            40,
+            1144,
+            1156
+          ],
+          "state": "mageGuild2",
+          "visual_approval_granted": false
+        },
+        "mageGuild3": {
+          "click_bbox": [
+            32,
+            16,
+            111,
+            142
+          ],
+          "click_pixels": 5265,
+          "composition_rectangle": [
+            14,
+            15,
+            115,
+            128
+          ],
+          "fit_size": [
+            81,
+            128
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/mageGuild3/master.png",
+          "master_sha256": "a5c092bf830946d39db4ef9b47a03c88365ad8ece2533436e5f0832e24fb2f49",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/mageGuild3/layer.png",
+          "native_layer_sha256": "8f8a77aa05d783440c85e63f4b1dcbab700072cbccace9d0ed99e7a5cb9429f7",
+          "native_z": 143,
+          "site": "guild",
+          "source_crop_xyxy": [
+            238,
+            26,
+            1063,
+            1325
+          ],
+          "state": "mageGuild3",
+          "visual_approval_granted": false
+        }
+      },
+      "sha256": {
+        "mageGuild1": "e9fc25fbe169285bc4dd38e4f24da9a6fa3856ca81e88febb0aaebc1d4914b7c",
+        "mageGuild2": "96536afbbaade63ae0f16057ad5eaa092bf31dabdd1113ffb3c8e3696554beb3",
+        "mageGuild3": "a5c092bf830946d39db4ef9b47a03c88365ad8ece2533436e5f0832e24fb2f49"
+      },
+      "source": {
+        "mageGuild1": "assets/source/town/rebuild-20261027-v1/retained-masters/mageGuild1/master.png",
+        "mageGuild2": "assets/source/town/rebuild-20261027-v1/retained-masters/mageGuild2/master.png",
+        "mageGuild3": "assets/source/town/rebuild-20261027-v1/retained-masters/mageGuild3/master.png"
+      },
+      "states": [
+        "mageGuild1",
+        "mageGuild2",
+        "mageGuild3"
+      ]
+    },
+    {
+      "center": [
+        218,
+        308
+      ],
+      "composition_rectangle": [
+        143,
+        251,
+        151,
+        115
+      ],
+      "id": "tavernAcademy",
+      "layer_origin": [
+        0,
+        0
+      ],
+      "native_z": 366,
+      "selected_state_art": {
+        "special3": {
+          "click_bbox": [
+            153,
+            252,
+            284,
+            365
+          ],
+          "click_pixels": 9956,
+          "composition_rectangle": [
+            143,
+            251,
+            151,
+            115
+          ],
+          "fit_size": [
+            133,
+            115
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/special3/master.png",
+          "master_sha256": "5f59f6d417300a37319ea4b570bcce157107c1a3d31ded27c1665f4b7cd5c466",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/special3/layer.png",
+          "native_layer_sha256": "52e6ec9a195007084e4fbda11073da2dadbae9e42204f49fb8a3f7c52b315b5d",
+          "native_z": 366,
+          "site": "tavernAcademy",
+          "source_crop_xyxy": [
+            252,
+            9,
+            1382,
+            984
+          ],
+          "state": "special3",
+          "visual_approval_granted": false
+        },
+        "tavern": {
+          "click_bbox": [
+            144,
+            268,
+            293,
+            365
+          ],
+          "click_pixels": 8978,
+          "composition_rectangle": [
+            143,
+            251,
+            151,
+            115
+          ],
+          "fit_size": [
+            151,
+            99
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/tavern/master.png",
+          "master_sha256": "abb907928e10780a4a79402c4d48f7765843212c06ed3ec7b02a0d8485b9e21e",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/tavern/layer.png",
+          "native_layer_sha256": "eafaa3a47f8baf771e4ffd824b969a35dc32f57e9e7dfa166fad7a1dd5549d46",
+          "native_z": 366,
+          "site": "tavernAcademy",
+          "source_crop_xyxy": [
+            89,
+            36,
+            1468,
+            944
+          ],
+          "state": "tavern",
+          "visual_approval_granted": false
+        }
+      },
+      "sha256": {
+        "special3": "5f59f6d417300a37319ea4b570bcce157107c1a3d31ded27c1665f4b7cd5c466",
+        "tavern": "abb907928e10780a4a79402c4d48f7765843212c06ed3ec7b02a0d8485b9e21e"
+      },
+      "source": {
+        "special3": "assets/source/town/rebuild-20261027-v1/retained-masters/special3/master.png",
+        "tavern": "assets/source/town/rebuild-20261027-v1/retained-masters/tavern/master.png"
+      },
+      "states": [
+        "tavern",
+        "special3"
+      ]
+    },
+    {
+      "center": [
+        357,
+        320
+      ],
+      "composition_rectangle": [
+        299,
+        279,
+        117,
+        83
+      ],
+      "id": "market",
+      "layer_origin": [
+        0,
+        0
+      ],
+      "native_z": 362,
+      "selected_state_art": {
+        "marketplace": {
+          "click_bbox": [
+            300,
+            299,
+            415,
+            361
+          ],
+          "click_pixels": 4483,
+          "composition_rectangle": [
+            299,
+            279,
+            117,
+            83
+          ],
+          "fit_size": [
+            117,
+            64
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/marketplace/master.png",
+          "master_sha256": "dc21d2c7094e20cee90d831bbf469c2a5f7a8faaba1c157426e35ddfa3cf0b4f",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/marketplace/layer.png",
+          "native_layer_sha256": "91346fe9c5380638af781f660496f655c4dafb81a6ff6691894af956c25ba6ba",
+          "native_z": 362,
+          "site": "market",
+          "source_crop_xyxy": [
+            62,
+            108,
+            1478,
+            888
+          ],
+          "state": "marketplace",
+          "visual_approval_granted": false
+        }
+      },
+      "sha256": {
+        "marketplace": "dc21d2c7094e20cee90d831bbf469c2a5f7a8faaba1c157426e35ddfa3cf0b4f"
+      },
+      "source": {
+        "marketplace": "assets/source/town/rebuild-20261027-v1/retained-masters/marketplace/master.png"
+      },
+      "states": [
+        "marketplace"
+      ]
+    },
+    {
+      "center": [
+        499,
+        314
+      ],
+      "composition_rectangle": [
+        421,
+        256,
+        156,
+        117
+      ],
+      "id": "engineering",
+      "layer_origin": [
+        0,
+        0
+      ],
+      "native_z": 373,
+      "selected_state_art": {
+        "blacksmith": {
+          "click_bbox": [
+            429,
+            257,
+            569,
+            372
+          ],
+          "click_pixels": 10157,
+          "composition_rectangle": [
+            421,
+            256,
+            156,
+            117
+          ],
+          "fit_size": [
+            142,
+            117
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/blacksmith/master.png",
+          "master_sha256": "8786b09ef6313a6f84bf1dc3c252fd88ba713100872c0aec5aeb9403184b9888",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/blacksmith/layer.png",
+          "native_layer_sha256": "066769ab1ad9af8cfdc262a27978250ce1b93ee1ace0fafce1437640dcbba3d4",
+          "native_z": 373,
+          "site": "engineering",
+          "source_crop_xyxy": [
+            107,
+            8,
+            1347,
+            1028
+          ],
+          "state": "blacksmith",
+          "visual_approval_granted": false
+        },
+        "resourceSilo": {
+          "click_bbox": [
+            423,
+            279,
+            575,
+            372
+          ],
+          "click_pixels": 9298,
+          "composition_rectangle": [
+            421,
+            256,
+            156,
+            117
+          ],
+          "fit_size": [
+            156,
+            95
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/resourceSilo/master.png",
+          "master_sha256": "369f65d604c65c4cf022bf50c537e2c827ba557083a7f8341215f229498a5d2d",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/resourceSilo/layer.png",
+          "native_layer_sha256": "2f68ec895dec5183ca5195a344eab9e87117bce6bc04d138d02af3c1d84845eb",
+          "native_z": 373,
+          "site": "engineering",
+          "source_crop_xyxy": [
+            67,
+            60,
+            1490,
+            927
+          ],
+          "state": "resourceSilo",
+          "visual_approval_granted": false
+        }
+      },
+      "sha256": {
+        "blacksmith": "8786b09ef6313a6f84bf1dc3c252fd88ba713100872c0aec5aeb9403184b9888",
+        "resourceSilo": "369f65d604c65c4cf022bf50c537e2c827ba557083a7f8341215f229498a5d2d"
+      },
+      "source": {
+        "blacksmith": "assets/source/town/rebuild-20261027-v1/retained-masters/blacksmith/master.png",
+        "resourceSilo": "assets/source/town/rebuild-20261027-v1/retained-masters/resourceSilo/master.png"
+      },
+      "states": [
+        "blacksmith",
+        "resourceSilo"
+      ]
+    },
+    {
+      "center": [
+        552,
+        181
+      ],
+      "composition_rectangle": [
+        504,
+        137,
+        97,
+        88
+      ],
+      "id": "portal",
+      "layer_origin": [
+        0,
+        0
+      ],
+      "native_z": 225,
+      "selected_state_art": {
+        "special1": {
+          "click_bbox": [
+            505,
+            146,
+            600,
+            224
+          ],
+          "click_pixels": 4652,
+          "composition_rectangle": [
+            504,
+            137,
+            97,
+            88
+          ],
+          "fit_size": [
+            97,
+            80
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/special1/master.png",
+          "master_sha256": "319e4b66e2834ebb910249de973e8203fc3d43cd632664f49a4a5ec8b1032959",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/special1/layer.png",
+          "native_layer_sha256": "031badc1452ae220978cf4d119106122e1e4087bd4c20abef9c29d1c0e3e52c1",
+          "native_z": 225,
+          "site": "portal",
+          "source_crop_xyxy": [
+            118,
+            45,
+            1317,
+            1037
+          ],
+          "state": "special1",
+          "visual_approval_granted": false
+        }
+      },
+      "sha256": {
+        "special1": "319e4b66e2834ebb910249de973e8203fc3d43cd632664f49a4a5ec8b1032959"
+      },
+      "source": {
+        "special1": "assets/source/town/rebuild-20261027-v1/retained-masters/special1/master.png"
+      },
+      "states": [
+        "special1"
+      ]
+    },
+    {
+      "center": [
+        445,
+        216
+      ],
+      "composition_rectangle": [
+        396,
+        183,
+        98,
+        67
+      ],
+      "id": "garden",
+      "layer_origin": [
+        0,
+        0
+      ],
+      "native_z": 250,
+      "selected_state_art": {
+        "special2": {
+          "click_bbox": [
+            398,
+            190,
+            493,
+            249
+          ],
+          "click_pixels": 3117,
+          "composition_rectangle": [
+            396,
+            183,
+            98,
+            67
+          ],
+          "fit_size": [
+            98,
+            61
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/special2/master.png",
+          "master_sha256": "3494a7f7c8c4d69e09b8a511fa2497e985d6d4ffcc1025b014946f5599544a3d",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/special2/layer.png",
+          "native_layer_sha256": "896c5a44ddf86368aaf5dba21cd02667d5dd0b8b7825e95f444d14515656e823",
+          "native_z": 250,
+          "site": "garden",
+          "source_crop_xyxy": [
+            33,
+            50,
+            1509,
+            971
+          ],
+          "state": "special2",
+          "visual_approval_granted": false
+        }
+      },
+      "sha256": {
+        "special2": "3494a7f7c8c4d69e09b8a511fa2497e985d6d4ffcc1025b014946f5599544a3d"
+      },
+      "source": {
+        "special2": "assets/source/town/rebuild-20261027-v1/retained-masters/special2/master.png"
+      },
+      "states": [
+        "special2"
+      ]
+    },
+    {
+      "center": [
+        344,
+        215
+      ],
+      "composition_rectangle": [
+        307,
+        170,
+        74,
+        91
+      ],
+      "id": "fountain",
+      "layer_origin": [
+        0,
+        0
+      ],
+      "native_z": 261,
+      "selected_state_art": {
+        "special4": {
+          "click_bbox": [
+            308,
+            173,
+            380,
+            260
+          ],
+          "click_pixels": 3082,
+          "composition_rectangle": [
+            307,
+            170,
+            74,
+            91
+          ],
+          "fit_size": [
+            74,
+            89
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/special4/master.png",
+          "master_sha256": "0d23de12554da2f232c1b57bae9eaadcba9e77dd1502ce701d5f030922fdce47",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/special4/layer.png",
+          "native_layer_sha256": "9badaace9cf59c8e06c396debee37662550e5948ce70be03dc6813d5b6c08f48",
+          "native_z": 261,
+          "site": "fountain",
+          "source_crop_xyxy": [
+            402,
+            35,
+            1190,
+            985
+          ],
+          "state": "special4",
+          "visual_approval_granted": false
+        }
+      },
+      "sha256": {
+        "special4": "0d23de12554da2f232c1b57bae9eaadcba9e77dd1502ce701d5f030922fdce47"
+      },
+      "source": {
+        "special4": "assets/source/town/rebuild-20261027-v1/retained-masters/special4/master.png"
+      },
+      "states": [
+        "special4"
+      ]
+    },
+    {
+      "center": [
+        71,
+        319
+      ],
+      "composition_rectangle": [
+        0,
+        265,
+        142,
+        108
+      ],
+      "id": "dwelling1",
+      "layer_origin": [
+        0,
+        0
+      ],
+      "native_z": 373,
+      "selected_state_art": {
+        "dwellingLvl1": {
+          "click_bbox": [
+            2,
+            284,
+            141,
+            372
+          ],
+          "click_pixels": 8372,
+          "composition_rectangle": [
+            0,
+            265,
+            142,
+            108
+          ],
+          "fit_size": [
+            142,
+            90
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl1/master.png",
+          "master_sha256": "e9ec0316f23a37cd26fd600edb88afb66189a1a7bd7cc439afcf932e73ab733a",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl1/layer.png",
+          "native_layer_sha256": "58dab722312ab5a91200856b1994fd3bd1cad968de6db396b7c86cac5241a4be",
+          "native_z": 373,
+          "site": "dwelling1",
+          "source_crop_xyxy": [
+            59,
+            49,
+            1487,
+            955
+          ],
+          "state": "dwellingLvl1",
+          "visual_approval_granted": false
+        },
+        "dwellingUpLvl1": {
+          "click_bbox": [
+            1,
+            273,
+            138,
+            372
+          ],
+          "click_pixels": 6655,
+          "composition_rectangle": [
+            0,
+            265,
+            142,
+            108
+          ],
+          "fit_size": [
+            142,
+            101
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl1/master.png",
+          "master_sha256": "0e4d77fe750d87b51108575a8646df65a9d3c0ecf0cb0a49e8bf4d6f5b2a4c09",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl1/layer.png",
+          "native_layer_sha256": "fc7b49fff4f4311119167d130e115df21d9be602c6888aaa8f04c857583601f4",
+          "native_z": 373,
+          "site": "dwelling1",
+          "source_crop_xyxy": [
+            163,
+            6,
+            1528,
+            974
+          ],
+          "state": "dwellingUpLvl1",
+          "visual_approval_granted": false
+        }
+      },
+      "sha256": {
+        "dwellingLvl1": "e9ec0316f23a37cd26fd600edb88afb66189a1a7bd7cc439afcf932e73ab733a",
+        "dwellingUpLvl1": "0e4d77fe750d87b51108575a8646df65a9d3c0ecf0cb0a49e8bf4d6f5b2a4c09"
+      },
+      "source": {
+        "dwellingLvl1": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl1/master.png",
+        "dwellingUpLvl1": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl1/master.png"
+      },
+      "states": [
+        "dwellingLvl1",
+        "dwellingUpLvl1"
+      ]
+    },
+    {
+      "center": [
+        224,
+        199
+      ],
+      "composition_rectangle": [
+        161,
+        151,
+        126,
+        97
+      ],
+      "id": "dwelling2",
+      "layer_origin": [
+        0,
+        0
+      ],
+      "native_z": 248,
+      "selected_state_art": {
+        "dwellingLvl2": {
+          "click_bbox": [
+            164,
+            152,
+            283,
+            247
+          ],
+          "click_pixels": 6168,
+          "composition_rectangle": [
+            161,
+            151,
+            126,
+            97
+          ],
+          "fit_size": [
+            121,
+            97
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl2/master.png",
+          "master_sha256": "c6144018c9a9f7f8d0ca94d07077a8961084c39a3c726831751517c799d59ef9",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl2/layer.png",
+          "native_layer_sha256": "c2f1e408717637e7da5a1de7532e261de511d29c58a1b1127012dc6bc2e242aa",
+          "native_z": 248,
+          "site": "dwelling2",
+          "source_crop_xyxy": [
+            23,
+            44,
+            1344,
+            1105
+          ],
+          "state": "dwellingLvl2",
+          "visual_approval_granted": false
+        },
+        "dwellingUpLvl2": {
+          "click_bbox": [
+            164,
+            152,
+            283,
+            247
+          ],
+          "click_pixels": 6563,
+          "composition_rectangle": [
+            161,
+            151,
+            126,
+            97
+          ],
+          "fit_size": [
+            121,
+            97
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl2/master.png",
+          "master_sha256": "eb09328f6a428bb4a2b92a00536d600cb32c43f0f9877675fb0d7e373f3a5733",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl2/layer.png",
+          "native_layer_sha256": "e9f612af3a8004ce9c6af2daaa9d501ff803e4d0cb969bf9c457734296d22ce2",
+          "native_z": 248,
+          "site": "dwelling2",
+          "source_crop_xyxy": [
+            23,
+            42,
+            1350,
+            1109
+          ],
+          "state": "dwellingUpLvl2",
+          "visual_approval_granted": false
+        }
+      },
+      "sha256": {
+        "dwellingLvl2": "c6144018c9a9f7f8d0ca94d07077a8961084c39a3c726831751517c799d59ef9",
+        "dwellingUpLvl2": "eb09328f6a428bb4a2b92a00536d600cb32c43f0f9877675fb0d7e373f3a5733"
+      },
+      "source": {
+        "dwellingLvl2": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl2/master.png",
+        "dwellingUpLvl2": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl2/master.png"
+      },
+      "states": [
+        "dwellingLvl2",
+        "dwellingUpLvl2"
+      ]
+    },
+    {
+      "center": [
+        748,
+        246
+      ],
+      "composition_rectangle": [
+        697,
+        196,
+        103,
+        101
+      ],
+      "id": "dwelling3",
+      "layer_origin": [
+        0,
+        0
+      ],
+      "native_z": 297,
+      "selected_state_art": {
+        "dwellingLvl3": {
+          "click_bbox": [
+            698,
+            235,
+            798,
+            296
+          ],
+          "click_pixels": 4193,
+          "composition_rectangle": [
+            697,
+            196,
+            103,
+            101
+          ],
+          "fit_size": [
+            103,
+            63
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl3/master.png",
+          "master_sha256": "e8bf93a29c3d362ca9a3947ee3d081ff5a3629a8610e7a9c402014eca204e85c",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl3/layer.png",
+          "native_layer_sha256": "c6318c68a2d1641f363a288eefe3665c9e8d81046ef0b73f26642d06907cdae8",
+          "native_z": 297,
+          "site": "dwelling3",
+          "source_crop_xyxy": [
+            125,
+            72,
+            1508,
+            913
+          ],
+          "state": "dwellingLvl3",
+          "visual_approval_granted": false
+        },
+        "dwellingUpLvl3": {
+          "click_bbox": [
+            698,
+            231,
+            799,
+            296
+          ],
+          "click_pixels": 4138,
+          "composition_rectangle": [
+            697,
+            196,
+            103,
+            101
+          ],
+          "fit_size": [
+            103,
+            67
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl3/master.png",
+          "master_sha256": "e65f20e09850cf97e2b0d404e88d9a0e8c42b2cc5119911d2ceb75e39ede648e",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl3/layer.png",
+          "native_layer_sha256": "734e1c41dbac2319ff03154a5c1f3a927d4b2793d9fdd809c244cbcbb9844ecc",
+          "native_z": 297,
+          "site": "dwelling3",
+          "source_crop_xyxy": [
+            40,
+            12,
+            1496,
+            953
+          ],
+          "state": "dwellingUpLvl3",
+          "visual_approval_granted": false
+        }
+      },
+      "sha256": {
+        "dwellingLvl3": "e8bf93a29c3d362ca9a3947ee3d081ff5a3629a8610e7a9c402014eca204e85c",
+        "dwellingUpLvl3": "e65f20e09850cf97e2b0d404e88d9a0e8c42b2cc5119911d2ceb75e39ede648e"
+      },
+      "source": {
+        "dwellingLvl3": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl3/master.png",
+        "dwellingUpLvl3": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl3/master.png"
+      },
+      "states": [
+        "dwellingLvl3",
+        "dwellingUpLvl3"
+      ]
+    },
+    {
+      "center": [
+        643,
+        326
+      ],
+      "composition_rectangle": [
+        587,
+        281,
+        113,
+        91
+      ],
+      "id": "dwelling4",
+      "layer_origin": [
+        0,
+        0
+      ],
+      "native_z": 372,
+      "selected_state_art": {
+        "dwellingLvl4": {
+          "click_bbox": [
+            588,
+            294,
+            699,
+            371
+          ],
+          "click_pixels": 5190,
+          "composition_rectangle": [
+            587,
+            281,
+            113,
+            91
+          ],
+          "fit_size": [
+            113,
+            79
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl4/master.png",
+          "master_sha256": "27ecaaa0cb14c8174276a440dd78e852989b14c4f6b9af76cf5b37861e72162b",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl4/layer.png",
+          "native_layer_sha256": "b2dff282c2f827fbc06537ac3f7719a908ca499f8d4861b392ea59c97eed4e2c",
+          "native_z": 372,
+          "site": "dwelling4",
+          "source_crop_xyxy": [
+            123,
+            56,
+            1430,
+            969
+          ],
+          "state": "dwellingLvl4",
+          "visual_approval_granted": false
+        },
+        "dwellingUpLvl4": {
+          "click_bbox": [
+            588,
+            300,
+            699,
+            371
+          ],
+          "click_pixels": 4682,
+          "composition_rectangle": [
+            587,
+            281,
+            113,
+            91
+          ],
+          "fit_size": [
+            113,
+            73
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl4/master.png",
+          "master_sha256": "3aae7a00b32f61edbb6d58c356cd67ae48fb76e7abeb36c03ec8509fe66ca68d",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl4/layer.png",
+          "native_layer_sha256": "ddc0f423ceaea97b83d79769dbadd350103d7849f2130b01d5b92bc09207e7ff",
+          "native_z": 372,
+          "site": "dwelling4",
+          "source_crop_xyxy": [
+            68,
+            36,
+            1491,
+            949
+          ],
+          "state": "dwellingUpLvl4",
+          "visual_approval_granted": false
+        }
+      },
+      "sha256": {
+        "dwellingLvl4": "27ecaaa0cb14c8174276a440dd78e852989b14c4f6b9af76cf5b37861e72162b",
+        "dwellingUpLvl4": "3aae7a00b32f61edbb6d58c356cd67ae48fb76e7abeb36c03ec8509fe66ca68d"
+      },
+      "source": {
+        "dwellingLvl4": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl4/master.png",
+        "dwellingUpLvl4": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl4/master.png"
+      },
+      "states": [
+        "dwellingLvl4",
+        "dwellingUpLvl4"
+      ]
+    },
+    {
+      "center": [
+        662,
+        223
+      ],
+      "composition_rectangle": [
+        608,
+        169,
+        108,
+        108
+      ],
+      "id": "dwelling5",
+      "layer_origin": [
+        0,
+        0
+      ],
+      "native_z": 277,
+      "selected_state_art": {
+        "dwellingLvl5": {
+          "click_bbox": [
+            633,
+            171,
+            690,
+            276
+          ],
+          "click_pixels": 3351,
+          "composition_rectangle": [
+            608,
+            169,
+            108,
+            108
+          ],
+          "fit_size": [
+            59,
+            108
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl5/master.png",
+          "master_sha256": "e4b4d8b47a7e8224aed6ff7e08e62632b487a485edd728185048ff3087b2687d",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl5/layer.png",
+          "native_layer_sha256": "f25272e20e2aec924a26916dc2fda8ce3ac407b28bf8a18f9822bc48cf302ebc",
+          "native_z": 277,
+          "site": "dwelling5",
+          "source_crop_xyxy": [
+            364,
+            3,
+            1012,
+            1193
+          ],
+          "state": "dwellingLvl5",
+          "visual_approval_granted": false
+        },
+        "dwellingUpLvl5": {
+          "click_bbox": [
+            628,
+            170,
+            696,
+            276
+          ],
+          "click_pixels": 3491,
+          "composition_rectangle": [
+            608,
+            169,
+            108,
+            108
+          ],
+          "fit_size": [
+            70,
+            108
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl5/master.png",
+          "master_sha256": "bf2b814d849e944135c03472039241e8727c7ad90b3446d1338f409d327dc27d",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl5/layer.png",
+          "native_layer_sha256": "14434fb31ceb607b4f01be051fe8018c20b8e4caf720ec01800744d163abf523",
+          "native_z": 277,
+          "site": "dwelling5",
+          "source_crop_xyxy": [
+            261,
+            0,
+            1052,
+            1227
+          ],
+          "state": "dwellingUpLvl5",
+          "visual_approval_granted": false
+        }
+      },
+      "sha256": {
+        "dwellingLvl5": "e4b4d8b47a7e8224aed6ff7e08e62632b487a485edd728185048ff3087b2687d",
+        "dwellingUpLvl5": "bf2b814d849e944135c03472039241e8727c7ad90b3446d1338f409d327dc27d"
+      },
+      "source": {
+        "dwellingLvl5": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl5/master.png",
+        "dwellingUpLvl5": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl5/master.png"
+      },
+      "states": [
+        "dwellingLvl5",
+        "dwellingUpLvl5"
+      ]
+    },
+    {
+      "center": [
+        75,
+        198
+      ],
+      "composition_rectangle": [
+        0,
+        143,
+        150,
+        111
+      ],
+      "id": "dwelling6",
+      "layer_origin": [
+        0,
+        0
+      ],
+      "native_z": 254,
+      "selected_state_art": {
+        "dwellingLvl6": {
+          "click_bbox": [
+            2,
+            151,
+            149,
+            253
+          ],
+          "click_pixels": 9353,
+          "composition_rectangle": [
+            0,
+            143,
+            150,
+            111
+          ],
+          "fit_size": [
+            150,
+            104
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl6/master.png",
+          "master_sha256": "1452ba7fedb10a2347fe3f5603669466dfaa66e11c8ce1d3a9c7220c06a375f1",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl6/layer.png",
+          "native_layer_sha256": "6e720ecae9605613295fe516c4c14fe79a200e1df248f00aac477560801ec702",
+          "native_z": 254,
+          "site": "dwelling6",
+          "source_crop_xyxy": [
+            144,
+            13,
+            1497,
+            949
+          ],
+          "state": "dwellingLvl6",
+          "visual_approval_granted": false
+        },
+        "dwellingUpLvl6": {
+          "click_bbox": [
+            1,
+            146,
+            148,
+            253
+          ],
+          "click_pixels": 9030,
+          "composition_rectangle": [
+            0,
+            143,
+            150,
+            111
+          ],
+          "fit_size": [
+            150,
+            109
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl6/master.png",
+          "master_sha256": "d8762791dd61189357c4f8560e9d0acd58230f8c45a6d66bb8806dd40947a74d",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl6/layer.png",
+          "native_layer_sha256": "64af5d99cc8abf8863afcf804ca24b419cd4a9330c7de402713f8e2bdfd85571",
+          "native_z": 254,
+          "site": "dwelling6",
+          "source_crop_xyxy": [
+            105,
+            0,
+            1441,
+            968
+          ],
+          "state": "dwellingUpLvl6",
+          "visual_approval_granted": false
+        }
+      },
+      "sha256": {
+        "dwellingLvl6": "1452ba7fedb10a2347fe3f5603669466dfaa66e11c8ce1d3a9c7220c06a375f1",
+        "dwellingUpLvl6": "d8762791dd61189357c4f8560e9d0acd58230f8c45a6d66bb8806dd40947a74d"
+      },
+      "source": {
+        "dwellingLvl6": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl6/master.png",
+        "dwellingUpLvl6": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl6/master.png"
+      },
+      "states": [
+        "dwellingLvl6",
+        "dwellingUpLvl6"
+      ]
+    },
+    {
+      "center": [
+        721,
+        95
+      ],
+      "composition_rectangle": [
+        649,
+        27,
+        145,
+        137
+      ],
+      "id": "dwelling7",
+      "layer_origin": [
+        0,
+        0
+      ],
+      "native_z": 164,
+      "selected_state_art": {
+        "dwellingLvl7": {
+          "click_bbox": [
+            663,
+            29,
+            779,
+            163
+          ],
+          "click_pixels": 9670,
+          "composition_rectangle": [
+            649,
+            27,
+            145,
+            137
+          ],
+          "fit_size": [
+            118,
+            137
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl7/master.png",
+          "master_sha256": "266b9b7ed73cb446191982afd9857af539af4e9c1f6ec4c14a42bf7c665d0bd5",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingLvl7/layer.png",
+          "native_layer_sha256": "54030aad4472bf189e7002d66950050a700909604f746989f0d153750961c0cd",
+          "native_z": 164,
+          "site": "dwelling7",
+          "source_crop_xyxy": [
+            119,
+            0,
+            1149,
+            1191
+          ],
+          "state": "dwellingLvl7",
+          "visual_approval_granted": false
+        },
+        "dwellingUpLvl7": {
+          "click_bbox": [
+            667,
+            29,
+            775,
+            163
+          ],
+          "click_pixels": 8538,
+          "composition_rectangle": [
+            649,
+            27,
+            145,
+            137
+          ],
+          "fit_size": [
+            110,
+            137
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl7/master.png",
+          "master_sha256": "5131e801716a119d40d45c074194ae780394a179f53d8a816c561e8e06e61c00",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/dwellingUpLvl7/layer.png",
+          "native_layer_sha256": "3d096323471a256c5744f9ba6e39728925ea5a355a5509b6d2df1bc74cc72122",
+          "native_z": 164,
+          "site": "dwelling7",
+          "source_crop_xyxy": [
+            176,
+            0,
+            1119,
+            1177
+          ],
+          "state": "dwellingUpLvl7",
+          "visual_approval_granted": false
+        }
+      },
+      "sha256": {
+        "dwellingLvl7": "266b9b7ed73cb446191982afd9857af539af4e9c1f6ec4c14a42bf7c665d0bd5",
+        "dwellingUpLvl7": "5131e801716a119d40d45c074194ae780394a179f53d8a816c561e8e06e61c00"
+      },
+      "source": {
+        "dwellingLvl7": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingLvl7/master.png",
+        "dwellingUpLvl7": "assets/source/town/rebuild-20261027-v1/retained-masters/dwellingUpLvl7/master.png"
+      },
+      "states": [
+        "dwellingLvl7",
+        "dwellingUpLvl7"
+      ]
+    },
+    {
+      "center": [
+        752,
+        344
+      ],
+      "composition_rectangle": [
+        704,
+        314,
+        96,
+        60
+      ],
+      "id": "coast",
+      "layer_origin": [
+        0,
+        0
+      ],
+      "native_state_z": {
+        "ship": 375,
+        "shipyard": 374
+      },
+      "native_z": 374,
+      "selected_state_art": {
+        "ship": {
+          "click_bbox": [
+            705,
+            315,
+            799,
+            373
+          ],
+          "click_pixels": 2486,
+          "composition_rectangle": [
+            704,
+            314,
+            96,
+            60
+          ],
+          "fit_size": [
+            96,
+            60
+          ],
+          "footing_water_pixels": 318,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/ship/master.png",
+          "master_sha256": "6510d79034f92bd131956eb1ebe1cb4734eebed67ae1d2e318f9060e2b5f2a6c",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/ship/layer.png",
+          "native_layer_sha256": "53fa8e9d4335c565fd063f812174d2f5075ac4c6126c2a63a6e0576f54893ddd",
+          "native_z": 375,
+          "site": "coast",
+          "source_crop_xyxy": [
+            137,
+            82,
+            1478,
+            921
+          ],
+          "state": "ship",
+          "visual_approval_granted": false
+        },
+        "shipyard": {
+          "click_bbox": [
+            705,
+            318,
+            799,
+            373
+          ],
+          "click_pixels": 2041,
+          "composition_rectangle": [
+            704,
+            314,
+            96,
+            60
+          ],
+          "fit_size": [
+            96,
+            57
+          ],
+          "footing_water_pixels": 204,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/shipyard/master.png",
+          "master_sha256": "dd9dcec649f666618d7607d9b0d35b65a71df16e28e46d1c75d689c8f42cced1",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/shipyard/layer.png",
+          "native_layer_sha256": "7a942dc84c3a6b870858c574aef5471432f60ea4ffa7dc76a36fd4ec80c91e04",
+          "native_z": 374,
+          "site": "coast",
+          "source_crop_xyxy": [
+            40,
+            100,
+            1502,
+            963
+          ],
+          "state": "shipyard",
+          "visual_approval_granted": false
+        }
+      },
+      "sha256": {
+        "ship": "6510d79034f92bd131956eb1ebe1cb4734eebed67ae1d2e318f9060e2b5f2a6c",
+        "shipyard": "dd9dcec649f666618d7607d9b0d35b65a71df16e28e46d1c75d689c8f42cced1"
+      },
+      "source": {
+        "ship": "assets/source/town/rebuild-20261027-v1/retained-masters/ship/master.png",
+        "shipyard": "assets/source/town/rebuild-20261027-v1/retained-masters/shipyard/master.png"
+      },
+      "states": [
+        "shipyard",
+        "ship"
+      ]
+    },
+    {
+      "center": [
+        435,
+        78
+      ],
+      "composition_rectangle": [
+        419,
+        60,
+        32,
+        36
+      ],
+      "id": "grailOrnament",
+      "layer_origin": [
+        0,
+        0
+      ],
+      "native_z": 151,
+      "selected_state_art": {
+        "grail": {
+          "click_bbox": [
+            419,
+            62,
+            450,
+            96
+          ],
+          "click_pixels": 423,
+          "composition_rectangle": [
+            419,
+            60,
+            32,
+            36
+          ],
+          "fit_size": [
+            32,
+            34
+          ],
+          "footing_water_pixels": 0,
+          "master": "assets/source/town/rebuild-20261027-v1/retained-masters/grail/master.png",
+          "master_sha256": "7abba770f50e2c7852b05c4e85cc7ad4f58b0e03a6eb5de193c56cf3cf7e14a1",
+          "native_layer": "assets/source/town/rebuild-20261027-v1/structures/grail/layer.png",
+          "native_layer_sha256": "c35ee800ca2fe61b46996a64f1c4b6bba92df4c973c35cc1cad721a6db8ce711",
+          "native_z": 151,
+          "site": "grailOrnament",
+          "source_crop_xyxy": [
+            327,
+            37,
+            1300,
+            1066
+          ],
+          "state": "grail",
+          "visual_approval_granted": false
+        }
+      },
+      "sha256": {
+        "grail": "7abba770f50e2c7852b05c4e85cc7ad4f58b0e03a6eb5de193c56cf3cf7e14a1"
+      },
+      "source": {
+        "grail": "assets/source/town/rebuild-20261027-v1/retained-masters/grail/master.png"
+      },
+      "states": [
+        "grail"
+      ]
+    }
+  ],
+  "status": "authored configuration",
+  "terrain": {
+    "annotation": "Small optional inlet at bottom-right; land footings measured against the planned shoreline and visually inspected source.",
+    "master": "assets/source/town/rebuild-20261027-v1/background/master.png",
+    "master_sha256": "72ac1ab1cecfef81310022cabbc329acd1638201c08fe791d78dfa06d1c13670",
+    "native": "assets/source/town/rebuild-20261027-v1/background/native.png",
+    "native_sha256": "d9175faac5d0ea985cd8b91d54fa80ad62fcc4a82d0191815819fa540322de97",
+    "water_polygon": [
+      [
+        704,
+        355
+      ],
+      [
+        721,
+        343
+      ],
+      [
+        745,
+        329
+      ],
+      [
+        769,
+        318
+      ],
+      [
+        798,
+        306
+      ],
+      [
+        799,
+        373
+      ],
+      [
+        704,
+        373
+      ]
+    ]
+  },
+  "visual_approval_granted": false
+}

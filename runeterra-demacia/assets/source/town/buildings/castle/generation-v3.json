@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "tool": "built-in image_gen",
+  "output": "master-v3.png",
+  "prompt_file": "prompt-v3.txt",
+  "original_generation_path": "C:\\Users\\matcy\\.codex\\generated_images\\01a15556-579f-7041-8958-a88e131375be\\exec-59592012-cda5-4be5-9dcb-a86b7f73fd2d.png",
+  "reference_roles": [
+    {
+      "path": "assets/source/town/layout-v3/site-reference-crops/defenses.png",
+      "role": "Own site crop: edit target",
+      "sha256": "4a933ee04e22894b296b603d3cb04c2bbc6de28fc45d10551fb93e178a507e65"
+    },
+    {
+      "path": "assets/source/town/layout-v3/built-study-v2.png",
+      "role": "Own complete lower-frontal composition: camera/light/material reference only",
+      "sha256": "3d24669ffadcdee6678459ca9bb3e23903f037c4babd2cf85a34a8a1d17cfcb4"
+    },
+    {
+      "path": "references/riot/heraldry/demacia-official-region-icon.png",
+      "role": "Private official crest shape: no copied original pixels",
+      "sha256": "d71bb021a49b704420f43c74f9dbfedb2bd89779bdafec1ea4be7bb8a172e734"
+    }
+  ],
+  "state": "castle",
+  "name": "Castle",
+  "site": "defenses",
+  "native_box_xywh": [
+    556,
+    42,
+    224,
+    111
+  ],
+  "status": "generated-source; native-size and replacement-chain visual review pending; no release acceptance",
+  "rights": "Project-generated building. Private licensed/official subject references are separate inputs; no original image bundled.",
+  "production_mutations": "None: no active recipes, manifest or stage changed; earlier source versions preserved.",
+  "source_sha256": "a80069dc92b1ddb480ec3912c63e553be5bc7c16f6b1c5be9c9e844a2963c46b",
+  "dimensions": [
+    1728,
+    910
+  ],
+  "prompt_sha256": "b1273f301b8f125f439489d3ac7327c67773738c8010044fde7eb8a1f49818f9",
+  "prompt": "Use-case: background-extraction plus explicitly requested construction-stage editing.\nReference1 is the EDIT TARGET crop of our project-owned lower-frontal town study. Reference2 is the complete OWN composition guide: only camera, depth, light and material authority, NOT a scene to reproduce. Reference3 is the PRIVATE official Demacia crest shape: redraw on existing small blue cloth where requested, no imported original pixels.\nMake ONE complete connected town-building construction object only. Preserve the target architectural family's lower frontal perspective and scene depth, upper-left light, richly textured painted/prerendered original-Heroes-III material language, weathered pale petricite, muted blue-gray slate/blue cloth, dark openings, steel and restrained old gold. Follow the exact specified state geometry, simpler foundations for early states and real structural improvements for upgrades. One visible state replaces its predecessor at SAME site. No high isometric dollhouse camera, glossy contemporary3D, anime, vector art, mobile proportions or League splash composition.\nTRUE transparent RGBA background, entire silhouette with modest transparent margins, only thin integral threshold/plinth and short soft alpha contact shadow. Remove ALL unrelated buildings, roads, terraces, cliff/grass rectangles, sky, water, landscape, shrubs and trees. Reconstruct obscured/cropped edges consistently. No people/crowds, labels/text/UI/frame, fake checkerboard or opaque background. Broad forms must read at actual native size; do not add tiny pointless clutter. Exact crest is upright central pointed blade/leaf, paired mirrored feather wings and tapered lower stem, NOT trident or fleur-de-lis. Do not add duplicate independent functional lots.\n\nTarget state: Castle (castle).\nAssigned native site box: [556, 42, 224, 111] on800x374canvas.\nFINAL DEFENSE STATE. Isolate the exact rear-right military wall and gatehouse complex from reference1: broad pale defensive curtain, high gate with dark portcullis arch and steel/gold trim, strong stepped flanking square towers and one rear keep. Correct Demacian winged-blade blue banners. Remove the separate armillary-topped chapterhouse in FRONT, distant cliff aviary at TOP RIGHT, bridge, cliff, road and all scenery. One connected completed gate complex, no second castle/city behind it. Preserve the original guide's lower frontal view and high distant position, not an isometric terrain castle.\n",
+  "native_candidate_export": {
+    "source": "assets/source/town/buildings/castle/master-v3.png",
+    "source_sha256": "a80069dc92b1ddb480ec3912c63e553be5bc7c16f6b1c5be9c9e844a2963c46b",
+    "source_size": [
+      1728,
+      910
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 794177,
+    "near_opaque_pixels": 699207,
+    "nonzero_pixels": 778303,
+    "crop_alpha_threshold": 8,
+    "crop_xyxy": [
+      12,
+      91,
+      1721,
+      824
+    ],
+    "native_box_xywh": [
+      556,
+      42,
+      224,
+      111
+    ],
+    "native_preview": "references/town-comparisons/source-v3/castle-native.png",
+    "native_sha256": "685064f081192d691f3df62d847deab36032f45101e8a355b882802a90e5f5b1",
+    "approval": "not granted"
+  },
+  "alpha_treatment": "Generated RGBA preserved; technical alpha>=8 bounds crop only, no color-keying, opacity synthesis or background substitution."
+}

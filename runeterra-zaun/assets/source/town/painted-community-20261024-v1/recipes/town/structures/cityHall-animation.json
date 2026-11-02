@@ -1,0 +1,116 @@
+{
+  "acceptance": "Production requirements only. No rig, guide, primitive, placeholder or reference may substitute for painted final art; this recipe must fail while its real master and hash are absent.",
+  "art_direction": "Independent Zaun architecture in Heroes III native painted language: corroded iron, wet concrete, industrial ruins. Never recolour Castle or Demacia art, import original pixels or invent an official crest.",
+  "building": "cityHall",
+  "building_contract": {
+    "full_canvas_placement": {
+      "x": 0,
+      "y": 0,
+      "z": 126
+    },
+    "name": "Castboard Hall",
+    "native_ground_contact": [
+      164,
+      4,
+      151,
+      122
+    ],
+    "upgrades": "townHall"
+  },
+  "canvas": [
+    800,
+    374
+  ],
+  "credits": {
+    "author": "OpenAI built-in imagegen; prompted and technically assembled by Codex",
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/halls-master.png",
+      "sha256": "b444f77788f8826688075ac4d35cd350107e847365bdf4c84de54bb24c5cd07d"
+    },
+    {
+      "path": "assets/source/town/chemtech-v4-buildings/halls-provenance.json",
+      "sha256": "b1ded2b815bc84b2bc14eb6e56929c536f60fc190ebfba364522ddfe75c97508"
+    },
+    {
+      "path": "assets/source/town/painted-community-20261024-v1/prepare.py",
+      "sha256": "570add080d42e1b17d7aec2939862119a175a664281e04050585cfb68138a835"
+    },
+    {
+      "path": "scripts/zaun_coastal_state_v1.py",
+      "sha256": "5aa45de45f59be66d393df44538743b1842db5ba5f1c4e48c1d83acaa13f3cf7"
+    }
+  ],
+  "fit": "contain",
+  "generateOverlay": 0,
+  "generateShadow": 0,
+  "generation": {
+    "conversion": {
+      "composition_rectangle": [
+        164,
+        4,
+        151,
+        122
+      ],
+      "method": "Original painted2D source crop; uniform contain; full800x374 placement; native alpha-derived area/one-pixel outward border",
+      "native_z": 126,
+      "revision": "painted-community-20261024-v1",
+      "source_crop": [
+        12,
+        530,
+        766,
+        965
+      ]
+    },
+    "credits": {
+      "author": "OpenAI built-in imagegen; prompted by Codex",
+      "license": null,
+      "redistribution": "unresolved; release prohibited"
+    },
+    "edit_target": "assets/source/town/painted-v2/halls-master.png",
+    "generation_date": "2026-10-21",
+    "image_generation_used": true,
+    "model": null,
+    "model_disclosed": false,
+    "painted_master": "assets/source/town/chemtech-v4-buildings/halls-master.png",
+    "painted_master_sha256": "b444f77788f8826688075ac4d35cd350107e847365bdf4c84de54bb24c5cd07d",
+    "prompt": "Use case: precise-object-edit. Edit the attached own Zaun hall upgrade atlas. Preserve four distinct stages in same 2x2 arrangement and exact low frontal three-quarter camera, all roofs and bases fully inside their cell, genuine transparent background and clear gutters. Keep brick municipal hall identity, noticeboard, entry steps and clock on advanced states. Change only chemtech art direction: strong luminous toxic GREEN glass lamps and visible connected pressure pipes, modest cylindrical reagent gauge beside each entrance, purple slate/enamel/awning accents on brown brick, iron and copper. Base village hall stays visibly plain and small, Town Hall has more enclosed stories, City Hall strong civic clock frontage, Capitol tallest bell/clock industrial tower and more reinforced copper control piping. Do not turn halls into generic reactor blocks. Broad upper-left daylight, localized green reflections, richly textured painted/prerendered original Heroes III buildings, not glossy modern 3D. No text, no flat neon outlines, no backdrop, no clipped roofs. Keep stage silhouettes and positions so this remains a coherent same-site upgrade family.",
+    "provider": "OpenAI built-in image_gen.imagegen",
+    "returned_provenance": {
+      "output_hint": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-560d-7462-a9a5-3670486c088c as C:\\Users\\matcy\\.codex\\generated_images\\01a15dae-560d-7462-a9a5-3670486c088c\\exec-79164ed6-9188-44bb-96cb-093ee2eaeff6.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "route": "Genuine image-generation edit of own painted Zaun buildings; technical crop/uniform scale/placement only",
+    "visual_approval_granted": false
+  },
+  "groups": [
+    {
+      "action": "own town building state, not a troop idle/action",
+      "frames": [
+        {
+          "sha256": "5556fdf7401976aec8cf784e9219e36a958050f87c5d7a40ff11080207fefc35",
+          "source": "assets/source/town/painted-community-20261024-v1/structures/cityHall/layer.png"
+        }
+      ],
+      "group": 0
+    }
+  ],
+  "id": "zaun.town.structure.cityHall.animation",
+  "identity_review": "build/reports/painted-town-community-20261024-v1/source-pixel-review.json",
+  "native_visual_review": "pending",
+  "output_path": "Content/Sprites/runeterra/zaun/town/structures/cityHall.json",
+  "production_status": "delivered",
+  "recipe_type": "vcmi_animation",
+  "required_before_conversion": [
+    "real painted master and genuine generation/human provenance",
+    "explicit non-null source SHA-256 pins",
+    "native pose/contact/alpha/continuity review",
+    "one whole-atlas camera correction; no per-frame stretch"
+  ],
+  "source_sha256": "5556fdf7401976aec8cf784e9219e36a958050f87c5d7a40ff11080207fefc35",
+  "status": "built-unreviewed",
+  "title": "Castboard Hall town layer",
+  "visual_approval_granted": false
+}

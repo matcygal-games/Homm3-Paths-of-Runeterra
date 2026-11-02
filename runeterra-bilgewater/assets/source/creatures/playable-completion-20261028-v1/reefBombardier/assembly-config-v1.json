@@ -1,0 +1,557 @@
+{
+  "battle_canvas": [
+    450,
+    400
+  ],
+  "battle_root": [
+    197,
+    266
+  ],
+  "companions": {
+    "encounter_root": [
+      44,
+      60
+    ],
+    "map_root": [
+      76,
+      60
+    ],
+    "portrait_crop": [
+      165,
+      92,
+      325,
+      255
+    ],
+    "pose": "ready",
+    "scale": 0.11
+  },
+  "excluded_source_keys": [
+    {
+      "island": 0,
+      "plate": "shots",
+      "reason": "Upper muzzle flash reaches source border; independent complete release painting replaces it"
+    },
+    {
+      "pose": "turn0",
+      "reason": "Halfturn begins and ends at identical native HOLDING source"
+    }
+  ],
+  "groups": {
+    "0": [
+      "walk0",
+      "walk1",
+      "walk2",
+      "walk3",
+      "walk4",
+      "walk5"
+    ],
+    "1": [
+      "ready",
+      "shootFrontDraw"
+    ],
+    "11": [
+      "up0",
+      "up1",
+      "up2",
+      "ready"
+    ],
+    "12": [
+      "front0",
+      "front1",
+      "front2",
+      "ready"
+    ],
+    "13": [
+      "down0",
+      "down1",
+      "down2",
+      "ready"
+    ],
+    "14": [
+      "ready",
+      "shootUpDraw",
+      "shootUpAim",
+      "shootUpRelease",
+      "shootUpRecoil",
+      "ready"
+    ],
+    "15": [
+      "ready",
+      "shootFrontDraw",
+      "shootFrontAim",
+      "shootFrontRelease",
+      "shootFrontRecoil",
+      "ready"
+    ],
+    "16": [
+      "ready",
+      "shootDownDraw",
+      "shootDownAim",
+      "shootDownRelease",
+      "shootDownRecoil",
+      "ready"
+    ],
+    "2": [
+      "ready"
+    ],
+    "20": [
+      "ready",
+      "walk1"
+    ],
+    "21": [
+      "walk4",
+      "ready"
+    ],
+    "22": [
+      "death3"
+    ],
+    "3": [
+      "hurt0",
+      "hurt1",
+      "ready"
+    ],
+    "4": [
+      "defend",
+      "ready"
+    ],
+    "5": [
+      "death0",
+      "death1",
+      "death2",
+      "death3"
+    ],
+    "7": [
+      "ready",
+      "turn1",
+      "turn2",
+      "turn3"
+    ],
+    "8": [
+      "turn3",
+      "turn2",
+      "turn1",
+      "ready"
+    ]
+  },
+  "muzzle_measurements": {
+    "lower": {
+      "fixed_scale": 0.238,
+      "native_offset": [
+        33,
+        -15
+      ],
+      "pose": "shootDownRelease",
+      "source_barrel_end": [
+        1140,
+        860
+      ],
+      "source_root": [
+        1000,
+        925
+      ]
+    },
+    "middle": {
+      "fixed_scale": 0.238,
+      "native_offset": [
+        36,
+        -40
+      ],
+      "pose": "shootFrontRelease",
+      "source_barrel_end": [
+        1150,
+        465
+      ],
+      "source_root": [
+        1000,
+        635
+      ]
+    },
+    "native_alignment": "not_run",
+    "native_attackClimaxFrame": 4,
+    "source_release_index": 3,
+    "status": "design proposal",
+    "upper": {
+      "fixed_scale": 0.105,
+      "native_offset": [
+        40,
+        -67
+      ],
+      "pose": "shootUpRelease",
+      "source_barrel_end": [
+        1050,
+        400
+      ],
+      "source_root": [
+        665,
+        1040
+      ]
+    }
+  },
+  "plates": {
+    "melee": {
+      "expected_islands": 12,
+      "poses": {
+        "down0": {
+          "island": 8,
+          "root": [
+            190,
+            973
+          ]
+        },
+        "down1": {
+          "island": 10,
+          "root": [
+            585,
+            972
+          ]
+        },
+        "down2": {
+          "island": 9,
+          "root": [
+            995,
+            974
+          ]
+        },
+        "front0": {
+          "island": 4,
+          "root": [
+            190,
+            668
+          ]
+        },
+        "front1": {
+          "island": 6,
+          "root": [
+            585,
+            668
+          ]
+        },
+        "front2": {
+          "island": 5,
+          "root": [
+            995,
+            667
+          ]
+        },
+        "up0": {
+          "island": 1,
+          "root": [
+            190,
+            368
+          ]
+        },
+        "up1": {
+          "island": 0,
+          "root": [
+            585,
+            368
+          ]
+        },
+        "up2": {
+          "island": 2,
+          "root": [
+            995,
+            367
+          ]
+        }
+      },
+      "scale": 0.205,
+      "source": "reefBombardier/melee-v1-raw.png",
+      "source_sha256": "cd7fb46c40e51ddfd1b6a51ab8fdb63574254c9bb46d774b0e8457a1e5ddeca0"
+    },
+    "reactions": {
+      "expected_islands": 12,
+      "poses": {
+        "death0": {
+          "island": 8,
+          "root": [
+            205,
+            916
+          ]
+        },
+        "death1": {
+          "island": 9,
+          "root": [
+            605,
+            919
+          ]
+        },
+        "death2": {
+          "island": 10,
+          "root": [
+            1000,
+            922
+          ]
+        },
+        "death3": {
+          "island": 11,
+          "root": [
+            1450,
+            928
+          ]
+        },
+        "defend": {
+          "island": 3,
+          "root": [
+            605,
+            356
+          ]
+        },
+        "hurt0": {
+          "island": 1,
+          "root": [
+            1000,
+            356
+          ]
+        },
+        "hurt1": {
+          "island": 2,
+          "root": [
+            1450,
+            356
+          ]
+        },
+        "ready": {
+          "island": 0,
+          "root": [
+            205,
+            356
+          ]
+        },
+        "turn0": {
+          "island": 4,
+          "root": [
+            210,
+            663
+          ]
+        },
+        "turn1": {
+          "island": 5,
+          "root": [
+            620,
+            663
+          ]
+        },
+        "turn2": {
+          "island": 6,
+          "root": [
+            1010,
+            663
+          ]
+        },
+        "turn3": {
+          "island": 7,
+          "root": [
+            1450,
+            663
+          ]
+        }
+      },
+      "scale": 0.228,
+      "source": "reefBombardier/reactions-v1-raw.png",
+      "source_sha256": "83938bc10e821972d2452414984b8ef67a8c151f936f2f1e9ff0f584c50dba4d"
+    },
+    "shots": {
+      "expected_islands": 12,
+      "poses": {
+        "shootDownAim": {
+          "island": 9,
+          "root": [
+            605,
+            921
+          ]
+        },
+        "shootDownDraw": {
+          "island": 8,
+          "root": [
+            205,
+            922
+          ]
+        },
+        "shootDownRecoil": {
+          "island": 11,
+          "root": [
+            1450,
+            925
+          ]
+        },
+        "shootDownRelease": {
+          "island": 10,
+          "root": [
+            1000,
+            925
+          ]
+        },
+        "shootFrontAim": {
+          "island": 5,
+          "root": [
+            605,
+            635
+          ]
+        },
+        "shootFrontDraw": {
+          "island": 4,
+          "root": [
+            205,
+            636
+          ]
+        },
+        "shootFrontRecoil": {
+          "island": 6,
+          "root": [
+            1450,
+            637
+          ]
+        },
+        "shootFrontRelease": {
+          "island": 7,
+          "root": [
+            1000,
+            635
+          ]
+        },
+        "shootUpAim": {
+          "island": 1,
+          "root": [
+            605,
+            341
+          ]
+        },
+        "shootUpDraw": {
+          "island": 3,
+          "root": [
+            205,
+            341
+          ]
+        },
+        "shootUpRecoil": {
+          "island": 2,
+          "root": [
+            1450,
+            341
+          ]
+        }
+      },
+      "scale": 0.238,
+      "source": "reefBombardier/shots-v1-raw.png",
+      "source_sha256": "e53172fa55b41e6a78ed903fc06a548a98ad1e66f5f5cf3ad2158cfad922338e"
+    },
+    "upperReleaseRepair": {
+      "expected_islands": 1,
+      "poses": {
+        "shootUpRelease": {
+          "island": 0,
+          "root": [
+            665,
+            1040
+          ]
+        }
+      },
+      "scale": 0.105,
+      "source": "reefBombardier/up-release-repair-v1-raw.png",
+      "source_sha256": "eba24f9f2c764820a598697401e6e4536c5bb0245fc6379872fba375127f6365"
+    },
+    "walk": {
+      "expected_islands": 6,
+      "poses": {
+        "walk0": {
+          "island": 0,
+          "root": [
+            210,
+            480
+          ]
+        },
+        "walk1": {
+          "island": 2,
+          "root": [
+            735,
+            478
+          ]
+        },
+        "walk2": {
+          "island": 1,
+          "root": [
+            1275,
+            480
+          ]
+        },
+        "walk3": {
+          "island": 3,
+          "root": [
+            210,
+            968
+          ]
+        },
+        "walk4": {
+          "island": 4,
+          "root": [
+            735,
+            970
+          ]
+        },
+        "walk5": {
+          "island": 5,
+          "root": [
+            1275,
+            969
+          ]
+        }
+      },
+      "scale": 0.164,
+      "source": "reefBombardier/walk-v1-raw.png",
+      "source_sha256": "0f78b2c0c7ff10eece3d7eb5e298531b8cc6475aa9afde67e061751face3b27d"
+    }
+  },
+  "projectile": {
+    "expected_islands": 5,
+    "frames": [
+      {
+        "island": 0,
+        "root": [
+          198,
+          386
+        ]
+      },
+      {
+        "island": 2,
+        "root": [
+          598,
+          405
+        ]
+      },
+      {
+        "island": 4,
+        "root": [
+          964,
+          453
+        ]
+      },
+      {
+        "island": 3,
+        "root": [
+          1283,
+          506
+        ]
+      },
+      {
+        "island": 1,
+        "root": [
+          1576,
+          527
+        ]
+      }
+    ],
+    "scale": 0.1,
+    "source": "pistol-projectile-v1-raw.png",
+    "source_sha256": "56498e5c0ad6cfcdcc147033de50cd2b40dcd00cc5d8e45f0e91ec4790599722"
+  },
+  "unit": "reefBombardier",
+  "unresolved": [
+    "Independent native-size gait/support and root continuity review remains required",
+    "Native same-hex projectile origins and both facings have not been observed",
+    "Compact map/encounter body footprints need inspection against actual object anchors",
+    "Correct shell-cloth crest legibility requires independent native-size review",
+    "Canonical source-policy and archive admission have not run"
+  ],
+  "version": 1
+}

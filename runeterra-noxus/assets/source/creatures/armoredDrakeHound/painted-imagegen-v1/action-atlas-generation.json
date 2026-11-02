@@ -1,0 +1,35 @@
+{
+  "kind": "battle-atlas",
+  "limitations": [
+    "Returned atlas did not preserve exact guide positions; extraction requires explicit original-source rectangles and contact mapping.",
+    "No frame may be filled with idle posing as attack/death.",
+    "Native visual, timing, registration, equipment continuity and rights remain pending."
+  ],
+  "model": "not exposed by built-in tool",
+  "model_id_exposed": false,
+  "original_tool_output_hint": "Generated images are saved to C:\\Users\\matcy\\.codex\\generated_images\\01a159e9-f14d-7322-a4fe-626713040271 as C:\\Users\\matcy\\.codex\\generated_images\\01a159e9-f14d-7322-a4fe-626713040271\\exec-fc17a0d4-7324-41dd-a318-fee4fce0a1a8.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "production_status": "candidate-unreviewed-atlas-registration",
+  "prompt": "Use case: sketch-to-render. Asset type: transparent painted creature ACTION ATLAS. Image1 is exact unpainted pose guide for armoredDrakeHound; image2 is the independently painted identity. Repaint ALL poses from image1 in image2's SAME armored drake-hound anatomy, worn blackened segmented neck/back/tail barding, reinforced collar, steel foreleg guards, long crocodilian snout, single head and long tail. Exact original1440x2040canvas. Preserve EVERY occupied guide position and relative SCALE, do not enlarge or redistribute characters, fill columns or collapse blank spaces. Original eight180pxcolumns/twelve170pxrows: counts from top row are6,4,1,4,4,6,4,4,6,6,6,1. Leave othercells clearalpha. Each pose must correspond one-to-one to guide: row1 six actual alternating gait feet; row2 four modest fidgetposes; row3stillidle; row4 four hit-recoils; row5four defensivecrouches; row6sixdeathstagesgradually ontoSIDEendingflatbody/collapsedlegs; row7fourturns towardviewer; row8four turnsback; row9sixupward bitewindup/openjaw/lunge/contact/recovery; row10sixforwardbite; row11sixdownwardbite; row12onefinalflatcorpse. Keep fixed low frontal3/4camera facingright exceptactualturns, identicalupperleftlight, contactbaselineandbodylength. CompactoriginalHeroesIII painted/prerendered matte scalyhide,rubbedleather, scarredironrichness; no glossy3D, outlines, anime or pixel filter. OriginalNoxianwarreptile,no rider,saddle,wings,fire,extraheadsor copiedchampion. Allalphaoutsidecontourszero includingbetweenlegs. No scenery, shadow, backgroundhaze, lines,labels,textorlogo. Do not substitute standing or uniformly shiftedmastercopies foractionposes. Consistent single creature across ALL52true action drawings.",
+  "provider": "OpenAI built-in imagegen",
+  "references": [
+    {
+      "path": "assets/source/creatures/armoredDrakeHound/rig-v1/run-f/transparent-action-atlas-guide-v2.png",
+      "sha256": "15e4953c0f47e55b1e42b2219540be6f13e1d8586f9c114d05c40eda6955b01a"
+    },
+    {
+      "path": "assets/source/creatures/armoredDrakeHound/painted-imagegen-v1/master-original.png",
+      "sha256": "2d2dbfdc8af2a02d4d3506b460fdb08b89f9ade340cf49f58c42f10032830ec5"
+    }
+  ],
+  "refs": [
+    "assets/source/creatures/armoredDrakeHound/rig-v1/run-f/transparent-action-atlas-guide-v2.png",
+    "assets/source/creatures/armoredDrakeHound/painted-imagegen-v1/master-original.png"
+  ],
+  "runtime_verified": false,
+  "schemaVersion": 1,
+  "source_sha256": "48883ef643c56858cbefeb88f20564ce795889d57df5ff138007fb1c48fe796d",
+  "status": "authored configuration",
+  "unit": "armoredDrakeHound",
+  "visual_approval_granted": false,
+  "workspace_copy": "assets/source/creatures/armoredDrakeHound/painted-imagegen-v1/action-atlas-candidate-v1.png"
+}

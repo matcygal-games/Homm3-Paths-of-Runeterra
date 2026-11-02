@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "scope": "Explicit complete-source cohort registration for current CityHall, Citadel and MageGuild2 candidates only; technical source review, no art acceptance",
+  "helper": "assets/source/town/painted-resume-v2/derive_states.py",
+  "helper_sha256": "9244b8e0109d40de74eab4b9716d43ac7cb170f6aaebdda3daa96b045d4eb56f",
+  "states": [
+    {
+      "key": "cityHall",
+      "replacement": "townHall",
+      "base_site": "villageHall",
+      "comparison_parent_frame": "assets/source/town/painted-resume-v2/townHall/frame.png",
+      "registration": {
+        "source_canvas": [1594, 987],
+        "source_crop": [0, 0, 1594, 987],
+        "resampled_size": [166, 103],
+        "placement": [337, 26],
+        "uniform_scale": 0.10414052697616061,
+        "native_site_box": [335, 24, 170, 105]
+      },
+      "ground_anchor": [420, 129],
+      "decision": "New civic cohort includes the entire new987pixel-high source canvas from y0, rather than the VillageHall crop startingy9. One extra canonical source column accounts for1593pixel child versus1594pixel parent. Native width166 and source scale retain the prior civic registration, rounded height103 and top26 preserve bottom129. No opaque-fit or old-state rewrite. Added storey and pylons are retained; a larger physical foundation is not inferred from generated framing."
+    },
+    {
+      "key": "citadel",
+      "replacement": "fort",
+      "base_site": "fort",
+      "comparison_parent_frame": "assets/source/town/painted-resume-v1/fort/frame.png",
+      "registration": {
+        "source_canvas": [1781, 883],
+        "source_crop": [0, 0, 1781, 883],
+        "resampled_size": [204, 101],
+        "placement": [593, 19],
+        "uniform_scale": 0.1143827859569649,
+        "native_site_box": [590, 16, 210, 104]
+      },
+      "ground_anchor": [695, 120],
+      "decision": "Explicit defense cohort retains full1781x883 source bounds shared by real Fort/Citadel generation. Do not crop to new871pixel alpha bottom or refit the changed gatehouse. Fixed204x101 render and bottom120 preserve defense-site scale; new portcullis/pylons stay intact."
+    },
+    {
+      "key": "mageGuild2",
+      "replacement": "mageGuild1",
+      "base_site": "mageGuild1",
+      "comparison_parent_frame": "assets/source/town/painted-resume-v1/mageGuild1/frame.png",
+      "registration": {
+        "source_canvas": [1086, 1448],
+        "source_crop": [0, 0, 1086, 1448],
+        "resampled_size": [101, 135],
+        "placement": [502, 65],
+        "uniform_scale": 0.09300184162062615,
+        "native_site_box": [500, 60, 105, 140]
+      },
+      "ground_anchor": [552, 200],
+      "decision": "Explicit archive cohort includes all1086x1448 source pixels, including finial and new archive/armillary architecture. Fixed101x135 source-to-native registration preserves bottom200. Topfinial has one alpha>=128 pixel at source edge; preserve as tight-margin caveat, never clip or invent missing cap. Native tier distinction must be judged in the comparison."
+    }
+  ],
+  "future_cohort_policy": "This is not an absolute envelope for higher tiers. A future master that exceeds a supplied complete-source cohort requires an explicit newer reviewed registration/canvas with preserved native ground anchor and physical appearance; never clip new architecture or silently shrink the town.",
+  "native_execution": false,
+  "visual_approval_granted": false
+}

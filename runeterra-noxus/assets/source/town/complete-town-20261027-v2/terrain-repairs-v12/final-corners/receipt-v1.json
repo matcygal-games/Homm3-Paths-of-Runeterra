@@ -1,0 +1,85 @@
+{
+  "status": "design proposal",
+  "base": {
+    "path": "assets/source/town/complete-town-20261027-v2/terrain/final-native-v10-proposal.png",
+    "sha256": "c06ac72051bf8820411aeae522471a90903cce8adfd9822a09e270b3344c126d"
+  },
+  "terrain": {
+    "path": "assets/source/town/complete-town-20261027-v2/terrain/final-native-v12-proposal.png",
+    "sha256": "d594523cc2d00e0fc4f372e8de5e349496bf675f831d6bc9fd47ef7ee2cfee3f"
+  },
+  "patches": [
+    {
+      "name": "fort-corner",
+      "existing_genuine_master": {
+        "path": "assets/source/town/complete-town-20261027-v2/terrain-repairs-v8/fort-caps/central-family-master-v1.png",
+        "sha256": "d3e98e04901f8fb46fdf008b5090114dd9bd6c09f19c8297fe4fab2c118bd4f7"
+      },
+      "generation_record": {
+        "path": "assets/source/town/complete-town-20261027-v2/terrain-repairs-v8/fort-caps/generation-record-v1.json",
+        "sha256": "400d2519f8b69813a3e7402dd7d3bd6c5555a19625c89d5558f69b36a7c2fca1"
+      },
+      "source_crop": [
+        350,
+        300,
+        1150,
+        800
+      ],
+      "native": {
+        "path": "assets/source/town/complete-town-20261027-v2/terrain-repairs-v12/final-corners/fort-corner-native-v1.png",
+        "sha256": "d8f570b27ef229d1d22df41b44bf2b63226f8eb8c7b889d3b27d79a5cef1ad8e"
+      },
+      "position": [
+        448,
+        138
+      ],
+      "native_size": [
+        34,
+        15
+      ],
+      "method": "Uniform crop/fit of existing genuine horizontal paving. No procedural drawing/filter. Minotaur obsolete prop and intrusive old flight replaced by broad true court/apron with open western paved connector at430..432; actual main avenue x<430 remains unchanged."
+    },
+    {
+      "name": "minotaur-left-apron",
+      "existing_genuine_master": {
+        "path": "assets/source/town/complete-town-20261027-v2/terrain/minotaur-apron-master-v5.png",
+        "sha256": "ae8354a49d6349bd91308c681a9704190f8b5d192d2a43c6fc09d0f68ff74b34"
+      },
+      "generation_record": {
+        "path": "assets/source/town/complete-town-20261027-v2/terrain/minotaur-apron-generation-v5.json",
+        "sha256": "32ea8cdd7eaf76d11a1d77a0edfad1b196d40713480917a0c5d5e1eca7610097"
+      },
+      "source_crop": [
+        720,
+        71,
+        1620,
+        480
+      ],
+      "native": {
+        "path": "assets/source/town/complete-town-20261027-v2/terrain-repairs-v12/final-corners/minotaur-left-apron-native-v1.png",
+        "sha256": "d42626ee37ad793e40bb26cc3595cc1684cc92e986bc538417fb9222dfa4eb02"
+      },
+      "position": [
+        430,
+        316
+      ],
+      "native_size": [
+        64,
+        38
+      ],
+      "method": "Uniform crop/fit of existing genuine horizontal paving. No procedural drawing/filter. Minotaur obsolete prop and intrusive old flight replaced by broad true court/apron with open western paved connector at430..432; actual main avenue x<430 remains unchanged."
+    }
+  ],
+  "script": {
+    "path": "assets/source/town/complete-town-20261027-v2/compose_final_corners_v12.py",
+    "sha256": "8732a555dcb5c3f1ebfced915f4af2a35211723c850fc46892231b803b4fce32"
+  },
+  "actual_main_avenue_x_below430_unchanged": true,
+  "outside_two_patches_unchanged": true,
+  "all36_architecture_frames_unchanged": true,
+  "structural_foot_contacts_unchanged": true,
+  "public_connector": "Old interfering Minotaur left public flight replaced by broad genuine horizontal court/apron opening WEST to unchanged main avenue; connector430..432 lies outside all-state physical foot union xmin433. Own main entry512+ stays unchanged.",
+  "physical_support_admitted": false,
+  "native_verified": false,
+  "release_accepted": false
+}

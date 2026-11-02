@@ -1,0 +1,54 @@
+{
+  "asset_sha256": "7d079eb81759650cb50de8d339504b641ea3cd11a4d2a1e7e522535531e8f98b",
+  "checks": {
+    "distinct_equipment": true,
+    "distinct_silhouette": true,
+    "native_scale": true,
+    "not_recolored_original": true,
+    "upgrade_readability": false
+  },
+  "comparison_sha256": "c283a76f125843e3ce8a234ac110ebfd5b4cf1d61c53369164678ee025ce3741",
+  "comparison_sheet": "assets/reviews/creatures/beast-map-registered-v1/native-comparison.png",
+  "credits": {
+    "license": null,
+    "redistribution": "unresolved; release prohibited"
+  },
+  "findings": [
+    "Viewed six actual alpha-composited map atlases, explicit registration references and all40native frames at1:1.",
+    "Actual walking phases or thorn-wing flight poses, not copied idle silhouettes; all native RGBA frame hashes are distinct within their own unit.",
+    "Exactly one fixed global scale per unit and integer translation from explicit common row/column ground-plane or sternum landmarks.",
+    "No per-pose bbox normalization, body warping or world-foot snap; source foot bob and wing arcs remain in the native images.",
+    "Separate strong-alpha connected figures permit complete flying poses despite overlapping rectangular row bands; detached near-transparent atlas noise is not imported.",
+    "No strong-alpha pixel touches a native canvas edge; no whole figure is clipped by an atlas rectangle."
+  ],
+  "frame_sha256": {
+    "Content/Sprites/runeterra/noxus/creatures/greaterRuinBringer/map-frames/g00-f000.png": "ac27dcc3ae06edddb8ac8122503337baa3318ea7fe1e5aa902227cbd421b20f1",
+    "Content/Sprites/runeterra/noxus/creatures/greaterRuinBringer/map-frames/g00-f001.png": "583b9f491a84ee9d03365055bcb0e62cf97451bfebb43f8e1f49e7ef256a759d",
+    "Content/Sprites/runeterra/noxus/creatures/greaterRuinBringer/map-frames/g00-f002.png": "c68a8727850dbb5c1d548210258697afc83d1a01b4e16d6aa4d2b90109dc2bd8",
+    "Content/Sprites/runeterra/noxus/creatures/greaterRuinBringer/map-frames/g00-f003.png": "41e0608ce84f6bb8416bd2262b2e2bad8d0e0c415ba95a222c532a03c61f2328",
+    "Content/Sprites/runeterra/noxus/creatures/greaterRuinBringer/map-frames/g00-f004.png": "0d66d98721b631c3b40a860b2cd1a470228f6e6a9fd38b7c6d48bd846bf4a3e4",
+    "Content/Sprites/runeterra/noxus/creatures/greaterRuinBringer/map-frames/g00-f005.png": "42a03ee34aa5234d540c39058892068946cbd78a8d795736d958286340f6e68d",
+    "Content/Sprites/runeterra/noxus/creatures/greaterRuinBringer/map-frames/g00-f006.png": "8ef5e95cd19daea4f55fdbb791b485f9ee28fe1dd0053d0c7e05cfdd2547929d",
+    "Content/Sprites/runeterra/noxus/creatures/greaterRuinBringer/map-frames/g00-f007.png": "fa12d7c7d3fcb6d2e4157ede0bc903984903fd089e6622af2c740d372d07da50"
+  },
+  "output_path": "Content/Sprites/runeterra/noxus/creatures/greaterRuinBringer/map.json",
+  "pending": [
+    "Native VCMI adventure footprint, facing, player ownership tint/shadow, scale, timing and positional stability review.",
+    "Source pose/anatomy/camera continuity, including relative demon body size across base/upgrade cohorts.",
+    "The demon upgrade is not yet distinct enough at small map scale to affirm upgrade readability.",
+    "Official regional crest evidence and redistribution licence clearance remain unresolved."
+  ],
+  "recipe_sha256": "13d056d512bbf51cc6b3e7fbba0a76ab878da7b11f84d61bcb0209ba52f9aa04",
+  "registration_evidence": "build/reports/art-start-20261020/beast-maps/greaterRuinBringer-registration.json",
+  "registration_sha256": "756d6a10c26fbaa8f4c0c6bec6fdd46d2a1f73d197bc78e2727951a1bffaa991",
+  "release_accepted": false,
+  "review_status": "candidate native-sheet review; not accepted",
+  "reviewer": "Codex /root/noxus_portraits",
+  "runtime_verified": false,
+  "source_atlas": "assets/source/creatures/greaterRuinBringer/painted-imagegen-v1/map-atlas-wide-v2.png",
+  "source_atlas_sha256": "d86b8b1438e1cac6af4e2445ea5e6f7b4f56dc7a93d9f7daadb1b5d72c3cc136",
+  "status": "authored configuration",
+  "uniform_scale": 0.115,
+  "unit_id": "greaterRuinBringer",
+  "visual_approval_granted": false
+}

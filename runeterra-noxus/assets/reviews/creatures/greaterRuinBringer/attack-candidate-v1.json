@@ -1,0 +1,101 @@
+{
+  "art_accepted": false,
+  "checks": {
+    "distinct_equipment": true,
+    "full_alpha_ownership_accepted": false,
+    "independently_painted_opposing_attack_poses": true,
+    "native_approach_orientation_executed": false,
+    "native_scale": true,
+    "not_mirrored_idle": true,
+    "not_recolored_original": true,
+    "official_equipment_heraldry_applied": false,
+    "original_game_native_comparison": false,
+    "redistribution_cleared": false,
+    "upgrade_readability": false
+  },
+  "findings": [
+    "Actual native64x64 alpha-composited contact sheet inspected; poses face opposing directions and show attacks.",
+    "Every kept source RGBA pixel is preserved exactly; nearest-principal ownership masks remove only the other independently painted pose. Soft alpha ownership remains a candidate, not acceptance.",
+    "Original and selected Demacia material/lighting style was referenced read-only in art direction; no original or Demacia pixels/rigs were copied.",
+    "Official heraldry is verified separately but has not been painted onto these creature body/action sources. Plain harnesses remain.",
+    "No game, AI, battle, siege, animation, balance or release acceptance is supplied by static icon compilation.",
+    "Small apex attack/portrait views do not yet establish a sufficiently clear upgrade distinction; source head/neck binding should be strengthened before acceptance."
+  ],
+  "native_contact_sheet": {
+    "path": "build/reports/art-start-20261020/creatures/beasts/attack-candidates-v1/native-directional-contact.png",
+    "sha256": "768af5ef3e009cb68e470d7408fbad9ed4744f121747a77aaac7f5b1a76d099d"
+  },
+  "outputs": [
+    {
+      "atlas_extraction": {
+        "atlas_sha256": "911743b9d957e5dc69b3bc96d532fff34394304283414815915459bce1ece80a",
+        "atlas_source": "assets/source/creatures/greaterRuinBringer/painted-imagegen-v1/directional-attacks-v1.png",
+        "component": {
+          "box": [
+            7,
+            4,
+            1054,
+            718
+          ],
+          "id": 1,
+          "pixels": 284687
+        },
+        "distance": "Manhattan; equal distance assigned to left pose",
+        "full_alpha_ownership_review": "pending",
+        "kept_pixels_equal_original": true,
+        "mask": "assets/source/creatures/greaterRuinBringer/painted-imagegen-v1/attack-ownership-v1/attack-left-ownership.png",
+        "mask_sha256": "96ce815654b1b050f42e3e65b42f934be92acbb02c603b180482fb90a3933ee0",
+        "method": "nearest-principal-opaque-component ownership; exact kept RGBA pixels",
+        "mirroring_used": false,
+        "opaque_seed_threshold": 64
+      },
+      "id": "greaterRuinBringer-attackLeft",
+      "path": "Content/Sprites/runeterra/noxus/creatures/greaterRuinBringer/attackLeft.png",
+      "recipe": "assets/recipes/creatures/greaterRuinBringer-attackLeft.json",
+      "recipe_sha256": "5165dc9ba60ff1c4ad80552363e9662bbd2162c27b56196dfa976e02ecd21491",
+      "role": "attackLeft",
+      "sha256": "484a06ef9f14d0b18de986d8c47405fef442302dc428d0bf770a90fc30ea2015",
+      "source": "assets/source/creatures/greaterRuinBringer/painted-imagegen-v1/attack-ownership-v1/attack-left-source.png",
+      "source_sha256": "7e7a864706b85d5e2ef4a716e39b0cb359b872cc3a44be2741f20c585ae0af9c"
+    },
+    {
+      "atlas_extraction": {
+        "atlas_sha256": "911743b9d957e5dc69b3bc96d532fff34394304283414815915459bce1ece80a",
+        "atlas_source": "assets/source/creatures/greaterRuinBringer/painted-imagegen-v1/directional-attacks-v1.png",
+        "component": {
+          "box": [
+            1092,
+            5,
+            2170,
+            722
+          ],
+          "id": 2,
+          "pixels": 267077
+        },
+        "distance": "Manhattan; equal distance assigned to left pose",
+        "full_alpha_ownership_review": "pending",
+        "kept_pixels_equal_original": true,
+        "mask": "assets/source/creatures/greaterRuinBringer/painted-imagegen-v1/attack-ownership-v1/attack-right-ownership.png",
+        "mask_sha256": "2c42d0b941ef5f8e8e77da651bc8e6e786a96f849cca27e8fdb316f3a19ee702",
+        "method": "nearest-principal-opaque-component ownership; exact kept RGBA pixels",
+        "mirroring_used": false,
+        "opaque_seed_threshold": 64
+      },
+      "id": "greaterRuinBringer-attackRight",
+      "path": "Content/Sprites/runeterra/noxus/creatures/greaterRuinBringer/attackRight.png",
+      "recipe": "assets/recipes/creatures/greaterRuinBringer-attackRight.json",
+      "recipe_sha256": "00ad7e9a1a5564ef7312bc7a85e4111ea2c93566071f2ffa323c7e6907b127f5",
+      "role": "attackRight",
+      "sha256": "99fa4264014891ea95681cdbd349d911352862730160f8579e1203c6e9b90aaf",
+      "source": "assets/source/creatures/greaterRuinBringer/painted-imagegen-v1/attack-ownership-v1/attack-right-source.png",
+      "source_sha256": "5c5552084e4b25b07fccf41d4aa562ae0ad6ce2a384a5ad48cf6424ba905a8c8"
+    }
+  ],
+  "review_status": "pending",
+  "reviewer": "Codex /root/noxus_beast_art",
+  "runtime_verified": false,
+  "schemaVersion": 1,
+  "status": "authored configuration",
+  "unit": "greaterRuinBringer",
+  "visual_approval_granted": false
+}
